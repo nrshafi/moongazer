@@ -1,0 +1,43 @@
+import data from '../data/content.json';
+import { byId, read, write, forget, esc, cleanSeed, copy, challengeUrl, focusHeading, announce } from './utils';
+import { collection, roundIds, options, points, type Pool } from './engine';
+import './game.css';
+type Result={answer:number;selected:number;hints:number};
+type State={seed:string;pool:Pool;length:number;index:number;hints:number;results:Result[]};
+const pools:Pool[]=['short','all','makkah','madinah'];
+const valid=(value:unknown):value is State=>{if(!value||typeof value!=='object')return false;const v=value as State;return !!cleanSeed(v.seed)&&pools.includes(v.pool)&&[5,10,20].includes(v.length)&&Number.isInteger(v.index)&&v.index>=0&&v.index<=v.length&&Number.isInteger(v.hints)&&v.hints>=1&&v.hints<=4&&Array.isArray(v.results)&&v.results.length<=v.length&&v.results.every(r=>r&&Number.isInteger(r.answer)&&r.answer>=1&&r.answer<=114&&Number.isInteger(r.selected)&&r.selected>=1&&r.selected<=114&&Number.isInteger(r.hints)&&r.hints>=1&&r.hints<=4)&&v.results.length>=v.index&&v.results.length<=v.index+1;};
+const randomSeed=()=>Math.random().toString(36).slice(2,12);
+const params=new URLSearchParams(location.search);
+const suppliedSeed=cleanSeed(params.get('seed'));
+const remembered=read('remember',(value):value is boolean=>typeof value==='boolean')===true;
+const saved=remembered&&!suppliedSeed?read('round',valid):null;
+let state:State=saved||{seed:suppliedSeed||randomSeed(),pool:pools.includes(params.get('pool') as Pool)?params.get('pool') as Pool:'short',length:[5,10,20].includes(Number(params.get('rounds')))?Number(params.get('rounds')):10,index:0,hints:1,results:[]};
+const stage=byId('game-stage');const remember=byId<HTMLInputElement>('remember');remember.checked=remembered;
+const poolInput=byId<HTMLSelectElement>('pool');const lengthInput=byId<HTMLSelectElement>('length');poolInput.value=state.pool;lengthInput.value=String(state.length);
+const persist=()=>{if(remember.checked&&!write('round',state))announce('Browser storage is unavailable. This round still works.');};
+const ids=()=>roundIds(data.chapters,state.pool,state.length,state.seed);
+// A stale or edited record must never reference a different answer sequence.
+if(saved){const expected=ids();if(state.results.some((r,i)=>r.answer!==expected[i])||state.index>expected.length)state={seed:randomSeed(),pool:'short',length:10,index:0,hints:1,results:[]};}
+function total(){return state.results.reduce((sum,r)=>sum+points(r.answer===r.selected,r.hints),0);}
+function render(){
+  const sequence=ids();const complete=state.index>=sequence.length;
+  byId('round-label').textContent=complete?'Round complete':`Surah ${state.index+1} of ${sequence.length}`;
+  byId('score-label').textContent=`${total()} points`;
+  byId('round-bar').style.width=`${Math.min(state.index,sequence.length)/sequence.length*100}%`;
+  byId('round-progress').setAttribute('aria-valuemax',String(sequence.length));byId('round-progress').setAttribute('aria-valuenow',String(Math.min(state.index,sequence.length)));
+  if(complete){const correct=state.results.filter(r=>r.answer===r.selected).length;stage.innerHTML=`<div class="round-finish"><span class="pill">A little more learned</span><h2 class="editorial">Every clue was a discovery.</h2><div class="finish-stats"><div><strong>${total()}</strong><span>points earned</span></div><div><strong>${correct}/${sequence.length}</strong><span>surahs identified</span></div></div><p class="muted">Explore the references below, or start another round.</p><div class="actions"><button class="button" id="another-round">Play another round</button><button class="button secondary" id="share-result">Copy result</button></div></div><div class="result-list">${state.results.map(r=>{const s=data.chapters.find(s=>s.number===r.answer)!;return `<a href="https://quran.com/${s.number}" target="_blank" rel="noopener noreferrer"><span>${r.answer===r.selected?'✓':'○'} ${esc(s.name_simple)}</span><span>${points(r.answer===r.selected,r.hints)} pts ↗</span></a>`;}).join('')}</div>`;
+    byId('another-round').addEventListener('click',()=>start(state.pool,state.length));byId('share-result').addEventListener('click',()=>copy(`Guess the Surah\n${correct}/${sequence.length} identified · ${total()} points\nTry the same round: ${link()}`));return;}
+  const answer=sequence[state.index]!;const chapter=data.chapters.find(s=>s.number===answer)!;const verse=data.verses[`${answer}:1` as keyof typeof data.verses];const result=state.results[state.index];
+  const clues=[{label:'The opening ayah',text:`<p class="opening-translation">${esc(verse.translation)}</p><span class="micro">Marmaduke Pickthall · opening ayah</span>`},{label:'Listen with your eyes',text:`<p class="arabic" lang="ar" dir="rtl">${esc(verse.arabic)}</p>`},{label:'A little structure',text:`<p>This surah has <strong>${chapter.verses_count} ayahs</strong>. The source catalog classifies it as ${chapter.revelation_place==='makkah'?'Makkan':'Madinan'}.</p>`},{label:'Its place in the Quran',text:`<p>It is chapter <strong>${chapter.number}</strong> of 114 in mushaf order.</p>`}];
+  stage.innerHTML=`<div class="spread bottom-gap"><span class="overline">Follow the clues</span><span class="step-dots" aria-label="${result?4:state.hints} of 4 clues revealed">${[1,2,3,4].map(n=>`<span class="${n<=(result?4:state.hints)?'done':''}"></span>`).join('')}</span></div><div class="clue-stack">${clues.slice(0,result?4:state.hints).map((clue,i)=>`<section class="clue"><span class="clue-index">${i+1}</span><div><h2>${clue.label}</h2>${clue.text}</div></section>`).join('')}</div>${!result&&state.hints<4?`<button class="button ghost clue-button" id="reveal-clue">Reveal another clue <span aria-hidden="true">+</span></button>`:''}<div class="answer-heading"><h2>Which surah is it?</h2><span class="micro">${result?'Answer revealed':`${points(true,state.hints)} points available`}</span></div><div class="answer-grid">${options(collection(data.chapters,state.pool),answer,state.seed).map((s,i)=>`<button class="answer-option ${result&&s.number===answer?'correct':''} ${result&&s.number===result.selected&&s.number!==answer?'incorrect':''}" data-answer="${s.number}" ${result?'disabled':''}><span class="answer-letter">${String.fromCharCode(65+i)}</span><span>${esc(s.name_simple)}<small lang="ar" dir="rtl">${esc(s.name_arabic)}</small></span>${result&&s.number===answer?'<span class="answer-check">✓</span>':''}</button>`).join('')}</div>${result?`<div class="feedback ${result.selected===answer?'positive':'negative'}"><h3>${result.selected===answer?'You found it.':`This one is ${esc(chapter.name_simple)}.`}</h3><p>Chapter ${answer} has ${chapter.verses_count} ayahs. Its opening is shown above exactly as retrieved from Quran Foundation.</p><a class="citation" href="${esc(verse.translationUrl)}" target="_blank" rel="noopener noreferrer">Read ${esc(chapter.name_simple)} ${answer}:1 on Quran.com ↗</a><div class="actions top-gap"><button class="button" id="next-question">${state.index+1===sequence.length?'See your round':'Next surah'} <span aria-hidden="true">→</span></button></div></div>`:''}`;
+  byId('round-subtitle').textContent=result?'Keep the reference. Carry the learning forward.':'Take your time. Clues are here to help.';
+  document.getElementById('reveal-clue')?.addEventListener('click',()=>{state.hints++;persist();render();});
+  stage.querySelectorAll<HTMLButtonElement>('[data-answer]').forEach(button=>button.addEventListener('click',()=>{if(state.results[state.index])return;state.results.push({answer,selected:Number(button.dataset.answer),hints:state.hints});persist();render();stage.querySelector<HTMLElement>('.feedback')?.scrollIntoView({block:'nearest',behavior:'smooth'});}));
+  document.getElementById('next-question')?.addEventListener('click',()=>{state.index++;state.hints=1;persist();render();focusHeading(stage);});
+}
+function start(pool:Pool,length:number){state={seed:randomSeed(),pool,length,index:0,hints:1,results:[]};poolInput.value=pool;lengthInput.value=String(length);history.replaceState(null,'',location.pathname);persist();render();focusHeading(stage);}
+function link(){return challengeUrl({seed:state.seed,pool:state.pool,rounds:String(state.length)});}
+byId<HTMLFormElement>('setup-form').addEventListener('submit',event=>{event.preventDefault();start(poolInput.value as Pool,Number(lengthInput.value));});
+remember.addEventListener('change',()=>{if(remember.checked){if(!write('remember',true))announce('Browser storage is unavailable.');persist();}else{forget('remember');forget('round');}});
+byId('share-challenge').addEventListener('click',()=>copy(link(),'Challenge link copied'));
+render();

@@ -1,0 +1,425 @@
+{
+  "lessons": [
+    {
+      "id": "opening-takbir",
+      "title": "Opening takbir",
+      "area": "Opening",
+      "arabic": "اللَّهُ أَكْبَرُ",
+      "meaning": "Allah is greater.",
+      "transliteration": "Allahu akbar",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 757",
+          "url": "https://sunnah.com/bukhari:757",
+          "kind": "Hadith report"
+        },
+        {
+          "label": "Sahih Muslim 601",
+          "url": "https://sunnah.com/muslim:601",
+          "kind": "Hadith report"
+        }
+      ],
+      "question": "What does this phrase proclaim?",
+      "options": [
+        "A mention of a journey",
+        "A request for rain",
+        "A greeting to people",
+        "Allah’s greatness"
+      ],
+      "answer": 3,
+      "note": "Bukhari 757 describes beginning with takbir. Muslim 601 includes these Arabic words within a longer opening expression. The displayed English is our concise rendering.",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    },
+    {
+      "id": "fatiha-1",
+      "title": "Al-Fatiha · ayah 1",
+      "area": "Al-Fatiha",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "meaning": "In the name of Allah, the Beneficent, the Merciful.",
+      "transliteration": "",
+      "sources": [],
+      "question": "In whose name does the ayah begin?",
+      "options": [
+        "A prophet",
+        "Allah",
+        "The reciter",
+        "The angels"
+      ],
+      "answer": 1,
+      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "passage": {
+        "ref": "1:1",
+        "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+        "translation": "In the name of Allah, the Beneficent, the Merciful.",
+        "url": "https://quran.com/1:1",
+        "translationUrl": "https://quran.com/1:1?translations=19"
+      },
+      "audio": true,
+      "commentaryUrl": "https://quran.com/1:1/tafsirs/16"
+    },
+    {
+      "id": "fatiha-2",
+      "title": "Al-Fatiha · ayah 2",
+      "area": "Al-Fatiha",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+      "meaning": "Praise be to Allah, Lord of the Worlds,",
+      "transliteration": "",
+      "sources": [],
+      "question": "Who receives praise in this ayah?",
+      "options": [
+        "The reciter alone",
+        "A ruler",
+        "The stars",
+        "Allah, Lord of the Worlds"
+      ],
+      "answer": 3,
+      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "passage": {
+        "ref": "1:2",
+        "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+        "translation": "Praise be to Allah, Lord of the Worlds,",
+        "url": "https://quran.com/1:2",
+        "translationUrl": "https://quran.com/1:2?translations=19"
+      },
+      "audio": true,
+      "commentaryUrl": "https://quran.com/1:2/tafsirs/16"
+    },
+    {
+      "id": "fatiha-3",
+      "title": "Al-Fatiha · ayah 3",
+      "area": "Al-Fatiha",
+      "arabic": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "meaning": "The Beneficent, the Merciful.",
+      "transliteration": "",
+      "sources": [],
+      "question": "Which descriptions appear in this ayah?",
+      "options": [
+        "The mountains and valleys",
+        "The Beneficent, the Merciful",
+        "The garden and river",
+        "The sun and moon"
+      ],
+      "answer": 1,
+      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "passage": {
+        "ref": "1:3",
+        "arabic": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+        "translation": "The Beneficent, the Merciful.",
+        "url": "https://quran.com/1:3",
+        "translationUrl": "https://quran.com/1:3?translations=19"
+      },
+      "audio": true,
+      "commentaryUrl": "https://quran.com/1:3/tafsirs/16"
+    },
+    {
+      "id": "fatiha-4",
+      "title": "Al-Fatiha · ayah 4",
+      "area": "Al-Fatiha",
+      "arabic": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+      "meaning": "Master of the Day of Judgment,",
+      "transliteration": "",
+      "sources": [],
+      "question": "Which day is named?",
+      "options": [
+        "The day of migration",
+        "The Day of Judgment",
+        "The day of harvest",
+        "A market day"
+      ],
+      "answer": 1,
+      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "passage": {
+        "ref": "1:4",
+        "arabic": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+        "translation": "Master of the Day of Judgment,",
+        "url": "https://quran.com/1:4",
+        "translationUrl": "https://quran.com/1:4?translations=19"
+      },
+      "audio": true,
+      "commentaryUrl": "https://quran.com/1:4/tafsirs/16"
+    },
+    {
+      "id": "fatiha-5",
+      "title": "Al-Fatiha · ayah 5",
+      "area": "Al-Fatiha",
+      "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "meaning": "Thee (alone) we worship; Thee (alone) we ask for help.",
+      "transliteration": "",
+      "sources": [],
+      "question": "To whom are worship and the request for help directed?",
+      "options": [
+        "Allah alone",
+        "A worldly ruler",
+        "The reciter",
+        "The mountains"
+      ],
+      "answer": 0,
+      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "passage": {
+        "ref": "1:5",
+        "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+        "translation": "Thee (alone) we worship; Thee (alone) we ask for help.",
+        "url": "https://quran.com/1:5",
+        "translationUrl": "https://quran.com/1:5?translations=19"
+      },
+      "audio": true,
+      "commentaryUrl": "https://quran.com/1:5/tafsirs/16"
+    },
+    {
+      "id": "fatiha-6",
+      "title": "Al-Fatiha · ayah 6",
+      "area": "Al-Fatiha",
+      "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "meaning": "Show us the straight path,",
+      "transliteration": "",
+      "sources": [],
+      "question": "What is requested?",
+      "options": [
+        "A journey",
+        "A garden",
+        "More possessions",
+        "Guidance to the straight path"
+      ],
+      "answer": 3,
+      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "passage": {
+        "ref": "1:6",
+        "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+        "translation": "Show us the straight path,",
+        "url": "https://quran.com/1:6",
+        "translationUrl": "https://quran.com/1:6?translations=19"
+      },
+      "audio": true,
+      "commentaryUrl": "https://quran.com/1:6/tafsirs/16"
+    },
+    {
+      "id": "fatiha-7",
+      "title": "Al-Fatiha · ayah 7",
+      "area": "Al-Fatiha",
+      "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "meaning": "The path of those whom Thou hast favoured; Not the (path) of those who earn Thine anger nor of those who go astray.",
+      "transliteration": "",
+      "sources": [],
+      "question": "Whose path is requested?",
+      "options": [
+        "A path defined by wealth",
+        "Those who go astray",
+        "Those whom Allah has favoured",
+        "Those who earn anger"
+      ],
+      "answer": 2,
+      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "passage": {
+        "ref": "1:7",
+        "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+        "translation": "The path of those whom Thou hast favoured; Not the (path) of those who earn Thine anger nor of those who go astray.",
+        "url": "https://quran.com/1:7",
+        "translationUrl": "https://quran.com/1:7?translations=19"
+      },
+      "audio": true,
+      "commentaryUrl": "https://quran.com/1:7/tafsirs/16"
+    },
+    {
+      "id": "bowing",
+      "title": "Bowing · glorification",
+      "area": "Bowing",
+      "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+      "meaning": "Glory be to my Lord, the Magnificent.",
+      "transliteration": "Subhana rabbiya al-azim",
+      "sources": [
+        {
+          "label": "Sahih Muslim 772",
+          "url": "https://sunnah.com/muslim:772",
+          "kind": "Hadith report"
+        }
+      ],
+      "question": "How is the Lord described in this phrase?",
+      "options": [
+        "The witness to a trade",
+        "The Magnificent",
+        "The traveller",
+        "The gardener"
+      ],
+      "answer": 1,
+      "note": "",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    },
+    {
+      "id": "rising",
+      "title": "Rising from bowing",
+      "area": "Standing",
+      "arabic": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ",
+      "meaning": "Allah hears the one who praises Him.",
+      "transliteration": "Sami Allahu liman hamidah",
+      "sources": [
+        {
+          "label": "Sahih Muslim 772",
+          "url": "https://sunnah.com/muslim:772",
+          "kind": "Hadith report"
+        }
+      ],
+      "question": "Whose praise is mentioned?",
+      "options": [
+        "The one planting a tree",
+        "The one counting possessions",
+        "The one entering a market",
+        "The one who praises Allah"
+      ],
+      "answer": 3,
+      "note": "",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    },
+    {
+      "id": "standing-praise",
+      "title": "Praise while standing",
+      "area": "Standing",
+      "arabic": "رَبَّنَا لَكَ الْحَمْدُ",
+      "meaning": "Our Lord, praise belongs to You.",
+      "transliteration": "Rabbana laka al-hamd",
+      "sources": [
+        {
+          "label": "Sahih Muslim 772",
+          "url": "https://sunnah.com/muslim:772",
+          "kind": "Hadith report"
+        }
+      ],
+      "question": "What is directed to the Lord?",
+      "options": [
+        "A travel instruction",
+        "A greeting to a neighbour",
+        "Praise",
+        "A trade offer"
+      ],
+      "answer": 2,
+      "note": "",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    },
+    {
+      "id": "prostration",
+      "title": "Prostration · glorification",
+      "area": "Prostration",
+      "arabic": "سُبْحَانَ رَبِّيَ الأَعْلَى",
+      "meaning": "Glory be to my Lord, the Most High.",
+      "transliteration": "Subhana rabbiya al-ala",
+      "sources": [
+        {
+          "label": "Sahih Muslim 772",
+          "url": "https://sunnah.com/muslim:772",
+          "kind": "Hadith report"
+        }
+      ],
+      "question": "Which description appears here?",
+      "options": [
+        "The garden",
+        "The Most High",
+        "The morning",
+        "The river"
+      ],
+      "answer": 1,
+      "note": "",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    },
+    {
+      "id": "tashahhud",
+      "title": "Tashahhud · testimony",
+      "area": "Sitting",
+      "arabic": "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+      "meaning": "Greetings, prayers, and good things belong to Allah. Peace, Allah’s mercy, and His blessings be upon you, Prophet. Peace be upon us and Allah’s righteous servants. I testify that none is worthy of worship except Allah, and that Muhammad is His servant and messenger.",
+      "transliteration": "At-tahiyyatu lillahi, was-salawatu wat-tayyibat…",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 831",
+          "url": "https://sunnah.com/bukhari:831",
+          "kind": "Hadith report"
+        }
+      ],
+      "question": "How is Muhammad described at the end of this wording?",
+      "options": [
+        "A heavenly body",
+        "The owner of every kingdom",
+        "The author of the Quran",
+        "Allah’s servant and messenger"
+      ],
+      "answer": 3,
+      "note": "This lesson follows the wording in the cited Ibn Masud report. The short Roman guide covers the opening only. Other authentic tashahhud wordings are also narrated, including Muslim 403a.",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    },
+    {
+      "id": "blessings",
+      "title": "Sending blessings",
+      "area": "Sitting",
+      "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+      "meaning": "O Allah, bestow prayers upon Muhammad and his family as You bestowed prayers upon Ibrahim and his family. You are Praiseworthy, Glorious. O Allah, bless Muhammad and his family as You blessed Ibrahim and his family. You are Praiseworthy, Glorious.",
+      "transliteration": "Allahumma salli ala Muhammadin wa ala ali Muhammad…",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3370",
+          "url": "https://sunnah.com/bukhari:3370",
+          "kind": "Hadith report"
+        }
+      ],
+      "question": "Which earlier prophet is named?",
+      "options": [
+        "Dawud",
+        "Yunus",
+        "Ibrahim",
+        "Musa"
+      ],
+      "answer": 2,
+      "note": "The Roman guide covers the opening only. Read the full Arabic wording and its source; other narrated forms also exist.",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    },
+    {
+      "id": "closing-salam",
+      "title": "The closing greeting",
+      "area": "Closing",
+      "arabic": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ",
+      "meaning": "Peace and Allah’s mercy be upon you.",
+      "transliteration": "As-salamu alaykum wa rahmatullah",
+      "sources": [
+        {
+          "label": "Sahih Muslim 431 · Arabic institutional edition",
+          "url": "https://sunna.alifta.gov.sa/BookToc/ViewMatnPage?bookId=2&mainId=12714",
+          "kind": "Hadith report",
+          "note": "Arabic text hosted by the Saudi General Presidency of Scholarly Research and Ifta."
+        }
+      ],
+      "question": "What does this greeting wish for its recipients?",
+      "options": [
+        "A safe harvest only",
+        "Peace and Allah’s mercy",
+        "A journey to a mountain",
+        "Wealth and status"
+      ],
+      "answer": 1,
+      "note": "",
+      "passage": null,
+      "audio": false,
+      "commentaryUrl": ""
+    }
+  ],
+  "audio": {
+    "title": "Al-Fatiha · full surah",
+    "creator": "Adeel Shaikh",
+    "file": "/audio/fatiha.mp3",
+    "source": "https://commons.wikimedia.org/wiki/File:Surah-Fathia.flac",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Wikimedia MP3 transcode of the creator’s own recording. Audio content unchanged; bundled locally. No endorsement or tajwid certification is implied."
+  },
+  "methodology": "Fifteen lessons cover seven Al-Fatiha ayahs and selected hadith-based recitations from opening to closing. Quran wording is canonical Arabic with Pickthall English. Non-Quran meanings are original concise renderings of the cited ancient Arabic, with approximate Roman reading aids where provided. This is a meaning lab, not a complete legal prayer manual. The licensed local Al-Fatiha recording plays the full surah; audio for the other recitations is not included."
+}

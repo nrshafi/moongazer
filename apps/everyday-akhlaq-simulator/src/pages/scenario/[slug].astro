@@ -1,0 +1,15 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import data from '../../data/content.json';
+export function getStaticPaths(){return data.scenarios.map(item=>({params:{slug:item.id},props:{item}}));}
+interface Props {item:typeof data.scenarios[number]}
+const {item}=Astro.props;
+---
+<Shell title={item.title}>
+  <a class="back-link" href="/">← All situations</a>
+  <section class="intro"><div class="intro-top"><span class="eyebrow">A moment to consider</span><span class="pill">{item.topic}</span></div><h1 class="editorial">{item.title}</h1><p>There is time to think. Choose a response and explore what could follow.</p></section>
+  <div class="workspace" id="scenario" data-scenario={item.id}><section class="panel"><div class="panel-head"><span class="label" id="step-label">The first decision</span><div class="step-dots" id="scenario-dots" aria-label="Two decisions"><span class="done"></span><span></span></div></div><div class="panel-body" id="scenario-stage" aria-live="polite"><p class="scene-text">{item.scene}</p><noscript><div class="noscript">Enable JavaScript to explore the branching choices. The cited Quran passage remains readable below.</div></noscript></div></section><aside class="sidebar sticky"><section class="panel panel-body"><span class="eyebrow">A little space to think</span><h2>No timer. No character score.</h2><p>Notice the people affected, what you know, and what you might need to ask before acting.</p><div class="divider"></div><label class="check"><input type="checkbox" id="remember"/>Remember this activity for up to 30 days</label><div class="divider"></div><button class="text-button" id="scenario-share">Copy scenario link</button><p class="micro top-gap"><button class="text-button" id="scenario-restart">Try a different response</button></p></section><section class="panel panel-body"><h2>The source alongside the story</h2><p>The activity refers to <a class="citation" href={item.passage.url} target="_blank" rel="noopener noreferrer">Quran {item.ref} ↗</a>. The scene and possible consequences are editorial applications, rather than a report about the verse's original setting.</p></section></aside></div>
+  <details class="panel panel-body top-gap"><summary>Read the cited Quran passage · {item.ref}</summary><p class="arabic" lang="ar" dir="rtl">{item.passage.arabic}</p><blockquote class="source-quote"><p>{item.passage.translation}</p><cite>Marmaduke Pickthall · Quran {item.ref}</cite></blockquote><a class="citation" href={item.commentaryUrl} target="_blank" rel="noopener noreferrer">Read Al-Tafsir al-Muyassar for this ayah ↗</a><p class="micro top-gap">Grounded with quran.ai: fetch_quran({item.ref}, ar-uthmani-hafs), fetch_translation({item.ref}, en-pickthall), fetch_tafsir({item.ref}, ar-muyassar).</p></details>
+</Shell>
+<script>import '../../lib/scenario';</script>
+<style>summary{cursor:pointer;font-size:.85rem;font-weight:600}</style>

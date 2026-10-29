@@ -1,0 +1,7 @@
+{
+  "slug": "islamic-history-timeline-challenge",
+  "name": "Islamic History Timeline Challenge",
+  "description": "Arrange sourced events and explore the sequence behind them.",
+  "accent": "violet",
+  "port": 4333
+}

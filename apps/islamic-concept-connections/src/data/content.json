@@ -1,0 +1,739 @@
+{
+  "groups": [
+    {
+      "id": "animal-titles",
+      "title": "Animals in these surah titles",
+      "terms": [
+        "The Cow",
+        "The Bee",
+        "The Ant",
+        "The Spider"
+      ],
+      "passages": [
+        {
+          "ref": "2:67",
+          "arabic": "وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِۦٓ إِنَّ ٱللَّهَ يَأْمُرُكُمْ أَن تَذْبَحُوا۟ بَقَرَةً ۖ قَالُوٓا۟ أَتَتَّخِذُنَا هُزُوًا ۖ قَالَ أَعُوذُ بِٱللَّهِ أَنْ أَكُونَ مِنَ ٱلْجَـٰهِلِينَ",
+          "translation": "And when Moses said unto his people: Lo! Allah commandeth you that ye sacrifice a cow, they said: Dost thou make game of us? He answered: Allah forbid that I should be among the foolish!",
+          "url": "https://quran.com/2:67",
+          "translationUrl": "https://quran.com/2:67?translations=19"
+        },
+        {
+          "ref": "16:68",
+          "arabic": "وَأَوْحَىٰ رَبُّكَ إِلَى ٱلنَّحْلِ أَنِ ٱتَّخِذِى مِنَ ٱلْجِبَالِ بُيُوتًا وَمِنَ ٱلشَّجَرِ وَمِمَّا يَعْرِشُونَ",
+          "translation": "And thy Lord inspired the bee, saying: Choose thou habitations in the hills and in the trees and in that which they thatch;",
+          "url": "https://quran.com/16:68",
+          "translationUrl": "https://quran.com/16:68?translations=19"
+        },
+        {
+          "ref": "27:18",
+          "arabic": "حَتَّىٰٓ إِذَآ أَتَوْا۟ عَلَىٰ وَادِ ٱلنَّمْلِ قَالَتْ نَمْلَةٌ يَـٰٓأَيُّهَا ٱلنَّمْلُ ٱدْخُلُوا۟ مَسَـٰكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَـٰنُ وَجُنُودُهُۥ وَهُمْ لَا يَشْعُرُونَ",
+          "translation": "Till, when they reached the Valley of the Ants, an ant exclaimed: O ants! Enter your dwellings lest Solomon and his armies crush you, unperceiving.",
+          "url": "https://quran.com/27:18",
+          "translationUrl": "https://quran.com/27:18?translations=19"
+        },
+        {
+          "ref": "29:41",
+          "arabic": "مَثَلُ ٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ أَوْلِيَآءَ كَمَثَلِ ٱلْعَنكَبُوتِ ٱتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ ٱلْبُيُوتِ لَبَيْتُ ٱلْعَنكَبُوتِ ۖ لَوْ كَانُوا۟ يَعْلَمُونَ",
+          "translation": "The likeness of those who choose other patrons than Allah is as the likeness of the spider when she taketh unto herself a house, and lo! the frailest of all houses is the spider's house, if they but knew.",
+          "url": "https://quran.com/29:41",
+          "translationUrl": "https://quran.com/29:41?translations=19"
+        }
+      ],
+      "note": "English labels for Al-Baqarah, An-Nahl, An-Naml, and Al-Ankabut. The cited passages also mention the animals."
+    },
+    {
+      "id": "metals",
+      "title": "Metals in the selected readings",
+      "terms": [
+        "Iron",
+        "Copper",
+        "Gold",
+        "Silver"
+      ],
+      "passages": [
+        {
+          "ref": "18:96",
+          "arabic": "ءَاتُونِى زُبَرَ ٱلْحَدِيدِ ۖ حَتَّىٰٓ إِذَا سَاوَىٰ بَيْنَ ٱلصَّدَفَيْنِ قَالَ ٱنفُخُوا۟ ۖ حَتَّىٰٓ إِذَا جَعَلَهُۥ نَارًا قَالَ ءَاتُونِىٓ أُفْرِغْ عَلَيْهِ قِطْرًا",
+          "translation": "Give me pieces of iron - till, when he had levelled up (the gap) between the cliffs, he said: Blow! - till, when he had made it a fire, he said: Bring me molten copper to pour thereon.",
+          "url": "https://quran.com/18:96",
+          "translationUrl": "https://quran.com/18:96?translations=19"
+        },
+        {
+          "ref": "9:34",
+          "arabic": "۞ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِنَّ كَثِيرًا مِّنَ ٱلْأَحْبَارِ وَٱلرُّهْبَانِ لَيَأْكُلُونَ أَمْوَٰلَ ٱلنَّاسِ بِٱلْبَـٰطِلِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ ۗ وَٱلَّذِينَ يَكْنِزُونَ ٱلذَّهَبَ وَٱلْفِضَّةَ وَلَا يُنفِقُونَهَا فِى سَبِيلِ ٱللَّهِ فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
+          "translation": "O ye who believe! Lo! many of the (Jewish) rabbis and the (Christian) monks devour the wealth of mankind wantonly and debar (men) from the way of Allah. They who hoard up gold and silver and spend it not in the way of Allah, unto them give tidings (O Muhammad) of a painful doom,",
+          "url": "https://quran.com/9:34",
+          "translationUrl": "https://quran.com/9:34?translations=19"
+        }
+      ],
+      "note": "18:96 names iron and molten copper; 9:34 names gold and silver."
+    },
+    {
+      "id": "day-night",
+      "title": "Images in 91:1–4",
+      "terms": [
+        "Sun",
+        "Moon",
+        "Day",
+        "Night"
+      ],
+      "passages": [
+        {
+          "ref": "91:1-4",
+          "arabic": "وَٱلشَّمْسِ وَضُحَىٰهَا\nوَٱلْقَمَرِ إِذَا تَلَىٰهَا\nوَٱلنَّهَارِ إِذَا جَلَّىٰهَا\nوَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
+          "translation": "By the sun and his brightness,\nAnd the moon when she followeth him,\nAnd the day when it revealeth him,\nAnd the night when it enshroudeth him,",
+          "url": "https://quran.com/91:1-4",
+          "translationUrl": "https://quran.com/91:1-4?translations=19"
+        }
+      ],
+      "note": "The opening oaths name the sun, moon, day, and night."
+    },
+    {
+      "id": "requested-crops",
+      "title": "Requested foods in 2:61",
+      "terms": [
+        "Cucumbers",
+        "Corn",
+        "Lentils",
+        "Onions"
+      ],
+      "passages": [
+        {
+          "ref": "2:61",
+          "arabic": "وَإِذْ قُلْتُمْ يَـٰمُوسَىٰ لَن نَّصْبِرَ عَلَىٰ طَعَامٍ وَٰحِدٍ فَٱدْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُنۢبِتُ ٱلْأَرْضُ مِنۢ بَقْلِهَا وَقِثَّآئِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا ۖ قَالَ أَتَسْتَبْدِلُونَ ٱلَّذِى هُوَ أَدْنَىٰ بِٱلَّذِى هُوَ خَيْرٌ ۚ ٱهْبِطُوا۟ مِصْرًا فَإِنَّ لَكُم مَّا سَأَلْتُمْ ۗ وَضُرِبَتْ عَلَيْهِمُ ٱلذِّلَّةُ وَٱلْمَسْكَنَةُ وَبَآءُو بِغَضَبٍ مِّنَ ٱللَّهِ ۗ ذَٰلِكَ بِأَنَّهُمْ كَانُوا۟ يَكْفُرُونَ بِـَٔايَـٰتِ ٱللَّهِ وَيَقْتُلُونَ ٱلنَّبِيِّـۧنَ بِغَيْرِ ٱلْحَقِّ ۗ ذَٰلِكَ بِمَا عَصَوا۟ وَّكَانُوا۟ يَعْتَدُونَ",
+          "translation": "And when ye said: O Moses! We are weary of one kind of food; so call upon thy Lord for us that He bring forth for us of that which the earth groweth - of its herbs and its cucumbers and its corn and its lentils and its onions. He said: Would ye exchange that which is higher for that which is lower? Go down to settled country, thus ye shall get that which ye demand. And humiliation and wretchedness were stamped upon them and they were visited with wrath from Allah. That was because they disbelieved in Allah's revelations and slew the prophets wrongfully. That was for their disobedience and transgression.",
+          "url": "https://quran.com/2:61",
+          "translationUrl": "https://quran.com/2:61?translations=19"
+        }
+      ],
+      "note": "These English labels follow the selected Pickthall wording. The group is a selection from the longer list."
+    },
+    {
+      "id": "prophets",
+      "title": "Named together in 6:84",
+      "terms": [
+        "Dawud",
+        "Sulayman",
+        "Ayyub",
+        "Yusuf"
+      ],
+      "passages": [
+        {
+          "ref": "6:84",
+          "arabic": "وَوَهَبْنَا لَهُۥٓ إِسْحَـٰقَ وَيَعْقُوبَ ۚ كُلًّا هَدَيْنَا ۚ وَنُوحًا هَدَيْنَا مِن قَبْلُ ۖ وَمِن ذُرِّيَّتِهِۦ دَاوُۥدَ وَسُلَيْمَـٰنَ وَأَيُّوبَ وَيُوسُفَ وَمُوسَىٰ وَهَـٰرُونَ ۚ وَكَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ",
+          "translation": "And We bestowed upon him Isaac and Jacob; each of them We guided; and Noah did We guide aforetime; and of his seed (We guided) David and Solomon and Job and Joseph and Moses and Aaron. Thus do We reward the good.",
+          "url": "https://quran.com/6:84",
+          "translationUrl": "https://quran.com/6:84?translations=19"
+        }
+      ],
+      "note": "Pickthall uses the names David, Solomon, Job, and Joseph. These are the corresponding familiar Arabic names."
+    },
+    {
+      "id": "storm",
+      "title": "Images in 2:19",
+      "terms": [
+        "Rain",
+        "Darkness",
+        "Thunder",
+        "Lightning"
+      ],
+      "passages": [
+        {
+          "ref": "2:19",
+          "arabic": "أَوْ كَصَيِّبٍ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَـٰتٌ وَرَعْدٌ وَبَرْقٌ يَجْعَلُونَ أَصَـٰبِعَهُمْ فِىٓ ءَاذَانِهِم مِّنَ ٱلصَّوَٰعِقِ حَذَرَ ٱلْمَوْتِ ۚ وَٱللَّهُ مُحِيطٌۢ بِٱلْكَـٰفِرِينَ",
+          "translation": "Or like a rainstorm from the sky, wherein is darkness, thunder and the flash of lightning. They thrust their fingers in their ears by reason of the thunder-claps, for fear of death, Allah encompasseth the disbelievers (in His guidance, His omniscience and His omnipotence).",
+          "url": "https://quran.com/2:19",
+          "translationUrl": "https://quran.com/2:19?translations=19"
+        }
+      ],
+      "note": "All four occur in the rainstorm comparison. The category concerns the named imagery, not a weather forecast."
+    },
+    {
+      "id": "colors",
+      "title": "Colors in the selected readings",
+      "terms": [
+        "White",
+        "Red",
+        "Black",
+        "Green"
+      ],
+      "passages": [
+        {
+          "ref": "35:27",
+          "arabic": "أَلَمْ تَرَ أَنَّ ٱللَّهَ أَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجْنَا بِهِۦ ثَمَرَٰتٍ مُّخْتَلِفًا أَلْوَٰنُهَا ۚ وَمِنَ ٱلْجِبَالِ جُدَدٌۢ بِيضٌ وَحُمْرٌ مُّخْتَلِفٌ أَلْوَٰنُهَا وَغَرَابِيبُ سُودٌ",
+          "translation": "Hast thou not seen that Allah causeth water to fall from the sky, and We produce therewith fruit of divers hues; and among the hills are streaks white and red, of divers hues, and (others) raven-black;",
+          "url": "https://quran.com/35:27",
+          "translationUrl": "https://quran.com/35:27?translations=19"
+        },
+        {
+          "ref": "18:31",
+          "arabic": "أُو۟لَـٰٓئِكَ لَهُمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهِمُ ٱلْأَنْهَـٰرُ يُحَلَّوْنَ فِيهَا مِنْ أَسَاوِرَ مِن ذَهَبٍ وَيَلْبَسُونَ ثِيَابًا خُضْرًا مِّن سُندُسٍ وَإِسْتَبْرَقٍ مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ۚ نِعْمَ ٱلثَّوَابُ وَحَسُنَتْ مُرْتَفَقًا",
+          "translation": "As for such, theirs will be Gardens of Eden, wherein rivers flow beneath them; therein they will be given armlets of gold and will wear green robes of finest silk and gold embroidery, reclining upon throne therein. Blest the reward, and fair the resting-place!",
+          "url": "https://quran.com/18:31",
+          "translationUrl": "https://quran.com/18:31?translations=19"
+        }
+      ],
+      "note": "35:27 names white, red, and black mountain streaks; 18:31 mentions green garments."
+    },
+    {
+      "id": "neighbors",
+      "title": "People named in 4:36",
+      "terms": [
+        "Parents",
+        "Kinsfolk",
+        "Orphans",
+        "The needy"
+      ],
+      "passages": [
+        {
+          "ref": "4:36",
+          "arabic": "۞ وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًٔا ۖ وَبِٱلْوَٰلِدَيْنِ إِحْسَـٰنًا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَـٰمَىٰ وَٱلْمَسَـٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَـٰنُكُمْ ۗ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًا فَخُورًا",
+          "translation": "And serve Allah. Ascribe no thing as partner unto Him. (Show) kindness unto parents, and unto near kindred, and orphans, and the needy, and unto the neighbour who is of kin (unto you) and the neighbour who is not of kin, and the fellow-traveller and the wayfarer and (the slaves) whom your right hands possess. Lo! Allah loveth not such as are proud and boastful,",
+          "url": "https://quran.com/4:36",
+          "translationUrl": "https://quran.com/4:36?translations=19"
+        }
+      ],
+      "note": "These four are part of the passage’s longer list of people to whom kindness is directed."
+    },
+    {
+      "id": "qul",
+      "title": "Selected surahs opening with Qul",
+      "terms": [
+        "Al-Kafirun",
+        "Al-Ikhlas",
+        "Al-Falaq",
+        "An-Nas"
+      ],
+      "passages": [
+        {
+          "ref": "109:1",
+          "arabic": "قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+          "translation": "Say: O disbelievers!",
+          "url": "https://quran.com/109:1",
+          "translationUrl": "https://quran.com/109:1?translations=19"
+        },
+        {
+          "ref": "112:1",
+          "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+          "translation": "Say: He is Allah, the One!",
+          "url": "https://quran.com/112:1",
+          "translationUrl": "https://quran.com/112:1?translations=19"
+        },
+        {
+          "ref": "113:1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+          "translation": "Say: I seek refuge in the Lord of the Daybreak",
+          "url": "https://quran.com/113:1",
+          "translationUrl": "https://quran.com/113:1?translations=19"
+        },
+        {
+          "ref": "114:1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+          "translation": "Say: I seek refuge in the Lord of mankind,",
+          "url": "https://quran.com/114:1",
+          "translationUrl": "https://quran.com/114:1?translations=19"
+        }
+      ],
+      "note": "These four selected chapters begin with Qul, rendered “Say” in English. This is not a claim that they are the only chapters that do so."
+    },
+    {
+      "id": "worship",
+      "title": "Acts in the selected worship readings",
+      "terms": [
+        "Salah",
+        "Zakat",
+        "Fasting",
+        "Hajj"
+      ],
+      "passages": [
+        {
+          "ref": "2:43",
+          "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ",
+          "translation": "Establish worship, pay the poor-due, and bow your heads with those who bow (in worship).",
+          "url": "https://quran.com/2:43",
+          "translationUrl": "https://quran.com/2:43?translations=19"
+        },
+        {
+          "ref": "2:183",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ كَمَا كُتِبَ عَلَى ٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+          "translation": "O ye who believe! Fasting is prescribed for you, even as it was prescribed for those before you, that ye may ward off (evil);",
+          "url": "https://quran.com/2:183",
+          "translationUrl": "https://quran.com/2:183?translations=19"
+        },
+        {
+          "ref": "2:196",
+          "arabic": "وَأَتِمُّوا۟ ٱلْحَجَّ وَٱلْعُمْرَةَ لِلَّهِ ۚ فَإِنْ أُحْصِرْتُمْ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ ۖ وَلَا تَحْلِقُوا۟ رُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱلْهَدْىُ مَحِلَّهُۥ ۚ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ بِهِۦٓ أَذًى مِّن رَّأْسِهِۦ فَفِدْيَةٌ مِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ ۚ فَإِذَآ أَمِنتُمْ فَمَن تَمَتَّعَ بِٱلْعُمْرَةِ إِلَى ٱلْحَجِّ فَمَا ٱسْتَيْسَرَ مِنَ ٱلْهَدْىِ ۚ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَـٰثَةِ أَيَّامٍ فِى ٱلْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ ۗ تِلْكَ عَشَرَةٌ كَامِلَةٌ ۗ ذَٰلِكَ لِمَن لَّمْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱلْمَسْجِدِ ٱلْحَرَامِ ۚ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ",
+          "translation": "Perform the pilgrimage and the visit (to Makka) for Allah. And if ye are prevented, then send such gifts as can be obtained with ease, and shave not your heads until the gifts have reached their destination. And whoever among you is sick or hath an ailment of the head must pay a ransom of fasting or almsgiving or offering. And if ye are in safety, then whosoever contenteth himself with the visit for the pilgrimage (shall give) such gifts as can be had with ease. And whosoever cannot find (such gifts), then a fast of three days while on the pilgrimage, and of seven when ye have returned; that is, ten in all. That is for him whoso folk are not present at the Inviolable Place of Worship. Observe your duty to Allah, and know that Allah is severe in punishment.",
+          "url": "https://quran.com/2:196",
+          "translationUrl": "https://quran.com/2:196?translations=19"
+        }
+      ],
+      "note": "These labels correspond to worship/prayer, giving the due, fasting, and pilgrimage in the cited texts. This grouping is not a full legal definition."
+    },
+    {
+      "id": "fruit",
+      "title": "Fruits in 6:99",
+      "terms": [
+        "Dates",
+        "Grapes",
+        "Olives",
+        "Pomegranates"
+      ],
+      "passages": [
+        {
+          "ref": "6:99",
+          "arabic": "وَهُوَ ٱلَّذِىٓ أَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجْنَا بِهِۦ نَبَاتَ كُلِّ شَىْءٍ فَأَخْرَجْنَا مِنْهُ خَضِرًا نُّخْرِجُ مِنْهُ حَبًّا مُّتَرَاكِبًا وَمِنَ ٱلنَّخْلِ مِن طَلْعِهَا قِنْوَانٌ دَانِيَةٌ وَجَنَّـٰتٍ مِّنْ أَعْنَابٍ وَٱلزَّيْتُونَ وَٱلرُّمَّانَ مُشْتَبِهًا وَغَيْرَ مُتَشَـٰبِهٍ ۗ ٱنظُرُوٓا۟ إِلَىٰ ثَمَرِهِۦٓ إِذَآ أَثْمَرَ وَيَنْعِهِۦٓ ۚ إِنَّ فِى ذَٰلِكُمْ لَـَٔايَـٰتٍ لِّقَوْمٍ يُؤْمِنُونَ",
+          "translation": "He it is Who sendeth down water from the sky, and therewith We bring forth buds of every kind; We bring forth the green blade from which We bring forth the thick-clustered grain; and from the date-palm, from the pollen thereof, spring pendant bunches; and (We bring forth) gardens of grapes, and the olive and the pomegranate, alike and unlike. Look upon the fruit thereof, when they bear fruit, and upon its ripening. Lo! herein verily are portents for a people who believe.",
+          "url": "https://quran.com/6:99",
+          "translationUrl": "https://quran.com/6:99?translations=19"
+        }
+      ],
+      "note": "The passage names date palms, grapes, olives, and pomegranates. “Dates” is the fruit label used for the palm entry."
+    },
+    {
+      "id": "body",
+      "title": "Body parts in these readings",
+      "terms": [
+        "Eyes",
+        "Tongue",
+        "Lips",
+        "Hands"
+      ],
+      "passages": [
+        {
+          "ref": "90:8-9",
+          "arabic": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ\nوَلِسَانًا وَشَفَتَيْنِ",
+          "translation": "Did We not assign unto him two eyes\nAnd a tongue and two lips,",
+          "url": "https://quran.com/90:8-9",
+          "translationUrl": "https://quran.com/90:8-9?translations=19"
+        },
+        {
+          "ref": "24:24",
+          "arabic": "يَوْمَ تَشْهَدُ عَلَيْهِمْ أَلْسِنَتُهُمْ وَأَيْدِيهِمْ وَأَرْجُلُهُم بِمَا كَانُوا۟ يَعْمَلُونَ",
+          "translation": "On the day when their tongues and their hands and their feet testify against them as to what they used to do,",
+          "url": "https://quran.com/24:24",
+          "translationUrl": "https://quran.com/24:24?translations=19"
+        }
+      ],
+      "note": "90:8–9 names eyes, tongue, and lips. 24:24 names hands alongside other body parts."
+    },
+    {
+      "id": "angels",
+      "title": "Names in the selected angel readings",
+      "terms": [
+        "Jibril",
+        "Mikail",
+        "Harut",
+        "Marut"
+      ],
+      "passages": [
+        {
+          "ref": "2:97-98",
+          "arabic": "قُلْ مَن كَانَ عَدُوًّا لِّجِبْرِيلَ فَإِنَّهُۥ نَزَّلَهُۥ عَلَىٰ قَلْبِكَ بِإِذْنِ ٱللَّهِ مُصَدِّقًا لِّمَا بَيْنَ يَدَيْهِ وَهُدًى وَبُشْرَىٰ لِلْمُؤْمِنِينَ\nمَن كَانَ عَدُوًّا لِّلَّهِ وَمَلَـٰٓئِكَتِهِۦ وَرُسُلِهِۦ وَجِبْرِيلَ وَمِيكَىٰلَ فَإِنَّ ٱللَّهَ عَدُوٌّ لِّلْكَـٰفِرِينَ",
+          "translation": "Say (O Muhammad, to mankind): Who is an enemy to Gabriel! For he it is who hath revealed (this Scripture) to thy heart by Allah's leave, confirming that which was (revealed) before it, and a guidance and glad tidings to believers;\nWho is an enemy to Allah, and His angels and His messengers, and Gabriel and Michael! Then, lo! Allah (Himself) is an enemy to the disbelievers.",
+          "url": "https://quran.com/2:97-98",
+          "translationUrl": "https://quran.com/2:97-98?translations=19"
+        },
+        {
+          "ref": "2:102",
+          "arabic": "وَٱتَّبَعُوا۟ مَا تَتْلُوا۟ ٱلشَّيَـٰطِينُ عَلَىٰ مُلْكِ سُلَيْمَـٰنَ ۖ وَمَا كَفَرَ سُلَيْمَـٰنُ وَلَـٰكِنَّ ٱلشَّيَـٰطِينَ كَفَرُوا۟ يُعَلِّمُونَ ٱلنَّاسَ ٱلسِّحْرَ وَمَآ أُنزِلَ عَلَى ٱلْمَلَكَيْنِ بِبَابِلَ هَـٰرُوتَ وَمَـٰرُوتَ ۚ وَمَا يُعَلِّمَانِ مِنْ أَحَدٍ حَتَّىٰ يَقُولَآ إِنَّمَا نَحْنُ فِتْنَةٌ فَلَا تَكْفُرْ ۖ فَيَتَعَلَّمُونَ مِنْهُمَا مَا يُفَرِّقُونَ بِهِۦ بَيْنَ ٱلْمَرْءِ وَزَوْجِهِۦ ۚ وَمَا هُم بِضَآرِّينَ بِهِۦ مِنْ أَحَدٍ إِلَّا بِإِذْنِ ٱللَّهِ ۚ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمْ وَلَا يَنفَعُهُمْ ۚ وَلَقَدْ عَلِمُوا۟ لَمَنِ ٱشْتَرَىٰهُ مَا لَهُۥ فِى ٱلْـَٔاخِرَةِ مِنْ خَلَـٰقٍ ۚ وَلَبِئْسَ مَا شَرَوْا۟ بِهِۦٓ أَنفُسَهُمْ ۚ لَوْ كَانُوا۟ يَعْلَمُونَ",
+          "translation": "And follow that which the devils falsely related against the kingdom of Solomon. Solomon disbelieved not; but the devils disbelieved, teaching mankind magic and that which was revealed to the two angels in Babel, Harut and Marut. Nor did they (the two angels) teach it to anyone till they had said: We are only a temptation, therefore disbelieve not (in the guidance of Allah). And from these two (angles) people learn that by which they cause division between man and wife; but they injure thereby no-one save by Allah's leave. And they learn that which harmeth them and profiteth them not. And surely they do know that he who trafficketh therein will have no (happy) portion in the Hereafter; and surely evil is the price for which they sell their souls, if they but knew.",
+          "url": "https://quran.com/2:102",
+          "translationUrl": "https://quran.com/2:102?translations=19"
+        }
+      ],
+      "note": "These names occur in the cited passages, using the familiar Arabic forms rather than Pickthall’s Gabriel and Michael."
+    },
+    {
+      "id": "divine-names",
+      "title": "Names in the selected 59:23 wording",
+      "terms": [
+        "The Sovereign Lord",
+        "The Holy One",
+        "Peace",
+        "The Guardian"
+      ],
+      "passages": [
+        {
+          "ref": "59:23",
+          "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَـٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+          "translation": "He is Allah, than Whom there is no other Allah, the Sovereign Lord, the Holy One, Peace, the Keeper of Faith, the Guardian, the Majestic, the Compeller, the Superb. Glorified be Allah from all that they ascribe as partner (unto Him).",
+          "url": "https://quran.com/59:23",
+          "translationUrl": "https://quran.com/59:23?translations=19"
+        }
+      ],
+      "note": "These labels follow names in Pickthall’s rendering of this ayah. They are a selection, not an exhaustive list."
+    },
+    {
+      "id": "textiles",
+      "title": "Materials named in 16:80",
+      "terms": [
+        "Hides",
+        "Wool",
+        "Fur",
+        "Hair"
+      ],
+      "passages": [
+        {
+          "ref": "16:80",
+          "arabic": "وَٱللَّهُ جَعَلَ لَكُم مِّنۢ بُيُوتِكُمْ سَكَنًا وَجَعَلَ لَكُم مِّن جُلُودِ ٱلْأَنْعَـٰمِ بُيُوتًا تَسْتَخِفُّونَهَا يَوْمَ ظَعْنِكُمْ وَيَوْمَ إِقَامَتِكُمْ ۙ وَمِنْ أَصْوَافِهَا وَأَوْبَارِهَا وَأَشْعَارِهَآ أَثَـٰثًا وَمَتَـٰعًا إِلَىٰ حِينٍ",
+          "translation": "And Allah hath given you in your houses an abode, and hath given you (also), of the hides of cattle, houses which ye find light (to carry) on the day of migration and on the day of pitching camp; and of their wool and their fur and their hair, caparison and comfort for a while.",
+          "url": "https://quran.com/16:80",
+          "translationUrl": "https://quran.com/16:80?translations=19"
+        }
+      ],
+      "note": "The passage describes shelter and furnishings, mentioning hides and the wool, fur, and hair of animals."
+    },
+    {
+      "id": "times",
+      "title": "Surah titles associated with time",
+      "terms": [
+        "Al-Fajr",
+        "Ad-Duha",
+        "Al-Layl",
+        "Al-Asr"
+      ],
+      "passages": [
+        {
+          "ref": "89:1",
+          "arabic": "وَٱلْفَجْرِ",
+          "translation": "By the Dawn",
+          "url": "https://quran.com/89:1",
+          "translationUrl": "https://quran.com/89:1?translations=19"
+        },
+        {
+          "ref": "93:1",
+          "arabic": "وَٱلضُّحَىٰ",
+          "translation": "By the morning hours",
+          "url": "https://quran.com/93:1",
+          "translationUrl": "https://quran.com/93:1?translations=19"
+        },
+        {
+          "ref": "92:1",
+          "arabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰ",
+          "translation": "By the night enshrouding",
+          "url": "https://quran.com/92:1",
+          "translationUrl": "https://quran.com/92:1?translations=19"
+        },
+        {
+          "ref": "103:1",
+          "arabic": "وَٱلْعَصْرِ",
+          "translation": "By the declining day,",
+          "url": "https://quran.com/103:1",
+          "translationUrl": "https://quran.com/103:1?translations=19"
+        }
+      ],
+      "note": "The opening readings concern dawn, morning brightness, night, and time. The labels are chapter titles."
+    },
+    {
+      "id": "scriptures",
+      "title": "Names of revealed scriptures",
+      "terms": [
+        "Tawrat",
+        "Injil",
+        "Zabur",
+        "Quran"
+      ],
+      "passages": [
+        {
+          "ref": "3:3",
+          "arabic": "نَزَّلَ عَلَيْكَ ٱلْكِتَـٰبَ بِٱلْحَقِّ مُصَدِّقًا لِّمَا بَيْنَ يَدَيْهِ وَأَنزَلَ ٱلتَّوْرَىٰةَ وَٱلْإِنجِيلَ",
+          "translation": "He hath revealed unto thee (Muhammad) the Scripture with truth, confirming that which was (revealed) before it, even as He revealed the Torah and the Gospel.",
+          "url": "https://quran.com/3:3",
+          "translationUrl": "https://quran.com/3:3?translations=19"
+        },
+        {
+          "ref": "4:163",
+          "arabic": "۞ إِنَّآ أَوْحَيْنَآ إِلَيْكَ كَمَآ أَوْحَيْنَآ إِلَىٰ نُوحٍ وَٱلنَّبِيِّـۧنَ مِنۢ بَعْدِهِۦ ۚ وَأَوْحَيْنَآ إِلَىٰٓ إِبْرَٰهِيمَ وَإِسْمَـٰعِيلَ وَإِسْحَـٰقَ وَيَعْقُوبَ وَٱلْأَسْبَاطِ وَعِيسَىٰ وَأَيُّوبَ وَيُونُسَ وَهَـٰرُونَ وَسُلَيْمَـٰنَ ۚ وَءَاتَيْنَا دَاوُۥدَ زَبُورًا",
+          "translation": "Lo! We inspire thee as We inspired Noah and the prophets after him, as We inspired Abraham and Ishmael and Isaac and Jacob and the tribes, and Jesus and Job and Jonah and Aaron and Solomon, and as We imparted unto David the Psalms;",
+          "url": "https://quran.com/4:163",
+          "translationUrl": "https://quran.com/4:163?translations=19"
+        },
+        {
+          "ref": "17:9",
+          "arabic": "إِنَّ هَـٰذَا ٱلْقُرْءَانَ يَهْدِى لِلَّتِى هِىَ أَقْوَمُ وَيُبَشِّرُ ٱلْمُؤْمِنِينَ ٱلَّذِينَ يَعْمَلُونَ ٱلصَّـٰلِحَـٰتِ أَنَّ لَهُمْ أَجْرًا كَبِيرًا",
+          "translation": "Lo! this Qur'an guideth unto that which is straightest, and giveth tidings unto the believers who do good works that theirs will be a great reward.",
+          "url": "https://quran.com/17:9",
+          "translationUrl": "https://quran.com/17:9?translations=19"
+        }
+      ],
+      "note": "The source passages mention the Torah, Gospel, Psalms, and Quran. This is a naming exercise, not a discussion of textual history."
+    },
+    {
+      "id": "animals",
+      "title": "Animals in 16:5–8",
+      "terms": [
+        "Cattle",
+        "Horses",
+        "Mules",
+        "Donkeys"
+      ],
+      "passages": [
+        {
+          "ref": "16:5-8",
+          "arabic": "وَٱلْأَنْعَـٰمَ خَلَقَهَا ۗ لَكُمْ فِيهَا دِفْءٌ وَمَنَـٰفِعُ وَمِنْهَا تَأْكُلُونَ\nوَلَكُمْ فِيهَا جَمَالٌ حِينَ تُرِيحُونَ وَحِينَ تَسْرَحُونَ\nوَتَحْمِلُ أَثْقَالَكُمْ إِلَىٰ بَلَدٍ لَّمْ تَكُونُوا۟ بَـٰلِغِيهِ إِلَّا بِشِقِّ ٱلْأَنفُسِ ۚ إِنَّ رَبَّكُمْ لَرَءُوفٌ رَّحِيمٌ\nوَٱلْخَيْلَ وَٱلْبِغَالَ وَٱلْحَمِيرَ لِتَرْكَبُوهَا وَزِينَةً ۚ وَيَخْلُقُ مَا لَا تَعْلَمُونَ",
+          "translation": "And the cattle hath He created, whence ye have warm clothing and uses, and whereof ye eat;\nAnd wherein is beauty for you, when ye bring them home, and when ye take them out to pasture.\nAnd they bear your loads for you unto a land ye could not reach save with great trouble to yourselves. Lo! your Lord is Full of Pity, Merciful.\nAnd horses and mules and asses (hath He created) that ye may ride them, and for ornament. And He createth that which ye know not.",
+          "url": "https://quran.com/16:5-8",
+          "translationUrl": "https://quran.com/16:5-8?translations=19"
+        }
+      ],
+      "note": "The selected passage names cattle, horses, mules, and asses. “Donkeys” is the tile label for asses."
+    },
+    {
+      "id": "qualities",
+      "title": "Four elements in 103:3",
+      "terms": [
+        "Belief",
+        "Good works",
+        "Truth",
+        "Endurance"
+      ],
+      "passages": [
+        {
+          "ref": "103:3",
+          "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+          "translation": "Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance.",
+          "url": "https://quran.com/103:3",
+          "translationUrl": "https://quran.com/103:3?translations=19"
+        }
+      ],
+      "note": "The ayah names belief and good works, and mutual exhortation to truth and endurance."
+    },
+    {
+      "id": "places",
+      "title": "Place names in these readings",
+      "terms": [
+        "Makkah",
+        "Madinah",
+        "Egypt",
+        "Midian"
+      ],
+      "passages": [
+        {
+          "ref": "48:24",
+          "arabic": "وَهُوَ ٱلَّذِى كَفَّ أَيْدِيَهُمْ عَنكُمْ وَأَيْدِيَكُمْ عَنْهُم بِبَطْنِ مَكَّةَ مِنۢ بَعْدِ أَنْ أَظْفَرَكُمْ عَلَيْهِمْ ۚ وَكَانَ ٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرًا",
+          "translation": "And He it is Who hath withheld men's hands from you, and hath withheld your hands from them, in the valley of Mecca, after He had made you victors over them. Allah is Seer of what ye do.",
+          "url": "https://quran.com/48:24",
+          "translationUrl": "https://quran.com/48:24?translations=19"
+        },
+        {
+          "ref": "9:101",
+          "arabic": "وَمِمَّنْ حَوْلَكُم مِّنَ ٱلْأَعْرَابِ مُنَـٰفِقُونَ ۖ وَمِنْ أَهْلِ ٱلْمَدِينَةِ ۖ مَرَدُوا۟ عَلَى ٱلنِّفَاقِ لَا تَعْلَمُهُمْ ۖ نَحْنُ نَعْلَمُهُمْ ۚ سَنُعَذِّبُهُم مَّرَّتَيْنِ ثُمَّ يُرَدُّونَ إِلَىٰ عَذَابٍ عَظِيمٍ",
+          "translation": "And among those around you of the wandering Arabs there are hypocrites, and among the townspeople of Al-Madinah (there are some who) persist in hypocrisy whom thou (O Muhammad) knowest not. We, We know them, and We shall chastise them twice; then they will be relegated to a painful doom.",
+          "url": "https://quran.com/9:101",
+          "translationUrl": "https://quran.com/9:101?translations=19"
+        },
+        {
+          "ref": "12:99",
+          "arabic": "فَلَمَّا دَخَلُوا۟ عَلَىٰ يُوسُفَ ءَاوَىٰٓ إِلَيْهِ أَبَوَيْهِ وَقَالَ ٱدْخُلُوا۟ مِصْرَ إِن شَآءَ ٱللَّهُ ءَامِنِينَ",
+          "translation": "And when they came in before Joseph, he took his parents unto him, and said: Come into Egypt safe, if Allah will!",
+          "url": "https://quran.com/12:99",
+          "translationUrl": "https://quran.com/12:99?translations=19"
+        },
+        {
+          "ref": "28:22",
+          "arabic": "وَلَمَّا تَوَجَّهَ تِلْقَآءَ مَدْيَنَ قَالَ عَسَىٰ رَبِّىٓ أَن يَهْدِيَنِى سَوَآءَ ٱلسَّبِيلِ",
+          "translation": "And when he turned his face toward Midian, he said: Peradventure my Lord will guide me in the right road.",
+          "url": "https://quran.com/28:22",
+          "translationUrl": "https://quran.com/28:22?translations=19"
+        }
+      ],
+      "note": "These are places named in the selected texts. They are not all cities and the group does not assign ancient coordinates."
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "board-01",
+      "number": 1,
+      "title": "First connections",
+      "level": "Starter",
+      "groups": [
+        "animal-titles",
+        "metals",
+        "day-night",
+        "requested-crops"
+      ]
+    },
+    {
+      "id": "board-02",
+      "number": 2,
+      "title": "A closer look",
+      "level": "Starter",
+      "groups": [
+        "prophets",
+        "storm",
+        "colors",
+        "neighbors"
+      ]
+    },
+    {
+      "id": "board-03",
+      "number": 3,
+      "title": "Words and readings",
+      "level": "Starter",
+      "groups": [
+        "qul",
+        "worship",
+        "fruit",
+        "body"
+      ]
+    },
+    {
+      "id": "board-04",
+      "number": 4,
+      "title": "Across the passages",
+      "level": "Starter",
+      "groups": [
+        "angels",
+        "divine-names",
+        "textiles",
+        "times"
+      ]
+    },
+    {
+      "id": "board-05",
+      "number": 5,
+      "title": "First connections",
+      "level": "Mixed",
+      "groups": [
+        "times",
+        "scriptures",
+        "animals",
+        "qualities"
+      ]
+    },
+    {
+      "id": "board-06",
+      "number": 6,
+      "title": "A closer look",
+      "level": "Mixed",
+      "groups": [
+        "places",
+        "metals",
+        "requested-crops",
+        "worship"
+      ]
+    },
+    {
+      "id": "board-07",
+      "number": 7,
+      "title": "Words and readings",
+      "level": "Mixed",
+      "groups": [
+        "prophets",
+        "fruit",
+        "divine-names",
+        "times"
+      ]
+    },
+    {
+      "id": "board-08",
+      "number": 8,
+      "title": "Across the passages",
+      "level": "Mixed",
+      "groups": [
+        "animal-titles",
+        "storm",
+        "textiles",
+        "qualities"
+      ]
+    },
+    {
+      "id": "board-09",
+      "number": 9,
+      "title": "First connections",
+      "level": "Mixed",
+      "groups": [
+        "colors",
+        "qul",
+        "scriptures",
+        "places"
+      ]
+    },
+    {
+      "id": "board-10",
+      "number": 10,
+      "title": "A closer look",
+      "level": "Mixed",
+      "groups": [
+        "day-night",
+        "neighbors",
+        "angels",
+        "animals"
+      ]
+    },
+    {
+      "id": "board-11",
+      "number": 11,
+      "title": "Words and readings",
+      "level": "Mixed",
+      "groups": [
+        "requested-crops",
+        "body",
+        "times",
+        "qualities"
+      ]
+    },
+    {
+      "id": "board-12",
+      "number": 12,
+      "title": "Across the passages",
+      "level": "Mixed",
+      "groups": [
+        "metals",
+        "prophets",
+        "qul",
+        "textiles"
+      ]
+    },
+    {
+      "id": "board-13",
+      "number": 13,
+      "title": "First connections",
+      "level": "Mixed",
+      "groups": [
+        "storm",
+        "worship",
+        "divine-names",
+        "places"
+      ]
+    },
+    {
+      "id": "board-14",
+      "number": 14,
+      "title": "A closer look",
+      "level": "Mixed",
+      "groups": [
+        "animal-titles",
+        "colors",
+        "angels",
+        "scriptures"
+      ]
+    },
+    {
+      "id": "board-15",
+      "number": 15,
+      "title": "Words and readings",
+      "level": "Mixed",
+      "groups": [
+        "day-night",
+        "fruit",
+        "textiles",
+        "places"
+      ]
+    },
+    {
+      "id": "board-16",
+      "number": 16,
+      "title": "Across the passages",
+      "level": "Mixed",
+      "groups": [
+        "neighbors",
+        "body",
+        "scriptures",
+        "qualities"
+      ]
+    }
+  ],
+  "methodology": "Sixteen editorial puzzles ask for four intended groups of four terms. Group explanations cite canonical readings and distinguish familiar Arabic names from Pickthall’s historical English forms. Categories are selected learning groupings, not exclusive definitions. Unlike Quran Connections, this app groups term tiles rather than identifying one theme across passages. Scores are informal and all answers are inspectable in client code."
+}

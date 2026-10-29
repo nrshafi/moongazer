@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+interface Props { title: string; description?: string; active?: string; }
+const { title, description = '', active = 'activity' } = Astro.props;
+import config from '../data/config.json';
+---
+<!doctype html>
+<html lang="en" data-accent={config.accent}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description || config.description} />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#087f75" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title === config.name ? title : `${title} · ${config.name}`}</title>
+    <script is:inline define:vars={{ namespace: config.slug }}>
+      try { const raw = JSON.parse(localStorage.getItem(namespace + ':theme') || 'null'); const valid = raw && typeof raw.at === 'number' && Number.isFinite(raw.at) && raw.at <= Date.now() + 60000 && Date.now() - raw.at < 2592000000 && ['light','dark'].includes(raw.value); document.documentElement.dataset.theme = valid ? raw.value : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; } catch { document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    </script>
+  </head>
+  <body data-app={config.slug}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label={`${config.name} home`}>
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="m16 3 4 8 9 5-9 5-4 8-4-8-9-5 9-5Z" stroke="currentColor" stroke-width="1.6"/><path d="m16 10 6 6-6 6-6-6Z" fill="currentColor"/></svg></span>
+          <span>{config.name}<small>Islamic learning, explored.</small></span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="/" aria-current={active === 'activity' ? 'page' : undefined}>Explore</a>
+          <a href="/sources/" aria-current={active === 'sources' ? 'page' : undefined}>Sources</a>
+          <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"><slot /></main>
+    <footer class="site-footer">
+      <div><a class="footer-name" href="/">{config.name}</a><p>Explore at your own pace. Your activity stays in this browser.</p></div>
+      <div class="footer-links"><a href="/sources/">Sources & methodology</a><a href="/privacy/">Privacy & storage</a><button type="button" class="text-button" id="storage-open">Manage saved data</button></div>
+    </footer>
+    <dialog id="storage-dialog" aria-labelledby="storage-title">
+      <form method="dialog"><button class="dialog-close icon-button" aria-label="Close storage settings">×</button></form>
+      <span class="eyebrow">On this device</span><h2 id="storage-title">Your saved data</h2>
+      <p>Theme preferences and any progress you choose to remember stay in this browser. Saved items are ignored after 30 days. Browser storage has no automatic expiry while the site is closed.</p>
+      <p>Clearing saved data also resets the current activity. Other apps and websites are unaffected.</p>
+      <button type="button" class="button danger" id="storage-clear">Clear this app's saved data</button>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script>import '../lib/shell';</script>
+  </body>
+</html>

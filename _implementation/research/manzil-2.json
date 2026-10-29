@@ -1,0 +1,86 @@
+{
+  "query_type": "manzil",
+  "surah": [
+    {
+      "number": 5,
+      "name_arabic": "المائدة",
+      "name_simple": "Al-Ma'idah",
+      "revelation_place": "madinah",
+      "revelation_order": 112,
+      "verses_count": 120,
+      "bismillah_pre": true
+    },
+    {
+      "number": 6,
+      "name_arabic": "الأنعام",
+      "name_simple": "Al-An'am",
+      "revelation_place": "makkah",
+      "revelation_order": 55,
+      "verses_count": 165,
+      "bismillah_pre": true
+    },
+    {
+      "number": 7,
+      "name_arabic": "الأعراف",
+      "name_simple": "Al-A'raf",
+      "revelation_place": "makkah",
+      "revelation_order": 39,
+      "verses_count": 206,
+      "bismillah_pre": true
+    },
+    {
+      "number": 8,
+      "name_arabic": "الأنفال",
+      "name_simple": "Al-Anfal",
+      "revelation_place": "madinah",
+      "revelation_order": 88,
+      "verses_count": 75,
+      "bismillah_pre": true
+    },
+    {
+      "number": 9,
+      "name_arabic": "التوبة",
+      "name_simple": "At-Tawbah",
+      "revelation_place": "madinah",
+      "revelation_order": 113,
+      "verses_count": 129,
+      "bismillah_pre": false
+    }
+  ],
+  "ayah": {
+    "start_verse_key": "5:1",
+    "end_verse_key": "9:129",
+    "count": 695
+  },
+  "juz": {
+    "start": 6,
+    "end": 11
+  },
+  "hizb": {
+    "start": 11,
+    "end": 21
+  },
+  "rub_el_hizb": {
+    "start": 43,
+    "end": 83
+  },
+  "page": {
+    "start": 106,
+    "end": 207
+  },
+  "ruku": {
+    "start": 86,
+    "end": 171
+  },
+  "manzil": {
+    "start": 2,
+    "end": 2
+  },
+  "sajdah": [
+    {
+      "verse_key": "7:206",
+      "type": "optional",
+      "number": 1
+    }
+  ]
+}

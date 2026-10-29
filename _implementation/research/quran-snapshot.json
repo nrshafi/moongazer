@@ -1,0 +1,2996 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "name_arabic": "الفاتحة",
+      "name_simple": "Al-Fatihah",
+      "revelation_place": "makkah",
+      "revelation_order": 5,
+      "verses_count": 7,
+      "bismillah_pre": false
+    },
+    {
+      "number": 2,
+      "name_arabic": "البقرة",
+      "name_simple": "Al-Baqarah",
+      "revelation_place": "madinah",
+      "revelation_order": 87,
+      "verses_count": 286,
+      "bismillah_pre": true
+    },
+    {
+      "number": 3,
+      "name_arabic": "آل عمران",
+      "name_simple": "Ali 'Imran",
+      "revelation_place": "madinah",
+      "revelation_order": 89,
+      "verses_count": 200,
+      "bismillah_pre": true
+    },
+    {
+      "number": 4,
+      "name_arabic": "النساء",
+      "name_simple": "An-Nisa",
+      "revelation_place": "madinah",
+      "revelation_order": 92,
+      "verses_count": 176,
+      "bismillah_pre": true
+    },
+    {
+      "number": 5,
+      "name_arabic": "المائدة",
+      "name_simple": "Al-Ma'idah",
+      "revelation_place": "madinah",
+      "revelation_order": 112,
+      "verses_count": 120,
+      "bismillah_pre": true
+    },
+    {
+      "number": 6,
+      "name_arabic": "الأنعام",
+      "name_simple": "Al-An'am",
+      "revelation_place": "makkah",
+      "revelation_order": 55,
+      "verses_count": 165,
+      "bismillah_pre": true
+    },
+    {
+      "number": 7,
+      "name_arabic": "الأعراف",
+      "name_simple": "Al-A'raf",
+      "revelation_place": "makkah",
+      "revelation_order": 39,
+      "verses_count": 206,
+      "bismillah_pre": true
+    },
+    {
+      "number": 8,
+      "name_arabic": "الأنفال",
+      "name_simple": "Al-Anfal",
+      "revelation_place": "madinah",
+      "revelation_order": 88,
+      "verses_count": 75,
+      "bismillah_pre": true
+    },
+    {
+      "number": 9,
+      "name_arabic": "التوبة",
+      "name_simple": "At-Tawbah",
+      "revelation_place": "madinah",
+      "revelation_order": 113,
+      "verses_count": 129,
+      "bismillah_pre": false
+    },
+    {
+      "number": 10,
+      "name_arabic": "يونس",
+      "name_simple": "Yunus",
+      "revelation_place": "makkah",
+      "revelation_order": 51,
+      "verses_count": 109,
+      "bismillah_pre": true
+    },
+    {
+      "number": 11,
+      "name_arabic": "هود",
+      "name_simple": "Hud",
+      "revelation_place": "makkah",
+      "revelation_order": 52,
+      "verses_count": 123,
+      "bismillah_pre": true
+    },
+    {
+      "number": 12,
+      "name_arabic": "يوسف",
+      "name_simple": "Yusuf",
+      "revelation_place": "makkah",
+      "revelation_order": 53,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 13,
+      "name_arabic": "الرعد",
+      "name_simple": "Ar-Ra'd",
+      "revelation_place": "madinah",
+      "revelation_order": 96,
+      "verses_count": 43,
+      "bismillah_pre": true
+    },
+    {
+      "number": 14,
+      "name_arabic": "ابراهيم",
+      "name_simple": "Ibrahim",
+      "revelation_place": "makkah",
+      "revelation_order": 72,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 15,
+      "name_arabic": "الحجر",
+      "name_simple": "Al-Hijr",
+      "revelation_place": "makkah",
+      "revelation_order": 54,
+      "verses_count": 99,
+      "bismillah_pre": true
+    },
+    {
+      "number": 16,
+      "name_arabic": "النحل",
+      "name_simple": "An-Nahl",
+      "revelation_place": "makkah",
+      "revelation_order": 70,
+      "verses_count": 128,
+      "bismillah_pre": true
+    },
+    {
+      "number": 17,
+      "name_arabic": "الإسراء",
+      "name_simple": "Al-Isra",
+      "revelation_place": "makkah",
+      "revelation_order": 50,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 18,
+      "name_arabic": "الكهف",
+      "name_simple": "Al-Kahf",
+      "revelation_place": "makkah",
+      "revelation_order": 69,
+      "verses_count": 110,
+      "bismillah_pre": true
+    },
+    {
+      "number": 19,
+      "name_arabic": "مريم",
+      "name_simple": "Maryam",
+      "revelation_place": "makkah",
+      "revelation_order": 44,
+      "verses_count": 98,
+      "bismillah_pre": true
+    },
+    {
+      "number": 20,
+      "name_arabic": "طه",
+      "name_simple": "Taha",
+      "revelation_place": "makkah",
+      "revelation_order": 45,
+      "verses_count": 135,
+      "bismillah_pre": true
+    },
+    {
+      "number": 21,
+      "name_arabic": "الأنبياء",
+      "name_simple": "Al-Anbya",
+      "revelation_place": "makkah",
+      "revelation_order": 73,
+      "verses_count": 112,
+      "bismillah_pre": true
+    },
+    {
+      "number": 22,
+      "name_arabic": "الحج",
+      "name_simple": "Al-Hajj",
+      "revelation_place": "madinah",
+      "revelation_order": 103,
+      "verses_count": 78,
+      "bismillah_pre": true
+    },
+    {
+      "number": 23,
+      "name_arabic": "المؤمنون",
+      "name_simple": "Al-Mu'minun",
+      "revelation_place": "makkah",
+      "revelation_order": 74,
+      "verses_count": 118,
+      "bismillah_pre": true
+    },
+    {
+      "number": 24,
+      "name_arabic": "النور",
+      "name_simple": "An-Nur",
+      "revelation_place": "madinah",
+      "revelation_order": 102,
+      "verses_count": 64,
+      "bismillah_pre": true
+    },
+    {
+      "number": 25,
+      "name_arabic": "الفرقان",
+      "name_simple": "Al-Furqan",
+      "revelation_place": "makkah",
+      "revelation_order": 42,
+      "verses_count": 77,
+      "bismillah_pre": true
+    },
+    {
+      "number": 26,
+      "name_arabic": "الشعراء",
+      "name_simple": "Ash-Shu'ara",
+      "revelation_place": "makkah",
+      "revelation_order": 47,
+      "verses_count": 227,
+      "bismillah_pre": true
+    },
+    {
+      "number": 27,
+      "name_arabic": "النمل",
+      "name_simple": "An-Naml",
+      "revelation_place": "makkah",
+      "revelation_order": 48,
+      "verses_count": 93,
+      "bismillah_pre": true
+    },
+    {
+      "number": 28,
+      "name_arabic": "القصص",
+      "name_simple": "Al-Qasas",
+      "revelation_place": "makkah",
+      "revelation_order": 49,
+      "verses_count": 88,
+      "bismillah_pre": true
+    },
+    {
+      "number": 29,
+      "name_arabic": "العنكبوت",
+      "name_simple": "Al-'Ankabut",
+      "revelation_place": "makkah",
+      "revelation_order": 85,
+      "verses_count": 69,
+      "bismillah_pre": true
+    },
+    {
+      "number": 30,
+      "name_arabic": "الروم",
+      "name_simple": "Ar-Rum",
+      "revelation_place": "makkah",
+      "revelation_order": 84,
+      "verses_count": 60,
+      "bismillah_pre": true
+    },
+    {
+      "number": 31,
+      "name_arabic": "لقمان",
+      "name_simple": "Luqman",
+      "revelation_place": "makkah",
+      "revelation_order": 57,
+      "verses_count": 34,
+      "bismillah_pre": true
+    },
+    {
+      "number": 32,
+      "name_arabic": "السجدة",
+      "name_simple": "As-Sajdah",
+      "revelation_place": "makkah",
+      "revelation_order": 75,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 33,
+      "name_arabic": "الأحزاب",
+      "name_simple": "Al-Ahzab",
+      "revelation_place": "madinah",
+      "revelation_order": 90,
+      "verses_count": 73,
+      "bismillah_pre": true
+    },
+    {
+      "number": 34,
+      "name_arabic": "سبإ",
+      "name_simple": "Saba",
+      "revelation_place": "makkah",
+      "revelation_order": 58,
+      "verses_count": 54,
+      "bismillah_pre": true
+    },
+    {
+      "number": 35,
+      "name_arabic": "فاطر",
+      "name_simple": "Fatir",
+      "revelation_place": "makkah",
+      "revelation_order": 43,
+      "verses_count": 45,
+      "bismillah_pre": true
+    },
+    {
+      "number": 36,
+      "name_arabic": "يس",
+      "name_simple": "Ya-Sin",
+      "revelation_place": "makkah",
+      "revelation_order": 41,
+      "verses_count": 83,
+      "bismillah_pre": true
+    },
+    {
+      "number": 37,
+      "name_arabic": "الصافات",
+      "name_simple": "As-Saffat",
+      "revelation_place": "makkah",
+      "revelation_order": 56,
+      "verses_count": 182,
+      "bismillah_pre": true
+    },
+    {
+      "number": 38,
+      "name_arabic": "ص",
+      "name_simple": "Sad",
+      "revelation_place": "makkah",
+      "revelation_order": 38,
+      "verses_count": 88,
+      "bismillah_pre": true
+    },
+    {
+      "number": 39,
+      "name_arabic": "الزمر",
+      "name_simple": "Az-Zumar",
+      "revelation_place": "makkah",
+      "revelation_order": 59,
+      "verses_count": 75,
+      "bismillah_pre": true
+    },
+    {
+      "number": 40,
+      "name_arabic": "غافر",
+      "name_simple": "Ghafir",
+      "revelation_place": "makkah",
+      "revelation_order": 60,
+      "verses_count": 85,
+      "bismillah_pre": true
+    },
+    {
+      "number": 41,
+      "name_arabic": "فصلت",
+      "name_simple": "Fussilat",
+      "revelation_place": "makkah",
+      "revelation_order": 61,
+      "verses_count": 54,
+      "bismillah_pre": true
+    },
+    {
+      "number": 42,
+      "name_arabic": "الشورى",
+      "name_simple": "Ash-Shuraa",
+      "revelation_place": "makkah",
+      "revelation_order": 62,
+      "verses_count": 53,
+      "bismillah_pre": true
+    },
+    {
+      "number": 43,
+      "name_arabic": "الزخرف",
+      "name_simple": "Az-Zukhruf",
+      "revelation_place": "makkah",
+      "revelation_order": 63,
+      "verses_count": 89,
+      "bismillah_pre": true
+    },
+    {
+      "number": 44,
+      "name_arabic": "الدخان",
+      "name_simple": "Ad-Dukhan",
+      "revelation_place": "makkah",
+      "revelation_order": 64,
+      "verses_count": 59,
+      "bismillah_pre": true
+    },
+    {
+      "number": 45,
+      "name_arabic": "الجاثية",
+      "name_simple": "Al-Jathiyah",
+      "revelation_place": "makkah",
+      "revelation_order": 65,
+      "verses_count": 37,
+      "bismillah_pre": true
+    },
+    {
+      "number": 46,
+      "name_arabic": "الأحقاف",
+      "name_simple": "Al-Ahqaf",
+      "revelation_place": "makkah",
+      "revelation_order": 66,
+      "verses_count": 35,
+      "bismillah_pre": true
+    },
+    {
+      "number": 47,
+      "name_arabic": "محمد",
+      "name_simple": "Muhammad",
+      "revelation_place": "madinah",
+      "revelation_order": 95,
+      "verses_count": 38,
+      "bismillah_pre": true
+    },
+    {
+      "number": 48,
+      "name_arabic": "الفتح",
+      "name_simple": "Al-Fath",
+      "revelation_place": "madinah",
+      "revelation_order": 111,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 49,
+      "name_arabic": "الحجرات",
+      "name_simple": "Al-Hujurat",
+      "revelation_place": "madinah",
+      "revelation_order": 106,
+      "verses_count": 18,
+      "bismillah_pre": true
+    },
+    {
+      "number": 50,
+      "name_arabic": "ق",
+      "name_simple": "Qaf",
+      "revelation_place": "makkah",
+      "revelation_order": 34,
+      "verses_count": 45,
+      "bismillah_pre": true
+    },
+    {
+      "number": 51,
+      "name_arabic": "الذاريات",
+      "name_simple": "Adh-Dhariyat",
+      "revelation_place": "makkah",
+      "revelation_order": 67,
+      "verses_count": 60,
+      "bismillah_pre": true
+    },
+    {
+      "number": 52,
+      "name_arabic": "الطور",
+      "name_simple": "At-Tur",
+      "revelation_place": "makkah",
+      "revelation_order": 76,
+      "verses_count": 49,
+      "bismillah_pre": true
+    },
+    {
+      "number": 53,
+      "name_arabic": "النجم",
+      "name_simple": "An-Najm",
+      "revelation_place": "makkah",
+      "revelation_order": 23,
+      "verses_count": 62,
+      "bismillah_pre": true
+    },
+    {
+      "number": 54,
+      "name_arabic": "القمر",
+      "name_simple": "Al-Qamar",
+      "revelation_place": "makkah",
+      "revelation_order": 37,
+      "verses_count": 55,
+      "bismillah_pre": true
+    },
+    {
+      "number": 55,
+      "name_arabic": "الرحمن",
+      "name_simple": "Ar-Rahman",
+      "revelation_place": "madinah",
+      "revelation_order": 97,
+      "verses_count": 78,
+      "bismillah_pre": true
+    },
+    {
+      "number": 56,
+      "name_arabic": "الواقعة",
+      "name_simple": "Al-Waqi'ah",
+      "revelation_place": "makkah",
+      "revelation_order": 46,
+      "verses_count": 96,
+      "bismillah_pre": true
+    },
+    {
+      "number": 57,
+      "name_arabic": "الحديد",
+      "name_simple": "Al-Hadid",
+      "revelation_place": "madinah",
+      "revelation_order": 94,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 58,
+      "name_arabic": "المجادلة",
+      "name_simple": "Al-Mujadila",
+      "revelation_place": "madinah",
+      "revelation_order": 105,
+      "verses_count": 22,
+      "bismillah_pre": true
+    },
+    {
+      "number": 59,
+      "name_arabic": "الحشر",
+      "name_simple": "Al-Hashr",
+      "revelation_place": "madinah",
+      "revelation_order": 101,
+      "verses_count": 24,
+      "bismillah_pre": true
+    },
+    {
+      "number": 60,
+      "name_arabic": "الممتحنة",
+      "name_simple": "Al-Mumtahanah",
+      "revelation_place": "madinah",
+      "revelation_order": 91,
+      "verses_count": 13,
+      "bismillah_pre": true
+    },
+    {
+      "number": 61,
+      "name_arabic": "الصف",
+      "name_simple": "As-Saf",
+      "revelation_place": "madinah",
+      "revelation_order": 109,
+      "verses_count": 14,
+      "bismillah_pre": true
+    },
+    {
+      "number": 62,
+      "name_arabic": "الجمعة",
+      "name_simple": "Al-Jumu'ah",
+      "revelation_place": "madinah",
+      "revelation_order": 110,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 63,
+      "name_arabic": "المنافقون",
+      "name_simple": "Al-Munafiqun",
+      "revelation_place": "madinah",
+      "revelation_order": 104,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 64,
+      "name_arabic": "التغابن",
+      "name_simple": "At-Taghabun",
+      "revelation_place": "madinah",
+      "revelation_order": 108,
+      "verses_count": 18,
+      "bismillah_pre": true
+    },
+    {
+      "number": 65,
+      "name_arabic": "الطلاق",
+      "name_simple": "At-Talaq",
+      "revelation_place": "madinah",
+      "revelation_order": 99,
+      "verses_count": 12,
+      "bismillah_pre": true
+    },
+    {
+      "number": 66,
+      "name_arabic": "التحريم",
+      "name_simple": "At-Tahrim",
+      "revelation_place": "madinah",
+      "revelation_order": 107,
+      "verses_count": 12,
+      "bismillah_pre": true
+    },
+    {
+      "number": 67,
+      "name_arabic": "الملك",
+      "name_simple": "Al-Mulk",
+      "revelation_place": "makkah",
+      "revelation_order": 77,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 68,
+      "name_arabic": "القلم",
+      "name_simple": "Al-Qalam",
+      "revelation_place": "makkah",
+      "revelation_order": 2,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 69,
+      "name_arabic": "الحاقة",
+      "name_simple": "Al-Haqqah",
+      "revelation_place": "makkah",
+      "revelation_order": 78,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 70,
+      "name_arabic": "المعارج",
+      "name_simple": "Al-Ma'arij",
+      "revelation_place": "makkah",
+      "revelation_order": 79,
+      "verses_count": 44,
+      "bismillah_pre": true
+    },
+    {
+      "number": 71,
+      "name_arabic": "نوح",
+      "name_simple": "Nuh",
+      "revelation_place": "makkah",
+      "revelation_order": 71,
+      "verses_count": 28,
+      "bismillah_pre": true
+    },
+    {
+      "number": 72,
+      "name_arabic": "الجن",
+      "name_simple": "Al-Jinn",
+      "revelation_place": "makkah",
+      "revelation_order": 40,
+      "verses_count": 28,
+      "bismillah_pre": true
+    },
+    {
+      "number": 73,
+      "name_arabic": "المزمل",
+      "name_simple": "Al-Muzzammil",
+      "revelation_place": "makkah",
+      "revelation_order": 3,
+      "verses_count": 20,
+      "bismillah_pre": true
+    },
+    {
+      "number": 74,
+      "name_arabic": "المدثر",
+      "name_simple": "Al-Muddaththir",
+      "revelation_place": "makkah",
+      "revelation_order": 4,
+      "verses_count": 56,
+      "bismillah_pre": true
+    },
+    {
+      "number": 75,
+      "name_arabic": "القيامة",
+      "name_simple": "Al-Qiyamah",
+      "revelation_place": "makkah",
+      "revelation_order": 31,
+      "verses_count": 40,
+      "bismillah_pre": true
+    },
+    {
+      "number": 76,
+      "name_arabic": "الانسان",
+      "name_simple": "Al-Insan",
+      "revelation_place": "madinah",
+      "revelation_order": 98,
+      "verses_count": 31,
+      "bismillah_pre": true
+    },
+    {
+      "number": 77,
+      "name_arabic": "المرسلات",
+      "name_simple": "Al-Mursalat",
+      "revelation_place": "makkah",
+      "revelation_order": 33,
+      "verses_count": 50,
+      "bismillah_pre": true
+    },
+    {
+      "number": 78,
+      "name_arabic": "النبإ",
+      "name_simple": "An-Naba",
+      "revelation_place": "makkah",
+      "revelation_order": 80,
+      "verses_count": 40,
+      "bismillah_pre": true
+    },
+    {
+      "number": 79,
+      "name_arabic": "النازعات",
+      "name_simple": "An-Nazi'at",
+      "revelation_place": "makkah",
+      "revelation_order": 81,
+      "verses_count": 46,
+      "bismillah_pre": true
+    },
+    {
+      "number": 80,
+      "name_arabic": "عبس",
+      "name_simple": "'Abasa",
+      "revelation_place": "makkah",
+      "revelation_order": 24,
+      "verses_count": 42,
+      "bismillah_pre": true
+    },
+    {
+      "number": 81,
+      "name_arabic": "التكوير",
+      "name_simple": "At-Takwir",
+      "revelation_place": "makkah",
+      "revelation_order": 7,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 82,
+      "name_arabic": "الإنفطار",
+      "name_simple": "Al-Infitar",
+      "revelation_place": "makkah",
+      "revelation_order": 82,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 83,
+      "name_arabic": "المطففين",
+      "name_simple": "Al-Mutaffifin",
+      "revelation_place": "makkah",
+      "revelation_order": 86,
+      "verses_count": 36,
+      "bismillah_pre": true
+    },
+    {
+      "number": 84,
+      "name_arabic": "الإنشقاق",
+      "name_simple": "Al-Inshiqaq",
+      "revelation_place": "makkah",
+      "revelation_order": 83,
+      "verses_count": 25,
+      "bismillah_pre": true
+    },
+    {
+      "number": 85,
+      "name_arabic": "البروج",
+      "name_simple": "Al-Buruj",
+      "revelation_place": "makkah",
+      "revelation_order": 27,
+      "verses_count": 22,
+      "bismillah_pre": true
+    },
+    {
+      "number": 86,
+      "name_arabic": "الطارق",
+      "name_simple": "At-Tariq",
+      "revelation_place": "makkah",
+      "revelation_order": 36,
+      "verses_count": 17,
+      "bismillah_pre": true
+    },
+    {
+      "number": 87,
+      "name_arabic": "الأعلى",
+      "name_simple": "Al-A'la",
+      "revelation_place": "makkah",
+      "revelation_order": 8,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 88,
+      "name_arabic": "الغاشية",
+      "name_simple": "Al-Ghashiyah",
+      "revelation_place": "makkah",
+      "revelation_order": 68,
+      "verses_count": 26,
+      "bismillah_pre": true
+    },
+    {
+      "number": 89,
+      "name_arabic": "الفجر",
+      "name_simple": "Al-Fajr",
+      "revelation_place": "makkah",
+      "revelation_order": 10,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 90,
+      "name_arabic": "البلد",
+      "name_simple": "Al-Balad",
+      "revelation_place": "makkah",
+      "revelation_order": 35,
+      "verses_count": 20,
+      "bismillah_pre": true
+    },
+    {
+      "number": 91,
+      "name_arabic": "الشمس",
+      "name_simple": "Ash-Shams",
+      "revelation_place": "makkah",
+      "revelation_order": 26,
+      "verses_count": 15,
+      "bismillah_pre": true
+    },
+    {
+      "number": 92,
+      "name_arabic": "الليل",
+      "name_simple": "Al-Layl",
+      "revelation_place": "makkah",
+      "revelation_order": 9,
+      "verses_count": 21,
+      "bismillah_pre": true
+    },
+    {
+      "number": 93,
+      "name_arabic": "الضحى",
+      "name_simple": "Ad-Duhaa",
+      "revelation_place": "makkah",
+      "revelation_order": 11,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 94,
+      "name_arabic": "الشرح",
+      "name_simple": "Ash-Sharh",
+      "revelation_place": "makkah",
+      "revelation_order": 12,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 95,
+      "name_arabic": "التين",
+      "name_simple": "At-Tin",
+      "revelation_place": "makkah",
+      "revelation_order": 28,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 96,
+      "name_arabic": "العلق",
+      "name_simple": "Al-'Alaq",
+      "revelation_place": "makkah",
+      "revelation_order": 1,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 97,
+      "name_arabic": "القدر",
+      "name_simple": "Al-Qadr",
+      "revelation_place": "makkah",
+      "revelation_order": 25,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 98,
+      "name_arabic": "البينة",
+      "name_simple": "Al-Bayyinah",
+      "revelation_place": "madinah",
+      "revelation_order": 100,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 99,
+      "name_arabic": "الزلزلة",
+      "name_simple": "Az-Zalzalah",
+      "revelation_place": "madinah",
+      "revelation_order": 93,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 100,
+      "name_arabic": "العاديات",
+      "name_simple": "Al-'Adiyat",
+      "revelation_place": "makkah",
+      "revelation_order": 14,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 101,
+      "name_arabic": "القارعة",
+      "name_simple": "Al-Qari'ah",
+      "revelation_place": "makkah",
+      "revelation_order": 30,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 102,
+      "name_arabic": "التكاثر",
+      "name_simple": "At-Takathur",
+      "revelation_place": "makkah",
+      "revelation_order": 16,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 103,
+      "name_arabic": "العصر",
+      "name_simple": "Al-'Asr",
+      "revelation_place": "makkah",
+      "revelation_order": 13,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 104,
+      "name_arabic": "الهمزة",
+      "name_simple": "Al-Humazah",
+      "revelation_place": "makkah",
+      "revelation_order": 32,
+      "verses_count": 9,
+      "bismillah_pre": true
+    },
+    {
+      "number": 105,
+      "name_arabic": "الفيل",
+      "name_simple": "Al-Fil",
+      "revelation_place": "makkah",
+      "revelation_order": 19,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 106,
+      "name_arabic": "قريش",
+      "name_simple": "Quraysh",
+      "revelation_place": "makkah",
+      "revelation_order": 29,
+      "verses_count": 4,
+      "bismillah_pre": true
+    },
+    {
+      "number": 107,
+      "name_arabic": "الماعون",
+      "name_simple": "Al-Ma'un",
+      "revelation_place": "makkah",
+      "revelation_order": 17,
+      "verses_count": 7,
+      "bismillah_pre": true
+    },
+    {
+      "number": 108,
+      "name_arabic": "الكوثر",
+      "name_simple": "Al-Kawthar",
+      "revelation_place": "makkah",
+      "revelation_order": 15,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 109,
+      "name_arabic": "الكافرون",
+      "name_simple": "Al-Kafirun",
+      "revelation_place": "makkah",
+      "revelation_order": 18,
+      "verses_count": 6,
+      "bismillah_pre": true
+    },
+    {
+      "number": 110,
+      "name_arabic": "النصر",
+      "name_simple": "An-Nasr",
+      "revelation_place": "madinah",
+      "revelation_order": 114,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 111,
+      "name_arabic": "المسد",
+      "name_simple": "Al-Masad",
+      "revelation_place": "makkah",
+      "revelation_order": 6,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 112,
+      "name_arabic": "الإخلاص",
+      "name_simple": "Al-Ikhlas",
+      "revelation_place": "makkah",
+      "revelation_order": 22,
+      "verses_count": 4,
+      "bismillah_pre": true
+    },
+    {
+      "number": 113,
+      "name_arabic": "الفلق",
+      "name_simple": "Al-Falaq",
+      "revelation_place": "makkah",
+      "revelation_order": 20,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 114,
+      "name_arabic": "الناس",
+      "name_simple": "An-Nas",
+      "revelation_place": "makkah",
+      "revelation_order": 21,
+      "verses_count": 6,
+      "bismillah_pre": true
+    }
+  ],
+  "verses": {
+    "1:1": {
+      "ref": "1:1",
+      "url": "https://quran.com/1:1",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "translation": "In the name of Allah, the Beneficent, the Merciful.",
+      "translationUrl": "https://quran.com/1:1?translations=19"
+    },
+    "2:1": {
+      "ref": "2:1",
+      "url": "https://quran.com/2:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/2:1?translations=19"
+    },
+    "3:1": {
+      "ref": "3:1",
+      "url": "https://quran.com/3:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alim. Lam. Mim.",
+      "translationUrl": "https://quran.com/3:1?translations=19"
+    },
+    "4:1": {
+      "ref": "4:1",
+      "url": "https://quran.com/4:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُم مِّن نَّفْسٍ وَٰحِدَةٍ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًا كَثِيرًا وَنِسَآءً ۚ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِى تَسَآءَلُونَ بِهِۦ وَٱلْأَرْحَامَ ۚ إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
+      "translation": "O mankind! Be careful of your duty to your Lord Who created you from a single soul and from it created its mate and from them twain hath spread abroad a multitude of men and women. Be careful of your duty toward Allah in Whom ye claim (your rights) of one another, and toward the wombs (that bore you). Lo! Allah hath been a watcher over you.",
+      "translationUrl": "https://quran.com/4:1?translations=19"
+    },
+    "5:1": {
+      "ref": "5:1",
+      "url": "https://quran.com/5:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَـٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
+      "translation": "O ye who believe! Fulfil your indentures. The beast of cattle is made lawful unto you (for food) except that which is announced unto you (herein), game being unlawful when ye are on the pilgrimage. Lo! Allah ordaineth that which pleaseth Him.",
+      "translationUrl": "https://quran.com/5:1?translations=19"
+    },
+    "6:1": {
+      "ref": "6:1",
+      "url": "https://quran.com/6:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ وَجَعَلَ ٱلظُّلُمَـٰتِ وَٱلنُّورَ ۖ ثُمَّ ٱلَّذِينَ كَفَرُوا۟ بِرَبِّهِمْ يَعْدِلُونَ",
+      "translation": "Praise be to Allah, Who hath created the heavens and the earth, and hath appointed darkness and light. Yet those who disbelieve ascribe rivals unto their Lord.",
+      "translationUrl": "https://quran.com/6:1?translations=19"
+    },
+    "7:1": {
+      "ref": "7:1",
+      "url": "https://quran.com/7:1",
+      "arabic": "الٓمٓصٓ",
+      "translation": "Alif. Lam. Mim. Sad.",
+      "translationUrl": "https://quran.com/7:1?translations=19"
+    },
+    "8:1": {
+      "ref": "8:1",
+      "url": "https://quran.com/8:1",
+      "arabic": "يَسْـَٔلُونَكَ عَنِ ٱلْأَنفَالِ ۖ قُلِ ٱلْأَنفَالُ لِلَّهِ وَٱلرَّسُولِ ۖ فَٱتَّقُوا۟ ٱللَّهَ وَأَصْلِحُوا۟ ذَاتَ بَيْنِكُمْ ۖ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥٓ إِن كُنتُم مُّؤْمِنِينَ",
+      "translation": "They ask thee (O Muhammad) of the spoils of war. Say: The spoils of war belong to Allah and the messenger, so keep your duty to Allah, and adjust the matter of your difference, and obey Allah and His messenger, if ye are (true) believers.",
+      "translationUrl": "https://quran.com/8:1?translations=19"
+    },
+    "9:1": {
+      "ref": "9:1",
+      "url": "https://quran.com/9:1",
+      "arabic": "بَرَآءَةٌ مِّنَ ٱللَّهِ وَرَسُولِهِۦٓ إِلَى ٱلَّذِينَ عَـٰهَدتُّم مِّنَ ٱلْمُشْرِكِينَ",
+      "translation": "Freedom from obligation (is proclaimed) from Allah and His messenger toward those of the idolaters with whom ye made a treaty.",
+      "translationUrl": "https://quran.com/9:1?translations=19"
+    },
+    "10:1": {
+      "ref": "10:1",
+      "url": "https://quran.com/10:1",
+      "arabic": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْحَكِيمِ",
+      "translation": "Alif. Lam. Ra. These are verses of the Wise Scripture.",
+      "translationUrl": "https://quran.com/10:1?translations=19"
+    },
+    "11:1": {
+      "ref": "11:1",
+      "url": "https://quran.com/11:1",
+      "arabic": "الٓر ۚ كِتَـٰبٌ أُحْكِمَتْ ءَايَـٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ",
+      "translation": "Alif. Lam. Ra. (This is) a Scripture the revelations whereof are perfected and then expounded. (It cometh) from One Wise, Informed,",
+      "translationUrl": "https://quran.com/11:1?translations=19"
+    },
+    "12:1": {
+      "ref": "12:1",
+      "url": "https://quran.com/12:1",
+      "arabic": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+      "translation": "Alif. Lam. Ra. These are verse of the Scripture that maketh plain.",
+      "translationUrl": "https://quran.com/12:1?translations=19"
+    },
+    "13:1": {
+      "ref": "13:1",
+      "url": "https://quran.com/13:1",
+      "arabic": "الٓمٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ۗ وَٱلَّذِىٓ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ٱلْحَقُّ وَلَـٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يُؤْمِنُونَ",
+      "translation": "Alif. Lam. Mim. Ra. These are verses of the Scripture. That which is revealed unto thee from thy Lord is the Truth, but most of mankind believe not.",
+      "translationUrl": "https://quran.com/13:1?translations=19"
+    },
+    "14:1": {
+      "ref": "14:1",
+      "url": "https://quran.com/14:1",
+      "arabic": "الٓر ۚ كِتَـٰبٌ أَنزَلْنَـٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+      "translation": "Alif. Lam. Ra. (This is) a Scripture which We have revealed unto thee (Muhammad) that thereby thou mayst bring forth mankind from darkness unto light, by the permission of their Lord, unto the path of the Mighty, the Owner of Praise,",
+      "translationUrl": "https://quran.com/14:1?translations=19"
+    },
+    "15:1": {
+      "ref": "15:1",
+      "url": "https://quran.com/15:1",
+      "arabic": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ وَقُرْءَانٍ مُّبِينٍ",
+      "translation": "Alif. Lam. Ra. These are verses of the Scripture and a plain Reading.",
+      "translationUrl": "https://quran.com/15:1?translations=19"
+    },
+    "16:1": {
+      "ref": "16:1",
+      "url": "https://quran.com/16:1",
+      "arabic": "أَتَىٰٓ أَمْرُ ٱللَّهِ فَلَا تَسْتَعْجِلُوهُ ۚ سُبْحَـٰنَهُۥ وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ",
+      "translation": "The commandment of Allah will come to pass, so seek not ye to hasten it. Glorified and Exalted be He above all that they associate (with Him).",
+      "translationUrl": "https://quran.com/16:1?translations=19"
+    },
+    "17:1": {
+      "ref": "17:1",
+      "url": "https://quran.com/17:1",
+      "arabic": "سُبْحَـٰنَ ٱلَّذِىٓ أَسْرَىٰ بِعَبْدِهِۦ لَيْلًا مِّنَ ٱلْمَسْجِدِ ٱلْحَرَامِ إِلَى ٱلْمَسْجِدِ ٱلْأَقْصَا ٱلَّذِى بَـٰرَكْنَا حَوْلَهُۥ لِنُرِيَهُۥ مِنْ ءَايَـٰتِنَآ ۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+      "translation": "Glorified be He Who carried His servant by night from the Inviolable Place of Worship to the Far distant place of worship the neighbourhood whereof We have blessed, that We might show him of Our tokens! Lo! He, only He, is the Hearer, the Seer.",
+      "translationUrl": "https://quran.com/17:1?translations=19"
+    },
+    "18:1": {
+      "ref": "18:1",
+      "url": "https://quran.com/18:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ ٱلَّذِىٓ أَنزَلَ عَلَىٰ عَبْدِهِ ٱلْكِتَـٰبَ وَلَمْ يَجْعَل لَّهُۥ عِوَجَا ۜ",
+      "translation": "Praise be to Allah Who hath revealed the Scripture unto His slave, and hath not placed therein any crookedness,",
+      "translationUrl": "https://quran.com/18:1?translations=19"
+    },
+    "19:1": {
+      "ref": "19:1",
+      "url": "https://quran.com/19:1",
+      "arabic": "كٓهيعٓصٓ",
+      "translation": "Kaf. Ha. Ya. A'in. Sad.",
+      "translationUrl": "https://quran.com/19:1?translations=19"
+    },
+    "20:1": {
+      "ref": "20:1",
+      "url": "https://quran.com/20:1",
+      "arabic": "طه",
+      "translation": "Ta. Ha.",
+      "translationUrl": "https://quran.com/20:1?translations=19"
+    },
+    "21:1": {
+      "ref": "21:1",
+      "url": "https://quran.com/21:1",
+      "arabic": "ٱقْتَرَبَ لِلنَّاسِ حِسَابُهُمْ وَهُمْ فِى غَفْلَةٍ مُّعْرِضُونَ",
+      "translation": "Their reckoning draweth nigh for mankind, while they turn away in heedlessness.",
+      "translationUrl": "https://quran.com/21:1?translations=19"
+    },
+    "22:1": {
+      "ref": "22:1",
+      "url": "https://quran.com/22:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمْ ۚ إِنَّ زَلْزَلَةَ ٱلسَّاعَةِ شَىْءٌ عَظِيمٌ",
+      "translation": "O mankind! Fear your Lord. Lo! the earthquake of the Hour (of Doom) is a tremendous thing.",
+      "translationUrl": "https://quran.com/22:1?translations=19"
+    },
+    "23:1": {
+      "ref": "23:1",
+      "url": "https://quran.com/23:1",
+      "arabic": "قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ",
+      "translation": "Successful indeed are the believers",
+      "translationUrl": "https://quran.com/23:1?translations=19"
+    },
+    "24:1": {
+      "ref": "24:1",
+      "url": "https://quran.com/24:1",
+      "arabic": "سُورَةٌ أَنزَلْنَـٰهَا وَفَرَضْنَـٰهَا وَأَنزَلْنَا فِيهَآ ءَايَـٰتٍۭ بَيِّنَـٰتٍ لَّعَلَّكُمْ تَذَكَّرُونَ",
+      "translation": "(Here is) a surah which We have revealed and enjoined, and wherein We have revealed plain tokens, that haply ye may take heed.",
+      "translationUrl": "https://quran.com/24:1?translations=19"
+    },
+    "25:1": {
+      "ref": "25:1",
+      "url": "https://quran.com/25:1",
+      "arabic": "تَبَارَكَ ٱلَّذِى نَزَّلَ ٱلْفُرْقَانَ عَلَىٰ عَبْدِهِۦ لِيَكُونَ لِلْعَـٰلَمِينَ نَذِيرًا",
+      "translation": "Blessed is He Who hath revealed unto His slave the Criterion (of right and wrong), that he may be a warner to the peoples.",
+      "translationUrl": "https://quran.com/25:1?translations=19"
+    },
+    "26:1": {
+      "ref": "26:1",
+      "url": "https://quran.com/26:1",
+      "arabic": "طسٓمٓ",
+      "translation": "Ta. Sin. Mim.",
+      "translationUrl": "https://quran.com/26:1?translations=19"
+    },
+    "27:1": {
+      "ref": "27:1",
+      "url": "https://quran.com/27:1",
+      "arabic": "طسٓ ۚ تِلْكَ ءَايَـٰتُ ٱلْقُرْءَانِ وَكِتَابٍ مُّبِينٍ",
+      "translation": "Ta. Sin. These are revelations of the Qur'an and a Scripture that maketh plain;",
+      "translationUrl": "https://quran.com/27:1?translations=19"
+    },
+    "28:1": {
+      "ref": "28:1",
+      "url": "https://quran.com/28:1",
+      "arabic": "طسٓمٓ",
+      "translation": "Ta. Sin. Mim.",
+      "translationUrl": "https://quran.com/28:1?translations=19"
+    },
+    "29:1": {
+      "ref": "29:1",
+      "url": "https://quran.com/29:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/29:1?translations=19"
+    },
+    "30:1": {
+      "ref": "30:1",
+      "url": "https://quran.com/30:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/30:1?translations=19"
+    },
+    "31:1": {
+      "ref": "31:1",
+      "url": "https://quran.com/31:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/31:1?translations=19"
+    },
+    "32:1": {
+      "ref": "32:1",
+      "url": "https://quran.com/32:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim",
+      "translationUrl": "https://quran.com/32:1?translations=19"
+    },
+    "33:1": {
+      "ref": "33:1",
+      "url": "https://quran.com/33:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ ٱتَّقِ ٱللَّهَ وَلَا تُطِعِ ٱلْكَـٰفِرِينَ وَٱلْمُنَـٰفِقِينَ ۗ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًا",
+      "translation": "O Prophet! Keep thy duty to Allah and obey not the disbelievers and the hypocrites. Lo! Allah is Knower, Wise.",
+      "translationUrl": "https://quran.com/33:1?translations=19"
+    },
+    "34:1": {
+      "ref": "34:1",
+      "url": "https://quran.com/34:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ وَلَهُ ٱلْحَمْدُ فِى ٱلْـَٔاخِرَةِ ۚ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ",
+      "translation": "Praise be to Allah, unto Whom belongeth whatsoever is in the heavens and whatsoever is in the earth. His is the praise in the Hereafter, and He is the Wise, the Aware.",
+      "translationUrl": "https://quran.com/34:1?translations=19"
+    },
+    "35:1": {
+      "ref": "35:1",
+      "url": "https://quran.com/35:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ فَاطِرِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ جَاعِلِ ٱلْمَلَـٰٓئِكَةِ رُسُلًا أُو۟لِىٓ أَجْنِحَةٍ مَّثْنَىٰ وَثُلَـٰثَ وَرُبَـٰعَ ۚ يَزِيدُ فِى ٱلْخَلْقِ مَا يَشَآءُ ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      "translation": "Praise be to Allah, the Creator of the heavens and the earth, Who appointeth the angels messengers having wings two, three and four. He multiplieth in creation what He will. Lo! Allah is Able to do all things.",
+      "translationUrl": "https://quran.com/35:1?translations=19"
+    },
+    "36:1": {
+      "ref": "36:1",
+      "url": "https://quran.com/36:1",
+      "arabic": "يسٓ",
+      "translation": "Ya Sin.",
+      "translationUrl": "https://quran.com/36:1?translations=19"
+    },
+    "37:1": {
+      "ref": "37:1",
+      "url": "https://quran.com/37:1",
+      "arabic": "وَٱلصَّـٰٓفَّـٰتِ صَفًّا",
+      "translation": "By those who set the ranks in battle order",
+      "translationUrl": "https://quran.com/37:1?translations=19"
+    },
+    "38:1": {
+      "ref": "38:1",
+      "url": "https://quran.com/38:1",
+      "arabic": "صٓ ۚ وَٱلْقُرْءَانِ ذِى ٱلذِّكْرِ",
+      "translation": "Sad. By the renowned Qur'an,",
+      "translationUrl": "https://quran.com/38:1?translations=19"
+    },
+    "39:1": {
+      "ref": "39:1",
+      "url": "https://quran.com/39:1",
+      "arabic": "تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+      "translation": "The revelation of the Scripture is from Allah, the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/39:1?translations=19"
+    },
+    "40:1": {
+      "ref": "40:1",
+      "url": "https://quran.com/40:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/40:1?translations=19"
+    },
+    "41:1": {
+      "ref": "41:1",
+      "url": "https://quran.com/41:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/41:1?translations=19"
+    },
+    "42:1": {
+      "ref": "42:1",
+      "url": "https://quran.com/42:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/42:1?translations=19"
+    },
+    "43:1": {
+      "ref": "43:1",
+      "url": "https://quran.com/43:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/43:1?translations=19"
+    },
+    "44:1": {
+      "ref": "44:1",
+      "url": "https://quran.com/44:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/44:1?translations=19"
+    },
+    "45:1": {
+      "ref": "45:1",
+      "url": "https://quran.com/45:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/45:1?translations=19"
+    },
+    "46:1": {
+      "ref": "46:1",
+      "url": "https://quran.com/46:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/46:1?translations=19"
+    },
+    "47:1": {
+      "ref": "47:1",
+      "url": "https://quran.com/47:1",
+      "arabic": "ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ أَضَلَّ أَعْمَـٰلَهُمْ",
+      "translation": "Those who disbelieve and turn (men) from the way of Allah, He rendereth their actions vain.",
+      "translationUrl": "https://quran.com/47:1?translations=19"
+    },
+    "48:1": {
+      "ref": "48:1",
+      "url": "https://quran.com/48:1",
+      "arabic": "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا",
+      "translation": "Lo! We have given thee (O Muhammad) a signal victory,",
+      "translationUrl": "https://quran.com/48:1?translations=19"
+    },
+    "49:1": {
+      "ref": "49:1",
+      "url": "https://quran.com/49:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُقَدِّمُوا۟ بَيْنَ يَدَىِ ٱللَّهِ وَرَسُولِهِۦ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ سَمِيعٌ عَلِيمٌ",
+      "translation": "O ye who believe! Be not forward in the presence of Allah and His messenger, and keep your duty to Allah. Lo! Allah is Hearer, Knower.",
+      "translationUrl": "https://quran.com/49:1?translations=19"
+    },
+    "50:1": {
+      "ref": "50:1",
+      "url": "https://quran.com/50:1",
+      "arabic": "قٓ ۚ وَٱلْقُرْءَانِ ٱلْمَجِيدِ",
+      "translation": "Qaf. By the Glorious Qur'an,",
+      "translationUrl": "https://quran.com/50:1?translations=19"
+    },
+    "51:1": {
+      "ref": "51:1",
+      "url": "https://quran.com/51:1",
+      "arabic": "وَٱلذَّٰرِيَـٰتِ ذَرْوًا",
+      "translation": "By those that winnow with a winnowing",
+      "translationUrl": "https://quran.com/51:1?translations=19"
+    },
+    "52:1": {
+      "ref": "52:1",
+      "url": "https://quran.com/52:1",
+      "arabic": "وَٱلطُّورِ",
+      "translation": "By the Mount,",
+      "translationUrl": "https://quran.com/52:1?translations=19"
+    },
+    "53:1": {
+      "ref": "53:1",
+      "url": "https://quran.com/53:1",
+      "arabic": "وَٱلنَّجْمِ إِذَا هَوَىٰ",
+      "translation": "By the Star when it setteth,",
+      "translationUrl": "https://quran.com/53:1?translations=19"
+    },
+    "54:1": {
+      "ref": "54:1",
+      "url": "https://quran.com/54:1",
+      "arabic": "ٱقْتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلْقَمَرُ",
+      "translation": "The hour drew nigh and the moon was rent in twain.",
+      "translationUrl": "https://quran.com/54:1?translations=19"
+    },
+    "55:1": {
+      "ref": "55:1",
+      "url": "https://quran.com/55:1",
+      "arabic": "ٱلرَّحْمَـٰنُ",
+      "translation": "The Beneficent",
+      "translationUrl": "https://quran.com/55:1?translations=19"
+    },
+    "56:1": {
+      "ref": "56:1",
+      "url": "https://quran.com/56:1",
+      "arabic": "إِذَا وَقَعَتِ ٱلْوَاقِعَةُ",
+      "translation": "When the event befalleth -",
+      "translationUrl": "https://quran.com/56:1?translations=19"
+    },
+    "57:1": {
+      "ref": "57:1",
+      "url": "https://quran.com/57:1",
+      "arabic": "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "translation": "All that is in the heavens and the earth glorifieth Allah; and He is the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/57:1?translations=19"
+    },
+    "58:1": {
+      "ref": "58:1",
+      "url": "https://quran.com/58:1",
+      "arabic": "قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَـٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ",
+      "translation": "Allah hath heard the saying of her that disputeth with thee (Muhammad) concerning her husband, and complaineth unto Allah. And Allah heareth your colloquy. Lo! Allah is Hearer, Knower.",
+      "translationUrl": "https://quran.com/58:1?translations=19"
+    },
+    "59:1": {
+      "ref": "59:1",
+      "url": "https://quran.com/59:1",
+      "arabic": "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, and He is the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/59:1?translations=19"
+    },
+    "60:1": {
+      "ref": "60:1",
+      "url": "https://quran.com/60:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ عَدُوِّى وَعَدُوَّكُمْ أَوْلِيَآءَ تُلْقُونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَقَدْ كَفَرُوا۟ بِمَا جَآءَكُم مِّنَ ٱلْحَقِّ يُخْرِجُونَ ٱلرَّسُولَ وَإِيَّاكُمْ ۙ أَن تُؤْمِنُوا۟ بِٱللَّهِ رَبِّكُمْ إِن كُنتُمْ خَرَجْتُمْ جِهَـٰدًا فِى سَبِيلِى وَٱبْتِغَآءَ مَرْضَاتِى ۚ تُسِرُّونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَأَنَا۠ أَعْلَمُ بِمَآ أَخْفَيْتُمْ وَمَآ أَعْلَنتُمْ ۚ وَمَن يَفْعَلْهُ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ",
+      "translation": "O ye who believe! Choose not My enemy and your enemy for allies. Do ye give them friendship when they disbelieve in that truth which hath come unto you, driving out the messenger and you because ye believe in Allah, your Lord? If ye have come forth to strive in My way and seeking My good pleasure, (show them not friendship). Do ye show friendship unto them in secret, when I am Best Aware of what ye hide and what ye proclaim? And whosoever doeth it among you, he verily hath strayed from the right way.",
+      "translationUrl": "https://quran.com/60:1?translations=19"
+    },
+    "61:1": {
+      "ref": "61:1",
+      "url": "https://quran.com/61:1",
+      "arabic": "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, and He is the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/61:1?translations=19"
+    },
+    "62:1": {
+      "ref": "62:1",
+      "url": "https://quran.com/62:1",
+      "arabic": "يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ٱلْمَلِكِ ٱلْقُدُّوسِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, the Sovereign Lord, the Holy One, the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/62:1?translations=19"
+    },
+    "63:1": {
+      "ref": "63:1",
+      "url": "https://quran.com/63:1",
+      "arabic": "إِذَا جَآءَكَ ٱلْمُنَـٰفِقُونَ قَالُوا۟ نَشْهَدُ إِنَّكَ لَرَسُولُ ٱللَّهِ ۗ وَٱللَّهُ يَعْلَمُ إِنَّكَ لَرَسُولُهُۥ وَٱللَّهُ يَشْهَدُ إِنَّ ٱلْمُنَـٰفِقِينَ لَكَـٰذِبُونَ",
+      "translation": "When the hypocrites come unto thee (O Muhammad), they say: We bear witness that thou art indeed Allah's messenger. And Allah knoweth that thou art indeed His messenger, and Allah beareth witness that the hypocrites indeed are speaking falsely.",
+      "translationUrl": "https://quran.com/63:1?translations=19"
+    },
+    "64:1": {
+      "ref": "64:1",
+      "url": "https://quran.com/64:1",
+      "arabic": "يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ ۖ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah; unto Him belongeth Sovereignty and unto Him belongeth praise, and He is Able to do all things.",
+      "translationUrl": "https://quran.com/64:1?translations=19"
+    },
+    "65:1": {
+      "ref": "65:1",
+      "url": "https://quran.com/65:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ إِذَا طَلَّقْتُمُ ٱلنِّسَآءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَأَحْصُوا۟ ٱلْعِدَّةَ ۖ وَٱتَّقُوا۟ ٱللَّهَ رَبَّكُمْ ۖ لَا تُخْرِجُوهُنَّ مِنۢ بُيُوتِهِنَّ وَلَا يَخْرُجْنَ إِلَّآ أَن يَأْتِينَ بِفَـٰحِشَةٍ مُّبَيِّنَةٍ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۚ وَمَن يَتَعَدَّ حُدُودَ ٱللَّهِ فَقَدْ ظَلَمَ نَفْسَهُۥ ۚ لَا تَدْرِى لَعَلَّ ٱللَّهَ يُحْدِثُ بَعْدَ ذَٰلِكَ أَمْرًا",
+      "translation": "O Prophet! When ye (men) put away women, put them away for their (legal) period and reckon the period, and keep your duty to Allah, your Lord. Expel them not from their houses nor let them go forth unless they commit open immorality. Such are the limits (imposed by) Allah; and whoso transgresseth Allah's limits, he verily wrongeth his soul. Thou knowest not: it may be that Allah will afterward bring some new thing to pass.",
+      "translationUrl": "https://quran.com/65:1?translations=19"
+    },
+    "66:1": {
+      "ref": "66:1",
+      "url": "https://quran.com/66:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَ ۖ تَبْتَغِى مَرْضَاتَ أَزْوَٰجِكَ ۚ وَٱللَّهُ غَفُورٌ رَّحِيمٌ",
+      "translation": "O Prophet! Why bannest thou that which Allah hath made lawful for thee, seeking to please thy wives? And Allah is Forgiving, Merciful.",
+      "translationUrl": "https://quran.com/66:1?translations=19"
+    },
+    "67:1": {
+      "ref": "67:1",
+      "url": "https://quran.com/67:1",
+      "arabic": "تَبَـٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      "translation": "Blessed is He in Whose hand is the Sovereignty, and, He is Able to do all things.",
+      "translationUrl": "https://quran.com/67:1?translations=19"
+    },
+    "68:1": {
+      "ref": "68:1",
+      "url": "https://quran.com/68:1",
+      "arabic": "نٓ ۚ وَٱلْقَلَمِ وَمَا يَسْطُرُونَ",
+      "translation": "Nun. By the pen and that which they write (therewith),",
+      "translationUrl": "https://quran.com/68:1?translations=19"
+    },
+    "69:1": {
+      "ref": "69:1",
+      "url": "https://quran.com/69:1",
+      "arabic": "ٱلْحَآقَّةُ",
+      "translation": "The Reality!",
+      "translationUrl": "https://quran.com/69:1?translations=19"
+    },
+    "70:1": {
+      "ref": "70:1",
+      "url": "https://quran.com/70:1",
+      "arabic": "سَأَلَ سَآئِلٌۢ بِعَذَابٍ وَاقِعٍ",
+      "translation": "A questioner questioned concerning the doom about to fall",
+      "translationUrl": "https://quran.com/70:1?translations=19"
+    },
+    "71:1": {
+      "ref": "71:1",
+      "url": "https://quran.com/71:1",
+      "arabic": "إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+      "translation": "Lo! We sent Noah unto his people (saying): Warn thy people ere the painful doom come unto them.",
+      "translationUrl": "https://quran.com/71:1?translations=19"
+    },
+    "72:1": {
+      "ref": "72:1",
+      "url": "https://quran.com/72:1",
+      "arabic": "قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًا",
+      "translation": "Say (O Muhammad): It is revealed unto me that a company of the Jinn gave ear, and they said: Lo! we have heard a marvellous Qur'an,",
+      "translationUrl": "https://quran.com/72:1?translations=19"
+    },
+    "73:1": {
+      "ref": "73:1",
+      "url": "https://quran.com/73:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلْمُزَّمِّلُ",
+      "translation": "O thou wrapped up in thy raiment!",
+      "translationUrl": "https://quran.com/73:1?translations=19"
+    },
+    "74:1": {
+      "ref": "74:1",
+      "url": "https://quran.com/74:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلْمُدَّثِّرُ",
+      "translation": "O thou enveloped in thy cloak,",
+      "translationUrl": "https://quran.com/74:1?translations=19"
+    },
+    "75:1": {
+      "ref": "75:1",
+      "url": "https://quran.com/75:1",
+      "arabic": "لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ",
+      "translation": "Nay, I swear by the Day of Resurrection;",
+      "translationUrl": "https://quran.com/75:1?translations=19"
+    },
+    "76:1": {
+      "ref": "76:1",
+      "url": "https://quran.com/76:1",
+      "arabic": "هَلْ أَتَىٰ عَلَى ٱلْإِنسَـٰنِ حِينٌ مِّنَ ٱلدَّهْرِ لَمْ يَكُن شَيْـًٔا مَّذْكُورًا",
+      "translation": "Hath there come upon man (ever) any period of time in which he was a thing unremembered?",
+      "translationUrl": "https://quran.com/76:1?translations=19"
+    },
+    "77:1": {
+      "ref": "77:1",
+      "url": "https://quran.com/77:1",
+      "arabic": "وَٱلْمُرْسَلَـٰتِ عُرْفًا",
+      "translation": "By the emissary winds, (sent) one after another",
+      "translationUrl": "https://quran.com/77:1?translations=19"
+    },
+    "78:1": {
+      "ref": "78:1",
+      "url": "https://quran.com/78:1",
+      "arabic": "عَمَّ يَتَسَآءَلُونَ",
+      "translation": "Whereof do they question one another?",
+      "translationUrl": "https://quran.com/78:1?translations=19"
+    },
+    "79:1": {
+      "ref": "79:1",
+      "url": "https://quran.com/79:1",
+      "arabic": "وَٱلنَّـٰزِعَـٰتِ غَرْقًا",
+      "translation": "By those who drag forth to destruction,",
+      "translationUrl": "https://quran.com/79:1?translations=19"
+    },
+    "80:1": {
+      "ref": "80:1",
+      "url": "https://quran.com/80:1",
+      "arabic": "عَبَسَ وَتَوَلَّىٰٓ",
+      "translation": "He frowned and turned away",
+      "translationUrl": "https://quran.com/80:1?translations=19"
+    },
+    "81:1": {
+      "ref": "81:1",
+      "url": "https://quran.com/81:1",
+      "arabic": "إِذَا ٱلشَّمْسُ كُوِّرَتْ",
+      "translation": "When the sun is overthrown,",
+      "translationUrl": "https://quran.com/81:1?translations=19"
+    },
+    "82:1": {
+      "ref": "82:1",
+      "url": "https://quran.com/82:1",
+      "arabic": "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+      "translation": "When the heaven is cleft asunder,",
+      "translationUrl": "https://quran.com/82:1?translations=19"
+    },
+    "83:1": {
+      "ref": "83:1",
+      "url": "https://quran.com/83:1",
+      "arabic": "وَيْلٌ لِّلْمُطَفِّفِينَ",
+      "translation": "Woe unto the defrauders:",
+      "translationUrl": "https://quran.com/83:1?translations=19"
+    },
+    "84:1": {
+      "ref": "84:1",
+      "url": "https://quran.com/84:1",
+      "arabic": "إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
+      "translation": "When the heaven is split asunder",
+      "translationUrl": "https://quran.com/84:1?translations=19"
+    },
+    "85:1": {
+      "ref": "85:1",
+      "url": "https://quran.com/85:1",
+      "arabic": "وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
+      "translation": "By the heaven, holding mansions of the stars,",
+      "translationUrl": "https://quran.com/85:1?translations=19"
+    },
+    "86:1": {
+      "ref": "86:1",
+      "url": "https://quran.com/86:1",
+      "arabic": "وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+      "translation": "By the heaven and the Morning Star",
+      "translationUrl": "https://quran.com/86:1?translations=19"
+    },
+    "87:1": {
+      "ref": "87:1",
+      "url": "https://quran.com/87:1",
+      "arabic": "سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+      "translation": "Praise the name of thy Lord the Most High,",
+      "translationUrl": "https://quran.com/87:1?translations=19"
+    },
+    "88:1": {
+      "ref": "88:1",
+      "url": "https://quran.com/88:1",
+      "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+      "translation": "Hath there come unto thee tidings of the Overwhelming?",
+      "translationUrl": "https://quran.com/88:1?translations=19"
+    },
+    "89:1": {
+      "ref": "89:1",
+      "url": "https://quran.com/89:1",
+      "arabic": "وَٱلْفَجْرِ",
+      "translation": "By the Dawn",
+      "translationUrl": "https://quran.com/89:1?translations=19"
+    },
+    "90:1": {
+      "ref": "90:1",
+      "url": "https://quran.com/90:1",
+      "arabic": "لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
+      "translation": "Nay, I swear by this city -",
+      "translationUrl": "https://quran.com/90:1?translations=19"
+    },
+    "91:1": {
+      "ref": "91:1",
+      "url": "https://quran.com/91:1",
+      "arabic": "وَٱلشَّمْسِ وَضُحَىٰهَا",
+      "translation": "By the sun and his brightness,",
+      "translationUrl": "https://quran.com/91:1?translations=19"
+    },
+    "92:1": {
+      "ref": "92:1",
+      "url": "https://quran.com/92:1",
+      "arabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰ",
+      "translation": "By the night enshrouding",
+      "translationUrl": "https://quran.com/92:1?translations=19"
+    },
+    "93:1": {
+      "ref": "93:1",
+      "url": "https://quran.com/93:1",
+      "arabic": "وَٱلضُّحَىٰ",
+      "translation": "By the morning hours",
+      "translationUrl": "https://quran.com/93:1?translations=19"
+    },
+    "94:1": {
+      "ref": "94:1",
+      "url": "https://quran.com/94:1",
+      "arabic": "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "translation": "Have We not caused thy bosom to dilate,",
+      "translationUrl": "https://quran.com/94:1?translations=19"
+    },
+    "95:1": {
+      "ref": "95:1",
+      "url": "https://quran.com/95:1",
+      "arabic": "وَٱلتِّينِ وَٱلزَّيْتُونِ",
+      "translation": "By the fig and the olive,",
+      "translationUrl": "https://quran.com/95:1?translations=19"
+    },
+    "96:1": {
+      "ref": "96:1",
+      "url": "https://quran.com/96:1",
+      "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+      "translation": "Read: In the name of thy Lord Who createth,",
+      "translationUrl": "https://quran.com/96:1?translations=19"
+    },
+    "97:1": {
+      "ref": "97:1",
+      "url": "https://quran.com/97:1",
+      "arabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "translation": "Lo! We revealed it on the Night of Predestination.",
+      "translationUrl": "https://quran.com/97:1?translations=19"
+    },
+    "98:1": {
+      "ref": "98:1",
+      "url": "https://quran.com/98:1",
+      "arabic": "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
+      "translation": "Those who disbelieve among the People of the Scripture and the idolaters could not have left off (erring) till the clear proof came unto them,",
+      "translationUrl": "https://quran.com/98:1?translations=19"
+    },
+    "99:1": {
+      "ref": "99:1",
+      "url": "https://quran.com/99:1",
+      "arabic": "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "translation": "When Earth is shaken with her (final) earthquake",
+      "translationUrl": "https://quran.com/99:1?translations=19"
+    },
+    "100:1": {
+      "ref": "100:1",
+      "url": "https://quran.com/100:1",
+      "arabic": "وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
+      "translation": "By the snorting courses,",
+      "translationUrl": "https://quran.com/100:1?translations=19"
+    },
+    "2:152": {
+      "ref": "2:152",
+      "url": "https://quran.com/2:152",
+      "arabic": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
+      "translation": "Therefore remember Me, I will remember you. Give thanks to Me, and reject not Me.",
+      "translationUrl": "https://quran.com/2:152?translations=19"
+    },
+    "2:153": {
+      "ref": "2:153",
+      "url": "https://quran.com/2:153",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِينَ",
+      "translation": "O ye who believe! Seek help in steadfastness and prayer. Lo! Allah is with the steadfast.",
+      "translationUrl": "https://quran.com/2:153?translations=19"
+    },
+    "2:261": {
+      "ref": "2:261",
+      "url": "https://quran.com/2:261",
+      "arabic": "مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍ مِّا۟ئَةُ حَبَّةٍ ۗ وَٱللَّهُ يُضَـٰعِفُ لِمَن يَشَآءُ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ",
+      "translation": "The likeness of those who spend their wealth in Allah's way is as the likeness of a grain which groweth seven ears, in every ear a hundred grains. Allah giveth increase manifold to whom He will. Allah is All-Embracing, All-Knowing.",
+      "translationUrl": "https://quran.com/2:261?translations=19"
+    },
+    "2:271": {
+      "ref": "2:271",
+      "url": "https://quran.com/2:271",
+      "arabic": "إِن تُبْدُوا۟ ٱلصَّدَقَـٰتِ فَنِعِمَّا هِىَ ۖ وَإِن تُخْفُوهَا وَتُؤْتُوهَا ٱلْفُقَرَآءَ فَهُوَ خَيْرٌ لَّكُمْ ۚ وَيُكَفِّرُ عَنكُم مِّن سَيِّـَٔاتِكُمْ ۗ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+      "translation": "If ye publish your almsgiving, it is well, but if ye hide it and give it to the poor, it will be better for you, and will atone for some of your ill-deeds. Allah is Informed of what ye do.",
+      "translationUrl": "https://quran.com/2:271?translations=19"
+    },
+    "3:159": {
+      "ref": "3:159",
+      "url": "https://quran.com/3:159",
+      "arabic": "فَبِمَا رَحْمَةٍ مِّنَ ٱللَّهِ لِنتَ لَهُمْ ۖ وَلَوْ كُنتَ فَظًّا غَلِيظَ ٱلْقَلْبِ لَٱنفَضُّوا۟ مِنْ حَوْلِكَ ۖ فَٱعْفُ عَنْهُمْ وَٱسْتَغْفِرْ لَهُمْ وَشَاوِرْهُمْ فِى ٱلْأَمْرِ ۖ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى ٱللَّهِ ۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُتَوَكِّلِينَ",
+      "translation": "It was by the mercy of Allah that thou wast lenient with them (O Muhammad), for if thou hadst been stern and fierce of heart they would have dispersed from round about thee. So pardon them and ask forgiveness for them and consult with them upon the conduct of affairs. And when thou art resolved, then put thy trust in Allah. Lo! Allah loveth those who put their trust (in Him).",
+      "translationUrl": "https://quran.com/3:159?translations=19"
+    },
+    "4:135": {
+      "ref": "4:135",
+      "url": "https://quran.com/4:135",
+      "arabic": "۞ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَوَّٰمِينَ بِٱلْقِسْطِ شُهَدَآءَ لِلَّهِ وَلَوْ عَلَىٰٓ أَنفُسِكُمْ أَوِ ٱلْوَٰلِدَيْنِ وَٱلْأَقْرَبِينَ ۚ إِن يَكُنْ غَنِيًّا أَوْ فَقِيرًا فَٱللَّهُ أَوْلَىٰ بِهِمَا ۖ فَلَا تَتَّبِعُوا۟ ٱلْهَوَىٰٓ أَن تَعْدِلُوا۟ ۚ وَإِن تَلْوُۥٓا۟ أَوْ تُعْرِضُوا۟ فَإِنَّ ٱللَّهَ كَانَ بِمَا تَعْمَلُونَ خَبِيرًا",
+      "translation": "O ye who believe! Be ye staunch in justice, witnesses for Allah, even though it be against yourselves or (your) parents or (your) kindred, whether (the case be of) a rich man or a poor man, for Allah is nearer unto both (them ye are). So follow not passion lest ye lapse (from truth) and if ye lapse or fall away, then lo! Allah is ever Informed of what ye do.",
+      "translationUrl": "https://quran.com/4:135?translations=19"
+    },
+    "5:8": {
+      "ref": "5:8",
+      "url": "https://quran.com/5:8",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَوَّٰمِينَ لِلَّهِ شُهَدَآءَ بِٱلْقِسْطِ ۖ وَلَا يَجْرِمَنَّكُمْ شَنَـَٔانُ قَوْمٍ عَلَىٰٓ أَلَّا تَعْدِلُوا۟ ۚ ٱعْدِلُوا۟ هُوَ أَقْرَبُ لِلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ خَبِيرٌۢ بِمَا تَعْمَلُونَ",
+      "translation": "O ye who believe! Be steadfast witnesses for Allah in equity, and let not hatred of any people seduce you that ye deal not justly. Deal justly, that is nearer to your duty. Observe your duty to Allah. Lo! Allah is Informed of what ye do.",
+      "translationUrl": "https://quran.com/5:8?translations=19"
+    },
+    "7:156": {
+      "ref": "7:156",
+      "url": "https://quran.com/7:156",
+      "arabic": "۞ وَٱكْتُبْ لَنَا فِى هَـٰذِهِ ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْـَٔاخِرَةِ إِنَّا هُدْنَآ إِلَيْكَ ۚ قَالَ عَذَابِىٓ أُصِيبُ بِهِۦ مَنْ أَشَآءُ ۖ وَرَحْمَتِى وَسِعَتْ كُلَّ شَىْءٍ ۚ فَسَأَكْتُبُهَا لِلَّذِينَ يَتَّقُونَ وَيُؤْتُونَ ٱلزَّكَوٰةَ وَٱلَّذِينَ هُم بِـَٔايَـٰتِنَا يُؤْمِنُونَ",
+      "translation": "And ordain for us in this world that which is good, and in the Hereafter (that which is good), Lo! We have turned unto Thee. He said: I smite with My punishment whom I will, and My mercy embraceth all things, therefore I shall ordain it for those who ward off (evil) and pay the poor-due, and those who believe Our revelations;",
+      "translationUrl": "https://quran.com/7:156?translations=19"
+    },
+    "9:119": {
+      "ref": "9:119",
+      "url": "https://quran.com/9:119",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَكُونُوا۟ مَعَ ٱلصَّـٰدِقِينَ",
+      "translation": "O ye who believe! Be careful of your duty to Allah, and be with the truthful.",
+      "translationUrl": "https://quran.com/9:119?translations=19"
+    },
+    "14:7": {
+      "ref": "14:7",
+      "url": "https://quran.com/14:7",
+      "arabic": "وَإِذْ تَأَذَّنَ رَبُّكُمْ لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِى لَشَدِيدٌ",
+      "translation": "And when your Lord proclaimed: If ye give thanks, I will give you more; but if ye are thankless, lo! My punishment is dire.",
+      "translationUrl": "https://quran.com/14:7?translations=19"
+    },
+    "14:12": {
+      "ref": "14:12",
+      "url": "https://quran.com/14:12",
+      "arabic": "وَمَا لَنَآ أَلَّا نَتَوَكَّلَ عَلَى ٱللَّهِ وَقَدْ هَدَىٰنَا سُبُلَنَا ۚ وَلَنَصْبِرَنَّ عَلَىٰ مَآ ءَاذَيْتُمُونَا ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُتَوَكِّلُونَ",
+      "translation": "How should we not put our trust in Allah when He hath shown us our ways? We surely will endure the hurt ye do us. In Allah let the trusting put their trust.",
+      "translationUrl": "https://quran.com/14:12?translations=19"
+    },
+    "16:127": {
+      "ref": "16:127",
+      "url": "https://quran.com/16:127",
+      "arabic": "وَٱصْبِرْ وَمَا صَبْرُكَ إِلَّا بِٱللَّهِ ۚ وَلَا تَحْزَنْ عَلَيْهِمْ وَلَا تَكُ فِى ضَيْقٍ مِّمَّا يَمْكُرُونَ",
+      "translation": "Endure thou patiently (O Muhammad). Thine endurance is only by (the help of) Allah. Grieve not for them, and be not in distress because of that which they devise.",
+      "translationUrl": "https://quran.com/16:127?translations=19"
+    },
+    "17:23": {
+      "ref": "17:23",
+      "url": "https://quran.com/17:23",
+      "arabic": "۞ وَقَضَىٰ رَبُّكَ أَلَّا تَعْبُدُوٓا۟ إِلَّآ إِيَّاهُ وَبِٱلْوَٰلِدَيْنِ إِحْسَـٰنًا ۚ إِمَّا يَبْلُغَنَّ عِندَكَ ٱلْكِبَرَ أَحَدُهُمَآ أَوْ كِلَاهُمَا فَلَا تَقُل لَّهُمَآ أُفٍّ وَلَا تَنْهَرْهُمَا وَقُل لَّهُمَا قَوْلًا كَرِيمًا",
+      "translation": "Thy Lord hath decreed, that ye worship none save Him, and (that ye show) kindness to parents. If one of them or both of them attain old age with thee, say not \"Fie\" unto them nor repulse them, but speak unto them a gracious word.",
+      "translationUrl": "https://quran.com/17:23?translations=19"
+    },
+    "17:34": {
+      "ref": "17:34",
+      "url": "https://quran.com/17:34",
+      "arabic": "وَلَا تَقْرَبُوا۟ مَالَ ٱلْيَتِيمِ إِلَّا بِٱلَّتِى هِىَ أَحْسَنُ حَتَّىٰ يَبْلُغَ أَشُدَّهُۥ ۚ وَأَوْفُوا۟ بِٱلْعَهْدِ ۖ إِنَّ ٱلْعَهْدَ كَانَ مَسْـُٔولًا",
+      "translation": "Come not near the wealth of the orphan save with that which is better till he come to strength; and keep the covenant. Lo! of the covenant it will be asked.",
+      "translationUrl": "https://quran.com/17:34?translations=19"
+    },
+    "17:37": {
+      "ref": "17:37",
+      "url": "https://quran.com/17:37",
+      "arabic": "وَلَا تَمْشِ فِى ٱلْأَرْضِ مَرَحًا ۖ إِنَّكَ لَن تَخْرِقَ ٱلْأَرْضَ وَلَن تَبْلُغَ ٱلْجِبَالَ طُولًا",
+      "translation": "And walk not in the earth exultant. Lo! thou canst not rend the earth, nor canst thou stretch to the height of the hills.",
+      "translationUrl": "https://quran.com/17:37?translations=19"
+    },
+    "17:53": {
+      "ref": "17:53",
+      "url": "https://quran.com/17:53",
+      "arabic": "وَقُل لِّعِبَادِى يَقُولُوا۟ ٱلَّتِى هِىَ أَحْسَنُ ۚ إِنَّ ٱلشَّيْطَـٰنَ يَنزَغُ بَيْنَهُمْ ۚ إِنَّ ٱلشَّيْطَـٰنَ كَانَ لِلْإِنسَـٰنِ عَدُوًّا مُّبِينًا",
+      "translation": "Tell My bondmen to speak that which is kindlier. Lo! the devil soweth discord among them. Lo! the devil is for man an open foe.",
+      "translationUrl": "https://quran.com/17:53?translations=19"
+    },
+    "20:114": {
+      "ref": "20:114",
+      "url": "https://quran.com/20:114",
+      "arabic": "فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۗ وَلَا تَعْجَلْ بِٱلْقُرْءَانِ مِن قَبْلِ أَن يُقْضَىٰٓ إِلَيْكَ وَحْيُهُۥ ۖ وَقُل رَّبِّ زِدْنِى عِلْمًا",
+      "translation": "Then exalted be Allah, the True King! And hasten not (O Muhammad) with the Qur'an ere its revelation hath been perfected unto thee, and say: My Lord! Increase me in knowledge.",
+      "translationUrl": "https://quran.com/20:114?translations=19"
+    },
+    "21:107": {
+      "ref": "21:107",
+      "url": "https://quran.com/21:107",
+      "arabic": "وَمَآ أَرْسَلْنَـٰكَ إِلَّا رَحْمَةً لِّلْعَـٰلَمِينَ",
+      "translation": "We sent thee not save as a mercy for the peoples.",
+      "translationUrl": "https://quran.com/21:107?translations=19"
+    },
+    "24:22": {
+      "ref": "24:22",
+      "url": "https://quran.com/24:22",
+      "arabic": "وَلَا يَأْتَلِ أُو۟لُوا۟ ٱلْفَضْلِ مِنكُمْ وَٱلسَّعَةِ أَن يُؤْتُوٓا۟ أُو۟لِى ٱلْقُرْبَىٰ وَٱلْمَسَـٰكِينَ وَٱلْمُهَـٰجِرِينَ فِى سَبِيلِ ٱللَّهِ ۖ وَلْيَعْفُوا۟ وَلْيَصْفَحُوٓا۟ ۗ أَلَا تُحِبُّونَ أَن يَغْفِرَ ٱللَّهُ لَكُمْ ۗ وَٱللَّهُ غَفُورٌ رَّحِيمٌ",
+      "translation": "And let not those who possess dignity and ease among you swear not to give to the near of kin and to the needy, and to fugitives for the cause of Allah. Let them forgive and show indulgence. Yearn ye not that Allah may forgive you? Allah is Forgiving, Merciful.",
+      "translationUrl": "https://quran.com/24:22?translations=19"
+    },
+    "25:63": {
+      "ref": "25:63",
+      "url": "https://quran.com/25:63",
+      "arabic": "وَعِبَادُ ٱلرَّحْمَـٰنِ ٱلَّذِينَ يَمْشُونَ عَلَى ٱلْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ ٱلْجَـٰهِلُونَ قَالُوا۟ سَلَـٰمًا",
+      "translation": "The (faithful) slaves of the Beneficent are they who walk upon the earth modestly, and when the foolish ones address them answer: Peace;",
+      "translationUrl": "https://quran.com/25:63?translations=19"
+    },
+    "25:70": {
+      "ref": "25:70",
+      "url": "https://quran.com/25:70",
+      "arabic": "إِلَّا مَن تَابَ وَءَامَنَ وَعَمِلَ عَمَلًا صَـٰلِحًا فَأُو۟لَـٰٓئِكَ يُبَدِّلُ ٱللَّهُ سَيِّـَٔاتِهِمْ حَسَنَـٰتٍ ۗ وَكَانَ ٱللَّهُ غَفُورًا رَّحِيمًا",
+      "translation": "Save him who repenteth and believeth and doth righteous work; as for such, Allah will change their evil deeds to good deeds. Allah is ever Forgiving, Merciful.",
+      "translationUrl": "https://quran.com/25:70?translations=19"
+    },
+    "29:8": {
+      "ref": "29:8",
+      "url": "https://quran.com/29:8",
+      "arabic": "وَوَصَّيْنَا ٱلْإِنسَـٰنَ بِوَٰلِدَيْهِ حُسْنًا ۖ وَإِن جَـٰهَدَاكَ لِتُشْرِكَ بِى مَا لَيْسَ لَكَ بِهِۦ عِلْمٌ فَلَا تُطِعْهُمَآ ۚ إِلَىَّ مَرْجِعُكُمْ فَأُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ",
+      "translation": "We have enjoined on man kindness to parents; but if they strive to make thee join with Me that of which thou hast no knowledge, then obey them not. Unto Me is your return and I shall tell you what ye used to do.",
+      "translationUrl": "https://quran.com/29:8?translations=19"
+    },
+    "31:12": {
+      "ref": "31:12",
+      "url": "https://quran.com/31:12",
+      "arabic": "وَلَقَدْ ءَاتَيْنَا لُقْمَـٰنَ ٱلْحِكْمَةَ أَنِ ٱشْكُرْ لِلَّهِ ۚ وَمَن يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِۦ ۖ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِىٌّ حَمِيدٌ",
+      "translation": "And verily We gave Luqman wisdom, saying: Give thanks unto Allah; and whosoever giveth thanks, he giveth thanks for (the good of) his soul. And whosoever refuseth - Lo! Allah is Absolute, Owner of Praise.",
+      "translationUrl": "https://quran.com/31:12?translations=19"
+    },
+    "31:14": {
+      "ref": "31:14",
+      "url": "https://quran.com/31:14",
+      "arabic": "وَوَصَّيْنَا ٱلْإِنسَـٰنَ بِوَٰلِدَيْهِ حَمَلَتْهُ أُمُّهُۥ وَهْنًا عَلَىٰ وَهْنٍ وَفِصَـٰلُهُۥ فِى عَامَيْنِ أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ إِلَىَّ ٱلْمَصِيرُ",
+      "translation": "And We have enjoined upon man concerning his parents - His mother beareth him in weakness upon weakness, and his weaning is in two years - Give thanks unto Me and unto thy parents. Unto Me is the journeying",
+      "translationUrl": "https://quran.com/31:14?translations=19"
+    },
+    "31:18": {
+      "ref": "31:18",
+      "url": "https://quran.com/31:18",
+      "arabic": "وَلَا تُصَعِّرْ خَدَّكَ لِلنَّاسِ وَلَا تَمْشِ فِى ٱلْأَرْضِ مَرَحًا ۖ إِنَّ ٱللَّهَ لَا يُحِبُّ كُلَّ مُخْتَالٍ فَخُورٍ",
+      "translation": "Turn not thy cheek in scorn toward folk, nor walk with pertness in the land. Lo! Allah loveth not each braggart boaster.",
+      "translationUrl": "https://quran.com/31:18?translations=19"
+    },
+    "33:35": {
+      "ref": "33:35",
+      "url": "https://quran.com/33:35",
+      "arabic": "إِنَّ ٱلْمُسْلِمِينَ وَٱلْمُسْلِمَـٰتِ وَٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ وَٱلْقَـٰنِتِينَ وَٱلْقَـٰنِتَـٰتِ وَٱلصَّـٰدِقِينَ وَٱلصَّـٰدِقَـٰتِ وَٱلصَّـٰبِرِينَ وَٱلصَّـٰبِرَٰتِ وَٱلْخَـٰشِعِينَ وَٱلْخَـٰشِعَـٰتِ وَٱلْمُتَصَدِّقِينَ وَٱلْمُتَصَدِّقَـٰتِ وَٱلصَّـٰٓئِمِينَ وَٱلصَّـٰٓئِمَـٰتِ وَٱلْحَـٰفِظِينَ فُرُوجَهُمْ وَٱلْحَـٰفِظَـٰتِ وَٱلذَّٰكِرِينَ ٱللَّهَ كَثِيرًا وَٱلذَّٰكِرَٰتِ أَعَدَّ ٱللَّهُ لَهُم مَّغْفِرَةً وَأَجْرًا عَظِيمًا",
+      "translation": "Lo! men who surrender unto Allah, and women who surrender, and men who believe and women who believe, and men who obey and women who obey, and men who speak the truth and women who speak the truth, and men who persevere (in righteousness) and women who persevere, and men who are humble and women who are humble, and men who give alms and women who give alms, and men who fast and women who fast, and men who guard their modesty and women who guard (their modesty), and men who remember Allah much and women who remember - Allah hath prepared for them forgiveness and a vast reward.",
+      "translationUrl": "https://quran.com/33:35?translations=19"
+    },
+    "33:70": {
+      "ref": "33:70",
+      "url": "https://quran.com/33:70",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَقُولُوا۟ قَوْلًا سَدِيدًا",
+      "translation": "O ye who believe! Guard your duty to Allah, and speak words straight to the point;",
+      "translationUrl": "https://quran.com/33:70?translations=19"
+    },
+    "39:9": {
+      "ref": "39:9",
+      "url": "https://quran.com/39:9",
+      "arabic": "أَمَّنْ هُوَ قَـٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا وَقَآئِمًا يَحْذَرُ ٱلْـَٔاخِرَةَ وَيَرْجُوا۟ رَحْمَةَ رَبِّهِۦ ۗ قُلْ هَلْ يَسْتَوِى ٱلَّذِينَ يَعْلَمُونَ وَٱلَّذِينَ لَا يَعْلَمُونَ ۗ إِنَّمَا يَتَذَكَّرُ أُو۟لُوا۟ ٱلْأَلْبَـٰبِ",
+      "translation": "Is he who payeth adoration in the watches of the night, prostrate and standing, bewaring of the Hereafter and hoping for the mercy of his Lord, (to be accounted equal with a disbeliever)? Say (unto them, O Muhammad): Are those who know equal with those who know not? But only men of understanding will pay heed.",
+      "translationUrl": "https://quran.com/39:9?translations=19"
+    },
+    "39:53": {
+      "ref": "39:53",
+      "url": "https://quran.com/39:53",
+      "arabic": "۞ قُلْ يَـٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ ۚ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
+      "translation": "Say: O My slaves who have been prodigal to their own hurt! Despair not of the mercy of Allah, Who forgiveth all sins. Lo! He is the Forgiving, the Merciful.",
+      "translationUrl": "https://quran.com/39:53?translations=19"
+    },
+    "42:15": {
+      "ref": "42:15",
+      "url": "https://quran.com/42:15",
+      "arabic": "فَلِذَٰلِكَ فَٱدْعُ ۖ وَٱسْتَقِمْ كَمَآ أُمِرْتَ ۖ وَلَا تَتَّبِعْ أَهْوَآءَهُمْ ۖ وَقُلْ ءَامَنتُ بِمَآ أَنزَلَ ٱللَّهُ مِن كِتَـٰبٍ ۖ وَأُمِرْتُ لِأَعْدِلَ بَيْنَكُمُ ۖ ٱللَّهُ رَبُّنَا وَرَبُّكُمْ ۖ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ ۖ لَا حُجَّةَ بَيْنَنَا وَبَيْنَكُمُ ۖ ٱللَّهُ يَجْمَعُ بَيْنَنَا ۖ وَإِلَيْهِ ٱلْمَصِيرُ",
+      "translation": "Unto this, then, summon (O Muhammad). And be thou upright as thou art commanded, and follow not their lusts, but say: I believe in whatever scripture Allah hath sent down, and I am commanded to be just among you. Allah is our Lord and your Lord. Unto us our works and unto you your works; no argument between us and you. Allah will bring us together, and unto Him is the journeying.",
+      "translationUrl": "https://quran.com/42:15?translations=19"
+    },
+    "42:40": {
+      "ref": "42:40",
+      "url": "https://quran.com/42:40",
+      "arabic": "وَجَزَٰٓؤُا۟ سَيِّئَةٍ سَيِّئَةٌ مِّثْلُهَا ۖ فَمَنْ عَفَا وَأَصْلَحَ فَأَجْرُهُۥ عَلَى ٱللَّهِ ۚ إِنَّهُۥ لَا يُحِبُّ ٱلظَّـٰلِمِينَ",
+      "translation": "The guerdon of an ill-deed is an ill the like thereof. But whosoever pardoneth and amendeth, his wage is the affair of Allah. Lo! He loveth not wrong-doers.",
+      "translationUrl": "https://quran.com/42:40?translations=19"
+    },
+    "49:11": {
+      "ref": "49:11",
+      "url": "https://quran.com/49:11",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰٓ أَن يَكُونُوا۟ خَيْرًا مِّنْهُمْ وَلَا نِسَآءٌ مِّن نِّسَآءٍ عَسَىٰٓ أَن يَكُنَّ خَيْرًا مِّنْهُنَّ ۖ وَلَا تَلْمِزُوٓا۟ أَنفُسَكُمْ وَلَا تَنَابَزُوا۟ بِٱلْأَلْقَـٰبِ ۖ بِئْسَ ٱلِٱسْمُ ٱلْفُسُوقُ بَعْدَ ٱلْإِيمَـٰنِ ۚ وَمَن لَّمْ يَتُبْ فَأُو۟لَـٰٓئِكَ هُمُ ٱلظَّـٰلِمُونَ",
+      "translation": "O ye who believe! Let not a folk deride a folk who may be better than they (are), not let women (deride) women who may be better than they are; neither defame one another, nor insult one another by nicknames. Bad is the name of lewdness after faith. And whoso turneth not in repentance, such are evil-doers.",
+      "translationUrl": "https://quran.com/49:11?translations=19"
+    },
+    "65:3": {
+      "ref": "65:3",
+      "url": "https://quran.com/65:3",
+      "arabic": "وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ ۚ وَمَن يَتَوَكَّلْ عَلَى ٱللَّهِ فَهُوَ حَسْبُهُۥٓ ۚ إِنَّ ٱللَّهَ بَـٰلِغُ أَمْرِهِۦ ۚ قَدْ جَعَلَ ٱللَّهُ لِكُلِّ شَىْءٍ قَدْرًا",
+      "translation": "And will provide for him from (a quarter) whence he hath no expectation. And whosoever putteth his trust in Allah, He will suffice him. Lo! Allah bringeth His command to pass. Allah hath set a measure for all things.",
+      "translationUrl": "https://quran.com/65:3?translations=19"
+    },
+    "76:8": {
+      "ref": "76:8",
+      "url": "https://quran.com/76:8",
+      "arabic": "وَيُطْعِمُونَ ٱلطَّعَامَ عَلَىٰ حُبِّهِۦ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا",
+      "translation": "And feed with food the needy wretch, the orphan and the prisoner, for love of Him,",
+      "translationUrl": "https://quran.com/76:8?translations=19"
+    },
+    "96:2": {
+      "ref": "96:2",
+      "url": "https://quran.com/96:2",
+      "arabic": "خَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ",
+      "translation": "Createth man from a clot.",
+      "translationUrl": "https://quran.com/96:2?translations=19"
+    },
+    "96:3": {
+      "ref": "96:3",
+      "url": "https://quran.com/96:3",
+      "arabic": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
+      "translation": "Read: And thy Lord is the Most Bounteous,",
+      "translationUrl": "https://quran.com/96:3?translations=19"
+    },
+    "96:4": {
+      "ref": "96:4",
+      "url": "https://quran.com/96:4",
+      "arabic": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+      "translation": "Who teacheth by the pen,",
+      "translationUrl": "https://quran.com/96:4?translations=19"
+    },
+    "96:5": {
+      "ref": "96:5",
+      "url": "https://quran.com/96:5",
+      "arabic": "عَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+      "translation": "Teacheth man that which he knew not.",
+      "translationUrl": "https://quran.com/96:5?translations=19"
+    },
+    "101:1": {
+      "ref": "101:1",
+      "url": "https://quran.com/101:1",
+      "arabic": "ٱلْقَارِعَةُ",
+      "translation": "The Calamity!",
+      "translationUrl": "https://quran.com/101:1?translations=19"
+    },
+    "102:1": {
+      "ref": "102:1",
+      "url": "https://quran.com/102:1",
+      "arabic": "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "translation": "Rivalry in worldly increase distracteth you",
+      "translationUrl": "https://quran.com/102:1?translations=19"
+    },
+    "103:1": {
+      "ref": "103:1",
+      "url": "https://quran.com/103:1",
+      "arabic": "وَٱلْعَصْرِ",
+      "translation": "By the declining day,",
+      "translationUrl": "https://quran.com/103:1?translations=19"
+    },
+    "103:3": {
+      "ref": "103:3",
+      "url": "https://quran.com/103:3",
+      "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "translation": "Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance.",
+      "translationUrl": "https://quran.com/103:3?translations=19"
+    },
+    "104:1": {
+      "ref": "104:1",
+      "url": "https://quran.com/104:1",
+      "arabic": "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+      "translation": "Woe unto every slandering traducer,",
+      "translationUrl": "https://quran.com/104:1?translations=19"
+    },
+    "105:1": {
+      "ref": "105:1",
+      "url": "https://quran.com/105:1",
+      "arabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+      "translation": "Hast thou not seen how thy Lord dealt with the owners of the Elephant?",
+      "translationUrl": "https://quran.com/105:1?translations=19"
+    },
+    "106:1": {
+      "ref": "106:1",
+      "url": "https://quran.com/106:1",
+      "arabic": "لِإِيلَـٰفِ قُرَيْشٍ",
+      "translation": "For the taming of Qureysh.",
+      "translationUrl": "https://quran.com/106:1?translations=19"
+    },
+    "107:1": {
+      "ref": "107:1",
+      "url": "https://quran.com/107:1",
+      "arabic": "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+      "translation": "Hast thou observed him who belieth religion?",
+      "translationUrl": "https://quran.com/107:1?translations=19"
+    },
+    "108:1": {
+      "ref": "108:1",
+      "url": "https://quran.com/108:1",
+      "arabic": "إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+      "translation": "Lo! We have given thee Abundance;",
+      "translationUrl": "https://quran.com/108:1?translations=19"
+    },
+    "109:1": {
+      "ref": "109:1",
+      "url": "https://quran.com/109:1",
+      "arabic": "قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+      "translation": "Say: O disbelievers!",
+      "translationUrl": "https://quran.com/109:1?translations=19"
+    },
+    "110:1": {
+      "ref": "110:1",
+      "url": "https://quran.com/110:1",
+      "arabic": "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "translation": "When Allah's succour and the triumph cometh",
+      "translationUrl": "https://quran.com/110:1?translations=19"
+    },
+    "111:1": {
+      "ref": "111:1",
+      "url": "https://quran.com/111:1",
+      "arabic": "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+      "translation": "The power of Abu Lahab will perish, and he will perish.",
+      "translationUrl": "https://quran.com/111:1?translations=19"
+    },
+    "112:1": {
+      "ref": "112:1",
+      "url": "https://quran.com/112:1",
+      "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "translation": "Say: He is Allah, the One!",
+      "translationUrl": "https://quran.com/112:1?translations=19"
+    },
+    "113:1": {
+      "ref": "113:1",
+      "url": "https://quran.com/113:1",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "translation": "Say: I seek refuge in the Lord of the Daybreak",
+      "translationUrl": "https://quran.com/113:1?translations=19"
+    },
+    "114:1": {
+      "ref": "114:1",
+      "url": "https://quran.com/114:1",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "translation": "Say: I seek refuge in the Lord of mankind,",
+      "translationUrl": "https://quran.com/114:1?translations=19"
+    },
+    "2:43": {
+      "ref": "2:43",
+      "url": "https://quran.com/2:43",
+      "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ",
+      "translation": "Establish worship, pay the poor-due, and bow your heads with those who bow (in worship).",
+      "translationUrl": "https://quran.com/2:43?translations=19"
+    },
+    "2:83": {
+      "ref": "2:83",
+      "url": "https://quran.com/2:83",
+      "arabic": "وَإِذْ أَخَذْنَا مِيثَـٰقَ بَنِىٓ إِسْرَٰٓءِيلَ لَا تَعْبُدُونَ إِلَّا ٱللَّهَ وَبِٱلْوَٰلِدَيْنِ إِحْسَانًا وَذِى ٱلْقُرْبَىٰ وَٱلْيَتَـٰمَىٰ وَٱلْمَسَـٰكِينِ وَقُولُوا۟ لِلنَّاسِ حُسْنًا وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ ثُمَّ تَوَلَّيْتُمْ إِلَّا قَلِيلًا مِّنكُمْ وَأَنتُم مُّعْرِضُونَ",
+      "translation": "And (remember) when We made a covenant with the Children of Israel, (saying): Worship none save Allah (only), and be good to parents and to kindred and to orphans and the needy, and speak kindly to mankind; and establish worship and pay the poor-due. Then, after that, ye slid back, save a few of you, being averse.",
+      "translationUrl": "https://quran.com/2:83?translations=19"
+    },
+    "2:183": {
+      "ref": "2:183",
+      "url": "https://quran.com/2:183",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ كَمَا كُتِبَ عَلَى ٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+      "translation": "O ye who believe! Fasting is prescribed for you, even as it was prescribed for those before you, that ye may ward off (evil);",
+      "translationUrl": "https://quran.com/2:183?translations=19"
+    },
+    "2:184": {
+      "ref": "2:184",
+      "url": "https://quran.com/2:184",
+      "arabic": "أَيَّامًا مَّعْدُودَٰتٍ ۚ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۚ وَعَلَى ٱلَّذِينَ يُطِيقُونَهُۥ فِدْيَةٌ طَعَامُ مِسْكِينٍ ۖ فَمَن تَطَوَّعَ خَيْرًا فَهُوَ خَيْرٌ لَّهُۥ ۚ وَأَن تَصُومُوا۟ خَيْرٌ لَّكُمْ ۖ إِن كُنتُمْ تَعْلَمُونَ",
+      "translation": "(Fast) a certain number of days; and (for) him who is sick among you, or on a journey, (the same) number of other days; and for those who can afford it there is a ransom: the feeding of a man in need - but whoso doeth good of his own accord, it is better for him: and that ye fast is better for you if ye did but know -",
+      "translationUrl": "https://quran.com/2:184?translations=19"
+    },
+    "2:185": {
+      "ref": "2:185",
+      "url": "https://quran.com/2:185",
+      "arabic": "شَهْرُ رَمَضَانَ ٱلَّذِىٓ أُنزِلَ فِيهِ ٱلْقُرْءَانُ هُدًى لِّلنَّاسِ وَبَيِّنَـٰتٍ مِّنَ ٱلْهُدَىٰ وَٱلْفُرْقَانِ ۚ فَمَن شَهِدَ مِنكُمُ ٱلشَّهْرَ فَلْيَصُمْهُ ۖ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۗ يُرِيدُ ٱللَّهُ بِكُمُ ٱلْيُسْرَ وَلَا يُرِيدُ بِكُمُ ٱلْعُسْرَ وَلِتُكْمِلُوا۟ ٱلْعِدَّةَ وَلِتُكَبِّرُوا۟ ٱللَّهَ عَلَىٰ مَا هَدَىٰكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ",
+      "translation": "The month of Ramadan in which was revealed the Qur'an, a guidance for mankind, and clear proofs of the guidance, and the Criterion (of right and wrong). And whosoever of you is present, let him fast the month, and whosoever of you is sick or on a journey, (let him fast the same) number of other days. Allah desireth for you ease; He desireth not hardship for you; and (He desireth) that ye should complete the period, and that ye should magnify Allah for having guided you, and that peradventure ye may be thankful.",
+      "translationUrl": "https://quran.com/2:185?translations=19"
+    },
+    "2:233": {
+      "ref": "2:233",
+      "url": "https://quran.com/2:233",
+      "arabic": "۞ وَٱلْوَٰلِدَٰتُ يُرْضِعْنَ أَوْلَـٰدَهُنَّ حَوْلَيْنِ كَامِلَيْنِ ۖ لِمَنْ أَرَادَ أَن يُتِمَّ ٱلرَّضَاعَةَ ۚ وَعَلَى ٱلْمَوْلُودِ لَهُۥ رِزْقُهُنَّ وَكِسْوَتُهُنَّ بِٱلْمَعْرُوفِ ۚ لَا تُكَلَّفُ نَفْسٌ إِلَّا وُسْعَهَا ۚ لَا تُضَآرَّ وَٰلِدَةٌۢ بِوَلَدِهَا وَلَا مَوْلُودٌ لَّهُۥ بِوَلَدِهِۦ ۚ وَعَلَى ٱلْوَارِثِ مِثْلُ ذَٰلِكَ ۗ فَإِنْ أَرَادَا فِصَالًا عَن تَرَاضٍ مِّنْهُمَا وَتَشَاوُرٍ فَلَا جُنَاحَ عَلَيْهِمَا ۗ وَإِنْ أَرَدتُّمْ أَن تَسْتَرْضِعُوٓا۟ أَوْلَـٰدَكُمْ فَلَا جُنَاحَ عَلَيْكُمْ إِذَا سَلَّمْتُم مَّآ ءَاتَيْتُم بِٱلْمَعْرُوفِ ۗ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ بَصِيرٌ",
+      "translation": "Mothers shall suckle their children for two whole years; (that is) for those who wish to complete the suckling. The duty of feeding and clothing nursing mothers in a seemly manner is upon the father of the child. No-one should be charged beyond his capacity. A mother should not be made to suffer because of her child, nor should he to whom the child is born (be made to suffer) because of his child. And on the (father's) heir is incumbent the like of that (which was incumbent on the father). If they desire to wean the child by mutual consent and (after) consultation, it is no sin for them; and if ye wish to give your children out to nurse, it is no sin for you, provide that ye pay what is due from you in kindness. Observe your duty to Allah, and know that Allah is Seer of what ye do.",
+      "translationUrl": "https://quran.com/2:233?translations=19"
+    },
+    "3:103": {
+      "ref": "3:103",
+      "url": "https://quran.com/3:103",
+      "arabic": "وَٱعْتَصِمُوا۟ بِحَبْلِ ٱللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا۟ ۚ وَٱذْكُرُوا۟ نِعْمَتَ ٱللَّهِ عَلَيْكُمْ إِذْ كُنتُمْ أَعْدَآءً فَأَلَّفَ بَيْنَ قُلُوبِكُمْ فَأَصْبَحْتُم بِنِعْمَتِهِۦٓ إِخْوَٰنًا وَكُنتُمْ عَلَىٰ شَفَا حُفْرَةٍ مِّنَ ٱلنَّارِ فَأَنقَذَكُم مِّنْهَا ۗ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمْ ءَايَـٰتِهِۦ لَعَلَّكُمْ تَهْتَدُونَ",
+      "translation": "And hold fast, all of you together, to the cable of Allah, and do not separate. And remember Allah's favour unto you: How ye were enemies and He made friendship between your hearts so that ye became as brothers by His grace; and (how) ye were upon the brink of an abyss of fire, and He did save you from it. Thus Allah maketh clear His revelations unto you, that haply ye may be guided,",
+      "translationUrl": "https://quran.com/3:103?translations=19"
+    },
+    "3:134": {
+      "ref": "3:134",
+      "url": "https://quran.com/3:134",
+      "arabic": "ٱلَّذِينَ يُنفِقُونَ فِى ٱلسَّرَّآءِ وَٱلضَّرَّآءِ وَٱلْكَـٰظِمِينَ ٱلْغَيْظَ وَٱلْعَافِينَ عَنِ ٱلنَّاسِ ۗ وَٱللَّهُ يُحِبُّ ٱلْمُحْسِنِينَ",
+      "translation": "Those who spend (of that which Allah hath given them) in ease and in adversity, those who control their wrath and are forgiving toward mankind; Allah loveth the good;",
+      "translationUrl": "https://quran.com/3:134?translations=19"
+    },
+    "4:2": {
+      "ref": "4:2",
+      "url": "https://quran.com/4:2",
+      "arabic": "وَءَاتُوا۟ ٱلْيَتَـٰمَىٰٓ أَمْوَٰلَهُمْ ۖ وَلَا تَتَبَدَّلُوا۟ ٱلْخَبِيثَ بِٱلطَّيِّبِ ۖ وَلَا تَأْكُلُوٓا۟ أَمْوَٰلَهُمْ إِلَىٰٓ أَمْوَٰلِكُمْ ۚ إِنَّهُۥ كَانَ حُوبًا كَبِيرًا",
+      "translation": "Give unto orphans their wealth. Exchange not the good for the bad (in your management thereof) nor absorb their wealth into your own wealth. Lo! that would be a great sin.",
+      "translationUrl": "https://quran.com/4:2?translations=19"
+    },
+    "4:10": {
+      "ref": "4:10",
+      "url": "https://quran.com/4:10",
+      "arabic": "إِنَّ ٱلَّذِينَ يَأْكُلُونَ أَمْوَٰلَ ٱلْيَتَـٰمَىٰ ظُلْمًا إِنَّمَا يَأْكُلُونَ فِى بُطُونِهِمْ نَارًا ۖ وَسَيَصْلَوْنَ سَعِيرًا",
+      "translation": "Lo! Those who devour the wealth of orphans wrongfully, they do but swallow fire into their bellies, and they will be exposed to burning flame.",
+      "translationUrl": "https://quran.com/4:10?translations=19"
+    },
+    "4:36": {
+      "ref": "4:36",
+      "url": "https://quran.com/4:36",
+      "arabic": "۞ وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًٔا ۖ وَبِٱلْوَٰلِدَيْنِ إِحْسَـٰنًا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَـٰمَىٰ وَٱلْمَسَـٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَـٰنُكُمْ ۗ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًا فَخُورًا",
+      "translation": "And serve Allah. Ascribe no thing as partner unto Him. (Show) kindness unto parents, and unto near kindred, and orphans, and the needy, and unto the neighbour who is of kin (unto you) and the neighbour who is not of kin, and the fellow-traveller and the wayfarer and (the slaves) whom your right hands possess. Lo! Allah loveth not such as are proud and boastful,",
+      "translationUrl": "https://quran.com/4:36?translations=19"
+    },
+    "4:58": {
+      "ref": "4:58",
+      "url": "https://quran.com/4:58",
+      "arabic": "۞ إِنَّ ٱللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا۟ ٱلْأَمَـٰنَـٰتِ إِلَىٰٓ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ ٱلنَّاسِ أَن تَحْكُمُوا۟ بِٱلْعَدْلِ ۚ إِنَّ ٱللَّهَ نِعِمَّا يَعِظُكُم بِهِۦٓ ۗ إِنَّ ٱللَّهَ كَانَ سَمِيعًۢا بَصِيرًا",
+      "translation": "Lo! Allah commandeth you that ye restore deposits to their owners, and, if ye judge between mankind, that ye judge justly. Lo! comely is this which Allah admonisheth you. Lo! Allah is ever Hearer, Seer.",
+      "translationUrl": "https://quran.com/4:58?translations=19"
+    },
+    "4:114": {
+      "ref": "4:114",
+      "url": "https://quran.com/4:114",
+      "arabic": "۞ لَّا خَيْرَ فِى كَثِيرٍ مِّن نَّجْوَىٰهُمْ إِلَّا مَنْ أَمَرَ بِصَدَقَةٍ أَوْ مَعْرُوفٍ أَوْ إِصْلَـٰحٍۭ بَيْنَ ٱلنَّاسِ ۚ وَمَن يَفْعَلْ ذَٰلِكَ ٱبْتِغَآءَ مَرْضَاتِ ٱللَّهِ فَسَوْفَ نُؤْتِيهِ أَجْرًا عَظِيمًا",
+      "translation": "There is no good in much of their secret conferences save (in) him who enjoineth almsgiving and kindness and peace-making among the people. Whoso doeth that, seeking the good pleasure of Allah, We shall bestow on him a vast reward.",
+      "translationUrl": "https://quran.com/4:114?translations=19"
+    },
+    "7:31": {
+      "ref": "7:31",
+      "url": "https://quran.com/7:31",
+      "arabic": "۞ يَـٰبَنِىٓ ءَادَمَ خُذُوا۟ زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ وَكُلُوا۟ وَٱشْرَبُوا۟ وَلَا تُسْرِفُوٓا۟ ۚ إِنَّهُۥ لَا يُحِبُّ ٱلْمُسْرِفِينَ",
+      "translation": "O Children of Adam! Look to your adornment at every place of worship, and eat and drink, but be not prodigal. Lo! He loveth not the prodigals.",
+      "translationUrl": "https://quran.com/7:31?translations=19"
+    },
+    "10:6": {
+      "ref": "10:6",
+      "url": "https://quran.com/10:6",
+      "arabic": "إِنَّ فِى ٱخْتِلَـٰفِ ٱلَّيْلِ وَٱلنَّهَارِ وَمَا خَلَقَ ٱللَّهُ فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ لَـَٔايَـٰتٍ لِّقَوْمٍ يَتَّقُونَ",
+      "translation": "Lo! in the difference of day and night and all that Allah hath created in the heavens and the earth are portents, verily, for folk who ward off (evil).",
+      "translationUrl": "https://quran.com/10:6?translations=19"
+    },
+    "10:32": {
+      "ref": "10:32",
+      "url": "https://quran.com/10:32",
+      "arabic": "فَذَٰلِكُمُ ٱللَّهُ رَبُّكُمُ ٱلْحَقُّ ۖ فَمَاذَا بَعْدَ ٱلْحَقِّ إِلَّا ٱلضَّلَـٰلُ ۖ فَأَنَّىٰ تُصْرَفُونَ",
+      "translation": "Such then is Allah, your rightful Lord. After the Truth what is there saving error? How then are ye turned away!",
+      "translationUrl": "https://quran.com/10:32?translations=19"
+    },
+    "12:87": {
+      "ref": "12:87",
+      "url": "https://quran.com/12:87",
+      "arabic": "يَـٰبَنِىَّ ٱذْهَبُوا۟ فَتَحَسَّسُوا۟ مِن يُوسُفَ وَأَخِيهِ وَلَا تَا۟يْـَٔسُوا۟ مِن رَّوْحِ ٱللَّهِ ۖ إِنَّهُۥ لَا يَا۟يْـَٔسُ مِن رَّوْحِ ٱللَّهِ إِلَّا ٱلْقَوْمُ ٱلْكَـٰفِرُونَ",
+      "translation": "Go, O my sons, and ascertain concerning Joseph and his brother, and despair not of the Spirit of Allah. Lo! none despaireth of the Spirit of Allah save disbelieving folk.",
+      "translationUrl": "https://quran.com/12:87?translations=19"
+    },
+    "16:10": {
+      "ref": "16:10",
+      "url": "https://quran.com/16:10",
+      "arabic": "هُوَ ٱلَّذِىٓ أَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً ۖ لَّكُم مِّنْهُ شَرَابٌ وَمِنْهُ شَجَرٌ فِيهِ تُسِيمُونَ",
+      "translation": "He it is Who sendeth down water from the sky, whence ye have drink, and whence are trees on which ye send your beasts to pasture.",
+      "translationUrl": "https://quran.com/16:10?translations=19"
+    },
+    "16:90": {
+      "ref": "16:90",
+      "url": "https://quran.com/16:90",
+      "arabic": "۞ إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَـٰنِ وَإِيتَآئِ ذِى ٱلْقُرْبَىٰ وَيَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ وَٱلْبَغْىِ ۚ يَعِظُكُمْ لَعَلَّكُمْ تَذَكَّرُونَ",
+      "translation": "Lo! Allah enjoineth justice and kindness, and giving to kinsfolk, and forbiddeth lewdness and abomination and wickedness. He exhorteth you in order that ye may take heed.",
+      "translationUrl": "https://quran.com/16:90?translations=19"
+    },
+    "16:91": {
+      "ref": "16:91",
+      "url": "https://quran.com/16:91",
+      "arabic": "وَأَوْفُوا۟ بِعَهْدِ ٱللَّهِ إِذَا عَـٰهَدتُّمْ وَلَا تَنقُضُوا۟ ٱلْأَيْمَـٰنَ بَعْدَ تَوْكِيدِهَا وَقَدْ جَعَلْتُمُ ٱللَّهَ عَلَيْكُمْ كَفِيلًا ۚ إِنَّ ٱللَّهَ يَعْلَمُ مَا تَفْعَلُونَ",
+      "translation": "Fulfil the covenant of Allah when ye have covenanted, and break not your oaths after the asseveration of them, and after ye have made Allah surety over you. Lo! Allah knoweth what ye do.",
+      "translationUrl": "https://quran.com/16:91?translations=19"
+    },
+    "17:13": {
+      "ref": "17:13",
+      "url": "https://quran.com/17:13",
+      "arabic": "وَكُلَّ إِنسَـٰنٍ أَلْزَمْنَـٰهُ طَـٰٓئِرَهُۥ فِى عُنُقِهِۦ ۖ وَنُخْرِجُ لَهُۥ يَوْمَ ٱلْقِيَـٰمَةِ كِتَـٰبًا يَلْقَىٰهُ مَنشُورًا",
+      "translation": "And every man's augury have We fastened to his own neck, and We shall bring forth for him on the Day of Resurrection a book which he will find wide open.",
+      "translationUrl": "https://quran.com/17:13?translations=19"
+    },
+    "17:29": {
+      "ref": "17:29",
+      "url": "https://quran.com/17:29",
+      "arabic": "وَلَا تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَىٰ عُنُقِكَ وَلَا تَبْسُطْهَا كُلَّ ٱلْبَسْطِ فَتَقْعُدَ مَلُومًا مَّحْسُورًا",
+      "translation": "And let not thy hand be chained to thy neck nor open it with a complete opening, lest thou sit down rebuked, denuded.",
+      "translationUrl": "https://quran.com/17:29?translations=19"
+    },
+    "17:81": {
+      "ref": "17:81",
+      "url": "https://quran.com/17:81",
+      "arabic": "وَقُلْ جَآءَ ٱلْحَقُّ وَزَهَقَ ٱلْبَـٰطِلُ ۚ إِنَّ ٱلْبَـٰطِلَ كَانَ زَهُوقًا",
+      "translation": "And say: Truth hath come and falsehood hath vanished away. Lo! falsehood is ever bound to vanish.",
+      "translationUrl": "https://quran.com/17:81?translations=19"
+    },
+    "20:14": {
+      "ref": "20:14",
+      "url": "https://quran.com/20:14",
+      "arabic": "إِنَّنِىٓ أَنَا ٱللَّهُ لَآ إِلَـٰهَ إِلَّآ أَنَا۠ فَٱعْبُدْنِى وَأَقِمِ ٱلصَّلَوٰةَ لِذِكْرِىٓ",
+      "translation": "Lo! I, even I, am Allah, There is no Allah save Me. So serve Me and establish worship for My remembrance.",
+      "translationUrl": "https://quran.com/20:14?translations=19"
+    },
+    "20:44": {
+      "ref": "20:44",
+      "url": "https://quran.com/20:44",
+      "arabic": "فَقُولَا لَهُۥ قَوْلًا لَّيِّنًا لَّعَلَّهُۥ يَتَذَكَّرُ أَوْ يَخْشَىٰ",
+      "translation": "And speak unto him a gentle word, that peradventure he may heed or fear.",
+      "translationUrl": "https://quran.com/20:44?translations=19"
+    },
+    "21:18": {
+      "ref": "21:18",
+      "url": "https://quran.com/21:18",
+      "arabic": "بَلْ نَقْذِفُ بِٱلْحَقِّ عَلَى ٱلْبَـٰطِلِ فَيَدْمَغُهُۥ فَإِذَا هُوَ زَاهِقٌ ۚ وَلَكُمُ ٱلْوَيْلُ مِمَّا تَصِفُونَ",
+      "translation": "Nay, but We hurl the true against the false, and it doth break its head and lo! it vanisheth. And yours will be woe for that which ye ascribe (unto Him).",
+      "translationUrl": "https://quran.com/21:18?translations=19"
+    },
+    "21:30": {
+      "ref": "21:30",
+      "url": "https://quran.com/21:30",
+      "arabic": "أَوَلَمْ يَرَ ٱلَّذِينَ كَفَرُوٓا۟ أَنَّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَـٰهُمَا ۖ وَجَعَلْنَا مِنَ ٱلْمَآءِ كُلَّ شَىْءٍ حَىٍّ ۖ أَفَلَا يُؤْمِنُونَ",
+      "translation": "Have not those who disbelieve known that the heavens and the earth were of one piece, then We parted them, and we made every living thing of water? Will they not then believe?",
+      "translationUrl": "https://quran.com/21:30?translations=19"
+    },
+    "24:27": {
+      "ref": "24:27",
+      "url": "https://quran.com/24:27",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَدْخُلُوا۟ بُيُوتًا غَيْرَ بُيُوتِكُمْ حَتَّىٰ تَسْتَأْنِسُوا۟ وَتُسَلِّمُوا۟ عَلَىٰٓ أَهْلِهَا ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ لَعَلَّكُمْ تَذَكَّرُونَ",
+      "translation": "O ye who believe! Enter not houses other than your own without first announcing your presence and invoking peace upon the folk thereof. That is better for you, that ye may be heedful.",
+      "translationUrl": "https://quran.com/24:27?translations=19"
+    },
+    "24:28": {
+      "ref": "24:28",
+      "url": "https://quran.com/24:28",
+      "arabic": "فَإِن لَّمْ تَجِدُوا۟ فِيهَآ أَحَدًا فَلَا تَدْخُلُوهَا حَتَّىٰ يُؤْذَنَ لَكُمْ ۖ وَإِن قِيلَ لَكُمُ ٱرْجِعُوا۟ فَٱرْجِعُوا۟ ۖ هُوَ أَزْكَىٰ لَكُمْ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ عَلِيمٌ",
+      "translation": "And if ye find no-one therein, still enter not until permission hath been given. And if it be said unto you: Go away again, then go away, for it is purer for you. Allah knoweth what ye do.",
+      "translationUrl": "https://quran.com/24:28?translations=19"
+    },
+    "25:62": {
+      "ref": "25:62",
+      "url": "https://quran.com/25:62",
+      "arabic": "وَهُوَ ٱلَّذِى جَعَلَ ٱلَّيْلَ وَٱلنَّهَارَ خِلْفَةً لِّمَنْ أَرَادَ أَن يَذَّكَّرَ أَوْ أَرَادَ شُكُورًا",
+      "translation": "And He it is Who hath appointed night and day in succession, for him who desireth to remember, or desireth thankfulness.",
+      "translationUrl": "https://quran.com/25:62?translations=19"
+    },
+    "25:67": {
+      "ref": "25:67",
+      "url": "https://quran.com/25:67",
+      "arabic": "وَٱلَّذِينَ إِذَآ أَنفَقُوا۟ لَمْ يُسْرِفُوا۟ وَلَمْ يَقْتُرُوا۟ وَكَانَ بَيْنَ ذَٰلِكَ قَوَامًا",
+      "translation": "And those who, when they spend, are neither prodigal nor grudging; and there is ever a firm station between the two;",
+      "translationUrl": "https://quran.com/25:67?translations=19"
+    },
+    "29:45": {
+      "ref": "29:45",
+      "url": "https://quran.com/29:45",
+      "arabic": "ٱتْلُ مَآ أُوحِىَ إِلَيْكَ مِنَ ٱلْكِتَـٰبِ وَأَقِمِ ٱلصَّلَوٰةَ ۖ إِنَّ ٱلصَّلَوٰةَ تَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ ۗ وَلَذِكْرُ ٱللَّهِ أَكْبَرُ ۗ وَٱللَّهُ يَعْلَمُ مَا تَصْنَعُونَ",
+      "translation": "Recite that which hath been inspired in thee of the Scripture, and establish worship. Lo! worship preserveth from lewdness and iniquity, but verily remembrance of Allah is more important. And Allah knoweth what ye do.",
+      "translationUrl": "https://quran.com/29:45?translations=19"
+    },
+    "30:22": {
+      "ref": "30:22",
+      "url": "https://quran.com/30:22",
+      "arabic": "وَمِنْ ءَايَـٰتِهِۦ خَلْقُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَـٰفُ أَلْسِنَتِكُمْ وَأَلْوَٰنِكُمْ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍ لِّلْعَـٰلِمِينَ",
+      "translation": "And of His signs is the creation of the heavens and the earth, and the difference of your languages and colours. Lo! herein indeed are portents for men of knowledge.",
+      "translationUrl": "https://quran.com/30:22?translations=19"
+    },
+    "30:23": {
+      "ref": "30:23",
+      "url": "https://quran.com/30:23",
+      "arabic": "وَمِنْ ءَايَـٰتِهِۦ مَنَامُكُم بِٱلَّيْلِ وَٱلنَّهَارِ وَٱبْتِغَآؤُكُم مِّن فَضْلِهِۦٓ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍ لِّقَوْمٍ يَسْمَعُونَ",
+      "translation": "And of His signs is your slumber by night and by day, and your seeking of His bounty. Lo! herein indeed are portents for folk who heed.",
+      "translationUrl": "https://quran.com/30:23?translations=19"
+    },
+    "42:38": {
+      "ref": "42:38",
+      "url": "https://quran.com/42:38",
+      "arabic": "وَٱلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمْ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَمْرُهُمْ شُورَىٰ بَيْنَهُمْ وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ",
+      "translation": "And those who answer the call of their Lord and establish worship, and whose affairs are a matter of counsel, and who spend of what We have bestowed on them,",
+      "translationUrl": "https://quran.com/42:38?translations=19"
+    },
+    "49:6": {
+      "ref": "49:6",
+      "url": "https://quran.com/49:6",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِن جَآءَكُمْ فَاسِقٌۢ بِنَبَإٍ فَتَبَيَّنُوٓا۟ أَن تُصِيبُوا۟ قَوْمًۢا بِجَهَـٰلَةٍ فَتُصْبِحُوا۟ عَلَىٰ مَا فَعَلْتُمْ نَـٰدِمِينَ",
+      "translation": "O ye who believe! If an evil-liver bring you tidings, verify it, lest ye smite some folk in ignorance and afterward repent of what ye did.",
+      "translationUrl": "https://quran.com/49:6?translations=19"
+    },
+    "49:9": {
+      "ref": "49:9",
+      "url": "https://quran.com/49:9",
+      "arabic": "وَإِن طَآئِفَتَانِ مِنَ ٱلْمُؤْمِنِينَ ٱقْتَتَلُوا۟ فَأَصْلِحُوا۟ بَيْنَهُمَا ۖ فَإِنۢ بَغَتْ إِحْدَىٰهُمَا عَلَى ٱلْأُخْرَىٰ فَقَـٰتِلُوا۟ ٱلَّتِى تَبْغِى حَتَّىٰ تَفِىٓءَ إِلَىٰٓ أَمْرِ ٱللَّهِ ۚ فَإِن فَآءَتْ فَأَصْلِحُوا۟ بَيْنَهُمَا بِٱلْعَدْلِ وَأَقْسِطُوٓا۟ ۖ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُقْسِطِينَ",
+      "translation": "And if two parties of believers fall to fighting, then make peace between them. And if one party of them doeth wrong to the other, fight ye that which doeth wrong till it return unto the ordinance of Allah; then, if it return, make peace between them justly, and act equitably. Lo! Allah loveth the equitable.",
+      "translationUrl": "https://quran.com/49:9?translations=19"
+    },
+    "49:10": {
+      "ref": "49:10",
+      "url": "https://quran.com/49:10",
+      "arabic": "إِنَّمَا ٱلْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا۟ بَيْنَ أَخَوَيْكُمْ ۚ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُرْحَمُونَ",
+      "translation": "The believers are naught else than brothers. Therefore make peace between your brethren and observe your duty to Allah that haply ye may obtain mercy.",
+      "translationUrl": "https://quran.com/49:10?translations=19"
+    },
+    "49:12": {
+      "ref": "49:12",
+      "url": "https://quran.com/49:12",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱجْتَنِبُوا۟ كَثِيرًا مِّنَ ٱلظَّنِّ إِنَّ بَعْضَ ٱلظَّنِّ إِثْمٌ ۖ وَلَا تَجَسَّسُوا۟ وَلَا يَغْتَب بَّعْضُكُم بَعْضًا ۚ أَيُحِبُّ أَحَدُكُمْ أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًا فَكَرِهْتُمُوهُ ۚ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ تَوَّابٌ رَّحِيمٌ",
+      "translation": "O ye who believe! Shun much suspicion; for lo! some suspicion is a crime. And spy not, neither backbite one another. Would one of you love to eat the flesh of his dead brother? Ye abhor that (so abhor the other)! And keep your duty (to Allah). Lo! Allah is Relenting, Merciful.",
+      "translationUrl": "https://quran.com/49:12?translations=19"
+    },
+    "49:13": {
+      "ref": "49:13",
+      "url": "https://quran.com/49:13",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
+      "translation": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware.",
+      "translationUrl": "https://quran.com/49:13?translations=19"
+    },
+    "51:24": {
+      "ref": "51:24",
+      "url": "https://quran.com/51:24",
+      "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ضَيْفِ إِبْرَٰهِيمَ ٱلْمُكْرَمِينَ",
+      "translation": "Hath the story of Abraham's honoured guests reached thee (O Muhammad)?",
+      "translationUrl": "https://quran.com/51:24?translations=19"
+    },
+    "51:26": {
+      "ref": "51:26",
+      "url": "https://quran.com/51:26",
+      "arabic": "فَرَاغَ إِلَىٰٓ أَهْلِهِۦ فَجَآءَ بِعِجْلٍ سَمِينٍ",
+      "translation": "Then he went apart unto his housefolk so that they brought a fatted calf;",
+      "translationUrl": "https://quran.com/51:26?translations=19"
+    },
+    "51:27": {
+      "ref": "51:27",
+      "url": "https://quran.com/51:27",
+      "arabic": "فَقَرَّبَهُۥٓ إِلَيْهِمْ قَالَ أَلَا تَأْكُلُونَ",
+      "translation": "And he set it before them, saying: Will ye not eat?",
+      "translationUrl": "https://quran.com/51:27?translations=19"
+    },
+    "62:10": {
+      "ref": "62:10",
+      "url": "https://quran.com/62:10",
+      "arabic": "فَإِذَا قُضِيَتِ ٱلصَّلَوٰةُ فَٱنتَشِرُوا۟ فِى ٱلْأَرْضِ وَٱبْتَغُوا۟ مِن فَضْلِ ٱللَّهِ وَٱذْكُرُوا۟ ٱللَّهَ كَثِيرًا لَّعَلَّكُمْ تُفْلِحُونَ",
+      "translation": "And when the prayer is ended, then disperse in the land and seek of Allah's bounty, and remember Allah much, that ye may be successful.",
+      "translationUrl": "https://quran.com/62:10?translations=19"
+    },
+    "93:9": {
+      "ref": "93:9",
+      "url": "https://quran.com/93:9",
+      "arabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+      "translation": "Therefor the orphan oppress not,",
+      "translationUrl": "https://quran.com/93:9?translations=19"
+    },
+    "94:5": {
+      "ref": "94:5",
+      "url": "https://quran.com/94:5",
+      "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "translation": "But lo! with hardship goeth ease,",
+      "translationUrl": "https://quran.com/94:5?translations=19"
+    },
+    "94:6": {
+      "ref": "94:6",
+      "url": "https://quran.com/94:6",
+      "arabic": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "translation": "Lo! with hardship goeth ease;",
+      "translationUrl": "https://quran.com/94:6?translations=19"
+    },
+    "94:7": {
+      "ref": "94:7",
+      "url": "https://quran.com/94:7",
+      "arabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+      "translation": "So when thou art relieved, still toil",
+      "translationUrl": "https://quran.com/94:7?translations=19"
+    },
+    "99:7": {
+      "ref": "99:7",
+      "url": "https://quran.com/99:7",
+      "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+      "translation": "And whoso doeth good an atom's weight will see it then,",
+      "translationUrl": "https://quran.com/99:7?translations=19"
+    },
+    "99:8": {
+      "ref": "99:8",
+      "url": "https://quran.com/99:8",
+      "arabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+      "translation": "And whoso doeth ill an atom's weight will see it then.",
+      "translationUrl": "https://quran.com/99:8?translations=19"
+    },
+    "103:2": {
+      "ref": "103:2",
+      "url": "https://quran.com/103:2",
+      "arabic": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
+      "translation": "Lo! man is a state of loss,",
+      "translationUrl": "https://quran.com/103:2?translations=19"
+    },
+    "2:144": {
+      "ref": "2:144",
+      "url": "https://quran.com/2:144",
+      "arabic": "قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِى ٱلسَّمَآءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَىٰهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ ٱلْمَسْجِدِ ٱلْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا۟ وُجُوهَكُمْ شَطْرَهُۥ ۗ وَإِنَّ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ لَيَعْلَمُونَ أَنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ ۗ وَمَا ٱللَّهُ بِغَـٰفِلٍ عَمَّا يَعْمَلُونَ",
+      "translation": "We have seen the turning of thy face to heaven (for guidance, O Muhammad). And now verily We shall make thee turn (in prayer) toward a qiblah which is dear to thee. So turn thy face toward the Inviolable Place of Worship, and ye (O Muslims), wheresoever ye may be, turn your faces (when ye pray) toward it. Lo! Those who have received the Scripture know that (this revelation) is the Truth from their Lord. And Allah is not unaware of what they do.",
+      "translationUrl": "https://quran.com/2:144?translations=19"
+    },
+    "2:264": {
+      "ref": "2:264",
+      "url": "https://quran.com/2:264",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُبْطِلُوا۟ صَدَقَـٰتِكُم بِٱلْمَنِّ وَٱلْأَذَىٰ كَٱلَّذِى يُنفِقُ مَالَهُۥ رِئَآءَ ٱلنَّاسِ وَلَا يُؤْمِنُ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ ۖ فَمَثَلُهُۥ كَمَثَلِ صَفْوَانٍ عَلَيْهِ تُرَابٌ فَأَصَابَهُۥ وَابِلٌ فَتَرَكَهُۥ صَلْدًا ۖ لَّا يَقْدِرُونَ عَلَىٰ شَىْءٍ مِّمَّا كَسَبُوا۟ ۗ وَٱللَّهُ لَا يَهْدِى ٱلْقَوْمَ ٱلْكَـٰفِرِينَ",
+      "translation": "O ye who believe! Render not vain your almsgiving by reproach and injury, like him who spendeth his wealth only to be seen of men and believeth not in Allah and the Last Day. His likeness is as the likeness of a rock whereon is dust of earth; a rainstorm smiteth it, leaving it smooth and bare. They have no control of aught of that which they have gained. Allah guideth not the disbelieving folk.",
+      "translationUrl": "https://quran.com/2:264?translations=19"
+    },
+    "2:282": {
+      "ref": "2:282",
+      "url": "https://quran.com/2:282",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰٓ أَجَلٍ مُّسَمًّى فَٱكْتُبُوهُ ۚ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۢ بِٱلْعَدْلِ ۚ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ ۚ فَلْيَكْتُبْ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًٔا ۚ فَإِن كَانَ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ سَفِيهًا أَوْ ضَعِيفًا أَوْ لَا يَسْتَطِيعُ أَن يُمِلَّ هُوَ فَلْيُمْلِلْ وَلِيُّهُۥ بِٱلْعَدْلِ ۚ وَٱسْتَشْهِدُوا۟ شَهِيدَيْنِ مِن رِّجَالِكُمْ ۖ فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌ وَٱمْرَأَتَانِ مِمَّن تَرْضَوْنَ مِنَ ٱلشُّهَدَآءِ أَن تَضِلَّ إِحْدَىٰهُمَا فَتُذَكِّرَ إِحْدَىٰهُمَا ٱلْأُخْرَىٰ ۚ وَلَا يَأْبَ ٱلشُّهَدَآءُ إِذَا مَا دُعُوا۟ ۚ وَلَا تَسْـَٔمُوٓا۟ أَن تَكْتُبُوهُ صَغِيرًا أَوْ كَبِيرًا إِلَىٰٓ أَجَلِهِۦ ۚ ذَٰلِكُمْ أَقْسَطُ عِندَ ٱللَّهِ وَأَقْوَمُ لِلشَّهَـٰدَةِ وَأَدْنَىٰٓ أَلَّا تَرْتَابُوٓا۟ ۖ إِلَّآ أَن تَكُونَ تِجَـٰرَةً حَاضِرَةً تُدِيرُونَهَا بَيْنَكُمْ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَلَّا تَكْتُبُوهَا ۗ وَأَشْهِدُوٓا۟ إِذَا تَبَايَعْتُمْ ۚ وَلَا يُضَآرَّ كَاتِبٌ وَلَا شَهِيدٌ ۚ وَإِن تَفْعَلُوا۟ فَإِنَّهُۥ فُسُوقٌۢ بِكُمْ ۗ وَٱتَّقُوا۟ ٱللَّهَ ۖ وَيُعَلِّمُكُمُ ٱللَّهُ ۗ وَٱللَّهُ بِكُلِّ شَىْءٍ عَلِيمٌ",
+      "translation": "O ye who believe! When ye contract a debt for a fixed term, record it in writing. Let a scribe record it in writing between you in (terms of) equity. No scribe should refuse to write as Allah hath taught him, so let him write, and let him who incurreth the debt dictate, and let him observe his duty to Allah his Lord, and diminish naught thereof. But if he who oweth the debt is of low understanding, or weak, or unable himself to dictate, then let the guardian of his interests dictate in (terms of) equity. And call to witness, from among your men, two witnesses. And if two men be not (at hand) then a man and two women, of such as ye approve as witnesses, so that if the one erreth (through forgetfulness) the other will remember. And the witnesses must not refuse when they are summoned. Be not averse to writing down (the contract) whether it be small or great, with (record of) the term thereof. That is more equitable in the sight of Allah and more sure for testimony, and the best way of avoiding doubt between you; save only in the case when it is actual merchandise which ye transfer among yourselves from hand to hand. In that case it is no sin for you if ye write it not. And have witnesses when ye sell one to another, and let no harm be done to scribe or witness. If ye do (harm to them) lo! it is a sin in you. Observe your duty to Allah. Allah is teaching you. And Allah is knower of all things.",
+      "translationUrl": "https://quran.com/2:282?translations=19"
+    },
+    "3:123": {
+      "ref": "3:123",
+      "url": "https://quran.com/3:123",
+      "arabic": "وَلَقَدْ نَصَرَكُمُ ٱللَّهُ بِبَدْرٍ وَأَنتُمْ أَذِلَّةٌ ۖ فَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تَشْكُرُونَ",
+      "translation": "Allah had already given you the victory at Badr, when ye were contemptible. So observe your duty to Allah in order that ye may be thankful.",
+      "translationUrl": "https://quran.com/3:123?translations=19"
+    },
+    "3:144": {
+      "ref": "3:144",
+      "url": "https://quran.com/3:144",
+      "arabic": "وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ قَدْ خَلَتْ مِن قَبْلِهِ ٱلرُّسُلُ ۚ أَفَإِي۟ن مَّاتَ أَوْ قُتِلَ ٱنقَلَبْتُمْ عَلَىٰٓ أَعْقَـٰبِكُمْ ۚ وَمَن يَنقَلِبْ عَلَىٰ عَقِبَيْهِ فَلَن يَضُرَّ ٱللَّهَ شَيْـًٔا ۗ وَسَيَجْزِى ٱللَّهُ ٱلشَّـٰكِرِينَ",
+      "translation": "Muhammad is but a messenger, messengers (the like of whom) have passed away before him. Will it be that, when he dieth or is slain, ye will turn back on your heels? He who turneth back on his heels doth no hurt to Allah, and Allah will reward the thankful.",
+      "translationUrl": "https://quran.com/3:144?translations=19"
+    },
+    "3:152": {
+      "ref": "3:152",
+      "url": "https://quran.com/3:152",
+      "arabic": "وَلَقَدْ صَدَقَكُمُ ٱللَّهُ وَعْدَهُۥٓ إِذْ تَحُسُّونَهُم بِإِذْنِهِۦ ۖ حَتَّىٰٓ إِذَا فَشِلْتُمْ وَتَنَـٰزَعْتُمْ فِى ٱلْأَمْرِ وَعَصَيْتُم مِّنۢ بَعْدِ مَآ أَرَىٰكُم مَّا تُحِبُّونَ ۚ مِنكُم مَّن يُرِيدُ ٱلدُّنْيَا وَمِنكُم مَّن يُرِيدُ ٱلْـَٔاخِرَةَ ۚ ثُمَّ صَرَفَكُمْ عَنْهُمْ لِيَبْتَلِيَكُمْ ۖ وَلَقَدْ عَفَا عَنكُمْ ۗ وَٱللَّهُ ذُو فَضْلٍ عَلَى ٱلْمُؤْمِنِينَ",
+      "translation": "Allah verily made good His promise unto you when ye routed them by His leave, until (the moment) when your courage failed you, and ye disagreed about the order and ye disobeyed, after He had shown you that for which ye long. Some of you desired the world, and some of you desired the Hereafter. Therefore He made you flee from them, that He might try you. Yet now He hath forgiven you. Allah is a Lord of Kindness to believers.",
+      "translationUrl": "https://quran.com/3:152?translations=19"
+    },
+    "5:3": {
+      "ref": "5:3",
+      "url": "https://quran.com/5:3",
+      "arabic": "حُرِّمَتْ عَلَيْكُمُ ٱلْمَيْتَةُ وَٱلدَّمُ وَلَحْمُ ٱلْخِنزِيرِ وَمَآ أُهِلَّ لِغَيْرِ ٱللَّهِ بِهِۦ وَٱلْمُنْخَنِقَةُ وَٱلْمَوْقُوذَةُ وَٱلْمُتَرَدِّيَةُ وَٱلنَّطِيحَةُ وَمَآ أَكَلَ ٱلسَّبُعُ إِلَّا مَا ذَكَّيْتُمْ وَمَا ذُبِحَ عَلَى ٱلنُّصُبِ وَأَن تَسْتَقْسِمُوا۟ بِٱلْأَزْلَـٰمِ ۚ ذَٰلِكُمْ فِسْقٌ ۗ ٱلْيَوْمَ يَئِسَ ٱلَّذِينَ كَفَرُوا۟ مِن دِينِكُمْ فَلَا تَخْشَوْهُمْ وَٱخْشَوْنِ ۚ ٱلْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِى وَرَضِيتُ لَكُمُ ٱلْإِسْلَـٰمَ دِينًا ۚ فَمَنِ ٱضْطُرَّ فِى مَخْمَصَةٍ غَيْرَ مُتَجَانِفٍ لِّإِثْمٍ ۙ فَإِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ",
+      "translation": "Forbidden unto you (for food) are carrion and blood and swineflesh, and that which hath been dedicated unto any other than Allah, and the strangled, and the dead through beating, and the dead through falling from a height, and that which hath been killed by (the goring of) horns, and the devoured of wild beasts, saving that which ye make lawful (by the death-stroke), and that which hath been immolated unto idols. And (forbidden is it) that ye swear by the divining arrows. This is an abomination. This day are those who disbelieve in despair of (ever harming) your religion; so fear them not, fear Me! This day have I perfected your religion for you and completed My favour unto you, and have chosen for you as religion al-Islam. Whoso is forced by hunger, not by will, to sin: (for him) lo! Allah is Forgiving, Merciful.",
+      "translationUrl": "https://quran.com/5:3?translations=19"
+    },
+    "8:9": {
+      "ref": "8:9",
+      "url": "https://quran.com/8:9",
+      "arabic": "إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَٱسْتَجَابَ لَكُمْ أَنِّى مُمِدُّكُم بِأَلْفٍ مِّنَ ٱلْمَلَـٰٓئِكَةِ مُرْدِفِينَ",
+      "translation": "When ye sought help of your Lord and He answered you (saying): I will help you with a thousand of the angels, rank on rank.",
+      "translationUrl": "https://quran.com/8:9?translations=19"
+    },
+    "9:40": {
+      "ref": "9:40",
+      "url": "https://quran.com/9:40",
+      "arabic": "إِلَّا تَنصُرُوهُ فَقَدْ نَصَرَهُ ٱللَّهُ إِذْ أَخْرَجَهُ ٱلَّذِينَ كَفَرُوا۟ ثَانِىَ ٱثْنَيْنِ إِذْ هُمَا فِى ٱلْغَارِ إِذْ يَقُولُ لِصَـٰحِبِهِۦ لَا تَحْزَنْ إِنَّ ٱللَّهَ مَعَنَا ۖ فَأَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَيْهِ وَأَيَّدَهُۥ بِجُنُودٍ لَّمْ تَرَوْهَا وَجَعَلَ كَلِمَةَ ٱلَّذِينَ كَفَرُوا۟ ٱلسُّفْلَىٰ ۗ وَكَلِمَةُ ٱللَّهِ هِىَ ٱلْعُلْيَا ۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
+      "translation": "If ye help him not, still Allah helped him when those who disbelieve drove him forth, the second of two; when they two were in the cave, when he said unto his comrade: Grieve not. Lo! Allah is with us. Then Allah caused His peace of reassurance to descend upon him and supported him with hosts ye cannot see, and made the word of those who disbelieved the nethermost, while Allah's Word it was that became the uppermost. Allah is Mighty, Wise.",
+      "translationUrl": "https://quran.com/9:40?translations=19"
+    },
+    "17:36": {
+      "ref": "17:36",
+      "url": "https://quran.com/17:36",
+      "arabic": "وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِۦ عِلْمٌ ۚ إِنَّ ٱلسَّمْعَ وَٱلْبَصَرَ وَٱلْفُؤَادَ كُلُّ أُو۟لَـٰٓئِكَ كَانَ عَنْهُ مَسْـُٔولًا",
+      "translation": "(O man), follow not that whereof thou hast no knowledge. Lo! the hearing and the sight and the heart - of each of these it will be asked.",
+      "translationUrl": "https://quran.com/17:36?translations=19"
+    },
+    "33:9": {
+      "ref": "33:9",
+      "url": "https://quran.com/33:9",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱذْكُرُوا۟ نِعْمَةَ ٱللَّهِ عَلَيْكُمْ إِذْ جَآءَتْكُمْ جُنُودٌ فَأَرْسَلْنَا عَلَيْهِمْ رِيحًا وَجُنُودًا لَّمْ تَرَوْهَا ۚ وَكَانَ ٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرًا",
+      "translation": "O ye who believe! Remember Allah's favour unto you when there came against you hosts, and We sent against them a great wind and hosts ye could not see. And Allah is ever Seer of what ye do.",
+      "translationUrl": "https://quran.com/33:9?translations=19"
+    },
+    "33:21": {
+      "ref": "33:21",
+      "url": "https://quran.com/33:21",
+      "arabic": "لَّقَدْ كَانَ لَكُمْ فِى رَسُولِ ٱللَّهِ أُسْوَةٌ حَسَنَةٌ لِّمَن كَانَ يَرْجُوا۟ ٱللَّهَ وَٱلْيَوْمَ ٱلْـَٔاخِرَ وَذَكَرَ ٱللَّهَ كَثِيرًا",
+      "translation": "Verily in the messenger of Allah ye have a good example for him who looketh unto Allah and the Last Day, and remembereth Allah much.",
+      "translationUrl": "https://quran.com/33:21?translations=19"
+    },
+    "48:18": {
+      "ref": "48:18",
+      "url": "https://quran.com/48:18",
+      "arabic": "۞ لَّقَدْ رَضِىَ ٱللَّهُ عَنِ ٱلْمُؤْمِنِينَ إِذْ يُبَايِعُونَكَ تَحْتَ ٱلشَّجَرَةِ فَعَلِمَ مَا فِى قُلُوبِهِمْ فَأَنزَلَ ٱلسَّكِينَةَ عَلَيْهِمْ وَأَثَـٰبَهُمْ فَتْحًا قَرِيبًا",
+      "translation": "Allah was well pleased with the believers when they swore allegiance unto thee beneath the tree, and He knew what was in their hearts, and He sent down peace of reassurance on them, and hath rewarded them with a near victory;",
+      "translationUrl": "https://quran.com/48:18?translations=19"
+    },
+    "53:13": {
+      "ref": "53:13",
+      "url": "https://quran.com/53:13",
+      "arabic": "وَلَقَدْ رَءَاهُ نَزْلَةً أُخْرَىٰ",
+      "translation": "And verily he saw him yet another time",
+      "translationUrl": "https://quran.com/53:13?translations=19"
+    },
+    "53:14": {
+      "ref": "53:14",
+      "url": "https://quran.com/53:14",
+      "arabic": "عِندَ سِدْرَةِ ٱلْمُنتَهَىٰ",
+      "translation": "By the lote-tree of the utmost boundary,",
+      "translationUrl": "https://quran.com/53:14?translations=19"
+    },
+    "53:15": {
+      "ref": "53:15",
+      "url": "https://quran.com/53:15",
+      "arabic": "عِندَهَا جَنَّةُ ٱلْمَأْوَىٰٓ",
+      "translation": "Nigh unto which is the Garden of Abode.",
+      "translationUrl": "https://quran.com/53:15?translations=19"
+    },
+    "53:16": {
+      "ref": "53:16",
+      "url": "https://quran.com/53:16",
+      "arabic": "إِذْ يَغْشَى ٱلسِّدْرَةَ مَا يَغْشَىٰ",
+      "translation": "When that which shroudeth did enshroud the lote-tree,",
+      "translationUrl": "https://quran.com/53:16?translations=19"
+    },
+    "53:17": {
+      "ref": "53:17",
+      "url": "https://quran.com/53:17",
+      "arabic": "مَا زَاغَ ٱلْبَصَرُ وَمَا طَغَىٰ",
+      "translation": "The eye turned not aside nor yet was overbold.",
+      "translationUrl": "https://quran.com/53:17?translations=19"
+    },
+    "53:18": {
+      "ref": "53:18",
+      "url": "https://quran.com/53:18",
+      "arabic": "لَقَدْ رَأَىٰ مِنْ ءَايَـٰتِ رَبِّهِ ٱلْكُبْرَىٰٓ",
+      "translation": "Verily he saw one of the greater revelations of his Lord.",
+      "translationUrl": "https://quran.com/53:18?translations=19"
+    },
+    "110:2": {
+      "ref": "110:2",
+      "url": "https://quran.com/110:2",
+      "arabic": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
+      "translation": "And thou seest mankind entering the religion of Allah in troops,",
+      "translationUrl": "https://quran.com/110:2?translations=19"
+    },
+    "110:3": {
+      "ref": "110:3",
+      "url": "https://quran.com/110:3",
+      "arabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "translation": "Then hymn the praises of thy Lord, and seek forgiveness of Him. Lo! He is ever ready to show mercy.",
+      "translationUrl": "https://quran.com/110:3?translations=19"
+    }
+  },
+  "tafsir": {
+    "2:153": {
+      "ayahs": [
+        "2:153"
+      ],
+      "range": "2:153",
+      "text": "يا أيها المؤمنون اطلبوا العون من الله في كل أموركم: بالصبر على النوائب والمصائب، وبالصبر على ترك المعاصي والذنوب، والصبر على الطاعات والقربات، وبالصلاة التي تطمئن بها النفس، وتنهى عن الفحشاء والمنكر. إن الله مع الصابرين بعونه وتوفيقه وتسديده. وفي الآية: إثبات معيَّة الله الخاصة بالمؤمنين، المقتضية لما سلف ذكره; أما المعية العامة، المقتضية للعلم والإحاطة فهي لجميع الخلق.",
+      "citation_url": "https://quran.com/2:153/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "2:261": {
+      "ayahs": [
+        "2:261"
+      ],
+      "range": "2:261",
+      "text": "ومِن أعظم ما ينتفع به المؤمنون الإنفاقُ في سبيل الله. ومثل المؤمنين الذين ينفقون أموالهم في سبيل الله كمثل حبة زُرِعتْ في أرض طيبة، فإذا بها قد أخرجت ساقًا تشعب منها سبع شعب، لكل واحدة سنبلة، في كل سنبلة مائة حبة. والله يضاعف الأجر لمن يشاء، بحسب ما يقوم بقلب المنفق من الإيمان والإخلاص التام. وفضل الله واسع، وهو سبحانه عليم بمن يستحقه، مطلع على نيات عباده.",
+      "citation_url": "https://quran.com/2:261/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "3:103": {
+      "ayahs": [
+        "3:103"
+      ],
+      "range": "3:103",
+      "text": "وتمسَّكوا جميعًا بكتاب ربكم وهدي نبيكم، ولا تفعلوا ما يؤدي إلى فرقتكم. واذكروا نعمة جليلة أنعم الله بها عليكم: إذ كنتم -أيها المؤمنون- قبل الإسلام أعداء، فجمع الله قلوبكم على محبته ومحبة رسوله، وألقى في قلوبكم محبة بعضكم لبعض، فأصبحتم بفضله إخوانا متحابين، وكنتم على حافة نار جهنم، فهداكم الله بالإسلام ونجَّاكم من النار. وكما بيَّن الله لكم معالم الإيمان الصحيح فكذلك يبيِّن لكم كل ما فيه صلاحكم; لتهتدوا إلى سبيل الرشاد، وتسلكوها، فلا تضلوا عنها.",
+      "citation_url": "https://quran.com/3:103/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "4:135": {
+      "ayahs": [
+        "4:135"
+      ],
+      "range": "4:135",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشرعه، كونوا قائمين بالعدل، مؤدين للشهادة لوجه الله تعالى، ولو كانت على أنفسكم، أو على آبائكم وأمهاتكم، أو على أقاربكم، مهما كان شأن المشهود عليه غنيًّا أو فقيرًا; فإن الله تعالى أولى بهما منكم، وأعلم بما فيه صلاحهما، فلا يحملنَّكم الهوى والتعصب على ترك العدل، وإن تحرفوا الشهادة بألسنتكم فتأتوا بها على غير حقيقتها، أو تعرضوا عنها بترك أدائها أو بكتمانها، فإن الله تعالى كان عليمًا بدقائق أعمالكم، وسيجازيكم بها.",
+      "citation_url": "https://quran.com/4:135/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "7:156": {
+      "ayahs": [
+        "7:156"
+      ],
+      "range": "7:156",
+      "text": "واجعلنا ممن كتبتَ له الصالحات من الأعمال في الدنيا وفي الآخرة، إنا رجعنا تائبين إليك، قال الله تعالى لموسى: عذابي أصيب به مَن أشاء مِن خلقي، كما أصبتُ هؤلاء الذين أصبتهم من قومك، ورحمتي وسعت خلقي كلَّهم، فسأكتبها للذين يخافون الله، ويخشون عقابه، فيؤدون فرائضه، ويجتنبون معاصيه، والذين هم بدلائل التوحيد وبراهينه يصدقون.",
+      "citation_url": "https://quran.com/7:156/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "9:119": {
+      "ayahs": [
+        "9:119"
+      ],
+      "range": "9:119",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشرعه، امتثلوا أوامر الله واجتنبوا نواهيه في كل ما تفعلون وتتركون، وكونوا مع الصادقين في أَيمانهم وعهودهم، وفي كل شأن من شؤونهم.",
+      "citation_url": "https://quran.com/9:119/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "14:7": {
+      "ayahs": [
+        "14:7"
+      ],
+      "range": "14:7",
+      "text": "وقال لهم موسى: واذكروا حين أعلم ربكم إعلامًا مؤكَّدًا: لئن شكرتموه على نعمه ليزيدنكم من فضله، ولئن جحدتم نعمة الله ليعذبنَّكم عذابًا شديدًا.",
+      "citation_url": "https://quran.com/14:7/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "17:23": {
+      "ayahs": [
+        "17:23"
+      ],
+      "range": "17:23",
+      "text": "وأَمَر ربك -أيها الإنسان- وألزم وأوجب أن يفرد سبحانه وتعالى وحده بالعبادة، وأمر بالإحسان إلى الأب والأم، وبخاصة حالةُ الشيخوخة، فلا تضجر ولا تستثقل شيئًا تراه من أحدهما أو منهما، ولا تسمعهما قولا سيئًا، حتى ولا التأفيف الذي هو أدنى مراتب القول السيئ، ولا يصدر منك إليهما فعل قبيح، ولكن ارفق بهما، وقل لهما -دائما- قولا لينًا لطيفًا.",
+      "citation_url": "https://quran.com/17:23/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "17:34": {
+      "ayahs": [
+        "17:34"
+      ],
+      "range": "17:34",
+      "text": "ولا تتصرَّفوا في أموال الأطفال الذين مات آباؤهم وهم دون سن البلوغ، وصاروا في كفالتكم، إلا بالطريقة التي هي أحسن لهم، وهي التثمير والتنمية، حتى يبلغ الطفل اليتيم سنَّ البلوغ، وحسن التصرف في المال، وأتموا الوفاء بكل عهد التزمتم به. إن العهد يسأل الله عنه صاحبه يوم القيامة، فيثيبه إذا أتمه ووفَّاه، ويعاقبه إذا خان فيه.",
+      "citation_url": "https://quran.com/17:34/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "24:22": {
+      "ayahs": [
+        "24:22"
+      ],
+      "range": "24:22",
+      "text": "ولا يحلف أهل الفضل في الدين والسَّعَة في المال على ترك صلة أقربائهم الفقراء والمحتاجين والمهاجرين، ومنعهم النفقة؛ بسبب ذنب فعلوه، ولْيتجاوزوا عن إساءتهم، ولا يعاقبوهم. ألا تحبون أن يتجاوز الله عنكم؟ فتجاوزوا عنهم. والله غفور لعباده، رحيم بهم. وفي هذا الحثُّ على العفو والصفح، ولو قوبل بالإساءة.",
+      "citation_url": "https://quran.com/24:22/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "25:63": {
+      "ayahs": [
+        "25:63"
+      ],
+      "range": "25:63",
+      "text": "وعباد الرحمن الصالحون يمشون على الأرض بسكينة متواضعين، وإذا خاطبهم الجهلة السفهاء بالأذى أجابوهم بالمعروف من القول، وخاطبوهم خطابًا يَسْلَمون فيه من الإثم، ومن مقابلة الجاهل بجهله.",
+      "citation_url": "https://quran.com/25:63/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "33:70": {
+      "ayahs": [
+        "33:70"
+      ],
+      "range": "33:70",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشرعه، اعملوا بطاعته، واجتنبوا معصيته؛ لئلا تستحقوا بذلك العقاب، وقولوا في جميع أحوالكم وشؤونكم قولا مستقيمًا موافقًا للصواب خاليًا من الكذب والباطل.",
+      "citation_url": "https://quran.com/33:70/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "49:12": {
+      "ayahs": [
+        "49:12"
+      ],
+      "range": "49:12",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشرعه اجتنبوا كثيرًا من ظن السوء بالمؤمنين; إن بعض ذلك الظن إثم، ولا تُفَتِّشوا عن عورات المسلمين، ولا يقل بعضكم في بعضٍ بظهر الغيب ما يكره. أيحب أحدكم أكل لحم أخيه وهو ميت؟ فأنتم تكرهون ذلك، فاكرهوا اغتيابه. وخافوا الله فيما أمركم به ونهاكم عنه. إن الله تواب على عباده المؤمنين، رحيم بهم.",
+      "citation_url": "https://quran.com/49:12/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "65:3": {
+      "ayahs": [
+        "65:3"
+      ],
+      "range": "65:3",
+      "text": "فإذا قاربت المطلقات نهاية عدتهن فراجعوهن مع حسن المعاشرة، والإنفاق عليهن، أو فارقوهن مع إيفاء حقهن، دون المضارَّة لهن، وأشهدوا على الرجعة أو المفارقة رجلين عدلين منكم، وأدُّوا- أيها الشهود- الشهادة خالصة لله لا لشيء آخر، ذلك الذي أمركم الله به يوعظ به مَن كان يؤمن بالله واليوم الآخر. ومن يخف الله فيعمل بما أمره به، ويجتنب ما نهاه عنه، يجعل له مخرجًا من كل ضيق، وييسِّر له أسباب الرزق من حيث لا يخطر على باله، ولا يكون في حسبانه. ومن يتوكل على الله فهو كافيه ما أهمَّه في جميع أموره. إن الله بالغ أمره، لا يفوته شيء، ولا يعجزه مطلوب، قد جعل الله لكل شيء أجلا ينتهي إليه، وتقديرًا لا يجاوزه.",
+      "citation_url": "https://quran.com/65:3/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "96:1": {
+      "ayahs": [
+        "96:1"
+      ],
+      "range": "96:1",
+      "text": "اقرأ -أيها النبي- ما أُنزل إليك من القرآن مُفْتَتِحًا باسم ربك المتفرد بالخلق، الذي خلق كل إنسان من قطعة دم غليظ أحمر. اقرأ -أيها النبي- ما أُنزل إليك، وإن ربك لكثير الإحسان واسع الجود، الذي علَّم خلقه الكتابة بالقلم، علَّم الإنسان ما لم يكن يعلم، ونقله من ظلمة الجهل إلى نور العلم.",
+      "citation_url": "https://quran.com/96:1/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "2:183": {
+      "ayahs": [
+        "2:183"
+      ],
+      "range": "2:183",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشرعه، فرض الله عليكم الصيام كما فرضه على الأمم قبلكم; لعلكم تتقون ربكم، فتجعلون بينكم وبين المعاصي وقاية بطاعته وعبادته وحده.",
+      "citation_url": "https://quran.com/2:183/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "3:159": {
+      "ayahs": [
+        "3:159"
+      ],
+      "range": "3:159",
+      "text": "فبرحمة من الله لك ولأصحابك -أيها النبي- منَّ الله عليك فكنت رفيقًا بهم، ولو كنت سيِّئ الخُلق قاسي القلب، لانْصَرَفَ أصحابك من حولك، فلا تؤاخذهم بما كان منهم في غزوة «أُحد» ، واسأل الله -أيها النبي- أن يغفر لهم، وشاورهم في الأمور التي تحتاج إلى مشورة، فإذا عزمت على أمر من الأمور -بعد الاستشارة- فأَمْضِه معتمدًا على الله وحده، إن الله يحب المتوكلين عليه.",
+      "citation_url": "https://quran.com/3:159/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "4:10": {
+      "ayahs": [
+        "4:10"
+      ],
+      "range": "4:10",
+      "text": "إن الذين يعْتَدون على أموال اليتامى، فيأخذونها بغير حق، إنما يأكلون نارًا تتأجّج في بطونهم يوم القيامة، وسيدخلون نارا يقاسون حرَّها.",
+      "citation_url": "https://quran.com/4:10/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "4:36": {
+      "ayahs": [
+        "4:36"
+      ],
+      "range": "4:36",
+      "text": "واعبدوا الله وانقادوا له وحده، ولا تجعلوا له شريكًا في الربوبية والعبادة، وأحسنوا إلى الوالدين، وأدُّوا حقوقهما، وحقوق الأقربين، والأولاد الذين مات آباؤهم وهم دون سن البلوغ، والمحتاجين الذين لا يملكون ما يكفيهم ويسد حاجتهم، والجار القريب منكم والبعيد، والرفيق في السفر وفي الحضر، والمسافر المحتاج، والمماليك من فتيانكم وفتياتكم. إن الله تعالى لا يحب المتكبرين من عباده، المفتخرين على الناس.",
+      "citation_url": "https://quran.com/4:36/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "7:31": {
+      "ayahs": [
+        "7:31"
+      ],
+      "range": "7:31",
+      "text": "يا بني آدم كونوا عند أداء كل صلاة على حالة من الزينة المشروعة من ثياب ساترة لعوراتكم ونظافة وطهارة ونحو ذلك، وكلوا واشربوا من طيبات ما رزقكم الله، ولا تتجاوزوا حدود الاعتدال في ذلك. إن الله لا يحب المتجاوزين المسرفين في الطعام والشراب وغير ذلك.",
+      "citation_url": "https://quran.com/7:31/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "10:6": {
+      "ayahs": [
+        "10:6"
+      ],
+      "range": "10:6",
+      "text": "إن في تعاقب الليل والنهار وما خلق الله في السموات والأرض من عجائب الخلق وما فيهما من إبداع ونظام، لأدلة وحججًا واضحة لقوم يخشون عقاب الله وسخطه وعذابه.",
+      "citation_url": "https://quran.com/10:6/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "17:81": {
+      "ayahs": [
+        "17:81"
+      ],
+      "range": "17:81",
+      "text": "وقل -أيها الرسول- للمشركين: جاء الإسلام وذهب الشرك، إن الباطل لا بقاء له ولا ثبات، والحق هو الثابت الباقي الذي لا يزول.",
+      "citation_url": "https://quran.com/17:81/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "20:14": {
+      "ayahs": [
+        "20:14"
+      ],
+      "range": "20:14",
+      "text": "إنني أنا الله لا معبود بحق إلا أنا، لا شريك لي، فاعبدني وحدي، وأقم الصلاة لتذكرني فيها.",
+      "citation_url": "https://quran.com/20:14/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "30:22": {
+      "ayahs": [
+        "30:22"
+      ],
+      "range": "30:22",
+      "text": "ومن دلائل القدرة الربانية: خَلْقُ السموات وارتفاعها بغير عمد، وخَلْقُ الأرض مع اتساعها وامتدادها، واختلافُ لغاتكم وتباينُ ألوانكم، إن في هذا لَعبرة لكل ذي علم وبصيرة.",
+      "citation_url": "https://quran.com/30:22/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "39:53": {
+      "ayahs": [
+        "39:53"
+      ],
+      "range": "39:53",
+      "text": "قل -أيها الرسول- لعبادي الذين تمادَوا في المعاصي، وأسرفوا على أنفسهم بإتيان ما تدعوهم إليه نفوسهم من الذنوب: لا تَيْئسوا من رحمة الله؛ لكثرة ذنوبكم، إن الله يغفر الذنوب جميعًا لمن تاب منها ورجع عنها مهما كانت، إنه هو الغفور لذنوب التائبين من عباده، الرحيم بهم.",
+      "citation_url": "https://quran.com/39:53/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "42:38": {
+      "ayahs": [
+        "42:38"
+      ],
+      "range": "42:38",
+      "text": "والذين استجابوا لربهم حين دعاهم إلى توحيده وطاعته، وأقاموا الصلاة المفروضة بحدودها في أوقاتها، وإذا أرادوا أمرًا تشاوروا فيه، ومما أعطيناهم من الأموال يتصدقون في سبيل الله، ويؤدون ما فرض الله عليهم من الحقوق لأهلها من زكاة ونفقة وغير ذلك من وجوه الإنفاق.",
+      "citation_url": "https://quran.com/42:38/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "49:9": {
+      "ayahs": [
+        "49:9"
+      ],
+      "range": "49:9",
+      "text": "وإن طائفتان من أهل الإيمان اقتتلوا فأصلحوا -أيها المؤمنون- بينهما بدعوتهما إلى الاحتكام إلى كتاب الله وسنة رسوله صلى الله عليه وسلم، والرضا بحكمهما، فإن اعتدت إحدى الطائفتين وأبت الإجابة إلى ذلك، فقاتلوها حتى ترجع إلى حكم الله ورسوله، فإن رجعت فأصلحوا بينهما بالإنصاف، واعدلوا في حكمكم بأن لا تتجاوزوا في أحكامكم حكم الله وحكم رسوله، إن الله يحب العادلين في أحكامهم القاضين بين خلقه بالقسط. وفي الآية إثبات صفة المحبة لله على الحقيقة، كما يليق بجلاله سبحانه.",
+      "citation_url": "https://quran.com/49:9/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "51:24": {
+      "ayahs": [
+        "51:24"
+      ],
+      "range": "51:24",
+      "text": "هل أتاك -أيها الرسول- حديث ضيف إبراهيم الذين أكرمهم -وكانوا من الملائكة الكرام- حين دخلوا عليه في بيته، فحيَّوه قائلين له: سلامًا، فردَّ عليهم التحية قائلا سلام عليكم، أنتم قوم غرباء لا نعرفكم.",
+      "citation_url": "https://quran.com/51:24/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "99:7": {
+      "ayahs": [
+        "99:7"
+      ],
+      "range": "99:7",
+      "text": "فمن يعمل وزن نملة صغيرة خيرًا، ير ثوابه في الآخرة، ومن يعمل وزن نملة صغيرة شرًا، ير عقابه في الآخرة.",
+      "citation_url": "https://quran.com/99:7/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "103:1": {
+      "ayahs": [
+        "103:1"
+      ],
+      "range": "103:1",
+      "text": "أقسم الله بالدهر؛ لما فيه من عجائب قدرة الله الدالة على عظمته، على أن بني آدم لفي هلكة ونقصان. ولا يجوز للعبد أن يقسم إلا بالله، فإن القسم بغير الله شرك.",
+      "citation_url": "https://quran.com/103:1/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "2:264": {
+      "ayahs": [
+        "2:264"
+      ],
+      "range": "2:264",
+      "text": "يا من آمنتم بالله واليوم الآخر لا تُذْهِبُوا ثواب ما تتصدقون به بالمنِّ والأذى، فهذا شبيه بالذي يخرج ماله ليراه الناس، فيُثنوا عليه، وهو لا يؤمن بالله ولا يوقن باليوم الآخر، فمثل ذلك مثل حجر أملس عليه تراب هطل عليه مطر غزير فأزاح عنه التراب، فتركه أملس لا شيء عليه، فكذلك هؤلاء المراؤون تضمحلُّ أعمالهم عند الله، ولا يجدون شيئًا من الثواب على ما أنفقوه. والله لا يوفق الكافرين لإصابة الحق في نفقاتهم وغيرها.",
+      "citation_url": "https://quran.com/2:264/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "2:271": {
+      "ayahs": [
+        "2:271"
+      ],
+      "range": "2:271",
+      "text": "إن تظهروا ما تتصدقون به لله فنِعْمَ ما تصدقتم به، وإن تسرُّوا بها، وتعطوها الفقراء فهذا أفضل لكم; لأنه أبعد عن الرياء، وفي الصدقة -مع الإخلاص- محو لذنوبكم. والله الذي يعلم دقائق الأمور، لا يخفى عليه شيء من أحوالكم، وسيجازي كلا بعمله.",
+      "citation_url": "https://quran.com/2:271/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "2:282": {
+      "ayahs": [
+        "2:282"
+      ],
+      "range": "2:282",
+      "text": "يا من آمنتم بالله واتبعتم رسوله محمدًا صلى الله عليه وسلم إذا تعاملتم بدَيْن إلى وقت معلوم فاكتبوه; حفظًا للمال ودفعًا للنزاع. ولْيقُم بالكتابة رجل أمين ضابط، ولا يمتنع مَن علَّمه الله الكتابة عن ذلك، ولْيقم المدين بإملاء ما عليه من الدَّيْن، وليراقب ربه، ولا ينقص من دينه شيئا. فإن كان المدين محجورًا عليه لتبذيره وإسرافه، أو كان صغيرًا أو مجنونًا، أو لا يستطيع النطق لخرس به أو عدم قدرة كاملة على الكلام، فليتولَّ الإملاء عن المدين القائم بأمره، واطلبوا شهادة رجلين مسلمَيْن بالِغَيْن عاقلَيْن من أهل العدالة. فإن لم يوجد رجلان، فاطلبوا شهادة رجل وامرأتين ترضون شهادتهم، حتى إذا نَسِيَتْ إحداهما ذكَّرتها الأخرى، وعلى الشهداء أن يجيبوا مَن دعاهم إلى الشهادة، وعليهم أداؤها إذا ما دعوا إليها، ولا تَمَلُّوا من كتابة الدَّين قليلا أو كثيرًا إلى وقته المعلوم. ذلكم أعدل في شرع الله وهديه، وأعظم عونًا على إقامة الشهادة وأدائها، وأقرب إلى نفي الشك في جنس الدَّين وقدره وأجله. لكن إن كانت المسألة مسألة بيع وشراء، بأخذ سلعة ودفع ثمنها في الحال، فلا حاجة إلى الكتابة، ويستحب الإشهاد على ذلك منعًا للنزاع والشقاق، ومن الواجب على الشاهد والكاتب أداء الشهادة على وجهها والكتابة كما أمر الله. ولا يجوز لصاحب الحق ومَن عليه الحق الإضرار بالكُتَّاب والشهود، وكذلك لا يجوز للكُتَّاب والشهود أن يضارُّوا بمن احتاج إلى كتابتهم أو شهادتهم، وإن تفعلوا ما نهيتم عنه فإنه خروج عن طاعة الله، وعاقبة ذلك حالَّة بكم. وخافوا الله في جميع ما أمركم به، ونهاكم عنه، ويعلمكم الله جميع ما يصلح دنياكم وأخراكم. والله بكل شيء عليم، فلا يخفى عليه شيء من أموركم، وسيجازيكم على ذلك.",
+      "citation_url": "https://quran.com/2:282/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "3:134": {
+      "ayahs": [
+        "3:134"
+      ],
+      "range": "3:134",
+      "text": "الذين ينفقون أموالهم في اليسر والعسر، والذين يمسكون ما في أنفسهم من الغيظ بالصبر، وإذا قَدَروا عَفَوا عمَّن ظلمهم. وهذا هو الإحسان الذي يحب الله أصحابه.",
+      "citation_url": "https://quran.com/3:134/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "4:58": {
+      "ayahs": [
+        "4:58"
+      ],
+      "range": "4:58",
+      "text": "إن الله تعالى يأمركم بأداء مختلف الأمانات، التي اؤتمنتم عليها إلى أصحابها، فلا تفرطوا فيها، ويأمركم بالقضاء بين الناس بالعدل والقسط، إذا قضيتم بينهم، ونِعْمَ ما يعظكم الله به ويهديكم إليه. إن الله تعالى كان سميعًا لأقوالكم، مُطَّلعًا على سائر أعمالكم، بصيرًا بها.",
+      "citation_url": "https://quran.com/4:58/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "5:1": {
+      "ayahs": [
+        "5:1"
+      ],
+      "range": "5:1",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشرعه، أتِمُّوا عهود الله الموثقة، من الإيمان بشرائع الدين، والانقياد لها، وأَدُّوا العهود لبعضكم على بعض من الأمانات، والبيوع وغيرها، مما لم يخالف كتاب الله، وسنة رسوله محمد صلى الله عليه وسلم. وقد أحَلَّ الله لكم البهيمة من الأنعام، وهي الإبلُ والبقر والغنم، إلا ما بيَّنه لكم من تحريم الميتة والدم وغير ذلك، ومن تحريم الصيد وأنتم محرمون. إن الله يحكم ما يشاء وَفْق حكمته وعدله.",
+      "citation_url": "https://quran.com/5:1/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "17:36": {
+      "ayahs": [
+        "17:36"
+      ],
+      "range": "17:36",
+      "text": "ولا تتبع -أيها الإنسان- ما لا تعلم، بل تأكَّد وتثبَّت. إن الإنسان مسؤول عما استعمَل فيه سمعه وبصره وفؤاده، فإذا استعمَلها في الخير نال الثواب، وإذا استعملها في الشر نال العقاب.",
+      "citation_url": "https://quran.com/17:36/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "17:53": {
+      "ayahs": [
+        "17:53"
+      ],
+      "range": "17:53",
+      "text": "وقل لعبادي المؤمنين يقولوا في تخاطبهم وتحاورهم الكلام الحسن الطيب؛ فإنهم إن لم يفعلوا ذلك ألقى الشيطان بينهم العداوة والفساد والخصام. إن الشيطان كان للإنسان عدوًا ظاهر العداوة.",
+      "citation_url": "https://quran.com/17:53/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "31:14": {
+      "ayahs": [
+        "31:14"
+      ],
+      "range": "31:14",
+      "text": "وأَمَرْنا الإنسان ببرِّ والديه والإحسان إليهما، حَمَلَتْه أمه ضعفًا على ضعف، وحمله وفِطامه عن الرضاعة في مدة عامين، وقلنا له: اشكر لله، ثم اشكر لوالديك، إليَّ المرجع فأُجازي كُلا بما يستحق.",
+      "citation_url": "https://quran.com/31:14/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "49:6": {
+      "ayahs": [
+        "49:6"
+      ],
+      "range": "49:6",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشرعه، إن جاءكم فاسق بخبر فتثبَّتوا من خبره قبل تصديقه ونقله حتى تعرفوا صحته؛ خشية أن تصيبوا قومًا برآء بجناية منكم، فتندموا على ذلك.",
+      "citation_url": "https://quran.com/49:6/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "49:10": {
+      "ayahs": [
+        "49:10"
+      ],
+      "range": "49:10",
+      "text": "إنما المؤمنون إخوة في الدين، فأصلحوا بين أخويكم إذا اقتتلا وخافوا الله في جميع أموركم؛ رجاء أن تُرحموا.",
+      "citation_url": "https://quran.com/49:10/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "49:11": {
+      "ayahs": [
+        "49:11"
+      ],
+      "range": "49:11",
+      "text": "يا أيها الذين صدَّقوا الله ورسوله وعملوا بشريعته لا يهزأ قوم مؤمنون من قوم مؤمنين؛ عسى أن يكون المهزوء به منهم خيرًا من الهازئين، ولا يهزأ نساء مؤمنات من نساء مؤمنات; عسى أن يكون المهزوء به منهنَّ خيرًا من الهازئات، ولا يَعِبْ بعضكم بعضًا، ولا يَدْعُ بعضكم بعضًا بما يكره من الألقاب، بئس الصفة والاسم الفسوق، وهو السخرية واللمز والتنابز بالألقاب، بعد ما دخلتم في الإسلام وعقلتموه، ومن لم يتب من هذه السخرية واللمز والتنابز والفسوق فأولئك هم الذين ظلموا أنفسهم بارتكاب هذه المناهي.",
+      "citation_url": "https://quran.com/49:11/tafsirs/16",
+      "passage_ayah_range": null
+    },
+    "49:13": {
+      "ayahs": [
+        "49:13"
+      ],
+      "range": "49:13",
+      "text": "يا أيها الناس إنَّا خلقناكم من أب واحد هو آدم، وأُم واحدة هي حواء، فلا تفاضل بينكم في النسب، وجعلناكم بالتناسل شعوبًا وقبائل متعددة؛ ليعرف بعضكم بعضًا، إن أكرمكم عند الله أشدكم اتقاءً له. إن الله عليم بالمتقين، خبير بهم.",
+      "citation_url": "https://quran.com/49:13/tafsirs/16",
+      "passage_ayah_range": null
+    }
+  }
+}

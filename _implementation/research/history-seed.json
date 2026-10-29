@@ -1,0 +1,1355 @@
+{
+  "events": [
+    {
+      "id": "the-first-revelation",
+      "number": 1,
+      "year": 610,
+      "date": "c. 610 CE",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "place": "Hira",
+      "title": "The first revelation",
+      "summary": "Aisha's report places the beginning of revelation in the cave of Hira, following a period of meaningful dreams and seclusion.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report supplies the setting; the CE year is conventional and approximate."
+    },
+    {
+      "id": "khadija-offers-reassurance",
+      "number": 2,
+      "year": 610,
+      "date": "c. 610 CE",
+      "era": "Early Makkah",
+      "topic": "Character",
+      "place": "Makkah",
+      "title": "Khadija offers reassurance",
+      "summary": "After the experience at Hira, Khadija reassured the Prophet ﷺ by recalling his care for relatives, guests, and people in difficulty.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A sequence within the first-revelation report, rather than a separately dated event."
+    },
+    {
+      "id": "a-conversation-with-waraqa",
+      "number": 3,
+      "year": 610,
+      "date": "c. 610 CE",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "place": "Makkah",
+      "title": "A conversation with Waraqa",
+      "summary": "Khadija brought the account to Waraqa ibn Nawfal, who connected the experience with earlier revelation and anticipated opposition.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report describes the sequence without a calendar date."
+    },
+    {
+      "id": "revelation-after-a-pause",
+      "number": 4,
+      "year": 611,
+      "date": "Early mission",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "place": "Makkah",
+      "title": "Revelation after a pause",
+      "summary": "Jabir's report describes revelation resuming after a pause and associates the moment with the opening instructions of Al-Muddaththir.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4",
+          "url": "https://sunnah.com/bukhari:4",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Exact length of the pause and CE date are not established here."
+    },
+    {
+      "id": "calling-the-clans-at-safa",
+      "number": 5,
+      "year": 613,
+      "date": "Early mission",
+      "era": "Early Makkah",
+      "topic": "Community",
+      "place": "Safa",
+      "title": "Calling the clans at Safa",
+      "summary": "Ibn Abbas reports that the Prophet ﷺ gathered the clans at Safa and warned them publicly. Their answer acknowledged his previous truthfulness.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Commonly placed in the early public mission; the report itself gives no CE year."
+    },
+    {
+      "id": "khabbab-asks-for-help",
+      "number": 6,
+      "year": 615,
+      "date": "Makkan period",
+      "era": "Early Makkah",
+      "topic": "Resilience",
+      "place": "Makkah",
+      "title": "Khabbab asks for help",
+      "summary": "Khabbab recalled asking for help during persecution. The reported reply placed their suffering alongside the endurance of earlier believers.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3852",
+          "url": "https://sunnah.com/bukhari:3852",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A broad Makkan placement is used because this report does not date the exchange."
+    },
+    {
+      "id": "abu-bakr-and-protection",
+      "number": 7,
+      "year": 616,
+      "date": "Makkan period",
+      "era": "Early Makkah",
+      "topic": "Community",
+      "place": "Makkah",
+      "title": "Abu Bakr and protection",
+      "summary": "Aisha's report describes Ibn al-Daghina offering Abu Bakr protection, disputes about public worship, and Abu Bakr later releasing him from that agreement.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The episode predates the Hijrah, but the precise CE year is not supplied."
+    },
+    {
+      "id": "a-difficult-encounter-and-a-merciful-response",
+      "number": 8,
+      "year": 620,
+      "date": "Late Makkan period",
+      "era": "Late Makkah",
+      "topic": "Mercy",
+      "place": "Taif region",
+      "title": "A difficult encounter and a merciful response",
+      "summary": "When recalling a painful rejection, the Prophet ﷺ described declining an offer of destruction and hoping for future generations who would worship Allah.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Often associated with the Taif journey. The report names locations but gives no CE date."
+    },
+    {
+      "id": "the-night-journey-and-ascent",
+      "number": 9,
+      "year": 621,
+      "date": "Before the Hijrah",
+      "era": "Late Makkah",
+      "topic": "Worship",
+      "place": "Makkah",
+      "title": "The Night Journey and ascent",
+      "summary": "The report of Malik ibn Sasaa describes the Night Journey and ascent, including the prescription of prayer.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3887",
+          "url": "https://sunnah.com/bukhari:3887",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The exact date is disputed. Its position here is a broad pre-Hijrah placement, not a fixed anniversary."
+    },
+    {
+      "id": "the-pledges-at-aqabah",
+      "number": 10,
+      "year": 621.5,
+      "date": "Before the Hijrah",
+      "era": "Late Makkah",
+      "topic": "Community",
+      "place": "Aqabah",
+      "title": "The pledges at Aqabah",
+      "summary": "Ubada ibn al-Samit is identified as an Aqabah participant and reports a pledge covering worship and conduct.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 18",
+          "url": "https://sunnah.com/bukhari:18",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "This report identifies a participant and a pledge; it does not by itself establish every detail of the two Aqabah meetings."
+    },
+    {
+      "id": "the-cave-during-the-migration",
+      "number": 11,
+      "year": 622,
+      "date": "1 AH · c. 622 CE",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "place": "Near Makkah",
+      "title": "The cave during the migration",
+      "summary": "Abu Bakr recalls concern that pursuers might see them in the cave and the Prophet's reassurance. Quran 9:40 also refers to the two in the cave.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The Hijrah is conventionally dated to 622 CE. The report quoted here does not name the cave."
+    },
+    {
+      "id": "suraqa-on-the-route",
+      "number": 12,
+      "year": 622.1,
+      "date": "1 AH · c. 622 CE",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "place": "Migration route",
+      "title": "Suraqa on the route",
+      "summary": "Suraqa's account describes pursuing the travelers, his horse stumbling, and his eventual request for a written assurance of safety.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3906",
+          "url": "https://sunnah.com/bukhari:3906",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report supplies the episode; this schematic view does not reconstruct the exact route."
+    },
+    {
+      "id": "arrival-among-banu-amr-ibn-awf",
+      "number": 13,
+      "year": 622.2,
+      "date": "1 AH · c. 622 CE",
+      "era": "Hijrah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "Arrival among Banu Amr ibn Awf",
+      "summary": "Anas reports an initial stay among Banu Amr ibn Awf, followed by a welcome from Banu al-Najjar and arrival at Abu Ayyub's courtyard.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Relative sequence is clearer than an exact Gregorian day."
+    },
+    {
+      "id": "building-the-mosque",
+      "number": 14,
+      "year": 622.3,
+      "date": "1 AH · c. 622 CE",
+      "era": "Early Madinah",
+      "topic": "Worship",
+      "place": "Madinah",
+      "title": "Building the mosque",
+      "summary": "Anas describes preparing a site for the mosque in Madinah and the community's involvement in the work.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Shown after arrival. The cited report is the evidence for the construction episode."
+    },
+    {
+      "id": "brotherhood-and-a-market",
+      "number": 15,
+      "year": 622.4,
+      "date": "Early Madinan period",
+      "era": "Early Madinah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "Brotherhood and a market",
+      "summary": "The report pairs Abd al-Rahman ibn Awf with Sad ibn al-Rabi. It records Sad's generous offer and Abd al-Rahman's request to be shown the market.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3780",
+          "url": "https://sunnah.com/bukhari:3780",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report places the episode after the emigrants reached Madinah; no exact date is supplied."
+    },
+    {
+      "id": "the-change-of-qiblah",
+      "number": 16,
+      "year": 624,
+      "date": "2 AH · c. 624 CE",
+      "era": "Early Madinah",
+      "topic": "Worship",
+      "place": "Madinah",
+      "title": "The change of qiblah",
+      "summary": "Al-Bara reports prayer toward Jerusalem for sixteen or seventeen months, followed by the change toward the Kaaba.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 399",
+          "url": "https://sunnah.com/bukhari:399",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The narrator preserves a sixteen-or-seventeen-month uncertainty; the app keeps that uncertainty."
+    },
+    {
+      "id": "supplication-at-badr",
+      "number": 17,
+      "year": 624.2,
+      "date": "2 AH · c. 624 CE",
+      "era": "Early Madinah",
+      "topic": "Expeditions",
+      "place": "Badr",
+      "title": "Supplication at Badr",
+      "summary": "Ibn Abbas reports the Prophet's earnest supplication at Badr and Abu Bakr's presence. Quran 3:123 explicitly names Badr.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3953",
+          "url": "https://sunnah.com/bukhari:3953",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional year is a chronology aid. The report is cited for the supplication, not a complete battle narrative."
+    },
+    {
+      "id": "the-archers-at-uhud",
+      "number": 18,
+      "year": 625,
+      "date": "3 AH · c. 625 CE",
+      "era": "Early Madinah",
+      "topic": "Expeditions",
+      "place": "Uhud",
+      "title": "The archers at Uhud",
+      "summary": "Al-Bara describes the instructions given to the archers under Abdullah ibn Jubayr and the consequences of leaving their position.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3039",
+          "url": "https://sunnah.com/bukhari:3039",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional year is approximate in CE terms; details follow the named report."
+    },
+    {
+      "id": "a-report-on-the-retreat",
+      "number": 19,
+      "year": 625.1,
+      "date": "3 AH · c. 625 CE",
+      "era": "Early Madinah",
+      "topic": "Expeditions",
+      "place": "Uhud",
+      "title": "A report on the retreat",
+      "summary": "A second report from Al-Bara identifies the archers' commander and recalls the retreat during Uhud.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4067",
+          "url": "https://sunnah.com/bukhari:4067",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A separate report about the same battle, not another battle or an independently dated event."
+    },
+    {
+      "id": "digging-the-trench",
+      "number": 20,
+      "year": 627,
+      "date": "5 AH · c. 627 CE",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "Digging the trench",
+      "summary": "Anas recalls the emigrants and helpers carrying earth while digging the trench, with hunger and difficult food supplies during the work.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4100",
+          "url": "https://sunnah.com/bukhari:4100",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The trench campaign is conventionally placed in 5 AH; the cited report describes the labor."
+    },
+    {
+      "id": "the-account-of-the-slander",
+      "number": 21,
+      "year": 627.2,
+      "date": "Madinan period · date debated",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "The account of the slander",
+      "summary": "Aisha's extended report recounts the false accusation against her and the distress and eventual resolution that followed.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4141",
+          "url": "https://sunnah.com/bukhari:4141",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Its relation to some campaigns is debated. Placement in this band is approximate, not a claim of a precise year."
+    },
+    {
+      "id": "the-journey-to-hudaybiyah",
+      "number": 22,
+      "year": 628,
+      "date": "6 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Treaties",
+      "place": "Hudaybiyah",
+      "title": "The journey to Hudaybiyah",
+      "summary": "Al-Miswar and Marwan's account describes a journey intended for Umrah, negotiations with Quraysh, and the eventual agreement.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Conventional 6 AH placement. The linked report contains the detailed sequence."
+    },
+    {
+      "id": "the-pledge-beneath-the-tree",
+      "number": 23,
+      "year": 628.1,
+      "date": "6 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Treaties",
+      "place": "Hudaybiyah",
+      "title": "The pledge beneath the tree",
+      "summary": "Jabir recalls the group at Hudaybiyah and identifies the tree associated with the pledge. Quran 48:18 explicitly mentions the pledge beneath a tree.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4154",
+          "url": "https://sunnah.com/bukhari:4154",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Jabir gives a group count in this report. Other transmitted counts should not be silently harmonized."
+    },
+    {
+      "id": "negotiating-the-written-agreement",
+      "number": 24,
+      "year": 628.2,
+      "date": "6 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Treaties",
+      "place": "Hudaybiyah",
+      "title": "Negotiating the written agreement",
+      "summary": "The Hudaybiyah account records negotiations and the writing of treaty terms. Its difficult concessions form part of the report's sequence.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A detail of the same treaty episode, not a separate treaty."
+    },
+    {
+      "id": "the-banner-at-khaybar",
+      "number": 25,
+      "year": 628.4,
+      "date": "7 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Expeditions",
+      "place": "Khaybar",
+      "title": "The banner at Khaybar",
+      "summary": "Sahl ibn Sad reports the announcement about the banner at Khaybar and its being given to Ali ibn Abi Talib.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4210",
+          "url": "https://sunnah.com/bukhari:4210",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional year is shown; the linked report supports the banner episode."
+    },
+    {
+      "id": "a-letter-and-questions-from-heraclius",
+      "number": 26,
+      "year": 628.5,
+      "date": "After Hudaybiyah",
+      "era": "Later Madinah",
+      "topic": "Diplomacy",
+      "place": "Outside Arabia",
+      "title": "A letter and questions from Heraclius",
+      "summary": "Abu Sufyan's account describes Heraclius questioning him during the truce with Quraysh and a letter from the Prophet ﷺ.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 7",
+          "url": "https://sunnah.com/bukhari:7",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report explicitly situates the exchange during the truce. The CE placement is approximate."
+    },
+    {
+      "id": "the-return-for-umrah",
+      "number": 27,
+      "year": 629,
+      "date": "7 AH · c. 629 CE",
+      "era": "Later Madinah",
+      "topic": "Worship",
+      "place": "Makkah",
+      "title": "The return for Umrah",
+      "summary": "Al-Bara's report describes the agreement for a later visit to Makkah and a stay of three days under its terms.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4251",
+          "url": "https://sunnah.com/bukhari:4251",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report links the visit to the agreement; its conventional chronology is 7 AH."
+    },
+    {
+      "id": "the-approach-to-makkah",
+      "number": 28,
+      "year": 630,
+      "date": "8 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "place": "Makkah",
+      "title": "The approach to Makkah",
+      "summary": "The report describes the approach during the year of the conquest and Abu Sufyan's encounter with the Muslim camp.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4280",
+          "url": "https://sunnah.com/bukhari:4280",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The year of the conquest is explicit in the report. CE conversion is approximate."
+    },
+    {
+      "id": "the-kaaba-at-the-conquest",
+      "number": 29,
+      "year": 630.1,
+      "date": "8 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Worship",
+      "place": "Makkah",
+      "title": "The Kaaba at the conquest",
+      "summary": "Abdullah reports the removal of idols around the Kaaba when the Prophet ﷺ entered Makkah.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4287",
+          "url": "https://sunnah.com/bukhari:4287",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A detail of the conquest episode. No depictions of the Prophet are used."
+    },
+    {
+      "id": "steadfastness-at-hunayn",
+      "number": 30,
+      "year": 630.2,
+      "date": "8 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Expeditions",
+      "place": "Hunayn",
+      "title": "Steadfastness at Hunayn",
+      "summary": "Al-Bara reports that the Prophet ﷺ did not flee at Hunayn, while some people hurried away under the opposing archers' attack.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4315",
+          "url": "https://sunnah.com/bukhari:4315",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional placement follows the conquest; the report supports this specific observation."
+    },
+    {
+      "id": "the-expedition-to-tabuk",
+      "number": 31,
+      "year": 630.6,
+      "date": "9 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Expeditions",
+      "place": "Tabuk",
+      "title": "The expedition to Tabuk",
+      "summary": "Kab ibn Malik's account describes his failure to join the expedition to Tabuk and the circumstances that followed.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Shown in the conventional 9 AH band. Read the complete report for its longer sequence."
+    },
+    {
+      "id": "kab-ibn-malik-tells-the-truth",
+      "number": 32,
+      "year": 630.7,
+      "date": "After Tabuk",
+      "era": "Later Madinah",
+      "topic": "Character",
+      "place": "Madinah",
+      "title": "Kab ibn Malik tells the truth",
+      "summary": "Kab's account contrasts his truthful admission with the excuses he might have offered and recounts the eventual acceptance of repentance.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Part of the same report as Tabuk. Its relative sequence is more important here than an exact CE day."
+    },
+    {
+      "id": "announcements-during-abu-bakr-s-hajj",
+      "number": 33,
+      "year": 631,
+      "date": "9 AH · c. 631 CE",
+      "era": "Later Madinah",
+      "topic": "Worship",
+      "place": "Mina",
+      "title": "Announcements during Abu Bakr's Hajj",
+      "summary": "Abu Hurayra recalls being sent among the announcers at the Hajj led by Abu Bakr. The report also mentions Ali reciting Baraah.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4655",
+          "url": "https://sunnah.com/bukhari:4655",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Conventionally placed in 9 AH, before the Prophet's Farewell Hajj."
+    },
+    {
+      "id": "the-farewell-hajj",
+      "number": 34,
+      "year": 632,
+      "date": "10 AH · 632 CE",
+      "era": "Final year",
+      "topic": "Worship",
+      "place": "Arafat",
+      "title": "The Farewell Hajj",
+      "summary": "Jabir's long report describes the announced pilgrimage in the tenth year, its journey, rites, and the address at Arafat.",
+      "sources": [
+        {
+          "label": "Sahih Muslim 1218a",
+          "url": "https://sunnah.com/muslim:1218a",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report explicitly identifies the tenth year in Madinah. Individual Gregorian date conversions are not asserted."
+    },
+    {
+      "id": "conveying-the-message",
+      "number": 35,
+      "year": 632.1,
+      "date": "10 AH · 632 CE",
+      "era": "Final year",
+      "topic": "Community",
+      "place": "Mina",
+      "title": "Conveying the message",
+      "summary": "Abu Bakra reports an address on the Day of Nahr emphasizing the sanctity of life and property and conveying the message to those absent.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1741",
+          "url": "https://sunnah.com/bukhari:1741",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "This report concerns the address at Mina; it is not silently merged with every other Farewell Hajj sermon."
+    },
+    {
+      "id": "the-death-of-the-prophet",
+      "number": 36,
+      "year": 632.5,
+      "date": "11 AH · 632 CE",
+      "era": "Final year",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "The death of the Prophet ﷺ",
+      "summary": "Aisha describes his final moments in her home. Another report records Abu Bakr addressing the community afterward and reciting Quran 3:144.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4449",
+          "url": "https://sunnah.com/bukhari:4449",
+          "kind": "Hadith report"
+        },
+        {
+          "label": "Sahih al-Bukhari 4452",
+          "url": "https://sunnah.com/bukhari:4452",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The year is conventional. The report supports the setting of the final moments; see the additional report for the community response."
+    }
+  ],
+  "cases": [
+    {
+      "id": "the-first-witness",
+      "number": 1,
+      "title": "The first witness",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "brief": "Aisha's account takes us from Hira to a household conversation. Which sequence does the report support?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A place of seclusion",
+          "text": "The account identifies Hira as the setting of the first encounter.",
+          "source": {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A trusted response",
+          "text": "Khadija reassures him after hearing what happened.",
+          "source": {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "A further conversation",
+          "text": "Khadija takes the account to Waraqa ibn Nawfal.",
+          "source": {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "Hira, then Khadija's reassurance, then Waraqa.",
+        "Waraqa is present inside the cave.",
+        "The report gives an exact Gregorian day."
+      ],
+      "correct": 0,
+      "conclusion": "The report supports that sequence. It does not place Waraqa in Hira or provide an exact Gregorian date.",
+      "hint": "Follow the movement from the cave to the conversations afterward.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "the-gathering-at-safa",
+      "number": 2,
+      "title": "The gathering at Safa",
+      "era": "Early Makkah",
+      "topic": "Public mission",
+      "brief": "A gathering tests what the clans already know about the speaker. What can be established from Ibn Abbas's report?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A public summons",
+          "text": "The Prophet ﷺ calls clans of Quraysh to Safa.",
+          "source": {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A question about trust",
+          "text": "He asks whether they would believe a warning about approaching cavalry.",
+          "source": {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The response",
+          "text": "Their reply acknowledges his truthfulness before the warning.",
+          "source": {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The warning draws on an acknowledged record of truthfulness.",
+        "Every person present immediately accepts the message.",
+        "The report identifies the exact year of the gathering."
+      ],
+      "correct": 0,
+      "conclusion": "The report supports the acknowledgment of truthfulness. It does not say everyone accepted, and it supplies no exact CE year.",
+      "hint": "Separate what the audience says about trust from how every individual responds.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "after-the-rejection",
+      "number": 3,
+      "title": "After the rejection",
+      "era": "Late Makkah",
+      "topic": "Mercy",
+      "brief": "Aisha asks about a particularly difficult experience. Which response is actually described?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The painful encounter",
+          "text": "The report recalls rejection after approaching Ibn Abd Yalail.",
+          "source": {
+            "label": "Sahih al-Bukhari 3231",
+            "url": "https://sunnah.com/bukhari:3231",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "An offered action",
+          "text": "The Angel of the Mountains offers to bring the mountains down.",
+          "source": {
+            "label": "Sahih al-Bukhari 3231",
+            "url": "https://sunnah.com/bukhari:3231",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The response",
+          "text": "The Prophet ﷺ declines and expresses hope for future descendants.",
+          "source": {
+            "label": "Sahih al-Bukhari 3231",
+            "url": "https://sunnah.com/bukhari:3231",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "He declines destruction and hopes for future worshippers.",
+        "The offered destruction is carried out immediately.",
+        "The report gives an exact date for an annual observance."
+      ],
+      "correct": 0,
+      "conclusion": "The stated response is hope for descendants, not the destruction offered. No exact anniversary is established by this report.",
+      "hint": "Distinguish the offer from the answer to it.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "two-in-the-cave",
+      "number": 4,
+      "title": "Two in the cave",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "brief": "Abu Bakr describes a moment of danger during the migration. Which conclusion stays within this brief report?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The narrator",
+          "text": "Abu Bakr recounts being in the cave with the Prophet ﷺ.",
+          "source": {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "The concern",
+          "text": "He fears that looking down would let the pursuers see them.",
+          "source": {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The reassurance",
+          "text": "The reported reply reassures Abu Bakr about Allah's presence with them.",
+          "source": {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The report records concern followed by reassurance.",
+        "This report describes a spider spinning a web.",
+        "This report names every person involved in the route."
+      ],
+      "correct": 0,
+      "conclusion": "The brief report establishes the concern and reassurance. It does not mention a spider's web or provide a full route list.",
+      "hint": "Avoid importing familiar details that are not present in the cited report.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "the-pursuer-s-request",
+      "number": 5,
+      "title": "The pursuer's request",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "brief": "Suraqa pursues the travelers, but the encounter changes. What does he request before they continue?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A pursuit",
+          "text": "Suraqa describes setting out after the travelers.",
+          "source": {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A changed situation",
+          "text": "He recounts his horse stumbling and later sinking at the forelegs.",
+          "source": {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "A written assurance",
+          "text": "He asks for a statement of safety, which Amr ibn Fuhayra writes.",
+          "source": {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "A written assurance of safety.",
+        "A declaration that every future pursuer has already converted.",
+        "A complete map of the remaining journey."
+      ],
+      "correct": 0,
+      "conclusion": "The report specifies a written assurance of safety. The other conclusions add claims not made in these evidence cards.",
+      "hint": "Look for the request made after Suraqa approaches them.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3906",
+          "url": "https://sunnah.com/bukhari:3906",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "where-is-the-market",
+      "number": 6,
+      "title": "Where is the market?",
+      "era": "Early Madinah",
+      "topic": "Community",
+      "brief": "A report about brotherhood includes a generous offer and an independent response. What does Abd al-Rahman ask for?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A bond",
+          "text": "The account pairs Abd al-Rahman ibn Awf with Sad ibn al-Rabi.",
+          "source": {
+            "label": "Sahih al-Bukhari 3780",
+            "url": "https://sunnah.com/bukhari:3780",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "An offer",
+          "text": "Sad offers substantial help from his property.",
+          "source": {
+            "label": "Sahih al-Bukhari 3780",
+            "url": "https://sunnah.com/bukhari:3780",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The reply",
+          "text": "Abd al-Rahman offers a blessing and asks to be shown the market.",
+          "source": {
+            "label": "Sahih al-Bukhari 3780",
+            "url": "https://sunnah.com/bukhari:3780",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "To be shown the market.",
+        "To be appointed ruler of the city.",
+        "To forbid anyone else from trading."
+      ],
+      "correct": 0,
+      "conclusion": "The report identifies the market request and subsequent trading. It does not support the claims about political appointment or excluding other traders.",
+      "hint": "Focus on the reply to Sad's offer.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3780",
+          "url": "https://sunnah.com/bukhari:3780",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "a-direction-changes",
+      "number": 7,
+      "title": "A direction changes",
+      "era": "Early Madinah",
+      "topic": "Worship",
+      "brief": "News reaches people who are already praying. Which detail should a careful reader preserve?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "An earlier direction",
+          "text": "Al-Bara describes prayer toward Jerusalem.",
+          "source": {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A narrated uncertainty",
+          "text": "The duration is given as sixteen or seventeen months.",
+          "source": {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "New information",
+          "text": "A person who prayed with the Prophet ﷺ conveys the new direction to others.",
+          "source": {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The report preserves uncertainty between sixteen and seventeen months.",
+        "The report gives exactly sixteen months with no uncertainty.",
+        "The report says every prayer before the change was invalid."
+      ],
+      "correct": 0,
+      "conclusion": "The narrator's sixteen-or-seventeen wording should remain visible. The other answers either erase uncertainty or introduce an unsupported conclusion.",
+      "hint": "A small uncertainty is evidence too; do not edit it out.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 399",
+          "url": "https://sunnah.com/bukhari:399",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "the-archers-instruction",
+      "number": 8,
+      "title": "The archers' instruction",
+      "era": "Early Madinah",
+      "topic": "Uhud",
+      "brief": "The archers receive an instruction covering more than one possible outcome. What made leaving the position a problem?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A commander",
+          "text": "Abdullah ibn Jubayr commands the archers in this report.",
+          "source": {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "The instruction",
+          "text": "They are told to remain until a message reaches them, even if either side appears to be winning.",
+          "source": {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "A decision",
+          "text": "Some leave after seeing an apparent victory and the prospect of spoils.",
+          "source": {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The instruction explicitly covered an apparent victory as well as danger.",
+        "No instructions had been given about the position.",
+        "Every archer leaves and the report gives no exceptions."
+      ],
+      "correct": 0,
+      "conclusion": "The report makes the instruction explicit. An apparent victory did not cancel it. The absolute claim about every archer goes beyond these cards.",
+      "hint": "Read the condition about apparent victory, not just the condition about danger.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3039",
+          "url": "https://sunnah.com/bukhari:3039",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "the-journey-s-purpose",
+      "number": 9,
+      "title": "The journey's purpose",
+      "era": "Later Madinah",
+      "topic": "Hudaybiyah",
+      "brief": "Negotiators ask why the travelers have come. What purpose is stated in the Hudaybiyah account?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The journey",
+          "text": "The account describes the approach to Hudaybiyah.",
+          "source": {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A stated purpose",
+          "text": "The Prophet ﷺ explains that they have come for Umrah rather than to initiate fighting.",
+          "source": {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "Negotiation",
+          "text": "The narrative proceeds through messages and agreement terms.",
+          "source": {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The stated purpose is Umrah, and negotiation follows.",
+        "The travelers state that they have come only for trade.",
+        "The report says no negotiation takes place."
+      ],
+      "correct": 0,
+      "conclusion": "The report explicitly distinguishes the intended Umrah from initiating battle. The existence of negotiation is part of the account.",
+      "hint": "Separate a stated purpose from later tensions during the journey.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "who-receives-the-banner",
+      "number": 10,
+      "title": "Who receives the banner?",
+      "era": "Later Madinah",
+      "topic": "Khaybar",
+      "brief": "An announcement makes people wonder who will receive a banner. Which identification is supported?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "An announcement",
+          "text": "The banner is to be given the next morning to a person described favorably.",
+          "source": {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "Anticipation",
+          "text": "Those present hope to receive it.",
+          "source": {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The outcome",
+          "text": "The report names Ali ibn Abi Talib as its recipient.",
+          "source": {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "Ali ibn Abi Talib receives the banner in this report.",
+        "The recipient is chosen by a public vote described here.",
+        "The report never identifies who receives it."
+      ],
+      "correct": 0,
+      "conclusion": "The report identifies Ali. Anticipation among the companions is not evidence of a public vote.",
+      "hint": "Look for the recorded outcome rather than the expectations beforehand.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4210",
+          "url": "https://sunnah.com/bukhari:4210",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "questions-during-a-truce",
+      "number": 11,
+      "title": "Questions during a truce",
+      "era": "Later Madinah",
+      "topic": "Diplomacy",
+      "brief": "Abu Sufyan describes an interview with Heraclius. What setting does the account explicitly preserve?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A narrator",
+          "text": "Abu Sufyan reports the exchange to Ibn Abbas.",
+          "source": {
+            "label": "Sahih al-Bukhari 7",
+            "url": "https://sunnah.com/bukhari:7",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A period of truce",
+          "text": "The account locates it during the truce between the Prophet ﷺ and Quraysh.",
+          "source": {
+            "label": "Sahih al-Bukhari 7",
+            "url": "https://sunnah.com/bukhari:7",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "Questions and a letter",
+          "text": "Heraclius asks questions, and the account includes the Prophet's letter.",
+          "source": {
+            "label": "Sahih al-Bukhari 7",
+            "url": "https://sunnah.com/bukhari:7",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The interview occurs during the truce described by the narrator.",
+        "The report states that Heraclius publicly converts immediately.",
+        "The conversation happens before any prophetic mission begins."
+      ],
+      "correct": 0,
+      "conclusion": "The truce is explicit. The account should not be turned into an assertion of public conversion that it does not establish.",
+      "hint": "An interested response and a public conversion are different claims.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 7",
+          "url": "https://sunnah.com/bukhari:7",
+          "kind": "Hadith report"
+        }
+      ]
+    },
+    {
+      "id": "news-from-a-distant-land",
+      "number": 12,
+      "title": "News from a distant land",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "brief": "A death is announced, and a prayer follows. Which action is recorded in this report?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The news",
+          "text": "Abu Hurayra recounts the announcement of al-Najashi's death.",
+          "source": {
+            "label": "Sahih al-Bukhari 1333",
+            "url": "https://sunnah.com/bukhari:1333",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "The place",
+          "text": "The group goes to the prayer ground and forms rows.",
+          "source": {
+            "label": "Sahih al-Bukhari 1333",
+            "url": "https://sunnah.com/bukhari:1333",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The prayer",
+          "text": "The report records four takbirs in the funeral prayer.",
+          "source": {
+            "label": "Sahih al-Bukhari 1333",
+            "url": "https://sunnah.com/bukhari:1333",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "A funeral prayer in rows with four takbirs.",
+        "A journey by the entire group to attend a burial abroad.",
+        "An exact CE date is supplied in the report."
+      ],
+      "correct": 0,
+      "conclusion": "The report records the prayer and its four takbirs. It does not describe the group traveling abroad or give an exact Gregorian date.",
+      "hint": "Concentrate on what the group does after receiving the news.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1333",
+          "url": "https://sunnah.com/bukhari:1333",
+          "kind": "Hadith report"
+        }
+      ]
+    }
+  ]
+}

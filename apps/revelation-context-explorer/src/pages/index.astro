@@ -1,0 +1,8 @@
+---
+import Shell from '../layouts/Shell.astro';
+import Filters from '../components/Filters.astro';
+import { readings } from '../data/content.json';
+const entries=readings;
+const topics=[...new Set(entries.map(item=>item.topic))];
+---
+<Shell title="Revelation Context Explorer"><section class="intro"><span class="eyebrow">Reports with their limits</span><h1 class="editorial">A passage has context.<br/>A report has limits.</h1><p>Explore ten selected readings beside named reports. Distinguish a transmitted occasion from general context or a response after revelation.</p></section><div class="evidence-band"><span>Transmitted occasion</span><span>General context</span><span>Response after revelation</span></div><Filters topics={topics}/><div class="collection-tools"><h2 id="entries">Choose a record</h2><button class="button secondary" id="copy-saved">Copy saved reading list</button></div><div class="card-grid">{entries.map(item=><article class="panel activity-card" data-item-id={item.id} data-search={`${item.title} ${item.topic} ${item.reportSummary}`} data-topic={item.topic}><span class="eyebrow">{item.topic}</span><h2><a data-reading-link={item.id} href={`/reading/${item.id}/`}>{item.title}</a></h2><p>{item.reportSummary}</p><span class="micro">{item.passage.ref}</span><div class="actions"><a class="button" href={`/reading/${item.id}/`}>Open reading</a><button class="button secondary" data-save={item.id} aria-pressed="false">Save for later</button></div></article>)}</div><div id="empty" class="empty" hidden><h2>No entries match</h2><p>Try fewer words, change a filter, or turn off “Saved only.”</p></div><script>import "../lib/library";</script></Shell>

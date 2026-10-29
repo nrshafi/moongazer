@@ -1,0 +1,208 @@
+{
+  "resources": [
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "description": "Grounding rules for AI agents: citation requirements, attribution policy, decision rules for when to fetch vs use existing context, and the applied reasoning disclaimer.",
+      "mimeType": "text/markdown",
+      "name": "GROUNDING_RULES.md",
+      "uri": "document://grounding_rules.md"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "description": "Complete usage guide for AI agents: grounding rules, tool selection, search strategies, edition awareness, tafsir summarization patterns, workflow recipes, response formatting, and anti-patterns.",
+      "mimeType": "text/markdown",
+      "name": "SKILL.md",
+      "uri": "document://skill_guide.md"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "app",
+            "ga",
+            "quran",
+            "study"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "description": "Sidebar helper that forwards passage links and shows their action history.",
+      "mimeType": "text/html;profile=mcp-app",
+      "name": "quran.ai passage links",
+      "uri": "ui://reader_link_relay_v11.html"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "tags": [
+            "app",
+            "ga",
+            "quran",
+            "study"
+          ]
+        }
+      },
+      "description": "Current reader for hosts retaining the former notice URI.",
+      "mimeType": "text/html;profile=mcp-app",
+      "name": "Interactive Study App (cached notice URI)",
+      "uri": "ui://interactive_study_claude_notice_20261018.html"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "app",
+            "ga",
+            "quran",
+            "study"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "description": "Interactive quran study app. Opens a quran reader with ayah, word, and phrase selection so follow-up model questions can use the current in-app selection as context.",
+      "mimeType": "text/html;profile=mcp-app",
+      "name": "Interactive Study App",
+      "uri": "ui://interactive_study_v516.html"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "mimeType": "text/markdown",
+      "name": "grounding-rules/SKILL.md",
+      "uri": "skill://quran-ai/grounding-rules/SKILL.md"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "mimeType": "text/markdown",
+      "name": "interactive-study/SKILL.md",
+      "uri": "skill://quran-ai/interactive-study/SKILL.md"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "mimeType": "application/yaml",
+      "name": "interactive-study/agents/openai.yaml",
+      "uri": "skill://quran-ai/interactive-study/agents/openai.yaml"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "mimeType": "image/svg+xml",
+      "name": "interactive-study/assets/icon.svg",
+      "uri": "skill://quran-ai/interactive-study/assets/icon.svg"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "mimeType": "text/markdown",
+      "name": "onboarding/SKILL.md",
+      "uri": "skill://quran-ai/onboarding/SKILL.md"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "mimeType": "text/markdown",
+      "name": "onboarding/references/reader-help.md",
+      "uri": "skill://quran-ai/onboarding/references/reader-help.md"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "versions": [
+            "0.1.9"
+          ],
+          "tags": [
+            "app",
+            "ga"
+          ],
+          "version": "0.1.9"
+        }
+      },
+      "description": "Quran reader preferences saved by quran.ai, with browser storage as a fallback.",
+      "mimeType": "text/html;profile=mcp-app",
+      "name": "Reader Settings App",
+      "uri": "ui://reader_settings_0_1_9_v104.html"
+    }
+  ]
+}

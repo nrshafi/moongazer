@@ -1,0 +1,716 @@
+{
+  "cases": [
+    {
+      "id": "the-first-witness",
+      "number": 1,
+      "title": "The first witness",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "brief": "Aisha's account takes us from Hira to a household conversation. Which sequence does the report support?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A place of seclusion",
+          "text": "The account identifies Hira as the setting of the first encounter.",
+          "source": {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A trusted response",
+          "text": "Khadija reassures him after hearing what happened.",
+          "source": {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "A further conversation",
+          "text": "Khadija takes the account to Waraqa ibn Nawfal.",
+          "source": {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "Hira, then Khadija's reassurance, then Waraqa.",
+        "Waraqa is present inside the cave.",
+        "The report gives an exact Gregorian day."
+      ],
+      "correct": 0,
+      "conclusion": "The report supports that sequence. It does not place Waraqa in Hira or provide an exact Gregorian date.",
+      "hint": "Follow the movement from the cave to the conversations afterward.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": [
+        {
+          "ref": "96:1-5",
+          "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+          "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not.",
+          "url": "https://quran.com/96:1-5",
+          "translationUrl": "https://quran.com/96:1-5?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "the-gathering-at-safa",
+      "number": 2,
+      "title": "The gathering at Safa",
+      "era": "Early Makkah",
+      "topic": "Public mission",
+      "brief": "A gathering tests what the clans already know about the speaker. What can be established from Ibn Abbas's report?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A public summons",
+          "text": "The Prophet ﷺ calls clans of Quraysh to Safa.",
+          "source": {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A question about trust",
+          "text": "He asks whether they would believe a warning about approaching cavalry.",
+          "source": {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The response",
+          "text": "Their reply acknowledges his truthfulness before the warning.",
+          "source": {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The warning draws on an acknowledged record of truthfulness.",
+        "Every person present immediately accepts the message.",
+        "The report identifies the exact year of the gathering."
+      ],
+      "correct": 0,
+      "conclusion": "The report supports the acknowledgment of truthfulness. It does not say everyone accepted, and it supplies no exact CE year.",
+      "hint": "Separate what the audience says about trust from how every individual responds.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "after-the-rejection",
+      "number": 3,
+      "title": "After the rejection",
+      "era": "Late Makkah",
+      "topic": "Mercy",
+      "brief": "Aisha asks about a particularly difficult experience. Which response is actually described?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The painful encounter",
+          "text": "The report recalls rejection after approaching Ibn Abd Yalail.",
+          "source": {
+            "label": "Sahih al-Bukhari 3231",
+            "url": "https://sunnah.com/bukhari:3231",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "An offered action",
+          "text": "The Angel of the Mountains offers to bring the mountains down.",
+          "source": {
+            "label": "Sahih al-Bukhari 3231",
+            "url": "https://sunnah.com/bukhari:3231",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The response",
+          "text": "The Prophet ﷺ declines and expresses hope for future descendants.",
+          "source": {
+            "label": "Sahih al-Bukhari 3231",
+            "url": "https://sunnah.com/bukhari:3231",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "He declines destruction and hopes for future worshippers.",
+        "The offered destruction is carried out immediately.",
+        "The report gives an exact date for an annual observance."
+      ],
+      "correct": 0,
+      "conclusion": "The stated response is hope for descendants, not the destruction offered. No exact anniversary is established by this report.",
+      "hint": "Distinguish the offer from the answer to it.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "two-in-the-cave",
+      "number": 4,
+      "title": "Two in the cave",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "brief": "Abu Bakr describes a moment of danger during the migration. Which conclusion stays within this brief report?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The narrator",
+          "text": "Abu Bakr recounts being in the cave with the Prophet ﷺ.",
+          "source": {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "The concern",
+          "text": "He fears that looking down would let the pursuers see them.",
+          "source": {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The reassurance",
+          "text": "The reported reply reassures Abu Bakr about Allah's presence with them.",
+          "source": {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The report records concern followed by reassurance.",
+        "This report describes a spider spinning a web.",
+        "This report names every person involved in the route."
+      ],
+      "correct": 0,
+      "conclusion": "The brief report establishes the concern and reassurance. It does not mention a spider's web or provide a full route list.",
+      "hint": "Avoid importing familiar details that are not present in the cited report.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": [
+        {
+          "ref": "9:40",
+          "arabic": "إِلَّا تَنصُرُوهُ فَقَدْ نَصَرَهُ ٱللَّهُ إِذْ أَخْرَجَهُ ٱلَّذِينَ كَفَرُوا۟ ثَانِىَ ٱثْنَيْنِ إِذْ هُمَا فِى ٱلْغَارِ إِذْ يَقُولُ لِصَـٰحِبِهِۦ لَا تَحْزَنْ إِنَّ ٱللَّهَ مَعَنَا ۖ فَأَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَيْهِ وَأَيَّدَهُۥ بِجُنُودٍ لَّمْ تَرَوْهَا وَجَعَلَ كَلِمَةَ ٱلَّذِينَ كَفَرُوا۟ ٱلسُّفْلَىٰ ۗ وَكَلِمَةُ ٱللَّهِ هِىَ ٱلْعُلْيَا ۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
+          "translation": "If ye help him not, still Allah helped him when those who disbelieve drove him forth, the second of two; when they two were in the cave, when he said unto his comrade: Grieve not. Lo! Allah is with us. Then Allah caused His peace of reassurance to descend upon him and supported him with hosts ye cannot see, and made the word of those who disbelieved the nethermost, while Allah's Word it was that became the uppermost. Allah is Mighty, Wise.",
+          "url": "https://quran.com/9:40",
+          "translationUrl": "https://quran.com/9:40?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "the-pursuer-s-request",
+      "number": 5,
+      "title": "The pursuer's request",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "brief": "Suraqa pursues the travelers, but the encounter changes. What does he request before they continue?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A pursuit",
+          "text": "Suraqa describes setting out after the travelers.",
+          "source": {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A changed situation",
+          "text": "He recounts his horse stumbling and later sinking at the forelegs.",
+          "source": {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "A written assurance",
+          "text": "He asks for a statement of safety, which Amr ibn Fuhayra writes.",
+          "source": {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "A written assurance of safety.",
+        "A declaration that every future pursuer has already converted.",
+        "A complete map of the remaining journey."
+      ],
+      "correct": 0,
+      "conclusion": "The report specifies a written assurance of safety. The other conclusions add claims not made in these evidence cards.",
+      "hint": "Look for the request made after Suraqa approaches them.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3906",
+          "url": "https://sunnah.com/bukhari:3906",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "where-is-the-market",
+      "number": 6,
+      "title": "Where is the market?",
+      "era": "Early Madinah",
+      "topic": "Community",
+      "brief": "A report about brotherhood includes a generous offer and an independent response. What does Abd al-Rahman ask for?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A bond",
+          "text": "The account pairs Abd al-Rahman ibn Awf with Sad ibn al-Rabi.",
+          "source": {
+            "label": "Sahih al-Bukhari 3780",
+            "url": "https://sunnah.com/bukhari:3780",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "An offer",
+          "text": "Sad offers substantial help from his property.",
+          "source": {
+            "label": "Sahih al-Bukhari 3780",
+            "url": "https://sunnah.com/bukhari:3780",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The reply",
+          "text": "Abd al-Rahman offers a blessing and asks to be shown the market.",
+          "source": {
+            "label": "Sahih al-Bukhari 3780",
+            "url": "https://sunnah.com/bukhari:3780",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "To be shown the market.",
+        "To be appointed ruler of the city.",
+        "To forbid anyone else from trading."
+      ],
+      "correct": 0,
+      "conclusion": "The report identifies the market request and subsequent trading. It does not support the claims about political appointment or excluding other traders.",
+      "hint": "Focus on the reply to Sad's offer.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3780",
+          "url": "https://sunnah.com/bukhari:3780",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "a-direction-changes",
+      "number": 7,
+      "title": "A direction changes",
+      "era": "Early Madinah",
+      "topic": "Worship",
+      "brief": "News reaches people who are already praying. Which detail should a careful reader preserve?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "An earlier direction",
+          "text": "Al-Bara describes prayer toward Jerusalem.",
+          "source": {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A narrated uncertainty",
+          "text": "The duration is given as sixteen or seventeen months.",
+          "source": {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "New information",
+          "text": "A person who prayed with the Prophet ﷺ conveys the new direction to others.",
+          "source": {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The report preserves uncertainty between sixteen and seventeen months.",
+        "The report gives exactly sixteen months with no uncertainty.",
+        "The report says every prayer before the change was invalid."
+      ],
+      "correct": 0,
+      "conclusion": "The narrator's sixteen-or-seventeen wording should remain visible. The other answers either erase uncertainty or introduce an unsupported conclusion.",
+      "hint": "A small uncertainty is evidence too; do not edit it out.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 399",
+          "url": "https://sunnah.com/bukhari:399",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": [
+        {
+          "ref": "2:144",
+          "arabic": "قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِى ٱلسَّمَآءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَىٰهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ ٱلْمَسْجِدِ ٱلْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا۟ وُجُوهَكُمْ شَطْرَهُۥ ۗ وَإِنَّ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ لَيَعْلَمُونَ أَنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ ۗ وَمَا ٱللَّهُ بِغَـٰفِلٍ عَمَّا يَعْمَلُونَ",
+          "translation": "We have seen the turning of thy face to heaven (for guidance, O Muhammad). And now verily We shall make thee turn (in prayer) toward a qiblah which is dear to thee. So turn thy face toward the Inviolable Place of Worship, and ye (O Muslims), wheresoever ye may be, turn your faces (when ye pray) toward it. Lo! Those who have received the Scripture know that (this revelation) is the Truth from their Lord. And Allah is not unaware of what they do.",
+          "url": "https://quran.com/2:144",
+          "translationUrl": "https://quran.com/2:144?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "the-archers-instruction",
+      "number": 8,
+      "title": "The archers' instruction",
+      "era": "Early Madinah",
+      "topic": "Uhud",
+      "brief": "The archers receive an instruction covering more than one possible outcome. What made leaving the position a problem?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A commander",
+          "text": "Abdullah ibn Jubayr commands the archers in this report.",
+          "source": {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "The instruction",
+          "text": "They are told to remain until a message reaches them, even if either side appears to be winning.",
+          "source": {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "A decision",
+          "text": "Some leave after seeing an apparent victory and the prospect of spoils.",
+          "source": {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The instruction explicitly covered an apparent victory as well as danger.",
+        "No instructions had been given about the position.",
+        "Every archer leaves and the report gives no exceptions."
+      ],
+      "correct": 0,
+      "conclusion": "The report makes the instruction explicit. An apparent victory did not cancel it. The absolute claim about every archer goes beyond these cards.",
+      "hint": "Read the condition about apparent victory, not just the condition about danger.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3039",
+          "url": "https://sunnah.com/bukhari:3039",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": [
+        {
+          "ref": "3:152",
+          "arabic": "وَلَقَدْ صَدَقَكُمُ ٱللَّهُ وَعْدَهُۥٓ إِذْ تَحُسُّونَهُم بِإِذْنِهِۦ ۖ حَتَّىٰٓ إِذَا فَشِلْتُمْ وَتَنَـٰزَعْتُمْ فِى ٱلْأَمْرِ وَعَصَيْتُم مِّنۢ بَعْدِ مَآ أَرَىٰكُم مَّا تُحِبُّونَ ۚ مِنكُم مَّن يُرِيدُ ٱلدُّنْيَا وَمِنكُم مَّن يُرِيدُ ٱلْـَٔاخِرَةَ ۚ ثُمَّ صَرَفَكُمْ عَنْهُمْ لِيَبْتَلِيَكُمْ ۖ وَلَقَدْ عَفَا عَنكُمْ ۗ وَٱللَّهُ ذُو فَضْلٍ عَلَى ٱلْمُؤْمِنِينَ",
+          "translation": "Allah verily made good His promise unto you when ye routed them by His leave, until (the moment) when your courage failed you, and ye disagreed about the order and ye disobeyed, after He had shown you that for which ye long. Some of you desired the world, and some of you desired the Hereafter. Therefore He made you flee from them, that He might try you. Yet now He hath forgiven you. Allah is a Lord of Kindness to believers.",
+          "url": "https://quran.com/3:152",
+          "translationUrl": "https://quran.com/3:152?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "the-journey-s-purpose",
+      "number": 9,
+      "title": "The journey's purpose",
+      "era": "Later Madinah",
+      "topic": "Hudaybiyah",
+      "brief": "Negotiators ask why the travelers have come. What purpose is stated in the Hudaybiyah account?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The journey",
+          "text": "The account describes the approach to Hudaybiyah.",
+          "source": {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A stated purpose",
+          "text": "The Prophet ﷺ explains that they have come for Umrah rather than to initiate fighting.",
+          "source": {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "Negotiation",
+          "text": "The narrative proceeds through messages and agreement terms.",
+          "source": {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The stated purpose is Umrah, and negotiation follows.",
+        "The travelers state that they have come only for trade.",
+        "The report says no negotiation takes place."
+      ],
+      "correct": 0,
+      "conclusion": "The report explicitly distinguishes the intended Umrah from initiating battle. The existence of negotiation is part of the account.",
+      "hint": "Separate a stated purpose from later tensions during the journey.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": [
+        {
+          "ref": "48:18",
+          "arabic": "۞ لَّقَدْ رَضِىَ ٱللَّهُ عَنِ ٱلْمُؤْمِنِينَ إِذْ يُبَايِعُونَكَ تَحْتَ ٱلشَّجَرَةِ فَعَلِمَ مَا فِى قُلُوبِهِمْ فَأَنزَلَ ٱلسَّكِينَةَ عَلَيْهِمْ وَأَثَـٰبَهُمْ فَتْحًا قَرِيبًا",
+          "translation": "Allah was well pleased with the believers when they swore allegiance unto thee beneath the tree, and He knew what was in their hearts, and He sent down peace of reassurance on them, and hath rewarded them with a near victory;",
+          "url": "https://quran.com/48:18",
+          "translationUrl": "https://quran.com/48:18?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "who-receives-the-banner",
+      "number": 10,
+      "title": "Who receives the banner?",
+      "era": "Later Madinah",
+      "topic": "Khaybar",
+      "brief": "An announcement makes people wonder who will receive a banner. Which identification is supported?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "An announcement",
+          "text": "The banner is to be given the next morning to a person described favorably.",
+          "source": {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "Anticipation",
+          "text": "Those present hope to receive it.",
+          "source": {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The outcome",
+          "text": "The report names Ali ibn Abi Talib as its recipient.",
+          "source": {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "Ali ibn Abi Talib receives the banner in this report.",
+        "The recipient is chosen by a public vote described here.",
+        "The report never identifies who receives it."
+      ],
+      "correct": 0,
+      "conclusion": "The report identifies Ali. Anticipation among the companions is not evidence of a public vote.",
+      "hint": "Look for the recorded outcome rather than the expectations beforehand.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4210",
+          "url": "https://sunnah.com/bukhari:4210",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "questions-during-a-truce",
+      "number": 11,
+      "title": "Questions during a truce",
+      "era": "Later Madinah",
+      "topic": "Diplomacy",
+      "brief": "Abu Sufyan describes an interview with Heraclius. What setting does the account explicitly preserve?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "A narrator",
+          "text": "Abu Sufyan reports the exchange to Ibn Abbas.",
+          "source": {
+            "label": "Sahih al-Bukhari 7",
+            "url": "https://sunnah.com/bukhari:7",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "A period of truce",
+          "text": "The account locates it during the truce between the Prophet ﷺ and Quraysh.",
+          "source": {
+            "label": "Sahih al-Bukhari 7",
+            "url": "https://sunnah.com/bukhari:7",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "Questions and a letter",
+          "text": "Heraclius asks questions, and the account includes the Prophet's letter.",
+          "source": {
+            "label": "Sahih al-Bukhari 7",
+            "url": "https://sunnah.com/bukhari:7",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "The interview occurs during the truce described by the narrator.",
+        "The report states that Heraclius publicly converts immediately.",
+        "The conversation happens before any prophetic mission begins."
+      ],
+      "correct": 0,
+      "conclusion": "The truce is explicit. The account should not be turned into an assertion of public conversion that it does not establish.",
+      "hint": "An interested response and a public conversion are different claims.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 7",
+          "url": "https://sunnah.com/bukhari:7",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": []
+    },
+    {
+      "id": "news-from-a-distant-land",
+      "number": 12,
+      "title": "News from a distant land",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "brief": "A death is announced, and a prayer follows. Which action is recorded in this report?",
+      "evidence": [
+        {
+          "id": "e1",
+          "title": "The news",
+          "text": "Abu Hurayra recounts the announcement of al-Najashi's death.",
+          "source": {
+            "label": "Sahih al-Bukhari 1333",
+            "url": "https://sunnah.com/bukhari:1333",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e2",
+          "title": "The place",
+          "text": "The group goes to the prayer ground and forms rows.",
+          "source": {
+            "label": "Sahih al-Bukhari 1333",
+            "url": "https://sunnah.com/bukhari:1333",
+            "kind": "Hadith report"
+          }
+        },
+        {
+          "id": "e3",
+          "title": "The prayer",
+          "text": "The report records four takbirs in the funeral prayer.",
+          "source": {
+            "label": "Sahih al-Bukhari 1333",
+            "url": "https://sunnah.com/bukhari:1333",
+            "kind": "Hadith report"
+          }
+        }
+      ],
+      "answers": [
+        "A funeral prayer in rows with four takbirs.",
+        "A journey by the entire group to attend a burial abroad.",
+        "An exact CE date is supplied in the report."
+      ],
+      "correct": 0,
+      "conclusion": "The report records the prayer and its four takbirs. It does not describe the group traveling abroad or give an exact Gregorian date.",
+      "hint": "Concentrate on what the group does after receiving the news.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1333",
+          "url": "https://sunnah.com/bukhari:1333",
+          "kind": "Hadith report"
+        }
+      ],
+      "passages": []
+    }
+  ]
+}

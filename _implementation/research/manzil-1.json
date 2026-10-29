@@ -1,0 +1,71 @@
+{
+  "query_type": "manzil",
+  "surah": [
+    {
+      "number": 1,
+      "name_arabic": "الفاتحة",
+      "name_simple": "Al-Fatihah",
+      "revelation_place": "makkah",
+      "revelation_order": 5,
+      "verses_count": 7,
+      "bismillah_pre": false
+    },
+    {
+      "number": 2,
+      "name_arabic": "البقرة",
+      "name_simple": "Al-Baqarah",
+      "revelation_place": "madinah",
+      "revelation_order": 87,
+      "verses_count": 286,
+      "bismillah_pre": true
+    },
+    {
+      "number": 3,
+      "name_arabic": "آل عمران",
+      "name_simple": "Ali 'Imran",
+      "revelation_place": "madinah",
+      "revelation_order": 89,
+      "verses_count": 200,
+      "bismillah_pre": true
+    },
+    {
+      "number": 4,
+      "name_arabic": "النساء",
+      "name_simple": "An-Nisa",
+      "revelation_place": "madinah",
+      "revelation_order": 92,
+      "verses_count": 176,
+      "bismillah_pre": true
+    }
+  ],
+  "ayah": {
+    "start_verse_key": "1:1",
+    "end_verse_key": "4:176",
+    "count": 669
+  },
+  "juz": {
+    "start": 1,
+    "end": 6
+  },
+  "hizb": {
+    "start": 1,
+    "end": 11
+  },
+  "rub_el_hizb": {
+    "start": 1,
+    "end": 42
+  },
+  "page": {
+    "start": 1,
+    "end": 106
+  },
+  "ruku": {
+    "start": 1,
+    "end": 85
+  },
+  "manzil": {
+    "start": 1,
+    "end": 1
+  },
+  "sajdah": []
+}

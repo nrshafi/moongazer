@@ -1,0 +1,16 @@
+{
+  "provider": "Quran Foundation Quran MCP",
+  "endpoint": "https://mcp.quran.ai",
+  "retrievedAt": "2026-10-27T17:21:30.283Z",
+  "quranEdition": "ar-uthmani-hafs",
+  "translationEdition": "en-pickthall",
+  "snapshotSha256": "3ffbc20d417f6f2246447b3c76f0be27209fa009793b1eea92ae22e324eb3b2f",
+  "appContentSha256": "4794f630784a5afe10f2a8eaadbd6f64bbdf6a7a4f11b8fa3797850a1403dbd8",
+  "batch": "4",
+  "batchCommentaryRetrievedAt": "2026-10-28T03:25:26.656Z",
+  "commentaryEditions": [
+    "ar-muyassar"
+  ],
+  "sourceEvidence": "Repository _implementation/research/batch4/; older matching canonical snapshots and specifically identified report caches are reused.",
+  "editorial": true
+}

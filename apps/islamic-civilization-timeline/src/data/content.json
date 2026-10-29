@@ -1,0 +1,640 @@
+{
+  "events": [
+    {
+      "id": "umayyad-capital",
+      "title": "A caliphate centered on Damascus",
+      "start": 661,
+      "end": 661,
+      "date": "661 CE",
+      "region": "West Asia",
+      "topic": "Political change",
+      "place": "Damascus",
+      "summary": "The Met dates the beginning of Umayyad rule to 661, with power centered in Syria.",
+      "note": "A political transition, not a claim that every region shared one culture or experience.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-umayyad-period-661-750",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "kairouan",
+      "title": "Kairouan is founded",
+      "start": 670,
+      "end": 670,
+      "date": "670 CE",
+      "region": "North Africa",
+      "topic": "Cities",
+      "place": "Kairouan",
+      "summary": "UNESCO dates Kairouan’s foundation to 670 and describes its later Aghlabid flourishing.",
+      "note": "The foundation date does not date every surviving building.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/499/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "dome-of-the-rock",
+      "title": "A major Umayyad building in Jerusalem",
+      "start": 691,
+      "end": 691,
+      "date": "691 CE",
+      "region": "West Asia",
+      "topic": "Architecture",
+      "place": "Jerusalem",
+      "summary": "The Met dates completion of the Dome of the Rock to 691 under Abd al-Malik.",
+      "note": "This is the construction date in the museum account, not the date of a Quranic event.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-umayyad-period-661-750",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "cordoba",
+      "title": "Cordoba grows into a major city",
+      "start": 701,
+      "end": 800,
+      "date": "8th century CE",
+      "region": "Iberia",
+      "topic": "Cities",
+      "place": "Cordoba",
+      "summary": "UNESCO describes extensive building in Cordoba after the eighth-century conquest.",
+      "note": "A century-wide development band; it does not assert one day of foundation.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/313/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "abbasid-transition",
+      "title": "The Abbasid political center shifts east",
+      "start": 750,
+      "end": 750,
+      "date": "750 CE",
+      "region": "West Asia",
+      "topic": "Political change",
+      "place": "Iraq",
+      "summary": "The Abbasids succeeded the Umayyads in 750, shifting the political center toward Iraq.",
+      "note": "Dynastic change did not end all Umayyad rule in every region.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-abbasid-period-750-1258",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "baghdad",
+      "title": "Baghdad becomes a new capital",
+      "start": 762,
+      "end": 762,
+      "date": "762 CE",
+      "region": "West Asia",
+      "topic": "Cities",
+      "place": "Baghdad",
+      "summary": "The Met identifies 762 as the foundation of Baghdad as the new Abbasid capital.",
+      "note": "The record concerns the Abbasid city, not the first human settlement in the area.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-abbasid-period-750-1258",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "fez",
+      "title": "The ninth-century beginnings of Fez",
+      "start": 801,
+      "end": 900,
+      "date": "9th century CE",
+      "region": "North Africa",
+      "topic": "Cities",
+      "place": "Fez",
+      "summary": "UNESCO places the foundation of Fez in the ninth century.",
+      "note": "A broad source date. Later madrasas should not all be assigned to this century.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/170/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "samarra",
+      "title": "Samarra serves as an Abbasid capital",
+      "start": 836,
+      "end": 892,
+      "date": "836–892 CE",
+      "region": "West Asia",
+      "topic": "Architecture",
+      "place": "Samarra",
+      "summary": "Samarra replaced Baghdad as capital for a period dated 836–892 by the Met.",
+      "note": "A span of capital status, not a single construction date.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-abbasid-period-750-1258",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "bukhara",
+      "title": "A surviving Samanid monument",
+      "start": 901,
+      "end": 1000,
+      "date": "10th century CE",
+      "region": "Central Asia",
+      "topic": "Architecture",
+      "place": "Bukhara",
+      "summary": "UNESCO highlights the tenth-century tomb of Ismail Samani among Bukhara’s monuments.",
+      "note": "Bukhara is much older; the date belongs to the monument, not the city’s origin.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/602/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "cairo",
+      "title": "The medieval city of Cairo takes shape",
+      "start": 901,
+      "end": 1000,
+      "date": "10th century CE",
+      "region": "North Africa",
+      "topic": "Cities",
+      "place": "Cairo",
+      "summary": "UNESCO dates the foundation of Islamic Cairo to the tenth century.",
+      "note": "The label describes a historical urban foundation, not the beginning of habitation in the region.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/89/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "granada",
+      "title": "Gardens and residences of Nasrid Granada",
+      "start": 1201,
+      "end": 1400,
+      "date": "13th–14th centuries CE",
+      "region": "Iberia",
+      "topic": "Architecture",
+      "place": "Granada",
+      "summary": "UNESCO connects the Generalife and the emirs of Granada with the thirteenth and fourteenth centuries.",
+      "note": "Different parts of the Alhambra and surrounding city have different dates.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/314/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "kilwa",
+      "title": "Kilwa connects Indian Ocean trade",
+      "start": 1201,
+      "end": 1600,
+      "date": "13th–16th centuries CE",
+      "region": "East Africa",
+      "topic": "Trade",
+      "place": "Kilwa Kisiwani",
+      "summary": "UNESCO describes Kilwa merchants connecting African goods with Arabian, Persian and Chinese wares.",
+      "note": "The range describes a period of trade prominence; no exclusive route or fixed sea boundary is drawn.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/144/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "mustansiriyya",
+      "title": "A college for four legal schools",
+      "start": 1228,
+      "end": 1233,
+      "date": "1228–1233 CE",
+      "region": "West Asia",
+      "topic": "Learning",
+      "place": "Baghdad",
+      "summary": "The Met dates the Mustansiriyya college for four Sunni legal schools to 1228–1233.",
+      "note": "This describes one institution, not the origin of legal scholarship or a universal university ranking.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-abbasid-period-750-1258",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "baghdad-1258",
+      "title": "The sack of Abbasid Baghdad",
+      "start": 1258,
+      "end": 1258,
+      "date": "1258 CE",
+      "region": "West Asia",
+      "topic": "Political change",
+      "place": "Baghdad",
+      "summary": "The Met places the Mongol sack of Baghdad and the end of Abbasid rule there in 1258.",
+      "note": "This political rupture did not end learning, Muslim communities or cultural life everywhere.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-abbasid-period-750-1258",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "bursa",
+      "title": "Bursa links city and countryside",
+      "start": 1301,
+      "end": 1400,
+      "date": "14th century CE",
+      "region": "Anatolia",
+      "topic": "Cities",
+      "place": "Bursa",
+      "summary": "UNESCO describes an early Ottoman urban system of markets, schools, baths and public kitchens linked to rural support.",
+      "note": "The century is a development band, not the date of every component of the heritage property.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1452/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "samarkand",
+      "title": "Timurid Samarkand and its observatory",
+      "start": 1301,
+      "end": 1500,
+      "date": "14th–15th centuries CE",
+      "region": "Central Asia",
+      "topic": "Learning",
+      "place": "Samarkand",
+      "summary": "UNESCO highlights Timurid development and monuments including Ulugh-Beg’s observatory.",
+      "note": "The band covers the city’s development. It does not assign every listed monument the same date.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/603/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "bagerhat",
+      "title": "A brick-built mosque city in Bengal",
+      "start": 1401,
+      "end": 1500,
+      "date": "15th century CE",
+      "region": "South Asia",
+      "topic": "Cities",
+      "place": "Bagerhat",
+      "summary": "UNESCO dates Khalifatabad’s foundation under Khan Jahan to the fifteenth century.",
+      "note": "Modern Bagerhat and the historic foundation are related places, not identical administrative boundaries.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/321/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "melaka",
+      "title": "A sultanate at the trading straits",
+      "start": 1401,
+      "end": 1500,
+      "date": "15th century CE",
+      "region": "Southeast Asia",
+      "topic": "Trade",
+      "place": "Melaka",
+      "summary": "UNESCO identifies the fifteenth-century Malay sultanate as an early phase of Melaka’s trading history.",
+      "note": "The heritage property also contains later Portuguese, Dutch and British layers; these are not all sultanate buildings.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1223/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "timbuktu",
+      "title": "A West African center of learning",
+      "start": 1401,
+      "end": 1600,
+      "date": "15th–16th centuries CE",
+      "region": "West Africa",
+      "topic": "Learning",
+      "place": "Timbuktu",
+      "summary": "UNESCO describes Timbuktu’s madrasas and its importance as an intellectual center in these centuries.",
+      "note": "A period of documented prominence, not a claim that learning began or ended at the range limits.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/119/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "constantinople",
+      "title": "Constantinople enters Ottoman rule",
+      "start": 1453,
+      "end": 1453,
+      "date": "1453 CE",
+      "region": "Anatolia",
+      "topic": "Political change",
+      "place": "Constantinople / Istanbul",
+      "summary": "The Met dates the Ottoman capture of Constantinople to 1453.",
+      "note": "The city had a long Byzantine history before this political change.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-art-of-the-ottomans-before-1600",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "selimiye",
+      "title": "A mosque with a social complex",
+      "start": 1501,
+      "end": 1600,
+      "date": "16th century CE",
+      "region": "Anatolia",
+      "topic": "Architecture",
+      "place": "Edirne",
+      "summary": "UNESCO describes Sinan’s Selimiye complex, with schools, a market and a library.",
+      "note": "Shown as a sixteenth-century work. The selected brief record does not establish an exact completion day.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1366/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "fatehpur",
+      "title": "A short-lived Mughal capital",
+      "start": 1551,
+      "end": 1600,
+      "date": "Second half of the 16th century CE",
+      "region": "South Asia",
+      "topic": "Political change",
+      "place": "Fatehpur Sikri",
+      "summary": "UNESCO describes Akbar’s planned city and its roughly ten years as a Mughal capital.",
+      "note": "A broad construction band and an approximate tenure are separate kinds of date evidence.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/255/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "isfahan",
+      "title": "A Safavid civic square",
+      "start": 1601,
+      "end": 1650,
+      "date": "Early 17th century CE",
+      "region": "West Asia",
+      "topic": "Architecture",
+      "place": "Esfahan",
+      "summary": "UNESCO places Shah Abbas I’s Meidan Emam complex in the early seventeenth century.",
+      "note": "The half-century bounds are an editorial filter band for “early seventeenth century,” not exact project dates.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/115/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    },
+    {
+      "id": "taj-mahal",
+      "title": "A Mughal marble mausoleum",
+      "start": 1631,
+      "end": 1648,
+      "date": "1631–1648 CE",
+      "region": "South Asia",
+      "topic": "Architecture",
+      "place": "Agra",
+      "summary": "UNESCO dates construction of the Taj Mahal under Shah Jahan to 1631–1648.",
+      "note": "This reproduces the date range in the cited UNESCO account; other works may distinguish building phases.",
+      "sources": [
+        {
+          "label": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/252/",
+          "kind": "Institutional historical reference",
+          "note": "Original concise summary; consult the institution for its full account."
+        }
+      ]
+    }
+  ],
+  "landPaths": [
+    "M323.4,243.8L324.4,244.2L346.2,252.4L346.6,254.7L355.2,258.7L352.4,263.6L352.8,265.9L356.6,267.4L356.8,268.4L355.2,270.8L355.5,272.0L355.1,273.9L357.2,276.4L359.7,280.4L361.9,281.3L361.9,281.3L357.1,283.6L350.6,285.1L347.0,285.1L344.8,286.3L340.7,286.4L339.1,286.9L331.9,285.8L327.4,286.1L325.7,280.6L323.6,278.8L322.4,277.7L316.6,276.9L313.2,275.7L309.3,275.0L306.9,274.4L304.4,273.4L304.4,273.4L301.2,268.3L297.7,266.1L296.5,263.8L297.1,261.7L296.0,258.0L298.5,257.8L300.7,256.4L303.0,254.3L304.5,253.4L304.5,252.1L303.2,251.2L302.8,249.7L302.8,249.7L304.5,249.1L304.9,246.8L302.5,244.5L304.6,244.1L311.2,244.1L323.4,243.8Z",
+    "M68.0,129.4L68.0,129.6L67.9,130.4L67.9,136.5L48.2,136.3L48.4,146.5L42.8,146.9L41.3,148.9L42.4,154.7L18.9,154.7L17.6,156.0L17.9,154.3L18.0,154.3L31.5,154.0L32.2,152.6L34.7,150.8L36.7,145.2L45.0,140.9L47.8,135.9L49.7,135.6L51.6,132.5L56.7,132.0L58.9,132.6L61.6,132.6L63.5,131.6L67.2,131.5L67.1,129.4L68.0,129.4Z",
+    "M644.2,43.1L639.6,45.8L634.6,46.2L634.3,50.2L631.0,52.0L619.1,50.7L614.8,57.8L611.7,58.7L599.8,60.3L605.2,67.3L601.1,68.3L601.6,70.6L597.9,70.0L594.9,68.6L586.0,68.2L576.0,68.0L573.8,68.5L565.3,66.8L561.9,67.6L560.9,70.0L551.1,68.6L547.1,69.2L545.8,70.9L542.3,71.7L534.4,74.5L531.8,77.3L529.6,77.4L527.9,75.5L520.3,75.3L519.1,72.0L516.1,72.0L516.6,68.0L509.4,65.1L499.1,65.4L492.1,66.0L486.3,62.4L481.4,60.9L472.1,58.0L471.0,57.7L455.6,60.0L455.8,74.8L452.7,75.0L448.5,71.8L444.5,70.7L437.7,71.5L435.0,72.9L434.7,71.9L436.2,70.2L435.0,68.8L428.1,67.5L425.3,63.9L422.0,62.9L421.8,61.6L427.7,61.9L427.9,59.0L433.0,58.4L438.2,59.0L439.3,55.1L438.3,52.6L432.3,52.8L427.2,51.8L420.2,53.6L414.6,54.4L411.6,53.8L412.2,51.7L408.3,49.0L403.9,49.1L398.8,46.4L402.3,43.4L400.5,42.6L405.3,38.2L411.5,40.5L412.2,37.6L424.6,33.2L434.0,33.1L447.2,35.9L454.3,37.5L460.7,35.8L470.2,35.7L477.9,37.8L479.6,36.6L488.0,36.8L489.5,34.9L479.8,32.2L485.6,30.2L484.4,29.1L490.2,28.1L485.9,25.3L488.6,24.0L511.1,22.6L514.0,21.6L529.0,20.1L534.4,18.5L545.2,19.3L547.1,23.5L553.3,22.5L561.1,23.9L560.6,26.0L566.3,25.8L581.3,22.0L579.2,23.3L586.8,26.4L600.2,36.5L603.4,34.4L611.7,36.8L620.3,35.7L623.6,36.4L626.5,38.8L630.7,39.5L633.2,41.2L641.0,40.7L644.2,43.1Z",
+    "M455.8,74.8L455.6,60.0L471.0,57.7L472.1,58.0L481.4,60.9L486.3,62.4L492.1,66.0L499.1,65.4L509.4,65.1L516.6,68.0L516.1,72.0L519.1,72.0L520.3,75.3L527.9,75.5L529.6,77.4L531.8,77.3L534.4,74.5L542.3,71.7L545.8,70.9L547.6,71.3L542.5,73.9L546.9,75.4L551.2,74.4L558.3,76.5L550.6,79.4L546.1,79.0L543.6,79.1L542.7,78.0L544.0,76.2L536.0,77.1L534.1,79.7L531.2,81.9L526.2,81.7L524.7,83.4L529.1,84.4L530.4,87.4L527.0,91.4L522.5,90.6L519.1,90.5L519.3,88.1L511.3,86.4L505.0,84.4L501.1,82.5L494.2,79.8L491.3,75.7L489.3,74.9L482.8,75.1L480.5,74.3L479.9,71.1L471.8,69.0L466.7,71.3L461.6,72.7L462.6,74.7L455.8,74.8Z",
+    "M827.3,223.4L823.9,227.1L828.3,230.8L827.3,232.7L834.0,236.4L826.9,236.9L824.9,239.6L825.1,243.2L819.4,246.0L819.2,249.9L816.9,256.1L816.0,254.6L809.2,256.4L806.8,254.0L802.5,253.8L799.5,252.5L792.4,253.9L790.2,252.0L786.3,252.2L781.3,251.7L780.4,246.4L777.4,245.3L774.6,241.8L773.7,238.3L774.4,234.6L778.0,232.0L779.0,234.6L783.1,236.9L787.0,236.1L790.8,236.4L794.3,234.4L797.2,234.0L802.8,235.1L807.7,234.3L810.8,228.7L813.1,227.3L815.2,222.8L822.1,222.8L827.3,223.4Z",
+    "M857.6,236.5L864.5,236.3L870.4,233.4L871.4,234.3L866.6,238.3L862.1,239.1L856.3,238.3L846.3,238.5L841.1,239.1L840.2,242.1L845.6,245.6L848.9,243.8L860.0,242.5L859.6,244.3L856.9,243.7L854.3,246.1L849.0,247.6L854.7,252.7L853.6,254.1L859.0,258.7L859.0,261.4L855.8,262.5L853.4,261.1L856.3,257.9L850.4,259.4L848.9,258.3L849.7,256.8L845.4,254.4L845.8,250.5L841.8,251.7L842.3,256.4L842.6,262.1L838.8,262.7L836.2,261.5L837.9,257.8L837.0,254.0L834.5,253.9L832.6,251.2L835.1,248.6L835.9,245.4L839.0,239.4L840.2,237.7L845.3,234.8L850.0,235.9L857.6,236.5Z",
+    "M841.8,281.0L833.8,278.2L839.4,277.4L842.6,278.7L844.7,279.9L844.3,281.0L841.8,281.0Z",
+    "M848.1,274.1L852.0,273.8L857.4,272.4L856.5,274.6L847.5,275.7L839.5,275.2L839.5,273.8L844.3,272.9L848.1,274.1Z",
+    "M829.6,273.4L833.3,273.1L834.8,274.8L827.8,275.6L823.7,276.2L820.4,276.1L822.5,273.8L825.8,273.8L827.4,272.4L829.6,273.4Z",
+    "M770.9,265.7L771.7,267.1L783.2,267.5L784.6,265.9L795.7,267.8L797.9,270.4L806.9,271.1L814.2,273.5L807.4,275.0L800.8,273.4L795.4,273.5L789.1,273.2L783.5,272.5L776.6,271.0L772.2,270.6L769.7,271.1L758.7,269.4L757.7,267.7L752.2,267.4L756.3,263.6L763.6,263.8L768.4,265.4L770.9,265.7Z",
+    "M746.2,244.3L747.2,247.1L749.3,249.4L753.7,249.7L756.7,252.2L755.1,257.2L754.9,263.4L748.3,263.5L743.2,260.1L735.5,256.9L732.9,254.5L728.4,251.2L725.4,248.2L720.9,242.6L715.6,239.3L713.8,235.8L711.6,232.7L706.2,230.2L703.1,226.8L698.5,224.5L692.3,220.1L691.8,218.1L695.6,218.2L704.9,219.0L710.2,222.9L714.9,225.6L718.2,227.3L723.8,231.6L729.9,231.7L735.0,234.4L738.5,237.8L743.0,239.6L740.6,242.8L744.1,244.2L746.2,244.3Z",
+    "M296.0,258.0L297.1,261.7L296.5,263.8L297.7,266.1L301.2,268.3L304.4,273.4L304.4,273.4L302.1,273.0L294.0,273.6L292.4,274.1L290.7,276.7L292.0,278.4L291.0,283.2L290.2,287.2L291.9,287.9L296.0,289.4L297.7,288.7L298.2,293.0L293.6,293.0L291.1,290.8L288.9,289.1L284.3,288.5L283.0,286.4L279.3,287.7L274.5,287.1L272.5,285.3L268.7,285.0L265.9,285.1L265.5,283.8L263.5,283.7L260.7,283.5L257.0,284.1L254.4,284.0L252.9,284.3L253.3,279.6L251.3,278.1L250.8,275.6L251.7,273.2L250.5,271.7L250.4,269.2L243.1,269.2L243.6,267.8L240.5,267.8L240.2,268.5L236.5,268.6L235.0,271.0L234.1,272.0L230.8,271.4L228.8,272.0L224.8,272.3L222.5,270.2L221.2,268.9L219.4,266.5L218.0,263.5L200.3,263.5L198.1,263.9L196.4,263.9L193.9,264.4L193.1,263.2L194.6,262.7L194.8,261.0L195.8,260.0L198.0,259.1L199.5,259.5L201.6,258.0L204.9,258.0L205.3,259.2L207.5,259.9L211.0,257.4L214.5,255.4L216.0,254.1L215.8,250.8L218.4,247.0L221.2,244.9L225.1,243.0L225.8,241.7L226.0,240.2L227.0,238.8L226.6,236.6L227.4,233.0L228.6,230.5L230.4,228.4L230.7,226.0L231.3,223.2L233.6,221.2L236.8,219.9L241.7,221.2L245.6,222.7L250.0,223.1L254.4,223.9L256.2,221.5L257.0,221.2L259.8,221.6L266.5,219.6L268.8,220.4L270.8,220.3L271.7,219.3L273.9,219.0L278.4,219.4L282.3,219.5L284.2,219.1L287.9,222.4L290.6,222.9L292.2,222.2L295.0,222.4L298.3,221.6L299.7,223.3L305.0,226.0L305.0,226.0L304.6,230.6L307.0,231.2L305.1,232.6L302.8,233.7L300.5,235.8L299.3,237.6L298.9,240.8L297.5,242.3L297.5,245.4L295.8,246.5L295.5,248.9L294.7,249.2L294.1,251.4L295.7,253.2L296.0,258.0Z",
+    "M369.5,246.7L366.0,243.4L365.9,228.9L371.1,224.3L372.8,223.1L376.6,223.0L382.0,220.2L389.8,220.0L406.7,208.0L410.9,204.6L413.6,202.2L413.6,200.1L413.6,196.1L413.7,194.4L413.7,194.4L413.7,194.4L415.6,194.3L418.4,193.7L421.6,193.3L424.4,191.9L426.7,191.9L426.8,193.0L426.2,195.3L426.3,197.4L425.0,198.9L423.3,203.2L420.4,207.7L416.7,212.8L411.6,218.6L406.4,223.1L399.4,228.6L393.4,231.8L384.4,235.8L378.8,238.8L372.2,243.7L370.9,245.8L369.5,246.7Z",
+    "M355.2,258.7L346.6,254.7L346.2,252.4L324.4,244.2L323.4,243.8L323.4,239.6L325.1,237.9L328.0,235.3L330.2,232.4L327.6,227.8L326.9,225.8L324.0,223.0L327.7,220.6L331.8,218.0L334.9,218.6L334.9,220.9L337.0,222.2L341.1,222.2L348.7,225.6L350.6,225.6L352.0,225.5L353.4,226.0L357.4,226.3L359.1,224.6L364.6,223.0L367.0,224.3L371.1,224.3L365.9,228.9L366.0,243.4L369.5,246.7L365.3,248.3L363.8,250.0L361.6,250.3L360.7,253.1L358.8,254.7L357.6,257.4L355.2,258.7Z",
+    "M267.4,207.1L262.8,205.3L260.8,204.2L260.4,202.9L261.3,201.3L261.3,199.6L257.9,197.1L257.2,195.4L257.3,194.5L255.1,193.3L255.0,191.0L253.7,189.4L251.6,189.6L252.2,188.2L253.8,186.5L253.1,184.9L255.1,183.6L253.8,182.7L255.4,180.2L258.1,177.3L263.3,177.6L263.0,161.7L263.1,160.0L270.0,160.0L270.0,152.0L294.1,152.0L317.4,152.0L341.2,152.0L343.1,155.9L341.8,156.7L342.7,160.8L344.9,165.5L347.2,166.5L350.5,168.0L347.4,170.3L343.0,170.9L341.1,172.2L340.5,174.8L337.9,180.7L338.6,182.3L337.6,185.7L335.2,189.7L331.6,191.7L329.0,194.7L328.4,196.4L325.5,197.5L323.8,201.7L323.8,205.3L323.8,202.1L322.9,202.1L323.1,200.1L322.3,198.7L319.2,197.1L318.5,194.2L319.2,191.3L316.5,191.0L316.0,191.9L312.4,192.1L313.9,193.3L314.4,195.7L311.1,197.9L308.1,200.8L305.0,201.2L300.0,198.8L297.7,199.7L297.1,200.8L294.0,201.6L293.8,202.4L287.8,202.4L287.0,201.6L282.7,201.4L280.5,202.1L278.9,201.8L275.8,199.5L274.7,198.4L270.4,198.9L268.8,200.8L267.2,204.3L265.2,205.1L263.3,205.5L267.4,207.1Z",
+    "M263.0,161.7L263.3,177.6L258.1,177.3L255.4,180.2L253.8,182.7L255.1,183.6L253.1,184.9L253.8,186.5L252.2,188.2L251.6,189.6L253.7,189.4L255.0,191.0L255.1,193.3L257.3,194.5L257.2,195.4L253.4,196.1L250.3,197.7L246.0,202.1L240.4,203.9L234.6,203.7L232.9,204.1L233.5,205.5L230.3,206.9L227.8,208.4L220.2,210.0L218.7,209.1L217.7,209.0L216.6,210.0L211.7,210.3L212.6,209.2L210.7,206.5L209.9,204.8L207.3,204.1L203.7,201.8L205.0,199.9L207.8,200.3L209.5,200.0L212.8,200.1L209.5,196.4L209.8,193.8L209.4,191.1L207.0,188.6L207.6,186.7L203.7,186.6L203.7,184.0L201.2,182.5L203.8,177.3L211.5,173.5L211.8,168.3L214.1,160.2L215.4,158.4L212.9,157.1L212.8,155.8L210.6,154.8L209.1,148.5L215.2,146.4L239.1,154.0L263.0,161.7Z",
+    "M414.6,54.4L411.9,56.8L406.1,57.4L400.1,61.6L405.5,65.4L405.0,68.1L411.5,72.8L411.5,72.8L407.9,74.4L406.9,75.4L404.2,75.1L400.1,72.7L398.4,72.6L394.7,71.6L392.8,70.0L387.2,69.2L383.6,69.8L382.5,69.0L374.4,67.1L365.5,66.5L360.5,65.8L359.7,66.3L352.1,62.9L345.2,61.4L340.1,59.0L344.4,58.4L349.4,55.0L346.0,53.5L354.9,51.8L354.7,50.9L349.3,51.6L349.5,49.8L352.6,48.7L358.4,48.4L359.4,47.1L358.0,44.9L360.5,42.8L360.4,41.6L351.6,40.3L348.1,40.3L344.4,38.5L339.8,39.1L332.1,37.7L332.3,36.9L330.1,35.2L325.3,35.0L324.9,33.7L326.4,32.9L322.5,30.7L316.3,31.0L314.5,30.8L313.0,31.8L310.7,31.6L310.7,31.6L309.2,29.0L307.8,27.7L309.0,27.3L313.8,27.5L316.2,26.6L314.4,25.5L310.4,24.8L310.7,24.1L308.3,23.4L304.5,20.8L305.8,19.7L305.2,17.8L299.4,16.8L296.2,17.3L295.4,16.3L289.1,15.3L287.1,13.0L286.6,11.0L283.7,10.1L286.3,8.8L284.5,5.1L288.8,2.8L287.9,2.1L287.9,2.1L294.7,-0.1L288.4,-2.0L288.4,-2.0L301.3,-7.1L306.8,-9.4L309.1,-11.5L300.2,-14.2L302.7,-16.8L297.3,-19.8L301.3,-23.2L294.3,-27.8L299.9,-30.8L290.7,-33.5L291.6,-36.3L296.4,-36.6L306.6,-38.2L306.6,-38.2L312.8,-39.6L322.7,-37.2L339.1,-36.3L361.8,-31.7L366.4,-29.8L366.8,-27.2L360.1,-25.1L350.3,-24.0L323.5,-27.0L319.1,-26.5L328.9,-23.6L329.3,-21.7L329.7,-17.7L337.4,-16.4L342.1,-15.4L342.9,-17.3L339.2,-19.1L343.1,-20.6L357.6,-18.1L362.6,-19.1L358.6,-22.0L372.6,-25.9L378.1,-25.7L383.7,-24.3L387.2,-27.0L382.2,-29.4L385.1,-31.8L380.7,-34.3L397.5,-33.0L400.9,-30.8L393.3,-30.3L393.4,-28.0L398.1,-26.7L407.4,-27.5L408.8,-30.1L421.4,-32.0L442.3,-35.4L446.8,-35.2L440.9,-32.8L448.4,-32.4L452.7,-33.8L463.9,-33.9L472.8,-35.5L479.6,-33.1L486.5,-35.8L480.2,-38.1L483.3,-39.4L501.0,-38.2L509.3,-36.9L531.1,-32.4L535.1,-34.5L529.0,-36.6L528.8,-37.4L521.6,-37.8L523.6,-39.7L520.3,-42.8L520.2,-44.1L531.2,-47.7L535.2,-51.4L539.6,-52.2L555.5,-51.1L556.8,-48.9L551.1,-45.6L554.8,-44.4L556.8,-41.6L555.4,-36.1L562.0,-33.6L559.4,-31.0L547.7,-25.3L554.5,-24.7L556.9,-26.1L563.5,-27.2L565.1,-29.1L570.3,-31.0L566.8,-33.3L569.6,-36.0L563.1,-36.3L561.6,-38.5L566.4,-42.5L558.6,-45.8L569.3,-48.5L568.0,-51.3L570.9,-51.4L574.1,-49.2L571.7,-45.3L578.2,-44.6L575.4,-47.5L585.5,-49.1L597.9,-49.3L609.0,-47.0L603.7,-50.3L603.1,-54.6L613.5,-55.4L627.9,-55.2L640.9,-55.7L636.1,-57.8L643.0,-60.5L649.9,-60.6L661.6,-62.6L677.4,-63.1L679.4,-64.2L695.2,-64.6L700.1,-63.7L713.5,-65.8L724.6,-65.7L726.2,-67.4L731.9,-69.2L746.1,-70.8L756.4,-69.5L748.2,-68.5L761.8,-67.9L763.4,-65.9L768.9,-66.9L786.5,-66.8L800.0,-64.9L804.8,-63.4L803.3,-61.3L796.7,-60.1L780.9,-57.9L776.4,-56.7L783.8,-56.2L792.7,-55.2L798.1,-55.9L801.2,-53.3L803.8,-54.4L813.4,-55.0L832.7,-54.4L834.1,-52.5L859.2,-51.9L859.5,-54.9L872.3,-54.2L881.9,-54.3L891.5,-52.2L894.3,-49.6L890.8,-47.9L898.3,-44.8L907.7,-43.1L913.5,-47.3L923.1,-45.5L933.4,-46.6L945.0,-45.4L949.4,-46.5L959.2,-46.0L954.9,-49.7L962.8,-51.4L1017.0,-48.8L1022.1,-46.4L1037.8,-43.4L1062.0,-44.1L1074.0,-43.5L1079.0,-41.8L1078.3,-38.9L1085.6,-37.7L1093.7,-38.6L1104.3,-38.7L1115.6,-37.9L1127.0,-38.3L1137.5,-34.8L1144.9,-36.1L1140.0,-38.6L1142.7,-40.4L1161.9,-39.3L1174.3,-39.5L1191.6,-37.6L1200.0,-35.9L1200.0,-19.9L1200.0,-19.9L1192.2,-18.1L1184.5,-18.4L1189.9,-16.3L1193.4,-13.0L1196.2,-11.9L1196.9,-10.3L1195.4,-9.2L1184.2,-10.1L1167.4,-7.1L1162.1,-6.6L1152.9,-3.8L1144.2,-1.3L1142.0,0.5L1133.4,-2.3L1117.8,0.8L1115.0,-0.6L1109.3,1.1L1101.2,0.5L1099.3,3.2L1092.1,7.0L1092.3,8.6L1099.2,9.5L1098.3,15.4L1092.8,15.5L1090.2,18.9L1092.7,20.6L1082.2,22.6L1080.1,27.2L1071.2,28.2L1069.4,32.2L1060.7,36.0L1058.5,33.2L1056.0,27.4L1052.6,18.5L1055.5,12.9L1060.5,10.5L1060.9,8.7L1070.2,7.8L1080.9,2.7L1091.2,-1.4L1102.0,-4.6L1106.8,-10.2L1099.6,-9.9L1095.9,-6.6L1080.7,-2.2L1075.8,-7.1L1060.3,-5.7L1045.3,1.0L1050.3,3.4L1036.9,4.5L1027.6,4.9L1028.0,2.0L1018.7,1.4L1011.3,3.3L992.9,2.7L973.2,3.8L953.8,11.6L930.8,21.1L940.2,21.6L943.2,24.1L949.0,25.0L952.8,23.0L959.4,23.2L968.1,27.6L968.3,31.0L963.6,35.0L963.1,39.8L960.4,46.2L951.3,52.0L949.3,54.8L941.2,59.4L933.1,64.0L929.2,66.4L921.2,68.8L917.4,68.8L913.7,66.9L905.6,69.8L904.7,71.1L904.7,71.1L904.7,71.1L904.7,71.1L903.8,70.4L903.8,70.4L903.8,68.4L906.9,68.3L907.7,63.6L906.2,60.1L911.3,58.7L918.6,59.4L922.6,55.5L924.7,51.2L927.0,49.7L930.2,46.1L920.2,47.3L915.0,48.8L905.9,48.8L903.5,45.1L896.4,42.2L885.9,41.0L883.7,37.0L881.6,34.6L879.4,32.9L875.7,28.8L870.4,27.4L861.4,26.2L853.5,26.3L846.0,27.0L841.1,29.0L844.4,29.9L844.4,32.1L841.1,33.4L835.7,37.7L835.7,39.4L827.3,42.0L820.1,40.4L812.9,40.8L809.8,39.4L806.2,39.0L797.4,41.8L789.5,42.5L784.0,43.5L776.4,42.8L770.9,42.9L767.2,40.8L761.3,38.9L755.3,38.4L747.7,38.9L742.1,39.6L733.5,38.0L732.4,35.0L725.3,33.9L719.9,33.5L713.2,31.8L707.0,36.0L709.4,38.3L703.6,41.1L694.9,40.1L688.9,39.9L684.9,38.1L678.6,38.0L673.4,36.8L664.3,38.7L652.8,42.1L646.5,42.8L644.2,43.1L641.0,40.7L633.2,41.2L630.7,39.5L626.5,38.8L623.6,36.4L620.3,35.7L611.7,36.8L603.4,34.4L600.2,36.5L586.8,26.4L579.2,23.3L581.3,22.0L566.3,25.8L560.6,26.0L561.1,23.9L553.3,22.5L547.1,23.5L545.2,19.3L534.4,18.5L529.0,20.1L514.0,21.6L511.1,22.6L488.6,24.0L485.9,25.3L490.2,28.1L484.4,29.1L485.6,30.2L479.8,32.2L489.5,34.9L488.0,36.8L479.6,36.6L477.9,37.8L470.2,35.7L460.7,35.8L454.3,37.5L447.2,35.9L434.0,33.1L424.6,33.2L412.2,37.6L411.5,40.5L405.3,38.2L400.5,42.6L402.3,43.4L398.8,46.4L403.9,49.1L408.3,49.0L412.2,51.7L411.6,53.8L414.6,54.4Z",
+    "M256.4,22.7L245.4,22.7L238.0,22.3L239.3,20.5L247.6,19.2L253.9,19.9L256.5,20.6L255.9,21.7L256.4,22.7Z",
+    "M320.6,56.1L322.2,55.1L326.5,56.0L328.4,56.1L329.2,56.9L330.1,57.0L330.1,57.4L333.1,58.4L339.2,58.1L338.0,59.5L331.4,60.2L323.3,62.6L320.0,61.7L321.3,59.9L314.7,58.7L315.8,57.9L321.5,56.6L320.6,56.1Z",
+    "M306.6,-38.2L296.4,-36.6L291.6,-36.3L294.1,-39.1L286.4,-40.7L277.1,-39.3L274.1,-36.4L268.4,-34.6L262.0,-35.6L254.1,-35.4L247.5,-37.5L243.9,-36.4L240.2,-36.3L239.3,-33.6L228.0,-34.3L226.4,-32.0L220.6,-32.1L216.7,-29.2L210.7,-24.8L201.3,-19.1L203.5,-17.8L201.4,-16.2L195.5,-16.3L191.6,-12.5L192.0,-7.2L195.8,-5.2L193.8,-0.5L188.8,2.3L186.2,4.6L182.1,2.1L170.3,6.7L162.3,7.7L154.0,5.6L151.8,1.3L150.0,-7.9L155.5,-10.5L171.3,-13.8L183.2,-17.9L194.2,-23.5L208.6,-31.2L218.6,-34.3L235.1,-39.3L248.3,-41.0L258.1,-40.8L267.3,-44.1L278.2,-43.9L289.0,-44.7L307.8,-41.8L300.0,-40.7L306.6,-38.2Z",
+    "M218.1,354.3L220.9,352.3L223.3,353.4L224.3,355.1L227.0,355.4L230.8,356.2L234.0,355.9L239.4,353.8L239.4,339.1L241.0,339.7L244.6,343.5L244.0,345.9L245.3,347.3L249.6,346.9L252.6,345.1L255.5,343.9L256.9,342.0L259.9,341.1L262.4,341.6L265.3,342.7L270.2,342.9L274.0,341.9L274.6,340.7L275.6,338.8L278.9,338.5L280.7,337.0L282.7,334.3L288.1,331.3L296.6,328.4L299.0,328.4L301.9,329.1L304.0,328.6L307.1,329.0L310.0,334.6L311.6,337.5L310.5,341.9L311.0,343.4L308.0,342.6L306.3,342.9L305.7,344.1L304.1,345.6L304.1,347.0L307.7,349.1L311.2,348.7L312.4,346.9L317.0,347.0L315.5,349.9L314.8,353.2L313.2,355.0L309.1,357.0L308.0,357.6L305.4,359.6L303.7,361.7L300.3,364.6L293.6,368.7L289.3,371.1L284.8,372.9L278.5,374.5L275.5,374.7L274.7,375.8L271.0,375.2L268.1,375.9L261.6,375.2L257.9,375.7L255.4,375.5L249.3,377.0L244.1,377.7L240.4,379.2L237.7,379.3L235.2,377.9L233.1,377.8L230.5,376.0L230.3,376.5L229.5,375.5L229.5,373.1L227.6,370.4L229.5,369.7L229.3,366.6L225.4,362.9L222.4,359.5L222.4,359.5L218.1,354.3Z",
+    "M293.9,355.8L296.0,357.0L294.1,359.0L293.1,360.3L289.7,360.9L288.6,362.2L286.5,362.6L282.0,359.5L285.2,357.0L288.4,355.4L291.3,354.6L293.9,355.8Z",
+    "M157.1,42.1L159.9,43.2L168.6,43.9L165.6,46.7L164.8,49.5L163.2,50.2L160.4,49.8L160.6,50.8L156.2,53.1L156.1,54.9L159.0,54.3L161.1,56.0L160.8,57.2L162.6,58.7L160.5,59.9L162.0,63.0L165.3,63.5L164.6,65.2L159.2,67.5L147.3,66.4L138.6,67.7L137.9,70.1L131.0,70.6L124.2,68.8L122.0,69.7L111.0,67.9L108.6,66.3L111.7,63.9L112.8,55.9L106.6,51.7L102.2,49.7L93.1,48.2L92.4,45.3L100.2,44.4L110.3,45.4L108.4,40.9L114.1,42.6L128.0,39.5L129.8,36.2L135.1,35.4L136.0,36.8L138.7,36.9L141.5,38.5L145.7,40.4L148.8,40.1L154.0,41.9L155.4,42.2L157.1,42.1Z",
+    "M172.5,69.5L176.3,68.0L177.4,71.4L175.4,74.5L172.7,73.7L171.3,71.0L172.5,69.5Z",
+    "M307.1,329.0L304.0,328.6L301.9,329.1L299.0,328.4L296.6,328.4L292.8,326.6L288.1,325.9L286.4,323.4L286.3,322.0L283.8,321.6L277.0,317.2L275.1,314.9L273.9,314.1L271.6,310.9L278.3,311.4L280.2,311.8L282.3,311.8L285.6,309.2L290.8,305.9L293.0,305.6L293.7,304.2L297.1,302.6L301.6,302.0L302.0,303.5L307.0,303.4L309.8,304.3L311.1,305.3L314.0,305.6L317.1,306.9L317.1,311.9L315.9,314.7L315.7,317.7L316.6,318.9L316.0,321.2L315.1,321.6L313.5,324.5L307.1,329.0Z",
+    "M296.6,328.4L288.1,331.3L282.7,334.3L280.7,337.0L278.9,338.5L275.6,338.8L274.6,340.7L274.0,341.9L270.2,342.9L265.3,342.7L262.4,341.6L259.9,341.1L256.9,342.0L255.5,343.9L252.6,345.1L249.6,346.9L245.3,347.3L244.0,345.9L244.6,343.5L241.0,339.7L239.4,339.1L239.4,327.4L245.3,327.3L245.5,313.0L249.9,312.9L259.2,311.5L261.5,313.1L265.3,311.6L267.1,311.5L270.5,310.6L271.6,310.9L273.9,314.1L275.1,314.9L277.0,317.2L283.8,321.6L286.3,322.0L286.4,323.4L288.1,325.9L292.8,326.6L296.6,328.4Z",
+    "M239.4,339.1L239.4,353.8L234.0,355.9L230.8,356.2L227.0,355.4L224.3,355.1L223.3,353.4L220.9,352.3L218.1,354.3L213.6,351.3L211.3,348.4L209.9,344.5L208.5,341.6L206.4,335.4L206.3,330.6L205.5,328.4L203.2,326.8L200.1,323.5L197.0,318.7L195.7,316.2L190.8,312.3L190.4,309.2L193.3,308.4L196.9,307.8L200.8,307.9L204.4,309.7L205.3,309.4L229.6,309.2L233.7,311.2L248.3,311.7L259.3,310.1L264.2,309.2L268.1,309.4L270.5,310.3L270.5,310.6L267.1,311.5L265.3,311.6L261.5,313.1L259.2,311.5L249.9,312.9L245.5,313.0L245.3,327.3L239.4,327.4L239.4,339.1Z",
+    "M19.7,185.6L17.2,182.5L14.2,181.1L16.9,180.3L19.8,177.5L21.2,175.5L23.3,174.2L26.3,174.5L29.2,173.7L32.5,173.6L35.4,174.8L39.4,175.8L43.0,178.8L47.0,181.5L47.3,184.0L48.4,186.3L50.7,187.4L51.2,189.0L50.9,190.2L50.1,190.5L46.8,190.1L46.3,190.6L45.0,190.7L40.7,189.7L37.8,189.7L26.7,189.5L25.1,189.9L23.1,189.8L19.9,190.5L19.0,187.4L24.4,187.5L25.9,186.9L26.9,186.9L29.2,186.0L31.7,186.8L34.3,186.9L36.9,186.0L35.7,184.8L33.7,185.5L31.9,185.5L29.5,184.5L27.6,184.6L26.3,185.5L19.7,185.6Z",
+    "M50.9,190.2L51.2,189.0L50.7,187.4L48.4,186.3L47.3,184.0L47.0,181.5L49.0,180.8L50.0,178.4L51.9,178.4L56.1,179.5L59.5,178.7L61.8,178.9L62.7,178.1L86.8,178.0L88.1,175.2L87.1,174.7L84.2,157.4L81.3,140.2L90.5,140.1L110.7,148.8L130.9,157.6L132.4,159.4L136.1,160.6L138.9,161.2L138.9,163.8L145.6,163.4L145.6,172.6L142.3,175.3L141.8,177.7L136.5,178.4L128.3,178.7L126.1,180.1L122.2,180.3L118.4,180.3L116.9,179.5L113.6,180.1L108.0,181.8L106.8,183.0L102.2,184.8L101.4,185.8L98.9,186.6L96.0,186.1L94.3,187.1L93.4,189.8L88.7,193.1L88.8,194.5L87.2,196.2L87.6,198.5L85.1,199.1L83.7,199.6L82.8,197.9L81.0,198.4L80.0,198.3L78.9,199.4L74.3,199.4L72.6,198.8L71.8,199.2L70.0,198.0L70.3,196.8L69.6,196.4L68.3,196.8L68.5,195.5L69.7,194.4L67.3,192.7L66.6,191.6L65.2,190.8L64.0,190.7L62.6,191.2L60.7,191.8L59.0,192.6L56.4,192.3L54.8,191.3L53.8,191.2L52.2,191.7L51.3,191.7L50.9,190.2Z",
+    "M17.6,156.0L18.9,154.7L42.4,154.7L41.3,148.9L42.8,146.9L48.4,146.5L48.2,136.3L67.9,136.5L67.9,130.4L90.5,140.1L81.3,140.2L84.2,157.4L87.1,174.7L88.1,175.2L86.8,178.0L62.7,178.1L61.8,178.9L59.5,178.7L56.1,179.5L51.9,178.4L50.0,178.4L49.0,180.8L47.0,181.5L43.0,178.8L39.4,175.8L35.4,174.8L32.5,173.6L29.2,173.7L26.3,174.5L23.3,174.2L21.2,175.5L20.7,173.3L22.4,171.3L23.1,167.6L22.5,163.6L21.7,161.6L22.3,159.6L20.8,157.7L17.6,156.0Z",
+    "M136.2,215.0L131.2,215.4L129.7,212.7L130.0,203.5L128.8,202.7L128.6,200.7L126.5,199.3L124.6,198.1L125.4,196.0L127.5,195.6L128.7,193.8L131.6,193.4L132.9,192.2L134.9,191.1L137.1,191.1L141.7,193.4L141.4,194.7L142.8,197.1L141.6,198.7L142.2,199.7L139.3,202.2L137.5,203.4L136.3,206.0L136.5,208.5L136.2,215.0Z",
+    "M209.1,148.5L210.6,154.8L212.8,155.8L212.9,157.1L215.4,158.4L214.1,160.2L211.8,168.3L211.5,173.5L203.8,177.3L201.2,182.5L203.7,184.0L203.7,186.6L207.6,186.7L207.0,188.6L205.3,188.8L205.1,190.1L204.0,190.2L199.9,185.8L198.5,185.6L193.8,187.9L189.2,186.7L185.9,186.5L184.2,187.0L180.7,186.9L177.1,188.6L174.1,188.7L166.8,186.6L164.0,187.6L160.9,187.5L158.7,186.0L152.7,184.5L146.2,185.0L144.6,185.9L143.8,188.2L142.1,189.8L141.7,193.4L137.1,191.1L134.9,191.1L132.9,192.2L133.1,189.5L126.1,188.6L126.0,186.7L122.6,184.0L121.8,182.2L122.2,180.3L126.1,180.1L128.3,178.7L136.5,178.4L141.8,177.7L142.3,175.3L145.6,172.6L145.6,163.4L154.1,161.6L171.4,153.7L192.0,146.1L201.5,147.8L204.9,150.0L209.1,148.5Z",
+    "M136.2,215.0L136.5,208.5L136.3,206.0L137.5,203.4L139.3,202.2L142.2,199.7L141.6,198.7L142.8,197.1L141.4,194.7L141.7,193.4L142.1,189.8L143.8,188.2L144.6,185.9L146.2,185.0L152.7,184.5L158.7,186.0L160.9,187.5L164.0,187.6L166.8,186.6L174.1,188.7L177.1,188.6L180.7,186.9L184.2,187.0L185.9,186.5L189.2,186.7L193.8,187.9L198.5,185.6L199.9,185.8L204.0,190.2L205.1,190.1L207.5,191.7L206.8,192.4L206.5,193.7L201.4,196.8L199.9,199.4L199.0,201.4L197.7,202.3L196.5,205.1L193.3,206.8L192.4,208.8L191.0,210.4L190.5,212.1L186.4,213.4L183.0,211.8L180.7,211.8L177.1,214.2L175.4,214.2L172.5,218.1L171.0,220.9L164.8,222.4L162.5,222.1L160.2,223.0L155.4,223.0L152.2,220.4L150.2,217.6L146.0,214.9L141.4,215.0L136.2,215.0Z",
+    "M207.0,188.6L209.4,191.1L209.8,193.8L209.5,196.4L212.8,200.1L209.5,200.0L207.8,200.3L205.0,199.9L203.7,201.8L207.3,204.1L209.9,204.8L210.7,206.5L212.6,209.2L211.7,210.3L208.7,214.4L207.2,215.1L206.8,218.2L207.4,219.9L206.9,221.1L209.7,223.2L210.2,224.6L212.4,226.7L215.2,227.9L215.4,229.8L216.1,230.9L215.6,233.1L210.9,232.1L206.0,231.1L198.5,230.9L197.7,230.7L194.2,231.2L190.5,230.7L187.7,231.0L177.9,230.9L178.8,227.7L176.4,225.1L173.7,224.4L172.5,222.6L170.9,222.0L171.0,220.9L172.5,218.1L175.4,214.2L177.1,214.2L180.7,211.8L183.0,211.8L186.4,213.4L190.5,212.1L191.0,210.4L192.4,208.8L193.3,206.8L196.5,205.1L197.7,202.3L199.0,201.4L199.9,199.4L201.4,196.8L206.5,193.7L206.8,192.4L207.5,191.7L205.1,190.1L205.3,188.8L207.0,188.6Z",
+    "M125.4,196.0L124.6,198.1L126.5,199.3L128.6,200.7L128.8,202.7L130.0,203.5L129.7,212.7L131.2,215.4L126.4,216.3L125.0,214.9L123.4,212.3L122.9,210.4L124.3,206.8L122.8,205.3L122.2,202.1L122.2,199.2L119.7,197.2L120.1,195.9L125.4,196.0Z",
+    "M120.1,195.9L119.7,197.2L122.2,199.2L122.2,202.1L122.8,205.3L124.3,206.8L122.9,210.4L123.4,212.3L125.0,214.9L126.4,216.3L117.0,218.6L113.6,220.0L108.2,221.2L102.9,220.0L103.1,218.4L100.5,215.0L102.1,210.5L104.6,207.1L103.0,201.4L102.2,198.4L102.4,196.1L112.8,196.0L115.4,196.3L117.4,195.6L120.1,195.9Z",
+    "M71.8,199.2L72.6,198.8L74.3,199.4L78.9,199.4L80.0,198.3L81.0,198.4L82.8,197.9L83.7,199.6L85.1,199.1L87.6,198.5L90.3,199.4L91.3,200.7L94.0,201.6L96.1,200.6L98.9,200.4L103.0,201.4L104.6,207.1L102.1,210.5L100.5,215.0L103.1,218.4L102.9,220.0L100.1,220.1L95.9,219.3L92.1,219.3L85.0,220.0L80.8,221.2L74.9,222.6L73.7,222.5L74.2,219.2L74.8,218.7L74.6,217.2L72.0,215.5L70.1,215.2L68.4,214.1L69.7,212.4L69.1,210.4L69.4,209.3L70.3,209.3L70.7,207.5L70.2,206.7L70.8,206.2L73.0,205.7L71.5,202.5L70.1,200.8L70.6,199.5L71.8,199.2Z",
+    "M37.8,189.7L40.7,189.7L45.0,190.7L46.3,190.6L46.8,190.1L50.1,190.5L50.9,190.2L51.3,191.7L52.2,191.7L53.8,191.2L54.8,191.3L56.4,192.3L59.0,192.6L60.7,191.8L62.6,191.2L64.0,190.7L65.2,190.8L66.6,191.6L67.3,192.7L69.7,194.4L68.5,195.5L68.3,196.8L69.6,196.4L70.3,196.8L70.0,198.0L71.8,199.2L70.6,199.5L70.1,200.8L71.5,202.5L73.0,205.7L70.8,206.2L70.2,206.7L70.7,207.5L70.3,209.3L69.4,209.3L67.7,209.2L66.4,210.8L64.7,210.7L63.6,209.9L64.0,208.3L61.5,205.8L59.9,206.3L58.6,206.4L57.0,206.6L57.0,205.1L56.1,204.1L56.3,202.9L55.0,201.2L53.3,199.8L48.5,199.8L47.1,200.6L45.4,200.7L44.4,201.5L43.7,202.6L40.5,204.4L37.9,202.0L35.6,200.5L34.0,199.9L32.5,199.1L31.8,197.4L31.0,196.5L29.2,195.8L31.9,193.9L33.7,194.0L35.3,193.3L36.6,193.3L37.5,192.8L37.0,191.4L37.7,191.0L37.8,189.7Z",
+    "M19.9,190.5L23.1,189.8L25.1,189.9L26.7,189.5L37.8,189.7L37.7,191.0L37.0,191.4L37.5,192.8L36.6,193.3L35.3,193.3L33.7,194.0L31.9,193.9L29.2,195.8L26.0,194.2L23.5,193.9L22.1,192.8L22.1,192.2L20.3,191.3L19.9,190.5Z",
+    "M69.4,209.3L69.1,210.4L69.7,212.4L68.4,214.1L70.1,215.2L72.0,215.5L74.6,217.2L74.8,218.7L74.2,219.2L73.7,222.5L72.2,222.6L66.0,220.7L60.5,217.6L55.4,215.4L51.4,212.9L52.8,211.6L53.1,210.4L55.8,208.2L58.6,206.4L59.9,206.3L61.5,205.8L64.0,208.3L63.6,209.9L64.7,210.7L66.4,210.8L67.7,209.2L69.4,209.3Z",
+    "M40.5,204.4L43.7,202.6L44.4,201.5L45.4,200.7L47.1,200.6L48.5,199.8L53.3,199.8L55.0,201.2L56.3,202.9L56.1,204.1L57.0,205.1L57.0,206.6L58.6,206.4L55.8,208.2L53.1,210.4L52.8,211.6L51.4,212.9L49.8,212.6L45.4,210.9L42.3,208.8L41.3,207.3L40.5,204.4Z",
+    "M87.6,198.5L87.2,196.2L88.8,194.5L88.7,193.1L93.4,189.8L94.3,187.1L96.0,186.1L98.9,186.6L101.4,185.8L102.2,184.8L106.8,183.0L108.0,181.8L113.6,180.1L116.9,179.5L118.4,180.3L122.2,180.3L121.8,182.2L122.6,184.0L126.0,186.7L126.1,188.6L133.1,189.5L132.9,192.2L131.6,193.4L128.7,193.8L127.5,195.6L125.4,196.0L120.1,195.9L117.4,195.6L115.4,196.3L112.8,196.0L102.4,196.1L102.2,198.4L103.0,201.4L98.9,200.4L96.1,200.6L94.0,201.6L91.3,200.7L90.3,199.4L87.6,198.5Z",
+    "M284.2,219.1L282.3,219.5L278.4,219.4L273.9,219.0L271.7,219.3L270.8,220.3L268.8,220.4L266.5,219.6L259.8,221.6L257.0,221.2L256.2,221.5L254.4,223.9L250.0,223.1L245.6,222.7L241.7,221.2L236.8,219.9L233.6,221.2L231.3,223.2L230.7,226.0L226.9,225.8L222.8,225.1L219.2,227.2L216.1,230.9L215.4,229.8L215.2,227.9L212.4,226.7L210.2,224.6L209.7,223.2L206.9,221.1L207.4,219.9L206.8,218.2L207.2,215.1L208.7,214.4L211.7,210.3L216.6,210.0L217.7,209.0L218.7,209.1L220.2,210.0L227.8,208.4L230.3,206.9L233.5,205.5L232.9,204.1L234.6,203.7L240.4,203.9L246.0,202.1L250.3,197.7L253.4,196.1L257.2,195.4L257.9,197.1L261.3,199.6L261.3,201.3L260.4,202.9L260.8,204.2L262.8,205.3L267.4,207.1L270.7,208.7L270.7,210.0L274.8,212.1L277.3,213.8L278.8,216.2L283.3,217.8L284.2,219.1Z",
+    "M230.7,226.0L230.4,228.4L228.6,230.5L227.4,233.0L226.6,236.6L227.0,238.8L226.0,240.2L225.8,241.7L225.1,243.0L221.2,244.9L218.4,247.0L215.8,250.8L216.0,254.1L214.5,255.4L211.0,257.4L207.5,259.9L205.3,259.2L204.9,258.0L201.6,258.0L199.5,259.5L198.0,259.1L195.7,257.8L193.9,258.4L191.5,260.2L186.6,255.9L191.1,253.7L188.9,251.1L190.9,250.1L195.0,249.6L195.5,247.8L198.7,249.7L204.0,249.9L205.8,248.0L206.6,245.3L205.9,242.2L203.1,239.8L205.7,235.2L204.2,234.4L199.7,234.7L198.0,232.7L198.5,230.9L206.0,231.1L210.9,232.1L215.6,233.1L216.1,230.9L219.2,227.2L222.8,225.1L226.9,225.8L230.7,226.0Z",
+    "M187.7,231.0L190.5,230.7L194.2,231.2L197.7,230.7L198.5,230.9L198.0,232.7L199.7,234.7L204.2,234.4L205.7,235.2L203.1,239.8L205.9,242.2L206.6,245.3L205.8,248.0L204.0,249.9L198.7,249.7L195.5,247.8L195.0,249.6L190.9,250.1L188.9,251.1L191.1,253.7L186.6,255.9L180.4,251.9L176.4,248.6L172.8,244.4L173.0,243.1L174.3,241.8L175.7,238.9L177.0,236.0L179.0,235.7L187.7,235.8L187.7,231.0Z",
+    "M177.9,230.9L187.7,231.0L187.7,235.8L179.0,235.7L177.0,236.0L175.8,235.4L177.9,230.9Z",
+    "M304.4,273.4L306.9,274.4L309.3,275.0L313.2,275.7L316.6,276.9L319.4,278.7L320.9,282.1L319.9,283.2L318.7,286.4L319.8,289.7L318.0,291.1L316.1,294.9L319.3,295.9L301.1,299.2L301.6,302.0L297.1,302.6L293.7,304.2L293.0,305.6L290.8,305.9L285.6,309.2L282.3,311.8L280.2,311.8L278.3,311.4L271.6,310.9L270.5,310.6L270.5,310.3L268.1,309.4L264.2,309.2L259.3,310.1L255.4,307.6L251.3,304.3L251.6,291.6L264.1,291.6L263.6,290.3L264.5,288.8L263.4,286.9L264.1,284.9L263.5,283.7L265.5,283.8L265.9,285.1L268.7,285.0L272.5,285.3L274.5,287.1L279.3,287.7L283.0,286.4L284.3,288.5L288.9,289.1L291.1,290.8L293.6,293.0L298.2,293.0L297.7,288.7L296.0,289.4L291.9,287.9L290.2,287.2L291.0,283.2L292.0,278.4L290.7,276.7L292.4,274.1L294.0,273.6L302.1,273.0L304.4,273.4Z",
+    "M316.6,276.9L322.4,277.7L323.6,278.8L325.7,280.6L327.4,286.1L325.7,289.1L327.4,294.3L329.4,294.3L331.6,295.6L334.1,298.4L334.6,303.6L332.0,304.4L330.2,307.2L326.3,304.7L325.8,301.9L327.1,300.1L326.8,298.5L324.4,297.4L322.7,297.8L319.3,295.9L316.1,294.9L318.0,291.1L319.8,289.7L318.7,286.4L319.9,283.2L320.9,282.1L319.4,278.7L316.6,276.9Z",
+    "M327.4,286.1L331.9,285.8L339.1,286.9L340.7,286.4L344.8,286.3L347.0,285.1L350.6,285.1L357.1,283.6L361.9,281.3L361.9,281.3L361.9,281.3L362.9,283.1L362.6,287.0L363.4,290.6L363.6,296.8L364.7,298.8L362.9,301.6L360.5,304.4L356.7,306.9L351.2,308.4L344.5,310.3L337.7,314.6L335.4,315.4L331.2,318.2L328.7,319.1L328.2,322.0L331.1,325.0L332.2,327.4L332.3,328.6L333.4,328.4L333.2,332.3L332.2,334.1L333.6,334.8L332.8,336.5L330.2,337.9L325.3,339.3L318.1,341.4L315.4,342.9L316.0,344.6L317.5,344.9L317.0,347.0L312.4,346.9L311.9,345.2L311.0,343.4L310.5,341.9L311.6,337.5L310.0,334.6L307.1,329.0L313.5,324.5L315.1,321.6L316.0,321.2L316.6,318.9L315.7,317.7L315.9,314.7L317.1,311.9L317.1,306.9L314.0,305.6L311.1,305.3L309.8,304.3L307.0,303.4L302.0,303.5L301.6,302.0L301.1,299.2L319.3,295.9L322.7,297.8L324.4,297.4L326.8,298.5L327.1,300.1L325.8,301.9L326.3,304.7L330.2,307.2L332.0,304.4L334.6,303.6L334.1,298.4L331.6,295.6L329.4,294.3L327.4,294.3L325.7,289.1L327.4,286.1Z",
+    "M312.4,346.9L311.2,348.7L307.7,349.1L304.1,347.0L304.1,345.6L305.7,344.1L306.3,342.9L308.0,342.6L311.0,343.4L311.9,345.2L312.4,346.9Z",
+    "M198.0,259.1L195.8,260.0L194.8,261.0L194.6,262.7L193.1,263.2L191.5,260.2L193.9,258.4L195.7,257.8L198.0,259.1Z",
+    "M193.9,264.4L196.4,263.9L198.1,263.9L200.3,263.5L218.0,263.5L219.4,266.5L221.2,268.9L222.5,270.2L224.8,272.3L228.8,272.0L230.8,271.4L234.1,272.0L235.0,271.0L236.5,268.6L240.2,268.5L240.5,267.8L243.6,267.8L243.1,269.2L250.4,269.2L250.5,271.7L251.7,273.2L250.8,275.6L251.3,278.1L253.3,279.6L252.9,284.3L254.4,284.0L257.0,284.1L260.7,283.5L263.5,283.7L264.1,284.9L263.4,286.9L264.5,288.8L263.6,290.3L264.1,291.6L251.6,291.6L251.3,304.3L255.4,307.6L259.3,310.1L248.3,311.7L233.7,311.2L229.6,309.2L205.3,309.4L204.4,309.7L200.8,307.9L196.9,307.8L193.3,308.4L190.4,309.2L189.8,306.7L190.7,303.2L192.7,299.5L193.1,297.8L195.0,294.2L196.4,292.6L199.9,289.9L201.8,288.2L202.4,285.2L202.1,282.9L200.3,281.5L198.7,279.1L197.3,276.7L197.6,275.8L199.4,274.3L197.6,270.4L196.4,267.7L193.4,265.2L193.9,264.4Z",
+    "M302.8,249.7L303.2,251.2L304.5,252.1L304.5,253.4L303.0,254.3L300.7,256.4L298.5,257.8L296.0,258.0L295.7,253.2L294.1,251.4L297.8,251.7L299.6,249.4L302.8,249.7Z",
+    "M334.3,109.2L333.3,110.4L331.1,109.9L329.8,112.5L331.4,113.0L329.8,113.5L329.6,114.6L332.4,114.0L332.5,115.6L329.5,122.0L328.9,121.0L325.6,115.1L325.6,115.1L325.6,115.1L327.3,113.8L326.9,113.6L328.5,111.7L329.7,108.7L330.6,107.7L330.8,107.6L332.8,107.6L333.3,106.9L334.9,106.9L335.0,108.5L334.2,109.1L334.3,109.2Z",
+    "M334.9,106.9L333.3,106.9L332.8,107.6L330.8,107.6L332.9,104.4L335.9,101.6L336.0,101.4L338.7,101.6L339.7,103.2L336.4,104.7L334.9,106.9Z",
+    "M417.3,289.9L418.9,291.6L420.3,294.2L421.3,299.0L422.9,300.9L422.3,302.8L421.2,304.0L419.2,301.7L418.0,302.8L419.2,305.8L418.6,307.5L417.0,308.4L416.6,311.8L414.3,316.5L411.3,322.0L407.6,329.6L405.3,335.1L402.6,339.8L397.7,340.7L392.5,342.4L389.0,341.4L384.2,340.0L382.6,337.8L382.2,334.3L380.1,331.1L379.5,328.2L380.6,325.3L383.4,324.7L383.4,323.3L386.2,320.3L386.8,317.7L385.4,315.8L384.3,313.3L383.8,309.6L385.9,307.4L386.7,304.9L389.7,304.7L393.0,303.9L395.2,303.2L397.9,303.1L401.3,300.8L406.2,298.4L408.0,296.4L407.2,294.7L409.8,295.1L413.1,292.4L413.2,290.0L415.2,288.2L417.3,289.9Z",
+    "M332.4,114.0L329.6,114.6L329.8,113.5L331.4,113.0L329.8,112.5L331.1,109.9L333.3,110.4L333.3,112.9L332.4,114.0Z",
+    "M19.7,185.6L26.3,185.5L27.6,184.6L29.5,184.5L31.9,185.5L33.7,185.5L35.7,184.8L36.9,186.0L34.3,186.9L31.7,186.8L29.2,186.0L26.9,186.9L25.9,186.9L24.4,187.5L19.0,187.4L19.7,185.6Z",
+    "M176.9,118.8L174.3,111.6L170.6,110.0L170.6,109.0L165.7,106.6L165.1,103.6L168.8,101.4L170.3,98.1L169.3,94.3L170.5,92.2L177.1,90.6L181.3,91.1L181.1,93.1L186.2,91.6L186.6,92.4L183.6,94.4L183.6,96.2L185.6,97.2L184.8,100.7L180.9,102.7L182.0,104.9L185.1,104.9L186.7,106.8L188.9,107.5L188.6,110.5L185.7,111.7L183.8,113.0L179.7,114.5L180.3,116.2L179.8,117.8L176.9,118.8Z",
+    "M67.9,130.4L68.0,129.6L68.0,129.4L68.0,124.6L77.6,121.7L83.6,121.1L88.5,120.0L90.8,118.0L97.9,116.4L98.1,113.5L101.6,113.1L104.3,111.6L112.2,110.9L113.3,109.4L111.7,108.5L109.6,104.3L109.2,101.9L107.0,99.3L112.7,97.1L119.2,96.4L123.0,94.8L128.8,93.6L139.0,92.9L148.9,92.5L151.9,93.1L157.6,91.6L164.0,91.5L166.4,92.5L170.5,92.2L169.3,94.3L170.3,98.1L168.8,101.4L165.1,103.6L165.7,106.6L170.6,109.0L170.6,110.0L174.3,111.6L176.9,118.8L178.8,122.3L179.2,124.2L178.1,127.4L178.5,129.2L177.8,131.4L178.3,134.0L175.9,135.6L179.5,138.5L179.7,140.3L181.8,142.5L184.6,141.7L189.4,143.6L192.0,146.1L171.4,153.7L154.1,161.6L145.6,163.4L138.9,163.8L138.9,161.2L136.1,160.6L132.4,159.4L130.9,157.6L110.7,148.8L90.5,140.1L67.9,130.4Z",
+    "M333.3,110.4L334.3,109.2L341.0,110.7L352.8,106.5L355.2,111.4L354.0,112.0L342.0,114.0L348.0,118.0L346.0,118.6L345.0,120.0L340.4,120.5L339.0,122.0L336.4,123.2L329.7,122.6L329.5,122.0L332.5,115.6L332.4,114.0L333.3,112.9L333.3,110.4Z",
+    "M429.5,143.0L430.5,142.8L430.8,143.9L435.5,143.3L440.4,143.4L444.0,143.5L448.2,140.8L452.6,138.2L456.4,135.8L457.6,137.1L458.4,140.3L455.3,140.3L454.8,142.9L455.9,143.5L453.2,144.3L453.2,145.9L451.4,147.6L451.3,149.2L450.0,150.0L432.0,148.0L429.7,143.9L429.5,143.0Z",
+    "M424.9,141.0L424.5,138.1L426.1,136.0L427.7,135.5L429.5,136.8L429.6,139.1L428.3,141.5L426.7,141.8L424.9,141.0Z",
+    "M407.8,120.1L409.1,121.9L408.6,122.8L410.5,125.8L406.3,125.9L404.8,124.0L399.4,123.6L403.8,119.8L407.8,120.1Z",
+    "M355.2,111.4L352.8,106.5L366.0,102.3L368.3,97.5L367.7,94.6L371.0,93.6L374.1,91.1L376.7,90.5L383.7,91.0L385.8,92.0L388.6,91.3L392.5,96.1L396.5,97.3L396.9,99.6L393.9,101.0L392.5,104.1L396.7,107.9L404.0,110.1L407.1,113.2L406.1,116.1L408.0,116.1L408.1,118.2L411.4,120.3L407.8,120.1L403.8,119.8L399.4,123.6L388.3,123.3L371.3,115.2L362.4,112.4L355.2,111.4Z",
+    "M451.3,149.2L451.4,147.6L453.2,145.9L453.2,144.3L455.9,143.5L454.8,142.9L455.3,140.3L458.4,140.3L461.1,143.0L464.4,144.5L468.8,145.0L472.4,145.7L475.1,148.0L476.7,149.4L478.8,149.9L478.8,150.8L476.7,153.1L475.7,154.3L473.2,155.5L470.9,158.3L468.2,158.1L467.0,159.0L466.0,161.1L466.7,163.7L466.2,164.2L463.4,164.2L459.7,165.7L459.1,167.7L457.7,168.5L454.0,168.5L451.6,169.5L451.6,171.1L448.7,172.2L445.4,171.8L441.4,173.2L438.7,173.4L436.7,170.6L432.0,164.0L450.0,160.0L454.0,152.0L451.3,149.2Z",
+    "M457.6,137.1L456.4,135.8L458.2,134.4L458.9,134.8L458.3,136.4L457.6,137.1Z",
+    "M735.5,191.3L734.1,186.4L737.9,183.1L745.7,182.3L751.3,182.9L756.3,184.5L759.0,181.7L764.3,183.2L765.7,185.9L764.9,190.7L754.9,193.7L757.5,196.2L751.2,196.4L746.0,198.1L741.0,197.5L738.5,195.4L735.5,191.3Z",
+    "M751.3,182.9L745.7,182.3L737.9,183.1L734.1,186.4L735.5,191.3L730.1,189.4L725.0,189.5L725.9,186.3L720.6,186.4L720.1,190.8L716.9,196.6L714.9,200.1L715.3,203.0L719.2,203.2L721.7,206.8L722.8,210.3L726.1,212.6L729.7,213.0L732.8,215.1L730.9,216.8L726.9,217.2L726.5,215.2L721.6,213.4L720.5,214.1L718.1,212.6L717.1,210.6L713.9,208.4L711.0,206.5L710.0,208.8L708.9,206.6L709.6,204.1L711.3,200.3L714.2,196.2L717.5,192.4L715.2,188.8L715.3,186.9L714.6,184.7L710.6,181.5L709.2,179.5L711.2,178.8L713.4,175.3L711.0,172.6L707.2,169.7L704.3,166.2L706.8,165.5L709.5,161.2L713.8,161.0L717.3,159.3L720.7,158.3L723.3,159.6L723.6,162.0L727.7,162.1L726.2,166.4L726.4,170.0L732.7,167.6L734.5,168.3L738.0,168.2L739.2,166.8L743.7,167.0L748.3,170.3L748.7,174.2L753.5,177.7L753.3,181.1L751.3,182.9Z",
+    "M764.3,183.2L759.0,181.7L756.3,184.5L751.3,182.9L753.3,181.1L753.5,177.7L748.7,174.2L748.3,170.3L743.7,167.0L739.2,166.8L738.0,168.2L734.5,168.3L732.7,167.6L726.4,170.0L726.2,166.4L727.7,162.1L723.6,162.0L723.3,159.6L720.7,158.3L722.0,156.9L727.1,154.3L727.6,155.2L730.8,155.3L729.9,150.7L733.0,150.1L736.5,153.3L739.2,156.9L746.6,157.0L748.9,160.5L745.1,161.5L743.4,162.9L750.6,165.3L755.6,170.1L759.3,173.6L763.9,176.4L765.4,179.2L764.3,183.2Z",
+    "M720.7,158.3L717.3,159.3L713.8,161.0L709.5,161.2L706.8,165.5L704.3,166.2L707.2,169.7L711.0,172.6L713.4,175.3L711.2,178.8L709.2,179.5L710.6,181.5L714.6,184.7L715.3,186.9L715.2,188.8L717.5,192.4L714.2,196.2L711.3,200.3L710.7,197.3L712.6,194.2L710.6,191.9L711.1,187.5L708.6,185.4L706.7,180.7L705.6,175.6L703.0,172.3L699.0,174.3L692.2,177.1L688.9,176.8L685.1,175.8L687.2,170.9L685.9,167.1L681.2,162.5L682.0,161.1L678.5,160.6L674.2,157.3L673.8,154.1L675.9,154.7L676.0,151.8L679.0,150.9L678.4,149.2L679.7,147.8L680.0,143.7L684.6,144.6L687.3,141.3L687.6,139.4L690.9,136.0L690.7,133.7L698.5,130.9L702.8,131.7L702.3,129.2L704.4,128.5L704.0,127.0L707.5,126.7L709.5,129.0L712.1,130.0L712.3,133.0L712.0,136.3L706.3,139.7L705.6,144.4L712.0,143.7L713.4,147.4L717.2,148.2L715.4,151.5L719.9,153.0L722.5,153.8L726.9,152.6L727.1,154.3L722.0,156.9L720.7,158.3Z",
+    "M746.0,198.1L751.2,196.4L757.5,196.2L754.9,193.7L764.9,190.7L765.7,185.9L764.3,183.2L765.4,179.2L763.9,176.4L759.3,173.6L755.6,170.1L750.6,165.3L743.4,162.9L745.1,161.5L748.9,160.5L746.6,157.0L739.2,156.9L736.5,153.3L733.0,150.1L736.2,149.2L741.0,149.2L746.9,148.7L752.0,146.6L754.9,148.1L760.4,148.8L759.4,151.1L762.3,152.8L768.3,153.8L760.3,157.2L755.3,161.0L754.0,163.8L758.6,168.0L764.2,173.2L769.6,175.7L773.3,178.9L776.0,186.3L775.2,193.3L770.2,196.0L763.3,198.5L758.4,201.9L750.9,205.6L748.8,203.0L750.5,200.3L746.0,198.1Z",
+    "M646.5,42.8L652.8,42.1L664.3,38.7L673.4,36.8L678.6,38.0L684.9,38.1L688.9,39.9L694.9,40.1L703.6,41.1L709.4,38.3L707.0,36.0L713.2,31.8L719.9,33.5L725.3,33.9L732.4,35.0L733.5,38.0L742.1,39.6L747.7,38.9L755.3,38.4L761.3,38.9L767.2,40.8L770.9,42.9L776.4,42.8L784.0,43.5L789.5,42.5L797.4,41.8L806.2,39.0L809.8,39.4L812.9,40.8L820.1,40.4L817.2,43.5L812.9,47.5L814.5,49.1L817.9,48.6L823.8,49.2L828.4,47.7L833.2,49.0L838.6,51.8L838.0,53.2L833.2,52.8L824.5,53.3L820.3,54.4L815.9,57.1L806.8,58.6L800.8,60.8L794.6,60.0L791.2,59.6L788.1,62.2L790.0,63.7L791.0,65.0L786.8,66.4L782.5,68.5L775.5,69.9L766.5,70.1L756.8,71.5L749.8,73.6L747.1,72.4L739.9,72.4L731.0,69.9L725.1,69.3L717.1,69.9L704.7,69.0L698.1,69.1L694.6,66.7L691.8,63.0L688.1,62.6L680.9,60.1L672.8,59.5L665.7,58.9L663.5,57.1L665.8,52.4L661.7,49.2L653.1,47.7L648.1,45.6L646.5,42.8Z",
+    "M704.0,127.0L704.4,128.5L702.3,129.2L702.8,131.7L698.5,130.9L690.7,133.7L690.9,136.0L687.6,139.4L687.3,141.3L684.6,144.6L680.0,143.7L679.7,147.8L678.4,149.2L679.0,150.9L676.0,151.8L672.9,145.5L671.2,145.5L670.2,148.1L667.0,146.0L668.8,143.7L671.5,143.5L674.3,140.1L670.8,139.4L665.2,139.5L659.5,138.9L659.0,136.1L656.1,135.9L651.4,134.2L649.3,136.9L653.6,139.0L649.8,140.5L648.5,142.0L652.2,143.1L651.2,145.5L653.3,148.5L654.2,151.8L653.3,153.2L649.3,153.2L641.9,154.0L642.2,157.0L639.0,159.4L630.4,162.1L623.6,166.8L619.1,169.3L613.2,171.9L613.1,173.8L610.2,174.8L604.8,176.2L601.9,176.4L600.2,179.5L601.4,184.7L601.7,188.0L599.2,191.8L599.1,198.6L596.0,198.8L593.3,201.8L595.1,203.1L589.7,204.3L587.6,207.0L585.2,208.1L579.6,204.4L576.8,198.8L574.5,194.8L572.4,192.9L569.2,189.0L567.7,184.0L566.7,181.5L561.2,176.0L558.7,168.3L556.9,163.2L556.9,158.3L555.8,154.6L547.1,157.0L542.8,156.5L535.0,151.6L537.9,150.2L536.1,148.6L529.1,145.2L533.1,142.6L546.3,142.6L545.1,139.1L541.7,137.1L541.0,134.0L537.1,132.2L543.7,128.0L550.7,128.3L556.9,124.2L560.7,120.1L566.5,116.1L566.4,113.2L571.6,110.9L566.7,108.9L564.6,106.2L562.5,102.7L565.4,101.0L574.5,102.0L581.2,101.4L587.0,98.0L593.5,102.7L592.9,106.0L595.3,108.0L595.1,110.1L590.8,109.5L592.4,113.9L598.3,116.5L606.7,119.3L602.9,121.1L600.5,124.8L606.3,126.3L612.0,128.3L619.8,130.5L628.1,131.1L631.5,133.1L636.1,133.5L643.4,134.4L648.4,134.3L649.0,132.8L648.3,130.2L648.7,128.5L652.4,127.7L652.9,130.8L653.0,131.6L658.5,133.1L662.2,132.5L667.3,132.8L672.2,132.6L672.6,130.2L670.2,128.9L675.0,128.4L680.5,125.4L687.4,122.9L692.4,123.9L696.7,122.2L699.5,124.7L697.5,126.4L704.0,127.0Z",
+    "M676.0,151.8L675.9,154.7L673.8,154.1L674.2,157.3L672.5,155.2L672.2,153.2L671.0,151.3L668.5,148.9L663.0,148.8L663.5,150.4L661.6,152.7L659.1,151.8L658.2,152.6L656.5,152.1L654.2,151.8L653.3,148.5L651.2,145.5L652.2,143.1L648.5,142.0L649.8,140.5L653.6,139.0L649.3,136.9L651.4,134.2L656.1,135.9L659.0,136.1L659.5,138.9L665.2,139.5L670.8,139.4L674.3,140.1L671.5,143.5L668.8,143.7L667.0,146.0L670.2,148.1L671.2,145.5L672.9,145.5L676.0,151.8Z",
+    "M670.2,128.9L672.6,130.2L672.2,132.6L667.3,132.8L662.2,132.5L658.5,133.1L653.0,131.6L652.9,130.8L656.9,127.8L660.1,126.8L664.4,127.7L667.6,127.8L670.2,128.9Z",
+    "M648.7,128.5L648.3,130.2L649.0,132.8L648.4,134.3L643.4,134.4L636.1,133.5L631.5,133.1L628.1,131.1L619.8,130.5L612.0,128.3L606.3,126.3L600.5,124.8L602.9,121.1L606.7,119.3L609.2,118.3L614.0,119.5L620.0,122.1L623.4,122.7L625.4,124.6L630.1,125.4L634.9,127.2L641.7,128.1L648.7,128.5Z",
+    "M587.0,98.0L581.2,101.4L574.5,102.0L565.4,101.0L562.5,102.7L564.6,106.2L566.7,108.9L571.6,110.9L566.4,113.2L566.5,116.1L560.7,120.1L556.9,124.2L550.7,128.3L543.7,128.0L537.1,132.2L541.0,134.0L541.7,137.1L545.1,139.1L546.3,142.6L533.1,142.6L529.1,145.2L524.7,144.2L522.9,141.3L518.2,138.3L507.2,139.1L497.4,139.1L489.0,139.7L491.2,135.0L499.9,133.0L499.4,131.1L496.5,130.5L496.4,127.0L490.6,125.2L488.2,122.8L485.2,120.7L495.3,122.7L501.3,122.1L504.9,122.6L506.1,121.8L510.3,122.1L518.1,120.4L518.3,117.0L521.6,114.8L526.1,114.8L526.8,113.7L531.3,113.1L533.6,113.5L535.9,112.4L535.6,110.0L538.1,107.6L541.9,106.6L539.6,103.9L545.3,104.0L546.9,102.6L546.7,101.1L549.7,99.4L549.0,97.4L547.6,95.7L551.1,94.0L557.5,93.1L564.4,92.7L567.5,91.9L570.9,91.5L575.4,93.3L577.2,96.4L587.0,98.0Z",
+    "M519.1,90.5L522.5,90.6L527.0,91.4L528.8,91.9L533.2,90.6L535.2,91.4L537.1,89.6L540.7,89.6L541.6,89.1L542.3,87.4L544.8,86.1L548.1,87.0L547.4,88.2L549.3,88.4L548.7,91.7L551.1,93.0L553.2,92.2L555.8,91.8L559.6,90.0L563.7,90.3L569.9,90.3L570.9,91.5L567.5,91.9L564.4,92.7L557.5,93.1L551.1,94.0L547.6,95.7L549.0,97.4L549.7,99.4L546.7,101.1L546.9,102.6L545.3,104.0L539.6,103.9L541.9,106.6L538.1,107.6L535.6,110.0L535.9,112.4L533.6,113.5L531.3,113.1L526.8,113.7L526.1,114.8L521.6,114.8L518.3,117.0L518.1,120.4L510.3,122.1L506.1,121.8L504.9,122.6L501.3,122.1L495.3,122.7L485.2,120.7L490.7,117.1L490.2,114.5L485.7,113.8L485.2,111.3L483.2,108.1L485.8,105.9L483.2,105.3L484.8,102.4L487.3,97.4L493.4,98.9L497.9,98.4L499.2,96.6L503.9,96.0L507.3,94.8L508.5,91.6L513.5,90.8L514.5,89.4L517.3,90.4L519.1,90.5Z",
+    "M527.0,91.4L530.4,87.4L529.1,84.4L524.7,83.4L526.2,81.7L531.2,81.9L534.1,79.7L536.0,77.1L544.0,76.2L542.7,78.0L543.6,79.1L546.1,79.0L543.9,80.3L537.4,79.6L536.8,81.9L543.3,81.6L550.7,82.9L562.1,82.3L563.6,86.0L565.5,85.6L569.2,86.5L569.0,88.0L569.9,90.3L563.7,90.3L559.6,90.0L555.8,91.8L553.2,92.2L551.1,93.0L548.7,91.7L549.3,88.4L547.4,88.2L548.1,87.0L544.8,86.1L542.3,87.4L541.6,89.1L540.7,89.6L537.1,89.6L535.2,91.4L533.2,90.6L528.8,91.9L527.0,91.4Z",
+    "M545.8,70.9L547.1,69.2L551.1,68.6L560.9,70.0L561.9,67.6L565.3,66.8L573.8,68.5L576.0,68.0L586.0,68.2L594.9,68.6L597.9,70.0L601.6,70.6L600.7,71.5L591.3,73.7L589.1,75.3L581.4,75.7L579.2,78.3L572.8,77.8L568.7,78.5L562.9,80.4L563.8,81.4L562.1,82.3L550.7,82.9L543.3,81.6L536.8,81.9L537.4,79.6L543.9,80.3L546.1,79.0L550.6,79.4L558.3,76.5L551.2,74.4L546.9,75.4L542.5,73.9L547.6,71.3L545.8,70.9Z",
+    "M435.0,72.9L437.7,71.5L444.5,70.7L448.5,71.8L452.7,75.0L455.8,74.8L462.6,74.7L461.6,72.7L466.7,71.3L471.8,69.0L479.9,71.1L480.5,74.3L482.8,75.1L489.3,74.9L491.3,75.7L494.2,79.8L501.1,82.5L505.0,84.4L511.3,86.4L519.3,88.1L519.1,90.5L517.3,90.4L514.5,89.4L513.5,90.8L508.5,91.6L507.3,94.8L503.9,96.0L499.2,96.6L497.9,98.4L493.4,98.9L487.3,97.4L486.7,94.0L482.3,93.9L475.4,90.3L470.6,89.9L464.0,87.9L459.7,87.5L457.1,88.3L453.1,88.1L448.8,90.4L443.5,91.2L442.4,88.4L443.3,84.2L438.6,82.8L440.1,80.1L436.2,79.9L437.5,76.5L443.1,77.5L448.4,76.2L444.0,73.8L442.3,71.5L437.5,72.5L436.9,75.5L435.0,72.9Z",
+    "M411.4,120.3L408.1,118.2L408.0,116.1L406.1,116.1L407.1,113.2L404.0,110.1L396.7,107.9L392.5,104.1L393.9,101.0L396.9,99.6L396.5,97.3L392.5,96.1L388.6,91.3L388.6,91.3L385.4,88.1L386.5,86.9L384.7,82.3L388.8,81.1L389.7,82.7L392.7,84.5L396.9,85.0L399.0,84.9L406.1,82.0L408.4,81.7L410.1,82.8L408.1,84.8L411.8,86.9L413.3,86.7L415.2,89.7L420.9,90.5L425.1,92.5L433.6,93.2L443.0,92.1L443.5,91.2L448.8,90.4L453.1,88.1L457.1,88.3L459.7,87.5L464.0,87.9L470.6,89.9L475.4,90.3L482.3,93.9L486.7,94.0L487.3,97.4L484.8,102.4L483.2,105.3L485.8,105.9L483.2,108.1L485.2,111.3L485.7,113.8L490.2,114.5L490.7,117.1L485.2,120.7L488.2,122.8L490.6,125.2L496.4,127.0L496.5,130.5L499.4,131.1L499.9,133.0L491.2,135.0L489.0,139.7L477.7,138.5L471.2,137.6L464.4,137.0L461.8,132.1L459.0,131.4L454.3,132.1L448.3,134.1L441.0,132.8L434.9,129.7L429.1,128.5L425.1,124.7L420.7,119.4L417.5,120.1L413.6,118.7L411.4,120.3Z",
+    "M334.3,109.2L334.2,109.1L335.0,108.5L334.9,106.9L336.4,104.7L339.7,103.2L338.7,101.6L336.0,101.4L335.4,98.4L336.9,96.7L338.5,95.8L340.1,95.0L340.4,92.7L342.4,93.5L349.0,92.4L352.2,93.1L357.1,93.1L364.0,91.6L367.3,91.7L374.1,91.1L371.0,93.6L367.7,94.6L368.3,97.5L366.0,102.3L352.8,106.5L341.0,110.7L334.3,109.2Z",
+    "M399.0,84.9L396.9,85.0L394.4,82.7L394.4,82.1L391.8,82.1L390.0,81.0L388.8,81.1L386.4,80.0L381.9,79.0L382.5,77.0L381.5,75.6L389.8,75.0L391.1,76.1L393.4,76.8L392.2,77.8L395.4,79.1L393.7,80.4L396.2,81.5L398.9,82.1L399.0,84.9Z",
+    "M186.2,4.6L188.8,2.3L193.8,-0.5L195.8,-5.2L192.0,-7.2L191.6,-12.5L195.5,-16.3L201.4,-16.2L203.5,-17.8L201.3,-19.1L210.7,-24.8L216.7,-29.2L220.6,-32.1L226.4,-32.0L228.0,-34.3L239.3,-33.6L240.2,-36.3L243.9,-36.4L251.9,-34.5L261.2,-31.7L261.4,-25.6L263.4,-24.0L253.1,-22.9L247.3,-20.1L248.2,-17.7L238.7,-14.4L227.1,-11.0L222.7,-5.4L227.0,-2.5L232.7,-0.3L227.2,4.2L221.0,5.1L218.7,11.8L215.3,15.6L208.0,15.2L204.6,18.4L197.7,18.6L195.8,14.8L190.7,10.2L186.2,4.6Z",
+    "M289.1,15.3L295.4,16.3L296.2,17.3L299.4,16.8L305.2,17.8L305.8,19.7L304.5,20.8L308.3,23.4L310.7,24.1L310.4,24.8L314.4,25.5L316.2,26.6L313.8,27.5L309.0,27.3L307.8,27.7L309.2,29.0L310.7,31.6L310.7,31.6L305.6,31.8L303.7,32.7L303.3,34.7L300.9,34.3L295.5,34.5L294.0,33.6L291.7,34.3L289.4,33.7L284.7,33.6L278.0,32.7L272.0,32.4L267.3,32.4L264.0,33.5L261.2,33.7L261.0,31.9L259.2,30.1L262.8,29.2L262.8,27.6L261.2,26.1L260.9,24.4L266.7,24.4L273.2,22.9L274.6,20.6L279.5,19.3L279.0,17.5L282.6,16.9L289.1,15.3Z",
+    "M310.7,31.6L313.0,31.8L314.5,30.8L316.3,31.0L322.5,30.7L326.4,32.9L324.9,33.7L325.3,35.0L330.1,35.2L332.3,36.9L332.1,37.7L339.8,39.1L344.4,38.5L348.1,40.3L351.6,40.3L360.4,41.6L360.5,42.8L358.0,44.9L359.4,47.1L358.4,48.4L352.6,48.7L349.5,49.8L349.3,51.6L344.6,51.9L340.6,53.2L334.9,53.4L329.8,54.9L330.1,57.0L329.2,56.9L328.4,56.1L326.5,56.0L322.2,55.1L320.6,56.1L319.8,55.7L310.5,54.7L310.1,53.2L304.5,53.7L302.3,55.9L297.6,58.8L294.9,58.1L292.1,58.8L289.4,58.0L290.9,57.6L292.0,56.2L293.6,55.0L293.2,54.2L294.4,53.9L295.0,54.5L298.6,54.6L300.1,54.3L299.0,53.9L299.5,53.3L297.4,52.3L296.5,50.6L294.3,50.0L294.7,48.6L292.0,47.5L289.6,47.4L285.1,46.1L281.1,46.5L279.7,47.1L277.2,47.1L275.7,48.1L271.2,48.4L269.2,49.0L266.4,48.1L262.6,48.1L258.9,47.6L256.3,48.5L255.8,47.4L252.5,46.3L253.7,44.7L255.3,43.7L256.7,43.9L255.1,42.1L260.6,38.8L263.5,38.3L264.2,37.2L261.2,33.7L264.0,33.5L267.3,32.4L272.0,32.4L278.0,32.7L284.7,33.6L289.4,33.7L291.7,34.3L294.0,33.6L295.5,34.5L300.9,34.3L303.3,34.7L303.7,32.7L305.6,31.8L310.7,31.6Z",
+    "M260.9,24.4L261.2,26.1L262.8,27.6L262.8,29.2L259.2,30.1L261.0,31.9L261.2,33.7L264.2,37.2L263.5,38.3L260.6,38.8L255.1,42.1L256.7,43.9L255.3,43.7L249.6,42.1L245.3,42.7L242.5,42.3L239.0,43.1L235.9,41.7L233.5,42.3L233.1,42.0L230.4,40.0L225.9,39.8L225.3,38.6L221.2,38.1L220.3,39.1L217.1,38.3L217.4,37.2L212.9,36.9L210.1,35.6L207.6,33.0L208.1,31.6L206.6,29.5L204.4,28.1L206.1,27.0L204.7,25.0L208.8,23.8L218.2,21.9L225.7,20.6L231.7,21.3L232.2,22.2L238.0,22.3L245.4,22.7L256.4,22.7L259.5,23.1L260.9,24.4Z",
+    "M221.9,47.5L221.4,49.1L218.0,49.1L219.2,50.0L217.2,52.6L216.1,53.3L210.8,53.4L207.8,54.3L202.8,54.0L194.3,52.9L192.9,51.5L187.0,52.2L186.3,53.0L182.7,52.4L179.6,52.3L176.9,51.6L177.8,50.6L177.6,49.9L179.4,49.7L182.4,50.8L183.3,49.7L188.6,49.9L192.8,49.2L195.7,49.3L197.6,50.1L198.2,49.4L197.3,46.8L199.5,46.3L201.6,44.5L206.0,45.8L209.4,44.1L211.5,43.8L216.2,45.1L219.0,44.9L221.8,45.6L221.3,46.1L221.9,47.5Z",
+    "M252.5,46.3L255.8,47.4L256.3,48.5L252.6,49.3L249.8,52.0L246.1,54.7L241.3,55.5L237.6,55.3L233.0,56.4L233.0,56.4L230.7,57.0L225.8,56.2L221.3,54.5L219.4,54.0L218.2,52.6L217.2,52.6L219.2,50.0L218.0,49.1L221.4,49.1L221.9,47.5L224.9,48.5L227.1,49.0L232.2,48.5L232.7,47.7L235.0,47.6L238.0,46.9L238.6,47.2L241.4,46.7L242.8,45.7L244.8,45.5L251.2,46.7L252.5,46.3Z",
+    "M279.7,47.1L281.1,46.5L285.1,46.1L289.6,47.4L292.0,47.5L294.7,48.6L294.3,50.0L296.5,50.6L297.4,52.3L299.5,53.3L299.0,53.9L300.1,54.3L298.6,54.6L295.0,54.5L294.4,53.9L293.2,54.2L293.6,55.0L292.0,56.2L290.9,57.6L289.4,58.0L288.3,56.2L289.0,54.5L288.8,52.8L285.3,50.4L283.4,48.7L281.5,47.5L279.7,47.1Z",
+    "M289.4,58.0L292.1,58.8L294.9,58.1L297.6,58.8L297.8,59.9L294.8,60.7L293.0,60.3L291.3,65.2L287.8,64.8L283.5,63.3L276.4,64.2L273.4,65.2L264.6,65.0L260.0,64.4L257.7,64.7L255.9,63.1L254.8,62.4L256.2,61.7L254.8,61.2L252.9,62.1L249.4,60.9L248.9,59.3L245.2,58.3L244.6,57.1L241.3,55.5L246.1,54.7L249.8,52.0L252.6,49.3L256.3,48.5L258.9,47.6L262.6,48.1L266.4,48.1L269.2,49.0L271.2,48.4L275.7,48.1L277.2,47.1L279.7,47.1L281.5,47.5L283.4,48.7L285.3,50.4L288.8,52.8L289.0,54.5L288.3,56.2L289.4,58.0Z",
+    "M279.0,17.5L279.5,19.3L274.6,20.6L273.2,22.9L266.7,24.4L260.9,24.4L259.5,23.1L256.4,22.7L255.9,21.7L256.5,20.6L253.9,19.9L247.6,19.2L246.3,15.9L253.2,14.6L263.3,14.9L269.2,14.5L270.0,15.3L273.2,15.6L279.0,17.5Z",
+    "M283.7,10.1L286.6,11.0L287.1,13.0L289.1,15.3L282.6,16.9L279.0,17.5L273.2,15.6L270.0,15.3L269.2,14.5L263.3,14.9L253.2,14.6L246.3,15.9L246.5,12.9L249.5,10.4L255.1,9.0L259.9,12.0L264.7,11.9L265.9,8.8L271.0,8.1L273.6,8.6L278.8,10.1L283.7,10.1Z",
+    "M287.9,2.1L287.9,2.1L288.8,2.8L284.5,5.1L286.3,8.8L283.7,10.1L278.8,10.1L273.6,8.6L271.0,8.1L265.9,8.8L266.6,6.5L264.4,7.0L260.6,5.5L260.0,3.3L267.6,2.1L275.2,1.6L281.7,2.2L287.9,2.1L287.9,2.1Z",
+    "M204.7,25.0L206.1,27.0L204.4,28.1L206.6,29.5L208.1,31.6L207.6,33.0L210.1,35.6L207.4,36.0L205.8,35.5L204.3,36.3L200.0,37.1L197.8,38.1L193.4,38.9L194.5,40.1L195.1,41.8L198.2,42.8L201.6,44.5L199.5,46.3L197.3,46.8L198.2,49.4L197.6,50.1L195.7,49.3L192.8,49.2L188.6,49.9L183.3,49.7L182.4,50.8L179.4,49.7L177.6,49.9L171.1,48.7L169.9,49.5L164.8,49.5L165.6,46.7L168.6,43.9L159.9,43.2L157.1,42.1L157.5,40.4L156.3,39.5L156.9,36.8L155.9,32.6L159.5,32.6L161.1,31.1L162.6,27.4L161.4,26.1L162.6,25.2L167.6,25.0L168.7,25.9L172.8,23.9L171.4,22.4L171.2,20.1L175.7,20.7L179.5,20.1L179.6,21.6L185.7,22.5L185.6,24.0L191.7,23.2L195.1,22.1L201.9,23.7L204.7,25.0Z",
+    "M255.9,63.1L257.7,64.7L260.0,64.4L264.6,65.0L273.4,65.2L276.4,64.2L283.5,63.3L287.8,64.8L291.3,65.2L288.2,66.8L286.0,69.7L288.0,72.0L282.8,71.4L276.7,72.7L276.6,74.7L271.2,75.1L267.0,73.7L262.2,74.8L257.7,74.6L257.3,72.0L254.3,70.7L255.3,70.2L254.6,69.7L255.6,68.4L257.9,67.2L255.0,65.4L254.5,64.0L255.9,63.1Z",
+    "M277.7,98.8L277.0,100.0L268.3,100.3L268.4,99.7L261.1,98.9L262.2,97.2L265.5,98.5L270.2,98.3L274.6,98.6L274.5,99.3L277.7,98.8Z",
+    "M257.7,74.6L262.2,74.8L267.0,73.7L271.2,75.1L276.6,74.7L276.7,72.7L279.6,73.8L277.8,76.3L276.3,76.7L272.7,76.6L269.6,76.2L262.3,77.3L266.4,79.5L263.4,80.2L260.1,80.2L256.9,78.1L255.8,79.0L257.1,81.4L260.1,83.2L257.8,84.1L261.2,86.0L264.2,87.1L264.2,89.4L258.7,88.3L260.5,90.4L256.6,90.8L258.9,94.3L254.9,94.4L250.0,92.6L247.8,89.4L246.7,86.8L244.4,84.9L241.3,82.6L240.9,81.5L243.7,79.6L244.0,78.3L246.0,77.7L246.1,76.6L250.0,76.3L252.3,75.4L255.6,75.5L256.6,74.8L257.7,74.6Z",
+    "M388.6,91.3L385.8,92.0L383.7,91.0L376.7,90.5L374.1,91.1L367.3,91.7L364.0,91.6L357.1,93.1L352.2,93.1L349.0,92.4L342.4,93.5L340.4,92.7L340.1,95.0L338.5,95.8L336.9,96.7L334.7,94.9L337.0,93.4L333.3,93.7L328.3,92.8L324.2,95.1L315.1,95.6L310.2,93.4L303.7,93.3L302.3,94.9L298.2,95.4L292.4,93.3L285.8,93.4L282.3,89.4L277.9,87.2L280.8,84.1L277.0,82.1L283.7,78.3L292.9,78.2L295.4,75.1L306.9,75.6L314.1,73.1L321.1,71.9L331.0,71.8L341.5,74.7L350.1,76.2L357.1,75.6L362.2,75.9L369.3,73.9L375.7,73.7L381.5,75.6L382.5,77.0L381.9,79.0L386.4,80.0L388.8,81.1L384.7,82.3L386.5,86.9L385.4,88.1L388.6,91.3L388.6,91.3Z",
+    "M276.7,72.7L282.8,71.4L288.0,72.0L288.7,73.5L293.9,74.8L292.8,75.8L285.7,76.0L283.2,77.2L278.1,79.4L276.3,77.5L276.3,76.7L277.8,76.3L279.6,73.8L276.7,72.7Z",
+    "M246.1,76.6L246.0,77.7L244.0,78.3L243.7,79.6L240.9,81.5L239.9,81.2L239.8,80.3L236.4,79.0L235.9,77.1L236.4,74.4L237.2,73.1L236.2,72.5L236.2,72.5L235.8,71.2L238.4,69.2L238.8,70.0L240.4,69.6L241.7,70.7L243.1,71.1L243.5,72.6L243.5,72.6L242.8,73.9L243.6,75.7L246.1,76.6Z",
+    "M219.4,54.0L221.3,54.5L225.8,56.2L230.7,57.0L233.0,56.4L234.4,57.9L236.3,59.1L234.0,60.6L231.3,59.7L227.2,59.7L222.0,59.1L219.2,59.2L217.9,60.0L215.8,59.1L214.5,60.7L217.4,62.6L218.7,63.8L221.5,65.3L223.8,66.2L226.0,67.9L231.4,69.4L230.7,70.1L230.7,70.1L225.1,68.6L221.6,67.2L216.1,66.0L211.0,63.0L212.3,62.7L209.5,61.0L209.4,59.7L205.6,59.1L203.7,60.8L201.9,59.5L202.1,58.1L202.3,58.0L206.5,58.1L207.6,57.5L209.6,58.1L212.0,58.2L211.9,57.1L214.0,56.7L214.6,55.0L219.4,54.0Z",
+    "M177.6,49.9L177.8,50.6L176.9,51.6L179.6,52.3L182.7,52.4L182.2,54.1L179.5,54.7L175.1,54.2L173.8,55.9L170.9,56.0L169.9,55.3L166.5,56.7L163.6,56.9L161.1,56.0L159.0,54.3L156.1,54.9L156.2,53.1L160.6,50.8L160.4,49.8L163.2,50.2L164.8,49.5L169.9,49.5L171.1,48.7L177.6,49.9Z",
+    "M156.3,39.5L157.5,40.4L157.1,42.1L155.4,42.2L154.0,41.9L154.7,39.6L156.3,39.5Z",
+    "M156.9,36.8L156.3,39.5L154.7,39.6L154.0,41.9L148.8,40.1L145.7,40.4L141.5,38.5L138.7,36.9L136.0,36.8L135.1,35.4L139.9,34.6L139.9,34.6L139.9,34.6L144.3,34.9L149.8,34.1L153.6,35.9L156.9,36.8Z",
+    "M161.4,26.1L162.6,27.4L161.1,31.1L159.5,32.6L155.9,32.6L156.9,36.8L153.6,35.9L149.8,34.1L144.3,34.9L139.9,34.6L139.9,34.6L143.0,33.5L148.2,27.6L156.4,26.0L161.4,26.1Z",
+    "M65.8,72.5L68.0,71.5L70.4,70.9L71.9,72.8L75.5,72.8L76.5,72.3L80.0,72.5L81.7,74.5L78.9,75.6L78.8,78.7L77.8,79.3L77.6,81.2L75.0,81.5L77.4,83.9L75.8,86.5L77.8,87.7L77.0,88.8L74.8,90.3L75.3,91.6L72.9,92.6L69.7,92.1L66.6,92.5L67.5,89.4L67.0,86.9L64.3,86.6L62.8,85.1L63.3,82.4L65.7,81.0L66.1,79.4L67.4,77.0L67.3,75.3L66.1,73.8L65.8,72.5Z",
+    "M75.3,91.6L74.8,90.3L77.0,88.8L77.8,87.7L75.8,86.5L77.4,83.9L75.0,81.5L77.6,81.2L77.8,79.3L78.8,78.7L78.9,75.6L81.7,74.5L80.0,72.5L76.5,72.3L75.5,72.8L71.9,72.8L70.4,70.9L68.0,71.5L65.8,72.5L66.1,69.6L63.6,67.9L72.1,65.0L79.5,65.7L87.5,65.7L93.9,66.4L98.9,66.2L108.6,66.3L111.0,67.9L122.0,69.7L124.2,68.8L131.0,70.6L137.9,70.1L138.2,72.4L132.6,75.1L124.9,75.9L124.3,77.3L120.6,79.5L118.3,82.8L120.7,85.0L117.2,86.8L115.9,89.4L111.4,90.2L107.1,93.3L99.5,93.4L93.8,93.3L90.0,94.7L87.7,96.2L84.8,95.9L82.6,94.5L80.9,92.2L75.3,91.6Z",
+    "M82.8,24.5L83.8,27.4L79.3,31.0L68.6,33.3L60.1,32.7L65.0,28.5L61.9,24.5L70.0,21.3L74.6,19.5L75.8,21.6L74.6,23.8L78.3,23.7L82.8,24.5Z",
+    "M876.9,368.9L870.5,370.9L865.3,371.8L864.2,373.9L862.0,375.6L856.9,375.7L853.1,376.0L847.8,375.3L843.5,375.7L839.4,375.9L835.8,378.0L834.0,377.9L831.0,379.0L828.1,380.3L823.8,380.1L819.8,380.1L813.4,377.5L810.2,376.8L810.3,374.5L813.3,373.9L814.3,373.0L814.1,371.6L814.8,368.8L814.1,366.4L811.0,362.4L810.0,360.1L810.2,357.8L807.9,355.2L807.7,354.1L805.0,352.5L804.3,349.3L800.9,346.2L800.0,344.5L802.7,346.2L800.6,342.5L803.6,343.6L805.4,345.2L805.3,343.1L802.3,340.0L801.8,338.7L800.4,337.5L801.0,335.2L802.2,334.2L803.1,332.2L802.4,329.9L804.9,327.0L805.4,330.1L807.9,327.3L812.8,326.0L815.7,324.3L820.3,322.8L823.0,322.5L824.6,323.0L829.4,321.5L833.0,321.1L833.9,320.2L835.5,319.8L838.8,319.9L845.1,318.7L848.4,317.0L849.9,314.8L853.4,312.8L853.7,311.2L853.9,309.0L858.1,305.6L860.6,309.1L863.2,308.3L861.0,306.4L862.9,304.4L865.5,305.3L866.3,302.3L869.6,300.3L871.0,298.7L874.0,298.0L874.1,296.9L876.8,297.4L876.9,296.4L879.5,295.8L882.4,295.3L886.8,297.1L890.2,299.5L893.9,299.5L897.7,299.9L896.5,297.7L899.3,294.5L902.0,293.4L901.1,292.4L903.7,290.1L907.3,288.7L910.4,289.2L915.5,288.5L915.3,286.4L910.9,285.1L914.1,284.5L918.1,285.5L921.3,287.1L926.4,288.2L928.1,287.8L931.8,289.0L935.3,287.8L937.6,288.2L939.0,287.4L941.7,289.4L940.1,291.5L937.8,293.2L935.8,293.3L936.5,294.9L934.7,296.9L932.6,298.9L933.0,300.0L937.8,302.2L942.4,303.5L945.5,304.9L949.8,307.2L951.5,307.2L954.7,308.3L955.6,309.5L961.3,310.8L965.3,309.5L966.4,307.3L967.6,305.6L968.4,303.4L970.2,300.2L969.4,298.2L969.8,297.1L969.1,294.8L969.9,291.8L971.1,291.0L970.1,289.6L971.6,287.5L972.7,285.3L972.9,284.2L975.1,282.7L976.8,284.6L977.2,287.1L978.7,287.6L979.0,289.3L981.1,291.3L981.6,293.6L981.4,295.1L983.5,298.2L987.4,296.7L989.4,298.4L992.2,299.9L991.6,301.7L992.9,305.1L993.8,307.1L995.3,307.6L997.0,311.0L996.4,313.1L998.3,315.8L1004.8,317.9L1009.1,319.8L1013.1,321.6L1012.3,322.5L1015.7,325.0L1018.1,329.4L1020.5,328.5L1022.9,330.2L1024.4,329.6L1025.4,333.8L1029.7,336.3L1032.4,337.8L1037.1,341.1L1038.8,344.3L1039.0,346.6L1038.6,349.0L1041.4,352.4L1041.1,356.0L1040.0,357.8L1038.4,361.4L1038.5,363.7L1037.3,366.6L1034.7,370.2L1030.3,372.2L1028.1,375.3L1026.1,377.2L1024.3,380.7L1022.0,382.7L1020.5,385.7L1019.7,388.4L1020.0,389.7L1016.5,391.1L1009.8,391.2L1004.3,392.9L1001.5,394.4L997.9,396.1L992.9,394.4L989.3,393.7L990.2,391.6L986.9,392.3L981.7,395.2L976.5,394.2L973.1,393.5L969.6,393.2L963.8,392.1L960.0,389.6L958.8,386.6L957.4,384.6L954.5,382.9L948.7,382.4L950.7,380.5L949.2,377.5L946.3,380.3L941.0,381.0L944.1,378.8L945.0,376.5L947.3,374.6L946.9,371.6L942.0,375.0L938.2,376.4L935.9,379.6L931.2,377.9L931.4,375.8L927.7,372.9L924.5,371.4L925.6,370.5L917.9,368.0L913.7,367.9L908.0,366.0L897.2,366.4L889.4,367.8L882.6,369.1L876.9,368.9Z",
+    "M610.7,209.9L609.8,214.1L607.3,215.2L602.1,216.1L599.2,212.9L598.2,207.2L600.9,200.7L605.0,202.9L607.8,205.7L610.7,209.9Z",
+    "M776.9,167.2L771.9,166.0L771.8,162.5L774.7,160.7L781.3,159.6L784.7,159.7L786.1,161.2L783.4,163.0L782.0,165.3L776.9,167.2Z",
+    "M601.6,70.6L601.1,68.3L605.2,67.3L599.8,60.3L611.7,58.7L614.8,57.8L619.1,50.7L631.0,52.0L634.3,50.2L634.6,46.2L639.6,45.8L644.2,43.1L646.5,42.8L648.1,45.6L653.1,47.7L661.7,49.2L665.8,52.4L663.5,57.1L665.7,58.9L672.8,59.5L680.9,60.1L688.1,62.6L691.8,63.0L694.6,66.7L698.1,69.1L704.7,69.0L717.1,69.9L725.1,69.3L731.0,69.9L739.9,72.4L747.1,72.4L749.8,73.6L756.8,71.5L766.5,70.1L775.5,69.9L782.5,68.5L786.8,66.4L791.0,65.0L790.0,63.7L788.1,62.2L791.2,59.6L794.6,60.0L800.8,60.8L806.8,58.6L815.9,57.1L820.3,54.4L824.5,53.3L833.2,52.8L838.0,53.2L838.6,51.8L833.2,49.0L828.4,47.7L823.8,49.2L817.9,48.6L814.5,49.1L812.9,47.5L817.2,43.5L820.1,40.4L827.3,42.0L835.7,39.4L835.7,37.7L841.1,33.4L844.4,32.1L844.4,29.9L841.1,29.0L846.0,27.0L853.5,26.3L861.4,26.2L870.4,27.4L875.7,28.8L879.4,32.9L881.6,34.6L883.7,37.0L885.9,41.0L896.4,42.2L903.5,45.1L905.9,48.8L915.0,48.8L920.2,47.3L930.2,46.1L927.0,49.7L924.7,51.2L922.6,55.5L918.6,59.4L911.3,58.7L906.2,60.1L907.7,63.6L906.9,68.3L903.8,68.4L903.8,70.4L900.0,68.1L897.6,70.3L888.3,72.0L889.3,74.1L884.1,74.0L881.2,72.7L877.1,75.6L870.5,77.7L865.6,80.3L857.2,81.4L852.8,83.3L846.3,84.4L849.5,82.6L848.3,81.0L853.0,78.3L849.8,76.2L844.6,77.6L837.8,80.4L834.1,83.0L828.3,83.2L825.2,85.0L828.4,87.8L833.3,88.4L833.5,90.2L838.2,91.4L844.9,88.5L850.3,90.1L854.1,90.2L855.1,92.3L846.6,93.4L843.8,95.6L838.0,97.6L834.9,100.4L841.4,102.6L843.7,106.5L847.4,110.2L851.4,113.2L851.4,116.2L847.6,117.3L849.0,119.4L852.6,120.7L851.6,123.9L850.1,127.1L846.8,127.5L842.4,131.8L837.5,137.0L831.9,141.8L823.7,145.5L815.3,148.9L808.6,149.3L804.9,151.1L802.8,149.8L799.4,151.8L791.1,153.8L784.7,154.4L782.7,158.6L779.3,158.9L777.8,156.0L779.2,154.4L771.1,153.1L768.3,153.8L762.3,152.8L759.4,151.1L760.4,148.8L754.9,148.1L752.0,146.6L746.9,148.7L741.0,149.2L736.2,149.2L733.0,150.1L729.9,150.7L730.8,155.3L727.6,155.2L727.1,154.3L726.9,152.6L722.5,153.8L719.9,153.0L715.4,151.5L717.2,148.2L713.4,147.4L712.0,143.7L705.6,144.4L706.3,139.7L712.0,136.3L712.3,133.0L712.1,130.0L709.5,129.0L707.5,126.7L704.0,127.0L697.5,126.4L699.5,124.7L696.7,122.2L692.4,123.9L687.4,122.9L680.5,125.4L675.0,128.4L670.2,128.9L667.6,127.8L664.4,127.7L660.1,126.8L656.9,127.8L652.9,130.8L652.4,127.7L648.7,128.5L641.7,128.1L634.9,127.2L630.1,125.4L625.4,124.6L623.4,122.7L620.0,122.1L614.0,119.5L609.2,118.3L606.7,119.3L598.3,116.5L592.4,113.9L590.8,109.5L595.1,110.1L595.3,108.0L592.9,106.0L593.5,102.7L587.0,98.0L577.2,96.4L575.4,93.3L570.9,91.5L569.9,90.3L569.0,88.0L569.2,86.5L565.5,85.6L563.6,86.0L562.1,82.3L563.8,81.4L562.9,80.4L568.7,78.5L572.8,77.8L579.2,78.3L581.4,75.7L589.1,75.3L591.3,73.7L600.7,71.5L601.6,70.6Z",
+    "M182.7,52.4L186.3,53.0L187.0,52.2L192.9,51.5L194.3,52.9L202.8,54.0L202.2,55.9L203.6,57.6L198.8,57.1L194.0,58.5L194.3,60.5L193.6,61.6L195.5,63.6L201.2,65.6L204.2,69.0L210.9,72.2L215.6,72.2L217.0,73.0L215.3,73.8L220.7,75.3L225.1,76.5L230.3,78.6L230.9,79.3L229.8,80.8L226.4,78.9L221.2,78.2L218.7,80.8L223.0,82.3L222.3,84.4L219.8,84.6L216.6,88.1L214.1,88.4L214.1,87.1L215.4,85.0L216.7,84.1L214.3,81.8L212.5,79.8L210.0,79.3L208.2,77.6L204.4,76.9L201.8,75.2L197.3,75.0L192.6,73.2L187.2,70.6L183.1,68.3L181.2,64.3L178.2,63.9L173.3,62.5L170.6,63.1L167.1,64.9L164.6,65.2L165.3,63.5L162.0,63.0L160.5,59.9L162.6,58.7L160.8,57.2L161.1,56.0L163.6,56.9L166.5,56.7L169.9,55.3L170.9,56.0L173.8,55.9L175.1,54.2L179.5,54.7L182.2,54.1L182.7,52.4Z",
+    "M208.6,87.4L213.1,87.1L211.0,90.2L211.9,91.5L210.6,93.5L206.0,92.0L203.0,91.6L194.6,89.5L195.4,87.5L202.4,87.9L208.6,87.4Z",
+    "M172.3,76.4L175.3,75.2L178.9,78.0L178.0,83.3L175.3,83.0L172.8,84.4L170.6,83.3L170.3,78.5L169.0,76.2L172.3,76.4Z",
+    "M179.5,20.1L175.7,20.7L171.2,20.1L168.7,17.9L168.5,13.8L169.5,12.8L171.3,11.6L176.5,11.3L178.7,10.2L183.5,9.1L183.3,11.1L181.5,12.4L182.2,13.6L185.5,14.2L184.0,15.7L182.2,15.2L177.9,18.1L179.5,20.1Z",
+    "M194.2,15.6L196.1,17.6L192.5,20.8L186.3,18.5L185.4,16.9L194.2,15.6Z",
+    "M82.8,24.5L78.3,23.7L74.6,23.8L75.8,21.6L74.6,19.5L79.6,19.3L86.0,21.8L82.8,24.5Z",
+    "M101.4,26.4L101.4,26.4L102.3,24.1L98.3,21.6L98.2,21.5L90.9,20.8L89.5,19.8L91.7,18.0L89.7,16.9L86.5,18.8L86.1,14.9L83.1,12.9L85.3,8.7L89.9,5.5L94.7,5.8L102.0,5.5L95.6,9.8L101.7,9.2L108.2,9.3L106.7,12.5L101.3,16.1L107.5,16.4L108.0,16.8L113.3,21.5L117.4,22.1L121.1,26.7L122.8,28.3L130.1,29.0L129.4,31.6L126.3,32.8L128.7,34.8L123.3,36.9L115.3,36.9L105.1,38.0L102.3,37.2L98.3,39.1L92.7,38.6L88.5,40.2L85.3,39.4L94.1,35.2L99.5,34.3L99.5,34.3L90.1,33.6L88.4,32.0L94.7,30.8L91.4,28.6L92.5,26.0L101.4,26.4Z",
+    "M398.4,72.6L400.1,72.7L404.2,75.1L406.9,75.4L407.9,74.4L411.5,72.8L414.7,74.9L417.7,77.7L420.5,77.9L422.4,79.0L417.4,79.3L416.4,82.4L415.3,83.8L413.1,84.7L413.3,86.7L411.8,86.9L408.1,84.8L410.1,82.8L408.4,81.7L406.1,82.0L399.0,84.9L398.9,82.1L396.2,81.5L393.7,80.4L395.4,79.1L392.2,77.8L393.4,76.8L391.1,76.1L389.8,75.0L391.3,74.4L395.8,75.5L399.0,75.7L399.8,75.3L396.9,73.1L398.4,72.6Z",
+    "M396.9,85.0L392.7,84.5L389.7,82.7L388.8,81.1L390.0,81.0L391.8,82.1L394.4,82.1L394.4,82.7L396.9,85.0Z",
+    "M359.7,66.3L360.5,65.8L365.5,66.5L374.4,67.1L382.5,69.0L383.6,69.8L387.2,69.2L392.8,70.0L394.7,71.6L398.4,72.6L396.9,73.1L399.8,75.3L399.0,75.7L395.8,75.5L391.3,74.4L389.8,75.0L381.5,75.6L375.7,73.7L369.3,73.9L370.2,72.1L368.7,69.4L365.3,67.9L361.9,67.5L359.7,66.3Z",
+    "M831.0,202.7L823.0,206.5L826.0,203.7L830.3,201.3L833.9,198.5L837.1,194.5L838.1,197.8L834.2,200.0L831.0,202.7Z",
+    "M854.0,167.1L853.0,168.8L855.1,171.6L853.5,175.0L850.0,176.3L849.0,179.5L850.4,182.7L853.6,183.1L856.2,182.7L863.7,184.9L863.1,187.0L865.1,188.0L864.5,189.9L859.8,187.9L857.6,185.8L856.0,187.3L852.2,184.9L846.8,185.5L843.8,184.6L844.1,182.9L846.0,181.9L844.2,181.0L843.4,182.4L840.4,180.1L839.5,178.4L839.3,174.5L841.7,175.9L842.3,169.6L844.3,166.0L847.9,166.0L851.6,167.1L853.5,166.1L854.0,167.1Z",
+    "M720.5,214.1L721.6,213.4L726.5,215.2L726.9,217.2L730.9,216.8L732.8,215.1L734.2,215.5L737.8,217.9L740.3,220.6L740.6,223.3L740.0,225.1L740.6,226.5L741.0,228.8L743.1,229.9L745.5,233.5L745.4,234.8L741.1,235.1L735.4,232.1L728.3,229.0L727.6,226.9L724.2,224.2L723.3,220.9L721.2,218.8L721.8,215.8L720.5,214.1Z",
+    "M827.3,223.4L822.1,222.8L815.2,222.8L813.1,227.3L810.8,228.7L807.7,234.3L802.8,235.1L797.2,234.0L794.3,234.4L790.8,236.4L787.0,236.1L783.1,236.9L779.0,234.6L778.0,232.0L782.4,233.3L787.0,232.6L788.2,229.2L790.8,228.5L798.0,227.6L802.3,224.4L805.2,221.9L808.0,224.0L809.2,222.6L812.1,222.7L812.4,220.2L812.7,218.2L817.3,215.4L820.4,212.3L822.8,212.3L825.9,214.3L826.1,216.1L830.1,217.2L835.1,218.4L834.7,219.9L830.6,220.1L831.7,222.1L827.3,223.4Z",
+    "M812.7,218.2L812.4,220.2L812.1,222.7L809.2,222.6L808.0,224.0L805.2,221.9L807.6,220.4L812.7,218.2Z",
+    "M202.8,54.0L207.8,54.3L210.8,53.4L216.1,53.3L217.2,52.6L218.2,52.6L219.4,54.0L214.6,55.0L214.0,56.7L211.9,57.1L212.0,58.2L209.6,58.1L207.6,57.5L206.5,58.1L202.3,58.0L203.6,57.6L202.2,55.9L202.8,54.0Z",
+    "M291.6,-36.3L290.7,-33.5L299.9,-30.8L294.3,-27.8L301.3,-23.2L297.3,-19.8L302.7,-16.8L300.2,-14.2L309.1,-11.5L306.8,-9.4L301.3,-7.1L288.4,-2.0L288.4,-2.0L288.4,-2.0L277.5,-1.7L267.0,-0.2L257.2,0.6L253.7,-1.6L247.9,-2.9L249.3,-6.8L246.4,-10.4L249.2,-12.8L254.7,-15.3L268.4,-19.6L272.4,-20.4L271.8,-22.1L263.4,-24.0L261.4,-25.6L261.2,-31.7L251.9,-34.5L243.9,-36.4L247.5,-37.5L254.1,-35.4L262.0,-35.6L268.4,-34.6L274.1,-36.4L277.1,-39.3L286.4,-40.7L294.1,-39.1L291.6,-36.3Z",
+    "M255.3,43.7L253.7,44.7L252.5,46.3L251.2,46.7L244.8,45.5L242.8,45.7L241.4,46.7L238.6,47.2L238.0,46.9L235.0,47.6L232.7,47.7L232.2,48.5L227.1,49.0L224.9,48.5L221.9,47.5L221.3,46.1L221.8,45.6L222.6,44.7L225.3,44.8L227.3,44.4L227.5,44.0L228.6,43.8L229.0,42.9L230.4,42.7L231.3,42.0L233.1,42.0L233.5,42.3L235.9,41.7L239.0,43.1L242.5,42.3L245.3,42.7L249.6,42.1L255.3,43.7Z",
+    "M210.1,35.6L212.9,36.9L217.4,37.2L217.1,38.3L220.3,39.1L221.2,38.1L225.3,38.6L225.9,39.8L230.4,40.0L233.1,42.0L231.3,42.0L230.4,42.7L229.0,42.9L228.6,43.8L227.5,44.0L227.3,44.4L225.3,44.8L222.6,44.7L221.8,45.6L219.0,44.9L216.2,45.1L211.5,43.8L209.4,44.1L206.0,45.8L201.6,44.5L198.2,42.8L195.1,41.8L194.5,40.1L193.4,38.9L197.8,38.1L200.0,37.1L204.3,36.3L205.8,35.5L207.4,36.0L210.1,35.6Z",
+    "M338.6,182.3L337.9,180.7L340.5,174.8L341.1,172.2L343.0,170.9L347.4,170.3L350.5,168.0L353.9,172.6L355.6,176.3L358.9,178.3L367.1,182.0L370.4,184.3L373.7,186.6L375.5,188.0L378.5,189.2L376.7,190.2L374.1,189.8L372.1,188.5L369.6,186.2L366.9,184.9L365.4,183.5L360.2,181.9L356.0,181.9L354.6,181.0L351.1,182.0L347.4,180.2L345.6,183.1L338.6,182.3Z",
+    "M432.0,164.0L436.7,170.6L438.7,173.4L434.3,174.5L433.2,176.2L433.0,177.6L427.0,179.3L417.4,181.2L412.1,184.0L409.4,184.2L407.6,184.0L404.1,185.6L400.3,186.4L395.3,186.6L393.8,186.8L392.4,187.9L390.9,188.2L389.9,189.2L387.0,189.1L385.1,189.7L380.9,189.5L379.3,187.1L379.5,184.9L378.5,183.7L377.4,180.8L375.6,179.1L376.8,179.0L376.2,177.1L376.9,176.4L376.7,174.6L379.3,173.3L378.7,171.6L380.3,169.7L382.7,170.7L384.4,170.4L391.3,170.3L392.4,170.7L398.2,171.1L400.5,170.9L402.0,172.2L404.8,171.5L409.1,167.3L414.7,165.5L432.0,164.0Z",
+    "M329.7,122.6L336.4,123.2L339.0,122.0L340.4,120.5L345.0,120.0L346.0,118.6L348.0,118.0L342.0,114.0L354.0,112.0L355.2,111.4L362.4,112.4L371.3,115.2L388.3,123.3L399.4,123.6L404.8,124.0L406.3,125.9L410.5,125.8L412.8,129.2L415.8,130.2L416.8,131.6L420.9,133.2L421.3,134.9L420.7,136.2L421.4,137.6L423.2,138.7L424.0,140.0L424.9,141.0L426.7,141.8L428.3,141.5L429.5,143.0L429.7,143.9L432.0,148.0L450.0,150.0L451.3,149.2L454.0,152.0L450.0,160.0L432.0,164.0L414.7,165.5L409.1,167.3L404.8,171.5L402.0,172.2L400.5,170.9L398.2,171.1L392.4,170.7L391.3,170.3L384.4,170.4L382.7,170.7L380.3,169.7L378.7,171.6L379.3,173.3L376.7,174.6L375.9,172.9L374.1,171.7L373.6,170.1L370.5,168.7L367.3,165.3L365.6,162.1L361.5,159.3L358.8,158.6L354.8,154.8L354.1,152.1L354.4,149.7L351.0,145.2L348.1,143.7L344.9,142.9L342.9,140.6L343.3,139.7L341.6,137.6L339.8,136.7L337.5,133.7L333.8,130.5L330.8,127.7L327.8,127.8L328.7,125.6L329.0,124.2L329.7,122.6Z",
+    "M316.4,99.4L316.8,99.4L317.7,98.5L322.0,98.5L327.5,97.3L323.4,99.0L323.8,99.8L323.2,99.6L322.1,99.9L321.2,99.8L320.9,100.0L320.7,99.6L320.3,99.3L319.1,99.3L317.5,99.6L316.4,99.4Z",
+    "M316.4,99.4L317.5,99.6L319.1,99.3L320.3,99.3L320.7,99.6L320.9,100.0L321.2,99.8L322.1,99.9L323.2,99.6L323.8,99.8L324.0,100.1L317.9,101.7L314.9,101.2L313.5,99.6L316.4,99.4Z",
+    "M107.0,99.3L109.2,101.9L109.6,104.3L111.7,108.5L113.3,109.4L112.2,110.9L104.3,111.6L101.6,113.1L98.1,113.5L97.9,116.4L90.8,118.0L88.5,120.0L83.6,121.1L77.6,121.7L68.0,124.6L68.0,129.4L67.1,129.4L67.2,131.5L63.5,131.6L61.6,132.6L58.9,132.6L56.7,132.0L51.6,132.5L49.7,135.6L47.8,135.9L45.0,140.9L36.7,145.2L34.7,150.8L32.2,152.6L31.5,154.0L18.0,154.3L17.9,154.3L18.2,152.5L20.5,151.4L22.4,149.3L22.0,147.9L24.1,145.1L27.4,142.6L29.5,141.9L31.1,139.6L31.2,137.5L33.4,135.0L37.4,133.5L41.2,129.4L41.3,129.4L44.3,127.8L49.9,127.4L54.6,124.7L57.6,123.6L62.6,120.3L61.1,115.3L63.4,111.8L64.2,109.7L68.1,107.0L74.1,105.2L78.5,103.6L82.5,99.4L84.4,97.0L88.8,97.0L92.5,98.7L98.2,98.4L104.4,99.3L107.0,99.3Z",
+    "M341.2,152.0L317.4,152.0L294.1,152.0L270.0,152.0L270.0,137.3L270.0,123.0L268.2,119.8L269.7,117.4L268.8,115.6L271.0,113.7L279.0,113.7L284.7,114.7L290.7,115.9L293.5,116.5L298.1,115.3L300.6,114.1L305.9,113.8L310.1,114.3L311.8,116.3L313.2,115.0L318.0,115.9L322.6,116.1L325.6,115.1L325.6,115.1L328.9,121.0L329.5,122.0L327.9,123.6L326.6,126.6L324.9,128.7L323.5,129.4L321.5,128.1L318.8,126.3L314.5,120.6L313.9,121.0L316.4,125.2L320.1,129.2L324.6,135.4L326.8,137.6L328.8,139.9L334.2,144.3L333.0,145.0L333.2,147.6L340.1,151.2L341.2,152.0Z",
+    "M270.0,152.0L270.0,160.0L263.1,160.0L263.0,161.7L239.1,154.0L215.2,146.4L209.1,148.5L204.9,150.0L201.5,147.8L192.0,146.1L189.4,143.6L184.6,141.7L181.8,142.5L179.7,140.3L179.5,138.5L175.9,135.6L178.3,134.0L177.8,131.4L178.5,129.2L178.1,127.4L179.2,124.2L178.8,122.3L176.9,118.8L179.8,117.8L180.3,116.2L179.7,114.5L183.8,113.0L185.7,111.7L188.6,110.5L188.9,107.5L196.0,108.8L198.5,108.5L203.5,109.2L211.5,110.9L214.3,114.5L219.7,115.3L228.1,116.9L234.5,118.9L237.4,117.9L240.3,116.1L238.9,113.0L240.8,111.0L245.1,109.2L249.3,108.6L257.4,109.4L259.4,111.2L261.7,111.3L263.6,111.9L269.5,112.4L271.0,113.7L268.8,115.6L269.7,117.4L268.2,119.8L270.0,123.0L270.0,137.3L270.0,152.0Z",
+    "M406.7,208.0L389.8,220.0L382.0,220.2L376.6,223.0L372.8,223.1L371.1,224.3L367.0,224.3L364.6,223.0L359.1,224.6L357.4,226.3L353.4,226.0L352.0,225.5L350.6,225.6L348.7,225.6L341.1,222.2L337.0,222.2L334.9,220.9L334.9,218.6L331.8,218.0L328.2,213.6L325.5,212.7L324.5,211.1L321.4,209.1L317.7,208.9L319.8,206.6L323.0,206.5L323.8,205.3L323.8,201.7L325.5,197.5L328.4,196.4L329.0,194.7L331.6,191.7L335.2,189.7L337.6,185.7L338.6,182.3L345.6,183.1L347.4,180.2L351.1,182.0L354.6,181.0L356.0,181.9L360.2,181.9L365.4,183.5L366.9,184.9L369.6,186.2L372.1,188.5L374.1,189.8L372.0,191.6L370.0,193.5L370.4,194.6L370.5,195.8L373.9,195.9L375.3,195.6L376.7,196.3L375.4,197.7L377.6,199.9L379.8,201.8L382.1,203.3L401.7,208.0L406.7,208.0Z",
+    "M374.1,189.8L376.7,190.2L378.5,189.2L379.9,190.4L379.7,192.1L376.3,193.1L378.9,194.2L376.7,196.3L375.3,195.6L373.9,195.9L370.5,195.8L370.4,194.6L370.0,193.5L372.0,191.6L374.1,189.8Z",
+    "M413.7,194.4L413.7,194.4L413.7,194.4L413.6,196.1L413.6,200.1L413.6,202.2L410.9,204.6L406.7,208.0L401.7,208.0L382.1,203.3L379.8,201.8L377.6,199.9L375.4,197.7L376.7,196.3L378.9,194.2L380.8,194.9L382.0,196.5L384.7,198.2L387.7,198.2L393.3,197.2L399.9,196.7L405.2,195.5L408.1,195.2L410.3,194.5L413.7,194.4L413.7,194.4Z",
+    "M323.4,243.8L311.2,244.1L304.6,244.1L302.5,244.5L298.9,245.8L297.5,245.4L297.5,242.3L298.9,240.8L299.3,237.6L300.5,235.8L302.8,233.7L305.1,232.6L307.0,231.2L304.6,230.6L305.0,226.0L305.0,226.0L307.5,224.9L311.3,225.8L316.1,224.8L320.3,224.8L324.0,223.0L326.9,225.8L327.6,227.8L330.2,232.4L328.0,235.3L325.1,237.9L323.4,239.6L323.4,243.8Z",
+    "M302.5,244.5L304.9,246.8L304.5,249.1L302.8,249.7L302.8,249.7L299.6,249.4L297.8,251.7L294.1,251.4L294.7,249.2L295.5,248.9L295.8,246.5L297.5,245.4L298.9,245.8L302.5,244.5Z",
+    "M231.4,69.4L226.0,67.9L223.8,66.2L221.5,65.3L218.7,63.8L217.4,62.6L214.5,60.7L215.8,59.1L217.9,60.0L219.2,59.2L222.0,59.1L227.2,59.7L231.3,59.7L234.0,60.6L234.0,60.6L236.2,60.5L234.7,62.3L237.6,63.8L236.7,65.7L235.3,65.9L234.2,66.3L232.2,67.2L231.4,69.4Z",
+    "M254.3,70.7L257.3,72.0L257.7,74.6L256.6,74.8L255.6,75.5L252.3,75.4L250.0,76.3L246.1,76.6L243.6,75.7L242.8,73.9L243.5,72.6L243.5,72.6L244.3,72.6L244.6,71.8L248.1,71.2L249.5,71.0L251.5,70.8L254.3,70.7Z",
+    "M233.0,56.4L233.0,56.4L237.6,55.3L241.3,55.5L244.6,57.1L245.2,58.3L248.9,59.3L249.4,60.9L252.9,62.1L254.8,61.2L256.2,61.7L254.8,62.4L255.9,63.1L254.5,64.0L255.0,65.4L257.9,67.2L255.6,68.4L254.6,69.7L255.3,70.2L254.3,70.7L251.5,70.8L249.5,71.0L249.3,70.7L250.0,70.2L250.7,69.3L249.8,69.3L248.6,68.5L247.6,68.4L246.9,67.7L245.7,67.5L244.9,66.9L243.8,67.1L243.0,68.5L241.5,68.7L242.0,68.4L239.8,67.6L237.8,67.1L236.9,66.6L235.3,65.9L236.7,65.7L237.6,63.8L234.7,62.3L236.2,60.5L234.0,60.6L234.0,60.6L236.3,59.1L234.4,57.9L233.0,56.4Z",
+    "M240.4,69.6L238.8,70.0L238.4,69.2L235.8,71.2L236.2,72.5L235.0,72.2L233.3,70.9L230.7,70.1L231.4,69.4L232.2,67.2L234.2,66.3L235.3,65.9L236.9,66.6L237.8,67.1L239.8,67.6L242.0,68.4L241.5,68.7L240.4,69.6Z",
+    "M243.5,72.6L243.1,71.1L241.7,70.7L240.4,69.6L241.5,68.7L243.0,68.5L243.8,67.1L244.9,66.9L245.7,67.5L246.9,67.7L247.6,68.4L248.6,68.5L249.8,69.3L250.7,69.3L250.0,70.2L249.3,70.7L249.5,71.0L248.1,71.2L244.6,71.8L244.3,72.6L243.5,72.6Z",
+    "M305.0,226.0L299.7,223.3L298.3,221.6L295.0,222.4L292.2,222.2L290.6,222.9L287.9,222.4L284.2,219.1L283.3,217.8L278.8,216.2L277.3,213.8L274.8,212.1L270.7,210.0L270.7,208.7L267.4,207.1L263.3,205.5L265.2,205.1L267.2,204.3L268.8,200.8L270.4,198.9L274.7,198.4L275.8,199.5L278.9,201.8L280.5,202.1L282.7,201.4L287.0,201.6L287.8,202.4L293.8,202.4L294.0,201.6L297.1,200.8L297.7,199.7L300.0,198.8L305.0,201.2L308.1,200.8L311.1,197.9L314.4,195.7L313.9,193.3L312.4,192.1L316.0,191.9L316.5,191.0L319.2,191.3L318.5,194.2L319.2,197.1L322.3,198.7L323.1,200.1L322.9,202.1L323.8,202.1L323.8,205.3L323.0,206.5L319.8,206.6L317.7,208.9L321.4,209.1L324.5,211.1L325.5,212.7L328.2,213.6L331.8,218.0L327.7,220.6L324.0,223.0L320.3,224.8L316.1,224.8L311.3,225.8L307.5,224.9L305.0,226.0Z"
+  ],
+  "methodology": "Twenty-four selected records from UNESCO and the Metropolitan Museum of Art cover political changes, learning, cities, trade and architecture from 661 to 1648 CE. Century bands use editorial numeric bounds for filtering; exact years and construction ranges retain the institution’s precision. The map uses public-domain Natural Earth land shapes with no political borders. It is regional orientation, not a map of historical sovereignty. No Quran passage is used to prove a later historical date."
+}

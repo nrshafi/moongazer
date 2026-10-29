@@ -1,0 +1,96 @@
+[
+  {
+    "id": "opening-takbir",
+    "arabic": "اللَّهُ أَكْبَرُ",
+    "sources": [
+      {
+        "label": "Sahih al-Bukhari 757",
+        "url": "https://sunnah.com/bukhari:757",
+        "kind": "Hadith report"
+      },
+      {
+        "label": "Sahih Muslim 601",
+        "url": "https://sunnah.com/muslim:601",
+        "kind": "Hadith report"
+      }
+    ]
+  },
+  {
+    "id": "bowing",
+    "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+    "sources": [
+      {
+        "label": "Sahih Muslim 772",
+        "url": "https://sunnah.com/muslim:772",
+        "kind": "Hadith report"
+      }
+    ]
+  },
+  {
+    "id": "rising",
+    "arabic": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ",
+    "sources": [
+      {
+        "label": "Sahih Muslim 772",
+        "url": "https://sunnah.com/muslim:772",
+        "kind": "Hadith report"
+      }
+    ]
+  },
+  {
+    "id": "standing-praise",
+    "arabic": "رَبَّنَا لَكَ الْحَمْدُ",
+    "sources": [
+      {
+        "label": "Sahih Muslim 772",
+        "url": "https://sunnah.com/muslim:772",
+        "kind": "Hadith report"
+      }
+    ]
+  },
+  {
+    "id": "prostration",
+    "arabic": "سُبْحَانَ رَبِّيَ الأَعْلَى",
+    "sources": [
+      {
+        "label": "Sahih Muslim 772",
+        "url": "https://sunnah.com/muslim:772",
+        "kind": "Hadith report"
+      }
+    ]
+  },
+  {
+    "id": "tashahhud",
+    "arabic": "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+    "sources": [
+      {
+        "label": "Sahih al-Bukhari 831",
+        "url": "https://sunnah.com/bukhari:831",
+        "kind": "Hadith report"
+      }
+    ]
+  },
+  {
+    "id": "blessings",
+    "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+    "sources": [
+      {
+        "label": "Sahih al-Bukhari 3370",
+        "url": "https://sunnah.com/bukhari:3370",
+        "kind": "Hadith report"
+      }
+    ]
+  },
+  {
+    "id": "closing-salam",
+    "arabic": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ",
+    "sources": [
+      {
+        "label": "Sahih Muslim 431 · Arabic institutional edition",
+        "url": "https://sunna.alifta.gov.sa/BookToc/ViewMatnPage?bookId=2&mainId=12714",
+        "kind": "Hadith report",
+        "note": "Arabic text hosted by the Saudi General Presidency of Scholarly Research and Ifta."
+      }
+    ]
+  }
+]

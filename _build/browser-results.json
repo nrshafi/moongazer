@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "quran-connections",
+    "note": "complete three rounds and restart",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "islamic-knowledge-escape-room",
+    "note": "unlock three rooms",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "interactive-seerah-timeline",
+    "note": "record selection, no-results, reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "revelation-context-explorer",
+    "note": "record selection, no-results, reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "quran-concept-atlas",
+    "note": "record selection, no-results, reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "hadith-narrator-network",
+    "note": "record selection, no-results, reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "islamic-scholars-network",
+    "note": "record selection, no-results, reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "quranic-places-atlas",
+    "note": "record selection, no-results, reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "islamic-terminology-map",
+    "note": "record selection, no-results, reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "islamic-knowledge-duels",
+    "note": "export/import asynchronous challenge and complete",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "guess-the-surah",
+    "note": "all three surahs",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "islamic-history-timeline-challenge",
+    "note": "reorder and complete three sets",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "the-1000-question-journey",
+    "note": "six-question sample complete and reset",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "stories-of-the-prophets-explorer",
+    "note": "three chapters and comprehension",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "quranic-parables-studio",
+    "note": "three diagrams and comprehension",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "everyday-akhlaq-simulator",
+    "note": "three cases and explanations",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "halal-business-decisions",
+    "note": "three cases and explanations",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "zakat-case-study-simulator",
+    "note": "asset/debt comparisons",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "conflict-resolution-scenarios",
+    "note": "three cases and explanations",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "is-this-actually-in-the-quran",
+    "note": "reference lookup and unknown claim",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "islamic-misinformation-casebook",
+    "note": "three evidence cases",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "zakat-scenario-calculator",
+    "note": "baseline and year-condition arithmetic",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "inheritance-share-learning-simulator",
+    "note": "three supported family cases",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "quran-memorization-workload-calculator",
+    "note": "baseline and budget comparison",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "islamic-concept-connections",
+    "note": "solve all term groups",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "quran-word-search",
+    "note": "solve all nine Arabic words",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "slug": "family-islamic-learning-challenges",
+    "note": "three family activities and reset",
+    "errors": [],
+    "overflow": false
+  }
+]

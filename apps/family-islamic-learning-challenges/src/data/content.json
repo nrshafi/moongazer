@@ -1,0 +1,337 @@
+{
+  "packs": [
+    {
+      "id": "names-that-care",
+      "title": "Names that care",
+      "age": "5–7",
+      "topic": "Kindness",
+      "minutes": 10,
+      "question": "What does the reading warn against?",
+      "options": [
+        "Mocking others and using hurtful nicknames.",
+        "Learning someone’s chosen name.",
+        "Speaking gently."
+      ],
+      "answer": 0,
+      "explanation": "The selected passage names ridicule and offensive nicknames.",
+      "discussion": "How could a nickname feel funny to one person and hurtful to another? Use made-up examples, without naming someone who was hurt.",
+      "activity": "Each person invents a kind greeting for a fictional new neighbor. Everyone may pass if they prefer.",
+      "close": "Choose one greeting to try together. Do not record names or personal stories.",
+      "teaching": "Al-Muyassar explains the warnings about ridicule, fault-finding and disliked names. The greeting exercise is an editorial application.",
+      "sources": [],
+      "passage": {
+        "ref": "49:11",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰٓ أَن يَكُونُوا۟ خَيْرًا مِّنْهُمْ وَلَا نِسَآءٌ مِّن نِّسَآءٍ عَسَىٰٓ أَن يَكُنَّ خَيْرًا مِّنْهُنَّ ۖ وَلَا تَلْمِزُوٓا۟ أَنفُسَكُمْ وَلَا تَنَابَزُوا۟ بِٱلْأَلْقَـٰبِ ۖ بِئْسَ ٱلِٱسْمُ ٱلْفُسُوقُ بَعْدَ ٱلْإِيمَـٰنِ ۚ وَمَن لَّمْ يَتُبْ فَأُو۟لَـٰٓئِكَ هُمُ ٱلظَّـٰلِمُونَ",
+        "translation": "O ye who believe! Let not a folk deride a folk who may be better than they (are), not let women (deride) women who may be better than they are; neither defame one another, nor insult one another by nicknames. Bad is the name of lewdness after faith. And whoso turneth not in repentance, such are evil-doers.",
+        "url": "https://quran.com/49:11",
+        "translationUrl": "https://quran.com/49:11?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/49:11/tafsirs/16"
+    },
+    {
+      "id": "thank-you",
+      "title": "A thank-you worth saying",
+      "age": "5–7",
+      "topic": "Gratitude",
+      "minutes": 10,
+      "question": "Who is mentioned alongside gratitude to Allah in this reading?",
+      "options": [
+        "A ruler.",
+        "A merchant.",
+        "Parents."
+      ],
+      "answer": 2,
+      "explanation": "The passage names parents and recalls a mother’s hardship.",
+      "discussion": "What is one ordinary kind action that is easy to overlook? You can discuss a fictional household instead of your own.",
+      "activity": "Make a spoken thank-you message for a caregiver. No craft materials, private story or sending a message is required.",
+      "close": "Each participant can say one word they want to remember.",
+      "teaching": "Al-Muyassar describes gratitude to Allah and parents. This pack does not require a child to disclose family circumstances.",
+      "sources": [],
+      "passage": {
+        "ref": "31:14",
+        "arabic": "وَوَصَّيْنَا ٱلْإِنسَـٰنَ بِوَٰلِدَيْهِ حَمَلَتْهُ أُمُّهُۥ وَهْنًا عَلَىٰ وَهْنٍ وَفِصَـٰلُهُۥ فِى عَامَيْنِ أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ إِلَىَّ ٱلْمَصِيرُ",
+        "translation": "And We have enjoined upon man concerning his parents - His mother beareth him in weakness upon weakness, and his weaning is in two years - Give thanks unto Me and unto thy parents. Unto Me is the journeying",
+        "url": "https://quran.com/31:14",
+        "translationUrl": "https://quran.com/31:14?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/31:14/tafsirs/16"
+    },
+    {
+      "id": "borrowed-book",
+      "title": "The borrowed book",
+      "age": "8–11",
+      "topic": "Trust",
+      "minutes": 12,
+      "question": "What does the reading ask about entrusted things?",
+      "options": [
+        "Hide them when they are damaged.",
+        "Return them to their owners.",
+        "Keep them if nobody asks."
+      ],
+      "answer": 1,
+      "explanation": "The selected verse includes returning trusts to those entitled to them.",
+      "discussion": "A fictional class lends out books. What should happen if a borrowed book is damaged?",
+      "activity": "Act out a short conversation returning a fictional book and honestly explaining its condition.",
+      "close": "Name one action that makes a shared library easier to trust.",
+      "teaching": "Al-Muyassar explains returning trusts and judging fairly. The library is a fictional application.",
+      "sources": [],
+      "passage": {
+        "ref": "4:58",
+        "arabic": "۞ إِنَّ ٱللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا۟ ٱلْأَمَـٰنَـٰتِ إِلَىٰٓ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ ٱلنَّاسِ أَن تَحْكُمُوا۟ بِٱلْعَدْلِ ۚ إِنَّ ٱللَّهَ نِعِمَّا يَعِظُكُم بِهِۦٓ ۗ إِنَّ ٱللَّهَ كَانَ سَمِيعًۢا بَصِيرًا",
+        "translation": "Lo! Allah commandeth you that ye restore deposits to their owners, and, if ye judge between mankind, that ye judge justly. Lo! comely is this which Allah admonisheth you. Lo! Allah is ever Hearer, Seer.",
+        "url": "https://quran.com/4:58",
+        "translationUrl": "https://quran.com/4:58?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/4:58/tafsirs/16"
+    },
+    {
+      "id": "pause-before-sharing",
+      "title": "Pause before sharing",
+      "age": "12+",
+      "topic": "Source reading",
+      "minutes": 15,
+      "question": "What action does the reading call for when the described report arrives?",
+      "options": [
+        "Check it before acting.",
+        "Forward it to everyone immediately.",
+        "Assume a vivid story must be correct."
+      ],
+      "answer": 0,
+      "explanation": "The passage warns about acting on an unchecked report and harming others.",
+      "discussion": "A fictional message says a public event was canceled. What source would actually confirm the claim?",
+      "activity": "Together list the exact claim, its original source and one independent way to verify it. Use a made-up message.",
+      "close": "Choose a simple question to ask before forwarding.",
+      "teaching": "Al-Muyassar stresses verification before believing and passing on the described report. The message checklist is editorial applied reasoning.",
+      "sources": [],
+      "passage": {
+        "ref": "49:6",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِن جَآءَكُمْ فَاسِقٌۢ بِنَبَإٍ فَتَبَيَّنُوٓا۟ أَن تُصِيبُوا۟ قَوْمًۢا بِجَهَـٰلَةٍ فَتُصْبِحُوا۟ عَلَىٰ مَا فَعَلْتُمْ نَـٰدِمِينَ",
+        "translation": "O ye who believe! If an evil-liver bring you tidings, verify it, lest ye smite some folk in ignorance and afterward repent of what ye did.",
+        "url": "https://quran.com/49:6",
+        "translationUrl": "https://quran.com/49:6?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/49:6/tafsirs/16"
+    },
+    {
+      "id": "fair-scales",
+      "title": "A fair packet",
+      "age": "8–11",
+      "topic": "Fair dealing",
+      "minutes": 12,
+      "question": "Which contrast appears in the reading?",
+      "options": [
+        "Giving and receiving the same stated amount.",
+        "Sharing an empty box.",
+        "Taking full measure but giving others less."
+      ],
+      "answer": 2,
+      "explanation": "The passage describes a double standard in measuring.",
+      "discussion": "A fictional shop promises ten counters in a bag but gives nine. Why does the label matter?",
+      "activity": "Use fingers or imagined counters to show a full bag and a short bag. Propose a fair correction without real shopping.",
+      "close": "Say one way to make a promise about quantity clear.",
+      "teaching": "Al-Muyassar explains short measure. The counter exercise applies that reading to an invented shop.",
+      "sources": [],
+      "passage": {
+        "ref": "83:1-3",
+        "arabic": "وَيْلٌ لِّلْمُطَفِّفِينَ\nٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ\nوَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+        "translation": "Woe unto the defrauders:\nThose who when they take the measure from mankind demand it full,\nBut if they measure unto them or weight for them, they cause them loss.",
+        "url": "https://quran.com/83:1-3",
+        "translationUrl": "https://quran.com/83:1-3?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/83:1/tafsirs/16"
+    },
+    {
+      "id": "welcome",
+      "title": "A thoughtful welcome",
+      "age": "5–7",
+      "topic": "Kindness",
+      "minutes": 10,
+      "question": "What does the report encourage about guests?",
+      "options": [
+        "Ignore them until they bring a gift.",
+        "Welcome them generously.",
+        "Embarrass them with difficult questions."
+      ],
+      "answer": 1,
+      "explanation": "The report pairs generous hospitality with care for neighbors and good speech.",
+      "discussion": "What might help a fictional guest feel included without spending money?",
+      "activity": "Plan a welcome using only a greeting, a place to sit and a choice to join or quietly watch.",
+      "close": "Everyone may choose a welcome phrase or pass.",
+      "teaching": "The activity is a practical suggestion inspired by the named report, not a required hospitality ritual.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurayra’s report encourages care for neighbors, hospitality and good speech."
+        }
+      ]
+    },
+    {
+      "id": "strong-pause",
+      "title": "A strong pause",
+      "age": "8–11",
+      "topic": "Self-control",
+      "minutes": 12,
+      "question": "How does the report describe strength?",
+      "options": [
+        "Controlling oneself when angry.",
+        "Winning every argument by shouting.",
+        "Never noticing any emotion."
+      ],
+      "answer": 0,
+      "explanation": "The report contrasts physical victory with self-control in anger.",
+      "discussion": "In a made-up board game, a turn feels unfair. What could a respectful pause sound like?",
+      "activity": "Practice a short phrase such as “I need a moment; can we check the rule?” Nobody must reenact a personal conflict.",
+      "close": "Choose a calm phrase to keep in mind.",
+      "teaching": "This communication exercise is editorial, not clinical advice or a promise that a phrase solves every conflict.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurayra’s report describes strength as self-control in anger."
+        }
+      ]
+    },
+    {
+      "id": "truthful-repair",
+      "title": "A truthful repair",
+      "age": "5–7",
+      "topic": "Honesty",
+      "minutes": 10,
+      "question": "Which habit does the report praise?",
+      "options": [
+        "Inventing a convenient story.",
+        "Blaming someone without knowing.",
+        "Truthfulness."
+      ],
+      "answer": 2,
+      "explanation": "The report connects truthfulness with righteousness.",
+      "discussion": "A fictional cup breaks. What is a truthful way to tell a grown-up without blaming someone else?",
+      "activity": "Take turns offering a simple honest explanation. Use imaginary events and do not handle broken objects.",
+      "close": "What makes an explanation clear and kind?",
+      "teaching": "The broken cup is a fictional practice prompt, not a test of a child’s character.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094",
+          "kind": "Primary hadith report",
+          "note": "The report distinguishes habits of truthfulness from habits of lying."
+        }
+      ]
+    },
+    {
+      "id": "teach-one",
+      "title": "Learn one, teach one",
+      "age": "8–11",
+      "topic": "Source reading",
+      "minutes": 12,
+      "question": "Which paired actions does the report praise?",
+      "options": [
+        "Speaking without learning first.",
+        "Learning the Quran and teaching it.",
+        "Counting possessions and hiding them."
+      ],
+      "answer": 1,
+      "explanation": "The report names learning and teaching the Quran together.",
+      "discussion": "What can you do if you do not know a reading well enough to teach it?",
+      "activity": "Choose a passage already known to the group, ask a capable adult to check it, and explain one clearly attributed reading detail. You may instead discuss how to find a reliable teacher.",
+      "close": "Say where you would check a word you are unsure about.",
+      "teaching": "This is a learning invitation, not a competence certificate or an automated recitation assessment.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 5027",
+          "url": "https://sunnah.com/bukhari:5027",
+          "kind": "Primary hadith report",
+          "note": "Uthman’s report praises learning the Quran and teaching it."
+        }
+      ]
+    },
+    {
+      "id": "small-kindness",
+      "title": "Kindness in an ordinary moment",
+      "age": "8–11",
+      "topic": "Kindness",
+      "minutes": 12,
+      "question": "Which pair of actions is named in the reading?",
+      "options": [
+        "Justice and kindness.",
+        "Boasting and mockery.",
+        "Guessing and spreading rumors."
+      ],
+      "answer": 0,
+      "explanation": "Pickthall’s translation names justice and kindness in the selected verse.",
+      "discussion": "A fictional group has one shared set of pencils. How could it include someone who has none?",
+      "activity": "Agree on a way to share an imaginary set fairly. Invite more than one reasonable solution.",
+      "close": "What is one detail that changed your idea?",
+      "teaching": "Al-Muyassar discusses justice and good treatment. The pencil activity is editorial reflection, not a ruling on property.",
+      "sources": [],
+      "passage": {
+        "ref": "16:90",
+        "arabic": "۞ إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَـٰنِ وَإِيتَآئِ ذِى ٱلْقُرْبَىٰ وَيَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ وَٱلْبَغْىِ ۚ يَعِظُكُمْ لَعَلَّكُمْ تَذَكَّرُونَ",
+        "translation": "Lo! Allah enjoineth justice and kindness, and giving to kinsfolk, and forbiddeth lewdness and abomination and wickedness. He exhorteth you in order that ye may take heed.",
+        "url": "https://quran.com/16:90",
+        "translationUrl": "https://quran.com/16:90?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/16:90/tafsirs/16"
+    },
+    {
+      "id": "better-words",
+      "title": "Choose better words",
+      "age": "8–11",
+      "topic": "Self-control",
+      "minutes": 12,
+      "question": "What kind of speech is requested in this reading?",
+      "options": [
+        "Whatever causes the biggest argument.",
+        "A claim nobody has checked.",
+        "The kind that is better."
+      ],
+      "answer": 2,
+      "explanation": "The passage asks Allah’s servants to speak in a better way.",
+      "discussion": "Two fictional teammates disagree about a rule. How could each state their view without insulting the other?",
+      "activity": "Offer two respectful versions of a made-up disagreement, then compare what each version makes clearer.",
+      "close": "Choose a useful opening sentence.",
+      "teaching": "Al-Muyassar explains good speech and the danger of discord. The conversation examples are editorial practice.",
+      "sources": [],
+      "passage": {
+        "ref": "17:53",
+        "arabic": "وَقُل لِّعِبَادِى يَقُولُوا۟ ٱلَّتِى هِىَ أَحْسَنُ ۚ إِنَّ ٱلشَّيْطَـٰنَ يَنزَغُ بَيْنَهُمْ ۚ إِنَّ ٱلشَّيْطَـٰنَ كَانَ لِلْإِنسَـٰنِ عَدُوًّا مُّبِينًا",
+        "translation": "Tell My bondmen to speak that which is kindlier. Lo! the devil soweth discord among them. Lo! the devil is for man an open foe.",
+        "url": "https://quran.com/17:53",
+        "translationUrl": "https://quran.com/17:53?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/17:53/tafsirs/16"
+    },
+    {
+      "id": "many-peoples",
+      "title": "Many peoples, one human family",
+      "age": "12+",
+      "topic": "Community",
+      "minutes": 15,
+      "question": "Why are peoples and tribes mentioned in the reading?",
+      "options": [
+        "To require everyone to speak one language.",
+        "So people may know one another.",
+        "To prove that ancestry alone makes someone better."
+      ],
+      "answer": 1,
+      "explanation": "The passage mentions peoples and tribes and knowing one another.",
+      "discussion": "How can curiosity about another community avoid stereotypes? Use public examples rather than anyone’s private identity.",
+      "activity": "Invent three respectful questions about a public cultural tradition, and name where you would check the answers.",
+      "close": "Name one assumption you would want to check.",
+      "teaching": "Al-Muyassar explains shared human origin and rejects ancestry as the basis of superiority. The discussion questions are editorial reflection.",
+      "sources": [],
+      "passage": {
+        "ref": "49:13",
+        "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
+        "translation": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware.",
+        "url": "https://quran.com/49:13",
+        "translationUrl": "https://quran.com/49:13?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/49:13/tafsirs/16"
+    }
+  ],
+  "methodology": "Twelve single-sitting family packs combine a source reading question, an open discussion and a shared activity. Age bands are editorial suggestions and Pickthall’s historical English may need an adult’s explanation. Open prompts have no single graded answer. Activities are original applications beyond the fetched canonical text, not scholarly rulings from quran.ai, quran.com or quran.foundation. No child names, private stories, profiles or ongoing behavior records are collected. Every participant may pass."
+}

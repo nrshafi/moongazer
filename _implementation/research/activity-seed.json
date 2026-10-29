@@ -1,0 +1,1466 @@
+{
+  "connections": [
+    {
+      "id": "patience",
+      "number": 1,
+      "theme": "Patience",
+      "refs": [
+        "2:153",
+        "16:127",
+        "103:3"
+      ],
+      "hint": "Look for how people endure difficulty.",
+      "explanation": "These passages explicitly refer to patience in worship, hardship, and mutual encouragement.",
+      "distractors": [
+        "Gratitude",
+        "Hospitality",
+        "Consultation"
+      ],
+      "anchor": "2:153"
+    },
+    {
+      "id": "gratitude",
+      "number": 2,
+      "theme": "Gratitude",
+      "refs": [
+        "14:7",
+        "31:12",
+        "2:152"
+      ],
+      "hint": "Notice the response to receiving a gift.",
+      "explanation": "Each passage mentions thankfulness, with different settings and audiences.",
+      "distractors": [
+        "Patience",
+        "Privacy",
+        "Fasting"
+      ],
+      "anchor": "14:7"
+    },
+    {
+      "id": "justice",
+      "number": 3,
+      "theme": "Justice",
+      "refs": [
+        "4:135",
+        "5:8",
+        "42:15"
+      ],
+      "hint": "What remains necessary even when feelings get in the way?",
+      "explanation": "The shared thread is justice, including situations where personal loyalties or hostility can make fairness difficult.",
+      "distractors": [
+        "Hospitality",
+        "Fasting",
+        "Creation"
+      ],
+      "anchor": "4:135"
+    },
+    {
+      "id": "giving",
+      "number": 4,
+      "theme": "Giving",
+      "refs": [
+        "2:261",
+        "2:271",
+        "76:8"
+      ],
+      "hint": "Look for something offered for another person's benefit.",
+      "explanation": "The passages describe spending, alms, or feeding others. The intended connection is giving, rather than a claim that all three describe the same situation.",
+      "distractors": [
+        "Privacy",
+        "Consultation",
+        "Time"
+      ],
+      "anchor": "2:261"
+    },
+    {
+      "id": "mercy",
+      "number": 5,
+      "theme": "Mercy",
+      "refs": [
+        "7:156",
+        "39:53",
+        "21:107"
+      ],
+      "hint": "Look for compassion that reaches beyond one situation.",
+      "explanation": "Mercy is named in each passage. The editorial connection brings together different references to Allah's mercy.",
+      "distractors": [
+        "Promises",
+        "Moderation",
+        "Time"
+      ],
+      "anchor": "7:156"
+    },
+    {
+      "id": "forgiveness",
+      "number": 6,
+      "theme": "Forgiveness",
+      "refs": [
+        "24:22",
+        "42:40",
+        "25:70"
+      ],
+      "hint": "What can follow wrongdoing besides retaliation?",
+      "explanation": "The passages discuss pardoning or repentance and forgiveness. Their contexts differ, so read the complete passages after finding the link.",
+      "distractors": [
+        "Creation",
+        "Hospitality",
+        "Fasting"
+      ],
+      "anchor": "24:22"
+    },
+    {
+      "id": "truthfulness",
+      "number": 7,
+      "theme": "Truthfulness",
+      "refs": [
+        "9:119",
+        "33:70",
+        "33:35"
+      ],
+      "hint": "Pay attention to the quality of someone's words.",
+      "explanation": "Truthfulness and upright speech connect these passages. The theme label is an editorial aid, not a replacement for commentary.",
+      "distractors": [
+        "Privacy",
+        "Consultation",
+        "Moderation"
+      ],
+      "anchor": "9:119"
+    },
+    {
+      "id": "parents",
+      "number": 8,
+      "theme": "Parents",
+      "refs": [
+        "17:23",
+        "31:14",
+        "29:8"
+      ],
+      "hint": "Which family relationship appears in every passage?",
+      "explanation": "All three passages explicitly mention parents. They address different aspects of that relationship.",
+      "distractors": [
+        "Neighbors",
+        "Hospitality",
+        "Time"
+      ],
+      "anchor": "17:23"
+    },
+    {
+      "id": "learning",
+      "number": 9,
+      "theme": "Learning",
+      "refs": [
+        "96:1-5",
+        "20:114",
+        "39:9"
+      ],
+      "hint": "Look for reading, knowing, and seeking more.",
+      "explanation": "Reading and knowledge form the intended connection. One passage is a continuous five-ayah selection.",
+      "distractors": [
+        "Giving",
+        "Moderation",
+        "Reconciliation"
+      ],
+      "anchor": "96:1"
+    },
+    {
+      "id": "trust-in-allah",
+      "number": 10,
+      "theme": "Trust in Allah",
+      "refs": [
+        "65:3",
+        "3:159",
+        "14:12"
+      ],
+      "hint": "What accompanies action when outcomes cannot be controlled?",
+      "explanation": "These passages explicitly mention placing trust in Allah in different circumstances.",
+      "distractors": [
+        "Privacy",
+        "Hospitality",
+        "Fasting"
+      ],
+      "anchor": "65:3"
+    },
+    {
+      "id": "humility",
+      "number": 11,
+      "theme": "Humility",
+      "refs": [
+        "25:63",
+        "31:18",
+        "17:37"
+      ],
+      "hint": "Notice posture and the way someone moves among others.",
+      "explanation": "The passages speak about modest conduct and avoiding arrogant behavior. This is an editorial grouping of related passages.",
+      "distractors": [
+        "Giving",
+        "Learning",
+        "Consultation"
+      ],
+      "anchor": "25:63"
+    },
+    {
+      "id": "careful-speech",
+      "number": 12,
+      "theme": "Careful speech",
+      "refs": [
+        "33:70",
+        "49:11",
+        "17:53"
+      ],
+      "hint": "Consider what is said and how it affects other people.",
+      "explanation": "Upright words, avoiding ridicule, and speaking well connect this set.",
+      "distractors": [
+        "Creation",
+        "Fasting",
+        "Time"
+      ],
+      "anchor": "33:70"
+    },
+    {
+      "id": "keeping-commitments",
+      "number": 13,
+      "theme": "Keeping commitments",
+      "refs": [
+        "17:34",
+        "5:1",
+        "16:91"
+      ],
+      "hint": "What should remain dependable after an agreement?",
+      "explanation": "Covenants and commitments are explicit in these passages. Read each in its own setting.",
+      "distractors": [
+        "Mercy",
+        "Hospitality",
+        "Privacy"
+      ],
+      "anchor": "17:34"
+    },
+    {
+      "id": "privacy",
+      "number": 14,
+      "theme": "Privacy",
+      "refs": [
+        "49:12",
+        "24:27",
+        "24:28"
+      ],
+      "hint": "Think about boundaries and permission.",
+      "explanation": "Avoiding intrusion and respecting permission connect the passages. The theme covers both personal information and entry into homes.",
+      "distractors": [
+        "Giving",
+        "Fasting",
+        "Learning"
+      ],
+      "anchor": "49:12"
+    },
+    {
+      "id": "human-relationships",
+      "number": 15,
+      "theme": "Human relationships",
+      "refs": [
+        "3:103",
+        "49:10",
+        "49:13"
+      ],
+      "hint": "Look for belonging, reconciliation, and knowing one another.",
+      "explanation": "The passages address bonds among people in distinct ways. The intended theme is relationships, not identical wording or a single shared occasion.",
+      "distractors": [
+        "Time",
+        "Moderation",
+        "Hospitality"
+      ],
+      "anchor": "3:103"
+    },
+    {
+      "id": "moderation",
+      "number": 16,
+      "theme": "Moderation",
+      "refs": [
+        "7:31",
+        "17:29",
+        "25:67"
+      ],
+      "hint": "What lies between waste and withholding?",
+      "explanation": "The passages discuss avoiding excess or balancing expenditure. They do not all address the same type of spending.",
+      "distractors": [
+        "Privacy",
+        "Learning",
+        "Reconciliation"
+      ],
+      "anchor": "7:31"
+    },
+    {
+      "id": "hope",
+      "number": 17,
+      "theme": "Hope",
+      "refs": [
+        "39:53",
+        "12:87",
+        "94:5-6"
+      ],
+      "hint": "Notice what speaks to someone facing despair or hardship.",
+      "explanation": "Hope connects the warning against despair with reassurance during difficulty. This thematic link is editorial reflection.",
+      "distractors": [
+        "Privacy",
+        "Promises",
+        "Hospitality"
+      ],
+      "anchor": "39:53"
+    },
+    {
+      "id": "time-and-effort",
+      "number": 18,
+      "theme": "Time and effort",
+      "refs": [
+        "103:1-3",
+        "94:7",
+        "62:10"
+      ],
+      "hint": "Look for how a person uses an opportunity to act.",
+      "explanation": "These selections connect time, effort, and returning to activity. This is an editorial comparison across distinct contexts.",
+      "distractors": [
+        "Hospitality",
+        "Parents",
+        "Privacy"
+      ],
+      "anchor": "103:1"
+    },
+    {
+      "id": "signs-in-creation",
+      "number": 19,
+      "theme": "Signs in creation",
+      "refs": [
+        "30:22",
+        "21:30",
+        "16:10"
+      ],
+      "hint": "Look beyond human activity to the world around us.",
+      "explanation": "The heavens, earth, human diversity, and water are presented as signs or acts of creation in these passages.",
+      "distractors": [
+        "Promises",
+        "Privacy",
+        "Forgiveness"
+      ],
+      "anchor": "30:22"
+    },
+    {
+      "id": "night-and-day",
+      "number": 20,
+      "theme": "Night and day",
+      "refs": [
+        "10:6",
+        "25:62",
+        "30:23"
+      ],
+      "hint": "Which recurring rhythms are mentioned?",
+      "explanation": "The passages explicitly mention night and day, with different observations about their alternation and use.",
+      "distractors": [
+        "Giving",
+        "Reconciliation",
+        "Parents"
+      ],
+      "anchor": "10:6"
+    },
+    {
+      "id": "prayer",
+      "number": 21,
+      "theme": "Prayer",
+      "refs": [
+        "20:14",
+        "29:45",
+        "2:43"
+      ],
+      "hint": "Look for a repeated act of worship.",
+      "explanation": "Establishing prayer is explicit in all three selections.",
+      "distractors": [
+        "Hospitality",
+        "Fasting",
+        "Privacy"
+      ],
+      "anchor": "20:14"
+    },
+    {
+      "id": "fasting",
+      "number": 22,
+      "theme": "Fasting",
+      "refs": [
+        "2:183",
+        "2:184",
+        "2:185"
+      ],
+      "hint": "These three selections are neighbors in one chapter.",
+      "explanation": "The selections come from the passage about fasting in Al-Baqarah. Their adjacent position is an additional clue.",
+      "distractors": [
+        "Hospitality",
+        "Consultation",
+        "Creation"
+      ],
+      "anchor": "2:183"
+    },
+    {
+      "id": "truth-and-falsehood",
+      "number": 23,
+      "theme": "Truth and falsehood",
+      "refs": [
+        "17:81",
+        "21:18",
+        "10:32"
+      ],
+      "hint": "Look for two opposing ideas.",
+      "explanation": "Truth and falsehood are contrasted in these passages.",
+      "distractors": [
+        "Giving",
+        "Privacy",
+        "Hospitality"
+      ],
+      "anchor": "17:81"
+    },
+    {
+      "id": "kindness",
+      "number": 24,
+      "theme": "Kindness",
+      "refs": [
+        "4:36",
+        "16:90",
+        "2:83"
+      ],
+      "hint": "Consider how people should treat those around them.",
+      "explanation": "These passages explicitly discuss good conduct or kindness alongside other instructions. The grouping does not collapse their distinct contexts.",
+      "distractors": [
+        "Fasting",
+        "Time",
+        "Creation"
+      ],
+      "anchor": "4:36"
+    },
+    {
+      "id": "orphans",
+      "number": 25,
+      "theme": "Orphans",
+      "refs": [
+        "4:10",
+        "4:2",
+        "93:9"
+      ],
+      "hint": "Who is vulnerable in each of these passages?",
+      "explanation": "Each selection explicitly concerns orphans, including treatment and property.",
+      "distractors": [
+        "Hospitality",
+        "Fasting",
+        "Consultation"
+      ],
+      "anchor": "4:10"
+    },
+    {
+      "id": "accountability",
+      "number": 26,
+      "theme": "Accountability",
+      "refs": [
+        "99:7",
+        "99:8",
+        "17:13"
+      ],
+      "hint": "Look for the relationship between a deed and its record.",
+      "explanation": "Deeds and their consequences or records connect these passages.",
+      "distractors": [
+        "Privacy",
+        "Hospitality",
+        "Parents"
+      ],
+      "anchor": "99:7"
+    },
+    {
+      "id": "consultation",
+      "number": 27,
+      "theme": "Consultation",
+      "refs": [
+        "42:38",
+        "3:159",
+        "2:233"
+      ],
+      "hint": "What can people do before settling a shared matter?",
+      "explanation": "Consultation is explicit in all three passages, in community and family settings.",
+      "distractors": [
+        "Fasting",
+        "Creation",
+        "Time"
+      ],
+      "anchor": "42:38"
+    },
+    {
+      "id": "reconciliation",
+      "number": 28,
+      "theme": "Reconciliation",
+      "refs": [
+        "49:9",
+        "49:10",
+        "4:114"
+      ],
+      "hint": "What restores a relationship after conflict?",
+      "explanation": "Making peace between people is the shared thread. The situations and instructions differ between passages.",
+      "distractors": [
+        "Learning",
+        "Fasting",
+        "Privacy"
+      ],
+      "anchor": "49:9"
+    },
+    {
+      "id": "hospitality",
+      "number": 29,
+      "theme": "Hospitality",
+      "refs": [
+        "51:24",
+        "51:26",
+        "51:27"
+      ],
+      "hint": "Follow the account of guests arriving and being offered food.",
+      "explanation": "These passages belong to the same account of Ibrahim's guests. The narrative sequence connects them.",
+      "distractors": [
+        "Fasting",
+        "Privacy",
+        "Moderation"
+      ],
+      "anchor": "51:24"
+    },
+    {
+      "id": "gentle-responses",
+      "number": 30,
+      "theme": "Gentle responses",
+      "refs": [
+        "3:159",
+        "20:44",
+        "25:63"
+      ],
+      "hint": "Look at the tone used when dealing with people.",
+      "explanation": "Gentleness, mild speech, and peaceful responses form the intended editorial connection. Each passage has its own audience and setting.",
+      "distractors": [
+        "Giving",
+        "Creation",
+        "Time"
+      ],
+      "anchor": "3:159"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "the-forwarded-screenshot",
+      "number": 1,
+      "title": "The forwarded screenshot",
+      "topic": "Online",
+      "ref": "49:6",
+      "scene": "A cropped screenshot in your class group accuses a student of cheating. Nobody has shared the original conversation. A friend asks you to forward it to another group.",
+      "prompt": "What do you do first?",
+      "options": [
+        {
+          "text": "Ask for the original source before sharing.",
+          "consequence": "You slow the spread and make room to check what happened.",
+          "constructive": true
+        },
+        {
+          "text": "Forward it with a question mark.",
+          "consequence": "A question mark does not prevent the accusation from spreading.",
+          "constructive": false
+        },
+        {
+          "text": "Publicly accuse the person who posted it of lying.",
+          "consequence": "You add a second unverified accusation to the first.",
+          "constructive": false
+        }
+      ],
+      "followup": "The original conversation shows that the screenshot left out an important sentence.",
+      "prompt2": "How do you help repair the situation?",
+      "options2": [
+        {
+          "text": "Share a clear correction wherever you shared the claim.",
+          "consequence": "A correction reaches the people who may have received the accusation.",
+          "constructive": true
+        },
+        {
+          "text": "Delete your message and say nothing.",
+          "consequence": "Deletion limits further sharing, but earlier readers may still believe the accusation.",
+          "constructive": false
+        },
+        {
+          "text": "Keep arguing about who started it.",
+          "consequence": "The argument can distract from correcting the false impression.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Verify claims before amplifying them, and make corrections visible to the same audience."
+    },
+    {
+      "id": "the-extra-marks",
+      "number": 2,
+      "title": "The extra marks",
+      "topic": "Study",
+      "ref": "9:119",
+      "scene": "Your teacher accidentally awards you five extra marks. The result moves you above a classmate. You notice the error after everyone has left.",
+      "prompt": "What is your next step?",
+      "options": [
+        {
+          "text": "Privately tell the teacher about the marking error.",
+          "consequence": "You give the teacher a chance to correct the result.",
+          "constructive": true
+        },
+        {
+          "text": "Wait to see whether anyone notices.",
+          "consequence": "The result remains misleading while you wait.",
+          "constructive": false
+        },
+        {
+          "text": "Tell your classmate to demand more marks too.",
+          "consequence": "Another incorrect score would not correct the original error.",
+          "constructive": false
+        }
+      ],
+      "followup": "The teacher thanks you and offers to review the whole paper.",
+      "prompt2": "What do you ask for?",
+      "options2": [
+        {
+          "text": "An accurate review using the same criteria as everyone else.",
+          "consequence": "You keep the focus on fairness rather than a personal reward.",
+          "constructive": true
+        },
+        {
+          "text": "Extra credit for being honest.",
+          "consequence": "The request can turn a correction into a negotiation for advantage.",
+          "constructive": false
+        },
+        {
+          "text": "A public announcement about your honesty.",
+          "consequence": "Public praise may shift attention away from an accurate result.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Honesty can involve correcting an error that benefits you."
+    },
+    {
+      "id": "a-promise-and-a-deadline",
+      "number": 3,
+      "title": "A promise and a deadline",
+      "topic": "Friendship",
+      "ref": "17:34",
+      "scene": "You promised to help a friend move on Saturday. A new project deadline now conflicts with the same time. Your friend is counting on your help.",
+      "prompt": "How do you respond?",
+      "options": [
+        {
+          "text": "Tell your friend early and discuss a realistic alternative.",
+          "consequence": "Early communication gives both of you time to make another plan.",
+          "constructive": true
+        },
+        {
+          "text": "Stay silent until Saturday morning.",
+          "consequence": "Your friend loses time to arrange help.",
+          "constructive": false
+        },
+        {
+          "text": "Say that you never made a firm promise.",
+          "consequence": "Denying a clear commitment can damage trust.",
+          "constructive": false
+        }
+      ],
+      "followup": "Your friend says they mainly need help carrying one heavy item.",
+      "prompt2": "What arrangement do you make?",
+      "options2": [
+        {
+          "text": "Offer a specific time you can actually keep, or help find another person.",
+          "consequence": "A realistic arrangement is more dependable than an uncertain assurance.",
+          "constructive": true
+        },
+        {
+          "text": "Promise the whole day again despite the deadline.",
+          "consequence": "Another unrealistic promise may repeat the problem.",
+          "constructive": false
+        },
+        {
+          "text": "Tell them they should not depend on anyone.",
+          "consequence": "That response avoids addressing the commitment you made.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Take commitments seriously, communicate conflicts early, and agree only to what you can do."
+    },
+    {
+      "id": "a-difficult-conversation-at-home",
+      "number": 4,
+      "title": "A difficult conversation at home",
+      "topic": "Family",
+      "ref": "17:23",
+      "scene": "A parent asks for help setting up their phone while you are trying to finish an assignment. You have explained the same steps several times already.",
+      "prompt": "How do you answer?",
+      "options": [
+        {
+          "text": "Speak gently and agree on a time you can give full attention.",
+          "consequence": "You acknowledge the request while explaining your time limit.",
+          "constructive": true
+        },
+        {
+          "text": "Snap that they should know this by now.",
+          "consequence": "The words may hurt even if you are tired.",
+          "constructive": false
+        },
+        {
+          "text": "Pretend you cannot hear.",
+          "consequence": "The request stays unresolved and can feel dismissive.",
+          "constructive": false
+        }
+      ],
+      "followup": "They say they need to make an important call soon.",
+      "prompt2": "What can you do now?",
+      "options2": [
+        {
+          "text": "Help with the urgent call, then return to the full setup later.",
+          "consequence": "You separate an immediate need from a task that can wait.",
+          "constructive": true
+        },
+        {
+          "text": "Rush through every setting without explaining.",
+          "consequence": "The phone may work now, but the same difficulty can return.",
+          "constructive": false
+        },
+        {
+          "text": "Take the phone away until your assignment is finished.",
+          "consequence": "That removes their access rather than addressing the urgent need.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Respectful speech and a practical boundary can coexist."
+    },
+    {
+      "id": "the-reply-you-almost-sent",
+      "number": 5,
+      "title": "The reply you almost sent",
+      "topic": "Self-control",
+      "ref": "3:134",
+      "scene": "A teammate dismisses your work in a public chat. You type an angry reply and hover over Send.",
+      "prompt": "What do you do?",
+      "options": [
+        {
+          "text": "Pause and draft a calm response after you cool down.",
+          "consequence": "You give yourself a chance to respond without escalating.",
+          "constructive": true
+        },
+        {
+          "text": "Send the harsh reply immediately.",
+          "consequence": "The conflict may spread beyond the original disagreement.",
+          "constructive": false
+        },
+        {
+          "text": "Post an unrelated embarrassing story about them.",
+          "consequence": "The response targets the person rather than the work.",
+          "constructive": false
+        }
+      ],
+      "followup": "Later, your teammate admits that their comment was careless.",
+      "prompt2": "How do you move the discussion forward?",
+      "options2": [
+        {
+          "text": "Acknowledge the apology and explain how to give useful feedback next time.",
+          "consequence": "You address the harm and suggest a clearer way to work together.",
+          "constructive": true
+        },
+        {
+          "text": "Demand that everyone choose a side.",
+          "consequence": "A wider dispute may make repair harder.",
+          "constructive": false
+        },
+        {
+          "text": "Use the apology to mock them.",
+          "consequence": "That can restart the cycle of public embarrassment.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "A pause can create room for proportionate responses and repair."
+    },
+    {
+      "id": "the-payment-sent-twice",
+      "number": 6,
+      "title": "The payment sent twice",
+      "topic": "Work",
+      "ref": "4:58",
+      "scene": "A client accidentally pays the same invoice twice. You could use the money, and the client has not noticed.",
+      "prompt": "What do you do first?",
+      "options": [
+        {
+          "text": "Tell the client and arrange a refund or documented credit.",
+          "consequence": "The client can choose how the overpayment should be handled.",
+          "constructive": true
+        },
+        {
+          "text": "Treat it as a bonus without asking.",
+          "consequence": "The payment may not reflect the client's intention.",
+          "constructive": false
+        },
+        {
+          "text": "Wait until the next invoice and quietly deduct it.",
+          "consequence": "An unexplained change leaves the accounting unclear.",
+          "constructive": false
+        }
+      ],
+      "followup": "The client asks for a refund, but bank fees will apply.",
+      "prompt2": "How do you handle the details?",
+      "options2": [
+        {
+          "text": "Explain the fees and agree on a transparent refund method.",
+          "consequence": "Both sides understand what amount will be returned and why.",
+          "constructive": true
+        },
+        {
+          "text": "Deduct an extra convenience charge without notice.",
+          "consequence": "The unexplained deduction creates a new disagreement.",
+          "constructive": false
+        },
+        {
+          "text": "Delay the refund because the fees are annoying.",
+          "consequence": "The client remains without the money they asked to recover.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Handle another person's property transparently and return what was entrusted."
+    },
+    {
+      "id": "the-noisy-evening",
+      "number": 7,
+      "title": "The noisy evening",
+      "topic": "Neighbors",
+      "ref": "4:36",
+      "scene": "Friends are visiting your flat. A neighbor knocks and explains that their child is trying to sleep before an early appointment.",
+      "prompt": "How do you respond?",
+      "options": [
+        {
+          "text": "Thank them for telling you and lower the noise.",
+          "consequence": "You can keep the visit enjoyable while reducing the disturbance.",
+          "constructive": true
+        },
+        {
+          "text": "Say that the building rules allow noise until later.",
+          "consequence": "A rule may not address the neighbor's immediate difficulty.",
+          "constructive": false
+        },
+        {
+          "text": "Make a joke about the complaint in front of everyone.",
+          "consequence": "The neighbor may feel humiliated for raising a practical concern.",
+          "constructive": false
+        }
+      ],
+      "followup": "Your friends suggest turning the music back up after the neighbor leaves.",
+      "prompt2": "What do you say?",
+      "options2": [
+        {
+          "text": "Explain the request and suggest a quieter activity.",
+          "consequence": "You make the adjustment understandable to the group.",
+          "constructive": true
+        },
+        {
+          "text": "Agree because the neighbor is no longer watching.",
+          "consequence": "The disturbance returns even though the need has not changed.",
+          "constructive": false
+        },
+        {
+          "text": "End the gathering angrily and blame the neighbor.",
+          "consequence": "Blame can turn a manageable issue into resentment.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Consider the effect of ordinary activities on people living nearby."
+    },
+    {
+      "id": "the-lunch-table-story",
+      "number": 8,
+      "title": "The lunch-table story",
+      "topic": "Friendship",
+      "ref": "49:12",
+      "scene": "At lunch, someone starts sharing a coworker's private mistake for laughs. The coworker is not present.",
+      "prompt": "How do you respond?",
+      "options": [
+        {
+          "text": "Redirect the conversation without adding details.",
+          "consequence": "You avoid increasing the person's embarrassment.",
+          "constructive": true
+        },
+        {
+          "text": "Add a similar private story.",
+          "consequence": "More details spread information the coworker did not choose to share.",
+          "constructive": false
+        },
+        {
+          "text": "Record the conversation to confront everyone later.",
+          "consequence": "Recording can create another privacy problem.",
+          "constructive": false
+        }
+      ],
+      "followup": "A friend asks why you changed the subject.",
+      "prompt2": "How do you explain?",
+      "options2": [
+        {
+          "text": "Say privately that the coworker would likely dislike the story being shared.",
+          "consequence": "You explain the concern without repeating the story.",
+          "constructive": true
+        },
+        {
+          "text": "Retell the entire story to illustrate your point.",
+          "consequence": "The explanation spreads the same private information again.",
+          "constructive": false
+        },
+        {
+          "text": "Call everyone bad people.",
+          "consequence": "A personal attack can make reflection less likely.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "A story can be true and still be an unkind disclosure."
+    },
+    {
+      "id": "the-joke-at-someone-s-expense",
+      "number": 9,
+      "title": "The joke at someone's expense",
+      "topic": "Community",
+      "ref": "49:11",
+      "scene": "A newcomer mispronounces a word during a club meeting. Others repeat the mistake as a running joke. The newcomer stops participating.",
+      "prompt": "What do you do?",
+      "options": [
+        {
+          "text": "Use their name respectfully and invite them back into the discussion.",
+          "consequence": "You make space for the person without repeating the joke.",
+          "constructive": true
+        },
+        {
+          "text": "Join the joke so the group accepts you.",
+          "consequence": "The newcomer experiences another person joining the ridicule.",
+          "constructive": false
+        },
+        {
+          "text": "Explain that they need a thicker skin.",
+          "consequence": "That response dismisses the effect of the repeated joke.",
+          "constructive": false
+        }
+      ],
+      "followup": "The organizer asks for a suggestion for the next meeting.",
+      "prompt2": "What do you suggest?",
+      "options2": [
+        {
+          "text": "Set a clear expectation against ridicule and make introductions welcoming.",
+          "consequence": "A shared expectation can reduce the chance of repetition.",
+          "constructive": true
+        },
+        {
+          "text": "Ban the newcomer from speaking until they improve.",
+          "consequence": "Exclusion addresses neither the joke nor the harm.",
+          "constructive": false
+        },
+        {
+          "text": "Name and shame every participant publicly.",
+          "consequence": "A new round of humiliation can reproduce the same pattern.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Protect people's dignity in everyday group interactions."
+    },
+    {
+      "id": "a-gift-with-a-caption",
+      "number": 10,
+      "title": "A gift with a caption",
+      "topic": "Giving",
+      "ref": "2:264",
+      "scene": "You help a friend pay for groceries. Later you consider posting a photo that identifies them and describes their financial difficulty.",
+      "prompt": "What do you do?",
+      "options": [
+        {
+          "text": "Keep their circumstances private and share a general message if useful.",
+          "consequence": "You can encourage generosity without exposing your friend.",
+          "constructive": true
+        },
+        {
+          "text": "Post the photo because you paid.",
+          "consequence": "The gift does not automatically give permission to share their circumstances.",
+          "constructive": false
+        },
+        {
+          "text": "Ask them to praise you publicly.",
+          "consequence": "A public obligation can make the support feel conditional.",
+          "constructive": false
+        }
+      ],
+      "followup": "Someone asks you for proof that you helped.",
+      "prompt2": "How do you respond?",
+      "options2": [
+        {
+          "text": "Explain that you will not disclose someone else's private circumstances.",
+          "consequence": "You protect the recipient's dignity while answering the request.",
+          "constructive": true
+        },
+        {
+          "text": "Send them the friend's messages privately.",
+          "consequence": "A smaller audience still receives private information.",
+          "constructive": false
+        },
+        {
+          "text": "Remind your friend that they owe you publicity.",
+          "consequence": "The request adds pressure after the gift.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Consider dignity and harm alongside the act of giving."
+    },
+    {
+      "id": "too-much-on-the-plate",
+      "number": 11,
+      "title": "Too much on the plate",
+      "topic": "Daily life",
+      "ref": "7:31",
+      "scene": "At a buffet, you want to try everything. You already have more food than you are likely to finish.",
+      "prompt": "What do you choose?",
+      "options": [
+        {
+          "text": "Take a small portion first and return if still hungry.",
+          "consequence": "You can enjoy the meal while reducing likely waste.",
+          "constructive": true
+        },
+        {
+          "text": "Keep adding food because it is included in the price.",
+          "consequence": "The price does not change how much you can eat.",
+          "constructive": false
+        },
+        {
+          "text": "Pressure a friend to finish your leftovers.",
+          "consequence": "The excess becomes someone else's burden.",
+          "constructive": false
+        }
+      ],
+      "followup": "There is food left at the end of the event.",
+      "prompt2": "What practical step can help?",
+      "options2": [
+        {
+          "text": "Ask the organizer about safe packing or an established food-sharing arrangement.",
+          "consequence": "A safe plan can put usable food to better use.",
+          "constructive": true
+        },
+        {
+          "text": "Give away food without checking whether it has been stored safely.",
+          "consequence": "Good intentions do not remove food-safety concerns.",
+          "constructive": false
+        },
+        {
+          "text": "Make a public accusation against the hosts.",
+          "consequence": "Blame alone does not arrange a safe use for the food.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Avoid excess and use practical judgment when reducing waste."
+    },
+    {
+      "id": "the-comment-section",
+      "number": 12,
+      "title": "The comment section",
+      "topic": "Online",
+      "ref": "17:53",
+      "scene": "A person posts a view you strongly disagree with. Other commenters are using insults, and you want to reply.",
+      "prompt": "What is your approach?",
+      "options": [
+        {
+          "text": "Address the claim calmly and ask a clear question.",
+          "consequence": "The response gives the discussion something specific to examine.",
+          "constructive": true
+        },
+        {
+          "text": "Mock the person's appearance.",
+          "consequence": "The reply leaves the claim unanswered and targets their dignity.",
+          "constructive": false
+        },
+        {
+          "text": "Repeat the most insulting comment.",
+          "consequence": "Repetition can amplify hostility rather than clarify the issue.",
+          "constructive": false
+        }
+      ],
+      "followup": "The person replies with an insult instead of an answer.",
+      "prompt2": "What do you do next?",
+      "options2": [
+        {
+          "text": "Set a boundary or leave the exchange without another insult.",
+          "consequence": "You can end an unproductive exchange without escalating it.",
+          "constructive": true
+        },
+        {
+          "text": "Search for their private information.",
+          "consequence": "That moves the dispute into an intrusion on privacy.",
+          "constructive": false
+        },
+        {
+          "text": "Invite friends to attack the account.",
+          "consequence": "A group response can multiply the harm.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "A useful response focuses on the issue and respects boundaries."
+    },
+    {
+      "id": "a-loan-between-friends",
+      "number": 13,
+      "title": "A loan between friends",
+      "topic": "Money",
+      "ref": "2:282",
+      "scene": "A friend asks to borrow money until next month. You both agree, but neither has written down the amount or repayment date.",
+      "prompt": "What do you suggest?",
+      "options": [
+        {
+          "text": "Record the agreed amount and date in a message both can confirm.",
+          "consequence": "A shared record reduces uncertainty about the agreement.",
+          "constructive": true
+        },
+        {
+          "text": "Avoid discussing the date because it feels awkward.",
+          "consequence": "The repayment expectation stays unclear.",
+          "constructive": false
+        },
+        {
+          "text": "Add a new fee later without agreement.",
+          "consequence": "Changing the arrangement afterward can create a dispute.",
+          "constructive": false
+        }
+      ],
+      "followup": "Next month, your friend asks for more time.",
+      "prompt2": "How do you approach the conversation?",
+      "options2": [
+        {
+          "text": "Discuss what is realistic and document any mutually agreed change.",
+          "consequence": "Both of you can understand the revised arrangement.",
+          "constructive": true
+        },
+        {
+          "text": "Publicly post about the debt before speaking to them.",
+          "consequence": "Public pressure may expose private circumstances.",
+          "constructive": false
+        },
+        {
+          "text": "Pretend that a different amount was originally agreed.",
+          "consequence": "An inaccurate claim damages the trust needed to resolve the debt.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Clear records support honest conversations about obligations."
+    },
+    {
+      "id": "two-friends-one-disagreement",
+      "number": 14,
+      "title": "Two friends, one disagreement",
+      "topic": "Community",
+      "ref": "49:10",
+      "scene": "Two friends ask you to take sides after a misunderstanding. Each has told you only their own version.",
+      "prompt": "What do you do first?",
+      "options": [
+        {
+          "text": "Listen fairly and ask whether they want help clarifying the misunderstanding.",
+          "consequence": "You avoid deciding before hearing the relevant accounts.",
+          "constructive": true
+        },
+        {
+          "text": "Choose the friend you have known longer.",
+          "consequence": "Length of friendship does not settle what happened.",
+          "constructive": false
+        },
+        {
+          "text": "Share both accounts widely for public voting.",
+          "consequence": "A public vote can turn a private disagreement into a spectacle.",
+          "constructive": false
+        }
+      ],
+      "followup": "Both agree to a calm conversation.",
+      "prompt2": "How do you help?",
+      "options2": [
+        {
+          "text": "Give each time to speak and identify a specific point they can resolve.",
+          "consequence": "A focused process can make repair more manageable.",
+          "constructive": true
+        },
+        {
+          "text": "Force an immediate apology before hearing the issue.",
+          "consequence": "A forced response may leave the underlying misunderstanding intact.",
+          "constructive": false
+        },
+        {
+          "text": "Promise that you can solve every part of the dispute.",
+          "consequence": "An unrealistic promise can make the process harder.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Support reconciliation with fairness, consent, and a realistic process."
+    },
+    {
+      "id": "the-lost-wallet",
+      "number": 15,
+      "title": "The lost wallet",
+      "topic": "Daily life",
+      "ref": "4:58",
+      "scene": "You find a wallet in a shared study room. A student ID is inside, along with cash.",
+      "prompt": "What is your immediate step?",
+      "options": [
+        {
+          "text": "Use the institution's lost-property process and record where it was found.",
+          "consequence": "A recognized process can help return the wallet safely.",
+          "constructive": true
+        },
+        {
+          "text": "Keep the cash as a reward.",
+          "consequence": "The owner has not agreed to that payment.",
+          "constructive": false
+        },
+        {
+          "text": "Post a photo showing all the ID details.",
+          "consequence": "The post unnecessarily exposes personal information.",
+          "constructive": false
+        }
+      ],
+      "followup": "Someone claims the wallet but cannot describe it.",
+      "prompt2": "What do you do?",
+      "options2": [
+        {
+          "text": "Let the designated staff verify ownership before handing it over.",
+          "consequence": "Verification reduces the risk of giving it to the wrong person.",
+          "constructive": true
+        },
+        {
+          "text": "Hand it over because they sound confident.",
+          "consequence": "Confidence alone does not establish ownership.",
+          "constructive": false
+        },
+        {
+          "text": "Ask them to pay you before checking.",
+          "consequence": "A payment demand does not help establish the owner.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Returning a trust includes taking reasonable care about who receives it."
+    },
+    {
+      "id": "the-newcomer-s-accent",
+      "number": 16,
+      "title": "The newcomer's accent",
+      "topic": "Community",
+      "ref": "49:13",
+      "scene": "A student from another country joins your group. Their accent is unfamiliar, and someone suggests they should avoid presenting.",
+      "prompt": "How do you respond?",
+      "options": [
+        {
+          "text": "Ask about their strengths and offer the same opportunity to contribute.",
+          "consequence": "The group can make decisions based on abilities and preferences.",
+          "constructive": true
+        },
+        {
+          "text": "Assume their accent means they understand less.",
+          "consequence": "Accent does not establish someone's knowledge.",
+          "constructive": false
+        },
+        {
+          "text": "Imitate the accent to break the ice.",
+          "consequence": "The joke may make the newcomer feel singled out.",
+          "constructive": false
+        }
+      ],
+      "followup": "The student wants to present but asks for a practice session.",
+      "prompt2": "How do you help?",
+      "options2": [
+        {
+          "text": "Offer constructive practice and ask what feedback they would find useful.",
+          "consequence": "Support follows their chosen goal rather than replacing it.",
+          "constructive": true
+        },
+        {
+          "text": "Take over the presentation without asking.",
+          "consequence": "That removes the opportunity they asked to try.",
+          "constructive": false
+        },
+        {
+          "text": "Publish a clip of the practice for laughs.",
+          "consequence": "Private practice becomes a source of public embarrassment.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Make room to know people beyond assumptions about background."
+    },
+    {
+      "id": "giving-without-a-name",
+      "number": 17,
+      "title": "Giving without a name",
+      "topic": "Giving",
+      "ref": "2:271",
+      "scene": "A community fundraiser offers the choice to display your name or contribute privately. You want to help and also encourage others.",
+      "prompt": "What do you consider?",
+      "options": [
+        {
+          "text": "Choose a method that supports the cause while respecting recipients' privacy.",
+          "consequence": "You consider both the fundraising purpose and the people affected.",
+          "constructive": true
+        },
+        {
+          "text": "Publish recipients' details to make the appeal more emotional.",
+          "consequence": "Their private circumstances become public without a clear need.",
+          "constructive": false
+        },
+        {
+          "text": "Assume that every visible donation is automatically worthless.",
+          "consequence": "That makes a sweeping judgment about other people's intentions.",
+          "constructive": false
+        }
+      ],
+      "followup": "The organizer wants to thank donors.",
+      "prompt2": "What could they publish?",
+      "options2": [
+        {
+          "text": "An agreed acknowledgment or an overall total without exposing recipients.",
+          "consequence": "The update can thank supporters and protect private details.",
+          "constructive": true
+        },
+        {
+          "text": "A ranking that labels small donors as less caring.",
+          "consequence": "The ranking makes assumptions about people's means and intentions.",
+          "constructive": false
+        },
+        {
+          "text": "Private messages from families asking for help.",
+          "consequence": "The update reveals information that was shared for assistance.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Consider purpose, consent, and dignity when deciding what to make public."
+    },
+    {
+      "id": "the-group-project-agreement",
+      "number": 18,
+      "title": "The group project agreement",
+      "topic": "Study",
+      "ref": "5:1",
+      "scene": "Your group divided a project into tasks. You finish yours, but another member is struggling and asks to change the plan.",
+      "prompt": "What do you do?",
+      "options": [
+        {
+          "text": "Discuss the request openly and agree on any changes together.",
+          "consequence": "The group can adjust expectations transparently.",
+          "constructive": true
+        },
+        {
+          "text": "Change everyone's tasks without telling them.",
+          "consequence": "People may continue working from an outdated agreement.",
+          "constructive": false
+        },
+        {
+          "text": "Delete the struggling member's name immediately.",
+          "consequence": "The response skips a conversation about what happened.",
+          "constructive": false
+        }
+      ],
+      "followup": "The group agrees to a smaller task and a new deadline.",
+      "prompt2": "What helps next?",
+      "options2": [
+        {
+          "text": "Write down the new responsibilities and check that everyone agrees.",
+          "consequence": "A shared record makes the revised plan clear.",
+          "constructive": true
+        },
+        {
+          "text": "Keep the original plan in public and the new plan private.",
+          "consequence": "Two versions can create confusion and unfair expectations.",
+          "constructive": false
+        },
+        {
+          "text": "Promise to finish every task yourself without checking your time.",
+          "consequence": "A new unrealistic commitment can repeat the problem.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Respect agreements and make changes clearly with the people affected."
+    },
+    {
+      "id": "a-tired-caregiver",
+      "number": 19,
+      "title": "A tired caregiver",
+      "topic": "Family",
+      "ref": "31:14",
+      "scene": "A family member caring for a parent looks exhausted. You have a free hour but are unsure what would actually help.",
+      "prompt": "What do you do?",
+      "options": [
+        {
+          "text": "Ask which specific task would be most helpful in the time you have.",
+          "consequence": "You offer practical support without assuming what is needed.",
+          "constructive": true
+        },
+        {
+          "text": "Tell them to manage their time better.",
+          "consequence": "The comment may overlook the work and strain involved.",
+          "constructive": false
+        },
+        {
+          "text": "Promise unlimited help that you cannot sustain.",
+          "consequence": "An open-ended promise may create an expectation you cannot meet.",
+          "constructive": false
+        }
+      ],
+      "followup": "They ask you to collect a prescription.",
+      "prompt2": "How do you handle it?",
+      "options2": [
+        {
+          "text": "Confirm the details and follow the pharmacy's instructions.",
+          "consequence": "Careful attention helps complete the practical task safely.",
+          "constructive": true
+        },
+        {
+          "text": "Choose a different medicine based on a social-media post.",
+          "consequence": "An unqualified substitution can introduce a health risk.",
+          "constructive": false
+        },
+        {
+          "text": "Share the prescription publicly to ask strangers what to do.",
+          "consequence": "That unnecessarily reveals private health information.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Small, dependable acts can support people carrying family responsibilities."
+    },
+    {
+      "id": "a-confident-answer",
+      "number": 20,
+      "title": "A confident answer",
+      "topic": "Online",
+      "ref": "17:36",
+      "scene": "A friend asks you a religious question in a chat. You remember seeing a short clip but cannot recall its source or qualifications.",
+      "prompt": "How do you answer?",
+      "options": [
+        {
+          "text": "Say what you do not know and help locate a qualified, verifiable source.",
+          "consequence": "You avoid presenting an uncertain memory as established knowledge.",
+          "constructive": true
+        },
+        {
+          "text": "Give a definite answer because hesitation looks weak.",
+          "consequence": "Confidence can hide the fact that the source has not been checked.",
+          "constructive": false
+        },
+        {
+          "text": "Invent the name of a scholar who might agree.",
+          "consequence": "An invented attribution makes the answer harder to verify.",
+          "constructive": false
+        }
+      ],
+      "followup": "You find two credible explanations addressing different circumstances.",
+      "prompt2": "What do you share?",
+      "options2": [
+        {
+          "text": "Share the sources with their circumstances and suggest qualified advice for the personal case.",
+          "consequence": "You preserve the distinctions that affect the answer.",
+          "constructive": true
+        },
+        {
+          "text": "Merge them into one definite rule of your own.",
+          "consequence": "The differences between the explanations disappear.",
+          "constructive": false
+        },
+        {
+          "text": "Choose whichever answer gets more likes.",
+          "consequence": "Popularity does not establish whether the circumstances match.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Distinguish verified knowledge, uncertainty, and personal application."
+    }
+  ]
+}

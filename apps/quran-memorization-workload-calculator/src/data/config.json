@@ -1,0 +1,7 @@
+{
+  "slug": "quran-memorization-workload-calculator",
+  "name": "Quran Memorization Workload Calculator",
+  "description": "Plan new memorization alongside a growing revision workload.",
+  "accent": "teal",
+  "port": 4326
+}

@@ -1,0 +1,301 @@
+{
+  "readings": [
+    {
+      "id": "first-reading",
+      "title": "The opening of Al-Alaq",
+      "topic": "Transmitted occasion",
+      "kind": "Transmitted occasion",
+      "passage": {
+        "ref": "96:1-5",
+        "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+        "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not.",
+        "url": "https://quran.com/96:1-5",
+        "translationUrl": "https://quran.com/96:1-5?translations=19"
+      },
+      "narrator": "Aisha",
+      "reportSummary": "Aisha’s report describes the beginning of revelation at Hira and the first reading instructions.",
+      "establishes": "The report connects these opening instructions with the encounter at Hira.",
+      "limits": "The report does not provide an exact Gregorian calendar day. It does not say the entire surah was revealed at once.",
+      "teaching": "Al-Muyassar explains these opening verses as instructions to read in the Creator’s name and mentions teaching by the pen.",
+      "commentaryUrl": "https://quran.com/96:1/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/96:1/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4953",
+          "url": "https://sunnah.com/bukhari:4953",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Aisha; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "safa-warning",
+      "title": "A warning at Safa",
+      "topic": "Transmitted occasion",
+      "kind": "Transmitted occasion",
+      "passage": {
+        "ref": "111:1-5",
+        "arabic": "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ\nمَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ\nسَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ\nوَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ\nفِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
+        "translation": "The power of Abu Lahab will perish, and he will perish.\nHis wealth and gains will not exempt him.\nHe will be plunged in flaming Fire,\nAnd his wife, the wood-carrier,\nWill have upon her neck a halter of palm-fibre.",
+        "url": "https://quran.com/111:1-5",
+        "translationUrl": "https://quran.com/111:1-5?translations=19"
+      },
+      "narrator": "Ibn Abbas",
+      "reportSummary": "Ibn Abbas describes a public warning at Safa, Abu Lahab’s hostile response and the revelation of the surah’s opening.",
+      "establishes": "The report explicitly connects the opening of Al-Masad with the response at that gathering.",
+      "limits": "Its narrative connection does not supply an exact CE year. Do not add details about every person present.",
+      "teaching": "Al-Muyassar explains the passage’s warning concerning Abu Lahab and his wife. The complete surah is shown below.",
+      "commentaryUrl": "https://quran.com/111:1/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/111:1/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4971",
+          "url": "https://sunnah.com/bukhari:4971",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Ibn Abbas; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "qiblah",
+      "title": "News of a changed direction",
+      "topic": "General context",
+      "kind": "General context",
+      "passage": {
+        "ref": "2:144",
+        "arabic": "قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِى ٱلسَّمَآءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَىٰهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ ٱلْمَسْجِدِ ٱلْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا۟ وُجُوهَكُمْ شَطْرَهُۥ ۗ وَإِنَّ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ لَيَعْلَمُونَ أَنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ ۗ وَمَا ٱللَّهُ بِغَـٰفِلٍ عَمَّا يَعْمَلُونَ",
+        "translation": "We have seen the turning of thy face to heaven (for guidance, O Muhammad). And now verily We shall make thee turn (in prayer) toward a qiblah which is dear to thee. So turn thy face toward the Inviolable Place of Worship, and ye (O Muslims), wheresoever ye may be, turn your faces (when ye pray) toward it. Lo! Those who have received the Scripture know that (this revelation) is the Truth from their Lord. And Allah is not unaware of what they do.",
+        "url": "https://quran.com/2:144",
+        "translationUrl": "https://quran.com/2:144?translations=19"
+      },
+      "narrator": "Al-Bara ibn Azib",
+      "reportSummary": "Al-Bara describes prayer toward Jerusalem for sixteen or seventeen months, then a change toward the Kaaba and news reaching another congregation.",
+      "establishes": "The report gives the practical setting and reception of the changed direction.",
+      "limits": "Keep the narrated sixteen-or-seventeen-month uncertainty. This short report is not an exhaustive catalogue of all reports about 2:144.",
+      "teaching": "Al-Muyassar identifies the new direction with Al-Masjid al-Haram in Makkah.",
+      "commentaryUrl": "https://quran.com/2:144/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/2:144/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 399",
+          "url": "https://sunnah.com/bukhari:399",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Al-Bara ibn Azib; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "safa-marwa",
+      "title": "Why “no blame” needs context",
+      "topic": "Transmitted occasion",
+      "kind": "Transmitted occasion",
+      "passage": {
+        "ref": "2:158",
+        "arabic": "۞ إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ",
+        "translation": "Lo! (the mountains) As-Safa and Al-Marwah are among the indications of Allah. It is therefore no sin for him who is on pilgrimage to the House (of Allah) or visiteth it, to go around them (as the pagan custom is). And he who doeth good of his own accord, (for him) lo! Allah is Responsive, Aware.",
+        "url": "https://quran.com/2:158",
+        "translationUrl": "https://quran.com/2:158?translations=19"
+      },
+      "narrator": "Urwa reporting Aisha",
+      "reportSummary": "Aisha corrects Urwa’s inference about omitting the walk. She connects the wording to the Ansar’s earlier association with Manat and their hesitation.",
+      "establishes": "The report explains why an isolated phrase led the questioner to a mistaken conclusion.",
+      "limits": "Other transmitted accounts emphasize different earlier practices. This selected report does not establish that every individual had identical hesitation.",
+      "teaching": "Al-Muyassar describes Safa and Marwa among the signs of worship and does not read “no blame” as permission to omit the rite.",
+      "commentaryUrl": "https://quran.com/2:158/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/2:158/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1643",
+          "url": "https://sunnah.com/bukhari:1643",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Urwa reporting Aisha; original concise paraphrase, not a quotation of the modern English translation."
+        },
+        {
+          "label": "Sahih al-Bukhari 4495",
+          "url": "https://sunnah.com/bukhari:4495",
+          "kind": "Primary hadith report",
+          "note": "A longer parallel report includes further discussion with Abu Bakr ibn Abd al-Rahman. Read it alongside Aisha’s account."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "fasting-nights",
+      "title": "An earlier restriction and a concession",
+      "topic": "Transmitted occasion",
+      "kind": "Transmitted occasion",
+      "passage": {
+        "ref": "2:187",
+        "arabic": "أُحِلَّ لَكُمْ لَيْلَةَ ٱلصِّيَامِ ٱلرَّفَثُ إِلَىٰ نِسَآئِكُمْ ۚ هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ ۗ عَلِمَ ٱللَّهُ أَنَّكُمْ كُنتُمْ تَخْتَانُونَ أَنفُسَكُمْ فَتَابَ عَلَيْكُمْ وَعَفَا عَنكُمْ ۖ فَٱلْـَٔـٰنَ بَـٰشِرُوهُنَّ وَٱبْتَغُوا۟ مَا كَتَبَ ٱللَّهُ لَكُمْ ۚ وَكُلُوا۟ وَٱشْرَبُوا۟ حَتَّىٰ يَتَبَيَّنَ لَكُمُ ٱلْخَيْطُ ٱلْأَبْيَضُ مِنَ ٱلْخَيْطِ ٱلْأَسْوَدِ مِنَ ٱلْفَجْرِ ۖ ثُمَّ أَتِمُّوا۟ ٱلصِّيَامَ إِلَى ٱلَّيْلِ ۚ وَلَا تُبَـٰشِرُوهُنَّ وَأَنتُمْ عَـٰكِفُونَ فِى ٱلْمَسَـٰجِدِ ۗ تِلْكَ حُدُودُ ٱللَّهِ فَلَا تَقْرَبُوهَا ۗ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ ءَايَـٰتِهِۦ لِلنَّاسِ لَعَلَّهُمْ يَتَّقُونَ",
+        "translation": "It is made lawful for you to go in unto your wives on the night of the fast. They are raiment for you and ye are raiment for them. Allah is Aware that ye were deceiving yourselves in this respect and He hath turned in mercy toward you and relieved you. So hold intercourse with them and seek that which Allah hath ordained for you, and eat and drink until the white thread becometh distinct to you from the black thread of the dawn. Then strictly observe the fast till nightfall and touch them not, but be at your devotions in the mosques. These are the limits imposed by Allah, so approach them not. Thus Allah expoundeth His revelation to mankind that they may ward off (evil).",
+        "url": "https://quran.com/2:187",
+        "translationUrl": "https://quran.com/2:187?translations=19"
+      },
+      "narrator": "Al-Bara",
+      "reportSummary": "Al-Bara connects the concession concerning marital relations on fasting nights with an earlier restriction and people failing to keep it.",
+      "establishes": "The report identifies a circumstance linked to the concession in the verse.",
+      "limits": "The complete verse also addresses eating, drinking and retreat in mosques. The brief report does not explain every clause by itself.",
+      "teaching": "Al-Muyassar describes the permission at night, the boundary at dawn and the restriction during mosque retreat. This is a contextual reading, not a personalized fasting ruling.",
+      "commentaryUrl": "https://quran.com/2:187/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/2:187/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4508",
+          "url": "https://sunnah.com/bukhari:4508",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Al-Bara; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "pilgrimage-trade",
+      "title": "Markets during pilgrimage",
+      "topic": "Transmitted occasion",
+      "kind": "Transmitted occasion",
+      "passage": {
+        "ref": "2:198",
+        "arabic": "لَيْسَ عَلَيْكُمْ جُنَاحٌ أَن تَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ ۚ فَإِذَآ أَفَضْتُم مِّنْ عَرَفَـٰتٍ فَٱذْكُرُوا۟ ٱللَّهَ عِندَ ٱلْمَشْعَرِ ٱلْحَرَامِ ۖ وَٱذْكُرُوهُ كَمَا هَدَىٰكُمْ وَإِن كُنتُم مِّن قَبْلِهِۦ لَمِنَ ٱلضَّآلِّينَ",
+        "translation": "It is no sin for you that ye seek the bounty of your Lord (by trading). But, when ye press on in the multitude from 'Arafat, remember Allah by the sacred monument. Remember Him as He hath guided you, although before ye were of those astray.",
+        "url": "https://quran.com/2:198",
+        "translationUrl": "https://quran.com/2:198?translations=19"
+      },
+      "narrator": "Ibn Abbas",
+      "reportSummary": "Ibn Abbas names earlier markets and reports reluctance to trade during pilgrimage, followed by revelation of the relevant wording.",
+      "establishes": "The narration explicitly links the concern about seasonal trade to the verse.",
+      "limits": "The report addresses that concern; it is not a blanket ruling about every modern transaction during Hajj.",
+      "teaching": "Al-Muyassar explains seeking provision through trade during pilgrimage and remembrance after departing Arafat.",
+      "commentaryUrl": "https://quran.com/2:198/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/2:198/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4519",
+          "url": "https://sunnah.com/bukhari:4519",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Ibn Abbas; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "beloved-garden",
+      "title": "A garden given after hearing a verse",
+      "topic": "Response after revelation",
+      "kind": "Response after revelation",
+      "passage": {
+        "ref": "3:92",
+        "arabic": "لَن تَنَالُوا۟ ٱلْبِرَّ حَتَّىٰ تُنفِقُوا۟ مِمَّا تُحِبُّونَ ۚ وَمَا تُنفِقُوا۟ مِن شَىْءٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ",
+        "translation": "Ye will not attain unto piety until ye spend of that which ye love. And whatsoever ye spend, Allah is Aware thereof.",
+        "url": "https://quran.com/3:92",
+        "translationUrl": "https://quran.com/3:92?translations=19"
+      },
+      "narrator": "Anas, through Ishaq ibn Abd Allah",
+      "reportSummary": "Anas describes Abu Talha offering his beloved garden after the verse was revealed and receiving guidance to direct it to relatives.",
+      "establishes": "The narrative demonstrates a response to revelation.",
+      "limits": "The garden offer follows revelation in the report; it should not be relabeled as the event that caused the verse to be revealed.",
+      "teaching": "Al-Muyassar explains giving from what one loves. The case illustrates a reader’s response to that teaching.",
+      "commentaryUrl": "https://quran.com/3:92/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/3:92/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1461",
+          "url": "https://sunnah.com/bukhari:1461",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Anas, through Ishaq ibn Abd Allah; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "spilled-drink",
+      "title": "Responding when news arrives",
+      "topic": "Response after revelation",
+      "kind": "Response after revelation",
+      "passage": {
+        "ref": "5:90",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِنَّمَا ٱلْخَمْرُ وَٱلْمَيْسِرُ وَٱلْأَنصَابُ وَٱلْأَزْلَـٰمُ رِجْسٌ مِّنْ عَمَلِ ٱلشَّيْطَـٰنِ فَٱجْتَنِبُوهُ لَعَلَّكُمْ تُفْلِحُونَ",
+        "translation": "O ye who believe! Strong drink and games of chance and idols and divining arrows are only an infamy of Satan's handiwork. Leave it aside in order that ye may succeed.",
+        "url": "https://quran.com/5:90",
+        "translationUrl": "https://quran.com/5:90?translations=19"
+      },
+      "narrator": "Anas ibn Malik",
+      "reportSummary": "Anas reports people pouring out their drink when a messenger brought news of its prohibition.",
+      "establishes": "The report describes how news was received and acted upon.",
+      "limits": "This account does not itself state that this gathering caused 5:90 to be revealed. The exact setting of every stage of prohibition is beyond this short report.",
+      "teaching": "Al-Muyassar includes intoxicants and gambling among the prohibited acts named in the verse.",
+      "commentaryUrl": "https://quran.com/5:90/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/5:90/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4617",
+          "url": "https://sunnah.com/bukhari:4617",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Anas ibn Malik; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "slander",
+      "title": "The report of the false accusation",
+      "topic": "Transmitted occasion",
+      "kind": "Transmitted occasion",
+      "passage": {
+        "ref": "24:11-16",
+        "arabic": "إِنَّ ٱلَّذِينَ جَآءُو بِٱلْإِفْكِ عُصْبَةٌ مِّنكُمْ ۚ لَا تَحْسَبُوهُ شَرًّا لَّكُم ۖ بَلْ هُوَ خَيْرٌ لَّكُمْ ۚ لِكُلِّ ٱمْرِئٍ مِّنْهُم مَّا ٱكْتَسَبَ مِنَ ٱلْإِثْمِ ۚ وَٱلَّذِى تَوَلَّىٰ كِبْرَهُۥ مِنْهُمْ لَهُۥ عَذَابٌ عَظِيمٌ\nلَّوْلَآ إِذْ سَمِعْتُمُوهُ ظَنَّ ٱلْمُؤْمِنُونَ وَٱلْمُؤْمِنَـٰتُ بِأَنفُسِهِمْ خَيْرًا وَقَالُوا۟ هَـٰذَآ إِفْكٌ مُّبِينٌ\nلَّوْلَا جَآءُو عَلَيْهِ بِأَرْبَعَةِ شُهَدَآءَ ۚ فَإِذْ لَمْ يَأْتُوا۟ بِٱلشُّهَدَآءِ فَأُو۟لَـٰٓئِكَ عِندَ ٱللَّهِ هُمُ ٱلْكَـٰذِبُونَ\nوَلَوْلَا فَضْلُ ٱللَّهِ عَلَيْكُمْ وَرَحْمَتُهُۥ فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ لَمَسَّكُمْ فِى مَآ أَفَضْتُمْ فِيهِ عَذَابٌ عَظِيمٌ\nإِذْ تَلَقَّوْنَهُۥ بِأَلْسِنَتِكُمْ وَتَقُولُونَ بِأَفْوَاهِكُم مَّا لَيْسَ لَكُم بِهِۦ عِلْمٌ وَتَحْسَبُونَهُۥ هَيِّنًا وَهُوَ عِندَ ٱللَّهِ عَظِيمٌ\nوَلَوْلَآ إِذْ سَمِعْتُمُوهُ قُلْتُم مَّا يَكُونُ لَنَآ أَن نَّتَكَلَّمَ بِهَـٰذَا سُبْحَـٰنَكَ هَـٰذَا بُهْتَـٰنٌ عَظِيمٌ",
+        "translation": "Lo! they who spread the slander are a gang among you. Deem it not a bad thing for you; nay, it is good for you. Unto every man of them (will be paid) that which he hath earned of the sin; and as for him among them who had the greater share therein, his will be an awful doom.\nWhy did not the believers, men and women, when ye heard it, think good of their own own folk, and say: It is a manifest untruth?\nWhy did they not produce four witnesses? Since they produce not witnesses, they verily are liars in the sight of Allah.\nHad it not been for the grace of Allah and His mercy unto you in the world and the Hereafter an awful doom had overtaken you for that whereof ye murmured.\nWhen ye welcomed it with your tongues, and uttered with your mouths that whereof ye had no knowledge, ye counted it a trifle. In the sight of Allah it is very great.\nWherefor, when ye heard it, said ye not: It is not for us to speak of this. Glory be to Thee (O Allah)! This is awful calumny.",
+        "url": "https://quran.com/24:11-16",
+        "translationUrl": "https://quran.com/24:11-16?translations=19"
+      },
+      "narrator": "Aisha",
+      "reportSummary": "Aisha’s extended account recounts the false accusation, the distress it caused and revelation concerning her innocence.",
+      "establishes": "The report ties the opening of this passage to the accusation and its resolution.",
+      "limits": "The full report is long and its relationship to particular campaign dates is debated. A precise CE year is not asserted here. The displayed verses are selected context, not the report’s whole revelation passage.",
+      "teaching": "Al-Muyassar identifies Aisha as the subject of the false accusation and explains the warning about passing on speech without knowledge.",
+      "commentaryUrl": "https://quran.com/24:11/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/24:11/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4141",
+          "url": "https://sunnah.com/bukhari:4141",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Aisha; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    },
+    {
+      "id": "raised-voices",
+      "title": "Voices in the presence of the Prophet",
+      "topic": "Transmitted occasion",
+      "kind": "Transmitted occasion",
+      "passage": {
+        "ref": "49:2",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَرْفَعُوٓا۟ أَصْوَٰتَكُمْ فَوْقَ صَوْتِ ٱلنَّبِىِّ وَلَا تَجْهَرُوا۟ لَهُۥ بِٱلْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَـٰلُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ",
+        "translation": "O ye who believe! Lift not up your voices above the voice of the Prophet, nor shout when speaking to him as ye shout one to another, lest your works be rendered vain while ye perceive not.",
+        "url": "https://quran.com/49:2",
+        "translationUrl": "https://quran.com/49:2?translations=19"
+      },
+      "narrator": "Ibn Abi Mulaika, with a report from Ibn al-Zubayr",
+      "reportSummary": "The narration describes Abu Bakr and Umar disagreeing about a recommendation when a Banu Tamim delegation arrived, their voices rising and revelation of the verse.",
+      "establishes": "The report explicitly connects that exchange with the instruction about raised voices.",
+      "limits": "A sub-narrator does not remember one recommended person’s name. Preserve that uncertainty rather than filling it from another account without attribution.",
+      "teaching": "Al-Muyassar explains the special respect due in addressing the Prophet. This is not a license to transfer every detail to an unrelated modern dispute.",
+      "commentaryUrl": "https://quran.com/49:2/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/49:2/tafsirs/14",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4845",
+          "url": "https://sunnah.com/bukhari:4845",
+          "kind": "Primary hadith report",
+          "note": "Report attributed to Ibn Abi Mulaika, with a report from Ibn al-Zubayr; original concise paraphrase, not a quotation of the modern English translation."
+        }
+      ],
+      "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
+    }
+  ],
+  "methodology": "Ten selected passages pair canonical text with a named Sahih al-Bukhari report and links to fetched Al-Muyassar and full Arabic Ibn Kathir commentary. Transmitted occasions, general context and responses after revelation are kept distinct. Reliability labels identify the collection and do not independently regrade chains. A parallel account and retained narrative uncertainties prevent the selected report being mistaken for exhaustive history. Commentary notes and report summaries are original concise English paraphrases; no modern English hadith translation is republished."
+}

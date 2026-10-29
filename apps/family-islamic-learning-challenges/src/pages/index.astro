@@ -1,0 +1,9 @@
+---
+import Shell from '../layouts/Shell.astro';
+import Filters from '../components/Filters.astro';
+import { packs } from '../data/content.json';
+const entries=packs;
+const topics=[...new Set(entries.map(item=>item.topic))];
+const ages=[...new Set(entries.map(item=>item.age))];
+---
+<Shell title="Family Islamic Learning Challenges"><section class="intro"><span class="eyebrow">Learn together, in one sitting</span><h1 class="editorial">One sitting.<br/>Something to share.</h1><p>Choose a short pack with one reading question, an open conversation and a shared activity. No names, profiles or daily streaks.</p></section><div class="evidence-band"><span>About 10–15 minutes</span><span>Everyone may pass</span><span>Print or use one shared screen</span></div><p class="bookmarks-note">Age bands are suggestions. An adult can read aloud or adapt the vocabulary. Keep examples fictional; nobody needs to share a private story.</p><Filters topics={topics} ages={ages}/><div class="collection-tools"><h2 id="entries">Choose a record</h2><button class="button secondary" id="copy-saved">Copy saved reading list</button></div><div class="card-grid">{entries.map(item=><article class="panel activity-card" data-item-id={item.id} data-search={`${item.title} ${item.topic} ${item.discussion}`} data-topic={item.topic} data-age={item.age}><span class="eyebrow">{item.topic}</span><h2><a data-reading-link={item.id} href={`/pack/${item.id}/`}>{item.title}</a></h2><p>{item.discussion}</p><span class="micro">{`${item.age} · ${item.minutes} minutes`}</span><div class="actions"><a class="button" href={`/pack/${item.id}/`}>Open pack</a><button class="button secondary" data-save={item.id} aria-pressed="false">Save for later</button></div></article>)}</div><div id="empty" class="empty" hidden><h2>No entries match</h2><p>Try fewer words, change a filter, or turn off “Saved only.”</p></div><script>import "../lib/library";</script></Shell>

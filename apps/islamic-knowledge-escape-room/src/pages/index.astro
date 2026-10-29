@@ -1,0 +1,5 @@
+---
+import Shell from '../layouts/Shell.astro';
+import {rooms} from '../data/content.json';
+---
+<Shell title="The Islamic Knowledge Escape Room"><section class="intro"><span class="eyebrow">Eight rooms. Four locks each.</span><h1>The clues are<br/>in the passages.</h1><p>Read, connect, arrange, and recognize. Choose a room for a solo challenge or work together on one device.</p></section><div class="notice bottom-gap"><p>Every room includes a source shelf. Open it whenever you need. Hints and solutions are available; this is a reading activity, not a measure of faith or religious merit.</p></div><div class="card-grid">{rooms.map((r,i)=><article class="panel activity-card"><span class="eyebrow">Room {i+1} · four locks</span><h2>{r.name}</h2><p>{r.description}</p><div class="lock-preview" aria-hidden="true">◇ — ◇ — ◇ — ◇</div><a href={`/room/${r.id}/`} class="button">Enter room ↗</a></article>)}</div></Shell><style>.lock-preview{color:var(--accent);font-size:1.5rem;letter-spacing:3px}</style>

@@ -1,0 +1,777 @@
+{
+  "events": [
+    {
+      "id": "the-first-revelation",
+      "number": 1,
+      "year": 610,
+      "date": "c. 610 CE",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "place": "Hira",
+      "title": "The first revelation",
+      "summary": "Aisha's report places the beginning of revelation in the cave of Hira, following a period of meaningful dreams and seclusion.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report supplies the setting; the CE year is conventional and approximate.",
+      "passages": [
+        {
+          "ref": "96:1-5",
+          "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+          "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not.",
+          "url": "https://quran.com/96:1-5",
+          "translationUrl": "https://quran.com/96:1-5?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "khadija-offers-reassurance",
+      "number": 2,
+      "year": 610,
+      "date": "c. 610 CE",
+      "era": "Early Makkah",
+      "topic": "Character",
+      "place": "Makkah",
+      "title": "Khadija offers reassurance",
+      "summary": "After the experience at Hira, Khadija reassured the Prophet ﷺ by recalling his care for relatives, guests, and people in difficulty.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A sequence within the first-revelation report, rather than a separately dated event.",
+      "passages": []
+    },
+    {
+      "id": "a-conversation-with-waraqa",
+      "number": 3,
+      "year": 610,
+      "date": "c. 610 CE",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "place": "Makkah",
+      "title": "A conversation with Waraqa",
+      "summary": "Khadija brought the account to Waraqa ibn Nawfal, who connected the experience with earlier revelation and anticipated opposition.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report describes the sequence without a calendar date.",
+      "passages": []
+    },
+    {
+      "id": "revelation-after-a-pause",
+      "number": 4,
+      "year": 611,
+      "date": "Early mission",
+      "era": "Early Makkah",
+      "topic": "Revelation",
+      "place": "Makkah",
+      "title": "Revelation after a pause",
+      "summary": "Jabir's report describes revelation resuming after a pause and associates the moment with the opening instructions of Al-Muddaththir.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4",
+          "url": "https://sunnah.com/bukhari:4",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Exact length of the pause and CE date are not established here.",
+      "passages": []
+    },
+    {
+      "id": "calling-the-clans-at-safa",
+      "number": 5,
+      "year": 613,
+      "date": "Early mission",
+      "era": "Early Makkah",
+      "topic": "Community",
+      "place": "Safa",
+      "title": "Calling the clans at Safa",
+      "summary": "Ibn Abbas reports that the Prophet ﷺ gathered the clans at Safa and warned them publicly. Their answer acknowledged his previous truthfulness.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Commonly placed in the early public mission; the report itself gives no CE year.",
+      "passages": []
+    },
+    {
+      "id": "khabbab-asks-for-help",
+      "number": 6,
+      "year": 615,
+      "date": "Makkan period",
+      "era": "Early Makkah",
+      "topic": "Resilience",
+      "place": "Makkah",
+      "title": "Khabbab asks for help",
+      "summary": "Khabbab recalled asking for help during persecution. The reported reply placed their suffering alongside the endurance of earlier believers.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3852",
+          "url": "https://sunnah.com/bukhari:3852",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A broad Makkan placement is used because this report does not date the exchange.",
+      "passages": []
+    },
+    {
+      "id": "abu-bakr-and-protection",
+      "number": 7,
+      "year": 616,
+      "date": "Makkan period",
+      "era": "Early Makkah",
+      "topic": "Community",
+      "place": "Makkah",
+      "title": "Abu Bakr and protection",
+      "summary": "Aisha's report describes Ibn al-Daghina offering Abu Bakr protection, disputes about public worship, and Abu Bakr later releasing him from that agreement.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The episode predates the Hijrah, but the precise CE year is not supplied.",
+      "passages": []
+    },
+    {
+      "id": "a-difficult-encounter-and-a-merciful-response",
+      "number": 8,
+      "year": 620,
+      "date": "Late Makkan period",
+      "era": "Late Makkah",
+      "topic": "Mercy",
+      "place": "Taif region",
+      "title": "A difficult encounter and a merciful response",
+      "summary": "When recalling a painful rejection, the Prophet ﷺ described declining an offer of destruction and hoping for future generations who would worship Allah.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Often associated with the Taif journey. The report names locations but gives no CE date.",
+      "passages": []
+    },
+    {
+      "id": "the-night-journey-and-ascent",
+      "number": 9,
+      "year": 621,
+      "date": "Before the Hijrah",
+      "era": "Late Makkah",
+      "topic": "Worship",
+      "place": "Makkah",
+      "title": "The Night Journey and ascent",
+      "summary": "The report of Malik ibn Sasaa describes the Night Journey and ascent, including the prescription of prayer.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3887",
+          "url": "https://sunnah.com/bukhari:3887",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The exact date is disputed. Its position here is a broad pre-Hijrah placement, not a fixed anniversary.",
+      "passages": []
+    },
+    {
+      "id": "the-pledges-at-aqabah",
+      "number": 10,
+      "year": 621.5,
+      "date": "Before the Hijrah",
+      "era": "Late Makkah",
+      "topic": "Community",
+      "place": "Aqabah",
+      "title": "The pledges at Aqabah",
+      "summary": "Ubada ibn al-Samit is identified as an Aqabah participant and reports a pledge covering worship and conduct.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 18",
+          "url": "https://sunnah.com/bukhari:18",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "This report identifies a participant and a pledge; it does not by itself establish every detail of the two Aqabah meetings.",
+      "passages": []
+    },
+    {
+      "id": "the-cave-during-the-migration",
+      "number": 11,
+      "year": 622,
+      "date": "1 AH · c. 622 CE",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "place": "Near Makkah",
+      "title": "The cave during the migration",
+      "summary": "Abu Bakr recalls concern that pursuers might see them in the cave and the Prophet's reassurance. Quran 9:40 also refers to the two in the cave.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The Hijrah is conventionally dated to 622 CE. The report quoted here does not name the cave.",
+      "passages": [
+        {
+          "ref": "9:40",
+          "arabic": "إِلَّا تَنصُرُوهُ فَقَدْ نَصَرَهُ ٱللَّهُ إِذْ أَخْرَجَهُ ٱلَّذِينَ كَفَرُوا۟ ثَانِىَ ٱثْنَيْنِ إِذْ هُمَا فِى ٱلْغَارِ إِذْ يَقُولُ لِصَـٰحِبِهِۦ لَا تَحْزَنْ إِنَّ ٱللَّهَ مَعَنَا ۖ فَأَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَيْهِ وَأَيَّدَهُۥ بِجُنُودٍ لَّمْ تَرَوْهَا وَجَعَلَ كَلِمَةَ ٱلَّذِينَ كَفَرُوا۟ ٱلسُّفْلَىٰ ۗ وَكَلِمَةُ ٱللَّهِ هِىَ ٱلْعُلْيَا ۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
+          "translation": "If ye help him not, still Allah helped him when those who disbelieve drove him forth, the second of two; when they two were in the cave, when he said unto his comrade: Grieve not. Lo! Allah is with us. Then Allah caused His peace of reassurance to descend upon him and supported him with hosts ye cannot see, and made the word of those who disbelieved the nethermost, while Allah's Word it was that became the uppermost. Allah is Mighty, Wise.",
+          "url": "https://quran.com/9:40",
+          "translationUrl": "https://quran.com/9:40?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "suraqa-on-the-route",
+      "number": 12,
+      "year": 622.1,
+      "date": "1 AH · c. 622 CE",
+      "era": "Hijrah",
+      "topic": "Migration",
+      "place": "Migration route",
+      "title": "Suraqa on the route",
+      "summary": "Suraqa's account describes pursuing the travelers, his horse stumbling, and his eventual request for a written assurance of safety.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3906",
+          "url": "https://sunnah.com/bukhari:3906",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report supplies the episode; this schematic view does not reconstruct the exact route.",
+      "passages": []
+    },
+    {
+      "id": "arrival-among-banu-amr-ibn-awf",
+      "number": 13,
+      "year": 622.2,
+      "date": "1 AH · c. 622 CE",
+      "era": "Hijrah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "Arrival among Banu Amr ibn Awf",
+      "summary": "Anas reports an initial stay among Banu Amr ibn Awf, followed by a welcome from Banu al-Najjar and arrival at Abu Ayyub's courtyard.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Relative sequence is clearer than an exact Gregorian day.",
+      "passages": []
+    },
+    {
+      "id": "building-the-mosque",
+      "number": 14,
+      "year": 622.3,
+      "date": "1 AH · c. 622 CE",
+      "era": "Early Madinah",
+      "topic": "Worship",
+      "place": "Madinah",
+      "title": "Building the mosque",
+      "summary": "Anas describes preparing a site for the mosque in Madinah and the community's involvement in the work.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Shown after arrival. The cited report is the evidence for the construction episode.",
+      "passages": []
+    },
+    {
+      "id": "brotherhood-and-a-market",
+      "number": 15,
+      "year": 622.4,
+      "date": "Early Madinan period",
+      "era": "Early Madinah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "Brotherhood and a market",
+      "summary": "The report pairs Abd al-Rahman ibn Awf with Sad ibn al-Rabi. It records Sad's generous offer and Abd al-Rahman's request to be shown the market.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3780",
+          "url": "https://sunnah.com/bukhari:3780",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report places the episode after the emigrants reached Madinah; no exact date is supplied.",
+      "passages": []
+    },
+    {
+      "id": "the-change-of-qiblah",
+      "number": 16,
+      "year": 624,
+      "date": "2 AH · c. 624 CE",
+      "era": "Early Madinah",
+      "topic": "Worship",
+      "place": "Madinah",
+      "title": "The change of qiblah",
+      "summary": "Al-Bara reports prayer toward Jerusalem for sixteen or seventeen months, followed by the change toward the Kaaba.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 399",
+          "url": "https://sunnah.com/bukhari:399",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The narrator preserves a sixteen-or-seventeen-month uncertainty; the app keeps that uncertainty.",
+      "passages": [
+        {
+          "ref": "2:144",
+          "arabic": "قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِى ٱلسَّمَآءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَىٰهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ ٱلْمَسْجِدِ ٱلْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا۟ وُجُوهَكُمْ شَطْرَهُۥ ۗ وَإِنَّ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ لَيَعْلَمُونَ أَنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ ۗ وَمَا ٱللَّهُ بِغَـٰفِلٍ عَمَّا يَعْمَلُونَ",
+          "translation": "We have seen the turning of thy face to heaven (for guidance, O Muhammad). And now verily We shall make thee turn (in prayer) toward a qiblah which is dear to thee. So turn thy face toward the Inviolable Place of Worship, and ye (O Muslims), wheresoever ye may be, turn your faces (when ye pray) toward it. Lo! Those who have received the Scripture know that (this revelation) is the Truth from their Lord. And Allah is not unaware of what they do.",
+          "url": "https://quran.com/2:144",
+          "translationUrl": "https://quran.com/2:144?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "supplication-at-badr",
+      "number": 17,
+      "year": 624.2,
+      "date": "2 AH · c. 624 CE",
+      "era": "Early Madinah",
+      "topic": "Expeditions",
+      "place": "Badr",
+      "title": "Supplication at Badr",
+      "summary": "Ibn Abbas reports the Prophet's earnest supplication at Badr and Abu Bakr's presence. Quran 3:123 explicitly names Badr.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3953",
+          "url": "https://sunnah.com/bukhari:3953",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional year is a chronology aid. The report is cited for the supplication, not a complete battle narrative.",
+      "passages": [
+        {
+          "ref": "3:123",
+          "arabic": "وَلَقَدْ نَصَرَكُمُ ٱللَّهُ بِبَدْرٍ وَأَنتُمْ أَذِلَّةٌ ۖ فَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تَشْكُرُونَ",
+          "translation": "Allah had already given you the victory at Badr, when ye were contemptible. So observe your duty to Allah in order that ye may be thankful.",
+          "url": "https://quran.com/3:123",
+          "translationUrl": "https://quran.com/3:123?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "the-archers-at-uhud",
+      "number": 18,
+      "year": 625,
+      "date": "3 AH · c. 625 CE",
+      "era": "Early Madinah",
+      "topic": "Expeditions",
+      "place": "Uhud",
+      "title": "The archers at Uhud",
+      "summary": "Al-Bara describes the instructions given to the archers under Abdullah ibn Jubayr and the consequences of leaving their position.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3039",
+          "url": "https://sunnah.com/bukhari:3039",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional year is approximate in CE terms; details follow the named report.",
+      "passages": []
+    },
+    {
+      "id": "a-report-on-the-retreat",
+      "number": 19,
+      "year": 625.1,
+      "date": "3 AH · c. 625 CE",
+      "era": "Early Madinah",
+      "topic": "Expeditions",
+      "place": "Uhud",
+      "title": "A report on the retreat",
+      "summary": "A second report from Al-Bara identifies the archers' commander and recalls the retreat during Uhud.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4067",
+          "url": "https://sunnah.com/bukhari:4067",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A separate report about the same battle, not another battle or an independently dated event.",
+      "passages": []
+    },
+    {
+      "id": "digging-the-trench",
+      "number": 20,
+      "year": 627,
+      "date": "5 AH · c. 627 CE",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "Digging the trench",
+      "summary": "Anas recalls the emigrants and helpers carrying earth while digging the trench, with hunger and difficult food supplies during the work.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4100",
+          "url": "https://sunnah.com/bukhari:4100",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The trench campaign is conventionally placed in 5 AH; the cited report describes the labor.",
+      "passages": []
+    },
+    {
+      "id": "the-account-of-the-slander",
+      "number": 21,
+      "year": 627.2,
+      "date": "Madinan period · date debated",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "The account of the slander",
+      "summary": "Aisha's extended report recounts the false accusation against her and the distress and eventual resolution that followed.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4141",
+          "url": "https://sunnah.com/bukhari:4141",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Its relation to some campaigns is debated. Placement in this band is approximate, not a claim of a precise year.",
+      "passages": []
+    },
+    {
+      "id": "the-journey-to-hudaybiyah",
+      "number": 22,
+      "year": 628,
+      "date": "6 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Treaties",
+      "place": "Hudaybiyah",
+      "title": "The journey to Hudaybiyah",
+      "summary": "Al-Miswar and Marwan's account describes a journey intended for Umrah, negotiations with Quraysh, and the eventual agreement.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Conventional 6 AH placement. The linked report contains the detailed sequence.",
+      "passages": []
+    },
+    {
+      "id": "the-pledge-beneath-the-tree",
+      "number": 23,
+      "year": 628.1,
+      "date": "6 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Treaties",
+      "place": "Hudaybiyah",
+      "title": "The pledge beneath the tree",
+      "summary": "Jabir recalls the group at Hudaybiyah and identifies the tree associated with the pledge. Quran 48:18 explicitly mentions the pledge beneath a tree.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4154",
+          "url": "https://sunnah.com/bukhari:4154",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Jabir gives a group count in this report. Other transmitted counts should not be silently harmonized.",
+      "passages": [
+        {
+          "ref": "48:18",
+          "arabic": "۞ لَّقَدْ رَضِىَ ٱللَّهُ عَنِ ٱلْمُؤْمِنِينَ إِذْ يُبَايِعُونَكَ تَحْتَ ٱلشَّجَرَةِ فَعَلِمَ مَا فِى قُلُوبِهِمْ فَأَنزَلَ ٱلسَّكِينَةَ عَلَيْهِمْ وَأَثَـٰبَهُمْ فَتْحًا قَرِيبًا",
+          "translation": "Allah was well pleased with the believers when they swore allegiance unto thee beneath the tree, and He knew what was in their hearts, and He sent down peace of reassurance on them, and hath rewarded them with a near victory;",
+          "url": "https://quran.com/48:18",
+          "translationUrl": "https://quran.com/48:18?translations=19"
+        }
+      ]
+    },
+    {
+      "id": "negotiating-the-written-agreement",
+      "number": 24,
+      "year": 628.2,
+      "date": "6 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Treaties",
+      "place": "Hudaybiyah",
+      "title": "Negotiating the written agreement",
+      "summary": "The Hudaybiyah account records negotiations and the writing of treaty terms. Its difficult concessions form part of the report's sequence.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A detail of the same treaty episode, not a separate treaty.",
+      "passages": []
+    },
+    {
+      "id": "the-banner-at-khaybar",
+      "number": 25,
+      "year": 628.4,
+      "date": "7 AH · c. 628 CE",
+      "era": "Later Madinah",
+      "topic": "Expeditions",
+      "place": "Khaybar",
+      "title": "The banner at Khaybar",
+      "summary": "Sahl ibn Sad reports the announcement about the banner at Khaybar and its being given to Ali ibn Abi Talib.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4210",
+          "url": "https://sunnah.com/bukhari:4210",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional year is shown; the linked report supports the banner episode.",
+      "passages": []
+    },
+    {
+      "id": "a-letter-and-questions-from-heraclius",
+      "number": 26,
+      "year": 628.5,
+      "date": "After Hudaybiyah",
+      "era": "Later Madinah",
+      "topic": "Diplomacy",
+      "place": "Outside Arabia",
+      "title": "A letter and questions from Heraclius",
+      "summary": "Abu Sufyan's account describes Heraclius questioning him during the truce with Quraysh and a letter from the Prophet ﷺ.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 7",
+          "url": "https://sunnah.com/bukhari:7",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report explicitly situates the exchange during the truce. The CE placement is approximate.",
+      "passages": []
+    },
+    {
+      "id": "the-return-for-umrah",
+      "number": 27,
+      "year": 629,
+      "date": "7 AH · c. 629 CE",
+      "era": "Later Madinah",
+      "topic": "Worship",
+      "place": "Makkah",
+      "title": "The return for Umrah",
+      "summary": "Al-Bara's report describes the agreement for a later visit to Makkah and a stay of three days under its terms.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4251",
+          "url": "https://sunnah.com/bukhari:4251",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report links the visit to the agreement; its conventional chronology is 7 AH.",
+      "passages": []
+    },
+    {
+      "id": "the-approach-to-makkah",
+      "number": 28,
+      "year": 630,
+      "date": "8 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Community",
+      "place": "Makkah",
+      "title": "The approach to Makkah",
+      "summary": "The report describes the approach during the year of the conquest and Abu Sufyan's encounter with the Muslim camp.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4280",
+          "url": "https://sunnah.com/bukhari:4280",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The year of the conquest is explicit in the report. CE conversion is approximate.",
+      "passages": []
+    },
+    {
+      "id": "the-kaaba-at-the-conquest",
+      "number": 29,
+      "year": 630.1,
+      "date": "8 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Worship",
+      "place": "Makkah",
+      "title": "The Kaaba at the conquest",
+      "summary": "Abdullah reports the removal of idols around the Kaaba when the Prophet ﷺ entered Makkah.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4287",
+          "url": "https://sunnah.com/bukhari:4287",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "A detail of the conquest episode. No depictions of the Prophet are used.",
+      "passages": []
+    },
+    {
+      "id": "steadfastness-at-hunayn",
+      "number": 30,
+      "year": 630.2,
+      "date": "8 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Expeditions",
+      "place": "Hunayn",
+      "title": "Steadfastness at Hunayn",
+      "summary": "Al-Bara reports that the Prophet ﷺ did not flee at Hunayn, while some people hurried away under the opposing archers' attack.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4315",
+          "url": "https://sunnah.com/bukhari:4315",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The conventional placement follows the conquest; the report supports this specific observation.",
+      "passages": []
+    },
+    {
+      "id": "the-expedition-to-tabuk",
+      "number": 31,
+      "year": 630.6,
+      "date": "9 AH · c. 630 CE",
+      "era": "Later Madinah",
+      "topic": "Expeditions",
+      "place": "Tabuk",
+      "title": "The expedition to Tabuk",
+      "summary": "Kab ibn Malik's account describes his failure to join the expedition to Tabuk and the circumstances that followed.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Shown in the conventional 9 AH band. Read the complete report for its longer sequence.",
+      "passages": []
+    },
+    {
+      "id": "kab-ibn-malik-tells-the-truth",
+      "number": 32,
+      "year": 630.7,
+      "date": "After Tabuk",
+      "era": "Later Madinah",
+      "topic": "Character",
+      "place": "Madinah",
+      "title": "Kab ibn Malik tells the truth",
+      "summary": "Kab's account contrasts his truthful admission with the excuses he might have offered and recounts the eventual acceptance of repentance.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Part of the same report as Tabuk. Its relative sequence is more important here than an exact CE day.",
+      "passages": []
+    },
+    {
+      "id": "announcements-during-abu-bakr-s-hajj",
+      "number": 33,
+      "year": 631,
+      "date": "9 AH · c. 631 CE",
+      "era": "Later Madinah",
+      "topic": "Worship",
+      "place": "Mina",
+      "title": "Announcements during Abu Bakr's Hajj",
+      "summary": "Abu Hurayra recalls being sent among the announcers at the Hajj led by Abu Bakr. The report also mentions Ali reciting Baraah.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4655",
+          "url": "https://sunnah.com/bukhari:4655",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "Conventionally placed in 9 AH, before the Prophet's Farewell Hajj.",
+      "passages": []
+    },
+    {
+      "id": "the-farewell-hajj",
+      "number": 34,
+      "year": 632,
+      "date": "10 AH · 632 CE",
+      "era": "Final year",
+      "topic": "Worship",
+      "place": "Arafat",
+      "title": "The Farewell Hajj",
+      "summary": "Jabir's long report describes the announced pilgrimage in the tenth year, its journey, rites, and the address at Arafat.",
+      "sources": [
+        {
+          "label": "Sahih Muslim 1218a",
+          "url": "https://sunnah.com/muslim:1218a",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The report explicitly identifies the tenth year in Madinah. Individual Gregorian date conversions are not asserted.",
+      "passages": []
+    },
+    {
+      "id": "conveying-the-message",
+      "number": 35,
+      "year": 632.1,
+      "date": "10 AH · 632 CE",
+      "era": "Final year",
+      "topic": "Community",
+      "place": "Mina",
+      "title": "Conveying the message",
+      "summary": "Abu Bakra reports an address on the Day of Nahr emphasizing the sanctity of life and property and conveying the message to those absent.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1741",
+          "url": "https://sunnah.com/bukhari:1741",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "This report concerns the address at Mina; it is not silently merged with every other Farewell Hajj sermon.",
+      "passages": []
+    },
+    {
+      "id": "the-death-of-the-prophet",
+      "number": 36,
+      "year": 632.5,
+      "date": "11 AH · 632 CE",
+      "era": "Final year",
+      "topic": "Community",
+      "place": "Madinah",
+      "title": "The death of the Prophet ﷺ",
+      "summary": "Aisha describes his final moments in her home. Another report records Abu Bakr addressing the community afterward and reciting Quran 3:144.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4449",
+          "url": "https://sunnah.com/bukhari:4449",
+          "kind": "Hadith report"
+        },
+        {
+          "label": "Sahih al-Bukhari 4452",
+          "url": "https://sunnah.com/bukhari:4452",
+          "kind": "Hadith report"
+        }
+      ],
+      "uncertainty": "The year is conventional. The report supports the setting of the final moments; see the additional report for the community response.",
+      "passages": [
+        {
+          "ref": "3:144",
+          "arabic": "وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ قَدْ خَلَتْ مِن قَبْلِهِ ٱلرُّسُلُ ۚ أَفَإِي۟ن مَّاتَ أَوْ قُتِلَ ٱنقَلَبْتُمْ عَلَىٰٓ أَعْقَـٰبِكُمْ ۚ وَمَن يَنقَلِبْ عَلَىٰ عَقِبَيْهِ فَلَن يَضُرَّ ٱللَّهَ شَيْـًٔا ۗ وَسَيَجْزِى ٱللَّهُ ٱلشَّـٰكِرِينَ",
+          "translation": "Muhammad is but a messenger, messengers (the like of whom) have passed away before him. Will it be that, when he dieth or is slain, ye will turn back on your heels? He who turneth back on his heels doth no hurt to Allah, and Allah will reward the thankful.",
+          "url": "https://quran.com/3:144",
+          "translationUrl": "https://quran.com/3:144?translations=19"
+        }
+      ]
+    }
+  ]
+}

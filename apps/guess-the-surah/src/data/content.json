@@ -1,0 +1,1830 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "name_arabic": "الفاتحة",
+      "name_simple": "Al-Fatihah",
+      "revelation_place": "makkah",
+      "revelation_order": 5,
+      "verses_count": 7,
+      "bismillah_pre": false
+    },
+    {
+      "number": 2,
+      "name_arabic": "البقرة",
+      "name_simple": "Al-Baqarah",
+      "revelation_place": "madinah",
+      "revelation_order": 87,
+      "verses_count": 286,
+      "bismillah_pre": true
+    },
+    {
+      "number": 3,
+      "name_arabic": "آل عمران",
+      "name_simple": "Ali 'Imran",
+      "revelation_place": "madinah",
+      "revelation_order": 89,
+      "verses_count": 200,
+      "bismillah_pre": true
+    },
+    {
+      "number": 4,
+      "name_arabic": "النساء",
+      "name_simple": "An-Nisa",
+      "revelation_place": "madinah",
+      "revelation_order": 92,
+      "verses_count": 176,
+      "bismillah_pre": true
+    },
+    {
+      "number": 5,
+      "name_arabic": "المائدة",
+      "name_simple": "Al-Ma'idah",
+      "revelation_place": "madinah",
+      "revelation_order": 112,
+      "verses_count": 120,
+      "bismillah_pre": true
+    },
+    {
+      "number": 6,
+      "name_arabic": "الأنعام",
+      "name_simple": "Al-An'am",
+      "revelation_place": "makkah",
+      "revelation_order": 55,
+      "verses_count": 165,
+      "bismillah_pre": true
+    },
+    {
+      "number": 7,
+      "name_arabic": "الأعراف",
+      "name_simple": "Al-A'raf",
+      "revelation_place": "makkah",
+      "revelation_order": 39,
+      "verses_count": 206,
+      "bismillah_pre": true
+    },
+    {
+      "number": 8,
+      "name_arabic": "الأنفال",
+      "name_simple": "Al-Anfal",
+      "revelation_place": "madinah",
+      "revelation_order": 88,
+      "verses_count": 75,
+      "bismillah_pre": true
+    },
+    {
+      "number": 9,
+      "name_arabic": "التوبة",
+      "name_simple": "At-Tawbah",
+      "revelation_place": "madinah",
+      "revelation_order": 113,
+      "verses_count": 129,
+      "bismillah_pre": false
+    },
+    {
+      "number": 10,
+      "name_arabic": "يونس",
+      "name_simple": "Yunus",
+      "revelation_place": "makkah",
+      "revelation_order": 51,
+      "verses_count": 109,
+      "bismillah_pre": true
+    },
+    {
+      "number": 11,
+      "name_arabic": "هود",
+      "name_simple": "Hud",
+      "revelation_place": "makkah",
+      "revelation_order": 52,
+      "verses_count": 123,
+      "bismillah_pre": true
+    },
+    {
+      "number": 12,
+      "name_arabic": "يوسف",
+      "name_simple": "Yusuf",
+      "revelation_place": "makkah",
+      "revelation_order": 53,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 13,
+      "name_arabic": "الرعد",
+      "name_simple": "Ar-Ra'd",
+      "revelation_place": "madinah",
+      "revelation_order": 96,
+      "verses_count": 43,
+      "bismillah_pre": true
+    },
+    {
+      "number": 14,
+      "name_arabic": "ابراهيم",
+      "name_simple": "Ibrahim",
+      "revelation_place": "makkah",
+      "revelation_order": 72,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 15,
+      "name_arabic": "الحجر",
+      "name_simple": "Al-Hijr",
+      "revelation_place": "makkah",
+      "revelation_order": 54,
+      "verses_count": 99,
+      "bismillah_pre": true
+    },
+    {
+      "number": 16,
+      "name_arabic": "النحل",
+      "name_simple": "An-Nahl",
+      "revelation_place": "makkah",
+      "revelation_order": 70,
+      "verses_count": 128,
+      "bismillah_pre": true
+    },
+    {
+      "number": 17,
+      "name_arabic": "الإسراء",
+      "name_simple": "Al-Isra",
+      "revelation_place": "makkah",
+      "revelation_order": 50,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 18,
+      "name_arabic": "الكهف",
+      "name_simple": "Al-Kahf",
+      "revelation_place": "makkah",
+      "revelation_order": 69,
+      "verses_count": 110,
+      "bismillah_pre": true
+    },
+    {
+      "number": 19,
+      "name_arabic": "مريم",
+      "name_simple": "Maryam",
+      "revelation_place": "makkah",
+      "revelation_order": 44,
+      "verses_count": 98,
+      "bismillah_pre": true
+    },
+    {
+      "number": 20,
+      "name_arabic": "طه",
+      "name_simple": "Taha",
+      "revelation_place": "makkah",
+      "revelation_order": 45,
+      "verses_count": 135,
+      "bismillah_pre": true
+    },
+    {
+      "number": 21,
+      "name_arabic": "الأنبياء",
+      "name_simple": "Al-Anbya",
+      "revelation_place": "makkah",
+      "revelation_order": 73,
+      "verses_count": 112,
+      "bismillah_pre": true
+    },
+    {
+      "number": 22,
+      "name_arabic": "الحج",
+      "name_simple": "Al-Hajj",
+      "revelation_place": "madinah",
+      "revelation_order": 103,
+      "verses_count": 78,
+      "bismillah_pre": true
+    },
+    {
+      "number": 23,
+      "name_arabic": "المؤمنون",
+      "name_simple": "Al-Mu'minun",
+      "revelation_place": "makkah",
+      "revelation_order": 74,
+      "verses_count": 118,
+      "bismillah_pre": true
+    },
+    {
+      "number": 24,
+      "name_arabic": "النور",
+      "name_simple": "An-Nur",
+      "revelation_place": "madinah",
+      "revelation_order": 102,
+      "verses_count": 64,
+      "bismillah_pre": true
+    },
+    {
+      "number": 25,
+      "name_arabic": "الفرقان",
+      "name_simple": "Al-Furqan",
+      "revelation_place": "makkah",
+      "revelation_order": 42,
+      "verses_count": 77,
+      "bismillah_pre": true
+    },
+    {
+      "number": 26,
+      "name_arabic": "الشعراء",
+      "name_simple": "Ash-Shu'ara",
+      "revelation_place": "makkah",
+      "revelation_order": 47,
+      "verses_count": 227,
+      "bismillah_pre": true
+    },
+    {
+      "number": 27,
+      "name_arabic": "النمل",
+      "name_simple": "An-Naml",
+      "revelation_place": "makkah",
+      "revelation_order": 48,
+      "verses_count": 93,
+      "bismillah_pre": true
+    },
+    {
+      "number": 28,
+      "name_arabic": "القصص",
+      "name_simple": "Al-Qasas",
+      "revelation_place": "makkah",
+      "revelation_order": 49,
+      "verses_count": 88,
+      "bismillah_pre": true
+    },
+    {
+      "number": 29,
+      "name_arabic": "العنكبوت",
+      "name_simple": "Al-'Ankabut",
+      "revelation_place": "makkah",
+      "revelation_order": 85,
+      "verses_count": 69,
+      "bismillah_pre": true
+    },
+    {
+      "number": 30,
+      "name_arabic": "الروم",
+      "name_simple": "Ar-Rum",
+      "revelation_place": "makkah",
+      "revelation_order": 84,
+      "verses_count": 60,
+      "bismillah_pre": true
+    },
+    {
+      "number": 31,
+      "name_arabic": "لقمان",
+      "name_simple": "Luqman",
+      "revelation_place": "makkah",
+      "revelation_order": 57,
+      "verses_count": 34,
+      "bismillah_pre": true
+    },
+    {
+      "number": 32,
+      "name_arabic": "السجدة",
+      "name_simple": "As-Sajdah",
+      "revelation_place": "makkah",
+      "revelation_order": 75,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 33,
+      "name_arabic": "الأحزاب",
+      "name_simple": "Al-Ahzab",
+      "revelation_place": "madinah",
+      "revelation_order": 90,
+      "verses_count": 73,
+      "bismillah_pre": true
+    },
+    {
+      "number": 34,
+      "name_arabic": "سبإ",
+      "name_simple": "Saba",
+      "revelation_place": "makkah",
+      "revelation_order": 58,
+      "verses_count": 54,
+      "bismillah_pre": true
+    },
+    {
+      "number": 35,
+      "name_arabic": "فاطر",
+      "name_simple": "Fatir",
+      "revelation_place": "makkah",
+      "revelation_order": 43,
+      "verses_count": 45,
+      "bismillah_pre": true
+    },
+    {
+      "number": 36,
+      "name_arabic": "يس",
+      "name_simple": "Ya-Sin",
+      "revelation_place": "makkah",
+      "revelation_order": 41,
+      "verses_count": 83,
+      "bismillah_pre": true
+    },
+    {
+      "number": 37,
+      "name_arabic": "الصافات",
+      "name_simple": "As-Saffat",
+      "revelation_place": "makkah",
+      "revelation_order": 56,
+      "verses_count": 182,
+      "bismillah_pre": true
+    },
+    {
+      "number": 38,
+      "name_arabic": "ص",
+      "name_simple": "Sad",
+      "revelation_place": "makkah",
+      "revelation_order": 38,
+      "verses_count": 88,
+      "bismillah_pre": true
+    },
+    {
+      "number": 39,
+      "name_arabic": "الزمر",
+      "name_simple": "Az-Zumar",
+      "revelation_place": "makkah",
+      "revelation_order": 59,
+      "verses_count": 75,
+      "bismillah_pre": true
+    },
+    {
+      "number": 40,
+      "name_arabic": "غافر",
+      "name_simple": "Ghafir",
+      "revelation_place": "makkah",
+      "revelation_order": 60,
+      "verses_count": 85,
+      "bismillah_pre": true
+    },
+    {
+      "number": 41,
+      "name_arabic": "فصلت",
+      "name_simple": "Fussilat",
+      "revelation_place": "makkah",
+      "revelation_order": 61,
+      "verses_count": 54,
+      "bismillah_pre": true
+    },
+    {
+      "number": 42,
+      "name_arabic": "الشورى",
+      "name_simple": "Ash-Shuraa",
+      "revelation_place": "makkah",
+      "revelation_order": 62,
+      "verses_count": 53,
+      "bismillah_pre": true
+    },
+    {
+      "number": 43,
+      "name_arabic": "الزخرف",
+      "name_simple": "Az-Zukhruf",
+      "revelation_place": "makkah",
+      "revelation_order": 63,
+      "verses_count": 89,
+      "bismillah_pre": true
+    },
+    {
+      "number": 44,
+      "name_arabic": "الدخان",
+      "name_simple": "Ad-Dukhan",
+      "revelation_place": "makkah",
+      "revelation_order": 64,
+      "verses_count": 59,
+      "bismillah_pre": true
+    },
+    {
+      "number": 45,
+      "name_arabic": "الجاثية",
+      "name_simple": "Al-Jathiyah",
+      "revelation_place": "makkah",
+      "revelation_order": 65,
+      "verses_count": 37,
+      "bismillah_pre": true
+    },
+    {
+      "number": 46,
+      "name_arabic": "الأحقاف",
+      "name_simple": "Al-Ahqaf",
+      "revelation_place": "makkah",
+      "revelation_order": 66,
+      "verses_count": 35,
+      "bismillah_pre": true
+    },
+    {
+      "number": 47,
+      "name_arabic": "محمد",
+      "name_simple": "Muhammad",
+      "revelation_place": "madinah",
+      "revelation_order": 95,
+      "verses_count": 38,
+      "bismillah_pre": true
+    },
+    {
+      "number": 48,
+      "name_arabic": "الفتح",
+      "name_simple": "Al-Fath",
+      "revelation_place": "madinah",
+      "revelation_order": 111,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 49,
+      "name_arabic": "الحجرات",
+      "name_simple": "Al-Hujurat",
+      "revelation_place": "madinah",
+      "revelation_order": 106,
+      "verses_count": 18,
+      "bismillah_pre": true
+    },
+    {
+      "number": 50,
+      "name_arabic": "ق",
+      "name_simple": "Qaf",
+      "revelation_place": "makkah",
+      "revelation_order": 34,
+      "verses_count": 45,
+      "bismillah_pre": true
+    },
+    {
+      "number": 51,
+      "name_arabic": "الذاريات",
+      "name_simple": "Adh-Dhariyat",
+      "revelation_place": "makkah",
+      "revelation_order": 67,
+      "verses_count": 60,
+      "bismillah_pre": true
+    },
+    {
+      "number": 52,
+      "name_arabic": "الطور",
+      "name_simple": "At-Tur",
+      "revelation_place": "makkah",
+      "revelation_order": 76,
+      "verses_count": 49,
+      "bismillah_pre": true
+    },
+    {
+      "number": 53,
+      "name_arabic": "النجم",
+      "name_simple": "An-Najm",
+      "revelation_place": "makkah",
+      "revelation_order": 23,
+      "verses_count": 62,
+      "bismillah_pre": true
+    },
+    {
+      "number": 54,
+      "name_arabic": "القمر",
+      "name_simple": "Al-Qamar",
+      "revelation_place": "makkah",
+      "revelation_order": 37,
+      "verses_count": 55,
+      "bismillah_pre": true
+    },
+    {
+      "number": 55,
+      "name_arabic": "الرحمن",
+      "name_simple": "Ar-Rahman",
+      "revelation_place": "madinah",
+      "revelation_order": 97,
+      "verses_count": 78,
+      "bismillah_pre": true
+    },
+    {
+      "number": 56,
+      "name_arabic": "الواقعة",
+      "name_simple": "Al-Waqi'ah",
+      "revelation_place": "makkah",
+      "revelation_order": 46,
+      "verses_count": 96,
+      "bismillah_pre": true
+    },
+    {
+      "number": 57,
+      "name_arabic": "الحديد",
+      "name_simple": "Al-Hadid",
+      "revelation_place": "madinah",
+      "revelation_order": 94,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 58,
+      "name_arabic": "المجادلة",
+      "name_simple": "Al-Mujadila",
+      "revelation_place": "madinah",
+      "revelation_order": 105,
+      "verses_count": 22,
+      "bismillah_pre": true
+    },
+    {
+      "number": 59,
+      "name_arabic": "الحشر",
+      "name_simple": "Al-Hashr",
+      "revelation_place": "madinah",
+      "revelation_order": 101,
+      "verses_count": 24,
+      "bismillah_pre": true
+    },
+    {
+      "number": 60,
+      "name_arabic": "الممتحنة",
+      "name_simple": "Al-Mumtahanah",
+      "revelation_place": "madinah",
+      "revelation_order": 91,
+      "verses_count": 13,
+      "bismillah_pre": true
+    },
+    {
+      "number": 61,
+      "name_arabic": "الصف",
+      "name_simple": "As-Saf",
+      "revelation_place": "madinah",
+      "revelation_order": 109,
+      "verses_count": 14,
+      "bismillah_pre": true
+    },
+    {
+      "number": 62,
+      "name_arabic": "الجمعة",
+      "name_simple": "Al-Jumu'ah",
+      "revelation_place": "madinah",
+      "revelation_order": 110,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 63,
+      "name_arabic": "المنافقون",
+      "name_simple": "Al-Munafiqun",
+      "revelation_place": "madinah",
+      "revelation_order": 104,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 64,
+      "name_arabic": "التغابن",
+      "name_simple": "At-Taghabun",
+      "revelation_place": "madinah",
+      "revelation_order": 108,
+      "verses_count": 18,
+      "bismillah_pre": true
+    },
+    {
+      "number": 65,
+      "name_arabic": "الطلاق",
+      "name_simple": "At-Talaq",
+      "revelation_place": "madinah",
+      "revelation_order": 99,
+      "verses_count": 12,
+      "bismillah_pre": true
+    },
+    {
+      "number": 66,
+      "name_arabic": "التحريم",
+      "name_simple": "At-Tahrim",
+      "revelation_place": "madinah",
+      "revelation_order": 107,
+      "verses_count": 12,
+      "bismillah_pre": true
+    },
+    {
+      "number": 67,
+      "name_arabic": "الملك",
+      "name_simple": "Al-Mulk",
+      "revelation_place": "makkah",
+      "revelation_order": 77,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 68,
+      "name_arabic": "القلم",
+      "name_simple": "Al-Qalam",
+      "revelation_place": "makkah",
+      "revelation_order": 2,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 69,
+      "name_arabic": "الحاقة",
+      "name_simple": "Al-Haqqah",
+      "revelation_place": "makkah",
+      "revelation_order": 78,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 70,
+      "name_arabic": "المعارج",
+      "name_simple": "Al-Ma'arij",
+      "revelation_place": "makkah",
+      "revelation_order": 79,
+      "verses_count": 44,
+      "bismillah_pre": true
+    },
+    {
+      "number": 71,
+      "name_arabic": "نوح",
+      "name_simple": "Nuh",
+      "revelation_place": "makkah",
+      "revelation_order": 71,
+      "verses_count": 28,
+      "bismillah_pre": true
+    },
+    {
+      "number": 72,
+      "name_arabic": "الجن",
+      "name_simple": "Al-Jinn",
+      "revelation_place": "makkah",
+      "revelation_order": 40,
+      "verses_count": 28,
+      "bismillah_pre": true
+    },
+    {
+      "number": 73,
+      "name_arabic": "المزمل",
+      "name_simple": "Al-Muzzammil",
+      "revelation_place": "makkah",
+      "revelation_order": 3,
+      "verses_count": 20,
+      "bismillah_pre": true
+    },
+    {
+      "number": 74,
+      "name_arabic": "المدثر",
+      "name_simple": "Al-Muddaththir",
+      "revelation_place": "makkah",
+      "revelation_order": 4,
+      "verses_count": 56,
+      "bismillah_pre": true
+    },
+    {
+      "number": 75,
+      "name_arabic": "القيامة",
+      "name_simple": "Al-Qiyamah",
+      "revelation_place": "makkah",
+      "revelation_order": 31,
+      "verses_count": 40,
+      "bismillah_pre": true
+    },
+    {
+      "number": 76,
+      "name_arabic": "الانسان",
+      "name_simple": "Al-Insan",
+      "revelation_place": "madinah",
+      "revelation_order": 98,
+      "verses_count": 31,
+      "bismillah_pre": true
+    },
+    {
+      "number": 77,
+      "name_arabic": "المرسلات",
+      "name_simple": "Al-Mursalat",
+      "revelation_place": "makkah",
+      "revelation_order": 33,
+      "verses_count": 50,
+      "bismillah_pre": true
+    },
+    {
+      "number": 78,
+      "name_arabic": "النبإ",
+      "name_simple": "An-Naba",
+      "revelation_place": "makkah",
+      "revelation_order": 80,
+      "verses_count": 40,
+      "bismillah_pre": true
+    },
+    {
+      "number": 79,
+      "name_arabic": "النازعات",
+      "name_simple": "An-Nazi'at",
+      "revelation_place": "makkah",
+      "revelation_order": 81,
+      "verses_count": 46,
+      "bismillah_pre": true
+    },
+    {
+      "number": 80,
+      "name_arabic": "عبس",
+      "name_simple": "'Abasa",
+      "revelation_place": "makkah",
+      "revelation_order": 24,
+      "verses_count": 42,
+      "bismillah_pre": true
+    },
+    {
+      "number": 81,
+      "name_arabic": "التكوير",
+      "name_simple": "At-Takwir",
+      "revelation_place": "makkah",
+      "revelation_order": 7,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 82,
+      "name_arabic": "الإنفطار",
+      "name_simple": "Al-Infitar",
+      "revelation_place": "makkah",
+      "revelation_order": 82,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 83,
+      "name_arabic": "المطففين",
+      "name_simple": "Al-Mutaffifin",
+      "revelation_place": "makkah",
+      "revelation_order": 86,
+      "verses_count": 36,
+      "bismillah_pre": true
+    },
+    {
+      "number": 84,
+      "name_arabic": "الإنشقاق",
+      "name_simple": "Al-Inshiqaq",
+      "revelation_place": "makkah",
+      "revelation_order": 83,
+      "verses_count": 25,
+      "bismillah_pre": true
+    },
+    {
+      "number": 85,
+      "name_arabic": "البروج",
+      "name_simple": "Al-Buruj",
+      "revelation_place": "makkah",
+      "revelation_order": 27,
+      "verses_count": 22,
+      "bismillah_pre": true
+    },
+    {
+      "number": 86,
+      "name_arabic": "الطارق",
+      "name_simple": "At-Tariq",
+      "revelation_place": "makkah",
+      "revelation_order": 36,
+      "verses_count": 17,
+      "bismillah_pre": true
+    },
+    {
+      "number": 87,
+      "name_arabic": "الأعلى",
+      "name_simple": "Al-A'la",
+      "revelation_place": "makkah",
+      "revelation_order": 8,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 88,
+      "name_arabic": "الغاشية",
+      "name_simple": "Al-Ghashiyah",
+      "revelation_place": "makkah",
+      "revelation_order": 68,
+      "verses_count": 26,
+      "bismillah_pre": true
+    },
+    {
+      "number": 89,
+      "name_arabic": "الفجر",
+      "name_simple": "Al-Fajr",
+      "revelation_place": "makkah",
+      "revelation_order": 10,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 90,
+      "name_arabic": "البلد",
+      "name_simple": "Al-Balad",
+      "revelation_place": "makkah",
+      "revelation_order": 35,
+      "verses_count": 20,
+      "bismillah_pre": true
+    },
+    {
+      "number": 91,
+      "name_arabic": "الشمس",
+      "name_simple": "Ash-Shams",
+      "revelation_place": "makkah",
+      "revelation_order": 26,
+      "verses_count": 15,
+      "bismillah_pre": true
+    },
+    {
+      "number": 92,
+      "name_arabic": "الليل",
+      "name_simple": "Al-Layl",
+      "revelation_place": "makkah",
+      "revelation_order": 9,
+      "verses_count": 21,
+      "bismillah_pre": true
+    },
+    {
+      "number": 93,
+      "name_arabic": "الضحى",
+      "name_simple": "Ad-Duhaa",
+      "revelation_place": "makkah",
+      "revelation_order": 11,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 94,
+      "name_arabic": "الشرح",
+      "name_simple": "Ash-Sharh",
+      "revelation_place": "makkah",
+      "revelation_order": 12,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 95,
+      "name_arabic": "التين",
+      "name_simple": "At-Tin",
+      "revelation_place": "makkah",
+      "revelation_order": 28,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 96,
+      "name_arabic": "العلق",
+      "name_simple": "Al-'Alaq",
+      "revelation_place": "makkah",
+      "revelation_order": 1,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 97,
+      "name_arabic": "القدر",
+      "name_simple": "Al-Qadr",
+      "revelation_place": "makkah",
+      "revelation_order": 25,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 98,
+      "name_arabic": "البينة",
+      "name_simple": "Al-Bayyinah",
+      "revelation_place": "madinah",
+      "revelation_order": 100,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 99,
+      "name_arabic": "الزلزلة",
+      "name_simple": "Az-Zalzalah",
+      "revelation_place": "madinah",
+      "revelation_order": 93,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 100,
+      "name_arabic": "العاديات",
+      "name_simple": "Al-'Adiyat",
+      "revelation_place": "makkah",
+      "revelation_order": 14,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 101,
+      "name_arabic": "القارعة",
+      "name_simple": "Al-Qari'ah",
+      "revelation_place": "makkah",
+      "revelation_order": 30,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 102,
+      "name_arabic": "التكاثر",
+      "name_simple": "At-Takathur",
+      "revelation_place": "makkah",
+      "revelation_order": 16,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 103,
+      "name_arabic": "العصر",
+      "name_simple": "Al-'Asr",
+      "revelation_place": "makkah",
+      "revelation_order": 13,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 104,
+      "name_arabic": "الهمزة",
+      "name_simple": "Al-Humazah",
+      "revelation_place": "makkah",
+      "revelation_order": 32,
+      "verses_count": 9,
+      "bismillah_pre": true
+    },
+    {
+      "number": 105,
+      "name_arabic": "الفيل",
+      "name_simple": "Al-Fil",
+      "revelation_place": "makkah",
+      "revelation_order": 19,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 106,
+      "name_arabic": "قريش",
+      "name_simple": "Quraysh",
+      "revelation_place": "makkah",
+      "revelation_order": 29,
+      "verses_count": 4,
+      "bismillah_pre": true
+    },
+    {
+      "number": 107,
+      "name_arabic": "الماعون",
+      "name_simple": "Al-Ma'un",
+      "revelation_place": "makkah",
+      "revelation_order": 17,
+      "verses_count": 7,
+      "bismillah_pre": true
+    },
+    {
+      "number": 108,
+      "name_arabic": "الكوثر",
+      "name_simple": "Al-Kawthar",
+      "revelation_place": "makkah",
+      "revelation_order": 15,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 109,
+      "name_arabic": "الكافرون",
+      "name_simple": "Al-Kafirun",
+      "revelation_place": "makkah",
+      "revelation_order": 18,
+      "verses_count": 6,
+      "bismillah_pre": true
+    },
+    {
+      "number": 110,
+      "name_arabic": "النصر",
+      "name_simple": "An-Nasr",
+      "revelation_place": "madinah",
+      "revelation_order": 114,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 111,
+      "name_arabic": "المسد",
+      "name_simple": "Al-Masad",
+      "revelation_place": "makkah",
+      "revelation_order": 6,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 112,
+      "name_arabic": "الإخلاص",
+      "name_simple": "Al-Ikhlas",
+      "revelation_place": "makkah",
+      "revelation_order": 22,
+      "verses_count": 4,
+      "bismillah_pre": true
+    },
+    {
+      "number": 113,
+      "name_arabic": "الفلق",
+      "name_simple": "Al-Falaq",
+      "revelation_place": "makkah",
+      "revelation_order": 20,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 114,
+      "name_arabic": "الناس",
+      "name_simple": "An-Nas",
+      "revelation_place": "makkah",
+      "revelation_order": 21,
+      "verses_count": 6,
+      "bismillah_pre": true
+    }
+  ],
+  "verses": {
+    "1:1": {
+      "ref": "1:1",
+      "url": "https://quran.com/1:1",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "translation": "In the name of Allah, the Beneficent, the Merciful.",
+      "translationUrl": "https://quran.com/1:1?translations=19"
+    },
+    "2:1": {
+      "ref": "2:1",
+      "url": "https://quran.com/2:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/2:1?translations=19"
+    },
+    "3:1": {
+      "ref": "3:1",
+      "url": "https://quran.com/3:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alim. Lam. Mim.",
+      "translationUrl": "https://quran.com/3:1?translations=19"
+    },
+    "4:1": {
+      "ref": "4:1",
+      "url": "https://quran.com/4:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُم مِّن نَّفْسٍ وَٰحِدَةٍ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًا كَثِيرًا وَنِسَآءً ۚ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِى تَسَآءَلُونَ بِهِۦ وَٱلْأَرْحَامَ ۚ إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
+      "translation": "O mankind! Be careful of your duty to your Lord Who created you from a single soul and from it created its mate and from them twain hath spread abroad a multitude of men and women. Be careful of your duty toward Allah in Whom ye claim (your rights) of one another, and toward the wombs (that bore you). Lo! Allah hath been a watcher over you.",
+      "translationUrl": "https://quran.com/4:1?translations=19"
+    },
+    "5:1": {
+      "ref": "5:1",
+      "url": "https://quran.com/5:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَـٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
+      "translation": "O ye who believe! Fulfil your indentures. The beast of cattle is made lawful unto you (for food) except that which is announced unto you (herein), game being unlawful when ye are on the pilgrimage. Lo! Allah ordaineth that which pleaseth Him.",
+      "translationUrl": "https://quran.com/5:1?translations=19"
+    },
+    "6:1": {
+      "ref": "6:1",
+      "url": "https://quran.com/6:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ وَجَعَلَ ٱلظُّلُمَـٰتِ وَٱلنُّورَ ۖ ثُمَّ ٱلَّذِينَ كَفَرُوا۟ بِرَبِّهِمْ يَعْدِلُونَ",
+      "translation": "Praise be to Allah, Who hath created the heavens and the earth, and hath appointed darkness and light. Yet those who disbelieve ascribe rivals unto their Lord.",
+      "translationUrl": "https://quran.com/6:1?translations=19"
+    },
+    "7:1": {
+      "ref": "7:1",
+      "url": "https://quran.com/7:1",
+      "arabic": "الٓمٓصٓ",
+      "translation": "Alif. Lam. Mim. Sad.",
+      "translationUrl": "https://quran.com/7:1?translations=19"
+    },
+    "8:1": {
+      "ref": "8:1",
+      "url": "https://quran.com/8:1",
+      "arabic": "يَسْـَٔلُونَكَ عَنِ ٱلْأَنفَالِ ۖ قُلِ ٱلْأَنفَالُ لِلَّهِ وَٱلرَّسُولِ ۖ فَٱتَّقُوا۟ ٱللَّهَ وَأَصْلِحُوا۟ ذَاتَ بَيْنِكُمْ ۖ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥٓ إِن كُنتُم مُّؤْمِنِينَ",
+      "translation": "They ask thee (O Muhammad) of the spoils of war. Say: The spoils of war belong to Allah and the messenger, so keep your duty to Allah, and adjust the matter of your difference, and obey Allah and His messenger, if ye are (true) believers.",
+      "translationUrl": "https://quran.com/8:1?translations=19"
+    },
+    "9:1": {
+      "ref": "9:1",
+      "url": "https://quran.com/9:1",
+      "arabic": "بَرَآءَةٌ مِّنَ ٱللَّهِ وَرَسُولِهِۦٓ إِلَى ٱلَّذِينَ عَـٰهَدتُّم مِّنَ ٱلْمُشْرِكِينَ",
+      "translation": "Freedom from obligation (is proclaimed) from Allah and His messenger toward those of the idolaters with whom ye made a treaty.",
+      "translationUrl": "https://quran.com/9:1?translations=19"
+    },
+    "10:1": {
+      "ref": "10:1",
+      "url": "https://quran.com/10:1",
+      "arabic": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْحَكِيمِ",
+      "translation": "Alif. Lam. Ra. These are verses of the Wise Scripture.",
+      "translationUrl": "https://quran.com/10:1?translations=19"
+    },
+    "11:1": {
+      "ref": "11:1",
+      "url": "https://quran.com/11:1",
+      "arabic": "الٓر ۚ كِتَـٰبٌ أُحْكِمَتْ ءَايَـٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ",
+      "translation": "Alif. Lam. Ra. (This is) a Scripture the revelations whereof are perfected and then expounded. (It cometh) from One Wise, Informed,",
+      "translationUrl": "https://quran.com/11:1?translations=19"
+    },
+    "12:1": {
+      "ref": "12:1",
+      "url": "https://quran.com/12:1",
+      "arabic": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+      "translation": "Alif. Lam. Ra. These are verse of the Scripture that maketh plain.",
+      "translationUrl": "https://quran.com/12:1?translations=19"
+    },
+    "13:1": {
+      "ref": "13:1",
+      "url": "https://quran.com/13:1",
+      "arabic": "الٓمٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ۗ وَٱلَّذِىٓ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ٱلْحَقُّ وَلَـٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يُؤْمِنُونَ",
+      "translation": "Alif. Lam. Mim. Ra. These are verses of the Scripture. That which is revealed unto thee from thy Lord is the Truth, but most of mankind believe not.",
+      "translationUrl": "https://quran.com/13:1?translations=19"
+    },
+    "14:1": {
+      "ref": "14:1",
+      "url": "https://quran.com/14:1",
+      "arabic": "الٓر ۚ كِتَـٰبٌ أَنزَلْنَـٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+      "translation": "Alif. Lam. Ra. (This is) a Scripture which We have revealed unto thee (Muhammad) that thereby thou mayst bring forth mankind from darkness unto light, by the permission of their Lord, unto the path of the Mighty, the Owner of Praise,",
+      "translationUrl": "https://quran.com/14:1?translations=19"
+    },
+    "15:1": {
+      "ref": "15:1",
+      "url": "https://quran.com/15:1",
+      "arabic": "الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ وَقُرْءَانٍ مُّبِينٍ",
+      "translation": "Alif. Lam. Ra. These are verses of the Scripture and a plain Reading.",
+      "translationUrl": "https://quran.com/15:1?translations=19"
+    },
+    "16:1": {
+      "ref": "16:1",
+      "url": "https://quran.com/16:1",
+      "arabic": "أَتَىٰٓ أَمْرُ ٱللَّهِ فَلَا تَسْتَعْجِلُوهُ ۚ سُبْحَـٰنَهُۥ وَتَعَـٰلَىٰ عَمَّا يُشْرِكُونَ",
+      "translation": "The commandment of Allah will come to pass, so seek not ye to hasten it. Glorified and Exalted be He above all that they associate (with Him).",
+      "translationUrl": "https://quran.com/16:1?translations=19"
+    },
+    "17:1": {
+      "ref": "17:1",
+      "url": "https://quran.com/17:1",
+      "arabic": "سُبْحَـٰنَ ٱلَّذِىٓ أَسْرَىٰ بِعَبْدِهِۦ لَيْلًا مِّنَ ٱلْمَسْجِدِ ٱلْحَرَامِ إِلَى ٱلْمَسْجِدِ ٱلْأَقْصَا ٱلَّذِى بَـٰرَكْنَا حَوْلَهُۥ لِنُرِيَهُۥ مِنْ ءَايَـٰتِنَآ ۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+      "translation": "Glorified be He Who carried His servant by night from the Inviolable Place of Worship to the Far distant place of worship the neighbourhood whereof We have blessed, that We might show him of Our tokens! Lo! He, only He, is the Hearer, the Seer.",
+      "translationUrl": "https://quran.com/17:1?translations=19"
+    },
+    "18:1": {
+      "ref": "18:1",
+      "url": "https://quran.com/18:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ ٱلَّذِىٓ أَنزَلَ عَلَىٰ عَبْدِهِ ٱلْكِتَـٰبَ وَلَمْ يَجْعَل لَّهُۥ عِوَجَا ۜ",
+      "translation": "Praise be to Allah Who hath revealed the Scripture unto His slave, and hath not placed therein any crookedness,",
+      "translationUrl": "https://quran.com/18:1?translations=19"
+    },
+    "19:1": {
+      "ref": "19:1",
+      "url": "https://quran.com/19:1",
+      "arabic": "كٓهيعٓصٓ",
+      "translation": "Kaf. Ha. Ya. A'in. Sad.",
+      "translationUrl": "https://quran.com/19:1?translations=19"
+    },
+    "20:1": {
+      "ref": "20:1",
+      "url": "https://quran.com/20:1",
+      "arabic": "طه",
+      "translation": "Ta. Ha.",
+      "translationUrl": "https://quran.com/20:1?translations=19"
+    },
+    "21:1": {
+      "ref": "21:1",
+      "url": "https://quran.com/21:1",
+      "arabic": "ٱقْتَرَبَ لِلنَّاسِ حِسَابُهُمْ وَهُمْ فِى غَفْلَةٍ مُّعْرِضُونَ",
+      "translation": "Their reckoning draweth nigh for mankind, while they turn away in heedlessness.",
+      "translationUrl": "https://quran.com/21:1?translations=19"
+    },
+    "22:1": {
+      "ref": "22:1",
+      "url": "https://quran.com/22:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمْ ۚ إِنَّ زَلْزَلَةَ ٱلسَّاعَةِ شَىْءٌ عَظِيمٌ",
+      "translation": "O mankind! Fear your Lord. Lo! the earthquake of the Hour (of Doom) is a tremendous thing.",
+      "translationUrl": "https://quran.com/22:1?translations=19"
+    },
+    "23:1": {
+      "ref": "23:1",
+      "url": "https://quran.com/23:1",
+      "arabic": "قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ",
+      "translation": "Successful indeed are the believers",
+      "translationUrl": "https://quran.com/23:1?translations=19"
+    },
+    "24:1": {
+      "ref": "24:1",
+      "url": "https://quran.com/24:1",
+      "arabic": "سُورَةٌ أَنزَلْنَـٰهَا وَفَرَضْنَـٰهَا وَأَنزَلْنَا فِيهَآ ءَايَـٰتٍۭ بَيِّنَـٰتٍ لَّعَلَّكُمْ تَذَكَّرُونَ",
+      "translation": "(Here is) a surah which We have revealed and enjoined, and wherein We have revealed plain tokens, that haply ye may take heed.",
+      "translationUrl": "https://quran.com/24:1?translations=19"
+    },
+    "25:1": {
+      "ref": "25:1",
+      "url": "https://quran.com/25:1",
+      "arabic": "تَبَارَكَ ٱلَّذِى نَزَّلَ ٱلْفُرْقَانَ عَلَىٰ عَبْدِهِۦ لِيَكُونَ لِلْعَـٰلَمِينَ نَذِيرًا",
+      "translation": "Blessed is He Who hath revealed unto His slave the Criterion (of right and wrong), that he may be a warner to the peoples.",
+      "translationUrl": "https://quran.com/25:1?translations=19"
+    },
+    "26:1": {
+      "ref": "26:1",
+      "url": "https://quran.com/26:1",
+      "arabic": "طسٓمٓ",
+      "translation": "Ta. Sin. Mim.",
+      "translationUrl": "https://quran.com/26:1?translations=19"
+    },
+    "27:1": {
+      "ref": "27:1",
+      "url": "https://quran.com/27:1",
+      "arabic": "طسٓ ۚ تِلْكَ ءَايَـٰتُ ٱلْقُرْءَانِ وَكِتَابٍ مُّبِينٍ",
+      "translation": "Ta. Sin. These are revelations of the Qur'an and a Scripture that maketh plain;",
+      "translationUrl": "https://quran.com/27:1?translations=19"
+    },
+    "28:1": {
+      "ref": "28:1",
+      "url": "https://quran.com/28:1",
+      "arabic": "طسٓمٓ",
+      "translation": "Ta. Sin. Mim.",
+      "translationUrl": "https://quran.com/28:1?translations=19"
+    },
+    "29:1": {
+      "ref": "29:1",
+      "url": "https://quran.com/29:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/29:1?translations=19"
+    },
+    "30:1": {
+      "ref": "30:1",
+      "url": "https://quran.com/30:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/30:1?translations=19"
+    },
+    "31:1": {
+      "ref": "31:1",
+      "url": "https://quran.com/31:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim.",
+      "translationUrl": "https://quran.com/31:1?translations=19"
+    },
+    "32:1": {
+      "ref": "32:1",
+      "url": "https://quran.com/32:1",
+      "arabic": "الٓمٓ",
+      "translation": "Alif. Lam. Mim",
+      "translationUrl": "https://quran.com/32:1?translations=19"
+    },
+    "33:1": {
+      "ref": "33:1",
+      "url": "https://quran.com/33:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ ٱتَّقِ ٱللَّهَ وَلَا تُطِعِ ٱلْكَـٰفِرِينَ وَٱلْمُنَـٰفِقِينَ ۗ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًا",
+      "translation": "O Prophet! Keep thy duty to Allah and obey not the disbelievers and the hypocrites. Lo! Allah is Knower, Wise.",
+      "translationUrl": "https://quran.com/33:1?translations=19"
+    },
+    "34:1": {
+      "ref": "34:1",
+      "url": "https://quran.com/34:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ وَلَهُ ٱلْحَمْدُ فِى ٱلْـَٔاخِرَةِ ۚ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ",
+      "translation": "Praise be to Allah, unto Whom belongeth whatsoever is in the heavens and whatsoever is in the earth. His is the praise in the Hereafter, and He is the Wise, the Aware.",
+      "translationUrl": "https://quran.com/34:1?translations=19"
+    },
+    "35:1": {
+      "ref": "35:1",
+      "url": "https://quran.com/35:1",
+      "arabic": "ٱلْحَمْدُ لِلَّهِ فَاطِرِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ جَاعِلِ ٱلْمَلَـٰٓئِكَةِ رُسُلًا أُو۟لِىٓ أَجْنِحَةٍ مَّثْنَىٰ وَثُلَـٰثَ وَرُبَـٰعَ ۚ يَزِيدُ فِى ٱلْخَلْقِ مَا يَشَآءُ ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      "translation": "Praise be to Allah, the Creator of the heavens and the earth, Who appointeth the angels messengers having wings two, three and four. He multiplieth in creation what He will. Lo! Allah is Able to do all things.",
+      "translationUrl": "https://quran.com/35:1?translations=19"
+    },
+    "36:1": {
+      "ref": "36:1",
+      "url": "https://quran.com/36:1",
+      "arabic": "يسٓ",
+      "translation": "Ya Sin.",
+      "translationUrl": "https://quran.com/36:1?translations=19"
+    },
+    "37:1": {
+      "ref": "37:1",
+      "url": "https://quran.com/37:1",
+      "arabic": "وَٱلصَّـٰٓفَّـٰتِ صَفًّا",
+      "translation": "By those who set the ranks in battle order",
+      "translationUrl": "https://quran.com/37:1?translations=19"
+    },
+    "38:1": {
+      "ref": "38:1",
+      "url": "https://quran.com/38:1",
+      "arabic": "صٓ ۚ وَٱلْقُرْءَانِ ذِى ٱلذِّكْرِ",
+      "translation": "Sad. By the renowned Qur'an,",
+      "translationUrl": "https://quran.com/38:1?translations=19"
+    },
+    "39:1": {
+      "ref": "39:1",
+      "url": "https://quran.com/39:1",
+      "arabic": "تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+      "translation": "The revelation of the Scripture is from Allah, the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/39:1?translations=19"
+    },
+    "40:1": {
+      "ref": "40:1",
+      "url": "https://quran.com/40:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/40:1?translations=19"
+    },
+    "41:1": {
+      "ref": "41:1",
+      "url": "https://quran.com/41:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/41:1?translations=19"
+    },
+    "42:1": {
+      "ref": "42:1",
+      "url": "https://quran.com/42:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/42:1?translations=19"
+    },
+    "43:1": {
+      "ref": "43:1",
+      "url": "https://quran.com/43:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/43:1?translations=19"
+    },
+    "44:1": {
+      "ref": "44:1",
+      "url": "https://quran.com/44:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/44:1?translations=19"
+    },
+    "45:1": {
+      "ref": "45:1",
+      "url": "https://quran.com/45:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/45:1?translations=19"
+    },
+    "46:1": {
+      "ref": "46:1",
+      "url": "https://quran.com/46:1",
+      "arabic": "حمٓ",
+      "translation": "Ha. Mim.",
+      "translationUrl": "https://quran.com/46:1?translations=19"
+    },
+    "47:1": {
+      "ref": "47:1",
+      "url": "https://quran.com/47:1",
+      "arabic": "ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ أَضَلَّ أَعْمَـٰلَهُمْ",
+      "translation": "Those who disbelieve and turn (men) from the way of Allah, He rendereth their actions vain.",
+      "translationUrl": "https://quran.com/47:1?translations=19"
+    },
+    "48:1": {
+      "ref": "48:1",
+      "url": "https://quran.com/48:1",
+      "arabic": "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا",
+      "translation": "Lo! We have given thee (O Muhammad) a signal victory,",
+      "translationUrl": "https://quran.com/48:1?translations=19"
+    },
+    "49:1": {
+      "ref": "49:1",
+      "url": "https://quran.com/49:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُقَدِّمُوا۟ بَيْنَ يَدَىِ ٱللَّهِ وَرَسُولِهِۦ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ سَمِيعٌ عَلِيمٌ",
+      "translation": "O ye who believe! Be not forward in the presence of Allah and His messenger, and keep your duty to Allah. Lo! Allah is Hearer, Knower.",
+      "translationUrl": "https://quran.com/49:1?translations=19"
+    },
+    "50:1": {
+      "ref": "50:1",
+      "url": "https://quran.com/50:1",
+      "arabic": "قٓ ۚ وَٱلْقُرْءَانِ ٱلْمَجِيدِ",
+      "translation": "Qaf. By the Glorious Qur'an,",
+      "translationUrl": "https://quran.com/50:1?translations=19"
+    },
+    "51:1": {
+      "ref": "51:1",
+      "url": "https://quran.com/51:1",
+      "arabic": "وَٱلذَّٰرِيَـٰتِ ذَرْوًا",
+      "translation": "By those that winnow with a winnowing",
+      "translationUrl": "https://quran.com/51:1?translations=19"
+    },
+    "52:1": {
+      "ref": "52:1",
+      "url": "https://quran.com/52:1",
+      "arabic": "وَٱلطُّورِ",
+      "translation": "By the Mount,",
+      "translationUrl": "https://quran.com/52:1?translations=19"
+    },
+    "53:1": {
+      "ref": "53:1",
+      "url": "https://quran.com/53:1",
+      "arabic": "وَٱلنَّجْمِ إِذَا هَوَىٰ",
+      "translation": "By the Star when it setteth,",
+      "translationUrl": "https://quran.com/53:1?translations=19"
+    },
+    "54:1": {
+      "ref": "54:1",
+      "url": "https://quran.com/54:1",
+      "arabic": "ٱقْتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلْقَمَرُ",
+      "translation": "The hour drew nigh and the moon was rent in twain.",
+      "translationUrl": "https://quran.com/54:1?translations=19"
+    },
+    "55:1": {
+      "ref": "55:1",
+      "url": "https://quran.com/55:1",
+      "arabic": "ٱلرَّحْمَـٰنُ",
+      "translation": "The Beneficent",
+      "translationUrl": "https://quran.com/55:1?translations=19"
+    },
+    "56:1": {
+      "ref": "56:1",
+      "url": "https://quran.com/56:1",
+      "arabic": "إِذَا وَقَعَتِ ٱلْوَاقِعَةُ",
+      "translation": "When the event befalleth -",
+      "translationUrl": "https://quran.com/56:1?translations=19"
+    },
+    "57:1": {
+      "ref": "57:1",
+      "url": "https://quran.com/57:1",
+      "arabic": "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "translation": "All that is in the heavens and the earth glorifieth Allah; and He is the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/57:1?translations=19"
+    },
+    "58:1": {
+      "ref": "58:1",
+      "url": "https://quran.com/58:1",
+      "arabic": "قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَـٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ",
+      "translation": "Allah hath heard the saying of her that disputeth with thee (Muhammad) concerning her husband, and complaineth unto Allah. And Allah heareth your colloquy. Lo! Allah is Hearer, Knower.",
+      "translationUrl": "https://quran.com/58:1?translations=19"
+    },
+    "59:1": {
+      "ref": "59:1",
+      "url": "https://quran.com/59:1",
+      "arabic": "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, and He is the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/59:1?translations=19"
+    },
+    "60:1": {
+      "ref": "60:1",
+      "url": "https://quran.com/60:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ عَدُوِّى وَعَدُوَّكُمْ أَوْلِيَآءَ تُلْقُونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَقَدْ كَفَرُوا۟ بِمَا جَآءَكُم مِّنَ ٱلْحَقِّ يُخْرِجُونَ ٱلرَّسُولَ وَإِيَّاكُمْ ۙ أَن تُؤْمِنُوا۟ بِٱللَّهِ رَبِّكُمْ إِن كُنتُمْ خَرَجْتُمْ جِهَـٰدًا فِى سَبِيلِى وَٱبْتِغَآءَ مَرْضَاتِى ۚ تُسِرُّونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَأَنَا۠ أَعْلَمُ بِمَآ أَخْفَيْتُمْ وَمَآ أَعْلَنتُمْ ۚ وَمَن يَفْعَلْهُ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ",
+      "translation": "O ye who believe! Choose not My enemy and your enemy for allies. Do ye give them friendship when they disbelieve in that truth which hath come unto you, driving out the messenger and you because ye believe in Allah, your Lord? If ye have come forth to strive in My way and seeking My good pleasure, (show them not friendship). Do ye show friendship unto them in secret, when I am Best Aware of what ye hide and what ye proclaim? And whosoever doeth it among you, he verily hath strayed from the right way.",
+      "translationUrl": "https://quran.com/60:1?translations=19"
+    },
+    "61:1": {
+      "ref": "61:1",
+      "url": "https://quran.com/61:1",
+      "arabic": "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, and He is the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/61:1?translations=19"
+    },
+    "62:1": {
+      "ref": "62:1",
+      "url": "https://quran.com/62:1",
+      "arabic": "يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ٱلْمَلِكِ ٱلْقُدُّوسِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, the Sovereign Lord, the Holy One, the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/62:1?translations=19"
+    },
+    "63:1": {
+      "ref": "63:1",
+      "url": "https://quran.com/63:1",
+      "arabic": "إِذَا جَآءَكَ ٱلْمُنَـٰفِقُونَ قَالُوا۟ نَشْهَدُ إِنَّكَ لَرَسُولُ ٱللَّهِ ۗ وَٱللَّهُ يَعْلَمُ إِنَّكَ لَرَسُولُهُۥ وَٱللَّهُ يَشْهَدُ إِنَّ ٱلْمُنَـٰفِقِينَ لَكَـٰذِبُونَ",
+      "translation": "When the hypocrites come unto thee (O Muhammad), they say: We bear witness that thou art indeed Allah's messenger. And Allah knoweth that thou art indeed His messenger, and Allah beareth witness that the hypocrites indeed are speaking falsely.",
+      "translationUrl": "https://quran.com/63:1?translations=19"
+    },
+    "64:1": {
+      "ref": "64:1",
+      "url": "https://quran.com/64:1",
+      "arabic": "يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ ۖ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      "translation": "All that is in the heavens and all that is in the earth glorifieth Allah; unto Him belongeth Sovereignty and unto Him belongeth praise, and He is Able to do all things.",
+      "translationUrl": "https://quran.com/64:1?translations=19"
+    },
+    "65:1": {
+      "ref": "65:1",
+      "url": "https://quran.com/65:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ إِذَا طَلَّقْتُمُ ٱلنِّسَآءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَأَحْصُوا۟ ٱلْعِدَّةَ ۖ وَٱتَّقُوا۟ ٱللَّهَ رَبَّكُمْ ۖ لَا تُخْرِجُوهُنَّ مِنۢ بُيُوتِهِنَّ وَلَا يَخْرُجْنَ إِلَّآ أَن يَأْتِينَ بِفَـٰحِشَةٍ مُّبَيِّنَةٍ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۚ وَمَن يَتَعَدَّ حُدُودَ ٱللَّهِ فَقَدْ ظَلَمَ نَفْسَهُۥ ۚ لَا تَدْرِى لَعَلَّ ٱللَّهَ يُحْدِثُ بَعْدَ ذَٰلِكَ أَمْرًا",
+      "translation": "O Prophet! When ye (men) put away women, put them away for their (legal) period and reckon the period, and keep your duty to Allah, your Lord. Expel them not from their houses nor let them go forth unless they commit open immorality. Such are the limits (imposed by) Allah; and whoso transgresseth Allah's limits, he verily wrongeth his soul. Thou knowest not: it may be that Allah will afterward bring some new thing to pass.",
+      "translationUrl": "https://quran.com/65:1?translations=19"
+    },
+    "66:1": {
+      "ref": "66:1",
+      "url": "https://quran.com/66:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَ ۖ تَبْتَغِى مَرْضَاتَ أَزْوَٰجِكَ ۚ وَٱللَّهُ غَفُورٌ رَّحِيمٌ",
+      "translation": "O Prophet! Why bannest thou that which Allah hath made lawful for thee, seeking to please thy wives? And Allah is Forgiving, Merciful.",
+      "translationUrl": "https://quran.com/66:1?translations=19"
+    },
+    "67:1": {
+      "ref": "67:1",
+      "url": "https://quran.com/67:1",
+      "arabic": "تَبَـٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      "translation": "Blessed is He in Whose hand is the Sovereignty, and, He is Able to do all things.",
+      "translationUrl": "https://quran.com/67:1?translations=19"
+    },
+    "68:1": {
+      "ref": "68:1",
+      "url": "https://quran.com/68:1",
+      "arabic": "نٓ ۚ وَٱلْقَلَمِ وَمَا يَسْطُرُونَ",
+      "translation": "Nun. By the pen and that which they write (therewith),",
+      "translationUrl": "https://quran.com/68:1?translations=19"
+    },
+    "69:1": {
+      "ref": "69:1",
+      "url": "https://quran.com/69:1",
+      "arabic": "ٱلْحَآقَّةُ",
+      "translation": "The Reality!",
+      "translationUrl": "https://quran.com/69:1?translations=19"
+    },
+    "70:1": {
+      "ref": "70:1",
+      "url": "https://quran.com/70:1",
+      "arabic": "سَأَلَ سَآئِلٌۢ بِعَذَابٍ وَاقِعٍ",
+      "translation": "A questioner questioned concerning the doom about to fall",
+      "translationUrl": "https://quran.com/70:1?translations=19"
+    },
+    "71:1": {
+      "ref": "71:1",
+      "url": "https://quran.com/71:1",
+      "arabic": "إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+      "translation": "Lo! We sent Noah unto his people (saying): Warn thy people ere the painful doom come unto them.",
+      "translationUrl": "https://quran.com/71:1?translations=19"
+    },
+    "72:1": {
+      "ref": "72:1",
+      "url": "https://quran.com/72:1",
+      "arabic": "قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًا",
+      "translation": "Say (O Muhammad): It is revealed unto me that a company of the Jinn gave ear, and they said: Lo! we have heard a marvellous Qur'an,",
+      "translationUrl": "https://quran.com/72:1?translations=19"
+    },
+    "73:1": {
+      "ref": "73:1",
+      "url": "https://quran.com/73:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلْمُزَّمِّلُ",
+      "translation": "O thou wrapped up in thy raiment!",
+      "translationUrl": "https://quran.com/73:1?translations=19"
+    },
+    "74:1": {
+      "ref": "74:1",
+      "url": "https://quran.com/74:1",
+      "arabic": "يَـٰٓأَيُّهَا ٱلْمُدَّثِّرُ",
+      "translation": "O thou enveloped in thy cloak,",
+      "translationUrl": "https://quran.com/74:1?translations=19"
+    },
+    "75:1": {
+      "ref": "75:1",
+      "url": "https://quran.com/75:1",
+      "arabic": "لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ",
+      "translation": "Nay, I swear by the Day of Resurrection;",
+      "translationUrl": "https://quran.com/75:1?translations=19"
+    },
+    "76:1": {
+      "ref": "76:1",
+      "url": "https://quran.com/76:1",
+      "arabic": "هَلْ أَتَىٰ عَلَى ٱلْإِنسَـٰنِ حِينٌ مِّنَ ٱلدَّهْرِ لَمْ يَكُن شَيْـًٔا مَّذْكُورًا",
+      "translation": "Hath there come upon man (ever) any period of time in which he was a thing unremembered?",
+      "translationUrl": "https://quran.com/76:1?translations=19"
+    },
+    "77:1": {
+      "ref": "77:1",
+      "url": "https://quran.com/77:1",
+      "arabic": "وَٱلْمُرْسَلَـٰتِ عُرْفًا",
+      "translation": "By the emissary winds, (sent) one after another",
+      "translationUrl": "https://quran.com/77:1?translations=19"
+    },
+    "78:1": {
+      "ref": "78:1",
+      "url": "https://quran.com/78:1",
+      "arabic": "عَمَّ يَتَسَآءَلُونَ",
+      "translation": "Whereof do they question one another?",
+      "translationUrl": "https://quran.com/78:1?translations=19"
+    },
+    "79:1": {
+      "ref": "79:1",
+      "url": "https://quran.com/79:1",
+      "arabic": "وَٱلنَّـٰزِعَـٰتِ غَرْقًا",
+      "translation": "By those who drag forth to destruction,",
+      "translationUrl": "https://quran.com/79:1?translations=19"
+    },
+    "80:1": {
+      "ref": "80:1",
+      "url": "https://quran.com/80:1",
+      "arabic": "عَبَسَ وَتَوَلَّىٰٓ",
+      "translation": "He frowned and turned away",
+      "translationUrl": "https://quran.com/80:1?translations=19"
+    },
+    "81:1": {
+      "ref": "81:1",
+      "url": "https://quran.com/81:1",
+      "arabic": "إِذَا ٱلشَّمْسُ كُوِّرَتْ",
+      "translation": "When the sun is overthrown,",
+      "translationUrl": "https://quran.com/81:1?translations=19"
+    },
+    "82:1": {
+      "ref": "82:1",
+      "url": "https://quran.com/82:1",
+      "arabic": "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+      "translation": "When the heaven is cleft asunder,",
+      "translationUrl": "https://quran.com/82:1?translations=19"
+    },
+    "83:1": {
+      "ref": "83:1",
+      "url": "https://quran.com/83:1",
+      "arabic": "وَيْلٌ لِّلْمُطَفِّفِينَ",
+      "translation": "Woe unto the defrauders:",
+      "translationUrl": "https://quran.com/83:1?translations=19"
+    },
+    "84:1": {
+      "ref": "84:1",
+      "url": "https://quran.com/84:1",
+      "arabic": "إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
+      "translation": "When the heaven is split asunder",
+      "translationUrl": "https://quran.com/84:1?translations=19"
+    },
+    "85:1": {
+      "ref": "85:1",
+      "url": "https://quran.com/85:1",
+      "arabic": "وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
+      "translation": "By the heaven, holding mansions of the stars,",
+      "translationUrl": "https://quran.com/85:1?translations=19"
+    },
+    "86:1": {
+      "ref": "86:1",
+      "url": "https://quran.com/86:1",
+      "arabic": "وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+      "translation": "By the heaven and the Morning Star",
+      "translationUrl": "https://quran.com/86:1?translations=19"
+    },
+    "87:1": {
+      "ref": "87:1",
+      "url": "https://quran.com/87:1",
+      "arabic": "سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+      "translation": "Praise the name of thy Lord the Most High,",
+      "translationUrl": "https://quran.com/87:1?translations=19"
+    },
+    "88:1": {
+      "ref": "88:1",
+      "url": "https://quran.com/88:1",
+      "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+      "translation": "Hath there come unto thee tidings of the Overwhelming?",
+      "translationUrl": "https://quran.com/88:1?translations=19"
+    },
+    "89:1": {
+      "ref": "89:1",
+      "url": "https://quran.com/89:1",
+      "arabic": "وَٱلْفَجْرِ",
+      "translation": "By the Dawn",
+      "translationUrl": "https://quran.com/89:1?translations=19"
+    },
+    "90:1": {
+      "ref": "90:1",
+      "url": "https://quran.com/90:1",
+      "arabic": "لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
+      "translation": "Nay, I swear by this city -",
+      "translationUrl": "https://quran.com/90:1?translations=19"
+    },
+    "91:1": {
+      "ref": "91:1",
+      "url": "https://quran.com/91:1",
+      "arabic": "وَٱلشَّمْسِ وَضُحَىٰهَا",
+      "translation": "By the sun and his brightness,",
+      "translationUrl": "https://quran.com/91:1?translations=19"
+    },
+    "92:1": {
+      "ref": "92:1",
+      "url": "https://quran.com/92:1",
+      "arabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰ",
+      "translation": "By the night enshrouding",
+      "translationUrl": "https://quran.com/92:1?translations=19"
+    },
+    "93:1": {
+      "ref": "93:1",
+      "url": "https://quran.com/93:1",
+      "arabic": "وَٱلضُّحَىٰ",
+      "translation": "By the morning hours",
+      "translationUrl": "https://quran.com/93:1?translations=19"
+    },
+    "94:1": {
+      "ref": "94:1",
+      "url": "https://quran.com/94:1",
+      "arabic": "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "translation": "Have We not caused thy bosom to dilate,",
+      "translationUrl": "https://quran.com/94:1?translations=19"
+    },
+    "95:1": {
+      "ref": "95:1",
+      "url": "https://quran.com/95:1",
+      "arabic": "وَٱلتِّينِ وَٱلزَّيْتُونِ",
+      "translation": "By the fig and the olive,",
+      "translationUrl": "https://quran.com/95:1?translations=19"
+    },
+    "96:1": {
+      "ref": "96:1",
+      "url": "https://quran.com/96:1",
+      "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+      "translation": "Read: In the name of thy Lord Who createth,",
+      "translationUrl": "https://quran.com/96:1?translations=19"
+    },
+    "97:1": {
+      "ref": "97:1",
+      "url": "https://quran.com/97:1",
+      "arabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "translation": "Lo! We revealed it on the Night of Predestination.",
+      "translationUrl": "https://quran.com/97:1?translations=19"
+    },
+    "98:1": {
+      "ref": "98:1",
+      "url": "https://quran.com/98:1",
+      "arabic": "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
+      "translation": "Those who disbelieve among the People of the Scripture and the idolaters could not have left off (erring) till the clear proof came unto them,",
+      "translationUrl": "https://quran.com/98:1?translations=19"
+    },
+    "99:1": {
+      "ref": "99:1",
+      "url": "https://quran.com/99:1",
+      "arabic": "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "translation": "When Earth is shaken with her (final) earthquake",
+      "translationUrl": "https://quran.com/99:1?translations=19"
+    },
+    "100:1": {
+      "ref": "100:1",
+      "url": "https://quran.com/100:1",
+      "arabic": "وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
+      "translation": "By the snorting courses,",
+      "translationUrl": "https://quran.com/100:1?translations=19"
+    },
+    "101:1": {
+      "ref": "101:1",
+      "url": "https://quran.com/101:1",
+      "arabic": "ٱلْقَارِعَةُ",
+      "translation": "The Calamity!",
+      "translationUrl": "https://quran.com/101:1?translations=19"
+    },
+    "102:1": {
+      "ref": "102:1",
+      "url": "https://quran.com/102:1",
+      "arabic": "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "translation": "Rivalry in worldly increase distracteth you",
+      "translationUrl": "https://quran.com/102:1?translations=19"
+    },
+    "103:1": {
+      "ref": "103:1",
+      "url": "https://quran.com/103:1",
+      "arabic": "وَٱلْعَصْرِ",
+      "translation": "By the declining day,",
+      "translationUrl": "https://quran.com/103:1?translations=19"
+    },
+    "104:1": {
+      "ref": "104:1",
+      "url": "https://quran.com/104:1",
+      "arabic": "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+      "translation": "Woe unto every slandering traducer,",
+      "translationUrl": "https://quran.com/104:1?translations=19"
+    },
+    "105:1": {
+      "ref": "105:1",
+      "url": "https://quran.com/105:1",
+      "arabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+      "translation": "Hast thou not seen how thy Lord dealt with the owners of the Elephant?",
+      "translationUrl": "https://quran.com/105:1?translations=19"
+    },
+    "106:1": {
+      "ref": "106:1",
+      "url": "https://quran.com/106:1",
+      "arabic": "لِإِيلَـٰفِ قُرَيْشٍ",
+      "translation": "For the taming of Qureysh.",
+      "translationUrl": "https://quran.com/106:1?translations=19"
+    },
+    "107:1": {
+      "ref": "107:1",
+      "url": "https://quran.com/107:1",
+      "arabic": "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+      "translation": "Hast thou observed him who belieth religion?",
+      "translationUrl": "https://quran.com/107:1?translations=19"
+    },
+    "108:1": {
+      "ref": "108:1",
+      "url": "https://quran.com/108:1",
+      "arabic": "إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+      "translation": "Lo! We have given thee Abundance;",
+      "translationUrl": "https://quran.com/108:1?translations=19"
+    },
+    "109:1": {
+      "ref": "109:1",
+      "url": "https://quran.com/109:1",
+      "arabic": "قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+      "translation": "Say: O disbelievers!",
+      "translationUrl": "https://quran.com/109:1?translations=19"
+    },
+    "110:1": {
+      "ref": "110:1",
+      "url": "https://quran.com/110:1",
+      "arabic": "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "translation": "When Allah's succour and the triumph cometh",
+      "translationUrl": "https://quran.com/110:1?translations=19"
+    },
+    "111:1": {
+      "ref": "111:1",
+      "url": "https://quran.com/111:1",
+      "arabic": "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+      "translation": "The power of Abu Lahab will perish, and he will perish.",
+      "translationUrl": "https://quran.com/111:1?translations=19"
+    },
+    "112:1": {
+      "ref": "112:1",
+      "url": "https://quran.com/112:1",
+      "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "translation": "Say: He is Allah, the One!",
+      "translationUrl": "https://quran.com/112:1?translations=19"
+    },
+    "113:1": {
+      "ref": "113:1",
+      "url": "https://quran.com/113:1",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "translation": "Say: I seek refuge in the Lord of the Daybreak",
+      "translationUrl": "https://quran.com/113:1?translations=19"
+    },
+    "114:1": {
+      "ref": "114:1",
+      "url": "https://quran.com/114:1",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "translation": "Say: I seek refuge in the Lord of mankind,",
+      "translationUrl": "https://quran.com/114:1?translations=19"
+    }
+  }
+}

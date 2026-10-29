@@ -1,0 +1,348 @@
+{
+  "rooms": [
+    {
+      "id": "patience",
+      "name": "Patience",
+      "description": "Look for how people endure difficulty.",
+      "passages": [
+        {
+          "ref": "2:153",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِينَ",
+          "translation": "O ye who believe! Seek help in steadfastness and prayer. Lo! Allah is with the steadfast.",
+          "url": "https://quran.com/2:153",
+          "translationUrl": "https://quran.com/2:153?translations=19"
+        },
+        {
+          "ref": "16:127",
+          "arabic": "وَٱصْبِرْ وَمَا صَبْرُكَ إِلَّا بِٱللَّهِ ۚ وَلَا تَحْزَنْ عَلَيْهِمْ وَلَا تَكُ فِى ضَيْقٍ مِّمَّا يَمْكُرُونَ",
+          "translation": "Endure thou patiently (O Muhammad). Thine endurance is only by (the help of) Allah. Grieve not for them, and be not in distress because of that which they devise.",
+          "url": "https://quran.com/16:127",
+          "translationUrl": "https://quran.com/16:127?translations=19"
+        },
+        {
+          "ref": "103:3",
+          "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+          "translation": "Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance.",
+          "url": "https://quran.com/103:3",
+          "translationUrl": "https://quran.com/103:3?translations=19"
+        }
+      ],
+      "hint": "Look for how people endure difficulty.",
+      "explanation": "These passages explicitly refer to patience in worship, hardship, and mutual encouragement.",
+      "commentaryUrl": "https://quran.com/2:153/tafsirs/16",
+      "options": [
+        "Patience",
+        "Gratitude",
+        "Hospitality",
+        "Consultation"
+      ],
+      "answer": 0,
+      "refs": [
+        "2:153",
+        "16:127",
+        "103:3"
+      ]
+    },
+    {
+      "id": "gratitude",
+      "name": "Gratitude",
+      "description": "Notice the response to receiving a gift.",
+      "passages": [
+        {
+          "ref": "14:7",
+          "arabic": "وَإِذْ تَأَذَّنَ رَبُّكُمْ لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِى لَشَدِيدٌ",
+          "translation": "And when your Lord proclaimed: If ye give thanks, I will give you more; but if ye are thankless, lo! My punishment is dire.",
+          "url": "https://quran.com/14:7",
+          "translationUrl": "https://quran.com/14:7?translations=19"
+        },
+        {
+          "ref": "31:12",
+          "arabic": "وَلَقَدْ ءَاتَيْنَا لُقْمَـٰنَ ٱلْحِكْمَةَ أَنِ ٱشْكُرْ لِلَّهِ ۚ وَمَن يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِۦ ۖ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِىٌّ حَمِيدٌ",
+          "translation": "And verily We gave Luqman wisdom, saying: Give thanks unto Allah; and whosoever giveth thanks, he giveth thanks for (the good of) his soul. And whosoever refuseth - Lo! Allah is Absolute, Owner of Praise.",
+          "url": "https://quran.com/31:12",
+          "translationUrl": "https://quran.com/31:12?translations=19"
+        },
+        {
+          "ref": "2:152",
+          "arabic": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
+          "translation": "Therefore remember Me, I will remember you. Give thanks to Me, and reject not Me.",
+          "url": "https://quran.com/2:152",
+          "translationUrl": "https://quran.com/2:152?translations=19"
+        }
+      ],
+      "hint": "Notice the response to receiving a gift.",
+      "explanation": "Each passage mentions thankfulness, with different settings and audiences.",
+      "commentaryUrl": "https://quran.com/14:7/tafsirs/16",
+      "options": [
+        "Gratitude",
+        "Patience",
+        "Privacy",
+        "Fasting"
+      ],
+      "answer": 0,
+      "refs": [
+        "14:7",
+        "31:12",
+        "2:152"
+      ]
+    },
+    {
+      "id": "justice",
+      "name": "Justice",
+      "description": "What remains necessary even when feelings get in the way?",
+      "passages": [
+        {
+          "ref": "4:135",
+          "arabic": "۞ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَوَّٰمِينَ بِٱلْقِسْطِ شُهَدَآءَ لِلَّهِ وَلَوْ عَلَىٰٓ أَنفُسِكُمْ أَوِ ٱلْوَٰلِدَيْنِ وَٱلْأَقْرَبِينَ ۚ إِن يَكُنْ غَنِيًّا أَوْ فَقِيرًا فَٱللَّهُ أَوْلَىٰ بِهِمَا ۖ فَلَا تَتَّبِعُوا۟ ٱلْهَوَىٰٓ أَن تَعْدِلُوا۟ ۚ وَإِن تَلْوُۥٓا۟ أَوْ تُعْرِضُوا۟ فَإِنَّ ٱللَّهَ كَانَ بِمَا تَعْمَلُونَ خَبِيرًا",
+          "translation": "O ye who believe! Be ye staunch in justice, witnesses for Allah, even though it be against yourselves or (your) parents or (your) kindred, whether (the case be of) a rich man or a poor man, for Allah is nearer unto both (them ye are). So follow not passion lest ye lapse (from truth) and if ye lapse or fall away, then lo! Allah is ever Informed of what ye do.",
+          "url": "https://quran.com/4:135",
+          "translationUrl": "https://quran.com/4:135?translations=19"
+        },
+        {
+          "ref": "5:8",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَوَّٰمِينَ لِلَّهِ شُهَدَآءَ بِٱلْقِسْطِ ۖ وَلَا يَجْرِمَنَّكُمْ شَنَـَٔانُ قَوْمٍ عَلَىٰٓ أَلَّا تَعْدِلُوا۟ ۚ ٱعْدِلُوا۟ هُوَ أَقْرَبُ لِلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ خَبِيرٌۢ بِمَا تَعْمَلُونَ",
+          "translation": "O ye who believe! Be steadfast witnesses for Allah in equity, and let not hatred of any people seduce you that ye deal not justly. Deal justly, that is nearer to your duty. Observe your duty to Allah. Lo! Allah is Informed of what ye do.",
+          "url": "https://quran.com/5:8",
+          "translationUrl": "https://quran.com/5:8?translations=19"
+        },
+        {
+          "ref": "42:15",
+          "arabic": "فَلِذَٰلِكَ فَٱدْعُ ۖ وَٱسْتَقِمْ كَمَآ أُمِرْتَ ۖ وَلَا تَتَّبِعْ أَهْوَآءَهُمْ ۖ وَقُلْ ءَامَنتُ بِمَآ أَنزَلَ ٱللَّهُ مِن كِتَـٰبٍ ۖ وَأُمِرْتُ لِأَعْدِلَ بَيْنَكُمُ ۖ ٱللَّهُ رَبُّنَا وَرَبُّكُمْ ۖ لَنَآ أَعْمَـٰلُنَا وَلَكُمْ أَعْمَـٰلُكُمْ ۖ لَا حُجَّةَ بَيْنَنَا وَبَيْنَكُمُ ۖ ٱللَّهُ يَجْمَعُ بَيْنَنَا ۖ وَإِلَيْهِ ٱلْمَصِيرُ",
+          "translation": "Unto this, then, summon (O Muhammad). And be thou upright as thou art commanded, and follow not their lusts, but say: I believe in whatever scripture Allah hath sent down, and I am commanded to be just among you. Allah is our Lord and your Lord. Unto us our works and unto you your works; no argument between us and you. Allah will bring us together, and unto Him is the journeying.",
+          "url": "https://quran.com/42:15",
+          "translationUrl": "https://quran.com/42:15?translations=19"
+        }
+      ],
+      "hint": "What remains necessary even when feelings get in the way?",
+      "explanation": "The shared thread is justice, including situations where personal loyalties or hostility can make fairness difficult.",
+      "commentaryUrl": "https://quran.com/4:135/tafsirs/16",
+      "options": [
+        "Justice",
+        "Hospitality",
+        "Fasting",
+        "Creation"
+      ],
+      "answer": 0,
+      "refs": [
+        "4:135",
+        "5:8",
+        "42:15"
+      ]
+    },
+    {
+      "id": "mercy",
+      "name": "Mercy",
+      "description": "Look for compassion that reaches beyond one situation.",
+      "passages": [
+        {
+          "ref": "7:156",
+          "arabic": "۞ وَٱكْتُبْ لَنَا فِى هَـٰذِهِ ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْـَٔاخِرَةِ إِنَّا هُدْنَآ إِلَيْكَ ۚ قَالَ عَذَابِىٓ أُصِيبُ بِهِۦ مَنْ أَشَآءُ ۖ وَرَحْمَتِى وَسِعَتْ كُلَّ شَىْءٍ ۚ فَسَأَكْتُبُهَا لِلَّذِينَ يَتَّقُونَ وَيُؤْتُونَ ٱلزَّكَوٰةَ وَٱلَّذِينَ هُم بِـَٔايَـٰتِنَا يُؤْمِنُونَ",
+          "translation": "And ordain for us in this world that which is good, and in the Hereafter (that which is good), Lo! We have turned unto Thee. He said: I smite with My punishment whom I will, and My mercy embraceth all things, therefore I shall ordain it for those who ward off (evil) and pay the poor-due, and those who believe Our revelations;",
+          "url": "https://quran.com/7:156",
+          "translationUrl": "https://quran.com/7:156?translations=19"
+        },
+        {
+          "ref": "39:53",
+          "arabic": "۞ قُلْ يَـٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ ۚ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
+          "translation": "Say: O My slaves who have been prodigal to their own hurt! Despair not of the mercy of Allah, Who forgiveth all sins. Lo! He is the Forgiving, the Merciful.",
+          "url": "https://quran.com/39:53",
+          "translationUrl": "https://quran.com/39:53?translations=19"
+        },
+        {
+          "ref": "21:107",
+          "arabic": "وَمَآ أَرْسَلْنَـٰكَ إِلَّا رَحْمَةً لِّلْعَـٰلَمِينَ",
+          "translation": "We sent thee not save as a mercy for the peoples.",
+          "url": "https://quran.com/21:107",
+          "translationUrl": "https://quran.com/21:107?translations=19"
+        }
+      ],
+      "hint": "Look for compassion that reaches beyond one situation.",
+      "explanation": "Mercy is named in each passage. The editorial connection brings together different references to Allah's mercy.",
+      "commentaryUrl": "https://quran.com/7:156/tafsirs/16",
+      "options": [
+        "Mercy",
+        "Promises",
+        "Moderation",
+        "Time"
+      ],
+      "answer": 0,
+      "refs": [
+        "7:156",
+        "39:53",
+        "21:107"
+      ]
+    },
+    {
+      "id": "learning",
+      "name": "Learning",
+      "description": "Look for reading, knowing, and seeking more.",
+      "passages": [
+        {
+          "ref": "96:1-5",
+          "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+          "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not.",
+          "url": "https://quran.com/96:1-5",
+          "translationUrl": "https://quran.com/96:1-5?translations=19"
+        },
+        {
+          "ref": "20:114",
+          "arabic": "فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۗ وَلَا تَعْجَلْ بِٱلْقُرْءَانِ مِن قَبْلِ أَن يُقْضَىٰٓ إِلَيْكَ وَحْيُهُۥ ۖ وَقُل رَّبِّ زِدْنِى عِلْمًا",
+          "translation": "Then exalted be Allah, the True King! And hasten not (O Muhammad) with the Qur'an ere its revelation hath been perfected unto thee, and say: My Lord! Increase me in knowledge.",
+          "url": "https://quran.com/20:114",
+          "translationUrl": "https://quran.com/20:114?translations=19"
+        },
+        {
+          "ref": "39:9",
+          "arabic": "أَمَّنْ هُوَ قَـٰنِتٌ ءَانَآءَ ٱلَّيْلِ سَاجِدًا وَقَآئِمًا يَحْذَرُ ٱلْـَٔاخِرَةَ وَيَرْجُوا۟ رَحْمَةَ رَبِّهِۦ ۗ قُلْ هَلْ يَسْتَوِى ٱلَّذِينَ يَعْلَمُونَ وَٱلَّذِينَ لَا يَعْلَمُونَ ۗ إِنَّمَا يَتَذَكَّرُ أُو۟لُوا۟ ٱلْأَلْبَـٰبِ",
+          "translation": "Is he who payeth adoration in the watches of the night, prostrate and standing, bewaring of the Hereafter and hoping for the mercy of his Lord, (to be accounted equal with a disbeliever)? Say (unto them, O Muhammad): Are those who know equal with those who know not? But only men of understanding will pay heed.",
+          "url": "https://quran.com/39:9",
+          "translationUrl": "https://quran.com/39:9?translations=19"
+        }
+      ],
+      "hint": "Look for reading, knowing, and seeking more.",
+      "explanation": "Reading and knowledge form the intended connection. One passage is a continuous five-ayah selection.",
+      "commentaryUrl": "https://quran.com/96:1/tafsirs/16",
+      "options": [
+        "Learning",
+        "Giving",
+        "Moderation",
+        "Reconciliation"
+      ],
+      "answer": 0,
+      "refs": [
+        "96:1-5",
+        "20:114",
+        "39:9"
+      ]
+    },
+    {
+      "id": "keeping-commitments",
+      "name": "Keeping commitments",
+      "description": "What should remain dependable after an agreement?",
+      "passages": [
+        {
+          "ref": "17:34",
+          "arabic": "وَلَا تَقْرَبُوا۟ مَالَ ٱلْيَتِيمِ إِلَّا بِٱلَّتِى هِىَ أَحْسَنُ حَتَّىٰ يَبْلُغَ أَشُدَّهُۥ ۚ وَأَوْفُوا۟ بِٱلْعَهْدِ ۖ إِنَّ ٱلْعَهْدَ كَانَ مَسْـُٔولًا",
+          "translation": "Come not near the wealth of the orphan save with that which is better till he come to strength; and keep the covenant. Lo! of the covenant it will be asked.",
+          "url": "https://quran.com/17:34",
+          "translationUrl": "https://quran.com/17:34?translations=19"
+        },
+        {
+          "ref": "5:1",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَـٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
+          "translation": "O ye who believe! Fulfil your indentures. The beast of cattle is made lawful unto you (for food) except that which is announced unto you (herein), game being unlawful when ye are on the pilgrimage. Lo! Allah ordaineth that which pleaseth Him.",
+          "url": "https://quran.com/5:1",
+          "translationUrl": "https://quran.com/5:1?translations=19"
+        },
+        {
+          "ref": "16:91",
+          "arabic": "وَأَوْفُوا۟ بِعَهْدِ ٱللَّهِ إِذَا عَـٰهَدتُّمْ وَلَا تَنقُضُوا۟ ٱلْأَيْمَـٰنَ بَعْدَ تَوْكِيدِهَا وَقَدْ جَعَلْتُمُ ٱللَّهَ عَلَيْكُمْ كَفِيلًا ۚ إِنَّ ٱللَّهَ يَعْلَمُ مَا تَفْعَلُونَ",
+          "translation": "Fulfil the covenant of Allah when ye have covenanted, and break not your oaths after the asseveration of them, and after ye have made Allah surety over you. Lo! Allah knoweth what ye do.",
+          "url": "https://quran.com/16:91",
+          "translationUrl": "https://quran.com/16:91?translations=19"
+        }
+      ],
+      "hint": "What should remain dependable after an agreement?",
+      "explanation": "Covenants and commitments are explicit in these passages. Read each in its own setting.",
+      "commentaryUrl": "https://quran.com/17:34/tafsirs/16",
+      "options": [
+        "Keeping commitments",
+        "Mercy",
+        "Hospitality",
+        "Privacy"
+      ],
+      "answer": 0,
+      "refs": [
+        "17:34",
+        "5:1",
+        "16:91"
+      ]
+    },
+    {
+      "id": "hospitality",
+      "name": "Hospitality",
+      "description": "Follow the account of guests arriving and being offered food.",
+      "passages": [
+        {
+          "ref": "51:24",
+          "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ضَيْفِ إِبْرَٰهِيمَ ٱلْمُكْرَمِينَ",
+          "translation": "Hath the story of Abraham's honoured guests reached thee (O Muhammad)?",
+          "url": "https://quran.com/51:24",
+          "translationUrl": "https://quran.com/51:24?translations=19"
+        },
+        {
+          "ref": "51:26",
+          "arabic": "فَرَاغَ إِلَىٰٓ أَهْلِهِۦ فَجَآءَ بِعِجْلٍ سَمِينٍ",
+          "translation": "Then he went apart unto his housefolk so that they brought a fatted calf;",
+          "url": "https://quran.com/51:26",
+          "translationUrl": "https://quran.com/51:26?translations=19"
+        },
+        {
+          "ref": "51:27",
+          "arabic": "فَقَرَّبَهُۥٓ إِلَيْهِمْ قَالَ أَلَا تَأْكُلُونَ",
+          "translation": "And he set it before them, saying: Will ye not eat?",
+          "url": "https://quran.com/51:27",
+          "translationUrl": "https://quran.com/51:27?translations=19"
+        }
+      ],
+      "hint": "Follow the account of guests arriving and being offered food.",
+      "explanation": "These passages belong to the same account of Ibrahim's guests. The narrative sequence connects them.",
+      "commentaryUrl": "https://quran.com/51:24/tafsirs/16",
+      "options": [
+        "Hospitality",
+        "Fasting",
+        "Privacy",
+        "Moderation"
+      ],
+      "answer": 0,
+      "refs": [
+        "51:24",
+        "51:26",
+        "51:27"
+      ]
+    },
+    {
+      "id": "careful-speech",
+      "name": "Careful speech",
+      "description": "Consider what is said and how it affects other people.",
+      "passages": [
+        {
+          "ref": "33:70",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَقُولُوا۟ قَوْلًا سَدِيدًا",
+          "translation": "O ye who believe! Guard your duty to Allah, and speak words straight to the point;",
+          "url": "https://quran.com/33:70",
+          "translationUrl": "https://quran.com/33:70?translations=19"
+        },
+        {
+          "ref": "49:11",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰٓ أَن يَكُونُوا۟ خَيْرًا مِّنْهُمْ وَلَا نِسَآءٌ مِّن نِّسَآءٍ عَسَىٰٓ أَن يَكُنَّ خَيْرًا مِّنْهُنَّ ۖ وَلَا تَلْمِزُوٓا۟ أَنفُسَكُمْ وَلَا تَنَابَزُوا۟ بِٱلْأَلْقَـٰبِ ۖ بِئْسَ ٱلِٱسْمُ ٱلْفُسُوقُ بَعْدَ ٱلْإِيمَـٰنِ ۚ وَمَن لَّمْ يَتُبْ فَأُو۟لَـٰٓئِكَ هُمُ ٱلظَّـٰلِمُونَ",
+          "translation": "O ye who believe! Let not a folk deride a folk who may be better than they (are), not let women (deride) women who may be better than they are; neither defame one another, nor insult one another by nicknames. Bad is the name of lewdness after faith. And whoso turneth not in repentance, such are evil-doers.",
+          "url": "https://quran.com/49:11",
+          "translationUrl": "https://quran.com/49:11?translations=19"
+        },
+        {
+          "ref": "17:53",
+          "arabic": "وَقُل لِّعِبَادِى يَقُولُوا۟ ٱلَّتِى هِىَ أَحْسَنُ ۚ إِنَّ ٱلشَّيْطَـٰنَ يَنزَغُ بَيْنَهُمْ ۚ إِنَّ ٱلشَّيْطَـٰنَ كَانَ لِلْإِنسَـٰنِ عَدُوًّا مُّبِينًا",
+          "translation": "Tell My bondmen to speak that which is kindlier. Lo! the devil soweth discord among them. Lo! the devil is for man an open foe.",
+          "url": "https://quran.com/17:53",
+          "translationUrl": "https://quran.com/17:53?translations=19"
+        }
+      ],
+      "hint": "Consider what is said and how it affects other people.",
+      "explanation": "Upright words, avoiding ridicule, and speaking well connect this set.",
+      "commentaryUrl": "https://quran.com/33:70/tafsirs/16",
+      "options": [
+        "Careful speech",
+        "Creation",
+        "Fasting",
+        "Time"
+      ],
+      "answer": 0,
+      "refs": [
+        "33:70",
+        "49:11",
+        "17:53"
+      ]
+    }
+  ]
+}

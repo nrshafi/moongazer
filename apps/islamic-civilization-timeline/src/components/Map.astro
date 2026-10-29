@@ -1,0 +1,4 @@
+---
+import {landPaths} from '../data/content.json';
+---
+<svg class="world-map" viewBox="0 0 840 380" role="img" aria-label="Land outlines from Iberia and Africa to Central, South and Southeast Asia"><defs><clipPath id="map-area"><rect width="840" height="380"/></clipPath></defs><g clip-path="url(#map-area)">{landPaths.map(path=><path d={path}/>)}</g></svg>

@@ -1,0 +1,42 @@
+# The Seerah Detective
+
+## Overview
+
+Open a case, examine the reports, and let the evidence guide your conclusion. Learners who want to practice reading historical reports before selecting a supported conclusion.
+
+Portfolio rank 3 of 20. Project root `apps/the-seerah-detective`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+
+## Goals
+
+1. Deliver this activity immediately without sign-in or a stored personal history.
+2. Keep the app independently buildable and usable with optional or unavailable browser storage.
+3. Preserve source evidence, light/dark accessibility and the app-specific limits below.
+
+## Core user flow
+
+1. Browse the case catalog and open an investigation.
+2. Examine the evidence cards, follow the named reports, and select a conclusion.
+3. Read why the conclusion is or is not supported; retry, restart, share or open another case.
+
+## Features and content
+
+12 investigations, three source-backed evidence cards per case, competing conclusions, hints, graded feedback, source readings and optional case recovery.
+
+Bundled list inventory from `src/data/content.json`:
+
+- `cases`: 12 records.
+
+The app has 17 source-list entries, local source/privacy/404 pages and its own fonts, manifest and lockfile.
+
+## Scope
+
+In scope: the implemented activity, its source notes, optional temporary state and independent static deployment. Out of scope: accounts, personal profiles, server storage, live AI answers, synchronized multiplayer, trusted public scores and automatic publication.
+
+Distinguish report text, original paraphrase and inference. A case conclusion must not claim more than the identified report establishes.
+
+## Success criteria
+
+1. The complete user flow above works with an empty browser and without localStorage.
+2. The content inventory and citations remain consistent; answers/calculations follow the implemented constraints.
+3. `bun run check`, `bun test` and `bun run build` pass for behavior changes; changed interactions work in both themes and on narrow screens.
+4. A static `dist/` can be served at the root of its own Pages project, with no runtime service dependency.

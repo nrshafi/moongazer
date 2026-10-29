@@ -1,0 +1,577 @@
+[
+  {
+    "label": "Quran Foundation official MCP · canonical text and structural metadata",
+    "url": "https://mcp.quran.ai",
+    "kind": "Primary data source"
+  },
+  {
+    "label": "1. Al-Fatihah · complete chapter",
+    "url": "https://quran.com/1",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "2. Al-Baqarah · complete chapter",
+    "url": "https://quran.com/2",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "3. Ali 'Imran · complete chapter",
+    "url": "https://quran.com/3",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "4. An-Nisa · complete chapter",
+    "url": "https://quran.com/4",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "5. Al-Ma'idah · complete chapter",
+    "url": "https://quran.com/5",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "6. Al-An'am · complete chapter",
+    "url": "https://quran.com/6",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "7. Al-A'raf · complete chapter",
+    "url": "https://quran.com/7",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "8. Al-Anfal · complete chapter",
+    "url": "https://quran.com/8",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "9. At-Tawbah · complete chapter",
+    "url": "https://quran.com/9",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "10. Yunus · complete chapter",
+    "url": "https://quran.com/10",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "11. Hud · complete chapter",
+    "url": "https://quran.com/11",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "12. Yusuf · complete chapter",
+    "url": "https://quran.com/12",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "13. Ar-Ra'd · complete chapter",
+    "url": "https://quran.com/13",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "14. Ibrahim · complete chapter",
+    "url": "https://quran.com/14",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "15. Al-Hijr · complete chapter",
+    "url": "https://quran.com/15",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "16. An-Nahl · complete chapter",
+    "url": "https://quran.com/16",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "17. Al-Isra · complete chapter",
+    "url": "https://quran.com/17",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "18. Al-Kahf · complete chapter",
+    "url": "https://quran.com/18",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "19. Maryam · complete chapter",
+    "url": "https://quran.com/19",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "20. Taha · complete chapter",
+    "url": "https://quran.com/20",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "21. Al-Anbya · complete chapter",
+    "url": "https://quran.com/21",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "22. Al-Hajj · complete chapter",
+    "url": "https://quran.com/22",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "23. Al-Mu'minun · complete chapter",
+    "url": "https://quran.com/23",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "24. An-Nur · complete chapter",
+    "url": "https://quran.com/24",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "25. Al-Furqan · complete chapter",
+    "url": "https://quran.com/25",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "26. Ash-Shu'ara · complete chapter",
+    "url": "https://quran.com/26",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "27. An-Naml · complete chapter",
+    "url": "https://quran.com/27",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "28. Al-Qasas · complete chapter",
+    "url": "https://quran.com/28",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "29. Al-'Ankabut · complete chapter",
+    "url": "https://quran.com/29",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "30. Ar-Rum · complete chapter",
+    "url": "https://quran.com/30",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "31. Luqman · complete chapter",
+    "url": "https://quran.com/31",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "32. As-Sajdah · complete chapter",
+    "url": "https://quran.com/32",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "33. Al-Ahzab · complete chapter",
+    "url": "https://quran.com/33",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "34. Saba · complete chapter",
+    "url": "https://quran.com/34",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "35. Fatir · complete chapter",
+    "url": "https://quran.com/35",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "36. Ya-Sin · complete chapter",
+    "url": "https://quran.com/36",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "37. As-Saffat · complete chapter",
+    "url": "https://quran.com/37",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "38. Sad · complete chapter",
+    "url": "https://quran.com/38",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "39. Az-Zumar · complete chapter",
+    "url": "https://quran.com/39",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "40. Ghafir · complete chapter",
+    "url": "https://quran.com/40",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "41. Fussilat · complete chapter",
+    "url": "https://quran.com/41",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "42. Ash-Shuraa · complete chapter",
+    "url": "https://quran.com/42",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "43. Az-Zukhruf · complete chapter",
+    "url": "https://quran.com/43",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "44. Ad-Dukhan · complete chapter",
+    "url": "https://quran.com/44",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "45. Al-Jathiyah · complete chapter",
+    "url": "https://quran.com/45",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "46. Al-Ahqaf · complete chapter",
+    "url": "https://quran.com/46",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "47. Muhammad · complete chapter",
+    "url": "https://quran.com/47",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "48. Al-Fath · complete chapter",
+    "url": "https://quran.com/48",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "49. Al-Hujurat · complete chapter",
+    "url": "https://quran.com/49",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "50. Qaf · complete chapter",
+    "url": "https://quran.com/50",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "51. Adh-Dhariyat · complete chapter",
+    "url": "https://quran.com/51",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "52. At-Tur · complete chapter",
+    "url": "https://quran.com/52",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "53. An-Najm · complete chapter",
+    "url": "https://quran.com/53",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "54. Al-Qamar · complete chapter",
+    "url": "https://quran.com/54",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "55. Ar-Rahman · complete chapter",
+    "url": "https://quran.com/55",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "56. Al-Waqi'ah · complete chapter",
+    "url": "https://quran.com/56",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "57. Al-Hadid · complete chapter",
+    "url": "https://quran.com/57",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "58. Al-Mujadila · complete chapter",
+    "url": "https://quran.com/58",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "59. Al-Hashr · complete chapter",
+    "url": "https://quran.com/59",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "60. Al-Mumtahanah · complete chapter",
+    "url": "https://quran.com/60",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "61. As-Saf · complete chapter",
+    "url": "https://quran.com/61",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "62. Al-Jumu'ah · complete chapter",
+    "url": "https://quran.com/62",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "63. Al-Munafiqun · complete chapter",
+    "url": "https://quran.com/63",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "64. At-Taghabun · complete chapter",
+    "url": "https://quran.com/64",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "65. At-Talaq · complete chapter",
+    "url": "https://quran.com/65",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "66. At-Tahrim · complete chapter",
+    "url": "https://quran.com/66",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "67. Al-Mulk · complete chapter",
+    "url": "https://quran.com/67",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "68. Al-Qalam · complete chapter",
+    "url": "https://quran.com/68",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "69. Al-Haqqah · complete chapter",
+    "url": "https://quran.com/69",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "70. Al-Ma'arij · complete chapter",
+    "url": "https://quran.com/70",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "71. Nuh · complete chapter",
+    "url": "https://quran.com/71",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "72. Al-Jinn · complete chapter",
+    "url": "https://quran.com/72",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "73. Al-Muzzammil · complete chapter",
+    "url": "https://quran.com/73",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "74. Al-Muddaththir · complete chapter",
+    "url": "https://quran.com/74",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "75. Al-Qiyamah · complete chapter",
+    "url": "https://quran.com/75",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "76. Al-Insan · complete chapter",
+    "url": "https://quran.com/76",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "77. Al-Mursalat · complete chapter",
+    "url": "https://quran.com/77",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "78. An-Naba · complete chapter",
+    "url": "https://quran.com/78",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "79. An-Nazi'at · complete chapter",
+    "url": "https://quran.com/79",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "80. 'Abasa · complete chapter",
+    "url": "https://quran.com/80",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "81. At-Takwir · complete chapter",
+    "url": "https://quran.com/81",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "82. Al-Infitar · complete chapter",
+    "url": "https://quran.com/82",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "83. Al-Mutaffifin · complete chapter",
+    "url": "https://quran.com/83",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "84. Al-Inshiqaq · complete chapter",
+    "url": "https://quran.com/84",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "85. Al-Buruj · complete chapter",
+    "url": "https://quran.com/85",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "86. At-Tariq · complete chapter",
+    "url": "https://quran.com/86",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "87. Al-A'la · complete chapter",
+    "url": "https://quran.com/87",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "88. Al-Ghashiyah · complete chapter",
+    "url": "https://quran.com/88",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "89. Al-Fajr · complete chapter",
+    "url": "https://quran.com/89",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "90. Al-Balad · complete chapter",
+    "url": "https://quran.com/90",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "91. Ash-Shams · complete chapter",
+    "url": "https://quran.com/91",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "92. Al-Layl · complete chapter",
+    "url": "https://quran.com/92",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "93. Ad-Duhaa · complete chapter",
+    "url": "https://quran.com/93",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "94. Ash-Sharh · complete chapter",
+    "url": "https://quran.com/94",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "95. At-Tin · complete chapter",
+    "url": "https://quran.com/95",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "96. Al-'Alaq · complete chapter",
+    "url": "https://quran.com/96",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "97. Al-Qadr · complete chapter",
+    "url": "https://quran.com/97",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "98. Al-Bayyinah · complete chapter",
+    "url": "https://quran.com/98",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "99. Az-Zalzalah · complete chapter",
+    "url": "https://quran.com/99",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "100. Al-'Adiyat · complete chapter",
+    "url": "https://quran.com/100",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "101. Al-Qari'ah · complete chapter",
+    "url": "https://quran.com/101",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "102. At-Takathur · complete chapter",
+    "url": "https://quran.com/102",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "103. Al-'Asr · complete chapter",
+    "url": "https://quran.com/103",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "104. Al-Humazah · complete chapter",
+    "url": "https://quran.com/104",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "105. Al-Fil · complete chapter",
+    "url": "https://quran.com/105",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "106. Quraysh · complete chapter",
+    "url": "https://quran.com/106",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "107. Al-Ma'un · complete chapter",
+    "url": "https://quran.com/107",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "108. Al-Kawthar · complete chapter",
+    "url": "https://quran.com/108",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "109. Al-Kafirun · complete chapter",
+    "url": "https://quran.com/109",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "110. An-Nasr · complete chapter",
+    "url": "https://quran.com/110",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "111. Al-Masad · complete chapter",
+    "url": "https://quran.com/111",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "112. Al-Ikhlas · complete chapter",
+    "url": "https://quran.com/112",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "113. Al-Falaq · complete chapter",
+    "url": "https://quran.com/113",
+    "kind": "Arabic and Pickthall source"
+  },
+  {
+    "label": "114. An-Nas · complete chapter",
+    "url": "https://quran.com/114",
+    "kind": "Arabic and Pickthall source"
+  }
+]

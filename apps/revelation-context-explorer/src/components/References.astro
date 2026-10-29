@@ -1,0 +1,5 @@
+---
+interface Props { sources: {label:string;url:string;kind?:string;note?:string}[]; commentaryUrl?:string; secondCommentaryUrl?:string; secondLabel?:string; }
+const {sources,commentaryUrl,secondCommentaryUrl,secondLabel='Further Arabic commentary'}=Astro.props;
+---
+<section class="panel panel-body top-gap"><h2>Follow the evidence</h2><ul class="source-list">{sources.map(s=><li><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a><small>{s.note}</small></li>)}{commentaryUrl&&<li><a href={commentaryUrl} target="_blank" rel="noopener noreferrer">Al-Tafsir al-Muyassar ↗</a><small>Fetched Arabic commentary. English notes here are original concise paraphrases.</small></li>}{secondCommentaryUrl&&<li><a href={secondCommentaryUrl} target="_blank" rel="noopener noreferrer">{secondLabel} ↗</a><small>Read the full discussion. A source link does not make every activity prompt a scholarly statement.</small></li>}</ul><p class="micro">Reports are summarized in our own words. This app does not republish modern English hadith translations.</p></section>

@@ -1,0 +1,375 @@
+{
+  "cases": [
+    {
+      "id": "anger-strength",
+      "title": "What counts as strength?",
+      "topic": "Hadith reading",
+      "claim": "The cited report defines strength as defeating other people.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "The contrast",
+          "text": "The report contrasts overcoming others with self-control in anger."
+        },
+        {
+          "title": "The scope",
+          "text": "It describes a virtue; it is not a fitness or mental-health assessment."
+        }
+      ],
+      "correction": "Sahih al-Bukhari 6114 praises controlling oneself when angry.",
+      "limit": "This does not mean every form of physical strength is condemned.",
+      "skill": "Read the contrast instead of extracting one familiar word.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurayra’s report contrasts physical victory and self-control in anger."
+        }
+      ]
+    },
+    {
+      "id": "hidden-defect",
+      "title": "Does a hidden defect matter?",
+      "topic": "Fair dealing",
+      "claim": "The cited report says concealing a defect cannot affect a sale’s blessing.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "Truth and disclosure",
+          "text": "The report connects truth and disclosure with blessing."
+        },
+        {
+          "title": "Concealment",
+          "text": "It explicitly contrasts this with lying or hiding a fact."
+        }
+      ],
+      "correction": "Sahih al-Bukhari 2079 warns about concealment rather than treating it as harmless.",
+      "limit": "The report is not a complete legal decision on a visitor’s real dispute.",
+      "skill": "Read both sides of a conditional statement.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2079",
+          "url": "https://sunnah.com/bukhari:2079",
+          "kind": "Primary hadith report",
+          "note": "Hakim ibn Hizam’s report addresses buyer and seller truthfulness."
+        }
+      ]
+    },
+    {
+      "id": "cave-web",
+      "title": "A detail beyond a brief cave report",
+      "topic": "Historical detail",
+      "claim": "Sahih al-Bukhari 3653 describes a spider spinning a web at the cave.",
+      "verdict": "Beyond the cited evidence",
+      "evidence": [
+        {
+          "title": "The reported concern",
+          "text": "Abu Bakr describes concern that the pursuers might see them."
+        },
+        {
+          "title": "The reply",
+          "text": "The brief account records reassurance. It does not describe a spider’s web."
+        }
+      ],
+      "correction": "This particular report supports concern and reassurance; it does not supply the web detail.",
+      "limit": "Omission here does not establish the authenticity or inauthenticity of every other narration about the cave.",
+      "skill": "Check the exact cited report before importing a familiar detail.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653",
+          "kind": "Primary hadith report",
+          "note": "Abu Bakr’s brief report about the cave; previously retrieved in the canonical research set."
+        }
+      ]
+    },
+    {
+      "id": "night-date",
+      "title": "An exact anniversary from a report?",
+      "topic": "Historical detail",
+      "claim": "The cited Night Journey report establishes an exact Gregorian anniversary.",
+      "verdict": "Beyond the cited evidence",
+      "evidence": [
+        {
+          "title": "An event report",
+          "text": "The account describes the journey and ascent."
+        },
+        {
+          "title": "A missing calendar claim",
+          "text": "It does not supply an exact Gregorian day and month."
+        }
+      ],
+      "correction": "The selected report can support an event account without establishing the precise anniversary claimed.",
+      "limit": "This is a scope finding about the cited report, not a complete survey of all historical date discussions.",
+      "skill": "Separate evidence for an event from evidence for its date.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 3887",
+          "url": "https://sunnah.com/bukhari:3887",
+          "kind": "Primary hadith report",
+          "note": "Malik ibn Sasaa’s Night Journey report; previously retrieved for the Seerah source set."
+        }
+      ]
+    },
+    {
+      "id": "safa-wording",
+      "title": "A phrase detached from its report",
+      "topic": "Quran context",
+      "claim": "“No blame” in 2:158 means the walk between Safa and Marwa may simply be omitted.",
+      "verdict": "Needs context",
+      "evidence": [
+        {
+          "title": "The questioner’s inference",
+          "text": "Urwa makes that inference in the cited report."
+        },
+        {
+          "title": "Aisha’s answer",
+          "text": "Aisha rejects it and explains the earlier hesitation behind the wording."
+        }
+      ],
+      "correction": "Read the complete verse with Aisha’s explanation rather than treating the isolated phrase as a complete ruling.",
+      "limit": "Legal detail and school-specific discussion require more than this short exercise.",
+      "skill": "A source can preserve a mistaken question without endorsing it.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1643",
+          "url": "https://sunnah.com/bukhari:1643",
+          "kind": "Primary hadith report",
+          "note": "Urwa’s question and Aisha’s correction about Safa and Marwa."
+        }
+      ],
+      "passage": {
+        "ref": "2:158",
+        "arabic": "۞ إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ",
+        "translation": "Lo! (the mountains) As-Safa and Al-Marwah are among the indications of Allah. It is therefore no sin for him who is on pilgrimage to the House (of Allah) or visiteth it, to go around them (as the pagan custom is). And he who doeth good of his own accord, (for him) lo! Allah is Responsive, Aware.",
+        "url": "https://quran.com/2:158",
+        "translationUrl": "https://quran.com/2:158?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:158/tafsirs/16"
+    },
+    {
+      "id": "garden-cause",
+      "title": "Response or cause?",
+      "topic": "Quran context",
+      "claim": "Abu Talha’s offer of his garden caused 3:92 to be revealed.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "The sequence",
+          "text": "The report places the verse’s revelation before Abu Talha’s offer."
+        },
+        {
+          "title": "The response",
+          "text": "The garden is his response to the teaching he heard."
+        }
+      ],
+      "correction": "The cited report describes a response after revelation, not the garden offer as its cause.",
+      "limit": "A single account of response does not list every circumstance known about a verse.",
+      "skill": "Check the direction of the narrative sequence.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1461",
+          "url": "https://sunnah.com/bukhari:1461",
+          "kind": "Primary hadith report",
+          "note": "Anas’s report about the beloved garden and charitable giving."
+        }
+      ],
+      "passage": {
+        "ref": "3:92",
+        "arabic": "لَن تَنَالُوا۟ ٱلْبِرَّ حَتَّىٰ تُنفِقُوا۟ مِمَّا تُحِبُّونَ ۚ وَمَا تُنفِقُوا۟ مِن شَىْءٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ",
+        "translation": "Ye will not attain unto piety until ye spend of that which ye love. And whatsoever ye spend, Allah is Aware thereof.",
+        "url": "https://quran.com/3:92",
+        "translationUrl": "https://quran.com/3:92?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/3:92/tafsirs/16"
+    },
+    {
+      "id": "spider-material",
+      "title": "A house is not a tensile-strength claim",
+      "topic": "Quran wording",
+      "claim": "29:41 says spider silk is the weakest material in the world.",
+      "verdict": "Beyond the cited evidence",
+      "evidence": [
+        {
+          "title": "The actual image",
+          "text": "The verse names a spider’s house, not a laboratory measure of silk."
+        },
+        {
+          "title": "Retrieved commentary",
+          "text": "Al-Muyassar explains the comparison in terms of reliance on protectors besides Allah."
+        }
+      ],
+      "correction": "The reading concerns a fragile refuge in a comparison about reliance. It does not present a materials-science ranking.",
+      "limit": "Do not turn this scope correction into an unsupported claim about the strongest or weakest fiber.",
+      "skill": "Keep an analogy’s stated subject separate from a modern measurement.",
+      "sources": [],
+      "passage": {
+        "ref": "29:41",
+        "arabic": "مَثَلُ ٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ أَوْلِيَآءَ كَمَثَلِ ٱلْعَنكَبُوتِ ٱتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ ٱلْبُيُوتِ لَبَيْتُ ٱلْعَنكَبُوتِ ۖ لَوْ كَانُوا۟ يَعْلَمُونَ",
+        "translation": "The likeness of those who choose other patrons than Allah is as the likeness of the spider when she taketh unto herself a house, and lo! the frailest of all houses is the spider's house, if they but knew.",
+        "url": "https://quran.com/29:41",
+        "translationUrl": "https://quran.com/29:41?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/29:41/tafsirs/16"
+    },
+    {
+      "id": "ancestry",
+      "title": "Does ancestry settle honor?",
+      "topic": "Quran wording",
+      "claim": "49:13 names tribes in order to rank human worth by ancestry.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "Shared origin",
+          "text": "The passage begins with shared human origin."
+        },
+        {
+          "title": "Its stated distinction",
+          "text": "Al-Muyassar explains that ancestry is not the basis of superiority; the passage names taqwa."
+        }
+      ],
+      "correction": "The cited reading does not make ancestry a guarantee of honor.",
+      "limit": "The app does not judge any individual’s taqwa or assign a personal religious rank.",
+      "skill": "Read the reason and criterion actually stated in the passage.",
+      "sources": [],
+      "passage": {
+        "ref": "49:13",
+        "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
+        "translation": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware.",
+        "url": "https://quran.com/49:13",
+        "translationUrl": "https://quran.com/49:13?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/49:13/tafsirs/16"
+    },
+    {
+      "id": "payment",
+      "title": "Ability to pay and a delay",
+      "topic": "Fair dealing",
+      "claim": "The cited report says delaying a due debt is harmless when the debtor is wealthy.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "The debtor’s ability",
+          "text": "The report specifically concerns an able debtor."
+        },
+        {
+          "title": "Its evaluation",
+          "text": "It describes the delay as injustice."
+        }
+      ],
+      "correction": "Sahih al-Bukhari 2400 does not excuse avoidable delay by the able debtor.",
+      "limit": "Do not apply this to genuine inability without checking the different facts and relevant sources.",
+      "skill": "Do not reverse a source’s condition.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2400",
+          "url": "https://sunnah.com/bukhari:2400",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurayra’s report about delay by an able debtor."
+        }
+      ]
+    },
+    {
+      "id": "truth-habit",
+      "title": "The habit a report praises",
+      "topic": "Hadith reading",
+      "claim": "The cited report praises repeated lying as a path to righteousness.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "Two habits",
+          "text": "The report contrasts truthfulness and falsehood."
+        },
+        {
+          "title": "Their direction",
+          "text": "It connects truthfulness, not repeated lying, with righteousness."
+        }
+      ],
+      "correction": "Sahih al-Bukhari 6094 praises truthfulness and warns about lying.",
+      "limit": "The exercise does not decide the moral state of a named person or resolve every exceptional legal discussion about speech.",
+      "skill": "Check which verb belongs to which outcome.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094",
+          "kind": "Primary hadith report",
+          "note": "The report links habits of speech with their consequences."
+        }
+      ]
+    },
+    {
+      "id": "voice-name",
+      "title": "Filling a narrator’s blank",
+      "topic": "Report precision",
+      "claim": "The cited 49:2 report identifies both proposed candidates with no uncertainty.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "A retained gap",
+          "text": "The sub-narrator says he does not remember one name."
+        },
+        {
+          "title": "The event",
+          "text": "The account still describes the disagreement and rising voices."
+        }
+      ],
+      "correction": "Preserve the name uncertainty in this report. A detail from another source needs separate attribution.",
+      "limit": "A gap in one narrator’s memory does not make every other detail of the report unknown.",
+      "skill": "Retain a source’s own uncertainty.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4845",
+          "url": "https://sunnah.com/bukhari:4845",
+          "kind": "Primary hadith report",
+          "note": "Ibn Abi Mulaika’s narration preserves a sub-narrator’s uncertainty."
+        }
+      ],
+      "passage": {
+        "ref": "49:2",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَرْفَعُوٓا۟ أَصْوَٰتَكُمْ فَوْقَ صَوْتِ ٱلنَّبِىِّ وَلَا تَجْهَرُوا۟ لَهُۥ بِٱلْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَـٰلُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ",
+        "translation": "O ye who believe! Lift not up your voices above the voice of the Prophet, nor shout when speaking to him as ye shout one to another, lest your works be rendered vain while ye perceive not.",
+        "url": "https://quran.com/49:2",
+        "translationUrl": "https://quran.com/49:2?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/49:2/tafsirs/16"
+    },
+    {
+      "id": "chronology",
+      "title": "The order of chapters is not a full event chronology",
+      "topic": "Quran context",
+      "claim": "Because Al-Alaq is chapter 96, the cited first-revelation report puts it near the end of the mission.",
+      "verdict": "Contradicted by the cited text",
+      "evidence": [
+        {
+          "title": "What the report describes",
+          "text": "Aisha describes the beginning of revelation at Hira with the opening reading instructions."
+        },
+        {
+          "title": "Different orderings",
+          "text": "A chapter’s mushaf number is not an event date supplied by this report."
+        }
+      ],
+      "correction": "Use the report’s actual account of the beginning of revelation. A mushaf chapter number does not establish a late event date.",
+      "limit": "This account concerns the opening verses, not an exact date for every ayah in Al-Alaq.",
+      "skill": "Distinguish a catalog position from historical sequence.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 4953",
+          "url": "https://sunnah.com/bukhari:4953",
+          "kind": "Primary hadith report",
+          "note": "Aisha’s report about the beginning of revelation."
+        }
+      ],
+      "passage": {
+        "ref": "96:1-5",
+        "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+        "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not.",
+        "url": "https://quran.com/96:1-5",
+        "translationUrl": "https://quran.com/96:1-5?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/96:1/tafsirs/16"
+    }
+  ],
+  "methodology": "Twelve constructed reading claims are checked against fixed, specifically identified sources. They are exercises in misquotation, context, sequence and evidence limits, not a list of measured viral trends or accusations about people. Classifications describe what the cited material supports. “Beyond the cited evidence” does not mean that every other source has been searched or that the broader proposition is false. The app accepts no arbitrary claim for live judgment. Quran readings are canonical, and commentary and hadith notes remain attributed original paraphrases."
+}

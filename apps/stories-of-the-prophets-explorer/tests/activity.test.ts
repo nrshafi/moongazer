@@ -1,0 +1,4 @@
+import {test,expect} from 'bun:test';import {people} from '../src/data/content.json';
+test('25 unique profiles contain 50 fully cited readings',()=>{expect(people).toHaveLength(25);expect(new Set(people.map(p=>p.id)).size).toBe(25);expect(people.flatMap(p=>p.readings)).toHaveLength(50);for(const p of people)expect(p.readings.every(r=>r.arabic&&r.translation&&r.translationUrl.startsWith('https://quran.com/'))).toBe(true);});
+test('each reading check has four distinct options and one intended answer',()=>{for(const p of people){expect(new Set(p.options).size).toBe(4);expect(p.answer).toBeGreaterThanOrEqual(0);expect(p.answer).toBeLessThan(4);expect(p.answerRef).toMatch(/^\d+:\d+/);}});
+test('briefly mentioned profiles are explicitly labeled without biographies',()=>{for(const id of ['idris','dhul-kifl','al-yasa'])expect(people.find(p=>p.id===id)!.brief).toBe(true);});

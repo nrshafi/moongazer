@@ -1,0 +1,7 @@
+{
+  "slug": "quranic-places-atlas",
+  "name": "Quranic Places Atlas",
+  "description": "Read the passages, explore the geography, and see what remains uncertain.",
+  "accent": "teal",
+  "port": 4331
+}

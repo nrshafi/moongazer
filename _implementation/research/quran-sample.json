@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "quran.ai/abuse": {
+      "code": "rate_limited",
+      "retry_after_seconds": 1,
+      "reason": "unknown_tool_rate",
+      "limit": 1,
+      "interval_seconds": 1
+    }
+  },
+  "content": [
+    {
+      "text": "[rate_limited] Unverified clients may make one MCP tool request per second across all tools. Retry after 1 seconds.",
+      "type": "text"
+    }
+  ],
+  "isError": true
+}

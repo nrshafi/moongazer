@@ -1,0 +1,7 @@
+{
+  "slug": "revelation-context-explorer",
+  "name": "Revelation Context Explorer",
+  "description": "Read a passage beside the reports, and distinguish an occasion from its wider context.",
+  "accent": "blue",
+  "port": 4338
+}

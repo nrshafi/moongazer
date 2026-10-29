@@ -1,0 +1,14 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import Passage from '../../components/Passage.astro';
+import References from '../../components/References.astro';
+import {cases} from '../../data/content.json';
+export function getStaticPaths(){return cases.map(item=>({params:{id:item.id},props:{item}}));}
+const {item}=Astro.props;
+---
+<Shell title={item.title}>
+ <a class="back-link" href="/">← All business cases</a><section class="intro"><span class="eyebrow">{item.topic} · fictional case</span><h1 class="editorial">{item.title}</h1><p>{item.setup}</p></section>
+ <div class="workspace"><section><section class="panel panel-body"><div id="decision" aria-live="polite"></div><noscript><h2>A decision to discuss</h2><ul>{item.choices.map(choice=><li>{choice.label} — {choice.consequence}</li>)}</ul><p>{item.teaching}</p><p>Enable JavaScript to explore both decision stages. The source reading remains available below.</p></noscript><div class="actions activity-controls top-gap"><button id="restart-case" class="button secondary">Restart case</button><label class="check"><input type="checkbox" id="remember-case"/>Remember this case for up to 30 days</label></div></section><div class="top-gap"><Passage passage={item.passage}/></div><References sources={item.sources} commentaryUrl={item.commentaryUrl} secondCommentaryUrl={'secondCommentaryUrl' in item?item.secondCommentaryUrl:undefined} secondLabel="Al-Qurtubi · further Arabic legal discussion"/></section><aside class="sidebar sticky"><section class="panel panel-body"><h2>What we know</h2><ul>{item.facts.map(fact=><li>{fact}</li>)}</ul><div class="source-boundary">These outcomes are fictional possibilities. This activity does not decide the legal status of a real transaction or replace a qualified adviser.</div><div class="reading-actions"><button class="button secondary" data-save={item.id} aria-pressed="false">Save for later</button><button class="text-button" data-print>Print source worksheet</button></div></section></aside></div>
+ <script id="activity-data" type="application/json" set:html={JSON.stringify(item).replace(/</g,'\\u003c')}/>
+ <script>import '../../lib/library';import '../../lib/decision';</script>
+</Shell>

@@ -1,0 +1,7 @@
+{
+  "slug": "islamic-misinformation-casebook",
+  "name": "Islamic Misinformation Casebook",
+  "description": "Inspect a claim, open the evidence, and decide what the sources support.",
+  "accent": "teal",
+  "port": 4340
+}

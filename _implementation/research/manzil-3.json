@@ -1,0 +1,109 @@
+{
+  "query_type": "manzil",
+  "surah": [
+    {
+      "number": 10,
+      "name_arabic": "يونس",
+      "name_simple": "Yunus",
+      "revelation_place": "makkah",
+      "revelation_order": 51,
+      "verses_count": 109,
+      "bismillah_pre": true
+    },
+    {
+      "number": 11,
+      "name_arabic": "هود",
+      "name_simple": "Hud",
+      "revelation_place": "makkah",
+      "revelation_order": 52,
+      "verses_count": 123,
+      "bismillah_pre": true
+    },
+    {
+      "number": 12,
+      "name_arabic": "يوسف",
+      "name_simple": "Yusuf",
+      "revelation_place": "makkah",
+      "revelation_order": 53,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 13,
+      "name_arabic": "الرعد",
+      "name_simple": "Ar-Ra'd",
+      "revelation_place": "madinah",
+      "revelation_order": 96,
+      "verses_count": 43,
+      "bismillah_pre": true
+    },
+    {
+      "number": 14,
+      "name_arabic": "ابراهيم",
+      "name_simple": "Ibrahim",
+      "revelation_place": "makkah",
+      "revelation_order": 72,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 15,
+      "name_arabic": "الحجر",
+      "name_simple": "Al-Hijr",
+      "revelation_place": "makkah",
+      "revelation_order": 54,
+      "verses_count": 99,
+      "bismillah_pre": true
+    },
+    {
+      "number": 16,
+      "name_arabic": "النحل",
+      "name_simple": "An-Nahl",
+      "revelation_place": "makkah",
+      "revelation_order": 70,
+      "verses_count": 128,
+      "bismillah_pre": true
+    }
+  ],
+  "ayah": {
+    "start_verse_key": "10:1",
+    "end_verse_key": "16:128",
+    "count": 665
+  },
+  "juz": {
+    "start": 11,
+    "end": 14
+  },
+  "hizb": {
+    "start": 21,
+    "end": 28
+  },
+  "rub_el_hizb": {
+    "start": 83,
+    "end": 112
+  },
+  "page": {
+    "start": 208,
+    "end": 281
+  },
+  "ruku": {
+    "start": 172,
+    "end": 239
+  },
+  "manzil": {
+    "start": 3,
+    "end": 3
+  },
+  "sajdah": [
+    {
+      "verse_key": "13:15",
+      "type": "optional",
+      "number": 2
+    },
+    {
+      "verse_key": "16:50",
+      "type": "optional",
+      "number": 3
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "query_type": "manzil",
+  "surah": [
+    {
+      "number": 17,
+      "name_arabic": "الإسراء",
+      "name_simple": "Al-Isra",
+      "revelation_place": "makkah",
+      "revelation_order": 50,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 18,
+      "name_arabic": "الكهف",
+      "name_simple": "Al-Kahf",
+      "revelation_place": "makkah",
+      "revelation_order": 69,
+      "verses_count": 110,
+      "bismillah_pre": true
+    },
+    {
+      "number": 19,
+      "name_arabic": "مريم",
+      "name_simple": "Maryam",
+      "revelation_place": "makkah",
+      "revelation_order": 44,
+      "verses_count": 98,
+      "bismillah_pre": true
+    },
+    {
+      "number": 20,
+      "name_arabic": "طه",
+      "name_simple": "Taha",
+      "revelation_place": "makkah",
+      "revelation_order": 45,
+      "verses_count": 135,
+      "bismillah_pre": true
+    },
+    {
+      "number": 21,
+      "name_arabic": "الأنبياء",
+      "name_simple": "Al-Anbya",
+      "revelation_place": "makkah",
+      "revelation_order": 73,
+      "verses_count": 112,
+      "bismillah_pre": true
+    },
+    {
+      "number": 22,
+      "name_arabic": "الحج",
+      "name_simple": "Al-Hajj",
+      "revelation_place": "madinah",
+      "revelation_order": 103,
+      "verses_count": 78,
+      "bismillah_pre": true
+    },
+    {
+      "number": 23,
+      "name_arabic": "المؤمنون",
+      "name_simple": "Al-Mu'minun",
+      "revelation_place": "makkah",
+      "revelation_order": 74,
+      "verses_count": 118,
+      "bismillah_pre": true
+    },
+    {
+      "number": 24,
+      "name_arabic": "النور",
+      "name_simple": "An-Nur",
+      "revelation_place": "madinah",
+      "revelation_order": 102,
+      "verses_count": 64,
+      "bismillah_pre": true
+    },
+    {
+      "number": 25,
+      "name_arabic": "الفرقان",
+      "name_simple": "Al-Furqan",
+      "revelation_place": "makkah",
+      "revelation_order": 42,
+      "verses_count": 77,
+      "bismillah_pre": true
+    }
+  ],
+  "ayah": {
+    "start_verse_key": "17:1",
+    "end_verse_key": "25:77",
+    "count": 903
+  },
+  "juz": {
+    "start": 15,
+    "end": 19
+  },
+  "hizb": {
+    "start": 29,
+    "end": 37
+  },
+  "rub_el_hizb": {
+    "start": 113,
+    "end": 146
+  },
+  "page": {
+    "start": 282,
+    "end": 366
+  },
+  "ruku": {
+    "start": 240,
+    "end": 315
+  },
+  "manzil": {
+    "start": 4,
+    "end": 4
+  },
+  "sajdah": [
+    {
+      "verse_key": "17:109",
+      "type": "optional",
+      "number": 4
+    },
+    {
+      "verse_key": "19:58",
+      "type": "optional",
+      "number": 5
+    },
+    {
+      "verse_key": "22:18",
+      "type": "optional",
+      "number": 6
+    },
+    {
+      "verse_key": "25:60",
+      "type": "optional",
+      "number": 7
+    }
+  ]
+}
