@@ -1,5 +1,10 @@
 # Repository progress tracker
 
+## Automatic deployment active
+
+Verified 2026-10-30T00:11:32+06:00 Asia/Dhaka. Published commit 90f46d9 to main and configured both Actions secrets. The user explicitly approved the persistent account-scoped Pages Write token and the staged publication after automatic review requested exact approval. GitHub run 40927531499 passed twenty Astro checks and builds, 217 tests, all 21 production deployments and 646/646 HTTP checks across 327 pages. Local checks, tests and builds also passed for all twenty apps on retry outside the sandbox. Earlier blocked/inactive notes below are historical. Current evidence: deployment/automation-result.json and the Actions run linked in deployment/README.md.
+
+
 ## GitHub deployment automation preparation
 
 Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro production build succeed outside the sandbox. The existing Git sign-in has repository admin access and CLOUDFLARE_ACCOUNT_ID is configured in Actions secrets. Cloudflare reconnection restored token-management permission. Automatic approval review rejected creating a persistent account-scoped Pages Write token because that exact scope needs explicit approval. No deployment token was created. The workflow and source are ready for publication; production activation remains pending the token and a passing Actions run. The workflow now checks and tests every app before building and deploying, and rejects missing credentials before builds.
@@ -8,7 +13,7 @@ Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro productio
 
 The representative Guess the Surah build failed when Astro could not write `.astro/content.d.ts` (EPERM). A remote Git read also failed because this environment could not connect to GitHub. No automatic deployment or end-to-end CI test was performed.
 
-Last updated: 2026-10-29T23:45:03+06:00 Asia/Dhaka
+Last updated: 2026-10-30T00:11:32+06:00 Asia/Dhaka
 
 ## Current phase and goal
 

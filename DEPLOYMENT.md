@@ -34,7 +34,7 @@ The directory's authoritative HTML, CSS, JavaScript and illustrations are in `ho
 
 Build an app inside its folder with `bun install --frozen-lockfile` and `bun run build`, or build the collection with `bun _implementation/verify.ts build`. Publish the contents of each `dist/`, including local fonts, scripts, media and the original response headers. Never publish research tooling, credentials or node_modules.
 
-This release uses Direct Upload. Git-triggered deployments and GitHub Actions are not configured. Repository edits require a new build and upload to publish. The source checkout has not been pushed as part of this request.
+GitHub Actions now checks, tests, builds and deploys all 21 Direct Upload projects on pushes to main. The first automatic run passed 646/646 production HTTP checks. See deployment/automation-result.json and deployment/README.md.
 
 ## Publication and verification
 

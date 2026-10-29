@@ -61,4 +61,4 @@ bun run preview
 
 Build output and dependencies are ignored by Git. The `release/` archives and several QA reports mentioned in historical context are absent. Fresh static verification recreates `_implementation/qa/static-results.json`; release-specific logs and HTTP checks are in `deployment/evidence/`.
 
-Hosting uses Cloudflare Pages Direct Upload. Source edits require rebuilding and publishing the affected app; Git-triggered deployment is not configured. See [deployment/status.json](deployment/status.json) for actual deployment and verification status. The apps retain their source attribution and rights notes and do not claim independent scholarly certification.
+Hosting uses Cloudflare Pages Direct Upload. Pushes to `main` automatically check, test, build and deploy the homepage and all twenty apps through GitHub Actions. See [deployment/status.json](deployment/status.json) for actual deployment and verification status. The apps retain their source attribution and rights notes and do not claim independent scholarly certification.

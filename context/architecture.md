@@ -1,8 +1,8 @@
 # Repository architecture
 
-## Planned GitHub Actions deployment
+## GitHub Actions deployment
 
-The requested automation will build the directory and all twenty apps from the pushed main commit and deploy each existing Direct Upload project using project-scoped asset hashes. It requires a Pages Write API token held as a GitHub Actions secret. This plan does not establish that automation is active.
+Pushes to main check, test and build all twenty apps and the directory, then deploy all existing Direct Upload projects using project-scoped asset hashes. Account and token credentials stay in GitHub Actions secrets. The first production run passed 646/646 live checks; deployment/automation-result.json records it.
 
 ## Stack and project model
 
@@ -40,7 +40,7 @@ All apps are anonymous/public. Local scores are editable by the visitor and are 
 
 The root domain moongazer.tech hosts a buildless HTML/CSS/JavaScript directory in `homepage/`. Its static output is generated into `homepage/dist/`. The twenty Astro apps retain independent builds and their existing sources. `deployment/targets.json` is the authoritative mapping of app roots, Pages projects, subdomains and directory copy. Deployment helpers live in `deployment/`; no deployment credentials enter source, output or logs. The authenticated Cloudflare connector manages projects, deployments, domain associations and DNS; a short-lived upload token is passed to the local asset uploader through stdin only.
 
-The user explicitly authorized publication. No shared backend, visitor tracking or storage is added. Record deployment IDs, domain status and actual HTTP verification separately from historical QA. Direct Upload is the initial delivery method; Git-triggered deployment is not configured by that method.
+The user explicitly authorized publication. No shared backend, visitor tracking or storage is added. Record deployment IDs, domain status and actual HTTP verification separately from historical QA. GitHub Actions now automates the existing Direct Upload projects.
 
 Production verification requires each project's own upload token and asset namespace. Do not treat an upload to one project as an account-wide upload. The www-to-apex redirect belongs in the zone's `http_request_dynamic_redirect` ruleset because Pages `_redirects` does not support domain-level source matching. Keep RUM disabled for this zone to preserve the documented absence of analytics. Validate TLS hostnames when using public DNS answers to bypass a workstation's stale negative DNS cache.
 

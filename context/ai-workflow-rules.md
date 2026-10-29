@@ -1,6 +1,6 @@
 # AI workflow rules
 
-The requested GitHub Actions deployment is being prepared for the existing Direct Upload projects. It is not active until its files and required secret are available on GitHub and a production run succeeds.
+GitHub Actions production deployment is active for pushes to main. Both required secrets are configured and the first production run passed. Keep tokens in Actions secrets and verify live files after deployment.
 
 ## Approach and scoping
 
@@ -58,4 +58,4 @@ Follow `_implementation/qa/e2e/README.md` for the isolated production-header pre
 
 The current request authorizes implementing and publishing collection-wide SEO changes. Read deployment/evidence/seo/baseline.json, use installed Astro interfaces and primary documentation, then run all app checks/builds, existing tests, static/source verification and SEO-specific validation. Reuse the proven project-scoped upload workflow. Search Console has no verified property; keep account setup and indexing claims separate from on-site implementation and live checks.
 
-Follow deployment/README.md for project-specific credentials, project-isolated hashes, Pages multipart publication, domain association and the canonical-hostname rule. Direct Upload uses regenerated dist directories without requiring ZIPs. Always verify live responses after API success. The current release has two consecutive complete passing HTTP checks. Git-triggered deployment is not configured.
+Follow deployment/README.md for project-specific credentials, project-isolated hashes, Pages multipart publication, domain association and the canonical-hostname rule. Direct Upload uses regenerated dist directories without requiring ZIPs. Always verify live responses after API success. The current release has two consecutive complete passing HTTP checks. Pushes to main are deployed by GitHub Actions.

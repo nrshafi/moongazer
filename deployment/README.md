@@ -2,23 +2,17 @@
 
 The homepage and twenty independent apps use Cloudflare Pages Direct Upload. `targets.json` is the catalog and hostname source of truth. Project names are `moongazer` for the directory and `moongazer-<app-folder>` for each app. Custom app hosts use the complete folder name followed by `.moongazer.tech`.
 
-The latest verified deployment IDs, account, zone and domain statuses belong in `status.json`. Keep credentials outside these records. Direct Upload does not configure Git-triggered deployments.
+The latest verified deployment IDs, account, zone and domain statuses belong in `status.json`. Keep credentials outside these records. GitHub Actions automates the existing Direct Upload projects.
 
-## GitHub Actions automation (prepared, not yet activated)
+## GitHub Actions automation
 
-`.github/workflows/deploy.yml` builds the homepage and every app on pushes to `main`, then `deploy-ci.mjs` obtains a separate short-lived upload token for each project, uses the existing project-scoped uploader, creates production deployments, and checks the live files. Runs are serialized; each deploys the complete collection, so a newer push also recovers changes from a skipped pending run. Manual runs are restricted to `main`.
+Pushes to `main` automatically check, test, build and deploy the homepage and all twenty apps. `.github/workflows/deploy.yml` uses `deploy-ci.mjs` and the existing project-scoped asset uploader. Runs are serialized; each deploys the complete collection so a newer push recovers changes from a replaced pending run. Manual runs are restricted to `main`.
 
-To activate it, commit and push the workflow along with `homepage/`, the deployment scripts and catalog, and the intended app sources. In GitHub repository Settings > Secrets and variables > Actions, add `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`; the token needs Cloudflare Pages Write access for this account. Do not put token values in source or chat. Run the workflow and check its result and live verification before considering automation operational. It updates production on every successful run, and a deployment failure may leave only part of the collection updated. Rerun the workflow to recover.
+`CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` are configured in GitHub Actions secrets. The user explicitly approved a persistent Pages Write token scoped to this Cloudflare account and publication to main. Keep credentials out of source and logs. If a deployment partially fails, rerun the workflow from GitHub Actions.
 
-The Pages deployment and upload-token API schemas were checked with the Cloudflare connector. [Cloudflare's Direct Upload CI guide](https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/) documents the required account and token secrets. The uploader retains the project-scoped hashes used by the existing release rather than substituting the standard Wrangler hash scheme.
+The first automatic run passed on 30 October 2026 Asia/Dhaka: 217 tests, twenty Astro checks and builds, 21 deployments, and 646/646 live HTTP checks. See [the run](https://github.com/nrshafi/moongazer/actions/runs/40927531499), `automation-result.json` and `status.json`. Documentation-only completion records may use `[skip ci]` in the commit message to avoid redeploying unchanged app sources.
 
-## GitHub Actions automation (prepared, not yet activated)
-
-`.github/workflows/deploy.yml` builds the homepage and every app on pushes to `main`, then `deploy-ci.mjs` obtains a separate short-lived upload token for each project, uses the existing project-scoped uploader, creates production deployments, and checks the live files. Runs are serialized; each deploys the complete collection, so a newer push also recovers changes from a skipped pending run. Manual runs are restricted to `main`.
-
-To activate it, commit and push the workflow along with `homepage/`, the deployment scripts and catalog, and the intended app sources. In GitHub repository Settings > Secrets and variables > Actions, add `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`; the token needs Cloudflare Pages Write access for this account. Do not put token values in source or chat. Run the workflow and check its result and live verification before considering automation operational. It updates production on every successful run, and a deployment failure may leave only part of the collection updated. Rerun the workflow to recover.
-
-The Pages deployment and upload-token API schemas were checked with the Cloudflare connector. [Cloudflare's Direct Upload CI guide](https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/) documents the required account and token secrets. The uploader retains the project-scoped hashes used by the existing release rather than substituting the standard Wrangler hash scheme.
+The Pages deployment and upload-token API schemas were checked through the Cloudflare connector. [Cloudflare's Direct Upload CI guide](https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/) documents the account and token secrets. The uploader preserves the existing project-scoped hashes.
 
 ## Build
 
