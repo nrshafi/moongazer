@@ -2,7 +2,7 @@
 
 ## Overview
 
-Choose a short pack, gather around, and learn something together. Portfolio rank 19 of 20, independent project `apps/family-islamic-learning-challenges`. Implemented and packaged for static Cloudflare Pages hosting; no account publication has occurred.
+Choose a short pack, gather around, and learn something together. Portfolio rank 19 of 20, independent project `apps/family-islamic-learning-challenges`. Published with static Cloudflare Pages hosting at https://family-islamic-learning-challenges.moongazer.tech/.
 
 ## Goals and visitor flow
 

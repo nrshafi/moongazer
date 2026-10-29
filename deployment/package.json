@@ -1,0 +1,6 @@
+{
+  "name": "moongazer-deployment-tools",
+  "private": true,
+  "type": "module",
+  "devDependencies": { "blake3-wasm": "2.1.5" }
+}

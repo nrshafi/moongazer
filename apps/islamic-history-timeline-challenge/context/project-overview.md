@@ -4,7 +4,7 @@
 
 Arrange sourced events and explore the sequence behind them. Learners practicing broad event sequence using source clues and explicit date limitations.
 
-Portfolio rank 13 of 20. Project root `apps/islamic-history-timeline-challenge`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 13 of 20. Project root `apps/islamic-history-timeline-challenge`. The app is implemented and published at https://islamic-history-timeline-challenge.moongazer.tech/.
 
 ## Goals
 

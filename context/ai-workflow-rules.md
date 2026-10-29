@@ -1,6 +1,10 @@
 # AI workflow rules
 
+The requested GitHub Actions deployment is being prepared for the existing Direct Upload projects. It is not active until its files and required secret are available on GitHub and a production run succeeds.
+
 ## Approach and scoping
+
+The current publication request authorizes Cloudflare Pages projects, production deployments, custom domain associations and DNS records for moongazer.tech and each app. Use the connected Cloudflare account 004edbba5c2bcea9f103ae2111889af7 and verify the active zone before writes. Build source before upload. Verify production stages and public HTTPS pages, asset availability, headers, detail routes and 404 behavior. Update `deployment/status.json`, `DEPLOYMENT.md` and the progress tracker with measured results. Native Cloudflare API schemas and official Pages custom-domain/Direct Upload documentation are the API references.
 
 Read the required context, inspect the current source, then complete the authorized change in a focused unit. Context describes the current implementation; the user's new instructions may change that scope. Resolve routine details with judgment and record meaningful decisions. Do not add projects beyond the current user request or change unrelated apps as a side effect.
 
@@ -43,9 +47,15 @@ For a behavior change, run relevant Bun tests, Astro check/build and browser ver
 
 - Do not patch installed dependencies, generated `.astro/`/`dist/` contents or release ZIP bytes by hand. Regenerate from authoritative sources when the task requires it.
 - Preserve the original `6_File+Context+Methodology/` reference template, earlier HTML demonstrations and historical QA evidence during unrelated maintenance.
-- Finish with concrete files, validation and any material limits. A ZIP ready for upload is not a deployed Cloudflare project. No deployment is recorded for this portfolio.
+- Finish with concrete files, validation and any material limits. A ZIP ready for upload is not a deployed Cloudflare project. Current publication is recorded in deployment/status.json; failures and passing release checks are in deployment/evidence/.
 - Keep these context files updated manually after initial setup; `_implementation/populate-context.py` refuses to overwrite them by default. Use `python _implementation/verify-context.py` at repository level to audit current context sets. The older generator’s `--verify-only` mode forwards to that audit.
 
 ## Reusing the complete-portfolio browser audit
 
 Follow `_implementation/qa/e2e/README.md` for the isolated production-header preview and documented CUA journeys. Keep test storage on ports 5321–5340; do not clear user-origin storage. Preserve failed attempts and record passing retests rather than deleting contrary evidence. Use small browser batches so progress is checkpointed. Rebuild affected sources before HTTP/static verification and release packaging.
+
+## Publication workflow
+
+The current request authorizes implementing and publishing collection-wide SEO changes. Read deployment/evidence/seo/baseline.json, use installed Astro interfaces and primary documentation, then run all app checks/builds, existing tests, static/source verification and SEO-specific validation. Reuse the proven project-scoped upload workflow. Search Console has no verified property; keep account setup and indexing claims separate from on-site implementation and live checks.
+
+Follow deployment/README.md for project-specific credentials, project-isolated hashes, Pages multipart publication, domain association and the canonical-hostname rule. Direct Upload uses regenerated dist directories without requiring ZIPs. Always verify live responses after API success. The current release has two consecutive complete passing HTTP checks. Git-triggered deployment is not configured.

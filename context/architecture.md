@@ -1,5 +1,9 @@
 # Repository architecture
 
+## Planned GitHub Actions deployment
+
+The requested automation will build the directory and all twenty apps from the pushed main commit and deploy each existing Direct Upload project using project-scoped asset hashes. It requires a Pages Write API token held as a GitHub Actions secret. This plan does not establish that automation is active.
+
 ## Stack and project model
 
 Twenty independent Astro 7.4.2 applications use Bun 1.4.4, TypeScript 6.0.3 and @astrojs/check 0.9.12. Every app has its own package.json, bun.lock, strict tsconfig, static Astro configuration, copied layout/styles/helpers, bundled content and public assets. The repository root is not a package workspace. There is no runtime backend, authentication service or database.
@@ -30,9 +34,27 @@ Within each app, pages and getStaticPaths generate static routes; the shell owns
 
 ## Access and deployment
 
-All apps are anonymous/public. Local scores are editable by the visitor and are not trusted leaderboards. Source links are optional external reading. Each deploys its dist contents at a domain/project root with local fonts/data/media, CSP and other static headers. Set BUN_VERSION=1.4.4; use the build command and root in DEPLOYMENT.md. No account deployment has occurred.
+All apps are anonymous/public. Local scores are editable by the visitor and are not trusted leaderboards. Source links are optional external reading. Each deploys its dist contents at a domain/project root with local fonts/data/media, CSP and other static headers. Set BUN_VERSION=1.4.4; use the build command and root in DEPLOYMENT.md. The authorized publication uses twenty independent Pages projects plus the directory; see deployment/status.json.
+
+## Authorized hosting expansion, 29 October 2026
+
+The root domain moongazer.tech hosts a buildless HTML/CSS/JavaScript directory in `homepage/`. Its static output is generated into `homepage/dist/`. The twenty Astro apps retain independent builds and their existing sources. `deployment/targets.json` is the authoritative mapping of app roots, Pages projects, subdomains and directory copy. Deployment helpers live in `deployment/`; no deployment credentials enter source, output or logs. The authenticated Cloudflare connector manages projects, deployments, domain associations and DNS; a short-lived upload token is passed to the local asset uploader through stdin only.
+
+The user explicitly authorized publication. No shared backend, visitor tracking or storage is added. Record deployment IDs, domain status and actual HTTP verification separately from historical QA. Direct Upload is the initial delivery method; Git-triggered deployment is not configured by that method.
+
+Production verification requires each project's own upload token and asset namespace. Do not treat an upload to one project as an account-wide upload. The www-to-apex redirect belongs in the zone's `http_request_dynamic_redirect` ruleset because Pages `_redirects` does not support domain-level source matching. Keep RUM disabled for this zone to preserve the documented absence of analytics. Validate TLS hostnames when using public DNS answers to bypass a workstation's stale negative DNS cache.
+
+All static responses use `Cache-Control: no-transform` alongside their normal cache policy. Cloudflare's official Web Analytics FAQ identifies this directive as preventing automatic beacon insertion. This preserves exact canonical/source HTML and the no-analytics boundary even if a platform injection setting changes. Immutable app asset caching retains its existing lifetime.
+
+The deployment helper uses deterministic project-scoped asset keys after intermittent empty 500 responses from the earlier uploaded keys. The input includes the project name as well as base64 content and file extension; no content bytes change. Generated manifests identify `blake3-project-v1`. An isolated app passed five consecutive complete production checks, 100 requests total, before applying this key format to the remaining sites. The complete collection subsequently passed two consecutive 646-request checks, with every served file matching its expected hash.
 
 ## Invariants
+
+## SEO architecture
+
+Each independent app will own its production Astro site URL, a local SEO profile and server-only metadata helper. The helper derives detail routes and summaries from local editorial content so normal app builds regenerate correct per-page metadata and a static sitemap endpoint without root tooling or runtime APIs. Every host serves its own sitemap and robots declaration; do not publish a cross-host sitemap index before Search Console cross-site submission is configured. Privacy and 404 pages remain accessible but noindex; 404s have no canonical. Other pages self-canonicalize to their custom domain, excluding query parameters. Pages development/preview hosts send noindex headers.
+
+Breadcrumbs and app-directory links are visible, and their JSON-LD mirrors actual navigation. Structured data describes WebSite, WebPage/CollectionPage, educational resources and breadcrumbs without invented reviews, authors, credentials, dates or rich-result promises. Locally generated PNG social cards and WOFF2 derivatives retain local fonts and licenses. There are no dependency upgrades, new server services or visitor tracking. SEO changes will be rebuilt, checked and republished to the existing 21 projects with current live verification.
 
 1. Preserve independent app builds, static output and user-requested Cloudflare Pages compatibility.
 2. Do not add accounts, database storage, live AI inference, API keys or external runtime assets by default.

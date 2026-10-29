@@ -1,5 +1,13 @@
 # Architecture: Revelation Context Explorer
 
+## Authorized SEO scope
+
+The current user request covers published SEO improvements. This independent app owns its production site URL, local SEO profile/helper and static sitemap endpoint. Page metadata derives from local editorial records, without changing canonical quotations. Privacy and 404 pages are noindex and omitted from the sitemap. Other pages self-canonicalize to the custom hostname; Pages-origin/preview responses are noindex. Breadcrumbs and directory links remain visible. Social previews and WOFF2 fonts stay local with licenses. No runtime service, analytics or dependency upgrade is added. Validation and publication remain required before completion.
+
+## Publication response policy
+
+The user authorized Cloudflare Pages hosting at https://revelation-context-explorer.moongazer.tech/. Static responses use Cache-Control no-transform to prevent automatic platform beacon insertion and preserve source HTML. Existing immutable asset lifetimes remain. Build from public/_headers; never edit dist. Project-scoped upload credentials stay outside source and logs.
+
 ## Stack
 
 Astro 7.4.2, TypeScript 6.0.3, @astrojs/check 0.9.12 and Bun 1.4.4. Static output, directory-format routes and trailing slashes. Native Astro/HTML/CSS and browser TypeScript; no React, Tailwind, server adapter, authentication or database.
@@ -32,7 +40,7 @@ All storage keys have prefix `revelation-context-explorer:` and timestamp envelo
 
 ## Deployment and invariants
 
-Port 4338. Build `bun install --frozen-lockfile && bun run build`, output `dist`, environment `BUN_VERSION=1.4.4`. Serve at its own Pages project/domain root; absolute asset paths require an explicit migration for subpath hosting. No adapter, Functions, bindings, secrets or runtime service is needed. Archive `release/revelation-context-explorer-pages.zip` contains 29 files and 14 HTML pages.
+Port 4338. Build `bun install --frozen-lockfile && bun run build`, output `dist`, environment `BUN_VERSION=1.4.4`. Serve at its own Pages project/domain root; absolute asset paths require an explicit migration for subpath hosting. No adapter, Functions, bindings, secrets or runtime service is needed. Production project `moongazer-revelation-context-explorer` uses Direct Upload; its current release is recorded in repository deployment/status.json.
 
 Preserve literal canonical text, edition attribution, source limits, independent builds, accessible interactions and app namespace isolation. Ten readings include seven transmitted occasions, one general-context record and two responses after revelation. A response must not be relabeled as a cause. Narrator and date uncertainty remain visible. Collection attribution is not independent chain grading. Al-Muyassar notes and full Arabic Ibn Kathir links do not create an invented scholarly consensus.
 

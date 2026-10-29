@@ -4,7 +4,7 @@
 
 Three passages. One connection. Follow the words, notice a shared thread, and explore the source. Readers who want to notice a shared theme across Quran passages and inspect the evidence.
 
-Portfolio rank 2 of 20. Project root `apps/quran-connections`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 2 of 20. Project root `apps/quran-connections`. The app is implemented and published at https://quran-connections.moongazer.tech/.
 
 ## Goals
 

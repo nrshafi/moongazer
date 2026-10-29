@@ -4,7 +4,7 @@
 
 Small moments. Thoughtful choices. Explore everyday character through fictional scenarios and authentic sources. Visitors who want to consider everyday choices through short fictional situations and sourced reading notes.
 
-Portfolio rank 4 of 20. Project root `apps/everyday-akhlaq-simulator`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 4 of 20. Project root `apps/everyday-akhlaq-simulator`. The app is implemented and published at https://everyday-akhlaq-simulator.moongazer.tech/.
 
 ## Goals
 

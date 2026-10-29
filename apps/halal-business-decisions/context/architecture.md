@@ -1,5 +1,13 @@
 # Architecture: Halal Business Decisions
 
+## Authorized SEO scope
+
+The current user request covers published SEO improvements. This independent app owns its production site URL, local SEO profile/helper and static sitemap endpoint. Page metadata derives from local editorial records, without changing canonical quotations. Privacy and 404 pages are noindex and omitted from the sitemap. Other pages self-canonicalize to the custom hostname; Pages-origin/preview responses are noindex. Breadcrumbs and directory links remain visible. Social previews and WOFF2 fonts stay local with licenses. No runtime service, analytics or dependency upgrade is added. Validation and publication remain required before completion.
+
+## Publication response policy
+
+The user authorized Cloudflare Pages hosting at https://halal-business-decisions.moongazer.tech/. Static responses use Cache-Control no-transform to prevent automatic platform beacon insertion and preserve source HTML. Existing immutable asset lifetimes remain. Build from public/_headers; never edit dist. Project-scoped upload credentials stay outside source and logs.
+
 ## Stack
 
 Astro 7.4.2, TypeScript 6.0.3, @astrojs/check 0.9.12 and Bun 1.4.4. Static output, directory-format routes and trailing slashes. Native Astro/HTML/CSS and browser TypeScript; no React, Tailwind, server adapter, authentication or database.
@@ -32,7 +40,7 @@ All storage keys have prefix `halal-business-decisions:` and timestamp envelopes
 
 ## Deployment and invariants
 
-Port 4337. Build `bun install --frozen-lockfile && bun run build`, output `dist`, environment `BUN_VERSION=1.4.4`. Serve at its own Pages project/domain root; absolute asset paths require an explicit migration for subpath hosting. No adapter, Functions, bindings, secrets or runtime service is needed. Archive `release/halal-business-decisions-pages.zip` contains 31 files and 16 HTML pages.
+Port 4337. Build `bun install --frozen-lockfile && bun run build`, output `dist`, environment `BUN_VERSION=1.4.4`. Serve at its own Pages project/domain root; absolute asset paths require an explicit migration for subpath hosting. No adapter, Functions, bindings, secrets or runtime service is needed. Production project `moongazer-halal-business-decisions` uses Direct Upload; its current release is recorded in repository deployment/status.json.
 
 Preserve literal canonical text, edition attribution, source limits, independent builds, accessible interactions and app namespace isolation. Twelve cases have six complete paths each, 72 paths total. Choices and consequences are fictional applied reasoning, not transaction certification, predicted rewards, personalized financial advice or a scholarly ruling from quran.ai, quran.com or quran.foundation. Full passages, original paraphrases and modern applications remain distinct.
 

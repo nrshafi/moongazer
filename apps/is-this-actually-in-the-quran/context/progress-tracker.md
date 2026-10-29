@@ -1,10 +1,10 @@
 # Progress tracker: Is This Actually in the Quran?
 
-Last updated: 2026-10-28T11:49:39+06:00 Asia/Dhaka
+Last updated: 2026-10-29T23:45:26+06:00 Asia/Dhaka
 
 ## Current phase
 
-Implemented, E2E tested and packaged. The latest complete-portfolio audit and source corrections are recorded below. No hosting deployment has occurred.
+Implemented, E2E tested and packaged. The latest complete-portfolio audit and source corrections are recorded below. Published at https://is-this-actually-in-the-quran.moongazer.tech/. Current production checks are recorded below.
 
 ## Current goal
 
@@ -26,7 +26,7 @@ Give future work accurate local context while preserving the working independent
 
 ## In progress
 
-No feature implementation is in progress. Hosting has not been deployed.
+No feature implementation is in progress. Published at https://is-this-actually-in-the-quran.moongazer.tech/. Current production checks are recorded below.
 
 ## Next up
 
@@ -34,7 +34,7 @@ Maintain this app within the user's next requested scope. For behavior changes: 
 
 ## Open questions
 
-No unresolved requirement blocks this context setup. Cloudflare account/project/domain choices are still unspecified because deployment has not been requested. No independent scholarly certification is recorded.
+No unresolved requirement blocks this context setup. Hosting projects and domains are recorded in the repository deployment inventory. No independent scholarly certification is recorded.
 
 ## Architecture decisions
 
@@ -62,3 +62,9 @@ Repository evidence: `E2E_QA.md` and `_implementation/qa/e2e/`. All twenty apps 
 Removed the accent-colored outer focus ring from pointer interactions. Controls retain their ordinary border; Tab navigation shows a neutral 2px outline. The shell tracks pointer/Tab modality only in the DOM, including dynamically created controls. The Salah app includes its native audio element in the same policy.
 
 All twenty apps passed fresh Astro checks, production builds and 217 existing Bun tests. Focus-specific browser verification passed 40 app/theme cases, covering pointer buttons/selects/text fields where present, Tab focus and switching back to pointer use. The family age filter was changed to 5–7 and correctly showed four entries with no outer ring. Static verification passed all 325 pages, and the twenty release archives were regenerated. Evidence: repository `FOCUS_QA.md` and `_implementation/qa/focus-browser.json`. The earlier full E2E audit was not repeated wholesale for this focused UI change.
+
+## Production publication
+
+Verified 2026-10-29T23:45:26+06:00 Asia/Dhaka. Published at https://is-this-actually-in-the-quran.moongazer.tech/ in project moongazer-is-this-actually-in-the-quran. The user authorized publication. Content, behavior and storage are unchanged; public/_headers adds no-transform while preserving cache lifetimes and security headers.
+
+The release passed 217 existing Bun tests, twenty fresh builds and static/canonical verification of 325 app pages. Two consecutive live checks each pass 646 requests across the twenty apps plus the directory, including every served file, deep routes, headers, HTTPS and custom 404s. This is release verification, not a new full E2E audit or scholarly review. IDs and evidence are in repository deployment/status.json and DEPLOYMENT_QA.md. Direct Upload is configured; Git-triggered deployment is not. Earlier no-publication statements in historical audits describe those earlier scopes.

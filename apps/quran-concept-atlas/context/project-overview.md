@@ -4,7 +4,7 @@
 
 Follow connected themes through carefully cited Quran passages. Readers following a theme from one Quran passage to related selected readings.
 
-Portfolio rank 8 of 20. Project root `apps/quran-concept-atlas`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 8 of 20. Project root `apps/quran-concept-atlas`. The app is implemented and published at https://quran-concept-atlas.moongazer.tech/.
 
 ## Goals
 

@@ -4,7 +4,7 @@
 
 Find four groups of related Islamic terms in a sixteen-tile puzzle. Learners grouping Islamic terms into intended source-backed categories in a short word game.
 
-Portfolio rank 12 of 20. Project root `apps/islamic-concept-connections`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 12 of 20. Project root `apps/islamic-concept-connections`. The app is implemented and published at https://islamic-concept-connections.moongazer.tech/.
 
 ## Goals
 

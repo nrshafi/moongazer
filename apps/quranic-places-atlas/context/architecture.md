@@ -1,5 +1,13 @@
 # Architecture context: Quranic Places Atlas
 
+## Authorized SEO scope
+
+The current user request covers published SEO improvements. This independent app owns its production site URL, local SEO profile/helper and static sitemap endpoint. Page metadata derives from local editorial records, without changing canonical quotations. Privacy and 404 pages are noindex and omitted from the sitemap. Other pages self-canonicalize to the custom hostname; Pages-origin/preview responses are noindex. Breadcrumbs and directory links remain visible. Social previews and WOFF2 fonts stay local with licenses. No runtime service, analytics or dependency upgrade is added. Validation and publication remain required before completion.
+
+## Publication response policy
+
+The user authorized Cloudflare Pages hosting at https://quranic-places-atlas.moongazer.tech/. Static responses use Cache-Control no-transform to prevent automatic platform beacon insertion and preserve source HTML. Existing immutable asset lifetimes remain. Build from public/_headers; never edit dist. Project-scoped upload credentials stay outside source and logs.
+
 ## Stack
 
 | Layer | Technology | Role |
@@ -52,7 +60,7 @@ All readings and interactions are public and anonymous. There is no ownership mo
 
 ## Deployment and known cost
 
-Port 4331. Build `bun install --frozen-lockfile && bun run build`; output `dist`; environment `BUN_VERSION=1.4.4`. No SSR adapter, Functions, bindings or secrets. Collection upload archive: `release/quranic-places-atlas-pages.zip`. The current recorded output has 19 HTML pages and 34 files.
+Port 4331. Build `bun install --frozen-lockfile && bun run build`; output `dist`; environment `BUN_VERSION=1.4.4`. No SSR adapter, Functions, bindings or secrets. Production project `moongazer-quranic-places-atlas` uses Direct Upload. See repository deployment/status.json for release IDs. The current recorded output has 19 HTML pages and 34 files.
 
 App-specific content and media constraints are listed in project-overview.md and the source methodology page.
 

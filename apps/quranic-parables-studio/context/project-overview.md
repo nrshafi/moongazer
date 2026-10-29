@@ -4,7 +4,7 @@
 
 Explore Quranic comparisons through passages and interactive reading diagrams. Readers slowing down with Quranic comparisons through complete passages, commentary and guided reflection.
 
-Portfolio rank 15 of 20. Project root `apps/quranic-parables-studio`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 15 of 20. Project root `apps/quranic-parables-studio`. The app is implemented and published at https://quranic-parables-studio.moongazer.tech/.
 
 ## Goals
 

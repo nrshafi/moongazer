@@ -4,7 +4,7 @@
 
 Explore the words of prayer, one recitation at a time. Learners connecting selected prayer recitations with their meaning and original sources.
 
-Portfolio rank 14 of 20. Project root `apps/understand-salah-lab`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 14 of 20. Project root `apps/understand-salah-lab`. The app is implemented and published at https://understand-salah-lab.moongazer.tech/.
 
 ## Goals
 

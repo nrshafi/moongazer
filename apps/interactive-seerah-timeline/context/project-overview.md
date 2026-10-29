@@ -4,7 +4,7 @@
 
 Explore the life of Prophet Muhammad ﷺ through a sourced chronology, one event at a time. Readers who want to browse a sourced chronology of the prophetic mission and open individual event notes.
 
-Portfolio rank 5 of 20. Project root `apps/interactive-seerah-timeline`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 5 of 20. Project root `apps/interactive-seerah-timeline`. The app is implemented and published at https://interactive-seerah-timeline.moongazer.tech/.
 
 ## Goals
 

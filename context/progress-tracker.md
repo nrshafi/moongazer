@@ -1,10 +1,20 @@
 # Repository progress tracker
 
-Last updated: 2026-10-29T22:36:39+06:00 Asia/Dhaka
+## GitHub deployment automation preparation
+
+Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro production build succeed outside the sandbox. The existing Git sign-in has repository admin access and CLOUDFLARE_ACCOUNT_ID is configured in Actions secrets. Cloudflare reconnection restored token-management permission. Automatic approval review rejected creating a persistent account-scoped Pages Write token because that exact scope needs explicit approval. No deployment token was created. The workflow and source are ready for publication; production activation remains pending the token and a passing Actions run. The workflow now checks and tests every app before building and deploying, and rejects missing credentials before builds.
+
+2026-10-29 23:56 Asia/Dhaka: prepared a main-branch GitHub Actions workflow and Pages API driver for all 21 existing Direct Upload projects, retaining project-scoped asset uploads and live verification. The GitHub connector returned 404 for the configured repository and the available tools do not provide repository secret management. The workflow, homepage and deployment sources remain uncommitted in this checkout; GitHub secrets and a successful production run have not been verified. Automation is therefore not active. Node syntax and workflow YAML parsing passed; homepage build passed. See `deployment/README.md` for activation and failure recovery.
+
+The representative Guess the Surah build failed when Astro could not write `.astro/content.d.ts` (EPERM). A remote Git read also failed because this environment could not connect to GitHub. No automatic deployment or end-to-end CI test was performed.
+
+Last updated: 2026-10-29T23:45:03+06:00 Asia/Dhaka
 
 ## Current phase and goal
 
-All twenty shortlisted applications are implemented, E2E tested and packaged. The latest user request to test all twenty is complete; see E2E_QA.md and the latest audit section below. No Cloudflare account deployment has occurred.
+New request in progress: implement SEO across the directory and twenty app subdomains. The baseline found missing app canonical tags, social metadata, structured data, all twenty app sitemaps and repeated per-app descriptions. The existing site is newly published, with no Search Console property. Current publication evidence below remains historical until the SEO release is validated and deployed.
+
+The authorized Moongazer publication is complete. The directory and twenty apps are deployed independently, with the apex, www and all twenty full-name app subdomains active. Two consecutive live checks each pass 646 requests. Earlier no-publication statements below describe historical implementation scopes.
 
 ## Completed
 
@@ -25,14 +35,24 @@ All twenty shortlisted applications are implemented, E2E tested and packaged. Th
 
 ## In progress and next up
 
-No implementation remains from the twenty-app shortlist. Hosting account/project/domain choices belong to a future publication request. Maintain sources, provenance and context with later changes.
+No implementation or hosting work remains from this request. Maintain sources, provenance and deployment records with later changes.
 
 ## Open questions and material limits
 
-No unresolved requirement blocks completion. No live hosting deployment or independent scholarly certification is claimed. Actual printer output was not tested; print preparation and styles are implemented and inspected.
+No requirement blocks this publication. Hosting is verified; no independent scholarly certification is claimed. Actual printer output was not tested; print preparation and styles are implemented and inspected.
 
 ## Architecture and source decisions
 
+
+## Moongazer publication completed
+
+Verified 2026-10-29T23:45:03+06:00 Asia/Dhaka. Added homepage/ with all twenty links, search, filters and mobile layouts. Published twenty apps plus the directory, with full-name subdomains, HTTPS redirects, www canonicalization, RUM off and no-transform response headers. App content and behavior remain unchanged.
+
+Fresh validation: 217 Bun tests, twenty production builds, canonical/static verification of 325 app pages, and dependency audits with no known vulnerabilities. All app dependency graphs match the audited 319-package graph; the deployment helper has one package. Two consecutive complete HTTP checks each pass 646 requests across 21 sites and 327 HTML pages, including assets, deep routes, headers, custom 404s and redirects. Browser checks cover desktop/mobile directory layouts, filters/search/recovery, no console errors and live game clue/answer feedback. No new Astro check or full repeat of the earlier app E2E audit was run for header changes.
+
+Initial namespace errors, unsupported hostname redirect and platform analytics insertion were corrected. Failures are preserved separately. Per-project uploads and project-scoped hashes now serve every expected file. API references are in deployment/README.md, release IDs in deployment/status.json and results in DEPLOYMENT_QA.md. Source was not pushed and Git auto-deployment is not configured.
+
+JavaScript syntax checks and git diff --check pass. The legacy context-path audit still stops at the absent historical batch-four QA directory; its failure is recorded in deployment/evidence/context-audit.log. Fresh static results were regenerated. This archived-evidence limitation does not affect the live sites or passing source/build checks.
 Each app remains a separate Astro 7.4.2/Bun 1.4.4 static project with TypeScript 6.0.3 and @astrojs/check 0.9.12. Normal builds use prepared local content. No account, database, runtime API, secret, shared backend or external font service is introduced.
 
 Official Quran MCP provides canonical Arabic/Pickthall evidence and fetched commentary. Full Arabic Ibn Kathir supports further report-context reading; Al-Qurtubi provides further business discussion. UNESCO and the Metropolitan Museum of Art support later historical records; Natural Earth supplies local land geometry. Modern activities and fixed reading claims remain explicitly editorial. Direct HTML retrieval failures were resolved using the web reader for the same primary/institutional pages, with saved evidence.

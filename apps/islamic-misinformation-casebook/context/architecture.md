@@ -1,5 +1,13 @@
 # Architecture: Islamic Misinformation Casebook
 
+## Authorized SEO scope
+
+The current user request covers published SEO improvements. This independent app owns its production site URL, local SEO profile/helper and static sitemap endpoint. Page metadata derives from local editorial records, without changing canonical quotations. Privacy and 404 pages are noindex and omitted from the sitemap. Other pages self-canonicalize to the custom hostname; Pages-origin/preview responses are noindex. Breadcrumbs and directory links remain visible. Social previews and WOFF2 fonts stay local with licenses. No runtime service, analytics or dependency upgrade is added. Validation and publication remain required before completion.
+
+## Publication response policy
+
+The user authorized Cloudflare Pages hosting at https://islamic-misinformation-casebook.moongazer.tech/. Static responses use Cache-Control no-transform to prevent automatic platform beacon insertion and preserve source HTML. Existing immutable asset lifetimes remain. Build from public/_headers; never edit dist. Project-scoped upload credentials stay outside source and logs.
+
 ## Stack
 
 Astro 7.4.2, TypeScript 6.0.3, @astrojs/check 0.9.12 and Bun 1.4.4. Static output, directory-format routes and trailing slashes. Native Astro/HTML/CSS and browser TypeScript; no React, Tailwind, server adapter, authentication or database.
@@ -32,7 +40,7 @@ All storage keys have prefix `islamic-misinformation-casebook:` and timestamp en
 
 ## Deployment and invariants
 
-Port 4340. Build `bun install --frozen-lockfile && bun run build`, output `dist`, environment `BUN_VERSION=1.4.4`. Serve at its own Pages project/domain root; absolute asset paths require an explicit migration for subpath hosting. No adapter, Functions, bindings, secrets or runtime service is needed. Archive `release/islamic-misinformation-casebook-pages.zip` contains 31 files and 16 HTML pages.
+Port 4340. Build `bun install --frozen-lockfile && bun run build`, output `dist`, environment `BUN_VERSION=1.4.4`. Serve at its own Pages project/domain root; absolute asset paths require an explicit migration for subpath hosting. No adapter, Functions, bindings, secrets or runtime service is needed. Production project `moongazer-islamic-misinformation-casebook` uses Direct Upload; its current release is recorded in repository deployment/status.json.
 
 Preserve literal canonical text, edition attribution, source limits, independent builds, accessible interactions and app namespace isolation. Twelve constructed reading claims are fixed evidence exercises, not measured viral trends or accusations against real people. The three findings are contradicted by the cited text, needs context, and beyond the cited evidence. Omission from one report does not prove absence from every other source. Sharing preserves this limit.
 

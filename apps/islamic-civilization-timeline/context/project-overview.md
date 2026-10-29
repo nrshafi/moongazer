@@ -2,7 +2,7 @@
 
 ## Overview
 
-Explore connected histories across regions, with dates and evidence in view. Portfolio rank 16 of 20, independent project `apps/islamic-civilization-timeline`. Implemented and packaged for static Cloudflare Pages hosting; no account publication has occurred.
+Explore connected histories across regions, with dates and evidence in view. Portfolio rank 16 of 20, independent project `apps/islamic-civilization-timeline`. Published with static Cloudflare Pages hosting at https://islamic-civilization-timeline.moongazer.tech/.
 
 ## Goals and visitor flow
 

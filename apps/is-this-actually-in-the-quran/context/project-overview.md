@@ -4,7 +4,7 @@
 
 Check wording against the Arabic Quran and Pickthall translation. Readers checking the wording or reference of a claimed Quran quotation before sharing it.
 
-Portfolio rank 7 of 20. Project root `apps/is-this-actually-in-the-quran`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 7 of 20. Project root `apps/is-this-actually-in-the-quran`. The app is implemented and published at https://is-this-actually-in-the-quran.moongazer.tech/.
 
 ## Goals
 

@@ -60,6 +60,14 @@ There is no installed component or icon library. Reuse the shell's inline SVG ma
 
 All twenty home pages passed both themes at 390 × 844 and 1440 × 1000. All 325 HTML pages rendered at phone width without document overflow. Enabled home control text passed a focused 4.5:1 contrast check in mobile dark and desktop light modes, with header controls inside the viewport. Screenshots and actual browser evidence are in `_implementation/qa/e2e/`; this is not a full accessibility certification.
 
+## Moongazer directory homepage
+
+SEO additions preserve the visual design. App pages gain a small, wrapping breadcrumb trail and a footer link to the directory. Breadcrumb markup and schema must agree. Social cards follow the existing midnight-blue, gold and local typography identity. Search-oriented metadata must not add filler sections, false credentials or hidden keyword text to the interface.
+
+The directory uses an ink-blue night-sky hero, an illustrated crescent with orbital paths, icy white reading surfaces, and restrained gold details. Locally hosted Newsreader display type pairs with DM Sans body text. Its primary action leads to the complete app library; native app links work without JavaScript. Search and subject filters progressively enhance the twenty server-rendered entries. Use neutral keyboard focus, readable contrast, reduced-motion handling and responsive layouts. This visual direction applies to the directory; app-local themes remain independent.
+
 ## Focus appearance
 
 Pointer selection keeps the control’s ordinary border and shows no outer focus ring. Tab navigation shows a neutral 2px outline using `--muted`, with a 2px offset. Accent-colored focus rings are removed across controls. Selection, validation and game-result styling remain distinct from focus.
+
+The directory passed desktop and 390px phone checks. Narrow featured cards hide their illustrations to preserve text flow. Search, combined filters, no-results recovery and twenty native app links were verified.

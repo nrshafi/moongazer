@@ -4,7 +4,7 @@
 
 A few clues. One surah. Discover how well you know the Quran, one thoughtful round at a time. Learners who want to recognize Quran chapters through a short, immediately usable quiz.
 
-Portfolio rank 1 of 20. Project root `apps/guess-the-surah`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 1 of 20. Project root `apps/guess-the-surah`. The app is implemented and published at https://guess-the-surah.moongazer.tech/.
 
 ## Goals
 

@@ -28,6 +28,10 @@
 
 ## Files and validation
 
+SEO metadata must come from inspected local names and editorial summaries, never invented source quotations. Escape serialized JSON-LD against closing-script markup. XML sitemaps contain only same-host, canonical, indexable URLs, with no fabricated modification dates. Validate generated metadata, route coverage, structured-data identifiers and the exclusion of privacy/404 routes. Preserve app independence and source checksums.
+
+The directory homepage may use dependency-free HTML, CSS and JavaScript as explicitly requested. Keep authoritative source in `homepage/`, render the catalog from `deployment/targets.json`, and regenerate `homepage/dist/` with `node homepage/build.mjs`. Hosting helpers must fail on unsuccessful API responses, preserve existing unrelated DNS, and never log or persist credentials. Verify the generated catalog matches all twenty app roots and deployed hostnames.
+
 - `src/pages/`: static routes and page composition. `src/layouts/`: the shared shell copy. `src/lib/`: behavior, pure logic and helpers. `src/data/`: bundled data and provenance. `src/styles/`: CSS. `public/`: local assets and hosting headers. `tests/`: meaningful Bun checks.
 - Do not hand-edit generated output or third-party internals. Generators under `_implementation` are preparation tools, several of which overwrite files; inspect their scope before use.
 - Run meaningful checks for behavior changes and the affected Astro check/build. For documentation-only changes, validate context completeness, paths and facts; do not rerun builds just to report activity.

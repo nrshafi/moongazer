@@ -1,5 +1,7 @@
 # Islamic Product Lab
 
+Open [Moongazer](https://moongazer.tech/) for the searchable directory of all twenty apps. Each app is published to its own full-name subdomain and independent Cloudflare Pages project. See [DEPLOYMENT.md](DEPLOYMENT.md) for every production URL.
+
 Twenty independent static apps for Islamic learning, reading and practice. The collection includes games, timelines, source explorers and a Quran memorization workload calculator. Each app lives in `apps/` and can be built and deployed on its own.
 
 The apps use Astro 7.4.2, TypeScript 6.0.3 and Bun 1.4.4. They use bundled content and assets, with no accounts, database or runtime API required. Optional browser storage is app-specific; saved activity records expire when accessed after 30 days. Each app describes its sources and the limits of its editorial material.
@@ -50,12 +52,13 @@ bun run preview
 
 ## Repository guide
 
-- [DEPLOYMENT.md](DEPLOYMENT.md) describes each app's content, deployment settings and source provenance. Its references to prebuilt ZIPs and QA reports describe artifacts absent from this checkout.
+- [DEPLOYMENT.md](DEPLOYMENT.md) lists production URLs and build settings. [deployment/README.md](deployment/README.md) records the repeatable upload workflow and official API references.
+- [homepage/](homepage/) contains the raw HTML, CSS and JavaScript directory. Build it with `node homepage/build.mjs`; preview with `node homepage/preview.mjs` on localhost port 4350.
 - [AGENTS.md](AGENTS.md) and [context/](context/) contain repository-wide instructions and project context. Each app also has its own instructions and context.
 - [_implementation/](_implementation/) contains content preparation, research snapshots and verification scripts. Some scripts expect missing QA artifacts or generated builds; inspect their requirements before running them.
 - [_build/](_build/) contains tooling for earlier HTML prototypes. [islamic_product_atlas.html](islamic_product_atlas.html) is an earlier reference; the old demo catalog and generated demo files are absent from this checkout.
 - [STATIC_APPS_SHORTLIST.md](STATIC_APPS_SHORTLIST.md) and [PROJECT_RANKING.md](PROJECT_RANKING.md) record the project selection.
 
-Build output and dependencies are ignored by Git. The `release/` archives and recorded QA reports mentioned in older context and deployment documents are not included in this checkout. The context verifier currently requires the missing `_implementation/qa/static-results.json` file.
+Build output and dependencies are ignored by Git. The `release/` archives and several QA reports mentioned in historical context are absent. Fresh static verification recreates `_implementation/qa/static-results.json`; release-specific logs and HTTP checks are in `deployment/evidence/`.
 
-For hosting, build an app and deploy the contents of its `dist/` directory to the root of its own static site. See [DEPLOYMENT.md](DEPLOYMENT.md) for the documented Cloudflare Pages configuration. No hosting deployment is recorded. Content sources and rights should be reviewed before public release; the apps do not claim independent scholarly certification.
+Hosting uses Cloudflare Pages Direct Upload. Source edits require rebuilding and publishing the affected app; Git-triggered deployment is not configured. See [deployment/status.json](deployment/status.json) for actual deployment and verification status. The apps retain their source attribution and rights notes and do not claim independent scholarly certification.

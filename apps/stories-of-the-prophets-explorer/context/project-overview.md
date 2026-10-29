@@ -4,7 +4,7 @@
 
 Explore selected Quran passages about 25 named prophets. Readers exploring selected Quranic accounts through named profiles and short comprehension checks.
 
-Portfolio rank 10 of 20. Project root `apps/stories-of-the-prophets-explorer`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 10 of 20. Project root `apps/stories-of-the-prophets-explorer`. The app is implemented and published at https://stories-of-the-prophets-explorer.moongazer.tech/.
 
 ## Goals
 

@@ -4,7 +4,7 @@
 
 Read the passages, explore the geography, and see what remains uncertain. Readers connecting Quran place references to geographical context without confusing evidence with speculation.
 
-Portfolio rank 11 of 20. Project root `apps/quranic-places-atlas`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 11 of 20. Project root `apps/quranic-places-atlas`. The app is implemented and published at https://quranic-places-atlas.moongazer.tech/.
 
 ## Goals
 

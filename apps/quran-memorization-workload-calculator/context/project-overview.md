@@ -4,7 +4,7 @@
 
 Plan new memorization alongside a growing revision workload. Learners estimating how new memorization and an expanding revision workload fit their own study time.
 
-Portfolio rank 6 of 20. Project root `apps/quran-memorization-workload-calculator`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 6 of 20. Project root `apps/quran-memorization-workload-calculator`. The app is implemented and published at https://quran-memorization-workload-calculator.moongazer.tech/.
 
 ## Goals
 

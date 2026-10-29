@@ -46,9 +46,9 @@ A portfolio of Islamic learning tools that visitors can use immediately without 
 
 The collection contains games, source readers, local search and a workload model. Common features are local fonts, light/dark modes, source/privacy/404 pages, optional namespaced storage and static hosting headers. App-local project-overview.md files specify exact content and flows.
 
-In scope: maintenance of the twenty implemented apps and the requested context methodology. Out of scope without a new user request: accounts, databases, runtime AI/API dependencies, identity-based tracking, trusted leaderboards and automatically publishing to a hosting account.
+In scope: maintenance of the twenty implemented apps and the requested context methodology. Out of scope without a new user request: accounts, databases, runtime AI/API dependencies, identity-based tracking, trusted leaderboards and unrequested automatic publishing to a hosting account.
 
-All twenty shortlisted projects are implemented. Each app has AGENTS.md and six filled context documents. Hosting publication remains outside this implementation request.
+All twenty shortlisted projects are implemented. Each app has AGENTS.md and six filled context documents. The current user request authorizes a new Moongazer directory homepage and publication of that homepage plus all twenty apps to Cloudflare Pages on moongazer.tech and individual subdomains.
 
 ## Success criteria
 
@@ -61,3 +61,11 @@ All twenty shortlisted projects are implemented. Each app has AGENTS.md and six 
 ## Latest portfolio verification
 
 The complete-portfolio E2E audit is `E2E_QA.md`. All twenty apps pass 217 Bun tests; browser verification covers complete representative journeys and all 325 generated pages. Three discovered behavior defects were corrected. Earlier batch QA reports remain historical records.
+
+## Moongazer publication
+
+## Authorized SEO work
+
+The user requested SEO improvements for the complete published collection: the directory and twenty app subdomains. Audit and fix crawlability, page-specific metadata, canonical URLs, crawlable navigation, truthful structured data and social previews. Preserve religious source text and the existing activities. Search Console is not set up; prepare Domain-property verification and per-host sitemap submission without claiming ownership verification, indexing or rankings.
+
+The directory at https://moongazer.tech/ links all twenty apps on full-name subdomains. Each app has its own Pages project. The new HTML/CSS/JavaScript homepage offers search and subject filters without accounts, analytics or storage. Production IDs and verification are in deployment/status.json and DEPLOYMENT_QA.md.

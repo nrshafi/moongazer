@@ -4,7 +4,7 @@
 
 Open a case, examine the reports, and let the evidence guide your conclusion. Learners who want to practice reading historical reports before selecting a supported conclusion.
 
-Portfolio rank 3 of 20. Project root `apps/the-seerah-detective`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 3 of 20. Project root `apps/the-seerah-detective`. The app is implemented and published at https://the-seerah-detective.moongazer.tech/.
 
 ## Goals
 

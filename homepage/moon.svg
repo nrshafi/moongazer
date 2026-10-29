@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="510" viewBox="0 0 580 510" fill="none">
+<defs><pattern id="grain" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".6" fill="#b99d70" opacity=".3"/><circle cx="10" cy="12" r=".6" fill="#b99d70" opacity=".3"/></pattern><mask id="crescent"><circle cx="283" cy="237" r="145" fill="white"/><circle cx="337" cy="186" r="130" fill="black"/></mask></defs>
+<circle cx="290" cy="241" r="211" stroke="#30485f" stroke-dasharray="2 8"/><circle cx="290" cy="241" r="186" stroke="#344d65"/><ellipse cx="289" cy="241" rx="267" ry="95" stroke="#6e7d85" stroke-opacity=".65" transform="rotate(-32 289 241)"/>
+<path d="M74 410 505 78M36 250h509M290 28v427" stroke="#344b60" stroke-dasharray="2 9"/>
+<circle cx="283" cy="237" r="145" fill="#e9c992" mask="url(#crescent)"/><circle cx="283" cy="237" r="145" fill="url(#grain)" mask="url(#crescent)"/>
+<g stroke="#b99d70" opacity=".35" mask="url(#crescent)"><circle cx="215" cy="280" r="38"/><circle cx="215" cy="280" r="31"/><circle cx="193" cy="182" r="18"/><circle cx="262" cy="340" r="20"/><circle cx="162" cy="242" r="11"/><path d="M140 260c20 56 68 96 130 108M142 266c20 55 69 94 130 106"/></g>
+<g fill="#e9c992"><path d="m420 111 3.3 11.7L435 126l-11.7 3.3L420 141l-3.3-11.7L405 126l11.7-3.3Z"/><path d="m463 282 2.3 7.7L473 292l-7.7 2.3L463 302l-2.3-7.7L453 292l7.7-2.3Z"/><path d="m124 118 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"/><circle cx="84" cy="286" r="3"/><circle cx="371" cy="409" r="3"/><circle cx="447" cy="184" r="2"/><circle cx="215" cy="56" r="2"/><circle cx="74" cy="174" r="1.5"/><circle cx="474" cy="359" r="1.5"/></g>
+<g fill="#d5e1ea"><circle cx="174" cy="90" r="1.5"/><circle cx="499" cy="218" r="2"/><circle cx="124" cy="372" r="2"/><circle cx="369" cy="65" r="1.5"/><circle cx="338" cy="443" r="1.5"/><circle cx="64" cy="358" r="1.5"/><circle cx="478" cy="106" r="1.5"/></g>
+<circle cx="120" cy="350" r="6" fill="#12263d" stroke="#dcc496"/><circle cx="120" cy="350" r="2" fill="#dcc496"/><path d="M113 350H82m38 7v25" stroke="#667d91"/>
+<g fill="#a4bacd" font-family="monospace" font-size="7" letter-spacing="1.5"><text x="257" y="25">CURIOSITY</text><text x="460" y="422">DISCOVERY</text><text x="27" y="92" transform="rotate(-90 27 92)">MOONGAZER</text></g>
+</svg>

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Read a passage beside the reports, and distinguish an occasion from its wider context. Portfolio rank 18 of 20, independent project `apps/revelation-context-explorer`. Implemented and packaged for static Cloudflare Pages hosting; no account publication has occurred.
+Read a passage beside the reports, and distinguish an occasion from its wider context. Portfolio rank 18 of 20, independent project `apps/revelation-context-explorer`. Published with static Cloudflare Pages hosting at https://revelation-context-explorer.moongazer.tech/.
 
 ## Goals and visitor flow
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Inspect a claim, open the evidence, and decide what the sources support. Portfolio rank 20 of 20, independent project `apps/islamic-misinformation-casebook`. Implemented and packaged for static Cloudflare Pages hosting; no account publication has occurred.
+Inspect a claim, open the evidence, and decide what the sources support. Portfolio rank 20 of 20, independent project `apps/islamic-misinformation-casebook`. Published with static Cloudflare Pages hosting at https://islamic-misinformation-casebook.moongazer.tech/.
 
 ## Goals and visitor flow
 

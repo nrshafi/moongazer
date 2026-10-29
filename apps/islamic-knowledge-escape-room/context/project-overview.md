@@ -4,7 +4,7 @@
 
 Read the evidence. Solve four locks. Open a new route through the Quran. Solo learners or a group sharing one device who want a source-reading puzzle activity.
 
-Portfolio rank 9 of 20. Project root `apps/islamic-knowledge-escape-room`. The app is implemented, checked and packaged; Cloudflare deployment has not been performed.
+Portfolio rank 9 of 20. Project root `apps/islamic-knowledge-escape-room`. The app is implemented and published at https://islamic-knowledge-escape-room.moongazer.tech/.
 
 ## Goals
 

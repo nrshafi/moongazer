@@ -2,7 +2,7 @@
 
 ## Overview
 
-Work through fictional business dilemmas, then inspect the choices and sources. Portfolio rank 17 of 20, independent project `apps/halal-business-decisions`. Implemented and packaged for static Cloudflare Pages hosting; no account publication has occurred.
+Work through fictional business dilemmas, then inspect the choices and sources. Portfolio rank 17 of 20, independent project `apps/halal-business-decisions`. Published with static Cloudflare Pages hosting at https://halal-business-decisions.moongazer.tech/.
 
 ## Goals and visitor flow
 
