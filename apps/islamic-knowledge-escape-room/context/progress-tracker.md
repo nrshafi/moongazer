@@ -1,6 +1,10 @@
 # Progress tracker: The Islamic Knowledge Escape Room
 
-Last updated: 2026-10-29T23:45:26+06:00 Asia/Dhaka
+Last updated: 2026-10-30T00:29:25+06:00 Asia/Dhaka
+
+## Visual refresh, 30 October 2026
+
+Added a dedicated SVG logo for this app's favicon and header, plus app-local editorial and control refinements. The Moongazer directory uses this logo on its app card. Its activity and source text remain as before. The portfolio run passed all twenty Astro checks, builds and Bun test suites; static verification passed 325 pages. Representative desktop pages were inspected in the browser. A fresh phone-width audit and production deployment were not performed for this change.
 
 ## Current phase
 

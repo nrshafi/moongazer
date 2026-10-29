@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/refinement.css';
 interface Props { title: string; description?: string; active?: string; }
 const { title, description = '', active = 'activity' } = Astro.props;
 import config from '../data/config.json';
@@ -23,7 +24,7 @@ import config from '../data/config.json';
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="/" aria-label={`${config.name} home`}>
-          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="m16 3 4 8 9 5-9 5-4 8-4-8-9-5 9-5Z" stroke="currentColor" stroke-width="1.6"/><path d="m16 10 6 6-6 6-6-6Z" fill="currentColor"/></svg></span>
+          <span class="brand-mark" aria-hidden="true"><img src="/favicon.svg" alt="" width="42" height="42" /></span>
           <span>{config.name}<small>Islamic learning, explored.</small></span>
         </a>
         <nav aria-label="Main navigation">

@@ -11,3 +11,21 @@
 @media(max-width:380px){.site-header nav{gap:11px;font-size:10px}.brand{font-size:21px;gap:7px}.feature-surah{padding:23px}.hero-note{font-size:9px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 @media print{.site-header,.hero,.featured,.library-controls,.about,.site-footer,.results-line{display:none}.wrap{width:100%}.app-grid{grid-template-columns:1fr 1fr}.app-card{break-inside:avoid}.app-card[hidden]{display:block!important}.card-arrow{display:none}.app-link::after{content:attr(href);font-size:9px;margin-top:12px;overflow-wrap:anywhere}}
+
+/* Dedicated app marks turn the directory into a recognisable collection. */
+.feature-logo{width:52px;height:52px;margin-bottom:18px;border-radius:14px;box-shadow:0 10px 24px #18354c1c}
+.feature-card .feature-label{margin-bottom:12px}
+.app-icon{width:48px;height:48px;border-radius:13px;overflow:hidden;background:none}
+.app-icon img{width:100%;height:100%;object-fit:cover}
+.app-card{position:relative;overflow:hidden}
+.app-card:before{content:'';position:absolute;inset:0 auto 0 0;width:3px;background:#e9c992;opacity:0;transition:opacity .2s}
+.app-card:hover:before,.app-card:focus-within:before{opacity:1}
+.app-card h3{font-family:Newsreader,Georgia,serif;font-size:23px;font-weight:520;letter-spacing:-.025em;line-height:1.2}
+.app-card p{font-size:13px}
+.app-kind{font-size:11px;font-weight:600}
+.library-heading h2{font-size:clamp(44px,5vw,62px)}
+.library-controls{background:#f0f5f8;border-radius:14px;padding:18px 21px;margin-bottom:8px}
+.feature-surah{background:linear-gradient(135deg,#e4eef7,#f0f5fa)}
+.feature-salah{background:linear-gradient(135deg,#eef0e8,#f5f6ee)}
+@media(max-width:700px){.feature-logo{width:44px;height:44px;margin-bottom:14px}.app-card h3{font-size:22px}.library-controls{padding:15px}}
+@media(prefers-reduced-motion:reduce){.app-card:before{transition:none}}

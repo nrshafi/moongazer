@@ -1,5 +1,11 @@
 # Repository progress tracker
 
+## Collection visual refresh
+
+2026-10-30T00:29:25+06:00 Asia/Dhaka: Updated all twenty app shells with a larger editorial intro, stronger panel/card hierarchy and responsive refinements in app-local `src/styles/refinement.css`. Created twenty distinct, accent-matched SVG logos for app favicons and headers, and used those marks in the Moongazer directory cards and two featured entries. The directory still builds from its source template.
+
+Fresh validation for this change: all twenty Astro checks passed with zero diagnostics, all twenty production builds passed, all twenty Bun test suites passed, and static verification passed all 325 app pages with canonical text, local links and no external runtime assets. The homepage build passed with twenty app links. Browser inspection covered the directory, Guess the Surah in both themes, Quranic Places Atlas and Understand Salah Lab at desktop width. A fresh phone-width browser audit was not run. This work is local source/output only; no publication or live production verification is claimed.
+
 ## Automatic deployment active
 
 Verified 2026-10-30T00:11:32+06:00 Asia/Dhaka. Published commit 90f46d9 to main and configured both Actions secrets. The user explicitly approved the persistent account-scoped Pages Write token and the staged publication after automatic review requested exact approval. GitHub run 40927531499 passed twenty Astro checks and builds, 217 tests, all 21 production deployments and 646/646 HTTP checks across 327 pages. Local checks, tests and builds also passed for all twenty apps on retry outside the sandbox. Earlier blocked/inactive notes below are historical. Current evidence: deployment/automation-result.json and the Actions run linked in deployment/README.md.
@@ -13,7 +19,7 @@ Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro productio
 
 The representative Guess the Surah build failed when Astro could not write `.astro/content.d.ts` (EPERM). A remote Git read also failed because this environment could not connect to GitHub. No automatic deployment or end-to-end CI test was performed.
 
-Last updated: 2026-10-30T00:11:32+06:00 Asia/Dhaka
+Last updated: 2026-10-30T00:29:25+06:00 Asia/Dhaka
 
 ## Current phase and goal
 

@@ -6,6 +6,10 @@ Modern, quiet reading surfaces with light and dark modes. The first visit follow
 
 Use the app-specific signature described in each local UI context. Blue and violet apps override the accent family in their own CSS; copied helpers/styles are maintained per app, not through cross-app runtime imports. Blue light/dark accents are #316caa/#99c5f6; violet accents are #7255a0/#c7b1ef.
 
+## Visual refresh, 30 October 2026
+
+Each app now has a distinct locally hosted SVG mark, visible in its header and browser tab and repeated on the Moongazer directory card. An app-local `src/styles/refinement.css` adds a Newsreader display intro, a restrained geometric watermark, stronger panel hierarchy and adjusted card, control and footer styling. The twenty app copies remain independent; their existing teal, blue and violet accent families and activity-specific layouts remain in place. The homepage features two app marks and uses all twenty on the library cards.
+
 ## Color tokens
 
 The actual token definitions live in the app's `src/styles/global.css`. Use these names rather than introducing a different token system.
@@ -31,7 +35,7 @@ The actual token definitions live in the app's `src/styles/global.css`. Use thes
 | Role | Local font | Existing implementation |
 | --- | --- | --- |
 | Interface and body | DM Sans | Root `font-family`; variable font, system sans fallback |
-| Restrained editorial headings | Newsreader | `.editorial`, Georgia fallback; not every heading uses it |
+| Intro, card and panel headings | Newsreader | `.editorial` and the app-local visual refinement; Georgia fallback |
 | Quran and other Arabic | Amiri | `.arabic`, Arabic serif fallback, RTL and `lang="ar"` |
 
 Fonts are in `public/fonts/` with their SIL Open Font License files. There are no `--font-sans`/`--font-mono` tokens or external font service in the current implementation.
@@ -40,17 +44,17 @@ Fonts are in `public/fonts/` with their SIL Open Font License files. There are n
 
 | Context | Existing rule |
 | --- | --- |
-| Panels | `--radius: 18px`; narrower layouts use 15px panels |
-| Primary buttons | 11px radius, 45px minimum height |
-| Fields | 10px radius, 44px minimum height |
-| Icon buttons | 12px radius, 38px square |
+| Panels | Base `--radius: 18px`; visual refinement uses 16px, or 13px on phones |
+| Primary buttons | 9px radius, 46px minimum height |
+| Fields | 9px radius, 44px minimum height |
+| Icon buttons | 9px radius, 38px square |
 | Dialogs | 20px radius with backdrop |
 
 There is no installed component or icon library. Reuse the shell's inline SVG mark/theme icons and existing `.panel`, `.panel-body`, `.panel-head`, `.button`, `.field`, `.filters`, `.notice`, `.actions`, `.arabic`, `.source-quote`, `.empty` and `.micro` patterns.
 
 ## Layout and interaction
 
-- Desktop content is centered, up to 1160px, with a sticky header. `.workspace` uses a flexible main column plus a 280px sidebar.
+- Desktop content is centered, up to 1200px, with a sticky header. `.workspace` uses a flexible main column plus a 290px sidebar.
 - Card grids use three columns, two below 860px and one below 580px. Narrow reading layouts stack controls and sidebars. Long app titles must wrap within the header.
 - Keep footer source/privacy links and the app-scoped clear-data dialog available. Empty states explain how to recover. Inline validation/status text must be readable in both themes.
 - Preserve keyboard use and semantic labels. Provide buttons for ordering and a text legend for maps; do not rely on dragging, hover or color alone.
