@@ -27,3 +27,7 @@ Accounts, databases, user identity, external runtime assets, synchronized multip
 ## Success criteria
 
 Core flows work with empty or blocked storage. Activity logic, source integrity and route links pass verification. Both themes fit desktop and mobile widths with keyboard/native controls. `bun run check`, `bun test` and `bun run build` succeed independently. The release archive contains static files at its root.
+
+## SEO release, 30 October 2026
+
+The published SEO scope covers the directory and twenty app subdomains. Search metadata describes existing activities and editorial records. No additional product content, storage, visitor tracking or independent scholarly certification is introduced. See repository SEO_QA.md for the release and SEARCH_CONSOLE_SETUP.md for the completed Google account setup record.

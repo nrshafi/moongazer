@@ -67,3 +67,7 @@ Use `.dossier` for paired source and limit panels, `.evidence-card` for native d
 ## Focus appearance
 
 Pointer selection keeps the control’s ordinary border and shows no outer focus ring. Tab navigation shows a neutral 2px outline using `--muted`, with a 2px offset. Accent-colored focus rings are removed across controls. Selection, validation and game-result styling remain distinct from focus.
+
+## SEO release, 30 October 2026
+
+Visible breadcrumbs connect Moongazer, the app and the current detail page. A footer link returns to the app directory. Breadcrumbs wrap on phones and match structured data. WOFF2 derivatives retain the local DM Sans, Newsreader and Amiri glyph coverage and licenses. Social previews use local 1200 by 630 PNG cards. The SEO browser check covered all twenty app homepages at 390px and an Arabic detail page in both themes.

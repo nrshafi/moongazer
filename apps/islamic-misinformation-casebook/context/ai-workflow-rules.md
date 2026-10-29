@@ -45,3 +45,7 @@ For a behavior change, run relevant Bun tests, Astro check/build and browser ver
 - Preserve the original `6_File+Context+Methodology/` reference template, earlier HTML demonstrations and historical QA evidence during unrelated maintenance.
 - Finish with concrete files, validation and any material limits. A ZIP ready for upload is not a deployed Cloudflare project. Current Pages publication is recorded in deployment/status.json at repository level.
 - Keep these context files updated manually after initial setup; `_implementation/populate-context.py` refuses to overwrite them by default. Use `python _implementation/verify-context.py` at repository level to audit current context sets. The older generator’s `--verify-only` mode forwards to that audit.
+
+## SEO release, 30 October 2026
+
+For later SEO changes, run bun test _implementation/seo.test.ts and python deployment/verify-seo.py alongside affected app checks, tests and builds. After publication run python deployment/verify-seo.py --live and the complete HTTP verifier. The local GitHub workflow now includes these SEO guards, but no new Actions run for this SEO source was triggered in this task. Keep Search Console verification/submission separate from on-site release completion.

@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://islamic-civilization-timeline.moongazer.tech/sitemap.xml

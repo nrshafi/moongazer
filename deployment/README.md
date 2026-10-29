@@ -47,6 +47,10 @@ Keep existing CSP, local fonts, canonical source quotations and media licenses. 
 
 ## Verification
 
+The SEO release is recorded in `seo-release.json` and repository `SEO_QA.md`. Its source changes add canonical URLs, same-host sitemaps, page metadata, local social cards, breadcrumbs and WOFF2 fonts. After regenerated builds, run `bun test _implementation/seo.test.ts` and `python deployment/verify-seo.py`; after publication run `python deployment/verify-seo.py --live` in addition to the complete file verifier below. The local GitHub workflow includes these guards. This SEO release used the connector directly; no new Actions run for these working-tree changes is claimed.
+
+Social cards and font derivatives are source assets. To regenerate them, use `seo-assets.py` with the tooling versions in `seo-assets-requirements.txt`. Normal app builds do not require that Python tooling. `prepare-seo.mjs` prepares the independent profiles/helper/endpoints; inspect shell changes carefully when applying it to a later design. Google ownership verification and the 21 submission URLs are documented in repository `SEARCH_CONSOLE_SETUP.md`.
+
 ```powershell
 bun _implementation/verify.ts test
 python _implementation/verify-static.py

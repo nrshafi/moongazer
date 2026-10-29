@@ -1,0 +1,10 @@
+{
+  "title": "The Seerah Detective | Islamic History Mysteries",
+  "shortName": "Seerah Detective",
+  "description": "Investigate short mysteries from the Prophet's life. Compare evidence, choose a conclusion and read cited Seerah reports in this free learning activity.",
+  "keyword": "Seerah learning game",
+  "collection": "cases",
+  "prefix": "case",
+  "nameField": "title",
+  "summaryField": "brief"
+}

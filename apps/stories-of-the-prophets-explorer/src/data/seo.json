@@ -1,0 +1,10 @@
+{
+  "title": "Stories of the Prophets | Quran Passage Explorer",
+  "shortName": "Stories of the Prophets",
+  "description": "Read selected Quranic accounts of the prophets with source references and short reading checks. Explore the passages without invented dialogue or biographies.",
+  "keyword": "stories of the prophets Quran",
+  "collection": "people",
+  "prefix": "prophet",
+  "nameField": "name",
+  "summaryField": "brief"
+}

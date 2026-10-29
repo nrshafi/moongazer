@@ -1,0 +1,11 @@
+{
+  "title": "Islamic Knowledge Escape Room | Free Quran Puzzles",
+  "shortName": "Knowledge Escape Room",
+  "description": "Solve a sequence of Islamic knowledge puzzles in a free escape-room activity. Read Quran passages, use hints and inspect the sources behind each room.",
+  "keyword": "Islamic escape room",
+  "collection": "rooms",
+  "prefix": "room",
+  "nameField": "name",
+  "summaryField": "description",
+  "nameSuffix": " room"
+}

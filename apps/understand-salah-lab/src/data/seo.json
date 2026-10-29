@@ -1,0 +1,11 @@
+{
+  "title": "Understand Salah Lab | Prayer Recitation Meanings",
+  "shortName": "Understand Salah Lab",
+  "description": "Study Arabic prayer recitations and their meanings with short reading checks. Listen to the full Al-Fatiha recording and explore the cited source notes.",
+  "keyword": "understand Salah meanings",
+  "collection": "lessons",
+  "prefix": "lesson",
+  "nameField": "title",
+  "summaryField": "note",
+  "detailMode": "salah"
+}

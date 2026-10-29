@@ -1,5 +1,17 @@
 # Repository progress tracker
 
+## SEO source checkpoint
+
+2026-10-30T01:20:02+06:00 Asia/Dhaka: The requested Git checkpoint includes the session's SEO source, required local assets, build/CI verification, project context and compact deployment/Search Console records. Generated QA dumps, logs, screenshots and temporary browser scripts stay local. .gitignore is unchanged. Fresh checks pass five SEO helper tests and static SEO validation on 327 pages across 21 hosts, including 286 indexable URLs. No push was requested, and no new live deployment or complete app test run is claimed for this checkpoint.
+
+## Google Search Console setup, 30 October 2026
+
+2026-10-30T00:57:44+06:00 Asia/Dhaka: Completed the user-requested Google Search Console setup with the ego plugin and the existing Cloudflare connector. Google confirmed Domain ownership through a newly added apex TXT record. All 21 sitemap submissions were accepted and every row now shows Success, covering 286 discovered URLs. Performance and indexing reports are still processing. Keep the verification TXT record. Evidence: deployment/search-console.json and deployment/evidence/search-console/. No app source, build, dependency, storage or visitor tracking change was needed, and no fresh application tests or builds are claimed for this administrative setup.
+
+## SEO release, 30 October 2026
+
+2026-10-30T00:33:23+06:00 Asia/Dhaka: Collection-wide SEO is published through 21 successful production deployments. Twenty Astro checks and builds, 217 existing app tests and five SEO helper tests pass. Static SEO passes on 327 HTML pages with 286 indexable URLs; source integrity passes on all 325 app pages. Live HTTP checks pass 769/769; live SEO checks pass 411/411; all 21 deployment-specific Pages URLs return noindex. Google successfully crawled one representative published detail page and found valid breadcrumb markup. Search Console ownership and sitemap submission remain pending the intended Google account. This direct release used uncommitted source; no new GitHub Actions run for the SEO change is claimed. See deployment/seo-release.json and SEO_QA.md. Historical QA below and the separate visual-refresh record retain their original scope.
+
 ## Collection visual refresh
 
 2026-10-30T00:29:25+06:00 Asia/Dhaka: Updated all twenty app shells with a larger editorial intro, stronger panel/card hierarchy and responsive refinements in app-local `src/styles/refinement.css`. Created twenty distinct, accent-matched SVG logos for app favicons and headers, and used those marks in the Moongazer directory cards and two featured entries. The directory still builds from its source template.
@@ -19,11 +31,11 @@ Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro productio
 
 The representative Guess the Surah build failed when Astro could not write `.astro/content.d.ts` (EPERM). A remote Git read also failed because this environment could not connect to GitHub. No automatic deployment or end-to-end CI test was performed.
 
-Last updated: 2026-10-30T00:29:25+06:00 Asia/Dhaka
+Last updated: 2026-10-30T01:21:13+06:00 Asia/Dhaka
 
 ## Current phase and goal
 
-New request in progress: implement SEO across the directory and twenty app subdomains. The baseline found missing app canonical tags, social metadata, structured data, all twenty app sitemaps and repeated per-app descriptions. The existing site is newly published, with no Search Console property. Current publication evidence below remains historical until the SEO release is validated and deployed.
+The collection-wide on-site SEO request is complete and published. Search Console Domain ownership is verified, and all twenty-one submitted sitemaps show Success with 286 discovered URLs. Indexing and search-performance data are still processing. Earlier implementation and hosting records below are historical.
 
 The authorized Moongazer publication is complete. The directory and twenty apps are deployed independently, with the apex, www and all twenty full-name app subdomains active. Two consecutive live checks each pass 646 requests. Earlier no-publication statements below describe historical implementation scopes.
 

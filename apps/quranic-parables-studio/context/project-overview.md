@@ -40,3 +40,7 @@ Diagrams are editorial aids, not complete interpretation or depictions of Allah/
 2. The content inventory and citations remain consistent; answers/calculations follow the implemented constraints.
 3. `bun run check`, `bun test` and `bun run build` pass for behavior changes; changed interactions work in both themes and on narrow screens.
 4. A static `dist/` can be served at the root of its own Pages project, with no runtime service dependency.
+
+## SEO release, 30 October 2026
+
+The published SEO scope covers the directory and twenty app subdomains. Search metadata describes existing activities and editorial records. No additional product content, storage, visitor tracking or independent scholarly certification is introduced. See repository SEO_QA.md for the release and SEARCH_CONSOLE_SETUP.md for the completed Google account setup record.

@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://family-islamic-learning-challenges.moongazer.tech/sitemap.xml

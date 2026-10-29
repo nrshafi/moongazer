@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://everyday-akhlaq-simulator.moongazer.tech/sitemap.xml

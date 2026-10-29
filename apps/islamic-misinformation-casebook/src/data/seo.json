@@ -1,0 +1,11 @@
+{
+  "title": "Islamic Misinformation Casebook | Examine Evidence",
+  "shortName": "Misinformation Casebook",
+  "description": "Practice examining Islamic claims through a fixed collection of cited cases. Compare evidence, corrections and source limits without submitting personal claims.",
+  "keyword": "check Islamic misinformation",
+  "collection": "cases",
+  "prefix": "case",
+  "nameField": "title",
+  "summaryField": "correction",
+  "detailLead": "Evidence-reading case"
+}

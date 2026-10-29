@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://guess-the-surah.moongazer.tech/sitemap.xml

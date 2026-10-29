@@ -1,0 +1,511 @@
+{
+  "phase": "complete",
+  "verifiedAt": "2026-10-29T18:29:10.108310+00:00",
+  "timezone": "Asia/Dhaka",
+  "method": "Cloudflare connector Direct Upload",
+  "sourceCheckoutCommit": "e3b035d",
+  "commitDirty": true,
+  "sourceCommittedOrPushedInThisTask": false,
+  "sites": 21,
+  "htmlPages": 327,
+  "indexableUrls": 286,
+  "appTests": 217,
+  "seoHelperTests": 5,
+  "appChecks": 20,
+  "appBuilds": 20,
+  "liveSeo": {
+    "requests": 411,
+    "passed": 411,
+    "failed": 0
+  },
+  "liveHttp": {
+    "requests": 769,
+    "passed": 769,
+    "failed": 0
+  },
+  "previewNoindex": {
+    "requests": 21,
+    "passed": 21
+  },
+  "searchConsole": {
+    "configured": true,
+    "property": "sc-domain:moongazer.tech",
+    "ownershipVerified": true,
+    "sitemapsSubmitted": true,
+    "submittedSitemaps": 21,
+    "successfulSitemaps": 21,
+    "discoveredPages": 286,
+    "record": "deployment/search-console.json",
+    "recordedAt": "2026-10-29T18:56:07.196Z"
+  },
+  "deployments": [
+    {
+      "name": "moongazer",
+      "id": "1e8bf73a-7e03-4cf1-b717-d25ab8f6daac",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:24:59.659222Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://1e8bf73a.moongazer.pages.dev",
+      "domain": "moongazer.tech",
+      "domains": [
+        {
+          "name": "moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        },
+        {
+          "name": "www.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-guess-the-surah",
+      "id": "8d26f296-1d6a-4221-a763-8e52d74afa90",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:02.004374Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://8d26f296.moongazer-guess-the-surah.pages.dev",
+      "domain": "guess-the-surah.moongazer.tech",
+      "domains": [
+        {
+          "name": "guess-the-surah.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-quran-connections",
+      "id": "117a1687-5554-4e7d-8935-db33c05cf982",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:05.083246Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://117a1687.moongazer-quran-connections.pages.dev",
+      "domain": "quran-connections.moongazer.tech",
+      "domains": [
+        {
+          "name": "quran-connections.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-the-seerah-detective",
+      "id": "24c8c718-c42c-4441-b645-a168650fab38",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:07.332944Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://24c8c718.moongazer-the-seerah-detective.pages.dev",
+      "domain": "the-seerah-detective.moongazer.tech",
+      "domains": [
+        {
+          "name": "the-seerah-detective.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-everyday-akhlaq-simulator",
+      "id": "72ae9ba6-2d66-4a6d-bcec-37da0c7d1ce7",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:09.232328Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://72ae9ba6.moongazer-everyday-akhlaq-simulator.pages.dev",
+      "domain": "everyday-akhlaq-simulator.moongazer.tech",
+      "domains": [
+        {
+          "name": "everyday-akhlaq-simulator.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-interactive-seerah-timeline",
+      "id": "397a550e-e217-4b8c-aea7-d84f08d57bfb",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:18.504563Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://397a550e.moongazer-interactive-seerah-timeline.pages.dev",
+      "domain": "interactive-seerah-timeline.moongazer.tech",
+      "domains": [
+        {
+          "name": "interactive-seerah-timeline.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-quran-memorization-workload-calculator",
+      "id": "b5ad3dc5-fe08-48d4-b738-d22ce9087873",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:21.570577Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://b5ad3dc5.moongazer-quran-memorization-workload-calculator.pages.dev",
+      "domain": "quran-memorization-workload-calculator.moongazer.tech",
+      "domains": [
+        {
+          "name": "quran-memorization-workload-calculator.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-is-this-actually-in-the-quran",
+      "id": "d2a4cfe3-4338-4f42-8622-a57ce3f2f943",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:23.111272Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://d2a4cfe3.moongazer-is-this-actually-in-the-quran.pages.dev",
+      "domain": "is-this-actually-in-the-quran.moongazer.tech",
+      "domains": [
+        {
+          "name": "is-this-actually-in-the-quran.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-quran-concept-atlas",
+      "id": "a95a6889-0911-4e7a-b610-279727db1d0f",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:25.174752Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://a95a6889.moongazer-quran-concept-atlas.pages.dev",
+      "domain": "quran-concept-atlas.moongazer.tech",
+      "domains": [
+        {
+          "name": "quran-concept-atlas.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-islamic-knowledge-escape-room",
+      "id": "0f9701ab-513b-4efb-932e-802bb0a730eb",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:27.547285Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://0f9701ab.moongazer-islamic-knowledge-escape-room.pages.dev",
+      "domain": "islamic-knowledge-escape-room.moongazer.tech",
+      "domains": [
+        {
+          "name": "islamic-knowledge-escape-room.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-stories-of-the-prophets-explorer",
+      "id": "50c03ba4-cc4a-479c-89e9-415c9e74f452",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:38.75866Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://50c03ba4.moongazer-stories-of-the-prophets-explorer.pages.dev",
+      "domain": "stories-of-the-prophets-explorer.moongazer.tech",
+      "domains": [
+        {
+          "name": "stories-of-the-prophets-explorer.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-quranic-places-atlas",
+      "id": "a6154a70-82d5-43cb-a1a8-80242a107380",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:40.829357Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://a6154a70.moongazer-quranic-places-atlas.pages.dev",
+      "domain": "quranic-places-atlas.moongazer.tech",
+      "domains": [
+        {
+          "name": "quranic-places-atlas.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-islamic-concept-connections",
+      "id": "fa38a167-73ed-4357-88b5-921948122336",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:42.772475Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://fa38a167.moongazer-islamic-concept-connections.pages.dev",
+      "domain": "islamic-concept-connections.moongazer.tech",
+      "domains": [
+        {
+          "name": "islamic-concept-connections.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-islamic-history-timeline-challenge",
+      "id": "d817fa64-a4f0-46f4-a762-e4e084c2b575",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:45.289363Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://d817fa64.moongazer-islamic-history-timeline-challenge.pages.dev",
+      "domain": "islamic-history-timeline-challenge.moongazer.tech",
+      "domains": [
+        {
+          "name": "islamic-history-timeline-challenge.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-understand-salah-lab",
+      "id": "d7c7229f-034b-4e3a-9e15-d2acb37d1687",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:47.21743Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://d7c7229f.moongazer-understand-salah-lab.pages.dev",
+      "domain": "understand-salah-lab.moongazer.tech",
+      "domains": [
+        {
+          "name": "understand-salah-lab.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-quranic-parables-studio",
+      "id": "2eda0e76-5fb8-4801-a478-1879435391b8",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:25:58.061373Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://2eda0e76.moongazer-quranic-parables-studio.pages.dev",
+      "domain": "quranic-parables-studio.moongazer.tech",
+      "domains": [
+        {
+          "name": "quranic-parables-studio.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-islamic-civilization-timeline",
+      "id": "ddac2a37-3ea1-4701-aa6f-63ab158340cb",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:26:00.120656Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://ddac2a37.moongazer-islamic-civilization-timeline.pages.dev",
+      "domain": "islamic-civilization-timeline.moongazer.tech",
+      "domains": [
+        {
+          "name": "islamic-civilization-timeline.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-halal-business-decisions",
+      "id": "bb120d57-3600-4c5c-96d1-c78e9be25e53",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:26:03.532653Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://bb120d57.moongazer-halal-business-decisions.pages.dev",
+      "domain": "halal-business-decisions.moongazer.tech",
+      "domains": [
+        {
+          "name": "halal-business-decisions.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-revelation-context-explorer",
+      "id": "0f6bb133-778a-465d-b04b-523f0679ea76",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:26:04.880314Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://0f6bb133.moongazer-revelation-context-explorer.pages.dev",
+      "domain": "revelation-context-explorer.moongazer.tech",
+      "domains": [
+        {
+          "name": "revelation-context-explorer.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-family-islamic-learning-challenges",
+      "id": "6b18647d-5035-410b-9756-ae2fa4c92756",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:26:07.055724Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://6b18647d.moongazer-family-islamic-learning-challenges.pages.dev",
+      "domain": "family-islamic-learning-challenges.moongazer.tech",
+      "domains": [
+        {
+          "name": "family-islamic-learning-challenges.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    },
+    {
+      "name": "moongazer-islamic-misinformation-casebook",
+      "id": "88db12e4-c764-4161-9ea9-5b8cec19ffea",
+      "stage": {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-29T18:26:08.919384Z",
+        "status": "success"
+      },
+      "environment": "production",
+      "url": "https://88db12e4.moongazer-islamic-misinformation-casebook.pages.dev",
+      "domain": "islamic-misinformation-casebook.moongazer.tech",
+      "domains": [
+        {
+          "name": "islamic-misinformation-casebook.moongazer.tech",
+          "status": "active",
+          "verification": "active",
+          "validation": "active"
+        }
+      ],
+      "commitDirty": true
+    }
+  ]
+}

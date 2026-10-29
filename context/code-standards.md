@@ -36,3 +36,11 @@ The directory homepage may use dependency-free HTML, CSS and JavaScript as expli
 - Do not hand-edit generated output or third-party internals. Generators under `_implementation` are preparation tools, several of which overwrite files; inspect their scope before use.
 - Run meaningful checks for behavior changes and the affected Astro check/build. For documentation-only changes, validate context completeness, paths and facts; do not rerun builds just to report activity.
 - Use Bun commands from the correct app directory. Root orchestration commands are documented in `context/ai-workflow-rules.md`.
+
+## SEO release, 30 October 2026
+
+Keep titles and descriptions specific to the local page. Missing route metadata must fail the build. Serialize JSON-LD with closing-script characters escaped and verify graph identifiers against visible content. Sitemaps contain only same-host, clean, canonical, indexable URLs and no unverified last-modified dates. Preserve source quotations and provenance. Do not apply the Pages-origin noindex header to custom hosts.
+
+## Google Search Console setup, 30 October 2026
+
+Keep Search Console records factual. Distinguish submission acceptance, sitemap fetch Success, discovered pages and actual indexed pages. Preserve the existing verification TXT record; do not replace unrelated DNS records or put Google account credentials into the repository. The verification value is a public DNS ownership proof.

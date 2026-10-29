@@ -1,0 +1,10 @@
+{
+  "title": "Islamic Civilization Timeline | Explore History",
+  "shortName": "Islamic Civilization",
+  "description": "Explore Islamic civilization through historical records and regional date bands. Compare periods with institutional sources and explicit limits on precision.",
+  "keyword": "Islamic civilization timeline",
+  "collection": "events",
+  "prefix": "event",
+  "nameField": "title",
+  "summaryField": "summary"
+}

@@ -1,5 +1,9 @@
 # Moongazer publication verification
 
+## SEO publication, 30 October 2026
+
+The later SEO release passes 769/769 complete HTTP checks and 411/411 SEO requests across 21 hosts. All 327 HTML pages are covered, with 286 indexable URLs in 21 sitemaps. Every deployment-specific Pages URL returns noindex. Twenty app checks and builds, 217 existing tests, five SEO helper tests, and source-integrity verification pass. See [SEO_QA.md](SEO_QA.md) and [deployment/seo-release.json](deployment/seo-release.json). Search Console Domain verification is complete; all twenty-one sitemaps show Success with 286 discovered URLs, as recorded in [deployment/search-console.json](deployment/search-console.json). The checks below describe the earlier publication.
+
 The directory and twenty apps are published on separate Cloudflare Pages projects. Every app hostname uses its complete folder name. Open [moongazer.tech](https://moongazer.tech/) or see every URL in [DEPLOYMENT.md](DEPLOYMENT.md). Production IDs and active domains are in [deployment/status.json](deployment/status.json).
 
 ## Release checks

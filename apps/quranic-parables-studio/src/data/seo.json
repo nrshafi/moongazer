@@ -1,0 +1,10 @@
+{
+  "title": "Quranic Parables Studio | Read, Compare & Reflect",
+  "shortName": "Quranic Parables",
+  "description": "Read Quranic parables with complete passages, commentary references and reflection prompts. Explore editorial diagrams while keeping source text distinct.",
+  "keyword": "Quranic parables",
+  "collection": "parables",
+  "prefix": "parable",
+  "nameField": "title",
+  "summaryField": "summary"
+}

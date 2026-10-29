@@ -9,3 +9,9 @@
 
 /fonts/*
   Cache-Control: public, max-age=604800, no-transform
+
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:deployment.:project.pages.dev/*
+  X-Robots-Tag: noindex

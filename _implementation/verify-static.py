@@ -11,7 +11,7 @@ class Page(HTMLParser):
         attrs=dict(attrs)
         if 'id' in attrs:self.ids.append(attrs['id'])
         if tag=='a' and attrs.get('href'):self.links.append(attrs['href'])
-        if tag in ('script','img','link','audio','source'):
+        if tag in ('script','img','audio','source') or tag=='link' and set(attrs.get('rel','').split()) & {'stylesheet','icon','preload','modulepreload'}:
             asset=attrs.get('src') or (attrs.get('href') if tag=='link' else None)
             if asset:self.assets.append(asset)
         if tag=='h1':self.headings+=1
@@ -60,7 +60,7 @@ for app in sorted((ROOT/'apps').iterdir()):
             if url.scheme or url.netloc:
                 assert link in parsed.links,f'External runtime asset: {link}'
                 assert url.scheme=='https',link
-                assert url.netloc in ('quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
+                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
                 continue
             if not url.path:continue
             target=dist/unquote(url.path.lstrip('/')) if url.path.startswith('/') else path.parent/unquote(url.path)

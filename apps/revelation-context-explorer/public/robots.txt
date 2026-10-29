@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://revelation-context-explorer.moongazer.tech/sitemap.xml

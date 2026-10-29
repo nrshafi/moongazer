@@ -12,15 +12,24 @@ const cards = apps.map(app => `<article class="app-card" data-category="${escape
     <h3>${escape(app.name)}</h3><p>${escape(app.description)}</p><span class="card-bottom">${escape(app.category)}<span aria-hidden="true">Open app →</span></span>
   </a></article>`).join('\n');
 const template = await readFile(join(root, 'homepage/index.html'), 'utf8');
+const schema = {
+  '@context':'https://schema.org',
+  '@graph':[
+    {'@type':'WebSite','@id':'https://moongazer.tech/#website',url:'https://moongazer.tech/',name:'Moongazer',inLanguage:'en'},
+    {'@type':'CollectionPage','@id':'https://moongazer.tech/#webpage',url:'https://moongazer.tech/',name:'Free Islamic learning apps and Quran games',description:'Twenty free Islamic learning apps for Quran, Seerah, history and everyday practice.',inLanguage:'en',isPartOf:{'@id':'https://moongazer.tech/#website'},mainEntity:{'@id':'https://moongazer.tech/#apps'}},
+    {'@type':'ItemList','@id':'https://moongazer.tech/#apps',name:'Moongazer app library',numberOfItems:apps.length,itemListOrder:'https://schema.org/ItemListUnordered',itemListElement:apps.map((app,index)=>({'@type':'ListItem',position:index+1,url:`https://${app.slug}.moongazer.tech/`,name:app.name}))}
+  ]
+};
+const schemaMarkup = `<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>`;
 const out = join(root, 'homepage/dist');
 await mkdir(out, {recursive:true});
-await writeFile(join(out, 'index.html'), template.replace('<!-- APP_CATALOG -->', cards));
-for (const file of ['styles.css','app.js','moon.svg','favicon.svg','_headers','_redirects','robots.txt','sitemap.xml','404.html']) {
+await writeFile(join(out, 'index.html'), template.replace('<!-- APP_CATALOG -->', cards).replace('<!-- SITE_SCHEMA -->',schemaMarkup));
+for (const file of ['styles.css','app.js','moon.svg','favicon.svg','social-card.png','_headers','_redirects','robots.txt','sitemap.xml','404.html']) {
   await cp(join(root, 'homepage', file), join(out, file));
 }
 await cp(join(root, 'homepage', 'logos'), join(out, 'logos'), { recursive: true });
 await mkdir(join(out, 'fonts'), {recursive:true});
-for (const file of ['dm-sans.ttf','dm-sans-OFL.txt','newsreader.ttf','newsreader-OFL.txt']) {
+for (const file of ['dm-sans.woff2','dm-sans-OFL.txt','newsreader.woff2','newsreader-OFL.txt']) {
   await cp(join(root,'apps/guess-the-surah/public/fonts',file),join(out,'fonts',file));
 }
 console.log(`Built Moongazer homepage with ${apps.length} app links into ${out}`);

@@ -66,6 +66,14 @@ The complete-portfolio E2E audit is `E2E_QA.md`. All twenty apps pass 217 Bun te
 
 ## Authorized SEO work
 
-The user requested SEO improvements for the complete published collection: the directory and twenty app subdomains. Audit and fix crawlability, page-specific metadata, canonical URLs, crawlable navigation, truthful structured data and social previews. Preserve religious source text and the existing activities. Search Console is not set up; prepare Domain-property verification and per-host sitemap submission without claiming ownership verification, indexing or rankings.
+The user requested SEO improvements for the complete published collection: the directory and twenty app subdomains. Audit and fix crawlability, page-specific metadata, canonical URLs, crawlable navigation, truthful structured data and social previews. Preserve religious source text and the existing activities. Search Console Domain verification and all 21 sitemap submissions are complete; no indexing or rankings are claimed.
 
 The directory at https://moongazer.tech/ links all twenty apps on full-name subdomains. Each app has its own Pages project. The new HTML/CSS/JavaScript homepage offers search and subject filters without accounts, analytics or storage. Production IDs and verification are in deployment/status.json and DEPLOYMENT_QA.md.
+
+## SEO release, 30 October 2026
+
+The published SEO scope covers the directory and twenty app subdomains. Search metadata describes existing activities and editorial records. No additional product content, storage, visitor tracking or independent scholarly certification is introduced. See repository SEO_QA.md for the release and SEARCH_CONSOLE_SETUP.md for the completed Google account setup record.
+
+## Google Search Console setup, 30 October 2026
+
+Google Search Console is configured as the verified Domain property sc-domain:moongazer.tech. It covers the directory and all twenty app subdomains. All 21 submitted sitemaps show Success, with 286 discovered URLs. This does not establish that those URLs are indexed or ranked. Current evidence is in deployment/search-console.json.

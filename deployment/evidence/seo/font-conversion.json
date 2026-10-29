@@ -1,0 +1,23 @@
+[
+  {
+    "font": "dm-sans",
+    "ttfBytes": 240164,
+    "woff2Bytes": 88820,
+    "glyphs": 486,
+    "cmapPreserved": true
+  },
+  {
+    "font": "newsreader",
+    "ttfBytes": 451664,
+    "woff2Bytes": 214960,
+    "glyphs": 658,
+    "cmapPreserved": true
+  },
+  {
+    "font": "amiri",
+    "ttfBytes": 431116,
+    "woff2Bytes": 149120,
+    "glyphs": 6710,
+    "cmapPreserved": true
+  }
+]

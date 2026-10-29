@@ -1,0 +1,212 @@
+{
+  "property": "sc-domain:moongazer.tech",
+  "propertyUrl": "https://search.google.com/search-console?resource_id=sc-domain%3Amoongazer.tech",
+  "sitemapsReportUrl": "https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Amoongazer.tech",
+  "ownershipVerified": true,
+  "verifiedOnAsiaDhaka": "2026-10-30",
+  "recordedAt": "2026-10-29T18:56:07.196Z",
+  "verificationMethod": "DNS TXT, manually added through the existing Cloudflare connection",
+  "dnsRecord": {
+    "zoneId": "ab39a3a8e3298328530ee6d6ceda29fb",
+    "recordId": "717448896495dd6b85e457c43c8c4adf",
+    "name": "moongazer.tech",
+    "type": "TXT",
+    "keepRecord": true
+  },
+  "submittedSitemaps": 21,
+  "successfulSitemaps": 21,
+  "totalDiscoveredPages": 286,
+  "sitemaps": [
+    {
+      "url": "https://islamic-misinformation-casebook.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 14,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://family-islamic-learning-challenges.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 14,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://revelation-context-explorer.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 12,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://halal-business-decisions.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 14,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://islamic-civilization-timeline.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 26,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://quranic-parables-studio.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 16,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://understand-salah-lab.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 17,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://islamic-history-timeline-challenge.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 2,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://islamic-concept-connections.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 2,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://quranic-places-atlas.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 17,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://stories-of-the-prophets-explorer.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 27,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://islamic-knowledge-escape-room.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 10,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://quran-concept-atlas.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 32,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://is-this-actually-in-the-quran.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 2,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://quran-memorization-workload-calculator.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 2,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://interactive-seerah-timeline.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 38,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://everyday-akhlaq-simulator.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 22,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://the-seerah-detective.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 14,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://quran-connections.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 2,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://guess-the-surah.moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 2,
+      "discoveredVideos": 0
+    },
+    {
+      "url": "https://moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 1,
+      "discoveredVideos": 0
+    }
+  ],
+  "indexing": "Sitemap discovery is confirmed; URL indexing and search-performance reports are still processing and no rankings are claimed.",
+  "automation": "Used the user-requested ego browser plugin for Google UI and the existing Cloudflare connector for DNS."
+}

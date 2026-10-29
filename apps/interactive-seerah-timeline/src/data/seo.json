@@ -1,0 +1,10 @@
+{
+  "title": "Interactive Seerah Timeline | Life of the Prophet",
+  "shortName": "Seerah Timeline",
+  "description": "Explore events from the Prophet's life on an interactive Seerah timeline. Read source references, approximate dates and notes explaining historical uncertainty.",
+  "keyword": "interactive Seerah timeline",
+  "collection": "events",
+  "prefix": "event",
+  "nameField": "title",
+  "summaryField": "summary"
+}

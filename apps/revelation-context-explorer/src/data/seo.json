@@ -1,0 +1,10 @@
+{
+  "title": "Revelation Context Explorer | Quran Source Readings",
+  "shortName": "Revelation Context",
+  "description": "Explore reports about Quran revelation with source references. Distinguish reported occasions, general context and responses after revelation in guided readings.",
+  "keyword": "context of Quran revelation",
+  "collection": "readings",
+  "prefix": "reading",
+  "nameField": "title",
+  "summaryField": "reportSummary"
+}

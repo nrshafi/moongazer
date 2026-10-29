@@ -1,0 +1,11 @@
+{
+  "title": "Family Islamic Learning Challenges | Free Activities",
+  "shortName": "Family Learning Challenges",
+  "description": "Choose free Islamic learning packs for a family sitting. Each includes a reading check, discussion and shared activity, with suggested ages and no child profiles.",
+  "keyword": "family Islamic learning activities",
+  "collection": "packs",
+  "prefix": "pack",
+  "nameField": "title",
+  "summaryField": "discussion",
+  "detailMode": "family"
+}

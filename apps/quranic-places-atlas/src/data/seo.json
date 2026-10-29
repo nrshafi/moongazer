@@ -1,0 +1,10 @@
+{
+  "title": "Quranic Places Atlas | Maps, Passages & Source Notes",
+  "shortName": "Quranic Places Atlas",
+  "description": "Explore places through Quran passages, maps and source notes. Modern geographical context is distinguished from uncertain or unpinned historical locations.",
+  "keyword": "places mentioned in the Quran",
+  "collection": "places",
+  "prefix": "place",
+  "nameField": "name",
+  "summaryField": "summary"
+}

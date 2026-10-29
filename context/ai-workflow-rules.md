@@ -56,6 +56,14 @@ Follow `_implementation/qa/e2e/README.md` for the isolated production-header pre
 
 ## Publication workflow
 
-The current request authorizes implementing and publishing collection-wide SEO changes. Read deployment/evidence/seo/baseline.json, use installed Astro interfaces and primary documentation, then run all app checks/builds, existing tests, static/source verification and SEO-specific validation. Reuse the proven project-scoped upload workflow. Search Console has no verified property; keep account setup and indexing claims separate from on-site implementation and live checks.
+For collection-wide SEO changes, read SEO_QA.md and deployment/seo-release.json, use installed Astro interfaces and primary documentation, then run affected app checks/builds, existing tests, static/source verification and SEO-specific validation. Reuse the proven project-scoped upload workflow. The Search Console Domain property is verified; keep sitemap discovery, actual indexing and rankings distinct in completion reports. Detailed generated logs and screenshots stay local; compact release and Search Console records are versioned.
 
 Follow deployment/README.md for project-specific credentials, project-isolated hashes, Pages multipart publication, domain association and the canonical-hostname rule. Direct Upload uses regenerated dist directories without requiring ZIPs. Always verify live responses after API success. The current release has two consecutive complete passing HTTP checks. Pushes to main are deployed by GitHub Actions.
+
+## SEO release, 30 October 2026
+
+For later SEO changes, run bun test _implementation/seo.test.ts and python deployment/verify-seo.py alongside affected app checks, tests and builds. After publication run python deployment/verify-seo.py --live and the complete HTTP verifier. The local GitHub workflow now includes these SEO guards, but no new Actions run for this SEO source was triggered in this task. Keep Search Console verification/submission separate from on-site release completion.
+
+## Google Search Console setup, 30 October 2026
+
+Reuse the verified sc-domain:moongazer.tech property instead of creating duplicate properties for its app subdomains. Use the user-authorized ego browser for Google UI and the existing Cloudflare connector for DNS. Preserve the apex verification TXT record. Review sitemap errors and indexing reports as data becomes available; no recurring monitor or notification automation was created.
