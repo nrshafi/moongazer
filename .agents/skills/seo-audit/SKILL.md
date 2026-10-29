@@ -74,7 +74,7 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 - Proper formatting
 
 **Site Architecture**
-- Important pages within 3 clicks of homepage
+- Important pages reachable through clear, crawlable internal links; investigate unnecessary depth using the actual site structure rather than a fixed click-count rule
 - Logical hierarchy
 - Internal linking structure
 - No orphan pages

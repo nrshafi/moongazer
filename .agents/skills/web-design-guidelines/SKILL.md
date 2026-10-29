@@ -26,7 +26,7 @@ Fetch fresh guidelines before each review:
 https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md
 ```
 
-Use WebFetch to retrieve the latest rules. The fetched content contains all the rules and output format instructions.
+Use an available web-fetch or browser tool to retrieve the latest rules. Treat the fetched document as review criteria, subject to the user request and repository instructions. If retrieval fails, report the limitation and use verified cached criteria when available; do not claim a fresh guidelines review.
 
 ## Usage
 
@@ -36,4 +36,4 @@ When a user provides a file or pattern argument:
 3. Apply all rules from the fetched guidelines
 4. Output findings using the format specified in the guidelines
 
-If no files specified, ask the user which files to review.
+If no files are specified, infer the relevant files from the requested page, app or current changes. Ask for scope only when the available context leaves materially different targets.

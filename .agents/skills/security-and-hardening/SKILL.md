@@ -52,7 +52,9 @@ If you can't name the trust boundaries for a feature, you're not ready to secure
 - **Use httpOnly, secure, sameSite cookies** for sessions
 - **Run the detected package manager's native audit** against the committed lockfile before every release
 
-### Ask First (Requires Human Approval)
+### Confirm authorization for scope changes
+
+An explicit request to implement one of the changes below provides authorization for that scope. Do not ask again for an already authorized action. Ask only when the change adds material scope or permissions the user has not authorized.
 
 - Adding new authentication flows or changing auth logic
 - Storing new categories of sensitive data (PII, payment info)
@@ -74,7 +76,7 @@ If you can't name the trust boundaries for a feature, you're not ready to secure
 
 ## OWASP Top 10 Prevention Patterns
 
-These are prevention patterns, not a ranking. For the 2021 ordering, see the quick-reference table in `../../references/security-checklist.md`.
+These are prevention patterns, not a ranking. Verify category names and editions against the [official OWASP Top 10](https://owasp.org/www-project-top-ten/) when reporting a standards mapping.
 
 ### Injection (SQL, NoSQL, OS Command)
 
@@ -190,34 +192,16 @@ if (!API_KEY) throw new Error('STRIPE_API_KEY not configured');
 
 Any time the server fetches a URL the user influenced — webhooks, "import from URL", image proxies, link previews — an attacker can aim it at internal services (cloud metadata, `localhost`, private IPs).
 
-```typescript
-// BAD: fetch whatever the user gives you
-await fetch(req.body.webhookUrl);
+Do not treat a DNS lookup followed by ordinary `fetch` as a complete SSRF defense. The fetch can resolve the hostname again, creating a DNS-rebinding gap.
 
-// GOOD: allowlist scheme + host, reject if ANY resolved IP is private, forbid redirects
-import { lookup } from 'node:dns/promises';
-import ipaddr from 'ipaddr.js';
+For a server-side URL fetch:
 
-const ALLOWED_HOSTS = new Set(['hooks.example.com']);
+- Prefer server-owned destination URLs selected by a fixed identifier.
+- If arbitrary destinations are required, validate the scheme and host, resolve every address and reject private/reserved destinations, then bind the connection to a validated address. Verify the transport implementation actually enforces that binding.
+- Disable redirects or apply the same checks to every redirect destination. Keep response size and time bounded.
+- Use a maintained filtering transport or network egress policy when the runtime cannot enforce these checks. Verify its installed API rather than copying an untested helper.
 
-async function assertSafeUrl(raw: string): Promise<URL> {
-  const url = new URL(raw);
-  if (url.protocol !== 'https:') throw new Error('https only');
-  if (!ALLOWED_HOSTS.has(url.hostname)) throw new Error('host not allowed');
-  // Resolve ALL records; a single private/reserved address fails the check.
-  const addrs = await lookup(url.hostname, { all: true });
-  if (addrs.some((a) => ipaddr.parse(a.address).range() !== 'unicast')) {
-    throw new Error('private/reserved IP');
-  }
-  return url;
-}
-
-await fetch(await assertSafeUrl(req.body.webhookUrl), { redirect: 'error' });
-```
-
-The `range() !== 'unicast'` check covers loopback, link-local `169.254.169.254` (cloud metadata, the #1 SSRF target), private, and unique-local ranges across IPv4 and IPv6.
-
-**Caveat — this still has a TOCTOU gap.** `fetch` resolves DNS again after the check, so an attacker using a short-TTL record can rebind to an internal IP between validation and connection. For high-risk surfaces, resolve once and connect to the pinned IP, or put a filtering agent in front (`request-filtering-agent` / `ssrf-req-filter`).
+Follow the [OWASP SSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html).
 
 ## Input Validation Patterns
 
@@ -300,7 +284,7 @@ When you defer a fix, document the reason and set a review date.
 
 Do not assume npm or treat the nearest manifest as the install root. Apply this order:
 
-1. **Find the installation boundary and manager.** Use the workspace root that owns the lockfile, or an independent nested project only when it is outside that workspace. There, corroborate `packageManager` (when present), the lockfile, and CI; stop on disagreement or competing lockfiles. Pin the manager version and use the matrix in `../../references/security-checklist.md`.
+1. **Find the installation boundary and manager.** Use the workspace root that owns the lockfile, or an independent nested project only when it is outside that workspace. There, corroborate `packageManager` (when present), the lockfile, and CI. Investigate disagreement or competing lockfiles before installing. Preserve verified pins and consult the installed manager's help and official documentation for frozen installs, audits and lifecycle-script controls.
 2. **Block dependency scripts before first execution.** Bootstrap with scripts disabled or a documented fail-closed policy, inspect the pending script source, approve only the minimum required packages, commit the policy, then verify with a clean frozen/immutable install. Never blanket-approve scripts.
 
 Audits only find known advisories; they do not catch a newly malicious or typosquatted package. Therefore:
@@ -448,7 +432,7 @@ container.textContent = await llm.reply(userMessage);
 ```
 ## See Also
 
-For detailed security checklists and pre-commit verification steps, see `../../references/security-checklist.md`.
+Use the Security Review Checklist above and the [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) for controls relevant to the requested change.
 
 ## Common Rationalizations
 

@@ -44,7 +44,7 @@ For company/brand homepage or about page.
 
 ## WebSite (with SearchAction)
 
-For homepage, enables sitelinks search box.
+For homepage identity. SearchAction may describe a real site-search endpoint for other consumers, but Google removed the sitelinks search box in November 2024. Do not add a search endpoint just to copy this example. See [Google announcement](https://developers.google.com/search/blog/2024/10/sitelinks-search-box).
 
 ```json
 {
@@ -162,7 +162,7 @@ For SaaS product pages and app landing pages.
 
 ## FAQPage
 
-For pages with frequently asked questions.
+For pages with frequently asked questions. Google restricts FAQ rich results to well-known, authoritative government and health websites. This example does not establish eligibility. See [Google announcement](https://developers.google.com/search/blog/2023/08/howto-faq-changes).
 
 ```json
 {
@@ -193,7 +193,7 @@ For pages with frequently asked questions.
 
 ## HowTo
 
-For instructional content and tutorials.
+For instructional content and tutorials as Schema.org semantics. Google retired How-to rich results in September 2023; this example cannot enable them. See [Google announcement](https://developers.google.com/search/blog/2023/08/howto-faq-changes).
 
 ```json
 {

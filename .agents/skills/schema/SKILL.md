@@ -37,7 +37,7 @@ Before implementing schema, understand:
 - Place in `<head>` or end of `<body>`
 
 ### 3. Follow Google's Guidelines
-- Only use markup Google supports
+- Distinguish valid Schema.org vocabulary from eligibility for a specific Google search feature. Use supported types for Google rich-result goals; other vocabulary may still describe the page accurately.
 - Avoid spam tactics
 - Review eligibility requirements
 
@@ -50,18 +50,22 @@ Before implementing schema, understand:
 
 ## Common Schema Types
 
-| Type | Use For | Required Properties |
+| Type | Use For | Example properties to verify against the target feature |
 |------|---------|-------------------|
 | Organization | Company homepage/about | name, url |
-| WebSite | Homepage (search box) | name, url |
+| WebSite | Homepage identity and site name | name, url |
 | Article | Blog posts, news | headline, image, datePublished, author |
 | Product | Product pages | name, image, offers |
 | SoftwareApplication | SaaS/app pages | name, offers |
 | FAQPage | FAQ content | mainEntity (Q&A array) |
-| HowTo | Tutorials | name, step |
+| HowTo | Tutorial semantics, without Google How-to rich results | name, step |
 | BreadcrumbList | Any page with breadcrumbs | itemListElement |
 | LocalBusiness | Local business pages | name, address |
 | Event | Events, webinars | name, startDate, location |
+
+Google removed the sitelinks search box in November 2024 and How-to rich results in September 2023. FAQ rich results are restricted to well-known, authoritative government and health sites; ordinary product FAQs should not be promised that display. Valid markup does not guarantee a search appearance. Check current feature documentation before implementation.
+
+Sources: [sitelinks search box removal](https://developers.google.com/search/blog/2024/10/sitelinks-search-box), [How-to and FAQ changes](https://developers.google.com/search/blog/2023/08/howto-faq-changes), [structured data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies).
 
 **For complete JSON-LD examples**: See [references/schema-examples.md](references/schema-examples.md)
 
@@ -74,7 +78,7 @@ Required: name, url
 Recommended: logo, sameAs (social profiles), contactPoint
 
 ### Article/BlogPosting
-Required: headline, image, datePublished, author
+Example properties: headline, image, datePublished, author. Verify current Article guidance before labeling fields required.
 Recommended: dateModified, publisher, description
 
 ### Product
@@ -154,8 +158,8 @@ You can combine multiple schema types on one page using `@graph`:
 ```
 
 ### Testing Checklist
-- [ ] Validates in Rich Results Test
-- [ ] No errors or warnings
+- [ ] Validates in Schema.org Validator and, for a supported Google feature, Rich Results Test
+- [ ] Errors resolved; warnings assessed against available truthful data
 - [ ] Matches page content
 - [ ] All required properties included
 

@@ -2,8 +2,9 @@
 name: acquire-codebase-knowledge
 description: 'Use this skill when the user explicitly asks to map, document, or onboard into an existing codebase. Trigger for prompts like "map this codebase", "document this architecture", "onboard me to this repo", or "create codebase docs". Do not trigger for routine feature implementation, bug fixes, or narrow code edits unless the user asks for repository-level discovery.'
 license: MIT
-compatibility: 'Cross-platform. Requires Python 3.8+ and git. Run scripts/scan.py from the target project root.'
 metadata:
+  compatibility: "Cross-platform. Requires Python 3.8+ and git. Run scripts/scan.py from the target project root."
+  argument-hint: "Optional focus area, such as architecture only or testing and concerns."
   version: "1.3"
   enhancements:
     - Multi-language manifest detection (25+ languages supported)
@@ -12,7 +13,6 @@ metadata:
     - Code metrics by language
     - Security & compliance config detection
     - Performance testing markers
-argument-hint: 'Optional: specific area to focus on, e.g. "architecture only", "testing and concerns"'
 ---
 
 # Acquire Codebase Knowledge

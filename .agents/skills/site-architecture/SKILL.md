@@ -58,9 +58,9 @@ Gather this context (ask if not provided):
 
 ## Page Hierarchy Design
 
-### The 3-Click Rule
+### Navigation depth
 
-Users should reach any important page within 3 clicks from the homepage. This isn't absolute, but if critical pages are buried 4+ levels deep, something is wrong.
+Make important tasks easy to find through clear labels and sensible grouping. Measure task completion, effort and wrong turns; a page taking more than three clicks is not by itself a defect. See [NN/g's review of the three-click rule](https://www.nngroup.com/articles/3-click-rule/).
 
 ### Flat vs Deep
 
@@ -127,7 +127,7 @@ Homepage (/)
 
 ### Header Navigation Rules
 
-- **4-7 items max** in the primary nav (more causes decision paralysis)
+- Keep the primary nav easy to scan. Choose the item count from content, available space and observed task success, rather than enforcing a fixed maximum.
 - **CTA button** goes rightmost (e.g., "Start Free Trial," "Get Started")
 - **Logo** links to homepage (left side)
 - **Order by priority**: most important/visited pages first
@@ -271,7 +271,7 @@ graph TD
 
 1. **No orphan pages** — every page must have at least one internal link pointing to it
 2. **Descriptive anchor text** — "our analytics features" not "click here"
-3. **5-10 internal links per 1000 words** of content (approximate guideline)
+3. Add contextual internal links where they help the reader complete a task or understand related content; do not enforce a link-per-word quota.
 4. **Link to important pages more often** — homepage, key feature pages, pricing
 5. **Use breadcrumbs** — free internal links on every page
 6. **Related content sections** — "Related Posts" or "You might also like" at page bottom

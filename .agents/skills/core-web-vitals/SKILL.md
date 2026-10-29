@@ -40,7 +40,7 @@ LCP measures when the largest visible content element renders. Usually this is:
 - Hero image or video
 - Large text block
 - Background image
-- `<svg>` element
+- An `<image>` element inside `<svg>`; the `<svg>` container itself is not an LCP candidate. See [eligible elements](https://web.dev/articles/lcp#what_elements_are_considered).
 
 ### Common LCP issues
 

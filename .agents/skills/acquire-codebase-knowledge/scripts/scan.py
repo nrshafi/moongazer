@@ -39,7 +39,7 @@ EXCLUDE_DIRS = {
 
 MANIFESTS = [
     # JavaScript/Node.js
-    "package.json", "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb",
+    "package.json", "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lock", "bun.lockb",
     "deno.json", "deno.jsonc",
     # Python
     "requirements.txt", "Pipfile", "Pipfile.lock", "pyproject.toml", "setup.py", "setup.cfg",

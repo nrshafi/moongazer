@@ -4,14 +4,14 @@
     {
       "id": 1,
       "prompt": "Help me plan the site architecture for our new SaaS marketing website. We have a homepage, product page, pricing page, about page, blog, and want to add competitor comparison pages and integration pages.",
-      "expected_output": "Should check for product-marketing.md first. Should apply the page hierarchy design principles (3-click rule, flat vs deep). Should create an ASCII tree showing the full site structure. Should organize pages logically: main nav (Home, Product, Pricing, About, Blog), comparison pages section, integrations hub. Should recommend URL structure patterns for each section. Should provide navigation design recommendations (4-7 header items). Should include internal linking strategy (hub-and-spoke for comparisons and integrations). Should provide the full deliverable set: hierarchy, URL map, nav spec.",
+      "expected_output": "Should check for product-marketing.md first. Should apply the page hierarchy design principles (task findability, appropriate depth). Should create an ASCII tree showing the full site structure. Should organize pages logically: main nav (Home, Product, Pricing, About, Blog), comparison pages section, integrations hub. Should recommend URL structure patterns for each section. Should provide navigation design recommendations (clear labels and a justified item count). Should include internal linking strategy (hub-and-spoke for comparisons and integrations). Should provide the full deliverable set: hierarchy, URL map, nav spec.",
       "assertions": [
         "Checks for product-marketing.md",
-        "Applies 3-click rule and flat vs deep principles",
+        "Uses task findability and appropriate hierarchy depth",
         "Creates ASCII tree for site structure",
         "Organizes pages logically",
         "Recommends URL structure for each section",
-        "Provides navigation design (4-7 header items)",
+        "Provides navigation design (clear labels and a justified item count)",
         "Includes internal linking strategy",
         "Provides hierarchy, URL map, and nav spec"
       ],
@@ -20,11 +20,11 @@
     {
       "id": 2,
       "prompt": "Our website has grown organically and the navigation is a mess. We have 50+ pages and users can't find anything. Help us reorganize.",
-      "expected_output": "Should treat this as a site architecture audit and redesign. Should recommend starting with a content inventory of all 50+ pages. Should apply the page hierarchy design to reorganize: group related pages, establish clear parent-child relationships, apply the 3-click rule. Should redesign the navigation (reduce header items, use mega-menu or dropdowns for deeper pages). Should provide before/after ASCII tree structure. Should address URL redirects for any pages that move. Should include a visual sitemap (Mermaid).",
+      "expected_output": "Should treat this as a site architecture audit and redesign. Should recommend starting with a content inventory of all 50+ pages. Should apply the page hierarchy design to reorganize: group related pages, establish clear parent-child relationships, validate findability without a fixed click-count limit. Should redesign the navigation (reduce header items, use mega-menu or dropdowns for deeper pages). Should provide before/after ASCII tree structure. Should address URL redirects for any pages that move. Should include a visual sitemap (Mermaid).",
       "assertions": [
         "Recommends content inventory first",
         "Groups related pages logically",
-        "Applies 3-click rule",
+        "Avoids treating three clicks as a pass/fail rule",
         "Redesigns navigation structure",
         "Provides ASCII tree or visual sitemap",
         "Addresses URL redirects for moved pages",

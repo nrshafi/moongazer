@@ -102,9 +102,11 @@ If the live tools are unavailable, use Lighthouse CLI or axe for automated cover
 
 | Text Size | AA minimum | AAA enhanced |
 |-----------|------------|--------------|
-| Normal text (< 18px / < 14px bold) | 4.5:1 | 7:1 |
-| Large text (≥ 18px / ≥ 14px bold) | 3:1 | 4.5:1 |
+| Normal text (below the large-text thresholds) | 4.5:1 | 7:1 |
+| Large text (≥ 18pt regular / ≥ 14pt bold, equivalent to 24px / about 18.67px) | 3:1 | 4.5:1 |
 | UI components & graphics | 3:1 | 3:1 |
+
+Use CSS point-to-pixel conversion, 1pt = 4/3 CSS px. Do not treat 18px regular or 14px bold as large text. See [W3C contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
 
 ```css
 /* ❌ Low contrast (2.5:1) */

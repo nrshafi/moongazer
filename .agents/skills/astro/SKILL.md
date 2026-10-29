@@ -9,7 +9,7 @@ metadata:
 
 # Astro Usage Guide
 
-**Always consult [docs.astro.build](https://docs.astro.build) for code examples and latest API.**
+Inspect the app manifest, lockfile and installed Astro version first. Preserve its pins. Reuse matching verified documentation; for an unfamiliar pattern, inspect CLI help or installed types, then documentation MCP and the official [Astro docs](https://docs.astro.build). Check version compatibility before applying examples from the latest docs. Prefer existing package scripts and the detected package manager.
 
 Astro is the web framework for content-driven websites.
 
