@@ -1,0 +1,37 @@
+{
+  "heading": "Quranic Places Atlas",
+  "summary": "Quranic Places Atlas pairs fifteen place references with selected passages and careful location notes. Use the map for modern geographical context where the evidence supports a pin, and read unpinned entries without assigning them a speculative location. Each entry explains its evidence and the limits of the geographical connection.",
+  "steps": [
+    "Browse a place or narrow the catalog with the evidence filter.",
+    "Open its passage, location notes and source references.",
+    "Use the map as orientation and compare the notes before treating a pin as historical evidence."
+  ],
+  "questions": [
+    {
+      "question": "Why are some entries not pinned on the map?",
+      "answer": "A passage or place reference does not always establish a defensible modern location. Unpinned entries keep that uncertainty visible instead of adding a guessed coordinate."
+    },
+    {
+      "question": "Does a pin identify an exact ancient event location?",
+      "answer": "Read the individual entry's evidence notes. A map pin may provide modern geographical or heritage context; it should not be taken as an exact event location unless the entry's sources establish that claim."
+    }
+  ],
+  "related": [
+    {
+      "name": "Stories of the Prophets Explorer",
+      "description": "Read selected Quranic accounts and check your understanding as you go.",
+      "kind": "Story explorer",
+      "url": "https://stories-of-the-prophets-explorer.moongazer.tech/"
+    },
+    {
+      "name": "Islamic Civilization Timeline",
+      "description": "Explore historical periods and compare developments across regions.",
+      "kind": "Timeline",
+      "url": "https://islamic-civilization-timeline.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Quran learning",
+    "url": "https://moongazer.tech/quran-learning/"
+  }
+}

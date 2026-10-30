@@ -1,10 +1,11 @@
 ---
+import learning from '../data/learning.json';
 import Shell from '../layouts/Shell.astro';
 import data from '../data/content.json';
 const topics=[...new Set(data.scenarios.map(s=>s.topic))];
 ---
 <Shell title="Everyday Akhlaq">
-  <section class="intro"><div class="intro-top"><span class="eyebrow">Character in the everyday</span><span class="pill"><span class="dot"></span>{data.scenarios.length} small moments</span></div><h1>Small moments.<br/><span class="editorial">Thoughtful choices.</span></h1><p>A message, a promise, a difficult conversation. Explore how everyday choices affect people, with time to pause and think.</p></section>
+  <section class="intro"><div class="intro-top"><span class="eyebrow">Character in the everyday</span><span class="pill"><span class="dot"></span>{data.scenarios.length} small moments</span></div><h1>{learning.heading}</h1><p>A message, a promise, a difficult conversation. Explore how everyday choices affect people, with time to pause and think.</p></section>
   <div class="filters bottom-gap"><label class="field search-field">Find a situation<input type="search" id="scenario-search" placeholder="Search friendship, family, online…"/></label><label class="field">Setting<select id="scenario-topic"><option value="all">All settings</option>{topics.map(topic=><option value={topic}>{topic}</option>)}</select></label><span class="count-label" id="scenario-count" role="status">{data.scenarios.length} scenarios</span></div>
   <div class="card-grid">{data.scenarios.map(item=><article class="panel activity-card" data-search={`${item.title} ${item.scene} ${item.topic}`.toLowerCase()} data-topic={item.topic}><span class="pill neutral">{item.topic}</span><h2>{item.title}</h2><p>{item.scene}</p><span class="micro">Two decisions · about 3 minutes</span><a class="button secondary wide" href={`/scenario/${item.id}/`}>Explore this moment <span aria-hidden="true">→</span></a></article>)}</div>
   <div class="empty panel" id="scenario-empty" hidden><h2>No situations match yet.</h2><p>Try a broader search or another setting.</p><button class="button secondary" id="scenario-reset">Clear filters</button></div>

@@ -88,3 +88,7 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 ## Google Search Console setup, 30 October 2026
 
 Search Console is an external administrative Domain property for moongazer.tech. Ownership uses the Google-provided DNS TXT record at the zone apex, recorded in deployment/search-console.json. Keep that record in Cloudflare to retain verification. The property covers the apex and all app subdomains. It adds no visitor-side script or runtime service.
+
+## Search content enhancement scope
+
+The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.

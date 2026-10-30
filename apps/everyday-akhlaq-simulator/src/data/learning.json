@@ -1,0 +1,37 @@
+{
+  "heading": "Everyday Akhlaq: character scenarios",
+  "summary": "Everyday Akhlaq is a collection of fictional character scenarios about ordinary decisions. Work through a conversation or choice, read the imagined consequence and return to the source reading. The situations offer space to reflect on conduct without asking you to disclose a private incident or treat a fictional outcome as a prediction.",
+  "steps": [
+    "Choose a scenario that interests you or filter the catalog by setting.",
+    "Read the situation and make a choice before inspecting the fictional consequence.",
+    "Compare the source reading and reflection prompts with the choices in the exercise."
+  ],
+  "questions": [
+    {
+      "question": "Are the consequences predictions about real people?",
+      "answer": "No. Situations and consequences are fictional editorial exercises. They illustrate questions for reflection; they cannot predict how a real person will respond."
+    },
+    {
+      "question": "Do I need to enter my own experience?",
+      "answer": "No. You can use the supplied situations without sharing names or personal stories. Keep a group discussion focused on fictional examples if a topic feels private."
+    }
+  ],
+  "related": [
+    {
+      "name": "Family Islamic Learning Challenges",
+      "description": "Choose an age-appropriate activity pack and learn together, without profiles.",
+      "kind": "Family activities",
+      "url": "https://family-islamic-learning-challenges.moongazer.tech/"
+    },
+    {
+      "name": "Halal Business Decisions",
+      "description": "Think through fictional business decisions with source-based reading notes.",
+      "kind": "Case studies",
+      "url": "https://halal-business-decisions.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Prayer & everyday practice",
+    "url": "https://moongazer.tech/prayer-everyday-practice/"
+  }
+}

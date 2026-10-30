@@ -1,0 +1,37 @@
+{
+  "heading": "Islamic history timeline challenge",
+  "summary": "The Islamic History Timeline Challenge asks you to arrange four selected events from earliest to latest. Source clues accompany the cards, and the result explains the order with approximate dates and report limits. This edition focuses on events from the prophetic mission rather than claiming to cover the whole of Islamic history.",
+  "steps": [
+    "Read the four event cards and open their source clues if needed.",
+    "Move cards with the up and down buttons to arrange an earliest-to-latest sequence.",
+    "Check the order and compare the explanation, dates and source references."
+  ],
+  "questions": [
+    {
+      "question": "Do I need to drag the cards?",
+      "answer": "No. Use the up and down buttons to change the sequence. The activity supports ordering without dragging."
+    },
+    {
+      "question": "Are the displayed calendar years being tested?",
+      "answer": "Only the broad event order is scored. Conventional dates are approximate, and a report supporting an event may not provide its displayed CE year. More than one event can share a year."
+    }
+  ],
+  "related": [
+    {
+      "name": "Interactive Seerah Timeline",
+      "description": "Follow the Prophet's life through a connected timeline with source notes.",
+      "kind": "Timeline",
+      "url": "https://interactive-seerah-timeline.moongazer.tech/"
+    },
+    {
+      "name": "Islamic Civilization Timeline",
+      "description": "Explore historical periods and compare developments across regions.",
+      "kind": "Timeline",
+      "url": "https://islamic-civilization-timeline.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Games & family activities",
+    "url": "https://moongazer.tech/islamic-games/"
+  }
+}

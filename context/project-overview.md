@@ -77,3 +77,7 @@ The published SEO scope covers the directory and twenty app subdomains. Search m
 ## Google Search Console setup, 30 October 2026
 
 Google Search Console is configured as the verified Domain property sc-domain:moongazer.tech. It covers the directory and all twenty app subdomains. All 21 submitted sitemaps show Success, with 286 discovered URLs. This does not establish that those URLs are indexed or ranked. Current evidence is in deployment/search-console.json.
+
+## Search content enhancement scope
+
+The current authorized SEO enhancement adds four useful subject guides and an About/source-methodology page to the directory, plus static product guidance and related-app navigation in each app. The user supplied nrshafi1@gmail.com as the public corrections contact. See SEO_GROWTH_PLAN.md for scope, evidence and limits. No new religious claims, credentials, visitor tracking or product engines are authorized by this documentation.

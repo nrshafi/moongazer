@@ -49,3 +49,7 @@ For a behavior change, run relevant Bun tests, Astro check/build and browser ver
 ## SEO release, 30 October 2026
 
 For later SEO changes, run bun test _implementation/seo.test.ts and python deployment/verify-seo.py alongside affected app checks, tests and builds. After publication run python deployment/verify-seo.py --live and the complete HTTP verifier. The local GitHub workflow now includes these SEO guards, but no new Actions run for this SEO source was triggered in this task. Keep Search Console verification/submission separate from on-site release completion.
+
+## Search content enhancement scope
+
+Apply SEO_GROWTH_PLAN.md using the updated SEO audit, AI SEO, site architecture and schema skills. Search Console currently has no processed performance/indexing baseline; do not invent metrics. Existing Astro 7.4.2 and Bun 1.4.4 interfaces and matching official documentation remain applicable. Validate regenerated outputs and public responses after the authorized publication, and preserve the unrelated in-progress skill and ignore-rule edits.

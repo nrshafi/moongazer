@@ -23,5 +23,16 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 *.zip
-deployment/.tmp/
-deployment/manifests/
+
+# Local deployment working files
+/deployment/.tmp/
+/deployment/manifests/
+
+# Generated verification output; retain authored notes and font metadata
+/_implementation/qa/**
+!/_implementation/qa/**/
+!/_implementation/qa/**/*.md
+/deployment/evidence/**
+!/deployment/evidence/**/
+!/deployment/evidence/**/*.md
+!/deployment/evidence/seo/font-conversion.json

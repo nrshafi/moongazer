@@ -1,5 +1,6 @@
 import { test, expect } from 'bun:test';
 import { canonicalPath, getPageMeta, seoPages, encodeJsonLd, descriptionSnippet } from '../apps/guess-the-surah/src/lib/seo';
+import { metadata } from '../homepage/render.mjs';
 
 test('canonicals discard activity parameters and normalize static paths', () => {
   expect(canonicalPath('/?challenge=one#play')).toBe('/');
@@ -23,4 +24,14 @@ test('descriptions normalize whitespace and retain long words', () => {
   expect(descriptionSnippet('  A\n short  description  ')).toBe('A short description');
   expect(descriptionSnippet('One two three four five', 15)).toBe('One two three…');
   expect(descriptionSnippet('abcdefghijklm', 8)).toBe('abcdefg…');
+});
+
+test('directory metadata keeps authored content escaped in HTML and JSON-LD', () => {
+  const name = '</script><img src=x onerror=alert(1)> & source';
+  const output = metadata({path:'/', title:name, heading:name, description:name}, [{slug:'example',name}]);
+  expect(output).not.toContain('<img src=x');
+  const blocks = [...output.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+  expect(blocks).toHaveLength(1);
+  const schema = JSON.parse(blocks[0][1]);
+  expect(schema['@graph'].find(node=>node['@type']==='ItemList').itemListElement[0].name).toBe(name);
 });

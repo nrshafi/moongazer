@@ -1,0 +1,37 @@
+{
+  "heading": "Quran memorization calculator",
+  "summary": "The Quran memorization workload calculator estimates how new study and revision fit into your available sessions. Enter your own learning and review speeds, the portion already memorized, a revision cycle and study days. The calculation reserves time for review before estimating new pages, making its assumptions available for you to adjust.",
+  "steps": [
+    "Enter the pages already memorized, your new-page goal and minutes available per session.",
+    "Adjust learning speed, review speed, revision cycle and study days to match your own assumptions.",
+    "Calculate the plan and compare how a different pace changes the workload and estimated dates."
+  ],
+  "questions": [
+    {
+      "question": "Does the calculator know how well I remember a passage?",
+      "answer": "No. It uses the reading speeds and revision assumptions you enter. It does not assess retention, recitation accuracy or differences in passage difficulty, and it cannot replace a teacher's assessment."
+    },
+    {
+      "question": "Why does review reduce the time for new memorization?",
+      "answer": "The model divides the memorized portion across the review cycle and assigns its estimated review time first. New study uses the remaining session time. The Sources page describes the calculation and the 604-page layout assumption."
+    }
+  ],
+  "related": [
+    {
+      "name": "Guess the Surah",
+      "description": "Follow the clues. Find the chapter. Get to know the Quran one discovery at a time.",
+      "kind": "Quiz",
+      "url": "https://guess-the-surah.moongazer.tech/"
+    },
+    {
+      "name": "Is This Actually in the Quran?",
+      "description": "Look for wording in a local Quran translation and inspect the matching passages.",
+      "kind": "Text search",
+      "url": "https://is-this-actually-in-the-quran.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Prayer & everyday practice",
+    "url": "https://moongazer.tech/prayer-everyday-practice/"
+  }
+}

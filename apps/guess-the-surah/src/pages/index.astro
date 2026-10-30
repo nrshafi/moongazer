@@ -1,9 +1,10 @@
 ---
+import learning from '../data/learning.json';
 import Shell from '../layouts/Shell.astro';
 import data from '../data/content.json';
 ---
 <Shell title="Guess the Surah">
-  <section class="intro"><div class="intro-top"><span class="eyebrow">A little curiosity goes a long way</span><span class="pill"><span class="dot"></span>All 114 surahs</span></div><h1>A few clues.<br/><span class="editorial">One surah.</span></h1><p>Start with a passage, uncover a little more, and find the surah. Every answer leads back to its source.</p></section>
+  <section class="intro"><div class="intro-top"><span class="eyebrow">A little curiosity goes a long way</span><span class="pill"><span class="dot"></span>All 114 surahs</span></div><h1>{learning.heading}</h1><p>Start with a passage, uncover a little more, and find the surah. Every answer leads back to its source.</p></section>
   <noscript><div class="noscript">The guessing game needs JavaScript for scoring and clues. You can still explore the complete surah list and source references on the <a href="/sources/">sources page</a>.</div></noscript>
   <div class="workspace">
     <section class="panel" aria-label="Surah guessing game">

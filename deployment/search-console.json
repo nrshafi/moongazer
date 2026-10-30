@@ -4,7 +4,7 @@
   "sitemapsReportUrl": "https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Amoongazer.tech",
   "ownershipVerified": true,
   "verifiedOnAsiaDhaka": "2026-10-30",
-  "recordedAt": "2026-10-29T18:56:07.196Z",
+  "recordedAt": "2026-10-29T20:15:10.540Z",
   "verificationMethod": "DNS TXT, manually added through the existing Cloudflare connection",
   "dnsRecord": {
     "zoneId": "ab39a3a8e3298328530ee6d6ceda29fb",
@@ -15,8 +15,17 @@
   },
   "submittedSitemaps": 21,
   "successfulSitemaps": 21,
-  "totalDiscoveredPages": 286,
+  "totalDiscoveredPages": 291,
   "sitemaps": [
+    {
+      "url": "https://moongazer.tech/sitemap.xml",
+      "type": "Sitemap",
+      "submitted": "30 Oct 2026",
+      "lastRead": "30 Oct 2026",
+      "status": "Success",
+      "discoveredPages": 6,
+      "discoveredVideos": 0
+    },
     {
       "url": "https://islamic-misinformation-casebook.moongazer.tech/sitemap.xml",
       "type": "Sitemap",
@@ -196,17 +205,21 @@
       "status": "Success",
       "discoveredPages": 2,
       "discoveredVideos": 0
-    },
-    {
-      "url": "https://moongazer.tech/sitemap.xml",
-      "type": "Sitemap",
-      "submitted": "30 Oct 2026",
-      "lastRead": "30 Oct 2026",
-      "status": "Success",
-      "discoveredPages": 1,
-      "discoveredVideos": 0
     }
   ],
   "indexing": "Sitemap discovery is confirmed; URL indexing and search-performance reports are still processing and no rankings are claimed.",
-  "automation": "Used the user-requested ego browser plugin for Google UI and the existing Cloudflare connector for DNS."
+  "automation": "Used the user-requested ego browser plugin for Google UI and the existing Cloudflare connector for DNS.",
+  "rootSitemapResubmission": {
+    "recordedAt": "2026-10-30T02:16:08+06:00",
+    "url": "https://moongazer.tech/sitemap.xml",
+    "submissionConfirmed": true,
+    "status": "Success",
+    "discoveredPages": 6,
+    "publishedEligibleUrls": 6
+  },
+  "performanceAndIndexing": {
+    "observedAt": "2026-10-29T19:32:41.016Z",
+    "state": "Processing data",
+    "rankingBaselineAvailable": false
+  }
 }

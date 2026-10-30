@@ -28,6 +28,8 @@
 
 ## Files and validation
 
+Keep generated verification output under `_implementation/qa/` and `deployment/evidence/` out of Git. Preserve authored Markdown notes and the compact font-conversion record in those directories. Version source files, required public assets and compact deployment/Search Console records normally; avoid repository-wide JSON or log exclusions.
+
 SEO metadata must come from inspected local names and editorial summaries, never invented source quotations. Escape serialized JSON-LD against closing-script markup. XML sitemaps contain only same-host, canonical, indexable URLs, with no fabricated modification dates. Validate generated metadata, route coverage, structured-data identifiers and the exclusion of privacy/404 routes. Preserve app independence and source checksums.
 
 The directory homepage may use dependency-free HTML, CSS and JavaScript as explicitly requested. Keep authoritative source in `homepage/`, render the catalog from `deployment/targets.json`, and regenerate `homepage/dist/` with `node homepage/build.mjs`. Hosting helpers must fail on unsuccessful API responses, preserve existing unrelated DNS, and never log or persist credentials. Verify the generated catalog matches all twenty app roots and deployed hostnames.
@@ -44,3 +46,7 @@ Keep titles and descriptions specific to the local page. Missing route metadata 
 ## Google Search Console setup, 30 October 2026
 
 Keep Search Console records factual. Distinguish submission acceptance, sitemap fetch Success, discovered pages and actual indexed pages. Preserve the existing verification TXT record; do not replace unrelated DNS records or put Google account credentials into the repository. The verification value is a public DNS ownership proof.
+
+## Search content enhancement scope
+
+Derive route metadata and subject app lists from local authoritative data. Use escaped text and safe JSON-LD serialization. App guidance describes inspected features and limitations; source quotations and provenance stay untouched. Include canonical URLs, sitemap entries, incoming links and truthful structured data for every new indexable directory page. Do not publish unsupported expertise, ratings, invented dates or duplicated keyword variations.

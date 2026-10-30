@@ -36,3 +36,7 @@
 ## SEO release, 30 October 2026
 
 Keep titles and descriptions specific to the local page. Missing route metadata must fail the build. Serialize JSON-LD with closing-script characters escaped and verify graph identifiers against visible content. Sitemaps contain only same-host, clean, canonical, indexable URLs and no unverified last-modified dates. Preserve source quotations and provenance. Do not apply the Pages-origin noindex header to custom hosts.
+
+## Search content enhancement scope
+
+Derive route metadata and subject app lists from local authoritative data. Use escaped text and safe JSON-LD serialization. App guidance describes inspected features and limitations; source quotations and provenance stay untouched. Include canonical URLs, sitemap entries, incoming links and truthful structured data for every new indexable directory page. Do not publish unsupported expertise, ratings, invented dates or duplicated keyword variations.

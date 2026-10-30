@@ -1,0 +1,202 @@
+{
+  "guess-the-surah": {
+    "heading": "Guess the Surah Quran quiz",
+    "summary": "Guess the Surah is a free Quran quiz built around chapter clues. Begin with an opening ayah in Pickthall's translation, reveal more information when needed, and choose from four surahs. The result points back to the passage so a round can lead into reading, rather than end with a score.",
+    "steps": ["Choose a surah collection and round length, then start a round.", "Read the opening ayah. Reveal another clue if you need the Arabic, ayah count or chapter position.", "Choose a surah, inspect the answer and its source, then continue the round."],
+    "questions": [
+      {"question": "Does the quiz include all 114 surahs?", "answer": "Yes. Choose All 114 surahs for the complete collection, or use the shorter-surah, Makkan or Madinan filters. A round samples from the collection you select."},
+      {"question": "What do the points measure?", "answer": "Points reflect how early you answer within this game's clue sequence. They are an informal game score, not an assessment of memorization, recitation accuracy or religious knowledge."}
+    ],
+    "related": ["quran-connections", "islamic-knowledge-escape-room"]
+  },
+  "quran-connections": {
+    "heading": "Quran Connections passage puzzles",
+    "summary": "Quran Connections is a passage-reading puzzle. Read three selected Quran passages, choose their intended shared theme, and compare the explanation with the cited ayahs. The theme is an editorial prompt for noticing connections. It does not limit the meaning of a passage to one answer or replace tafsir.",
+    "steps": ["Read all three selections before choosing a theme.", "Select the connection that best fits this puzzle's intended grouping.", "Read the explanation and open the references to compare the surrounding passages."],
+    "questions": [
+      {"question": "Can a passage fit more than one theme?", "answer": "Yes. The puzzle has an intended answer, but a passage can have other connections. Use the explanation as a reading prompt and inspect the context rather than treating the options as a complete interpretation."},
+      {"question": "Which English translation appears in the puzzles?", "answer": "The quoted English passages use Marmaduke Pickthall's translation. References accompany the readings, and the Sources page explains the edition and the limits of the editorial themes."}
+    ],
+    "related": ["quran-concept-atlas", "guess-the-surah"]
+  },
+  "the-seerah-detective": {
+    "heading": "The Seerah Detective",
+    "summary": "The Seerah Detective uses short evidence-reading cases to explore reports from the Prophet's life. Open a case, compare the supplied reports and choose the conclusion they support. The activity rewards careful reading of the evidence provided, including its limits, rather than filling gaps with a more dramatic story.",
+    "steps": ["Choose a case from the catalog, using its topic or search filter if useful.", "Read the evidence and source notes before deciding what the reports establish.", "Choose a conclusion and compare the explanation with the cited reports."],
+    "questions": [
+      {"question": "Are these fictional detective stories?", "answer": "The case format is an editorial learning activity around cited Seerah reports. Read the reports and notes to distinguish the source evidence from the questions used to teach it."},
+      {"question": "Does completing a case cover the full event?", "answer": "No. A case focuses on a selected question and evidence set. Follow its references and the Sources page for context; a correct answer is not a complete account of the event."}
+    ],
+    "related": ["interactive-seerah-timeline", "islamic-history-timeline-challenge"]
+  },
+  "everyday-akhlaq-simulator": {
+    "heading": "Everyday Akhlaq: character scenarios",
+    "summary": "Everyday Akhlaq is a collection of fictional character scenarios about ordinary decisions. Work through a conversation or choice, read the imagined consequence and return to the source reading. The situations offer space to reflect on conduct without asking you to disclose a private incident or treat a fictional outcome as a prediction.",
+    "steps": ["Choose a scenario that interests you or filter the catalog by setting.", "Read the situation and make a choice before inspecting the fictional consequence.", "Compare the source reading and reflection prompts with the choices in the exercise."],
+    "questions": [
+      {"question": "Are the consequences predictions about real people?", "answer": "No. Situations and consequences are fictional editorial exercises. They illustrate questions for reflection; they cannot predict how a real person will respond."},
+      {"question": "Do I need to enter my own experience?", "answer": "No. You can use the supplied situations without sharing names or personal stories. Keep a group discussion focused on fictional examples if a topic feels private."}
+    ],
+    "related": ["family-islamic-learning-challenges", "halal-business-decisions"]
+  },
+  "interactive-seerah-timeline": {
+    "heading": "Interactive Seerah timeline",
+    "summary": "The interactive Seerah timeline connects selected events from the Prophet's life with source reports and historical notes. Browse the chronology, open an event and examine what supports its description. Dates and connections are reading aids: the notes distinguish conventional dating and uncertainty from what an individual report actually establishes.",
+    "steps": ["Browse the chronology or narrow the event list with the available filters.", "Open an event to read its report, context and source references.", "Compare connected moments while keeping the date and evidence notes in view."],
+    "questions": [
+      {"question": "Are all event dates exact?", "answer": "No. The timeline identifies approximate or conventional dates where relevant. A report supporting an event may not supply the displayed calendar year, so read the date notes alongside it."},
+      {"question": "Is the timeline a complete Seerah biography?", "answer": "It is a selected collection of sourced moments. Use it to find a starting point and compare events, then follow the cited reports and broader study resources for a fuller account."}
+    ],
+    "related": ["the-seerah-detective", "islamic-civilization-timeline"]
+  },
+  "quran-memorization-workload-calculator": {
+    "heading": "Quran memorization calculator",
+    "summary": "The Quran memorization workload calculator estimates how new study and revision fit into your available sessions. Enter your own learning and review speeds, the portion already memorized, a revision cycle and study days. The calculation reserves time for review before estimating new pages, making its assumptions available for you to adjust.",
+    "steps": ["Enter the pages already memorized, your new-page goal and minutes available per session.", "Adjust learning speed, review speed, revision cycle and study days to match your own assumptions.", "Calculate the plan and compare how a different pace changes the workload and estimated dates."],
+    "questions": [
+      {"question": "Does the calculator know how well I remember a passage?", "answer": "No. It uses the reading speeds and revision assumptions you enter. It does not assess retention, recitation accuracy or differences in passage difficulty, and it cannot replace a teacher's assessment."},
+      {"question": "Why does review reduce the time for new memorization?", "answer": "The model divides the memorized portion across the review cycle and assigns its estimated review time first. New study uses the remaining session time. The Sources page describes the calculation and the 604-page layout assumption."}
+    ],
+    "related": ["guess-the-surah", "is-this-actually-in-the-quran"]
+  },
+  "is-this-actually-in-the-quran": {
+    "heading": "Search Quran wording in Arabic and English",
+    "summary": "This Quran wording search looks for text in the complete local Arabic corpus and Pickthall's English translation. Enter a phrase or an ayah reference to inspect matching passages. It searches wording rather than judging whether an idea is Islamic, whether a paraphrase is accurate or how a verse should be interpreted.",
+    "steps": ["Enter an Arabic phrase, English wording or a verse reference.", "Run the search to load the local text and inspect the matching ayahs.", "Read the surrounding passage and source notes before drawing a conclusion about the wording."],
+    "questions": [
+      {"question": "Does no match mean an idea is absent from the Quran?", "answer": "No. A wording search cannot establish that conclusion. Another translation, a paraphrase or a related expression may use different words. Search shorter phrases and read the relevant context."},
+      {"question": "How does Arabic text matching work?", "answer": "The search normalizes diacritics, tatweel and common alif variants. Punctuation and English case are ignored. It does not perform stemming or semantic interpretation; the displayed Quran text keeps its original form."}
+    ],
+    "related": ["quran-concept-atlas", "revelation-context-explorer"]
+  },
+  "quran-concept-atlas": {
+    "heading": "Explore Quran themes and concepts",
+    "summary": "Quran Concept Atlas is a reading map of thirty themes and ninety selected passages. Open a theme, read its cited selections and follow related concepts when you want to compare another perspective. The groupings and suggested paths are editorial guides, with source and commentary references kept distinct from the quoted Quran text.",
+    "steps": ["Choose a theme or search the concept catalog.", "Open its selected passages and read the accompanying explanation and references.", "Follow a related concept or save a reading to return to in this browser."],
+    "questions": [
+      {"question": "Does the atlas include every passage on a theme?", "answer": "No. It is a selected reading collection. Its thirty themes and ninety passages provide starting points, not an exhaustive index of every occurrence or a complete treatment of a subject."},
+      {"question": "Are the connections part of the quoted text?", "answer": "The themes and paths are editorial organization. Quran quotations and attributed commentary have their own references. Read each passage in context rather than treating a connection as a replacement for tafsir."}
+    ],
+    "related": ["quranic-parables-studio", "quran-connections"]
+  },
+  "islamic-knowledge-escape-room": {
+    "heading": "Islamic Knowledge Escape Room",
+    "summary": "The Islamic Knowledge Escape Room turns selected source readings into a sequence of puzzles. Choose a room and work through its reading, connection, ordering and recognition tasks. You can play alone or discuss the same screen with others, opening the source shelf, hints and solutions when they help you learn.",
+    "steps": ["Choose a room and read the instructions for its current puzzle.", "Use the passages and source shelf to work toward the next step.", "Open a hint or solution when needed, and compare the explanation with the reading."],
+    "questions": [
+      {"question": "Can a group work on one room together?", "answer": "Yes. The room can be discussed on one device. It is a shared reading activity; it does not create separate player accounts or a synchronized multiplayer session."},
+      {"question": "Is using a hint a failed result?", "answer": "Hints and solutions are part of the activity. The purpose is to inspect the readings and understand the puzzle, not to measure faith or assign religious merit to a score."}
+    ],
+    "related": ["guess-the-surah", "islamic-concept-connections"]
+  },
+  "stories-of-the-prophets-explorer": {
+    "heading": "Stories of the Prophets Explorer",
+    "summary": "Stories of the Prophets Explorer gathers fifty selected Quran readings across twenty-five named prophets. Open a profile to read its passages and answer a short reading check. The library keeps brief mentions brief, identifies its selection limits and avoids adding an unsourced biography where the cited passages do not provide one.",
+    "steps": ["Find a prophet by name or use the reading-focus filter.", "Open the profile and read the selected passages with their source references.", "Try the reading check and save a profile if you want to revisit it."],
+    "questions": [
+      {"question": "Are the profiles arranged in historical order?", "answer": "No. Profiles are alphabetical. The order of the catalog does not claim a historical sequence."},
+      {"question": "Does every profile contain a full life story?", "answer": "No. This is a selected Quran reading library, not a complete biography collection. Where a prophet is mentioned briefly in the selected evidence, the profile does not expand that mention into an unsourced life story."}
+    ],
+    "related": ["quranic-places-atlas", "revelation-context-explorer"]
+  },
+  "quranic-places-atlas": {
+    "heading": "Quranic Places Atlas",
+    "summary": "Quranic Places Atlas pairs fifteen place references with selected passages and careful location notes. Use the map for modern geographical context where the evidence supports a pin, and read unpinned entries without assigning them a speculative location. Each entry explains its evidence and the limits of the geographical connection.",
+    "steps": ["Browse a place or narrow the catalog with the evidence filter.", "Open its passage, location notes and source references.", "Use the map as orientation and compare the notes before treating a pin as historical evidence."],
+    "questions": [
+      {"question": "Why are some entries not pinned on the map?", "answer": "A passage or place reference does not always establish a defensible modern location. Unpinned entries keep that uncertainty visible instead of adding a guessed coordinate."},
+      {"question": "Does a pin identify an exact ancient event location?", "answer": "Read the individual entry's evidence notes. A map pin may provide modern geographical or heritage context; it should not be taken as an exact event location unless the entry's sources establish that claim."}
+    ],
+    "related": ["stories-of-the-prophets-explorer", "islamic-civilization-timeline"]
+  },
+  "islamic-concept-connections": {
+    "heading": "Islamic Concept Connections word game",
+    "summary": "Islamic Concept Connections is a word-grouping game with four intended groups of four terms. Select related words, check the group and read the explanation behind a revealed connection. The boards use cited readings to explain their editorial groupings, while acknowledging that a word can belong to more than one meaningful connection.",
+    "steps": ["Read the board and select four terms you think belong together.", "Check the group and use the feedback to revise your selection.", "After a group is revealed, read its explanation and cited source reading."],
+    "questions": [
+      {"question": "What does One away mean?", "answer": "Three selected terms belong to one of the board's intended groups. You can change the selection and retry as often as you like."},
+      {"question": "Is my different connection necessarily wrong?", "answer": "A word may have several connections. The game checks this board's intended groups. Read the explanation to understand that choice rather than treating the board as a complete classification of Islamic concepts."}
+    ],
+    "related": ["quran-connections", "islamic-knowledge-escape-room"]
+  },
+  "islamic-history-timeline-challenge": {
+    "heading": "Islamic history timeline challenge",
+    "summary": "The Islamic History Timeline Challenge asks you to arrange four selected events from earliest to latest. Source clues accompany the cards, and the result explains the order with approximate dates and report limits. This edition focuses on events from the prophetic mission rather than claiming to cover the whole of Islamic history.",
+    "steps": ["Read the four event cards and open their source clues if needed.", "Move cards with the up and down buttons to arrange an earliest-to-latest sequence.", "Check the order and compare the explanation, dates and source references."],
+    "questions": [
+      {"question": "Do I need to drag the cards?", "answer": "No. Use the up and down buttons to change the sequence. The activity supports ordering without dragging."},
+      {"question": "Are the displayed calendar years being tested?", "answer": "Only the broad event order is scored. Conventional dates are approximate, and a report supporting an event may not provide its displayed CE year. More than one event can share a year."}
+    ],
+    "related": ["interactive-seerah-timeline", "islamic-civilization-timeline"]
+  },
+  "understand-salah-lab": {
+    "heading": "Understand Salah: prayer recitation meanings",
+    "summary": "Understand Salah Lab explores the meanings of selected prayer recitations in fifteen lessons. Read the Arabic, reveal the meaning and check a detail from the wording. Lessons run from the opening takbir to the closing greeting. A local Al-Fatiha recording supports listening alongside the text, with its attribution available on the page.",
+    "steps": ["Choose a recitation from the lesson list or filter by part of the prayer.", "Read the Arabic and compare it with the meaning, using the local Al-Fatiha audio where available.", "Try the reading check and inspect the source notes for the selected wording."],
+    "questions": [
+      {"question": "Does every lesson include audio?", "answer": "No. Local audio is included for Al-Fatiha; the other lessons are text-based. The Al-Fatiha recording plays the full surah rather than only the ayah on a lesson page."},
+      {"question": "Is this a complete guide to the legal details of prayer?", "answer": "No. It is a meaning and reading lab using selected narrated wordings. Roman guides are approximate. Read the source notes and seek qualified instruction for questions about practice or legal differences."}
+    ],
+    "related": ["quran-memorization-workload-calculator", "quran-concept-atlas"]
+  },
+  "quranic-parables-studio": {
+    "heading": "Explore Quranic parables",
+    "summary": "Quranic Parables Studio brings together fourteen selected readings with diagrams, attributed explanations and reflection prompts. Read the passage first, use the diagram to follow an editorial comparison, and return to the text when considering the prompt. The visual aids organize the reading; they are not part of the quoted Quran or a substitute for its context.",
+    "steps": ["Choose a parable or use the catalog filters to find a reading.", "Read the full selected passage and its attributed explanation before exploring the diagram.", "Use the reflection question as a prompt, then revisit the cited text and its context."],
+    "questions": [
+      {"question": "Are the diagrams an additional source text?", "answer": "No. They are editorial visual aids. The Quran quotation and attributed explanation have separate source references so you can distinguish the reading from the way it is illustrated."},
+      {"question": "Are my written reflections automatically saved?", "answer": "Reflection notes remain in memory until you explicitly copy or download them. Do not rely on a page remaining open as permanent storage for a note."}
+    ],
+    "related": ["quran-concept-atlas", "is-this-actually-in-the-quran"]
+  },
+  "islamic-civilization-timeline": {
+    "heading": "Islamic civilization timeline",
+    "summary": "Islamic Civilization Timeline connects twenty-four selected historical records across nine regions. Read about learning, trade and other developments beside institutional source references, or compare two date bands. Regional map outlines offer orientation without plotting historical state borders, and overlapping periods remain distinct from evidence of contact or causation.",
+    "steps": ["Choose a historical record or narrow the catalog by region, topic or date.", "Open the record and read its source and dating notes.", "Compare two date bands to inspect their time ranges without assuming the overlap proves a connection."],
+    "questions": [
+      {"question": "Does the map show historical state borders?", "answer": "No. Land outlines provide regional orientation. The map does not plot historical state borders or exact event locations."},
+      {"question": "Does overlap between two periods prove that they influenced each other?", "answer": "No. The comparison shows their date ranges. Contact, influence and causation require separate evidence; the app preserves the difference between a broad period and an exact year."}
+    ],
+    "related": ["interactive-seerah-timeline", "quranic-places-atlas"]
+  },
+  "halal-business-decisions": {
+    "heading": "Halal Business Decisions: practice cases",
+    "summary": "Halal Business Decisions is a source-reading activity built around twelve fictional business cases. Consider disclosure, promises and fair dealing, choose an action and inspect its imagined consequences. The cases make room for applied reasoning while keeping their educational purpose separate from certification of a real transaction or personalized advice.",
+    "steps": ["Choose a case from the catalog and read the facts supplied.", "Make a choice, inspect the fictional consequence and continue the case's reading steps.", "Compare the source notes and explanation before applying the discussion to a real question."],
+    "questions": [
+      {"question": "Can this app certify my business arrangement as halal?", "answer": "No. The cases are fictional educational exercises. They do not certify real transactions or issue personalized rulings."},
+      {"question": "Should I use a case result as financial or legal advice?", "answer": "No. A real transaction can involve facts and obligations outside the exercise. Use the sources for study and obtain appropriate qualified advice for a specific situation."}
+    ],
+    "related": ["everyday-akhlaq-simulator", "islamic-misinformation-casebook"]
+  },
+  "revelation-context-explorer": {
+    "heading": "Explore reports about revelation",
+    "summary": "Revelation Context Explorer places ten selected readings beside named reports and careful evidence notes. Compare a transmitted occasion with general context or a response after revelation, and examine the limits of each report. The app helps you keep those categories distinct instead of treating every contextual report as the exclusive explanation of a passage.",
+    "steps": ["Choose a reading from the report-context catalog.", "Read the passage, named report and notes about what the evidence supports.", "Use the reading check to distinguish the report category, then follow its source references."],
+    "questions": [
+      {"question": "Is every report presented as the reason a passage was revealed?", "answer": "No. The readings distinguish transmitted occasions, general context and responses after revelation. The category and notes explain the narrower claim being made for each report."},
+      {"question": "Does one context report exhaust a passage's meaning?", "answer": "The app does not make that claim. Read the surrounding text and the attributed source material, and keep the report's stated limits in view when considering its relationship to the passage."}
+    ],
+    "related": ["is-this-actually-in-the-quran", "islamic-misinformation-casebook"]
+  },
+  "family-islamic-learning-challenges": {
+    "heading": "Family Islamic learning challenges",
+    "summary": "Family Islamic Learning Challenges offers short activity packs for learning together. Each pack combines a source reading question, an open conversation and a shared activity. Choose an age suggestion that fits your group, adapt the vocabulary and keep examples fictional. There are no child profiles, required names or daily streaks to maintain.",
+    "steps": ["Choose a pack by its topic, suggested age band or available time.", "Read the selected passage together and try the reading question.", "Use the conversation prompt and shared activity, allowing anyone to pass on a personal example."],
+    "questions": [
+      {"question": "Are the age bands strict requirements?", "answer": "No. They are suggestions. An adult can read aloud, explain vocabulary or adapt an activity to the group's needs."},
+      {"question": "Do family members need to give their names or private stories?", "answer": "No. The packs do not require names or child profiles. Use made-up situations for discussion, and let participants pass rather than asking them to disclose a personal experience."}
+    ],
+    "related": ["everyday-akhlaq-simulator", "islamic-knowledge-escape-room"]
+  },
+  "islamic-misinformation-casebook": {
+    "heading": "Islamic Misinformation Casebook",
+    "summary": "Islamic Misinformation Casebook is a fixed collection of twelve evidence-reading exercises. Open a constructed claim, inspect the cited material and choose a conclusion that stays within the evidence. You can then copy a correction with its references. It practices source reading without claiming to verify every live post or measure which claims are currently viral.",
+    "steps": ["Choose a claim from the case catalog.", "Read the evidence before selecting the conclusion it supports.", "Inspect the explanation and copy the correction with its references if useful."],
+    "questions": [
+      {"question": "Can I paste a social media post here for automatic fact-checking?", "answer": "No. The app uses a fixed, cited case bank. It does not evaluate arbitrary visitor claims or perform a live fact-checking service."},
+      {"question": "Does Beyond the cited evidence mean false in every context?", "answer": "No. It keeps the conclusion narrower than a universal rejection. The exercise asks what this evidence supports, rather than claiming that every possible source or context has been examined."}
+    ],
+    "related": ["revelation-context-explorer", "halal-business-decisions"]
+  }
+}

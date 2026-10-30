@@ -1,5 +1,7 @@
 # Moongazer SEO release
 
+This is the earlier technical foundation. See [SEO_GROWTH_QA.md](SEO_GROWTH_QA.md) for the latest content release and current counts.
+
 Verified 2026-10-30T00:57:45+06:00 Asia/Dhaka. The directory and all twenty independent app subdomains have been published with the SEO changes. Google Search Console Domain ownership is verified and all 21 submitted sitemaps show Success. See deployment/search-console.json for the observed report.
 
 ## Audit and fixes

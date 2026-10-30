@@ -83,3 +83,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Google Search Console setup, 30 October 2026
 
 The verified Google Search Console property and Sitemaps report are external administrative screens. All twenty-one sitemap rows show Success. The public directory and app interfaces require no change for this setup. Evidence screenshots and report data live in deployment/evidence/search-console/.
+
+## Search content enhancement scope
+
+Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.

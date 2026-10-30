@@ -1,0 +1,37 @@
+{
+  "heading": "Halal Business Decisions: practice cases",
+  "summary": "Halal Business Decisions is a source-reading activity built around twelve fictional business cases. Consider disclosure, promises and fair dealing, choose an action and inspect its imagined consequences. The cases make room for applied reasoning while keeping their educational purpose separate from certification of a real transaction or personalized advice.",
+  "steps": [
+    "Choose a case from the catalog and read the facts supplied.",
+    "Make a choice, inspect the fictional consequence and continue the case's reading steps.",
+    "Compare the source notes and explanation before applying the discussion to a real question."
+  ],
+  "questions": [
+    {
+      "question": "Can this app certify my business arrangement as halal?",
+      "answer": "No. The cases are fictional educational exercises. They do not certify real transactions or issue personalized rulings."
+    },
+    {
+      "question": "Should I use a case result as financial or legal advice?",
+      "answer": "No. A real transaction can involve facts and obligations outside the exercise. Use the sources for study and obtain appropriate qualified advice for a specific situation."
+    }
+  ],
+  "related": [
+    {
+      "name": "Everyday Akhlaq",
+      "description": "Work through everyday situations and reflect on the choices you make.",
+      "kind": "Scenarios",
+      "url": "https://everyday-akhlaq-simulator.moongazer.tech/"
+    },
+    {
+      "name": "Islamic Misinformation Casebook",
+      "description": "Examine a collection of claims and practice reading their supporting evidence.",
+      "kind": "Evidence practice",
+      "url": "https://islamic-misinformation-casebook.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Prayer & everyday practice",
+    "url": "https://moongazer.tech/prayer-everyday-practice/"
+  }
+}

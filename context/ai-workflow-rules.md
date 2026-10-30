@@ -67,3 +67,7 @@ For later SEO changes, run bun test _implementation/seo.test.ts and python deplo
 ## Google Search Console setup, 30 October 2026
 
 Reuse the verified sc-domain:moongazer.tech property instead of creating duplicate properties for its app subdomains. Use the user-authorized ego browser for Google UI and the existing Cloudflare connector for DNS. Preserve the apex verification TXT record. Review sitemap errors and indexing reports as data becomes available; no recurring monitor or notification automation was created.
+
+## Search content enhancement scope
+
+Apply SEO_GROWTH_PLAN.md using the updated SEO audit, AI SEO, site architecture and schema skills. Search Console currently has no processed performance/indexing baseline; do not invent metrics. Existing Astro 7.4.2 and Bun 1.4.4 interfaces and matching official documentation remain applicable. Validate regenerated outputs and public responses after the authorized publication, and preserve the unrelated in-progress skill and ignore-rule edits.

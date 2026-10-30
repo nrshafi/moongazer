@@ -1,0 +1,37 @@
+{
+  "heading": "Stories of the Prophets Explorer",
+  "summary": "Stories of the Prophets Explorer gathers fifty selected Quran readings across twenty-five named prophets. Open a profile to read its passages and answer a short reading check. The library keeps brief mentions brief, identifies its selection limits and avoids adding an unsourced biography where the cited passages do not provide one.",
+  "steps": [
+    "Find a prophet by name or use the reading-focus filter.",
+    "Open the profile and read the selected passages with their source references.",
+    "Try the reading check and save a profile if you want to revisit it."
+  ],
+  "questions": [
+    {
+      "question": "Are the profiles arranged in historical order?",
+      "answer": "No. Profiles are alphabetical. The order of the catalog does not claim a historical sequence."
+    },
+    {
+      "question": "Does every profile contain a full life story?",
+      "answer": "No. This is a selected Quran reading library, not a complete biography collection. Where a prophet is mentioned briefly in the selected evidence, the profile does not expand that mention into an unsourced life story."
+    }
+  ],
+  "related": [
+    {
+      "name": "Quranic Places Atlas",
+      "description": "Explore places through Quranic passages, maps and careful geographical notes.",
+      "kind": "Map & reader",
+      "url": "https://quranic-places-atlas.moongazer.tech/"
+    },
+    {
+      "name": "Revelation Context Explorer",
+      "description": "Read reports about revelation while distinguishing context, evidence and uncertainty.",
+      "kind": "Source reader",
+      "url": "https://revelation-context-explorer.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Quran learning",
+    "url": "https://moongazer.tech/quran-learning/"
+  }
+}

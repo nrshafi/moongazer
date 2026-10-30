@@ -1,5 +1,9 @@
 # Repository progress tracker
 
+## Generated verification output
+
+2026-10-30T01:26:30+06:00 Asia/Dhaka: Added root-scoped ignore rules for generated QA and deployment evidence. All 61 generated files are now ignored and remain on disk. Eleven protected-path checks confirm that app source/assets, compact deployment/Search Console records, authored Markdown notes, font-conversion metadata and unrelated skill configuration are not ignored. The existing font-conversion record remains tracked. Checked rule behavior with git check-ignore after inspecting its CLI help; whitespace validation passed. No application build, test, deployment or file deletion was needed for this configuration change.
+
 ## SEO source checkpoint
 
 2026-10-30T01:20:02+06:00 Asia/Dhaka: The requested Git checkpoint includes the session's SEO source, required local assets, build/CI verification, project context and compact deployment/Search Console records. Generated QA dumps, logs, screenshots and temporary browser scripts stay local. .gitignore is unchanged. Fresh checks pass five SEO helper tests and static SEO validation on 327 pages across 21 hosts, including 286 indexable URLs. No push was requested, and no new live deployment or complete app test run is claimed for this checkpoint.
@@ -31,7 +35,7 @@ Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro productio
 
 The representative Guess the Surah build failed when Astro could not write `.astro/content.d.ts` (EPERM). A remote Git read also failed because this environment could not connect to GitHub. No automatic deployment or end-to-end CI test was performed.
 
-Last updated: 2026-10-30T01:21:13+06:00 Asia/Dhaka
+Last updated: 2026-10-30T01:26:30+06:00 Asia/Dhaka
 
 ## Current phase and goal
 
@@ -117,3 +121,16 @@ Reviewed the eleven repository skill entrypoints and relevant references against
 
 Validation: all eleven skills pass skill-creator/scripts/quick_validate.py using PyYAML 6.0.3 installed only in an isolated temporary folder. All 42 relative Markdown file links resolve; all bundled evaluation JSON parses; git diff --check passes. The scanner successfully detected and previewed bun.lock in an isolated temporary fixture. Source links are recorded next to the corrected guidance, including W3C, Google Search Central, web.dev, OWASP and NN/g. No model evaluation runs or app builds/tests were performed for these skill changes. The repository context verifier remains unavailable because its required _implementation/qa/static-results.json is absent. No remaining repair from the verified findings is open; this is a targeted maintenance review, not exhaustive verification of every external link or API example.
 
+
+
+## Search content release, 30 October 2026
+
+Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and an About/source-methodology page at moongazer.tech, with nrshafi1@gmail.com as the user-authorized public corrections contact. All twenty app homes now have descriptive headings, static usage guidance, two questions and related-app links. Sources, activities, storage and dependency pins remain intact. Architecture, metadata, sitemap coverage and optional llms.txt are documented in SEO_GROWTH_PLAN.md and SEO_GROWTH_QA.md.
+
+Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
+
+Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement was locally uncommitted at release verification; user skill edits remain separate.
+
+## SEO source commit
+
+Prepared 2026-10-30T02:18:00+06:00 Asia/Dhaka at the user's request. This commit includes the published SEO source, app-local learning guides, validation helpers, authored QA reports, context, compact release/Search Console records and generated-output ignore rules. User skill changes and generated logs/manifests remain outside the commit. The preceding release verification applies; this Git-only step does not rerun app builds or publish another release. No push was requested.

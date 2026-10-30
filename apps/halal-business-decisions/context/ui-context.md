@@ -71,3 +71,7 @@ Pointer selection keeps the control’s ordinary border and shows no outer focus
 ## SEO release, 30 October 2026
 
 Visible breadcrumbs connect Moongazer, the app and the current detail page. A footer link returns to the app directory. Breadcrumbs wrap on phones and match structured data. WOFF2 derivatives retain the local DM Sans, Newsreader and Amiri glyph coverage and licenses. Social previews use local 1200 by 630 PNG cards. The SEO browser check covered all twenty app homepages at 390px and an Arabic detail page in both themes.
+
+## Search content enhancement scope
+
+Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.

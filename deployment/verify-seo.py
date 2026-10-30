@@ -12,6 +12,8 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'deployment/evidence/seo'
 targets = json.loads((ROOT/'deployment/targets.json').read_text())
+collections = json.loads((ROOT/'homepage/collections.json').read_text())
+learning_guides = json.loads((ROOT/'deployment/learning-guides.json').read_text())
 sites = [('moongazer', 'https://moongazer.tech/', ROOT/'homepage/dist')]
 sites += [('moongazer-'+app['slug'], 'https://'+app['slug']+'.moongazer.tech/', ROOT/'apps'/app['slug']/'dist') for app in targets]
 
@@ -20,12 +22,13 @@ class Page(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.meta = {}; self.links = []; self.canonicals = []; self.schemas = []
         self.title = ''; self.in_head = False; self.in_title = False; self.in_schema = False; self.schema = ''
-        self.h1 = 0; self.lang = ''; self.breadcrumb = False; self.text = []
+        self.h1 = 0; self.h1_text = ''; self.in_h1 = False; self.lang = ''; self.breadcrumb = False; self.text = []
         self.feed(html)
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag == 'html': self.lang = a.get('lang')
-        if tag == 'h1': self.h1 += 1
+        if tag == 'h1': self.h1 += 1; self.in_h1 = True
+        if tag == 'br' and self.in_h1: self.h1_text += ' '
         if tag == 'head': self.in_head = True
         if tag == 'title' and self.in_head: self.in_title = True
         if tag == 'meta':
@@ -40,10 +43,12 @@ class Page(HTMLParser):
     def handle_endtag(self, tag):
         if tag == 'head': self.in_head = False
         if tag == 'title': self.in_title = False
+        if tag == 'h1': self.in_h1 = False
         if tag == 'script' and self.in_schema:
             self.schemas.append(json.loads(self.schema)); self.in_schema = False
     def handle_data(self, data):
         if self.in_title: self.title += data
+        if self.in_h1: self.h1_text += data
         if self.in_schema: self.schema += data
         else: self.text.append(data)
 
@@ -83,7 +88,7 @@ def inspect(html, url, homepage=False, missing=False):
     assert website['url'] == f'{origin.scheme}://{origin.netloc}/'
     webpage = next(node for node in graph if node['@id'] == url+'#webpage')
     assert webpage['url'] == url
-    if homepage:
+    if homepage and origin.path == '/':
         listing = next(node for node in graph if node['@type'] == 'ItemList')
         assert listing['numberOfItems'] == 20 and len(listing['itemListElement']) == 20
         assert {item['url'] for item in listing['itemListElement']} == {s[1] for s in sites[1:]}
@@ -95,9 +100,27 @@ def inspect(html, url, homepage=False, missing=False):
         text = ' '.join(p.text)
         assert all(item['name'] in text for item in crumbs), ('breadcrumb text', url)
         assert 'https://moongazer.tech/#library' in p.links
+        if homepage:
+            collection = next((c for c in collections if origin.path == '/'+c['slug']+'/'), None)
+            if collection:
+                expected = {f"https://{app['slug']}.moongazer.tech/" for app in targets if app['category']==collection['category']}
+                listing = next(node for node in graph if node['@type']=='ItemList')
+                assert {item['url'] for item in listing['itemListElement']} == expected
+                assert listing['numberOfItems'] == len(expected)
+            else:
+                assert origin.path == '/about/' and webpage['@type']=='AboutPage'
+                assert 'mailto:nrshafi1@gmail.com' in p.links
+        elif origin.path == '/':
+            slug=origin.hostname.removesuffix('.moongazer.tech')
+            guide=learning_guides[slug]
+            text=' '.join(p.text)
+            assert p.h1_text.strip()==guide['heading'] and guide['summary'] in text, ('static app guidance',url)
+            assert all(item['question'] in text and item['answer'] in text for item in guide['questions']), ('visible app questions',url)
+            assert all(f'https://{related}.moongazer.tech/' in p.links for related in guide['related']), ('related apps',url)
+            assert 'https://moongazer.tech/about/' in p.links
     return p
 
-pages = []; all_links = set(); results = []; live_jobs = []
+pages = []; all_links = set(); incoming = {}; local_references=[]; results = []; live_jobs = []
 for name, origin, directory in sites:
     indexable = set(); counts = Counter()
     for path in sorted(directory.rglob('*.html')):
@@ -105,18 +128,23 @@ for name, origin, directory in sites:
         p = inspect(path.read_text(encoding='utf-8'),url,name=='moongazer',missing)
         for link in p.links:
             linked = urlsplit(urljoin(url,link))
-            all_links.add(linked._replace(query='',fragment='').geturl())
+            target=linked._replace(query='',fragment='').geturl()
+            all_links.add(target)
+            incoming.setdefault(target,set()).add(url)
+            if linked.netloc=='moongazer.tech' or linked.netloc.endswith('.moongazer.tech'):
+                local_references.append((url,target))
         if not missing and 'noindex' not in p.meta['robots']: indexable.add(url)
         pages.append({'url':url,'title':p.title,'description':p.meta.get('description'),'indexable':url in indexable})
         counts['pages'] += 1
         live_jobs.append((url,'html',name=='moongazer',missing))
-    xml = (directory/'sitemap.xml').read_text(encoding='utf-8')
+    # Preserve CRLF for the live byte comparison on Windows.
+    xml = (directory/'sitemap.xml').read_bytes().decode('utf-8')
     tree = ET.fromstring(xml)
     locations = [node.text for node in tree.findall('{*}url/{*}loc')]
     assert len(locations) == len(set(locations)) and set(locations) == indexable, ('sitemap coverage',name)
     assert all(urlsplit(location).netloc == urlsplit(origin).netloc for location in locations)
     assert not tree.findall('{*}url/{*}lastmod'), ('unverified modification dates',name)
-    robots = (directory/'robots.txt').read_text()
+    robots = (directory/'robots.txt').read_bytes().decode('utf-8')
     assert f'Sitemap: {origin}sitemap.xml' in robots and not re.search(r'Disallow:\s*/\s*$',robots,re.M)
     png = (directory/'social-card.png').read_bytes()
     assert png[:8] == b'\x89PNG\r\n\x1a\n' and struct.unpack('>II',png[16:24]) == (1200,630)
@@ -137,6 +165,16 @@ for key in ['title','description']:
     values = [p[key] for p in pages if p[key]]
     assert len(values) == len(set(values)), ('duplicate '+key, [v for v,n in Counter(values).items() if n>1])
 assert all(p['url'] in all_links for p in pages if p['indexable']), 'Orphan indexable page'
+known={page['url'] for page in pages}
+known.update(urljoin(origin,path.relative_to(directory).as_posix()) for _,origin,directory in sites for path in directory.rglob('*') if path.is_file())
+assert all(target in known for _,target in local_references), ('Broken collection link',[r for r in local_references if r[1] not in known])
+for collection in collections:
+    url='https://moongazer.tech/'+collection['slug']+'/'
+    assert len(incoming.get(url,set()))>=3, ('Insufficient incoming guide links',url)
+assert len(incoming.get('https://moongazer.tech/about/',set()))>=3
+llms=(ROOT/'homepage/dist/llms.txt').read_text(encoding='utf-8')
+assert all(f'https://{app["slug"]}.moongazer.tech/' in llms for app in targets)
+assert all('https://moongazer.tech/'+c['slug']+'/' in llms for c in collections)
 report = {'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sites':len(sites),'pages':len(pages),
           'indexable':sum(r['indexable'] for r in results),'passed':True,'hosts':results,'metadata':pages}
 OUT.mkdir(parents=True,exist_ok=True)
