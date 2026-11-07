@@ -1,5 +1,9 @@
 # Repository progress tracker
 
+## Growth plan and agent briefs
+
+2026-11-07T16:38:00+06:00 Asia/Dhaka: Added `plan/REPORT.md`, which covers Moongazer's defects, naming, portfolio merges, a per-app review and its roadmap, plus the Booktube Islamic rules. Also added `plan/agents/00`–`15`, a set of briefs in execution order. `00-START-HERE.md` holds the owner's decisions, the ground rules, a shared verification checklist and the status table. `plan/NEXT_SESSION_PROMPT.md` holds a handoff prompt for the next session. This is documentation only. No app source, build, storage or deployment changed, and no builds or tests were run for it. Moongazer briefs 06–15 are recommendations; each needs the owner's go-ahead, and the report does not authorize building them. Booktube briefs 01–05 were carried out in that repository and pushed (commit 7c3d96b).
+
 ## Generated verification output
 
 2026-10-30T01:26:30+06:00 Asia/Dhaka: Added root-scoped ignore rules for generated QA and deployment evidence. All 61 generated files are now ignored and remain on disk. Eleven protected-path checks confirm that app source/assets, compact deployment/Search Console records, authored Markdown notes, font-conversion metadata and unrelated skill configuration are not ignored. The existing font-conversion record remains tracked. Checked rule behavior with git check-ignore after inspecting its CLI help; whitespace validation passed. No application build, test, deployment or file deletion was needed for this configuration change.
@@ -35,7 +39,7 @@ Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro productio
 
 The representative Guess the Surah build failed when Astro could not write `.astro/content.d.ts` (EPERM). A remote Git read also failed because this environment could not connect to GitHub. No automatic deployment or end-to-end CI test was performed.
 
-Last updated: 2026-10-30T01:26:30+06:00 Asia/Dhaka
+Last updated: 2026-11-07T16:38:00+06:00 Asia/Dhaka
 
 ## Current phase and goal
 
