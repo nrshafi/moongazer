@@ -1,8 +1,8 @@
 ---
 name: site-architecture
-description: When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions "sitemap," "site map," "visual sitemap," "site structure," "page hierarchy," "information architecture," "IA," "navigation design," "URL structure," "breadcrumbs," "internal linking strategy," "website planning," "what pages do I need," "how should I organize my site," or "site navigation." Use this whenever someone is planning what pages a website should have and how they connect. NOT for XML sitemaps (that's technical SEO — see seo-audit). For SEO audits, see seo-audit. For structured data, see schema.
+description: When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions "sitemap," "site map," "visual sitemap," "site structure," "page hierarchy," "information architecture," "IA," "navigation design," "URL structure," "breadcrumbs," "internal linking strategy," "website planning," "what pages do I need," "how should I organize my site," "site navigation," "which website builder should I use," "migrate my website," or "add a blog to my existing site." Use this whenever someone is planning what pages a website should have, how they connect, and where to build them. NOT for XML sitemaps (that's technical SEO — see seo-audit). For SEO audits, see seo-audit. For structured data, see schema.
 metadata:
-  version: 2.0.0
+  version: 2.1.0
 ---
 
 # Site Architecture
@@ -25,6 +25,7 @@ Gather this context (ask if not provided):
 - New site or restructuring an existing one?
 - If restructuring: what's broken? (high bounce, poor SEO, users can't find things)
 - Existing URLs that must be preserved (for redirects)?
+- What platform is it on, and is a platform change on the table? (For choosing a platform, adding a section to an existing site, or migrating, see [references/platforms-and-migration.md](references/platforms-and-migration.md).)
 
 ### 3. Site Type
 - SaaS marketing site
@@ -58,9 +59,9 @@ Gather this context (ask if not provided):
 
 ## Page Hierarchy Design
 
-### Navigation depth
+### The 3-Click Rule
 
-Make important tasks easy to find through clear labels and sensible grouping. Measure task completion, effort and wrong turns; a page taking more than three clicks is not by itself a defect. See [NN/g's review of the three-click rule](https://www.nngroup.com/articles/3-click-rule/).
+Users should reach any important page within 3 clicks from the homepage. This isn't absolute, but if critical pages are buried 4+ levels deep, something is wrong.
 
 ### Flat vs Deep
 
@@ -127,7 +128,7 @@ Homepage (/)
 
 ### Header Navigation Rules
 
-- Keep the primary nav easy to scan. Choose the item count from content, available space and observed task success, rather than enforcing a fixed maximum.
+- **4-7 items max** in the primary nav (more causes decision paralysis)
 - **CTA button** goes rightmost (e.g., "Start Free Trial," "Get Started")
 - **Logo** links to homepage (left side)
 - **Order by priority**: most important/visited pages first
@@ -271,7 +272,7 @@ graph TD
 
 1. **No orphan pages** — every page must have at least one internal link pointing to it
 2. **Descriptive anchor text** — "our analytics features" not "click here"
-3. Add contextual internal links where they help the reader complete a task or understand related content; do not enforce a link-per-word quota.
+3. **5-10 internal links per 1000 words** of content (approximate guideline)
 4. **Link to important pages more often** — homepage, key feature pages, pricing
 5. **Use breadcrumbs** — free internal links on every page
 6. **Related content sections** — "Related Posts" or "You might also like" at page bottom
@@ -355,3 +356,4 @@ Mermaid diagram showing page relationships and navigation zones. Use `graph TD` 
 - **cro**: For optimizing individual pages for conversion
 - **schema**: For implementing breadcrumb and site navigation structured data
 - **competitors**: For comparison page frameworks and URL patterns
+- **launch**: For site go-live QA after a build or migration
