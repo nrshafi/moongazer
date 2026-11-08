@@ -8,7 +8,7 @@
 ## Part 1 — Trust (owner decisions required)
 
 1. **Maintainer.** Ask the owner what name to show on the About page: a personal name, or a publisher name. Add it truthfully. Do not infer a name from any account.
-2. **Reviewers.** If the owner recruits qualified reviewers, add a per-app "What was reviewed, by whom, when" line, only for reviews that actually happened. Until then, show nothing about review. Never claim certification.
+2. **Reviewers and classical attribution.** Recruiting an in-house Islamic studies reviewer is not currently possible (`context/project-dna.md`). Show nothing about external review, never claim certification, and rely on primary-source citations plus the in-app correction and feedback form (`../FIRST_PARTY_SERVICES_PLAN.md`).
 3. **Corrections log.**
    - Add `/corrections/` on the directory: date, page, what changed, and "reported by a visitor" or "found in review". Include no personal data unless the reporter agrees.
    - Seed it with the defects fixed in brief 06.
@@ -19,7 +19,7 @@
 
 1. Keep the no-script promise. Use Search Console for queries and pages. For aggregate request counts per host, use Cloudflare's server-side dashboard analytics, which add no script to the page.
 2. If the owner wants the Cloudflare counts used, first update the About page and `context/project-overview.md` truthfully: "no tracking scripts or advertising cookies; we look at aggregate request counts from our host". Get the owner's approval of the wording.
-3. Add a "Was this useful? Tell us" mailto link on results, to the existing public corrections contact.
+3. **In-app correction and feedback form.** Replaces the mailto-only fallback once the technical plan in `../FIRST_PARTY_SERVICES_PLAN.md` is finalized. Plan the first-party endpoint for `{app_slug, page_url, category, message, optional_contact}` and the three-event counter (`activity_started`, `activity_completed`, `share_clicked`; no `page_view`) before building this part. Until that endpoint is deployed, keep the existing public corrections contact active.
 4. After 90 days of Search Console data (around early February 2027), write a short findings note: top queries and pages, impressions, CTR, position. Use it to revisit hostnames (REPORT.md A4 rule 9) and the next slices. Do not call a missing metric zero.
 
 ## Part 3 — Teachers page and posters

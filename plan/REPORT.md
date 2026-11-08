@@ -216,6 +216,7 @@ Remove the vague header link "Start with a little curiosity ↗" and the "There 
 7. **Small delight, within one standard.** A brief, reduced-motion-aware animation on a correct answer, and a soft non-musical sound only if the visitor turns sound on. Moongazer follows the same standard as the Booktube rules in Part B: no music or bells, and no images of people or animals. Use geometry, calligraphy, objects, places, plants and light.
 8. **Header.** Short name plus logo on every width; drop the "Islamic learning, explored." tagline on phones; add an "All apps" link that returns to the directory.
 9. **Print and projector.** A "Print" button on family, teacher and timeline pages, and a "Projector" toggle that enlarges text for a classroom screen.
+10. **Design files (`DESIGN.md`).** The repository root (`DESIGN.md`) and all twenty individual apps (`apps/<slug>/DESIGN.md`) will each have their own dedicated `DESIGN.md` file. Root `DESIGN.md` defines portfolio-wide design tokens, typography, shared archetypes, and Islamic constraints. Each app's local `DESIGN.md` specifies that app's archetype, palette tokens, custom SVG motif, component states, and screen-1 layout.
 
 ## A8. App by app
 
@@ -538,10 +539,11 @@ Two further ideas once the above are done: a **Ramadan hub** on the directory (n
 3. Publish a corrections log: date, page, what changed, who reported it.
 4. Use honorifics consistently in editorial text: ﷺ after the Prophet Muhammad, "(peace be upon him)" or عليه السلام after other prophets, and optionally رضي الله عنه for Companions. Never alter canonical quotations or the named translation.
 5. Cut repeated hedging. One honest limit, stated once, builds more trust than five.
+6. **Update, 8 November 2026 (`context/project-dna.md`):** Recruiting a formal Islamic studies reviewer is not currently possible. Instead, pair strict classical source attribution with a first-party in-app correction and feedback form and a public Corrections Log (`plan/FIRST_PARTY_SERVICES_PLAN.md`).
 
 ## A13. Measuring without tracking
 
-Keep the no-script promise. Use Search Console for queries and pages, and Cloudflare's server-side traffic analytics in the dashboard (no script on the page) for request counts per host. If you use the latter, update the About wording so it stays truthful: "no tracking scripts or advertising cookies; we look at aggregate request counts from our host". Add a "Was this useful?" email link on results. Accept that returning-visitor rates cannot be measured; use daily-puzzle page requests as a proxy.
+Keep the no-script promise. Use Search Console for queries and pages, and Cloudflare's server-side traffic analytics in the dashboard (no script on the page) for request counts per host. If you use the latter, update the About wording so it stays truthful: "no tracking scripts or advertising cookies; we look at aggregate request counts from our host". Add a "Was this useful?" email link on results. Accept that returning-visitor rates cannot be measured; use daily-puzzle page requests as a proxy. **Update, 8 November 2026 (`plan/FIRST_PARTY_SERVICES_PLAN.md`):** Plan a cookie-free, IP-free first-party counter for `activity_started`, `activity_completed`, and `share_clicked` (`page_view` excluded), plus demand-triggered minimal progress-sync accounts once learners request cross-device saving through the feedback form.
 
 ## A14. Roadmap
 

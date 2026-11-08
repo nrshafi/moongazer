@@ -10,7 +10,8 @@ rows={r['app']:r for r in json.loads((ROOT/'_implementation/qa/static-results.js
 sets=[]
 placeholder=re.compile(r'\[(?:Project Name|Goal one|Goal two|Goal three|Invariant [a-z]|Technology|Role|Concern [a-z]|What this|One paragraph|e\.g\.)[^\]]*\]',re.I)
 for base in [ROOT]+apps:
- paths=[base/'AGENTS.md']+[base/'context'/file for file in FILES]
+ expected_files=(['project-dna.md']+FILES) if base==ROOT else FILES
+ paths=[base/'AGENTS.md']+[base/'context'/file for file in expected_files]
  assert all(p.is_file() for p in paths),base
  for p in paths:
   text=p.read_text(encoding='utf-8')
@@ -22,7 +23,7 @@ for base in [ROOT]+apps:
    parent=base if target.startswith('context/') else ROOT
    assert list(parent.glob(target)) if '*' in target else (parent/target).exists(),(p,target)
  agent=(base/'AGENTS.md').read_text(encoding='utf-8')
- assert all('context/'+file in agent for file in FILES)
+ assert all('context/'+file in agent for file in expected_files)
  if base!=ROOT:
   cfg=json.loads((base/'src/data/config.json').read_text(encoding='utf-8'));package=json.loads((base/'package.json').read_text(encoding='utf-8'));data=json.loads((base/'src/data/content.json').read_text(encoding='utf-8'))
   overview=(base/'context/project-overview.md').read_text(encoding='utf-8');architecture=(base/'context/architecture.md').read_text(encoding='utf-8');ui=(base/'context/ui-context.md').read_text(encoding='utf-8')
@@ -37,7 +38,7 @@ for base in [ROOT]+apps:
    for value in [light,dark]:
     options=[value]+(['#fff'] if value=='#ffffff' else [])
     assert any(re.search(re.escape(token)+r'\s*:\s*'+re.escape(option)+r'(?=[;}\s])',css) for option in options),(base,token,value)
- sets.append(dict(root='.' if base==ROOT else base.relative_to(ROOT).as_posix(),files=7,placeholders=False))
+ sets.append(dict(root='.' if base==ROOT else base.relative_to(ROOT).as_posix(),files=len(paths),placeholders=False))
 preserved=None
 if '--preserve-previous-apps' in sys.argv:
  baseline=json.loads((ROOT/'_implementation/qa/context-docs-baseline.json').read_text(encoding='utf-8'))

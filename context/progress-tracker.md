@@ -1,5 +1,13 @@
 # Repository progress tracker
 
+## Design system recommendations and per-app DESIGN.md requirement
+
+2026-11-08T14:08:00+06:00 Asia/Dhaka: Created `plan/DESIGN_RECOMMENDATIONS.md` synthesizing the user-provided design reference library from https://opendesignmd.com/api/designs.json with Moongazer's 20-app portfolio and directory hub across five design archetypes. Established and documented the mandatory requirement across `plan/` (`plan/agents/00-START-HERE.md`, `plan/agents/08-moongazer-shell-and-directory.md`, `plan/REPORT.md`, and `plan/DESIGN_RECOMMENDATIONS.md`) that the repository root (`DESIGN.md`) and all apps built (`apps/<slug>/DESIGN.md`) will each have their own dedicated `DESIGN.md` file governing their portfolio-wide and app-local design fidelity. Documentation only; no runtime code or builds modified.
+
+## Project DNA and first-party service planning
+
+2026-11-08T12:23:00+06:00 Asia/Dhaka: Defined Moongazer's internal business DNA in `context/project-dna.md` (item 0 in root `AGENTS.md` and checked by `_implementation/verify-context.py`). Captured Mission, Vision as a permanently free digital waqf, Booktube's role as a motion-graphics social media companion, Singular Focus on interactive Islamic learning and essential worship tools (refusing fatwa issuance, social feeds, and live AI chat; allowing demand-triggered minimal progress-sync accounts after zero-account backup codes), five rank-ordered Core Values, the four-part Depth Gate (merging the four overlapping apps into sixteen first, then requiring at least 30 verified items or full canonical coverage before launching new apps), and the learning/corrections loop. Added `plan/FIRST_PARTY_SERVICES_PLAN.md` for pending technical planning of the cookie-free three-event counter (`activity_started`, `activity_completed`, `share_clicked`; no `page_view`), the in-app correction and feedback form, and demand-triggered progress sync. Updated `context/project-overview.md`, `plan/agents/00-START-HERE.md`, `plan/agents/11-moongazer-ramadan-season.md`, `plan/agents/14-moongazer-growth-trust-bangla.md`, and `plan/REPORT.md`. This is documentation only; no app runtime, build, storage, or deployment changed, and no builds or tests were run.
+
 ## Growth plan and agent briefs
 
 2026-11-07T16:38:00+06:00 Asia/Dhaka: Added `plan/REPORT.md`, which covers Moongazer's defects, naming, portfolio merges, a per-app review and its roadmap, plus the Booktube Islamic rules. Also added `plan/agents/00`–`15`, a set of briefs in execution order. `00-START-HERE.md` holds the owner's decisions, the ground rules, a shared verification checklist and the status table. `plan/NEXT_SESSION_PROMPT.md` holds a handoff prompt for the next session. This is documentation only. No app source, build, storage or deployment changed, and no builds or tests were run for it. Moongazer briefs 06–15 are recommendations; each needs the owner's go-ahead, and the report does not authorize building them. Booktube briefs 01–05 were carried out in that repository and pushed (commit 7c3d96b).
@@ -39,7 +47,7 @@ Retry, 2026-10-30 Asia/Dhaka: GitHub access and a representative Astro productio
 
 The representative Guess the Surah build failed when Astro could not write `.astro/content.d.ts` (EPERM). A remote Git read also failed because this environment could not connect to GitHub. No automatic deployment or end-to-end CI test was performed.
 
-Last updated: 2026-11-07T16:38:00+06:00 Asia/Dhaka
+Last updated: 2026-11-08T12:23:00+06:00 Asia/Dhaka
 
 ## Current phase and goal
 

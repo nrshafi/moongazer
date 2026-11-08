@@ -25,7 +25,7 @@ Context first: the app's `context/` (new flows, storage key) and the root projec
 
 ## Part 2 — Zakat Calculator (new app)
 
-**This needs a qualified review before launch.** Do not publish until the owner confirms a qualified reviewer has checked the method text and examples. Record who reviewed it and when, only if it happened.
+**Classical attribution rule (per `context/project-dna.md`, 8 November 2026).** Because recruiting a dedicated Islamic studies reviewer is not currently possible, do not issue original rulings or claim external certification. Present documented classical calculation methods with exact source notes, show both standard gold and silver nisab thresholds with their classical basis, and let the learner choose which standard they follow. Pair the app with the in-app correction and feedback form (`../FIRST_PARTY_SERVICES_PLAN.md`).
 
 1. **New app folder** `apps/zakat-calculator/`.
    - Copy the current shell and stack pins from an existing app (Astro 7.4.2, Bun 1.4.4, TypeScript 6.0.3).

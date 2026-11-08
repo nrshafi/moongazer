@@ -6,6 +6,7 @@ This repository contains twenty independent static apps from the completed short
 
 At the start of work in this scope, read these files in order. Reuse them within the same working context and reread files that change.
 
+0. `context/project-dna.md`
 1. `context/project-overview.md`
 2. `context/architecture.md`
 3. `context/ui-context.md`
@@ -28,7 +29,7 @@ If a requested change alters scope, architecture, storage or standards, update t
 
 - Work directly by default. Do not introduce a requirement to delegate or spawn agents. Respect the user's current authorization and applicable tool instructions.
 - Resolve routine implementation details with the existing product constraints. Ask for clarification only when missing information materially blocks the work; record the decision in context.
-- Keep the six context files synchronized with meaningful changes. Update `context/progress-tracker.md` with an Asia/Dhaka timestamp, actual validation, remaining work and material limitations.
+- Keep the context files synchronized with meaningful changes. Update `context/progress-tracker.md` with an Asia/Dhaka timestamp, actual validation, remaining work and material limitations.
 - Do not hand-edit `node_modules/`, `.astro/`, `dist/` or release ZIP contents. Edit authoritative sources, then regenerate the affected output when needed. Do not modify dependency internals in place.
 - Reuse verified source snapshots. Fetch missing Quran text/commentary through Quran MCP, preserve canonical quotations and edition attribution, and keep editorial exercises distinct from scholarly claims. Do not replace primary sources with personal blogs.
 - Complete the authorized scope and report concrete changes and verification. Do not claim deployment, fresh tests or independent scholarly review that did not occur.

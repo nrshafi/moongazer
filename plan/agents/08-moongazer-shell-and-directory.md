@@ -15,6 +15,9 @@
   - Per-app hero art.
   - "No images of people or animals; no music or bells" as a portfolio rule.
 - `context/architecture.md`: short links in `homepage/_redirects`.
+- DESIGN.md files (root and per-app):
+  - Root DESIGN.md: establishes portfolio-wide design tokens, typography scale, the 5 archetypes from plan/DESIGN_RECOMMENDATIONS.md, directory hub styling, and Islamic constraints (strict aniconism, no music/bells).
+  - App-local pps/<slug>/DESIGN.md: every app built must have its own dedicated DESIGN.md specifying its assigned archetype, exact palette tokens, unique SVG motif (replacing the generic star watermark), component states, and screen-1 mobile layout.
 
 ## Part 1 — the shared app shell (all twenty copies)
 
@@ -67,6 +70,9 @@ Edit the authoritative sources (`index.html`, `styles.css`, `app.js`, `render.mj
 6. **Seasonal slot.** An empty container that brief 11 fills.
 7. **Trust row:** "Exact Quran text with named translation · Sources on every page · Corrections log". The reviewer line waits for brief 14 and is added only when true.
 8. **Short links** in `homepage/_redirects`:
+- DESIGN.md files (root and per-app):
+  - Root DESIGN.md: establishes portfolio-wide design tokens, typography scale, the 5 archetypes from plan/DESIGN_RECOMMENDATIONS.md, directory hub styling, and Islamic constraints (strict aniconism, no music/bells).
+  - App-local pps/<slug>/DESIGN.md: every app built must have its own dedicated DESIGN.md specifying its assigned archetype, exact palette tokens, unique SVG motif (replacing the generic star watermark), component states, and screen-1 mobile layout.
    - `/surah`, `/threads`, `/groups`, `/escape`, `/check`, `/prophets`, `/parables`, `/places`, `/revealed`, `/seerah`, `/detective`, `/civilization`, `/salah`, `/hifz`, `/akhlaq`, `/family`
    - Each gives a 302 to the app's root URL. Use 302 until stable, then 301.
    - Verify that the Pages `_redirects` syntax supports absolute destination URLs, using Cloudflare's documentation, and record the documentation URL.

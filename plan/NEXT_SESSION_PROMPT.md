@@ -15,9 +15,7 @@ Paste this into a new conversation opened in `I:\Development\moongazer`:
 **Booktube**
 - A qualified person should check the citations in `context/islamic-guidelines.md` against sunnah.com and Quran MCP.
 - Nine probe WAVs in `out/_tmp` await a keep or delete decision.
-- *A Brief History of Time* is AMBER and needs your decision at plan approval.
 - Blocking ad categories is a manual task in your YouTube and AdSense settings.
-- The local `islamic-guidelines` branch is redundant and can be deleted.
 
 **Moongazer**
 - Ramadan 1448 is expected around 8 February 2027, subject to moon sighting. Brief 11 (Hifz Planner, Zakat Calculator, Ramadan hub) should be ready by mid-January 2027.

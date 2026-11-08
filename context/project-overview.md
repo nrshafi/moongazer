@@ -81,3 +81,7 @@ Google Search Console is configured as the verified Domain property sc-domain:mo
 ## Search content enhancement scope
 
 The current authorized SEO enhancement adds four useful subject guides and an About/source-methodology page to the directory, plus static product guidance and related-app navigation in each app. The user supplied nrshafi1@gmail.com as the public corrections contact. See SEO_GROWTH_PLAN.md for scope, evidence and limits. No new religious claims, credentials, visitor tracking or product engines are authorized by this documentation.
+
+## Project DNA and roadmap governance, 8 November 2026
+
+`context/project-dna.md` defines Moongazer's mission, vision as a permanently free digital waqf, Booktube social media companion role, singular focus on interactive Islamic learning and essential worship tools, five rank-ordered core values, Depth Gate, and learning/corrections loop. Future first-party interaction counters (`activity_started`, `activity_completed`, `share_clicked` without `page_view`), the in-app correction/feedback form, and demand-triggered minimal progress-sync accounts are recorded for further technical planning in `plan/FIRST_PARTY_SERVICES_PLAN.md` and are not yet implemented in runtime code.
