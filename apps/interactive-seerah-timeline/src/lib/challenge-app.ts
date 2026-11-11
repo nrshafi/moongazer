@@ -2,6 +2,7 @@ import { events, packs } from '../data/content.json';
 import { grade, valid, initialProgress, randomSeed, move, type Progress } from './challenge';
 import { importSaved } from './merge-import';
 import { byId, read, write, forget, cleanSeed, challengeUrl, esc, withHonorifics, copy, announce } from './utils';
+import { track } from './counter';
 import '../styles/challenge.css';
 
 importSaved();
@@ -29,7 +30,7 @@ function render(message = 'Arrange from earliest to latest, then check your orde
     const e = event(id), clue = `clue-${id}`, open = openClues.has(id);
     return `<li><div class="event-card"><div class="spread"><span class="eyebrow">Position ${i + 1}</span><div class="actions"><button type="button" class="icon-button" data-id="${id}" data-delta="-1" aria-label="Move ${esc(e.title)} up" ${i === 0 || done ? 'disabled' : ''}>↑</button><button type="button" class="icon-button" data-id="${id}" data-delta="1" aria-label="Move ${esc(e.title)} down" ${i === state.order.length - 1 || done ? 'disabled' : ''}>↓</button></div></div><h3>${withHonorifics(esc(e.title))}</h3><button type="button" class="text-button clue-toggle" data-clue="${id}" aria-expanded="${open}" aria-controls="${clue}">Open source clue</button><div class="clue" id="${clue}" ${open ? '' : 'hidden'}><p>${withHonorifics(esc(e.summary))}</p><p>${links(e)}</p></div></div></li>`;
   }).join('');
-  byId('feedback').textContent = done ? (state.complete ? 'Sequence matched. Read the dates and sources below.' : 'Sequence revealed. Follow the sources below.') : message;
+  byId('challenge-feedback').textContent = done ? (state.complete ? 'Sequence matched. Read the dates and sources below.' : 'Sequence revealed. Follow the sources below.') : message;
   byId('stats').textContent = `${state.tries} checks · ${state.hint || state.revealed ? 'assisted' : 'unassisted'}`;
   for (const id of ['check', 'hint', 'reveal']) byId<HTMLButtonElement>(id).disabled = done;
   byId('answer').innerHTML = done
@@ -54,23 +55,29 @@ byId('order').addEventListener('click', ev => {
   if (!target.dataset.delta || target.disabled || state.complete || state.revealed) return;
   const id = target.dataset.id!;
   state.order = move(state.order, state.order.indexOf(id), Number(target.dataset.delta));
+  track('activity_started', pack.id);
   persist();
   render(`Moved to position ${state.order.indexOf(id) + 1}. Check the order when ready.`, { id, delta: target.dataset.delta });
 });
+
+// Anonymous counter (P4): one completion per page load for this pack, on a correct check or a reveal.
+let finished = false;
+function finish() { if (!finished) { finished = true; track('activity_completed', pack.id); } }
 
 byId('check').onclick = () => {
   state.tries++;
   const result = grade(state.order, pack.events);
   state.complete = result.correct;
+  if (result.correct) finish();
   persist();
   render(result.correct ? '' : `${result.positions.filter(Boolean).length} of ${pack.events.length} cards are in the intended positions. Try changing the order.`);
 };
 byId('hint').onclick = () => { state.hint = true; persist(); render('Earliest event: ' + event(pack.events[0]!).title); };
-byId('reveal').onclick = () => { state.revealed = true; persist(); render(); };
+byId('reveal').onclick = () => { state.revealed = true; finish(); persist(); render(); };
 byId('restart').onclick = () => { state = initialProgress(pack, randomSeed()); openClues.clear(); forget(KEY); persist(); render('New order. Arrange from earliest to latest.'); };
 byId('remember').onchange = () => { if (byId<HTMLInputElement>('remember').checked) persist(); else forget(KEY); };
 function openPack(id: string) { const u = new URL(location.pathname, location.origin); u.searchParams.set('pack', id); location.assign(u.href); }
 byId('pack-select').onchange = () => openPack(byId<HTMLSelectElement>('pack-select').value);
 byId('next-pack').onclick = () => openPack(packs[(packs.findIndex(p => p.id === pack.id) + 1) % packs.length]!.id);
-byId('share').onclick = () => copy(`Which came first? · challenge ${pack.number}\n${challengeUrl({ pack: pack.id, seed: state.seed })}`);
+byId('share').onclick = () => { track('share_clicked', pack.id); void copy(`Which came first? · challenge ${pack.number}\n${challengeUrl({ pack: pack.id, seed: state.seed })}`); };
 render();
