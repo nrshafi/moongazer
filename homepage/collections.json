@@ -14,7 +14,7 @@
       {"title": "Read a selected account in context", "items": [{"slug": "stories-of-the-prophets-explorer", "reason": "Open a prophet's profile for selected Quran passages and a short reading check."}, {"slug": "revelation-context-explorer", "reason": "Compare named reports while keeping transmitted occasions, general context and later responses distinct."}]}
     ],
     "questions": [
-      {"question": "Which tool should I use for an exact Quran phrase?", "answer": "Use Is This Actually in the Quran? for Arabic wording, Pickthall's English text or a verse reference. No result cannot establish that an idea is absent: translations and paraphrases can use different wording."},
+      {"question": "Which tool should I use for an exact Quran phrase?", "answer": "Use Is This Actually in the Quran? for Arabic wording, Pickthall's English text or a verse reference. An empty search result does not mean an idea is absent from the Quran: translations and paraphrases can use different wording."},
       {"question": "Where can I explore diagrams or places?", "answer": "Quranic Parables Studio uses editorial diagrams alongside selected readings. Quranic Places Atlas pairs passages with geographical notes and keeps uncertain locations unpinned. Both keep their source references available for inspection."}
     ]
   },
