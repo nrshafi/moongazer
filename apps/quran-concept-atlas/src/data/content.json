@@ -4,6 +4,8 @@
       "id": "patience",
       "number": 1,
       "theme": "Patience",
+      "label": "Theme 01: Quran 2:153, 16:127 and 103:3",
+      "teaser": "Read Quran 2:153, 16:127 and 103:3 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "2:153",
         "16:127",
@@ -53,6 +55,8 @@
       "id": "gratitude",
       "number": 2,
       "theme": "Gratitude",
+      "label": "Theme 02: Quran 14:7, 31:12 and 2:152",
+      "teaser": "Read Quran 14:7, 31:12 and 2:152 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "14:7",
         "31:12",
@@ -102,6 +106,8 @@
       "id": "justice",
       "number": 3,
       "theme": "Justice",
+      "label": "Theme 03: Quran 4:135, 5:8 and 42:15",
+      "teaser": "Read Quran 4:135, 5:8 and 42:15 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "4:135",
         "5:8",
@@ -151,6 +157,8 @@
       "id": "giving",
       "number": 4,
       "theme": "Giving",
+      "label": "Theme 04: Quran 2:261, 2:271 and 76:8",
+      "teaser": "Read Quran 2:261, 2:271 and 76:8 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "2:261",
         "2:271",
@@ -200,6 +208,8 @@
       "id": "mercy",
       "number": 5,
       "theme": "Mercy",
+      "label": "Theme 05: Quran 7:156, 39:53 and 21:107",
+      "teaser": "Read Quran 7:156, 39:53 and 21:107 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "7:156",
         "39:53",
@@ -249,6 +259,8 @@
       "id": "forgiveness",
       "number": 6,
       "theme": "Forgiveness",
+      "label": "Theme 06: Quran 24:22, 42:40 and 25:70",
+      "teaser": "Read Quran 24:22, 42:40 and 25:70 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "24:22",
         "42:40",
@@ -298,6 +310,8 @@
       "id": "truthfulness",
       "number": 7,
       "theme": "Truthfulness",
+      "label": "Theme 07: Quran 9:119, 33:70 and 33:35",
+      "teaser": "Read Quran 9:119, 33:70 and 33:35 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "9:119",
         "33:70",
@@ -347,6 +361,8 @@
       "id": "parents",
       "number": 8,
       "theme": "Parents",
+      "label": "Theme 08: Quran 17:23, 31:14 and 29:8",
+      "teaser": "Read Quran 17:23, 31:14 and 29:8 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "17:23",
         "31:14",
@@ -396,6 +412,8 @@
       "id": "learning",
       "number": 9,
       "theme": "Learning",
+      "label": "Theme 09: Quran 96:1-5, 20:114 and 39:9",
+      "teaser": "Read Quran 96:1-5, 20:114 and 39:9 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "96:1-5",
         "20:114",
@@ -445,6 +463,8 @@
       "id": "trust-in-allah",
       "number": 10,
       "theme": "Trust in Allah",
+      "label": "Theme 10: Quran 65:3, 3:159 and 14:12",
+      "teaser": "Read Quran 65:3, 3:159 and 14:12 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "65:3",
         "3:159",
@@ -494,6 +514,8 @@
       "id": "humility",
       "number": 11,
       "theme": "Humility",
+      "label": "Theme 11: Quran 25:63, 31:18 and 17:37",
+      "teaser": "Read Quran 25:63, 31:18 and 17:37 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "25:63",
         "31:18",
@@ -543,6 +565,8 @@
       "id": "careful-speech",
       "number": 12,
       "theme": "Careful speech",
+      "label": "Theme 12: Quran 33:70, 49:11 and 17:53",
+      "teaser": "Read Quran 33:70, 49:11 and 17:53 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "33:70",
         "49:11",
@@ -592,6 +616,8 @@
       "id": "keeping-commitments",
       "number": 13,
       "theme": "Keeping commitments",
+      "label": "Theme 13: Quran 17:34, 5:1 and 16:91",
+      "teaser": "Read Quran 17:34, 5:1 and 16:91 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "17:34",
         "5:1",
@@ -641,6 +667,8 @@
       "id": "privacy",
       "number": 14,
       "theme": "Privacy",
+      "label": "Theme 14: Quran 49:12, 24:27 and 24:28",
+      "teaser": "Read Quran 49:12, 24:27 and 24:28 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "49:12",
         "24:27",
@@ -690,6 +718,8 @@
       "id": "human-relationships",
       "number": 15,
       "theme": "Human relationships",
+      "label": "Theme 15: Quran 3:103, 49:10 and 49:13",
+      "teaser": "Read Quran 3:103, 49:10 and 49:13 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "3:103",
         "49:10",
@@ -739,6 +769,8 @@
       "id": "moderation",
       "number": 16,
       "theme": "Moderation",
+      "label": "Theme 16: Quran 7:31, 17:29 and 25:67",
+      "teaser": "Read Quran 7:31, 17:29 and 25:67 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "7:31",
         "17:29",
@@ -788,6 +820,8 @@
       "id": "hope",
       "number": 17,
       "theme": "Hope",
+      "label": "Theme 17: Quran 39:53, 12:87 and 94:5-6",
+      "teaser": "Read Quran 39:53, 12:87 and 94:5-6 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "39:53",
         "12:87",
@@ -837,6 +871,8 @@
       "id": "time-and-effort",
       "number": 18,
       "theme": "Time and effort",
+      "label": "Theme 18: Quran 103:1-3, 94:7 and 62:10",
+      "teaser": "Read Quran 103:1-3, 94:7 and 62:10 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "103:1-3",
         "94:7",
@@ -886,6 +922,8 @@
       "id": "signs-in-creation",
       "number": 19,
       "theme": "Signs in creation",
+      "label": "Theme 19: Quran 30:22, 21:30 and 16:10",
+      "teaser": "Read Quran 30:22, 21:30 and 16:10 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "30:22",
         "21:30",
@@ -935,6 +973,8 @@
       "id": "night-and-day",
       "number": 20,
       "theme": "Night and day",
+      "label": "Theme 20: Quran 10:6, 25:62 and 30:23",
+      "teaser": "Read Quran 10:6, 25:62 and 30:23 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "10:6",
         "25:62",
@@ -984,6 +1024,8 @@
       "id": "prayer",
       "number": 21,
       "theme": "Prayer",
+      "label": "Theme 21: Quran 20:14, 29:45 and 2:43",
+      "teaser": "Read Quran 20:14, 29:45 and 2:43 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "20:14",
         "29:45",
@@ -1033,6 +1075,8 @@
       "id": "fasting",
       "number": 22,
       "theme": "Fasting",
+      "label": "Theme 22: Quran 2:183, 2:184 and 2:185",
+      "teaser": "Read Quran 2:183, 2:184 and 2:185 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "2:183",
         "2:184",
@@ -1082,6 +1126,8 @@
       "id": "truth-and-falsehood",
       "number": 23,
       "theme": "Truth and falsehood",
+      "label": "Theme 23: Quran 17:81, 21:18 and 10:32",
+      "teaser": "Read Quran 17:81, 21:18 and 10:32 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "17:81",
         "21:18",
@@ -1131,6 +1177,8 @@
       "id": "kindness",
       "number": 24,
       "theme": "Kindness",
+      "label": "Theme 24: Quran 4:36, 16:90 and 2:83",
+      "teaser": "Read Quran 4:36, 16:90 and 2:83 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "4:36",
         "16:90",
@@ -1180,6 +1228,8 @@
       "id": "orphans",
       "number": 25,
       "theme": "Orphans",
+      "label": "Theme 25: Quran 4:10, 4:2 and 93:9",
+      "teaser": "Read Quran 4:10, 4:2 and 93:9 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "4:10",
         "4:2",
@@ -1229,6 +1279,8 @@
       "id": "accountability",
       "number": 26,
       "theme": "Accountability",
+      "label": "Theme 26: Quran 99:7, 99:8 and 17:13",
+      "teaser": "Read Quran 99:7, 99:8 and 17:13 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "99:7",
         "99:8",
@@ -1278,6 +1330,8 @@
       "id": "consultation",
       "number": 27,
       "theme": "Consultation",
+      "label": "Theme 27: Quran 42:38, 3:159 and 2:233",
+      "teaser": "Read Quran 42:38, 3:159 and 2:233 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "42:38",
         "3:159",
@@ -1327,6 +1381,8 @@
       "id": "reconciliation",
       "number": 28,
       "theme": "Reconciliation",
+      "label": "Theme 28: Quran 49:9, 49:10 and 4:114",
+      "teaser": "Read Quran 49:9, 49:10 and 4:114 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "49:9",
         "49:10",
@@ -1376,6 +1432,8 @@
       "id": "hospitality",
       "number": 29,
       "theme": "Hospitality",
+      "label": "Theme 29: Quran 51:24, 51:26 and 51:27",
+      "teaser": "Read Quran 51:24, 51:26 and 51:27 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "51:24",
         "51:26",
@@ -1425,6 +1483,8 @@
       "id": "gentle-responses",
       "number": 30,
       "theme": "Gentle responses",
+      "label": "Theme 30: Quran 3:159, 20:44 and 25:63",
+      "teaser": "Read Quran 3:159, 20:44 and 25:63 together. Solve the matching Quran Connections puzzle before you reveal the theme.",
       "refs": [
         "3:159",
         "20:44",

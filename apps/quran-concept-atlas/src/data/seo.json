@@ -5,6 +5,6 @@
   "keyword": "Quran themes and concepts",
   "collection": "topics",
   "prefix": "topic",
-  "nameField": "theme",
-  "summaryField": "explanation"
+  "nameField": "label",
+  "summaryField": "teaser"
 }
