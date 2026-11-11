@@ -5,6 +5,9 @@ from urllib.parse import urlsplit,unquote
 import json,hashlib,re
 from content import ROOT
 
+def lf_sha256(path):
+    return hashlib.sha256(path.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
+
 class Page(HTMLParser):
     def __init__(self):super().__init__();self.ids=[];self.links=[];self.assets=[];self.headings=0;self.lang=None
     def handle_starttag(self,tag,attrs):
@@ -47,9 +50,10 @@ for app in sorted((ROOT/'apps').iterdir()):
         assert len(corpus)==6236 and len({v['ref'] for v in corpus})==6236
         check_text(corpus)
     provenance=json.loads((app/'src/data/provenance.json').read_text(encoding='utf-8'))
-    assert hashlib.sha256(content_path.read_bytes()).hexdigest()==provenance['appContentSha256']
+    # Checksums are taken over LF-normalized bytes so a Windows CRLF checkout and the LF blob in Git agree.
+    assert lf_sha256(content_path)==provenance['appContentSha256'],f'appContentSha256 mismatch: {app.name}'
     if provenance.get('corpusSha256'):
-        assert hashlib.sha256((app/'src/data/corpus.json').read_bytes()).hexdigest()==provenance['corpusSha256']
+        assert lf_sha256(app/'src/data/corpus.json')==provenance['corpusSha256'],f'corpusSha256 mismatch: {app.name}'
     pages=list(dist.rglob('*.html'))
     for path in pages:
         parsed=Page();parsed.feed(path.read_text(encoding='utf-8'))

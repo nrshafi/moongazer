@@ -1138,7 +1138,7 @@
     }
   ],
   "app": "quranic-places-atlas",
-  "appContentSha256": "c07bbb334bd1dbb3aa1ee76c0d08fb727d2bf93f7d621e1e086a52a0bf74da14",
+  "appContentSha256": "f6c42a7cfad54687c228bcfd3a8c1ea7d63241619c75976f7b11799f042b3a93",
   "batch3Commentary": {
     "endpoint": "https://mcp.quran.ai",
     "retrievedAt": "2026-10-27T17:39:30.408Z",

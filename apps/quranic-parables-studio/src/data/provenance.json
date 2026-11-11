@@ -1138,7 +1138,7 @@
     }
   ],
   "app": "quranic-parables-studio",
-  "appContentSha256": "2673e4ecece9ed9f52f2018d5bf4f730705aabc11d340eaadfd55eb5d568c9ae",
+  "appContentSha256": "d0ce184b77195b87a3d334e0ee2cd99c01374304ea9a2a0d404d9298c59fa076",
   "batch3Commentary": {
     "endpoint": "https://mcp.quran.ai",
     "retrievedAt": "2026-10-27T17:39:30.408Z",

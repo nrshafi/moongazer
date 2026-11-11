@@ -1138,7 +1138,7 @@
     }
   ],
   "app": "islamic-history-timeline-challenge",
-  "appContentSha256": "f92cd5741149fa19564cad499c9e890cd794dbe11453113452477ddddc391982",
+  "appContentSha256": "66c2289d677f7e727eb5b69539fb4522d8dd67754ba5f8b8bf76fec15bb7cec3",
   "batch3Commentary": {
     "endpoint": "https://mcp.quran.ai",
     "retrievedAt": "2026-10-27T17:39:30.408Z",
