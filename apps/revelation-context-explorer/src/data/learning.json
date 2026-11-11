@@ -22,12 +22,6 @@
       "description": "Look for wording in a local Quran translation and inspect the matching passages.",
       "kind": "Text search",
       "url": "https://is-this-actually-in-the-quran.moongazer.tech/"
-    },
-    {
-      "name": "Islamic Misinformation Casebook",
-      "description": "Examine a collection of claims and practice reading their supporting evidence.",
-      "kind": "Evidence practice",
-      "url": "https://islamic-misinformation-casebook.moongazer.tech/"
     }
   ],
   "collection": {

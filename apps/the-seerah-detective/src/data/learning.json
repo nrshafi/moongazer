@@ -22,12 +22,6 @@
       "description": "Follow the Prophet's life ﷺ through a connected timeline with source notes.",
       "kind": "Timeline",
       "url": "https://interactive-seerah-timeline.moongazer.tech/"
-    },
-    {
-      "name": "Islamic History Timeline Challenge",
-      "description": "Put events in order and learn the context behind the chronology.",
-      "kind": "Ordering game",
-      "url": "https://islamic-history-timeline-challenge.moongazer.tech/"
     }
   ],
   "collection": {

@@ -18,12 +18,6 @@
   ],
   "related": [
     {
-      "name": "Quran Concept Atlas",
-      "description": "Explore Quranic themes through linked concepts and cited passages.",
-      "kind": "Explorer",
-      "url": "https://quran-concept-atlas.moongazer.tech/"
-    },
-    {
       "name": "Guess the Surah",
       "description": "Follow the clues. Find the chapter. Get to know the Quran one discovery at a time.",
       "kind": "Quiz",

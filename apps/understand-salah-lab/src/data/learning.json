@@ -22,12 +22,6 @@
       "description": "Explore how new memorization and revision fit into the time you have.",
       "kind": "Planning tool",
       "url": "https://quran-memorization-workload-calculator.moongazer.tech/"
-    },
-    {
-      "name": "Quran Concept Atlas",
-      "description": "Explore Quranic themes through linked concepts and cited passages.",
-      "kind": "Explorer",
-      "url": "https://quran-concept-atlas.moongazer.tech/"
     }
   ],
   "collection": {
