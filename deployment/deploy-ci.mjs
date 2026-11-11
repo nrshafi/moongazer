@@ -9,7 +9,9 @@ if (!account || !token || !/^[a-f0-9]{40}$/i.test(commit || '')) {
   throw new Error('Missing Cloudflare credentials or valid commit SHA');
 }
 const targets = JSON.parse(await readFile(new URL('./targets.json', import.meta.url), 'utf8'));
-const projects = ['moongazer', ...targets.map(({slug}) => `moongazer-${slug}`)];
+// App projects only. The apex (`moongazer`) has Pages Functions and a D1 binding, so CI deploys it
+// with `wrangler pages deploy` from homepage/ in a separate step (see .github/workflows/deploy.yml).
+const projects = targets.map(({slug}) => `moongazer-${slug}`);
 const base = `https://api.cloudflare.com/client/v4/accounts/${encodeURIComponent(account)}/pages/projects`;
 
 async function request(path, options = {}) {
@@ -31,7 +33,7 @@ for (const project of projects) {
   uploadTokens[project] = result.jwt;
 }
 await new Promise((resolve, reject) => {
-  const child = spawn(process.execPath, ['deployment/upload-assets.mjs'], {stdio: ['pipe', 'inherit', 'inherit']});
+  const child = spawn(process.execPath, ['deployment/upload-assets.mjs', '--apps-only'], {stdio: ['pipe', 'inherit', 'inherit']});
   child.on('error', reject);
   child.on('exit', code => code === 0 ? resolve() : reject(new Error(`Asset upload failed: ${code}`)));
   child.stdin.on('error', reject);

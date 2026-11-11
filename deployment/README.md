@@ -37,7 +37,7 @@ Use the authenticated Cloudflare connector for project, deployment, domain and D
 4. Create a production deployment using `POST /accounts/{account_id}/pages/projects/{project_name}/deployments` and multipart FormData. Send `manifest` as the project's JSON path-to-hash mapping, `branch=main`, truthful commit metadata and the original `_headers` file as a text file part. Include `_redirects` only when it contains applicable path rules. Native API response schemas and the implementation used in this session establish these fields.
 5. Confirm the deployment's `latest_stage` is `deploy` with status `success`. Associate the custom domain through the Pages domains API, then ensure its proxied CNAME points at the actual Pages project subdomain. Allow distribution and certificate validation to settle, then verify the live responses. API success alone does not prove assets serve correctly.
 
-`--homepage-only` uploads just the directory. `--site=<project-name>` selects one project. Generate all manifests again with `--prepare-only` before a complete collection verification. No long-lived account token is created by this workflow.
+`--homepage-only` uploads just the directory. `--apps-only` skips it; CI uses this because the apex has Pages Functions and is deployed with `wrangler pages deploy` from `homepage/`. `--site=<project-name>` selects one project. Generate all manifests again with `--prepare-only` before a complete collection verification. No long-lived account token is created by this workflow.
 
 ## Response policy
 
