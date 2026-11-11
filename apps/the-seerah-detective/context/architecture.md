@@ -77,3 +77,10 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Anonymous event hook points (P4.7, 2026-11-11 Asia/Dhaka)
+
+Counter events go through `src/lib/counter.ts` (`track`). Item id is the case's stable `id`; no clue text or conclusion choice is sent.
+
+- `src/lib/investigation.ts`: `activity_started` on the first clue opened or the first conclusion chosen. `activity_completed` when the correct conclusion is reached. `share_clicked` on "Copy case link".
+- `src/lib/investigation.ts` (`feedback()`): the "Report an error" link under the case result (`data-open-feedback`).
