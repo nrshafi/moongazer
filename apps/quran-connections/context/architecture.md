@@ -85,3 +85,17 @@ The homepage build renders subject and About routes from authoritative local con
 ## Theme library (P3.3, 2026-11-11)
 
 `content.json` has a `themes` array (30 entries copied from Concept Atlas `topics`; ids equal puzzle ids; passages byte-identical to the puzzles). Each theme has a spoiler-free `title` ("Thread NN: Quran ...") and `description` used by `seo.ts` (collection `themes`, prefix `themes`). The theme name and explanation appear only inside a closed `<details>` on `/themes/<id>/` until the puzzle is solved or revealed. The mechanical "connected readings" were dropped. `/themes/` needs a section-index entry in `seo.ts` (not registered by `seo.json`).
+
+## First-party counter events (P4.7, 11 Nov 2026)
+
+`src/lib/counter.ts` (`track(event, itemId)`) sends one anonymous `sendBeacon` to `https://moongazer.tech/api/event`. No cookie, identifier or visitor text is sent. It is a silent no-op on preview hosts (anything not ending in `moongazer.tech`), when `navigator.globalPrivacyControl` is true, or when `sendBeacon` is missing. `activity_started` is de-duplicated per item for the page lifetime. The item id is the puzzle id (for example `patience`, `hope`).
+
+Hook points in `src/lib/puzzle.ts`:
+
+- Theme option click (`[data-theme]`): `track('activity_started', puzzle.id)` on every click (the helper keeps the first). On the intended theme, `track('activity_completed', puzzle.id)` runs after `complete()`.
+- "A little hint" (`#puzzle-hint`): `track('activity_started', puzzle.id)`. A hint is the first meaningful interaction, not a completion.
+- "Reveal the connection" (`#reveal-theme`): `track('activity_started', puzzle.id)` then `track('activity_completed', puzzle.id)`.
+- Copy result (`#share-result`, completion panel) and Copy puzzle link (`#share-puzzle`, sidebar): `track('share_clicked', <puzzle id>)`.
+- Feedback: the completion panel carries a `.feedback-link` with `data-open-feedback`.
+
+Puzzle ids are fixed slugs from `content.json`. No typed text, guessed labels beyond the fixed option labels, or saved state enters an id. No unit test was added: the hook points are wiring only.
