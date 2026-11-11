@@ -3,5 +3,6 @@
   "name": "Quran Concept Atlas",
   "description": "Follow connected themes through carefully cited Quran passages.",
   "accent": "teal",
+  "nav": "Read",
   "port": 4328
 }

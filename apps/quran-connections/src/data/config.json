@@ -3,5 +3,6 @@
   "name": "Quran Connections",
   "description": "Three passages. One connection. Follow the words, notice a shared thread, and explore the source.",
   "accent": "teal",
+  "nav": "Play",
   "port": 4322
 }

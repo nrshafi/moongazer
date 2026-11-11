@@ -3,5 +3,6 @@
   "name": "The Seerah Detective",
   "description": "Open a case, examine the reports, and let the evidence guide your conclusion.",
   "accent": "blue",
+  "nav": "Play",
   "port": 4323
 }

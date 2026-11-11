@@ -3,5 +3,6 @@
   "name": "Quranic Parables Studio",
   "description": "Explore Quranic comparisons through passages and interactive reading diagrams.",
   "accent": "blue",
+  "nav": "Read",
   "port": 4335
 }

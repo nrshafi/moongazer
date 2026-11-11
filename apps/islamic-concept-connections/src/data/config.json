@@ -3,5 +3,6 @@
   "name": "Islamic Concept Connections",
   "description": "Find four groups of related Islamic terms in a sixteen-tile puzzle.",
   "accent": "blue",
+  "nav": "Play",
   "port": 4332
 }

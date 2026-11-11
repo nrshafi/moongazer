@@ -16,6 +16,7 @@ export const SHARED = [
   'src/components/LearningGuide.astro',
   'src/lib/utils.ts',
   'src/lib/seo.ts',
+  'src/components/Honorific.astro',
   'src/pages/404.astro',
   'src/pages/privacy.astro',
   'src/pages/sitemap.xml.ts',

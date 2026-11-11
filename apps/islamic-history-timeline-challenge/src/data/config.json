@@ -3,5 +3,6 @@
   "name": "Islamic History Timeline Challenge",
   "description": "Arrange sourced events and explore the sequence behind them.",
   "accent": "violet",
+  "nav": "Play",
   "port": 4333
 }

@@ -13,3 +13,11 @@ main{max-width:1200px;padding-top:0}.intro{position:relative;isolation:isolate;m
 @media(max-width:580px){.header-inner{min-height:70px;padding:10px 18px}.brand{gap:8px}.brand-mark{width:34px;height:34px}nav{gap:12px}nav>a[aria-current=page]{text-underline-offset:8px}main{padding:0 18px 46px}.intro{min-height:0;padding:43px 0 37px;margin-bottom:23px}.intro:before,.intro:after{display:none}.intro h1{font-size:clamp(2.7rem,12vw,3.8rem);margin-bottom:15px}.intro p{font-size:.94rem}.panel,.panel-head{border-radius:13px}.panel-body{padding:22px}.panel-head{padding:18px 22px}.activity-card{min-height:0;padding:23px}.section-title h2,.collection-tools h2{font-size:1.5rem}.site-footer{margin-top:5px}}
 @media(prefers-reduced-motion:reduce){.button,.activity-card{transition:none}.button:hover,.activity-card:hover,.activity-card:focus-within{transform:none}}
 @media print{body{background:white}.intro{min-height:0;padding:0 0 18px}.intro:before,.intro:after{display:none}.panel,.activity-card:hover{box-shadow:none;transform:none}}
+
+/* Honorifics (P2): the U+FDFA glyph always renders in Amiri, even as plain text inside DM Sans or Newsreader runs.
+   Faces declared later with a narrower unicode-range win for that character. */
+@font-face{font-family:'DM Sans';src:url('/fonts/amiri.woff2') format('woff2');font-weight:100 900;unicode-range:U+FDFA;font-display:swap}
+@font-face{font-family:Newsreader;src:url('/fonts/amiri.woff2') format('woff2');font-weight:200 800;unicode-range:U+FDFA;font-display:swap}
+.honorific{font-family:Amiri,'Traditional Arabic',serif;font-size:1.05em;line-height:1;font-weight:400}
+/* Nav verb (P2): the tagline under the app name hides on narrow screens so the name and logo stay visible. */
+@media(max-width:720px){.brand small{display:none}}

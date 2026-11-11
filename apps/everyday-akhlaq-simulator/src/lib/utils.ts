@@ -28,3 +28,7 @@ export function cleanSeed(value: string | null) { return value && /^[a-zA-Z0-9_-
 export function challengeUrl(params: Record<string,string>) { const url=new URL(location.pathname,location.origin);for(const [key,value] of Object.entries(params)) url.searchParams.set(key,value);return url.href; }
 export function byId<T extends HTMLElement=HTMLElement>(id:string) { const element=document.getElementById(id);if(!element)throw new Error(`Missing #${id}`);return element as T; }
 export function focusHeading(root: HTMLElement) { const heading=root.querySelector<HTMLElement>('h2,h3');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});} }
+/** Honorific markup for client-rendered HTML. Concatenate only into already-escaped HTML (never pass it through esc()). */
+export const SAW = '<span class="honorific"><span aria-hidden="true" lang="ar">ﷺ</span><span class="sr-only">peace and blessings be upon him</span></span>';
+/** Wraps each plain ﷺ in already-escaped HTML with the accessible honorific markup. */
+export function withHonorifics(escapedHtml: string) { return escapedHtml.split('ﷺ').join(SAW); }

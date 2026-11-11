@@ -3,5 +3,6 @@
   "name": "Seerah Timeline",
   "description": "Explore the life of Prophet Muhammad ﷺ through a sourced chronology, one event at a time.",
   "accent": "teal",
+  "nav": "Read",
   "port": 4325
 }

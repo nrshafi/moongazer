@@ -3,5 +3,6 @@
   "name": "Is This Actually in the Quran?",
   "description": "Check wording against the Arabic Quran and Pickthall translation.",
   "accent": "blue",
+  "nav": "Search",
   "port": 4327
 }

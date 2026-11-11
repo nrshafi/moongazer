@@ -3,5 +3,6 @@
   "name": "The Islamic Knowledge Escape Room",
   "description": "Read the evidence. Solve four locks. Open a new route through the Quran.",
   "accent": "violet",
+  "nav": "Play",
   "port": 4329
 }

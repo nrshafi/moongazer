@@ -3,5 +3,6 @@
   "name": "Stories of the Prophets Explorer",
   "description": "Explore selected Quran passages about 25 named prophets.",
   "accent": "blue",
+  "nav": "Read",
   "port": 4330
 }

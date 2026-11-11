@@ -3,5 +3,6 @@
   "name": "Revelation Context Explorer",
   "description": "Read a passage beside the reports, and distinguish an occasion from its wider context.",
   "accent": "blue",
+  "nav": "Read",
   "port": 4338
 }

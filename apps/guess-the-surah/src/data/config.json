@@ -3,5 +3,6 @@
   "name": "Guess the Surah",
   "description": "A few clues. One surah. Discover how well you know the Quran, one thoughtful round at a time.",
   "accent": "teal",
+  "nav": "Play",
   "port": 4321
 }

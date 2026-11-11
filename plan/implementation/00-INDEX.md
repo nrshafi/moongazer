@@ -83,6 +83,7 @@ These files are byte-identical copies in every app (checked 11 Nov 2026). Only t
 - `src/components/LearningGuide.astro`
 - `src/lib/utils.ts`
 - `src/lib/seo.ts`
+- `src/components/Honorific.astro` (added in P2)
 - `src/pages/404.astro`, `src/pages/privacy.astro`, `src/pages/sitemap.xml.ts`
 - `public/_headers`
 

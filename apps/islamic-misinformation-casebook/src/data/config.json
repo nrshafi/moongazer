@@ -3,5 +3,6 @@
   "name": "Islamic Misinformation Casebook",
   "description": "Inspect a claim, open the evidence, and decide what the sources support.",
   "accent": "teal",
+  "nav": "Read",
   "port": 4340
 }

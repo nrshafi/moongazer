@@ -3,5 +3,6 @@
   "name": "Quran Memorization Workload Calculator",
   "description": "Plan new memorization alongside a growing revision workload.",
   "accent": "teal",
+  "nav": "Plan",
   "port": 4326
 }

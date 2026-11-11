@@ -3,5 +3,6 @@
   "name": "Islamic Civilization Timeline",
   "description": "Explore connected histories across regions, with dates and evidence in view.",
   "accent": "blue",
+  "nav": "Read",
   "port": 4336
 }
