@@ -98,3 +98,9 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 - Checks: see final results below.
 - Also updated public/favicon.svg aria-label to "Ayah Threads logo".
 - Checks (app folder): `bun run check` 0 errors/0 warnings; `bun test` 8 pass, 0 fail; `bun run build` 4 pages; dist has no old name except the intentional search keyword phrase "Quran connections game" in the description.
+
+## 2026-11-11 (Asia/Dhaka) — P3 T3.3 Theme library
+- Added `themes` (30) to content.json, `/themes/` index and `/themes/<id>/` pages, `src/lib/themes.ts`, `src/lib/state.ts` (shared puzzle-state validator, puzzle.ts now imports it), `src/lib/merge-import.ts`, home entry notice, seo.json collection, provenance note, `tests/themes.test.ts`.
+- Storage: `theme-bookmarks` (new); reads `puzzle`. Import rule: quran-concept-atlas `bookmarks` -> `theme-bookmarks`, union.
+- content.json LF sha256 d9c8f166b5378499c98f1995001933e9d02a70ad2c0d326b9468fe72f3643dc1.
+- Checks: `bun run check` 0/0/0; `bun test` 18 pass; `bun test _implementation/seo.test.ts` 9 pass. The build of `/themes/` fails with "Add metadata for the new page: /themes/" until seo.ts registers the section index; a build of a scratch copy with that one page added produced 35 pages, titles `<title> | Ayah Threads`, sitemap entries for 30 detail pages, and 0 text-join findings.

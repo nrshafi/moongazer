@@ -1,9 +1,8 @@
 import data from '../data/content.json';
 import { byId, read, write, forget, esc, shuffle, hash, copy, challengeUrl, focusHeading, announce } from './utils';
+import { known, validPuzzleState as valid, type PuzzleState } from './state';
 import './puzzle.css';
-type State={id:string;wrong:string[];hint:boolean;solved:boolean;revealed:boolean;completed:string[]};
-const known=(id:unknown)=>typeof id==='string'&&data.puzzles.some(p=>p.id===id);
-const valid=(value:unknown):value is State=>{if(!value||typeof value!=='object')return false;const v=value as State;return known(v.id)&&Array.isArray(v.wrong)&&v.wrong.length<=4&&v.wrong.every(s=>typeof s==='string')&&typeof v.hint==='boolean'&&typeof v.solved==='boolean'&&typeof v.revealed==='boolean'&&Array.isArray(v.completed)&&v.completed.length<=30&&v.completed.every(known);};
+type State=PuzzleState;
 const remember=byId<HTMLInputElement>('remember');remember.checked=read('remember',(v):v is boolean=>typeof v==='boolean')===true;
 const query=new URLSearchParams(location.search).get('puzzle');
 const fresh=(id:string):State=>({id,wrong:[],hint:false,solved:false,revealed:false,completed:[]});

@@ -3120,5 +3120,6 @@
     }
   ],
   "app": "quran-connections",
-  "appContentSha256": "1a5a022c38620c7e09fa1518416bc318dd1c3bf1363fd51b74111963057699cb"
+  "themesNote": "The themes array (30 theme-library entries: passages, theme names, explanations and Al-Muyassar links) was copied on 2026-11-11 from quran-concept-atlas src/data/content.json topics. The passage records are byte-identical to that app and to the puzzles here. The retrievedAt date and the editions above describe the original Quran MCP snapshot and still apply; the copy did not re-fetch any text. The title and description fields of each theme are neutral editorial text added in this app.",
+  "appContentSha256": "d9c8f166b5378499c98f1995001933e9d02a70ad2c0d326b9468fe72f3643dc1"
 }

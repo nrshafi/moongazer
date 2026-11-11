@@ -27,6 +27,7 @@ The user authorized Cloudflare Pages hosting at https://quran-connections.moonga
 
 - `src/pages/404.astro`
 - `src/pages/index.astro`
+- `src/pages/themes/index.astro` and `src/pages/themes/[id].astro` (Theme library, 30 routes, merged from Concept Atlas)
 - `src/pages/privacy.astro`
 - `src/pages/sources.astro`
 
@@ -42,7 +43,8 @@ The user authorized Cloudflare Pages hosting at https://quran-connections.moonga
 Stored records use the body app slug `quran-connections` and a colon, with `at` and `value` fields. The read helper validates shape/time, rejects timestamps more than 60 seconds ahead and records at least 30 days old, and tolerates unavailable storage. Initial theme setup validates a finite numeric timestamp, the 30-day age, the 60-second future tolerance and the light/dark value in Shell.astro; subsequent reads use the storage helper. Thirty days is an access-time expiry policy, not automatic deletion while the site is closed.
 
 - `theme`: the explicit light/dark preference, independent of activity recovery.
-- `remember` stores the recovery preference; `puzzle` stores validated puzzle state.
+- `remember` stores the recovery preference; `puzzle` stores validated puzzle state (validator shared in `src/lib/state.ts`; the Theme library reads `completed` plus the current solved/revealed puzzle from it, so it knows solved threads only when the visitor ticked "Remember my place").
+- `theme-bookmarks`: string list (at most 100 ids matching `/^[a-z-]{1,60}$/`) of saved themes. Written by the Theme library; filled by the `#import=` fragment from `quran-concept-atlas` key `bookmarks` (union merge, rules in `src/lib/merge-import.ts`).
 - Core activity state otherwise lives in memory. Clear-data removes this app's namespace and reloads; other apps are unaffected.
 
 ## Auth and access
@@ -79,3 +81,7 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 - Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Theme library (P3.3, 2026-11-11)
+
+`content.json` has a `themes` array (30 entries copied from Concept Atlas `topics`; ids equal puzzle ids; passages byte-identical to the puzzles). Each theme has a spoiler-free `title` ("Thread NN: Quran ...") and `description` used by `seo.ts` (collection `themes`, prefix `themes`). The theme name and explanation appear only inside a closed `<details>` on `/themes/<id>/` until the puzzle is solved or revealed. The mechanical "connected readings" were dropped. `/themes/` needs a section-index entry in `seo.ts` (not registered by `seo.json`).
