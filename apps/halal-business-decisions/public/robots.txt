@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://halal-business-decisions.moongazer.tech/sitemap.xml

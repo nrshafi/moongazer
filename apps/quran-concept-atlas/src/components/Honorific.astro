@@ -1,8 +1,0 @@
----
-// Honorifics for editorial text (never inside canonical quotations).
-// <Honorific /> after "the Prophet Muhammad" -> the ﷺ glyph in Amiri with an English accessible name.
-// <Honorific kind="other" /> after other prophets at first mention per page -> " (peace be upon him)".
-interface Props { kind?: 'saw' | 'other' }
-const { kind = 'saw' } = Astro.props;
----
-{kind === 'other' ? ' (peace be upon him)' : <span class="honorific"><span aria-hidden="true" lang="ar">ﷺ</span><span class="sr-only">peace and blessings be upon him</span></span>}

@@ -1,4 +1,0 @@
-import {test,expect} from 'bun:test';import {topics} from '../src/data/content.json';
-test('30 unique topics each expose three complete cited readings',()=>{expect(topics).toHaveLength(30);expect(new Set(topics.map(t=>t.id)).size).toBe(30);for(const t of topics){expect(t.passages).toHaveLength(3);expect(t.passages.every(p=>p.arabic&&p.translation&&p.translationUrl.startsWith('https://quran.com/'))).toBe(true);}});
-test('all related paths resolve and exclude the current topic',()=>{const ids=new Set(topics.map(t=>t.id));for(const t of topics){expect(t.related.length).toBeGreaterThan(0);expect(t.related.every(id=>ids.has(id)&&id!==t.id)).toBe(true);expect(new Set(t.related).size).toBe(t.related.length);}});
-test('each editorial topic has an exact retrieved commentary anchor',()=>{for(const t of topics)expect(t.commentaryUrl.startsWith('https://quran.com/'+t.anchor+'/tafsirs/')).toBe(true);});
