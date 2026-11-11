@@ -241,3 +241,18 @@ Not verified or still open:
 - Not run: remote D1 migrations, `wrangler pages deploy`, the zone rate-limit rule, and any live request. All are owner steps in T4.10.
 - Privacy wording (T4.9 and T4.6 step 5) is not drafted in this scope.
 - Local test rows and `homepage/.wrangler/` remain on this machine only (ignored by Git).
+
+## 2026-11-12T00:10:00+06:00 — P4 complete; R4 released by the agent (D2b)
+
+T4.5–T4.7 and T4.9–T4.10 done on `phase-4-services`. The owner gave full delegation on 2026-11-11, so production setup and the privacy wording were agent-approved (`plan/implementation/releases/R4.md`).
+- Production setup: D1 `moongazer` was migrated with `migrations apply --remote`. The CI token holds D1 Edit and Pages Edit. Rate-limit rule `017d4ac601c8412a9377b3f144a681cf` covers `/api/*` (10 requests per 10 s per IP, block for 10 s).
+- CI: the apex deploys with `wrangler pages deploy` and the apps with Direct Upload `--apps-only`.
+- Counter events are wired in 16 apps by four Haiku subagents. Hifz Planner waits for `phase-7-hifz`.
+- Found and fixed during verification:
+  - The shared footer form's `id="feedback"` clashed with many apps' own status lines; it is now `#site-feedback`.
+  - Astro dropped the word gaps inside the form; they are now explicit.
+- Validation: 20/20 check, 441 tests and 20/20 build. sync-shared identical; 62 repo tests; verify-static 383 pages; verify-seo passed (393 pages); text-join audit 0. `_implementation/counter-check.mjs` passed 14/14. A local `wrangler pages dev` curl run gave the expected 303/400/405/204 and stored the expected rows.
+- Limits:
+  - `homepage/functions/` is still not type-checked; esbuild compiles it through `wrangler pages functions build`.
+  - The beacon check samples 4 of 16 apps in a browser; the other 12 are covered by source-level tests and the build.
+  - Live results are recorded in R4 after CI.
