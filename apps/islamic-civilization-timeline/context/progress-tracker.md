@@ -85,7 +85,7 @@ Limitation: the component file keeps its existing CRLF line endings; the task as
 
 Renamed to Civilization Timeline. SEO title shortened to 'Civilization Timeline — Islamic history by region | Moongazer'. Descriptor is 'Islamic civilization across regions' (not 'from 632 onward': the events start in 661). record -> event, Map heading, 'At the same time…' heading, compare wording uses periods. No Muhammad or Prophet mentions in this app's editorial text. content.json (methodology only) changed; appContentSha256 71a8cd85... -> 42483ba9.... Checks: bun run check 0 errors; bun test 12 pass 0 fail; bun run build 28 pages; dist grep clean.
 
-## 2026-11-11 17:30 (Asia/Dhaka) - P4.7 event wiring
+## 2026-11-11 23:30 (Asia/Dhaka) - P4.7 event wiring
 
 All events use the stable id `timeline`: activity_started on the first filter or comparison, activity_completed once per page when a comparison is shown, share_clicked on copy buttons. Hook points are in `context/architecture.md`.
 

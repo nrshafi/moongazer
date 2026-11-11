@@ -100,7 +100,7 @@ Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 13 pass, 0 fai
 
 Added `/claims/` and 12 `/claims/<id>/` pages rebuilt from the casebook cases (claims people make, neutral questions, evidence, verdict revealed after Check, How to check). Storage key `claim-bookmarks`; import rule from `islamic-misinformation-casebook` `bookmarks` (union, ids mapped by `claimIdMap`). Search results show 'Common claim' links by keyword. Home has a Common claims notice. config description now 'Search every ayah in Arabic and English, and check popular claims'; seo.json title shortened and gains a `claims` collection. content.json hash 0df447fde977cfa71e309b279cad99df09d8ab56aaf373447791fb9f080a0f0a. Research record: `_implementation/research/merges/casebook-claims.json`. DRAFT: second-pass verification (C-content-track.md section 3) still pending. Checks: `bun run check` 0/0/0, `bun test` 29 pass, `bun run build` 17 pages, `_implementation/seo.test.ts` 9 pass, audit-text-joins 0 for this app, manual preview test of Check, Save and import.
 
-## 2026-11-11 17:31 (Asia/Dhaka) — P4 T4.7 counter events
+## 2026-11-11 23:31 (Asia/Dhaka) — P4 T4.7 counter events
 
 Wired the three counter events in `src/lib/app.ts` and `src/lib/claims-page.ts` and added Report an error links to results and claim status. Hook points are in `context/architecture.md`.
 

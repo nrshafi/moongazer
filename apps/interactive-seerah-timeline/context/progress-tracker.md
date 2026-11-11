@@ -105,7 +105,7 @@ Added the /challenge/ page (eyebrow "Seerah game", pack picker, four cards with 
 Checks: bun run check 0 errors, 0 warnings, 0 hints; bun test 23 pass, 0 fail (new challenge.test.ts, merge-import.test.ts); bun test _implementation/seo.test.ts 9 pass. bun run build in this app FAILS with "Add metadata for the new page: /challenge/" because seo.ts cannot register an extra page (seo.ts is shared and was not edited). A scratch copy with a one-line seo.ts patch built 41 pages, produced dist/challenge/index.html with title "Which came first? | Seerah Timeline", a sitemap entry and the home link. Required seo.ts change: after the `pages` object (before `export const seoPages`) add `for (const extra of (profile as {extraPages?: SeoPage[]}).extraPages ?? []) pages[extra.path] = extra;` (metadata is already in seo.json `extraPages`).
 Limitations: no browser run of the game; pointer drag is not implemented; the app dist/ is partial from the failed build until seo.ts is extended and the app is rebuilt.
 
-## 2026-11-11 17:30 (Asia/Dhaka) - P4.7 event wiring
+## 2026-11-11 23:30 (Asia/Dhaka) - P4.7 event wiring
 
 Pack moves send activity_started and a single activity_completed per page on a correct check or reveal, keyed by pack id. Share and event-link copies send share_clicked. The challenge status paragraph is now challenge-feedback, fixing a duplicate id with the footer form. Hook points are in `context/architecture.md`.
 

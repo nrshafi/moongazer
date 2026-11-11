@@ -94,7 +94,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 
 Renamed to Seerah Detective (config, seo, learning, home page, context, favicon label). SEO title shortened to 'Seerah Detective — Solve cases from the Prophet's life ﷺ | Moongazer'. Investigation -> case, evidence cards -> clues, Case file -> About this case, Find an investigation -> Search. Honorific added to one evidence text; investigation.ts wraps conclusion, hint and answers with withHonorifics. content.json changed; appContentSha256 8210b5cf... -> 7a140085.... Checks: bun run check 0 errors; bun test 8 pass 0 fail; bun run build 16 pages; dist grep clean (only the internal id investigation remains).
 
-## 2026-11-11 17:30 (Asia/Dhaka) - P4.7 event wiring
+## 2026-11-11 23:30 (Asia/Dhaka) - P4.7 event wiring
 
 First clue opened or conclusion chosen sends activity_started; a correct conclusion sends activity_completed; the case copy button sends share_clicked. All keyed by the case id. Hook points are in `context/architecture.md`.
 
