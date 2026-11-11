@@ -1,5 +1,9 @@
 # Repository progress tracker
 
+## Grill-me skill merge
+
+2026-11-11T01:09:58+06:00 Asia/Dhaka: Merged the `grilling` skill into `.agents/skills/grill-me/SKILL.md` and removed `.agents/skills/grilling/`. Grill-me now asks every question through the host's structured question tool (`AskUserQuestion` in Claude Code), with the recommended option listed first and the tool's built-in free-text choice for disagreement. It no longer lists questions in chat, and it uses chat formatting only when no such tool exists. It keeps the design-tree/frontier method, asks up to 4 questions per call, and finishes with a summary and a confirmation question. It no longer requires a sub-agent for fact lookups. The model can now invoke it from "grill" phrases, since `disable-model-invocation` was dropped. Validation: the frontmatter parses as YAML with only `name` and `description`, and `git diff --check` passes. No live grilling session or model evaluation was run.
+
 ## Design system recommendations and per-app DESIGN.md requirement
 
 2026-11-08T14:08:00+06:00 Asia/Dhaka: Created `plan/DESIGN_RECOMMENDATIONS.md` synthesizing the user-provided design reference library from https://opendesignmd.com/api/designs.json with Moongazer's 20-app portfolio and directory hub across five design archetypes. Established and documented the mandatory requirement across `plan/` (`plan/agents/00-START-HERE.md`, `plan/agents/08-moongazer-shell-and-directory.md`, `plan/REPORT.md`, and `plan/DESIGN_RECOMMENDATIONS.md`) that the repository root (`DESIGN.md`) and all apps built (`apps/<slug>/DESIGN.md`) will each have their own dedicated `DESIGN.md` file governing their portfolio-wide and app-local design fidelity. Documentation only; no runtime code or builds modified.
