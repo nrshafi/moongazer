@@ -1,8 +1,8 @@
 # Islamic Product Lab
 
-Open [Moongazer](https://moongazer.tech/) for the searchable directory of all twenty apps. Each app is published to its own full-name subdomain and independent Cloudflare Pages project. See [DEPLOYMENT.md](DEPLOYMENT.md) for every production URL.
+Open [Moongazer](https://moongazer.tech/) for the searchable directory of all sixteen apps. Each app is published to its own full-name subdomain and independent Cloudflare Pages project. See [DEPLOYMENT.md](DEPLOYMENT.md) for every production URL.
 
-Twenty independent static apps for Islamic learning, reading and practice. The collection includes games, timelines, source explorers and a Quran memorization workload calculator. Each app lives in `apps/` and can be built and deployed on its own.
+Sixteen independent static apps for Islamic learning, reading and practice. The collection includes games, timelines, source explorers and a Quran memorization workload calculator. Each app lives in `apps/` and can be built and deployed on its own.
 
 The apps use Astro 7.4.2, TypeScript 6.0.3 and Bun 1.4.4. They use bundled content and assets, with no accounts, database or runtime API required. Optional browser storage is app-specific; saved activity records expire when accessed after 30 days. Each app describes its sources and the limits of its editorial material.
 
@@ -17,19 +17,15 @@ The apps use Astro 7.4.2, TypeScript 6.0.3 and Bun 1.4.4. They use bundled conte
 | Interactive Seerah Timeline | [interactive-seerah-timeline](apps/interactive-seerah-timeline) | 4325 |
 | Quran Memorization Workload Calculator | [quran-memorization-workload-calculator](apps/quran-memorization-workload-calculator) | 4326 |
 | Is This Actually in the Quran? | [is-this-actually-in-the-quran](apps/is-this-actually-in-the-quran) | 4327 |
-| Quran Concept Atlas | [quran-concept-atlas](apps/quran-concept-atlas) | 4328 |
 | The Islamic Knowledge Escape Room | [islamic-knowledge-escape-room](apps/islamic-knowledge-escape-room) | 4329 |
 | Stories of the Prophets Explorer | [stories-of-the-prophets-explorer](apps/stories-of-the-prophets-explorer) | 4330 |
 | Quranic Places Atlas | [quranic-places-atlas](apps/quranic-places-atlas) | 4331 |
 | Islamic Concept Connections | [islamic-concept-connections](apps/islamic-concept-connections) | 4332 |
-| Islamic History Timeline Challenge | [islamic-history-timeline-challenge](apps/islamic-history-timeline-challenge) | 4333 |
 | Understand Salah Lab | [understand-salah-lab](apps/understand-salah-lab) | 4334 |
 | Quranic Parables Studio | [quranic-parables-studio](apps/quranic-parables-studio) | 4335 |
 | Islamic Civilization Timeline | [islamic-civilization-timeline](apps/islamic-civilization-timeline) | 4336 |
-| Halal Business Decisions | [halal-business-decisions](apps/halal-business-decisions) | 4337 |
 | Revelation Context Explorer | [revelation-context-explorer](apps/revelation-context-explorer) | 4338 |
 | Family Islamic Learning Challenges | [family-islamic-learning-challenges](apps/family-islamic-learning-challenges) | 4339 |
-| Islamic Misinformation Casebook | [islamic-misinformation-casebook](apps/islamic-misinformation-casebook) | 4340 |
 
 ## Run an app
 
@@ -61,4 +57,4 @@ bun run preview
 
 Build output and dependencies are ignored by Git. The `release/` archives and several QA reports mentioned in historical context are absent. Fresh static verification recreates `_implementation/qa/static-results.json`; release-specific logs and HTTP checks are in `deployment/evidence/`.
 
-Hosting uses Cloudflare Pages Direct Upload. Pushes to `main` automatically check, test, build and deploy the homepage and all twenty apps through GitHub Actions. See [deployment/status.json](deployment/status.json) for actual deployment and verification status. The apps retain their source attribution and rights notes and do not claim independent scholarly certification.
+Hosting uses Cloudflare Pages Direct Upload. Pushes to `main` automatically check, test, build and deploy the homepage and all sixteen apps through GitHub Actions. See [deployment/status.json](deployment/status.json) for actual deployment and verification status. The apps retain their source attribution and rights notes and do not claim independent scholarly certification.

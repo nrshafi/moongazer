@@ -21,19 +21,15 @@ The procedure below is a maintenance reference. Keep the existing Google verific
 - https://interactive-seerah-timeline.moongazer.tech/sitemap.xml
 - https://quran-memorization-workload-calculator.moongazer.tech/sitemap.xml
 - https://is-this-actually-in-the-quran.moongazer.tech/sitemap.xml
-- https://quran-concept-atlas.moongazer.tech/sitemap.xml
 - https://islamic-knowledge-escape-room.moongazer.tech/sitemap.xml
 - https://stories-of-the-prophets-explorer.moongazer.tech/sitemap.xml
 - https://quranic-places-atlas.moongazer.tech/sitemap.xml
 - https://islamic-concept-connections.moongazer.tech/sitemap.xml
-- https://islamic-history-timeline-challenge.moongazer.tech/sitemap.xml
 - https://understand-salah-lab.moongazer.tech/sitemap.xml
 - https://quranic-parables-studio.moongazer.tech/sitemap.xml
 - https://islamic-civilization-timeline.moongazer.tech/sitemap.xml
-- https://halal-business-decisions.moongazer.tech/sitemap.xml
 - https://revelation-context-explorer.moongazer.tech/sitemap.xml
 - https://family-islamic-learning-challenges.moongazer.tech/sitemap.xml
-- https://islamic-misinformation-casebook.moongazer.tech/sitemap.xml
 
 These contain 286 canonical, indexable URLs in total. A successful submission is a discovery signal, not a guarantee that every URL will be indexed or ranked. No sitemap pings, Indexing API workaround, analytics tag or unverified ownership claim is required.
 
