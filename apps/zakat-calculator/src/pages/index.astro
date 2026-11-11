@@ -1,0 +1,8 @@
+---
+import learning from '../data/learning.json';
+import Shell from '../layouts/Shell.astro';
+---
+<Shell title="Zakat Calculator">
+  <section class="intro"><div class="intro-top"><span class="eyebrow">Method first</span> <span class="pill"><span class="dot"></span>In preparation</span></div> <h1>{learning.heading}</h1> <p>Work out your zakat step by step, with the method shown. Each choice where scholars differ will be labelled, with its source, and no option will be selected for you.</p></section>
+  <div class="notice top-gap" role="status"><strong>The calculator is being prepared; its method and sources will be shown in full.</strong> Nothing is calculated on this page yet. See <a href="/sources/">sources and methodology</a> for the current state.</div>
+</Shell>
