@@ -1,0 +1,12 @@
+# Apex Pages project for moongazer.tech (Pages Functions + one D1 database).
+# Deploy from homepage/: npx wrangler pages deploy dist --project-name moongazer
+# Docs: https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+name = "moongazer"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-11-11"
+
+# Production D1 database "moongazer" (created earlier by the owner; not a secret).
+[[d1_databases]]
+binding = "DB"
+database_name = "moongazer"
+database_id = "254c1349-4dea-4398-a366-b920321eef41"
