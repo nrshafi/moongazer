@@ -319,5 +319,33 @@
     "recordedAt": "2026-10-29T20:15:10.540Z",
     "rootSitemapResubmittedAt": "2026-10-30T02:16:08+06:00"
   },
-  "seoGrowthRelease": "deployment/seo-growth-release.json"
+  "seoGrowthRelease": "deployment/seo-growth-release.json",
+  "firstPartyServices": {
+    "release": "R4",
+    "releasedAt": "2026-11-12T00:20:00+06:00",
+    "commit": "ecd6cdb",
+    "ciRun": 43073169216,
+    "ciNote": "First attempt: apps and apex deployed; live check failed 3/806 on edge propagation lag; rerun passed 806/806 and live SEO 477/477.",
+    "apexDeploy": "wrangler pages deploy (homepage/, Functions + D1 binding)",
+    "d1": {
+      "name": "moongazer",
+      "binding": "DB",
+      "id": "254c1349-4dea-4398-a366-b920321eef41",
+      "migrations": [
+        "0001_init.sql"
+      ]
+    },
+    "rateLimitRule": {
+      "id": "017d4ac601c8412a9377b3f144a681cf",
+      "name": "Moongazer API rate limit",
+      "scope": "moongazer.tech /api/*",
+      "limit": "10 requests per 10 s per IP",
+      "action": "block 10 s"
+    },
+    "liveTest": {
+      "feedback": "1 row via the Guess the Surah footer form; 303 to /feedback/thanks/?from=guess-the-surah; marked rejected",
+      "beacon": "activity_started + activity_completed for surah-82 stored, then the two test rows deleted",
+      "at": "2026-11-12T00:05+06:00"
+    }
+  }
 }
