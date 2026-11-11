@@ -1,7 +1,7 @@
 import {calendar} from './engine';
 import {byId, read, write, forget, esc, announce} from './utils';
 import {
-  buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isWizardInput, RAMADAN_SUGGESTION,
+  buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
   sessionViews, thisWeek, weeks, VOCAB, type BuildResult, type Kind, type SessionView, type WizardInput,
 } from './wizard';
 
@@ -14,9 +14,12 @@ const progress = document.querySelector<HTMLElement>('[role=progressbar]')!;
 const remember = byId<HTMLInputElement>('remember');
 const checkRemember = byId<HTMLInputElement>('remember-checks');
 const checkNote = byId('check-note');
+const replanNote = byId('replan-note');
 let step = 1;
 type Built = Extract<BuildResult, {ok: true}>;
 let built: Built | null = null;
+/** The input behind `built`. It changes after a re-plan. */
+let current: WizardInput | null = null;
 let views: SessionView[] = [];
 /** Checked-off items as `YYYY-MM-DD:kind`. Kept in memory; written to storage only when the visitor opts in. */
 let checked = new Set<string>();
@@ -101,6 +104,8 @@ function makePlan(): boolean {
     return false;
   }
   built = result;
+  current = input;
+  replanNote.textContent = '';
   views = sessionViews(result.rows, input);
   if (remember.checked) {
     if (!write('plan', input)) announce('Browser storage is unavailable. The plan still works.');
@@ -158,7 +163,7 @@ function renderPlan() {
     return;
   }
   const sessionsThisWeek = thisWeek(views);
-  results.innerHTML = `<div class="plan-summary"><p class="status-line" role="status">${status === 'complete' ? 'Your plan is ready.' : 'Your plan runs beyond the planner’s 3,650-session horizon.'} ${rows.length} study sessions.</p>${statCards(rows)}<p class="micro" id="checked-count">Checked off: ${checkedNewCount()} of ${rows.length} new lessons.</p><figure class="top-gap"><svg viewBox="0 0 800 180" role="img" aria-label="Revision minutes rise as new pages accumulate." style="width:100%;color:var(--accent)">${revisionCurve(rows)}</svg><figcaption class="micro">Revision minutes per study session. Exact values are in the calendar below.</figcaption></figure></div>
+  results.innerHTML = `<div class="plan-summary"><p class="status-line" role="status">${status === 'complete' ? 'Your plan is ready.' : 'Your plan runs beyond the planner’s 3,650-session horizon.'} ${rows.length} study sessions.</p>${statCards(rows)}<p class="micro" id="checked-count">Checked off in this plan: ${checkedNewCount()} of ${rows.length} new lessons.</p><figure class="top-gap"><svg viewBox="0 0 800 180" role="img" aria-label="Revision minutes rise as new pages accumulate." style="width:100%;color:var(--accent)">${revisionCurve(rows)}</svg><figcaption class="micro">Revision minutes per study session. Exact values are in the calendar below.</figcaption></figure></div>
     <h3 class="top-gap">This week</h3><div class="plan-summary">${sessionsThisWeek.length ? checklistHtml(sessionsThisWeek) : '<p class="micro">No study sessions fall in the first week with these settings.</p>'}</div>
     <h3 class="top-gap">Calendar</h3><p class="micro">Revision is split between recent and old pages in proportion to the pages memorized in the last review cycle. The split only divides the total revision time; it does not change the schedule.</p>
     <div class="calendar-section">${calendarHtml(views)}</div>
@@ -186,7 +191,36 @@ function setChecked(key: string, value: boolean) {
     if (el.dataset.check === key) el.checked = value;
   });
   const count = document.getElementById('checked-count');
-  if (count && built) count.textContent = `Checked off: ${checkedNewCount()} of ${built.rows.length} new lessons.`;
+  if (count && built) count.textContent = `Checked off in this plan: ${checkedNewCount()} of ${built.rows.length} new lessons.`;
+}
+
+/** Re-plans from today. Checked-off new lessons count as memorized; past sessions without one return to the queue. */
+function missedDay() {
+  if (!built || !current) return;
+  const today = todayIso();
+  if (today <= current.start) {
+    replanNote.textContent = 'Your plan has not started yet, so there is nothing to re-plan.';
+    return;
+  }
+  const result = replanFrom(current, today, checked);
+  if (result.status === 'done') {
+    replanNote.textContent = 'Every planned new lesson is checked off, so no pages are left to plan. Your check-offs are kept.';
+    return;
+  }
+  if (result.status === 'error' || !result.build) {
+    replanNote.textContent = result.error ?? 'The plan could not be re-planned.';
+    return;
+  }
+  if (!result.build.ok) {
+    replanNote.textContent = result.build.error;
+    return;
+  }
+  current = result.input!;
+  built = result.build;
+  views = sessionViews(built.rows, current);
+  if (remember.checked && !write('plan', current)) announce('Browser storage is unavailable. The re-planned schedule still works.');
+  renderPlan();
+  replanNote.textContent = `Re-planned from today. ${result.missed} past ${result.missed === 1 ? 'session' : 'sessions'} without a checked new lesson ${result.missed === 1 ? 'returns' : 'return'} to the queue, and ${result.completedPages.toFixed(2)} checked pages count as memorized. Your check-offs are kept.`;
 }
 
 function describeChecks(ok: boolean) {
@@ -215,6 +249,8 @@ function startOver() {
   forget('plan');
   forget('checkoffs');
   built = null;
+  current = null;
+  replanNote.textContent = '';
   views = [];
   checked = new Set();
   checkRemember.checked = false;
@@ -263,6 +299,7 @@ form.querySelectorAll<HTMLButtonElement>('[data-back]').forEach(button => {
 });
 byId('ramadan').onclick = applyRamadanSuggestion;
 byId('reset').onclick = startOver;
+byId('missed').onclick = missedDay;
 form.onsubmit = event => {
   event.preventDefault();
   if (step === 1) byId('error-1').textContent = '';

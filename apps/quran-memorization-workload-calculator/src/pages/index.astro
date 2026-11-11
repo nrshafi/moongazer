@@ -38,7 +38,7 @@ import '../styles/planner.css';
 </fieldset>
 <fieldset class="wizard-step" data-step="3" hidden>
 <legend tabindex="-1">Your plan</legend>
-<div class="plan-tools"><label class="check-label"><input id="remember-checks" type="checkbox"/> Remember my check-offs for 30 days</label><p class="micro" id="check-note" aria-live="polite"></p></div>
+<div class="plan-tools"><div class="actions"><button class="button secondary small" type="button" id="missed">I missed a day</button></div><p class="micro" id="replan-note" role="status"></p><label class="check-label"><input id="remember-checks" type="checkbox"/> Remember my check-offs for 30 days</label><p class="micro" id="check-note" aria-live="polite"></p></div>
 <div id="results" aria-live="polite"></div>
 <div class="wizard-nav"><button class="button secondary" type="button" data-back>Back</button><button class="button secondary" type="button" id="reset">Start again</button></div>
 </fieldset>
