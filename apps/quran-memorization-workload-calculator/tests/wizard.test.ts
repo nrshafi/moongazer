@@ -1,8 +1,8 @@
 import {test, expect} from 'bun:test';
-import {defaults, schedule} from '../src/lib/engine';
+import {calendar, defaults, schedule} from '../src/lib/engine';
 import {
   buildPlan, defaultAssumptions, isCheckoffList, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
-  isVocab, sessionViews, studyDays, thisWeek, toPlan, weeks, checkKey, type WizardInput,
+  isVocab, sessionViews, studyDays, thisWeek, toPlan, weeks, checkKey, withDailyReminder, type WizardInput,
 } from '../src/lib/wizard';
 
 const addDays = (iso: string, n: number) => {
@@ -162,4 +162,21 @@ test('the label setting accepts only the two known vocabularies', () => {
   expect(isVocab('sabaq')).toBe(true);
   expect(isVocab('plain')).toBe(true);
   for (const raw of ['Sabaq', '', null, 1, {}]) expect(isVocab(raw)).toBe(false);
+});
+
+test('the daily reminder repeats from the first to the last session and keeps the file well formed', () => {
+  const built = buildPlan(base({goal: 6}));
+  if (!built.ok) throw new Error('plan should build');
+  const now = new Date('2026-11-11T08:09:10Z');
+  const plain = calendar(built.rows, now);
+  const ics = withDailyReminder(plain, built.rows, now);
+  const last = built.rows.at(-1)!.date.replaceAll('-', '');
+  expect(ics.split('BEGIN:VEVENT')).toHaveLength(built.rows.length + 2);
+  expect(ics).toContain(`RRULE:FREQ=DAILY;UNTIL=${last}`);
+  expect(ics).toContain('DTSTART;VALUE=DATE:' + built.rows[0]!.date.replaceAll('-', ''));
+  expect(ics.endsWith('END:VCALENDAR\r\n')).toBe(true);
+  expect(ics.split('\r\n').filter(l => l === 'END:VCALENDAR')).toHaveLength(1);
+  const uids = ics.split('\r\n').filter(l => l.startsWith('UID:'));
+  expect(new Set(uids).size).toBe(uids.length);
+  expect(withDailyReminder(plain, [], now)).toBe(plain);
 });

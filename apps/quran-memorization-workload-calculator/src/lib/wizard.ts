@@ -1,4 +1,4 @@
-import {schedule, valid, defaults, type Plan} from './engine';
+import {schedule, valid, defaults, icsStamp, type Plan} from './engine';
 
 /** Pure wizard logic: inputs to plan, this-week checklist, calendar grouping and re-planning. No DOM, storage or clock. */
 
@@ -208,4 +208,28 @@ export function replanFrom(input: WizardInput, today: string, checked: ReadonlyS
   if (today <= input.start) return {status: 'ok', completedPages, missed, input, build: base};
   const next: WizardInput = {...input, memorized: input.memorized + completedPages, goal: remaining, start: today};
   return {status: 'ok', completedPages, missed, input: next, build: buildPlan(next)};
+}
+
+/**
+ * Adds a daily reminder to a calendar file made by calendar(). It is one all-day event that repeats every day
+ * from the first session to the last, so the reminder matches the plan's span. Returns the text unchanged when
+ * there are no sessions.
+ */
+export function withDailyReminder(ics: string, rows: readonly {date: string}[], now: Date): string {
+  if (!rows.length) return ics;
+  const stamp = icsStamp(now);
+  const first = rows[0]!.date;
+  const last = rows.at(-1)!.date;
+  const event = [
+    'BEGIN:VEVENT',
+    `UID:reminder-${first}-${stamp}@moongazer.tech`,
+    `DTSTAMP:${stamp}`,
+    `DTSTART;VALUE=DATE:${first.replaceAll('-', '')}`,
+    `RRULE:FREQ=DAILY;UNTIL=${last.replaceAll('-', '')}`,
+    "SUMMARY:Hifz Planner: check today's plan",
+    'DESCRIPTION:A daily reminder from your own plan. Dates are estimates from your study days.',
+    'TRANSP:TRANSPARENT',
+    'END:VEVENT',
+  ];
+  return ics.replace(/END:VCALENDAR\r\n$/, event.join('\r\n') + '\r\nEND:VCALENDAR\r\n');
 }

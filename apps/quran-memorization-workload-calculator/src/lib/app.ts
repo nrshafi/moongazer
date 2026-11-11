@@ -2,7 +2,7 @@ import {calendar} from './engine';
 import {byId, read, write, forget, esc, announce} from './utils';
 import {
   buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isVocab, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
-  sessionViews, thisWeek, weeks, VOCAB, type BuildResult, type Kind, type SessionView, type Vocab, type WizardInput,
+  sessionViews, thisWeek, weeks, VOCAB, withDailyReminder, type BuildResult, type Kind, type SessionView, type Vocab, type WizardInput,
 } from './wizard';
 
 const TOTAL_PAGES = 604;
@@ -170,10 +170,15 @@ function renderPlan() {
     <h3 class="top-gap">This week</h3><div class="plan-summary">${sessionsThisWeek.length ? checklistHtml(sessionsThisWeek) : '<p class="micro">No study sessions fall in the first week with these settings.</p>'}</div>
     <h3 class="top-gap">Calendar</h3><p class="micro">Revision is split between recent and old pages in proportion to the pages memorized in the last review cycle. The split only divides the total revision time; it does not change the schedule.</p>
     <div class="calendar-section">${calendarHtml(views)}</div>
-    <div class="actions top-gap"><button class="button secondary" type="button" id="csv">Download CSV</button><button class="button secondary" type="button" id="ics">Calendar file (first ${Math.min(90, rows.length)} sessions)</button><button class="button secondary" type="button" id="print-week">Print this week</button></div>
+    <label class="check top-gap"><input id="daily-reminder" type="checkbox"/> Add a daily reminder for the plan’s dates to the calendar file</label><div class="actions top-gap"><button class="button secondary" type="button" id="csv">Download CSV</button><button class="button secondary" type="button" id="ics">Calendar file (first ${Math.min(90, rows.length)} sessions)</button><button class="button secondary" type="button" id="print-week">Print this week</button></div>
     <p class="micro">Dates are estimates from your study days and assumptions. Check-offs do not change the schedule; use “I missed a day” to re-plan from today.</p>`;
   byId('csv').onclick = () => download('quran-study-plan.csv', 'date,new_pages,review_pages,total_minutes\r\n' + rows.map(r => [r.date, r.newPages.toFixed(3), r.reviewPages.toFixed(3), r.total.toFixed(2)].join(',')).join('\r\n'), 'text/csv');
-  byId('ics').onclick = () => download('quran-study-plan.ics', calendar(rows, new Date()), 'text/calendar');
+  byId('ics').onclick = () => {
+    const now = new Date();
+    const text = calendar(rows, now);
+    const withReminder = byId<HTMLInputElement>('daily-reminder').checked ? withDailyReminder(text, rows, now) : text;
+    download('quran-study-plan.ics', withReminder, 'text/calendar');
+  };
   byId('print-week').onclick = () => {
     renderPrintSheet();
     window.print();
