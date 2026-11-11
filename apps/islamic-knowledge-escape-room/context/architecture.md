@@ -80,3 +80,16 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 - Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## First-party counter events (P4.7, 11 Nov 2026)
+
+`src/lib/counter.ts` (`track(event, itemId)`) sends one anonymous `sendBeacon` to `https://moongazer.tech/api/event`. No cookie, identifier or visitor text is sent. It is a silent no-op on preview hosts (anything not ending in `moongazer.tech`), when `navigator.globalPrivacyControl` is true, or when `sendBeacon` is missing. `activity_started` is de-duplicated per item for the page lifetime. The item id is the room id (for example `patience`, `mercy`).
+
+Hook points in `src/lib/app.ts`:
+
+- Lock form submit (`#lock-form` `onsubmit`): `track('activity_started', room.id)` on every attempt (the helper keeps the first).
+- Fourth lock opened (`state.step` becomes 4 after a correct check): `track('activity_completed', room.id)`. Reveal and hint do not complete the room.
+- Copy completion (`#share`, completion panel): `track('share_clicked', room.id)`.
+- Feedback: the completion panel carries a `.feedback-link` with `data-open-feedback`.
+
+Room ids are fixed slugs from `content.json`. Typed answers, selected options, the seed and saved progress never enter an id. No unit test was added: the hook points are wiring only.
