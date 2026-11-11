@@ -1,0 +1,6 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import {esc,withHonorifics} from '../../lib/utils';
+import {claims} from '../../data/content.json';
+---
+<Shell title="Common claims"><section class="intro"><span class="eyebrow">Check before you share</span> <h1>Common claims</h1> <p>Twelve things people often say. Look at the evidence, make your choice, then check it yourself.</p></section><p id="saved-count" class="micro" role="status"></p><section class="card-grid" aria-label="Claims">{claims.map(c=><><article class="panel activity-card" data-claim={c.id}><h2><a href={`/claims/${c.id}/`}>{c.question}</a></h2> <p set:html={withHonorifics(esc(c.claim))}/> <div class="actions"><a class="button" href={`/claims/${c.id}/`}>Look at the evidence <span aria-hidden="true">→</span></a> <button type="button" class="button secondary" data-save={c.id} aria-pressed="false">Save</button></div></article>{' '}</>)}</section><div class="notice top-gap"><p>Each page lays out what people say and the sources. Nothing here is a ruling; it shows what the cited texts contain. <a href="/">Search the Quran <span aria-hidden="true">→</span></a></p></div><script>import '../../lib/claims-page';</script></Shell>

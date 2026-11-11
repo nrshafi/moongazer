@@ -1027,5 +1027,429 @@
       "bismillah_pre": true
     }
   ],
-  "verseCount": 6236
+  "verseCount": 6236,
+  "claimIdMap": {
+    "anger-strength": "strong-person-saying",
+    "hidden-defect": "blessing-in-a-sale",
+    "cave-web": "web-at-the-cave",
+    "night-date": "night-journey-date",
+    "safa-wording": "safa-marwa-no-sin",
+    "garden-cause": "garden-and-3-92",
+    "spider-material": "spider-house-29-41",
+    "ancestry": "honour-and-tribes",
+    "payment": "delaying-a-debt",
+    "truth-habit": "truthfulness-and-righteousness",
+    "voice-name": "voices-in-49-2",
+    "chronology": "chapter-96-order"
+  },
+  "claims": [
+    {
+      "id": "strong-person-saying",
+      "question": "Where does the saying about the strong person and anger come from?",
+      "claim": "The Quran says the strong person is the one who controls himself in anger, not the one who defeats others.",
+      "keywords": [
+        "strong person",
+        "controls himself",
+        "anger",
+        "angry"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "6114",
+            "url": "https://sunnah.com/bukhari:6114",
+            "summary": "Abu Hurayra reports a saying that sets defeating other people against controlling oneself in anger, and names the second as the mark of the strong."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This saying is reported in Sahih al-Bukhari 6114, and a search for its wording finds no ayah in the Pickthall text.",
+      "limit": "This compares wording only; other ayahs may speak about restraining anger in different words.",
+      "howToCheck": [
+        "Search \"controls himself\" in English: no ayah matches.",
+        "Search \"wrath\" in English and read each result in context to see what the ayahs say about anger.",
+        "Open Sahih al-Bukhari 6114 on sunnah.com and read the saying and its narrator."
+      ]
+    },
+    {
+      "id": "blessing-in-a-sale",
+      "question": "Where does the teaching about honesty, hidden defects and blessing in a sale come from?",
+      "claim": "The Quran says a sale is blessed when both sides are honest, and that hiding a defect takes the blessing away.",
+      "keywords": [
+        "sale",
+        "seller",
+        "buyer",
+        "defect",
+        "selling"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "2079",
+            "url": "https://sunnah.com/bukhari:2079",
+            "summary": "Hakim ibn Hizam reports that buyer and seller are blessed in their deal when they are truthful and open, and lose its blessing when they hide something or lie."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This teaching is reported in Sahih al-Bukhari 2079, and searching for its wording finds no matching ayah in the Pickthall text.",
+      "limit": "The report is not a complete legal ruling on any real dispute.",
+      "howToCheck": [
+        "Search \"seller\" and then \"buyer\" in English: nothing matches.",
+        "Search \"conceal\" in English and read each result in context to see whether any ayah says this.",
+        "Open Sahih al-Bukhari 2079 on sunnah.com."
+      ]
+    },
+    {
+      "id": "web-at-the-cave",
+      "question": "What do the sources say about a spider’s web at the cave?",
+      "claim": "The Quran says a spider spun a web over the cave, so the pursuers could not find the Prophet ﷺ and Abu Bakr.",
+      "keywords": [
+        "spider",
+        "web",
+        "cave",
+        "thawr"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "9:40",
+            "arabic": "إِلَّا تَنصُرُوهُ فَقَدْ نَصَرَهُ ٱللَّهُ إِذْ أَخْرَجَهُ ٱلَّذِينَ كَفَرُوا۟ ثَانِىَ ٱثْنَيْنِ إِذْ هُمَا فِى ٱلْغَارِ إِذْ يَقُولُ لِصَـٰحِبِهِۦ لَا تَحْزَنْ إِنَّ ٱللَّهَ مَعَنَا ۖ فَأَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَيْهِ وَأَيَّدَهُۥ بِجُنُودٍ لَّمْ تَرَوْهَا وَجَعَلَ كَلِمَةَ ٱلَّذِينَ كَفَرُوا۟ ٱلسُّفْلَىٰ ۗ وَكَلِمَةُ ٱللَّهِ هِىَ ٱلْعُلْيَا ۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
+            "translation": "If ye help him not, still Allah helped him when those who disbelieve drove him forth, the second of two; when they two were in the cave, when he said unto his comrade: Grieve not. Lo! Allah is with us. Then Allah caused His peace of reassurance to descend upon him and supported him with hosts ye cannot see, and made the word of those who disbelieved the nethermost, while Allah's Word it was that became the uppermost. Allah is Mighty, Wise."
+          },
+          {
+            "ref": "29:41",
+            "arabic": "مَثَلُ ٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ أَوْلِيَآءَ كَمَثَلِ ٱلْعَنكَبُوتِ ٱتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ ٱلْبُيُوتِ لَبَيْتُ ٱلْعَنكَبُوتِ ۖ لَوْ كَانُوا۟ يَعْلَمُونَ",
+            "translation": "The likeness of those who choose other patrons than Allah is as the likeness of the spider when she taketh unto herself a house, and lo! the frailest of all houses is the spider's house, if they but knew."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "summary": "Abu Bakr voices worry that the pursuers might see them in the cave, and he is reassured. This brief report mentions no web."
+          }
+        ]
+      },
+      "category": "Not found in the Quran",
+      "verdict": "Searching the Pickthall text for \"web\" finds nothing, \"spider\" finds only 29:41, and 9:40 mentions the cave without a spider.",
+      "limit": "This does not judge other narrations about the cave; it only shows what the Pickthall search and this one report contain.",
+      "howToCheck": [
+        "Search \"web\" in English: no ayah matches.",
+        "Search \"spider\" in English: only 29:41 appears. Read it in context.",
+        "Search \"cave\" in English and open 9:40: is a spider mentioned there?"
+      ]
+    },
+    {
+      "id": "night-journey-date",
+      "question": "What do the sources say about the date of the Night Journey?",
+      "claim": "The Quran gives the exact date of the Night Journey, such as 27 Rajab.",
+      "keywords": [
+        "night journey",
+        "isra",
+        "rajab",
+        "ascent",
+        "miraj",
+        "17:1"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "17:1",
+            "arabic": "سُبْحَـٰنَ ٱلَّذِىٓ أَسْرَىٰ بِعَبْدِهِۦ لَيْلًا مِّنَ ٱلْمَسْجِدِ ٱلْحَرَامِ إِلَى ٱلْمَسْجِدِ ٱلْأَقْصَا ٱلَّذِى بَـٰرَكْنَا حَوْلَهُۥ لِنُرِيَهُۥ مِنْ ءَايَـٰتِنَآ ۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+            "translation": "Glorified be He Who carried His servant by night from the Inviolable Place of Worship to the Far distant place of worship the neighbourhood whereof We have blessed, that We might show him of Our tokens! Lo! He, only He, is the Hearer, the Seer."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "3887",
+            "url": "https://sunnah.com/bukhari:3887",
+            "summary": "Malik ibn Sasaa reports the Night Journey and the ascent. The report gives no exact calendar date."
+          }
+        ]
+      },
+      "category": "Not found in the Quran",
+      "verdict": "17:1 speaks of a journey by night without any date, and \"Rajab\" is not found by search in the Pickthall text.",
+      "limit": "This is a finding about 17:1 and one report, not a survey of every discussion of the date.",
+      "howToCheck": [
+        "Search \"far distant\" in English to open 17:1 and read it for a date.",
+        "Search \"Rajab\" in English: nothing matches.",
+        "Open Sahih al-Bukhari 3887 on sunnah.com and look for a calendar date."
+      ]
+    },
+    {
+      "id": "safa-marwa-no-sin",
+      "question": "What does 2:158 say about going around Safa and Marwa?",
+      "claim": "“No sin” in 2:158 means that walking between Safa and Marwa is optional.",
+      "keywords": [
+        "safa",
+        "marwa",
+        "marwah",
+        "no sin",
+        "2:158"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "2:158",
+            "arabic": "۞ إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ",
+            "translation": "Lo! (the mountains) As-Safa and Al-Marwah are among the indications of Allah. It is therefore no sin for him who is on pilgrimage to the House (of Allah) or visiteth it, to go around them (as the pagan custom is). And he who doeth good of his own accord, (for him) lo! Allah is Responsive, Aware."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "1643",
+            "url": "https://sunnah.com/bukhari:1643",
+            "summary": "Urwa asks about the wording of 2:158 and infers that the walk can be skipped. Aisha rejects that and explains the earlier hesitation behind the wording."
+          }
+        ]
+      },
+      "category": "Misreads the source",
+      "verdict": "2:158 says it is no sin to go around them, and in Sahih al-Bukhari 1643 Aisha rejects the inference that this makes the walk optional and explains the hesitation behind the wording.",
+      "limit": "Legal detail and differences between schools need more than this short check.",
+      "howToCheck": [
+        "Search \"Safa\" in English to open 2:158 and read the whole ayah.",
+        "Search \"optional\" in English: nothing matches.",
+        "Open Sahih al-Bukhari 1643 on sunnah.com and read Aisha’s reply."
+      ]
+    },
+    {
+      "id": "garden-and-3-92",
+      "question": "How are 3:92 and Abu Talha’s garden connected?",
+      "claim": "3:92 was revealed because Abu Talha gave away his beloved garden.",
+      "keywords": [
+        "abu talha",
+        "beloved garden",
+        "that which ye love",
+        "3:92"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "3:92",
+            "arabic": "لَن تَنَالُوا۟ ٱلْبِرَّ حَتَّىٰ تُنفِقُوا۟ مِمَّا تُحِبُّونَ ۚ وَمَا تُنفِقُوا۟ مِن شَىْءٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ",
+            "translation": "Ye will not attain unto piety until ye spend of that which ye love. And whatsoever ye spend, Allah is Aware thereof."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "1461",
+            "url": "https://sunnah.com/bukhari:1461",
+            "summary": "Anas reports that Abu Talha, after hearing the teaching about spending what you love, offers his most beloved garden in charity."
+          }
+        ]
+      },
+      "category": "Misreads the source",
+      "verdict": "In Sahih al-Bukhari 1461 Abu Talha offers his garden in response to hearing 3:92, so the report puts his offer after the verse and not as its cause.",
+      "limit": "One account of a response does not list every circumstance known about a verse.",
+      "howToCheck": [
+        "Type 3:92 in the search box and read the whole ayah: does it mention a garden or a person?",
+        "Open Sahih al-Bukhari 1461 on sunnah.com.",
+        "Note whether the report puts the verse before or after the offer."
+      ]
+    },
+    {
+      "id": "spider-house-29-41",
+      "question": "What does 29:41 say about the spider’s house?",
+      "claim": "The Quran says the weakest of houses is the spider’s house.",
+      "keywords": [
+        "spider",
+        "frailest",
+        "weakest house",
+        "house of the spider",
+        "29:41"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "29:41",
+            "arabic": "مَثَلُ ٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ أَوْلِيَآءَ كَمَثَلِ ٱلْعَنكَبُوتِ ٱتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ ٱلْبُيُوتِ لَبَيْتُ ٱلْعَنكَبُوتِ ۖ لَوْ كَانُوا۟ يَعْلَمُونَ",
+            "translation": "The likeness of those who choose other patrons than Allah is as the likeness of the spider when she taketh unto herself a house, and lo! the frailest of all houses is the spider's house, if they but knew."
+          }
+        ],
+        "hadith": []
+      },
+      "category": "In the Quran (exact ayah)",
+      "verdict": "Yes: 29:41 says “the frailest of all houses is the spider’s house” (Pickthall), in a comparison about taking patrons other than Allah, not a ranking of materials.",
+      "limit": "The verse makes no claim about spider silk or any other fibre, strong or weak.",
+      "howToCheck": [
+        "Search \"spider\" in English: 29:41 appears.",
+        "Search \"frailest\" in English to see the Pickthall wording for “weakest”.",
+        "Read 29:41 in context: who is the comparison about?"
+      ]
+    },
+    {
+      "id": "honour-and-tribes",
+      "question": "What does 49:13 say about tribes and honour?",
+      "claim": "The Quran says honour in Allah’s sight does not come from tribe or ancestry, but from how a person conducts themselves.",
+      "keywords": [
+        "tribes",
+        "nations",
+        "noblest",
+        "best in conduct",
+        "ancestry",
+        "49:13"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "49:13",
+            "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
+            "translation": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware."
+          }
+        ],
+        "hadith": []
+      },
+      "category": "A paraphrase of an ayah",
+      "verdict": "This sums up 49:13, which says people were made into nations and tribes so that they may know one another, and that the noblest in Allah’s sight is the best in conduct (Pickthall).",
+      "limit": "The words “not ancestry” are a summary and do not appear in the ayah; this does not judge any person’s standing.",
+      "howToCheck": [
+        "Search \"tribes\" in English and open 49:13.",
+        "Search \"ancestry\" in English: nothing matches, so the ayah words it differently.",
+        "Search \"best in conduct\" in English and compare the wording with the claim."
+      ]
+    },
+    {
+      "id": "delaying-a-debt",
+      "question": "What do the sources say about delaying a debt you are able to pay?",
+      "claim": "The Quran says a rich person who delays paying a debt is acting unjustly.",
+      "keywords": [
+        "debt",
+        "debtor",
+        "delay",
+        "delaying",
+        "owe"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "2400",
+            "url": "https://sunnah.com/bukhari:2400",
+            "summary": "Abu Hurayra reports that when a person who is able to pay puts off paying, that delay is injustice."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This teaching is reported in Sahih al-Bukhari 2400, and a search for its wording finds no matching ayah in the Pickthall text.",
+      "limit": "It concerns a debtor who is able to pay; a debtor in real hardship is a different case with different sources.",
+      "howToCheck": [
+        "Search \"debtor\" in English: one ayah appears. Read it in context and see whether it says this.",
+        "Search \"delay\" in English and read the result.",
+        "Open Sahih al-Bukhari 2400 on sunnah.com."
+      ]
+    },
+    {
+      "id": "truthfulness-and-righteousness",
+      "question": "Where does the link between truthfulness and righteousness come from?",
+      "claim": "The Quran says truthfulness leads to righteousness and lying leads the other way.",
+      "keywords": [
+        "truthfulness",
+        "truthful",
+        "righteousness",
+        "lying",
+        "liar"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "6094",
+            "url": "https://sunnah.com/bukhari:6094",
+            "summary": "The report links the habit of truthfulness with righteousness and warns about the habit of lying."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This is a report in Sahih al-Bukhari 6094, and a search for its wording finds no ayah that states it in the Pickthall text.",
+      "limit": "This does not decide the moral state of any named person or settle every discussion about speech.",
+      "howToCheck": [
+        "Search \"truthfulness\" in English: one ayah appears. Read it in context.",
+        "Search \"righteousness\" and \"lying\" in English and read the results.",
+        "Open Sahih al-Bukhari 6094 on sunnah.com."
+      ]
+    },
+    {
+      "id": "voices-in-49-2",
+      "question": "What do the sources say about who the people in 49:2 were?",
+      "claim": "The Quran names the two men whose raised voices led to 49:2.",
+      "keywords": [
+        "voices",
+        "raise your voices",
+        "49:2"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "49:2",
+            "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَرْفَعُوٓا۟ أَصْوَٰتَكُمْ فَوْقَ صَوْتِ ٱلنَّبِىِّ وَلَا تَجْهَرُوا۟ لَهُۥ بِٱلْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَـٰلُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ",
+            "translation": "O ye who believe! Lift not up your voices above the voice of the Prophet, nor shout when speaking to him as ye shout one to another, lest your works be rendered vain while ye perceive not."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "4845",
+            "url": "https://sunnah.com/bukhari:4845",
+            "summary": "Ibn Abi Mulaika’s narration describes a disagreement with raised voices, and a narrator in the chain says he does not remember one of the names."
+          }
+        ]
+      },
+      "category": "Not found in the Quran",
+      "verdict": "49:2 tells believers not to raise their voices above the voice of the Prophet ﷺ and names no one, while the report in Sahih al-Bukhari 4845 keeps a narrator’s uncertainty about one name.",
+      "limit": "A gap in one narrator’s memory does not make every other detail of the report unknown.",
+      "howToCheck": [
+        "Search \"voices\" in English and open 49:2.",
+        "Read the ayah for any personal name.",
+        "Open Sahih al-Bukhari 4845 on sunnah.com and find where a narrator says he does not remember."
+      ]
+    },
+    {
+      "id": "chapter-96-order",
+      "question": "How should we read Al-Alaq’s place as chapter 96?",
+      "claim": "Al-Alaq is chapter 96, so its opening ayahs were revealed near the end of the mission.",
+      "keywords": [
+        "al-alaq",
+        "alaq",
+        "96:1",
+        "first revelation",
+        "hira"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "96:1-5",
+            "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+            "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "4953",
+            "url": "https://sunnah.com/bukhari:4953",
+            "summary": "Aisha’s report describes the beginning of revelation at Hira, opening with the instruction to read."
+          }
+        ]
+      },
+      "category": "Misreads the source",
+      "verdict": "A chapter’s number shows its place in the written Quran, not when it was revealed, and Sahih al-Bukhari 4953 describes the opening ayahs of Al-Alaq as the beginning of revelation.",
+      "limit": "This concerns the opening ayahs, not a date for every ayah of Al-Alaq.",
+      "howToCheck": [
+        "Type 96:1-5 in the search box and read the ayahs.",
+        "Open Sahih al-Bukhari 4953 on sunnah.com and read how it describes the start of revelation.",
+        "Ask whether a chapter number is a date."
+      ]
+    }
+  ]
 }

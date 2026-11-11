@@ -1,0 +1,286 @@
+{
+  "task": "T3.6 casebook to claims",
+  "status": "draft; second-pass verification still required (C-content-track.md section 3)",
+  "claimIdMap": {
+    "anger-strength": "strong-person-saying",
+    "hidden-defect": "blessing-in-a-sale",
+    "cave-web": "web-at-the-cave",
+    "night-date": "night-journey-date",
+    "safa-wording": "safa-marwa-no-sin",
+    "garden-cause": "garden-and-3-92",
+    "spider-material": "spider-house-29-41",
+    "ancestry": "honour-and-tribes",
+    "payment": "delaying-a-debt",
+    "truth-habit": "truthfulness-and-righteousness",
+    "voice-name": "voices-in-49-2",
+    "chronology": "chapter-96-order"
+  },
+  "claims": [
+    {
+      "oldCaseId": "anger-strength",
+      "newClaimId": "strong-person-saying",
+      "category": "A hadith, not the Quran",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 6114 https://sunnah.com/bukhari:6114"
+      ],
+      "quranRefs": []
+    },
+    {
+      "oldCaseId": "hidden-defect",
+      "newClaimId": "blessing-in-a-sale",
+      "category": "A hadith, not the Quran",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 2079",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 2079 https://sunnah.com/bukhari:2079"
+      ],
+      "quranRefs": []
+    },
+    {
+      "oldCaseId": "cave-web",
+      "newClaimId": "web-at-the-cave",
+      "category": "Not found in the Quran",
+      "casebookVerdict": "Beyond the cited evidence",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 3653 https://sunnah.com/bukhari:3653"
+      ],
+      "quranRefs": [
+        {
+          "ref": "9:40",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "addedForClaim": true
+        },
+        {
+          "ref": "29:41",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "addedForClaim": true
+        }
+      ]
+    },
+    {
+      "oldCaseId": "night-date",
+      "newClaimId": "night-journey-date",
+      "category": "Not found in the Quran",
+      "casebookVerdict": "Beyond the cited evidence",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 3887",
+          "url": "https://sunnah.com/bukhari:3887"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 3887 https://sunnah.com/bukhari:3887"
+      ],
+      "quranRefs": [
+        {
+          "ref": "17:1",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "addedForClaim": true
+        }
+      ]
+    },
+    {
+      "oldCaseId": "safa-wording",
+      "newClaimId": "safa-marwa-no-sin",
+      "category": "Misreads the source",
+      "casebookVerdict": "Needs context",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 1643",
+          "url": "https://sunnah.com/bukhari:1643"
+        },
+        {
+          "label": "Al-Tafsir al-Muyassar link in the casebook (not rendered)",
+          "url": "https://quran.com/2:158/tafsirs/16"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 1643 https://sunnah.com/bukhari:1643"
+      ],
+      "quranRefs": [
+        {
+          "ref": "2:158",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "matchesCasebookPassage": true
+        }
+      ]
+    },
+    {
+      "oldCaseId": "garden-cause",
+      "newClaimId": "garden-and-3-92",
+      "category": "Misreads the source",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 1461",
+          "url": "https://sunnah.com/bukhari:1461"
+        },
+        {
+          "label": "Al-Tafsir al-Muyassar link in the casebook (not rendered)",
+          "url": "https://quran.com/3:92/tafsirs/16"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 1461 https://sunnah.com/bukhari:1461"
+      ],
+      "quranRefs": [
+        {
+          "ref": "3:92",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "matchesCasebookPassage": true
+        }
+      ]
+    },
+    {
+      "oldCaseId": "spider-material",
+      "newClaimId": "spider-house-29-41",
+      "category": "In the Quran (exact ayah)",
+      "casebookVerdict": "Beyond the cited evidence",
+      "sourcesUsed": [
+        {
+          "label": "Al-Tafsir al-Muyassar link in the casebook (not rendered)",
+          "url": "https://quran.com/29:41/tafsirs/16"
+        }
+      ],
+      "hadithCited": [],
+      "quranRefs": [
+        {
+          "ref": "29:41",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "matchesCasebookPassage": true
+        }
+      ]
+    },
+    {
+      "oldCaseId": "ancestry",
+      "newClaimId": "honour-and-tribes",
+      "category": "A paraphrase of an ayah",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Al-Tafsir al-Muyassar link in the casebook (not rendered)",
+          "url": "https://quran.com/49:13/tafsirs/16"
+        }
+      ],
+      "hadithCited": [],
+      "quranRefs": [
+        {
+          "ref": "49:13",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "matchesCasebookPassage": true
+        }
+      ]
+    },
+    {
+      "oldCaseId": "payment",
+      "newClaimId": "delaying-a-debt",
+      "category": "A hadith, not the Quran",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 2400",
+          "url": "https://sunnah.com/bukhari:2400"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 2400 https://sunnah.com/bukhari:2400"
+      ],
+      "quranRefs": []
+    },
+    {
+      "oldCaseId": "truth-habit",
+      "newClaimId": "truthfulness-and-righteousness",
+      "category": "A hadith, not the Quran",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 6094 https://sunnah.com/bukhari:6094"
+      ],
+      "quranRefs": []
+    },
+    {
+      "oldCaseId": "voice-name",
+      "newClaimId": "voices-in-49-2",
+      "category": "Not found in the Quran",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 4845",
+          "url": "https://sunnah.com/bukhari:4845"
+        },
+        {
+          "label": "Al-Tafsir al-Muyassar link in the casebook (not rendered)",
+          "url": "https://quran.com/49:2/tafsirs/16"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 4845 https://sunnah.com/bukhari:4845"
+      ],
+      "quranRefs": [
+        {
+          "ref": "49:2",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "matchesCasebookPassage": true
+        }
+      ]
+    },
+    {
+      "oldCaseId": "chronology",
+      "newClaimId": "chapter-96-order",
+      "category": "Misreads the source",
+      "casebookVerdict": "Contradicted by the cited text",
+      "sourcesUsed": [
+        {
+          "label": "Sahih al-Bukhari 4953",
+          "url": "https://sunnah.com/bukhari:4953"
+        },
+        {
+          "label": "Al-Tafsir al-Muyassar link in the casebook (not rendered)",
+          "url": "https://quran.com/96:1/tafsirs/16"
+        }
+      ],
+      "hadithCited": [
+        "Sahih al-Bukhari 4953 https://sunnah.com/bukhari:4953"
+      ],
+      "quranRefs": [
+        {
+          "ref": "96:1-5",
+          "matchesCorpusJson": true,
+          "source": "this app corpus.json (en-pickthall, ar-uthmani-hafs)",
+          "matchesCasebookPassage": true
+        }
+      ]
+    }
+  ]
+}

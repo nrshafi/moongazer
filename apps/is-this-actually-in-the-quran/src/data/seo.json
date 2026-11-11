@@ -1,6 +1,20 @@
 {
-  "title": "Is It in the Quran? — Search every ayah | Moongazer",
+  "title": "Is It in the Quran? — Search and check claims | Moongazer",
   "shortName": "Is It in the Quran?",
-  "description": "Search Quran wording in Arabic and English, or look up an ayah by its reference. See each matching passage in context, with clear limits on paraphrase.",
-  "keyword": "search Quran wording"
+  "description": "Search Quran wording in Arabic and English, look up an ayah by its reference, and check twelve common claims against the text, with clear limits on paraphrase.",
+  "keyword": "search Quran wording",
+  "collection": "claims",
+  "prefix": "claims",
+  "nameField": "question",
+  "summaryField": "claim",
+  "detailLead": "Check a common claim",
+  "extraPages": [
+    {
+      "path": "/claims/",
+      "title": "Common claims | Is It in the Quran?",
+      "name": "Common claims",
+      "description": "Twelve things people often say about the Quran, set out with the exact text. Read the evidence, choose, then check it yourself with the Arabic and English search.",
+      "indexable": true
+    }
+  ]
 }

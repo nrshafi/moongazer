@@ -76,3 +76,10 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Common claims (P3 T3.6)
+
+- Routes `/claims/` and `/claims/<id>/` (12 claims from the retired Islamic Misinformation Casebook). Data: `claims` and `claimIdMap` (old case id to claim id) in `src/data/content.json`; Quran evidence records are byte-copies of `corpus.json`. Logic in `src/lib/claims.ts` (categories, keyword matching, bookmark validator), `claims-page.ts` (Save toggles, Check form), `merge-import.ts` (import rule from `islamic-misinformation-casebook`, key `bookmarks` to `claim-bookmarks`, union).
+- Storage key added: `claim-bookmarks` (list of claim ids, 30-day expiry like every key).
+- The verdict stays in a closed `<details>` (Show the answer) without JavaScript; with JavaScript it is hidden until Check.
+- `/claims/` is registered by a temporary shim in `src/pages/claims/index.astro` because `seo.ts` has no index-page registration; remove it once seo.ts supports it.
