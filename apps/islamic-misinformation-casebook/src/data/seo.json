@@ -6,6 +6,6 @@
   "collection": "cases",
   "prefix": "case",
   "nameField": "title",
-  "summaryField": "correction",
-  "detailLead": "Evidence-reading case"
+  "summaryField": "claim",
+  "detailLead": "Read the evidence and decide"
 }

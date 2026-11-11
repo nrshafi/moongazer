@@ -72,3 +72,9 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P1.8 metadata no longer gives the verdict
+
+`src/data/seo.json` now builds case descriptions from `claim` with the lead "Read the evidence and decide" instead of `correction`. New test `tests/seo-spoiler.test.ts` checks that no case description contains its correction. Verified: `bun test` (13 pass).
+
+Titles that state or strongly hint the verdict, left for the P3 merge rebuild: "A detail beyond a brief cave report", "A phrase detached from its report", "Response or cause?", "A house is not a tensile-strength claim", "Filling a narrator's blank", "The order of chapters is not a full event chronology".
