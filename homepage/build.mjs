@@ -6,12 +6,12 @@ import {origin,escapeHtml as e,metadata,appCards,collectionLinks,questions,docum
 const root=fileURLToPath(new URL('../',import.meta.url));
 const source=join(root,'homepage');
 const out=join(source,'dist');
-const allApps=JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'));
+const apps=JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'));
 // Retired apps (merged in P3) still deploy but are not listed in the directory.
-const apps=allApps.filter(app=>!app.retired);
+const apps=apps.filter(app=>!app.retired);
 const collections=JSON.parse(await readFile(join(source,'collections.json'),'utf8'));
 const bySlug=new Map(apps.map(app=>[app.slug,app]));
-if(allApps.length!==20||apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
+if(apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
 const home={path:'/',title:'Free Islamic Learning Apps & Quran Games | Moongazer',heading:'Free Islamic learning apps',description:'Explore sixteen free Islamic learning apps for Quran, Seerah, history and daily practice. Choose a reading tool or game and begin without an account.'};
 const allPages=[home];
 const paths=collections.map(collection=>{
@@ -32,7 +32,7 @@ await writeFile(join(out,'index.html'),template);
 for(const collection of collections){
   const selected=apps.filter(app=>app.category===collection.category);
   const meta={...collection,path:`/${collection.slug}/`};
-  const journeys=collection.paths.map(path=>`<article class="reading-path"><h3>${e(path.title)}</h3><ol>${path.items.map(item=>{const app=bySlug.get(item.slug);if(!app)throw new Error('Unknown or retired journey app: '+item.slug);if(item.path&&!/^\/[a-z0-9\/-]*$/.test(item.path))throw new Error('Invalid journey path');return `<li><a href="https://${app.slug}.moongazer.tech${item.path||'/'}">${e(item.label||app.name)}</a> <p>${e(item.reason)}</p></li>`;}).join(' ')}</ol></article>`).join(' ');
+  const journeys=collection.paths.map(path=>`<article class="reading-path"><h3>${e(path.title)}</h3><ol>${path.items.map(item=>{const app=bySlug.get(item.slug);if(!app)throw new Error('Unknown journey app: '+item.slug);if(item.path&&!/^\/[a-z0-9\/-]*$/.test(item.path))throw new Error('Invalid journey path');return `<li><a href="https://${app.slug}.moongazer.tech${item.path||'/'}">${e(item.label||app.name)}</a> <p>${e(item.reason)}</p></li>`;}).join(' ')}</ol></article>`).join(' ');
   const body=`<section class="reading-section"><h2>Choose a task before a tool</h2><p>${e(collection.guidance)}</p><div class="reading-paths">${journeys}</div></section><section class="reading-section"><h2>The ${e(collection.name.toLowerCase())} app collection</h2><p>Compare the ${selected.length} tools in this subject, then open the activity you want to try.</p><div class="app-grid">${appCards(selected)}</div></section><section class="reading-section"><h2>Questions before you begin</h2>${questions(collection.questions)}</section><section class="reading-section"><h2>Explore another subject</h2><nav class="reading-subjects" aria-label="Other learning subjects">${collectionLinks(collections.filter(c=>c.slug!==collection.slug))} <a href="/about/">Sources, purpose & corrections</a></nav></section>`;
   const folder=join(out,collection.slug);await mkdir(folder,{recursive:true});
   await writeFile(join(folder,'index.html'),documentPage(meta,body,collections,selected));
@@ -52,11 +52,11 @@ await mkdir(join(out,'feedback'),{recursive:true});
 await writeFile(join(out,'feedback/index.html'),documentPage(feedback,feedbackForm,collections));
 allPages.push(feedback);
 const thanks={path:'/feedback/thanks/',name:'Thank you',title:'Thank You | Moongazer',heading:'Thank you',eyebrow:'Message received',intro:'Your message is waiting for review. Corrections we make appear in the corrections log.',description:'Your message to Moongazer is waiting for review.',type:'WebPage',noindex:true,script:'/feedback.js'};
-const thanksBody=`<section class="reading-section"><p><a class="button" href="/" data-feedback-back data-apps="${allApps.map(app=>app.slug).join(' ')}">Back to Moongazer</a> <a href="/corrections/">Read the corrections log</a></p></section>`;
+const thanksBody=`<section class="reading-section"><p><a class="button" href="/" data-feedback-back data-apps="${apps.map(app=>app.slug).join(' ')}">Back to Moongazer</a> <a href="/corrections/">Read the corrections log</a></p></section>`;
 await mkdir(join(out,'feedback/thanks'),{recursive:true});
 await writeFile(join(out,'feedback/thanks/index.html'),documentPage(thanks,thanksBody,collections));
 const corrections=JSON.parse(await readFile(join(source,'corrections.json'),'utf8'));
-const appName=slug=>slug==='directory'?'Moongazer directory':(allApps.find(app=>app.slug===slug)?.name||slug);
+const appName=slug=>slug==='directory'?'Moongazer directory':(apps.find(app=>app.slug===slug)?.name||slug);
 for(const item of corrections){if(!/^\d{4}-\d{2}-\d{2}$/.test(item.date)||!/^https:\/\/([a-z0-9-]+\.)?moongazer\.tech\//.test(item.page_url)||!['visitor','review'].includes(item.found_by)||!item.change)throw new Error('Invalid correction entry');}
 const correctionRows=[...corrections].sort((a,b)=>b.date.localeCompare(a.date)).map(item=>`<li class="correction"><p class="correction-meta"><time datetime="${item.date}">${item.date}</time> · ${e(appName(item.app_slug))} · ${item.found_by==='visitor'?'Reported by a visitor':'Found in our own review'}</p> <p>${e(item.change)}</p> <a href="${e(item.page_url)}">Open the page <span aria-hidden="true">→</span></a></li>`).join('');
 const correctionsPage={path:'/corrections/',name:'Corrections log',title:'Corrections Log | Moongazer',heading:'Corrections log',eyebrow:'What we have fixed',intro:'Every correction to Moongazer\'s quotations, explanations or activities, newest first. Reporters\' details are never published.',description:'A public, dated list of corrections made to Moongazer apps: what changed, on which page, and whether a visitor or our own review found it.',type:'WebPage'};

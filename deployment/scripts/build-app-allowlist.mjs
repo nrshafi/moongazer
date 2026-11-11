@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 // Writes homepage/functions/_lib/apps.json: the app slug allowlist the feedback and event
-// Functions check against. Source: deployment/targets.json (every app, including retired apps
-// until P3 step B, plus the "directory" origin). Re-run whenever targets.json changes.
+// Functions check against. Source: deployment/targets.json (every app, plus the "directory" origin). Re-run whenever targets.json changes.
 // Usage: node deployment/scripts/build-app-allowlist.mjs
 import {mkdir, readFile, writeFile} from 'node:fs/promises';
 import {dirname, join} from 'node:path';

@@ -41,7 +41,6 @@
       }
     ],
     "related": [
-      "quran-concept-atlas",
       "guess-the-surah"
     ]
   },
@@ -64,8 +63,7 @@
       }
     ],
     "related": [
-      "interactive-seerah-timeline",
-      "islamic-history-timeline-challenge"
+      "interactive-seerah-timeline"
     ]
   },
   "everyday-akhlaq-simulator": {
@@ -87,8 +85,7 @@
       }
     ],
     "related": [
-      "family-islamic-learning-challenges",
-      "halal-business-decisions"
+      "family-islamic-learning-challenges"
     ]
   },
   "interactive-seerah-timeline": {
@@ -156,31 +153,7 @@
       }
     ],
     "related": [
-      "quran-concept-atlas",
       "revelation-context-explorer"
-    ]
-  },
-  "quran-concept-atlas": {
-    "heading": "Quran Concept Atlas",
-    "summary": "Quran Concept Atlas is a reading map of thirty themes and ninety selected passages. Open a theme, read its cited selections and follow related concepts when you want to compare another perspective. The groupings and suggested paths are editorial guides, with source and commentary references kept distinct from the quoted Quran text.",
-    "steps": [
-      "Choose a theme or search the concept catalog.",
-      "Open its selected passages and read the accompanying explanation and references.",
-      "Follow a related concept or save a reading to return to in this browser."
-    ],
-    "questions": [
-      {
-        "question": "Does the atlas include every passage on a theme?",
-        "answer": "No. It is a selected reading collection. Its thirty themes and ninety passages provide starting points, not an exhaustive index of every occurrence or a complete treatment of a subject."
-      },
-      {
-        "question": "Are the connections part of the quoted text?",
-        "answer": "The themes and paths are editorial organization. Quran quotations and attributed commentary have their own references. Read each passage in context rather than treating a connection as a replacement for tafsir."
-      }
-    ],
-    "related": [
-      "quranic-parables-studio",
-      "quran-connections"
     ]
   },
   "islamic-knowledge-escape-room": {
@@ -275,29 +248,6 @@
       "islamic-knowledge-escape-room"
     ]
   },
-  "islamic-history-timeline-challenge": {
-    "heading": "Islamic History Timeline Challenge",
-    "summary": "The Islamic History Timeline Challenge asks you to arrange four selected events from earliest to latest. Source clues accompany the cards, and the result explains the order with approximate dates and report limits. This edition focuses on events from the prophetic mission rather than claiming to cover the whole of Islamic history.",
-    "steps": [
-      "Read the four event cards and open their source clues if needed.",
-      "Move cards with the up and down buttons to arrange an earliest-to-latest sequence.",
-      "Check the order and compare the explanation, dates and source references."
-    ],
-    "questions": [
-      {
-        "question": "Do I need to drag the cards?",
-        "answer": "No. Use the up and down buttons to change the sequence. The activity supports ordering without dragging."
-      },
-      {
-        "question": "Are the displayed calendar years being tested?",
-        "answer": "Only the broad event order is scored. Conventional dates are approximate, and a report supporting an event may not provide its displayed CE year. More than one event can share a year."
-      }
-    ],
-    "related": [
-      "interactive-seerah-timeline",
-      "islamic-civilization-timeline"
-    ]
-  },
   "understand-salah-lab": {
     "heading": "Understand Your Salah",
     "summary": "Understand Your Salah explains the meanings of selected prayer recitations in fifteen lessons. Read the Arabic, reveal the meaning and check a detail from the wording. Lessons run from the opening takbir to the closing greeting. A local Al-Fatiha recording supports listening alongside the text, with its attribution available on the page.",
@@ -317,8 +267,7 @@
       }
     ],
     "related": [
-      "quran-memorization-workload-calculator",
-      "quran-concept-atlas"
+      "quran-memorization-workload-calculator"
     ]
   },
   "quranic-parables-studio": {
@@ -340,7 +289,6 @@
       }
     ],
     "related": [
-      "quran-concept-atlas",
       "is-this-actually-in-the-quran"
     ]
   },
@@ -367,29 +315,6 @@
       "quranic-places-atlas"
     ]
   },
-  "halal-business-decisions": {
-    "heading": "Halal Business Decisions",
-    "summary": "Halal Business Decisions is a source-reading activity built around twelve fictional business cases. Consider disclosure, promises and fair dealing, choose an action and inspect its imagined consequences. The cases make room for applied reasoning while keeping their educational purpose separate from certification of a real transaction or personalized advice.",
-    "steps": [
-      "Choose a case from the catalog and read the facts supplied.",
-      "Make a choice, inspect the fictional consequence and continue the case's reading steps.",
-      "Compare the source notes and explanation before applying the discussion to a real question."
-    ],
-    "questions": [
-      {
-        "question": "Can this app certify my business arrangement as halal?",
-        "answer": "No. The cases are fictional educational exercises. They do not certify real transactions or issue personalized rulings."
-      },
-      {
-        "question": "Should I use a case result as financial or legal advice?",
-        "answer": "No. A real transaction can involve facts and obligations outside the exercise. Use the sources for study and obtain appropriate qualified advice for a specific situation."
-      }
-    ],
-    "related": [
-      "everyday-akhlaq-simulator",
-      "islamic-misinformation-casebook"
-    ]
-  },
   "revelation-context-explorer": {
     "heading": "Why It Was Revealed",
     "summary": "Why It Was Revealed places ten selected readings beside named reports and careful notes. Compare a reported occasion with general context or with what happened after, and examine the limits of each report. The app helps you keep those categories distinct instead of treating every contextual report as the exclusive explanation of a passage.",
@@ -409,8 +334,7 @@
       }
     ],
     "related": [
-      "is-this-actually-in-the-quran",
-      "islamic-misinformation-casebook"
+      "is-this-actually-in-the-quran"
     ]
   },
   "family-islamic-learning-challenges": {
@@ -434,29 +358,6 @@
     "related": [
       "everyday-akhlaq-simulator",
       "islamic-knowledge-escape-room"
-    ]
-  },
-  "islamic-misinformation-casebook": {
-    "heading": "Islamic Misinformation Casebook",
-    "summary": "Islamic Misinformation Casebook is a fixed collection of twelve evidence-reading exercises. Open a constructed claim, inspect the cited material and choose a conclusion that stays within the evidence. You can then copy a correction with its references. It practices source reading without claiming to verify every live post or measure which claims are currently viral.",
-    "steps": [
-      "Choose a claim from the case catalog.",
-      "Read the evidence before selecting the conclusion it supports.",
-      "Inspect the explanation and copy the correction with its references if useful."
-    ],
-    "questions": [
-      {
-        "question": "Can I paste a social media post here for automatic fact-checking?",
-        "answer": "No. The app uses a fixed, cited set of cases. It does not evaluate arbitrary visitor claims or perform a live fact-checking service."
-      },
-      {
-        "question": "Does Beyond the cited evidence mean false in every context?",
-        "answer": "No. It keeps the conclusion narrower than a universal rejection. The exercise asks what this evidence supports, rather than claiming that every possible source or context has been examined."
-      }
-    ],
-    "related": [
-      "revelation-context-explorer",
-      "halal-business-decisions"
     ]
   }
 }

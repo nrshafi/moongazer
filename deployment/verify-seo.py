@@ -12,12 +12,6 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'deployment/evidence/seo'
 targets = json.loads((ROOT/'deployment/targets.json').read_text(encoding='utf-8'))
-# P3 step A: retired apps still deploy, but their pages carry canonicals to the receiving app and the directory omits them.
-active = [app for app in targets if not app.get('retired')]
-merge_map = json.loads((ROOT/'deployment/merge-redirects.json').read_text(encoding='utf-8'))
-def expected_canonical(url):
-    parts = urlsplit(url); entry = merge_map.get(f'{parts.scheme}://{parts.netloc}')
-    return entry['paths'].get(parts.path, entry['paths']['*']) if entry else url
 collections = json.loads((ROOT/'homepage/collections.json').read_text(encoding='utf-8'))
 learning_guides = json.loads((ROOT/'deployment/learning-guides.json').read_text(encoding='utf-8'))
 sites = [('moongazer', 'https://moongazer.tech/', ROOT/'homepage/dist')]
@@ -99,8 +93,8 @@ def inspect(html, url, homepage=False, missing=False):
     assert webpage['url'] == url
     if homepage and origin.path == '/':
         listing = next(node for node in graph if node['@type'] == 'ItemList')
-        assert listing['numberOfItems'] == len(active) == len(listing['itemListElement'])
-        assert {item['url'] for item in listing['itemListElement']} == {f"https://{app['slug']}.moongazer.tech/" for app in active}
+        assert listing['numberOfItems'] == len(targets) == len(listing['itemListElement'])
+        assert {item['url'] for item in listing['itemListElement']} == {f"https://{app['slug']}.moongazer.tech/" for app in targets}
     else:
         assert p.breadcrumb, ('visible breadcrumb', url)
         crumbs = next(node for node in graph if node['@type'] == 'BreadcrumbList')['itemListElement']
@@ -112,7 +106,7 @@ def inspect(html, url, homepage=False, missing=False):
         if homepage:
             collection = next((c for c in collections if origin.path == '/'+c['slug']+'/'), None)
             if collection:
-                expected = {f"https://{app['slug']}.moongazer.tech/" for app in active if app['category']==collection['category']}
+                expected = {f"https://{app['slug']}.moongazer.tech/" for app in targets if app['category']==collection['category']}
                 listing = next(node for node in graph if node['@type']=='ItemList')
                 assert {item['url'] for item in listing['itemListElement']} == expected
                 assert listing['numberOfItems'] == len(expected)
@@ -185,7 +179,7 @@ for collection in collections:
     assert len(incoming.get(url,set()))>=3, ('Insufficient incoming guide links',url)
 assert len(incoming.get('https://moongazer.tech/about/',set()))>=3
 llms=(ROOT/'homepage/dist/llms.txt').read_text(encoding='utf-8')
-assert all(f'https://{app["slug"]}.moongazer.tech/' in llms for app in active)
+assert all(f'https://{app["slug"]}.moongazer.tech/' in llms for app in targets)
 assert all('https://moongazer.tech/'+c['slug']+'/' in llms for c in collections)
 report = {'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sites':len(sites),'pages':len(pages),
           'indexable':sum(r['indexable'] for r in results),'passed':True,'hosts':results,'metadata':pages}

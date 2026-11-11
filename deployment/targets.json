@@ -6,17 +6,13 @@
   {"slug":"interactive-seerah-timeline","name":"Seerah Timeline","category":"Seerah & history","kind":"Timeline","icon":"timeline","description":"The Prophet's life ﷺ from 610 to 632"},
   {"slug":"quran-memorization-workload-calculator","name":"Hifz Planner","category":"Everyday practice","kind":"Planner","icon":"calculator","description":"Estimate new memorization and revision time for your week"},
   {"slug":"is-this-actually-in-the-quran","name":"Is It in the Quran?","category":"Quran","kind":"Search","icon":"check","description":"Search every ayah in Arabic and English"},
-  {"slug":"quran-concept-atlas","retired":"quran-connections","name":"Quran Concept Atlas","category":"Quran","kind":"Explorer","icon":"orbit","description":"Explore Quranic themes through linked concepts and cited passages."},
   {"slug":"islamic-knowledge-escape-room","name":"Quran Escape Room","category":"Games & challenges","kind":"Puzzle","icon":"key","description":"Rooms of Quran puzzles to solve together"},
   {"slug":"stories-of-the-prophets-explorer","name":"Stories of the Prophets","category":"Quran","kind":"Reader","icon":"book","description":"The prophets in the Quran: read, reflect and check"},
   {"slug":"quranic-places-atlas","name":"Places in the Quran","category":"Quran","kind":"Map","icon":"pin","description":"A map of the places the Quran names, and where certainty ends"},
   {"slug":"islamic-concept-connections","name":"Word Groups","category":"Games & challenges","kind":"Puzzle","icon":"grid","description":"Sixteen Quran words, four hidden groups"},
-  {"slug":"islamic-history-timeline-challenge","retired":"interactive-seerah-timeline","name":"Islamic History Timeline Challenge","category":"Games & challenges","kind":"Ordering game","icon":"timeline","description":"Put events in order and learn the context behind the chronology."},
   {"slug":"understand-salah-lab","name":"Understand Your Salah","category":"Everyday practice","kind":"Course","icon":"arch","description":"The meaning of the words you say in prayer","featured":true},
   {"slug":"quranic-parables-studio","name":"Parables of the Quran","category":"Quran","kind":"Reader","icon":"leaf","description":"The Quran's parables, explained"},
   {"slug":"islamic-civilization-timeline","name":"Civilization Timeline","category":"Seerah & history","kind":"Timeline","icon":"arch","description":"Islamic civilization across regions"},
-  {"slug":"halal-business-decisions","retired":"everyday-akhlaq-simulator","name":"Halal Business Decisions","category":"Everyday practice","kind":"Case studies","icon":"balance","description":"Think through fictional business decisions with source-based reading notes."},
   {"slug":"revelation-context-explorer","name":"Why It Was Revealed","category":"Quran","kind":"Reader","icon":"book","description":"Asbab al-nuzul: the reports behind selected ayat"},
-  {"slug":"family-islamic-learning-challenges","name":"Family Halaqa","category":"Games & challenges","kind":"Activities","icon":"people","description":"Ten-minute Islamic activities to do together"},
-  {"slug":"islamic-misinformation-casebook","retired":"is-this-actually-in-the-quran","name":"Islamic Misinformation Casebook","category":"Everyday practice","kind":"Evidence practice","icon":"search","description":"Examine a collection of claims and practice reading their supporting evidence."}
+  {"slug":"family-islamic-learning-challenges","name":"Family Halaqa","category":"Games & challenges","kind":"Activities","icon":"people","description":"Ten-minute Islamic activities to do together"}
 ]
