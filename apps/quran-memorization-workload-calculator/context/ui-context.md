@@ -34,7 +34,7 @@ The actual token definitions live in the app's `src/styles/global.css`. Use thes
 
 The home page is a three-step wizard, one step visible at a time. Each step is a `<fieldset>` with a `<legend>`, a "Step N of 3" line and a progress track, with Back and Next buttons. Results and status messages go to an `aria-live` region. Every step is keyboard operable, and focus moves to the step's heading when the step changes.
 
-- Step 1, "What have you memorized?": existing pages and new-page goal (juz and surah choosers wait for page data; see project-overview).
+- Step 1, "What have you memorized?": the pages-already-memorized number and new-page goal, plus a "Choose by juz or by surah" drawer with two native checkbox fieldsets (juz 1 to 30, surahs 1 to 114 by transliterated name). Each checkbox label gives its page range. The grids use two columns at 390 px, without nested scrolling.
 - Step 2, "Your week": days per week, minutes per session, start date, the "Ramadan pace" suggestion button and the "Adjust assumptions" `<details>` drawer with plain labels.
 - Step 3, "Your plan": this-week checklist, calendar view, check-offs, "I missed a day", label setting, print button, `.ics` export.
 
