@@ -95,6 +95,6 @@ Track Google Search Console query discovery, direct WhatsApp sharing, and qualit
 
 ## 6. Embracing learning, setbacks, and corrections
 
-1. **Prune and merge weak work.** When an app duplicates another or falls short, merge or rebuild it rather than defending sunk cost. Fold `quran-concept-atlas`, `islamic-history-timeline-challenge`, `halal-business-decisions`, and `islamic-misinformation-casebook` into the four host apps specified in Brief 10 with 301 redirects.
+1. **Prune and merge weak work.** When an app duplicates another or falls short, merge or rebuild it rather than defending sunk cost. Fold `quran-concept-atlas`, `islamic-history-timeline-challenge`, `halal-business-decisions`, and `islamic-misinformation-casebook` into the four host apps specified in Brief 10. Under D2c (12 November 2026) the old apps were deleted outright with no redirects.
 2. **Fix defects before adding features.** Trust-damaging defects in Brief 06 take priority over visual redesigns or new apps.
 3. **Community-driven corrections in place of an in-house scholar reviewer.** Because recruiting a dedicated Islamic studies reviewer is not currently possible, pair strict primary-source attribution with a built-in first-party **"Report an error or suggest feedback"** form in every app footer and result panel, backed by a public Corrections Log on the directory.

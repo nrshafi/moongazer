@@ -108,6 +108,7 @@ Lane: deploy (owner). As T1.21. Record the go-live date in `releases/R3.md` and 
 
 ## Step B — permanent redirects (no sooner than R3 + 14 days)
 
+> **Superseded by D2c (12 November 2026):** T3.9–T3.11 are not done. The four apps were deleted with no moved release and no redirects.
 ### T3.11 Prepare redirect-only builds
 Lane: shared · Depends on: R3 live ≥ 14 days
 Preferred method: keep each old Pages project and redeploy it with a redirect-only output: a `_redirects` file with path rules and absolute destinations (for example `/case/* https://everyday-akhlaq-simulator.moongazer.tech/business/:splat 301`), plus `/* https://<receiver>/ 301` last. Before using it, verify in Cloudflare's current Pages `_redirects` documentation that absolute destination URLs and splats are supported and record the URL in `context/architecture.md`. Fallback if not supported or limits are exceeded: zone Single Redirect rules (check the plan's rule limit first; the existing www→apex rule lives there).

@@ -2,11 +2,11 @@
 
 ## GitHub Actions deployment
 
-Pushes to main check, test and build all twenty apps and the directory, then deploy all existing Direct Upload projects using project-scoped asset hashes. Account and token credentials stay in GitHub Actions secrets. The first production run passed 646/646 live checks; deployment/automation-result.json records it.
+Pushes to main check, test and build all sixteen apps and the directory, then deploy all existing Direct Upload projects using project-scoped asset hashes. Account and token credentials stay in GitHub Actions secrets. The first production run passed 646/646 live checks; deployment/automation-result.json records it.
 
 ## Stack and project model
 
-Twenty independent Astro 7.4.2 applications use Bun 1.4.4, TypeScript 6.0.3 and @astrojs/check 0.9.12. Every app has its own package.json, bun.lock, strict tsconfig, static Astro configuration, copied layout/styles/helpers, bundled content and public assets. The repository root is not a package workspace. There is no authentication service or account system. The only runtime server code is the first-party service boundary below (P4), which serves the apex origin only.
+Sixteen independent Astro 7.4.2 applications use Bun 1.4.4, TypeScript 6.0.3 and @astrojs/check 0.9.12. Every app has its own package.json, bun.lock, strict tsconfig, static Astro configuration, copied layout/styles/helpers, bundled content and public assets. The repository root is not a package workspace. There is no authentication service or account system. The only runtime server code is the first-party service boundary below (P4), which serves the apex origin only.
 
 ## First-party services (P4)
 
@@ -110,7 +110,7 @@ The shell listens for pointerdown and Tab keydown and sets a transient `data-inp
 
 ## Git repository layout
 
-The portfolio is prepared as one Git repository with all twenty independent apps, shared research, and verification records. Each app retains its own manifest, lockfile, build and deploy settings; this is not a Bun workspace. App-local ignore rules also apply when an app is copied out.
+The portfolio is prepared as one Git repository with all sixteen independent apps, shared research, and verification records. Each app retains its own manifest, lockfile, build and deploy settings; this is not a Bun workspace. App-local ignore rules also apply when an app is copied out.
 
 ## SEO release, 30 October 2026
 
@@ -124,18 +124,17 @@ Search Console is an external administrative Domain property for moongazer.tech.
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
-## Merges (P3, from 11 November 2026)
+## Merges (P3, finished under D2c, 12 November 2026)
 
-Four apps fold into hosts in two steps (D19 in `plan/implementation/00-INDEX.md`):
+Four apps were folded into receiving sections and then **deleted outright** (D2c in `plan/implementation/00-INDEX.md`): there is no "moved" release, no redirect, no saved-item import and no `retired` flag. The 16 remaining apps are the only entries in `deployment/targets.json`, `seo-catalog.json`, `learning-guides.json` and the app allowlist.
 
-| Old app | Receiving app and route |
+| Receiving app | Section (kept) |
 | --- | --- |
-| `quran-concept-atlas` `/topic/<id>/` | `quran-connections` (Ayah Threads) `/themes/<id>/` |
-| `islamic-history-timeline-challenge` `/` | `interactive-seerah-timeline` `/challenge/` |
-| `halal-business-decisions` `/case/<id>/` | `everyday-akhlaq-simulator` `/business/<id>/` |
-| `islamic-misinformation-casebook` `/case/<id>/` | `is-this-actually-in-the-quran` `/claims/<id>/` |
+| `quran-connections` (Ayah Threads) | `/themes/`, `/themes/<id>/` (30 themes) |
+| `interactive-seerah-timeline` (Seerah Timeline) | `/challenge/` |
+| `everyday-akhlaq-simulator` (Everyday Akhlaq) | `/business/`, `/business/<id>/` |
+| `is-this-actually-in-the-quran` (Is It in the Quran?) | `/claims/`, `/claims/<id>/` (12 claims) |
 
-- **Step A (R3):** the receiving sections ship; every page of each old app shows a "moved" banner whose button opens the mapped new URL with `#import=<payload>`; old pages carry a cross-host canonical to the new URL. Old apps still deploy.
-- **Import protocol:** `src/lib/import.ts` (identical in the eight sending and receiving apps; checked by `bun _implementation/sync-shared.ts --check --set merge`). Payload = base64url UTF-8 JSON `{v:1, from, items}`, at most 1,800 characters, in the URL fragment so it never reaches a server. The receiver validates each item with the old app's validator, maps keys (`theme-bookmarks`, `challenge-progress`, `business-bookmarks`, `business-<id>`, `claim-bookmarks`), merges (union for lists, keep existing progress), writes with `write()`, clears the fragment and announces the count. Blocked storage never throws.
-- **Retired flag:** `deployment/targets.json` marks the four old apps `"retired": "<receiver-slug>"`; the directory lists 16 apps. `deployment/merge-redirects.json` maps every old built path to an absolute new URL and is checked by `_implementation/test-redirect-map.ts`.
-- **Step B (no sooner than R3 + 14 days):** old Pages projects are redeployed as redirect-only outputs (301), method recorded here once verified against Cloudflare's `_redirects` documentation.
+- The shared shell has no moved banner or canonical override. `src/lib/import.ts`, `tests/import.test.ts` and the receivers' `merge-import.ts` files are deleted, and `sync-shared.ts` no longer lists them.
+- `deployment/merge-redirects.json`, `_implementation/build-redirect-map.ts` and its test are deleted. `verify-seo.py` expects each page's canonical to be its own URL.
+- The old subdomains and Pages projects are removed in the host-move step, not redirected. Saved browser data from the old apps is not carried over.
