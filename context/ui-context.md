@@ -87,3 +87,13 @@ The verified Google Search Console property and Sitemaps report are external adm
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## Naming (P2, 11 November 2026)
+
+- **Two layers.** Every app has a short **name** and a plain present-tense **descriptor** that carries the search phrase. The authoritative table is in `plan/implementation/P2-names-copy-honorifics.md`. Hosts, slugs, ports and Pages project names never change with a rename.
+- **One name everywhere.** Header brand, H1, directory card, `<title>`, `og:title`, JSON-LD name and share text all use the same name.
+- **Title pattern.** App home: `Name — descriptor | Moongazer`. Detail pages: `Item title | Name`.
+- **No jargon in names.** No "Islamic", "The", "Explorer", "Studio", "Lab" or format words in names; the descriptor explains the format.
+- **Nav verb.** The shell's primary nav item uses the app's verb from `config.json` `nav` (Play, Read, Search, Plan or Learn) instead of "Explore".
+- **One word per thing.** Inside an app, one noun per kind of item (case, scenario, parable, event, pack, reading); everyday words instead of internal labels (REPORT §A4 "Words to retire").
+- **Honorifics.** ﷺ after the Prophet Muhammad in editorial text, rendered with `src/components/Honorific.astro` in Astro and the `SAW` string from `src/lib/utils.ts` in client scripts (span `.honorific`, Amiri glyph, accessible label "peace and blessings be upon him"). "(peace be upon him)" after other prophets at first mention per page. Never inside canonical quotations or quoted report text.
