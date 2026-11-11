@@ -1,4 +1,4 @@
-# Progress tracker: The Islamic Knowledge Escape Room
+# Progress tracker: Quran Escape Room
 
 ## Google Search Console setup, 30 October 2026
 
@@ -89,3 +89,10 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+- Rename: The Islamic Knowledge Escape Room -> Quran Escape Room. config name/description ("Rooms of Quran puzzles to solve together"); seo title "Quran Escape Room — Quran puzzles to solve together | Moongazer" (63 chars; descriptor shortened from "Rooms of Quran puzzles to solve together" because the full title would be 72), shortName, new description with the "Islamic escape room" keyword; learning heading, summary, steps, related name (Word Groups); index title; sources.astro; favicon aria-label; context titles and README.
+- Interface words: "source shelf" / "Source shelf" -> "sources" / "Sources" everywhere in UI, learning.json, room descriptions ("Three passages wait on the shelf" -> "Three passages to read") and context (internal anchor id `source-shelf` kept).
+- Honorifics: Cedar Hall explanation now "the guests of Ibrahim (peace be upon him)". Other mentions occur only inside Pickthall quotations (untouched).
+- content.json changed (editorial fields only). appContentSha256 now 817baf3af42e74f43139c579cf265b879d2218032987f3704b05c4993abe4d1c.
+- Checks (app folder): `bun run check` 0 errors/0 warnings; `bun test` 14 pass, 0 fail; `bun run build` 12 pages; dist grep for old names and retired phrases: none.

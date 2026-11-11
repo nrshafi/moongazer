@@ -1,4 +1,4 @@
-# Progress tracker: Islamic Concept Connections
+# Progress tracker: Word Groups
 
 ## Google Search Console setup, 30 October 2026
 
@@ -89,3 +89,10 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+- Rename: Islamic Concept Connections -> Word Groups. config name/description ("Sixteen Quran words, four hidden groups"); seo title "Word Groups — Sixteen Quran words, four hidden groups | Moongazer" (65 chars), shortName, new description with the "Islamic word connections game" keyword; learning heading "Word Groups", summary and related names (Ayah Threads, Quran Escape Room); index eyebrow/intro; share text "Word Groups · board N"; favicon aria-label; context titles and README.
+- content.json: one editorial note, "the palm entry" -> "the palm term" (item noun consistency). appContentSha256 in provenance.json updated to 1967e64d7ca88708f1c365d475653a991eba40bbf418a09c63991fedca7ee975.
+- Interface words: no retired phrases present ("board", "group", "term" kept as the app's nouns).
+- Honorifics: no editorial mentions of the Prophet or other prophets (only inside Pickthall quotations, untouched).
+- Checks (app folder): `bun run check` 0 errors/0 warnings; `bun test` 11 pass, 0 fail; `bun run build` 4 pages; dist grep for old name and retired phrases: none.

@@ -1,4 +1,4 @@
-# Architecture context: Islamic Concept Connections
+# Architecture context: Word Groups
 
 ## Authorized SEO scope
 
@@ -74,3 +74,4 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 ## Search content enhancement scope
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
+- Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.

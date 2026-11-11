@@ -1,4 +1,4 @@
-# Islamic Concept Connections
+# Word Groups
 
 Find four groups of related Islamic terms in a sixteen-tile puzzle.
 

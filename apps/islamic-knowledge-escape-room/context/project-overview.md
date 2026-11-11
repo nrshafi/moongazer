@@ -1,4 +1,4 @@
-# The Islamic Knowledge Escape Room
+# Quran Escape Room
 
 ## Overview
 
@@ -14,13 +14,13 @@ Portfolio rank 9 of 20. Project root `apps/islamic-knowledge-escape-room`. The a
 
 ## Core user flow
 
-1. Choose a room and read the source shelf.
+1. Choose a room and read the sources.
 2. Solve each of the four locks, using hints or solutions if useful.
 3. Read the completion explanation, copy the informal result, or enter another room.
 
 ## Features and content
 
-Eight rooms with four locks each: theme choice, reference matching, mushaf ordering and excerpt recognition. Includes a source shelf, hints, solutions, completion sharing, optional timer and recovery.
+Eight rooms with four locks each: theme choice, reference matching, mushaf ordering and excerpt recognition. Includes a sources, hints, solutions, completion sharing, optional timer and recovery.
 
 Bundled list inventory from `src/data/content.json`:
 

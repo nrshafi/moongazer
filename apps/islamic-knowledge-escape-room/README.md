@@ -1,4 +1,4 @@
-# The Islamic Knowledge Escape Room
+# Quran Escape Room
 
 Read the evidence. Solve four locks. Open a new route through the Quran.
 

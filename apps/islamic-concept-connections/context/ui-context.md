@@ -1,4 +1,4 @@
-# UI context: Islamic Concept Connections
+# UI context: Word Groups
 
 ## Theme and signature
 

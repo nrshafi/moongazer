@@ -1,4 +1,4 @@
-# Progress tracker: Quran Connections
+# Progress tracker: Ayah Threads
 
 ## Google Search Console setup, 30 October 2026
 
@@ -89,3 +89,12 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+- Rename: Quran Connections -> Ayah Threads. config name/description ("Three ayat, one hidden thread: a Quran puzzle"); seo shortName and new description (keeps the "Quran connections game" keyword); learning heading "Ayah Threads", summary fixed; index eyebrow/intro/labels reworded; share text now "Ayah Threads · Puzzle N"; sources.astro and context titles updated.
+- Shortened descriptor: title is "Ayah Threads — Three ayat, one thread: a Quran puzzle | Moongazer" (65 chars; the full descriptor would be 71).
+- Interface words: no retired phrases present. "Your next connection" -> "Your next puzzle" (one word per thing: puzzle).
+- Honorifics: no editorial mentions of the Prophet or other prophets; "(O Muhammad)" occurs only inside Pickthall quotations and is untouched. No content.json change (hash unchanged).
+- Checks: see final results below.
+- Also updated public/favicon.svg aria-label to "Ayah Threads logo".
+- Checks (app folder): `bun run check` 0 errors/0 warnings; `bun test` 8 pass, 0 fail; `bun run build` 4 pages; dist has no old name except the intentional search keyword phrase "Quran connections game" in the description.

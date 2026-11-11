@@ -27,7 +27,7 @@ Windows note: earlier native Astro tooling failed under the sandbox. A working r
 
 ## Verification for this scope
 
-Check every lock mechanism, wrong answers, hints/solutions, source shelf, ordering buttons, timer pause, room-specific reload recovery and assisted completion.
+Check every lock mechanism, wrong answers, hints/solutions, sources, ordering buttons, timer pause, room-specific reload recovery and assisted completion.
 
 For a behavior change, run relevant Bun tests, Astro check/build and browser verification of the changed flow. Do not add implementation-mirroring tests for reversible documentation-only edits. For documentation-only changes, completeness/path/fact checks suffice. Separate recorded earlier verification from checks run in the current change.
 

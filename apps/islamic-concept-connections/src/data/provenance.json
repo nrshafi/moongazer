@@ -1138,7 +1138,7 @@
     }
   ],
   "app": "islamic-concept-connections",
-  "appContentSha256": "1d0f7b420b84a6891efad8060dd501d8ada0bb4be4f0b41895ab3de3dc6d5988",
+  "appContentSha256": "1967e64d7ca88708f1c365d475653a991eba40bbf418a09c63991fedca7ee975",
   "batch3Commentary": {
     "endpoint": "https://mcp.quran.ai",
     "retrievedAt": "2026-10-27T17:39:30.408Z",

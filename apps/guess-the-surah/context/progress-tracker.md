@@ -99,3 +99,9 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 - Answer buttons: option letter in its own span, a real space, then the English name, a real space, and the Arabic name in `<small lang="ar" dir="rtl">`.
 - Tests added: short pool size 51 and hero text, expected ayah-2/3 surah list, and no shared normalized clue-1 English/Arabic text in any of the four pools.
 - Checks (app folder): `bun run check` 0 errors/0 warnings/0 hints; `bun test` 15 pass, 0 fail; `bun run build` 4 pages built. `_implementation/verify-static.py` was not run (needs every app's dist). SEO/learning copy still says "opening ayah" generally and was left unchanged.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+- Name unchanged (Guess the Surah). config description = "Find the surah from its clues"; seo title "Guess the Surah — Find the surah from its clues | Moongazer" (59 chars), new description; learning heading now exactly "Guess the Surah"; related names updated (Ayah Threads, Quran Escape Room); eyebrow/intro reworded.
+- Interface words: "Makkan/Madinan classification" pool options -> "Revealed in Makkah/Madinah"; "Listen with your eyes" -> "The Arabic"; structure clue now "lists it as revealed in Makkah/Madinah".
+- Honorifics: no editorial mention of the Prophet or other prophets in this app (only the surah name Muhammad). No content.json change (hash unchanged 60f44c4d...).
+- Checks: `bun run check` 0 errors/0 warnings; `bun test` 15 pass, 0 fail; `bun run build` 4 pages; dist grep for retired phrases: none.

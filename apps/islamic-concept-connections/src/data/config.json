@@ -1,7 +1,7 @@
 {
   "slug": "islamic-concept-connections",
-  "name": "Islamic Concept Connections",
-  "description": "Find four groups of related Islamic terms in a sixteen-tile puzzle.",
+  "name": "Word Groups",
+  "description": "Sixteen Quran words, four hidden groups",
   "accent": "blue",
   "nav": "Play",
   "port": 4332

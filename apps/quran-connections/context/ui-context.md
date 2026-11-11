@@ -1,4 +1,4 @@
-# UI context: Quran Connections
+# UI context: Ayah Threads
 
 ## Theme and signature
 

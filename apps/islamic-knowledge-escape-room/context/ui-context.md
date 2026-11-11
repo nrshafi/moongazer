@@ -1,4 +1,4 @@
-# UI context: The Islamic Knowledge Escape Room
+# UI context: Quran Escape Room
 
 ## Theme and signature
 

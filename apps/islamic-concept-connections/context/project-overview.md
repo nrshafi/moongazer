@@ -1,4 +1,4 @@
-# Islamic Concept Connections
+# Word Groups
 
 ## Overview
 

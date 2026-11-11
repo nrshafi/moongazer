@@ -1,5 +1,5 @@
 {
-  "heading": "Guess the Surah Quran quiz",
+  "heading": "Guess the Surah",
   "summary": "Guess the Surah is a free Quran quiz built around chapter clues. Begin with an opening ayah in Pickthall's translation, reveal more information when needed, and choose from four surahs. The result points back to the passage so a round can lead into reading, rather than end with a score.",
   "steps": [
     "Choose a surah collection and round length, then start a round.",
@@ -9,7 +9,7 @@
   "questions": [
     {
       "question": "Does the quiz include all 114 surahs?",
-      "answer": "Yes. Choose All 114 surahs for the complete collection, or use the shorter-surah, Makkan or Madinan filters. A round samples from the collection you select."
+      "answer": "Yes. Choose All 114 surahs for the complete collection, or use the shorter-surah, Revealed in Makkah or Revealed in Madinah filters. A round samples from the collection you select."
     },
     {
       "question": "What do the points measure?",
@@ -18,13 +18,13 @@
   ],
   "related": [
     {
-      "name": "Quran Connections",
+      "name": "Ayah Threads",
       "description": "Read three Quran passages and choose the theme that connects them.",
       "kind": "Passage puzzle",
       "url": "https://quran-connections.moongazer.tech/"
     },
     {
-      "name": "The Islamic Knowledge Escape Room",
+      "name": "Quran Escape Room",
       "description": "Work through a sequence of knowledge puzzles to unlock the next room.",
       "kind": "Puzzle adventure",
       "url": "https://islamic-knowledge-escape-room.moongazer.tech/"

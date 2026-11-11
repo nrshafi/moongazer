@@ -4,7 +4,7 @@ import Shell from '../layouts/Shell.astro';
 import data from '../data/content.json';
 ---
 <Shell title="Guess the Surah">
-  <section class="intro"><div class="intro-top"><span class="eyebrow">A little curiosity goes a long way</span> <span class="pill"><span class="dot"></span>51 short surahs</span></div> <h1>{learning.heading}</h1> <p>Start with a passage, uncover a little more, and find the surah. Every answer leads back to its source.</p></section>
+  <section class="intro"><div class="intro-top"><span class="eyebrow">Quran quiz</span> <span class="pill"><span class="dot"></span>51 short surahs</span></div> <h1>{learning.heading}</h1> <p>Read a clue ayah, reveal more when you need it, and choose the surah. Every answer links back to its source.</p></section>
   <noscript><div class="noscript">The guessing game needs JavaScript for scoring and clues. You can still explore the complete surah list and source references on the <a href="/sources/">sources page</a>.</div></noscript>
   <div class="workspace">
     <section class="panel" aria-label="Surah guessing game">
@@ -13,7 +13,7 @@ import data from '../data/content.json';
       <div class="panel-body" id="game-stage" aria-live="polite"><p class="muted">Preparing your clues…</p></div>
     </section>
     <aside class="sidebar sticky">
-      <section class="panel panel-body"><h2>Make it your round</h2><form id="setup-form"><label class="field bottom-gap">Surah collection<select id="pool"><option value="short">Short surahs · 30 ayahs or fewer</option><option value="all">All 114 surahs</option><option value="makkah">Makkan classification</option><option value="madinah">Madinan classification</option></select></label> <label class="field bottom-gap">Round length<select id="length"><option value="5">5 surahs</option><option value="10" selected>10 surahs</option><option value="20">20 surahs</option></select></label> <button class="button wide" type="submit">Start a new round</button></form><div class="divider"></div><label class="check"><input type="checkbox" id="remember"/>Remember this round for up to 30 days</label></section>{' '}
+      <section class="panel panel-body"><h2>Make it your round</h2><form id="setup-form"><label class="field bottom-gap">Surah collection<select id="pool"><option value="short">Short surahs · 30 ayahs or fewer</option><option value="all">All 114 surahs</option><option value="makkah">Revealed in Makkah</option><option value="madinah">Revealed in Madinah</option></select></label> <label class="field bottom-gap">Round length<select id="length"><option value="5">5 surahs</option><option value="10" selected>10 surahs</option><option value="20">20 surahs</option></select></label> <button class="button wide" type="submit">Start a new round</button></form><div class="divider"></div><label class="check"><input type="checkbox" id="remember"/>Remember this round for up to 30 days</label></section>{' '}
       <section class="panel panel-body"><h2>A clue at a time</h2><ol><li>Read the clue ayah in Pickthall's translation.</li> <li>Reveal the Arabic, ayah count, and chapter position when you need them.</li> <li>Choose one of four surahs. Earlier answers earn more points.</li></ol><div class="divider"></div><button class="text-button" id="share-challenge" type="button">Copy this challenge link</button><p class="micro top-gap">An informal challenge, with identical clues for anyone using the link.</p></section>
     </aside>
   </div>

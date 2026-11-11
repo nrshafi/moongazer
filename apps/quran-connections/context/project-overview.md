@@ -1,4 +1,4 @@
-# Quran Connections
+# Ayah Threads
 
 ## Overview
 

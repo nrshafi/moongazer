@@ -1,7 +1,7 @@
 {
   "slug": "islamic-knowledge-escape-room",
-  "name": "The Islamic Knowledge Escape Room",
-  "description": "Read the evidence. Solve four locks. Open a new route through the Quran.",
+  "name": "Quran Escape Room",
+  "description": "Rooms of Quran puzzles to solve together",
   "accent": "violet",
   "nav": "Play",
   "port": 4329
