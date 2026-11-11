@@ -85,7 +85,7 @@ The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}
 | Hook | Where | Event and id |
 | --- | --- | --- |
 | Reading check submitted (prophet page) | `src/lib/quiz.ts`, form submit (`form[data-item-id]`) | `activity_started` and `activity_completed` with the prophet id |
-| Report an error (check result) | `src/lib/quiz.ts`, `#feedback` | none; `a.feedback-link` opens the footer form |
+| Report an error (check result) | `src/lib/quiz.ts`, `#site-feedback` | none; `a.feedback-link` opens the footer form |
 | Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |
 
 The index cards and filters send no events. The prophet page has no other reveal or copy control.

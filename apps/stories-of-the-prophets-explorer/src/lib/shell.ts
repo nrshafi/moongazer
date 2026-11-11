@@ -38,6 +38,6 @@ movedLink?.addEventListener('click', () => {
 document.querySelectorAll<HTMLInputElement>('[data-feedback-time]').forEach(input => { input.value = String(Date.now()); });
 document.addEventListener('click', event => {
   if (!(event.target as HTMLElement).closest('[data-open-feedback]')) return;
-  const details = document.getElementById('feedback') as HTMLDetailsElement | null;
+  const details = document.getElementById('site-feedback') as HTMLDetailsElement | null;
   if (details) details.open = true;
 });

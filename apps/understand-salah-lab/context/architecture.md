@@ -85,5 +85,5 @@ The shared `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with 
 - `src/lib/lesson.ts`: "Show meaning" opening the meaning sends `activity_started` (lesson id from `#quiz[data-lesson-id]`). A quiz submit sends `activity_started`, and the first submit per page also sends `activity_completed`.
 - `src/lib/library.ts`: "Copy my list" sends `share_clicked` with id `home`, only after a non-empty list is copied.
 - Print buttons (`[data-print]`) are plain print and are not counted.
-- Feedback: `<Feedback compact />` sits in the quiz panel. Its status paragraph is `#quiz-feedback`, so the footer `#feedback` stays unique.
+- Feedback: `<Feedback compact />` sits in the quiz panel. Its status paragraph is `#quiz-feedback`; the shared footer form is `#site-feedback`.
 - `tests/events.test.ts` checks the call sites in source. Browser-level firing is not run by the tests.

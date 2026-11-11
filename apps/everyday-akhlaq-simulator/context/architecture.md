@@ -93,6 +93,6 @@ The shared `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with 
 
 - `src/lib/scenario.ts` (shared engine for `/scenario/` and `/business/` pages): the first choice sends `activity_started`; the second choice, which reaches the reflection, sends `activity_completed` once per page.
 - "Copy scenario link" sends `share_clicked` with the scenario or case id.
-- The reflection carries `<a class="feedback-link">` to the footer `#feedback` form. The link is rendered by the script, not by Astro.
+- The reflection carries `<a class="feedback-link">` to the footer `#site-feedback` form. The link is rendered by the script, not by Astro.
 - Business save toggles and the business index send no counts. Print buttons are plain print and are not counted.
 - `tests/events.test.ts` checks the call sites in source. Browser-level firing is not run by the tests.

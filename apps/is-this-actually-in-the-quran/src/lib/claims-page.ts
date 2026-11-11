@@ -4,7 +4,7 @@ import { importSaved } from './merge-import';
 import { read, write, announce, esc, byId } from './utils';
 import { track } from './counter';
 
-const REPORT_LINK = ' <a class="feedback-link" href="#feedback" data-open-feedback>Report an error <span aria-hidden="true">→</span></a>';
+const REPORT_LINK = ' <a class="feedback-link" href="#site-feedback" data-open-feedback>Report an error <span aria-hidden="true">→</span></a>';
 
 const known = content.claims.map(claim => claim.id);
 const valid = validBookmarks(known);

@@ -86,7 +86,7 @@ The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}
 | --- | --- | --- |
 | Diagram node revealed | `src/lib/studio.ts`, node buttons (`ITEM_ID` read from `form#quiz[data-item-id]`) | `activity_started` with the parable id |
 | Reading check submitted | `src/lib/studio.ts`, quiz form submit | `activity_started` and `activity_completed` with the parable id |
-| Report an error (check result) | `src/lib/studio.ts`, `#feedback` | none; `a.feedback-link` opens the footer form |
+| Report an error (check result) | `src/lib/studio.ts`, `#site-feedback` | none; `a.feedback-link` opens the footer form |
 | Copy reading note | `src/lib/studio.ts`, `#copy-note` | `share_clicked` with the parable id |
 | Download note | `src/lib/studio.ts`, `#download-note` | `share_clicked` with the parable id |
 | Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |

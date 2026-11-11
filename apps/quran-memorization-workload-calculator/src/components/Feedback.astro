@@ -13,8 +13,8 @@ const categories = [
   ['feature_request', 'A suggestion'],
 ];
 ---
-{compact ? <a class="feedback-link" href="#feedback" data-open-feedback>Report an error <span aria-hidden="true">→</span></a> :
-<details id="feedback" class="feedback">
+{compact ? <a class="feedback-link" href="#site-feedback" data-open-feedback>Report an error <span aria-hidden="true">→</span></a> :
+<details id="site-feedback" class="feedback">
   <summary>Report an error or suggest something</summary>
   <form class="feedback-form" action="https://moongazer.tech/api/feedback" method="post">
     <input type="hidden" name="app_slug" value={config.slug} />
