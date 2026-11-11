@@ -1,8 +1,8 @@
 import {calendar} from './engine';
 import {byId, read, write, forget, esc, announce} from './utils';
 import {
-  buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
-  sessionViews, thisWeek, weeks, VOCAB, type BuildResult, type Kind, type SessionView, type WizardInput,
+  buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isVocab, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
+  sessionViews, thisWeek, weeks, VOCAB, type BuildResult, type Kind, type SessionView, type Vocab, type WizardInput,
 } from './wizard';
 
 const TOTAL_PAGES = 604;
@@ -22,6 +22,8 @@ let built: Built | null = null;
 /** The input behind `built`. It changes after a re-plan. */
 let current: WizardInput | null = null;
 let views: SessionView[] = [];
+/** Label setting for checklist, calendar and weekly sheet. Stored as a display preference under `vocab`. */
+let vocab: Vocab = 'plain';
 /** Checked-off items as `YYYY-MM-DD:kind`. Kept in memory; written to storage only when the visitor opts in. */
 let checked = new Set<string>();
 
@@ -136,7 +138,7 @@ function checkbox(date: string, kind: Kind, text: string, srText: string): strin
 }
 
 function checklistHtml(sessions: SessionView[]): string {
-  const labels = VOCAB.plain;
+  const labels = VOCAB[vocab];
   return sessions.map(session => {
     const items = session.items.filter(item => item.kind === 'new' || item.pages > 1e-9);
     return `<section class="checklist-day"><h3>${esc(session.date)}</h3><ul class="checklist">${items.map(item => `<li>${checkbox(session.date, item.kind, labels[item.kind], `${labels[item.kind]} on ${session.date}`)}<span class="amount">${fmt(item.pages)} pages · ${fmt(item.minutes, 0)} min</span></li>`).join('')}</ul></section>`;
@@ -144,7 +146,7 @@ function checklistHtml(sessions: SessionView[]): string {
 }
 
 function calendarHtml(all: SessionView[]): string {
-  return weeks(all).map(group => `<details class="calendar-week"><summary>Week ${group.week}: ${esc(group.sessions[0]!.date)} to ${esc(group.sessions.at(-1)!.date)}</summary><div class="table-wrap"><table><thead><tr><th>Date</th><th>New</th><th>Recent revision</th><th>Old revision</th><th>Minutes</th><th>New lesson done</th></tr></thead><tbody>${group.sessions.map(s => {
+  return weeks(all).map(group => `<details class="calendar-week"><summary>Week ${group.week}: ${esc(group.sessions[0]!.date)} to ${esc(group.sessions.at(-1)!.date)}</summary><div class="table-wrap"><table><thead><tr><th>Date</th><th>${esc(VOCAB[vocab].new)}</th><th>${esc(VOCAB[vocab].recent)}</th><th>${esc(VOCAB[vocab].old)}</th><th>Minutes</th><th>${esc(VOCAB[vocab].new)} done</th></tr></thead><tbody>${group.sessions.map(s => {
     const [n, recent, old] = s.items;
     const minutes = s.items.reduce((sum, item) => sum + item.minutes, 0);
     return `<tr><td>${esc(s.date)}</td><td>${fmt(n!.pages)}</td><td>${fmt(recent!.pages)}</td><td>${fmt(old!.pages)}</td><td>${fmt(minutes, 1)}</td><td>${checkbox(s.date, 'new', '', `New lesson on ${s.date} done`)}</td></tr>`;
@@ -192,7 +194,7 @@ function renderPrintSheet() {
     const done = checked.has(checkKey(session.date, 'new')) ? 'Yes' : '';
     return `<tr><td>${esc(session.date)}</td><td>${fmt(n!.pages)}</td><td>${fmt(recent!.pages)}</td><td>${fmt(old!.pages)}</td><td><span class="print-box" aria-hidden="true"></span> ${done ? esc(done) : ''}</td></tr>`;
   }).join('');
-  printSheet.innerHTML = `<h1>Hifz Planner: weekly sheet</h1><p>Start date ${esc(current.start)} · ${current.daysPerWeek} study ${current.daysPerWeek === 1 ? 'day' : 'days'} a week · ${current.minutes} minutes per session</p><p>Pages already memorized: ${fmt(current.memorized, 0)} · new pages in this plan: ${fmt(current.goal, 0)}</p><p class="micro">Assumptions: ${fmt(a.newMinutes, 0)} minutes to learn one new page, ${fmt(a.reviewMinutes, 1)} minutes to review one page, ${fmt(a.pace)} new pages per session, the whole portion reviewed every ${a.cycle} sessions. These are estimates from the planner, not measurements of memorization.</p>${week.length ? `<table><thead><tr><th>Date</th><th>New lesson</th><th>Recent revision</th><th>Old revision</th><th>Done</th></tr></thead><tbody>${rows}</tbody></table>` : '<p>No study sessions fall in the first week with these settings.</p>'}<p class="micro">Dates are estimates. Ask your teacher to confirm the next step.</p>`;
+  printSheet.innerHTML = `<h1>Hifz Planner: weekly sheet</h1><p>Start date ${esc(current.start)} · ${current.daysPerWeek} study ${current.daysPerWeek === 1 ? 'day' : 'days'} a week · ${current.minutes} minutes per session</p><p>Pages already memorized: ${fmt(current.memorized, 0)} · new pages in this plan: ${fmt(current.goal, 0)}</p><p class="micro">Assumptions: ${fmt(a.newMinutes, 0)} minutes to learn one new page, ${fmt(a.reviewMinutes, 1)} minutes to review one page, ${fmt(a.pace)} new pages per session, the whole portion reviewed every ${a.cycle} sessions. These are estimates from the planner, not measurements of memorization.</p>${week.length ? `<table><thead><tr><th>Date</th><th>${esc(VOCAB[vocab].new)}</th><th>${esc(VOCAB[vocab].recent)}</th><th>${esc(VOCAB[vocab].old)}</th><th>Done</th></tr></thead><tbody>${rows}</tbody></table>` : '<p>No study sessions fall in the first week with these settings.</p>'}<p class="micro">Dates are estimates. Ask your teacher to confirm the next step.</p>`;
 }
 
 /** Points for the revision-minutes curve. Sampled so long plans stay light to draw. */
@@ -288,6 +290,17 @@ function startOver() {
 const saved = read('plan', isWizardInput);
 fillInputs(saved ?? {memorized: 0, goal: 20, start: todayIso(), daysPerWeek: 5, minutes: 45, assumptions: defaultAssumptions()});
 remember.checked = !!saved;
+const savedVocab = read('vocab', isVocab);
+if (savedVocab) vocab = savedVocab;
+document.querySelectorAll<HTMLInputElement>('input[name=vocab]').forEach(el => {
+  el.checked = el.value === vocab;
+  el.addEventListener('change', () => {
+    if (!el.checked || !isVocab(el.value)) return;
+    vocab = el.value;
+    if (!write('vocab', vocab)) announce('Browser storage is unavailable. The label choice applies to this page only.');
+    if (built) renderPlan();
+  });
+});
 const savedChecks = read('checkoffs', isCheckoffList);
 if (savedChecks) {
   checked = new Set(savedChecks);

@@ -9,6 +9,7 @@ export const STUDY_DAY_ORDER = [1, 2, 3, 4, 5, 6, 0] as const;
 export type Kind = 'new' | 'recent' | 'old';
 export const KINDS: readonly Kind[] = ['new', 'recent', 'old'];
 export type Vocab = 'sabaq' | 'plain';
+export const isVocab = (v: unknown): v is Vocab => v === 'sabaq' || v === 'plain';
 export const VOCAB: Readonly<Record<Vocab, Readonly<Record<Kind, string>>>> = {
   sabaq: {new: 'Sabaq (new lesson)', recent: 'Sabqi (recent revision)', old: 'Manzil (old revision)'},
   plain: {new: 'New lesson', recent: 'Recent revision', old: 'Old revision'},

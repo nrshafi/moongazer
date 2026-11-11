@@ -2,7 +2,7 @@ import {test, expect} from 'bun:test';
 import {defaults, schedule} from '../src/lib/engine';
 import {
   buildPlan, defaultAssumptions, isCheckoffList, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
-  sessionViews, studyDays, thisWeek, toPlan, weeks, checkKey, type WizardInput,
+  isVocab, sessionViews, studyDays, thisWeek, toPlan, weeks, checkKey, type WizardInput,
 } from '../src/lib/wizard';
 
 const addDays = (iso: string, n: number) => {
@@ -156,4 +156,10 @@ test('a plan that ends exactly at 604 pages still re-plans after fractional comp
   const result = replanFrom(input, built.rows[9]!.date, checked);
   expect(result.status).toBe('ok');
   expect(result.build!.ok).toBe(true);
+});
+
+test('the label setting accepts only the two known vocabularies', () => {
+  expect(isVocab('sabaq')).toBe(true);
+  expect(isVocab('plain')).toBe(true);
+  for (const raw of ['Sabaq', '', null, 1, {}]) expect(isVocab(raw)).toBe(false);
 });

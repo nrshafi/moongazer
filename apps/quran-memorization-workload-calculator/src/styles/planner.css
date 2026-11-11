@@ -30,6 +30,8 @@
 .calendar-week table { width: 100%; text-align: left; }
 .calendar-week th, .calendar-week td { vertical-align: top; }
 .status-line { margin: 0; }
+.vocab-setting { display: grid; gap: 6px; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 18px 0 0; min-width: 0; }
+.vocab-setting legend { font-size: .8rem; color: var(--muted); padding: 0 4px; }
 .plan-tools { display: grid; gap: 6px; margin-top: 18px; }
 .plan-tools .micro { margin: 0; }
 
