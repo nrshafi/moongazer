@@ -1,4 +1,4 @@
-# Progress tracker: Is This Actually in the Quran?
+# Progress tracker: Is It in the Quran?
 
 ## Google Search Console setup, 30 October 2026
 
@@ -89,3 +89,9 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Renamed Is This Actually in the Quran? -> Is It in the Quran? (config, seo, learning heading, index, sources, UI strings, share text, context files). Descriptor shortened in the title only: `Is It in the Quran? — Search every ayah | Moongazer` (full descriptor would exceed ~65 characters). No content.json change; hash unchanged. No prophet or Prophet Muhammad mentions in editorial text, so no honorifics were needed. Retired phrases: none present.
+
+Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 13 pass, 0 fail; `bun run build` 4 pages; `bun test _implementation/seo.test.ts` 9 pass, 0 fail. dist grep found no old product name or retired phrase except the SEO keyword wording in the meta description.

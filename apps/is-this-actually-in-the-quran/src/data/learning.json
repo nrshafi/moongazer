@@ -1,5 +1,5 @@
 {
-  "heading": "Search Quran wording in Arabic and English",
+  "heading": "Is It in the Quran?",
   "summary": "This Quran wording search looks for text in the complete local Arabic corpus and Pickthall's English translation. Enter a phrase or an ayah reference to inspect matching passages. It searches wording rather than judging whether an idea is Islamic, whether a paraphrase is accurate or how a verse should be interpreted.",
   "steps": [
     "Enter an Arabic phrase, English wording or a verse reference.",
@@ -24,7 +24,7 @@
       "url": "https://quran-concept-atlas.moongazer.tech/"
     },
     {
-      "name": "Revelation Context Explorer",
+      "name": "Why It Was Revealed",
       "description": "Read reports about revelation while distinguishing context, evidence and uncertainty.",
       "kind": "Source reader",
       "url": "https://revelation-context-explorer.moongazer.tech/"

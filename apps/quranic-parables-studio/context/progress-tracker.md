@@ -1,4 +1,4 @@
-# Progress tracker: Quranic Parables Studio
+# Progress tracker: Parables of the Quran
 
 ## Google Search Console setup, 30 October 2026
 
@@ -89,3 +89,9 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Renamed Quranic Parables Studio -> Parables of the Quran (config, seo, learning heading, index, sources, UI strings, share text, context files). Title descriptor shortened to `Read and reflect` (full descriptor would be 67 characters). content.json: methodology `comparisons` -> `parables` (appContentSha256 d0ce184b... -> cc3f2cb19d65b4102aee7bd0ef8f2b8b12700eba3b7323bedc7efe76900c2544). Interface words: comparison -> parable, Save reading -> Save, Copy saved reading list -> Copy my list, No readings match -> Nothing matches. No prophet mentions in editorial text.
+
+Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 11 pass, 0 fail; `bun run build` 18 pages; `bun test _implementation/seo.test.ts` 9 pass, 0 fail. dist grep found no old product name or retired phrase except the SEO keyword wording in the meta description.

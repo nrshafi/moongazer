@@ -1,4 +1,4 @@
-# UI context: Quranic Places Atlas
+# UI context: Places in the Quran
 
 ## Theme and signature
 

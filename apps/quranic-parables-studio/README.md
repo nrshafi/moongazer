@@ -1,4 +1,4 @@
-# Quranic Parables Studio
+# Parables of the Quran
 
 Explore Quranic comparisons through passages and interactive reading diagrams.
 

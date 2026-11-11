@@ -1,4 +1,4 @@
-# Is This Actually in the Quran?
+# Is It in the Quran?
 
 Check wording against the Arabic Quran and Pickthall translation.
 

@@ -1,4 +1,4 @@
-# Stories of the Prophets Explorer
+# Stories of the Prophets
 
 ## Overview
 

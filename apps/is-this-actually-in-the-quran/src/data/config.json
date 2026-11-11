@@ -1,7 +1,7 @@
 {
   "slug": "is-this-actually-in-the-quran",
-  "name": "Is This Actually in the Quran?",
-  "description": "Check wording against the Arabic Quran and Pickthall translation.",
+  "name": "Is It in the Quran?",
+  "description": "Search every ayah in Arabic and English",
   "accent": "blue",
   "nav": "Search",
   "port": 4327

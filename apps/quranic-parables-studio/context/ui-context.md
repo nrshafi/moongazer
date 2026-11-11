@@ -1,4 +1,4 @@
-# UI context: Quranic Parables Studio
+# UI context: Parables of the Quran
 
 ## Theme and signature
 

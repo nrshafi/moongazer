@@ -1,4 +1,4 @@
-# Quranic Places Atlas
+# Places in the Quran
 
 ## Overview
 

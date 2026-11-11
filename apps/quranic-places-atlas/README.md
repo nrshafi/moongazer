@@ -1,4 +1,4 @@
-# Quranic Places Atlas
+# Places in the Quran
 
 Read the passages, explore the geography, and see what remains uncertain.
 

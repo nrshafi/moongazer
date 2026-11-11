@@ -1,4 +1,4 @@
-# Quranic Parables Studio
+# Parables of the Quran
 
 ## Overview
 

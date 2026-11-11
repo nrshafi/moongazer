@@ -1,4 +1,4 @@
-# UI context: Stories of the Prophets Explorer
+# UI context: Stories of the Prophets
 
 ## Theme and signature
 

@@ -12,7 +12,7 @@
       },
       "summary": "The passage names Makkah while describing the restraint of opposing hands.",
       "note": "The marker is the UN gazetteer city coordinate, not a reconstruction of the encounter.",
-      "kind": "City context",
+      "kind": "Exact site known",
       "point": [
         39.829911,
         21.434872
@@ -32,8 +32,8 @@
         "translationUrl": "https://quran.com/3:96?translations=19"
       },
       "summary": "Al-Tafsir al-Muyassar identifies the house at Bakkah with the Sacred House in Makkah.",
-      "note": "Read this entry alongside Makkah. It uses the same city context rather than a second marker.",
-      "kind": "Unpinned",
+      "note": "Read this place alongside Makkah. It uses the same city marker rather than a second marker.",
+      "kind": "Location uncertain",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -51,7 +51,7 @@
       },
       "summary": "The passage refers to people around Madinah and among its inhabitants.",
       "note": "The marker is a modern city coordinate. It does not identify an individual household or episode.",
-      "kind": "City context",
+      "kind": "Exact site known",
       "point": [
         39.618468,
         24.468579
@@ -70,9 +70,9 @@
         "url": "https://quran.com/12:99",
         "translationUrl": "https://quran.com/12:99?translations=19"
       },
-      "summary": "Yusuf welcomes his parents and invites them into Egypt in safety.",
+      "summary": "Yusuf (peace be upon him) welcomes his parents and invites them into Egypt in safety.",
       "note": "The passage names Egypt but does not identify the meeting with a modern city. No city pin is assigned.",
-      "kind": "Regional reference",
+      "kind": "Region known",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -88,9 +88,9 @@
         "url": "https://quran.com/15:80",
         "translationUrl": "https://quran.com/15:80?translations=19"
       },
-      "summary": "Al-Tafsir al-Muyassar connects the inhabitants of Al-Hijr with Thamud and Salih.",
+      "summary": "Al-Tafsir al-Muyassar connects the inhabitants of Al-Hijr with Thamud and Salih (peace be upon him).",
       "note": "The marker shows the UNESCO-listed Hegra archaeological property. Its surviving monuments do not identify the exact buildings or moments of the Quranic account.",
-      "kind": "Heritage context",
+      "kind": "Exact site known",
       "point": [
         37.955,
         26.783611
@@ -110,8 +110,8 @@
         "translationUrl": "https://quran.com/17:1?translations=19"
       },
       "summary": "Al-Tafsir al-Muyassar identifies the farther sanctuary with Bayt al-Maqdis.",
-      "note": "The marker is UNESCO’s Old City context in Jerusalem. It is not a boundary survey or a map of the Night Journey.",
-      "kind": "Heritage context",
+      "note": "The marker is UNESCO’s Old City of Jerusalem site. It is not a boundary survey or a map of the Night Journey.",
+      "kind": "Exact site known",
       "point": [
         35.231667,
         31.777778
@@ -132,7 +132,7 @@
       },
       "summary": "The passage mentions an olive tree growing from Mount Sinai.",
       "note": "The cited passage and concise commentary do not supply coordinates for the mountain. No specific summit is pinned.",
-      "kind": "Regional reference",
+      "kind": "Region known",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -148,9 +148,9 @@
         "url": "https://quran.com/28:22",
         "translationUrl": "https://quran.com/28:22?translations=19"
       },
-      "summary": "Musa turns toward Midian and asks for guidance on his way.",
+      "summary": "Musa (peace be upon him) turns toward Midian and asks for guidance on his way.",
       "note": "The reading names a land but does not locate the scene at a verified modern archaeological site.",
-      "kind": "Regional reference",
+      "kind": "Region known",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -168,7 +168,7 @@
       },
       "summary": "Al-Tafsir al-Muyassar describes the sandy dwellings of Aad in southern Arabia.",
       "note": "The regional description is not an exact settlement coordinate. No proposed lost city is presented as established.",
-      "kind": "Regional reference",
+      "kind": "Region known",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -185,8 +185,8 @@
         "translationUrl": "https://quran.com/89:7?translations=19"
       },
       "summary": "Al-Tafsir al-Muyassar describes Iram as a tribe associated with Aad, rather than identifying an excavated city.",
-      "note": "No excavated city or modern discovery is identified by the cited evidence. The entry remains unpinned.",
-      "kind": "Unpinned",
+      "note": "No excavated city or modern discovery is identified by the cited evidence. The place stays off the map.",
+      "kind": "Location uncertain",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -203,8 +203,8 @@
         "translationUrl": "https://quran.com/34:15?translations=19"
       },
       "summary": "Al-Tafsir al-Muyassar places the people of Saba in Yemen. The passage describes gardens and gratitude.",
-      "note": "The marker shows UNESCO’s ancient city of Marib for heritage context. It does not locate every scene or garden in the passage.",
-      "kind": "Heritage context",
+      "note": "The marker shows UNESCO’s ancient city of Marib for heritage-site context. It does not locate every scene or garden in the passage.",
+      "kind": "Exact site known",
       "point": [
         45.335228,
         15.426878
@@ -223,9 +223,9 @@
         "url": "https://quran.com/20:12",
         "translationUrl": "https://quran.com/20:12?translations=19"
       },
-      "summary": "Musa is addressed in the sacred valley of Tuwa.",
+      "summary": "Musa (peace be upon him) is addressed in the sacred valley of Tuwa.",
       "note": "The selected text names the valley without supplying a modern geolocation.",
-      "kind": "Unpinned",
+      "kind": "Location uncertain",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -243,7 +243,7 @@
       },
       "summary": "The ship comes to rest on Al-Judi after the waters subside.",
       "note": "The text and concise commentary name the mountain but do not establish a surveyed resting site.",
-      "kind": "Unpinned",
+      "kind": "Location uncertain",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -260,8 +260,8 @@
         "translationUrl": "https://quran.com/2:198?translations=19"
       },
       "summary": "The passage mentions departure from Arafat and remembrance at the sacred monument.",
-      "note": "Al-Tafsir al-Muyassar identifies the sacred monument here with Muzdalifah. This atlas does not provide Hajj route navigation.",
-      "kind": "Regional reference",
+      "note": "Al-Tafsir al-Muyassar identifies the sacred monument here with Muzdalifah. This app does not provide Hajj route navigation.",
+      "kind": "Region known",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -279,7 +279,7 @@
       },
       "summary": "Safa and Marwa are named among Allah’s signs. The commentary describes the two hills near the Kaaba.",
       "note": "Their proximity to Makkah is described in the commentary. At this regional map scale, no separate hill markers are added.",
-      "kind": "Regional reference",
+      "kind": "Region known",
       "point": null,
       "geoUrl": "",
       "geoLabel": "",
@@ -332,5 +332,5 @@
     "M12.4,2.5L11.0,-3.8L6.0,-5.6L1.5,-10.3L5.4,-14.2L10.4,-15.5L13.3,-21.3L17.1,-22.3L20.1,-19.8L24.0,-18.7L26.8,-15.9L30.2,-15.1L34.3,-11.9L37.3,-11.9L34.9,-7.7L32.4,-5.6L33.1,-4.3L28.4,-3.6L16.0,-0.9L15.1,2.7L12.4,2.5Z",
     "M227.5,673.6L209.0,662.0L204.0,654.5L192.3,658.2L182.6,657.0L177.0,660.0L167.6,657.9L154.9,643.4L151.5,637.9L135.8,630.9L130.5,620.4L121.7,612.9L107.6,603.7L107.4,598.1L95.9,591.0L81.6,584.2L88.1,582.2L95.3,578.9L100.7,563.3L106.5,555.2L121.6,552.8L125.2,557.6L136.0,567.8L141.8,569.3L149.4,566.3L164.5,566.9L167.4,570.5L188.3,570.5L189.0,566.9L199.8,563.6L202.0,558.5L209.9,554.9L227.6,565.1L238.4,563.3L248.9,550.7L260.4,541.1L258.6,530.6L253.6,525.5L266.2,524.6L267.6,520.7L277.3,521.9L274.8,534.8L277.3,547.4L288.2,554.3L290.7,560.3L290.3,569.0L293.2,569.4L293.5,583.0L290.3,588.4L279.2,588.8L272.0,598.8L284.9,600.0L295.6,608.5L299.3,615.5L308.8,619.6L321.3,638.6L307.0,650.2L294.1,660.6L281.2,668.7L266.4,668.6L249.5,672.7L236.2,668.8L227.5,673.6Z"
   ],
-  "methodology": "Fifteen selected place references are paired with canonical text and concise commentary. Five markers show modern city or UNESCO heritage context. Uncertain locations remain unpinned. Marker coordinates come from UNGEGN or UNESCO; land shapes are public-domain Natural Earth data. Neither archaeological buildings nor routes are claimed to reconstruct a Quranic event."
+  "methodology": "Fifteen selected place references are paired with canonical text and concise commentary. Five markers show modern city or UNESCO heritage-site context. Uncertain locations get no map pin. Marker coordinates come from UNGEGN or UNESCO; land shapes are public-domain Natural Earth data. Neither archaeological buildings nor routes are claimed to reconstruct a Quranic event."
 }

@@ -1,4 +1,4 @@
-# Quranic Places Atlas agent instructions
+# Places in the Quran agent instructions
 
 This app also inherits the repository-level instructions when used inside the portfolio. Its local context is self-contained so the app folder can be copied independently.
 

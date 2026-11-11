@@ -1,4 +1,4 @@
-# UI context: Is This Actually in the Quran?
+# UI context: Is It in the Quran?
 
 ## Theme and signature
 
