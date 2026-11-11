@@ -1248,7 +1248,7 @@
         ]
       },
       "category": "Misreads the source",
-      "verdict": "In Sahih al-Bukhari 1461 Abu Talha offers his garden in response to hearing 3:92, so the report puts his offer after the verse and not as its cause.",
+      "verdict": "In Sahih al-Bukhari 1461 Abu Talha offers his garden in response to hearing 3:92, so in this report the offer follows the verse.",
       "limit": "One account of a response does not list every circumstance known about a verse.",
       "howToCheck": [
         "Type 3:92 in the search box and read the whole ayah: does it mention a garden or a person?",
@@ -1401,17 +1401,17 @@
             "collection": "Sahih al-Bukhari",
             "number": "4845",
             "url": "https://sunnah.com/bukhari:4845",
-            "summary": "Ibn Abi Mulaika’s narration describes a disagreement with raised voices, and a narrator in the chain says he does not remember one of the names."
+            "summary": "Ibn Abi Mulaika’s narration names Abu Bakr and Umar as the two who raised their voices over whom to recommend, and says the ayah was revealed then. A narrator adds that he does not remember the name of the man one of them recommended."
           }
         ]
       },
       "category": "Not found in the Quran",
-      "verdict": "49:2 tells believers not to raise their voices above the voice of the Prophet ﷺ and names no one, while the report in Sahih al-Bukhari 4845 keeps a narrator’s uncertainty about one name.",
-      "limit": "A gap in one narrator’s memory does not make every other detail of the report unknown.",
+      "verdict": "49:2 tells believers not to raise their voices above the voice of the Prophet ﷺ and names no one; the personal names come from the report in Sahih al-Bukhari 4845, which names Abu Bakr and Umar.",
+      "limit": "This shows what the ayah and one report say; it does not settle every discussion of the occasion.",
       "howToCheck": [
         "Search \"voices\" in English and open 49:2.",
         "Read the ayah for any personal name.",
-        "Open Sahih al-Bukhari 4845 on sunnah.com and find where a narrator says he does not remember."
+        "Open Sahih al-Bukhari 4845 on sunnah.com and see which names the report gives, and what the narrator says he does not remember."
       ]
     },
     {
