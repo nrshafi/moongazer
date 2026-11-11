@@ -6,5 +6,5 @@
   "collection": "people",
   "prefix": "prophet",
   "nameField": "name",
-  "summaryField": "brief"
+  "summaryField": "focus"
 }
