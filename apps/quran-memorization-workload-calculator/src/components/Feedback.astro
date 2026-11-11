@@ -1,0 +1,33 @@
+---
+// First-party feedback (P4). A native form POST to moongazer.tech: works without JavaScript, needs no CORS.
+// <Feedback /> renders the footer form; <Feedback compact /> renders a "Report an error" link for result panels.
+import config from '../data/config.json';
+import { getPageMeta } from '../lib/seo';
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+const meta = getPageMeta(Astro.url.pathname);
+const pageUrl = new URL(meta.path === '/404.html' ? '/' : meta.path, Astro.site).href;
+const categories = [
+  ['source_or_text_correction', 'A source or wording correction'],
+  ['bug_report', 'Something is not working'],
+  ['feature_request', 'A suggestion'],
+];
+---
+{compact ? <a class="feedback-link" href="#feedback" data-open-feedback>Report an error <span aria-hidden="true">→</span></a> :
+<details id="feedback" class="feedback">
+  <summary>Report an error or suggest something</summary>
+  <form class="feedback-form" action="https://moongazer.tech/api/feedback" method="post">
+    <input type="hidden" name="app_slug" value={config.slug} />
+    <input type="hidden" name="page_url" value={pageUrl} />
+    <input type="hidden" name="t" value="" data-feedback-time />
+    <fieldset>
+      <legend>What is it about?</legend>
+      {categories.map(([value, label], index) => <label class="feedback-choice"><input type="radio" name="category" value={value} required checked={index === 0} /> {label}</label>)}
+    </fieldset>
+    <label class="field">Your message <textarea name="message" required minlength="10" maxlength="2000" rows="4"></textarea></label>
+    <label class="field">Email, only if you want a reply <input type="email" name="contact" maxlength="200" autocomplete="email" /></label>
+    <div class="feedback-trap" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+    <p class="micro">We read every message. Corrections we make appear in the <a href="https://moongazer.tech/corrections/">corrections log</a>. We never publish your contact details.</p>
+    <button class="button" type="submit">Send</button>
+  </form>
+</details>}
