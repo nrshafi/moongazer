@@ -77,3 +77,13 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Anonymous counter hook points (P4 T4.7)
+
+The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with `navigator.sendBeacon` to `moongazer.tech/api/event`. It is a silent no-op on preview hosts, with Global Privacy Control, or when sendBeacon is missing. Item ids are stable content ids only.
+
+| Hook | Where | Event and id |
+| --- | --- | --- |
+| Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |
+
+The place pages have no reveal or check control, no copy or share button and no result panel, so they send no activity events and no Report an error link. The map and cards send no events. Print buttons send no events.

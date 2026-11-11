@@ -132,7 +132,7 @@ Update this table when a task or phase starts or finishes (see protocol §6).
 | P2 | Done (R2 pushed) | phase-2-names → main | 2026-11-11 | Names, nav verbs, interface words, honorifics, directory, social cards; see `releases/R2.md`. |
 | P3 step A | Done (R3 pushed 2026-11-11) | phase-3-merges → main | 2026-11-11 | Step B (301s) on or after 2026-11-11 + 14 days. See `releases/R3.md`. |
 | P3 step B | Not started | | | |
-| P4 | Not started | | | |
+| P4 | Done (R4 pushed 2026-11-12) | phase-4-services → main | 2026-11-12 | Feedback form, corrections log, anonymous counter (16 apps; Hifz with P7). Production setup agent-run under D2b; see `releases/R4.md`. |
 | P5 | Not started | | | |
 | P6 | Not started | | | |
 | P7 | Not started | | | |

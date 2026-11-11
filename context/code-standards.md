@@ -25,6 +25,7 @@
 - Treat themes, fictional consequences, questions, diagrams, approximate dates and informal scores as editorial aids with the app's documented limits.
 - Optional localStorage must be app-namespaced, validated, timestamped, ignored after 30 days and resilient to blocked storage. Theme preference is independent of activity opt-in. Do not add identity collection, analytics or hidden synchronization.
 - All runtime fonts/media/data must be local. External source links are optional reading. Retain media/font licenses and provenance; update content checksums after a content change.
+- First-party services (P4): app bundles may only call `navigator.sendBeacon` to `https://moongazer.tech/api/event` and may only post forms to `https://moongazer.tech/api/feedback`. No `fetch(` in app bundles. Functions under `homepage/functions/` validate every input (pure module in `_lib/validate.ts`, no Workers types there), store nothing but the documented fields, never store IP addresses or user agents, never `console.log` request data, and respond with `Cache-Control: no-store`.
 
 ## Files and validation
 

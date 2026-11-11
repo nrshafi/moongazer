@@ -68,7 +68,7 @@ def inspect(html, url, homepage=False, missing=False):
     p = Page(html)
     assert p.h1 == 1 and p.lang == 'en', ('heading/language', url)
     assert p.title.strip(), ('missing title', url)
-    utility = missing or urlsplit(url).path == '/privacy/'
+    utility = missing or urlsplit(url).path in ('/privacy/', '/feedback/thanks/')
     assert ('noindex' in p.meta.get('robots','')) == utility, ('robots', url)
     if missing:
         assert not p.canonicals and not p.schemas, ('404 indexing', url)
@@ -117,8 +117,11 @@ def inspect(html, url, homepage=False, missing=False):
                 assert {item['url'] for item in listing['itemListElement']} == expected
                 assert listing['numberOfItems'] == len(expected)
             else:
-                assert origin.path == '/about/' and webpage['@type']=='AboutPage'
-                assert 'mailto:nrshafi1@gmail.com' in p.links
+                if origin.path in ('/feedback/', '/corrections/', '/feedback/thanks/'):
+                    assert webpage['@type']=='WebPage', ('directory service page', url)
+                else:
+                    assert origin.path == '/about/' and webpage['@type']=='AboutPage'
+                    assert 'mailto:nrshafi1@gmail.com' in p.links
         elif origin.path == '/':
             slug=origin.hostname.removesuffix('.moongazer.tech')
             guide=learning_guides[slug]

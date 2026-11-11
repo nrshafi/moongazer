@@ -77,3 +77,18 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Anonymous counter hook points (P4 T4.7)
+
+The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with `navigator.sendBeacon` to `moongazer.tech/api/event`. It is a silent no-op on preview hosts, with Global Privacy Control, or when sendBeacon is missing. `activity_started` fires once per item per page load. Item ids are stable content ids only; the reading note text and answers are never sent.
+
+| Hook | Where | Event and id |
+| --- | --- | --- |
+| Diagram node revealed | `src/lib/studio.ts`, node buttons (`ITEM_ID` read from `form#quiz[data-item-id]`) | `activity_started` with the parable id |
+| Reading check submitted | `src/lib/studio.ts`, quiz form submit | `activity_started` and `activity_completed` with the parable id |
+| Report an error (check result) | `src/lib/studio.ts`, `#site-feedback` | none; `a.feedback-link` opens the footer form |
+| Copy reading note | `src/lib/studio.ts`, `#copy-note` | `share_clicked` with the parable id |
+| Download note | `src/lib/studio.ts`, `#download-note` | `share_clicked` with the parable id |
+| Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |
+
+Print buttons send no events.

@@ -95,3 +95,9 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 Renamed Quranic Places Atlas -> Places in the Quran (config, seo, learning heading, index, sources, UI strings, share text, context files). Title descriptor shortened to `A map and its limits`. content.json: `kind` labels City context/Heritage context -> Exact site known, Regional reference -> Region known, Unpinned -> Location uncertain (editorial labels, not used for grading); entry/unpinned/atlas wording -> place/no map pin/app; `heritage context` -> `heritage-site context` so retired phrases do not appear; honorific ` (peace be upon him)` added after Yusuf, Salih and Musa (x2) in place summaries; appContentSha256 f6c42a7c... -> 69edba0831b7360f07e4e4ca0693e2100bfe3a66b0977eb775eb98a3def146b7. sources.json notes adjusted the same way. Map.astro caption and Related kind `Story explorer` -> `Story reader`. Note: the brief maps both city and heritage labels to `Exact site known` although the notes say the pin is not an event site; kept per brief.
 
 Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 11 pass, 0 fail; `bun run build` 19 pages; `bun test _implementation/seo.test.ts` 9 pass, 0 fail. dist grep found no old product name or retired phrase except the SEO keyword wording in the meta description.
+
+## 2026-11-11 23:31 (Asia/Dhaka) — P4 T4.7 counter events
+
+Wired Copy my list (`src/lib/library.ts`) with the share event. The place pages have no reveal, check, copy or result panel, so no activity or Report an error hooks were added. Hook points are in `context/architecture.md`.
+
+Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 19 pass, 0 fail; `bun run build` 19 pages. The DOM run on a preview host was not done; events are suppressed off moongazer.tech.

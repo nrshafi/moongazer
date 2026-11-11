@@ -18,11 +18,12 @@ const candidates = [
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-export async function launch({port = 9333 + Math.floor(Math.random() * 500)} = {}) {
+// `args` adds Chrome flags, for example --host-resolver-rules to serve a preview under its production host name.
+export async function launch({port = 9333 + Math.floor(Math.random() * 500), args = []} = {}) {
   const exe = candidates.find(p => existsSync(p));
   if (!exe) throw new Error('No Chrome or Edge found; set CHROME_PATH');
   const profile = mkdtempSync(join(tmpdir(), 'mg-chrome-'));
-  const proc = spawn(exe, ['--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, '--no-first-run', '--no-default-browser-check', '--disable-extensions', 'about:blank'], {stdio: 'ignore'});
+  const proc = spawn(exe, ['--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, '--no-first-run', '--no-default-browser-check', '--disable-extensions', ...args, 'about:blank'], {stdio: 'ignore'});
   let version;
   for (let i = 0; i < 100 && !version; i++) { try { version = await (await fetch(`http://127.0.0.1:${port}/json/version`)).json(); } catch { await sleep(100); } }
   if (!version) throw new Error('Chrome did not start');
@@ -36,7 +37,8 @@ export async function launch({port = 9333 + Math.floor(Math.random() * 500)} = {
   };
   const send = (method, params = {}, sessionId) => new Promise((res, rej) => { const n = ++id; pending.set(n, {res, rej}); ws.send(JSON.stringify({id: n, method, params, sessionId})); });
 
-  async function page({width = 390, height = 844, dark = false, mobile = width < 700, offline = false, blockStorage = false} = {}) {
+  // `init` is page JavaScript run before every document's own scripts (for example a stubbed navigator.sendBeacon).
+  async function page({width = 390, height = 844, dark = false, mobile = width < 700, offline = false, blockStorage = false, init = ''} = {}) {
     const {targetId} = await send('Target.createTarget', {url: 'about:blank'});
     const {sessionId} = await send('Target.attachToTarget', {targetId, flatten: true});
     const s = (m, p) => send(m, p, sessionId);
@@ -45,6 +47,7 @@ export async function launch({port = 9333 + Math.floor(Math.random() * 500)} = {
     await s('Emulation.setEmulatedMedia', {features: [{name: 'prefers-color-scheme', value: dark ? 'dark' : 'light'}]});
     if (offline) await s('Network.emulateNetworkConditions', {offline: true, latency: 0, downloadThroughput: 0, uploadThroughput: 0});
     if (blockStorage) await s('Page.addScriptToEvaluateOnNewDocument', {source: "Object.defineProperty(window,'localStorage',{configurable:true,get(){throw new DOMException('blocked','SecurityError')}});"});
+    if (init) await s('Page.addScriptToEvaluateOnNewDocument', {source: init});
     const errors = [];
     listeners.push(msg => { if (msg.sessionId === sessionId && msg.method === 'Runtime.exceptionThrown') errors.push(msg.params.exceptionDetails?.exception?.description || msg.params.exceptionDetails?.text); });
     const evaluate = async (expression) => {

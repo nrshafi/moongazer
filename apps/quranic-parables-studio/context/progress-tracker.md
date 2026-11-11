@@ -95,3 +95,9 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 Renamed Quranic Parables Studio -> Parables of the Quran (config, seo, learning heading, index, sources, UI strings, share text, context files). Title descriptor shortened to `Read and reflect` (full descriptor would be 67 characters). content.json: methodology `comparisons` -> `parables` (appContentSha256 d0ce184b... -> cc3f2cb19d65b4102aee7bd0ef8f2b8b12700eba3b7323bedc7efe76900c2544). Interface words: comparison -> parable, Save reading -> Save, Copy saved reading list -> Copy my list, No readings match -> Nothing matches. No prophet mentions in editorial text.
 
 Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 11 pass, 0 fail; `bun run build` 18 pages; `bun test _implementation/seo.test.ts` 9 pass, 0 fail. dist grep found no old product name or retired phrase except the SEO keyword wording in the meta description.
+
+## 2026-11-11 23:31 (Asia/Dhaka) — P4 T4.7 counter events
+
+Wired the diagram reveals, reading check, note copy and download (`src/lib/studio.ts`) and Copy my list (`src/lib/library.ts`) with the three counter events and a Report an error link on the check result. Hook points are in `context/architecture.md`.
+
+Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 19 pass, 0 fail; `bun run build` 18 pages. The DOM run on a preview host was not done; events are suppressed off moongazer.tech.

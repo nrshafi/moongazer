@@ -59,3 +59,11 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Anonymous event hook points (P4.7, 2026-11-11 Asia/Dhaka)
+
+Counter events go through `src/lib/counter.ts` (`track`). Item ids are the reading's stable `id`; no answer text, visitor text or selection is ever sent.
+
+- `src/lib/reading.ts`: `activity_started` on the first relationship-check answer (form `change`, id from `data-id` on `#relationship`). `activity_completed` on the first submitted check per page load.
+- `src/lib/library.ts`: `share_clicked` with id `home` on the copy-saved list button.
+- `src/pages/reading/[id].astro`: adds `data-id` on the relationship form and the "Report an error" link under the check result (`data-open-feedback`, opens the footer form).

@@ -59,3 +59,10 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Anonymous event hook points (P4.7, 2026-11-11 Asia/Dhaka)
+
+Counter events go through `src/lib/counter.ts` (`track`). The civilization timeline uses the stable id `timeline` for all of its activity; no filter text, event choice or visitor text is sent.
+
+- `src/lib/library.ts`: `activity_started` (`timeline`) on the first filter input, filter change or region chip. `share_clicked` (`timeline`) on copy-saved.
+- `src/lib/timeline.ts`: `activity_started` (`timeline`) on the first user "Compare" click. `activity_completed` (`timeline`) once per page load when a comparison is shown. `share_clicked` (`timeline`) on "Copy comparison link". The "Report an error" link sits under the comparison result.

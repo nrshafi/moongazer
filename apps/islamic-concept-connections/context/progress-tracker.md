@@ -96,3 +96,6 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 - Interface words: no retired phrases present ("board", "group", "term" kept as the app's nouns).
 - Honorifics: no editorial mentions of the Prophet or other prophets (only inside Pickthall quotations, untouched).
 - Checks (app folder): `bun run check` 0 errors/0 warnings; `bun test` 11 pass, 0 fail; `bun run build` 4 pages; dist grep for old name and retired phrases: none.
+
+## P4.7 counter hook points (11 Nov 2026, Asia/Dhaka 23:30)
+- Wired `track()` in the activity code and documented the hook points in `context/architecture.md`; no unit test (wiring only, helper already tested). Checks: `bun run check` 0 errors, 0 warnings; `bun run test` 19 pass, 0 fail; `bun run build` 4 pages. Not run: e2e preview and a live beacon. Deployment not performed.

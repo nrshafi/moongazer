@@ -46,7 +46,7 @@ A portfolio of Islamic learning tools that visitors can use immediately without 
 
 The collection contains games, source readers, local search and a workload model. Common features are local fonts, light/dark modes, source/privacy/404 pages, optional namespaced storage and static hosting headers. App-local project-overview.md files specify exact content and flows.
 
-In scope: maintenance of the twenty implemented apps and the requested context methodology. Out of scope without a new user request: accounts, databases, runtime AI/API dependencies, identity-based tracking, trusted leaderboards and unrequested automatic publishing to a hosting account.
+In scope: maintenance of the twenty implemented apps and the requested context methodology. Out of scope without a new user request: accounts, runtime AI/API dependencies, identity-based tracking, trusted leaderboards and unrequested automatic publishing to a hosting account. The first-party services (P4, `plan/implementation/P4-first-party-services.md`) are in scope: a feedback form, a public corrections log, and three anonymous aggregate event counts, served by Pages Functions on the apex with one D1 database. They are not accounts, and they store no IP addresses or request logs.
 
 All twenty shortlisted projects are implemented. Each app has AGENTS.md and six filled context documents. The current user request authorizes a new Moongazer directory homepage and publication of that homepage plus all twenty apps to Cloudflare Pages on moongazer.tech and individual subdomains.
 

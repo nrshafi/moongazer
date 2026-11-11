@@ -109,3 +109,11 @@ Behaviour: seeded shuffle per play (a fresh random seed on each new play or rest
 Import (T3.2): from `islamic-history-timeline-challenge`, key `progress` -> `challenge-progress`, validated with the old app's own validator (`valid` in `challenge.ts`), merge `keep` (an existing local game wins). The old app kept no separate remember flag: it saved only when its "Remember" box was ticked, so a present `progress` value maps to a ticked box here. `importSaved()` runs at the start of the `/challenge/` script, before saved progress is read.
 
 SEO: `seo.ts` registers only one `seo.json` collection and throws "Add metadata for the new page: /challenge/" for other routes. The page metadata is kept in `seo.json` under `extraPages` and must be registered by a one-line `seo.ts` change (see progress tracker); until then the production build fails.
+
+## Anonymous event hook points (P4.7, 2026-11-11 Asia/Dhaka)
+
+Counter events go through `src/lib/counter.ts` (`track`). Item ids are the stable pack id or event id; no order, answer or visitor text is sent.
+
+- `src/lib/challenge-app.ts`: `activity_started` (pack id) on the first move. `activity_completed` (pack id) once per page load on a correct check or a reveal. `share_clicked` (pack id) on "Copy challenge link".
+- `src/lib/timeline.ts`: `share_clicked` (selected event id) on the event "Copy link" button.
+- `src/pages/challenge/index.astro`: the status paragraph is now `#challenge-feedback` (it had duplicated the footer form id `feedback`); the "Report an error" link sits under it.

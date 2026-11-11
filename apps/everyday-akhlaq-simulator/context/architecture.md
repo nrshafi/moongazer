@@ -86,3 +86,13 @@ Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in
 - Import (`src/lib/business.ts` rules, run by `src/lib/merge-import.ts` on the home, `/business/` and every scenario page) from `halal-business-decisions`: `bookmarks` -> `business-bookmarks` (union), `remember` -> `remember` (keep), `case-<id>` -> `business-<id>` (keep; validated with the old validTrail against that case's option counts; old `{version:1, choices:[a,b], seed?}` becomes `{stage: choices.length===2 ? 2 : choices.length, choices, seed?}` with the same original option indices).
 - Home page filters scenario cards by track with a pressed-state button group (All, Home & family, Study & work, Business).
 - SEO gap: `src/lib/seo.ts` supports one collection. `/business/` and the 12 `/business/<id>/` paths need a second registration there (see progress tracker); until then Shell throws "Add metadata for the new page" for them.
+
+## Anonymous counter hook points (P4.7)
+
+The shared `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with `navigator.sendBeacon` to `https://moongazer.tech/api/event`. It is a silent no-op off `moongazer.tech`, with Global Privacy Control, or without `sendBeacon`. Item ids are scenario or business case ids; no visitor text or choices are sent.
+
+- `src/lib/scenario.ts` (shared engine for `/scenario/` and `/business/` pages): the first choice sends `activity_started`; the second choice, which reaches the reflection, sends `activity_completed` once per page.
+- "Copy scenario link" sends `share_clicked` with the scenario or case id.
+- The reflection carries `<a class="feedback-link">` to the footer `#site-feedback` form. The link is rendered by the script, not by Astro.
+- Business save toggles and the business index send no counts. Print buttons are plain print and are not counted.
+- `tests/events.test.ts` checks the call sites in source. Browser-level firing is not run by the tests.

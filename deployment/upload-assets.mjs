@@ -15,6 +15,8 @@ const selectedSite = process.argv.find(argument=>argument.startsWith('--site='))
 for (const site of sites) {
   if(selectedSite && site.name!==selectedSite)continue;
   if (process.argv.includes('--homepage-only') && site.name !== 'moongazer') continue;
+  // P4: the apex ships through `wrangler pages deploy` so its Functions and D1 binding deploy with it.
+  if (process.argv.includes('--apps-only') && site.name === 'moongazer') continue;
   const directory = join(root,site.directory);
   const manifest = {};
   let bytes = 0;
@@ -113,6 +115,10 @@ let recorded = manifests;
 if (process.argv.includes('--homepage-only')) {
   const previous = JSON.parse(await readFile(join(root,'deployment/manifests/uploaded.json'),'utf8').catch(()=>'[]'));
   recorded = [...manifests,...previous.filter(site=>site.name!=='moongazer')];
+}
+if (process.argv.includes('--apps-only')) {
+  const previous = JSON.parse(await readFile(join(root,'deployment/manifests/uploaded.json'),'utf8').catch(()=>'[]'));
+  recorded = [...previous.filter(site=>site.name==='moongazer'),...manifests];
 }
 await writeFile(join(root,'deployment/manifests/uploaded.json'),JSON.stringify(recorded,null,2));
 const evidenceFile = process.argv.includes('--homepage-only') ? 'upload-homepage.json' : 'upload-projects.json';

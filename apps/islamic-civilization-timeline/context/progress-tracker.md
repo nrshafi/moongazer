@@ -84,3 +84,11 @@ Limitation: the component file keeps its existing CRLF line endings; the task as
 ## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
 
 Renamed to Civilization Timeline. SEO title shortened to 'Civilization Timeline — Islamic history by region | Moongazer'. Descriptor is 'Islamic civilization across regions' (not 'from 632 onward': the events start in 661). record -> event, Map heading, 'At the same time…' heading, compare wording uses periods. No Muhammad or Prophet mentions in this app's editorial text. content.json (methodology only) changed; appContentSha256 71a8cd85... -> 42483ba9.... Checks: bun run check 0 errors; bun test 12 pass 0 fail; bun run build 28 pages; dist grep clean.
+
+## 2026-11-11 23:30 (Asia/Dhaka) - P4.7 event wiring
+
+All events use the stable id `timeline`: activity_started on the first filter or comparison, activity_completed once per page when a comparison is shown, share_clicked on copy buttons. Hook points are in `context/architecture.md`.
+
+Checks: `bun install --frozen-lockfile`, `bun run check` (0 errors, 0 warnings, 0 hints), `bun run test` and `bun run build` in this app.
+
+Limitations: no browser or DOM run with a stubbed `navigator.sendBeacon`; once-per-event behaviour was checked by reading the code.

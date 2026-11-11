@@ -76,3 +76,11 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
 
 Renamed to Why It Was Revealed (config, seo, learning heading, home page, context, favicon label). SEO title shortened to 'Why It Was Revealed — Asbab al-nuzul reports | Moongazer'. Interface words: Choose a reading, Copy my list, Save, Search, Nothing matches, Print this reading; relationship labels are now 'A reported occasion / General context / What happened after' (stored kind values, assessment.ts and the test updated together, so no display map was needed). Honorifics: plain glyph added to the Prophet in the raised-voices title and teaching note. content.json changed; appContentSha256 a4529eab... -> 8fa3d848.... Checks: bun run check 0 errors; bun test 13 pass 0 fail; bun run build 14 pages; dist grep for old names and retired phrases finds only hostnames.
+
+## 2026-11-11 23:30 (Asia/Dhaka) - P4.7 event wiring
+
+Wired `track` from `src/lib/counter.ts` (activity_started on the first relationship answer, activity_completed on the first submitted check, share_clicked with id home) and added the "Report an error" link under the check result. Hook points are in `context/architecture.md`. Shared files, counter.ts and the shell are unchanged.
+
+Checks: `bun install --frozen-lockfile`, `bun run check` (0 errors, 0 warnings, 0 hints), `bun run test` and `bun run build` in this app.
+
+Limitations: no browser or DOM run with a stubbed `navigator.sendBeacon`; once-per-event behaviour was checked by reading the code. The preview-host guard comes from the existing counter helper and its tests.
