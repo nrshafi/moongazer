@@ -4,10 +4,10 @@ import guide from '../data/learning.json';
 <section class="learning-guide" aria-labelledby="learning-guide-title">
   <div class="guide-heading"><p class="eyebrow">A useful starting point</p><h2 id="learning-guide-title">How this app works</h2><p>{guide.summary}</p></div>
   <div class="guide-columns">
-    <section><h3>Try it in three steps</h3><ol>{guide.steps.map(step=><li>{step}</li>)}</ol><a class="guide-subject" href={guide.collection.url}>Explore {guide.collection.name.toLowerCase()} tools <span aria-hidden="true">↗</span></a></section>
+    <section><h3>Try it in three steps</h3><ol>{guide.steps.map(step=><li>{step}</li>)}</ol><a class="guide-subject" href={guide.collection.url}>Explore {guide.collection.name} tools <span aria-hidden="true">→</span></a></section>
     <section aria-label="Questions about this app">{guide.questions.map(item=><div class="guide-answer"><h3>{item.question}</h3><p>{item.answer}</p></div>)}</section>
   </div>
-  <nav class="guide-related" aria-label="Related learning apps"><h3>Continue learning</h3><div>{guide.related.map(app=><a href={app.url}><strong>{app.name}</strong><span>{app.description}</span><span class="guide-open">Open {app.kind.toLowerCase()} <span aria-hidden="true">↗</span></span></a>)}</div></nav>
+  <nav class="guide-related" aria-label="Related learning apps"><h3>Continue learning</h3><div>{guide.related.map(app=><a href={app.url}><strong>{app.name}</strong><span>{app.description}</span><span class="guide-open">Open {app.kind.toLowerCase()} <span aria-hidden="true">→</span></span></a>)}</div></nav>
   <p class="guide-note">Inspect this app's <a href="/sources/">sources and methodology</a>, or read <a href="https://moongazer.tech/about/">about Moongazer and source corrections</a>.</p>
 </section>
 <style>
