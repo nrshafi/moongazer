@@ -33,11 +33,11 @@ The user authorized Cloudflare Pages hosting at https://quran-memorization-workl
 - `src/layouts/Shell.astro` owns metadata, theme initialization, navigation, footer and storage dialog. `src/lib/shell.ts` implements shell behavior.
 - `src/lib/` currently contains: `app.ts`, `engine.ts`, `shell.ts`, `utils.ts`, `wizard.ts`.
 - `engine.ts` validates assumptions, simulates study sessions and builds ICS text. It is unchanged by the wizard and keeps its tests.
-- `wizard.ts` is pure: wizard inputs (memorized pages, new-page goal, start date, days per week, minutes per session, assumptions) become an engine `Plan`, a this-week checklist and a calendar grouping. It also validates stored input, rebuilds a plan from today after missed sessions (`replanFrom`), and reports check-off progress. No DOM, storage or `Date.now()` inside it; the caller passes "today".
+- `wizard.ts` also builds the .ics daily reminder (`withDailyReminder`, one all-day event repeating from the first to the last session) on top of the unchanged `calendar()` output. It is pure: wizard inputs (memorized pages, new-page goal, start date, days per week, minutes per session, assumptions) become an engine `Plan`, a this-week checklist and a calendar grouping. It also validates stored input, rebuilds a plan from today after missed sessions (`replanFrom`), and reports check-off progress. No DOM, storage or `Date.now()` inside it; the caller passes "today".
 - `app.ts` renders the wizard steps and results, creates local download blobs, and holds the storage calls. Its results region is an `aria-live` polite region.
 - `src/styles/planner.css` (app-local) holds wizard, checklist, drawer and print-sheet rules. Shared `global.css` and `refinement.css` are not edited.
 - `src/data/config.json` owns slug, display text, accent and port. `content.json`, `sources.json` and `provenance.json` keep content, citations and checksums distinct.
-- `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `activity.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts`.
+- `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `activity.test.ts`, `calendar-identity.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts` and `wizard.test.ts` (wizard build, validation, checklist split, check-offs, missed-day re-plan, label setting, daily reminder).
 - Repository `_implementation/` owns research/preparation/collection checks, not runtime services or imports. `dist/`, `.astro/` and `node_modules/` are generated.
 
 ## Storage model
