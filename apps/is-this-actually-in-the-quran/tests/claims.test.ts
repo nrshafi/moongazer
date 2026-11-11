@@ -1,5 +1,5 @@
 import { test, expect } from 'bun:test';
-import { claims, claimIdMap } from '../src/data/content.json';
+import { claims } from '../src/data/content.json';
 import corpus from '../src/data/corpus.json';
 import { categories, matchClaims } from '../src/lib/claims';
 import { getPageMeta, seoPages } from '../src/lib/seo';
@@ -62,11 +62,9 @@ test('no title, URL or meta description contains the category or the verdict lin
   expect(seoPages.filter(p => p.path.startsWith('/claims/') && p.path !== '/claims/')).toHaveLength(12);
 });
 
-test('the id map covers the twelve casebook cases and points at existing claims', () => {
-  expect(Object.keys(claimIdMap)).toHaveLength(12);
-  const ids = new Set(claims.map(c => c.id));
-  for (const id of Object.values(claimIdMap)) expect(ids.has(id)).toBe(true);
-  expect(new Set(Object.values(claimIdMap)).size).toBe(12);
+test('the twelve claims have unique ids',()=>{
+  expect(claims).toHaveLength(12);
+  expect(new Set(claims.map(c => c.id)).size).toBe(12);
 });
 
 test('search keywords link whole-word matches and ignore short or unrelated queries', () => {

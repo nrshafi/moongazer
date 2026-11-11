@@ -1,9 +1,9 @@
 import data from '../data/content.json';
 import { read, write, announce } from './utils';
-import { applyImport, themeIds } from './merge-import';
 import { solvedIds } from './state';
 
-applyImport();
+/** Saved themes: up to 100 theme ids. */
+const themeIds = (value: unknown): value is string[] => Array.isArray(value) && value.length <= 100 && value.every(item => typeof item === 'string' && /^[a-z-]{1,60}$/.test(item));
 let saved = read('theme-bookmarks', themeIds) || [];
 const solved = solvedIds();
 const total = data.themes.length;

@@ -1,6 +1,5 @@
 import content from '../data/content.json';
 import { categories, validBookmarks } from './claims';
-import { importSaved } from './merge-import';
 import { read, write, announce, esc, byId } from './utils';
 import { track } from './counter';
 
@@ -8,7 +7,6 @@ const REPORT_LINK = ' <a class="feedback-link" href="#site-feedback" data-open-f
 
 const known = content.claims.map(claim => claim.id);
 const valid = validBookmarks(known);
-importSaved();
 let saved = read('claim-bookmarks', valid) || [];
 
 function paint() {

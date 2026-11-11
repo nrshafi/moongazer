@@ -1,4 +1,4 @@
-// Save toggle for business scenarios (bookmarks live under `business-bookmarks`, same behaviour as the old Halal Business Decisions app).
+// Save toggle for business scenarios (bookmarks live under `business-bookmarks`).
 import { BUSINESS_BOOKMARKS, validBookmarks } from './business';
 import { read, write, announce } from './utils';
 let saved = read(BUSINESS_BOOKMARKS, validBookmarks) || [];

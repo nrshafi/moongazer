@@ -1,11 +1,9 @@
 import { events, packs } from '../data/content.json';
 import { grade, valid, initialProgress, randomSeed, move, type Progress } from './challenge';
-import { importSaved } from './merge-import';
 import { byId, read, write, forget, cleanSeed, challengeUrl, esc, withHonorifics, copy, announce } from './utils';
 import { track } from './counter';
 import '../styles/challenge.css';
 
-importSaved();
 const KEY = 'challenge-progress';
 const params = new URLSearchParams(location.search);
 const stored = read<Progress>(KEY, (v): v is Progress => valid(v, packs));

@@ -1,4 +1,4 @@
-// "Which came first?" engine: pure functions, ported from the Islamic History Timeline Challenge app.
+// "Which came first?" engine: pure functions.
 import { shuffle, hash } from './utils';
 
 export interface Pack { id: string; number: number; title: string; events: string[] }
@@ -16,7 +16,7 @@ export function grade(order: string[], target: string[]) {
   return { correct: positions.every(Boolean), positions, inversions };
 }
 
-/** The old app's progress validator, unchanged, so imported progress is checked the same way. */
+/** Progress validator: the saved game must match a known pack and its events. */
 export function valid(v: unknown, packs: { id: string; events: string[] }[]): v is Progress {
   const p = v as Progress, pack = packs.find(c => c.id === p?.pack);
   return !!pack && permutation(p.order, pack.events) && Number.isInteger(p.tries) && p.tries >= 0 && p.tries <= 1000000 && typeof p.hint === 'boolean' && typeof p.revealed === 'boolean' && typeof p.complete === 'boolean' && (!p.complete || grade(p.order, pack.events).correct) && typeof p.seed === 'string' && /^[a-zA-Z0-9_-]{1,40}$/.test(p.seed);
