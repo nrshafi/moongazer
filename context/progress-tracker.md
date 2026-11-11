@@ -199,3 +199,7 @@ All P1 tasks T1.1–T1.19 implemented on `phase-1-trust-fixes`, one commit per t
 
 ## 2026-11-11 (Asia/Dhaka) — P2.5 directory names
 Directory now uses the P2 display names and "Descriptor now" text. `deployment/targets.json`: name, description and plain `kind` updated for 16 apps (kinds: Quiz, Puzzle x3, Search, Reader x3, Map, Timeline x2, Mystery, Course, Planner, Scenarios, Activities); the four merge-bound apps unchanged; slugs, hosts, categories untouched. `homepage/collections.json` FAQ and path copy use new names, with the Prophet's life followed by the honorific glyph in editorial copy. `homepage/index.html` featured CTAs read "Open Guess the Surah" and "Open Understand Your Salah". `homepage/about-content.html` civilization timeline name fixed. Checks: `node homepage/build.mjs` (6 pages, 20 app links, llms.txt regenerated), `bun test _implementation/seo.test.ts` 9 pass 0 fail, grep of `homepage/dist` for the 15 old names returns none.
+
+## 2026-11-11T07:20:11+06:00 — P2 names, copy and honorifics complete (R2)
+
+Implemented T2.1–T2.8 on `phase-2-names` (per-app work delegated to five subagents and the directory to a sixth; the orchestrator did context, the shared honorific helper, the nav verb, catalogue syncs, social cards and verification). Release note and full check list: `plan/implementation/releases/R2.md`. Validation: 20/20 check, test and build; sync-shared identical; seo tests 9 pass; verify-seo passed; verify-static 325 pages; text-join audit 0; headers of all 20 apps checked at 390 px in both themes.
