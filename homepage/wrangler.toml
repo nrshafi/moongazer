@@ -6,7 +6,7 @@ pages_build_output_dir = "./dist"
 compatibility_date = "2026-11-11"
 
 # Production D1 database "moongazer" (created 2026-11-11 under the owner's delegated authorization; the id is not a secret).
-# Migrations are applied by hand: wrangler d1 execute moongazer --remote --file migrations/<file>.sql
+# Migrations are applied by hand from homepage/: wrangler d1 migrations apply moongazer --remote
 [[d1_databases]]
 binding = "DB"
 database_name = "moongazer"
