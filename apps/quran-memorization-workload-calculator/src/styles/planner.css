@@ -40,3 +40,17 @@
   .wizard-nav .button { min-width: 0; }
   .checklist li { flex-direction: column; gap: 4px; }
 }
+
+/* Weekly sheet: hidden on screen. In print, the planner's workspace is hidden and this sheet is shown alone. */
+.print-sheet { display: none; }
+.print-box { display: inline-block; width: 13px; height: 13px; border: 1px solid var(--muted); border-radius: 2px; vertical-align: -2px; }
+@media print {
+  .workspace, .intro, .learning-guide, .skip-link, .seo-breadcrumb, .toast, .toast.visible { display: none !important; }
+  .print-sheet { display: block !important; color: #111; background: #fff; }
+  .print-sheet h1 { font-size: 20pt; margin: 0 0 8px; }
+  .print-sheet p { color: #111; font-size: 10.5pt; line-height: 1.5; margin: 0 0 8px; }
+  .print-sheet table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  .print-sheet th, .print-sheet td { border: 1px solid #777; padding: 7px 8px; font-size: 10.5pt; text-align: left; vertical-align: top; }
+  .print-sheet tr { break-inside: avoid; }
+  .print-box { border-color: #111; }
+}

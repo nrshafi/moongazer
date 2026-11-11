@@ -14,6 +14,7 @@ const progress = document.querySelector<HTMLElement>('[role=progressbar]')!;
 const remember = byId<HTMLInputElement>('remember');
 const checkRemember = byId<HTMLInputElement>('remember-checks');
 const checkNote = byId('check-note');
+const printSheet = byId('print-sheet');
 const replanNote = byId('replan-note');
 let step = 1;
 type Built = Extract<BuildResult, {ok: true}>;
@@ -167,10 +168,31 @@ function renderPlan() {
     <h3 class="top-gap">This week</h3><div class="plan-summary">${sessionsThisWeek.length ? checklistHtml(sessionsThisWeek) : '<p class="micro">No study sessions fall in the first week with these settings.</p>'}</div>
     <h3 class="top-gap">Calendar</h3><p class="micro">Revision is split between recent and old pages in proportion to the pages memorized in the last review cycle. The split only divides the total revision time; it does not change the schedule.</p>
     <div class="calendar-section">${calendarHtml(views)}</div>
-    <div class="actions top-gap"><button class="button secondary" type="button" id="csv">Download CSV</button><button class="button secondary" type="button" id="ics">Calendar file (first ${Math.min(90, rows.length)} sessions)</button></div>
+    <div class="actions top-gap"><button class="button secondary" type="button" id="csv">Download CSV</button><button class="button secondary" type="button" id="ics">Calendar file (first ${Math.min(90, rows.length)} sessions)</button><button class="button secondary" type="button" id="print-week">Print this week</button></div>
     <p class="micro">Dates are estimates from your study days and assumptions. Check-offs do not change the schedule; use “I missed a day” to re-plan from today.</p>`;
   byId('csv').onclick = () => download('quran-study-plan.csv', 'date,new_pages,review_pages,total_minutes\r\n' + rows.map(r => [r.date, r.newPages.toFixed(3), r.reviewPages.toFixed(3), r.total.toFixed(2)].join(',')).join('\r\n'), 'text/csv');
   byId('ics').onclick = () => download('quran-study-plan.ics', calendar(rows, new Date()), 'text/calendar');
+  byId('print-week').onclick = () => {
+    renderPrintSheet();
+    window.print();
+  };
+  renderPrintSheet();
+}
+
+/** The weekly sheet for a teacher. Hidden on screen; print CSS shows it alone. Holds no storage and no personal data beyond the plan itself. */
+function renderPrintSheet() {
+  if (!built || !current) {
+    printSheet.innerHTML = '';
+    return;
+  }
+  const a = current.assumptions;
+  const week = thisWeek(views);
+  const rows = week.map(session => {
+    const [n, recent, old] = session.items;
+    const done = checked.has(checkKey(session.date, 'new')) ? 'Yes' : '';
+    return `<tr><td>${esc(session.date)}</td><td>${fmt(n!.pages)}</td><td>${fmt(recent!.pages)}</td><td>${fmt(old!.pages)}</td><td><span class="print-box" aria-hidden="true"></span> ${done ? esc(done) : ''}</td></tr>`;
+  }).join('');
+  printSheet.innerHTML = `<h1>Hifz Planner: weekly sheet</h1><p>Start date ${esc(current.start)} · ${current.daysPerWeek} study ${current.daysPerWeek === 1 ? 'day' : 'days'} a week · ${current.minutes} minutes per session</p><p>Pages already memorized: ${fmt(current.memorized, 0)} · new pages in this plan: ${fmt(current.goal, 0)}</p><p class="micro">Assumptions: ${fmt(a.newMinutes, 0)} minutes to learn one new page, ${fmt(a.reviewMinutes, 1)} minutes to review one page, ${fmt(a.pace)} new pages per session, the whole portion reviewed every ${a.cycle} sessions. These are estimates from the planner, not measurements of memorization.</p>${week.length ? `<table><thead><tr><th>Date</th><th>New lesson</th><th>Recent revision</th><th>Old revision</th><th>Done</th></tr></thead><tbody>${rows}</tbody></table>` : '<p>No study sessions fall in the first week with these settings.</p>'}<p class="micro">Dates are estimates. Ask your teacher to confirm the next step.</p>`;
 }
 
 /** Points for the revision-minutes curve. Sampled so long plans stay light to draw. */
@@ -192,6 +214,7 @@ function setChecked(key: string, value: boolean) {
   });
   const count = document.getElementById('checked-count');
   if (count && built) count.textContent = `Checked off in this plan: ${checkedNewCount()} of ${built.rows.length} new lessons.`;
+  renderPrintSheet();
 }
 
 /** Re-plans from today. Checked-off new lessons count as memorized; past sessions without one return to the queue. */
