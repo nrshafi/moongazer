@@ -21,6 +21,11 @@ export function schedule(p:Plan){
  if(current<target-1e-7&&status==='complete')status='horizon';
  return {status,rows,ceiling,target};
 }
-export function calendar(rows:ReturnType<typeof schedule>['rows']){
- return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Islamic Product Lab//Study Plan//EN',...rows.slice(0,90).flatMap((r,i)=>['BEGIN:VEVENT',`UID:study-${r.date}-${i}@islamic-product.local`,'DTSTAMP:20261027T000000Z',`DTSTART;VALUE=DATE:${r.date.replaceAll('-','')}`,`SUMMARY:Quran study - ${r.newPages.toFixed(2)} new pages`,`DESCRIPTION:Review ${r.reviewPages.toFixed(2)} pages. Estimated total ${r.total.toFixed(0)} minutes. User estimates only.`,'END:VEVENT']),'END:VCALENDAR',''].join('\r\n');
+export function icsStamp(d:Date){
+ if(Number.isNaN(d.getTime()))throw new Error('Export time must be a valid date.');
+ return d.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z');
+}
+export function calendar(rows:ReturnType<typeof schedule>['rows'],now:Date){
+ const stamp=icsStamp(now);
+ return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Moongazer//Hifz Plan//EN',...rows.slice(0,90).flatMap((r,i)=>['BEGIN:VEVENT',`UID:study-${r.date}-${i}-${stamp}@moongazer.tech`,`DTSTAMP:${stamp}`,`DTSTART;VALUE=DATE:${r.date.replaceAll('-','')}`,`SUMMARY:Quran study - ${r.newPages.toFixed(2)} new pages`,`DESCRIPTION:Review ${r.reviewPages.toFixed(2)} pages. Estimated total ${r.total.toFixed(0)} minutes. User estimates only.`,'END:VEVENT']),'END:VCALENDAR',''].join('\r\n');
 }
