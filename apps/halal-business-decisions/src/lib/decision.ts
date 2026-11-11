@@ -16,7 +16,7 @@ function render(moveFocus=false){
   const stage=state.choices.length;
   const ledger=decisionLedger(state,item);
   root.innerHTML=`<ol class="stage-track" aria-label="Case stages"><li class="${stage===0?'current':'done'}">First decision</li><li class="${stage===1?'current':stage===2?'done':''}">Follow-up</li><li class="${stage===2?'current':''}">Source review</li></ol>`;
-  if(ledger.length)root.innerHTML+=`<section class="bottom-gap"><h2>Your decision ledger</h2>${ledger.map((choice,index)=>`<div class="ledger-row"><strong>${index+1}. ${esc(choice.label)}</strong><p>${esc(choice.consequence)}</p><span class="micro">Editorial feedback: ${esc(choice.signal)}</span></div>`).join('')}</section>`;
+  if(ledger.length)root.innerHTML+=`<section class="bottom-gap"><h2>Your decision ledger</h2>${ledger.map((choice,index)=>`<div class="ledger-row"><strong>${index+1}. ${esc(choice.label)}</strong><p>${esc(choice.consequence)}</p><span class="micro">${esc(choice.signal)}</span></div>`).join('')}</section>`;
   if(stage<2){
     const choices=stage===0?item.choices:item.repairs;
     root.innerHTML+=`<h2>${stage===0?'What would you do?':'The next decision'}</h2><p>${esc(stage===0?item.setup:item.followup)}</p><div role="group" aria-label="Available responses">${optionOrder(choices.length,state.seed!,stage===0?0:1).map(index=>`<button class="choice" data-choice="${index}">${esc(choices[index]!.label)}</button>`).join('')}</div>`;

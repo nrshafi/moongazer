@@ -1,5 +1,5 @@
 {
-  "heading": "Explore Quran themes and concepts",
+  "heading": "Quran Concept Atlas",
   "summary": "Quran Concept Atlas is a reading map of thirty themes and ninety selected passages. Open a theme, read its cited selections and follow related concepts when you want to compare another perspective. The groupings and suggested paths are editorial guides, with source and commentary references kept distinct from the quoted Quran text.",
   "steps": [
     "Choose a theme or search the concept catalog.",
@@ -18,13 +18,13 @@
   ],
   "related": [
     {
-      "name": "Quranic Parables Studio",
+      "name": "Parables of the Quran",
       "description": "Read Quranic parables with their surrounding passages and reflection prompts.",
       "kind": "Reading & reflection",
       "url": "https://quranic-parables-studio.moongazer.tech/"
     },
     {
-      "name": "Quran Connections",
+      "name": "Ayah Threads",
       "description": "Read three Quran passages and choose the theme that connects them.",
       "kind": "Passage puzzle",
       "url": "https://quran-connections.moongazer.tech/"

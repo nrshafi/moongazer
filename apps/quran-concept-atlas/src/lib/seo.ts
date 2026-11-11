@@ -77,7 +77,7 @@ if (settings.collection) {
     const label = name + (settings.nameSuffix || '');
     const summary = entry[settings.summaryField || 'summary'];
     let description = `${settings.detailLead ? settings.detailLead + ': ' : ''}${sentence(label)} ${typeof summary === 'string' && summary.trim() ? summary : settings.description}`;
-    if (settings.detailMode === 'salah') description = `${sentence(label)} Study the Arabic recitation and its meaning, inspect source notes and try a short reading check in Understand Salah Lab.`;
+    if (settings.detailMode === 'salah') description = `${sentence(label)} Study the Arabic recitation and its meaning, inspect source notes and try a short reading check in ${config.name}.`;
     if (settings.detailMode === 'family') description = `${sentence(label)} A family activity pack for ages ${entry.age}, with a reading check, open discussion and shared activity. Suggested time: ${entry.minutes} minutes.`;
     const path = `/${settings.prefix}/${id}/`;
     if (pages[path]) throw new Error(`Duplicate SEO route: ${path}`);

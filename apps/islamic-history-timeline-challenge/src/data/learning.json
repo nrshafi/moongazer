@@ -1,5 +1,5 @@
 {
-  "heading": "Islamic history timeline challenge",
+  "heading": "Islamic History Timeline Challenge",
   "summary": "The Islamic History Timeline Challenge asks you to arrange four selected events from earliest to latest. Source clues accompany the cards, and the result explains the order with approximate dates and report limits. This edition focuses on events from the prophetic mission rather than claiming to cover the whole of Islamic history.",
   "steps": [
     "Read the four event cards and open their source clues if needed.",
@@ -18,13 +18,13 @@
   ],
   "related": [
     {
-      "name": "Interactive Seerah Timeline",
-      "description": "Follow the Prophet's life through a connected timeline with source notes.",
+      "name": "Seerah Timeline",
+      "description": "Follow the Prophet ﷺ's life through a connected timeline with source notes.",
       "kind": "Timeline",
       "url": "https://interactive-seerah-timeline.moongazer.tech/"
     },
     {
-      "name": "Islamic Civilization Timeline",
+      "name": "Civilization Timeline",
       "description": "Explore historical periods and compare developments across regions.",
       "kind": "Timeline",
       "url": "https://islamic-civilization-timeline.moongazer.tech/"

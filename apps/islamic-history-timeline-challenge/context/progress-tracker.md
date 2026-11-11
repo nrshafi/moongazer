@@ -89,3 +89,12 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+- Merge-bound: name kept as "Islamic History Timeline Challenge". Learning H1 changed from "Islamic history timeline challenge" to "Islamic History Timeline Challenge" so it matches config.json and the title name part. seo.json title left as is (name part already matches); seo.json shortName "History Timeline Challenge" was not changed because the brief limits merge-bound apps to H1 and title.
+- Related names updated: "Interactive Seerah Timeline" → "Seerah Timeline"; "Islamic Civilization Timeline" → "Civilization Timeline".
+- Interface words: internal "Read the methodology ↗" → "→" (index sidebar). "event records" in the methodology text → "events".
+- Honorifics: "the Prophet's" mentions in content.json summaries, uncertainty and methodology, and in learning.json, now carry ﷺ (for example "the Prophet ﷺ's reassurance"). Client script src/lib/app.ts wraps card and answer text with `withHonorifics(esc(...))`. Quran translation quotations unchanged.
+- content.json changed; appContentSha256 updated to 09c515d0d09770904f0f4be7d5d8151da3b1d74b7a56fc516c92253ce01ed112.
+- Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 11 pass, 0 fail (77 expect calls); `bun run build` 4 pages built.

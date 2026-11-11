@@ -16,7 +16,7 @@ Portfolio rank 8 of 20. Project root `apps/quran-concept-atlas`. The app is impl
 
 1. Find a theme by name or study area.
 2. Open its three source readings and anchor commentary.
-3. Follow a related topic, save the reading, or copy the saved reading list.
+3. Follow a related topic, save the reading, or copy my list.
 
 ## Features and content
 

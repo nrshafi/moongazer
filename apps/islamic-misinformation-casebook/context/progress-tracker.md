@@ -78,3 +78,12 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 `src/data/seo.json` now builds case descriptions from `claim` with the lead "Read the evidence and decide" instead of `correction`. New test `tests/seo-spoiler.test.ts` checks that no case description contains its correction. Verified: `bun test` (13 pass).
 
 Titles that state or strongly hint the verdict, left for the P3 merge rebuild: "A detail beyond a brief cave report", "A phrase detached from its report", "Response or cause?", "A house is not a tensile-strength claim", "Filling a narrator's blank", "The order of chapters is not a full event chronology".
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+- Merge-bound: name kept as "Islamic Misinformation Casebook". Learning H1 already equalled config.json and the title name part, so no heading change was needed. Related "Halal Business Decisions" name unchanged (merged app keeps its name); related "Revelation Context Explorer" → "Why It Was Revealed".
+- Interface words: "Choose a record" → "Choose a case"; "No entries match" → "Nothing matches"; "Find an entry" → "Search" (Filters, aria-label "Search cases"); "Save for later" → "Save" (index, case page, library.ts); "Copy saved reading list" → "Copy my list"; "N of M entries shown" → "N of M cases shown"; internal "How conclusions are bounded ↗" → "→".
+- Editorial wording: "a fixed, cited case bank" → "a fixed, cited set of cases" (learning.json); content.json correction "describes a response after revelation" → "describes what happened after revelation". The correction is editorial text, not a quotation.
+- Honorifics: no prophet is named in this app's editorial text; the only "Prophet" occurrence is inside a Quran translation, left unchanged.
+- content.json changed; appContentSha256 updated to 69eb55777fe3727b6b904ef2817ceebaf218346c1fbce80e1453c99909ac3388.
+- Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 13 pass, 0 fail (159 expect calls); `bun run build` 16 pages built; dist grep for retired labels and old names finds nothing.

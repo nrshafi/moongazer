@@ -9,7 +9,7 @@
   "questions": [
     {
       "question": "Can I paste a social media post here for automatic fact-checking?",
-      "answer": "No. The app uses a fixed, cited case bank. It does not evaluate arbitrary visitor claims or perform a live fact-checking service."
+      "answer": "No. The app uses a fixed, cited set of cases. It does not evaluate arbitrary visitor claims or perform a live fact-checking service."
     },
     {
       "question": "Does Beyond the cited evidence mean false in every context?",
@@ -18,7 +18,7 @@
   ],
   "related": [
     {
-      "name": "Revelation Context Explorer",
+      "name": "Why It Was Revealed",
       "description": "Read reports about revelation while distinguishing context, evidence and uncertainty.",
       "kind": "Source reader",
       "url": "https://revelation-context-explorer.moongazer.tech/"

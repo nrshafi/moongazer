@@ -13,17 +13,17 @@
         {
           "label": "Describe the battery before taking payment.",
           "consequence": "The buyer can assess the actual condition.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Wait to see whether the buyer asks.",
           "consequence": "The buyer may rely on a description you know is incomplete.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Pause the sale and test the laptop again.",
           "consequence": "A second test can clarify the description, provided you do not conceal what is already known.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "The buyer asks you to put the condition in the receipt.",
@@ -31,12 +31,12 @@
         {
           "label": "Record the known defect and agreed price.",
           "consequence": "Both sides keep a clear record of what was disclosed.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Write “sold as seen” and omit the known defect.",
           "consequence": "A general phrase does not explain the concealed battery condition.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -71,17 +71,17 @@
         {
           "label": "Correct the weight or the label before selling.",
           "consequence": "The advertised and delivered quantities can agree.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Keep the label because most buyers will not weigh it.",
           "consequence": "Customers receive less than the stated quantity.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Stop sales while checking the affected batch.",
           "consequence": "You avoid repeating an uncertain measurement.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "Some underfilled packets have already been sold.",
@@ -89,12 +89,12 @@
         {
           "label": "Identify the affected sales and offer a clear remedy.",
           "consequence": "Customers can receive the missing quantity or an agreed correction.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Fix future packets but ignore the earlier shortage.",
           "consequence": "The earlier customers still bear the known shortfall.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -122,17 +122,17 @@
         {
           "label": "Keep the agreed slot or seek a genuine revision.",
           "consequence": "The customer can decide whether a new date is acceptable.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Move the first order and notify them afterward.",
           "consequence": "You change a material promise without agreement.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Check capacity before accepting the second order.",
           "consequence": "You can avoid making incompatible promises.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "A delay now seems unavoidable.",
@@ -140,12 +140,12 @@
         {
           "label": "Explain promptly and discuss a remedy.",
           "consequence": "The customer can make an informed choice about the delay.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Give repeated reassuring updates without a realistic date.",
           "consequence": "Reassurance hides the unresolved delivery problem.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -173,17 +173,17 @@
         {
           "label": "Pay on the agreed terms.",
           "consequence": "The worker receives the compensation already earned.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Delay because the freelancer is unlikely to complain.",
           "consequence": "You retain another person’s due payment for your convenience.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Check the invoice against the agreement today.",
           "consequence": "A genuine check can clarify an error without becoming an indefinite delay.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "The accounts team proposes another month of delay.",
@@ -191,12 +191,12 @@
         {
           "label": "Resolve any real discrepancy and release the due payment.",
           "consequence": "A specific accounting issue is separated from avoidance.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Ask the worker to keep waiting without a reason.",
           "consequence": "The same unpaid obligation continues.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -230,17 +230,17 @@
         {
           "label": "Discuss time and an achievable repayment arrangement.",
           "consequence": "You respond to the stated hardship rather than pretending it does not exist.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Threaten public humiliation to force immediate payment.",
           "consequence": "Pressure does not create money the customer does not have.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Clarify the situation respectfully before agreeing details.",
           "consequence": "Both sides can understand what is possible.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "You can afford to forgive part of the debt.",
@@ -248,12 +248,12 @@
         {
           "label": "Consider remission without turning it into publicity.",
           "consequence": "You can reduce the debt while preserving the customer’s dignity.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Offer remission only if they post a promotional testimonial.",
           "consequence": "The proposed help becomes pressure for a marketing benefit.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -281,17 +281,17 @@
         {
           "label": "Settle the due invoice.",
           "consequence": "The supplier receives payment according to the agreement.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Delay until the supplier threatens action.",
           "consequence": "You use avoidable delay as a negotiating tactic.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Check the exact due date and amount now.",
           "consequence": "You can resolve uncertainty before deciding.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "A colleague confuses this with genuine financial hardship.",
@@ -299,12 +299,12 @@
         {
           "label": "Distinguish inability from a convenient delay.",
           "consequence": "The actual facts stay central to the decision.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Claim that every delayed payment is hardship.",
           "consequence": "The label conceals the shop’s ability to pay.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -339,17 +339,17 @@
         {
           "label": "Agree on a clear written record together.",
           "consequence": "Both parties can check the same terms.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Treat asking for a record as an insult.",
           "consequence": "The disagreement remains unresolved.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Pause and clarify what each person actually agreed.",
           "consequence": "You avoid recording an amount one party disputes.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "A draft contains the wrong amount.",
@@ -357,12 +357,12 @@
         {
           "label": "Correct it before either person accepts it.",
           "consequence": "The document reflects the actual agreement.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Leave it because a signature matters more than accuracy.",
           "consequence": "The record preserves a known error.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -390,17 +390,17 @@
         {
           "label": "Keep the funds for their agreed purpose.",
           "consequence": "The client’s entrusted money stays available.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Use it and hope to replace it before anyone notices.",
           "consequence": "You change the use without the owner’s knowledge.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Ask about any proposed change before acting.",
           "consequence": "The owner can accept or refuse with the facts in view.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "The client requests an account of the spending.",
@@ -408,12 +408,12 @@
         {
           "label": "Provide an accurate record and return any balance.",
           "consequence": "The owner can inspect what happened to their funds.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Invent receipts to conceal a temporary diversion.",
           "consequence": "A false record adds concealment to the original problem.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -441,17 +441,17 @@
         {
           "label": "Explain the incentive before the recommendation.",
           "consequence": "The customer can evaluate the advice with that fact in view.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Keep the incentive secret because the product is decent.",
           "consequence": "The customer cannot assess the conflict you know about.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Offer a comparison without pretending neutrality.",
           "consequence": "The recommendation’s basis can be made clear.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "The supplier asks you to claim there is no commission.",
@@ -459,12 +459,12 @@
         {
           "label": "Decline the false statement and correct any misleading description.",
           "consequence": "The customer receives an honest account.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Use the supplier’s wording despite knowing it is false.",
           "consequence": "The recommendation now includes a direct falsehood.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -499,17 +499,17 @@
         {
           "label": "Show the damaged area and describe the repair.",
           "consequence": "The buyer can judge the actual item.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Photograph only the undamaged side.",
           "consequence": "The presentation conceals a material fact.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Have the structure checked before listing it.",
           "consequence": "You can learn what is safe to claim.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "The buyer asks whether it is structurally sound.",
@@ -517,12 +517,12 @@
         {
           "label": "Answer according to the inspection and known limits.",
           "consequence": "You avoid promising more than the evidence supports.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Say “perfect” to finish the sale.",
           "consequence": "The answer hides an unresolved defect.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -557,17 +557,17 @@
         {
           "label": "Explain the complete price before agreement.",
           "consequence": "The customer can decide with the total visible.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Reveal the fee only after the work is finished.",
           "consequence": "The customer faces a cost they were not able to evaluate.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Clarify what the original quote actually included.",
           "consequence": "You can distinguish a real change in scope from an undisclosed charge.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "The customer challenges the extra fee.",
@@ -575,12 +575,12 @@
         {
           "label": "Review the agreement and seek a transparent resolution.",
           "consequence": "The disputed term can be discussed using the original record.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Insist that small print need never be explained.",
           "consequence": "The foreseeable misunderstanding remains unresolved.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
@@ -608,17 +608,17 @@
         {
           "label": "Ask for genuine feedback from actual users.",
           "consequence": "A testimonial can describe a real experience.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Accept the invented review to help the launch.",
           "consequence": "Readers receive a false account.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         },
         {
           "label": "Invite the friend to test the service and disclose the relationship.",
           "consequence": "Any later account can state what actually happened.",
-          "signal": "Clarify first"
+          "signal": "Ask first"
         }
       ],
       "followup": "An invented review is already live.",
@@ -626,12 +626,12 @@
         {
           "label": "Correct or remove the misleading review.",
           "consequence": "Future readers can avoid relying on a fabricated experience.",
-          "signal": "Source-aligned"
+          "signal": "Fair to everyone"
         },
         {
           "label": "Leave it because no one can prove the reviewer was not a customer.",
           "consequence": "The misleading account remains available.",
-          "signal": "Needs repair"
+          "signal": "Needs putting right"
         }
       ],
       "passage": {
