@@ -92,3 +92,19 @@ Search Console is an external administrative Domain property for moongazer.tech.
 ## Search content enhancement scope
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
+
+## Merges (P3, from 11 November 2026)
+
+Four apps fold into hosts in two steps (D19 in `plan/implementation/00-INDEX.md`):
+
+| Old app | Receiving app and route |
+| --- | --- |
+| `quran-concept-atlas` `/topic/<id>/` | `quran-connections` (Ayah Threads) `/themes/<id>/` |
+| `islamic-history-timeline-challenge` `/` | `interactive-seerah-timeline` `/challenge/` |
+| `halal-business-decisions` `/case/<id>/` | `everyday-akhlaq-simulator` `/business/<id>/` |
+| `islamic-misinformation-casebook` `/case/<id>/` | `is-this-actually-in-the-quran` `/claims/<id>/` |
+
+- **Step A (R3):** the receiving sections ship; every page of each old app shows a "moved" banner whose button opens the mapped new URL with `#import=<payload>`; old pages carry a cross-host canonical to the new URL. Old apps still deploy.
+- **Import protocol:** `src/lib/import.ts` (identical in the eight sending and receiving apps; checked by `bun _implementation/sync-shared.ts --check --set merge`). Payload = base64url UTF-8 JSON `{v:1, from, items}`, at most 1,800 characters, in the URL fragment so it never reaches a server. The receiver validates each item with the old app's validator, maps keys (`theme-bookmarks`, `challenge-progress`, `business-bookmarks`, `business-<id>`, `claim-bookmarks`), merges (union for lists, keep existing progress), writes with `write()`, clears the fragment and announces the count. Blocked storage never throws.
+- **Retired flag:** `deployment/targets.json` marks the four old apps `"retired": "<receiver-slug>"`; the directory lists 16 apps. `deployment/merge-redirects.json` maps every old built path to an absolute new URL and is checked by `_implementation/test-redirect-map.ts`.
+- **Step B (no sooner than R3 + 14 days):** old Pages projects are redeployed as redirect-only outputs (301), method recorded here once verified against Cloudflare's `_redirects` documentation.
