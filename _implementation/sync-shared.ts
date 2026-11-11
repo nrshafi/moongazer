@@ -17,6 +17,8 @@ export const SHARED = [
   'src/lib/utils.ts',
   'src/lib/seo.ts',
   'src/components/Honorific.astro',
+  'src/lib/import.ts',
+  'tests/import.test.ts',
   'src/pages/404.astro',
   'src/pages/privacy.astro',
   'src/pages/sitemap.xml.ts',
@@ -28,7 +30,6 @@ export const SETS: Record<string, string[]> = {
   shared: SHARED,
   mastery: ['src/lib/mastery.ts', 'src/lib/mastery-ui.ts'],
   daily: ['src/lib/daily.ts'],
-  merge: ['src/lib/import.ts', 'tests/import.test.ts'],
 };
 
 export function listApps(): string[] {

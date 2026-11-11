@@ -4,5 +4,16 @@
   "description": "Work through fictional business dilemmas, then inspect the choices and sources.",
   "accent": "teal",
   "nav": "Play",
-  "port": 4337
+  "port": 4337,
+  "moved": {
+    "to": "Everyday Akhlaq",
+    "origin": "https://everyday-akhlaq-simulator.moongazer.tech",
+    "routes": [
+      [
+        "^/case/([a-z0-9-]+)/$",
+        "/business/$1/"
+      ]
+    ],
+    "fallback": "/business/"
+  }
 }

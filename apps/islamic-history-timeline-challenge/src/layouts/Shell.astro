@@ -10,7 +10,22 @@ if (!Astro.site || Astro.site.href !== productionOrigin) throw new Error('Config
 const meta = getPageMeta(Astro.url.pathname);
 const pageTitle = meta.title || title;
 const pageDescription = description || meta.description;
-const canonical = new URL(meta.path, Astro.site).href;
+// Moved apps (P3): config.json "moved" maps this page to its new home; the canonical and banner point there.
+interface Moved { to: string; origin: string; routes: [string, string][]; fallback: string; idMap?: Record<string, string> }
+const moved = (config as { moved?: Moved }).moved;
+function movedUrl(path: string, rule: Moved): string {
+  for (const [pattern, target] of rule.routes) {
+    const match = path.match(new RegExp(pattern));
+    if (!match) continue;
+    const id = match[1];
+    if (id === undefined) return rule.origin + target;
+    const mapped = rule.idMap ? rule.idMap[id] : id;
+    if (mapped) return rule.origin + target.replace('$1', mapped);
+  }
+  return rule.origin + rule.fallback;
+}
+const movedTo = moved ? movedUrl(meta.path, moved) : '';
+const canonical = movedTo || new URL(meta.path, Astro.site).href;
 const socialImage = new URL('/social-card.png', Astro.site).href;
 const schema = structuredData(meta, Astro.site);
 const schemaJson = schema ? encodeJsonLd(schema) : undefined;
@@ -73,6 +88,7 @@ const navLabel = (config as { nav?: string }).nav ?? 'Explore';
       </div>
     </header>
     <main id="main" tabindex="-1">
+      {moved && <aside class="moved-banner" aria-label="This app has moved"><p><strong>{config.name} is now part of {moved.to}.</strong> Your saved items can move with you.</p> <a class="button" id="moved-link" href={movedTo}>Open in {moved.to} <span aria-hidden="true">→</span></a></aside>}
       {!is404 && <nav class="seo-breadcrumb" aria-label="Breadcrumb"><ol>
         <li><a href="https://moongazer.tech/">Moongazer</a></li>{' '}
         <li>{meta.path === '/' ? <span aria-current="page">{config.name}</span> : <a href="/">{config.name}</a>}</li>

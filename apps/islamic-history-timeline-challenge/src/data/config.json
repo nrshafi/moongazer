@@ -4,5 +4,11 @@
   "description": "Arrange sourced events and explore the sequence behind them.",
   "accent": "violet",
   "nav": "Play",
-  "port": 4333
+  "port": 4333,
+  "moved": {
+    "to": "Seerah Timeline",
+    "origin": "https://interactive-seerah-timeline.moongazer.tech",
+    "routes": [],
+    "fallback": "/challenge/"
+  }
 }

@@ -14,6 +14,20 @@ interface SeoProfile {
   detailLead?: string;
   nameSuffix?: string;
   detailMode?: string;
+  /** Further detail collections, for apps with more than one kind of item (P3 merges). */
+  extraCollections?: SeoCollection[];
+  /** Single pages outside a collection, such as a section index (P3 merges). */
+  extraPages?: SeoPage[];
+}
+
+interface SeoCollection {
+  collection: string;
+  prefix: string;
+  nameField?: string;
+  summaryField?: string;
+  detailLead?: string;
+  nameSuffix?: string;
+  detailMode?: string;
 }
 
 export interface SeoPage {
@@ -65,24 +79,31 @@ const pages: Record<string, SeoPage> = {
   '/404.html': {path:'/404.html', title:`Page not found | ${settings.shortName}`, name:'Page not found', description:`This page could not be found. Return to ${config.name} or explore the Moongazer app directory.`, indexable:false}
 };
 
-if (settings.collection) {
-  const entries = data[settings.collection];
-  if (!Array.isArray(entries)) throw new Error(`Missing SEO collection: ${settings.collection}`);
+function addCollection(source: SeoCollection) {
+  const entries = data[source.collection];
+  if (!Array.isArray(entries)) throw new Error(`Missing SEO collection: ${source.collection}`);
   for (const unknownEntry of entries) {
     if (!unknownEntry || typeof unknownEntry !== 'object') throw new Error('Invalid SEO content record');
     const entry = unknownEntry as Record<string, unknown>;
     const id = entry.id;
-    const name = entry[settings.nameField || 'title'];
+    const name = entry[source.nameField || 'title'];
     if (typeof id !== 'string' || !/^[a-z0-9-]+$/.test(id) || typeof name !== 'string') throw new Error('Invalid SEO route record');
-    const label = name + (settings.nameSuffix || '');
-    const summary = entry[settings.summaryField || 'summary'];
-    let description = `${settings.detailLead ? settings.detailLead + ': ' : ''}${sentence(label)} ${typeof summary === 'string' && summary.trim() ? summary : settings.description}`;
-    if (settings.detailMode === 'salah') description = `${sentence(label)} Study the Arabic recitation and its meaning, inspect source notes and try a short reading check in ${config.name}.`;
-    if (settings.detailMode === 'family') description = `${sentence(label)} A family activity pack for ages ${entry.age}, with a reading check, open discussion and shared activity. Suggested time: ${entry.minutes} minutes.`;
-    const path = `/${settings.prefix}/${id}/`;
+    const label = name + (source.nameSuffix || '');
+    const summary = entry[source.summaryField || 'summary'];
+    let description = `${source.detailLead ? source.detailLead + ': ' : ''}${sentence(label)} ${typeof summary === 'string' && summary.trim() ? summary : settings.description}`;
+    if (source.detailMode === 'salah') description = `${sentence(label)} Study the Arabic recitation and its meaning, inspect source notes and try a short reading check in ${config.name}.`;
+    if (source.detailMode === 'family') description = `${sentence(label)} A family activity pack for ages ${entry.age}, with a reading check, open discussion and shared activity. Suggested time: ${entry.minutes} minutes.`;
+    const path = `/${source.prefix}/${id}/`;
     if (pages[path]) throw new Error(`Duplicate SEO route: ${path}`);
     pages[path] = {path, title:`${label} | ${settings.shortName}`, name:label, description:descriptionSnippet(description), indexable:true};
   }
+}
+
+if (settings.collection) addCollection({collection:settings.collection, prefix:settings.prefix || settings.collection, nameField:settings.nameField, summaryField:settings.summaryField, detailLead:settings.detailLead, nameSuffix:settings.nameSuffix, detailMode:settings.detailMode});
+for (const extra of settings.extraCollections ?? []) addCollection(extra);
+for (const extra of settings.extraPages ?? []) {
+  if (!extra.path.startsWith('/') || !extra.path.endsWith('/') || pages[extra.path]) throw new Error(`Invalid or duplicate SEO page: ${extra.path}`);
+  pages[extra.path] = {...extra};
 }
 
 export const seoPages = Object.values(pages).map(page => ({...page, description:descriptionSnippet(page.description)}));

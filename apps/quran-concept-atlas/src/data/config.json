@@ -4,5 +4,16 @@
   "description": "Follow connected themes through carefully cited Quran passages.",
   "accent": "teal",
   "nav": "Read",
-  "port": 4328
+  "port": 4328,
+  "moved": {
+    "to": "Ayah Threads",
+    "origin": "https://quran-connections.moongazer.tech",
+    "routes": [
+      [
+        "^/topic/([a-z0-9-]+)/$",
+        "/themes/$1/"
+      ]
+    ],
+    "fallback": "/themes/"
+  }
 }
