@@ -74,3 +74,21 @@ Browser QA uses the deployed Pages address if the workstation's domain resolver 
 - Installed `deployment/node_modules/blake3-wasm/dist/node/hash-fn.d.ts` verified the hash function's accepted input and result.
 
 The initial live check found missing project-scoped assets, a domain-level Pages redirect that was ignored, and a platform-inserted analytics beacon. Project-specific uploads followed by new deployments, a zone redirect rule, and regenerated no-transform headers address those findings. Initial failed HTTP evidence remains in `evidence/live-http-initial.json` and its log. Final evidence must pass before marking the deployment complete.
+
+## First-party services: owner scripts (P4)
+
+The apex `moongazer` project runs Pages Functions and one D1 database (`moongazer`, binding `DB`). Its source is `homepage/` (`wrangler.toml`, `_routes.json`, `functions/`, `migrations/`). Wrangler is pinned to 4.160.0 in this folder. `bunx --bun wrangler` failed on Windows, so run it as `node deployment/node_modules/wrangler/bin/wrangler.js` from `homepage/`. These scripts run wrangler from `homepage/` as well.
+
+The scripts default to the **production** database (`--remote`). Add `--local` to use the local emulated database after `node deployment/node_modules/wrangler/bin/wrangler.js d1 migrations apply moongazer --local` in `homepage/`. Production commands are owner actions; run them only when the owner asks.
+
+Review pending feedback (`deployment/scripts/review-feedback.mjs`):
+
+- `list [--show-contact]`: pending rows, oldest first. Contact details are hidden unless `--show-contact` is given.
+- `set <id> verified|rejected|spam [--note "..."]`: records a decision with the review time.
+- `publish <id> --change "What changed"`: appends `{date, app_slug, page_url, change, found_by: "visitor"}` to `homepage/corrections.json` (UTC date, no contact), then marks the row `verified`. Commit `corrections.json` afterwards and rebuild the directory.
+
+Counter report (`deployment/scripts/counter-report.mjs`):
+
+- `[--from YYYY-MM-DD] [--to YYYY-MM-DD]` prints CSV on stdout only: one row per app and per app+item, with the three event totals and `completion_rate` = completed / started (blank when nothing started). Dates are UTC days from the server.
+
+Local test results are recorded in the root `context/progress-tracker.md`.
