@@ -8,14 +8,14 @@ const valid = (overrides: Record<string, unknown> = {}): Record<string, unknown>
   category: 'bug_report',
   message: 'The clue for Al-Fatiha is wrong.',
   website: '',
-  t: String(NOW - 5_000),
+  t: '5000',
   contact: '',
   ...overrides,
 });
 
 describe('validateFeedback: storage', () => {
   test('a valid form with a timestamp stores a cleaned row', () => {
-    expect(validateFeedback(valid(), NOW)).toEqual({
+    expect(validateFeedback(valid())).toEqual({
       kind: 'store',
       app_slug: 'guess-the-surah',
       page_url: 'https://guess-the-surah.moongazer.tech/quiz/',
@@ -27,17 +27,17 @@ describe('validateFeedback: storage', () => {
   });
 
   test('a missing timestamp stores with no_js set', () => {
-    const decision = validateFeedback(valid({t: undefined}), NOW);
+    const decision = validateFeedback(valid({t: undefined}));
     expect(decision.kind === 'store' && decision.no_js).toBe(true);
   });
 
   test('an empty timestamp is treated as no JavaScript', () => {
-    const decision = validateFeedback(valid({t: ''}), NOW);
+    const decision = validateFeedback(valid({t: ''}));
     expect(decision.kind === 'store' && decision.no_js).toBe(true);
   });
 
   test('message is trimmed and contact is kept when it is an email', () => {
-    const decision = validateFeedback(valid({message: '   0123456789   ', contact: ' reader@example.org '}), NOW);
+    const decision = validateFeedback(valid({message: '   0123456789   ', contact: ' reader@example.org '}));
     expect(decision).toMatchObject({kind: 'store', message: '0123456789', contact: 'reader@example.org'});
   });
 });
@@ -46,21 +46,21 @@ describe('validateFeedback: honeypot and timing drop silently', () => {
   test.each([
     ['honeypot filled', {website: 'http://spam.example'}],
     ['honeypot filled with spaces', {website: ' '}],
-    ['timestamp 2,999 ms old', {t: String(NOW - 2_999)}],
-    ['timestamp in the future', {t: String(NOW + 1_000)}],
-    ['timestamp older than 24 hours', {t: String(NOW - 24 * 60 * 60 * 1000 - 1)}],
-    ['timestamp not numeric', {t: 'yesterday'}],
-    ['timestamp with a decimal point', {t: '1.5'}],
+    ['open for 2,999 ms', {t: '2999'}],
+    ['negative elapsed time', {t: '-1000'}],
+    ['open for more than 24 hours', {t: String(24 * 60 * 60 * 1000 + 1)}],
+    ['elapsed time not numeric', {t: 'yesterday'}],
+    ['elapsed time with a decimal point', {t: '3000.5'}],
   ])('%s', (_name, overrides) => {
-    expect(validateFeedback(valid(overrides), NOW)).toEqual({kind: 'drop'});
+    expect(validateFeedback(valid(overrides))).toEqual({kind: 'drop'});
   });
 
   test('exactly 3,000 ms is accepted', () => {
-    expect(validateFeedback(valid({t: String(NOW - 3_000)}), NOW).kind).toBe('store');
+    expect(validateFeedback(valid({t: '3000'})).kind).toBe('store');
   });
 
   test('exactly 24 hours is accepted', () => {
-    expect(validateFeedback(valid({t: String(NOW - 24 * 60 * 60 * 1000)}), NOW).kind).toBe('store');
+    expect(validateFeedback(valid({t: String(24 * 60 * 60 * 1000)})).kind).toBe('store');
   });
 });
 
@@ -75,20 +75,20 @@ describe('validateFeedback: field rules reject', () => {
     ['contact without @', {contact: 'reader at example'}, 'Contact must be an email address of 200 characters or fewer.'],
     ['contact over 200 characters', {contact: `${'a'.repeat(197)}@x.y`}, 'Contact must be an email address of 200 characters or fewer.'],
   ])('%s', (_name, overrides, reason) => {
-    expect(validateFeedback(valid(overrides), NOW)).toEqual({kind: 'reject', reason});
+    expect(validateFeedback(valid(overrides))).toEqual({kind: 'reject', reason});
   });
 
   test('a message of exactly 10 characters is accepted', () => {
-    expect(validateFeedback(valid({message: '0123456789'}), NOW).kind).toBe('store');
+    expect(validateFeedback(valid({message: '0123456789'})).kind).toBe('store');
   });
 
   test('a message of exactly 2,000 characters is accepted', () => {
-    expect(validateFeedback(valid({message: 'a'.repeat(2000)}), NOW).kind).toBe('store');
+    expect(validateFeedback(valid({message: 'a'.repeat(2000)})).kind).toBe('store');
   });
 
   test('a message counts characters, not UTF-16 units', () => {
     // 10 Arabic-script characters outside the BMP would count as 20 units; here 10 code points.
-    expect(validateFeedback(valid({message: '\u{1F54C}'.repeat(10)}), NOW).kind).toBe('store');
+    expect(validateFeedback(valid({message: '\u{1F54C}'.repeat(10)})).kind).toBe('store');
   });
 });
 

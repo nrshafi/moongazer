@@ -44,9 +44,12 @@ movedLink?.addEventListener('click', () => {
   movedLink.href = movedLink.href.split('#')[0] + (payload ? '#import=' + payload : '');
 });
 
-// Feedback (P4): stamp the render time for the server's minimum time-to-submit check,
-// and open the footer form when a compact "Report an error" link is used.
-document.querySelectorAll<HTMLInputElement>('[data-feedback-time]').forEach(input => { input.value = String(Date.now()); });
+// Feedback (P4): at submit, record how long the page has been open (performance.now(), not the device
+// clock) for the server's minimum time-to-submit check, and open the footer form from compact links.
+document.addEventListener('submit', event => {
+  const input = (event.target as HTMLElement).querySelector<HTMLInputElement>('[data-feedback-time]');
+  if (input) input.value = String(Math.round(performance.now()));
+});
 document.addEventListener('click', event => {
   if (!(event.target as HTMLElement).closest('[data-open-feedback]')) return;
   const details = document.getElementById('site-feedback') as HTMLDetailsElement | null;

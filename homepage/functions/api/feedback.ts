@@ -51,7 +51,7 @@ export async function onRequestPost({request, env}: FunctionContext): Promise<Re
   );
   const submittedSlug = typeof fields.app_slug === 'string' ? fields.app_slug : '';
 
-  const decision = validateFeedback(fields, Date.now());
+  const decision = validateFeedback(fields);
   // Honeypot or timing failure: look exactly like success, store nothing.
   if (decision.kind === 'drop') return see(submittedSlug);
   if (decision.kind === 'reject') return text(400, `Please check the form. ${decision.reason}`);

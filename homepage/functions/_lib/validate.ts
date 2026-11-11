@@ -64,16 +64,17 @@ export function cleanPageUrl(raw: string, appSlug: string): string | null {
   return cleaned.length <= MAX_PAGE_URL ? cleaned : null;
 }
 
-export function validateFeedback(fields: Record<string, unknown>, nowMs: number): FeedbackDecision {
+export function validateFeedback(fields: Record<string, unknown>): FeedbackDecision {
   // Honeypot: a real visitor never fills the hidden "website" field.
   if ((text(fields, 'website') ?? '') !== '') return { kind: 'drop' };
 
-  // Timing: t is the render timestamp (ms) set by the inline script. Absent t means no JS.
+  // Timing: t is how long the page was open before submit, in ms, measured by the page itself with
+  // performance.now() (monotonic, so a wrong device clock cannot drop real feedback). Absent t means no JS.
   const sent = text(fields, 't');
   const no_js = sent === undefined || sent === '';
   if (!no_js) {
     if (!MILLISECONDS.test(sent)) return { kind: 'drop' };
-    const age = nowMs - Number(sent);
+    const age = Number(sent);
     if (age < MIN_SUBMIT_MS || age > MAX_SUBMIT_AGE_MS) return { kind: 'drop' };
   }
 
