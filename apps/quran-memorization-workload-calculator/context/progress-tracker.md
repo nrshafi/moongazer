@@ -131,3 +131,15 @@ Browser checks (V7), headless Chrome against `astro preview` on port 4326, scena
 Not run: V2 (`verify.ts`), V4 (`node homepage/build.mjs`; the directory catalog is not regenerated), V5 (`verify-static.py`), `deployment/verify-seo.py`, `_implementation/e2e-preview.ts`, a physical printer, and Safari/Firefox. Quran MCP not called: the wizard quotes no Quran text or hadith.
 
 Remaining in this app: juz/surah choosers (needs page data); counter events (P4.7); DESIGN.md (P5); first-control offset (P5 shell). Shared status row in `plan/implementation/00-INDEX.md` not edited (shared file, app lane).
+
+## 2026-11-11 (Asia/Dhaka) — P7.2 juz and surah choosers (supersedes the blocker above)
+
+The page-boundary research file (`_implementation/research/page-boundaries.json`, commit 83cc262, Quran MCP `fetch_quran_metadata`, 2026-11-11) now exists. It was checked before use: pages 1 to 604 are each covered by a juz and by a surah, the juz chain is unbroken, and the manzil ranges match. This resolves the juz and surah blocker recorded in the entry above.
+
+Commits: `5228d7d` app copy of the data with a provenance record (`src/data/page-boundaries.json`, `src/data/provenance.json`); `c2e4fc4` pure selection function with tests (`src/lib/pages.ts`, `tests/pages.test.ts`); `04fce4e` chooser UI in wizard step 1; then a commit for the context docs (project-overview "Page boundaries", ui-context, architecture).
+
+Behaviour: step 1 keeps the number entry. A "Choose by juz or by surah" drawer holds native checkbox fieldsets (30 juz with page ranges; 114 surahs with transliterated names and page ranges). Ticks set the number to the distinct page count, so a page shared by neighbouring juz or surahs counts once. Typing a number clears the ticks; "Clear ticks" keeps the number. Choosing the whole layout explains that nothing is left to add, because the plan needs at least one new page.
+
+Checks in this app: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 49 pass, 0 fail, 1996 expect() calls, 7 files (the new `pages.test.ts` covers the data shape, full page coverage by juz and by surah, 30 juz = 604, 114 surahs = 604, the juz 3/4 shared page (40), a surah/juz overlap (49), an empty selection and validation); `bun run build` 4 pages built. Browser checks in headless Chrome (scratch scripts, not committed): 24 of 24 at 390 and 1440 px, covering the ticks, the number entry, the whole-layout message, clearing, the wizard reaching step 2, no horizontal overflow, and transliterated labels. Screenshot at 390 px: two columns, no nested scroll.
+
+Open: the planner counts pages, not their positions, so a juz or surah choice gives a number of pages and does not record which pages are memorized. The repo-level `_implementation/seo.test.ts` was not re-run in this step (no descriptor or route change here). The first-control offset (665 px on phones) is unchanged and belongs to P5.
