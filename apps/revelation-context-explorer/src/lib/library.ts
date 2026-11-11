@@ -1,6 +1,7 @@
 import content from '../data/content.json';
 import { read, write, copy, announce } from './utils';
 import { matchesFilters, type Filters } from './catalog';
+import { track } from './counter';
 
 const cards = [...document.querySelectorAll<HTMLElement>('[data-item-id]')];
 const entries = Object.values(content).filter(Array.isArray).flat() as { id?: string }[];
@@ -68,6 +69,7 @@ document.querySelectorAll<HTMLButtonElement>('[data-region-filter]').forEach(but
 document.getElementById('copy-saved')?.addEventListener('click', () => {
   const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-reading-link]')].filter(link => saved.includes(link.dataset.readingLink!));
   if (!links.length) { announce('Save a reading before copying your list.'); return; }
+  track('share_clicked', 'home');
   void copy(links.map(link => `${link.textContent?.trim()}
 ${new URL(link.getAttribute('href')!, location.origin).href}`).join('\n\n'), 'List copied');
 });
