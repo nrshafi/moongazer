@@ -1,5 +1,6 @@
 ---
 import LearningGuide from '../components/LearningGuide.astro';
+import Feedback from '../components/Feedback.astro';
 import '../styles/global.css';
 import '../styles/refinement.css';
 import config from '../data/config.json';
@@ -97,6 +98,7 @@ const navLabel = (config as { nav?: string }).nav ?? 'Explore';
       <slot />
       {meta.path === '/' && <LearningGuide />}
     </main>
+    <section class="feedback-wrap" aria-label="Feedback"><Feedback /></section>
     <footer class="site-footer">
       <div><a class="footer-name" href="/">{config.name}</a><p>Explore at your own pace. Your activity stays in this browser.</p></div>{' '}
       <div class="footer-links"><a href="https://moongazer.tech/#library">All Moongazer apps</a> <a href="https://moongazer.tech/about/">About Moongazer</a> <a href="/sources/">Sources & methodology</a> <a href="/privacy/">Privacy & storage</a> <button type="button" class="text-button" id="storage-open">Manage saved data</button></div>

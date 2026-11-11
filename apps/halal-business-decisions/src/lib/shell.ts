@@ -43,3 +43,12 @@ movedLink?.addEventListener('click', () => {
   const payload = encodePayload(namespace(), items);
   movedLink.href = movedLink.href.split('#')[0] + (payload ? '#import=' + payload : '');
 });
+
+// Feedback (P4): stamp the render time for the server's minimum time-to-submit check,
+// and open the footer form when a compact "Report an error" link is used.
+document.querySelectorAll<HTMLInputElement>('[data-feedback-time]').forEach(input => { input.value = String(Date.now()); });
+document.addEventListener('click', event => {
+  if (!(event.target as HTMLElement).closest('[data-open-feedback]')) return;
+  const details = document.getElementById('feedback') as HTMLDetailsElement | null;
+  if (details) details.open = true;
+});
