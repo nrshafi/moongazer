@@ -75,3 +75,17 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 - Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## First-party counter events (P4.7, 11 Nov 2026)
+
+`src/lib/counter.ts` (`track(event, itemId)`) sends one anonymous `sendBeacon` to `https://moongazer.tech/api/event`. No cookie, identifier or visitor text is sent. It is a silent no-op on preview hosts (anything not ending in `moongazer.tech`), when `navigator.globalPrivacyControl` is true, or when `sendBeacon` is missing. `activity_started` is de-duplicated per item for the page lifetime. The item id is the board id (`board-01` to `board-16`).
+
+Hook points in `src/lib/app.ts`:
+
+- Check group (`#submit`): `track('activity_started', board.id)` on every check (the helper keeps the first). When the fourth group is found, `track('activity_completed', board.id)`.
+- Show a hint (`#hint`): `track('activity_started', board.id)`. A hint is not a completion.
+- Reveal all groups (`#reveal`): `track('activity_started', board.id)` then `track('activity_completed', board.id)`.
+- Copy board link (`#share`): `track('share_clicked', board.id)`.
+- Feedback: the completion explanations block appends a `.feedback-link` with `data-open-feedback` once the board is done.
+
+Board ids are fixed slugs from `content.json`. Selected terms, shuffle seeds and saved progress never enter an id. No unit test was added: the hook points are wiring only.
