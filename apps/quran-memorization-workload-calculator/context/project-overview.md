@@ -14,9 +14,17 @@ Portfolio rank 6 of 20. Project root `apps/quran-memorization-workload-calculato
 
 ## Core user flow
 
-1. Enter existing pages, a new-page goal, study time and learning/review estimates.
-2. Choose study weekdays, start date and revision cycle, then calculate.
-3. Inspect feasibility, the revision curve and schedule; adjust assumptions or export the CSV/calendar.
+The home page is a three-step wizard (P7 T7.2). Each step is a fieldset with a legend and a "Step N of 3" indicator, operable by keyboard, with Back and Next buttons.
+
+1. **What have you memorized?** Pages already memorized (0–603) and new pages you want to add. Choosing by juz or by surah is not available yet: the bundled data has no page boundaries for juz or surahs (see "Page boundaries" below).
+2. **Your week.** Days per week (study days are Monday first, in calendar order), minutes per session and start date. A "Ramadan pace" button fills in a suggestion (about half the default new pages per session, review cycle of 7 sessions). It is a suggestion, labelled as one, and every value stays editable.
+3. **Your plan.** This week's checklist (new lesson, recent revision, old revision for each study day), the full schedule as a calendar, check-offs, an "I missed a day" re-plan, a printable weekly sheet, a label setting (sabaq/sabqi/manzil or plain words), and `.ics` export.
+
+Per-page minute estimates and the other assumptions sit in an "Adjust assumptions" drawer with plain labels, for example "How many new pages per session?".
+
+## Page boundaries
+
+The bundled `src/data/content.json` holds 114 chapter records (name, verse count, revelation details) and `layoutPages: 604`. It has no page-to-surah or page-to-juz boundaries. The repository research folder has seven manzil metadata responses (`_implementation/research/manzil-1.json` to `manzil-7.json`). Each gives a page range and juz range for one manzil, but not per surah or per juz. No boundary was derived or invented. Juz and surah choosers stay out until a Quran MCP metadata snapshot (per-juz and per-surah page starts) is added to the research folder and recorded here with its tool call, edition and date.
 
 ## Features and content
 

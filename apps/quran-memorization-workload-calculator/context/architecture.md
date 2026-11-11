@@ -31,8 +31,11 @@ The user authorized Cloudflare Pages hosting at https://quran-memorization-workl
 - `src/pages/sources.astro`
 
 - `src/layouts/Shell.astro` owns metadata, theme initialization, navigation, footer and storage dialog. `src/lib/shell.ts` implements shell behavior.
-- `src/lib/` currently contains: `app.ts`, `engine.ts`, `shell.ts`, `utils.ts`.
-- `engine.ts` validates assumptions, simulates study sessions and builds ICS text. `app.ts` renders the results and creates local download blobs.
+- `src/lib/` currently contains: `app.ts`, `engine.ts`, `shell.ts`, `utils.ts`, `wizard.ts`.
+- `engine.ts` validates assumptions, simulates study sessions and builds ICS text. It is unchanged by the wizard and keeps its tests.
+- `wizard.ts` is pure: wizard inputs (memorized pages, new-page goal, start date, days per week, minutes per session, assumptions) become an engine `Plan`, a this-week checklist and a calendar grouping. It also validates stored input, rebuilds a plan from today after missed sessions (`replanFrom`), and reports check-off progress. No DOM, storage or `Date.now()` inside it; the caller passes "today".
+- `app.ts` renders the wizard steps and results, creates local download blobs, and holds the storage calls. Its results region is an `aria-live` polite region.
+- `src/styles/planner.css` (app-local) holds wizard, checklist, drawer and print-sheet rules. Shared `global.css` and `refinement.css` are not edited.
 - `src/data/config.json` owns slug, display text, accent and port. `content.json`, `sources.json` and `provenance.json` keep content, citations and checksums distinct.
 - `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `activity.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts`.
 - Repository `_implementation/` owns research/preparation/collection checks, not runtime services or imports. `dist/`, `.astro/` and `node_modules/` are generated.
@@ -42,7 +45,9 @@ The user authorized Cloudflare Pages hosting at https://quran-memorization-workl
 Stored records use the body app slug `quran-memorization-workload-calculator` and a colon, with `at` and `value` fields. The read helper validates shape/time, rejects timestamps more than 60 seconds ahead and records at least 30 days old, and tolerates unavailable storage. Initial theme setup validates a finite numeric timestamp, the 30-day age, the 60-second future tolerance and the light/dark value in Shell.astro; subsequent reads use the storage helper. Thirty days is an access-time expiry policy, not automatic deletion while the site is closed.
 
 - `theme`: the explicit light/dark preference, independent of activity recovery.
-- `plan` stores assumptions only if the remember checkbox is enabled. Calculated schedules and exports are otherwise in memory.
+- `plan`: the wizard inputs and assumptions (`{at,value}`), written only if the "Remember these assumptions for 30 days" checkbox is enabled. Validated with `isWizardInput` on read. Calculated schedules and exports are otherwise in memory.
+- `checkoffs`: an opt-in list of completed sessions, each a `YYYY-MM-DD` date plus one of `new`, `recent`, `old` (no personal content, no free text). Written only when the visitor opts in with "Remember my check-offs for 30 days". Validated with `isCheckoffList` on read, and rejected records are removed. If storage is blocked, check-offs still work in the page and the page says they will not be kept after reload.
+- `vocab`: the label setting, `sabaq` or `plain`. Stored as a display preference like `theme`; it holds no activity data and is validated on read.
 - Core activity state otherwise lives in memory. Clear-data removes this app's namespace and reloads; other apps are unaffected.
 
 ## Auth and access

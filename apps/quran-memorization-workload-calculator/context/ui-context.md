@@ -30,6 +30,18 @@ The actual token definitions live in the app's `src/styles/global.css`. Use thes
 | `--danger-bg` | `#fcecee` | `#44272f` |
 | `--success` | `#147653` | `#92dfb8` |
 
+## Wizard (P7 T7.2)
+
+The home page is a three-step wizard, one step visible at a time. Each step is a `<fieldset>` with a `<legend>`, a "Step N of 3" line and a progress track, with Back and Next buttons. Results and status messages go to an `aria-live` region. Every step is keyboard operable, and focus moves to the step's heading when the step changes.
+
+- Step 1, "What have you memorized?": existing pages and new-page goal (juz and surah choosers wait for page data; see project-overview).
+- Step 2, "Your week": days per week, minutes per session, start date, the "Ramadan pace" suggestion button and the "Adjust assumptions" `<details>` drawer with plain labels.
+- Step 3, "Your plan": this-week checklist, calendar view, check-offs, "I missed a day", label setting, print button, `.ics` export.
+
+Wizard surfaces reuse the existing classes (`panel`, `panel-head`, `panel-body`, `button`, `button secondary`, `button ghost`, `field`, `actions`, `notice`, `pill`, `micro`, `top-gap`). New layout rules (step indicator, checklist rows, drawer spacing, print sheet) live in the app-local `src/styles/planner.css`, use only the tokens above, and add no colours or fonts. At 390 px the fields stack one per row, buttons take full width where they are the primary action, and no element may cause horizontal page scroll (wide tables sit inside an `overflow:auto` wrapper). Suggestion copy is labelled "a suggestion".
+
+Print: the weekly sheet (`#print-sheet`) is hidden on screen and shown only in print, with the header, footer, wizard controls and the full schedule hidden. It needs no storage.
+
 ## Typography
 
 | Role | Local font | Existing implementation |
