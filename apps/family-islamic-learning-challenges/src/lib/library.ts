@@ -22,7 +22,7 @@ function filter() {
     if (show) count++;
   }
   const counter = document.getElementById('count');
-  if (counter) counter.textContent = `${count} of ${cards.length} entries shown`;
+  if (counter) counter.textContent = `${count} of ${cards.length} packs shown`;
   const empty = document.getElementById('empty');
   if (empty) empty.hidden = count !== 0;
 }
@@ -30,7 +30,7 @@ function filter() {
 function updateSaved() {
   document.querySelectorAll<HTMLButtonElement>('[data-save]').forEach(button => {
     const active = saved.includes(button.dataset.save!);
-    button.textContent = active ? 'Saved ✓' : 'Save for later';
+    button.textContent = active ? 'Saved ✓' : 'Save';
     button.setAttribute('aria-pressed', String(active));
   });
   filter();
@@ -67,8 +67,8 @@ document.querySelectorAll<HTMLButtonElement>('[data-region-filter]').forEach(but
 }));
 document.getElementById('copy-saved')?.addEventListener('click', () => {
   const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-reading-link]')].filter(link => saved.includes(link.dataset.readingLink!));
-  if (!links.length) { announce('Save an entry before copying a reading list.'); return; }
+  if (!links.length) { announce('Save a pack before copying your list.'); return; }
   void copy(links.map(link => `${link.textContent?.trim()}
-${new URL(link.getAttribute('href')!, location.origin).href}`).join('\n\n'), 'Reading list copied');
+${new URL(link.getAttribute('href')!, location.origin).href}`).join('\n\n'), 'List copied');
 });
 updateSaved();

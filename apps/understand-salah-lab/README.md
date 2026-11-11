@@ -1,6 +1,6 @@
-# Understand Salah Lab
+# Understand Your Salah
 
-Explore the words of prayer, one recitation at a time.
+The meaning of the words you say in prayer
 
 Independent Astro 7.4.2 static app using Bun 1.4.4.
 

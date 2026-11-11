@@ -1,4 +1,4 @@
-# Progress tracker: Quran Memorization Workload Calculator
+# Progress tracker: Hifz Planner
 
 ## Google Search Console setup, 30 October 2026
 
@@ -97,3 +97,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 - Checks run in this app: `bun test` 19 pass / 0 fail across 4 files (14 earlier plus 5 new); `bun run check` 0 errors, 0 warnings, 0 hints over 13 files; `bun run build` completed with 4 pages built. Source grep finds the old strings only in the negative assertions; `dist/` has none.
 - Not run: browser download verification of the .ics file, and the repository-level static verifier.
 - Remaining: none for this item. The ICS still exports at most 90 sessions, and its dates remain user-estimate projections.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Quran Memorization Workload Calculator -> Hifz Planner. Title shortened to "Hifz Planner — Estimate new hifz and revision time | Moongazer" (62 chars). "Calculator" wording in learning.json and sources.astro became "planner"; related name "Is This Actually in the Quran?" -> "Is It in the Quran?". content.json unchanged (hash unchanged). No mentions of the Prophet in editorial text. Honorifics recorded in architecture.md. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 19 pass / 0 fail (88 expects); `bun run build` 4 pages built. `grep -rli` of dist for the old names and retired phrases finds nothing in the app pages.

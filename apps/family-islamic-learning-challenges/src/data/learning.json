@@ -1,6 +1,6 @@
 {
-  "heading": "Family Islamic learning challenges",
-  "summary": "Family Islamic Learning Challenges offers short activity packs for learning together. Each pack combines a source reading question, an open conversation and a shared activity. Choose an age suggestion that fits your group, adapt the vocabulary and keep examples fictional. There are no child profiles, required names or daily streaks to maintain.",
+  "heading": "Family Halaqa",
+  "summary": "Family Halaqa offers short packs for learning together. Each pack combines a source reading question, an open conversation and a shared activity. Choose an age suggestion that fits your group, adapt the vocabulary and keep examples fictional. There are no child profiles, required names or daily streaks to maintain.",
   "steps": [
     "Choose a pack by its topic, suggested age band or available time.",
     "Read the selected passage together and try the reading question.",
@@ -24,7 +24,7 @@
       "url": "https://everyday-akhlaq-simulator.moongazer.tech/"
     },
     {
-      "name": "The Islamic Knowledge Escape Room",
+      "name": "Quran Escape Room",
       "description": "Work through a sequence of knowledge puzzles to unlock the next room.",
       "kind": "Puzzle adventure",
       "url": "https://islamic-knowledge-escape-room.moongazer.tech/"

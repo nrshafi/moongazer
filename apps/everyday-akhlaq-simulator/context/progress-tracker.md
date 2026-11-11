@@ -98,3 +98,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 - Storage: saved `scenario-<id>` object gains optional `seed`; validation (`validState`) accepts records with or without it and rejects non-integer, negative or >= 2147483647 seeds; a missing seed gets a fresh one on load.
 - New `tests/choices.test.ts` (permutation, stability, constructive not always first, feedback text, seed validation).
 - Checks: `bun run check`, `bun test`, `bun run build` run in the app folder (results in the hand-off report). No browser run.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Everyday Akhlaq (name unchanged; descriptor, title and wording updated). Title shortened to "Everyday Akhlaq — Choose, then read the sources | Moongazer" (59 chars). One noun for the item: situation/moment/activity -> scenario across the home page, scenario page, scenario.ts and learning.json; "Find a situation" -> "Search scenarios". H1 is now exactly "Everyday Akhlaq". content.json unchanged; no Prophet mentions in editorial text. Honorifics recorded in architecture.md. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 12 pass / 0 fail (884 expects); `bun run build` 24 pages built. `grep -rli` of dist for the old names and retired phrases finds nothing in the app pages.

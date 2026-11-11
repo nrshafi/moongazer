@@ -1,4 +1,4 @@
-# Progress: Family Islamic Learning Challenges
+# Progress: Family Halaqa
 
 ## Google Search Console setup, 30 October 2026
 
@@ -72,3 +72,7 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Family Islamic Learning Challenges -> Family Halaqa. Title shortened to "Family Halaqa — Ten-minute Islamic family activities | Moongazer" (64 chars). Interface words: "Choose a record" -> "Choose a pack", "Copy saved reading list" -> "Copy my list", "Save for later" -> "Save", "Find an entry" -> "Search", "No entries match" -> "No packs match", "entries shown" -> "packs shown". Related name "The Islamic Knowledge Escape Room" -> "Quran Escape Room". content.json unchanged; no Prophet mentions in editorial text. Honorifics recorded in architecture.md. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 12 pass / 0 fail (185 expects); `bun run build` 16 pages built. `grep -rli` of dist for the old names and retired phrases finds nothing in the app pages.

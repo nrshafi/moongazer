@@ -1,8 +1,8 @@
-# Quran Memorization Workload Calculator
+# Hifz Planner
 
 ## Overview
 
-Plan new memorization alongside a growing revision workload. Learners estimating how new memorization and an expanding revision workload fit their own study time.
+Estimate new memorization and revision time for your week. Learners estimating how new memorization and an expanding revision workload fit their own study time.
 
 Portfolio rank 6 of 20. Project root `apps/quran-memorization-workload-calculator`. The app is implemented and published at https://quran-memorization-workload-calculator.moongazer.tech/.
 

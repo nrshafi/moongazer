@@ -1,6 +1,6 @@
-# Quran Memorization Workload Calculator
+# Hifz Planner
 
-Plan new memorization alongside a growing revision workload.
+Estimate new memorization and revision time for your week
 
 Independent Astro 7 static app. Bun 1.4.4 is the build/runtime tool.
 

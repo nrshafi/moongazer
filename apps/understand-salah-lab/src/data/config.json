@@ -1,7 +1,7 @@
 {
   "slug": "understand-salah-lab",
-  "name": "Understand Salah Lab",
-  "description": "Explore the words of prayer, one recitation at a time.",
+  "name": "Understand Your Salah",
+  "description": "The meaning of the words you say in prayer",
   "accent": "teal",
   "nav": "Learn",
   "port": 4334

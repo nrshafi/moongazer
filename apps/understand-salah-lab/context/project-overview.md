@@ -1,8 +1,8 @@
-# Understand Salah Lab
+# Understand Your Salah
 
 ## Overview
 
-Explore the words of prayer, one recitation at a time. Learners connecting selected prayer recitations with their meaning and original sources.
+The meaning of the words you say in prayer. Learners connecting selected prayer recitations with their meaning and original sources.
 
 Portfolio rank 14 of 20. Project root `apps/understand-salah-lab`. The app is implemented and published at https://understand-salah-lab.moongazer.tech/.
 
@@ -32,7 +32,7 @@ The app has 22 source-list entries, local source/privacy/404 pages and its own f
 
 In scope: the implemented activity, its source notes, optional temporary state and independent static deployment. Out of scope: accounts, personal profiles, server storage, live AI answers, synchronized multiplayer, trusted public scores and automatic publication.
 
-This is a meaning lab, not a complete legal prayer manual. Roman guides are approximate and some cover only an opening phrase. Audio is Al-Fatiha in full, not per-ayah clips or audio for all recitations. Preserve Adeel Shaikh’s CC BY-SA 4.0 attribution and audio checksum.
+This is a guide to meanings, not a complete legal prayer manual. Roman guides are approximate and some cover only an opening phrase. Audio is Al-Fatiha in full, not per-ayah clips or audio for all recitations. Preserve Adeel Shaikh’s CC BY-SA 4.0 attribution and audio checksum.
 
 ## Success criteria
 

@@ -1,4 +1,4 @@
-# Progress tracker: Understand Salah Lab
+# Progress tracker: Understand Your Salah
 
 ## Google Search Console setup, 30 October 2026
 
@@ -93,3 +93,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## 2026-11-11 (Asia/Dhaka) — P1.15 recall before reveal; honest audio label
 
 Lesson pages now open with the meaning hidden and a "Show meaning" toggle (`aria-expanded="false"`). The hiding is CSS keyed to `:root[data-theme]`, which the head bootstrap always sets, so without JavaScript the meaning stays visible and the toggle stays hidden; print always shows it. The seven Al-Fatiha cards say "Full-surah audio" instead of "Audio available". Offline audio (D18 #18): checked by code inspection only — `#recitation` has an `error` listener that unhides "Audio could not load…", and the page has no spinner element; a browser offline test is part of the P1 phase verification. Checks: `bun run check` 0 errors, `bun test` 11 pass, `bun run build` complete.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Understand Salah Lab -> Understand Your Salah. Title shortened to "Understand Your Salah — Salah words and meanings | Moongazer" (60 chars). Interface words: "Save reading" -> "Save", "Copy saved lesson list" -> "Copy my list", "Find a recitation" -> "Search", "A meaning lab" -> "About these lessons". content.json: quiz question for the tashahhud lesson now reads "Muhammad ﷺ" and the methodology sentence says "guide to meanings" instead of "meaning lab"; quoted wordings untouched. appContentSha256 changed from c7d3523a6b85668a0caa3b480b84ef23e262c99a9438fbf13574f2a84ee458f1 to 8e749e1252b49b8e9cf61b1ae385fe7c38e6c678a5d667f29dd6672017c13a0e. Open issue: the shared src/lib/seo.ts still hard-codes "Understand Salah Lab" in the lesson-page meta description (shared file, not edited here). Honorifics recorded in architecture.md. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 11 pass / 0 fail (117 expects); `bun run build` 19 pages built. `grep -rli` of dist for the old names and retired phrases finds nothing in the app pages except the lesson-page meta description from shared seo.ts.

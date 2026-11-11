@@ -1,4 +1,4 @@
-# UI context: Understand Salah Lab
+# UI context: Understand Your Salah
 
 ## Theme and signature
 

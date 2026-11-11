@@ -1,8 +1,8 @@
 {
-  "heading": "Understand Salah: prayer recitation meanings",
-  "summary": "Understand Salah Lab explores the meanings of selected prayer recitations in fifteen lessons. Read the Arabic, reveal the meaning and check a detail from the wording. Lessons run from the opening takbir to the closing greeting. A local Al-Fatiha recording supports listening alongside the text, with its attribution available on the page.",
+  "heading": "Understand Your Salah",
+  "summary": "Understand Your Salah explains the meanings of selected prayer recitations in fifteen lessons. Read the Arabic, reveal the meaning and check a detail from the wording. Lessons run from the opening takbir to the closing greeting. A local Al-Fatiha recording supports listening alongside the text, with its attribution available on the page.",
   "steps": [
-    "Choose a recitation from the lesson list or filter by part of the prayer.",
+    "Choose a lesson from the list or filter by part of the prayer.",
     "Read the Arabic and compare it with the meaning, using the local Al-Fatiha audio where available.",
     "Try the reading check and inspect the source notes for the selected wording."
   ],
@@ -13,12 +13,12 @@
     },
     {
       "question": "Is this a complete guide to the legal details of prayer?",
-      "answer": "No. It is a meaning and reading lab using selected narrated wordings. Roman guides are approximate. Read the source notes and seek qualified instruction for questions about practice or legal differences."
+      "answer": "No. It is a guide to meanings and reading, using selected narrated wordings. Roman guides are approximate. Read the source notes and seek qualified instruction for questions about practice or legal differences."
     }
   ],
   "related": [
     {
-      "name": "Quran Memorization Workload Calculator",
+      "name": "Hifz Planner",
       "description": "Explore how new memorization and revision fit into the time you have.",
       "kind": "Planning tool",
       "url": "https://quran-memorization-workload-calculator.moongazer.tech/"

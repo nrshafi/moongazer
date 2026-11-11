@@ -1,4 +1,4 @@
-# UI context: Quran Memorization Workload Calculator
+# UI context: Hifz Planner
 
 ## Theme and signature
 

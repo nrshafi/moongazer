@@ -1,4 +1,4 @@
-# UI context: Family Islamic Learning Challenges
+# UI context: Family Halaqa
 
 ## Theme and signature
 

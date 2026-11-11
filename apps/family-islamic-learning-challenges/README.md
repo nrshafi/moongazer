@@ -1,6 +1,6 @@
-# Family Islamic Learning Challenges
+# Family Halaqa
 
-Choose a short pack, gather around, and learn something together.
+Ten-minute Islamic activities to do together
 
 Independent Astro 7.4.2 / Bun 1.4.4 project.
 

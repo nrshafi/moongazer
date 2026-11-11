@@ -1,4 +1,4 @@
-# Architecture context: Understand Salah Lab
+# Architecture context: Understand Your Salah
 
 ## Authorized SEO scope
 
@@ -55,7 +55,7 @@ All readings and interactions are public and anonymous. There is no ownership mo
 1. Keep independent `bun.lock`/manifest, static output and no cross-app runtime imports.
 2. Keep canonical quotations literal and attributed. Content changes must update provenance checksums and appropriate source records.
 3. Preserve optional storage, app namespace isolation and operation when storage is blocked.
-4. Preserve the app-specific boundary: This is a meaning lab, not a complete legal prayer manual. Roman guides are approximate and some cover only an opening phrase. Audio is Al-Fatiha in full, not per-ayah clips or audio for all recitations. Preserve Adeel Shaikh’s CC BY-SA 4.0 attribution and audio checksum.
+4. Preserve the app-specific boundary: This is a guide to meanings, not a complete legal prayer manual. Roman guides are approximate and some cover only an opening phrase. Audio is Al-Fatiha in full, not per-ayah clips or audio for all recitations. Preserve Adeel Shaikh’s CC BY-SA 4.0 attribution and audio checksum.
 5. Host `dist/` at the site's root unless an explicit base-path migration also changes absolute asset and route URLs.
 
 ## Deployment and known cost
@@ -75,3 +75,5 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 ## Search content enhancement scope
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
+
+Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
