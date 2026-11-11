@@ -16,7 +16,7 @@ owner laptop ── scripts/review-feedback.mjs (wrangler d1) ──▶ approve 
 - **Storage:** one D1 database `moongazer`, binding `DB`.
 - **No fetch in app code.** `_implementation/verify-static.py` forbids `fetch(` in app bundles. Feedback uses a native form POST (works without JS, needs no CORS). The counter uses `navigator.sendBeacon` with a `text/plain` body (no preflight).
 - **What is stored.** Feedback: `{id, created_at, app_slug, page_url, category, message, contact?, status, no_js}`. Counter: `{date (UTC, server), app_slug, item_id, event_type, count}`. Never IP, user agent, headers, cookies or fingerprints. Functions must not log request data; leave Workers Logs/observability off for this project.
-- **Abuse.** Honeypot field, minimum time-to-submit (3 s, from a render timestamp set by an inline script), allowlists and length limits, one zone rate-limiting rule on `/api/*` (owner), everything `pending`.
+- **Abuse.** Honeypot field, minimum time-to-submit (3 s; the page sends elapsed ms from `performance.now()` at submit — changed from a render timestamp because device clock skew dropped real feedback), allowlists and length limits, one zone rate-limiting rule on `/api/*` (owner), everything `pending`.
 - **Privacy signal.** If `navigator.globalPrivacyControl === true`, the counter does not send. (Plan default chosen for consistency with core value 3; the owner can remove it.)
 
 Before starting, verify the current official docs for: Pages Functions file routing and `_routes.json`; `wrangler pages deploy`; Pages `wrangler.toml` (`pages_build_output_dir`, `d1_databases`); D1 migrations; `navigator.sendBeacon` CSP (`connect-src`). Record each URL in `context/architecture.md` (protocol §3, "Dependencies").
