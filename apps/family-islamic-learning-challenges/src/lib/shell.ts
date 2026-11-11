@@ -1,5 +1,4 @@
 import { namespace, read, write } from './utils';
-import { encodePayload } from './import';
 
 // Focus outlines are reserved for keyboard navigation, including new controls.
 document.addEventListener('pointerdown', () => {
@@ -27,21 +26,6 @@ window.addEventListener('beforeprint', () => {
 window.addEventListener('afterprint', () => {
   closedBeforePrint.forEach(item => { item.open = false; });
   closedBeforePrint = [];
-});
-
-// Moved apps (P3 step A): the shell renders a banner with #moved-link when config.json has "moved".
-// On click, carry this app's saved items (except the theme) to the receiving app in the URL fragment.
-const movedLink = document.getElementById('moved-link') as HTMLAnchorElement | null;
-movedLink?.addEventListener('click', () => {
-  const items: Record<string, unknown> = {};
-  try {
-    const prefix = namespace() + ':';
-    const keys: string[] = [];
-    for (let i = 0; i < localStorage.length; i++) { const key = localStorage.key(i); if (key?.startsWith(prefix)) keys.push(key.slice(prefix.length)); }
-    for (const key of keys) { if (key === 'theme') continue; const value = read(key, (_v): _v is unknown => true); if (value !== null) items[key] = value; }
-  } catch { /* storage blocked: open the new page without saved items */ }
-  const payload = encodePayload(namespace(), items);
-  movedLink.href = movedLink.href.split('#')[0] + (payload ? '#import=' + payload : '');
 });
 
 // Feedback (P4): at submit, record how long the page has been open (performance.now(), not the device

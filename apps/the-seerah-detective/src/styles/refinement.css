@@ -21,11 +21,6 @@ main{max-width:1200px;padding-top:0}.intro{position:relative;isolation:isolate;m
 .honorific{font-family:Amiri,'Traditional Arabic',serif;font-size:1.05em;line-height:1;font-weight:400}
 /* Nav verb (P2): the tagline under the app name hides on narrow screens so the name and logo stay visible. */
 @media(max-width:720px){.brand small{display:none}}
-/* Moved banner (P3 step A): shown on every page of an app that has merged into another. */
-.moved-banner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin:0 0 24px;padding:16px 20px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);background:var(--tint)}
-.moved-banner p{margin:0;max-width:62ch;line-height:1.6}
-.moved-banner .button{flex-shrink:0}
-@media print{.moved-banner{display:none}}
 /* Feedback (P4): a closed footer details with a native form; full width above the footer links. */
 .feedback-wrap{max-width:1200px;margin:48px auto 0;padding:0 32px}
 .feedback{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
