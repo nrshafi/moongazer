@@ -30,6 +30,8 @@
 .calendar-week table { width: 100%; text-align: left; }
 .calendar-week th, .calendar-week td { vertical-align: top; }
 .status-line { margin: 0; }
+.plan-tools { display: grid; gap: 6px; margin-top: 18px; }
+.plan-tools .micro { margin: 0; }
 
 @media (max-width: 580px) {
   .wizard-fields { grid-template-columns: 1fr; }

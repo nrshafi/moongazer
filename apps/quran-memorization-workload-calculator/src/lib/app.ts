@@ -1,8 +1,8 @@
 import {calendar} from './engine';
 import {byId, read, write, forget, esc, announce} from './utils';
 import {
-  buildPlan, defaultAssumptions, inputError, isWizardInput, RAMADAN_SUGGESTION, sessionViews, thisWeek, weeks,
-  VOCAB, type BuildResult, type SessionView, type WizardInput,
+  buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isWizardInput, RAMADAN_SUGGESTION,
+  sessionViews, thisWeek, weeks, VOCAB, type BuildResult, type Kind, type SessionView, type WizardInput,
 } from './wizard';
 
 const TOTAL_PAGES = 604;
@@ -12,10 +12,14 @@ const stepLabel = byId('step-label');
 const stepBar = byId('step-bar');
 const progress = document.querySelector<HTMLElement>('[role=progressbar]')!;
 const remember = byId<HTMLInputElement>('remember');
+const checkRemember = byId<HTMLInputElement>('remember-checks');
+const checkNote = byId('check-note');
 let step = 1;
 type Built = Extract<BuildResult, {ok: true}>;
 let built: Built | null = null;
 let views: SessionView[] = [];
+/** Checked-off items as `YYYY-MM-DD:kind`. Kept in memory; written to storage only when the visitor opts in. */
+let checked = new Set<string>();
 
 const pad = (n: number) => String(n).padStart(2, '0');
 const todayIso = (now = new Date()) => `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
@@ -118,20 +122,32 @@ function statCards(rows: Built['rows']) {
   </div>`;
 }
 
+/** A check-off box. `text` is shown beside the box; empty text means the label is screen-reader only. */
+function checkbox(date: string, kind: Kind, text: string, srText: string): string {
+  const key = checkKey(date, kind);
+  const visible = text ? `<span>${esc(text)}</span>` : '';
+  return `<label class="check"><input type="checkbox" data-check="${esc(key)}"${checked.has(key) ? ' checked' : ''}/>${visible}<span class="sr-only">${esc(srText)}</span></label>`;
+}
+
 function checklistHtml(sessions: SessionView[]): string {
   const labels = VOCAB.plain;
   return sessions.map(session => {
     const items = session.items.filter(item => item.kind === 'new' || item.pages > 1e-9);
-    return `<section class="checklist-day"><h3>${esc(session.date)}</h3><ul class="checklist">${items.map(item => `<li><span>${esc(labels[item.kind])}</span><span class="amount">${fmt(item.pages)} pages · ${fmt(item.minutes, 0)} min</span></li>`).join('')}</ul></section>`;
+    return `<section class="checklist-day"><h3>${esc(session.date)}</h3><ul class="checklist">${items.map(item => `<li>${checkbox(session.date, item.kind, labels[item.kind], `${labels[item.kind]} on ${session.date}`)}<span class="amount">${fmt(item.pages)} pages · ${fmt(item.minutes, 0)} min</span></li>`).join('')}</ul></section>`;
   }).join('');
 }
 
 function calendarHtml(all: SessionView[]): string {
-  return weeks(all).map(group => `<details class="calendar-week"><summary>Week ${group.week}: ${esc(group.sessions[0]!.date)} to ${esc(group.sessions.at(-1)!.date)}</summary><div class="table-wrap"><table><thead><tr><th>Date</th><th>New</th><th>Recent revision</th><th>Old revision</th><th>Minutes</th></tr></thead><tbody>${group.sessions.map(s => {
+  return weeks(all).map(group => `<details class="calendar-week"><summary>Week ${group.week}: ${esc(group.sessions[0]!.date)} to ${esc(group.sessions.at(-1)!.date)}</summary><div class="table-wrap"><table><thead><tr><th>Date</th><th>New</th><th>Recent revision</th><th>Old revision</th><th>Minutes</th><th>New lesson done</th></tr></thead><tbody>${group.sessions.map(s => {
     const [n, recent, old] = s.items;
     const minutes = s.items.reduce((sum, item) => sum + item.minutes, 0);
-    return `<tr><td>${esc(s.date)}</td><td>${fmt(n!.pages)}</td><td>${fmt(recent!.pages)}</td><td>${fmt(old!.pages)}</td><td>${fmt(minutes, 1)}</td></tr>`;
+    return `<tr><td>${esc(s.date)}</td><td>${fmt(n!.pages)}</td><td>${fmt(recent!.pages)}</td><td>${fmt(old!.pages)}</td><td>${fmt(minutes, 1)}</td><td>${checkbox(s.date, 'new', '', `New lesson on ${s.date} done`)}</td></tr>`;
   }).join('')}</tbody></table></div></details>`).join('');
+}
+
+function checkedNewCount(): number {
+  if (!built) return 0;
+  return built.rows.filter(r => checked.has(checkKey(r.date, 'new'))).length;
 }
 
 function renderPlan() {
@@ -142,12 +158,12 @@ function renderPlan() {
     return;
   }
   const sessionsThisWeek = thisWeek(views);
-  results.innerHTML = `<div class="plan-summary"><p class="status-line" role="status">${status === 'complete' ? 'Your plan is ready.' : 'Your plan runs beyond the planner’s 3,650-session horizon.'} ${rows.length} study sessions.</p>${statCards(rows)}<figure class="top-gap"><svg viewBox="0 0 800 180" role="img" aria-label="Revision minutes rise as new pages accumulate." style="width:100%;color:var(--accent)">${revisionCurve(rows)}</svg><figcaption class="micro">Revision minutes per study session. Exact values are in the calendar below.</figcaption></figure></div>
+  results.innerHTML = `<div class="plan-summary"><p class="status-line" role="status">${status === 'complete' ? 'Your plan is ready.' : 'Your plan runs beyond the planner’s 3,650-session horizon.'} ${rows.length} study sessions.</p>${statCards(rows)}<p class="micro" id="checked-count">Checked off: ${checkedNewCount()} of ${rows.length} new lessons.</p><figure class="top-gap"><svg viewBox="0 0 800 180" role="img" aria-label="Revision minutes rise as new pages accumulate." style="width:100%;color:var(--accent)">${revisionCurve(rows)}</svg><figcaption class="micro">Revision minutes per study session. Exact values are in the calendar below.</figcaption></figure></div>
     <h3 class="top-gap">This week</h3><div class="plan-summary">${sessionsThisWeek.length ? checklistHtml(sessionsThisWeek) : '<p class="micro">No study sessions fall in the first week with these settings.</p>'}</div>
     <h3 class="top-gap">Calendar</h3><p class="micro">Revision is split between recent and old pages in proportion to the pages memorized in the last review cycle. The split only divides the total revision time; it does not change the schedule.</p>
     <div class="calendar-section">${calendarHtml(views)}</div>
     <div class="actions top-gap"><button class="button secondary" type="button" id="csv">Download CSV</button><button class="button secondary" type="button" id="ics">Calendar file (first ${Math.min(90, rows.length)} sessions)</button></div>
-    <p class="micro">Dates are estimates from your study days and assumptions. Missed sessions are not simulated here.</p>`;
+    <p class="micro">Dates are estimates from your study days and assumptions. Check-offs do not change the schedule; use “I missed a day” to re-plan from today.</p>`;
   byId('csv').onclick = () => download('quran-study-plan.csv', 'date,new_pages,review_pages,total_minutes\r\n' + rows.map(r => [r.date, r.newPages.toFixed(3), r.reviewPages.toFixed(3), r.total.toFixed(2)].join(',')).join('\r\n'), 'text/csv');
   byId('ics').onclick = () => download('quran-study-plan.ics', calendar(rows, new Date()), 'text/calendar');
 }
@@ -162,6 +178,32 @@ function revisionCurve(rows: Built['rows']): string {
   return `<line x1="0" y1="160" x2="800" y2="160" stroke="currentColor" opacity=".2"/><polyline fill="none" stroke="currentColor" stroke-width="3" points="${coords}"/>`;
 }
 
+/** Keeps every box for the same item in step; the checked state lives in `checked`. */
+function setChecked(key: string, value: boolean) {
+  if (value) checked.add(key);
+  else checked.delete(key);
+  results.querySelectorAll<HTMLInputElement>('input[data-check]').forEach(el => {
+    if (el.dataset.check === key) el.checked = value;
+  });
+  const count = document.getElementById('checked-count');
+  if (count && built) count.textContent = `Checked off: ${checkedNewCount()} of ${built.rows.length} new lessons.`;
+}
+
+function describeChecks(ok: boolean) {
+  if (!checkRemember.checked) checkNote.textContent = 'Check-offs stay on this page until you reload. Tick “Remember my check-offs” to keep them for 30 days.';
+  else if (ok) checkNote.textContent = 'Check-offs are saved in this browser for 30 days.';
+  else checkNote.textContent = 'Browser storage is unavailable here, so your check-offs will not be kept after you reload.';
+}
+
+function saveChecks() {
+  if (!checkRemember.checked) {
+    forget('checkoffs');
+    describeChecks(true);
+    return;
+  }
+  describeChecks(write('checkoffs', [...checked].sort()));
+}
+
 function applyRamadanSuggestion() {
   byId<HTMLInputElement>('pace').value = String(RAMADAN_SUGGESTION.pace);
   byId<HTMLInputElement>('cycle').value = String(RAMADAN_SUGGESTION.cycle);
@@ -171,19 +213,37 @@ function applyRamadanSuggestion() {
 
 function startOver() {
   forget('plan');
+  forget('checkoffs');
   built = null;
   views = [];
+  checked = new Set();
+  checkRemember.checked = false;
+  describeChecks(true);
   fillInputs({memorized: 0, goal: 20, start: todayIso(), daysPerWeek: 5, minutes: 45, assumptions: defaultAssumptions()});
   remember.checked = false;
   results.innerHTML = '';
   showStep(1);
 }
 
-// Boot: restore remembered answers if they are still valid, otherwise use defaults with today as the start date.
+// Boot: restore remembered answers and check-offs if they are still valid. Otherwise use defaults with today as the start date.
 const saved = read('plan', isWizardInput);
 fillInputs(saved ?? {memorized: 0, goal: 20, start: todayIso(), daysPerWeek: 5, minutes: 45, assumptions: defaultAssumptions()});
 remember.checked = !!saved;
+const savedChecks = read('checkoffs', isCheckoffList);
+if (savedChecks) {
+  checked = new Set(savedChecks);
+  checkRemember.checked = true;
+}
+describeChecks(true);
 showStep(1, false);
+
+results.addEventListener('change', event => {
+  const target = event.target;
+  if (!(target instanceof HTMLInputElement) || !target.dataset.check) return;
+  setChecked(target.dataset.check, target.checked);
+  saveChecks();
+});
+checkRemember.addEventListener('change', saveChecks);
 
 form.querySelectorAll<HTMLButtonElement>('[data-next]').forEach(button => {
   button.onclick = () => {
