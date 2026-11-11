@@ -89,3 +89,12 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P1.12 option order and choice feedback
+
+- Option order is now shuffled per scenario visit with a random seed (`Math.floor(Math.random()*2147483647)`), replacing the fixed per-scenario hash order. `optionOrder(count, seed, stage)` in new `src/lib/choices.ts` returns a permutation of the original option indices; buttons keep `data-choice` as the original index so saved progress still validates. Restart draws a new seed.
+- The `constructive` flag is now read. After the first choice an "Editorial note" (role="status") says "This choice protects trust." or "This choice may hurt trust. See what happens next." The end reflection shows, for both decisions, whether the choice protected trust, and names the constructive option when the learner chose otherwise.
+- No real branching added (out of scope). Content.json untouched.
+- Storage: saved `scenario-<id>` object gains optional `seed`; validation (`validState`) accepts records with or without it and rejects non-integer, negative or >= 2147483647 seeds; a missing seed gets a fresh one on load.
+- New `tests/choices.test.ts` (permutation, stability, constructive not always first, feedback text, seed validation).
+- Checks: `bun run check`, `bun test`, `bun run build` run in the app folder (results in the hand-off report). No browser run.

@@ -43,7 +43,7 @@ The user authorized Cloudflare Pages hosting at https://everyday-akhlaq-simulato
 Stored records use the body app slug `everyday-akhlaq-simulator` and a colon, with `at` and `value` fields. The read helper validates shape/time, rejects timestamps more than 60 seconds ahead and records at least 30 days old, and tolerates unavailable storage. Initial theme setup validates a finite numeric timestamp, the 30-day age, the 60-second future tolerance and the light/dark value in Shell.astro; subsequent reads use the storage helper. Thirty days is an access-time expiry policy, not automatic deletion while the site is closed.
 
 - `theme`: the explicit light/dark preference, independent of activity recovery.
-- `remember` stores the recovery preference. `scenario-<scenario-id>` stores validated decisions for that scenario.
+- `remember` stores the recovery preference. `scenario-<scenario-id>` stores validated decisions for that scenario: `{stage, choices, seed?}`, where `seed` is an optional integer 0 to 2147483646 driving per-visit option order (missing seed on old records is replaced on load).
 - Core activity state otherwise lives in memory. Clear-data removes this app's namespace and reloads; other apps are unaffected.
 
 ## Auth and access
