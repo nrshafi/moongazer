@@ -1,10 +1,19 @@
 {
-  "title": "Seerah Timeline — The Prophet's life ﷺ from 610 to 632 | Moongazer",
+  "title": "Seerah Timeline — The Prophet's life ﷺ and a “Which came first?” game | Moongazer",
   "shortName": "Seerah Timeline",
-  "description": "Follow the Prophet's life ﷺ on an interactive Seerah timeline, event by event, with source reports and notes on which dates are approximate.",
+  "description": "Follow the Prophet's life ﷺ on an interactive Seerah timeline, event by event, with source reports, notes on which dates are approximate and a “Which came first?” ordering game.",
   "keyword": "interactive Seerah timeline",
   "collection": "events",
   "prefix": "event",
   "nameField": "title",
-  "summaryField": "summary"
+  "summaryField": "summary",
+  "extraPages": [
+    {
+      "path": "/challenge/",
+      "title": "Which came first? | Seerah Timeline",
+      "name": "Which came first?",
+      "description": "Put four events from the Prophet's life ﷺ in order, earliest to latest, then read the source reports and approximate dates behind them.",
+      "indexable": true
+    }
+  ]
 }

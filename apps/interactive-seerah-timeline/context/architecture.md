@@ -26,13 +26,15 @@ The user authorized Cloudflare Pages hosting at https://interactive-seerah-timel
 - `src/pages/` owns static routes. Route-source inventory:
 
 - `src/pages/404.astro`
+- `src/pages/challenge/index.astro`
 - `src/pages/event/[slug].astro`
 - `src/pages/index.astro`
 - `src/pages/privacy.astro`
 - `src/pages/sources.astro`
 
 - `src/layouts/Shell.astro` owns metadata, theme initialization, navigation, footer and storage dialog. `src/lib/shell.ts` implements shell behavior.
-- `src/lib/` currently contains: `shell.ts`, `timeline.ts`, `utils.ts`.
+- `src/lib/` currently contains: `challenge.ts`, `challenge-app.ts`, `import.ts`, `merge-import.ts`, `seo.ts`, `shell.ts`, `timeline.ts`, `utils.ts`.
+- `challenge.ts` holds the pure "Which came first?" engine (permutation, grade, progress validator, seeded start order, move). `challenge-app.ts` is the `/challenge/` page script. `merge-import.ts` holds the import rules and `importSaved()`.
 - `timeline.ts` controls filtering, selection and bookmarks. The event route publishes each bundled event as a static page.
 - `src/data/config.json` owns slug, display text, accent and port. `content.json`, `sources.json` and `provenance.json` keep content, citations and checksums distinct.
 - `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `content.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts`.
@@ -44,6 +46,7 @@ Stored records use the body app slug `interactive-seerah-timeline` and a colon, 
 
 - `theme`: the explicit light/dark preference, independent of activity recovery.
 - `bookmarks` stores selected event IDs when the visitor explicitly saves them.
+- `challenge-progress` stores one game `{pack, order, tries, hint, revealed, complete, seed}` only when the visitor ticks "Remember this challenge"; unticking forgets it. It is the same shape as the old Islamic History Timeline Challenge `progress` key.
 - Core activity state otherwise lives in memory. Clear-data removes this app's namespace and reloads; other apps are unaffected.
 
 ## Auth and access
@@ -77,3 +80,32 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## "Which came first?" at /challenge/ (P3 T3.4)
+
+Merged from `islamic-history-timeline-challenge`. `content.json` gains `packs` (12 packs of four timeline event ids, each `{id, number, title, events}` in chronological order). The game reuses the timeline's events and creates no new ones. All 14 challenge events matched an existing timeline event with the same id, number, year, date, title, sources and uncertainty note (the two summaries differ only in the P2 honorific placement), so no mapping beyond identity is needed:
+
+| Challenge event id (= timeline id) | Timeline no. | Source |
+| --- | --- | --- |
+| the-first-revelation | 1 | Sahih al-Bukhari 3 |
+| calling-the-clans-at-safa | 5 | Sahih al-Bukhari 4770 |
+| the-cave-during-the-migration | 11 | Sahih al-Bukhari 3653 |
+| supplication-at-badr | 17 | Sahih al-Bukhari 3953 |
+| the-archers-at-uhud | 18 | Sahih al-Bukhari 3039 |
+| digging-the-trench | 20 | Sahih al-Bukhari 4100 |
+| the-journey-to-hudaybiyah | 22 | Sahih al-Bukhari 2731 |
+| the-banner-at-khaybar | 25 | Sahih al-Bukhari 4210 |
+| the-return-for-umrah | 27 | Sahih al-Bukhari 4251 |
+| the-approach-to-makkah | 28 | Sahih al-Bukhari 4280 |
+| the-expedition-to-tabuk | 31 | Sahih al-Bukhari 4418 |
+| announcements-during-abu-bakr-s-hajj | 33 | Sahih al-Bukhari 4655 |
+| the-farewell-hajj | 34 | Sahih Muslim 1218a |
+| the-death-of-the-prophet | 36 | Sahih al-Bukhari 4449, 4452 |
+
+Pack titles were rewritten to describe the four events without revealing their order: each lists the events' short names alphabetically (for example "Badr, the Hijrah, Hudaybiyah and the Trench"), so no title discloses the earliest or latest event. Old titles such as "After the migration" for a pack that begins at the Hijrah were inaccurate.
+
+Behaviour: seeded shuffle per play (a fresh random seed on each new play or restart; `?pack=` and `?seed=` reproduce a shared game), up/down buttons with `aria-label="Move <title> up/down"`, "Open source clue" per card (`aria-expanded`, hidden until requested), "Check order" with feedback in `role="status"`, and on completion or reveal the correct order with approximate dates, the date/source note and a link to each event page. Pointer drag is not implemented. Grading counts correct positions and inversions; a completed state is accepted from storage only when its order is correct.
+
+Import (T3.2): from `islamic-history-timeline-challenge`, key `progress` -> `challenge-progress`, validated with the old app's own validator (`valid` in `challenge.ts`), merge `keep` (an existing local game wins). The old app kept no separate remember flag: it saved only when its "Remember" box was ticked, so a present `progress` value maps to a ticked box here. `importSaved()` runs at the start of the `/challenge/` script, before saved progress is read.
+
+SEO: `seo.ts` registers only one `seo.json` collection and throws "Add metadata for the new page: /challenge/" for other routes. The page metadata is kept in `seo.json` under `extraPages` and must be registered by a one-line `seo.ts` change (see progress tracker); until then the production build fails.

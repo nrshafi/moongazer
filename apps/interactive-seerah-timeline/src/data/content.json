@@ -773,5 +773,139 @@
         }
       ]
     }
+  ],
+  "packs": [
+    {
+      "id": "challenge-01",
+      "number": 1,
+      "title": "The Hijrah, Hira, Hudaybiyah and Uhud",
+      "events": [
+        "the-first-revelation",
+        "the-cave-during-the-migration",
+        "the-archers-at-uhud",
+        "the-journey-to-hudaybiyah"
+      ]
+    },
+    {
+      "id": "challenge-02",
+      "number": 2,
+      "title": "Badr, the Hijrah, Hudaybiyah and the Trench",
+      "events": [
+        "the-cave-during-the-migration",
+        "supplication-at-badr",
+        "digging-the-trench",
+        "the-journey-to-hudaybiyah"
+      ]
+    },
+    {
+      "id": "challenge-03",
+      "number": 3,
+      "title": "The Farewell Hajj, Hudaybiyah, Makkah and the Umrah return",
+      "events": [
+        "the-journey-to-hudaybiyah",
+        "the-return-for-umrah",
+        "the-approach-to-makkah",
+        "the-farewell-hajj"
+      ]
+    },
+    {
+      "id": "challenge-04",
+      "number": 4,
+      "title": "Abu Bakr's Hajj, the final moments, Makkah and Tabuk",
+      "events": [
+        "the-approach-to-makkah",
+        "the-expedition-to-tabuk",
+        "announcements-during-abu-bakr-s-hajj",
+        "the-death-of-the-prophet"
+      ]
+    },
+    {
+      "id": "challenge-05",
+      "number": 5,
+      "title": "The Farewell Hajj, Khaybar, Makkah and Tabuk",
+      "events": [
+        "the-banner-at-khaybar",
+        "the-approach-to-makkah",
+        "the-expedition-to-tabuk",
+        "the-farewell-hajj"
+      ]
+    },
+    {
+      "id": "challenge-06",
+      "number": 6,
+      "title": "Khaybar, Makkah, Tabuk and Uhud",
+      "events": [
+        "the-archers-at-uhud",
+        "the-banner-at-khaybar",
+        "the-approach-to-makkah",
+        "the-expedition-to-tabuk"
+      ]
+    },
+    {
+      "id": "challenge-07",
+      "number": 7,
+      "title": "Abu Bakr's Hajj, the final moments, the Hijrah and Safa",
+      "events": [
+        "calling-the-clans-at-safa",
+        "the-cave-during-the-migration",
+        "announcements-during-abu-bakr-s-hajj",
+        "the-death-of-the-prophet"
+      ]
+    },
+    {
+      "id": "challenge-08",
+      "number": 8,
+      "title": "Badr, the Farewell Hajj, Tabuk and the Trench",
+      "events": [
+        "supplication-at-badr",
+        "digging-the-trench",
+        "the-expedition-to-tabuk",
+        "the-farewell-hajj"
+      ]
+    },
+    {
+      "id": "challenge-09",
+      "number": 9,
+      "title": "Badr, Hudaybiyah, Makkah and the Umrah return",
+      "events": [
+        "supplication-at-badr",
+        "the-journey-to-hudaybiyah",
+        "the-return-for-umrah",
+        "the-approach-to-makkah"
+      ]
+    },
+    {
+      "id": "challenge-10",
+      "number": 10,
+      "title": "The Farewell Hajj, Hudaybiyah, Khaybar and Uhud",
+      "events": [
+        "the-archers-at-uhud",
+        "the-journey-to-hudaybiyah",
+        "the-banner-at-khaybar",
+        "the-farewell-hajj"
+      ]
+    },
+    {
+      "id": "challenge-11",
+      "number": 11,
+      "title": "Abu Bakr's Hajj, Badr, the final moments and the Trench",
+      "events": [
+        "supplication-at-badr",
+        "digging-the-trench",
+        "announcements-during-abu-bakr-s-hajj",
+        "the-death-of-the-prophet"
+      ]
+    },
+    {
+      "id": "challenge-12",
+      "number": 12,
+      "title": "The Hijrah, Makkah, Tabuk and the Trench",
+      "events": [
+        "the-cave-during-the-migration",
+        "digging-the-trench",
+        "the-approach-to-makkah",
+        "the-expedition-to-tabuk"
+      ]
+    }
   ]
 }
