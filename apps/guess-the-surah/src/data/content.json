@@ -1042,12 +1042,26 @@
       "translation": "Alif. Lam. Mim.",
       "translationUrl": "https://quran.com/2:1?translations=19"
     },
+    "2:2": {
+      "ref": "2:2",
+      "url": "https://quran.com/2:2",
+      "arabic": "ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ",
+      "translation": "This is the Scripture whereof there is no doubt, a guidance unto those who ward off (evil).",
+      "translationUrl": "https://quran.com/2:2?translations=19"
+    },
     "3:1": {
       "ref": "3:1",
       "url": "https://quran.com/3:1",
       "arabic": "الٓمٓ",
       "translation": "Alim. Lam. Mim.",
       "translationUrl": "https://quran.com/3:1?translations=19"
+    },
+    "3:2": {
+      "ref": "3:2",
+      "url": "https://quran.com/3:2",
+      "arabic": "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ",
+      "translation": "Allah! There is no god save Him, the Alive, the Eternal.",
+      "translationUrl": "https://quran.com/3:2?translations=19"
     },
     "4:1": {
       "ref": "4:1",
@@ -1210,6 +1224,20 @@
       "translation": "Ta. Sin. Mim.",
       "translationUrl": "https://quran.com/26:1?translations=19"
     },
+    "26:2": {
+      "ref": "26:2",
+      "url": "https://quran.com/26:2",
+      "arabic": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+      "translation": "These are revelations of the Scripture that maketh plain.",
+      "translationUrl": "https://quran.com/26:2?translations=19"
+    },
+    "26:3": {
+      "ref": "26:3",
+      "url": "https://quran.com/26:3",
+      "arabic": "لَعَلَّكَ بَـٰخِعٌ نَّفْسَكَ أَلَّا يَكُونُوا۟ مُؤْمِنِينَ",
+      "translation": "It may be that thou tormentest thyself (O Muhammad) because they believe not.",
+      "translationUrl": "https://quran.com/26:3?translations=19"
+    },
     "27:1": {
       "ref": "27:1",
       "url": "https://quran.com/27:1",
@@ -1224,12 +1252,33 @@
       "translation": "Ta. Sin. Mim.",
       "translationUrl": "https://quran.com/28:1?translations=19"
     },
+    "28:2": {
+      "ref": "28:2",
+      "url": "https://quran.com/28:2",
+      "arabic": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ",
+      "translation": "These are revelations of the Scripture that maketh plain.",
+      "translationUrl": "https://quran.com/28:2?translations=19"
+    },
+    "28:3": {
+      "ref": "28:3",
+      "url": "https://quran.com/28:3",
+      "arabic": "نَتْلُوا۟ عَلَيْكَ مِن نَّبَإِ مُوسَىٰ وَفِرْعَوْنَ بِٱلْحَقِّ لِقَوْمٍ يُؤْمِنُونَ",
+      "translation": "We narrate unto thee (somewhat) of the story of Moses and Pharaoh with truth, for folk who believe.",
+      "translationUrl": "https://quran.com/28:3?translations=19"
+    },
     "29:1": {
       "ref": "29:1",
       "url": "https://quran.com/29:1",
       "arabic": "الٓمٓ",
       "translation": "Alif. Lam. Mim.",
       "translationUrl": "https://quran.com/29:1?translations=19"
+    },
+    "29:2": {
+      "ref": "29:2",
+      "url": "https://quran.com/29:2",
+      "arabic": "أَحَسِبَ ٱلنَّاسُ أَن يُتْرَكُوٓا۟ أَن يَقُولُوٓا۟ ءَامَنَّا وَهُمْ لَا يُفْتَنُونَ",
+      "translation": "Do men imagine that they will be left (at ease) because they say, We believe, and will not be tested with affliction?",
+      "translationUrl": "https://quran.com/29:2?translations=19"
     },
     "30:1": {
       "ref": "30:1",
@@ -1238,6 +1287,13 @@
       "translation": "Alif. Lam. Mim.",
       "translationUrl": "https://quran.com/30:1?translations=19"
     },
+    "30:2": {
+      "ref": "30:2",
+      "url": "https://quran.com/30:2",
+      "arabic": "غُلِبَتِ ٱلرُّومُ",
+      "translation": "The Romans have been defeated",
+      "translationUrl": "https://quran.com/30:2?translations=19"
+    },
     "31:1": {
       "ref": "31:1",
       "url": "https://quran.com/31:1",
@@ -1245,12 +1301,26 @@
       "translation": "Alif. Lam. Mim.",
       "translationUrl": "https://quran.com/31:1?translations=19"
     },
+    "31:2": {
+      "ref": "31:2",
+      "url": "https://quran.com/31:2",
+      "arabic": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْحَكِيمِ",
+      "translation": "These are revelations of the wise Scripture,",
+      "translationUrl": "https://quran.com/31:2?translations=19"
+    },
     "32:1": {
       "ref": "32:1",
       "url": "https://quran.com/32:1",
       "arabic": "الٓمٓ",
       "translation": "Alif. Lam. Mim",
       "translationUrl": "https://quran.com/32:1?translations=19"
+    },
+    "32:2": {
+      "ref": "32:2",
+      "url": "https://quran.com/32:2",
+      "arabic": "تَنزِيلُ ٱلْكِتَـٰبِ لَا رَيْبَ فِيهِ مِن رَّبِّ ٱلْعَـٰلَمِينَ",
+      "translation": "The revelation of the Scripture whereof there is no doubt is from the Lord of the Worlds.",
+      "translationUrl": "https://quran.com/32:2?translations=19"
     },
     "33:1": {
       "ref": "33:1",
@@ -1308,12 +1378,26 @@
       "translation": "Ha. Mim.",
       "translationUrl": "https://quran.com/40:1?translations=19"
     },
+    "40:2": {
+      "ref": "40:2",
+      "url": "https://quran.com/40:2",
+      "arabic": "تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْعَلِيمِ",
+      "translation": "The revelation of the Scripture is from Allah, the Mighty, the Knower,",
+      "translationUrl": "https://quran.com/40:2?translations=19"
+    },
     "41:1": {
       "ref": "41:1",
       "url": "https://quran.com/41:1",
       "arabic": "حمٓ",
       "translation": "Ha. Mim.",
       "translationUrl": "https://quran.com/41:1?translations=19"
+    },
+    "41:2": {
+      "ref": "41:2",
+      "url": "https://quran.com/41:2",
+      "arabic": "تَنزِيلٌ مِّنَ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "translation": "A revelation from the Beneficent, the Merciful,",
+      "translationUrl": "https://quran.com/41:2?translations=19"
     },
     "42:1": {
       "ref": "42:1",
@@ -1322,12 +1406,33 @@
       "translation": "Ha. Mim.",
       "translationUrl": "https://quran.com/42:1?translations=19"
     },
+    "42:2": {
+      "ref": "42:2",
+      "url": "https://quran.com/42:2",
+      "arabic": "عٓسٓقٓ",
+      "translation": "A'in. Sin. Qaf.",
+      "translationUrl": "https://quran.com/42:2?translations=19"
+    },
     "43:1": {
       "ref": "43:1",
       "url": "https://quran.com/43:1",
       "arabic": "حمٓ",
       "translation": "Ha. Mim.",
       "translationUrl": "https://quran.com/43:1?translations=19"
+    },
+    "43:2": {
+      "ref": "43:2",
+      "url": "https://quran.com/43:2",
+      "arabic": "وَٱلْكِتَـٰبِ ٱلْمُبِينِ",
+      "translation": "By the Scripture which maketh plain,",
+      "translationUrl": "https://quran.com/43:2?translations=19"
+    },
+    "43:3": {
+      "ref": "43:3",
+      "url": "https://quran.com/43:3",
+      "arabic": "إِنَّا جَعَلْنَـٰهُ قُرْءَٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ",
+      "translation": "Lo! We have appointed it a Lecture, in Arabic that haply ye may understand.",
+      "translationUrl": "https://quran.com/43:3?translations=19"
     },
     "44:1": {
       "ref": "44:1",
@@ -1336,6 +1441,20 @@
       "translation": "Ha. Mim.",
       "translationUrl": "https://quran.com/44:1?translations=19"
     },
+    "44:2": {
+      "ref": "44:2",
+      "url": "https://quran.com/44:2",
+      "arabic": "وَٱلْكِتَـٰبِ ٱلْمُبِينِ",
+      "translation": "By the Scripture that maketh plain",
+      "translationUrl": "https://quran.com/44:2?translations=19"
+    },
+    "44:3": {
+      "ref": "44:3",
+      "url": "https://quran.com/44:3",
+      "arabic": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةٍ مُّبَـٰرَكَةٍ ۚ إِنَّا كُنَّا مُنذِرِينَ",
+      "translation": "Lo! We revealed it on a blessed night - Lo! We are ever warning -",
+      "translationUrl": "https://quran.com/44:3?translations=19"
+    },
     "45:1": {
       "ref": "45:1",
       "url": "https://quran.com/45:1",
@@ -1343,12 +1462,40 @@
       "translation": "Ha. Mim.",
       "translationUrl": "https://quran.com/45:1?translations=19"
     },
+    "45:2": {
+      "ref": "45:2",
+      "url": "https://quran.com/45:2",
+      "arabic": "تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+      "translation": "The revelation of the Scripture is from Allah, the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/45:2?translations=19"
+    },
+    "45:3": {
+      "ref": "45:3",
+      "url": "https://quran.com/45:3",
+      "arabic": "إِنَّ فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ لَـَٔايَـٰتٍ لِّلْمُؤْمِنِينَ",
+      "translation": "Lo! in the heavens and the earth are portents for believers.",
+      "translationUrl": "https://quran.com/45:3?translations=19"
+    },
     "46:1": {
       "ref": "46:1",
       "url": "https://quran.com/46:1",
       "arabic": "حمٓ",
       "translation": "Ha. Mim.",
       "translationUrl": "https://quran.com/46:1?translations=19"
+    },
+    "46:2": {
+      "ref": "46:2",
+      "url": "https://quran.com/46:2",
+      "arabic": "تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+      "translation": "The revelation of the Scripture is from Allah the Mighty, the Wise.",
+      "translationUrl": "https://quran.com/46:2?translations=19"
+    },
+    "46:3": {
+      "ref": "46:3",
+      "url": "https://quran.com/46:3",
+      "arabic": "مَا خَلَقْنَا ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَآ إِلَّا بِٱلْحَقِّ وَأَجَلٍ مُّسَمًّى ۚ وَٱلَّذِينَ كَفَرُوا۟ عَمَّآ أُنذِرُوا۟ مُعْرِضُونَ",
+      "translation": "We created not the heavens and the earth and all that is between them save with truth, and for a term appointed. But those who disbelieve turn away from that whereof they are warned.",
+      "translationUrl": "https://quran.com/46:3?translations=19"
     },
     "47:1": {
       "ref": "47:1",
@@ -1441,6 +1588,13 @@
       "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, and He is the Mighty, the Wise.",
       "translationUrl": "https://quran.com/59:1?translations=19"
     },
+    "59:2": {
+      "ref": "59:2",
+      "url": "https://quran.com/59:2",
+      "arabic": "هُوَ ٱلَّذِىٓ أَخْرَجَ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ مِن دِيَـٰرِهِمْ لِأَوَّلِ ٱلْحَشْرِ ۚ مَا ظَنَنتُمْ أَن يَخْرُجُوا۟ ۖ وَظَنُّوٓا۟ أَنَّهُم مَّانِعَتُهُمْ حُصُونُهُم مِّنَ ٱللَّهِ فَأَتَىٰهُمُ ٱللَّهُ مِنْ حَيْثُ لَمْ يَحْتَسِبُوا۟ ۖ وَقَذَفَ فِى قُلُوبِهِمُ ٱلرُّعْبَ ۚ يُخْرِبُونَ بُيُوتَهُم بِأَيْدِيهِمْ وَأَيْدِى ٱلْمُؤْمِنِينَ فَٱعْتَبِرُوا۟ يَـٰٓأُو۟لِى ٱلْأَبْصَـٰرِ",
+      "translation": "He it is Who hath caused those of the People of the Scripture who disbelieved to go forth from their homes unto the first exile. Ye deemed not that they would go forth, while they deemed that their strongholds would protect them from Allah. But Allah reached them from a place whereof they recked not, and cast terror in their hearts so that they ruined their houses with their own hands and the hands of the believers. So learn a lesson, O ye who have eyes!",
+      "translationUrl": "https://quran.com/59:2?translations=19"
+    },
     "60:1": {
       "ref": "60:1",
       "url": "https://quran.com/60:1",
@@ -1454,6 +1608,13 @@
       "arabic": "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
       "translation": "All that is in the heavens and all that is in the earth glorifieth Allah, and He is the Mighty, the Wise.",
       "translationUrl": "https://quran.com/61:1?translations=19"
+    },
+    "61:2": {
+      "ref": "61:2",
+      "url": "https://quran.com/61:2",
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ",
+      "translation": "O ye who believe! Why say ye that which ye do not?",
+      "translationUrl": "https://quran.com/61:2?translations=19"
     },
     "62:1": {
       "ref": "62:1",
