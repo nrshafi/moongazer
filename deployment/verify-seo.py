@@ -11,9 +11,9 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'deployment/evidence/seo'
-targets = json.loads((ROOT/'deployment/targets.json').read_text())
-collections = json.loads((ROOT/'homepage/collections.json').read_text())
-learning_guides = json.loads((ROOT/'deployment/learning-guides.json').read_text())
+targets = json.loads((ROOT/'deployment/targets.json').read_text(encoding='utf-8'))
+collections = json.loads((ROOT/'homepage/collections.json').read_text(encoding='utf-8'))
+learning_guides = json.loads((ROOT/'deployment/learning-guides.json').read_text(encoding='utf-8'))
 sites = [('moongazer', 'https://moongazer.tech/', ROOT/'homepage/dist')]
 sites += [('moongazer-'+app['slug'], 'https://'+app['slug']+'.moongazer.tech/', ROOT/'apps'/app['slug']/'dist') for app in targets]
 
