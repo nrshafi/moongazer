@@ -1,11 +1,29 @@
 {
-  "title": "Everyday Akhlaq — Choose, then read the sources | Moongazer",
+  "title": "Everyday Akhlaq — Character & business dilemmas | Moongazer",
   "shortName": "Everyday Akhlaq",
-  "description": "Choose how to respond in fictional everyday scenarios, then read the sources. Free Islamic character activities, with no account needed.",
+  "description": "Choose how to respond in fictional everyday and business scenarios, then read the sources. Free Islamic character activities, with no account needed.",
   "keyword": "Islamic character activities",
   "collection": "scenarios",
   "prefix": "scenario",
   "nameField": "title",
   "summaryField": "scene",
-  "detailLead": "Fictional character scenario"
+  "detailLead": "Fictional character scenario",
+  "extraCollections": [
+    {
+      "collection": "business",
+      "prefix": "business",
+      "nameField": "title",
+      "summaryField": "scene",
+      "detailLead": "Fictional business scenario"
+    }
+  ],
+  "extraPages": [
+    {
+      "path": "/business/",
+      "title": "Business scenarios | Everyday Akhlaq",
+      "name": "Business scenarios",
+      "description": "Twelve fictional business dilemmas about fair trade, debts, deposits and honest reviews. Choose a response, see what might follow, then read the sources.",
+      "indexable": true
+    }
+  ]
 }

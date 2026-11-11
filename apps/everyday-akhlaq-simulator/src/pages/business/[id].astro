@@ -1,0 +1,7 @@
+---
+import ScenarioPage from '../../components/ScenarioPage.astro';
+import data from '../../data/content.json';
+export function getStaticPaths(){return data.business.map(item=>({params:{id:item.id},props:{item}}));}
+const {item}=Astro.props;
+---
+<ScenarioPage item={item} base="business"/>

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Everyday character dilemmas: choose, then read the sources. Visitors who want to consider everyday choices through short fictional situations and sourced reading notes.
+Character and halal business dilemmas: choose, then read the sources. Visitors who want to consider everyday choices through short fictional situations and sourced reading notes.
 
 Portfolio rank 4 of 20. Project root `apps/everyday-akhlaq-simulator`. The app is implemented and published at https://everyday-akhlaq-simulator.moongazer.tech/.
 

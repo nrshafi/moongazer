@@ -5,6 +5,7 @@
       "number": 1,
       "title": "The forwarded screenshot",
       "topic": "Online",
+      "track": "study",
       "ref": "49:6",
       "scene": "A cropped screenshot in your class group accuses a student of cheating. Nobody has shared the original conversation. A friend asks you to forward it to another group.",
       "prompt": "What do you do first?",
@@ -59,6 +60,7 @@
       "number": 2,
       "title": "The extra marks",
       "topic": "Study",
+      "track": "study",
       "ref": "9:119",
       "scene": "Your teacher accidentally awards you five extra marks. The result moves you above a classmate. You notice the error after everyone has left.",
       "prompt": "What is your next step?",
@@ -113,6 +115,7 @@
       "number": 3,
       "title": "A promise and a deadline",
       "topic": "Friendship",
+      "track": "home",
       "ref": "17:34",
       "scene": "You promised to help a friend move on Saturday. A new project deadline now conflicts with the same time. Your friend is counting on your help.",
       "prompt": "How do you respond?",
@@ -167,6 +170,7 @@
       "number": 4,
       "title": "A difficult conversation at home",
       "topic": "Family",
+      "track": "home",
       "ref": "17:23",
       "scene": "A parent asks for help setting up their phone while you are trying to finish an assignment. You have explained the same steps several times already.",
       "prompt": "How do you answer?",
@@ -221,6 +225,7 @@
       "number": 5,
       "title": "The reply you almost sent",
       "topic": "Self-control",
+      "track": "study",
       "ref": "3:134",
       "scene": "A teammate dismisses your work in a public chat. You type an angry reply and hover over Send.",
       "prompt": "What do you do?",
@@ -275,6 +280,7 @@
       "number": 6,
       "title": "The payment sent twice",
       "topic": "Work",
+      "track": "study",
       "ref": "4:58",
       "scene": "A client accidentally pays the same invoice twice. You could use the money, and the client has not noticed.",
       "prompt": "What do you do first?",
@@ -329,6 +335,7 @@
       "number": 7,
       "title": "The noisy evening",
       "topic": "Neighbors",
+      "track": "home",
       "ref": "4:36",
       "scene": "Friends are visiting your flat. A neighbor knocks and explains that their child is trying to sleep before an early appointment.",
       "prompt": "How do you respond?",
@@ -383,6 +390,7 @@
       "number": 8,
       "title": "The lunch-table story",
       "topic": "Friendship",
+      "track": "study",
       "ref": "49:12",
       "scene": "At lunch, someone starts sharing a coworker's private mistake for laughs. The coworker is not present.",
       "prompt": "How do you respond?",
@@ -437,6 +445,7 @@
       "number": 9,
       "title": "The joke at someone's expense",
       "topic": "Community",
+      "track": "study",
       "ref": "49:11",
       "scene": "A newcomer mispronounces a word during a club meeting. Others repeat the mistake as a running joke. The newcomer stops participating.",
       "prompt": "What do you do?",
@@ -491,6 +500,7 @@
       "number": 10,
       "title": "A gift with a caption",
       "topic": "Giving",
+      "track": "home",
       "ref": "2:264",
       "scene": "You help a friend pay for groceries. Later you consider posting a photo that identifies them and describes their financial difficulty.",
       "prompt": "What do you do?",
@@ -545,6 +555,7 @@
       "number": 11,
       "title": "Too much on the plate",
       "topic": "Daily life",
+      "track": "home",
       "ref": "7:31",
       "scene": "At a buffet, you want to try everything. You already have more food than you are likely to finish.",
       "prompt": "What do you choose?",
@@ -599,6 +610,7 @@
       "number": 12,
       "title": "The comment section",
       "topic": "Online",
+      "track": "study",
       "ref": "17:53",
       "scene": "A person posts a view you strongly disagree with. Other commenters are using insults, and you want to reply.",
       "prompt": "What is your approach?",
@@ -653,6 +665,7 @@
       "number": 13,
       "title": "A loan between friends",
       "topic": "Money",
+      "track": "home",
       "ref": "2:282",
       "scene": "A friend asks to borrow money until next month. You both agree, but neither has written down the amount or repayment date.",
       "prompt": "What do you suggest?",
@@ -707,6 +720,7 @@
       "number": 14,
       "title": "Two friends, one disagreement",
       "topic": "Community",
+      "track": "home",
       "ref": "49:10",
       "scene": "Two friends ask you to take sides after a misunderstanding. Each has told you only their own version.",
       "prompt": "What do you do first?",
@@ -761,6 +775,7 @@
       "number": 15,
       "title": "The lost wallet",
       "topic": "Daily life",
+      "track": "study",
       "ref": "4:58",
       "scene": "You find a wallet in a shared study room. A student ID is inside, along with cash.",
       "prompt": "What is your immediate step?",
@@ -815,6 +830,7 @@
       "number": 16,
       "title": "The newcomer's accent",
       "topic": "Community",
+      "track": "study",
       "ref": "49:13",
       "scene": "A student from another country joins your group. Their accent is unfamiliar, and someone suggests they should avoid presenting.",
       "prompt": "How do you respond?",
@@ -869,6 +885,7 @@
       "number": 17,
       "title": "Giving without a name",
       "topic": "Giving",
+      "track": "home",
       "ref": "2:271",
       "scene": "A community fundraiser offers the choice to display your name or contribute privately. You want to help and also encourage others.",
       "prompt": "What do you consider?",
@@ -923,6 +940,7 @@
       "number": 18,
       "title": "The group project agreement",
       "topic": "Study",
+      "track": "study",
       "ref": "5:1",
       "scene": "Your group divided a project into tasks. You finish yours, but another member is struggling and asks to change the plan.",
       "prompt": "What do you do?",
@@ -977,6 +995,7 @@
       "number": 19,
       "title": "A tired caregiver",
       "topic": "Family",
+      "track": "home",
       "ref": "31:14",
       "scene": "A family member caring for a parent looks exhausted. You have a free hour but are unsure what would actually help.",
       "prompt": "What do you do?",
@@ -1031,6 +1050,7 @@
       "number": 20,
       "title": "A confident answer",
       "topic": "Online",
+      "track": "study",
       "ref": "17:36",
       "scene": "A friend asks you a religious question in a chat. You remember seeing a short clip but cannot recall its source or qualifications.",
       "prompt": "How do you answer?",
@@ -1079,6 +1099,720 @@
         "translationUrl": "https://quran.com/17:36?translations=19"
       },
       "commentaryUrl": "https://quran.com/17:36/tafsirs/16"
+    }
+  ],
+  "business": [
+    {
+      "id": "hidden-battery",
+      "number": 1,
+      "title": "The battery nobody mentioned",
+      "topic": "Disclosure",
+      "track": "business",
+      "ref": "4:29",
+      "scene": "You sell a used laptop. It works on a charger, but the battery lasts only ten minutes.",
+      "facts": [
+        "You know about the battery.",
+        "The listing says “works well.”"
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Describe the battery before taking payment.",
+          "consequence": "The buyer can assess the actual condition.",
+          "constructive": true
+        },
+        {
+          "text": "Wait to see whether the buyer asks.",
+          "consequence": "The buyer may rely on a description you know is incomplete.",
+          "constructive": false
+        },
+        {
+          "text": "Pause the sale and test the laptop again.",
+          "consequence": "A second test can clarify the description, provided you do not conceal what is already known.",
+          "constructive": false
+        }
+      ],
+      "followup": "The buyer asks you to put the condition in the receipt.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Record the known defect and agreed price.",
+          "consequence": "Both sides keep a clear record of what was disclosed.",
+          "constructive": true
+        },
+        {
+          "text": "Write “sold as seen” and omit the known defect.",
+          "consequence": "A general phrase does not explain the concealed battery condition.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar explains trade by mutual consent rather than wrongful taking. Applying that principle to this laptop is an editorial exercise.",
+      "passage": {
+        "ref": "4:29",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱلْبَـٰطِلِ إِلَّآ أَن تَكُونَ تِجَـٰرَةً عَن تَرَاضٍ مِّنكُمْ ۚ وَلَا تَقْتُلُوٓا۟ أَنفُسَكُمْ ۚ إِنَّ ٱللَّهَ كَانَ بِكُمْ رَحِيمًا",
+        "translation": "O ye who believe! Squander not your wealth among yourselves in vanity, except it be a trade by mutual consent, and kill not one another. Lo! Allah is ever Merciful unto you.",
+        "url": "https://quran.com/4:29",
+        "translationUrl": "https://quran.com/4:29?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/4:29/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/4:29/tafsirs/90",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2079",
+          "url": "https://sunnah.com/bukhari:2079",
+          "kind": "Primary hadith report",
+          "note": "Hakim ibn Hizam’s report links honest disclosure with blessing in a transaction."
+        }
+      ]
+    },
+    {
+      "id": "short-weight",
+      "number": 2,
+      "title": "The underfilled spice packet",
+      "topic": "Fair measures",
+      "track": "business",
+      "ref": "83:1-3",
+      "scene": "Your 500 g packets contain 470 g. A colleague says the difference is too small to matter.",
+      "facts": [
+        "The scale was checked.",
+        "The label still promises 500 g."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Correct the weight or the label before selling.",
+          "consequence": "The advertised and delivered quantities can agree.",
+          "constructive": true
+        },
+        {
+          "text": "Keep the label because most buyers will not weigh it.",
+          "consequence": "Customers receive less than the stated quantity.",
+          "constructive": false
+        },
+        {
+          "text": "Stop sales while checking the affected batch.",
+          "consequence": "You avoid repeating an uncertain measurement.",
+          "constructive": false
+        }
+      ],
+      "followup": "Some underfilled packets have already been sold.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Identify the affected sales and offer a clear remedy.",
+          "consequence": "Customers can receive the missing quantity or an agreed correction.",
+          "constructive": true
+        },
+        {
+          "text": "Fix future packets but ignore the earlier shortage.",
+          "consequence": "The earlier customers still bear the known shortfall.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar describes the contrast between demanding full measure and giving others less. The packet and remedy are fictional applications.",
+      "passage": {
+        "ref": "83:1-3",
+        "arabic": "وَيْلٌ لِّلْمُطَفِّفِينَ\nٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ\nوَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+        "translation": "Woe unto the defrauders:\nThose who when they take the measure from mankind demand it full,\nBut if they measure unto them or weight for them, they cause them loss.",
+        "url": "https://quran.com/83:1-3",
+        "translationUrl": "https://quran.com/83:1-3?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/83:1/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/83:1/tafsirs/90",
+      "sources": []
+    },
+    {
+      "id": "moving-deadline",
+      "number": 3,
+      "title": "The delivery date that changed",
+      "topic": "Contracts",
+      "track": "business",
+      "ref": "5:1",
+      "scene": "Your workshop accepted an order due Friday. A larger client now wants the same production slot.",
+      "facts": [
+        "The first customer agreed to Friday.",
+        "No revised date has been accepted."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Keep the agreed slot or seek a genuine revision.",
+          "consequence": "The customer can decide whether a new date is acceptable.",
+          "constructive": true
+        },
+        {
+          "text": "Move the first order and notify them afterward.",
+          "consequence": "You change a material promise without agreement.",
+          "constructive": false
+        },
+        {
+          "text": "Check capacity before accepting the second order.",
+          "consequence": "You can avoid making incompatible promises.",
+          "constructive": false
+        }
+      ],
+      "followup": "A delay now seems unavoidable.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Explain promptly and discuss a remedy.",
+          "consequence": "The customer can make an informed choice about the delay.",
+          "constructive": true
+        },
+        {
+          "text": "Give repeated reassuring updates without a realistic date.",
+          "consequence": "Reassurance hides the unresolved delivery problem.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar includes people’s agreements and transactions in its explanation of fulfilling commitments. Contract remedies here are learning suggestions, not rulings.",
+      "passage": {
+        "ref": "5:1",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَـٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
+        "translation": "O ye who believe! Fulfil your indentures. The beast of cattle is made lawful unto you (for food) except that which is announced unto you (herein), game being unlawful when ye are on the pilgrimage. Lo! Allah ordaineth that which pleaseth Him.",
+        "url": "https://quran.com/5:1",
+        "translationUrl": "https://quran.com/5:1?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/5:1/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/5:1/tafsirs/90",
+      "sources": []
+    },
+    {
+      "id": "unpaid-work",
+      "number": 4,
+      "title": "A completed job and an unpaid invoice",
+      "topic": "Payment",
+      "track": "business",
+      "ref": "16:90",
+      "scene": "A freelancer completed the agreed work. Your company can pay but wants to retain cash for another purchase.",
+      "facts": [
+        "The work met the agreed scope.",
+        "The agreed payment is due."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Pay on the agreed terms.",
+          "consequence": "The worker receives the compensation already earned.",
+          "constructive": true
+        },
+        {
+          "text": "Delay because the freelancer is unlikely to complain.",
+          "consequence": "You retain another person’s due payment for your convenience.",
+          "constructive": false
+        },
+        {
+          "text": "Check the invoice against the agreement today.",
+          "consequence": "A genuine check can clarify an error without becoming an indefinite delay.",
+          "constructive": false
+        }
+      ],
+      "followup": "The accounts team proposes another month of delay.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Resolve any real discrepancy and release the due payment.",
+          "consequence": "A specific accounting issue is separated from avoidance.",
+          "constructive": true
+        },
+        {
+          "text": "Ask the worker to keep waiting without a reason.",
+          "consequence": "The same unpaid obligation continues.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar describes justice as giving people their due. This case applies that teaching to a fictional completed job.",
+      "passage": {
+        "ref": "16:90",
+        "arabic": "۞ إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَـٰنِ وَإِيتَآئِ ذِى ٱلْقُرْبَىٰ وَيَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ وَٱلْبَغْىِ ۚ يَعِظُكُمْ لَعَلَّكُمْ تَذَكَّرُونَ",
+        "translation": "Lo! Allah enjoineth justice and kindness, and giving to kinsfolk, and forbiddeth lewdness and abomination and wickedness. He exhorteth you in order that ye may take heed.",
+        "url": "https://quran.com/16:90",
+        "translationUrl": "https://quran.com/16:90?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/16:90/tafsirs/16",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2270",
+          "url": "https://sunnah.com/bukhari:2270",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurayra’s report includes taking a worker’s full labor without paying the wage."
+        }
+      ]
+    },
+    {
+      "id": "debtor-hardship",
+      "number": 5,
+      "title": "When a customer genuinely cannot pay",
+      "topic": "Debt",
+      "track": "business",
+      "ref": "2:280",
+      "scene": "A customer with an outstanding debt lost their income and explains that they cannot currently repay.",
+      "facts": [
+        "The debt is acknowledged.",
+        "The difficulty is genuine in this fictional case."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Discuss time and an achievable repayment arrangement.",
+          "consequence": "You respond to the stated hardship rather than pretending it does not exist.",
+          "constructive": true
+        },
+        {
+          "text": "Threaten public humiliation to force immediate payment.",
+          "consequence": "Pressure does not create money the customer does not have.",
+          "constructive": false
+        },
+        {
+          "text": "Clarify the situation respectfully before agreeing details.",
+          "consequence": "Both sides can understand what is possible.",
+          "constructive": false
+        }
+      ],
+      "followup": "You can afford to forgive part of the debt.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Consider remission without turning it into publicity.",
+          "consequence": "You can reduce the debt while preserving the customer’s dignity.",
+          "constructive": true
+        },
+        {
+          "text": "Offer remission only if they post a promotional testimonial.",
+          "consequence": "The proposed help becomes pressure for a marketing benefit.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar explains giving an insolvent debtor time, and describes remission as better. Practical arrangements in this case are editorial examples.",
+      "passage": {
+        "ref": "2:280",
+        "arabic": "وَإِن كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَىٰ مَيْسَرَةٍ ۚ وَأَن تَصَدَّقُوا۟ خَيْرٌ لَّكُمْ ۖ إِن كُنتُمْ تَعْلَمُونَ",
+        "translation": "And if the debtor is in straitened circumstances, then (let there be) postponement to (the time of) ease; and that ye remit the debt as almsgiving would be better for you if ye did but know.",
+        "url": "https://quran.com/2:280",
+        "translationUrl": "https://quran.com/2:280?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:280/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/2:280/tafsirs/90",
+      "sources": []
+    },
+    {
+      "id": "able-to-pay",
+      "number": 6,
+      "title": "Delay by a customer who can pay",
+      "topic": "Debt",
+      "track": "business",
+      "ref": "5:1",
+      "scene": "Your shop has funds to settle a due supplier invoice, but delaying would improve this month’s cash balance.",
+      "facts": [
+        "The invoice is due and undisputed.",
+        "The shop has enough funds."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Settle the due invoice.",
+          "consequence": "The supplier receives payment according to the agreement.",
+          "constructive": true
+        },
+        {
+          "text": "Delay until the supplier threatens action.",
+          "consequence": "You use avoidable delay as a negotiating tactic.",
+          "constructive": false
+        },
+        {
+          "text": "Check the exact due date and amount now.",
+          "consequence": "You can resolve uncertainty before deciding.",
+          "constructive": false
+        }
+      ],
+      "followup": "A colleague confuses this with genuine financial hardship.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Distinguish inability from a convenient delay.",
+          "consequence": "The actual facts stay central to the decision.",
+          "constructive": true
+        },
+        {
+          "text": "Claim that every delayed payment is hardship.",
+          "consequence": "The label conceals the shop’s ability to pay.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "The commitment reading is paired with a specific report about avoidable delay. Do not equate wealth with freedom from obligations.",
+      "passage": {
+        "ref": "5:1",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَـٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
+        "translation": "O ye who believe! Fulfil your indentures. The beast of cattle is made lawful unto you (for food) except that which is announced unto you (herein), game being unlawful when ye are on the pilgrimage. Lo! Allah ordaineth that which pleaseth Him.",
+        "url": "https://quran.com/5:1",
+        "translationUrl": "https://quran.com/5:1?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/5:1/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/5:1/tafsirs/90",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2400",
+          "url": "https://sunnah.com/bukhari:2400",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurayra’s report identifies delay in repayment by an able debtor as injustice."
+        }
+      ]
+    },
+    {
+      "id": "unclear-loan",
+      "number": 7,
+      "title": "The friendly loan with no record",
+      "topic": "Contracts",
+      "track": "business",
+      "ref": "2:282",
+      "scene": "Two friends agree on a deferred loan, then remember different amounts and due dates.",
+      "facts": [
+        "Repayment is deferred.",
+        "The amount and date were never recorded."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Agree on a clear written record together.",
+          "consequence": "Both parties can check the same terms.",
+          "constructive": true
+        },
+        {
+          "text": "Treat asking for a record as an insult.",
+          "consequence": "The disagreement remains unresolved.",
+          "constructive": false
+        },
+        {
+          "text": "Pause and clarify what each person actually agreed.",
+          "consequence": "You avoid recording an amount one party disputes.",
+          "constructive": false
+        }
+      ],
+      "followup": "A draft contains the wrong amount.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Correct it before either person accepts it.",
+          "consequence": "The document reflects the actual agreement.",
+          "constructive": true
+        },
+        {
+          "text": "Leave it because a signature matters more than accuracy.",
+          "consequence": "The record preserves a known error.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar explains recording a deferred debt to preserve rights and avoid dispute. This short activity does not replace the verse’s full discussion of writing and witnesses.",
+      "passage": {
+        "ref": "2:282",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰٓ أَجَلٍ مُّسَمًّى فَٱكْتُبُوهُ ۚ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۢ بِٱلْعَدْلِ ۚ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ ۚ فَلْيَكْتُبْ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًٔا ۚ فَإِن كَانَ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ سَفِيهًا أَوْ ضَعِيفًا أَوْ لَا يَسْتَطِيعُ أَن يُمِلَّ هُوَ فَلْيُمْلِلْ وَلِيُّهُۥ بِٱلْعَدْلِ ۚ وَٱسْتَشْهِدُوا۟ شَهِيدَيْنِ مِن رِّجَالِكُمْ ۖ فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌ وَٱمْرَأَتَانِ مِمَّن تَرْضَوْنَ مِنَ ٱلشُّهَدَآءِ أَن تَضِلَّ إِحْدَىٰهُمَا فَتُذَكِّرَ إِحْدَىٰهُمَا ٱلْأُخْرَىٰ ۚ وَلَا يَأْبَ ٱلشُّهَدَآءُ إِذَا مَا دُعُوا۟ ۚ وَلَا تَسْـَٔمُوٓا۟ أَن تَكْتُبُوهُ صَغِيرًا أَوْ كَبِيرًا إِلَىٰٓ أَجَلِهِۦ ۚ ذَٰلِكُمْ أَقْسَطُ عِندَ ٱللَّهِ وَأَقْوَمُ لِلشَّهَـٰدَةِ وَأَدْنَىٰٓ أَلَّا تَرْتَابُوٓا۟ ۖ إِلَّآ أَن تَكُونَ تِجَـٰرَةً حَاضِرَةً تُدِيرُونَهَا بَيْنَكُمْ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَلَّا تَكْتُبُوهَا ۗ وَأَشْهِدُوٓا۟ إِذَا تَبَايَعْتُمْ ۚ وَلَا يُضَآرَّ كَاتِبٌ وَلَا شَهِيدٌ ۚ وَإِن تَفْعَلُوا۟ فَإِنَّهُۥ فُسُوقٌۢ بِكُمْ ۗ وَٱتَّقُوا۟ ٱللَّهَ ۖ وَيُعَلِّمُكُمُ ٱللَّهُ ۗ وَٱللَّهُ بِكُلِّ شَىْءٍ عَلِيمٌ",
+        "translation": "O ye who believe! When ye contract a debt for a fixed term, record it in writing. Let a scribe record it in writing between you in (terms of) equity. No scribe should refuse to write as Allah hath taught him, so let him write, and let him who incurreth the debt dictate, and let him observe his duty to Allah his Lord, and diminish naught thereof. But if he who oweth the debt is of low understanding, or weak, or unable himself to dictate, then let the guardian of his interests dictate in (terms of) equity. And call to witness, from among your men, two witnesses. And if two men be not (at hand) then a man and two women, of such as ye approve as witnesses, so that if the one erreth (through forgetfulness) the other will remember. And the witnesses must not refuse when they are summoned. Be not averse to writing down (the contract) whether it be small or great, with (record of) the term thereof. That is more equitable in the sight of Allah and more sure for testimony, and the best way of avoiding doubt between you; save only in the case when it is actual merchandise which ye transfer among yourselves from hand to hand. In that case it is no sin for you if ye write it not. And have witnesses when ye sell one to another, and let no harm be done to scribe or witness. If ye do (harm to them) lo! it is a sin in you. Observe your duty to Allah. Allah is teaching you. And Allah is knower of all things.",
+        "url": "https://quran.com/2:282",
+        "translationUrl": "https://quran.com/2:282?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:282/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/2:282/tafsirs/90",
+      "sources": []
+    },
+    {
+      "id": "client-deposit",
+      "number": 8,
+      "title": "Whose money is the deposit?",
+      "topic": "Trust",
+      "track": "business",
+      "ref": "4:58",
+      "scene": "A client leaves funds with you to buy materials for their project. You consider using the money temporarily for your own order.",
+      "facts": [
+        "The money was entrusted for a stated purchase.",
+        "The client has not authorized another use."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Keep the funds for their agreed purpose.",
+          "consequence": "The client’s entrusted money stays available.",
+          "constructive": true
+        },
+        {
+          "text": "Use it and hope to replace it before anyone notices.",
+          "consequence": "You change the use without the owner’s knowledge.",
+          "constructive": false
+        },
+        {
+          "text": "Ask about any proposed change before acting.",
+          "consequence": "The owner can accept or refuse with the facts in view.",
+          "constructive": false
+        }
+      ],
+      "followup": "The client requests an account of the spending.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Provide an accurate record and return any balance.",
+          "consequence": "The owner can inspect what happened to their funds.",
+          "constructive": true
+        },
+        {
+          "text": "Invent receipts to conceal a temporary diversion.",
+          "consequence": "A false record adds concealment to the original problem.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar explains returning entrusted things to their owners. The deposit scenario is an editorial application, not a ruling on a real contract.",
+      "passage": {
+        "ref": "4:58",
+        "arabic": "۞ إِنَّ ٱللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا۟ ٱلْأَمَـٰنَـٰتِ إِلَىٰٓ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ ٱلنَّاسِ أَن تَحْكُمُوا۟ بِٱلْعَدْلِ ۚ إِنَّ ٱللَّهَ نِعِمَّا يَعِظُكُم بِهِۦٓ ۗ إِنَّ ٱللَّهَ كَانَ سَمِيعًۢا بَصِيرًا",
+        "translation": "Lo! Allah commandeth you that ye restore deposits to their owners, and, if ye judge between mankind, that ye judge justly. Lo! comely is this which Allah admonisheth you. Lo! Allah is ever Hearer, Seer.",
+        "url": "https://quran.com/4:58",
+        "translationUrl": "https://quran.com/4:58?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/4:58/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/4:58/tafsirs/90",
+      "sources": []
+    },
+    {
+      "id": "unseen-commission",
+      "number": 9,
+      "title": "The recommendation with a hidden incentive",
+      "topic": "Disclosure",
+      "track": "business",
+      "ref": "4:29",
+      "scene": "You recommend a supplier as independent advice while receiving a referral fee if the customer chooses them.",
+      "facts": [
+        "The customer thinks the comparison is independent.",
+        "You have a financial incentive."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Explain the incentive before the recommendation.",
+          "consequence": "The customer can evaluate the advice with that fact in view.",
+          "constructive": true
+        },
+        {
+          "text": "Keep the incentive secret because the product is decent.",
+          "consequence": "The customer cannot assess the conflict you know about.",
+          "constructive": false
+        },
+        {
+          "text": "Offer a comparison without pretending neutrality.",
+          "consequence": "The recommendation’s basis can be made clear.",
+          "constructive": false
+        }
+      ],
+      "followup": "The supplier asks you to claim there is no commission.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Decline the false statement and correct any misleading description.",
+          "consequence": "The customer receives an honest account.",
+          "constructive": true
+        },
+        {
+          "text": "Use the supplier’s wording despite knowing it is false.",
+          "consequence": "The recommendation now includes a direct falsehood.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar explains lawful trade by consent and rejects wrongful taking. Disclosure of this fictional incentive is applied reasoning beyond the fetched text.",
+      "passage": {
+        "ref": "4:29",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱلْبَـٰطِلِ إِلَّآ أَن تَكُونَ تِجَـٰرَةً عَن تَرَاضٍ مِّنكُمْ ۚ وَلَا تَقْتُلُوٓا۟ أَنفُسَكُمْ ۚ إِنَّ ٱللَّهَ كَانَ بِكُمْ رَحِيمًا",
+        "translation": "O ye who believe! Squander not your wealth among yourselves in vanity, except it be a trade by mutual consent, and kill not one another. Lo! Allah is ever Merciful unto you.",
+        "url": "https://quran.com/4:29",
+        "translationUrl": "https://quran.com/4:29?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/4:29/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/4:29/tafsirs/90",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 2079",
+          "url": "https://sunnah.com/bukhari:2079",
+          "kind": "Primary hadith report",
+          "note": "The report stresses truth and disclosure in a transaction; it does not define every modern referral arrangement."
+        }
+      ]
+    },
+    {
+      "id": "cosmetic-repair",
+      "number": 10,
+      "title": "A repair hidden under fresh paint",
+      "topic": "Disclosure",
+      "track": "business",
+      "ref": "4:29",
+      "scene": "A cabinet has structural damage. Fresh paint makes it look new in photographs.",
+      "facts": [
+        "The damage affects use.",
+        "The buyer cannot see it in the photos."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Show the damaged area and describe the repair.",
+          "consequence": "The buyer can judge the actual item.",
+          "constructive": true
+        },
+        {
+          "text": "Photograph only the undamaged side.",
+          "consequence": "The presentation conceals a material fact.",
+          "constructive": false
+        },
+        {
+          "text": "Have the structure checked before listing it.",
+          "consequence": "You can learn what is safe to claim.",
+          "constructive": false
+        }
+      ],
+      "followup": "The buyer asks whether it is structurally sound.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Answer according to the inspection and known limits.",
+          "consequence": "You avoid promising more than the evidence supports.",
+          "constructive": true
+        },
+        {
+          "text": "Say “perfect” to finish the sale.",
+          "consequence": "The answer hides an unresolved defect.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "The consent reading provides the wider ethical setting. The cabinet is a modern fictional application.",
+      "passage": {
+        "ref": "4:29",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱلْبَـٰطِلِ إِلَّآ أَن تَكُونَ تِجَـٰرَةً عَن تَرَاضٍ مِّنكُمْ ۚ وَلَا تَقْتُلُوٓا۟ أَنفُسَكُمْ ۚ إِنَّ ٱللَّهَ كَانَ بِكُمْ رَحِيمًا",
+        "translation": "O ye who believe! Squander not your wealth among yourselves in vanity, except it be a trade by mutual consent, and kill not one another. Lo! Allah is ever Merciful unto you.",
+        "url": "https://quran.com/4:29",
+        "translationUrl": "https://quran.com/4:29?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/4:29/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/4:29/tafsirs/90",
+      "sources": [
+        {
+          "label": "Sahih Muslim 102",
+          "url": "https://sunnah.com/muslim:102",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurayra’s report describes concealed wet food and the need to make its condition visible."
+        }
+      ]
+    },
+    {
+      "id": "price-surprise",
+      "number": 11,
+      "title": "The fee revealed after agreement",
+      "topic": "Pricing",
+      "track": "business",
+      "ref": "5:1",
+      "scene": "A customer agrees to a quoted total. At collection, you add a mandatory fee that was already known to you.",
+      "facts": [
+        "The fee was foreseeable.",
+        "The customer relied on the quoted total."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Explain the complete price before agreement.",
+          "consequence": "The customer can decide with the total visible.",
+          "constructive": true
+        },
+        {
+          "text": "Reveal the fee only after the work is finished.",
+          "consequence": "The customer faces a cost they were not able to evaluate.",
+          "constructive": false
+        },
+        {
+          "text": "Clarify what the original quote actually included.",
+          "consequence": "You can distinguish a real change in scope from an undisclosed charge.",
+          "constructive": false
+        }
+      ],
+      "followup": "The customer challenges the extra fee.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Review the agreement and seek a transparent resolution.",
+          "consequence": "The disputed term can be discussed using the original record.",
+          "constructive": true
+        },
+        {
+          "text": "Insist that small print need never be explained.",
+          "consequence": "The foreseeable misunderstanding remains unresolved.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar includes transactions in fulfilling agreements. The example addresses clarity, not a universal rule about every pricing structure.",
+      "passage": {
+        "ref": "5:1",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَـٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
+        "translation": "O ye who believe! Fulfil your indentures. The beast of cattle is made lawful unto you (for food) except that which is announced unto you (herein), game being unlawful when ye are on the pilgrimage. Lo! Allah ordaineth that which pleaseth Him.",
+        "url": "https://quran.com/5:1",
+        "translationUrl": "https://quran.com/5:1?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/5:1/tafsirs/16",
+      "secondCommentaryUrl": "https://quran.com/5:1/tafsirs/90",
+      "sources": []
+    },
+    {
+      "id": "false-testimonial",
+      "number": 12,
+      "title": "A review from someone who never bought",
+      "topic": "Truthfulness",
+      "track": "business",
+      "ref": "17:36",
+      "scene": "A friend offers to post a glowing customer review without buying or using the service.",
+      "facts": [
+        "No customer experience took place.",
+        "Readers will think the review is independent."
+      ],
+      "prompt": "What would you do?",
+      "options": [
+        {
+          "text": "Ask for genuine feedback from actual users.",
+          "consequence": "A testimonial can describe a real experience.",
+          "constructive": true
+        },
+        {
+          "text": "Accept the invented review to help the launch.",
+          "consequence": "Readers receive a false account.",
+          "constructive": false
+        },
+        {
+          "text": "Invite the friend to test the service and disclose the relationship.",
+          "consequence": "Any later account can state what actually happened.",
+          "constructive": false
+        }
+      ],
+      "followup": "An invented review is already live.",
+      "prompt2": "What would you do next?",
+      "options2": [
+        {
+          "text": "Correct or remove the misleading review.",
+          "consequence": "Future readers can avoid relying on a fabricated experience.",
+          "constructive": true
+        },
+        {
+          "text": "Leave it because no one can prove the reviewer was not a customer.",
+          "consequence": "The misleading account remains available.",
+          "constructive": false
+        }
+      ],
+      "takeaway": "Al-Muyassar calls for checking what one does not know. Applying that reading to testimonials is editorial reasoning.",
+      "passage": {
+        "ref": "17:36",
+        "arabic": "وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِۦ عِلْمٌ ۚ إِنَّ ٱلسَّمْعَ وَٱلْبَصَرَ وَٱلْفُؤَادَ كُلُّ أُو۟لَـٰٓئِكَ كَانَ عَنْهُ مَسْـُٔولًا",
+        "translation": "(O man), follow not that whereof thou hast no knowledge. Lo! the hearing and the sight and the heart - of each of these it will be asked.",
+        "url": "https://quran.com/17:36",
+        "translationUrl": "https://quran.com/17:36?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/17:36/tafsirs/16",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094",
+          "kind": "Primary hadith report",
+          "note": "The report connects persistent truthfulness with righteousness and warns about lying."
+        }
+      ]
     }
   ]
 }

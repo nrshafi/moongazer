@@ -29,6 +29,7 @@ The user authorized Cloudflare Pages hosting at https://everyday-akhlaq-simulato
 - `src/pages/index.astro`
 - `src/pages/privacy.astro`
 - `src/pages/scenario/[slug].astro`
+- `src/pages/business/index.astro` and `src/pages/business/[id].astro` (Business track, merged from Halal Business Decisions; both scenario routes render `src/components/ScenarioPage.astro` and the same `src/lib/scenario.ts`)
 - `src/pages/sources.astro`
 
 - `src/layouts/Shell.astro` owns metadata, theme initialization, navigation, footer and storage dialog. `src/lib/shell.ts` implements shell behavior.
@@ -77,3 +78,11 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Business track and merged saved items (P3 T3.5, 11 Nov 2026)
+
+- `content.json` has two arrays: `scenarios` (20; each has `track` `home` or `study`) and `business` (12; `track` `business`). The 12 business scenarios use the scenario shape (`scene`, `options`, `options2`, `followup`, `prompt`, `prompt2`, `takeaway`, `passage`, `commentaryUrl`) plus `facts`, `sources` (hadith, collection and number with sunnah.com link) and optional `secondCommentaryUrl`. They stay in a separate array so the existing `seo.json` collection (`scenarios`, prefix `scenario`) keeps registering exactly the `/scenario/<id>/` pages; business routes are `/business/` and `/business/<id>/` (ids equal the old Halal Business case ids). `scenario.ts` picks its list from `data-base` on the page (`scenario` or `business`).
+- Storage keys added: `business-<id>` (same `{stage, choices, seed?}` shape and validation as `scenario-<id>`, bounded by the scenario's real option counts) and `business-bookmarks` (list of business ids; validator copied from the old library.ts). `remember` is shared.
+- Import (`src/lib/business.ts` rules, run by `src/lib/merge-import.ts` on the home, `/business/` and every scenario page) from `halal-business-decisions`: `bookmarks` -> `business-bookmarks` (union), `remember` -> `remember` (keep), `case-<id>` -> `business-<id>` (keep; validated with the old validTrail against that case's option counts; old `{version:1, choices:[a,b], seed?}` becomes `{stage: choices.length===2 ? 2 : choices.length, choices, seed?}` with the same original option indices).
+- Home page filters scenario cards by track with a pressed-state button group (All, Home & family, Study & work, Business).
+- SEO gap: `src/lib/seo.ts` supports one collection. `/business/` and the 12 `/business/<id>/` paths need a second registration there (see progress tracker); until then Shell throws "Add metadata for the new page" for them.
