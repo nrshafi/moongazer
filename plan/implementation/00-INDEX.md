@@ -12,6 +12,7 @@ These are final. Do not ask the owner again. A conflict between this table and a
 | --- | --- | --- |
 | D1 | Plan format | This folder: index, protocol, one file per phase, numbered self-contained tasks. |
 | D2 | Authorization | The confirmed plan authorizes all **local** code, content and documentation work in it. Anything that reaches production needs the owner's explicit request each time: push or merge to `main`, Cloudflare DNS, redirect rules, rate-limit rules, D1 creation, new Pages projects, Search Console changes. |
+| D2a | Authorization update (11 Nov 2026) | The owner later authorized the implementing agent to push to GitHub (which deploys) and to use the Cloudflare account, phase by phase, pausing only where a phase needs the owner's own input. |
 | D3 | Git | One branch per phase (`phase-N-short-name`), one commit per task, never push. Content work uses `content/<app-slug>` branches. The owner reviews, merges and pushes. |
 | D4 | Releases | Publish after each phase passes verification (the owner pushes `main`; GitHub Actions deploys). |
 | D5 | Pre-freeze scope | Defects, names/honorifics, merges, first-party services, activity-first shell and directory, daily games and sharing, Hifz Planner, Zakat Calculator, Ramadan hub, Diagnostic Mastery Loop in four apps, **and the Depth Gate for all 16 apps**, all before the code freeze. |
@@ -125,7 +126,7 @@ Update this table when a task or phase starts or finishes (see protocol §6).
 | Phase / batch | Status | Branch | Date (Asia/Dhaka) | Notes |
 | --- | --- | --- | --- | --- |
 | P0 | Done | main (uncommitted) | 2026-11-11 | Plan written; superseded banners added; DNA and services plan updated. |
-| P1 | Not started | | | |
+| P1 | Done (R1 pushed) | phase-1-trust-fixes → main | 2026-11-11 | 19 tasks + tooling; see `releases/R1.md`. Tasks delegated to Sonnet/Haiku subagents were reviewed and committed by the orchestrator. |
 | P2 | Not started | | | |
 | P3 step A | Not started | | | |
 | P3 step B | Not started | | | |
