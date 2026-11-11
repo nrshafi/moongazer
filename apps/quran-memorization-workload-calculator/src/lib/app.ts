@@ -1,5 +1,6 @@
 import {calendar} from './engine';
 import {byId, read, write, forget, esc, announce} from './utils';
+import {countSelectedPages, type Selection} from './pages';
 import {
   buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isVocab, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
   sessionViews, thisWeek, weeks, VOCAB, withDailyReminder, type BuildResult, type Kind, type SessionView, type Vocab, type WizardInput,
@@ -76,10 +77,35 @@ function setError(id: string, message: string | null) {
 function validateStepOne(): string | null {
   const memorized = number('memorized');
   const goal = number('goal');
+  if (memorized >= TOTAL_PAGES) return 'The whole 604-page layout is memorized, so there are no new pages to add. Untick some juz or surahs, or enter fewer pages.';
   if (!Number.isInteger(memorized) || memorized < 0 || memorized > TOTAL_PAGES - 1) return 'Enter the pages already memorized as a whole number from 0 to 603.';
   if (!Number.isInteger(goal) || goal < 1) return 'Enter the new pages you want to add as a whole number, at least 1.';
   if (memorized + goal > TOTAL_PAGES) return `Pages already memorized and new pages can add up to at most 604. You have ${TOTAL_PAGES - memorized} pages left to add.`;
   return null;
+}
+
+/* Juz and surah ticks fill in the page count. Typing a number clears the ticks; "Clear ticks" keeps the number. */
+const pickInputs = () => document.querySelectorAll<HTMLInputElement>('#choose-content input[type=checkbox]');
+const pickCount = byId('pick-count');
+
+function tickedSelection(): Selection {
+  const ticked = (name: string) => [...document.querySelectorAll<HTMLInputElement>(`input[name=${name}]:checked`)].map(el => Number(el.value));
+  return {juz: ticked('juz'), surahs: ticked('surah')};
+}
+
+function unTickAll() {
+  pickInputs().forEach(el => {
+    el.checked = false;
+  });
+  pickCount.textContent = '';
+}
+
+function onTick() {
+  const count = countSelectedPages(tickedSelection());
+  byId<HTMLInputElement>('memorized').value = String(count);
+  pickCount.textContent = count >= TOTAL_PAGES
+    ? `Selected: ${count} pages. The whole layout is selected, so nothing is left to add.`
+    : count === 0 ? '' : `Selected: ${count} pages.`;
 }
 
 /** Moves to a step and moves focus to its legend so keyboard and screen-reader users land at the new step. */
@@ -276,6 +302,7 @@ function applyRamadanSuggestion() {
 }
 
 function startOver() {
+  unTickAll();
   forget('plan');
   forget('checkoffs');
   built = null;
@@ -338,6 +365,9 @@ form.querySelectorAll<HTMLButtonElement>('[data-next]').forEach(button => {
 form.querySelectorAll<HTMLButtonElement>('[data-back]').forEach(button => {
   button.onclick = () => showStep(Math.max(1, step - 1));
 });
+pickInputs().forEach(el => el.addEventListener('change', onTick));
+byId('memorized').addEventListener('input', unTickAll);
+byId('clear-ticks').onclick = unTickAll;
 byId('ramadan').onclick = applyRamadanSuggestion;
 byId('reset').onclick = startOver;
 byId('missed').onclick = missedDay;

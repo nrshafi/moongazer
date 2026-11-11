@@ -1,5 +1,6 @@
 ---
 import learning from '../data/learning.json';
+import {JUZ, SURAHS} from '../lib/pages';
 import Shell from '../layouts/Shell.astro';
 import '../styles/planner.css';
 ---
@@ -10,7 +11,18 @@ import '../styles/planner.css';
 <label class="field">Pages already memorized (0 to 603)<input id="memorized" name="memorized" type="number" value="0" min="0" max="603" step="1" inputmode="numeric" required/></label>
 <label class="field">New pages you want to add<input id="goal" name="goal" type="number" value="20" min="1" max="604" step="1" inputmode="numeric" required/></label>
 </div>
-<p class="micro">Pages use the 604-page Hafs layout. Choosing by juz or by surah is not available yet, because the bundled data has no page boundaries for them.</p>
+<p class="micro">Pages use the 604-page Hafs layout. Type a number, or tick the juz and surahs you have memorized and the number fills in.</p>
+<details class="drawer" id="choose-content">
+<summary>Choose by juz or by surah</summary>
+<p class="micro">Shared boundary pages count once. Typing a number clears the ticks; “Clear ticks” keeps the number.</p>
+<fieldset class="pick-group"><legend>Juz (30)</legend><div class="pick-grid">
+{JUZ.map(j => <label class="check"><input type="checkbox" name="juz" value={j.juz} id={`juz-${j.juz}`}/> <span>Juz {j.juz}, pages {j.pageStart}–{j.pageEnd}</span></label>)}
+</div></fieldset>
+<fieldset class="pick-group"><legend>Surahs (114)</legend><div class="pick-grid">
+{SURAHS.map(s => <label class="check"><input type="checkbox" name="surah" value={s.surah} id={`surah-${s.surah}`}/> <span>{s.surah}. {s.name}, pages {s.pageStart}–{s.pageEnd}</span></label>)}
+</div></fieldset>
+<div class="actions"><button class="button ghost small" type="button" id="clear-ticks">Clear ticks</button><span class="micro" id="pick-count" aria-live="polite"></span></div>
+</details>
 <p class="step-error" id="error-1" role="alert"></p>
 <div class="wizard-nav"><span></span><button class="button" type="button" data-next>Next</button></div>
 </fieldset>
