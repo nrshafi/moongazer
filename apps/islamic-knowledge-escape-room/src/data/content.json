@@ -2,8 +2,9 @@
   "rooms": [
     {
       "id": "patience",
-      "name": "Patience",
-      "description": "Look for how people endure difficulty.",
+      "name": "The Lantern Room",
+      "theme": "Patience",
+      "description": "Three passages wait on the shelf: Quran 2:153, 16:127 and 103:3.",
       "passages": [
         {
           "ref": "2:153",
@@ -45,8 +46,9 @@
     },
     {
       "id": "gratitude",
-      "name": "Gratitude",
-      "description": "Notice the response to receiving a gift.",
+      "name": "The Locked Library",
+      "theme": "Gratitude",
+      "description": "Three passages wait on the shelf: Quran 14:7, 31:12 and 2:152.",
       "passages": [
         {
           "ref": "14:7",
@@ -88,8 +90,9 @@
     },
     {
       "id": "justice",
-      "name": "Justice",
-      "description": "What remains necessary even when feelings get in the way?",
+      "name": "The Stone Archway",
+      "theme": "Justice",
+      "description": "Three passages wait on the shelf: Quran 4:135, 5:8 and 42:15.",
       "passages": [
         {
           "ref": "4:135",
@@ -131,8 +134,9 @@
     },
     {
       "id": "mercy",
-      "name": "Mercy",
-      "description": "Look for compassion that reaches beyond one situation.",
+      "name": "The Garden Courtyard",
+      "theme": "Mercy",
+      "description": "Three passages wait on the shelf: Quran 7:156, 39:53 and 21:107.",
       "passages": [
         {
           "ref": "7:156",
@@ -174,8 +178,9 @@
     },
     {
       "id": "learning",
-      "name": "Learning",
-      "description": "Look for reading, knowing, and seeking more.",
+      "name": "The Copper Door",
+      "theme": "Learning",
+      "description": "Three passages wait on the shelf: Quran 96:1-5, 20:114 and 39:9.",
       "passages": [
         {
           "ref": "96:1-5",
@@ -217,8 +222,9 @@
     },
     {
       "id": "keeping-commitments",
-      "name": "Keeping commitments",
-      "description": "What should remain dependable after an agreement?",
+      "name": "The Blue Chamber",
+      "theme": "Keeping commitments",
+      "description": "Three passages wait on the shelf: Quran 17:34, 5:1 and 16:91.",
       "passages": [
         {
           "ref": "17:34",
@@ -260,8 +266,9 @@
     },
     {
       "id": "hospitality",
-      "name": "Hospitality",
-      "description": "Follow the account of guests arriving and being offered food.",
+      "name": "The Cedar Hall",
+      "theme": "Hospitality",
+      "description": "Three passages wait on the shelf: Quran 51:24, 51:26 and 51:27.",
       "passages": [
         {
           "ref": "51:24",
@@ -303,8 +310,9 @@
     },
     {
       "id": "careful-speech",
-      "name": "Careful speech",
-      "description": "Consider what is said and how it affects other people.",
+      "name": "The Map Room",
+      "theme": "Careful speech",
+      "description": "Three passages wait on the shelf: Quran 33:70, 49:11 and 17:53.",
       "passages": [
         {
           "ref": "33:70",

@@ -7,5 +7,5 @@
   "prefix": "room",
   "nameField": "name",
   "summaryField": "description",
-  "nameSuffix": " room"
+  "nameSuffix": ""
 }
