@@ -1,6 +1,6 @@
 import type content from '../data/content.json';
 import {newSession,validSession,answerQuestion,finishStep,type Session} from './engine';
-import {byId,read,write,forget,announce,copy} from './utils';
+import {byId,read,write,forget,announce,copy} from './utils';import {track} from './counter';let completed=false;
 type Pack=(typeof content.packs)[number];
 const pack=JSON.parse(byId('activity-data').textContent!) as Pack;
 const remember=byId<HTMLInputElement>('remember-pack');
@@ -32,15 +32,15 @@ form.addEventListener('submit',event=>{
   event.preventDefault();
   const choice=new FormData(form).get('answer');
   if(choice===null)return;
-  state=answerQuestion(state,Number(choice),pack);persist();update();
+  state=answerQuestion(state,Number(choice),pack);track('activity_started',pack.id);persist();update();
 });
 document.querySelectorAll<HTMLButtonElement>('[data-finish]').forEach(button=>button.addEventListener('click',()=>{
-  state=finishStep(state,Number(button.dataset.finish),pack);persist();update();
+  state=finishStep(state,Number(button.dataset.finish),pack);track('activity_started',pack.id);if(state.done.every(Boolean)&&!completed){completed=true;track('activity_completed',pack.id);}persist();update();
 }));
 remember.addEventListener('change',()=>{
   if(remember.checked){if(!write('remember',true))announce('Storage unavailable. Continue without saved recovery.');persist();}
   else{forget('remember');forget(key);announce('Saved session cleared. Current activity remains for this visit.');}
 });
 byId('restart-pack').addEventListener('click',()=>{state=newSession();forget(key);update();form.scrollIntoView({block:'center',behavior:'auto'});});
-byId('copy-completion').addEventListener('click',()=>void copy(`We explored “${pack.title}” together.\nA reading, a conversation and a shared activity. No personal score or participant details.\n${location.origin+location.pathname}`,'Pack link copied'));
+byId('copy-completion').addEventListener('click',()=>{track('share_clicked',pack.id);void copy(`We explored “${pack.title}” together.\nA reading, a conversation and a shared activity. No personal score or participant details.\n${location.origin+location.pathname}`,'Pack link copied');});document.querySelector<HTMLDetailsElement>('.print-answer')?.addEventListener('toggle',event=>{if((event.currentTarget as HTMLDetailsElement).open)track('activity_started',pack.id);});
 update();

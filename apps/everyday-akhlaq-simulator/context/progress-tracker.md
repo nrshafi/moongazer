@@ -115,3 +115,7 @@ Everyday Akhlaq (name unchanged; descriptor, title and wording updated). Title s
 - SEO limitation: `seo.ts` registers one collection, so the app cannot build `/business/` pages in place until seo.ts is extended (Shell throws "Add metadata for the new page: /business/"). Needed: `/business/` plus `/business/<id>/` for the 12 ids, titles `<title> | Everyday Akhlaq`, indexable. Verified by building a scratch copy with a local seo.ts patch, then copying its `dist` here.
 - appContentSha256 (LF-normalised) now ef96b759956aa355ce02af0a70258c44f95556ee8e4943ddbee9f01b577468be.
 - Checks: `bun test` 31 pass (added business.test.ts, merge-import.test.ts); `bun run check` 0 errors, 0 warnings, 1 hint; scratch build (patched seo.ts) 37 pages; `_implementation/seo.test.ts` 9 pass; audit-text-joins shows no line for this app; verify-static (this app only) canonical text verified, 37 pages. No browser run.
+
+## 2026-11-11 (Asia/Dhaka) — P4.7 counter events and error-report link
+
+Wired the three anonymous counter events in the shared scenario engine: activity started on the first choice, activity completed once when the reflection is reached, share on "Copy scenario link", all keyed by the scenario or business case id. Compact "Report an error" link added to the reflection. Hook points recorded in `context/architecture.md`. Not verified: a browser run that confirms each beacon fires once. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 36 pass / 0 fail (includes new `tests/events.test.ts`, source-level); `bun run build` 37 pages built.

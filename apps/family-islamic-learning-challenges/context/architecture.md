@@ -59,3 +59,13 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Anonymous counter hook points (P4.7)
+
+The shared `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with `navigator.sendBeacon` to `https://moongazer.tech/api/event`. It is a silent no-op off `moongazer.tech`, with Global Privacy Control, or without `sendBeacon`. Item ids are pack ids; no answers or household details are sent.
+
+- `src/lib/session.ts`: the first answer, the first step button (discuss or try) and opening the facilitator's answer sends `activity_started` with the pack id. Finishing the last step (all three done) sends `activity_completed` once per page.
+- "Copy pack link" (shown after completion) sends `share_clicked` with the pack id.
+- Print this pack is plain print and is not counted.
+- Feedback: `<Feedback compact />` sits after the reading-question status (`#reading-feedback`).
+- `tests/events.test.ts` checks the call sites in source. Browser-level firing is not run by the tests.
