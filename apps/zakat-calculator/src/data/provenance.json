@@ -1,0 +1,8 @@
+{
+  "status": "pending",
+  "note": "Method content is pending verification (plan P7 T7.4). No zakat ruling, nisab figure, hadith, Quran text or amount is bundled yet. The calculator opens only after the method record is verified and shown in full.",
+  "methodRecord": "_implementation/research/zakat/method.json (not yet created)",
+  "verificationRecord": "_implementation/research/zakat/verification.json (not yet created)",
+  "appContentSha256": "6af24d8039146a4786c8676d5b6c51c82a95176688e55de90d883368528bf8f8",
+  "contentFile": "src/data/content.json"
+}

@@ -1,0 +1,43 @@
+{
+  "heading": "Zakat Calculator",
+  "summary": "Zakat Calculator is being prepared and does not calculate anything yet. When it opens, it will work out zakat step by step: you enter your assets and debts, choose a labelled option wherever scholars differ, and see the result with the method and sources behind each step. It will not give a single ruling.",
+  "steps": [
+    "Enter your cash, gold, silver, business stock and debts, using the prices you use for the day.",
+    "Choose the labelled option for each point where scholars differ. No option is selected for you.",
+    "Read the calculation, the method and the sources for each choice before you act on it."
+  ],
+  "questions": [
+    {
+      "question": "Does this calculator give a ruling?",
+      "answer": "No. It is planned to show the calculation for the choices you make, with each choice labelled and sourced. It is not a fatwa. For your own situation, ask a scholar or your local zakat committee you trust."
+    },
+    {
+      "question": "Can I use it for my zakat now?",
+      "answer": "Not yet. This version only introduces the app. Its method and sources are still being verified, and they will be shown in full before the calculator opens."
+    }
+  ],
+  "related": [
+    {
+      "name": "Hifz Planner",
+      "description": "Estimate new memorization and revision time for your week",
+      "kind": "Planner",
+      "url": "https://quran-memorization-workload-calculator.moongazer.tech/"
+    },
+    {
+      "name": "Everyday Akhlaq",
+      "description": "Everyday character dilemmas: choose, then read the sources",
+      "kind": "Scenarios",
+      "url": "https://everyday-akhlaq-simulator.moongazer.tech/"
+    },
+    {
+      "name": "Family Halaqa",
+      "description": "Ten-minute Islamic activities to do together",
+      "kind": "Activities",
+      "url": "https://family-islamic-learning-challenges.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Prayer & everyday practice",
+    "url": "https://moongazer.tech/prayer-everyday-practice/"
+  }
+}
