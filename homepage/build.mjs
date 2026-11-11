@@ -7,8 +7,6 @@ const root=fileURLToPath(new URL('../',import.meta.url));
 const source=join(root,'homepage');
 const out=join(source,'dist');
 const apps=JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'));
-// Retired apps (merged in P3) still deploy but are not listed in the directory.
-const apps=apps.filter(app=>!app.retired);
 const collections=JSON.parse(await readFile(join(source,'collections.json'),'utf8'));
 const bySlug=new Map(apps.map(app=>[app.slug,app]));
 if(apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
