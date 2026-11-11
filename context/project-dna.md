@@ -73,6 +73,12 @@ No existing app is considered complete, and no new app may launch, until it pass
 3. **Minimum content depth.** At least 30 distinct, primary-source-verified items, puzzles, or cases for games and readers so a learner gets a full month of daily use without repeats, or complete canonical coverage for tools such as all 114 surahs and 604 pages for the Hifz Planner and all 28 letters for Alif Ba.
 4. **Classical source transparency.** Every item links to its exact Quran reference or primary source edition, and fiqh-sensitive calculators state the classical school or standard used for each option.
 
+### Per-app Depth Gate targets and the verification rule (11 November 2026)
+
+The owner fixed per-app content targets in `plan/implementation/00-INDEX.md` §4. Bounded canonical sets (114 surahs, the 25 prophets named in the Quran, the phrases of the prayer) count as complete coverage; other apps have explicit numbers. All sixteen apps and the new Zakat Calculator must pass the gate before the 15 January 2027 code freeze.
+
+Because no scholarly reviewer is available, "qualified review" is replaced everywhere by: exact primary-source attribution, a separate second-pass verification of every citation in each content batch, and an owner spot-check of a sample. The product never claims review, certification or endorsement. Audio pronunciation guidance waits for a recorded or licensed source.
+
 ### Privacy-friendly interaction counters
 
 To measure whether activities actually help learners finish and share without tracking personal identity, Moongazer will use a cookie-free, IP-free first-party counter recording only `{date, app_slug, item_id, event_type}` for three events:
@@ -81,7 +87,7 @@ To measure whether activities actually help learners finish and share without tr
 - `activity_completed`
 - `share_clicked`
 
-`page_view` tracking is excluded. See `plan/FIRST_PARTY_SERVICES_PLAN.md` for the pending implementation plan.
+`page_view` tracking is excluded. The architecture was settled on 11 November 2026 (Pages Functions on the apex with one D1 database, no Turnstile, no stored IP addresses, a static corrections log). Implementation: `plan/implementation/P4-first-party-services.md`. It is not yet implemented in runtime code.
 
 ### Organic community pull
 

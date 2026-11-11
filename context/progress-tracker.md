@@ -150,3 +150,11 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## SEO source commit
 
 Prepared 2026-10-30T02:18:00+06:00 Asia/Dhaka at the user's request. This commit includes the published SEO source, app-local learning guides, validation helpers, authored QA reports, context, compact release/Search Console records and generated-output ignore rules. User skill changes and generated logs/manifests remain outside the commit. The preceding release verification applies; this Git-only step does not rerun app builds or publish another release. No push was requested.
+
+## Implementation plan refinement, 11 November 2026
+
+Recorded 2026-11-11 Asia/Dhaka. Read the plan folder (REPORT.md, briefs 00–15, strategic decisions, design recommendations, first-party services note, Verify_Me) and ran a decision interview with the owner using the grill-me skill. Fact checks against the code informed the questions: the only "2026" strings in app sources are true retrieval dates; Salah audio already shows a load-error message; no inline Arabic was found inside English data strings; the shared shell files are byte-identical across all twenty apps; the static verifier forbids `fetch(` in app bundles; the apex deploys through a custom Direct Upload script without Functions support; and seven apps fall below a flat 30-item depth target.
+
+Wrote `plan/implementation/`: 00-INDEX (25 settled decisions, calendar, dependency graph, shared-file list, per-app Depth Gate targets, status), 01-HANDOVER-PROTOCOL, phase files P1–P10, the content track C, and the Verify_Me triage appendix. Added superseded banners to the strategic decisions document, the next-session prompt and briefs 06–15. Added a pointer to START-HERE. Marked the services plan's open questions as settled. Added the per-app gate and verification rule to project-dna.md, and added a plan pointer to project-overview.md.
+
+Documentation only. No app code, data, builds or deployments changed, and no tests or builds were run. The schedule is ambitious for nine weeks; the index lists what moves after Ramadan first if a phase slips.

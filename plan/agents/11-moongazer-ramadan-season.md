@@ -1,5 +1,7 @@
 # Brief 11 — Moongazer: Hifz Planner, Zakat Calculator and the Ramadan hub
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** 08. **Authorized:** ask the owner first.
 **Deadline:** ready by mid-January 2027. Ramadan 1448 is expected to begin around 8 February 2027, subject to moon sighting.

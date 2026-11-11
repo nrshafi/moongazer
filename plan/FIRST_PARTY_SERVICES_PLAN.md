@@ -1,5 +1,7 @@
 # Plan note: first-party counters, feedback form, and progress sync
 
+> **Settled 11 November 2026.** The open questions in section 2 were answered in the owner's decision interview: (1) Pages Functions on the apex `moongazer` project, deployed with `wrangler pages deploy`; (2) one Cloudflare D1 database for feedback rows and aggregate counter rows; (3) no Turnstile — honeypot, minimum time-to-submit, validation, one zone rate-limiting rule on `/api/*`, everything stored as pending; (4) no email notifications — a local review script, approved corrections written to `homepage/corrections.json` and published statically at `/corrections/`; (5) accounts remain demand-triggered and need their own decision interview; (6) apps use a native form POST and `navigator.sendBeacon`, so they work and fail silently offline or when blocked. Implementation: [`plan/implementation/P4-first-party-services.md`](implementation/P4-first-party-services.md).
+
 Created 8 November 2026 in Asia/Dhaka. This document captures the owner's settled product requirements from the Moongazer DNA session alongside the open technical architecture questions that must be resolved before building these three first-party services.
 
 ## 1. Settled product requirements

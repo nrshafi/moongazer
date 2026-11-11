@@ -1,5 +1,7 @@
 # Prompt for the next session
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 Paste this into a new conversation opened in `I:\Development\moongazer`:
 
 > Continue the Moongazer and Booktube plan. Read `plan/agents/00-START-HERE.md` first: it has my decisions, the ground rules, the execution order and the status table. Use `plan/REPORT.md` only for background.

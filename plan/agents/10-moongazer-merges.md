@@ -1,5 +1,7 @@
 # Brief 10 — Moongazer: merge four apps, with redirects
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer` (plus the Cloudflare zone, when the owner authorizes publication)
 **Depends on:** 07 and 08. **Authorized:** ask the owner first. This removes four apps from the directory and changes production URLs.
 **Goal:** fold four duplicate apps into the apps they overlap with, so twenty becomes sixteen stronger apps (brief 13 adds four new ones), without losing any URL.

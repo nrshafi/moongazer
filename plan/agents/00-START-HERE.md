@@ -1,5 +1,7 @@
 # Agent briefs: start here
 
+> **Moongazer work moved (11 November 2026).** Briefs 06–15 are superseded by the phase plan in [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md), written from the owner's decision interview on 11 November 2026. That plan also changes authorization: confirmed phases are authorized for local work; production actions still need the owner's explicit request. Use this page only for the Booktube briefs 01–05 and as background.
+
 These briefs turn `../REPORT.md` into work, in the order it should be done. Read this page fully before starting any brief. Do one brief at a time, in order, unless the dependency column says a brief is independent.
 
 ## Owner decisions already made (7 November 2026, Asia/Dhaka)

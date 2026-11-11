@@ -85,3 +85,7 @@ The current authorized SEO enhancement adds four useful subject guides and an Ab
 ## Project DNA and roadmap governance, 8 November 2026
 
 `context/project-dna.md` defines Moongazer's mission, vision as a permanently free digital waqf, Booktube social media companion role, singular focus on interactive Islamic learning and essential worship tools, five rank-ordered core values, Depth Gate, and learning/corrections loop. Future first-party interaction counters (`activity_started`, `activity_completed`, `share_clicked` without `page_view`), the in-app correction/feedback form, and demand-triggered minimal progress-sync accounts are recorded for further technical planning in `plan/FIRST_PARTY_SERVICES_PLAN.md` and are not yet implemented in runtime code.
+
+## Implementation plan to Ramadan 1448, 11 November 2026
+
+After a founder decision interview, `plan/implementation/` holds the authoritative phase-by-phase plan (P1–P10 plus a content track) that replaces briefs 06–15 and the strategic decisions document as instructions. Pre-freeze scope (code freeze 15 January 2027): trust fixes, names and honorifics, four two-step merges, first-party feedback and counter services, the activity-first shell and directory, daily games, Hifz Planner, Zakat Calculator, the Ramadan hub, the Diagnostic Mastery Loop in four apps, and the Depth Gate for all sixteen apps. Confirmed phases are authorized for local work; every production action still needs the owner's explicit request. None of this is implemented yet.

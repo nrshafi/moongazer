@@ -1,5 +1,7 @@
 # Brief 13 — Moongazer: new apps (Quran Words, Names of Allah, Alif Ba)
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** 08 (the new shell). The Zakat Calculator is in brief 11. **Authorized:** ask the owner, one app at a time.
 **Goal:** add the apps people already look for and that create a daily habit, bringing the collection back to twenty distinct apps.

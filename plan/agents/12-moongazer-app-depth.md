@@ -1,5 +1,7 @@
 # Brief 12 — Moongazer: deepen the existing apps (in slices)
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** 09 and 10. Each slice is one app and can ship on its own. **Authorized:** ask the owner which slices to do, and in what order.
 **Goal:** turn thin apps into ones worth returning to, and fix the remaining design weaknesses.

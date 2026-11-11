@@ -1,5 +1,7 @@
 # Brief 14 — Moongazer: growth, trust and the Bangla edition
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`, plus Booktube for the video part
 **Depends on:** 07–10. **Authorized:** ask the owner, part by part. Parts 1 and 2 need owner decisions about names and contacts.
 **Goal:** give people reasons to trust and share Moongazer, and reach the Bangla-speaking audience.

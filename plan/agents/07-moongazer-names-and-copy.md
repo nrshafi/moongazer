@@ -1,5 +1,7 @@
 # Brief 07 — Moongazer: names, headings, labels and honorifics
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** 06. **Authorized:** ask the owner first, and confirm the new names in the table below. The owner may change any name.
 **Goal:** one name per app everywhere (header, H1, card, title, share text), a plain descriptor carrying the search phrase, everyday words in the interface, and consistent honorifics.

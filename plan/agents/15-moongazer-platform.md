@@ -1,5 +1,7 @@
 # Brief 15 — Moongazer: install, offline, cross-app streak, projector
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** 09 (daily games and per-app streaks). **Authorized:** ask the owner first. Parts 1 and 2 change storage and caching invariants.
 **Goal:** let regular players install Moongazer apps, play offline, and keep one streak across apps, without accounts or a server.

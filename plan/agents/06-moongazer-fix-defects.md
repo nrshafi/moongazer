@@ -1,5 +1,7 @@
 # Brief 06 — Moongazer: fix trust-damaging defects
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** nothing. **Authorized:** ask the owner first. This is the recommended first Moongazer brief.
 **Goal:** remove defects that give answers away, show the wrong app's text, or break metadata. No redesign, no renames, no new features.

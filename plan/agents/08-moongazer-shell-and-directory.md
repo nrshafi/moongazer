@@ -1,5 +1,7 @@
 # Brief 08 — Moongazer: activity-first shell and the directory front door
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** 07. **Authorized:** ask the owner first.
 **Goal:** on a phone, every app shows something to tap on its first screen; each app looks like itself; the directory becomes a front door with short links.

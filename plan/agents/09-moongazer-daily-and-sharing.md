@@ -1,5 +1,7 @@
 # Brief 09 — Moongazer: daily games and sharing
 
+> **Superseded (11 November 2026):** this file is background only. The authoritative execution plan is [`plan/implementation/00-INDEX.md`](../implementation/00-INDEX.md). Where they differ, the implementation plan wins.
+
 **Repository:** `I:\Development\moongazer`
 **Depends on:** 08. **Authorized:** ask the owner first.
 **Goal:** give people a reason to come back tomorrow, with no accounts, no server and no tracking.
