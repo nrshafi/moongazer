@@ -39,3 +39,6 @@ Thumbs.db
 !/deployment/evidence/**/
 !/deployment/evidence/**/*.md
 !/deployment/evidence/seo/font-conversion.json
+
+# Agent worktrees
+.claude/worktrees/
