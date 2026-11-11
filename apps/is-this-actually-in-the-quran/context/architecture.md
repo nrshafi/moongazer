@@ -83,3 +83,18 @@ Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in
 - Storage key added: `claim-bookmarks` (list of claim ids, 30-day expiry like every key).
 - The verdict stays in a closed `<details>` (Show the answer) without JavaScript; with JavaScript it is hidden until Check.
 - `/claims/` is registered by a temporary shim in `src/pages/claims/index.astro` because `seo.ts` has no index-page registration; remove it once seo.ts supports it.
+
+## Anonymous counter hook points (P4 T4.7)
+
+The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with `navigator.sendBeacon` to `moongazer.tech/api/event`. It is a silent no-op on preview hosts, with Global Privacy Control, or when sendBeacon is missing. `activity_started` fires once per item per page load. Item ids are stable content ids only; search text, claim answers and selections are never sent.
+
+| Hook | Where | Event and id |
+| --- | --- | --- |
+| Search submitted | `src/lib/app.ts` `run()` | `activity_started` `search` |
+| Search returns at least one ayah | `src/lib/app.ts`, after `render()` | `activity_completed` `search` |
+| Copy search link | `src/lib/app.ts`, `#share` | `share_clicked` `search` |
+| Copy passage with reference | `src/lib/app.ts`, `[data-copy]` | `share_clicked` `search` |
+| Claim checked | `src/lib/claims-page.ts`, form submit (`form[data-claim-id]`) | `activity_started` and `activity_completed` with the claim id |
+| Report an error (results and claim status) | `src/lib/app.ts`, `src/lib/claims-page.ts` | none; `a.feedback-link` opens the footer form |
+
+No events on the home notice, the claims index, sources or privacy pages.
