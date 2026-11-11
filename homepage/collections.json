@@ -14,8 +14,8 @@
       {"title": "Read a selected account in context", "items": [{"slug": "stories-of-the-prophets-explorer", "reason": "Open a prophet's profile for selected Quran passages and a short reading check."}, {"slug": "revelation-context-explorer", "reason": "Compare named reports while keeping transmitted occasions, general context and later responses distinct."}]}
     ],
     "questions": [
-      {"question": "Which tool should I use for an exact Quran phrase?", "answer": "Use Is This Actually in the Quran? for Arabic wording, Pickthall's English text or a verse reference. An empty search result does not mean an idea is absent from the Quran: translations and paraphrases can use different wording."},
-      {"question": "Where can I explore diagrams or places?", "answer": "Quranic Parables Studio uses editorial diagrams alongside selected readings. Quranic Places Atlas pairs passages with geographical notes and keeps uncertain locations unpinned. Both keep their source references available for inspection."}
+      {"question": "Which tool should I use for an exact Quran phrase?", "answer": "Use Is It in the Quran? for Arabic wording, Pickthall's English text or a verse reference. An empty search result does not mean an idea is absent from the Quran: translations and paraphrases can use different wording."},
+      {"question": "Where can I explore diagrams or places?", "answer": "Parables of the Quran uses editorial diagrams alongside selected readings. Places in the Quran pairs passages with geographical notes and keeps uncertain locations unpinned. Both keep their source references available for inspection."}
     ]
   },
   {
@@ -25,7 +25,7 @@
     "title": "Seerah & Islamic History Learning Tools | Moongazer",
     "heading": "Explore Seerah and Islamic history with sources in view",
     "description": "Read Seerah reports, investigate evidence and compare historical periods with three free browser tools. Keep source notes and date uncertainty beside the story.",
-    "intro": "These three history tools offer different ways into a source reading. Follow selected moments from the Prophet's life, work through an evidence-reading case, or compare records from Islamic civilization across regions. Choose chronology for orientation and a case when you want to examine what a particular report supports.",
+    "intro": "These three history tools offer different ways into a source reading. Follow selected moments from the Prophet's life ﷺ, work through an evidence-reading case, or compare records from Islamic civilization across regions. Choose chronology for orientation and a case when you want to examine what a particular report supports.",
     "guidance": "A displayed date and a source report do not always have the same precision. Conventional years, broad periods and historical uncertainty are identified in the notes. A timeline connection or an overlap between date bands should not be treated as evidence of contact or causation by itself.",
     "paths": [
       {"title": "Follow an event into its reports", "items": [{"slug": "interactive-seerah-timeline", "reason": "Browse a sourced chronology, then open an event to read the reports and date notes."}, {"slug": "the-seerah-detective", "reason": "Practice deciding which conclusion a selected evidence set actually supports."}]},
@@ -52,7 +52,7 @@
       {"title": "Check the evidence before a conclusion", "items": [{"slug": "islamic-misinformation-casebook", "reason": "Practice correcting a constructed claim while keeping the conclusion within its sources."}, {"slug": "revelation-context-explorer", "reason": "Compare a report and its stated limits when studying the context around a passage."}]}
     ],
     "questions": [
-      {"question": "Does Understand Salah Lab teach every legal detail of prayer?", "answer": "It focuses on selected recitation meanings and narrated wordings. It includes local Al-Fatiha audio, while the other lessons are text-based. Use its source notes and qualified instruction for practice questions or legal differences."},
+      {"question": "Does Understand Your Salah teach every legal detail of prayer?", "answer": "It focuses on selected recitation meanings and narrated wordings. It includes local Al-Fatiha audio, while the other lessons are text-based. Use its source notes and qualified instruction for practice questions or legal differences."},
       {"question": "Can I use the business cases as a ruling on my transaction?", "answer": "No. Halal Business Decisions presents fictional educational cases. Real arrangements can involve facts and obligations outside an exercise, so the app does not certify transactions or provide personalized legal or financial advice."}
     ]
   },
@@ -72,7 +72,7 @@
     ],
     "questions": [
       {"question": "Are these synchronized multiplayer games?", "answer": "No. They run in the browser on the device being used. People can discuss an escape room or family activity together on one screen; the collection does not create a live multiplayer session or player accounts."},
-      {"question": "How should I choose an activity for children?", "answer": "Family Islamic Learning Challenges includes suggested age bands and times. An adult can read aloud, adapt vocabulary and let participants pass. Keep discussion examples fictional and choose a pack that suits the group rather than treating the age label as a strict requirement."}
+      {"question": "How should I choose an activity for children?", "answer": "Family Halaqa includes suggested age bands and times. An adult can read aloud, adapt vocabulary and let participants pass. Keep discussion examples fictional and choose a pack that suits the group rather than treating the age label as a strict requirement."}
     ]
   }
 ]
