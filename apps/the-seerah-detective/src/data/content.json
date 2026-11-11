@@ -285,7 +285,7 @@
         "A complete map of the remaining journey."
       ],
       "correct": 0,
-      "conclusion": "The report specifies a written assurance of safety. The other conclusions add claims not made in these evidence cards.",
+      "conclusion": "The report specifies a written assurance of safety. The other conclusions add claims not made in these clues.",
       "hint": "Look for the request made after Suraqa approaches them.",
       "sources": [
         {
@@ -631,7 +631,7 @@
         {
           "id": "e3",
           "title": "Questions and a letter",
-          "text": "Heraclius asks questions, and the account includes the Prophet's letter.",
+          "text": "Heraclius asks questions, and the account includes the Prophet's ﷺ letter.",
           "source": {
             "label": "Sahih al-Bukhari 7",
             "url": "https://sunnah.com/bukhari:7",

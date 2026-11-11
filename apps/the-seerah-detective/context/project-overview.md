@@ -1,4 +1,4 @@
-# The Seerah Detective
+# Seerah Detective
 
 ## Overview
 

@@ -4,7 +4,7 @@
       "id": "first-reading",
       "title": "The opening of Al-Alaq",
       "topic": "Beginning of revelation",
-      "kind": "Transmitted occasion",
+      "kind": "A reported occasion",
       "passage": {
         "ref": "96:1-5",
         "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
@@ -33,7 +33,7 @@
       "id": "safa-warning",
       "title": "A warning at Safa",
       "topic": "Calling to faith",
-      "kind": "Transmitted occasion",
+      "kind": "A reported occasion",
       "passage": {
         "ref": "111:1-5",
         "arabic": "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ\nمَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ\nسَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ\nوَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ\nفِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
@@ -91,7 +91,7 @@
       "id": "safa-marwa",
       "title": "Why “no blame” needs context",
       "topic": "Hajj and Umrah",
-      "kind": "Transmitted occasion",
+      "kind": "A reported occasion",
       "passage": {
         "ref": "2:158",
         "arabic": "۞ إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ",
@@ -126,7 +126,7 @@
       "id": "fasting-nights",
       "title": "An earlier restriction and a concession",
       "topic": "Fasting",
-      "kind": "Transmitted occasion",
+      "kind": "A reported occasion",
       "passage": {
         "ref": "2:187",
         "arabic": "أُحِلَّ لَكُمْ لَيْلَةَ ٱلصِّيَامِ ٱلرَّفَثُ إِلَىٰ نِسَآئِكُمْ ۚ هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ ۗ عَلِمَ ٱللَّهُ أَنَّكُمْ كُنتُمْ تَخْتَانُونَ أَنفُسَكُمْ فَتَابَ عَلَيْكُمْ وَعَفَا عَنكُمْ ۖ فَٱلْـَٔـٰنَ بَـٰشِرُوهُنَّ وَٱبْتَغُوا۟ مَا كَتَبَ ٱللَّهُ لَكُمْ ۚ وَكُلُوا۟ وَٱشْرَبُوا۟ حَتَّىٰ يَتَبَيَّنَ لَكُمُ ٱلْخَيْطُ ٱلْأَبْيَضُ مِنَ ٱلْخَيْطِ ٱلْأَسْوَدِ مِنَ ٱلْفَجْرِ ۖ ثُمَّ أَتِمُّوا۟ ٱلصِّيَامَ إِلَى ٱلَّيْلِ ۚ وَلَا تُبَـٰشِرُوهُنَّ وَأَنتُمْ عَـٰكِفُونَ فِى ٱلْمَسَـٰجِدِ ۗ تِلْكَ حُدُودُ ٱللَّهِ فَلَا تَقْرَبُوهَا ۗ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ ءَايَـٰتِهِۦ لِلنَّاسِ لَعَلَّهُمْ يَتَّقُونَ",
@@ -155,7 +155,7 @@
       "id": "pilgrimage-trade",
       "title": "Markets during pilgrimage",
       "topic": "Hajj and Umrah",
-      "kind": "Transmitted occasion",
+      "kind": "A reported occasion",
       "passage": {
         "ref": "2:198",
         "arabic": "لَيْسَ عَلَيْكُمْ جُنَاحٌ أَن تَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ ۚ فَإِذَآ أَفَضْتُم مِّنْ عَرَفَـٰتٍ فَٱذْكُرُوا۟ ٱللَّهَ عِندَ ٱلْمَشْعَرِ ٱلْحَرَامِ ۖ وَٱذْكُرُوهُ كَمَا هَدَىٰكُمْ وَإِن كُنتُم مِّن قَبْلِهِۦ لَمِنَ ٱلضَّآلِّينَ",
@@ -184,7 +184,7 @@
       "id": "beloved-garden",
       "title": "A garden given after hearing a verse",
       "topic": "Charity",
-      "kind": "Response after revelation",
+      "kind": "What happened after",
       "passage": {
         "ref": "3:92",
         "arabic": "لَن تَنَالُوا۟ ٱلْبِرَّ حَتَّىٰ تُنفِقُوا۟ مِمَّا تُحِبُّونَ ۚ وَمَا تُنفِقُوا۟ مِن شَىْءٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ",
@@ -213,7 +213,7 @@
       "id": "spilled-drink",
       "title": "Responding when news arrives",
       "topic": "Food and drink",
-      "kind": "Response after revelation",
+      "kind": "What happened after",
       "passage": {
         "ref": "5:90",
         "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِنَّمَا ٱلْخَمْرُ وَٱلْمَيْسِرُ وَٱلْأَنصَابُ وَٱلْأَزْلَـٰمُ رِجْسٌ مِّنْ عَمَلِ ٱلشَّيْطَـٰنِ فَٱجْتَنِبُوهُ لَعَلَّكُمْ تُفْلِحُونَ",
@@ -242,7 +242,7 @@
       "id": "slander",
       "title": "The report of the false accusation",
       "topic": "Speech and reputation",
-      "kind": "Transmitted occasion",
+      "kind": "A reported occasion",
       "passage": {
         "ref": "24:11-16",
         "arabic": "إِنَّ ٱلَّذِينَ جَآءُو بِٱلْإِفْكِ عُصْبَةٌ مِّنكُمْ ۚ لَا تَحْسَبُوهُ شَرًّا لَّكُم ۖ بَلْ هُوَ خَيْرٌ لَّكُمْ ۚ لِكُلِّ ٱمْرِئٍ مِّنْهُم مَّا ٱكْتَسَبَ مِنَ ٱلْإِثْمِ ۚ وَٱلَّذِى تَوَلَّىٰ كِبْرَهُۥ مِنْهُمْ لَهُۥ عَذَابٌ عَظِيمٌ\nلَّوْلَآ إِذْ سَمِعْتُمُوهُ ظَنَّ ٱلْمُؤْمِنُونَ وَٱلْمُؤْمِنَـٰتُ بِأَنفُسِهِمْ خَيْرًا وَقَالُوا۟ هَـٰذَآ إِفْكٌ مُّبِينٌ\nلَّوْلَا جَآءُو عَلَيْهِ بِأَرْبَعَةِ شُهَدَآءَ ۚ فَإِذْ لَمْ يَأْتُوا۟ بِٱلشُّهَدَآءِ فَأُو۟لَـٰٓئِكَ عِندَ ٱللَّهِ هُمُ ٱلْكَـٰذِبُونَ\nوَلَوْلَا فَضْلُ ٱللَّهِ عَلَيْكُمْ وَرَحْمَتُهُۥ فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ لَمَسَّكُمْ فِى مَآ أَفَضْتُمْ فِيهِ عَذَابٌ عَظِيمٌ\nإِذْ تَلَقَّوْنَهُۥ بِأَلْسِنَتِكُمْ وَتَقُولُونَ بِأَفْوَاهِكُم مَّا لَيْسَ لَكُم بِهِۦ عِلْمٌ وَتَحْسَبُونَهُۥ هَيِّنًا وَهُوَ عِندَ ٱللَّهِ عَظِيمٌ\nوَلَوْلَآ إِذْ سَمِعْتُمُوهُ قُلْتُم مَّا يَكُونُ لَنَآ أَن نَّتَكَلَّمَ بِهَـٰذَا سُبْحَـٰنَكَ هَـٰذَا بُهْتَـٰنٌ عَظِيمٌ",
@@ -269,9 +269,9 @@
     },
     {
       "id": "raised-voices",
-      "title": "Voices in the presence of the Prophet",
+      "title": "Voices in the presence of the Prophet ﷺ",
       "topic": "Manners",
-      "kind": "Transmitted occasion",
+      "kind": "A reported occasion",
       "passage": {
         "ref": "49:2",
         "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَرْفَعُوٓا۟ أَصْوَٰتَكُمْ فَوْقَ صَوْتِ ٱلنَّبِىِّ وَلَا تَجْهَرُوا۟ لَهُۥ بِٱلْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَـٰلُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ",
@@ -283,7 +283,7 @@
       "reportSummary": "The narration describes Abu Bakr and Umar disagreeing about a recommendation when a Banu Tamim delegation arrived, their voices rising and revelation of the verse.",
       "establishes": "The report explicitly connects that exchange with the instruction about raised voices.",
       "limits": "A sub-narrator does not remember one recommended person’s name. Preserve that uncertainty rather than filling it from another account without attribution.",
-      "teaching": "Al-Muyassar explains the special respect due in addressing the Prophet. This is not a license to transfer every detail to an unrelated modern dispute.",
+      "teaching": "Al-Muyassar explains the special respect due in addressing the Prophet ﷺ. This is not a license to transfer every detail to an unrelated modern dispute.",
       "commentaryUrl": "https://quran.com/49:2/tafsirs/16",
       "secondCommentaryUrl": "https://quran.com/49:2/tafsirs/14",
       "sources": [
@@ -297,5 +297,5 @@
       "reliability": "The named report is included in Sahih al-Bukhari. This app identifies the collection and narrator; it does not independently regrade chains or assume every surrounding story has the same status."
     }
   ],
-  "methodology": "Ten selected passages pair canonical text with a named Sahih al-Bukhari report and links to fetched Al-Muyassar and full Arabic Ibn Kathir commentary. Transmitted occasions, general context and responses after revelation are kept distinct. Reliability labels identify the collection and do not independently regrade chains. A parallel account and retained narrative uncertainties prevent the selected report being mistaken for exhaustive history. Commentary notes and report summaries are original concise English paraphrases; no modern English hadith translation is republished."
+  "methodology": "Ten selected passages pair canonical text with a named Sahih al-Bukhari report and links to fetched Al-Muyassar and full Arabic Ibn Kathir commentary. Reported occasions, general context and what happened after revelation are kept distinct. Reliability labels identify the collection and do not independently regrade chains. A parallel account and retained narrative uncertainties prevent the selected report being mistaken for exhaustive history. Commentary notes and report summaries are original concise English paraphrases; no modern English hadith translation is republished."
 }

@@ -1,10 +1,10 @@
-# UI context: Revelation Context Explorer
+# UI context: Why It Was Revealed
 
 ## Theme and signature
 
 Modern, quiet reading surfaces with light and dark modes. The first visit follows the operating system; the header toggle stores an app-local preference. Accent family: blue.
 
-A source dossier places the report beside what it establishes and what remains uncertain.
+A sources panel places the report beside what it establishes and what remains uncertain.
 
 ## Visual refresh
 

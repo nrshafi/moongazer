@@ -1,6 +1,6 @@
 {
-  "heading": "Interactive Seerah timeline",
-  "summary": "The interactive Seerah timeline pairs selected events from the Prophet's life with source reports and historical notes. Browse the chronology, open an event and examine what supports its description. Dates and sequence are reading aids: the notes distinguish conventional dating and uncertainty from what an individual report actually establishes.",
+  "heading": "Seerah Timeline",
+  "summary": "Seerah Timeline pairs selected events from the Prophet's life ﷺ with source reports and historical notes. Browse the chronology, open an event and examine what supports its description. Dates and sequence are reading aids: the notes distinguish conventional dating and uncertainty from what an individual report actually establishes.",
   "steps": [
     "Browse the chronology or narrow the event list with the available filters.",
     "Open an event to read its report, context and source references.",
@@ -18,13 +18,13 @@
   ],
   "related": [
     {
-      "name": "The Seerah Detective",
-      "description": "Examine the evidence and solve short mysteries from the Prophet's life.",
+      "name": "Seerah Detective",
+      "description": "Examine the evidence and solve short mysteries from the Prophet's life ﷺ.",
       "kind": "Mystery",
       "url": "https://the-seerah-detective.moongazer.tech/"
     },
     {
-      "name": "Islamic Civilization Timeline",
+      "name": "Civilization Timeline",
       "description": "Explore historical periods and compare developments across regions.",
       "kind": "Timeline",
       "url": "https://islamic-civilization-timeline.moongazer.tech/"

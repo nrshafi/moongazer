@@ -1,4 +1,4 @@
-# Progress: Islamic Civilization Timeline
+# Progress: Civilization Timeline
 
 ## Google Search Console setup, 30 October 2026
 
@@ -80,3 +80,7 @@ The References component (`src/components/References.astro`) printed "This app d
 Validation: `bun run check` reported 0 errors, 0 warnings, 0 hints across 20 files. `bun test` passed 12 of 12 tests in 3 files. `bun run build` completed and built 28 pages. `grep -rl "hadith translations" dist` matched 0 files; all 24 event pages still show "Follow the evidence" without the notice. The sources page still says the app quotes no hadith.
 
 Limitation: the component file keeps its existing CRLF line endings; the task asked for LF, but converting the whole file would have produced a whole-file diff.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Renamed to Civilization Timeline. SEO title shortened to 'Civilization Timeline — Islamic history by region | Moongazer'. Descriptor is 'Islamic civilization across regions' (not 'from 632 onward': the events start in 661). record -> event, Map heading, 'At the same time…' heading, compare wording uses periods. No Muhammad or Prophet mentions in this app's editorial text. content.json (methodology only) changed; appContentSha256 71a8cd85... -> 42483ba9.... Checks: bun run check 0 errors; bun test 12 pass 0 fail; bun run build 28 pages; dist grep clean.

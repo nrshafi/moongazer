@@ -1,4 +1,4 @@
-# Progress: Revelation Context Explorer
+# Progress: Why It Was Revealed
 
 ## Google Search Console setup, 30 October 2026
 
@@ -72,3 +72,7 @@ Verified 2026-10-30T02:16:08+06:00 Asia/Dhaka. Published four subject guides and
 Fresh portfolio validation: 20 Astro checks, 20 production builds, 217 app tests, 6 SEO tests, source/static integrity for 325 app pages, static SEO for 332 HTML pages and 291 indexable URLs, 776 live file/header/redirect checks and 416 live SEO checks all pass. Phone/desktop DOM checks cover six directory pages and twenty app homes. Existing full E2E and scholarly reviews were not repeated; screenshot capture timed out. All 21 production deployment stages succeeded. The verifier's Windows newline comparison was repaired after byte equality proved the sitemap correct.
 
 Search Console accepted the expanded root sitemap and shows Success; all 21 sitemap rows now show Success with 291 discovered URLs, including six directory URLs. Performance/indexing reports have no processed baseline. No ranking improvement is claimed. Follow-up is to assess indexing and query/page performance when data becomes available; no recurring automation was created. Deployment IDs and limitations are recorded in deployment/seo-growth-release.json. This enhancement is locally uncommitted and was not pushed; user skill edits remain separate.
+
+## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
+
+Renamed to Why It Was Revealed (config, seo, learning heading, home page, context, favicon label). SEO title shortened to 'Why It Was Revealed — Asbab al-nuzul reports | Moongazer'. Interface words: Choose a reading, Copy my list, Save, Search, Nothing matches, Print this reading; relationship labels are now 'A reported occasion / General context / What happened after' (stored kind values, assessment.ts and the test updated together, so no display map was needed). Honorifics: plain glyph added to the Prophet in the raised-voices title and teaching note. content.json changed; appContentSha256 a4529eab... -> 8fa3d848.... Checks: bun run check 0 errors; bun test 13 pass 0 fail; bun run build 14 pages; dist grep for old names and retired phrases finds only hostnames.

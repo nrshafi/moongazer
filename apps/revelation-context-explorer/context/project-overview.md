@@ -1,4 +1,4 @@
-# Revelation Context Explorer
+# Why It Was Revealed
 
 ## Overview
 
@@ -20,7 +20,7 @@ There are 41 exact source-list entries, 14 generated HTML pages, source/privacy/
 
 Ten readings include seven transmitted occasions, one general-context record and two responses after revelation. A response must not be relabeled as a cause. Narrator and date uncertainty remain visible. Collection attribution is not independent chain grading. Al-Muyassar notes and full Arabic Ibn Kathir links do not create an invented scholarly consensus.
 
-Ten selected passages pair canonical text with a named Sahih al-Bukhari report and links to fetched Al-Muyassar and full Arabic Ibn Kathir commentary. Transmitted occasions, general context and responses after revelation are kept distinct. Reliability labels identify the collection and do not independently regrade chains. A parallel account and retained narrative uncertainties prevent the selected report being mistaken for exhaustive history. Commentary notes and report summaries are original concise English paraphrases; no modern English hadith translation is republished.
+Ten selected passages pair canonical text with a named Sahih al-Bukhari report and links to fetched Al-Muyassar and full Arabic Ibn Kathir commentary. Reported occasions, general context and what happened after revelation are kept distinct. Reliability labels identify the collection and do not independently regrade chains. A parallel account and retained narrative uncertainties prevent the selected report being mistaken for exhaustive history. Commentary notes and report summaries are original concise English paraphrases; no modern English hadith translation is republished.
 
 Accounts, databases, user identity, external runtime assets, synchronized multiplayer and automatic publication are outside this implementation.
 

@@ -24,7 +24,7 @@ test('all ten readings retain narrators, explicit limits and two exact commentar
  for(const item of readings){expect(item.narrator.length).toBeGreaterThan(4);expect(item.limits.length).toBeGreaterThan(50);expect(item.reliability).toContain('does not independently regrade');expect(item.sources[0]!.url).toMatch(/^https:\/\/sunnah.com\/bukhari:/);expect(item.commentaryUrl).toMatch(/\/tafsirs\/16$/);expect(item.secondCommentaryUrl).toMatch(/\/tafsirs\/14$/);}
 });
 test('later responses are not silently relabeled as causes of revelation',()=>{
- expect(readings.filter(item=>item.kind==='Response after revelation').map(item=>item.id).sort()).toEqual(['beloved-garden','spilled-drink']);
+ expect(readings.filter(item=>item.kind==='What happened after').map(item=>item.id).sort()).toEqual(['beloved-garden','spilled-drink']);
  expect(readings.find(item=>item.id==='qiblah')!.kind).toBe('General context');
  expect(readings.find(item=>item.id==='safa-marwa')!.sources).toHaveLength(2);
 });

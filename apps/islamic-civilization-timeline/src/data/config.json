@@ -1,7 +1,7 @@
 {
   "slug": "islamic-civilization-timeline",
-  "name": "Islamic Civilization Timeline",
-  "description": "Explore connected histories across regions, with dates and evidence in view.",
+  "name": "Civilization Timeline",
+  "description": "Islamic civilization across regions",
   "accent": "blue",
   "nav": "Read",
   "port": 4336

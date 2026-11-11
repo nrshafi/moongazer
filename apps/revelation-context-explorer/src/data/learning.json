@@ -1,6 +1,6 @@
 {
-  "heading": "Explore reports about revelation",
-  "summary": "Revelation Context Explorer places ten selected readings beside named reports and careful evidence notes. Compare a transmitted occasion with general context or a response after revelation, and examine the limits of each report. The app helps you keep those categories distinct instead of treating every contextual report as the exclusive explanation of a passage.",
+  "heading": "Why It Was Revealed",
+  "summary": "Why It Was Revealed places ten selected readings beside named reports and careful notes. Compare a reported occasion with general context or with what happened after, and examine the limits of each report. The app helps you keep those categories distinct instead of treating every contextual report as the exclusive explanation of a passage.",
   "steps": [
     "Choose a reading from the report-context catalog.",
     "Read the passage, named report and notes about what the evidence supports.",
@@ -9,7 +9,7 @@
   "questions": [
     {
       "question": "Is every report presented as the reason a passage was revealed?",
-      "answer": "No. The readings distinguish transmitted occasions, general context and responses after revelation. The category and notes explain the narrower claim being made for each report."
+      "answer": "No. The readings distinguish reported occasions, general context and what happened after revelation. The category and notes explain the narrower claim being made for each report."
     },
     {
       "question": "Does one context report exhaust a passage's meaning?",
@@ -18,7 +18,7 @@
   ],
   "related": [
     {
-      "name": "Is This Actually in the Quran?",
+      "name": "Is It in the Quran?",
       "description": "Look for wording in a local Quran translation and inspect the matching passages.",
       "kind": "Text search",
       "url": "https://is-this-actually-in-the-quran.moongazer.tech/"

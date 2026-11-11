@@ -1,4 +1,4 @@
-# UI context: The Seerah Detective
+# UI context: Seerah Detective
 
 ## Theme and signature
 

@@ -1,4 +1,4 @@
-# The Seerah Detective agent instructions
+# Seerah Detective agent instructions
 
 This app also inherits the repository-level instructions when used inside the portfolio. Its local context is self-contained so the app folder can be copied independently.
 

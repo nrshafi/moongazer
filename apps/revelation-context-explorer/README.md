@@ -1,4 +1,4 @@
-# Revelation Context Explorer
+# Why It Was Revealed
 
 Read a passage beside the reports, and distinguish an occasion from its wider context.
 

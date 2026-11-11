@@ -1,4 +1,4 @@
-# Islamic Civilization Timeline
+# Civilization Timeline
 
 Explore connected histories across regions, with dates and evidence in view.
 

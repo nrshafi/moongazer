@@ -1,4 +1,4 @@
-# UI context: Islamic Civilization Timeline
+# UI context: Civilization Timeline
 
 ## Theme and signature
 

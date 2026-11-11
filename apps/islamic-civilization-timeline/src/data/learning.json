@@ -1,10 +1,10 @@
 {
-  "heading": "Islamic civilization timeline",
-  "summary": "Islamic Civilization Timeline connects twenty-four selected historical records across nine regions. Read about learning, trade and other developments beside institutional source references, or compare two date bands. Regional map outlines offer orientation without plotting historical state borders, and overlapping periods remain distinct from evidence of contact or causation.",
+  "heading": "Civilization Timeline",
+  "summary": "Civilization Timeline connects twenty-four selected events across nine regions. Read about learning, trade and other developments beside institutional source references, or compare two periods. Regional map outlines offer orientation without plotting historical state borders, and overlapping periods remain distinct from evidence of contact or causation.",
   "steps": [
-    "Choose a historical record or narrow the catalog by region, topic or date.",
-    "Open the record and read its source and dating notes.",
-    "Compare two date bands to inspect their time ranges without assuming the overlap proves a connection."
+    "Choose an event or narrow the list by region, topic or date.",
+    "Open the event and read its source and dating notes.",
+    "Compare two periods to inspect their time ranges without assuming the overlap proves a connection."
   ],
   "questions": [
     {
@@ -18,13 +18,13 @@
   ],
   "related": [
     {
-      "name": "Interactive Seerah Timeline",
-      "description": "Follow the Prophet's life through a connected timeline with source notes.",
+      "name": "Seerah Timeline",
+      "description": "Follow the Prophet's life ﷺ through a connected timeline with source notes.",
       "kind": "Timeline",
       "url": "https://interactive-seerah-timeline.moongazer.tech/"
     },
     {
-      "name": "Quranic Places Atlas",
+      "name": "Places in the Quran",
       "description": "Explore places through Quranic passages, maps and careful geographical notes.",
       "kind": "Map & reader",
       "url": "https://quranic-places-atlas.moongazer.tech/"

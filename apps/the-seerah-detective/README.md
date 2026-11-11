@@ -1,4 +1,4 @@
-# The Seerah Detective
+# Seerah Detective
 
 Independent Astro 7.4.2 static application, developed and built with Bun 1.4.4.
 
