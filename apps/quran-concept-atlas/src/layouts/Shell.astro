@@ -58,12 +58,12 @@ const themeColor = themeColors[config.accent] ?? themeColors.teal;
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="/" aria-label={`${config.name} home`}>
-          <span class="brand-mark" aria-hidden="true"><img src="/favicon.svg" alt="" width="42" height="42" /></span>
-          <span>{config.name}<small>Islamic learning, explored.</small></span>
-        </a>
+          <span class="brand-mark" aria-hidden="true"><img src="/favicon.svg" alt="" width="42" height="42" /></span>{' '}
+          <span>{config.name} <small>Islamic learning, explored.</small></span>
+        </a>{' '}
         <nav aria-label="Main navigation">
-          <a href="/" aria-current={active === 'activity' ? 'page' : undefined}>Explore</a>
-          <a href="/sources/" aria-current={active === 'sources' ? 'page' : undefined}>Sources</a>
+          <a href="/" aria-current={active === 'activity' ? 'page' : undefined}>Explore</a>{' '}
+          <a href="/sources/" aria-current={active === 'sources' ? 'page' : undefined}>Sources</a>{' '}
           <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
             <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
             <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
@@ -73,7 +73,7 @@ const themeColor = themeColors[config.accent] ?? themeColors.teal;
     </header>
     <main id="main" tabindex="-1">
       {!is404 && <nav class="seo-breadcrumb" aria-label="Breadcrumb"><ol>
-        <li><a href="https://moongazer.tech/">Moongazer</a></li>
+        <li><a href="https://moongazer.tech/">Moongazer</a></li>{' '}
         <li>{meta.path === '/' ? <span aria-current="page">{config.name}</span> : <a href="/">{config.name}</a>}</li>
         {meta.path !== '/' && <li><span aria-current="page">{meta.name}</span></li>}
       </ol></nav>}
@@ -81,8 +81,8 @@ const themeColor = themeColors[config.accent] ?? themeColors.teal;
       {meta.path === '/' && <LearningGuide />}
     </main>
     <footer class="site-footer">
-      <div><a class="footer-name" href="/">{config.name}</a><p>Explore at your own pace. Your activity stays in this browser.</p></div>
-      <div class="footer-links"><a href="https://moongazer.tech/#library">All Moongazer apps</a><a href="https://moongazer.tech/about/">About Moongazer</a><a href="/sources/">Sources & methodology</a><a href="/privacy/">Privacy & storage</a><button type="button" class="text-button" id="storage-open">Manage saved data</button></div>
+      <div><a class="footer-name" href="/">{config.name}</a><p>Explore at your own pace. Your activity stays in this browser.</p></div>{' '}
+      <div class="footer-links"><a href="https://moongazer.tech/#library">All Moongazer apps</a> <a href="https://moongazer.tech/about/">About Moongazer</a> <a href="/sources/">Sources & methodology</a> <a href="/privacy/">Privacy & storage</a> <button type="button" class="text-button" id="storage-open">Manage saved data</button></div>
     </footer>
     <dialog id="storage-dialog" aria-labelledby="storage-title">
       <form method="dialog"><button class="dialog-close icon-button" aria-label="Close storage settings">×</button></form>

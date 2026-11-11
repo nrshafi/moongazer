@@ -1,0 +1,3 @@
+# Allowlist for _implementation/audit-text-joins.py
+# One context substring per line (as printed by the audit, including the join marker), then "  # reason".
+# Currently empty: every join found was fixed in source.

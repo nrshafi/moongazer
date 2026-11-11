@@ -3,11 +3,11 @@ interface Props {topics:string[];regions?:string[];ages?:string[];timeline?:bool
 const {topics,regions=[],ages=[],timeline=false}=Astro.props;
 ---
 <form id="catalog-filters" class="panel panel-body filters top-gap bottom-gap" role="search" aria-label="Find an activity">
- <label class="field search-field">Find an entry<input id="filter" type="search" placeholder="Search titles, places or topics"/></label>
- <label class="field">Topic<select id="topic"><option value="">All topics</option>{topics.map(t=><option>{t}</option>)}</select></label>
- {regions.length>0&&<label class="field">Region<select id="region"><option value="">All regions</option>{regions.map(r=><option>{r}</option>)}</select></label>}
- {ages.length>0&&<label class="field">Suggested age<select id="age"><option value="">All ages</option>{ages.map(a=><option>{a}</option>)}</select></label>}
- {timeline&&<><label class="field year-field">From year CE<input id="from-year" type="number" min="600" max="1700" placeholder="661"/></label><label class="field year-field">To year CE<input id="to-year" type="number" min="600" max="1700" placeholder="1648"/></label></>}
- <label class="check"><input id="saved-only" type="checkbox"/>Saved only</label><button class="button secondary" type="reset">Reset filters</button>
+ <label class="field search-field">Find an entry<input id="filter" type="search" placeholder="Search titles, places or topics"/></label>{' '}
+ <label class="field">Topic<select id="topic"><option value="">All topics</option>{topics.map(t=><option>{t}</option>)}</select></label>{' '}
+ {regions.length>0&&<label class="field">Region<select id="region"><option value="">All regions</option>{regions.map(r=><option>{r}</option>)}</select></label>}{' '}
+ {ages.length>0&&<label class="field">Suggested age<select id="age"><option value="">All ages</option>{ages.map(a=><option>{a}</option>)}</select></label>}{' '}
+ {timeline&&<><label class="field year-field">From year CE<input id="from-year" type="number" min="600" max="1700" placeholder="661"/></label> <label class="field year-field">To year CE<input id="to-year" type="number" min="600" max="1700" placeholder="1648"/></label></>}{' '}
+ <label class="check"><input id="saved-only" type="checkbox"/>Saved only</label> <button class="button secondary" type="reset">Reset filters</button>{' '}
  <p id="filter-error" class="micro" role="status"></p><span id="count" class="micro" aria-live="polite"></span>
 </form>

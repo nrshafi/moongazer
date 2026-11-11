@@ -158,3 +158,37 @@ Recorded 2026-11-11 Asia/Dhaka. Read the plan folder (REPORT.md, briefs 00–15,
 Wrote `plan/implementation/`: 00-INDEX (25 settled decisions, calendar, dependency graph, shared-file list, per-app Depth Gate targets, status), 01-HANDOVER-PROTOCOL, phase files P1–P10, the content track C, and the Verify_Me triage appendix. Added superseded banners to the strategic decisions document, the next-session prompt and briefs 06–15. Added a pointer to START-HERE. Marked the services plan's open questions as settled. Added the per-app gate and verification rule to project-dna.md, and added a plan pointer to project-overview.md.
 
 Documentation only. No app code, data, builds or deployments changed, and no tests or builds were run. The schedule is ambitious for nine weeks; the index lists what moves after Ramadan first if a phase slips.
+
+## 2026-11-11 (Asia/Dhaka) — P1.17 text-join audit and P1.19 BDI check
+
+Script: `_implementation/audit-text-joins.py` (Python stdlib `html.parser`; run after building the apps and `node homepage/build.mjs`). Usage: `python _implementation/audit-text-joins.py` lists unexplained joins as app, file and a ~60-character context with the `⟨|⟩` marker; `--summary` prints counts per app; `--all` also lists allowlisted joins; `--bdi` runs the P1.19 check; `--signatures <file>` writes the element pairs involved (tooling aid). It exits 1 while unexplained joins (or BDI findings) remain. It walks every built page in `apps/*/dist` and `homepage/dist`, ignores script/style/template/svg/select content and `aria-hidden`/`hidden` subtrees, flags a boundary where text ending in a letter, digit or closing punctuation meets text starting with a letter or digit with no whitespace, when inline elements sit between them or when block siblings sit inside a link, button, label, summary or a flex/grid container (class lookup in the built CSS). Allowlist: `_implementation/audit-text-joins.allow` (substring plus `  # reason`).
+
+Initial joins (occurrences over 332 built pages; 7,587 in total, 3,811 unique contexts): everyday-akhlaq-simulator 451, family-islamic-learning-challenges 418, guess-the-surah 615, halal-business-decisions 335, homepage 231, interactive-seerah-timeline 530, is-this-actually-in-the-quran 275, islamic-civilization-timeline 632, islamic-concept-connections 102, islamic-history-timeline-challenge 75, islamic-knowledge-escape-room 190, islamic-misinformation-casebook 321, quran-concept-atlas 788, quran-connections 187, quran-memorization-workload-calculator 49, quranic-parables-studio 427, quranic-places-atlas 380, revelation-context-explorer 305, stories-of-the-prophets-explorer 595, the-seerah-detective 357, understand-salah-lab 324. After fixes: 0 in every app and the homepage.
+
+Fix: the cause was that adjacent elements, expression output and `.map()` items had no whitespace between them in the minified-style templates (Astro's compressHTML also drops newline whitespace between tags; `compressHTML: false` was tried on guess-the-surah and only removed about 2% of joins, so it was reverted). Fixed in source by adding a literal space (or `{' '}` where the gap fell at a line break or after an expression) between the specific element pairs the audit reported, and by wrapping reported `.map()` items as `<>…{' '}</>`. Visible wording is unchanged. Shared files were edited in `guess-the-surah` and copied with `sync-shared.ts` (Shell.astro, LearningGuide.astro, 404.astro, privacy.astro).
+
+Files changed (all `apps/<app>/src/...` unless noted):
+- Every app: the four shared files above (`layouts/Shell.astro`, `components/LearningGuide.astro`, `pages/404.astro`, `pages/privacy.astro`) plus `pages/index.astro` and `pages/sources.astro` (except where noted).
+- everyday-akhlaq-simulator: `pages/scenario/[slug].astro`.
+- family-islamic-learning-challenges: `components/Filters.astro`, `Passage.astro`, `References.astro`, `pages/pack/[id].astro`.
+- halal-business-decisions: `components/Filters.astro`, `Passage.astro`, `References.astro`, `pages/case/[id].astro`.
+- interactive-seerah-timeline: `pages/event/[slug].astro`.
+- islamic-civilization-timeline: `components/Filters.astro`, `Passage.astro`, `References.astro`, `pages/event/[id].astro`.
+- islamic-knowledge-escape-room: `pages/room/[id].astro`.
+- islamic-misinformation-casebook: `components/Filters.astro`, `Passage.astro`, `References.astro`, `pages/case/[id].astro`.
+- quran-concept-atlas: `pages/topic/[id].astro`.
+- quran-memorization-workload-calculator: `pages/index.astro` (mapped labels).
+- quranic-parables-studio: `pages/parable/[id].astro`, `pages/index.astro`.
+- quranic-places-atlas: `components/Map.astro`, `pages/place/[id].astro`.
+- revelation-context-explorer: `components/Filters.astro`, `Passage.astro`, `References.astro`, `pages/reading/[id].astro`.
+- stories-of-the-prophets-explorer: `pages/prophet/[id].astro`.
+- the-seerah-detective: `pages/case/[slug].astro`.
+- understand-salah-lab: `pages/lesson/[id].astro`.
+- homepage: `homepage/build.mjs`, `homepage/render.mjs`, `homepage/index.html` (spaces between template parts; `.join('')` of links and articles changed to `.join(' ')`).
+- New: `_implementation/audit-text-joins.py`, `_implementation/audit-text-joins.allow`.
+
+Allowlisted: none (the allowlist file is empty). The audit only sees build-time HTML; text that the apps' scripts render at run time is not covered.
+
+P1.19 BDI: none found. No built page has Arabic-script text (excluding U+FDFA) sharing a text node with Latin letters outside a `dir="rtl"` or `<bdi>` ancestor. A synthetic fixture confirmed the detector flags an unwrapped case and ignores `<bdi>`, `dir="rtl"` and ﷺ. No `<bdi>` wrapper was added.
+
+Checks run: all 20 apps rebuilt twice with `bun _implementation/verify.ts build` (pass) and `node homepage/build.mjs`; audit: 0 unexplained joins across 332 pages; `--bdi`: 0 findings; `bun _implementation/verify.ts check` pass (20 apps); `bun _implementation/verify.ts test` pass (20 apps); `bun _implementation/sync-shared.ts --check` pass; `bun test _implementation/seo.test.ts` 9 pass; `python _implementation/verify-static.py` verified 325 static pages. Not passing: `python deployment/verify-seo.py` aborts with `AssertionError: ('duplicate meta', 'theme-color')`; the shared Shell already had two `theme-color` meta tags (light and dark media) at HEAD, so this is pre-existing and not caused by this change. It is unresolved here, so static SEO and live checks from that script were not completed. No browser or visual check was done; added spaces fall in inline contexts only where text was being joined, and elsewhere in flex or grid containers where whitespace is not rendered.

@@ -31,21 +31,21 @@ export function metadata(meta,apps){
 
 export function appCards(apps){
   const e=escapeHtml;
-  return apps.map(app=>`<article class="app-card" data-category="${e(app.category)}" data-search="${e(`${app.name} ${app.category} ${app.kind} ${app.description}`.toLowerCase())}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><div class="card-top"><span class="app-icon"><img src="/logos/${e(app.slug)}.svg" alt="" width="48" height="48" loading="lazy"></span><span class="app-kind">${e(app.kind)}</span><span class="card-arrow" aria-hidden="true">↗</span></div><h3>${e(app.name)}</h3><p>${e(app.description)}</p><span class="card-bottom">${e(app.category)}<span aria-hidden="true">Open app →</span></span></a></article>`).join('\n');
+  return apps.map(app=>`<article class="app-card" data-category="${e(app.category)}" data-search="${e(`${app.name} ${app.category} ${app.kind} ${app.description}`.toLowerCase())}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><div class="card-top"><span class="app-icon"><img src="/logos/${e(app.slug)}.svg" alt="" width="48" height="48" loading="lazy"></span> <span class="app-kind">${e(app.kind)}</span> <span class="card-arrow" aria-hidden="true">↗</span></div> <h3>${e(app.name)}</h3> <p>${e(app.description)}</p> <span class="card-bottom">${e(app.category)}<span aria-hidden="true">Open app →</span></span></a></article>`).join('\n');
 }
 
 export function collectionLinks(collections){
-  return collections.map(c=>`<a href="/${c.slug}/">${escapeHtml(c.name)}</a>`).join('');
+  return collections.map(c=>`<a href="/${c.slug}/">${escapeHtml(c.name)}</a>`).join(' ');
 }
 
 export function questions(items){
-  return items.map(item=>`<div class="reading-answer"><h3>${escapeHtml(item.question)}</h3><p>${escapeHtml(item.answer)}</p></div>`).join('\n');
+  return items.map(item=>`<div class="reading-answer"><h3>${escapeHtml(item.question)}</h3> <p>${escapeHtml(item.answer)}</p></div>`).join('\n');
 }
 
 export function documentPage(meta,body,collections,apps){
   const e=escapeHtml;
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">${metadata(meta,apps)}<meta name="theme-color" content="#12263d"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/reading.css"></head><body>
-  <a class="skip-link" href="#main">Skip to content</a><header class="site-header wrap"><a href="/" class="brand" aria-label="Moongazer home"><img src="/favicon.svg" alt="" width="32" height="32"><span>moongazer<span class="brand-dot">.</span></span></a><nav aria-label="Main navigation"><a href="/#library">The app library</a><a href="/about/"${meta.path==='/about/'?' aria-current="page"':''}>Our approach</a></nav></header>
+  <a class="skip-link" href="#main">Skip to content</a><header class="site-header wrap"><a href="/" class="brand" aria-label="Moongazer home"><img src="/favicon.svg" alt="" width="32" height="32"><span>moongazer<span class="brand-dot">.</span></span></a> <nav aria-label="Main navigation"><a href="/#library">The app library</a> <a href="/about/"${meta.path==='/about/'?' aria-current="page"':''}>Our approach</a></nav></header>
   <main class="wrap reading-page" id="main" tabindex="-1"><nav class="reading-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Moongazer</a></li><li><span aria-current="page">${e(meta.name)}</span></li></ol></nav><header class="reading-hero"><p class="eyebrow">${meta.type==='AboutPage'?'Sources, purpose & corrections':'Choose a learning path'}</p><h1>${e(meta.heading)}</h1><p>${e(meta.intro)}</p></header>${body}</main>
-  <footer class="site-footer wrap"><a class="brand" href="/">moongazer<span class="brand-dot">.</span></a><p>Follow your curiosity.</p><a href="https://moongazer.tech/#library">All Moongazer apps</a><nav class="footer-guides" aria-label="Subject guides">${collectionLinks(collections)}<a href="/about/">About & source corrections</a></nav><div class="footer-note"><span>Free to use. No account needed.</span><span>Read the sources. Keep the context.</span></div></footer></body></html>`;
+  <footer class="site-footer wrap"><a class="brand" href="/">moongazer<span class="brand-dot">.</span></a> <p>Follow your curiosity.</p> <a href="https://moongazer.tech/#library">All Moongazer apps</a> <nav class="footer-guides" aria-label="Subject guides">${collectionLinks(collections)} <a href="/about/">About & source corrections</a></nav> <div class="footer-note"><span>Free to use. No account needed.</span> <span>Read the sources. Keep the context.</span></div></footer></body></html>`;
 }

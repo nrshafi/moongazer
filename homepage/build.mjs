@@ -15,7 +15,7 @@ const allPages=[home];
 const paths=collections.map(collection=>{
   const selected=apps.filter(app=>app.category===collection.category);
   if(!selected.length||!/^[a-z0-9-]+$/.test(collection.slug))throw new Error('Invalid subject guide');
-  return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span><h3>${e(collection.name)}</h3><p>${e(collection.description)}</p><span>Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
+  return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span> <h3>${e(collection.name)}</h3> <p>${e(collection.description)}</p> <span>Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
 }).join('\n');
 const commonQuestions=[
   {question:'What is Moongazer?',answer:'Moongazer is a collection of twenty free browser apps for Quran, Seerah, history and everyday Islamic learning. Choose a tool for a specific task, such as recognizing a surah, finding wording, reading a report or exploring prayer recitation meanings.'},
@@ -30,8 +30,8 @@ await writeFile(join(out,'index.html'),template);
 for(const collection of collections){
   const selected=apps.filter(app=>app.category===collection.category);
   const meta={...collection,path:`/${collection.slug}/`};
-  const journeys=collection.paths.map(path=>`<article class="reading-path"><h3>${e(path.title)}</h3><ol>${path.items.map(item=>{const app=bySlug.get(item.slug);if(!app)throw new Error('Unknown journey app');return `<li><a href="https://${app.slug}.moongazer.tech/">${e(app.name)}</a><p>${e(item.reason)}</p></li>`;}).join('')}</ol></article>`).join('');
-  const body=`<section class="reading-section"><h2>Choose a task before a tool</h2><p>${e(collection.guidance)}</p><div class="reading-paths">${journeys}</div></section><section class="reading-section"><h2>The ${e(collection.name.toLowerCase())} app collection</h2><p>Compare the ${selected.length} tools in this subject, then open the activity you want to try.</p><div class="app-grid">${appCards(selected)}</div></section><section class="reading-section"><h2>Questions before you begin</h2>${questions(collection.questions)}</section><section class="reading-section"><h2>Explore another subject</h2><nav class="reading-subjects" aria-label="Other learning subjects">${collectionLinks(collections.filter(c=>c.slug!==collection.slug))}<a href="/about/">Sources, purpose & corrections</a></nav></section>`;
+  const journeys=collection.paths.map(path=>`<article class="reading-path"><h3>${e(path.title)}</h3><ol>${path.items.map(item=>{const app=bySlug.get(item.slug);if(!app)throw new Error('Unknown journey app');return `<li><a href="https://${app.slug}.moongazer.tech/">${e(app.name)}</a> <p>${e(item.reason)}</p></li>`;}).join(' ')}</ol></article>`).join(' ');
+  const body=`<section class="reading-section"><h2>Choose a task before a tool</h2><p>${e(collection.guidance)}</p><div class="reading-paths">${journeys}</div></section><section class="reading-section"><h2>The ${e(collection.name.toLowerCase())} app collection</h2><p>Compare the ${selected.length} tools in this subject, then open the activity you want to try.</p><div class="app-grid">${appCards(selected)}</div></section><section class="reading-section"><h2>Questions before you begin</h2>${questions(collection.questions)}</section><section class="reading-section"><h2>Explore another subject</h2><nav class="reading-subjects" aria-label="Other learning subjects">${collectionLinks(collections.filter(c=>c.slug!==collection.slug))} <a href="/about/">Sources, purpose & corrections</a></nav></section>`;
   const folder=join(out,collection.slug);await mkdir(folder,{recursive:true});
   await writeFile(join(folder,'index.html'),documentPage(meta,body,collections,selected));
   allPages.push(meta);
