@@ -131,7 +131,7 @@ Update this table when a task or phase starts or finishes (see protocol §6).
 | P2 | Done (R2 pushed) | phase-2-names → main | 2026-11-11 | Names, nav verbs, interface words, honorifics, directory, social cards; see `releases/R2.md`. |
 | P3 step A | Verified; release held for owner spot-check of 12 claims | phase-3-merges (pushed, not merged) | 2026-11-11 | See `releases/R3.md`. |
 | P3 step B | Not started | | | |
-| P4 | Not started | | | |
+| P4 | In progress: T4.1–T4.4, T4.8 done (local); T4.5–T4.7 and T4.9–T4.10 pending | phase-4-services (from phase-3-merges) | 2026-11-11 | Functions and D1 tested with wrangler pages dev; production D1 and deploy not run. |
 | P5 | Not started | | | |
 | P6 | Not started | | | |
 | P7 | Not started | | | |

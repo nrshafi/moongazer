@@ -211,3 +211,33 @@ Implemented T2.1–T2.8 on `phase-2-names` (per-app work delegated to five subag
 ## 2026-11-11T12:10:36+06:00 — P3 step A verified; R3 held for spot-check
 
 T3.1–T3.8 done on `phase-3-merges` (receiving sections by four subagents; import protocol, shell banner, redirect map, directory and validator by the orchestrator; claims verified by a separate subagent). Full checks in `plan/implementation/releases/R3.md`. Not released: the 12 rebuilt claims need the owner's spot-check before merge to `main`.
+
+## 2026-11-11T18:27:45+06:00 — P4.1–P4.4 and P4.8 built and tested locally (branch phase-4-services)
+
+Tasks done: T4.1 context, T4.2 wrangler pin and apex config, T4.3 validator and tests, T4.4 Functions, T4.8 owner scripts. T4.5–T4.7 (UI, shared components, app wiring) were not in this scope and are not done. T4.9–T4.10 are not started. Nothing was pushed, merged or deployed, and no `--remote` D1 command was run. The branch is based on `phase-3-merges` (P3 step A, not yet merged to `main`).
+
+Commits on the branch, oldest first: 2fbc7c3 wrangler pin; 7f90128 P4.1 context; c5c5503 `.wrangler/` ignore; 58a3c84 wrangler.toml and `_routes.json`; 18d3d04 migration 0001; 33d5684 allowlist script and `apps.json`; 87eaaee validator and tests; 41ab183 feedback Function; ffa627a event Function; 37f05eb owner scripts and README; this entry, the DNA status line and the P4 row in `00-INDEX.md` are in the commit after 37f05eb.
+
+Decisions and documentation:
+- Wrangler `4.160.0` is pinned exactly in `deployment/package.json`. `bunx --bun wrangler` failed on Windows (clone error for `wrangler-dist/cli.js`), so wrangler runs as `node deployment/node_modules/wrangler/bin/wrangler.js` from `homepage/`.
+- Docs checked (URLs in `context/architecture.md`, "Dependencies and documentation checked"). `_routes.json` sits in the build directory, so `homepage/_routes.json` is copied into `dist/` by `build.mjs`. The Pages get-started page says `/functions` belongs at the project root and not in the static output folder. The docs do not say the functions directory is found from the working directory, so `wrangler pages dev dist` run from `homepage/` was checked locally instead.
+- Invalid form fields return a fixed 400 reason; honeypot and timing failures return 303 and store nothing (as specified). Non-POST methods return 405 through a catch-all `onRequest`. The beacon returns 204 for every bad input.
+- The local D1 write response does not report `meta.changes`, so `review-feedback.mjs set` checks for the row with a SELECT first.
+
+Checks run and results:
+- `bun test homepage/tests`: 51 pass, 0 fail (validator table tests).
+- `node homepage/build.mjs`: built 6 directory pages and 16 app links; `dist/_routes.json` present.
+- `wrangler d1 migrations apply moongazer --local` (run from `homepage/`): `0001_init.sql` applied, 4 commands successful.
+- `wrangler pages dev dist --port 8788 --ip 127.0.0.1` (from `homepage/`): compiled, `env.DB` bound to local D1. Server stopped afterwards. Its log showed no errors.
+  - Valid form POST (t 5 s old) → 303, `Location: https://moongazer.tech/feedback/thanks/?from=guess-the-surah`, `Cache-Control: no-store`. Local feedback table: one row, status `pending`, `no_js` 0.
+  - Honeypot POST (`website` filled) → 303; too-fast POST (t = now) → 303. Both added no rows.
+  - GET and PUT on `/api/feedback` → 405. GET on `/api/event` → 405.
+  - Two valid beacons `{"a":"guess-the-surah","i":"home","e":"activity_started"}` → 204 each. Local `event_counts`: one row, count 2.
+  - Malformed beacon and unknown-app beacon → 204, no rows added.
+- Owner scripts, `--local` only: `list` (pending row shown, contact hidden), `set` success path and missing-id error, `set` with an invalid status error, `publish` (appended one entry to `homepage/corrections.json`, row marked verified; the test file was deleted and not committed), `counter-report` CSV (completion rate 0.000 for 2 started / 0 completed), and an invalid date range error.
+
+Not verified or still open:
+- No TypeScript typecheck of `homepage/functions/`. The homepage has no tsconfig, and `bun test` does not typecheck. The Functions use minimal local D1 types and the global `crypto`, `Request` and `Response`.
+- Not run: remote D1 migrations, `wrangler pages deploy`, the zone rate-limit rule, and any live request. All are owner steps in T4.10.
+- Privacy wording (T4.9 and T4.6 step 5) is not drafted in this scope.
+- Local test rows and `homepage/.wrangler/` remain on this machine only (ignored by Git).

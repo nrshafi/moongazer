@@ -87,7 +87,7 @@ To measure whether activities actually help learners finish and share without tr
 - `activity_completed`
 - `share_clicked`
 
-`page_view` tracking is excluded. The architecture was settled on 11 November 2026 (Pages Functions on the apex with one D1 database, no Turnstile, no stored IP addresses, a static corrections log). Implementation: `plan/implementation/P4-first-party-services.md`. It is not yet implemented in runtime code.
+`page_view` tracking is excluded. The architecture was settled on 11 November 2026 (Pages Functions on the apex with one D1 database, no Turnstile, no stored IP addresses, a static corrections log). Implementation: `plan/implementation/P4-first-party-services.md`. Status (11 November 2026): the Functions, D1 schema, allowlist and owner scripts are built and tested locally (P4.1–P4.4, P4.8); the app and directory wiring (P4.5–P4.7) and production setup (P4.10) are pending.
 
 ### Organic community pull
 
