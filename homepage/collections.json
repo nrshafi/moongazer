@@ -9,13 +9,57 @@
     "intro": "These eight Quran learning apps support different tasks: recognizing chapters, finding wording, comparing themes and reading selected passages with their references. Choose the task you want to do first. A quiz, a text search and a commentary-led reading answer different kinds of questions.",
     "guidance": "Start with the passage whenever a tool offers an explanation. Quoted Quran text, named translations and attributed commentary are separate from the editorial questions, diagrams and learning paths. The tools help you organize a reading session; they do not replace the full context or qualified instruction.",
     "paths": [
-      {"title": "Get familiar with chapters", "items": [{"slug": "guess-the-surah", "reason": "Use opening-ayah clues to recognize a surah, then inspect the reference behind the answer."}, {"slug": "quran-connections", "reason": "Move from chapter recognition into comparing the shared theme of three selected passages."}]},
-      {"title": "Find wording, then explore a theme", "items": [{"slug": "is-this-actually-in-the-quran", "reason": "Search Arabic text or Pickthall's English translation when you have wording or an ayah reference."}, {"slug": "quran-concept-atlas", "reason": "Choose an editorial theme map when your starting point is a subject rather than an exact phrase."}]},
-      {"title": "Read a selected account in context", "items": [{"slug": "stories-of-the-prophets-explorer", "reason": "Open a prophet's profile for selected Quran passages and a short reading check."}, {"slug": "revelation-context-explorer", "reason": "Compare named reports while keeping transmitted occasions, general context and later responses distinct."}]}
+      {
+        "title": "Get familiar with chapters",
+        "items": [
+          {
+            "slug": "guess-the-surah",
+            "reason": "Use opening-ayah clues to recognize a surah, then inspect the reference behind the answer."
+          },
+          {
+            "slug": "quran-connections",
+            "reason": "Move from chapter recognition into comparing the shared theme of three selected passages."
+          }
+        ]
+      },
+      {
+        "title": "Find wording, then explore a theme",
+        "items": [
+          {
+            "slug": "is-this-actually-in-the-quran",
+            "reason": "Search Arabic text or Pickthall's English translation when you have wording or an ayah reference."
+          },
+          {
+            "slug": "quran-connections",
+            "path": "/themes/",
+            "label": "Ayah Threads theme library",
+            "reason": "Read a theme's three ayat when your starting point is a subject; solve its puzzle first to keep the surprise."
+          }
+        ]
+      },
+      {
+        "title": "Read a selected account in context",
+        "items": [
+          {
+            "slug": "stories-of-the-prophets-explorer",
+            "reason": "Open a prophet's profile for selected Quran passages and a short reading check."
+          },
+          {
+            "slug": "revelation-context-explorer",
+            "reason": "Compare named reports while keeping transmitted occasions, general context and later responses distinct."
+          }
+        ]
+      }
     ],
     "questions": [
-      {"question": "Which tool should I use for an exact Quran phrase?", "answer": "Use Is It in the Quran? for Arabic wording, Pickthall's English text or a verse reference. An empty search result does not mean an idea is absent from the Quran: translations and paraphrases can use different wording."},
-      {"question": "Where can I explore diagrams or places?", "answer": "Parables of the Quran uses editorial diagrams alongside selected readings. Places in the Quran pairs passages with geographical notes and keeps uncertain locations unpinned. Both keep their source references available for inspection."}
+      {
+        "question": "Which tool should I use for an exact Quran phrase?",
+        "answer": "Use Is It in the Quran? for Arabic wording, Pickthall's English text or a verse reference. An empty search result does not mean an idea is absent from the Quran: translations and paraphrases can use different wording."
+      },
+      {
+        "question": "Where can I explore diagrams or places?",
+        "answer": "Parables of the Quran uses editorial diagrams alongside selected readings. Places in the Quran pairs passages with geographical notes and keeps uncertain locations unpinned. Both keep their source references available for inspection."
+      }
     ]
   },
   {
@@ -28,13 +72,57 @@
     "intro": "These three history tools offer different ways into a source reading. Follow selected moments from the Prophet's life ﷺ, work through an evidence-reading case, or compare records from Islamic civilization across regions. Choose chronology for orientation and a case when you want to examine what a particular report supports.",
     "guidance": "A displayed date and a source report do not always have the same precision. Conventional years, broad periods and historical uncertainty are identified in the notes. A timeline connection or an overlap between date bands should not be treated as evidence of contact or causation by itself.",
     "paths": [
-      {"title": "Follow an event into its reports", "items": [{"slug": "interactive-seerah-timeline", "reason": "Browse a sourced chronology, then open an event to read the reports and date notes."}, {"slug": "the-seerah-detective", "reason": "Practice deciding which conclusion a selected evidence set actually supports."}]},
-      {"title": "Compare places and periods", "items": [{"slug": "islamic-civilization-timeline", "reason": "Read selected records across regions and inspect two date bands together."}, {"slug": "quranic-places-atlas", "reason": "Explore a related geographical reading while distinguishing a modern map context from an exact ancient location."}]},
-      {"title": "Turn reading into an ordering exercise", "items": [{"slug": "interactive-seerah-timeline", "reason": "Use the timeline as a reading reference before trying a short chronology task."}, {"slug": "islamic-history-timeline-challenge", "reason": "Arrange four events from the prophetic mission, then compare their sources and approximate dates."}]}
+      {
+        "title": "Follow an event into its reports",
+        "items": [
+          {
+            "slug": "interactive-seerah-timeline",
+            "reason": "Browse a sourced chronology, then open an event to read the reports and date notes."
+          },
+          {
+            "slug": "the-seerah-detective",
+            "reason": "Practice deciding which conclusion a selected evidence set actually supports."
+          }
+        ]
+      },
+      {
+        "title": "Compare places and periods",
+        "items": [
+          {
+            "slug": "islamic-civilization-timeline",
+            "reason": "Read selected records across regions and inspect two date bands together."
+          },
+          {
+            "slug": "quranic-places-atlas",
+            "reason": "Explore a related geographical reading while distinguishing a modern map context from an exact ancient location."
+          }
+        ]
+      },
+      {
+        "title": "Turn reading into an ordering exercise",
+        "items": [
+          {
+            "slug": "interactive-seerah-timeline",
+            "reason": "Use the timeline as a reading reference before trying a short chronology task."
+          },
+          {
+            "slug": "interactive-seerah-timeline",
+            "path": "/challenge/",
+            "label": "Which came first? (Seerah Timeline)",
+            "reason": "Arrange four events from the prophetic mission, then compare their sources and approximate dates."
+          }
+        ]
+      }
     ],
     "questions": [
-      {"question": "Are these complete history courses?", "answer": "No. They are selected reading tools. The Seerah timeline and casebook focus on particular events and questions, while the civilization timeline presents twenty-four selected records across nine regions."},
-      {"question": "What should I check before treating a date as exact?", "answer": "Read the individual event's dating and source notes. A report may support an event without giving its displayed calendar year. The tools retain that distinction rather than making every record appear equally precise."}
+      {
+        "question": "Are these complete history courses?",
+        "answer": "No. They are selected reading tools. The Seerah timeline and the common-claims checks focus on particular events and questions, while the civilization timeline presents twenty-four selected records across nine regions."
+      },
+      {
+        "question": "What should I check before treating a date as exact?",
+        "answer": "Read the individual event's dating and source notes. A report may support an event without giving its displayed calendar year. The tools retain that distinction rather than making every record appear equally precise."
+      }
     ]
   },
   {
@@ -47,13 +135,59 @@
     "intro": "These five apps connect reading with a practical task. Study the meaning of a prayer recitation, estimate time for memorization and revision, or consider a fictional decision with its source notes. Each tool has a defined purpose, so choose the activity that matches your question before interpreting its result.",
     "guidance": "A workload estimate is not a retention assessment. A fictional choice is not a prediction or a ruling on a real transaction. A source-reading conclusion is limited to the cited evidence. These distinctions are part of the activities and remain visible alongside the result.",
     "paths": [
-      {"title": "Make space for a reading session", "items": [{"slug": "understand-salah-lab", "reason": "Choose one of fifteen recitation-meaning lessons and compare its Arabic, meaning and source notes."}, {"slug": "quran-memorization-workload-calculator", "reason": "Estimate how new Quran study and revision fit around the session time you provide."}]},
-      {"title": "Think through a fictional choice", "items": [{"slug": "everyday-akhlaq-simulator", "reason": "Read a character scenario, consider a choice and inspect its imagined consequence."}, {"slug": "halal-business-decisions", "reason": "Apply the same careful reading to fictional business cases without treating them as transaction certification."}]},
-      {"title": "Check the evidence before a conclusion", "items": [{"slug": "islamic-misinformation-casebook", "reason": "Practice correcting a constructed claim while keeping the conclusion within its sources."}, {"slug": "revelation-context-explorer", "reason": "Compare a report and its stated limits when studying the context around a passage."}]}
+      {
+        "title": "Make space for a reading session",
+        "items": [
+          {
+            "slug": "understand-salah-lab",
+            "reason": "Choose one of fifteen recitation-meaning lessons and compare its Arabic, meaning and source notes."
+          },
+          {
+            "slug": "quran-memorization-workload-calculator",
+            "reason": "Estimate how new Quran study and revision fit around the session time you provide."
+          }
+        ]
+      },
+      {
+        "title": "Think through a fictional choice",
+        "items": [
+          {
+            "slug": "everyday-akhlaq-simulator",
+            "reason": "Read a character scenario, consider a choice and inspect its imagined consequence."
+          },
+          {
+            "slug": "everyday-akhlaq-simulator",
+            "path": "/business/",
+            "label": "Everyday Akhlaq business scenarios",
+            "reason": "Apply the same careful reading to fictional business cases without treating them as transaction certification."
+          }
+        ]
+      },
+      {
+        "title": "Check the evidence before a conclusion",
+        "items": [
+          {
+            "slug": "is-this-actually-in-the-quran",
+            "path": "/claims/",
+            "label": "Common claims (Is It in the Quran?)",
+            "reason": "Check a claim people often make against the exact text before you share it."
+          },
+          {
+            "slug": "revelation-context-explorer",
+            "reason": "Compare a report and its stated limits when studying the context around a passage."
+          }
+        ]
+      }
     ],
     "questions": [
-      {"question": "Does Understand Your Salah teach every legal detail of prayer?", "answer": "It focuses on selected recitation meanings and narrated wordings. It includes local Al-Fatiha audio, while the other lessons are text-based. Use its source notes and qualified instruction for practice questions or legal differences."},
-      {"question": "Can I use the business cases as a ruling on my transaction?", "answer": "No. Halal Business Decisions presents fictional educational cases. Real arrangements can involve facts and obligations outside an exercise, so the app does not certify transactions or provide personalized legal or financial advice."}
+      {
+        "question": "Does Understand Your Salah teach every legal detail of prayer?",
+        "answer": "It focuses on selected recitation meanings and narrated wordings. It includes local Al-Fatiha audio, while the other lessons are text-based. Use its source notes and qualified instruction for practice questions or legal differences."
+      },
+      {
+        "question": "Can I use the business cases as a ruling on my transaction?",
+        "answer": "No. The business scenarios in Everyday Akhlaq present fictional educational cases. Real arrangements can involve facts and obligations outside an exercise, so the app does not certify transactions or provide personalized legal or financial advice."
+      }
     ]
   },
   {
@@ -66,13 +200,57 @@
     "intro": "These four activities use a game or shared task to make room for reading. Solve a passage-based room, group related words, arrange a short chronology or choose a family pack with a question, conversation and activity. The format helps you begin; the source reading and explanation give you something to return to.",
     "guidance": "Choose a format that suits your group. A room can be discussed together on one device, and a family pack can be read aloud or adapted by an adult. Nobody needs a personal profile or a private story to participate. Scores and intended groupings describe the activity, not a person's faith or religious merit.",
     "paths": [
-      {"title": "Discuss a puzzle on one screen", "items": [{"slug": "islamic-knowledge-escape-room", "reason": "Work through reading and recognition puzzles together, using the source shelf and hints when useful."}, {"slug": "islamic-concept-connections", "reason": "Compare possible connections between terms, then inspect the board's intended groups and readings."}]},
-      {"title": "Choose a family reading activity", "items": [{"slug": "family-islamic-learning-challenges", "reason": "Pick a suggested age band, topic and time, then work through the pack's three-part session."}, {"slug": "everyday-akhlaq-simulator", "reason": "Continue a conversation with a fictional character scenario rather than asking for personal experiences."}]},
-      {"title": "Try a short chronology challenge", "items": [{"slug": "islamic-history-timeline-challenge", "reason": "Arrange four events using buttons and compare the answer with the cited reports."}, {"slug": "interactive-seerah-timeline", "reason": "Return to a broader chronology when you want to read an event in more detail."}]}
+      {
+        "title": "Discuss a puzzle on one screen",
+        "items": [
+          {
+            "slug": "islamic-knowledge-escape-room",
+            "reason": "Work through reading and recognition puzzles together, using the source shelf and hints when useful."
+          },
+          {
+            "slug": "islamic-concept-connections",
+            "reason": "Compare possible connections between terms, then inspect the board's intended groups and readings."
+          }
+        ]
+      },
+      {
+        "title": "Choose a family reading activity",
+        "items": [
+          {
+            "slug": "family-islamic-learning-challenges",
+            "reason": "Pick a suggested age band, topic and time, then work through the pack's three-part session."
+          },
+          {
+            "slug": "everyday-akhlaq-simulator",
+            "reason": "Continue a conversation with a fictional character scenario rather than asking for personal experiences."
+          }
+        ]
+      },
+      {
+        "title": "Try a short chronology challenge",
+        "items": [
+          {
+            "slug": "interactive-seerah-timeline",
+            "path": "/challenge/",
+            "label": "Which came first? (Seerah Timeline)",
+            "reason": "Arrange four events using buttons and compare the answer with the cited reports."
+          },
+          {
+            "slug": "interactive-seerah-timeline",
+            "reason": "Return to a broader chronology when you want to read an event in more detail."
+          }
+        ]
+      }
     ],
     "questions": [
-      {"question": "Are these synchronized multiplayer games?", "answer": "No. They run in the browser on the device being used. People can discuss an escape room or family activity together on one screen; the collection does not create a live multiplayer session or player accounts."},
-      {"question": "How should I choose an activity for children?", "answer": "Family Halaqa includes suggested age bands and times. An adult can read aloud, adapt vocabulary and let participants pass. Keep discussion examples fictional and choose a pack that suits the group rather than treating the age label as a strict requirement."}
+      {
+        "question": "Are these synchronized multiplayer games?",
+        "answer": "No. They run in the browser on the device being used. People can discuss an escape room or family activity together on one screen; the collection does not create a live multiplayer session or player accounts."
+      },
+      {
+        "question": "How should I choose an activity for children?",
+        "answer": "Family Halaqa includes suggested age bands and times. An adult can read aloud, adapt vocabulary and let participants pass. Keep discussion examples fictional and choose a pack that suits the group rather than treating the age label as a strict requirement."
+      }
     ]
   }
 ]
