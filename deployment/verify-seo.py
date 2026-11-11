@@ -33,6 +33,8 @@ class Page(HTMLParser):
         if tag == 'title' and self.in_head: self.in_title = True
         if tag == 'meta':
             key = a.get('name') or a.get('property')
+            # theme-color may appear once per media query (light and dark variants).
+            if key == 'theme-color' and a.get('media'): key = f"theme-color {a['media']}"
             if key:
                 assert key not in self.meta, ('duplicate meta', key)
                 self.meta[key] = a.get('content', '')
