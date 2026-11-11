@@ -44,3 +44,13 @@ All claims: honorific present after editorial Prophet mentions (web-at-the-cave 
 ## Fixes applied (2026-11-11, Asia/Dhaka, orchestrator)
 
 All five suggested fixes were applied verbatim to `apps/is-this-actually-in-the-quran/src/data/content.json` (`voices-in-49-2` hadith summary, verdict, howToCheck[2], limit; `garden-and-3-92` verdict) and `appContentSha256` was updated. Owner spot-check still pending (see the three claims above). Note: sunnah.com refused automated requests (HTTP 403); the reports were read from a public mirror of Sahih al-Bukhari, so the owner's spot-check should open the sunnah.com pages directly.
+
+## Direct sunnah.com check (2026-11-11, Asia/Dhaka, orchestrator via a real browser)
+
+Opened sunnah.com in a browser (automated fetches were blocked with HTTP 403):
+
+- **Sahih al-Bukhari 4845** (Book 65, Hadith 366): Ibn Abi Mulaika names Abu Bakr and Umar as the two who raised their voices when a delegation from Bani Tamim came; one recommended Al-Aqra' bin Habis and "Nafi', the sub-narrator said, I do not remember his name" refers to the other nominee. Confirms the fix applied to `voices-in-49-2`.
+- **Sahih al-Bukhari 3653** (Book 62): Abu Bakr in the cave: "If any of them should look under his feet, he would see us", and the reply about two whose third is Allah. No spider or web. Confirms `web-at-the-cave`.
+- **Sahih al-Bukhari 1461** (Book 24, Hadith 63): Anas reports that when 3:92 was revealed, Abu Talha offered Bairuha. The offer follows the ayah. Confirms `garden-and-3-92`.
+
+This is still model verification, not the owner's spot-check.
