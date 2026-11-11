@@ -11,10 +11,10 @@ const meta = getPageMeta(Astro.url.pathname);
 const pageTitle = meta.title || title;
 const pageDescription = description || meta.description;
 // Moved apps (P3): config.json "moved" maps this page to its new home; the canonical and banner point there.
-interface Moved { to: string; origin: string; routes: [string, string][]; fallback: string; idMap?: Record<string, string> }
+interface Moved { to: string; origin: string; routes: string[][]; fallback: string; idMap?: Record<string, string> }
 const moved = (config as { moved?: Moved }).moved;
 function movedUrl(path: string, rule: Moved): string {
-  for (const [pattern, target] of rule.routes) {
+  for (const [pattern = "", target = ""] of rule.routes) {
     const match = path.match(new RegExp(pattern));
     if (!match) continue;
     const id = match[1];

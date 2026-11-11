@@ -38,7 +38,7 @@ movedLink?.addEventListener('click', () => {
     const prefix = namespace() + ':';
     const keys: string[] = [];
     for (let i = 0; i < localStorage.length; i++) { const key = localStorage.key(i); if (key?.startsWith(prefix)) keys.push(key.slice(prefix.length)); }
-    for (const key of keys) { if (key === 'theme') continue; const value = read(key, (v): v is unknown => true); if (value !== null) items[key] = value; }
+    for (const key of keys) { if (key === 'theme') continue; const value = read(key, (_v): _v is unknown => true); if (value !== null) items[key] = value; }
   } catch { /* storage blocked: open the new page without saved items */ }
   const payload = encodePayload(namespace(), items);
   movedLink.href = movedLink.href.split('#')[0] + (payload ? '#import=' + payload : '');

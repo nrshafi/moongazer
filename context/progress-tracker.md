@@ -207,3 +207,7 @@ Implemented T2.1–T2.8 on `phase-2-names` (per-app work delegated to five subag
 ## 2026-11-11T11:55:39+06:00 — P3.8 redirect map, retired flag, 16-app directory
 
 `_implementation/build-redirect-map.ts` writes `deployment/merge-redirects.json` from the retired apps' `dist/` using the same rule as the shell's moved banner (atlas 36 paths, timeline challenge 6, halal business 18, casebook 18, each with `/sitemap.xml` and `*`). `_implementation/redirect-map.test.ts` checks the committed map equals a fresh build, that every target page exists in the receiver build and that no target points to a retired host (2 pass). `deployment/targets.json` marks the four apps `retired`; the directory lists 16 apps, journeys link to the receiving sections (`/themes/`, `/challenge/`, `/business/`, `/claims/`) and the count copy says sixteen. Deployment still deploys all 20. `deployment/verify-seo.py` expects retired pages' canonical and og:url to equal the mapped URL and counts only active apps in the directory checks. Checks: `node homepage/build.mjs` (6 pages, 16 app links), `python deployment/verify-seo.py` passed (21 sites, 390 pages, 349 indexable).
+
+## 2026-11-11T12:10:36+06:00 — P3 step A verified; R3 held for spot-check
+
+T3.1–T3.8 done on `phase-3-merges` (receiving sections by four subagents; import protocol, shell banner, redirect map, directory and validator by the orchestrator; claims verified by a separate subagent). Full checks in `plan/implementation/releases/R3.md`. Not released: the 12 rebuilt claims need the owner's spot-check before merge to `main`.

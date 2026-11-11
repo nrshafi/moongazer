@@ -129,7 +129,7 @@ Update this table when a task or phase starts or finishes (see protocol §6).
 | P0 | Done | main (uncommitted) | 2026-11-11 | Plan written; superseded banners added; DNA and services plan updated. |
 | P1 | Done (R1 pushed) | phase-1-trust-fixes → main | 2026-11-11 | 19 tasks + tooling; see `releases/R1.md`. Tasks delegated to Sonnet/Haiku subagents were reviewed and committed by the orchestrator. |
 | P2 | Done (R2 pushed) | phase-2-names → main | 2026-11-11 | Names, nav verbs, interface words, honorifics, directory, social cards; see `releases/R2.md`. |
-| P3 step A | Not started | | | |
+| P3 step A | Verified; release held for owner spot-check of 12 claims | phase-3-merges (pushed, not merged) | 2026-11-11 | See `releases/R3.md`. |
 | P3 step B | Not started | | | |
 | P4 | Not started | | | |
 | P5 | Not started | | | |
