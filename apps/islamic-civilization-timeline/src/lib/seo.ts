@@ -42,6 +42,12 @@ export function descriptionSnippet(value: string, maximum = 180): string {
   return (boundary > 0 ? cut.slice(0, boundary) : cut).replace(/[,:;.]$/, '') + '…';
 }
 
+/** Ends a label as a sentence without doubling punctuation ("Why?" stays "Why?", never "Why?."). */
+export function sentence(label: string): string {
+  const text = label.trim();
+  return /[.?!…]$/.test(text) ? text : `${text}.`;
+}
+
 export function encodeJsonLd(value: unknown): string {
   return JSON.stringify(value).replace(/</g, '\\u003c');
 }
@@ -50,7 +56,7 @@ const pages: Record<string, SeoPage> = {
   '/': {path:'/', title:settings.title, name:config.name, description:settings.description, indexable:true},
   '/sources/': {
     path:'/sources/', title:`Sources & methodology | ${settings.shortName}`, name:'Sources & methodology',
-    description:`Source notes and attribution for ${config.name}. Read the referenced editions, source links and editorial limits behind the learning activities.`, indexable:true
+    description:`Source notes and attribution for ${sentence(config.name)} Read the referenced editions, source links and editorial limits behind the learning activities.`, indexable:true
   },
   '/privacy/': {
     path:'/privacy/', title:`Privacy & browser storage | ${settings.shortName}`, name:'Privacy & storage',
@@ -70,9 +76,9 @@ if (settings.collection) {
     if (typeof id !== 'string' || !/^[a-z0-9-]+$/.test(id) || typeof name !== 'string') throw new Error('Invalid SEO route record');
     const label = name + (settings.nameSuffix || '');
     const summary = entry[settings.summaryField || 'summary'];
-    let description = `${settings.detailLead ? settings.detailLead + ': ' : ''}${label}. ${typeof summary === 'string' ? summary : settings.description}`;
-    if (settings.detailMode === 'salah') description = `${label}. Study the Arabic recitation and its meaning, inspect source notes and try a short reading check in Understand Salah Lab.`;
-    if (settings.detailMode === 'family') description = `${label}. A family activity pack for ages ${entry.age}, with a reading check, open discussion and shared activity. Suggested time: ${entry.minutes} minutes.`;
+    let description = `${settings.detailLead ? settings.detailLead + ': ' : ''}${sentence(label)} ${typeof summary === 'string' && summary.trim() ? summary : settings.description}`;
+    if (settings.detailMode === 'salah') description = `${sentence(label)} Study the Arabic recitation and its meaning, inspect source notes and try a short reading check in Understand Salah Lab.`;
+    if (settings.detailMode === 'family') description = `${sentence(label)} A family activity pack for ages ${entry.age}, with a reading check, open discussion and shared activity. Suggested time: ${entry.minutes} minutes.`;
     const path = `/${settings.prefix}/${id}/`;
     if (pages[path]) throw new Error(`Duplicate SEO route: ${path}`);
     pages[path] = {path, title:`${label} | ${settings.shortName}`, name:label, description:descriptionSnippet(description), indexable:true};

@@ -35,3 +35,42 @@ test('directory metadata keeps authored content escaped in HTML and JSON-LD', ()
   const schema = JSON.parse(blocks[0][1]);
   expect(schema['@graph'].find(node=>node['@type']==='ItemList').itemListElement[0].name).toBe(name);
 });
+
+import { sentence } from '../apps/guess-the-surah/src/lib/seo';
+import { readdirSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+test('labels ending in punctuation are not given a second full stop', () => {
+  expect(sentence('Why?')).toBe('Why?');
+  expect(sentence('Look!')).toBe('Look!');
+  expect(sentence('Done.')).toBe('Done.');
+  expect(sentence('A title')).toBe('A title.');
+});
+test('every app gives each detail page its own description and never writes "?."', async () => {
+  const appsDir = join(import.meta.dir, '..', 'apps');
+  const apps = readdirSync(appsDir).filter(app => existsSync(join(appsDir, app, 'src/lib/seo.ts')));
+  expect(apps.length).toBeGreaterThan(0);
+  for (const app of apps) {
+    const mod = await import(join(appsDir, app, 'src/lib/seo.ts'));
+    const pages = (mod.seoPages as {path:string;description:string}[]);
+    for (const page of pages) expect(page.description, `${app} ${page.path}`).not.toMatch(/[?!]\./);
+    const details = pages.filter(page => !['/', '/sources/', '/privacy/', '/404.html'].includes(page.path));
+    const seen = new Map<string, string>();
+    for (const page of details) {
+      const previous = seen.get(page.description);
+      expect(previous, `${app}: ${page.path} repeats the description of ${previous}`).toBeUndefined();
+      seen.set(page.description, page.path);
+    }
+  }
+});
+test('each app points summaryField at a non-empty text field of every detail record', async () => {
+  const appsDir = join(import.meta.dir, '..', 'apps');
+  for (const app of readdirSync(appsDir).filter(app => existsSync(join(appsDir, app, 'src/data/seo.json')))) {
+    const profile = await Bun.file(join(appsDir, app, 'src/data/seo.json')).json();
+    if (!profile.collection || profile.detailMode) continue;
+    const content = await Bun.file(join(appsDir, app, 'src/data/content.json')).json();
+    const field = profile.summaryField || 'summary';
+    for (const entry of content[profile.collection]) {
+      expect(typeof entry[field] === 'string' && entry[field].trim().length > 0, `${app}: ${entry.id} has no text in "${field}"`).toBe(true);
+    }
+  }
+});
