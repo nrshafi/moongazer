@@ -1,8 +1,11 @@
-import {checkRelationship} from './assessment';
+import {checkRelationship,relationshipAt} from './assessment';
 const form=document.getElementById('relationship') as HTMLFormElement;
 const feedback=document.getElementById('relationship-feedback')!;
+// The answer is held as an index so the category label is not printed on the page before the reader answers.
+const expected=relationshipAt(form.dataset.answer);
 form.addEventListener('submit',event=>{
   event.preventDefault();
+  if(!expected){feedback.textContent='This check could not load. Read the report notes above instead.';return;}
   const selected=new FormData(form).get('answer');
-  feedback.textContent=checkRelationship(selected,form.dataset.kind!)?'Yes. '+form.dataset.explanation:'Revisit the sequence. This entry is classified as “'+form.dataset.kind+'”. '+form.dataset.explanation;
+  feedback.textContent=checkRelationship(selected,expected)?'Yes: '+expected+'. '+form.dataset.explanation:'Not quite. This report is classified as “'+expected+'”. '+form.dataset.explanation;
 });

@@ -3,7 +3,7 @@
     {
       "id": "first-reading",
       "title": "The opening of Al-Alaq",
-      "topic": "Transmitted occasion",
+      "topic": "Beginning of revelation",
       "kind": "Transmitted occasion",
       "passage": {
         "ref": "96:1-5",
@@ -32,7 +32,7 @@
     {
       "id": "safa-warning",
       "title": "A warning at Safa",
-      "topic": "Transmitted occasion",
+      "topic": "Calling to faith",
       "kind": "Transmitted occasion",
       "passage": {
         "ref": "111:1-5",
@@ -61,7 +61,7 @@
     {
       "id": "qiblah",
       "title": "News of a changed direction",
-      "topic": "General context",
+      "topic": "Prayer direction",
       "kind": "General context",
       "passage": {
         "ref": "2:144",
@@ -90,7 +90,7 @@
     {
       "id": "safa-marwa",
       "title": "Why “no blame” needs context",
-      "topic": "Transmitted occasion",
+      "topic": "Hajj and Umrah",
       "kind": "Transmitted occasion",
       "passage": {
         "ref": "2:158",
@@ -125,7 +125,7 @@
     {
       "id": "fasting-nights",
       "title": "An earlier restriction and a concession",
-      "topic": "Transmitted occasion",
+      "topic": "Fasting",
       "kind": "Transmitted occasion",
       "passage": {
         "ref": "2:187",
@@ -154,7 +154,7 @@
     {
       "id": "pilgrimage-trade",
       "title": "Markets during pilgrimage",
-      "topic": "Transmitted occasion",
+      "topic": "Hajj and Umrah",
       "kind": "Transmitted occasion",
       "passage": {
         "ref": "2:198",
@@ -183,7 +183,7 @@
     {
       "id": "beloved-garden",
       "title": "A garden given after hearing a verse",
-      "topic": "Response after revelation",
+      "topic": "Charity",
       "kind": "Response after revelation",
       "passage": {
         "ref": "3:92",
@@ -212,7 +212,7 @@
     {
       "id": "spilled-drink",
       "title": "Responding when news arrives",
-      "topic": "Response after revelation",
+      "topic": "Food and drink",
       "kind": "Response after revelation",
       "passage": {
         "ref": "5:90",
@@ -241,7 +241,7 @@
     {
       "id": "slander",
       "title": "The report of the false accusation",
-      "topic": "Transmitted occasion",
+      "topic": "Speech and reputation",
       "kind": "Transmitted occasion",
       "passage": {
         "ref": "24:11-16",
@@ -270,7 +270,7 @@
     {
       "id": "raised-voices",
       "title": "Voices in the presence of the Prophet",
-      "topic": "Transmitted occasion",
+      "topic": "Manners",
       "kind": "Transmitted occasion",
       "passage": {
         "ref": "49:2",

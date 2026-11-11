@@ -28,3 +28,13 @@ test('later responses are not silently relabeled as causes of revelation',()=>{
  expect(readings.find(item=>item.id==='qiblah')!.kind).toBe('General context');
  expect(readings.find(item=>item.id==='safa-marwa')!.sources).toHaveLength(2);
 });
+
+import {relationshipAt} from '../src/lib/assessment';
+import {readFileSync} from 'node:fs';
+test('topics are subjects, not the quiz answers, and the reading page does not print the category before the check',()=>{
+ for(const r of readings){expect(relationships as readonly string[]).not.toContain(r.topic);expect(relationships as readonly string[]).toContain(r.kind);expect(relationshipAt(relationships.indexOf(r.kind as typeof relationships[number]))).toBe(r.kind as typeof relationships[number]);}
+ expect(new Set(readings.map(r=>r.topic)).size).toBeGreaterThan(5);
+ const page=readFileSync(new URL('../src/pages/reading/[id].astro',import.meta.url),'utf8');
+ expect(page).not.toContain('{item.kind}');expect(page).not.toContain('data-kind');
+ for(const bad of [undefined,'',-1,3,'1.5','x'])expect(relationshipAt(bad)).toBeUndefined();
+});
