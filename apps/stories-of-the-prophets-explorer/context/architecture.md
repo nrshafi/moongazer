@@ -77,3 +77,15 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Anonymous counter hook points (P4 T4.7)
+
+The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with `navigator.sendBeacon` to `moongazer.tech/api/event`. It is a silent no-op on preview hosts, with Global Privacy Control, or when sendBeacon is missing. `activity_started` fires once per item per page load. Item ids are stable content ids only; answers and selections are never sent.
+
+| Hook | Where | Event and id |
+| --- | --- | --- |
+| Reading check submitted (prophet page) | `src/lib/quiz.ts`, form submit (`form[data-item-id]`) | `activity_started` and `activity_completed` with the prophet id |
+| Report an error (check result) | `src/lib/quiz.ts`, `#feedback` | none; `a.feedback-link` opens the footer form |
+| Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |
+
+The index cards and filters send no events. The prophet page has no other reveal or copy control.
