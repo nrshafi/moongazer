@@ -69,3 +69,18 @@ h1{font-size:clamp(2.1rem,4vw,3.2rem)}.intro .eyebrow{margin-bottom:0}.intro h1{
 :root[data-theme=dark] .arabic,:root[data-theme=light] .arabic{line-height:2.1}
 @media(max-width:580px){.arabic{font-size:1.6rem}}
 [lang=ar]{font-style:normal;letter-spacing:0}
+/* Print (P5): activity only, black on white. Chrome, drawer, guide, feedback and the session-end block are hidden. */
+@media print{
+:root:root,:root:root[data-theme][data-accent]{--bg:#fff;--surface:#fff;--surface-2:#fff;--ink:#000;--muted:#222;--line:#999;--accent:#000;--accent-hover:#000;--accent-ink:#000;--tint:#fff;--on-accent:#fff;--panel-wash:#fff;--hero-wash:#fff;color-scheme:light}
+body{background:#fff;color:#000}
+.site-header,.site-footer,.seo-breadcrumb,.feedback-wrap,.learning-guide,.how-it-works,.sidebar,.session-end,.skip-link,.toast,.projector-toggle,.no-print,dialog{display:none!important}
+main{padding:0;max-width:none}.workspace{display:block}.panel{box-shadow:none;border:1px solid #999;background:#fff}.panel-head{background:#fff}.intro{border-bottom:1px solid #999;margin-bottom:12px}
+}
+/* Projector (P5): the header toggle is added by shell.ts only when <main> or <body> has data-projector. Text x1.35, simpler chrome, higher contrast; saved only when the app's remember opt-in is on. */
+:root[data-projector=on]{font-size:135%;--ink:#000;--muted:#1f1f1f;--line:#5a5a5a}
+:root[data-projector=on][data-theme=dark]{--ink:#fff;--muted:#ececec;--line:#a8a8a8}
+:root[data-projector=on] :is(.seo-breadcrumb,.site-footer,.feedback-wrap,.learning-guide,.brand small,.all-apps,.nav-sources){display:none}
+:root[data-projector=on] .site-header{box-shadow:none;backdrop-filter:none}
+:root[data-projector=on] .panel,:root[data-projector=on] .how-it-works{box-shadow:none;border-color:var(--ink)}
+.projector-toggle{white-space:nowrap;min-height:38px}
+@media(max-width:520px){.projector-toggle{padding:6px 9px;font-size:.7rem;min-height:36px}}

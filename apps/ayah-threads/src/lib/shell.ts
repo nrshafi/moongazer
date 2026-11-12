@@ -1,4 +1,4 @@
-import { namespace, read, write } from './utils';
+import { namespace, read, write, forget } from './utils';
 
 // Focus outlines are reserved for keyboard navigation, including new controls.
 document.addEventListener('pointerdown', () => {
@@ -16,6 +16,30 @@ const dialog=document.getElementById('storage-dialog') as HTMLDialogElement;
 document.getElementById('storage-open')?.addEventListener('click',()=>dialog.showModal());
 document.getElementById('storage-clear')?.addEventListener('click',()=>{try {const prefix=namespace()+':';for(let i=localStorage.length-1;i>=0;i--){const key=localStorage.key(i);if(key?.startsWith(prefix))localStorage.removeItem(key);}}catch{}location.reload();});
 document.addEventListener('click',event=>{const target=event.target as HTMLElement;if(target.closest('[data-print]'))window.print();});
+
+// Projector (P5): a header toggle rendered only when <main> or <body> carries data-projector. It lasts the session;
+// it is saved under the namespaced key 'projector' only while the app's own 'remember' opt-in is on.
+if (document.querySelector('main[data-projector],body[data-projector]')) {
+  const root = document.documentElement;
+  const isBoolean = (value: unknown): value is boolean => typeof value === 'boolean';
+  const optedIn = () => read('remember', isBoolean) === true;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.id = 'projector-toggle';
+  button.className = 'button secondary small projector-toggle';
+  const show = (on: boolean) => {
+    if (on) root.dataset.projector = 'on'; else delete root.dataset.projector;
+    button.setAttribute('aria-pressed', String(on));
+    button.textContent = on ? 'Exit projector' : 'Projector';
+  };
+  show(optedIn() && read('projector', isBoolean) === true);
+  button.addEventListener('click', () => {
+    const on = root.dataset.projector !== 'on';
+    show(on);
+    if (optedIn()) { if (on) write('projector', true); else forget('projector'); }
+  });
+  if (toggle) toggle.before(button); else document.querySelector('header nav')?.append(button);
+}
 
 // Feedback (P4): at submit, record how long the page has been open (performance.now(), not the device
 // clock) for the server's minimum time-to-submit check, and open the footer form from compact links.
