@@ -1,4 +1,4 @@
-// Directory copy of the shared daily logic (P6 T6.1 / T6.6). Plain ES module; not wired into any page yet.
+// Directory copy of the shared daily logic (P6 T6.1 / T6.6), used by app.js for the "Tonight on Moongazer" tiles.
 // Mirrors DAILY_EPOCH, dayNumber and dailyIndex from apps/*/src/lib/daily.ts (and shuffle from utils.ts).
 // homepage/tests/daily-parity.test.ts asserts identical output; change both together.
 
@@ -34,4 +34,25 @@ export function dailyIndex(n, bankLength, seed) {
   const order = shuffle(Array.from({ length: bankLength }, (_, i) => i), seed);
   const pos = (((n - 1) % bankLength) + bankLength) % bankLength;
   return order[pos];
+}
+
+/** Seed for the directory's ayah of the night permutation (T6.6). */
+export const AYAH_SEED = 60;
+
+/**
+ * Ayah of the night index for the local date of `date`. Uses the same day count as dayNumber but does not clamp before
+ * the epoch, so the directory shows an ayah every night, launch or not. On and after the epoch it equals
+ * dailyIndex(dayNumber(date), length, AYAH_SEED).
+ */
+export function ayahIndex(date, length) {
+  const [y, m, d] = DAILY_EPOCH.split('-').map(Number);
+  const raw = Math.floor((Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - Date.UTC(y, m - 1, d)) / DAY_MS) + 1;
+  return dailyIndex(raw, length, AYAH_SEED);
+}
+
+/** "31 December 2026" for a 'YYYY-MM-DD' key, without time-zone conversion. */
+export function longDate(key) {
+  const [y, m, d] = key.split('-').map(Number);
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  return `${d} ${months[m - 1]} ${y}`;
 }
