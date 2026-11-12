@@ -2,8 +2,8 @@
 // Mirrors DAILY_EPOCH, dayNumber and dailyIndex from apps/*/src/lib/daily.ts (and shuffle from utils.ts).
 // homepage/tests/daily-parity.test.ts asserts identical output; change both together.
 
-/** Launch day: puzzle #1, local calendar date 'YYYY-MM-DD'. Placeholder until the release step sets the real date. */
-export const DAILY_EPOCH = '2026-12-31';
+/** Launch day: puzzle #1, local calendar date 'YYYY-MM-DD'. Set at the R6 release to the publication date. */
+export const DAILY_EPOCH = '2026-11-12';
 
 const DAY_MS = 86400000;
 

@@ -6,9 +6,9 @@ import { whatsappUrl } from './session-end';
 export { whatsappUrl };
 
 /** Launch day: puzzle #1. Local calendar date, 'YYYY-MM-DD'. */
-export const DAILY_EPOCH = '2026-12-31';
+export const DAILY_EPOCH = '2026-11-12';
 /** True while DAILY_EPOCH is a placeholder. The release step sets the real date and flips this to false (tests/daily-release.test.ts). */
-export const DAILY_EPOCH_IS_PLACEHOLDER = true;
+export const DAILY_EPOCH_IS_PLACEHOLDER = false;
 
 const DAY_MS = 86400000;
 const KEY = /^(\d{4})-(\d{2})-(\d{2})$/;
