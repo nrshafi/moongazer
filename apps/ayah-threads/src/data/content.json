@@ -7,13 +7,13 @@
       "refs": [
         "2:153",
         "16:127",
-        "103:3"
+        "39:10"
       ],
       "hint": "Look for how people endure difficulty.",
-      "explanation": "These passages explicitly refer to patience in worship, hardship, and mutual encouragement.",
+      "explanation": "These passages explicitly refer to steadfastness in worship, in hardship, and in the reward promised to those who endure.",
       "distractors": [
-        "Gratitude",
-        "Hospitality",
+        "Careful speech",
+        "Moderation",
         "Consultation"
       ],
       "anchor": "2:153",
@@ -33,11 +33,11 @@
           "translationUrl": "https://quran.com/16:127?translations=19"
         },
         {
-          "ref": "103:3",
-          "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
-          "translation": "Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance.",
-          "url": "https://quran.com/103:3",
-          "translationUrl": "https://quran.com/103:3?translations=19"
+          "ref": "39:10",
+          "arabic": "قُلْ يَـٰعِبَادِ ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ رَبَّكُمْ ۚ لِلَّذِينَ أَحْسَنُوا۟ فِى هَـٰذِهِ ٱلدُّنْيَا حَسَنَةٌ ۗ وَأَرْضُ ٱللَّهِ وَٰسِعَةٌ ۗ إِنَّمَا يُوَفَّى ٱلصَّـٰبِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ",
+          "translation": "Say: O My bondmen who believe! Observe your duty to your Lord. For those who do good in this world there is good, and Allah's earth is spacious. Verily the steadfast will be paid their wages without stint.",
+          "url": "https://quran.com/39:10",
+          "translationUrl": "https://quran.com/39:10?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/2:153/tafsirs/16"
@@ -54,9 +54,9 @@
       "hint": "Notice the response to receiving a gift.",
       "explanation": "Each passage mentions thankfulness, with different settings and audiences.",
       "distractors": [
-        "Patience",
-        "Privacy",
-        "Fasting"
+        "Hope",
+        "Giving",
+        "Reconciliation"
       ],
       "anchor": "14:7",
       "passages": [
@@ -96,9 +96,9 @@
       "hint": "What remains necessary even when feelings get in the way?",
       "explanation": "The shared thread is justice, including situations where personal loyalties or hostility can make fairness difficult.",
       "distractors": [
-        "Hospitality",
-        "Fasting",
-        "Creation"
+        "Prayer",
+        "Human relationships",
+        "Gentle responses"
       ],
       "anchor": "4:135",
       "passages": [
@@ -132,15 +132,15 @@
       "theme": "Giving",
       "refs": [
         "2:261",
-        "2:271",
+        "3:92",
         "76:8"
       ],
       "hint": "Look for something offered for another person's benefit.",
-      "explanation": "The passages describe spending, alms, or feeding others. The intended connection is giving, rather than a claim that all three describe the same situation.",
+      "explanation": "The passages describe spending wealth or food for the sake of others and of Allah: a grain that multiplies, spending what one loves, and feeding the needy. The intended connection is giving, rather than a claim that all three describe the same situation.",
       "distractors": [
         "Privacy",
-        "Consultation",
-        "Time"
+        "Night and day",
+        "Signs in creation"
       ],
       "anchor": "2:261",
       "passages": [
@@ -152,11 +152,11 @@
           "translationUrl": "https://quran.com/2:261?translations=19"
         },
         {
-          "ref": "2:271",
-          "arabic": "إِن تُبْدُوا۟ ٱلصَّدَقَـٰتِ فَنِعِمَّا هِىَ ۖ وَإِن تُخْفُوهَا وَتُؤْتُوهَا ٱلْفُقَرَآءَ فَهُوَ خَيْرٌ لَّكُمْ ۚ وَيُكَفِّرُ عَنكُم مِّن سَيِّـَٔاتِكُمْ ۗ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
-          "translation": "If ye publish your almsgiving, it is well, but if ye hide it and give it to the poor, it will be better for you, and will atone for some of your ill-deeds. Allah is Informed of what ye do.",
-          "url": "https://quran.com/2:271",
-          "translationUrl": "https://quran.com/2:271?translations=19"
+          "ref": "3:92",
+          "arabic": "لَن تَنَالُوا۟ ٱلْبِرَّ حَتَّىٰ تُنفِقُوا۟ مِمَّا تُحِبُّونَ ۚ وَمَا تُنفِقُوا۟ مِن شَىْءٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ",
+          "translation": "Ye will not attain unto piety until ye spend of that which ye love. And whatsoever ye spend, Allah is Aware thereof.",
+          "url": "https://quran.com/3:92",
+          "translationUrl": "https://quran.com/3:92?translations=19"
         },
         {
           "ref": "76:8",
@@ -174,15 +174,15 @@
       "theme": "Mercy",
       "refs": [
         "7:156",
-        "39:53",
+        "6:12",
         "21:107"
       ],
       "hint": "Look for compassion that reaches beyond one situation.",
-      "explanation": "Mercy is named in each passage. The editorial connection brings together different references to Allah's mercy.",
+      "explanation": "Mercy is named in each passage: Allah's mercy embracing all things, mercy He prescribed for Himself, and the messenger sent as a mercy. The editorial connection brings together different references to mercy.",
       "distractors": [
-        "Promises",
-        "Moderation",
-        "Time"
+        "Trust in Allah",
+        "Hospitality",
+        "Privacy"
       ],
       "anchor": "7:156",
       "passages": [
@@ -194,11 +194,11 @@
           "translationUrl": "https://quran.com/7:156?translations=19"
         },
         {
-          "ref": "39:53",
-          "arabic": "۞ قُلْ يَـٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ ۚ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
-          "translation": "Say: O My slaves who have been prodigal to their own hurt! Despair not of the mercy of Allah, Who forgiveth all sins. Lo! He is the Forgiving, the Merciful.",
-          "url": "https://quran.com/39:53",
-          "translationUrl": "https://quran.com/39:53?translations=19"
+          "ref": "6:12",
+          "arabic": "قُل لِّمَن مَّا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ قُل لِّلَّهِ ۚ كَتَبَ عَلَىٰ نَفْسِهِ ٱلرَّحْمَةَ ۚ لَيَجْمَعَنَّكُمْ إِلَىٰ يَوْمِ ٱلْقِيَـٰمَةِ لَا رَيْبَ فِيهِ ۚ ٱلَّذِينَ خَسِرُوٓا۟ أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ",
+          "translation": "Say: Unto whom belongeth whatsoever is in the heavens and the earth? Say: Unto Allah. He hath prescribed for Himself mercy, that He may bring you all together to the Day of Resurrection whereof there is no doubt. Those who ruin their souls will not believe.",
+          "url": "https://quran.com/6:12",
+          "translationUrl": "https://quran.com/6:12?translations=19"
         },
         {
           "ref": "21:107",
@@ -222,9 +222,9 @@
       "hint": "What can follow wrongdoing besides retaliation?",
       "explanation": "The passages discuss pardoning or repentance and forgiveness. Their contexts differ, so read the complete passages after finding the link.",
       "distractors": [
-        "Creation",
-        "Hospitality",
-        "Fasting"
+        "Careful speech",
+        "Truth and falsehood",
+        "Learning"
       ],
       "anchor": "24:22",
       "passages": [
@@ -258,15 +258,15 @@
       "theme": "Truthfulness",
       "refs": [
         "9:119",
-        "33:70",
-        "33:35"
+        "5:119",
+        "33:24"
       ],
-      "hint": "Pay attention to the quality of someone's words.",
-      "explanation": "Truthfulness and upright speech connect these passages. The theme label is an editorial aid, not a replacement for commentary.",
+      "hint": "Notice who is praised or rewarded for being true.",
+      "explanation": "Truthfulness connects these passages: being with the truthful, the benefit their truthfulness brings them, and the reward of the true for their truth. The theme label is an editorial aid, not a replacement for commentary.",
       "distractors": [
         "Privacy",
-        "Consultation",
-        "Moderation"
+        "Hospitality",
+        "Patience"
       ],
       "anchor": "9:119",
       "passages": [
@@ -278,18 +278,18 @@
           "translationUrl": "https://quran.com/9:119?translations=19"
         },
         {
-          "ref": "33:70",
-          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَقُولُوا۟ قَوْلًا سَدِيدًا",
-          "translation": "O ye who believe! Guard your duty to Allah, and speak words straight to the point;",
-          "url": "https://quran.com/33:70",
-          "translationUrl": "https://quran.com/33:70?translations=19"
+          "ref": "5:119",
+          "arabic": "قَالَ ٱللَّهُ هَـٰذَا يَوْمُ يَنفَعُ ٱلصَّـٰدِقِينَ صِدْقُهُمْ ۚ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۚ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْعَظِيمُ",
+          "translation": "Allah saith: This is a day in which their truthfulness profiteth the truthful, for theirs are Gardens underneath which rivers flow, wherein they are secure for ever, Allah taking pleasure in them and they in Him. That is the great triumph.",
+          "url": "https://quran.com/5:119",
+          "translationUrl": "https://quran.com/5:119?translations=19"
         },
         {
-          "ref": "33:35",
-          "arabic": "إِنَّ ٱلْمُسْلِمِينَ وَٱلْمُسْلِمَـٰتِ وَٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ وَٱلْقَـٰنِتِينَ وَٱلْقَـٰنِتَـٰتِ وَٱلصَّـٰدِقِينَ وَٱلصَّـٰدِقَـٰتِ وَٱلصَّـٰبِرِينَ وَٱلصَّـٰبِرَٰتِ وَٱلْخَـٰشِعِينَ وَٱلْخَـٰشِعَـٰتِ وَٱلْمُتَصَدِّقِينَ وَٱلْمُتَصَدِّقَـٰتِ وَٱلصَّـٰٓئِمِينَ وَٱلصَّـٰٓئِمَـٰتِ وَٱلْحَـٰفِظِينَ فُرُوجَهُمْ وَٱلْحَـٰفِظَـٰتِ وَٱلذَّٰكِرِينَ ٱللَّهَ كَثِيرًا وَٱلذَّٰكِرَٰتِ أَعَدَّ ٱللَّهُ لَهُم مَّغْفِرَةً وَأَجْرًا عَظِيمًا",
-          "translation": "Lo! men who surrender unto Allah, and women who surrender, and men who believe and women who believe, and men who obey and women who obey, and men who speak the truth and women who speak the truth, and men who persevere (in righteousness) and women who persevere, and men who are humble and women who are humble, and men who give alms and women who give alms, and men who fast and women who fast, and men who guard their modesty and women who guard (their modesty), and men who remember Allah much and women who remember - Allah hath prepared for them forgiveness and a vast reward.",
-          "url": "https://quran.com/33:35",
-          "translationUrl": "https://quran.com/33:35?translations=19"
+          "ref": "33:24",
+          "arabic": "لِّيَجْزِىَ ٱللَّهُ ٱلصَّـٰدِقِينَ بِصِدْقِهِمْ وَيُعَذِّبَ ٱلْمُنَـٰفِقِينَ إِن شَآءَ أَوْ يَتُوبَ عَلَيْهِمْ ۚ إِنَّ ٱللَّهَ كَانَ غَفُورًا رَّحِيمًا",
+          "translation": "That Allah may reward the true men for their truth, and punish the hypocrites if He will, or relent toward them (if He will). Lo! Allah is Forgiving, Merciful.",
+          "url": "https://quran.com/33:24",
+          "translationUrl": "https://quran.com/33:24?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/9:119/tafsirs/16"
@@ -306,9 +306,9 @@
       "hint": "Which family relationship appears in every passage?",
       "explanation": "All three passages explicitly mention parents. They address different aspects of that relationship.",
       "distractors": [
-        "Neighbors",
-        "Hospitality",
-        "Time"
+        "Humility",
+        "Time and effort",
+        "Learning"
       ],
       "anchor": "17:23",
       "passages": [
@@ -348,9 +348,9 @@
       "hint": "Look for reading, knowing, and seeking more.",
       "explanation": "Reading and knowledge form the intended connection. One passage is a continuous five-ayah selection.",
       "distractors": [
-        "Giving",
+        "Truthfulness",
         "Moderation",
-        "Reconciliation"
+        "Humility"
       ],
       "anchor": "96:1",
       "passages": [
@@ -384,15 +384,15 @@
       "theme": "Trust in Allah",
       "refs": [
         "65:3",
-        "3:159",
-        "14:12"
+        "14:12",
+        "64:13"
       ],
       "hint": "What accompanies action when outcomes cannot be controlled?",
-      "explanation": "These passages explicitly mention placing trust in Allah in different circumstances.",
+      "explanation": "These passages explicitly mention placing trust in Allah in different circumstances: sufficiency in Him, enduring hurt, and the reliance of the believers.",
       "distractors": [
-        "Privacy",
-        "Hospitality",
-        "Fasting"
+        "Giving",
+        "Mercy",
+        "Signs in creation"
       ],
       "anchor": "65:3",
       "passages": [
@@ -404,18 +404,18 @@
           "translationUrl": "https://quran.com/65:3?translations=19"
         },
         {
-          "ref": "3:159",
-          "arabic": "فَبِمَا رَحْمَةٍ مِّنَ ٱللَّهِ لِنتَ لَهُمْ ۖ وَلَوْ كُنتَ فَظًّا غَلِيظَ ٱلْقَلْبِ لَٱنفَضُّوا۟ مِنْ حَوْلِكَ ۖ فَٱعْفُ عَنْهُمْ وَٱسْتَغْفِرْ لَهُمْ وَشَاوِرْهُمْ فِى ٱلْأَمْرِ ۖ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى ٱللَّهِ ۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُتَوَكِّلِينَ",
-          "translation": "It was by the mercy of Allah that thou wast lenient with them (O Muhammad), for if thou hadst been stern and fierce of heart they would have dispersed from round about thee. So pardon them and ask forgiveness for them and consult with them upon the conduct of affairs. And when thou art resolved, then put thy trust in Allah. Lo! Allah loveth those who put their trust (in Him).",
-          "url": "https://quran.com/3:159",
-          "translationUrl": "https://quran.com/3:159?translations=19"
-        },
-        {
           "ref": "14:12",
           "arabic": "وَمَا لَنَآ أَلَّا نَتَوَكَّلَ عَلَى ٱللَّهِ وَقَدْ هَدَىٰنَا سُبُلَنَا ۚ وَلَنَصْبِرَنَّ عَلَىٰ مَآ ءَاذَيْتُمُونَا ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُتَوَكِّلُونَ",
           "translation": "How should we not put our trust in Allah when He hath shown us our ways? We surely will endure the hurt ye do us. In Allah let the trusting put their trust.",
           "url": "https://quran.com/14:12",
           "translationUrl": "https://quran.com/14:12?translations=19"
+        },
+        {
+          "ref": "64:13",
+          "arabic": "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
+          "translation": "Allah! There is no god except Him. In Allah, therefore, let believers put their trust.",
+          "url": "https://quran.com/64:13",
+          "translationUrl": "https://quran.com/64:13?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/65:3/tafsirs/16"
@@ -1266,15 +1266,15 @@
       "id": "patience",
       "number": 1,
       "theme": "Patience",
-      "title": "Thread 01: Quran 2:153, 16:127 and 103:3",
-      "description": "Read Quran 2:153, 16:127 and 103:3 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
+      "title": "Thread 01: Quran 2:153, 16:127 and 39:10",
+      "description": "Read Quran 2:153, 16:127 and 39:10 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
       "refs": [
         "2:153",
         "16:127",
-        "103:3"
+        "39:10"
       ],
       "hint": "Look for how people endure difficulty.",
-      "explanation": "These passages explicitly refer to patience in worship, hardship, and mutual encouragement.",
+      "explanation": "These passages explicitly refer to steadfastness in worship, in hardship, and in the reward promised to those who endure.",
       "anchor": "2:153",
       "passages": [
         {
@@ -1292,11 +1292,11 @@
           "translationUrl": "https://quran.com/16:127?translations=19"
         },
         {
-          "ref": "103:3",
-          "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
-          "translation": "Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance.",
-          "url": "https://quran.com/103:3",
-          "translationUrl": "https://quran.com/103:3?translations=19"
+          "ref": "39:10",
+          "arabic": "قُلْ يَـٰعِبَادِ ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ رَبَّكُمْ ۚ لِلَّذِينَ أَحْسَنُوا۟ فِى هَـٰذِهِ ٱلدُّنْيَا حَسَنَةٌ ۗ وَأَرْضُ ٱللَّهِ وَٰسِعَةٌ ۗ إِنَّمَا يُوَفَّى ٱلصَّـٰبِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ",
+          "translation": "Say: O My bondmen who believe! Observe your duty to your Lord. For those who do good in this world there is good, and Allah's earth is spacious. Verily the steadfast will be paid their wages without stint.",
+          "url": "https://quran.com/39:10",
+          "translationUrl": "https://quran.com/39:10?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/2:153/tafsirs/16",
@@ -1386,15 +1386,15 @@
       "id": "giving",
       "number": 4,
       "theme": "Giving",
-      "title": "Thread 04: Quran 2:261, 2:271 and 76:8",
-      "description": "Read Quran 2:261, 2:271 and 76:8 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
+      "title": "Thread 04: Quran 2:261, 3:92 and 76:8",
+      "description": "Read Quran 2:261, 3:92 and 76:8 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
       "refs": [
         "2:261",
-        "2:271",
+        "3:92",
         "76:8"
       ],
       "hint": "Look for something offered for another person's benefit.",
-      "explanation": "The passages describe spending, alms, or feeding others. The intended connection is giving, rather than a claim that all three describe the same situation.",
+      "explanation": "The passages describe spending wealth or food for the sake of others and of Allah: a grain that multiplies, spending what one loves, and feeding the needy. The intended connection is giving, rather than a claim that all three describe the same situation.",
       "anchor": "2:261",
       "passages": [
         {
@@ -1405,11 +1405,11 @@
           "translationUrl": "https://quran.com/2:261?translations=19"
         },
         {
-          "ref": "2:271",
-          "arabic": "إِن تُبْدُوا۟ ٱلصَّدَقَـٰتِ فَنِعِمَّا هِىَ ۖ وَإِن تُخْفُوهَا وَتُؤْتُوهَا ٱلْفُقَرَآءَ فَهُوَ خَيْرٌ لَّكُمْ ۚ وَيُكَفِّرُ عَنكُم مِّن سَيِّـَٔاتِكُمْ ۗ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
-          "translation": "If ye publish your almsgiving, it is well, but if ye hide it and give it to the poor, it will be better for you, and will atone for some of your ill-deeds. Allah is Informed of what ye do.",
-          "url": "https://quran.com/2:271",
-          "translationUrl": "https://quran.com/2:271?translations=19"
+          "ref": "3:92",
+          "arabic": "لَن تَنَالُوا۟ ٱلْبِرَّ حَتَّىٰ تُنفِقُوا۟ مِمَّا تُحِبُّونَ ۚ وَمَا تُنفِقُوا۟ مِن شَىْءٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ",
+          "translation": "Ye will not attain unto piety until ye spend of that which ye love. And whatsoever ye spend, Allah is Aware thereof.",
+          "url": "https://quran.com/3:92",
+          "translationUrl": "https://quran.com/3:92?translations=19"
         },
         {
           "ref": "76:8",
@@ -1426,15 +1426,15 @@
       "id": "mercy",
       "number": 5,
       "theme": "Mercy",
-      "title": "Thread 05: Quran 7:156, 39:53 and 21:107",
-      "description": "Read Quran 7:156, 39:53 and 21:107 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
+      "title": "Thread 05: Quran 7:156, 6:12 and 21:107",
+      "description": "Read Quran 7:156, 6:12 and 21:107 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
       "refs": [
         "7:156",
-        "39:53",
+        "6:12",
         "21:107"
       ],
       "hint": "Look for compassion that reaches beyond one situation.",
-      "explanation": "Mercy is named in each passage. The editorial connection brings together different references to Allah's mercy.",
+      "explanation": "Mercy is named in each passage: Allah's mercy embracing all things, mercy He prescribed for Himself, and the messenger sent as a mercy. The editorial connection brings together different references to mercy.",
       "anchor": "7:156",
       "passages": [
         {
@@ -1445,11 +1445,11 @@
           "translationUrl": "https://quran.com/7:156?translations=19"
         },
         {
-          "ref": "39:53",
-          "arabic": "۞ قُلْ يَـٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ ۚ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
-          "translation": "Say: O My slaves who have been prodigal to their own hurt! Despair not of the mercy of Allah, Who forgiveth all sins. Lo! He is the Forgiving, the Merciful.",
-          "url": "https://quran.com/39:53",
-          "translationUrl": "https://quran.com/39:53?translations=19"
+          "ref": "6:12",
+          "arabic": "قُل لِّمَن مَّا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ قُل لِّلَّهِ ۚ كَتَبَ عَلَىٰ نَفْسِهِ ٱلرَّحْمَةَ ۚ لَيَجْمَعَنَّكُمْ إِلَىٰ يَوْمِ ٱلْقِيَـٰمَةِ لَا رَيْبَ فِيهِ ۚ ٱلَّذِينَ خَسِرُوٓا۟ أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ",
+          "translation": "Say: Unto whom belongeth whatsoever is in the heavens and the earth? Say: Unto Allah. He hath prescribed for Himself mercy, that He may bring you all together to the Day of Resurrection whereof there is no doubt. Those who ruin their souls will not believe.",
+          "url": "https://quran.com/6:12",
+          "translationUrl": "https://quran.com/6:12?translations=19"
         },
         {
           "ref": "21:107",
@@ -1506,15 +1506,15 @@
       "id": "truthfulness",
       "number": 7,
       "theme": "Truthfulness",
-      "title": "Thread 07: Quran 9:119, 33:70 and 33:35",
-      "description": "Read Quran 9:119, 33:70 and 33:35 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
+      "title": "Thread 07: Quran 9:119, 5:119 and 33:24",
+      "description": "Read Quran 9:119, 5:119 and 33:24 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
       "refs": [
         "9:119",
-        "33:70",
-        "33:35"
+        "5:119",
+        "33:24"
       ],
-      "hint": "Pay attention to the quality of someone's words.",
-      "explanation": "Truthfulness and upright speech connect these passages. The theme label is an editorial aid, not a replacement for commentary.",
+      "hint": "Notice who is praised or rewarded for being true.",
+      "explanation": "Truthfulness connects these passages: being with the truthful, the benefit their truthfulness brings them, and the reward of the true for their truth. The theme label is an editorial aid, not a replacement for commentary.",
       "anchor": "9:119",
       "passages": [
         {
@@ -1525,18 +1525,18 @@
           "translationUrl": "https://quran.com/9:119?translations=19"
         },
         {
-          "ref": "33:70",
-          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَقُولُوا۟ قَوْلًا سَدِيدًا",
-          "translation": "O ye who believe! Guard your duty to Allah, and speak words straight to the point;",
-          "url": "https://quran.com/33:70",
-          "translationUrl": "https://quran.com/33:70?translations=19"
+          "ref": "5:119",
+          "arabic": "قَالَ ٱللَّهُ هَـٰذَا يَوْمُ يَنفَعُ ٱلصَّـٰدِقِينَ صِدْقُهُمْ ۚ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۚ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْعَظِيمُ",
+          "translation": "Allah saith: This is a day in which their truthfulness profiteth the truthful, for theirs are Gardens underneath which rivers flow, wherein they are secure for ever, Allah taking pleasure in them and they in Him. That is the great triumph.",
+          "url": "https://quran.com/5:119",
+          "translationUrl": "https://quran.com/5:119?translations=19"
         },
         {
-          "ref": "33:35",
-          "arabic": "إِنَّ ٱلْمُسْلِمِينَ وَٱلْمُسْلِمَـٰتِ وَٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ وَٱلْقَـٰنِتِينَ وَٱلْقَـٰنِتَـٰتِ وَٱلصَّـٰدِقِينَ وَٱلصَّـٰدِقَـٰتِ وَٱلصَّـٰبِرِينَ وَٱلصَّـٰبِرَٰتِ وَٱلْخَـٰشِعِينَ وَٱلْخَـٰشِعَـٰتِ وَٱلْمُتَصَدِّقِينَ وَٱلْمُتَصَدِّقَـٰتِ وَٱلصَّـٰٓئِمِينَ وَٱلصَّـٰٓئِمَـٰتِ وَٱلْحَـٰفِظِينَ فُرُوجَهُمْ وَٱلْحَـٰفِظَـٰتِ وَٱلذَّٰكِرِينَ ٱللَّهَ كَثِيرًا وَٱلذَّٰكِرَٰتِ أَعَدَّ ٱللَّهُ لَهُم مَّغْفِرَةً وَأَجْرًا عَظِيمًا",
-          "translation": "Lo! men who surrender unto Allah, and women who surrender, and men who believe and women who believe, and men who obey and women who obey, and men who speak the truth and women who speak the truth, and men who persevere (in righteousness) and women who persevere, and men who are humble and women who are humble, and men who give alms and women who give alms, and men who fast and women who fast, and men who guard their modesty and women who guard (their modesty), and men who remember Allah much and women who remember - Allah hath prepared for them forgiveness and a vast reward.",
-          "url": "https://quran.com/33:35",
-          "translationUrl": "https://quran.com/33:35?translations=19"
+          "ref": "33:24",
+          "arabic": "لِّيَجْزِىَ ٱللَّهُ ٱلصَّـٰدِقِينَ بِصِدْقِهِمْ وَيُعَذِّبَ ٱلْمُنَـٰفِقِينَ إِن شَآءَ أَوْ يَتُوبَ عَلَيْهِمْ ۚ إِنَّ ٱللَّهَ كَانَ غَفُورًا رَّحِيمًا",
+          "translation": "That Allah may reward the true men for their truth, and punish the hypocrites if He will, or relent toward them (if He will). Lo! Allah is Forgiving, Merciful.",
+          "url": "https://quran.com/33:24",
+          "translationUrl": "https://quran.com/33:24?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/9:119/tafsirs/16",
@@ -1626,15 +1626,15 @@
       "id": "trust-in-allah",
       "number": 10,
       "theme": "Trust in Allah",
-      "title": "Thread 10: Quran 65:3, 3:159 and 14:12",
-      "description": "Read Quran 65:3, 3:159 and 14:12 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
+      "title": "Thread 10: Quran 65:3, 14:12 and 64:13",
+      "description": "Read Quran 65:3, 14:12 and 64:13 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
       "refs": [
         "65:3",
-        "3:159",
-        "14:12"
+        "14:12",
+        "64:13"
       ],
       "hint": "What accompanies action when outcomes cannot be controlled?",
-      "explanation": "These passages explicitly mention placing trust in Allah in different circumstances.",
+      "explanation": "These passages explicitly mention placing trust in Allah in different circumstances: sufficiency in Him, enduring hurt, and the reliance of the believers.",
       "anchor": "65:3",
       "passages": [
         {
@@ -1645,18 +1645,18 @@
           "translationUrl": "https://quran.com/65:3?translations=19"
         },
         {
-          "ref": "3:159",
-          "arabic": "فَبِمَا رَحْمَةٍ مِّنَ ٱللَّهِ لِنتَ لَهُمْ ۖ وَلَوْ كُنتَ فَظًّا غَلِيظَ ٱلْقَلْبِ لَٱنفَضُّوا۟ مِنْ حَوْلِكَ ۖ فَٱعْفُ عَنْهُمْ وَٱسْتَغْفِرْ لَهُمْ وَشَاوِرْهُمْ فِى ٱلْأَمْرِ ۖ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى ٱللَّهِ ۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُتَوَكِّلِينَ",
-          "translation": "It was by the mercy of Allah that thou wast lenient with them (O Muhammad), for if thou hadst been stern and fierce of heart they would have dispersed from round about thee. So pardon them and ask forgiveness for them and consult with them upon the conduct of affairs. And when thou art resolved, then put thy trust in Allah. Lo! Allah loveth those who put their trust (in Him).",
-          "url": "https://quran.com/3:159",
-          "translationUrl": "https://quran.com/3:159?translations=19"
-        },
-        {
           "ref": "14:12",
           "arabic": "وَمَا لَنَآ أَلَّا نَتَوَكَّلَ عَلَى ٱللَّهِ وَقَدْ هَدَىٰنَا سُبُلَنَا ۚ وَلَنَصْبِرَنَّ عَلَىٰ مَآ ءَاذَيْتُمُونَا ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُتَوَكِّلُونَ",
           "translation": "How should we not put our trust in Allah when He hath shown us our ways? We surely will endure the hurt ye do us. In Allah let the trusting put their trust.",
           "url": "https://quran.com/14:12",
           "translationUrl": "https://quran.com/14:12?translations=19"
+        },
+        {
+          "ref": "64:13",
+          "arabic": "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
+          "translation": "Allah! There is no god except Him. In Allah, therefore, let believers put their trust.",
+          "url": "https://quran.com/64:13",
+          "translationUrl": "https://quran.com/64:13?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/65:3/tafsirs/16",
