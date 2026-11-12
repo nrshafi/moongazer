@@ -682,5 +682,12 @@
     "url": "https://quran.com/114:1?translations=19",
     "kind": "Quran passage",
     "note": "Opening ayah; Pickthall translation. Structural metadata came from fetch_quran_metadata."
+  },
+  {
+    "id": "quran-com-api-v4-chapters",
+    "label": "Quran.com API · chapter names",
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "kind": "Surah name meanings",
+    "note": "English name meanings (translated_name.name) copied exactly as returned on 12 Nov 2026. The Quran MCP chapter metadata carries no translated name."
   }
 ]

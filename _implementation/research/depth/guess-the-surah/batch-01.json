@@ -1,0 +1,146 @@
+{
+  "task": "C1",
+  "batch": 1,
+  "chapters": [
+    1,
+    10
+  ],
+  "source": {
+    "id": "quran-com-api-v4-chapters",
+    "name": "Quran.com API v4 chapters endpoint, field translated_name.name (language en)",
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "retrievedAt": "2026-11-12T08:33:08Z",
+    "method": "Single curl GET returning all 114 chapters; values copied exactly, not paraphrased."
+  },
+  "items": [
+    {
+      "chapter": 1,
+      "name_simple": "Al-Fatihah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=1].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Opener"
+    },
+    {
+      "chapter": 2,
+      "name_simple": "Al-Baqarah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=2].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Cow"
+    },
+    {
+      "chapter": 3,
+      "name_simple": "Ali 'Imran",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=3].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "Family of Imran"
+    },
+    {
+      "chapter": 4,
+      "name_simple": "An-Nisa",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=4].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Women"
+    },
+    {
+      "chapter": 5,
+      "name_simple": "Al-Ma'idah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=5].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Table Spread"
+    },
+    {
+      "chapter": 6,
+      "name_simple": "Al-An'am",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=6].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Cattle"
+    },
+    {
+      "chapter": 7,
+      "name_simple": "Al-A'raf",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=7].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Heights"
+    },
+    {
+      "chapter": 8,
+      "name_simple": "Al-Anfal",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=8].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Spoils of War"
+    },
+    {
+      "chapter": 9,
+      "name_simple": "At-Tawbah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=9].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Repentance"
+    },
+    {
+      "chapter": 10,
+      "name_simple": "Yunus",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=10].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "Jonah"
+    }
+  ],
+  "mcpCheck": {
+    "tool": "mcp__quran__fetch_quran_metadata",
+    "arguments": {
+      "surah": 1
+    },
+    "result": "Fields returned: number, name_arabic, name_simple, revelation_place, revelation_order, verses_count, bismillah_pre. No translated name, so the Quran.com API was used instead.",
+    "groundingRules": "fetch_grounding_rules called first (nonce gnd-fff8391d5e24310b).",
+    "note": "Surah 1 checked; one call was rate-limited (1 request per second) and repeated successfully. list_editions covers quran, tafsir and translation editions, not chapter names, so it was not called."
+  }
+}
