@@ -108,7 +108,7 @@ Behaviour: seeded shuffle per play (a fresh random seed on each new play or rest
 
 The challenge was merged into this app and the standalone app was removed under D2c (`plan/implementation/00-INDEX.md`). No saved progress is imported. `challenge-progress` is written only by `/challenge/` itself.
 
-SEO: `seo.ts` registers only one `seo.json` collection and throws "Add metadata for the new page: /challenge/" for other routes. The page metadata is kept in `seo.json` under `extraPages` and must be registered by a one-line `seo.ts` change (see progress tracker); until then the production build fails.
+SEO: `/challenge/` metadata lives in `seo.json` under `extraPages`, which the shared `seo.ts` registers.
 
 ## Anonymous event hook points (P4.7, 2026-11-11 Asia/Dhaka)
 

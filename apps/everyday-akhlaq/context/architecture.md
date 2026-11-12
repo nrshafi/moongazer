@@ -85,7 +85,7 @@ Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in
 - Storage keys added: `business-<id>` (same `{stage, choices, seed?}` shape and validation as `scenario-<id>`, bounded by the scenario's real option counts) and `business-bookmarks` (list of business ids; validated by `validBookmarks` in `src/lib/business.ts`). `remember` is shared.
 - The business cases were merged in, and the old app was removed under D2c (`plan/implementation/00-INDEX.md`). No saved data is imported; the old import helpers are gone.
 - Home page filters scenario cards by track with a pressed-state button group (All, Home & family, Study & work, Business).
-- SEO gap: `src/lib/seo.ts` supports one collection. `/business/` and the 12 `/business/<id>/` paths need a second registration there (see progress tracker); until then Shell throws "Add metadata for the new page" for them.
+- SEO: `/business/` and the 12 `/business/<id>/` pages are registered through `extraPages` and `extraCollections` in `seo.json`, read by the shared `seo.ts`.
 
 ## Anonymous counter hook points (P4.7)
 
