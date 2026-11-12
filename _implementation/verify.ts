@@ -1,6 +1,6 @@
 import { join } from 'node:path';
 const root=join(import.meta.dir,'..');
-const apps=['guess-the-surah','quran-connections','the-seerah-detective','everyday-akhlaq-simulator','interactive-seerah-timeline','quran-memorization-workload-calculator','is-this-actually-in-the-quran','islamic-knowledge-escape-room','stories-of-the-prophets-explorer','quranic-places-atlas','islamic-concept-connections','understand-salah-lab','quranic-parables-studio','islamic-civilization-timeline','revelation-context-explorer','family-islamic-learning-challenges'];
+const apps=['guess-the-surah','ayah-threads','seerah-detective','everyday-akhlaq','seerah-timeline','hifz-planner','is-it-in-the-quran','quran-escape-room','stories-of-the-prophets','places-in-the-quran','word-groups','understand-your-salah','parables-of-the-quran','civilization-timeline','why-it-was-revealed','family-halaqa'];
 const command=process.argv[2]||'check';
 if(!['check','test','build'].includes(command))throw new Error('Use check, test, or build');
 let failed=false;

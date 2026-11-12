@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://quranic-parables-studio.moongazer.tech/sitemap.xml

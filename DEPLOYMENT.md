@@ -8,21 +8,21 @@ The directory is published at [moongazer.tech](https://moongazer.tech/). Each ap
 | --- | --- | --- |
 | Moongazer directory | [moongazer.tech](https://moongazer.tech/) | `moongazer` |
 | Guess the Surah | [guess-the-surah.moongazer.tech](https://guess-the-surah.moongazer.tech/) | `moongazer-guess-the-surah` |
-| Quran Connections | [quran-connections.moongazer.tech](https://quran-connections.moongazer.tech/) | `moongazer-quran-connections` |
-| The Seerah Detective | [the-seerah-detective.moongazer.tech](https://the-seerah-detective.moongazer.tech/) | `moongazer-the-seerah-detective` |
-| Everyday Akhlaq | [everyday-akhlaq-simulator.moongazer.tech](https://everyday-akhlaq-simulator.moongazer.tech/) | `moongazer-everyday-akhlaq-simulator` |
-| Interactive Seerah Timeline | [interactive-seerah-timeline.moongazer.tech](https://interactive-seerah-timeline.moongazer.tech/) | `moongazer-interactive-seerah-timeline` |
-| Quran Memorization Workload Calculator | [quran-memorization-workload-calculator.moongazer.tech](https://quran-memorization-workload-calculator.moongazer.tech/) | `moongazer-quran-memorization-workload-calculator` |
-| Is This Actually in the Quran? | [is-this-actually-in-the-quran.moongazer.tech](https://is-this-actually-in-the-quran.moongazer.tech/) | `moongazer-is-this-actually-in-the-quran` |
-| The Islamic Knowledge Escape Room | [islamic-knowledge-escape-room.moongazer.tech](https://islamic-knowledge-escape-room.moongazer.tech/) | `moongazer-islamic-knowledge-escape-room` |
-| Stories of the Prophets Explorer | [stories-of-the-prophets-explorer.moongazer.tech](https://stories-of-the-prophets-explorer.moongazer.tech/) | `moongazer-stories-of-the-prophets-explorer` |
-| Quranic Places Atlas | [quranic-places-atlas.moongazer.tech](https://quranic-places-atlas.moongazer.tech/) | `moongazer-quranic-places-atlas` |
-| Islamic Concept Connections | [islamic-concept-connections.moongazer.tech](https://islamic-concept-connections.moongazer.tech/) | `moongazer-islamic-concept-connections` |
-| Understand Salah Lab | [understand-salah-lab.moongazer.tech](https://understand-salah-lab.moongazer.tech/) | `moongazer-understand-salah-lab` |
-| Quranic Parables Studio | [quranic-parables-studio.moongazer.tech](https://quranic-parables-studio.moongazer.tech/) | `moongazer-quranic-parables-studio` |
-| Islamic Civilization Timeline | [islamic-civilization-timeline.moongazer.tech](https://islamic-civilization-timeline.moongazer.tech/) | `moongazer-islamic-civilization-timeline` |
-| Revelation Context Explorer | [revelation-context-explorer.moongazer.tech](https://revelation-context-explorer.moongazer.tech/) | `moongazer-revelation-context-explorer` |
-| Family Islamic Learning Challenges | [family-islamic-learning-challenges.moongazer.tech](https://family-islamic-learning-challenges.moongazer.tech/) | `moongazer-family-islamic-learning-challenges` |
+| Quran Connections | [ayah-threads.moongazer.tech](https://ayah-threads.moongazer.tech/) | `moongazer-ayah-threads` |
+| The Seerah Detective | [seerah-detective.moongazer.tech](https://seerah-detective.moongazer.tech/) | `moongazer-seerah-detective` |
+| Everyday Akhlaq | [everyday-akhlaq.moongazer.tech](https://everyday-akhlaq.moongazer.tech/) | `moongazer-everyday-akhlaq` |
+| Interactive Seerah Timeline | [seerah-timeline.moongazer.tech](https://seerah-timeline.moongazer.tech/) | `moongazer-seerah-timeline` |
+| Quran Memorization Workload Calculator | [hifz-planner.moongazer.tech](https://hifz-planner.moongazer.tech/) | `moongazer-hifz-planner` |
+| Is This Actually in the Quran? | [is-it-in-the-quran.moongazer.tech](https://is-it-in-the-quran.moongazer.tech/) | `moongazer-is-it-in-the-quran` |
+| The Islamic Knowledge Escape Room | [quran-escape-room.moongazer.tech](https://quran-escape-room.moongazer.tech/) | `moongazer-quran-escape-room` |
+| Stories of the Prophets Explorer | [stories-of-the-prophets.moongazer.tech](https://stories-of-the-prophets.moongazer.tech/) | `moongazer-stories-of-the-prophets` |
+| Quranic Places Atlas | [places-in-the-quran.moongazer.tech](https://places-in-the-quran.moongazer.tech/) | `moongazer-places-in-the-quran` |
+| Islamic Concept Connections | [word-groups.moongazer.tech](https://word-groups.moongazer.tech/) | `moongazer-word-groups` |
+| Understand Salah Lab | [understand-your-salah.moongazer.tech](https://understand-your-salah.moongazer.tech/) | `moongazer-understand-your-salah` |
+| Quranic Parables Studio | [parables-of-the-quran.moongazer.tech](https://parables-of-the-quran.moongazer.tech/) | `moongazer-parables-of-the-quran` |
+| Islamic Civilization Timeline | [civilization-timeline.moongazer.tech](https://civilization-timeline.moongazer.tech/) | `moongazer-civilization-timeline` |
+| Revelation Context Explorer | [why-it-was-revealed.moongazer.tech](https://why-it-was-revealed.moongazer.tech/) | `moongazer-why-it-was-revealed` |
+| Family Islamic Learning Challenges | [family-halaqa.moongazer.tech](https://family-halaqa.moongazer.tech/) | `moongazer-family-halaqa` |
 
 ## Sources and builds
 

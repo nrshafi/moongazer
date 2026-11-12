@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://understand-salah-lab.moongazer.tech/sitemap.xml

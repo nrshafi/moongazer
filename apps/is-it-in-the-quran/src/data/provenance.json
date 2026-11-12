@@ -1,0 +1,1143 @@
+{
+  "provider": "Quran Foundation Quran MCP",
+  "endpoint": "https://mcp.quran.ai",
+  "retrievedAt": "2026-10-27T17:21:30.283Z",
+  "quranEdition": "ar-uthmani-hafs",
+  "translationEdition": "en-pickthall",
+  "commentaryEdition": "ar-muyassar",
+  "verseCount": 6236,
+  "snapshotSha256": "3ffbc20d417f6f2246447b3c76f0be27209fa009793b1eea92ae22e324eb3b2f",
+  "requests": [
+    {
+      "tool": "fetch_quran",
+      "offset": 0,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 0,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 0,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 200,
+      "count": 67,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 200,
+      "count": 53,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 1800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 2800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 3800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 4800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 5800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 6000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 6000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 6000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_quran",
+      "offset": 6200,
+      "count": 36,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 0,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 0,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 0,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 1800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 2800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 3800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 4800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5200,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5200,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5400,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5400,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5600,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5600,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5800,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 5800,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 6000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 6000,
+      "count": 80,
+      "hasMore": true
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 6000,
+      "count": 40,
+      "hasMore": false
+    },
+    {
+      "tool": "fetch_translation",
+      "offset": 6200,
+      "count": 36,
+      "hasMore": false
+    }
+  ],
+  "app": "is-it-in-the-quran",
+  "appContentSha256": "2e6af06c847d6ac0fdf9530b579941371c43c00beae7c06243d33fb2bcd9eff6",
+  "corpusSha256": "29967d5cd205228f70d321074b676ccee4c8b279dffa8b433e9c30dc5fafeace"
+}

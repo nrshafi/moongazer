@@ -11,21 +11,21 @@ The apps use Astro 7.4.2, TypeScript 6.0.3 and Bun 1.4.4. They use bundled conte
 | App | Folder | Local port |
 | --- | --- | ---: |
 | Guess the Surah | [guess-the-surah](apps/guess-the-surah) | 4321 |
-| Quran Connections | [quran-connections](apps/quran-connections) | 4322 |
-| The Seerah Detective | [the-seerah-detective](apps/the-seerah-detective) | 4323 |
-| Everyday Akhlaq Simulator | [everyday-akhlaq-simulator](apps/everyday-akhlaq-simulator) | 4324 |
-| Interactive Seerah Timeline | [interactive-seerah-timeline](apps/interactive-seerah-timeline) | 4325 |
-| Quran Memorization Workload Calculator | [quran-memorization-workload-calculator](apps/quran-memorization-workload-calculator) | 4326 |
-| Is This Actually in the Quran? | [is-this-actually-in-the-quran](apps/is-this-actually-in-the-quran) | 4327 |
-| The Islamic Knowledge Escape Room | [islamic-knowledge-escape-room](apps/islamic-knowledge-escape-room) | 4329 |
-| Stories of the Prophets Explorer | [stories-of-the-prophets-explorer](apps/stories-of-the-prophets-explorer) | 4330 |
-| Quranic Places Atlas | [quranic-places-atlas](apps/quranic-places-atlas) | 4331 |
-| Islamic Concept Connections | [islamic-concept-connections](apps/islamic-concept-connections) | 4332 |
-| Understand Salah Lab | [understand-salah-lab](apps/understand-salah-lab) | 4334 |
-| Quranic Parables Studio | [quranic-parables-studio](apps/quranic-parables-studio) | 4335 |
-| Islamic Civilization Timeline | [islamic-civilization-timeline](apps/islamic-civilization-timeline) | 4336 |
-| Revelation Context Explorer | [revelation-context-explorer](apps/revelation-context-explorer) | 4338 |
-| Family Islamic Learning Challenges | [family-islamic-learning-challenges](apps/family-islamic-learning-challenges) | 4339 |
+| Quran Connections | [ayah-threads](apps/ayah-threads) | 4322 |
+| The Seerah Detective | [seerah-detective](apps/seerah-detective) | 4323 |
+| Everyday Akhlaq Simulator | [everyday-akhlaq](apps/everyday-akhlaq) | 4324 |
+| Interactive Seerah Timeline | [seerah-timeline](apps/seerah-timeline) | 4325 |
+| Quran Memorization Workload Calculator | [hifz-planner](apps/hifz-planner) | 4326 |
+| Is This Actually in the Quran? | [is-it-in-the-quran](apps/is-it-in-the-quran) | 4327 |
+| The Islamic Knowledge Escape Room | [quran-escape-room](apps/quran-escape-room) | 4329 |
+| Stories of the Prophets Explorer | [stories-of-the-prophets](apps/stories-of-the-prophets) | 4330 |
+| Quranic Places Atlas | [places-in-the-quran](apps/places-in-the-quran) | 4331 |
+| Islamic Concept Connections | [word-groups](apps/word-groups) | 4332 |
+| Understand Salah Lab | [understand-your-salah](apps/understand-your-salah) | 4334 |
+| Quranic Parables Studio | [parables-of-the-quran](apps/parables-of-the-quran) | 4335 |
+| Islamic Civilization Timeline | [civilization-timeline](apps/civilization-timeline) | 4336 |
+| Revelation Context Explorer | [why-it-was-revealed](apps/why-it-was-revealed) | 4338 |
+| Family Islamic Learning Challenges | [family-halaqa](apps/family-halaqa) | 4339 |
 
 ## Run an app
 
@@ -52,7 +52,7 @@ bun run preview
 - [homepage/](homepage/) contains the raw HTML, CSS and JavaScript directory. Build it with `node homepage/build.mjs`; preview with `node homepage/preview.mjs` on localhost port 4350.
 - [AGENTS.md](AGENTS.md) and [context/](context/) contain repository-wide instructions and project context. Each app also has its own instructions and context.
 - [_implementation/](_implementation/) contains content preparation, research snapshots and verification scripts. Some scripts expect missing QA artifacts or generated builds; inspect their requirements before running them.
-- [_build/](_build/) contains tooling for earlier HTML prototypes. [islamic_product_atlas.html](islamic_product_atlas.html) is an earlier reference; the old demo catalog and generated demo files are absent from this checkout.
+- [islamic_product_atlas.html](islamic_product_atlas.html) is an earlier research reference.
 - [STATIC_APPS_SHORTLIST.md](STATIC_APPS_SHORTLIST.md) and [PROJECT_RANKING.md](PROJECT_RANKING.md) record the project selection.
 
 Build output and dependencies are ignored by Git. The `release/` archives and several QA reports mentioned in historical context are absent. Fresh static verification recreates `_implementation/qa/static-results.json`; release-specific logs and HTTP checks are in `deployment/evidence/`.

@@ -1,0 +1,37 @@
+{
+  "heading": "Family Halaqa",
+  "summary": "Family Halaqa offers short packs for learning together. Each pack combines a source reading question, an open conversation and a shared activity. Choose an age suggestion that fits your group, adapt the vocabulary and keep examples fictional. There are no child profiles, required names or daily streaks to maintain.",
+  "steps": [
+    "Choose a pack by its topic, suggested age band or available time.",
+    "Read the selected passage together and try the reading question.",
+    "Use the conversation prompt and shared activity, allowing anyone to pass on a personal example."
+  ],
+  "questions": [
+    {
+      "question": "Are the age bands strict requirements?",
+      "answer": "No. They are suggestions. An adult can read aloud, explain vocabulary or adapt an activity to the group's needs."
+    },
+    {
+      "question": "Do family members need to give their names or private stories?",
+      "answer": "No. The packs do not require names or child profiles. Use made-up situations for discussion, and let participants pass rather than asking them to disclose a personal experience."
+    }
+  ],
+  "related": [
+    {
+      "name": "Everyday Akhlaq",
+      "description": "Work through everyday situations and reflect on the choices you make.",
+      "kind": "Scenarios",
+      "url": "https://everyday-akhlaq.moongazer.tech/"
+    },
+    {
+      "name": "Quran Escape Room",
+      "description": "Work through a sequence of knowledge puzzles to unlock the next room.",
+      "kind": "Puzzle adventure",
+      "url": "https://quran-escape-room.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Games & family activities",
+    "url": "https://moongazer.tech/islamic-games/"
+  }
+}

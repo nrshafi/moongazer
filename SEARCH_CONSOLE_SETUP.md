@@ -15,21 +15,21 @@ The procedure below is a maintenance reference. Keep the existing Google verific
 
 - https://moongazer.tech/sitemap.xml
 - https://guess-the-surah.moongazer.tech/sitemap.xml
-- https://quran-connections.moongazer.tech/sitemap.xml
-- https://the-seerah-detective.moongazer.tech/sitemap.xml
-- https://everyday-akhlaq-simulator.moongazer.tech/sitemap.xml
-- https://interactive-seerah-timeline.moongazer.tech/sitemap.xml
-- https://quran-memorization-workload-calculator.moongazer.tech/sitemap.xml
-- https://is-this-actually-in-the-quran.moongazer.tech/sitemap.xml
-- https://islamic-knowledge-escape-room.moongazer.tech/sitemap.xml
-- https://stories-of-the-prophets-explorer.moongazer.tech/sitemap.xml
-- https://quranic-places-atlas.moongazer.tech/sitemap.xml
-- https://islamic-concept-connections.moongazer.tech/sitemap.xml
-- https://understand-salah-lab.moongazer.tech/sitemap.xml
-- https://quranic-parables-studio.moongazer.tech/sitemap.xml
-- https://islamic-civilization-timeline.moongazer.tech/sitemap.xml
-- https://revelation-context-explorer.moongazer.tech/sitemap.xml
-- https://family-islamic-learning-challenges.moongazer.tech/sitemap.xml
+- https://ayah-threads.moongazer.tech/sitemap.xml
+- https://seerah-detective.moongazer.tech/sitemap.xml
+- https://everyday-akhlaq.moongazer.tech/sitemap.xml
+- https://seerah-timeline.moongazer.tech/sitemap.xml
+- https://hifz-planner.moongazer.tech/sitemap.xml
+- https://is-it-in-the-quran.moongazer.tech/sitemap.xml
+- https://quran-escape-room.moongazer.tech/sitemap.xml
+- https://stories-of-the-prophets.moongazer.tech/sitemap.xml
+- https://places-in-the-quran.moongazer.tech/sitemap.xml
+- https://word-groups.moongazer.tech/sitemap.xml
+- https://understand-your-salah.moongazer.tech/sitemap.xml
+- https://parables-of-the-quran.moongazer.tech/sitemap.xml
+- https://civilization-timeline.moongazer.tech/sitemap.xml
+- https://why-it-was-revealed.moongazer.tech/sitemap.xml
+- https://family-halaqa.moongazer.tech/sitemap.xml
 
 These contain 286 canonical, indexable URLs in total. A successful submission is a discovery signal, not a guarantee that every URL will be indexed or ranked. No sitemap pings, Indexing API workaround, analytics tag or unverified ownership claim is required.
 

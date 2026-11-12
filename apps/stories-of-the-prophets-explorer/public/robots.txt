@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://stories-of-the-prophets-explorer.moongazer.tech/sitemap.xml

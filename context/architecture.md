@@ -48,7 +48,7 @@ owner laptop ── scripts/review-feedback.mjs (wrangler d1) ──▶ approve 
 | `_implementation/research/` | Canonical snapshots, MCP/tool records, fetched commentary and media attribution |
 | `_implementation/qa/` | Recorded test/build/static/browser evidence and context audit |
 | `release/` | Generated static upload ZIPs and checksum manifest |
-| `_build/`, `_reference/`, root HTML demos | Earlier prototype tooling, readable atlas reference and demonstrations |
+| `islamic_product_atlas.html` | Earlier research reference (prototype tooling removed under D2c) |
 | `6_File+Context+Methodology/` | Supplied generic seven-file reference template, preserved |
 | `context/`, root `AGENTS.md` | Repo-wide product/architecture/UI/standards/workflow/progress contract |
 | `DEPLOYMENT.md`, shortlist and QA reports | Deployment inventory, selected scope and implementation evidence |
@@ -96,7 +96,7 @@ Breadcrumbs and app-directory links are visible, and their JSON-LD mirrors actua
 
 ## Final implementation batch
 
-Ports 4336 through 4340 are reserved for `islamic-civilization-timeline`, `halal-business-decisions`, `revelation-context-explorer`, `family-islamic-learning-challenges` and `islamic-misinformation-casebook`. Research and QA for this batch live in `_implementation/research/batch4/` and `_implementation/qa/batch4/`. Historical records use institutional sources. Revelation reports distinguish transmitted occasions from general context and responses after revelation. Business cases remain fictional educational exercises. Family activities collect no child profiles or names. The misinformation reader evaluates a fixed cited case bank, not arbitrary visitor claims.
+Ports 4336 through 4340 are reserved for `civilization-timeline`, `halal-business-decisions`, `why-it-was-revealed`, `family-halaqa` and `islamic-misinformation-casebook`. Research and QA for this batch live in `_implementation/research/batch4/` and `_implementation/qa/batch4/`. Historical records use institutional sources. Revelation reports distinguish transmitted occasions from general context and responses after revelation. Business cases remain fictional educational exercises. Family activities collect no child profiles or names. The misinformation reader evaluates a fixed cited case bank, not arbitrary visitor claims.
 
 Batch four adds 24 institutional-source history records, 12 fictional business cases, 10 report-context readings, 12 family packs and 12 fixed evidence-reading claims. Canonical text stays local and exact; source notes retain uncertainty. All twenty app builds remain independent.
 
@@ -130,10 +130,10 @@ Four apps were folded into receiving sections and then **deleted outright** (D2c
 
 | Receiving app | Section (kept) |
 | --- | --- |
-| `quran-connections` (Ayah Threads) | `/themes/`, `/themes/<id>/` (30 themes) |
-| `interactive-seerah-timeline` (Seerah Timeline) | `/challenge/` |
-| `everyday-akhlaq-simulator` (Everyday Akhlaq) | `/business/`, `/business/<id>/` |
-| `is-this-actually-in-the-quran` (Is It in the Quran?) | `/claims/`, `/claims/<id>/` (12 claims) |
+| `ayah-threads` (Ayah Threads) | `/themes/`, `/themes/<id>/` (30 themes) |
+| `seerah-timeline` (Seerah Timeline) | `/challenge/` |
+| `everyday-akhlaq` (Everyday Akhlaq) | `/business/`, `/business/<id>/` |
+| `is-it-in-the-quran` (Is It in the Quran?) | `/claims/`, `/claims/<id>/` (12 claims) |
 
 - The shared shell has no moved banner or canonical override. `src/lib/import.ts`, `tests/import.test.ts` and the receivers' `merge-import.ts` files are deleted, and `sync-shared.ts` no longer lists them.
 - `deployment/merge-redirects.json`, `_implementation/build-redirect-map.ts` and its test are deleted. `verify-seo.py` expects each page's canonical to be its own URL.

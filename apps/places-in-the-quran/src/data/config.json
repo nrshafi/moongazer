@@ -1,0 +1,8 @@
+{
+  "slug": "places-in-the-quran",
+  "name": "Places in the Quran",
+  "description": "A map of the places the Quran names, and where certainty ends",
+  "accent": "teal",
+  "nav": "Read",
+  "port": 4331
+}

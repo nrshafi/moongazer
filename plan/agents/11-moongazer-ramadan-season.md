@@ -8,7 +8,7 @@
 **Goal:** be useful at the year's biggest moment for Islamic learning, with a planner, a calculator and a seasonal hub.
 **Background:** `../REPORT.md`, A8 entry 14 (Hifz Planner), A9 (Zakat Calculator), A11 item 5, A14.
 
-## Part 1 — Hifz Planner (upgrade of `quran-memorization-workload-calculator`)
+## Part 1 — Hifz Planner (upgrade of `hifz-planner`)
 
 Keep the engine and its tests. Build on top.
 

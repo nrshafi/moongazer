@@ -3,20 +3,20 @@ ROOT=Path(__file__).resolve().parent.parent
 p=ROOT/'DEPLOYMENT.md';s=p.read_text(encoding='utf-8')
 if '# Deploy the first fifteen Astro apps' in s:raise SystemExit('Documentation already updated. Edit the guides directly.')
 s=s.replace('# Deploy the first ten Astro apps','# Deploy the first fifteen Astro apps').replace('The first ten shortlisted projects are independent static applications. Entries 11–20 are deferred.','The first fifteen shortlisted projects are independent static applications. Entries 16–20 are deferred.').replace('All ten include','All fifteen include').replace('The preview command serves the five built sites','The preview command serves the fifteen built sites')
-marker='| Stories of the Prophets Explorer | `apps/stories-of-the-prophets-explorer` | 4330 | 25 profiles, 50 Quran readings, 25 passage-specific questions, filters, bookmarks and reading-list export |'
+marker='| Stories of the Prophets Explorer | `apps/stories-of-the-prophets` | 4330 | 25 profiles, 50 Quran readings, 25 passage-specific questions, filters, bookmarks and reading-list export |'
 s=s.replace(marker,marker+'''
-| Quranic Places Atlas | `apps/quranic-places-atlas` | 4331 | 15 entries, five contextual markers, local Natural Earth map, location evidence notes, filters and bookmarks |
-| Islamic Concept Connections | `apps/islamic-concept-connections` | 4332 | 16 grouping puzzles, 20 source-backed categories, hints, retries, seeded links, optional recovery |
+| Quranic Places Atlas | `apps/places-in-the-quran` | 4331 | 15 entries, five contextual markers, local Natural Earth map, location evidence notes, filters and bookmarks |
+| Islamic Concept Connections | `apps/word-groups` | 4332 | 16 grouping puzzles, 20 source-backed categories, hints, retries, seeded links, optional recovery |
 | Islamic History Timeline Challenge | `apps/islamic-history-timeline-challenge` | 4333 | 12 four-event challenges, 14 event records, accessible ordering, source clues, date notes and recovery |
-| Understand Salah Lab | `apps/understand-salah-lab` | 4334 | 15 meaning lessons, 7 canonical Al-Fatiha ayahs, 8 hadith recitations, local licensed full-surah audio, practice and checks |
-| Quranic Parables Studio | `apps/quranic-parables-studio` | 4335 | 14 readings, interactive three-part diagrams, commentary, comprehension, private note copy/download and bookmarks |''')
-marker='- [Prophets Explorer upload](release/stories-of-the-prophets-explorer-pages.zip)'
+| Understand Salah Lab | `apps/understand-your-salah` | 4334 | 15 meaning lessons, 7 canonical Al-Fatiha ayahs, 8 hadith recitations, local licensed full-surah audio, practice and checks |
+| Quranic Parables Studio | `apps/parables-of-the-quran` | 4335 | 14 readings, interactive three-part diagrams, commentary, comprehension, private note copy/download and bookmarks |''')
+marker='- [Prophets Explorer upload](release/stories-of-the-prophets-pages.zip)'
 s=s.replace(marker,marker+'''
-- [Quranic Places Atlas upload](release/quranic-places-atlas-pages.zip)
-- [Islamic Concept Connections upload](release/islamic-concept-connections-pages.zip)
+- [Quranic Places Atlas upload](release/places-in-the-quran-pages.zip)
+- [Islamic Concept Connections upload](release/word-groups-pages.zip)
 - [History Timeline Challenge upload](release/islamic-history-timeline-challenge-pages.zip)
-- [Understand Salah Lab upload](release/understand-salah-lab-pages.zip)
-- [Quranic Parables Studio upload](release/quranic-parables-studio-pages.zip)''')
+- [Understand Salah Lab upload](release/understand-your-salah-pages.zip)
+- [Quranic Parables Studio upload](release/parables-of-the-quran-pages.zip)''')
 s=s.replace('The canonical snapshot contains 225 ayahs and 43 Al-Tafsir al-Muyassar commentary records used for source checking.','The first batch snapshot contains 225 ayahs and 43 Al-Tafsir al-Muyassar commentary records. The complete snapshot added in batch two contains all 6,236 ayahs in Arabic and Pickthall English. Batch three adds 40 commentary anchors, full parable context, and Al-Jalalayn for 24:35.')
 s+='''
 ## Third implementation batch

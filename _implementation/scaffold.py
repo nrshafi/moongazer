@@ -4,10 +4,10 @@ ROOT=Path(__file__).resolve().parent.parent
 TEMPLATES=ROOT/'_implementation/templates'
 CONFIGS=[
  ('guess-the-surah','Guess the Surah','A few clues. One surah. Discover how well you know the Quran, one thoughtful round at a time.','teal',4321),
- ('quran-connections','Quran Connections','Three passages. One connection. Follow the words, notice a shared thread, and explore the source.','teal',4322),
- ('the-seerah-detective','The Seerah Detective','Open a case, examine the reports, and let the evidence guide your conclusion.','blue',4323),
- ('everyday-akhlaq-simulator','Everyday Akhlaq','Small moments. Thoughtful choices. Explore everyday character through fictional scenarios and authentic sources.','violet',4324),
- ('interactive-seerah-timeline','Seerah Timeline','Explore the life of Prophet Muhammad ﷺ through a sourced chronology, one event at a time.','teal',4325),
+ ('ayah-threads','Quran Connections','Three passages. One connection. Follow the words, notice a shared thread, and explore the source.','teal',4322),
+ ('seerah-detective','The Seerah Detective','Open a case, examine the reports, and let the evidence guide your conclusion.','blue',4323),
+ ('everyday-akhlaq','Everyday Akhlaq','Small moments. Thoughtful choices. Explore everyday character through fictional scenarios and authentic sources.','violet',4324),
+ ('seerah-timeline','Seerah Timeline','Explore the life of Prophet Muhammad ﷺ through a sourced chronology, one event at a time.','teal',4325),
 ]
 for slug,name,description,accent,port in CONFIGS:
     app=ROOT/'apps'/slug

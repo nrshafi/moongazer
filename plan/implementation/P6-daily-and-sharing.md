@@ -17,7 +17,7 @@
 ---
 
 ### T6.1 Shared daily module
-Lane: shared · Files: `apps/<daily apps>/src/lib/daily.ts` (new, identical copies in guess-the-surah, quran-connections, islamic-concept-connections, interactive-seerah-timeline), `_implementation/sync-shared.ts` (add a "daily set" checked across those four apps only), tests in each app
+Lane: shared · Files: `apps/<daily apps>/src/lib/daily.ts` (new, identical copies in guess-the-surah, ayah-threads, word-groups, seerah-timeline), `_implementation/sync-shared.ts` (add a "daily set" checked across those four apps only), tests in each app
 Exports: `DAILY_EPOCH`, `localDateKey(date)`, `dayNumber(date)`, `dailyIndex(dayNumber, bankLength, seed)`, `updateStreak(prev, todayKey)`, `shareText({name, n, resultLine, shortLink})`, `whatsappUrl(text)`.
 Tests: deterministic output; full coverage before repeat; local-midnight change (simulate time zones by constructing local dates); streak transitions (same day, next day, gap, invalid stored value); share text contains no answer token (caller supplies forbidden strings).
 Verify: V1 in four apps, V3.
@@ -35,15 +35,15 @@ Acceptance: tests for Juz filtering, clue ladder (no chapter number), share text
 Verify: V1, V5, V6, V7.
 
 ### T6.3 Ayah Threads daily
-Lane: app:`quran-connections` · Depends on: T6.1, C2 · Files: `src/lib/*`, `src/pages/index.astro`, tests
+Lane: app:`ayah-threads` · Depends on: T6.1, C2 · Files: `src/lib/*`, `src/pages/index.astro`, tests
 Steps: daily puzzle from the bank; distractors rebuilt (drawn from real themes, each theme used as a distractor at most three times across the bank, never a near-synonym of the answer; precompute and store distractor sets in data with a test enforcing the limits); solved puzzles show titles and ticks in the compact picker; theme library link after solve. Descriptor → "…: a daily Quran puzzle".
 
 ### T6.4 Word Groups daily
-Lane: app:`islamic-concept-connections` · Depends on: T6.1, C3 · Files: `src/lib/app.ts`, `src/lib/engine.ts`, `src/pages/index.astro`, tests
+Lane: app:`word-groups` · Depends on: T6.1, C3 · Files: `src/lib/app.ts`, `src/lib/engine.ts`, `src/pages/index.astro`, tests
 Steps: daily board; four-mistake limit; difficulty tiers per group (data field `tier` 1–4, colours from family tokens with text labels so colour is not the only signal); result card (solved order, mistakes); distinct board titles; valid alternative groupings (for example surah names that also fit another category) are either removed from boards or acknowledged without counting a miss (Verify_Me); 30-pill board selector with solved state. Share: `Word Groups #N · 4 groups, 1 mistake · moongazer.tech/groups` (no group names).
 
 ### T6.5 Seerah Timeline: daily "Which came first?"
-Lane: app:`interactive-seerah-timeline` · Depends on: T6.1, P3 T3.4 · Files: `src/lib/challenge.ts`, `src/data/content.json` (`dailyPairs`), tests, `_implementation/research/daily/seerah-pairs.json`
+Lane: app:`seerah-timeline` · Depends on: T6.1, P3 T3.4 · Files: `src/lib/challenge.ts`, `src/data/content.json` (`dailyPairs`), tests, `_implementation/research/daily/seerah-pairs.json`
 Steps: a curated list of event pairs whose order is well established (both events dated in the data without "disputed" notes; at least 30 pairs); each answer shows both events' sources and date notes; approximate dates labelled approximate; pairs with disputed conventional dating excluded. The pair list is content and goes through the C-track verification pass.
 
 ### T6.6 Directory "Tonight on Moongazer"

@@ -2,7 +2,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 def put(slug,path,text):
  p=ROOT/'apps'/slug/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf-8')
-atlas='quran-concept-atlas';stories='stories-of-the-prophets-explorer'
+atlas='quran-concept-atlas';stories='stories-of-the-prophets'
 library='''import {byId,read,write,esc,copy,announce} from './utils';
 const all=[...document.querySelectorAll<HTMLElement>('[data-item-id]')];
 const valid=(v:unknown):v is string[]=>Array.isArray(v)&&v.length<=100&&v.every(x=>typeof x==='string'&&/^[a-z-]{1,60}$/.test(x));

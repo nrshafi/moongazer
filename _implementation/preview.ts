@@ -1,5 +1,5 @@
 import { resolve, join, sep } from 'node:path';
-const apps=['guess-the-surah','quran-connections','the-seerah-detective','everyday-akhlaq-simulator','interactive-seerah-timeline','quran-memorization-workload-calculator','is-this-actually-in-the-quran','islamic-knowledge-escape-room','stories-of-the-prophets-explorer','quranic-places-atlas','islamic-concept-connections','understand-salah-lab','quranic-parables-studio','islamic-civilization-timeline','revelation-context-explorer','family-islamic-learning-challenges'];
+const apps=['guess-the-surah','ayah-threads','seerah-detective','everyday-akhlaq','seerah-timeline','hifz-planner','is-it-in-the-quran','quran-escape-room','stories-of-the-prophets','places-in-the-quran','word-groups','understand-your-salah','parables-of-the-quran','civilization-timeline','why-it-was-revealed','family-halaqa'];
 for(const [index,app] of apps.entries()) {
   const directory=resolve(import.meta.dir,'..','apps',app,'dist');
   const server=Bun.serve({hostname:'127.0.0.1',port:4321+index,async fetch(request){

@@ -1,0 +1,8 @@
+{
+  "slug": "parables-of-the-quran",
+  "name": "Parables of the Quran",
+  "description": "The Quran's parables, explained",
+  "accent": "blue",
+  "nav": "Read",
+  "port": 4335
+}

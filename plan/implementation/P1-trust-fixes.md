@@ -26,7 +26,7 @@ Steps (edit in `apps/guess-the-surah`, then sync):
 2. `404.astro`: text "That page is not here." plus a link "Go back to {config.name} →". Remove the Places Atlas wording ("choose a new place to explore").
 3. `LearningGuide.astro`: keep capitals in the collection name ("Explore Quran learning tools"); do not lowercase the category.
 4. In these shared files, use "→" for internal links and "↗" only on links with `target="_blank"` to another host.
-Acceptance: `sync-shared --check` passes; built 404 pages of two different apps show their own name; theme-color matches accent in a blue app (`understand-salah-lab`) and a violet app (`family-islamic-learning-challenges`).
+Acceptance: `sync-shared --check` passes; built 404 pages of two different apps show their own name; theme-color matches accent in a blue app (`understand-your-salah`) and a violet app (`family-halaqa`).
 Verify: V2, V3, V5, V6.
 
 ### T1.3 App-specific sources pages (20 apps)
@@ -41,7 +41,7 @@ Acceptance: no sentence mentions a feature, source type or subject the app does 
 Verify: V1 per app, V5. Record a one-line diff summary per app in the root tracker entry.
 
 ### T1.4 Quran Escape Room: giveaways and fixed seeds
-Lane: app:`islamic-knowledge-escape-room` · Depends on: — · Files: `src/lib/app.ts`, `src/lib/engine.ts`, `src/data/content.json`, `src/data/provenance.json`, `src/pages/index.astro`, `src/pages/room/[id].astro` (or the actual room route), `tests/`
+Lane: app:`quran-escape-room` · Depends on: — · Files: `src/lib/app.ts`, `src/lib/engine.ts`, `src/data/content.json`, `src/data/provenance.json`, `src/pages/index.astro`, `src/pages/room/[id].astro` (or the actual room route), `tests/`
 Facts (11 Nov): lock 1 checks `f.get('theme')===room.name` and the room name is the page H1 and card title; the solution text prints `'Theme: '+room.name`; `const other=rooms.find(r=>r.id!==room.id)` always picks the first other room (Patience) for lock 4 distractors; shuffles use fixed seeds (`123`, `79`, `64`).
 Steps:
 1. Data: add a `theme` field to every room holding the current theme answer (copy of today's `name`), and give every room a new display `name` that does not reveal the theme (for example "The Locked Library", "The Lantern Room"; no people or animals, no theme word). Add a distinct one-line `description` that is not equal to `hint` and does not name the theme.
@@ -57,13 +57,13 @@ Verify: new unit tests for the seeded selection, distractor room choice and prog
 Lane: app:`quran-concept-atlas` · Depends on: — · Files: `src/pages/index.astro`, `src/pages/topic/[id].astro` (actual detail route)
 This app is merged in P3; this is the minimum interim fix.
 Steps:
-1. On the index cards, remove the theme explanation text and the theme name from the card body where they reveal a Quran Connections answer; show the passages' references and a line "Solve this theme's puzzle first →" linking to `https://quran-connections.moongazer.tech/` (the matching puzzle if its URL exists).
+1. On the index cards, remove the theme explanation text and the theme name from the card body where they reveal a Quran Connections answer; show the passages' references and a line "Solve this theme's puzzle first →" linking to `https://ayah-threads.moongazer.tech/` (the matching puzzle if its URL exists).
 2. On each detail page, put the explanation inside `<details><summary>Show the theme (spoiler for Quran Connections)</summary>…</details>`. Keep the content; do not delete it.
 Acceptance: no Quran Connections answer is visible without a click on any Atlas page; metadata descriptions do not contain the theme explanation (check `seo.json` `summaryField: "explanation"` and change it to a neutral template if needed).
 Verify: V1, V6.
 
 ### T1.6 Why It Was Revealed (Revelation Context): quiz giveaway
-Lane: app:`revelation-context-explorer` · Depends on: — · Files: `src/pages/index.astro`, `src/pages/reading/[id].astro`, related `src/lib/*.ts`, `src/data/content.json` (only if adding a topic field), tests
+Lane: app:`why-it-was-revealed` · Depends on: — · Files: `src/pages/index.astro`, `src/pages/reading/[id].astro`, related `src/lib/*.ts`, `src/data/content.json` (only if adding a topic field), tests
 Steps:
 1. Remove the answer category from the card eyebrow, the page eyebrow and the reading page heading area.
 2. Replace the Topic filter (currently the answer categories) with real subject topics. If no topic field exists, add `topic` to each reading in `content.json` (short editorial subject such as "Prayer direction", "Charity"); update `appContentSha256`.
@@ -97,14 +97,14 @@ Acceptance: `sync-shared --check` passes; casebook question titles no longer ren
 Verify: unit test for the description builder (add to `_implementation/seo.test.ts` or an app test); V2, V3, V6.
 
 ### T1.10 Stories of the Prophets: identical meta descriptions
-Lane: app:`stories-of-the-prophets-explorer` · Depends on: — · Files: `src/data/seo.json`
+Lane: app:`stories-of-the-prophets` · Depends on: — · Files: `src/data/seo.json`
 Fact: `summaryField` is `brief`, which is a boolean, so all 25 pages share one description.
 Steps: point `summaryField` at `focus` (a string per prophet).
 Acceptance: 25 distinct meta descriptions in the build.
 Verify: V1, V6 (count distinct descriptions).
 
 ### T1.11 Hifz calculator calendar export
-Lane: app:`quran-memorization-workload-calculator` · Depends on: — · Files: `src/lib/engine.ts`, tests
+Lane: app:`hifz-planner` · Depends on: — · Files: `src/lib/engine.ts`, tests
 Steps:
 1. `PRODID:-//Moongazer//Hifz Plan//EN`.
 2. UIDs end in `@moongazer.tech` and are unique per event (keep a deterministic part plus the export timestamp).
@@ -113,7 +113,7 @@ Acceptance: generated `.ics` has no `Islamic Product Lab`, no `islamic-product.l
 Verify: update tests; V1.
 
 ### T1.12 Everyday Akhlaq: choices that matter (minimum)
-Lane: app:`everyday-akhlaq-simulator` · Depends on: — · Files: `src/lib/scenario.ts`, `src/data/content.json` (read only unless noted), tests
+Lane: app:`everyday-akhlaq` · Depends on: — · Files: `src/lib/scenario.ts`, `src/data/content.json` (read only unless noted), tests
 Fact: the `constructive` flag on options is never read; the second decision and takeaway are the same whatever the first choice.
 Steps:
 1. Shuffle option order per scenario with a per-visit seed (as T1.7).
@@ -124,7 +124,7 @@ Acceptance: feedback differs between a constructive and a non-constructive choic
 Verify: unit tests for feedback selection and shuffle; V1, V7.
 
 ### T1.13 Civilization Timeline: wrong hadith notice
-Lane: app:`islamic-civilization-timeline` · Depends on: — · Files: `src/components/References.astro` (or the actual references component)
+Lane: app:`civilization-timeline` · Depends on: — · Files: `src/components/References.astro` (or the actual references component)
 Steps: show "This app does not republish modern English hadith translations" only when the page's sources include a hadith source (check the source `kind`).
 Acceptance: event pages without hadith sources don't show the line.
 Verify: V1, V5.
@@ -140,7 +140,7 @@ Acceptance: test passes; built HTML shows the list collapsed; button text conten
 Verify: V1, V5, V7.
 
 ### T1.15 Understand Salah: recall before reveal; honest audio label
-Lane: app:`understand-salah-lab` · Depends on: — · Files: `src/pages/index.astro`, `src/pages/lesson/[id].astro`, `src/lib/lesson.ts`
+Lane: app:`understand-your-salah` · Depends on: — · Files: `src/pages/index.astro`, `src/pages/lesson/[id].astro`, `src/lib/lesson.ts`
 Steps:
 1. Lesson pages start with the meaning hidden (`#practice` button reads "Show meaning", `aria-expanded="false"`, `#meaning` hidden). Without JavaScript the meaning must still be reachable: render it inside `<details>` or show it when JS is unavailable.
 2. Card label "Audio available" becomes "Full-surah audio" on the seven Al-Fatiha cards.
@@ -149,7 +149,7 @@ Acceptance: meaning hidden on load with JS, visible without JS; labels changed; 
 Verify: V1, V7.
 
 ### T1.16 Seerah Timeline: remove the "connected" promise
-Lane: shared (touches `deployment/targets.json`) + app:`interactive-seerah-timeline` · Depends on: — · Files: `deployment/targets.json`, `apps/interactive-seerah-timeline/src/pages/index.astro`, `src/data/learning.json`
+Lane: shared (touches `deployment/targets.json`) + app:`seerah-timeline` · Depends on: — · Files: `deployment/targets.json`, `apps/seerah-timeline/src/pages/index.astro`, `src/data/learning.json`
 Steps: remove "connected" wording from the directory card description, hero copy and the guide step. Rebuild the directory.
 Acceptance: no "connected" claim remains in the app or its directory card.
 Verify: V1, V4, V6.
