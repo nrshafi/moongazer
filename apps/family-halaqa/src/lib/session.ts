@@ -1,6 +1,6 @@
 import type content from '../data/content.json';
 import {newSession,validSession,answerQuestion,finishStep,type Session} from './engine';
-import {byId,read,write,forget,announce,copy} from './utils';import {track} from './counter';let completed=false;
+import {byId,read,write,forget,announce} from './utils';import {track} from './counter';import {renderSessionEnd} from './session-end';import learning from '../data/learning.json';let completed=false;
 type Pack=(typeof content.packs)[number];
 const pack=JSON.parse(byId('activity-data').textContent!) as Pack;
 const remember=byId<HTMLInputElement>('remember-pack');
@@ -10,6 +10,19 @@ const key=`session-${pack.id}`;
 remember.checked=read('remember',(value):value is boolean=>typeof value==='boolean')||false;
 let state:Session=remember.checked?read(key,(value):value is Session=>validSession(value,pack))||newSession():newSession();
 function persist(){if(remember.checked&&!write(key,state))announce('Storage unavailable. The session still works for this visit.');}
+function endOfSession(){
+  const next=learning.related[0]!;
+  renderSessionEnd(byId('session-end'),{
+    result:'Pack complete. Reading check answered. Discussion: shared or passed. This is not a judgment of anyone’s learning or character.',
+    learned:[
+      'Age bands are suggestions, and an adult can adapt the wording.',
+      'Anyone may pass. No personal story is needed.',
+      ...('passage' in pack&&pack.passage?[`Source reading: Quran ${pack.passage.ref}.`]:[]),
+    ],
+    shareText:'We finished a Family Halaqa pack together in about 15 minutes: https://family-halaqa.moongazer.tech/',
+    itemId:pack.id,next:{name:next.name,url:next.url},heading:'Pack complete',
+  });
+}
 function update(){
   for(const radio of form.querySelectorAll<HTMLInputElement>('input[name=answer]'))radio.checked=state.answer===Number(radio.value);
   (form.querySelector('fieldset') as HTMLFieldSetElement).disabled=state.done[0]!;
@@ -26,7 +39,9 @@ function update(){
     button.textContent=state.done[step]?'Completed ✓':step===1?'We discussed it, or chose to pass':'We tried it, or chose to pass';
   });
   byId('session-count').textContent=`${state.done.filter(Boolean).length} of 3 steps complete`;
-  byId('session-complete').hidden=!state.done.every(Boolean);
+  const complete=state.done.every(Boolean);
+  if(complete&&byId('session-complete').hidden)endOfSession();
+  byId('session-complete').hidden=!complete;
 }
 form.addEventListener('submit',event=>{
   event.preventDefault();
@@ -42,5 +57,5 @@ remember.addEventListener('change',()=>{
   else{forget('remember');forget(key);announce('Saved session cleared. Current activity remains for this visit.');}
 });
 byId('restart-pack').addEventListener('click',()=>{state=newSession();forget(key);update();form.scrollIntoView({block:'center',behavior:'auto'});});
-byId('copy-completion').addEventListener('click',()=>{track('share_clicked',pack.id);void copy(`We explored “${pack.title}” together.\nA reading, a conversation and a shared activity. No personal score or participant details.\n${location.origin+location.pathname}`,'Pack link copied');});document.querySelector<HTMLDetailsElement>('.print-answer')?.addEventListener('toggle',event=>{if((event.currentTarget as HTMLDetailsElement).open)track('activity_started',pack.id);});
+document.querySelector<HTMLDetailsElement>('.print-answer')?.addEventListener('toggle',event=>{if((event.currentTarget as HTMLDetailsElement).open)track('activity_started',pack.id);});
 update();

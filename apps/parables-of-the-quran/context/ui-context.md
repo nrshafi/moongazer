@@ -71,3 +71,10 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 changes (2026-11-12)
+
+- Hero: H1 is the app name; one descriptor line; a decorative lamp-niche motif (`public/motif.svg`) beside the H1 on desktop, a small corner mark below 580 px. The eyebrow "Image. Contrast. Reflection." is removed.
+- The intro explanation and the editorial-aid rule moved into the "How this works" drawer in the sidebar. The parable page puts its instruction into its own drawer and its descriptor is the area and reference.
+- The existing "Print reading worksheet" button on the parable page is kept.
+- The reading check ends with the shared end-of-session block.

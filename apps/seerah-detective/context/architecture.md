@@ -84,3 +84,7 @@ Counter events go through `src/lib/counter.ts` (`track`). Item id is the case's 
 
 - `src/lib/investigation.ts`: `activity_started` on the first clue opened or the first conclusion chosen. `activity_completed` when the correct conclusion is reached. `share_clicked` on "Copy case link".
 - `src/lib/investigation.ts` (`feedback()`): the "Report an error" link under the case result (`data-open-feedback`).
+
+## P5 notes
+
+`src/lib/investigation.ts` calls `pulseCorrect` on a correct result and `renderSessionEnd` into `#session-end` (next app from `learning.json` related[0], Seerah Timeline). The share text never states the conclusion.

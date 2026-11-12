@@ -71,3 +71,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (Seerah Detective)
+
+Home: count chip "12 cases" style chip, H1 "Seerah Detective", descriptor "Cases from the Prophet's life", decorative `public/motif.svg` (lens over a ruled page, CSS mask in the accent colour, hidden below 580 px), then search, topic filter and the case grid. The intro and "Read with care" notice live in one `How this works` drawer after the grid. Case page: the no-JS note moved into a drawer at the top of the sidebar. Results read "The reports support this conclusion." or "The reports do not support this conclusion."; a correct result adds the one-line limit and the shared session-end block. App CSS: `src/styles/app.css`. No Print or Projector (not in scope).

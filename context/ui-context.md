@@ -101,3 +101,27 @@ Retain the current typography, colors, logos and activity layouts. Make home hea
 ## Shell after the merges (D2c, 12 November 2026)
 
 The shared shell shows no "moved" banner and no alternate canonical; every page canonicalises to itself. The merged sections keep their own pages (Ayah Threads `/themes/`, Seerah Timeline `/challenge/`, Everyday Akhlaq `/business/`, Is It in the Quran? `/claims/`) with no banner, import button or link to a retired app.
+
+## P5 design rules (from 12 November 2026)
+
+The design source of truth is the root `DESIGN.md` (families, tokens with computed contrast, typography, archetypes, shared components) plus one `apps/<slug>/DESIGN.md` per app and `homepage/DESIGN.md` for the directory. Summary of the binding rules:
+- **Activity within 600 px:** at 390 × 844 and 375 × 812 the first control or activity card starts ≤ 600 px from the top, in both themes; each app records its measured value.
+- **Colour = subject family** (`config.accent`: `teal`, `gold`, `blue`, `violet`); small text uses `--accent-ink`, text on accent fills uses `--on-accent`. **Layout = archetype** (Playboard, Scriptoria, Dossier, Sanctuary, Hearth).
+- **Fonts:** DM Sans, Newsreader, Amiri; JetBrains Mono only for metadata chips in Playboard and Dossier apps. All local.
+- **Patterns:** compact hero (H1 = app name, ≤ 12-word descriptor); "How this works" `<details>` drawer holds instructions and caveats; end-of-session pattern (result → what you learned → share → next app → report an error); learning guide as an accordion after the activity.
+- **Motif:** one decorative `public/motif.svg` per app (≤ 8 KB, `aria-hidden`), geometry/objects/plants/sky only; the shared star watermark is removed.
+- **Islamic UI rules:** no images of people or animals; no music, bells or sound effects.
+- **Print and projector:** print shows the activity only; projector mode (×1.35 text, simpler chrome) is opt-in and saved only when the visitor opts into saving.
+- **No apex short links** (D2c): each app's own host is linked directly.
+
+### P5 shared shell implementation (12 November 2026)
+
+Shared-lane files now in every app (byte-identical; listed in `_implementation/sync-shared.ts`):
+- `src/layouts/Shell.astro`: `theme-color` per family (light = family accent, dark = family dark bg); header with logo, short name, tagline (hidden below 720 px), nav verb, Sources (hidden below 520 px), "All apps" link to `https://moongazer.tech/#library`, theme toggle.
+- `src/styles/refinement.css`: compact hero (no star watermark, dash-eyebrow or min-height; phone H1 2.1 rem, desktop 3.2 rem; descriptor clamped to two lines on phones; measured phone hero 120-136 px), `.how-it-works` drawer, `.session-end` block, Arabic 1.7 rem (1.6 rem phones) with line-height 2.1, print rules (activity only, black on white), projector rules (`:root[data-projector=on]`), `.is-correct` pulse (240 ms; none under reduced motion).
+- `src/components/HowItWorks.astro`: native `<details class="how-it-works"><summary>How this works</summary>`; place it first inside `.sidebar` (top of the sidebar on desktop, directly after the activity on phones).
+- `src/lib/session-end.ts` (+ `tests/session-end.test.ts`): `renderSessionEnd(container, options)`, `whatsappUrl`, `buildShareText`, `learnedLines`. The caller supplies the share text and must never put the answer in it.
+- `src/components/LearningGuide.astro`: the guide renders after the activity with one server-rendered `<details>` per question (text unchanged).
+- `src/lib/utils.ts`: `pulseCorrect(el)` (no-op under `prefers-reduced-motion: reduce`).
+- `src/lib/shell.ts` (two variants: with and without the print-time details opener): a Projector button is added to the header only when `<main>` or `<body>` has `data-projector`; it lasts the session and is saved under the namespaced key `projector` only while the app's `remember` opt-in is on.
+- Per-app `global.css` (several variants): family tokens for `teal`, `gold`, `blue`, `violet` in light and dark; buttons on accent fills use `--on-accent`. JetBrains Mono (`.mono-chip`, local WOFF2) is added only to the eight Playboard and Dossier apps.

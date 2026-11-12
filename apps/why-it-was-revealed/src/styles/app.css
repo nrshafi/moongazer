@@ -1,0 +1,15 @@
+/* App-only styles (P5): hero motif, library and dossier layout. */
+.intro{position:relative}
+.intro .motif{position:absolute;right:0;top:50%;transform:translateY(-50%);width:150px;height:110px;background:var(--accent);opacity:.55;pointer-events:none;-webkit-mask:url(/motif.svg) center/contain no-repeat;mask:url(/motif.svg) center/contain no-repeat}
+.intro h1,.intro p{max-width:calc(100% - 180px)}
+.order-note{margin:-6px 0 16px}
+.library-main{min-width:0}
+.library-main .card-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.hero-actions{margin-top:10px}
+@media(max-width:580px){.intro{padding:14px 0 12px;margin-bottom:14px}.intro .motif{width:44px;height:34px;top:16px;transform:none;opacity:.5}.intro h1,.intro p{max-width:none}.intro h1{padding-right:52px;font-size:1.7rem}.intro p{font-size:.95rem;margin-bottom:0}}
+@media(max-width:860px){.sidebar{display:block}}
+@media print{.intro .motif{display:none}.intro h1,.intro p{max-width:none}}
+.dossier-side{display:grid;gap:16px;align-content:start;min-width:0}
+.dossier-side>.sidebar{display:block}
+#copy-saved[hidden]{display:none}
+@media print{.dossier-side{display:block}}

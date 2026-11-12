@@ -1,0 +1,19 @@
+/* Seerah Timeline app styles (P5): hero motif and the phone inspector drawer. */
+.intro{position:relative}
+.intro>*:not(.motif){position:relative;z-index:1}
+.motif{position:absolute;right:0;top:50%;width:200px;height:134px;transform:translateY(-50%);background:var(--accent);opacity:.22;-webkit-mask:url(/motif.svg) center/contain no-repeat;mask:url(/motif.svg) center/contain no-repeat;pointer-events:none}
+@media(max-width:580px){.motif{display:none}}
+.intro-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.date-link{margin:0 0 14px;font-size:.92rem}.date-link a{display:inline-flex;align-items:center;min-height:44px;font-weight:650;color:var(--accent-ink)}
+.inspector-close{display:none}
+.event-aside{align-self:stretch}
+@media(min-width:761px){#selected-event{position:sticky;top:92px;max-height:calc(100vh - 108px);overflow:auto}.event-aside>.how-it-works{margin-bottom:18px}}
+@media(max-width:760px){
+  .event-aside>.how-it-works{margin-top:12px}
+  #selected-event{position:fixed;left:0;right:0;bottom:0;z-index:40;max-height:78vh;overflow:auto;padding:0 12px 12px;background:var(--bg);border-top:3px solid var(--accent);border-radius:16px 16px 0 0;box-shadow:0 -12px 40px #0005;overscroll-behavior:contain;transform:translateY(105%);visibility:hidden;transition:transform .2s ease-out,visibility 0s .2s}
+  #selected-event.drawer-open{transform:none;visibility:visible;transition:transform .2s ease-out}
+  #selected-event .panel-body{padding:16px}
+  .inspector-close{display:flex;position:sticky;top:0;z-index:2;margin:8px 0 0 auto}
+}
+@media(max-width:760px) and (prefers-reduced-motion:reduce){#selected-event{transition:none}}
+@media print{.motif,.inspector-close{display:none!important}#selected-event{position:static!important;transform:none!important;visibility:visible!important;max-height:none!important;overflow:visible!important;box-shadow:none;border:0;padding:0}}

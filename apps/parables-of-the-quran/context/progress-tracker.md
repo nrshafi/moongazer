@@ -105,3 +105,11 @@ Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 14:03 (Asia/Dhaka) - P5 per-app wave (T5.7, T5.8, T5.11, T5.14)
+
+Compact hero, lamp-niche motif, How this works drawer (index and parable page), end-of-session block after the reading check. Existing print worksheet button kept; the DESIGN.md "None" print note was a draft and was corrected. Removed duplicate: the diagram-as-editorial-aid limit is stated once beside the diagram on the parable page and once in the index drawer (different pages); the index intro sentence became the descriptor plus a drawer line.
+
+First control top (search field): 265 px at 390 x 844 and 375 x 812, identical in light and dark; 323 px at 1440 x 1000. No horizontal scroll, no script errors. Played the reading check on /parable/kindled-fire/: the end block appears and the share text names only the parable title, not the answer.
+
+Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun run test` 17 pass; `bun run build` 18 pages.

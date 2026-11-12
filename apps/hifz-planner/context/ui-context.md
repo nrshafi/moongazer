@@ -30,6 +30,18 @@ The actual token definitions live in the app's `src/styles/global.css`. Use thes
 | `--danger-bg` | `#fcecee` | `#44272f` |
 | `--success` | `#147653` | `#92dfb8` |
 
+## Wizard (P7 T7.2)
+
+The home page is a three-step wizard, one step visible at a time. Each step is a `<fieldset>` with a `<legend>`, a "Step N of 3" line and a progress track, with Back and Next buttons. Results and status messages go to an `aria-live` region. Every step is keyboard operable, and focus moves to the step's heading when the step changes.
+
+- Step 1, "What have you memorized?": the pages-already-memorized number and new-page goal, plus a "Choose by juz or by surah" drawer with two native checkbox fieldsets (juz 1 to 30, surahs 1 to 114 by transliterated name). Each checkbox label gives its page range. The grids use two columns at 390 px, without nested scrolling.
+- Step 2, "Your week": days per week, minutes per session, start date, the "Ramadan pace" suggestion button and the "Adjust assumptions" `<details>` drawer with plain labels.
+- Step 3, "Your plan": this-week checklist, calendar view, check-offs, "I missed a day", label setting, print button, `.ics` export.
+
+Wizard surfaces reuse the existing classes (`panel`, `panel-head`, `panel-body`, `button`, `button secondary`, `button ghost`, `field`, `actions`, `notice`, `pill`, `micro`, `top-gap`). New layout rules (step indicator, checklist rows, drawer spacing, print sheet) live in the app-local `src/styles/planner.css`, use only the tokens above, and add no colours or fonts. At 390 px the fields stack one per row, buttons take full width where they are the primary action, and no element may cause horizontal page scroll (wide tables sit inside an `overflow:auto` wrapper). Suggestion copy is labelled "a suggestion".
+
+Print: the weekly sheet (`#print-sheet`) is hidden on screen and shown only in print, with the header, footer, wizard controls and the full schedule hidden. It needs no storage.
+
 ## Typography
 
 | Role | Local font | Existing implementation |
@@ -71,3 +83,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 Sanctuary first screen (13:58 Asia/Dhaka, 2026-11-12)
+
+Hero is the H1, one descriptor line ("Estimate new pages and revision time for your study days."), a "604-page layout" chip and `public/motif.svg` (calendar grid, hidden below 580 px and in print). The wizard panel has a text step indicator (`.steps`: "1 Your pages", "2 Study days", "3 Plan"; the current step is bold, finished steps add "Done"), the `Step N of 3` label and the progress bar. Step 1 shows the live summary line (`#live-summary`, "Enter your numbers" until valid). The "What the planner assumes" notice and the methodology link are in the `HowItWorks` drawer at the top of the sidebar. Step 3 ends with the shared end-of-session block (`#session-end`). The weekly print sheet and "Print this week" button are unchanged.

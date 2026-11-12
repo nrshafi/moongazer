@@ -92,3 +92,8 @@ The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}
 | Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |
 
 Print buttons send no events.
+
+## P5 (2026-11-12)
+
+- `src/styles/app.css` holds the hero motif (CSS mask of `public/motif.svg`) and the library/sidebar layout. The index is a `.workspace` with the library in `.library-main` and a `.sidebar` holding the shared `HowItWorks` drawer.
+- `src/lib/studio.ts` ends the reading check with `renderSessionEnd` (shared `session-end.ts`): result, What you learned, Copy and WhatsApp share (`share_clicked` with the parable id), next app Is It in the Quran?, Report an error. The correct state also calls `pulseCorrect`.

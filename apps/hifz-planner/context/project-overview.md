@@ -14,10 +14,21 @@ Portfolio rank 6 of 20. Project root `apps/hifz-planner`. The app is implemented
 
 ## Core user flow
 
-1. Enter existing pages, a new-page goal, study time and learning/review estimates.
-2. Choose study weekdays, start date and revision cycle, then calculate.
-3. Inspect feasibility, the revision curve and schedule; adjust assumptions or export the CSV/calendar.
+The home page is a three-step wizard (P7 T7.2). Each step is a fieldset with a legend and a "Step N of 3" indicator, operable by keyboard, with Back and Next buttons.
 
+1. **What have you memorized?** Pages already memorized (0–603) and new pages you want to add. The memorized count can be typed, or filled in by ticking juz (30) or surahs (114) in a "Choose by juz or by surah" drawer. Ticks give the distinct page count, and a page shared by neighbouring juz or surahs counts once. Typing a number clears the ticks.
+2. **Your week.** Days per week (study days are Monday first, in calendar order), minutes per session and start date. A "Ramadan pace" button fills in a suggestion (about half the default new pages per session, review cycle of 7 sessions). It is a suggestion, labelled as one, and every value stays editable.
+3. **Your plan.** This week's checklist (new lesson, recent revision, old revision for each study day), the full schedule as a calendar, check-offs, an "I missed a day" re-plan, a printable weekly sheet, a label setting (sabaq/sabqi/manzil or plain words), and `.ics` export.
+
+Per-page minute estimates and the other assumptions sit in an "Adjust assumptions" drawer with plain labels, for example "How many new pages per session?".
+
+## Page boundaries
+
+Source: Quran MCP `fetch_quran_metadata` (server https://mcp.quran.ai), 30 juz calls and 114 surah calls, fetched 2026-11-11 (Asia/Dhaka, +06:00). The research copy is `_implementation/research/page-boundaries.json` (commit 83cc262, LF SHA-256 fb4a06e02cc92891a70fd2e845b4a0236159be66b207472b9206c8da129e0031). The app copy is `src/data/page-boundaries.json` (compact arrays: juz, and surah with transliterated name, page range and juz range; no Arabic text). `src/data/provenance.json` records the same details.
+
+Checks on the data: pages 1 to 604 are each covered by a juz and by a surah, the juz chain is unbroken, and the manzil ranges in the research folder match. Neighbouring juz and surahs share boundary pages (juz 3 ends and juz 4 starts on page 62), so `src/lib/pages.ts` counts a page once when totalling a selection. Selecting all 30 juz gives 604 pages, and so does selecting all 114 surahs.
+
+The seven manzil files give page ranges per manzil only, and were used only for the consistency check.
 ## Features and content
 
 A 604-page-layout model with existing/new pages, user-supplied time estimates, pace limits, study weekdays, start date, revision cycle, schedule pagination, CSV and calendar export.

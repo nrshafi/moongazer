@@ -1,8 +1,8 @@
 {
   "slug": "hifz-planner",
   "name": "Hifz Planner",
-  "description": "Estimate new memorization and revision time for your week",
-  "accent": "teal",
+  "description": "Plan new memorization and revision around your week",
+  "accent": "blue",
   "nav": "Plan",
   "port": 4326
 }

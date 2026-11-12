@@ -1,21 +1,22 @@
-import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,cp,readdir,rm} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {origin,escapeHtml as e,metadata,appCards,collectionLinks,questions,documentPage} from './render.mjs';
+import {origin,escapeHtml as e,metadata,appCards,appLinks,logo,pickChips,collectionLinks,questions,documentPage} from './render.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const source=join(root,'homepage');
 const out=join(source,'dist');
 const apps=JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'));
 const collections=JSON.parse(await readFile(join(source,'collections.json'),'utf8'));
+const shots=new Set((await readdir(join(source,'shots')).catch(()=>[])).filter(f=>f.endsWith('.webp')).map(f=>f.slice(0,-5)));
 const bySlug=new Map(apps.map(app=>[app.slug,app]));
-if(apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
+if(apps.some(app=>![2,10,20].includes(app.time)||!['me','kids','class'].includes(app.audience)||app.format!==app.kind)||apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
 const home={path:'/',title:'Free Islamic Learning Apps & Quran Games | Moongazer',heading:'Free Islamic learning apps',description:'Explore sixteen free Islamic learning apps for Quran, Seerah, history and daily practice. Choose a reading tool or game and begin without an account.'};
 const allPages=[home];
 const paths=collections.map(collection=>{
   const selected=apps.filter(app=>app.category===collection.category);
   if(!selected.length||!/^[a-z0-9-]+$/.test(collection.slug))throw new Error('Invalid subject guide');
-  return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span> <h3>${e(collection.name)}</h3> <p>${e(collection.description)}</p> <span>Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
+  return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span> <h3>${e(collection.name)}</h3> <p>${e(collection.description)}</p> <span class="member-logos" aria-hidden="true">${selected.map(app=>`<img src="${logo(app.slug)}" alt="" width="32" height="32" loading="lazy">`).join("")}</span> <span class="subject-action">Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
 }).join('\n');
 const commonQuestions=[
   {question:'What is Moongazer?',answer:'Moongazer is a collection of sixteen free browser apps for Quran, Seerah, history and everyday Islamic learning. Choose a tool for a specific task, such as recognizing a surah, finding wording, reading a report or exploring prayer recitation meanings.'},
@@ -23,15 +24,17 @@ const commonQuestions=[
   {question:'Where can I check an explanation or report a correction?',answer:'Each app links its sources and methodology. The About page explains the collection\'s source practices and provides the public contact for quotation, attribution and wording corrections.'}
 ];
 let template=await readFile(join(source,'index.html'),'utf8');
-for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
-template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- APP_CATALOG -->',appCards(apps)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
+for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS','PICKER_CHIPS','APP_LINKS'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
+template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- APP_LINKS -->',appLinks(apps)).replace('<!-- PICKER_CHIPS -->',pickChips(apps)).replace('<!-- APP_CATALOG -->',appCards(apps,shots)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
+// Start clean so a removed or renamed file can never survive in dist.
+await rm(out,{recursive:true,force:true});
 await mkdir(out,{recursive:true});
 await writeFile(join(out,'index.html'),template);
 for(const collection of collections){
   const selected=apps.filter(app=>app.category===collection.category);
   const meta={...collection,path:`/${collection.slug}/`};
   const journeys=collection.paths.map(path=>`<article class="reading-path"><h3>${e(path.title)}</h3><ol>${path.items.map(item=>{const app=bySlug.get(item.slug);if(!app)throw new Error('Unknown journey app: '+item.slug);if(item.path&&!/^\/[a-z0-9\/-]*$/.test(item.path))throw new Error('Invalid journey path');return `<li><a href="https://${app.slug}.moongazer.tech${item.path||'/'}">${e(item.label||app.name)}</a> <p>${e(item.reason)}</p></li>`;}).join(' ')}</ol></article>`).join(' ');
-  const body=`<section class="reading-section"><h2>Choose a task before a tool</h2><p>${e(collection.guidance)}</p><div class="reading-paths">${journeys}</div></section><section class="reading-section"><h2>The ${e(collection.name.toLowerCase())} app collection</h2><p>Compare the ${selected.length} tools in this subject, then open the activity you want to try.</p><div class="app-grid">${appCards(selected)}</div></section><section class="reading-section"><h2>Questions before you begin</h2>${questions(collection.questions)}</section><section class="reading-section"><h2>Explore another subject</h2><nav class="reading-subjects" aria-label="Other learning subjects">${collectionLinks(collections.filter(c=>c.slug!==collection.slug))} <a href="/about/">Sources, purpose & corrections</a></nav></section>`;
+  const body=`<section class="reading-section"><h2>Choose a task before a tool</h2><p>${e(collection.guidance)}</p><div class="reading-paths">${journeys}</div></section><section class="reading-section"><h2>The ${e(collection.name.toLowerCase())} app collection</h2><p>Compare the ${selected.length} tools in this subject, then open the activity you want to try.</p><div class="app-grid">${appCards(selected,shots)}</div></section><section class="reading-section"><h2>Questions before you begin</h2>${questions(collection.questions)}</section><section class="reading-section"><h2>Explore another subject</h2><nav class="reading-subjects" aria-label="Other learning subjects">${collectionLinks(collections.filter(c=>c.slug!==collection.slug))} <a href="/about/">Sources, purpose & corrections</a></nav></section>`;
   const folder=join(out,collection.slug);await mkdir(folder,{recursive:true});
   await writeFile(join(folder,'index.html'),documentPage(meta,body,collections,selected));
   allPages.push(meta);
@@ -68,6 +71,21 @@ const llms=`# Moongazer\n\n> Sixteen free Islamic learning apps for Quran, Seera
 await writeFile(join(out,'llms.txt'),llms);
 for(const file of ['styles.css','reading.css','app.js','feedback.js','moon.svg','favicon.svg','social-card.png','_headers','_redirects','_routes.json','robots.txt','404.html'])await cp(join(source,file),join(out,file));
 await cp(join(source,'logos'),join(out,'logos'),{recursive:true});
+if(shots.size)await cp(join(source,'shots'),join(out,'shots'),{recursive:true});
 await mkdir(join(out,'fonts'),{recursive:true});
-for(const file of ['dm-sans.woff2','dm-sans-OFL.txt','newsreader.woff2','newsreader-OFL.txt'])await cp(join(root,'apps/guess-the-surah/public/fonts',file),join(out,'fonts',file));
+for(const file of ['dm-sans.woff2','dm-sans-OFL.txt','newsreader.woff2','newsreader-OFL.txt','amiri-OFL.txt'])await cp(join(root,'apps/guess-the-surah/public/fonts',file),join(out,'fonts',file));
+await cp(join(source,'amiri-honorific.woff2'),join(out,'fonts','amiri-honorific.woff2'));
+// Every local file a built page references must exist (a renamed logo once shipped as a 404).
+const {existsSync}=await import('node:fs');
+async function htmlFiles(dir){const found=[];for(const entry of await readdir(dir,{withFileTypes:true})){const path=join(dir,entry.name);if(entry.isDirectory())found.push(...await htmlFiles(path));else if(entry.name.endsWith('.html'))found.push(path);}return found;}
+const missing=[];
+for(const file of await htmlFiles(out)){
+  const html=await readFile(file,'utf8');
+  for(const [,ref] of html.matchAll(/(?:src|href)="(\/[^"#?]*)"/g)){
+    if(ref.startsWith('//'))continue;
+    const target=join(out,decodeURI(ref));
+    if(!existsSync(target)&&!existsSync(join(target,'index.html')))missing.push(`${ref} in ${file.slice(out.length)}`);
+  }
+}
+if(missing.length)throw new Error(`Missing local files:\n${[...new Set(missing)].join('\n')}`);
 console.log(`Built ${allPages.length} indexable directory pages and ${apps.length} app links into ${out}`);

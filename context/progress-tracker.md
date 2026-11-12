@@ -277,3 +277,36 @@ The owner asked to keep only the new things, with no redirects (decision D2c in 
 Validation: 16/16 check, test and build (251 tests); sync identical; 60 repo tests; verify-static 313 pages; verify-seo passed; text joins 0; `host-smoke.mjs` 16/16; counter check passed.
 
 Two Pages projects carry an `-app` suffix because Cloudflare refused the plain names. Old projects and DNS records are deleted after the live check. Details are in `plan/implementation/releases/R3B.md`.
+
+## 2026-11-12T06:40:00+06:00 — P5.15: directory front door
+
+Branch `phase-5-directory` (from `phase-5-shell`). Directory only; no `apps/*` changes.
+- Header nav Apps, Today, Families, About; compact hero (H1 "Free Islamic learning games and tools", two buttons, small crescent mark on phones); static "Tonight on Moongazer" card at `#today`; quick picker chips (`?pick=<id>#library` links, filtered in place by `app.js`); library cards with a 16:9 screenshot slot (`homepage/shots/<slug>.webp` when present, else a styled placeholder), format badge, time, audience; subject guide cards with member logos after the library; empty `#season`; trust row; footer links every app host directly (no short links, D2c).
+- `deployment/targets.json` gains `time`, `audience`, `format` (= `kind`) per app; `build.mjs` validates them.
+- Fixed a pre-existing break: logo files still had pre-rename names, so 15 card logos 404ed; `render.mjs` now maps slug to logo file. Removed stray literal `{' '}` text from `index.html`. Removed the category filter buttons and search box (superseded by the chips; 16 apps).
+- Measured (headless Chrome, 390 x 844): first library card top 703 px, library heading 626 px, no horizontal scroll. Desktop 1440 x 1000: library heading top 722 px (above the fold). JS blocked (CSP `script-src 'none'`): chips are six links and all 16 cards are listed. No script errors, both colour schemes. Chips checked in the browser: kids gives 3 apps, 2 minutes gives 3, prayer and hifz one each.
+- Validation: `bun test _implementation/seo.test.ts homepage/tests` 60 pass; text joins 0; `deployment/verify-seo.py` could not run in full here (app `dist/` folders are not built in this worktree). A homepage-only copy passed every per-page SEO, JSON-LD and sitemap assertion on the directory and stopped only at the cross-host link check, which needs the app builds.
+- Remaining: screenshots (`homepage/shots/*.webp`) are captured later from the redesigned apps; P6 fills the Tonight card; P7 fills `#season`; run the full `verify-seo.py` after app builds.
+
+## 2026-11-12T06:59:00+06:00 — P5 shared lane: tokens, compact shell, new shared components
+
+Shared-lane tasks T5.4-T5.10, T5.12 (shared part) and T5.13 on branch `phase-5-shared`: family tokens and `config.accent` in all 16 apps; Shell `theme-color` map; compact hero and header with an "All apps" link; `HowItWorks.astro`; `session-end.ts` with tests; learning guide as `<details>`; Arabic typography; print CSS and projector toggle in both `shell.ts` variants; `.is-correct` pulse and `pulseCorrect`; JetBrains Mono v2.304 in eight apps (record in `_implementation/research/fonts/`).
+- Validation: verify.ts check 16/16 (0 errors), test 16/16 (315 pass, 0 fail), build 16/16; sync-shared identical; `bun test _implementation/seo.test.ts homepage/tests` 60 pass; verify-static 313 pages; verify-seo passed (17 sites, 323 pages); text-join audit 0; `contrast.py` 0 pairs below 4.5:1. Headless Chrome via `e2e-preview.ts`: all 16 apps at 390 px (no horizontal scroll, logo and name visible, 0 script errors, hero 120-136 px, H1 2.1 rem, `--accent` matches the family) and four family apps at 390 x 844 and 1440 x 1000 in light and dark (desktop H1 3.2 rem); projector toggle checked with and without the `remember` opt-in.
+- Open: no app page uses `data-projector`, the drawer, `renderSessionEnd` or `pulseCorrect` yet (per-app lane). The two-line descriptor clamp on phones is a guard until per-app descriptors are shortened. word-groups `.term-tile[aria-pressed=true]` still sets `color:var(--bg)` on an accent fill (per-app CSS; should become `--on-accent`). No push, no deployment.
+
+## 2026-11-12T14:26:59+06:00 — P5 complete (R5)
+
+Orchestrator: the design system (root and directory `DESIGN.md`, contrast script), context rules, the logo and social-card hotfix, the directory honorific font and missing-file check, the Salah reorder, the first-screen sweep, and screenshots.
+
+Subagents:
+- One Sonnet agent: the shared lane.
+- One Sonnet agent: the directory.
+- Two Haiku agents: the per-app `DESIGN.md` files.
+- Four Sonnet agents: the per-app wave.
+
+Validation:
+- 16/16 check, test and build (343 tests).
+- Sync identical; 60 repo tests; verify-static 313; verify-seo passed; text joins 0.
+- First-screen sweep 96/96; host smoke 16/16; counter check passed.
+
+Details are in `plan/implementation/releases/R5.md`.

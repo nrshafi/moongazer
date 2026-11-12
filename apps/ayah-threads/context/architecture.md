@@ -99,3 +99,9 @@ Hook points in `src/lib/puzzle.ts`:
 - Feedback: the completion panel carries a `.feedback-link` with `data-open-feedback`.
 
 Puzzle ids are fixed slugs from `content.json`. No typed text, guessed labels beyond the fixed option labels, or saved state enters an id. No unit test was added: the hook points are wiring only.
+
+## P5 changes
+
+- `puzzle.ts` renders `renderSessionEnd` (Copy and WhatsApp call `track('share_clicked', puzzleId)`); `#share-puzzle` and `#share-result` were removed. Next app is learning.json related[0].
+- The `puzzle` query parameter accepts the puzzle number (written by the app) and still accepts old id links, because the id equals the answer theme. Stored state still uses the id.
+- The picker option text is rewritten on each render to add the solved tick from `state.completed`.

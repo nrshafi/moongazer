@@ -87,3 +87,9 @@ The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}
 | Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |
 
 The place pages have no reveal or check control, no copy or share button and no result panel, so they send no activity events and no Report an error link. The map and cards send no events. Print buttons send no events.
+
+## P5 (2026-11-12)
+
+- `src/styles/app.css` holds the hero motif (CSS mask of `public/motif.svg`), the library/sidebar layout, the Pinned/No pin chip and the `#export[hidden]` rule. The index is a `.workspace`: filters, then the map, then the cards, with the drawer in a `.sidebar`.
+- `src/lib/library.ts` `update()` hides `#export` (Copy my list) until a place is saved.
+- `src/lib/place-end.ts` renders the shared end-of-session block on a place page (no score; the result is the opened place; share text is the plain site line).

@@ -71,3 +71,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (Understand Your Salah)
+
+Home: chip "15 lessons", H1, descriptor "15 lessons on the words of prayer.", decorative niche `public/motif.svg` (hidden below 580 px), then the audio card with its CC BY-SA 4.0 attribution line directly under the player (a licence requirement; it stays out of the drawer). The `How this works` drawer sits in the sidebar (beside the audio on desktop, after it on phones) with the intro and the "About these lessons" limit. Lesson page: the instruction sentence moved into a drawer at the top of the sidebar; the reading check shows "Correct:" or "Not yet:" text, a success or danger border, and the shared session-end block. App CSS: `src/styles/app.css`.

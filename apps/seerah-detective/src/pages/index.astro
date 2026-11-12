@@ -2,15 +2,17 @@
 import learning from '../data/learning.json';
 import Shell from '../layouts/Shell.astro';
 import Honorific from '../components/Honorific.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import '../styles/app.css';
 import data from '../data/content.json';
 const topics=[...new Set(data.cases.map(item=>item.topic))];
 ---
 <Shell title="Seerah Detective">
-  <section class="intro"><div class="intro-top"><span class="eyebrow">Let the reports lead</span> <span class="pill"><span class="dot"></span>{data.cases.length} cases</span></div> <h1>{learning.heading}</h1> <p>Solve cases from the Prophet's life <Honorific /> using the reports. Read carefully, weigh the clues, and choose what the evidence supports.</p></section>
+  <section class="intro"><span class="motif" aria-hidden="true"></span><div class="intro-top"><span class="pill"><span class="dot"></span>{data.cases.length} cases</span></div> <h1>{learning.heading}</h1> <p>Cases from the Prophet's life <Honorific /></p></section>
   <div class="filters bottom-gap"><label class="field search-field">Search<input id="case-search" type="search" placeholder="Search a person, place, or event…"/></label> <label class="field">Topic<select id="case-topic"><option value="all">All topics</option>{topics.map(topic=><option value={topic}>{topic}</option>)}</select></label> <span class="count-label" id="case-count" role="status">{data.cases.length} cases</span></div>{' '}
   <div class="card-grid" id="case-grid">{data.cases.map(item=><article class="panel activity-card" data-search={`${item.title} ${item.brief} ${item.era} ${item.topic}`.toLowerCase()} data-topic={item.topic}><div class="spread" style="width:100%"><span class="overline">Case {String(item.number).padStart(2,'0')}</span> <span class="pill neutral">{item.era}</span></div> <div class="case-line" aria-hidden="true"><span></span> <span></span> <span></span></div> <h2>{item.title}</h2> <p>{item.brief}</p> <span class="micro">3 clues · about 4 minutes</span> <a class="button secondary wide" href={`/case/${item.id}/`}>Open the case <span aria-hidden="true">→</span></a></article>)}</div>{' '}
   <div class="empty panel" id="case-empty" hidden><h2>No cases match those filters.</h2> <p>Try another word or reset the topic.</p><button class="button secondary" id="case-reset">Clear filters</button></div>{' '}
-  <div class="notice top-gap"><strong>Read with care.</strong> Clues are concise editorial paraphrases. Open their references to read the full reports. This activity teaches source reading, not detective fiction presented as history.</div>
+  <div class="top-gap"><HowItWorks><p>Solve cases from the Prophet's life <Honorific /> using the reports. Read carefully, weigh the clues, and choose what the evidence supports.</p><p><strong>Read with care.</strong> Clues are concise editorial paraphrases. Open their references to read the full reports. This activity teaches source reading, not detective fiction presented as history.</p></HowItWorks></div>
 </Shell>
 <script>import '../lib/catalog';</script>
 <style>.case-line{display:flex;align-items:center;gap:9px;padding:9px 0 2px;width:100%}.case-line span{width:18px;height:23px;border:1px solid var(--accent);border-radius:4px;background:var(--tint);transform:rotate(-8deg)}.case-line span:nth-child(2){transform:rotate(5deg)}.case-line span:nth-child(3){transform:rotate(-2deg)}</style>

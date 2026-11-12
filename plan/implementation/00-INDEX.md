@@ -134,9 +134,9 @@ Update this table when a task or phase starts or finishes (see protocol §6).
 | P3 step A | Done (R3 pushed 2026-11-11) | phase-3-merges → main | 2026-11-11 | Step B (301s) on or after 2026-11-11 + 14 days. See `releases/R3.md`. |
 | P3 step B | Replaced by D2c (R3B) | phase-3b-hosts → main | 2026-11-12 | Merged apps deleted; 16 apps on new hosts; no redirects. See `releases/R3B.md`. |
 | P4 | Done (R4 pushed 2026-11-12) | phase-4-services → main | 2026-11-12 | Feedback form, corrections log, anonymous counter (16 apps; Hifz with P7). Production setup agent-run under D2b; see `releases/R4.md`. |
-| P5 | Not started | | | |
+| P5 | Done (R5 pushed 2026-11-12) | phase-5-shell → main | 2026-11-12 | Design system, family tokens, activity-first shell, drawer, session end, motifs, directory front door; Hifz wizard (P7.1–7.3) included. See `releases/R5.md`. |
 | P6 | Not started | | | |
-| P7 | Not started | | | |
+| P7 | In progress: Hifz Planner (T7.1–T7.3) released in R5; Zakat scaffold on phase-7-zakat; Ramadan hub not started | phase-7-* | 2026-11-12 | |
 | P8 | Not started | | | |
 | C (see `C-content-track.md` §5 for per-app rows) | Not started | | | |
 | P9 | Not started | | | |

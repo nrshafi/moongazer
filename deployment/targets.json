@@ -4,6 +4,9 @@
     "name": "Guess the Surah",
     "category": "Quran",
     "kind": "Quiz",
+    "time": 2,
+    "audience": "me",
+    "format": "Quiz",
     "icon": "spark",
     "description": "Find the surah from its clues",
     "featured": true
@@ -13,6 +16,9 @@
     "name": "Ayah Threads",
     "category": "Quran",
     "kind": "Puzzle",
+    "time": 10,
+    "audience": "me",
+    "format": "Puzzle",
     "icon": "grid",
     "description": "Three ayat, one hidden thread: a Quran puzzle",
     "project": "moongazer-ayah-threads-app"
@@ -22,6 +28,9 @@
     "name": "Seerah Detective",
     "category": "Seerah & history",
     "kind": "Mystery",
+    "time": 10,
+    "audience": "me",
+    "format": "Mystery",
     "icon": "search",
     "description": "Solve cases from the Prophet's life ﷺ using the reports"
   },
@@ -30,6 +39,9 @@
     "name": "Everyday Akhlaq",
     "category": "Everyday practice",
     "kind": "Scenarios",
+    "time": 10,
+    "audience": "kids",
+    "format": "Scenarios",
     "icon": "heart",
     "description": "Everyday character dilemmas: choose, then read the sources"
   },
@@ -38,6 +50,9 @@
     "name": "Seerah Timeline",
     "category": "Seerah & history",
     "kind": "Timeline",
+    "time": 20,
+    "audience": "class",
+    "format": "Timeline",
     "icon": "timeline",
     "description": "The Prophet's life ﷺ from 610 to 632"
   },
@@ -46,14 +61,20 @@
     "name": "Hifz Planner",
     "category": "Everyday practice",
     "kind": "Planner",
+    "time": 10,
+    "audience": "me",
+    "format": "Planner",
     "icon": "calculator",
-    "description": "Estimate new memorization and revision time for your week"
+    "description": "Plan new memorization and revision around your week"
   },
   {
     "slug": "is-it-in-the-quran",
     "name": "Is It in the Quran?",
     "category": "Quran",
     "kind": "Search",
+    "time": 2,
+    "audience": "me",
+    "format": "Search",
     "icon": "check",
     "description": "Search every ayah in Arabic and English"
   },
@@ -62,6 +83,9 @@
     "name": "Quran Escape Room",
     "category": "Games & challenges",
     "kind": "Puzzle",
+    "time": 20,
+    "audience": "class",
+    "format": "Puzzle",
     "icon": "key",
     "description": "Rooms of Quran puzzles to solve together",
     "project": "moongazer-quran-escape-room-app"
@@ -71,6 +95,9 @@
     "name": "Stories of the Prophets",
     "category": "Quran",
     "kind": "Reader",
+    "time": 10,
+    "audience": "kids",
+    "format": "Reader",
     "icon": "book",
     "description": "The prophets in the Quran: read, reflect and check"
   },
@@ -79,6 +106,9 @@
     "name": "Places in the Quran",
     "category": "Quran",
     "kind": "Map",
+    "time": 10,
+    "audience": "me",
+    "format": "Map",
     "icon": "pin",
     "description": "A map of the places the Quran names, and where certainty ends"
   },
@@ -87,6 +117,9 @@
     "name": "Word Groups",
     "category": "Games & challenges",
     "kind": "Puzzle",
+    "time": 2,
+    "audience": "me",
+    "format": "Puzzle",
     "icon": "grid",
     "description": "Sixteen Quran words, four hidden groups"
   },
@@ -95,6 +128,9 @@
     "name": "Understand Your Salah",
     "category": "Everyday practice",
     "kind": "Course",
+    "time": 20,
+    "audience": "me",
+    "format": "Course",
     "icon": "arch",
     "description": "The meaning of the words you say in prayer",
     "featured": true
@@ -104,6 +140,9 @@
     "name": "Parables of the Quran",
     "category": "Quran",
     "kind": "Reader",
+    "time": 10,
+    "audience": "me",
+    "format": "Reader",
     "icon": "leaf",
     "description": "The Quran's parables, explained"
   },
@@ -112,6 +151,9 @@
     "name": "Civilization Timeline",
     "category": "Seerah & history",
     "kind": "Timeline",
+    "time": 20,
+    "audience": "class",
+    "format": "Timeline",
     "icon": "arch",
     "description": "Islamic civilization across regions"
   },
@@ -120,6 +162,9 @@
     "name": "Why It Was Revealed",
     "category": "Quran",
     "kind": "Reader",
+    "time": 10,
+    "audience": "me",
+    "format": "Reader",
     "icon": "book",
     "description": "Asbab al-nuzul: the reports behind selected ayat"
   },
@@ -128,6 +173,9 @@
     "name": "Family Halaqa",
     "category": "Games & challenges",
     "kind": "Activities",
+    "time": 10,
+    "audience": "kids",
+    "format": "Activities",
     "icon": "people",
     "description": "Ten-minute Islamic activities to do together"
   }

@@ -96,3 +96,10 @@ Limitations: no browser or DOM run with a stubbed `navigator.sendBeacon`; once-p
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 14:06 (Asia/Dhaka) - P5 wave: Civilization Timeline
+
+Changed: compact hero and motif (T5.6/T5.11); map and compare panels moved below the list; drawer holds the intro remainder, map note and compare note (T5.7); comparison ends with the session-end block (T5.8); first screen measured (T5.14).
+Removed duplicates: compare note and the compare result's long "Overlap does not establish contact, influence or causation" line merged into the drawer sentence plus the one-line "Overlap shows dates, not contact."; the "Report an error" link inside the comparison (session-end carries it). No limit deleted. Map limit now appears only in the drawer.
+Measured first control (search) 282 px at 390 and 375; first event card 757 px (not within 600; only the first-control target is met).
+Validation: `bun run check` 0 errors; `bun run test` 18 pass; `bun run build` ok; headless Chrome at 390, 375, 1440 light and dark with no script errors or horizontal scroll; one comparison run and its share text checked.

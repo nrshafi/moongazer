@@ -102,6 +102,68 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 
 Quran Memorization Workload Calculator -> Hifz Planner. Title shortened to "Hifz Planner — Estimate new hifz and revision time | Moongazer" (62 chars). "Calculator" wording in learning.json and sources.astro became "planner"; related name "Is This Actually in the Quran?" -> "Is It in the Quran?". content.json unchanged (hash unchanged). No mentions of the Prophet in editorial text. Honorifics recorded in architecture.md. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 19 pass / 0 fail (88 expects); `bun run build` 4 pages built. `grep -rli` of dist for the old names and retired phrases finds nothing in the app pages.
 
+## 2026-11-11 (Asia/Dhaka) — P7.1 to P7.3: wizard, check-offs, missed-day re-plan, print sheet, labels, export
+
+Branch `phase-7-hifz` (from `phase-3-merges`). Commits: `70dfdb5` P7.1 context; `7d224aa` P7.2 pure wizard engine and tests; `a3f5f30` P7.2 three-step wizard; `04ba4e0` P7.3 check-offs (opt-in `checkoffs`); `14343f3` P7.3 "I missed a day"; `14ac0e8` P7.3 weekly print sheet; `9d68088` P7.3 sabaq/sabqi/manzil labels (`vocab`); `eda84cb` P7.3 optional daily reminder in `.ics`; `761524a` P7.3 descriptor (config and SEO); `dc3a861` P7.3 `deployment/targets.json` description (one line, this app only; repo file outside the app lane, changed on owner instruction).
+
+What changed:
+- Home page is a three-step wizard: step 1 pages memorized and new pages to add; step 2 study days (Monday first), minutes per session, start date, the Ramadan pace suggestion (labelled "a suggestion": 0.25 new pages per session, review cycle of 7 sessions), and an "Adjust assumptions" drawer with plain labels; step 3 this week's checklist (new lesson, recent revision, old revision), calendar grouped by week, check-off boxes, "I missed a day", print button, label setting, CSV and `.ics`.
+- `src/lib/wizard.ts` (pure) builds the plan through the unchanged `schedule()`, splits review into recent and old pages for display (a split of the same total), groups weeks, validates stored input and check-offs, re-plans from today (`replanFrom`), and adds the daily reminder to `calendar()` output (`withDailyReminder`).
+- Storage: `plan` (remember answers, opt-in), `checkoffs` (opt-in, validated `YYYY-MM-DD:kind`), `vocab` (display preference). Documented in `architecture.md`.
+- `src/styles/planner.css` (app-local) holds the wizard, checklist, drawer, and print rules. No new colours or fonts. Shared `global.css` and `refinement.css` not edited.
+- Descriptor: "Plan new memorization and revision around your week". SEO title "Hifz Planner — Plan hifz and revision each week | Moongazer" (59 characters).
+- Learning-guide steps updated to the wizard.
+
+Not done, with reasons:
+- **Juz and surah choosers (T7.2 step 1): not built.** The bundled `content.json` has 114 chapter records (verse counts only) and `layoutPages: 604`, with no page-to-surah or page-to-juz boundaries. The seven manzil files in `_implementation/research/` give page ranges per manzil only. Per the brief, boundaries were not derived or invented and Quran MCP was not called. The acceptance criterion "every page 1–604 reachable through juz/surah choices" is therefore not met. Needed: a Quran MCP metadata snapshot with per-juz and per-surah page starts, recorded with tool, edition and date. The step-1 number entry reaches every count from 0 to 603.
+- **Item 6 counter events:** skipped as instructed. `// P4.7: track(...)` comments sit at the first-step (`activity_started`) and plan-generated (`activity_completed`) hook points in `src/lib/app.ts`.
+- **Context files:** `DESIGN.md` skipped (P5). 
+
+Checks run in this app (from `apps/quran-memorization-workload-calculator`):
+- `bun install --frozen-lockfile`: 259 packages installed, no version changes.
+- `bun run check`: 0 errors, 0 warnings, 0 hints (last run after the final code change).
+- `bun test`: 40 pass, 0 fail, 390 expect() calls, 6 files (baseline before this work: 25 pass). The existing engine, calendar-identity, storage and theme tests are unchanged.
+- `bun run build`: 4 pages built.
+- From repo root, `bun test _implementation/seo.test.ts`: 9 pass, 0 fail.
+
+Browser checks (V7), headless Chrome against `astro preview` on port 4326, scenario scripts in the session scratchpad (not committed): wizard flow 30 of 30 at 390 and 1440 px (validation, focus on legend, Ramadan suggestion, back navigation, no horizontal overflow); check-offs 11 of 11 (opt-in storage, reload restore, invalid record rejected and removed, blocked storage explains that check-offs will not be kept); missed-day re-plan 7 of 7 (missed-day, all-done message; a missed-week case is covered by unit tests); print media emulation 7 of 7 (sheet rendered, workspace and learning guide hidden, no overflow); label setting 6 of 6; `.ics` download 6 of 6 (reminder RRULE and event count, PRODID kept, CRLF). Phone first-control offset: 665 px at 390×844 and 663 px at 375×812, above the 600 px target. The offset is driven by the shared shell header and intro, which belongs to P5.
+
+Not run: V2 (`verify.ts`), V4 (`node homepage/build.mjs`; the directory catalog is not regenerated), V5 (`verify-static.py`), `deployment/verify-seo.py`, `_implementation/e2e-preview.ts`, a physical printer, and Safari/Firefox. Quran MCP not called: the wizard quotes no Quran text or hadith.
+
+Remaining in this app: juz/surah choosers (needs page data); counter events (P4.7); DESIGN.md (P5); first-control offset (P5 shell). Shared status row in `plan/implementation/00-INDEX.md` not edited (shared file, app lane).
+
+## 2026-11-11 (Asia/Dhaka) — P7.2 juz and surah choosers (supersedes the blocker above)
+
+The page-boundary research file (`_implementation/research/page-boundaries.json`, commit 83cc262, Quran MCP `fetch_quran_metadata`, 2026-11-11) now exists. It was checked before use: pages 1 to 604 are each covered by a juz and by a surah, the juz chain is unbroken, and the manzil ranges match. This resolves the juz and surah blocker recorded in the entry above.
+
+Commits: `5228d7d` app copy of the data with a provenance record (`src/data/page-boundaries.json`, `src/data/provenance.json`); `c2e4fc4` pure selection function with tests (`src/lib/pages.ts`, `tests/pages.test.ts`); `04fce4e` chooser UI in wizard step 1; then a commit for the context docs (project-overview "Page boundaries", ui-context, architecture).
+
+Behaviour: step 1 keeps the number entry. A "Choose by juz or by surah" drawer holds native checkbox fieldsets (30 juz with page ranges; 114 surahs with transliterated names and page ranges). Ticks set the number to the distinct page count, so a page shared by neighbouring juz or surahs counts once. Typing a number clears the ticks; "Clear ticks" keeps the number. Choosing the whole layout explains that nothing is left to add, because the plan needs at least one new page.
+
+Checks in this app: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 49 pass, 0 fail, 1996 expect() calls, 7 files (the new `pages.test.ts` covers the data shape, full page coverage by juz and by surah, 30 juz = 604, 114 surahs = 604, the juz 3/4 shared page (40), a surah/juz overlap (49), an empty selection and validation); `bun run build` 4 pages built. Browser checks in headless Chrome (scratch scripts, not committed): 24 of 24 at 390 and 1440 px, covering the ticks, the number entry, the whole-layout message, clearing, the wizard reaching step 2, no horizontal overflow, and transliterated labels. Screenshot at 390 px: two columns, no nested scroll.
+
+Open: the planner counts pages, not their positions, so a juz or surah choice gives a number of pages and does not record which pages are memorized. The repo-level `_implementation/seo.test.ts` was not re-run in this step (no descriptor or route change here). The first-control offset (665 px on phones) is unchanged and belongs to P5.
+
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 (Asia/Dhaka, 06:18) — P4.7 counter hooks and compact feedback
+
+Time note: the shell printed BST (06:18 BST = 00:18 UTC), so Dhaka time is 06:18 with no offset added. The coordinator estimate was 06:20.
+
+The app folder is now `apps/hifz-planner` (merged main, commit 8804a8a).
+
+Wiring: `activity_started` (item `plan`) on the first answered wizard step; `activity_completed` (item `plan`) when a plan is generated; `share_clicked` (item `plan`) on the CSV and `.ics` exports. Print does not count. `counter.ts` and shared files were not edited. `<Feedback compact />` sits after the step 3 results and links to `#site-feedback`.
+
+Checks: `bun run check` 0 errors, 0 warnings, 0 hints. `bun run test` 49 pass, 0 fail (1999 expect() calls, 8 files; the 4 new tests in `tests/events.test.ts` are source-level wiring checks). `bun run build` 4 pages built. The built `dist/index.html` contains the feedback link with `href="#site-feedback"`.
+
+Not verified: events in a browser. `track()` returns early outside moongazer.tech hosts, so it cannot fire on preview or localhost. The wiring is checked from source only; the counter's own behaviour is in `counter.test.ts`.
+
+## 2026-11-12 (Asia/Dhaka, 13:58) — P5 wave D: Sanctuary first screen, drawer, session end, motif
+
+Done: compact hero and Sanctuary wizard layout (step indicator, live summary), `HowItWorks` drawer, end-of-session block, `public/motif.svg` (calendar grid, under 8 KB). Print: existing weekly sheet kept; no new print or projector control (DESIGN.md section 8).
+
+Removed duplicates: the intro sentence "Plan new memorization and revision around your week..." and the step 1 line "Pages use the 604-page Hafs layout..." (kept once inside the choose-by-juz drawer and in the How this works drawer). No limit was deleted.
+
+First control (`#memorized`) top: 416 px at 390 × 844 and 375 × 812, light and dark (was 665). `bun run check` 0 errors; `bun run test` 53 pass; `bun run build` ok. Browser: no horizontal scroll and no script errors at 390, 375 and 1440, light and dark; played to the end, the session-end block appeared and its share text has no personal numbers. Not verified: counter events (only fire on production hosts).

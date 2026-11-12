@@ -12,6 +12,7 @@ At the start of work in this scope, read these files in order. Reuse them within
 4. `context/code-standards.md`
 5. `context/ai-workflow-rules.md`
 6. `context/progress-tracker.md`
+7. `DESIGN.md` (app design contract; read before any UI change, after the root `DESIGN.md`)
 
 If a requested change alters scope, architecture, storage or standards, update the affected context before implementing the dependent change. A documentation update is not authorization to add product features.
 

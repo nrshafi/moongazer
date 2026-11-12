@@ -71,3 +71,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 Hearth first screen (14:07 Asia/Dhaka, 2026-11-12)
+
+Hero: H1, descriptor "Short fictional situations. Choose, then read the sources.", a "32 scenarios" chip and `public/motif.svg` (a sprout; hidden below 580 px). The home page is a `.workspace`: track tabs (All, Home & family, Study & work, Business), search and setting filter, cards, and the `HowItWorks` drawer in the sidebar. The separate business notice is gone because the Business tab does that job; `/business/` and `/business/<id>/` still work. A card shows "Done: 2 choices made" instead of "Two decisions" when the visitor ticked "Remember this scenario" and finished it (text, not colour). The scenario and business pages have the same hero, with a topic chip, and the drawer holds the no-timer note and the source/limit note. Beside the choices: "Fictional scenario. Consequences are possibilities, not predictions." App-only CSS is in `src/styles/app.css`.

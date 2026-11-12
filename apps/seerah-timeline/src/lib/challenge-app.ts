@@ -2,6 +2,8 @@ import { events, packs } from '../data/content.json';
 import { grade, valid, initialProgress, randomSeed, move, type Progress } from './challenge';
 import { byId, read, write, forget, cleanSeed, challengeUrl, esc, withHonorifics, copy, announce } from './utils';
 import { track } from './counter';
+import learning from '../data/learning.json';
+import { renderSessionEnd } from './session-end';
 import '../styles/challenge.css';
 
 const KEY = 'challenge-progress';
@@ -34,6 +36,18 @@ function render(message = 'Arrange from earliest to latest, then check your orde
   byId('answer').innerHTML = done
     ? `<div class="section-title"><h2>The sourced sequence</h2></div><ol class="answer-timeline">${pack.events.map(id => { const e = event(id); return `<li class="panel panel-body"><span class="eyebrow">${esc(e.date)}</span><h3>${withHonorifics(esc(e.title))}</h3><p>${withHonorifics(esc(e.summary))}</p><p class="micro">Date/source note: ${withHonorifics(esc(e.uncertainty))}</p><p>${links(e)}</p><p><a href="/event/${id}/">Read this event <span aria-hidden="true">→</span></a></p></li>`; }).join('')}</ol><p class="micro">A matched order reflects this activity’s broad chronology, not a score of religious merit or an exact calendar reconstruction.</p>`
     : '';
+  const sessionEnd = byId('session-end');
+  if (done) {
+    const next = learning.related[0]!;
+    renderSessionEnd(sessionEnd, {
+      result: state.complete ? `Sequence matched in ${state.tries} ${state.tries === 1 ? 'check' : 'checks'}.` : 'Sequence revealed.',
+      learned: pack.events.slice(0, 3).map(id => { const e = event(id); return `${e.title}: ${e.date} (${e.sources[0]!.label})`; }),
+      shareText: 'I put four events from the Seerah in order on Moongazer. https://seerah-timeline.moongazer.tech/challenge/',
+      itemId: pack.id,
+      next: { name: next.name, url: next.url },
+      heading: 'Challenge complete',
+    });
+  } else sessionEnd.replaceChildren();
   if (focus) {
     const list = [...byId('order').querySelectorAll<HTMLButtonElement>('button[data-delta]')].filter(b => b.dataset.id === focus.id && !b.disabled);
     (list.find(b => b.dataset.delta === focus.delta) || list[0])?.focus({ preventScroll: true });

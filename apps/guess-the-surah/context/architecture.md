@@ -83,7 +83,7 @@ The homepage build renders subject and About routes from authoritative local con
 Hook points in `src/lib/game.ts`:
 
 - Answer click (`[data-answer]` handler): `track('activity_started', 'surah-<n>')` then `track('activity_completed', 'surah-<n>')`, where `<n>` is the answer surah number (1–114). The item is the surah, not the random round, because the surah number is stable across rounds and seeds. Both fire on the same click because the answer reveals immediately, so started and completed coincide in this app.
-- Share buttons: `#share-challenge` (setup card) and `#share-result` (round finish panel) call `track('share_clicked', 'round')`.
+- Share: the round finish renders `renderSessionEnd` (`src/lib/session-end.ts`), whose Copy and WhatsApp actions call `track('share_clicked', 'round')`. The old `#share-challenge` and `#share-result` buttons were removed; the challenge link is now the link inside the share text. Next app comes from `learning.json` related[0].
 - Feedback: the per-answer feedback block and the round finish panel carry a `.feedback-link` with `data-open-feedback`.
 
 No visitor answers, seeds or round text are placed in an item id. No unit test was added: the hook points are wiring only, and the helper's id and gating rules are covered by the shared counter tests.

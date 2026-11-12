@@ -71,3 +71,10 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 changes (2026-11-12)
+
+- Hero: H1 is the app name, one descriptor line, a decorative map-pin-on-grid motif (`public/motif.svg`) beside the H1 on desktop and a corner mark below 580 px. The eyebrow "Geography with its sources attached" is removed.
+- The search and evidence filters come before the map. Each card carries a "Pinned" or "No pin" text chip. "Copy my list" is hidden until something is saved.
+- The intro and the pin limit moved into the "How this works" drawer. The place page has its own drawer and its summary moved into the passage panel.
+- Place pages end with the shared end-of-session block. The existing "Print this place" button is kept.

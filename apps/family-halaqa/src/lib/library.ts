@@ -72,3 +72,44 @@ document.getElementById('copy-saved')?.addEventListener('click', () => {
 ${new URL(link.getAttribute('href')!, location.origin).href}`).join('\n\n'), 'List copied');
 });
 updateSaved();
+
+// Print saved packs (P5.12): one print view of every saved pack, built from the same data as the pack pages.
+// The prompts and facilitator answers are printed; nothing is stored or sent. Shared print CSS hides the page chrome.
+type PrintPack = (typeof content.packs)[number];
+function printSection(pack: PrintPack): HTMLElement {
+  const make = <K extends keyof HTMLElementTagNameMap>(tag: K, text?: string, className?: string) => {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  };
+  const section = make('section', undefined, 'saved-pack');
+  section.append(make('h2', pack.title), make('p', `${pack.topic} · suggested ages ${pack.age} · about ${pack.minutes} minutes`, 'micro'));
+  const passage = (pack as { passage?: { ref: string; arabic: string; translation: string } }).passage;
+  if (passage) {
+    const arabic = make('p', passage.arabic, 'arabic');
+    arabic.lang = 'ar';
+    arabic.dir = 'rtl';
+    section.append(arabic, make('p', `${passage.translation} (Quran ${passage.ref}, Marmaduke Pickthall)`));
+  }
+  section.append(make('h3', '1. Read and notice'), make('p', pack.teaching), make('p', pack.question));
+  const options = make('ol');
+  for (const option of pack.options) options.append(make('li', option));
+  section.append(options, make('p', `Facilitator’s answer: ${pack.options[pack.answer]} ${pack.explanation}`, 'micro'));
+  section.append(make('h3', '2. Talk it through'), make('p', pack.discussion), make('div', undefined, 'print-line'));
+  section.append(make('h3', '3. Try something together'), make('p', pack.activity), make('p', pack.close), make('div', undefined, 'print-line'));
+  return section;
+}
+const savedPrint = document.getElementById('saved-print');
+document.getElementById('print-saved')?.addEventListener('click', () => {
+  if (!savedPrint) return;
+  const chosen = content.packs.filter(pack => saved.includes(pack.id));
+  if (!chosen.length) { announce('Save a pack before printing your saved packs.'); return; }
+  savedPrint.replaceChildren(...chosen.map(printSection));
+  document.documentElement.classList.add('printing-saved');
+  window.print();
+});
+window.addEventListener('afterprint', () => {
+  document.documentElement.classList.remove('printing-saved');
+  savedPrint?.replaceChildren();
+});
