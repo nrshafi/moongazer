@@ -22,6 +22,7 @@ const marks = {
   'civilization-timeline': ['#b8860b', '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18m0-18c5 5 5 13 0 18M5 7h14M5 17h14"/>'],
   'why-it-was-revealed': ['#087f75', '<path d="M6 4h10l3 3v14H6V4Zm10 0v4h3M9 11h7m-7 4h7m-7 4h4"/><path d="M3 7v14h2"/>'],
   'family-halaqa': ['#7c3aed', '<ellipse cx="12" cy="18" rx="9" ry="3"/><path d="M12 9c-2-1.3-4-1.3-6-.6v6c2-.7 4-.7 6 .6 2-1.3 4-1.3 6-.6v-6c-2-.7-4-.7-6 .6Zm0 0v6"/><path d="M17.5 2.5a2.6 2.6 0 1 0 2.6 3.1 2.1 2.1 0 0 1-2.6-3.1Z"/>'],
+  'zakat-calculator': ['#2563eb', '<path d="M12 4v16M7 20h10M4 7h16"/><path d="M4 7 1.5 13h5L4 7Zm16 0-2.5 6h5L20 7Z"/><circle cx="12" cy="4" r="1.2"/>'],
 };
 
 for (const [slug, [color, art]] of Object.entries(marks)) {
