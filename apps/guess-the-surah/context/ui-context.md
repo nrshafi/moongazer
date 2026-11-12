@@ -71,3 +71,10 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (12 November 2026)
+
+- Hero: H1 "Guess the Surah", descriptor "Read a clue ayah and choose the surah.", chip "51 short surahs", decorative `public/motif.svg` (open book) shown at 580 px and wider.
+- Round settings (collection, length, New round, Remember) are one compact form above the clue card inside the game panel. The sidebar holds only the "How this works" drawer.
+- A banner "Challenge link: same clues for everyone." shows when the page is opened with a `seed`.
+- Round finish: Play another round, Print, then the shared end-of-session block (share text never names a surah). `<main>` projector toggle is enabled by an inline script setting `data-projector` on `<body>`.
