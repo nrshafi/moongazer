@@ -35,7 +35,7 @@ The user authorized Cloudflare Pages hosting at https://ayah-threads.moongazer.t
 - `src/lib/` currently contains: `puzzle.ts`, `shell.ts`, `utils.ts`.
 - `puzzle.ts` controls the selected puzzle, theme answers, hints and explanations. The puzzle records are in `src/data/content.json`.
 - `src/data/config.json` owns slug, display text, accent and port. `content.json`, `sources.json` and `provenance.json` keep content, citations and checksums distinct.
-- `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `content.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts`.
+- `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `content.test.ts`, `distractors.test.ts`, `daily-bank.test.ts`, `daily.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts` and others.
 - Repository `_implementation/` owns research/preparation/collection checks, not runtime services or imports. `dist/`, `.astro/` and `node_modules/` are generated.
 
 ## Storage model
@@ -105,3 +105,11 @@ Puzzle ids are fixed slugs from `content.json`. No typed text, guessed labels be
 - `puzzle.ts` renders `renderSessionEnd` (Copy and WhatsApp call `track('share_clicked', puzzleId)`); `#share-puzzle` and `#share-result` were removed. Next app is learning.json related[0].
 - The `puzzle` query parameter accepts the puzzle number (written by the app) and still accepts old id links, because the id equals the answer theme. Stored state still uses the id.
 - The picker option text is rewritten on each render to add the solved tick from `state.completed`.
+
+## P6 changes (T6.3, T6.7)
+
+- `src/lib/daily-bank.ts` exports `DAILY_SEED = 30`, `BANK_VERSION = 1`, `dailyItem(n)` (via `dailyIndex(n, 30, DAILY_SEED)`; bank order is the data order of `puzzles`; `null` before the epoch), `isDailyRecord`, `dailyShareText` and `streakLine`. The share text is `Ayah Threads #N · solved with 1 hint` then `ayah-threads.moongazer.tech`; it never contains the theme (`assertNoAnswer` test over all 30 puzzles).
+- `puzzle.ts` has two modes (tabs). Daily uses a separate state; Practice keeps the old state. `?puzzle=` links open Practice.
+- Storage keys added (namespaced by `read`/`write`): `daily` = `{n, result:{outcome, hint, wrong[]}}` written when today's puzzle is finished (always, so a reload shows the result); `streak-on` (boolean) and `streak` (`{last,count,best}`) only after the "Keep a streak" opt-in, both deleted on untick. Documented in the drawer. The privacy page (shared) does not list them yet.
+- Counter item id: `daily-<N>` in Daily, the puzzle id in Practice. Reminder: `dailyReminderIcs` Blob download `ayah-threads-daily.ics`, `text/calendar`; no request.
+- Content (C2): every puzzle has passages from at least 2 surahs (28 from 3); `distractors` hold three bank themes, each theme used exactly three times, with a near-synonym/overlap blocklist in `tests/distractors.test.ts`.

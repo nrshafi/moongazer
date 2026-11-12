@@ -1,0 +1,137 @@
+{
+  "task": "C1",
+  "batch": 11,
+  "chapters": [
+    101,
+    110
+  ],
+  "source": {
+    "id": "quran-com-api-v4-chapters",
+    "name": "Quran.com API v4 chapters endpoint, field translated_name.name (language en)",
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "retrievedAt": "2026-11-12T08:33:08Z",
+    "method": "Single curl GET returning all 114 chapters; values copied exactly, not paraphrased."
+  },
+  "items": [
+    {
+      "chapter": 101,
+      "name_simple": "Al-Qari'ah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=101].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Calamity"
+    },
+    {
+      "chapter": 102,
+      "name_simple": "At-Takathur",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=102].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Rivalry in world increase"
+    },
+    {
+      "chapter": 103,
+      "name_simple": "Al-'Asr",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=103].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Declining Day"
+    },
+    {
+      "chapter": 104,
+      "name_simple": "Al-Humazah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=104].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Traducer"
+    },
+    {
+      "chapter": 105,
+      "name_simple": "Al-Fil",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=105].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Elephant"
+    },
+    {
+      "chapter": 106,
+      "name_simple": "Quraysh",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=106].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "Quraysh"
+    },
+    {
+      "chapter": 107,
+      "name_simple": "Al-Ma'un",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=107].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Small kindnesses"
+    },
+    {
+      "chapter": 108,
+      "name_simple": "Al-Kawthar",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=108].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Abundance"
+    },
+    {
+      "chapter": 109,
+      "name_simple": "Al-Kafirun",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=109].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Disbelievers"
+    },
+    {
+      "chapter": 110,
+      "name_simple": "An-Nasr",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=110].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Divine Support"
+    }
+  ]
+}

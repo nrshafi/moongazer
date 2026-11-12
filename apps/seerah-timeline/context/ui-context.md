@@ -75,3 +75,7 @@ Retain the current typography, colors, logos and activity layouts. Make home hea
 ## P5 first screen (Seerah Timeline)
 
 Compact hero: count chip "36 events", H1 "Seerah Timeline", one descriptor line, decorative `public/motif.svg` (drawn through a CSS mask in the accent colour, hidden below 580 px). One link line to `/challenge/`, then search and filters. The notice, noscript text and "Dates need context" limit live once in the `How this works` drawer in `.event-aside`. On phones the list comes first and the inspector is a fixed bottom drawer (`.drawer-open`); on desktop it is sticky. Each opened event ends with the shared session-end block. `data-projector` is set on `<body>` by an inline script (the shared Shell cannot set it on `<main>`), so the Projector toggle appears. App CSS: `src/styles/app.css`.
+
+## Daily · Practice (P6)
+
+Home page, between the hero and the timeline: `role="tablist"` with Daily and Practice (44 px tabs, roving tabindex, arrow keys). Daily title shows `#N` and the local date. Two 64 px choice buttons (stacked on phones). After a pick: a text result ("Correct." or "Not this time."), two dated cards (Came first / Came second) with sources, date notes and the `why` line, then the session-end block with streak checkbox and "Remind me daily". Family tokens only; correct and wrong states carry text.

@@ -11,7 +11,7 @@ createServer(async (request,response) => {
     if (!target.startsWith(resolve(root)+sep)) { response.writeHead(403).end(); return; }
     if ((await stat(target)).isDirectory()) target=resolve(target,'index.html');
     const data = await readFile(target);
-    response.writeHead(200,{'Content-Type':types[extname(target)]||'application/octet-stream','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'"});
+    response.writeHead(200,{'Content-Type':types[extname(target)]||'application/octet-stream','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'"});
     response.end(data);
   } catch { response.writeHead(404,{'Content-Type':'text/html'}).end(await readFile(new URL('dist/404.html',import.meta.url))); }
 }).listen(4350,'127.0.0.1',()=>console.log('Moongazer preview: http://127.0.0.1:4350/'));

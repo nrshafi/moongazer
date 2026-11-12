@@ -1,0 +1,137 @@
+{
+  "task": "C1",
+  "batch": 5,
+  "chapters": [
+    41,
+    50
+  ],
+  "source": {
+    "id": "quran-com-api-v4-chapters",
+    "name": "Quran.com API v4 chapters endpoint, field translated_name.name (language en)",
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "retrievedAt": "2026-11-12T08:33:08Z",
+    "method": "Single curl GET returning all 114 chapters; values copied exactly, not paraphrased."
+  },
+  "items": [
+    {
+      "chapter": 41,
+      "name_simple": "Fussilat",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=41].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "Explained in Detail"
+    },
+    {
+      "chapter": 42,
+      "name_simple": "Ash-Shuraa",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=42].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Consultation"
+    },
+    {
+      "chapter": 43,
+      "name_simple": "Az-Zukhruf",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=43].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Ornaments of Gold"
+    },
+    {
+      "chapter": 44,
+      "name_simple": "Ad-Dukhan",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=44].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Smoke"
+    },
+    {
+      "chapter": 45,
+      "name_simple": "Al-Jathiyah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=45].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Crouching"
+    },
+    {
+      "chapter": 46,
+      "name_simple": "Al-Ahqaf",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=46].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Wind-Curved Sandhills"
+    },
+    {
+      "chapter": 47,
+      "name_simple": "Muhammad",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=47].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "Muhammad"
+    },
+    {
+      "chapter": 48,
+      "name_simple": "Al-Fath",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=48].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Victory"
+    },
+    {
+      "chapter": 49,
+      "name_simple": "Al-Hujurat",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=49].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Rooms"
+    },
+    {
+      "chapter": 50,
+      "name_simple": "Qaf",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=50].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Letter \"Qaf\""
+    }
+  ]
+}

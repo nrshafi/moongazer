@@ -1,0 +1,137 @@
+{
+  "task": "C1",
+  "batch": 8,
+  "chapters": [
+    71,
+    80
+  ],
+  "source": {
+    "id": "quran-com-api-v4-chapters",
+    "name": "Quran.com API v4 chapters endpoint, field translated_name.name (language en)",
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "retrievedAt": "2026-11-12T08:33:08Z",
+    "method": "Single curl GET returning all 114 chapters; values copied exactly, not paraphrased."
+  },
+  "items": [
+    {
+      "chapter": 71,
+      "name_simple": "Nuh",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=71].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "Noah"
+    },
+    {
+      "chapter": 72,
+      "name_simple": "Al-Jinn",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=72].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Jinn"
+    },
+    {
+      "chapter": 73,
+      "name_simple": "Al-Muzzammil",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=73].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Enshrouded One"
+    },
+    {
+      "chapter": 74,
+      "name_simple": "Al-Muddaththir",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=74].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Cloaked One"
+    },
+    {
+      "chapter": 75,
+      "name_simple": "Al-Qiyamah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=75].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Resurrection"
+    },
+    {
+      "chapter": 76,
+      "name_simple": "Al-Insan",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=76].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Man"
+    },
+    {
+      "chapter": 77,
+      "name_simple": "Al-Mursalat",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=77].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Emissaries"
+    },
+    {
+      "chapter": 78,
+      "name_simple": "An-Naba",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=78].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Tidings"
+    },
+    {
+      "chapter": 79,
+      "name_simple": "An-Nazi'at",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=79].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "Those who drag forth"
+    },
+    {
+      "chapter": 80,
+      "name_simple": "'Abasa",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=80].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "He Frowned"
+    }
+  ]
+}

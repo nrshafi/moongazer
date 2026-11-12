@@ -1,5 +1,9 @@
 # Progress tracker: Guess the Surah
 
+## C1 surah name meanings, 12 November 2026
+
+2026-11-12T14:36:00+06:00 Asia/Dhaka: Added `nameMeaning` and `nameMeaningSource` (`quran-com-api-v4-chapters`) to all 114 chapter records in `src/data/content.json`, 12 commits C1.01 to C1.12. Quran MCP `fetch_quran_metadata` carries no translated name (checked on surah 1), so the source is the Quran.com API v4 chapters endpoint (`https://api.quran.com/api/v4/chapters?language=en`, field `translated_name.name`), retrieved 2026-11-12T08:33:08Z; values stored exactly, including `Ya Sin`, `The Letter "Saad"`, `The Letter "Qaf"` and `Ta-Ha`. 114 of 114 have a value, no nulls. Research is in `_implementation/research/depth/guess-the-surah/batch-01.json` to `batch-12.json`. `appContentSha256` updated after each batch; the Sources page lists the new reference from `sources.json`. `api.quran.com` was added to the host allowlist in `_implementation/verify-static.py`. Meanings are data only for the T6.2 quiz clue and appear in no title, URL or meta description. Validation: `bun run check` 0 errors, `bun run test` 21 pass, `bun run build`, and the guess-the-surah part of `verify-static.py` passes (other apps had no dist). No game code changed. Second-pass verification (C-track section 3) and owner spot-check are still to do.
+
 ## P5 app wave, 12 November 2026
 
 2026-11-12T13:57:21+06:00 Asia/Dhaka: T5.6 hero, T5.7 "How this works" drawer (steps, challenge note and points note moved in; the sidebar steps and note no longer duplicate the intro sentence, which was cut to the descriptor), T5.8 end of session (replaces Copy result and the setup-card challenge button), T5.11 book motif, T5.12 Print on the result page and Projector (via body attribute), T5.14 round settings above the clue card. Removed duplicates: the intro sentence "Every answer links back to its source" (kept on the round result) and the sidebar "Copy this challenge link" (now in the share text). Measured first control 268 px at 390 and 375, light and dark. check 0 errors, 21 tests pass, build passes; round played to the end in a headless browser with no script errors. Not done: a "New puzzle tomorrow" slot (P6), the Arabic-first option (P6).
@@ -116,3 +120,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## P6 T6.2 and T6.7, 12 November 2026
+
+2026-11-12T17:30:00+06:00 Asia/Dhaka: Daily, Practice and Juz tabs; clue ladder with name meaning (no chapter number) and Arabic-first toggle; 114 collection grid; Daily share text, streak opt-in, saved result, "Remind me daily" .ics; descriptor and hero chip updated; juz starts derived from verified Quran MCP metadata. Measured first control (tab) top: 240 px at 390 and 375, light and dark (hero 116 px); 321 px at 1440. check 0 errors, 52 tests pass, build passes, audit-text-joins 0, sync-shared checks identical, verify-static passes for this app (other apps had no dist). Browser: Daily played to the end with the clock set past the epoch, reload shows the result, WhatsApp href encoded, .ics downloads, blocked-storage runs work, no script errors. Remaining: owner sets the real epoch at release.

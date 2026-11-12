@@ -121,3 +121,7 @@ Counter events go through `src/lib/counter.ts` (`track`). Item ids are the stabl
 ## P5 notes
 
 `src/lib/timeline.ts` renders the inspector into `#selected-event`, adds a Close button, opens and closes the phone drawer (`drawer-open`, Escape, focus return) and calls `renderSessionEnd` into `#session-end` with the next app from `learning.json` related[0]. `src/lib/challenge-app.ts` calls `renderSessionEnd` when a pack is matched or revealed; the share text never contains the order. `/challenge/` has its notice inside `HowItWorks`.
+
+## Daily pair (P6 T6.5, T6.7)
+
+`src/lib/daily-bank.ts` exports `DAILY_SEED = 31`, `BANK_VERSION = 1`, `dailyPairs` (data order of `content.json` `dailyPairs`) and `dailyItem(n)`. `src/lib/daily-pairs.ts` holds pure helpers (display order via `hash`, practice pair, approximate labelling, share text, save validator, streak line). `src/lib/daily-app.ts` renders the home panel. Storage keys (via `read`/`write`, 30-day rule): `seerah-timeline:daily` `{n, result}` and `seerah-timeline:streak` (opt-in). Counter ids: `daily-<N>` and the pair id in Practice.

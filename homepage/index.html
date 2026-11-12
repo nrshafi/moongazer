@@ -5,7 +5,7 @@
   <!-- PAGE_METADATA -->
   <meta name="theme-color" content="#12263d">
   <link rel="preload" href="/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/reading.css"><script src="/app.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/reading.css"><script type="module" src="/app.js"></script>
 </head>
 <body>
   <a href="#library" class="skip-link">Skip to the app library</a>
@@ -25,9 +25,13 @@
     <div class="start-row wrap">
       <section class="tonight" id="today" aria-labelledby="today-title">
         <p class="eyebrow">Tonight on Moongazer</p>
-        <h2 id="today-title">Ten quiet minutes, one clue at a time.</h2>
-        <p>Read a clue, guess the surah, then open the reference behind the answer.</p>
-        <a class="button primary" href="https://guess-the-surah.moongazer.tech/">Play Guess the Surah</a>
+        <h2 id="today-title">Tonight's puzzles</h2>
+        <ul class="tonight-tiles"><!-- TONIGHT_TILES --></ul>
+        <p class="tonight-when" data-tonight-when>New puzzles at midnight, your local time.</p>
+      </section>
+      <section class="ayah-night" aria-labelledby="ayah-title">
+        <details data-ayah-details><summary><span class="eyebrow" id="ayah-title">Ayah of the night</span> <span class="ayah-summary-ref">Quran <span data-ayah-ref><!-- AYAH_REF --></span></span></summary>
+        <div class="ayah-body"><!-- AYAH_BODY --></div></details>
       </section>
       <section class="picker" aria-labelledby="picker-title">
         <h2 id="picker-title">What do you have time for?</h2>

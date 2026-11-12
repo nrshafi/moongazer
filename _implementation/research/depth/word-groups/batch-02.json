@@ -1,0 +1,728 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 2,
+  "recordedAt": "2026-11-12",
+  "source": "Quran MCP (https://mcp.quran.ai), editions ar-uthmani-hafs and en-pickthall",
+  "method": "Candidate groups were chosen editorially, then every ayah was fetched through Quran MCP (fetch_quran / fetch_translation), the committed passages were copied by script from _implementation/research/quran-full.json and compared with the MCP result, and every term was checked against the ayah text (English terms by phrase, Arabic root terms by fetch_word_morphology).",
+  "calls": [
+    {
+      "tool": "fetch_quran",
+      "arguments": {
+        "ayahs": "2:158, 2:198, 3:49, 112:1-4, 36:1, 20:1, 38:1, 50:1, 101:1, 88:1, 69:1, 99:1, 10:98, 11:50, 71:1, 14:35, 30:2, 106:1, 34:15, 33:20, 15:80, 46:21, 52:1, 90:1",
+        "editions": "ar-uthmani-hafs",
+        "grounding_nonce": "gnd-435577175ff0b461"
+      },
+      "result": "27 ayat returned; Arabic compared with the committed text.",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_translation",
+      "arguments": {
+        "ayahs": "2:158, 2:198, 3:49, 112:1-4, 36:1, 20:1, 38:1, 50:1, 101:1, 88:1, 69:1, 99:1, 10:98, 11:50, 71:1, 14:35, 30:2, 106:1, 34:15, 33:20, 15:80, 46:21, 52:1, 90:1",
+        "editions": "en-pickthall",
+        "grounding_nonce": "gnd-435577175ff0b461"
+      },
+      "result": "27 ayat returned; English compared with the committed text.",
+      "retrievedAt": "2026-11-12"
+    }
+  ],
+  "items": [
+    {
+      "id": "hajj-places",
+      "kind": "ayat",
+      "tier": 3,
+      "title": "Places named in the pilgrimage readings",
+      "terms": [
+        "As-Safa",
+        "Al-Marwah",
+        "Arafat",
+        "Sacred monument"
+      ],
+      "note": "2:158 names the mountains As-Safa and Al-Marwah; 2:198 names Arafat and the sacred monument, in Pickthall’s wording.",
+      "passages": [
+        {
+          "ref": "2:158",
+          "arabic": "۞ إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ",
+          "translation": "Lo! (the mountains) As-Safa and Al-Marwah are among the indications of Allah. It is therefore no sin for him who is on pilgrimage to the House (of Allah) or visiteth it, to go around them (as the pagan custom is). And he who doeth good of his own accord, (for him) lo! Allah is Responsive, Aware.",
+          "arabicSha256": "e953b8819f9dfecda694050b09e4d4d4c2fdec67c592165ebaf65cc9deb5461c",
+          "translationSha256": "5bfe08a11a42f94c9af9e559b8bd460490208ea52576745d9aaa7eb58aecc26f",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:198",
+          "arabic": "لَيْسَ عَلَيْكُمْ جُنَاحٌ أَن تَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ ۚ فَإِذَآ أَفَضْتُم مِّنْ عَرَفَـٰتٍ فَٱذْكُرُوا۟ ٱللَّهَ عِندَ ٱلْمَشْعَرِ ٱلْحَرَامِ ۖ وَٱذْكُرُوهُ كَمَا هَدَىٰكُمْ وَإِن كُنتُم مِّن قَبْلِهِۦ لَمِنَ ٱلضَّآلِّينَ",
+          "translation": "It is no sin for you that ye seek the bounty of your Lord (by trading). But, when ye press on in the multitude from 'Arafat, remember Allah by the sacred monument. Remember Him as He hath guided you, although before ye were of those astray.",
+          "arabicSha256": "5e710da504b7daa69710eaf64b9a51cb401186df8d158c2f45d82663c17c7f0c",
+          "translationSha256": "b92f8255195ab06eb9c75bffc9f720763f4b9c6115852b95fc8a32279be45a1e",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "As-Safa",
+          "ref": "2:158",
+          "snippet": "Lo! (the mountains) As-Safa and Al-Marwah are among the i"
+        },
+        {
+          "term": "Al-Marwah",
+          "ref": "2:158",
+          "snippet": "! (the mountains) As-Safa and Al-Marwah are among the indications of "
+        },
+        {
+          "term": "Arafat",
+          "ref": "2:198",
+          "snippet": "ress on in the multitude from 'Arafat, remember Allah by the sacred"
+        },
+        {
+          "term": "Sacred monument",
+          "ref": "2:198",
+          "snippet": "Arafat, remember Allah by the sacred monument. Remember Him as He hath guid"
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    },
+    {
+      "id": "isa-signs",
+      "kind": "ayat",
+      "tier": 2,
+      "title": "Signs given to Jesus in 3:49",
+      "terms": [
+        "Clay bird",
+        "Blind",
+        "Leper",
+        "Dead"
+      ],
+      "note": "In 3:49 Jesus (peace be upon him) says that by Allah’s leave he fashions a bird from clay, heals the one born blind and the leper, and raises the dead.",
+      "passages": [
+        {
+          "ref": "3:49",
+          "arabic": "وَرَسُولًا إِلَىٰ بَنِىٓ إِسْرَٰٓءِيلَ أَنِّى قَدْ جِئْتُكُم بِـَٔايَةٍ مِّن رَّبِّكُمْ ۖ أَنِّىٓ أَخْلُقُ لَكُم مِّنَ ٱلطِّينِ كَهَيْـَٔةِ ٱلطَّيْرِ فَأَنفُخُ فِيهِ فَيَكُونُ طَيْرًۢا بِإِذْنِ ٱللَّهِ ۖ وَأُبْرِئُ ٱلْأَكْمَهَ وَٱلْأَبْرَصَ وَأُحْىِ ٱلْمَوْتَىٰ بِإِذْنِ ٱللَّهِ ۖ وَأُنَبِّئُكُم بِمَا تَأْكُلُونَ وَمَا تَدَّخِرُونَ فِى بُيُوتِكُمْ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَةً لَّكُمْ إِن كُنتُم مُّؤْمِنِينَ",
+          "translation": "And will make him a messenger unto the Children of Israel, (saying): Lo! I come unto you with a sign from your Lord. Lo! I fashion for you out of clay the likeness of a bird, and I breathe into it and it is a bird, by Allah's leave. I heal him who was born blind, and the leper, and I raise the dead, by Allah's leave. And I announce unto you what ye eat and what ye store up in your houses. Lo! herein verily is a portent for you, if ye are to be believers.",
+          "arabicSha256": "7049eca591e0ab8cbbd39db75a5fafa7f4a25a6541d14ac7ae45c8241f579d6d",
+          "translationSha256": "8e19438ed24bcf563783bc121fd6e4a2cfde481d8c35c2c9e6fc12f629695a3b",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Clay bird",
+          "ref": "3:49",
+          "snippet": " Lo! I fashion for you out of clay the likeness of a bird, and I breathe into it and it"
+        },
+        {
+          "term": "Blind",
+          "ref": "3:49",
+          "snippet": "eave. I heal him who was born blind, and the leper, and I raise t"
+        },
+        {
+          "term": "Leper",
+          "ref": "3:49",
+          "snippet": "m who was born blind, and the leper, and I raise the dead, by All"
+        },
+        {
+          "term": "Dead",
+          "ref": "3:49",
+          "snippet": "nd the leper, and I raise the dead, by Allah's leave. And I anno"
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    },
+    {
+      "id": "ikhlas-lines",
+      "kind": "ayat",
+      "tier": 3,
+      "title": "Statements in Surah 112",
+      "terms": [
+        "The One",
+        "Eternally Besought",
+        "Begetteth not",
+        "None comparable"
+      ],
+      "note": "Surah 112 declares Allah the One, the eternally Besought of all, that He begetteth not nor was begotten, and that none is comparable to Him.",
+      "passages": [
+        {
+          "ref": "112:1-4",
+          "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ\nٱللَّهُ ٱلصَّمَدُ\nلَمْ يَلِدْ وَلَمْ يُولَدْ\nوَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+          "translation": "Say: He is Allah, the One!\nAllah, the eternally Besought of all!\nHe begetteth not nor was begotten.\nAnd there is none comparable unto Him.",
+          "arabicSha256": "d7e6b7a6e7e349b372b2d24b5f240a2af4e8eb0e7f67bfb103db0cde5d77c94b",
+          "translationSha256": "904e9d47c97ac870e1b855b30f4e3ddf9eb2cb83e9c3fe8555dccb13b560ba46",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "The One",
+          "ref": "112:1-4",
+          "snippet": "Say: He is Allah, the One! Allah, the eternally Besough"
+        },
+        {
+          "term": "Eternally Besought",
+          "ref": "112:1-4",
+          "snippet": "is Allah, the One! Allah, the eternally Besought of all! He begetteth not nor "
+        },
+        {
+          "term": "Begetteth not",
+          "ref": "112:1-4",
+          "snippet": "eternally Besought of all! He begetteth not nor was begotten. And there i"
+        },
+        {
+          "term": "None comparable",
+          "ref": "112:1-4",
+          "snippet": "or was begotten. And there is none comparable unto Him."
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    },
+    {
+      "id": "letter-surahs",
+      "kind": "surah",
+      "tier": 2,
+      "title": "Surahs titled by letters",
+      "terms": [
+        "Ya-Sin",
+        "Taha",
+        "Sad",
+        "Qaf"
+      ],
+      "note": "Each of these surahs is known by the letters it opens with. The names follow the Quran MCP chapter list, and the readings show how Pickthall renders each opening.",
+      "passages": [
+        {
+          "ref": "36:1",
+          "arabic": "يسٓ",
+          "translation": "Ya Sin.",
+          "arabicSha256": "dbb15d0a4cccc65789aef67c88742f24ad70091dbef5507860907774ea36e6c3",
+          "translationSha256": "2d8ccca6f8615535ed827af26ae74e6d30d61f3291e70a2db92a217b391d94fc",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "20:1",
+          "arabic": "طه",
+          "translation": "Ta. Ha.",
+          "arabicSha256": "d870c52f0d17e60dd9a19be99d2eff54ff4049888fbd2ab5dd7829d68cbb4ef8",
+          "translationSha256": "7a052224057928b4d85a10829bd378123065aa53ca185cb687fdd76b8f407a33",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "38:1",
+          "arabic": "صٓ ۚ وَٱلْقُرْءَانِ ذِى ٱلذِّكْرِ",
+          "translation": "Sad. By the renowned Qur'an,",
+          "arabicSha256": "a778f00161fed5ad7767d5894a63439c9f0ae289aaa011d16f33ada760abacaa",
+          "translationSha256": "1c31a5a1ebebbfe75483f1670ba25378c801ed1de37178e8e99a66d267f21347",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "50:1",
+          "arabic": "قٓ ۚ وَٱلْقُرْءَانِ ٱلْمَجِيدِ",
+          "translation": "Qaf. By the Glorious Qur'an,",
+          "arabicSha256": "a1ff549aa1323e3bec990c28f55d17ab63e1f876b357124ff02140c7f62b246f",
+          "translationSha256": "c1f5d2f5367d4bb21aac3c2e3da67a41207f0e3e2c957e88af35bbe5d53595cb",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Ya-Sin",
+          "chapter": 36,
+          "chapterNameSimple": "Ya-Sin",
+          "chapterNameArabic": "يس",
+          "ref": "36:1",
+          "basis": "ayah text \"Ya Sin.\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Taha",
+          "chapter": 20,
+          "chapterNameSimple": "Taha",
+          "chapterNameArabic": "طه",
+          "ref": "20:1",
+          "basis": "ayah text \"Ta. Ha.\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Sad",
+          "chapter": 38,
+          "chapterNameSimple": "Sad",
+          "chapterNameArabic": "ص",
+          "ref": "38:1",
+          "basis": "ayah text \"Sad. By the renowned Qur'an,\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Qaf",
+          "chapter": 50,
+          "chapterNameSimple": "Qaf",
+          "chapterNameArabic": "ق",
+          "ref": "50:1",
+          "basis": "ayah text \"Qaf. By the Glorious Qur'an,\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    },
+    {
+      "id": "last-day-surahs",
+      "kind": "surah",
+      "tier": 3,
+      "title": "Surahs named for the Last Day",
+      "terms": [
+        "Al-Qari’ah",
+        "Al-Ghashiyah",
+        "Al-Haqqah",
+        "Az-Zalzalah"
+      ],
+      "note": "These four surah names point to the Calamity, the Overwhelming, the Reality and the earthquake. The grouping is an editorial reading of the names, not a claim about their themes.",
+      "passages": [
+        {
+          "ref": "101:1",
+          "arabic": "ٱلْقَارِعَةُ",
+          "translation": "The Calamity!",
+          "arabicSha256": "8b8a47929f71fdb8bd13127479cb4845495aa5f801c75cfeb17eed6d42736435",
+          "translationSha256": "ba001af91ab4afd2c62b72ae24cb169715900a7dc8898087c194c836b61a3109",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "88:1",
+          "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+          "translation": "Hath there come unto thee tidings of the Overwhelming?",
+          "arabicSha256": "01db3f3852bf2b8bf2bd8c3030432f77b39e856574ca330c13111a1f00751d2d",
+          "translationSha256": "bd74443b2b6a9b7e4fb9f0ad2843a446ca4b404054020eeb56954bbdee08a708",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "69:1",
+          "arabic": "ٱلْحَآقَّةُ",
+          "translation": "The Reality!",
+          "arabicSha256": "48d41cd3404fc5a6a01d7f9aee7a7c68832a37a260fa9685f13c34d38717f501",
+          "translationSha256": "08739084d7eea903e5dd877853bd4993b760bdfb4d0b447eecfdbe2d3e6a4882",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "99:1",
+          "arabic": "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+          "translation": "When Earth is shaken with her (final) earthquake",
+          "arabicSha256": "c4830f1f06719f33daa78f909236e0ffe6698f391b00ba0453a80499d31d69bc",
+          "translationSha256": "1a5e8bd6f4d23f8f8ad014e279ff82b5ddd5908acc661a13b26d44986c0ca45f",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Al-Qari’ah",
+          "chapter": 101,
+          "chapterNameSimple": "Al-Qari'ah",
+          "chapterNameArabic": "القارعة",
+          "ref": "101:1",
+          "basis": "101:1 \"The Calamity!\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Al-Ghashiyah",
+          "chapter": 88,
+          "chapterNameSimple": "Al-Ghashiyah",
+          "chapterNameArabic": "الغاشية",
+          "ref": "88:1",
+          "basis": "88:1 \"the Overwhelming\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Al-Haqqah",
+          "chapter": 69,
+          "chapterNameSimple": "Al-Haqqah",
+          "chapterNameArabic": "الحاقة",
+          "ref": "69:1",
+          "basis": "69:1 \"The Reality!\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Az-Zalzalah",
+          "chapter": 99,
+          "chapterNameSimple": "Az-Zalzalah",
+          "chapterNameArabic": "الزلزلة",
+          "ref": "99:1",
+          "basis": "99:1 \"her (final) earthquake\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    },
+    {
+      "id": "prophet-surahs",
+      "kind": "surah",
+      "tier": 2,
+      "title": "Surahs named for prophets",
+      "terms": [
+        "Yunus",
+        "Hud",
+        "Nuh",
+        "Ibrahim"
+      ],
+      "note": "Each of these surahs is named for a prophet; the cited ayat mention Jonah, Hud, Noah and Abraham (peace be upon them), spelled as in Pickthall.",
+      "passages": [
+        {
+          "ref": "10:98",
+          "arabic": "فَلَوْلَا كَانَتْ قَرْيَةٌ ءَامَنَتْ فَنَفَعَهَآ إِيمَـٰنُهَآ إِلَّا قَوْمَ يُونُسَ لَمَّآ ءَامَنُوا۟ كَشَفْنَا عَنْهُمْ عَذَابَ ٱلْخِزْىِ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَمَتَّعْنَـٰهُمْ إِلَىٰ حِينٍ",
+          "translation": "If only there had been a community (of all those that were destroyed of old) that believed and profited by its belief as did the folk of Jonah! When they believed We drew off from them the torment of disgrace in the life of the world and gave them comfort for a while.",
+          "arabicSha256": "be112ced5367d4c1ceb2e71ac8d973fc046a3d60dcb1551069fb773bceeca0d8",
+          "translationSha256": "b0f5c60c27b58b25591596f5d8b0f359dcf2e7b1e6629b5fb5f3ded42ac4c836",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "11:50",
+          "arabic": "وَإِلَىٰ عَادٍ أَخَاهُمْ هُودًا ۚ قَالَ يَـٰقَوْمِ ٱعْبُدُوا۟ ٱللَّهَ مَا لَكُم مِّنْ إِلَـٰهٍ غَيْرُهُۥٓ ۖ إِنْ أَنتُمْ إِلَّا مُفْتَرُونَ",
+          "translation": "And unto (the tribe of) A'ad (We sent) their brother, Hud. He said: O my people! Serve Allah! Ye have no other Allah save Him. Lo! ye do but invent.",
+          "arabicSha256": "1450a2946ca22f10ff40e5239d73a0402d1dc9f818482e7272c8380872ef4950",
+          "translationSha256": "62122a494a114fb6e3686345bf86f8105d67e0d532e43f0cf41f32feb706a225",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "71:1",
+          "arabic": "إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+          "translation": "Lo! We sent Noah unto his people (saying): Warn thy people ere the painful doom come unto them.",
+          "arabicSha256": "ea3db68a09efaef89d8ae6feb24d2c25e9b6756b81771afb8962ade385f783a2",
+          "translationSha256": "b399f9f175156be0a7c0a511c509ee16d10ddccf414006ba46afe496f1c45757",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "14:35",
+          "arabic": "وَإِذْ قَالَ إِبْرَٰهِيمُ رَبِّ ٱجْعَلْ هَـٰذَا ٱلْبَلَدَ ءَامِنًا وَٱجْنُبْنِى وَبَنِىَّ أَن نَّعْبُدَ ٱلْأَصْنَامَ",
+          "translation": "And when Abraham said: My Lord! Make safe this territory, and preserve me and my sons from serving idols.",
+          "arabicSha256": "78089c7280c70cdb0d909b425d73efdcaf113ed83a2ee1ec25267c1c43ca61f7",
+          "translationSha256": "654cd74287ccdad671858166aea6faeef7ddd3668823feb0c12fa2c6f99e808f",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Yunus",
+          "chapter": 10,
+          "chapterNameSimple": "Yunus",
+          "chapterNameArabic": "يونس",
+          "ref": "10:98",
+          "basis": "10:98 \"the folk of Jonah\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Hud",
+          "chapter": 11,
+          "chapterNameSimple": "Hud",
+          "chapterNameArabic": "هود",
+          "ref": "11:50",
+          "basis": "11:50 \"their brother, Hud\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Nuh",
+          "chapter": 71,
+          "chapterNameSimple": "Nuh",
+          "chapterNameArabic": "نوح",
+          "ref": "71:1",
+          "basis": "71:1 \"We sent Noah\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Ibrahim",
+          "chapter": 14,
+          "chapterNameSimple": "Ibrahim",
+          "chapterNameArabic": "ابراهيم",
+          "ref": "14:35",
+          "basis": "14:35 \"when Abraham said\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    },
+    {
+      "id": "people-surahs",
+      "kind": "surah",
+      "tier": 4,
+      "title": "Surahs named for peoples",
+      "terms": [
+        "Ar-Rum",
+        "Quraysh",
+        "Saba",
+        "Al-Ahzab"
+      ],
+      "note": "These surahs are named for the Romans, Qureysh, the people of Sheba and the clans. Pickthall spells Qureysh and Sheba differently from the surah names.",
+      "passages": [
+        {
+          "ref": "30:2",
+          "arabic": "غُلِبَتِ ٱلرُّومُ",
+          "translation": "The Romans have been defeated",
+          "arabicSha256": "67b7027dcb2e5d2ab79f2c422604f3a8cf2549966a3f1fefac5436a053ec8f8b",
+          "translationSha256": "8055fc1fef64072567f15ff28508259de01731fa61c68b91d42200e868946f1d",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "106:1",
+          "arabic": "لِإِيلَـٰفِ قُرَيْشٍ",
+          "translation": "For the taming of Qureysh.",
+          "arabicSha256": "81194af7028ddcd29a8b77fddfb8d247f7669ec71df6a2652abd8035557dfd0c",
+          "translationSha256": "0ed6ccc3036434fd309251508981660dd52ecbce8270ab85ce524b03467b0dfc",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "34:15",
+          "arabic": "لَقَدْ كَانَ لِسَبَإٍ فِى مَسْكَنِهِمْ ءَايَةٌ ۖ جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ ۖ كُلُوا۟ مِن رِّزْقِ رَبِّكُمْ وَٱشْكُرُوا۟ لَهُۥ ۚ بَلْدَةٌ طَيِّبَةٌ وَرَبٌّ غَفُورٌ",
+          "translation": "There was indeed a sign for Sheba in their dwelling-place: Two gardens on the right hand and the left (as who should say): Eat of the provision of your Lord and render thanks to Him. A fair land and an indulgent Lord!",
+          "arabicSha256": "736f2fb1b3552e39c45bfc120ca6f72775857514b7d581e6434c62a418b1ec4e",
+          "translationSha256": "4e271fb55157935feef51eb77e3a31357ee193f03ac0260a326a5554840a686c",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "33:20",
+          "arabic": "يَحْسَبُونَ ٱلْأَحْزَابَ لَمْ يَذْهَبُوا۟ ۖ وَإِن يَأْتِ ٱلْأَحْزَابُ يَوَدُّوا۟ لَوْ أَنَّهُم بَادُونَ فِى ٱلْأَعْرَابِ يَسْـَٔلُونَ عَنْ أَنۢبَآئِكُمْ ۖ وَلَوْ كَانُوا۟ فِيكُم مَّا قَـٰتَلُوٓا۟ إِلَّا قَلِيلًا",
+          "translation": "They hold that the clans have not retired (for good); and if the clans should advance (again), they would fain be in the desert with the wandering Arabs, asking for the news of you; and if they were among you, they would not give battle, save a little.",
+          "arabicSha256": "84b3f50977b34e0ba537195e1778ebe97c387df6dc50129966762af6b577b77b",
+          "translationSha256": "f6f8228e9f98d24ca34ebae5e33dc5bf707da443fc6230496f78f5d8ec535d61",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Ar-Rum",
+          "chapter": 30,
+          "chapterNameSimple": "Ar-Rum",
+          "chapterNameArabic": "الروم",
+          "ref": "30:2",
+          "basis": "30:2 \"The Romans\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Quraysh",
+          "chapter": 106,
+          "chapterNameSimple": "Quraysh",
+          "chapterNameArabic": "قريش",
+          "ref": "106:1",
+          "basis": "106:1 \"Qureysh\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Saba",
+          "chapter": 34,
+          "chapterNameSimple": "Saba",
+          "chapterNameArabic": "سبإ",
+          "ref": "34:15",
+          "basis": "34:15 \"a sign for Sheba\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Al-Ahzab",
+          "chapter": 33,
+          "chapterNameSimple": "Al-Ahzab",
+          "chapterNameArabic": "الأحزاب",
+          "ref": "33:20",
+          "basis": "33:20 \"the clans\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    },
+    {
+      "id": "place-surahs",
+      "kind": "surah",
+      "tier": 3,
+      "title": "Surahs named for places",
+      "terms": [
+        "Al-Hijr",
+        "Al-Ahqaf",
+        "At-Tur",
+        "Al-Balad"
+      ],
+      "note": "The cited ayat name Al-Hijr, the wind-curved sandhills, the Mount and this city. The titles are a selection, not a full list of place names among the surahs.",
+      "passages": [
+        {
+          "ref": "15:80",
+          "arabic": "وَلَقَدْ كَذَّبَ أَصْحَـٰبُ ٱلْحِجْرِ ٱلْمُرْسَلِينَ",
+          "translation": "And the dwellers in Al-Hijr denied (Our) messengers.",
+          "arabicSha256": "6f42782a95b5fcab954621e81c9cf0048174c93a6369b94f2c46c25e09c6889e",
+          "translationSha256": "fe445b09208644aecd7e0e0acb94ad0b96e1a5751612eae291f8733e1cddb7f3",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "46:21",
+          "arabic": "۞ وَٱذْكُرْ أَخَا عَادٍ إِذْ أَنذَرَ قَوْمَهُۥ بِٱلْأَحْقَافِ وَقَدْ خَلَتِ ٱلنُّذُرُ مِنۢ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِۦٓ أَلَّا تَعْبُدُوٓا۟ إِلَّا ٱللَّهَ إِنِّىٓ أَخَافُ عَلَيْكُمْ عَذَابَ يَوْمٍ عَظِيمٍ",
+          "translation": "And make mention (O Muhammad) of the brother of A'ad when he warned his folk among the wind-curved sandhills - and verily warners came and went before and after him - saying: Serve none but Allah. Lo! I fear for you the doom of a tremendous Day.",
+          "arabicSha256": "131366e89ef1a4cd84cf96ef1ded483c1adb5280527d0824521a4a7dc1f6a9f3",
+          "translationSha256": "d8991492bf2af0af3869ddb3ec41bdb042d27ee2a92f0fd3d6803ff128bf0f63",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "52:1",
+          "arabic": "وَٱلطُّورِ",
+          "translation": "By the Mount,",
+          "arabicSha256": "53b5dd4cbcb3ef7e0b4f91c3047a865644bd2a09a86b77456b576faa9f319dae",
+          "translationSha256": "58a0a280ee0b8e6885f56196d952aad247e7b4f3ec72b5edeb556dcfcf05b050",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "90:1",
+          "arabic": "لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
+          "translation": "Nay, I swear by this city -",
+          "arabicSha256": "713cadaed6072649ed74fdbd50fc8be97858c2ca777f12a60cb177c38192c246",
+          "translationSha256": "0fbf97adf4bc1c4956164bea16ed175168ea871fe39e34c7a43040501ea78aba",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Al-Hijr",
+          "chapter": 15,
+          "chapterNameSimple": "Al-Hijr",
+          "chapterNameArabic": "الحجر",
+          "ref": "15:80",
+          "basis": "15:80 \"the dwellers in Al-Hijr\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Al-Ahqaf",
+          "chapter": 46,
+          "chapterNameSimple": "Al-Ahqaf",
+          "chapterNameArabic": "الأحقاف",
+          "ref": "46:21",
+          "basis": "46:21 \"the wind-curved sandhills\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "At-Tur",
+          "chapter": 52,
+          "chapterNameSimple": "At-Tur",
+          "chapterNameArabic": "الطور",
+          "ref": "52:1",
+          "basis": "52:1 \"By the Mount,\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        },
+        {
+          "term": "Al-Balad",
+          "chapter": 90,
+          "chapterNameSimple": "Al-Balad",
+          "chapterNameArabic": "البلد",
+          "ref": "90:1",
+          "basis": "90:1 \"this city\"",
+          "chapterSource": "chapters list in quran-full.json (Quran MCP metadata)"
+        }
+      ],
+      "callsUsed": [
+        "q2",
+        "t2"
+      ]
+    }
+  ]
+}

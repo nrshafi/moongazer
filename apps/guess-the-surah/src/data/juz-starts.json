@@ -1,0 +1,42 @@
+{
+  "description": "First ayah of each of the 30 juz, in juz order. Copied from _implementation/research/page-boundaries.json (Quran MCP fetch_quran_metadata, juz=1..30). Never hand-typed.",
+  "source": {
+    "tool": "mcp__quran__fetch_quran_metadata",
+    "server": "https://mcp.quran.ai",
+    "calls": "juz=1..30 and surah=1..114",
+    "fetchedAt": "2026-11-11T23:35:59+06:00",
+    "layout": "604-page mushaf as returned by the tool"
+  },
+  "starts": [
+    "1:1",
+    "2:142",
+    "2:253",
+    "3:93",
+    "4:24",
+    "4:148",
+    "5:82",
+    "6:111",
+    "7:88",
+    "8:41",
+    "9:93",
+    "11:6",
+    "12:53",
+    "15:1",
+    "17:1",
+    "18:75",
+    "21:1",
+    "23:1",
+    "25:21",
+    "27:56",
+    "29:46",
+    "33:31",
+    "36:28",
+    "39:32",
+    "41:47",
+    "46:1",
+    "51:31",
+    "58:1",
+    "67:1",
+    "78:1"
+  ]
+}

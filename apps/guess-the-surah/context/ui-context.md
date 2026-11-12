@@ -78,3 +78,5 @@ Retain the current typography, colors, logos and activity layouts. Make home hea
 - Round settings (collection, length, New round, Remember) are one compact form above the clue card inside the game panel. The sidebar holds only the "How this works" drawer.
 - A banner "Challenge link: same clues for everyone." shows when the page is opened with a `seed`.
 - Round finish: Play another round, Print, then the shared end-of-session block (share text never names a surah). `<main>` projector toggle is enabled by an inline script setting `data-projector` on `<body>`.
+
+- P6: hero chip "114 surahs", descriptor "A daily Quran quiz: find the surah from its clues". The game panel starts with a `role="tablist"` of 44 px tabs (Daily, Practice, Juz), then an options row (Arabic first; Keep a streak on this device in Daily), then round settings in Practice and Juz (Juz select 1 to 30, Juz 30 default, empty juz disabled). Daily shows "Daily #N · date", the end-of-session block and the reminder control. A collapsible "114 collection" grid sits below the game. Correct and wrong states carry text.

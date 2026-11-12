@@ -1,0 +1,83 @@
+{
+  "task": "C1-verify",
+  "batch": 1,
+  "fetch": {
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "timeLocal": "2026-11-12 14:36:13 BST (plain date reading at fetch, Asia/Dhaka)",
+    "timeUtc": "2026-11-12T08:36:13Z",
+    "httpStatus": 200
+  },
+  "verifier": "second-pass, branch content-c1-verify",
+  "items": [
+    {
+      "chapter": 1,
+      "value": "The Opener",
+      "apiValue": "The Opener",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 2,
+      "value": "The Cow",
+      "apiValue": "The Cow",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 3,
+      "value": "Family of Imran",
+      "apiValue": "Family of Imran",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 4,
+      "value": "The Women",
+      "apiValue": "The Women",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 5,
+      "value": "The Table Spread",
+      "apiValue": "The Table Spread",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 6,
+      "value": "The Cattle",
+      "apiValue": "The Cattle",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 7,
+      "value": "The Heights",
+      "apiValue": "The Heights",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 8,
+      "value": "The Spoils of War",
+      "apiValue": "The Spoils of War",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 9,
+      "value": "The Repentance",
+      "apiValue": "The Repentance",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 10,
+      "value": "Jonah",
+      "apiValue": "Jonah",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    }
+  ]
+}

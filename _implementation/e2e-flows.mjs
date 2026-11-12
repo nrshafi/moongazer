@@ -233,18 +233,23 @@ export async function places(tab,mode='normal'){
  return {mapped:item.id,markers:5,uncertain:uncertain.id,mode};
 }
 export async function concepts(tab,mode='normal'){
+ // P6 UI: Daily and Practice tabs. ?puzzle=<id> opens that board in Practice (no daily clock needed); pills (#pills .board-pill) open the same URL.
  const fixture=await data('word-groups');const board=fixture.puzzles[0];const groups=board.groups.map(id=>fixture.groups.find(group=>group.id===id));
- await tab.goto(origin(5332,mode));await tab.playwright.locator('#board-select').selectOption(board.id);await tab.playwright.locator('#restart').press('Enter');await mark(tab.playwright.locator('#remember'));
+ await tab.goto(`${origin(5332,mode)}&puzzle=${board.id}`);
+ assert(await tab.playwright.locator('#tab-practice').getAttribute('aria-selected')==='true','A ?puzzle= link should open Practice');
+ await tab.playwright.locator('#restart').press('Enter');await mark(tab.playwright.locator('#remember'));
+ assert(await tab.playwright.locator('.board-pill').count()===fixture.puzzles.length,'The board picker should list every board');
  for(const term of [...groups[0].terms.slice(0,3),groups[1].terms[0]])await tab.playwright.getByRole('button',{name:term,exact:true}).press('Enter');
  await tab.playwright.locator('#submit').press('Enter');assert((await text(tab,'#feedback')).includes('One away'),'Three-of-four selection should receive near-match feedback');
- await tab.playwright.locator('#deselect').press('Enter');await tab.playwright.locator('#hint').press('Enter');assert((await text(tab,'#feedback')).includes('Hint:'),'Grouping hint missing');
+ await tab.playwright.locator('#deselect').press('Enter');await tab.playwright.locator('#hint').press('Enter');assert((await text(tab,'#feedback')).includes('Hint:'),'Grouping hint missing in Practice');
  for(let index=0;index<groups.length;index++){
   for(const term of groups[index].terms)await tab.playwright.getByRole('button',{name:term,exact:true}).press('Enter');
   await tab.playwright.locator('#submit').press('Enter');
   if(index===0&&mode==='normal'){await tab.reload();assert((await text(tab,'#progress')).startsWith('1 of 4'),'Grouping board did not recover solved groups');}
  }
  assert((await text(tab,'#feedback')).includes('All four groups found'),'Grouping board did not complete');assert(await tab.playwright.locator('#explanations article').count()===4,'All four group explanations must be readable');
- await tab.playwright.locator('#share').press('Enter');assert((await clipboard(tab)).includes('puzzle='+board.id),'Board share link is missing its puzzle ID');
+ await tab.playwright.locator('#share').press('Enter');const shared=await clipboard(tab);assert(shared.includes('puzzle='+board.id),'Board share link is missing its puzzle ID');
+ for(const group of groups)for(const answer of [group.title,...group.terms])if(answer.length>3)assert(!shared.toLowerCase().includes(answer.toLowerCase()),'Share output must not contain group names or terms');
  await tab.playwright.locator('#restart').press('Enter');await tab.playwright.locator('#reveal').press('Enter');assert((await text(tab,'#feedback')).includes('revealed'),'Reveal did not expose the group explanations');
  return {board:board.id,nearMatch:true,groupsSolved:4,mode};
 }

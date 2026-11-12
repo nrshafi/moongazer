@@ -1,0 +1,137 @@
+{
+  "task": "C1",
+  "batch": 10,
+  "chapters": [
+    91,
+    100
+  ],
+  "source": {
+    "id": "quran-com-api-v4-chapters",
+    "name": "Quran.com API v4 chapters endpoint, field translated_name.name (language en)",
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "retrievedAt": "2026-11-12T08:33:08Z",
+    "method": "Single curl GET returning all 114 chapters; values copied exactly, not paraphrased."
+  },
+  "items": [
+    {
+      "chapter": 91,
+      "name_simple": "Ash-Shams",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=91].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Sun"
+    },
+    {
+      "chapter": 92,
+      "name_simple": "Al-Layl",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=92].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Night"
+    },
+    {
+      "chapter": 93,
+      "name_simple": "Ad-Duhaa",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=93].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Morning Hours"
+    },
+    {
+      "chapter": 94,
+      "name_simple": "Ash-Sharh",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=94].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Relief"
+    },
+    {
+      "chapter": 95,
+      "name_simple": "At-Tin",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=95].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Fig"
+    },
+    {
+      "chapter": 96,
+      "name_simple": "Al-'Alaq",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=96].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Clot"
+    },
+    {
+      "chapter": 97,
+      "name_simple": "Al-Qadr",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=97].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Power"
+    },
+    {
+      "chapter": 98,
+      "name_simple": "Al-Bayyinah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=98].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Clear Proof"
+    },
+    {
+      "chapter": 99,
+      "name_simple": "Az-Zalzalah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=99].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Earthquake"
+    },
+    {
+      "chapter": 100,
+      "name_simple": "Al-'Adiyat",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=100].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Courser"
+    }
+  ]
+}

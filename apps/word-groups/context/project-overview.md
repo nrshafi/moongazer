@@ -20,7 +20,7 @@ Portfolio rank 12 of 20. Project root `apps/word-groups`. The app is implemented
 
 ## Features and content
 
-16 boards, 20 term groups, four groups of four terms per board, one-away feedback, hints, shuffle, reveal, source readings, seeded links and optional recovery.
+30 boards, 45 term groups (tiers 1 to 4; words in the ayat, surah names, qualities of prophets, Arabic roots), four groups of four terms per board, a Daily board (four-mistake limit) and Practice, one-away feedback, accepted alternates, hints (Practice), shuffle, reveal, source readings, seeded links and optional recovery.
 
 Bundled list inventory from `src/data/content.json`:
 

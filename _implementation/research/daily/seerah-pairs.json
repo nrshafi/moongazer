@@ -1,0 +1,1212 @@
+{
+  "app": "seerah-timeline",
+  "task": "C10",
+  "pairCount": 31,
+  "method": "Pairs use only events in apps/seerah-timeline/src/data/content.json. No new sources were added; every source is an existing sunnah.com link already attached to the events. Years are the conventional chart years in the data, not exact dates.",
+  "eligibility": "Both events dated in the data (CE year, AH year or a stated period) and no disputed/debated note. Gap preference: at least one conventional year; same-year pairs only when the cited report fixes the order.",
+  "excluded": [
+    {
+      "event": "the-night-journey-and-ascent",
+      "reason": "Date note states the exact date is disputed."
+    },
+    {
+      "event": "the-account-of-the-slander",
+      "reason": "Dated \"date debated\"; its relation to campaigns is debated."
+    },
+    {
+      "event": "the-first-revelation",
+      "reason": "Title contains the ordinal word \"first\", which would reveal the order in the question."
+    },
+    {
+      "event": "revelation-after-a-pause",
+      "reason": "Title contains \"after\", a relational cue; length of the pause and CE date not established."
+    },
+    {
+      "event": "the-farewell-hajj",
+      "reason": "Title \"Farewell\" signals lateness and would make the question trivial."
+    },
+    {
+      "event": "the-death-of-the-prophet",
+      "reason": "Title signals the end of the sequence; the year is also only conventional."
+    }
+  ],
+  "excludedPairs": [
+    {
+      "pair": "the-change-of-qiblah / supplication-at-badr",
+      "reason": "Both 2 AH; the cited reports (Bukhari 399, 3953) do not fix the order between them, so the same-year rule fails."
+    },
+    {
+      "pair": "the-banner-at-khaybar / the-return-for-umrah",
+      "reason": "Both 7 AH; Bukhari 4210 and 4251 do not fix the order between them."
+    },
+    {
+      "pair": "the-expedition-to-tabuk / announcements-during-abu-bakr-s-hajj",
+      "reason": "Both 9 AH; Bukhari 4418 and 4655 do not fix the order between them."
+    },
+    {
+      "pair": "the-archers-at-uhud / a-report-on-the-retreat",
+      "reason": "Two reports of the same battle; no independent order."
+    },
+    {
+      "pair": "events sharing one report (Khadija/Waraqa, Hudaybiyah details, Tabuk/Kab ibn Malik)",
+      "reason": "Sequence is within one report, not separately dated events; only arrival/mosque is used because Bukhari 428 narrates the order explicitly."
+    },
+    {
+      "pair": "a-difficult-encounter-and-a-merciful-response / the-pledges-at-aqabah",
+      "reason": "The Taif-region encounter has no year in its report (only \"often associated\" with the Taif journey); a gap under 2 years between two approximate placements is not secure enough."
+    },
+    {
+      "pair": "the-pledges-at-aqabah / brotherhood-and-a-market",
+      "reason": "0.9 conventional year apart in the data, under the one-year preference."
+    }
+  ],
+  "pairs": [
+    {
+      "id": "pair-01",
+      "first": "a-conversation-with-waraqa",
+      "second": "calling-the-clans-at-safa",
+      "why": "The Waraqa conversation belongs to the report of the beginning of revelation, and the public call at Safa came in the mission that followed.",
+      "firstEvent": {
+        "id": "a-conversation-with-waraqa",
+        "title": "A conversation with Waraqa",
+        "year": 610,
+        "date": "c. 610 CE",
+        "era": "Early Makkah",
+        "place": "Makkah",
+        "dateNote": "The report describes the sequence without a calendar date.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "calling-the-clans-at-safa",
+        "title": "Calling the clans at Safa",
+        "year": 613,
+        "date": "Early mission",
+        "era": "Early Makkah",
+        "place": "Safa",
+        "dateNote": "Commonly placed in the early public mission; the report itself gives no CE year.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770"
+          }
+        ]
+      },
+      "orderSecurity": "Both are Makkan. Bukhari 3 places the Waraqa exchange immediately after the first revelation; Bukhari 4770 is the public call at Safa, an early-mission event that follows the beginning of revelation. Gap about 3 years by the data."
+    },
+    {
+      "id": "pair-02",
+      "first": "khadija-offers-reassurance",
+      "second": "the-pledges-at-aqabah",
+      "why": "Khadija's reassurance is part of the report of the beginning of revelation, and the Aqabah pledges came shortly before the Hijrah.",
+      "firstEvent": {
+        "id": "khadija-offers-reassurance",
+        "title": "Khadija offers reassurance",
+        "year": 610,
+        "date": "c. 610 CE",
+        "era": "Early Makkah",
+        "place": "Makkah",
+        "dateNote": "A sequence within the first-revelation report, rather than a separately dated event.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-pledges-at-aqabah",
+        "title": "The pledges at Aqabah",
+        "year": 621.5,
+        "date": "Before the Hijrah",
+        "era": "Late Makkah",
+        "place": "Aqabah",
+        "dateNote": "This report identifies a participant and a pledge; it does not by itself establish every detail of the two Aqabah meetings.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 18",
+            "url": "https://sunnah.com/bukhari:18"
+          }
+        ]
+      },
+      "orderSecurity": "Beginning of revelation (c. 610) versus the pledges of the last years before the Hijrah (data: before the Hijrah, 621.5). Gap about 11 years."
+    },
+    {
+      "id": "pair-03",
+      "first": "calling-the-clans-at-safa",
+      "second": "the-cave-during-the-migration",
+      "why": "The call at Safa belongs to the early Makkan mission, and the cave belongs to the Hijrah that ended the Makkan period.",
+      "firstEvent": {
+        "id": "calling-the-clans-at-safa",
+        "title": "Calling the clans at Safa",
+        "year": 613,
+        "date": "Early mission",
+        "era": "Early Makkah",
+        "place": "Safa",
+        "dateNote": "Commonly placed in the early public mission; the report itself gives no CE year.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-cave-during-the-migration",
+        "title": "The cave during the migration",
+        "year": 622,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Near Makkah",
+        "dateNote": "The Hijrah is conventionally dated to 622 CE. The report quoted here does not name the cave.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653"
+          }
+        ]
+      },
+      "orderSecurity": "Early Makkan mission versus the Hijrah (1 AH, c. 622 CE). Gap about 9 years by the data; every Makkan-period event precedes the Hijrah."
+    },
+    {
+      "id": "pair-04",
+      "first": "khabbab-asks-for-help",
+      "second": "arrival-among-banu-amr-ibn-awf",
+      "why": "Khabbab's request is a Makkan-period exchange, and the arrival among Banu Amr ibn Awf happened after the migration to Madinah.",
+      "firstEvent": {
+        "id": "khabbab-asks-for-help",
+        "title": "Khabbab asks for help",
+        "year": 615,
+        "date": "Makkan period",
+        "era": "Early Makkah",
+        "place": "Makkah",
+        "dateNote": "A broad Makkan placement is used because this report does not date the exchange.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3852",
+            "url": "https://sunnah.com/bukhari:3852"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "arrival-among-banu-amr-ibn-awf",
+        "title": "Arrival among Banu Amr ibn Awf",
+        "year": 622.2,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Madinah",
+        "dateNote": "Relative sequence is clearer than an exact Gregorian day.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "orderSecurity": "Makkan period (dated only broadly in the data, so shown as approximate) versus the arrival in Madinah (1 AH). The order rests on Makkah-before-Hijrah, not on a CE year."
+    },
+    {
+      "id": "pair-05",
+      "first": "abu-bakr-and-protection",
+      "second": "supplication-at-badr",
+      "why": "The report on Abu Bakr and protection describes a time before the Hijrah, and Badr was fought near Madinah in 2 AH.",
+      "firstEvent": {
+        "id": "abu-bakr-and-protection",
+        "title": "Abu Bakr and protection",
+        "year": 616,
+        "date": "Makkan period",
+        "era": "Early Makkah",
+        "place": "Makkah",
+        "dateNote": "The episode predates the Hijrah, but the precise CE year is not supplied.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3905",
+            "url": "https://sunnah.com/bukhari:3905"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "supplication-at-badr",
+        "title": "Supplication at Badr",
+        "year": 624.2,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Badr",
+        "dateNote": "The conventional year is a chronology aid. The report is cited for the supplication, not a complete battle narrative.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3953",
+            "url": "https://sunnah.com/bukhari:3953"
+          }
+        ]
+      },
+      "orderSecurity": "The data states the episode predates the Hijrah (year not supplied, approximate); Badr is conventionally 2 AH. Order rests on pre-Hijrah versus post-Hijrah."
+    },
+    {
+      "id": "pair-06",
+      "first": "the-pledges-at-aqabah",
+      "second": "the-change-of-qiblah",
+      "why": "The Aqabah pledges came before the Hijrah, and the qiblah was changed in Madinah in 2 AH.",
+      "firstEvent": {
+        "id": "the-pledges-at-aqabah",
+        "title": "The pledges at Aqabah",
+        "year": 621.5,
+        "date": "Before the Hijrah",
+        "era": "Late Makkah",
+        "place": "Aqabah",
+        "dateNote": "This report identifies a participant and a pledge; it does not by itself establish every detail of the two Aqabah meetings.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 18",
+            "url": "https://sunnah.com/bukhari:18"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-change-of-qiblah",
+        "title": "The change of qiblah",
+        "year": 624,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "The narrator preserves a sixteen-or-seventeen-month uncertainty; the app keeps that uncertainty.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399"
+          }
+        ]
+      },
+      "orderSecurity": "Before the Hijrah (621.5) versus 2 AH (624). Gap about 2.5 years."
+    },
+    {
+      "id": "pair-07",
+      "first": "the-cave-during-the-migration",
+      "second": "the-change-of-qiblah",
+      "why": "The cave was part of the Hijrah, and the report on the qiblah counts months of prayer toward Jerusalem after the Prophet ﷺ came to Madinah.",
+      "firstEvent": {
+        "id": "the-cave-during-the-migration",
+        "title": "The cave during the migration",
+        "year": 622,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Near Makkah",
+        "dateNote": "The Hijrah is conventionally dated to 622 CE. The report quoted here does not name the cave.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-change-of-qiblah",
+        "title": "The change of qiblah",
+        "year": 624,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "The narrator preserves a sixteen-or-seventeen-month uncertainty; the app keeps that uncertainty.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399"
+          }
+        ]
+      },
+      "orderSecurity": "1 AH versus 2 AH. Bukhari 399 itself counts sixteen or seventeen months of prayer toward Jerusalem after arrival, so the change follows the migration; the uncertainty is in the month count, not the order."
+    },
+    {
+      "id": "pair-08",
+      "first": "suraqa-on-the-route",
+      "second": "supplication-at-badr",
+      "why": "Suraqa met them on the road of the Hijrah in 1 AH, and Badr took place in 2 AH.",
+      "firstEvent": {
+        "id": "suraqa-on-the-route",
+        "title": "Suraqa on the route",
+        "year": 622.1,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Migration route",
+        "dateNote": "The report supplies the episode; this schematic view does not reconstruct the exact route.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "supplication-at-badr",
+        "title": "Supplication at Badr",
+        "year": 624.2,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Badr",
+        "dateNote": "The conventional year is a chronology aid. The report is cited for the supplication, not a complete battle narrative.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3953",
+            "url": "https://sunnah.com/bukhari:3953"
+          }
+        ]
+      },
+      "orderSecurity": "1 AH versus 2 AH, about 2 years by the data. Hijrah before Badr is not disputed."
+    },
+    {
+      "id": "pair-09",
+      "first": "arrival-among-banu-amr-ibn-awf",
+      "second": "building-the-mosque",
+      "why": "In Bukhari 428 the Prophet ﷺ stays among Banu Amr ibn Awf, then sends for Banu al-Najjar and has the mosque built.",
+      "firstEvent": {
+        "id": "arrival-among-banu-amr-ibn-awf",
+        "title": "Arrival among Banu Amr ibn Awf",
+        "year": 622.2,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Madinah",
+        "dateNote": "Relative sequence is clearer than an exact Gregorian day.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "building-the-mosque",
+        "title": "Building the mosque",
+        "year": 622.3,
+        "date": "1 AH · c. 622 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "Shown after arrival. The cited report is the evidence for the construction episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "orderSecurity": "Same year (1 AH, c. 622 CE). Allowed as a same-year pair because the single cited report (Bukhari 428) narrates the stay first and the mosque after it. The app already records this order as explicit."
+    },
+    {
+      "id": "pair-10",
+      "first": "brotherhood-and-a-market",
+      "second": "the-archers-at-uhud",
+      "why": "The brotherhood of the emigrants and helpers belongs to the first Madinan period, and Uhud was fought in 3 AH.",
+      "firstEvent": {
+        "id": "brotherhood-and-a-market",
+        "title": "Brotherhood and a market",
+        "year": 622.4,
+        "date": "Early Madinan period",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "The report places the episode after the emigrants reached Madinah; no exact date is supplied.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3780",
+            "url": "https://sunnah.com/bukhari:3780"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-archers-at-uhud",
+        "title": "The archers at Uhud",
+        "year": 625,
+        "date": "3 AH · c. 625 CE",
+        "era": "Early Madinah",
+        "place": "Uhud",
+        "dateNote": "The conventional year is approximate in CE terms; details follow the named report.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039"
+          }
+        ]
+      },
+      "orderSecurity": "Early Madinan period (1 AH, approximate) versus 3 AH. Bukhari 3780 places the episode after the emigrants reached Madinah. Gap about 2.5 years."
+    },
+    {
+      "id": "pair-11",
+      "first": "the-change-of-qiblah",
+      "second": "digging-the-trench",
+      "why": "The qiblah changed in 2 AH, and the trench was dug in 5 AH.",
+      "firstEvent": {
+        "id": "the-change-of-qiblah",
+        "title": "The change of qiblah",
+        "year": 624,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "The narrator preserves a sixteen-or-seventeen-month uncertainty; the app keeps that uncertainty.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "digging-the-trench",
+        "title": "Digging the trench",
+        "year": 627,
+        "date": "5 AH · c. 627 CE",
+        "era": "Later Madinah",
+        "place": "Madinah",
+        "dateNote": "The trench campaign is conventionally placed in 5 AH; the cited report describes the labor.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4100",
+            "url": "https://sunnah.com/bukhari:4100"
+          }
+        ]
+      },
+      "orderSecurity": "2 AH versus 5 AH; three conventional years apart."
+    },
+    {
+      "id": "pair-12",
+      "first": "building-the-mosque",
+      "second": "steadfastness-at-hunayn",
+      "why": "The mosque in Madinah was built soon after the Hijrah, and Hunayn followed the conquest of Makkah in 8 AH.",
+      "firstEvent": {
+        "id": "building-the-mosque",
+        "title": "Building the mosque",
+        "year": 622.3,
+        "date": "1 AH · c. 622 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "Shown after arrival. The cited report is the evidence for the construction episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "steadfastness-at-hunayn",
+        "title": "Steadfastness at Hunayn",
+        "year": 630.2,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Hunayn",
+        "dateNote": "The conventional placement follows the conquest; the report supports this specific observation.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4315",
+            "url": "https://sunnah.com/bukhari:4315"
+          }
+        ]
+      },
+      "orderSecurity": "1 AH versus 8 AH."
+    },
+    {
+      "id": "pair-13",
+      "first": "supplication-at-badr",
+      "second": "the-journey-to-hudaybiyah",
+      "why": "Badr was fought in 2 AH, and the journey to Hudaybiyah was in 6 AH.",
+      "firstEvent": {
+        "id": "supplication-at-badr",
+        "title": "Supplication at Badr",
+        "year": 624.2,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Badr",
+        "dateNote": "The conventional year is a chronology aid. The report is cited for the supplication, not a complete battle narrative.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3953",
+            "url": "https://sunnah.com/bukhari:3953"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-journey-to-hudaybiyah",
+        "title": "The journey to Hudaybiyah",
+        "year": 628,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Conventional 6 AH placement. The linked report contains the detailed sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731"
+          }
+        ]
+      },
+      "orderSecurity": "2 AH versus 6 AH."
+    },
+    {
+      "id": "pair-14",
+      "first": "the-archers-at-uhud",
+      "second": "the-pledge-beneath-the-tree",
+      "why": "Uhud was fought in 3 AH, and the pledge beneath the tree was given at Hudaybiyah in 6 AH.",
+      "firstEvent": {
+        "id": "the-archers-at-uhud",
+        "title": "The archers at Uhud",
+        "year": 625,
+        "date": "3 AH · c. 625 CE",
+        "era": "Early Madinah",
+        "place": "Uhud",
+        "dateNote": "The conventional year is approximate in CE terms; details follow the named report.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-pledge-beneath-the-tree",
+        "title": "The pledge beneath the tree",
+        "year": 628.1,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Jabir gives a group count in this report. Other transmitted counts should not be silently harmonized.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4154",
+            "url": "https://sunnah.com/bukhari:4154"
+          }
+        ]
+      },
+      "orderSecurity": "3 AH versus 6 AH."
+    },
+    {
+      "id": "pair-15",
+      "first": "digging-the-trench",
+      "second": "the-banner-at-khaybar",
+      "why": "The trench was dug in 5 AH, and the banner was given at Khaybar in 7 AH.",
+      "firstEvent": {
+        "id": "digging-the-trench",
+        "title": "Digging the trench",
+        "year": 627,
+        "date": "5 AH · c. 627 CE",
+        "era": "Later Madinah",
+        "place": "Madinah",
+        "dateNote": "The trench campaign is conventionally placed in 5 AH; the cited report describes the labor.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4100",
+            "url": "https://sunnah.com/bukhari:4100"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-banner-at-khaybar",
+        "title": "The banner at Khaybar",
+        "year": 628.4,
+        "date": "7 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Khaybar",
+        "dateNote": "The conventional year is shown; the linked report supports the banner episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210"
+          }
+        ]
+      },
+      "orderSecurity": "5 AH versus 7 AH (data 627 versus 628.4); the Trench precedes Hudaybiyah and Khaybar."
+    },
+    {
+      "id": "pair-16",
+      "first": "the-journey-to-hudaybiyah",
+      "second": "the-approach-to-makkah",
+      "why": "The journey to Hudaybiyah was in 6 AH, and the approach to Makkah was in 8 AH.",
+      "firstEvent": {
+        "id": "the-journey-to-hudaybiyah",
+        "title": "The journey to Hudaybiyah",
+        "year": 628,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Conventional 6 AH placement. The linked report contains the detailed sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-approach-to-makkah",
+        "title": "The approach to Makkah",
+        "year": 630,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "The year of the conquest is explicit in the report. CE conversion is approximate.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4280",
+            "url": "https://sunnah.com/bukhari:4280"
+          }
+        ]
+      },
+      "orderSecurity": "6 AH versus 8 AH. The treaty of Hudaybiyah preceded the conquest; Bukhari 4280 gives the year of the conquest explicitly."
+    },
+    {
+      "id": "pair-17",
+      "first": "the-pledge-beneath-the-tree",
+      "second": "the-kaaba-at-the-conquest",
+      "why": "The pledge beneath the tree was given at Hudaybiyah in 6 AH, and the Kaaba scene belongs to the conquest of Makkah in 8 AH.",
+      "firstEvent": {
+        "id": "the-pledge-beneath-the-tree",
+        "title": "The pledge beneath the tree",
+        "year": 628.1,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Jabir gives a group count in this report. Other transmitted counts should not be silently harmonized.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4154",
+            "url": "https://sunnah.com/bukhari:4154"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-kaaba-at-the-conquest",
+        "title": "The Kaaba at the conquest",
+        "year": 630.1,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "A detail of the conquest episode. No depictions of the Prophet ﷺ are used.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4287",
+            "url": "https://sunnah.com/bukhari:4287"
+          }
+        ]
+      },
+      "orderSecurity": "6 AH versus 8 AH."
+    },
+    {
+      "id": "pair-18",
+      "first": "negotiating-the-written-agreement",
+      "second": "steadfastness-at-hunayn",
+      "why": "The written agreement was negotiated at Hudaybiyah in 6 AH, and Hunayn followed the conquest of Makkah in 8 AH.",
+      "firstEvent": {
+        "id": "negotiating-the-written-agreement",
+        "title": "Negotiating the written agreement",
+        "year": 628.2,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "A detail of the same treaty episode, not a separate treaty.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "steadfastness-at-hunayn",
+        "title": "Steadfastness at Hunayn",
+        "year": 630.2,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Hunayn",
+        "dateNote": "The conventional placement follows the conquest; the report supports this specific observation.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4315",
+            "url": "https://sunnah.com/bukhari:4315"
+          }
+        ]
+      },
+      "orderSecurity": "6 AH versus 8 AH; the app notes that Hunayn follows the conquest."
+    },
+    {
+      "id": "pair-19",
+      "first": "the-banner-at-khaybar",
+      "second": "the-expedition-to-tabuk",
+      "why": "The banner was given at Khaybar in 7 AH, and the expedition to Tabuk was in 9 AH.",
+      "firstEvent": {
+        "id": "the-banner-at-khaybar",
+        "title": "The banner at Khaybar",
+        "year": 628.4,
+        "date": "7 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Khaybar",
+        "dateNote": "The conventional year is shown; the linked report supports the banner episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-expedition-to-tabuk",
+        "title": "The expedition to Tabuk",
+        "year": 630.6,
+        "date": "9 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Tabuk",
+        "dateNote": "Shown in the conventional 9 AH band. Read the complete report for its longer sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4418",
+            "url": "https://sunnah.com/bukhari:4418"
+          }
+        ]
+      },
+      "orderSecurity": "7 AH versus 9 AH."
+    },
+    {
+      "id": "pair-20",
+      "first": "the-return-for-umrah",
+      "second": "announcements-during-abu-bakr-s-hajj",
+      "why": "The return for Umrah was in 7 AH, and Abu Bakr's Hajj, with its announcements, was in 9 AH.",
+      "firstEvent": {
+        "id": "the-return-for-umrah",
+        "title": "The return for Umrah",
+        "year": 629,
+        "date": "7 AH · c. 629 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "The report links the visit to the agreement; its conventional chronology is 7 AH.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4251",
+            "url": "https://sunnah.com/bukhari:4251"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "announcements-during-abu-bakr-s-hajj",
+        "title": "Announcements during Abu Bakr's Hajj",
+        "year": 631,
+        "date": "9 AH · c. 631 CE",
+        "era": "Later Madinah",
+        "place": "Mina",
+        "dateNote": "Conventionally placed in 9 AH, before the Prophet's ﷺ Farewell Hajj.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4655",
+            "url": "https://sunnah.com/bukhari:4655"
+          }
+        ]
+      },
+      "orderSecurity": "7 AH versus 9 AH (data 629 versus 631)."
+    },
+    {
+      "id": "pair-21",
+      "first": "a-letter-and-questions-from-heraclius",
+      "second": "conveying-the-message",
+      "why": "Bukhari 7 places the exchange with Heraclius during the truce after Hudaybiyah, and the address at Mina was in the tenth year.",
+      "firstEvent": {
+        "id": "a-letter-and-questions-from-heraclius",
+        "title": "A letter and questions from Heraclius",
+        "year": 628.5,
+        "date": "After Hudaybiyah",
+        "era": "Later Madinah",
+        "place": "Outside Arabia",
+        "dateNote": "The report explicitly situates the exchange during the truce. The CE placement is approximate.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 7",
+            "url": "https://sunnah.com/bukhari:7"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "conveying-the-message",
+        "title": "Conveying the message",
+        "year": 632.1,
+        "date": "10 AH · 632 CE",
+        "era": "Final year",
+        "place": "Mina",
+        "dateNote": "This report concerns the address at Mina; it is not silently merged with every other Farewell Hajj sermon.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 1741",
+            "url": "https://sunnah.com/bukhari:1741"
+          }
+        ]
+      },
+      "orderSecurity": "After Hudaybiyah (6 AH truce, approximate CE) versus 10 AH. Bukhari 7 itself says the exchange took place during the truce."
+    },
+    {
+      "id": "pair-22",
+      "first": "the-approach-to-makkah",
+      "second": "conveying-the-message",
+      "why": "The approach to Makkah was in 8 AH, and the address at Mina was in 10 AH.",
+      "firstEvent": {
+        "id": "the-approach-to-makkah",
+        "title": "The approach to Makkah",
+        "year": 630,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "The year of the conquest is explicit in the report. CE conversion is approximate.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4280",
+            "url": "https://sunnah.com/bukhari:4280"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "conveying-the-message",
+        "title": "Conveying the message",
+        "year": 632.1,
+        "date": "10 AH · 632 CE",
+        "era": "Final year",
+        "place": "Mina",
+        "dateNote": "This report concerns the address at Mina; it is not silently merged with every other Farewell Hajj sermon.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 1741",
+            "url": "https://sunnah.com/bukhari:1741"
+          }
+        ]
+      },
+      "orderSecurity": "8 AH versus 10 AH; Bukhari 4280 gives the conquest year explicitly."
+    },
+    {
+      "id": "pair-23",
+      "first": "the-kaaba-at-the-conquest",
+      "second": "announcements-during-abu-bakr-s-hajj",
+      "why": "The Kaaba scene belongs to the conquest in 8 AH, and Abu Bakr's Hajj was in 9 AH.",
+      "firstEvent": {
+        "id": "the-kaaba-at-the-conquest",
+        "title": "The Kaaba at the conquest",
+        "year": 630.1,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "A detail of the conquest episode. No depictions of the Prophet ﷺ are used.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4287",
+            "url": "https://sunnah.com/bukhari:4287"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "announcements-during-abu-bakr-s-hajj",
+        "title": "Announcements during Abu Bakr's Hajj",
+        "year": 631,
+        "date": "9 AH · c. 631 CE",
+        "era": "Later Madinah",
+        "place": "Mina",
+        "dateNote": "Conventionally placed in 9 AH, before the Prophet's ﷺ Farewell Hajj.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4655",
+            "url": "https://sunnah.com/bukhari:4655"
+          }
+        ]
+      },
+      "orderSecurity": "8 AH versus 9 AH, about 1 year by the data (630.1 versus 631); the conquest precedes the Hajj of 9 AH."
+    },
+    {
+      "id": "pair-24",
+      "first": "steadfastness-at-hunayn",
+      "second": "conveying-the-message",
+      "why": "Hunayn followed the conquest in 8 AH, and the address at Mina was in 10 AH.",
+      "firstEvent": {
+        "id": "steadfastness-at-hunayn",
+        "title": "Steadfastness at Hunayn",
+        "year": 630.2,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Hunayn",
+        "dateNote": "The conventional placement follows the conquest; the report supports this specific observation.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4315",
+            "url": "https://sunnah.com/bukhari:4315"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "conveying-the-message",
+        "title": "Conveying the message",
+        "year": 632.1,
+        "date": "10 AH · 632 CE",
+        "era": "Final year",
+        "place": "Mina",
+        "dateNote": "This report concerns the address at Mina; it is not silently merged with every other Farewell Hajj sermon.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 1741",
+            "url": "https://sunnah.com/bukhari:1741"
+          }
+        ]
+      },
+      "orderSecurity": "8 AH versus 10 AH."
+    },
+    {
+      "id": "pair-25",
+      "first": "a-conversation-with-waraqa",
+      "second": "abu-bakr-and-protection",
+      "why": "The Waraqa conversation belongs to the report of the beginning of revelation, and the protection episode came later, still before the Hijrah.",
+      "firstEvent": {
+        "id": "a-conversation-with-waraqa",
+        "title": "A conversation with Waraqa",
+        "year": 610,
+        "date": "c. 610 CE",
+        "era": "Early Makkah",
+        "place": "Makkah",
+        "dateNote": "The report describes the sequence without a calendar date.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3",
+            "url": "https://sunnah.com/bukhari:3"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "abu-bakr-and-protection",
+        "title": "Abu Bakr and protection",
+        "year": 616,
+        "date": "Makkan period",
+        "era": "Early Makkah",
+        "place": "Makkah",
+        "dateNote": "The episode predates the Hijrah, but the precise CE year is not supplied.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3905",
+            "url": "https://sunnah.com/bukhari:3905"
+          }
+        ]
+      },
+      "orderSecurity": "Beginning of revelation (c. 610) versus a pre-Hijrah episode shown as approximate (616 in the data). Gap about 6 years."
+    },
+    {
+      "id": "pair-26",
+      "first": "calling-the-clans-at-safa",
+      "second": "building-the-mosque",
+      "why": "The call at Safa came in the early Makkan mission, and the mosque in Madinah was built after the Hijrah.",
+      "firstEvent": {
+        "id": "calling-the-clans-at-safa",
+        "title": "Calling the clans at Safa",
+        "year": 613,
+        "date": "Early mission",
+        "era": "Early Makkah",
+        "place": "Safa",
+        "dateNote": "Commonly placed in the early public mission; the report itself gives no CE year.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4770",
+            "url": "https://sunnah.com/bukhari:4770"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "building-the-mosque",
+        "title": "Building the mosque",
+        "year": 622.3,
+        "date": "1 AH · c. 622 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "Shown after arrival. The cited report is the evidence for the construction episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "orderSecurity": "Early Makkan mission versus 1 AH."
+    },
+    {
+      "id": "pair-27",
+      "first": "a-difficult-encounter-and-a-merciful-response",
+      "second": "suraqa-on-the-route",
+      "why": "The difficult encounter is placed late in the Makkan period, and Suraqa met them on the road of the Hijrah.",
+      "firstEvent": {
+        "id": "a-difficult-encounter-and-a-merciful-response",
+        "title": "A difficult encounter and a merciful response",
+        "year": 620,
+        "date": "Late Makkan period",
+        "era": "Late Makkah",
+        "place": "Taif region",
+        "dateNote": "Often associated with the Taif journey. The report names locations but gives no CE date.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3231",
+            "url": "https://sunnah.com/bukhari:3231"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "suraqa-on-the-route",
+        "title": "Suraqa on the route",
+        "year": 622.1,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Migration route",
+        "dateNote": "The report supplies the episode; this schematic view does not reconstruct the exact route.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3906",
+            "url": "https://sunnah.com/bukhari:3906"
+          }
+        ]
+      },
+      "orderSecurity": "Late Makkan period (620, approximate; the report names places but no year) versus the Hijrah (622). Order rests on late Makkah before the Hijrah."
+    },
+    {
+      "id": "pair-28",
+      "first": "khabbab-asks-for-help",
+      "second": "negotiating-the-written-agreement",
+      "why": "Khabbab's request belongs to the Makkan period, and the written agreement was negotiated at Hudaybiyah in 6 AH.",
+      "firstEvent": {
+        "id": "khabbab-asks-for-help",
+        "title": "Khabbab asks for help",
+        "year": 615,
+        "date": "Makkan period",
+        "era": "Early Makkah",
+        "place": "Makkah",
+        "dateNote": "A broad Makkan placement is used because this report does not date the exchange.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3852",
+            "url": "https://sunnah.com/bukhari:3852"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "negotiating-the-written-agreement",
+        "title": "Negotiating the written agreement",
+        "year": 628.2,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "A detail of the same treaty episode, not a separate treaty.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731"
+          }
+        ]
+      },
+      "orderSecurity": "Makkan period (approximate) versus 6 AH."
+    },
+    {
+      "id": "pair-29",
+      "first": "the-pledges-at-aqabah",
+      "second": "a-report-on-the-retreat",
+      "why": "The Aqabah pledges came before the Hijrah, and the report on the retreat concerns Uhud in 3 AH.",
+      "firstEvent": {
+        "id": "the-pledges-at-aqabah",
+        "title": "The pledges at Aqabah",
+        "year": 621.5,
+        "date": "Before the Hijrah",
+        "era": "Late Makkah",
+        "place": "Aqabah",
+        "dateNote": "This report identifies a participant and a pledge; it does not by itself establish every detail of the two Aqabah meetings.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 18",
+            "url": "https://sunnah.com/bukhari:18"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "a-report-on-the-retreat",
+        "title": "A report on the retreat",
+        "year": 625.1,
+        "date": "3 AH · c. 625 CE",
+        "era": "Early Madinah",
+        "place": "Uhud",
+        "dateNote": "A separate report about the same battle, not another battle or an independently dated event.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4067",
+            "url": "https://sunnah.com/bukhari:4067"
+          }
+        ]
+      },
+      "orderSecurity": "Before the Hijrah (621.5) versus 3 AH (625.1). Gap about 3.5 years."
+    },
+    {
+      "id": "pair-30",
+      "first": "the-cave-during-the-migration",
+      "second": "the-return-for-umrah",
+      "why": "The cave was part of the Hijrah in 1 AH, and the return for Umrah was in 7 AH.",
+      "firstEvent": {
+        "id": "the-cave-during-the-migration",
+        "title": "The cave during the migration",
+        "year": 622,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Near Makkah",
+        "dateNote": "The Hijrah is conventionally dated to 622 CE. The report quoted here does not name the cave.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3653",
+            "url": "https://sunnah.com/bukhari:3653"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-return-for-umrah",
+        "title": "The return for Umrah",
+        "year": 629,
+        "date": "7 AH · c. 629 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "The report links the visit to the agreement; its conventional chronology is 7 AH.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4251",
+            "url": "https://sunnah.com/bukhari:4251"
+          }
+        ]
+      },
+      "orderSecurity": "1 AH versus 7 AH."
+    },
+    {
+      "id": "pair-31",
+      "first": "arrival-among-banu-amr-ibn-awf",
+      "second": "the-expedition-to-tabuk",
+      "why": "The arrival among Banu Amr ibn Awf was in 1 AH, and the expedition to Tabuk was in 9 AH.",
+      "firstEvent": {
+        "id": "arrival-among-banu-amr-ibn-awf",
+        "title": "Arrival among Banu Amr ibn Awf",
+        "year": 622.2,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Madinah",
+        "dateNote": "Relative sequence is clearer than an exact Gregorian day.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-expedition-to-tabuk",
+        "title": "The expedition to Tabuk",
+        "year": 630.6,
+        "date": "9 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Tabuk",
+        "dateNote": "Shown in the conventional 9 AH band. Read the complete report for its longer sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4418",
+            "url": "https://sunnah.com/bukhari:4418"
+          }
+        ]
+      },
+      "orderSecurity": "1 AH versus 9 AH."
+    }
+  ]
+}

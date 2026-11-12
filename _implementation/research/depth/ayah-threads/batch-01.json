@@ -1,0 +1,735 @@
+{
+  "task": "C2",
+  "app": "ayah-threads",
+  "batch": 1,
+  "puzzles": [
+    1,
+    10
+  ],
+  "quranEdition": "ar-uthmani-hafs",
+  "translationEdition": "en-pickthall",
+  "groundingNonce": "gnd-fe3f70f0ac41e3cb",
+  "groundingRulesCall": {
+    "tool": "fetch_grounding_rules",
+    "retrievedAt": "2026-11-12T11:22:00Z (approx.)"
+  },
+  "rateLimitNote": "The MCP allows one request per second; two parallel calls failed with rate_limited and were repeated one at a time (no data from the failed calls).",
+  "fetchCalls": [
+    {
+      "tool": "fetch_quran",
+      "arguments": {
+        "ayahs": "39:10, 3:92, 6:12, 5:119, 33:24, 64:13",
+        "editions": "ar-uthmani-hafs",
+        "grounding_nonce": "gnd-fe3f70f0ac41e3cb"
+      },
+      "edition": "ar-uthmani-hafs",
+      "retrievedAt": "2026-11-12T11:27:00Z (approx.)",
+      "note": "Arabic returned by the tool was compared with the app text after Unicode NFC normalisation (the transcription step reorders shadda and vowel marks); the app text itself is copied by script from quran-full.json."
+    }
+  ],
+  "items": [
+    {
+      "puzzle": 1,
+      "id": "patience",
+      "theme": "Patience",
+      "status": "reworked",
+      "refsChosen": [
+        "2:153",
+        "16:127",
+        "39:10"
+      ],
+      "surahs": [
+        2,
+        16,
+        39
+      ],
+      "passageText": [
+        {
+          "ref": "2:153",
+          "arabicSha256": "54844431b8cf7f356d4170f1b178372df997ae1aa35a18c33aae322d2ff27dbc",
+          "translationSha256": "3772e86110010fabb1d50283fa2000378ee6c59d5c71eff1999abab797eca24f",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "16:127",
+          "arabicSha256": "f364f520db6347adf39e10244d94895bb44d409964a4cb93a7a81aa0ddec7258",
+          "translationSha256": "1b3f4250856195aa318183eaeb4b8571acc223ea13f54c313ea58f1ab1d41967",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "39:10",
+          "arabicSha256": "0ff9a7aeac0c994ad213e55c72012a2e9009cfd9a72b999559a0cc59f52f50ee",
+          "translationSha256": "fd54c8fcf9878f087ac5b57e80a60684e85e607103620fe405e5e9484bce9e2d",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Replaced 103:3 (the same ayah is the third passage of Thread 18, Time and effort, so one passage could point to two answers) with 39:10, which names the steadfast (as-sabirun) and their unreckoned reward. Now 3 surahs (2, 16, 39).",
+      "rejectedCandidates": [
+        "11:115 (near-duplicate of 16:127 wording)",
+        "2:155 (same surah as 2:153)",
+        "74:7 (one clause, no context)"
+      ],
+      "toolCalls": [
+        {
+          "tool": "search_translation",
+          "arguments": {
+            "query": "be patient, patience, the steadfast shall be paid their reward without reckoning",
+            "editions": "en-pickthall",
+            "intent": "explore-topic",
+            "grounding_nonce": "gnd-fe3f70f0ac41e3cb"
+          },
+          "edition": "en-pickthall",
+          "retrievedAt": "2026-11-12T11:23:33Z",
+          "topResultRefs": [
+            "39:10",
+            "74:7",
+            "42:43",
+            "28:54",
+            "2:153",
+            "11:115",
+            "39:70",
+            "2:155",
+            "16:96",
+            "30:60"
+          ]
+        }
+      ],
+      "distractors": {
+        "themes": [
+          "Careful speech",
+          "Moderation",
+          "Consultation"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Hope",
+          "Trust in Allah",
+          "Time and effort",
+          "Prayer",
+          "Forgiveness",
+          "Fasting"
+        ]
+      },
+      "explanation": "These passages explicitly refer to steadfastness in worship, in hardship, and in the reward promised to those who endure.",
+      "hint": "Look for how people endure difficulty."
+    },
+    {
+      "puzzle": 2,
+      "id": "gratitude",
+      "theme": "Gratitude",
+      "status": "passages retained",
+      "refsChosen": [
+        "14:7",
+        "31:12",
+        "2:152"
+      ],
+      "surahs": [
+        2,
+        14,
+        31
+      ],
+      "passageText": [
+        {
+          "ref": "14:7",
+          "arabicSha256": "41ba2c241a180982166f38520d30717d7fcc92efaa0b2052ad2798d992703abe",
+          "translationSha256": "6b7c0a2db7071fa9ba1a35f1337f574c582cf7812feabb5105023cd185a83a4d",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "31:12",
+          "arabicSha256": "90797611aca254565396ec3599e9dbb762e8df6fcf2ccedc138bec5286199824",
+          "translationSha256": "5312ece40826624ea820126391e4d02061fafa3457abcdca6b1a519cd77cd605",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "2:152",
+          "arabicSha256": "990be2a1d255dd0bd01b215464074654fe8550ea3ffb97e161d88d420b9db809",
+          "translationSha256": "fac83da6b9e6bdc54951d0553629ba1b42dac2799fda81bb1968f055b8bbf2d2",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Passages retained: already 2 or more surahs and each explicitly carries the theme; the text was copied again from quran-full.json by script and is identical to the previous data. No new MCP search for this puzzle in this batch.",
+      "rejectedCandidates": [],
+      "toolCalls": [],
+      "distractors": {
+        "themes": [
+          "Hope",
+          "Giving",
+          "Reconciliation"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Parents",
+          "Fasting",
+          "Night and day",
+          "Prayer"
+        ]
+      },
+      "explanation": "Each passage mentions thankfulness, with different settings and audiences.",
+      "hint": "Notice the response to receiving a gift."
+    },
+    {
+      "puzzle": 3,
+      "id": "justice",
+      "theme": "Justice",
+      "status": "passages retained",
+      "refsChosen": [
+        "4:135",
+        "5:8",
+        "42:15"
+      ],
+      "surahs": [
+        4,
+        5,
+        42
+      ],
+      "passageText": [
+        {
+          "ref": "4:135",
+          "arabicSha256": "19fa1496ed7f6e06e5f5ce80c5fb08085c9fc270a212873a3b88c02afe4a52aa",
+          "translationSha256": "2535bcad7ba1bd4089afaaaf5138e7267fc65f3aba0a84ff325e219d598f2aaf",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "5:8",
+          "arabicSha256": "22610fbf6cc792f9eb16a4bac4a7f4dcc68ab9ea0a45460ea58c3074346d4af8",
+          "translationSha256": "88a6eb98650361daca22f107f990aa8df567a63c15366735c697963373902252",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "42:15",
+          "arabicSha256": "5045c580d3d91c064ddb68ad41cf81ee5515f164d924f330e12577a9487d9382",
+          "translationSha256": "60fb119932f0bc178516173c968cdb0161b5033dd36bd60f08711a42727cf257",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Passages retained: already 2 or more surahs and each explicitly carries the theme; the text was copied again from quran-full.json by script and is identical to the previous data. No new MCP search for this puzzle in this batch.",
+      "rejectedCandidates": [],
+      "toolCalls": [],
+      "distractors": {
+        "themes": [
+          "Prayer",
+          "Human relationships",
+          "Gentle responses"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Parents",
+          "Truthfulness",
+          "Truth and falsehood",
+          "Accountability",
+          "Reconciliation",
+          "Keeping commitments",
+          "Kindness"
+        ]
+      },
+      "explanation": "The shared thread is justice, including situations where personal loyalties or hostility can make fairness difficult.",
+      "hint": "What remains necessary even when feelings get in the way?"
+    },
+    {
+      "puzzle": 4,
+      "id": "giving",
+      "theme": "Giving",
+      "status": "reworked",
+      "refsChosen": [
+        "2:261",
+        "3:92",
+        "76:8"
+      ],
+      "surahs": [
+        2,
+        3,
+        76
+      ],
+      "passageText": [
+        {
+          "ref": "2:261",
+          "arabicSha256": "8c0e58d2812764ad4c69f3f178ca74150a3a04d48c49db84945a824bd3bb10c1",
+          "translationSha256": "3fadfbc8b985210ba822efad23601b7afb327347a98762b44e2d10ea7f048eee",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "3:92",
+          "arabicSha256": "26aa9e32d86e7fada29e5cce84948c474ee96de16a95260a7b5b4ea7d7c88b94",
+          "translationSha256": "c7dab87f13b1c627ca87e40af07b3ad18a3e7f8a4ba99155e6424846b7eb425c",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "76:8",
+          "arabicSha256": "04772c58b1efb20bcfb170e14e8cdb3331646781dcf37b19964c579f3d51ef54",
+          "translationSha256": "4ee6f351b84f7f0d0e3af3d85843a90ff07f8d6b3f53db042930b8d6429614f6",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Replaced 2:271 (same surah as 2:261) with 3:92, which says plainly that one does not attain righteousness until one spends of what one loves. Now 3 surahs (2, 3, 76).",
+      "rejectedCandidates": [
+        "2:267 and 2:262 (same surah as 2:261)",
+        "57:10 (about spending before the victory, a narrower point)"
+      ],
+      "toolCalls": [
+        {
+          "tool": "search_translation",
+          "arguments": {
+            "query": "spend of that which ye love; giving in charity for the sake of Allah",
+            "editions": "en-pickthall",
+            "intent": "explore-topic",
+            "grounding_nonce": "gnd-fe3f70f0ac41e3cb"
+          },
+          "edition": "en-pickthall",
+          "retrievedAt": "2026-11-12T11:23:45Z",
+          "topResultRefs": [
+            "3:92",
+            "2:267",
+            "2:195",
+            "2:215",
+            "3:134",
+            "2:262",
+            "2:261",
+            "2:272",
+            "2:265",
+            "57:10"
+          ]
+        }
+      ],
+      "distractors": {
+        "themes": [
+          "Privacy",
+          "Night and day",
+          "Signs in creation"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Orphans",
+          "Kindness",
+          "Hospitality",
+          "Moderation",
+          "Prayer",
+          "Fasting",
+          "Consultation"
+        ]
+      },
+      "explanation": "The passages describe spending wealth or food for the sake of others and of Allah: a grain that multiplies, spending what one loves, and feeding the needy. The intended connection is giving, rather than a claim that all three describe the same situation.",
+      "hint": "Look for something offered for another person's benefit."
+    },
+    {
+      "puzzle": 5,
+      "id": "mercy",
+      "theme": "Mercy",
+      "status": "reworked",
+      "refsChosen": [
+        "7:156",
+        "6:12",
+        "21:107"
+      ],
+      "surahs": [
+        6,
+        7,
+        21
+      ],
+      "passageText": [
+        {
+          "ref": "7:156",
+          "arabicSha256": "c06cfd7b906531ddf31a58c57b65e2e67bfa62f4ba68c0243a6af70849c62f2d",
+          "translationSha256": "b368d263246f9d4c05dea572de1b367102e406fbe91d60fb315fda39949dd864",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "6:12",
+          "arabicSha256": "cde1940211ad699f86a4a790a0747fe9b14dc81fa8d7e453a9b6176e80cf92ee",
+          "translationSha256": "2c7c4b4b6cbce629c00cbab568b62de48b26035fde53c16f90f1c3431b75e912",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "21:107",
+          "arabicSha256": "5adef9ffc42a4f32f6294f9ecf5a4f451553606461922cd74add8bf2224a1c39",
+          "translationSha256": "be2631813d3e0828d1b626d9de80931e7045efa1268c91ad3ce2ab35946efacd",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Replaced 39:53, which is also the anchor of Thread 17 (Hope), with 6:12, where Allah prescribes mercy for Himself. Now 3 surahs (7, 6, 21).",
+      "rejectedCandidates": [
+        "6:54 (also about repentance and forgiveness, nearer to the Forgiveness thread)",
+        "35:2 (mercy named but as a general opening)"
+      ],
+      "toolCalls": [
+        {
+          "tool": "search_translation",
+          "arguments": {
+            "query": "Allah has prescribed mercy for Himself; His mercy embraces all things",
+            "editions": "en-pickthall",
+            "intent": "explore-topic",
+            "grounding_nonce": "gnd-fe3f70f0ac41e3cb"
+          },
+          "edition": "en-pickthall",
+          "retrievedAt": "2026-11-12T11:23:49Z",
+          "topResultRefs": [
+            "6:54",
+            "7:156",
+            "6:12",
+            "7:151",
+            "39:53",
+            "15:49",
+            "7:154",
+            "6:147",
+            "35:2",
+            "30:50"
+          ]
+        }
+      ],
+      "distractors": {
+        "themes": [
+          "Trust in Allah",
+          "Hospitality",
+          "Privacy"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Giving",
+          "Forgiveness",
+          "Kindness",
+          "Hope",
+          "Gentle responses",
+          "Reconciliation"
+        ]
+      },
+      "explanation": "Mercy is named in each passage: Allah's mercy embracing all things, mercy He prescribed for Himself, and the messenger sent as a mercy. The editorial connection brings together different references to mercy.",
+      "hint": "Look for what Allah describes as embracing all things."
+    },
+    {
+      "puzzle": 6,
+      "id": "forgiveness",
+      "theme": "Forgiveness",
+      "status": "passages retained",
+      "refsChosen": [
+        "24:22",
+        "42:40",
+        "25:70"
+      ],
+      "surahs": [
+        24,
+        25,
+        42
+      ],
+      "passageText": [
+        {
+          "ref": "24:22",
+          "arabicSha256": "bd24658ca3383154fa060c976f3e57379d78036ef21615ee457d02c9db6e5477",
+          "translationSha256": "a0206429f9508204862a79c35b17be3475b79964d7ee0d59e811add57ff03d0c",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "42:40",
+          "arabicSha256": "266e18b84ae1dabd219954402727b56ce7fd5220edfe906b99eabea600f0f25b",
+          "translationSha256": "7b54ef2ce97e7d6efa547d396bf8e58cd443127f7635a8f4dcc9182e73c1f589",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "25:70",
+          "arabicSha256": "6c2e854236f5d8d928afe97f445db26d2b707efaeb09a6287a1a376661804519",
+          "translationSha256": "d116c526281839687883422b4f3c00de65da4d51c257be74fe01fb45f577924c",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Passages retained: already 2 or more surahs and each explicitly carries the theme; the text was copied again from quran-full.json by script and is identical to the previous data. No new MCP search for this puzzle in this batch.",
+      "rejectedCandidates": [],
+      "toolCalls": [],
+      "distractors": {
+        "themes": [
+          "Careful speech",
+          "Truth and falsehood",
+          "Learning"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Justice",
+          "Giving",
+          "Mercy",
+          "Hope",
+          "Reconciliation",
+          "Gentle responses",
+          "Kindness",
+          "Consultation"
+        ]
+      },
+      "explanation": "The passages discuss pardoning or repentance and forgiveness. Their contexts differ, so read the complete passages after finding the link.",
+      "hint": "What can follow wrongdoing besides retaliation?"
+    },
+    {
+      "puzzle": 7,
+      "id": "truthfulness",
+      "theme": "Truthfulness",
+      "status": "reworked",
+      "refsChosen": [
+        "9:119",
+        "5:119",
+        "33:24"
+      ],
+      "surahs": [
+        5,
+        9,
+        33
+      ],
+      "passageText": [
+        {
+          "ref": "9:119",
+          "arabicSha256": "3eadf994fd08a534492d36b04621274088e2f773afcbeedd5edae3058871a3a2",
+          "translationSha256": "d8bb9086d78b2054af20576fa534efa45281039e92d52679b0917579684e9051",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "5:119",
+          "arabicSha256": "f152fbd39b6b2cc1c9cdc2cceb750d55c1fe6a9ae3c42c629e83d681a65c2597",
+          "translationSha256": "e6cb993116fb11d9cd249c9cba2c16a168a11a3f074b34429675140ab6b598df",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "33:24",
+          "arabicSha256": "07695f2faf18107b4b4667d0fc37b17b13624f8f640842b3b57df70203f1fc1a",
+          "translationSha256": "e1452d1e7c68054051c5c5a8974af689d1b8f48005a64ecad6a69cb25ad8e909",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Replaced 33:70 (kept in Thread 12, Careful speech) and 33:35 (a long list of virtues in which truthfulness is one clause) with 5:119 and 33:24, which both say the truthful (as-sadiqin) are rewarded for their truth. 9:119 kept. Now 3 surahs (9, 5, 33).",
+      "rejectedCandidates": [
+        "33:35 (one clause in a long list; also names fasting, which Thread 22 now uses its own passages for)",
+        "4:122 (about Allah being the most truthful in speech, a different thread)"
+      ],
+      "toolCalls": [
+        {
+          "tool": "search_translation",
+          "arguments": {
+            "query": "be with the truthful; truthful men and truthful women; their truthfulness profits them",
+            "editions": "en-pickthall",
+            "intent": "explore-topic",
+            "grounding_nonce": "gnd-fe3f70f0ac41e3cb"
+          },
+          "edition": "en-pickthall",
+          "retrievedAt": "2026-11-12T11:23:35Z",
+          "topResultRefs": [
+            "5:119",
+            "9:119",
+            "33:35",
+            "33:24",
+            "4:69",
+            "33:23",
+            "33:8",
+            "9:71",
+            "4:122",
+            "9:100"
+          ]
+        }
+      ],
+      "distractors": {
+        "themes": [
+          "Privacy",
+          "Hospitality",
+          "Patience"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Truth and falsehood",
+          "Careful speech",
+          "Justice",
+          "Keeping commitments",
+          "Time and effort"
+        ]
+      },
+      "explanation": "Truthfulness connects these passages: being with the truthful, the benefit their truthfulness brings them, and the reward of the true for their truth. The theme label is an editorial aid, not a replacement for commentary.",
+      "hint": "Notice a quality of word and deed that profits people on the Day of Judgement."
+    },
+    {
+      "puzzle": 8,
+      "id": "parents",
+      "theme": "Parents",
+      "status": "passages retained",
+      "refsChosen": [
+        "17:23",
+        "31:14",
+        "29:8"
+      ],
+      "surahs": [
+        17,
+        29,
+        31
+      ],
+      "passageText": [
+        {
+          "ref": "17:23",
+          "arabicSha256": "92a3158afc5407dc953ebe666262de906a317b8e5e1a5de2e052ed7fc16fdae1",
+          "translationSha256": "aa7c3368e0c6be91e48d4f7217588938f26c9ec395bfe525bbda10ebe0a05f5f",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "31:14",
+          "arabicSha256": "47589331efea14dc07e138b805f6ac2dce0a357aa9a5ae259687a1cc5480e8dc",
+          "translationSha256": "45474819f22c4e3cf58f69aab5eb2f2ec8f7649cfca4a1c543b79c011729221c",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "29:8",
+          "arabicSha256": "bba9f02b9ed37d2ab7f8e2e6f69ae857bc53a16918af5186965c42e2a3706dd6",
+          "translationSha256": "302ec616a8556dea4d908b809cc2498354d8d78887cc45dfc3bbbc42f2ed1da9",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Passages retained: already 2 or more surahs and each explicitly carries the theme; the text was copied again from quran-full.json by script and is identical to the previous data. No new MCP search for this puzzle in this batch.",
+      "rejectedCandidates": [],
+      "toolCalls": [],
+      "distractors": {
+        "themes": [
+          "Humility",
+          "Time and effort",
+          "Learning"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Careful speech",
+          "Gentle responses",
+          "Kindness",
+          "Gratitude",
+          "Human relationships",
+          "Orphans",
+          "Consultation"
+        ]
+      },
+      "explanation": "All three passages explicitly mention parents. They address different aspects of that relationship.",
+      "hint": "Which family relationship appears in every passage?"
+    },
+    {
+      "puzzle": 9,
+      "id": "learning",
+      "theme": "Learning",
+      "status": "passages retained",
+      "refsChosen": [
+        "96:1-5",
+        "20:114",
+        "39:9"
+      ],
+      "surahs": [
+        20,
+        39,
+        96
+      ],
+      "passageText": [
+        {
+          "ref": "96:1-5",
+          "arabicSha256": "1f23e6bc1aa44b5aa0d9d43fddaa909e3091b6cd634bfe4f218d14aa49e30359",
+          "translationSha256": "05006b1dd6d84f1bf8bdb77a67af08b5c5fe1bd5a3d85768f928d9340bcb07d3",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "20:114",
+          "arabicSha256": "ce7dc8a4bfbc0d1eac27e9187c29016c46223a0d1a076540663fa1b1e4512616",
+          "translationSha256": "ceb5acc9a502b05fef9dd69c9991e9a863043978158716cf3c5335db7d749df9",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "39:9",
+          "arabicSha256": "4df21872059d133408029d36d832b7575e2dbbb2186bc398e3d7bfa972e07223",
+          "translationSha256": "e8e12d47a0482de2152ab6a94e10ad23eb1cc6fc97558558dd12199fa736fee5",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Passages retained: already 2 or more surahs and each explicitly carries the theme; the text was copied again from quran-full.json by script and is identical to the previous data. No new MCP search for this puzzle in this batch.",
+      "rejectedCandidates": [],
+      "toolCalls": [],
+      "distractors": {
+        "themes": [
+          "Truthfulness",
+          "Moderation",
+          "Humility"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Signs in creation",
+          "Time and effort",
+          "Truth and falsehood"
+        ]
+      },
+      "explanation": "Reading and knowledge form the intended connection. One passage is a continuous five-ayah selection.",
+      "hint": "Look for reading, knowing, and seeking more."
+    },
+    {
+      "puzzle": 10,
+      "id": "trust-in-allah",
+      "theme": "Trust in Allah",
+      "status": "reworked",
+      "refsChosen": [
+        "65:3",
+        "14:12",
+        "64:13"
+      ],
+      "surahs": [
+        14,
+        64,
+        65
+      ],
+      "passageText": [
+        {
+          "ref": "65:3",
+          "arabicSha256": "890bbe80adfc5787b59441ec562eb0f9e9de1377e6d21fa9ee355b4ee3e23810",
+          "translationSha256": "9e253af848d6b9135518228c56ae4bb3bc5c754847669942511cc212e04e5fbb",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "14:12",
+          "arabicSha256": "9dadc1c5bf5e20afedad2c54000d7095d944c2e55dd76f70bbef756e179f490c",
+          "translationSha256": "aa25aa555a6c393b4b4fe14ca81c2d0d5611cfbb355e0b164ce3a8bbbaf0e91b",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        },
+        {
+          "ref": "64:13",
+          "arabicSha256": "2d6d7323de21f871bba15cf115484c14802a697d56d990d18db23572094c6a30",
+          "translationSha256": "c2ea62fb11c2d7eeb4cb70e2b915db051b11d2f20a642925177f807458a1c322",
+          "source": "_implementation/research/quran-full.json (copied by script, ar-uthmani-hafs / en-pickthall)"
+        }
+      ],
+      "whyChosen": "Replaced 3:159 (it is also in Thread 27, Consultation, and Thread 30 used it before) with 64:13, a one-line statement that believers put their trust in Allah. 65:3 and 14:12 kept. Now 3 surahs (65, 14, 64).",
+      "rejectedCandidates": [
+        "9:51 and 3:122 (same wording, kept as reserves)",
+        "33:3 (addressed to the Prophet only)"
+      ],
+      "toolCalls": [
+        {
+          "tool": "search_translation",
+          "arguments": {
+            "query": "put your trust in Allah; let believers rely on Allah alone",
+            "editions": "en-pickthall",
+            "intent": "explore-topic",
+            "grounding_nonce": "gnd-fe3f70f0ac41e3cb"
+          },
+          "edition": "en-pickthall",
+          "retrievedAt": "2026-11-12T11:23:53Z",
+          "topResultRefs": [
+            "64:13",
+            "14:12",
+            "33:3",
+            "10:84",
+            "67:29",
+            "9:51",
+            "3:122",
+            "8:2",
+            "27:79",
+            "9:129"
+          ]
+        }
+      ],
+      "distractors": {
+        "themes": [
+          "Giving",
+          "Mercy",
+          "Signs in creation"
+        ],
+        "method": "Assigned by a deterministic constraint solver over the 30 bank themes: each theme used exactly 3 times, never the answer, never a pair in the blocklist (tests/distractors.test.ts).",
+        "blockedForThisAnswer": [
+          "Patience",
+          "Hope",
+          "Consultation",
+          "Prayer"
+        ]
+      },
+      "explanation": "These passages explicitly mention placing trust in Allah in different circumstances: sufficiency in Him, enduring hurt, and the reliance of the believers.",
+      "hint": "What accompanies action when outcomes cannot be controlled?"
+    }
+  ]
+}

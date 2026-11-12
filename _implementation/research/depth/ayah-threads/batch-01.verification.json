@@ -1,0 +1,81 @@
+{
+  "task": "C2-verify",
+  "app": "ayah-threads",
+  "batch": 1,
+  "puzzles": [
+    1,
+    10
+  ],
+  "checkedAt": "2026-11-12 17:47:39 BST (plain date in Git Bash; Asia/Dhaka, +06:00, no hours added)",
+  "verifier": "second-pass verifier run (separate from the batch author's session)",
+  "checks": {
+    "exactText": "Each passage arabic and translation compared by script with _implementation/research/quran-full.json; range refs joined with newline per ayah, as the data joins them. Result: 30/30 puzzles match; all passage urls match quran.com pattern.",
+    "mcpSpotCheck": "fetch_grounding_rules read first (nonce gnd-44dfb6c9fcd0061b). fetch_translation en-pickthall called sequentially for the first passage of each puzzle, then compared with the data. Result: 30/30 match exactly.",
+    "surahs": "Each puzzle has passages from at least two surahs (checked by script).",
+    "distractors": "Each puzzle has 3 distinct distractors, each a real theme in the bank, none equal to the answer (checked by script). Near-synonym and plausibility checks are editorial.",
+    "hashes": "provenance.json appContentSha256 equals SHA-256 of content.json after CRLF to LF normalisation (7486f41ce0ba061e0cea61745e34ccf64fcc12f6a1015869a22966f957b87f4e)."
+  },
+  "editorialJudgement": "Theme fit, distractor plausibility and hint spoiler checks are the verifier's own editorial judgement, not scholarly review. Hint standard applied: fail if the hint uses the theme name, its root, or a direct synonym, or gives the theme's bare definition.",
+  "items": [
+    {
+      "id": "patience",
+      "number": 1,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/16/39. Passages clearly carry steadfastness and endurance. Distractors Careful speech, Moderation, Consultation are not plausible answers for these passages. Hint 'endure difficulty' is close to the theme but names no label; passes as a pointer (borderline)."
+    },
+    {
+      "id": "gratitude",
+      "number": 2,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/14/31. Each passage explicitly carries thanks (14:7, 31:12, 2:152). Distractors Hope, Giving, Reconciliation are not explicit in these passages. Hint 'the response to receiving a gift' points at the passage without naming the theme."
+    },
+    {
+      "id": "justice",
+      "number": 3,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 4/5/42. Each passage commands justice or equity, including against one's own side (4:135, 5:8, 42:15). Distractors Prayer, Human relationships, Gentle responses are not the subject of these passages. Hint is a question pointing at the passages without naming the label (borderline)."
+    },
+    {
+      "id": "giving",
+      "number": 4,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/3/76. Spending wealth or food for others is explicit in each (2:261, 3:92, 76:8). Distractors Privacy, Night and day, Signs in creation are not in these passages. Hint describes the act without naming the label."
+    },
+    {
+      "id": "mercy",
+      "number": 5,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 6/7/21 and theme fit are fine, but the hint 'Look for compassion that reaches beyond one situation' uses 'compassion', a direct synonym of the answer 'mercy'. Reword the hint without a synonym of the answer. Fixed by the orchestrating run on Thu Nov 12 17:48:56 BST 2026: the hint no longer names or defines the answer."
+    },
+    {
+      "id": "forgiveness",
+      "number": 6,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 24/25/42. Pardon and forgiveness are explicit (24:22, 42:40, 25:70; 25:70 leans to repentance, which is close). Distractors Careful speech, Truth and falsehood, Learning are not in these passages. Hint asks a question and does not name the label (borderline)."
+    },
+    {
+      "id": "truthfulness",
+      "number": 7,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 5/9/33 and theme fit are fine, but the hint 'Notice who is praised or rewarded for being true' uses 'true', the root of the answer 'truthfulness'. Reword the hint without the root word. Fixed by the orchestrating run on Thu Nov 12 17:48:56 BST 2026: the hint no longer names or defines the answer."
+    },
+    {
+      "id": "parents",
+      "number": 8,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 17/29/31. Parents are named in each passage (17:23, 31:14, 29:8). Distractors Humility, Time and effort, Learning are not in these passages. Hint 'Which family relationship appears in every passage?' points to the category without naming the label (borderline)."
+    },
+    {
+      "id": "learning",
+      "number": 9,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 20/39/96. Reading, teaching, knowledge and seeking more are explicit (96:1-5, 20:114, 39:9). Distractors Truthfulness, Moderation, Humility are not in these passages. Hint lists activities without the label."
+    },
+    {
+      "id": "trust-in-allah",
+      "number": 10,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 14/64/65. Putting trust in Allah is explicit (65:3, 14:12, 64:13). Distractors Giving, Mercy, Signs in creation are not the subject of these passages. Hint asks what accompanies action without naming the label."
+    }
+  ]
+}

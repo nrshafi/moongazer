@@ -8,7 +8,7 @@
     "audience": "me",
     "format": "Quiz",
     "icon": "spark",
-    "description": "Find the surah from its clues",
+    "description": "A daily Quran quiz: find the surah from its clues",
     "featured": true
   },
   {
@@ -20,7 +20,7 @@
     "audience": "me",
     "format": "Puzzle",
     "icon": "grid",
-    "description": "Three ayat, one hidden thread: a Quran puzzle",
+    "description": "Find the theme that links three passages: a daily Quran puzzle",
     "project": "moongazer-ayah-threads-app"
   },
   {

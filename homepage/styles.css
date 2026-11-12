@@ -3,6 +3,8 @@
 /* Honorific: U+FDFA (ﷺ) renders in Amiri inside DM Sans and Newsreader runs (a 1.6 KB subset; OFL, see fonts/amiri-OFL.txt). */
 @font-face{font-family:DM Sans;src:url('/fonts/amiri-honorific.woff2') format('woff2');font-weight:100 1000;unicode-range:U+FDFA;font-display:swap}
 @font-face{font-family:Newsreader;src:url('/fonts/amiri-honorific.woff2') format('woff2');font-weight:200 800;unicode-range:U+FDFA;font-display:swap}
+/* Ayah of the night: Amiri subset to the list's characters (41 KB, OFL; _implementation/subset-ayah-font.py). Loads only when the ayah is shown. */
+@font-face{font-family:'Amiri Ayat';src:url('/fonts/amiri-ayat.woff2') format('woff2');font-display:swap}
 :root{--ink:#18354c;--muted:#566a7c;--night:#12263d;--paper:#f7fafc;--line:#dbe4eb;--gold:#e9c992;--blue:#dae9f5;--white:#fff;--radius:18px;color-scheme:light;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);scroll-behavior:smooth;scroll-padding-top:16px}
 *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input{font:inherit}button,a,input{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img,svg{display:block;max-width:100%}[hidden]{display:none!important}:focus-visible{outline:2px solid #778a9d;outline-offset:3px}::selection{background:#d7b77d;color:#12263d}
 .wrap{width:min(1240px,calc(100% - 96px));margin-inline:auto}
@@ -31,7 +33,7 @@
 .hero-actions{grid-area:actions;display:flex;flex-wrap:wrap;gap:12px}
 
 /* Tonight + quick picker */
-.start-row{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;padding-block:28px 8px}
+.start-row{display:grid;grid-template-columns:.95fr 1.25fr 1fr;gap:20px;padding-block:28px 8px}
 .tonight{border:1px solid #cddce8;border-radius:16px;background:linear-gradient(135deg,#e4eef7,#f0f5fa);padding:24px 26px}
 .tonight h2{font-size:30px;margin-bottom:10px}
 .tonight p:not(.eyebrow){font-size:15px;line-height:1.6;color:#46607a;margin:0 0 16px;max-width:46ch}
@@ -43,6 +45,24 @@ h2{font-family:Newsreader,Georgia,serif;font-size:34px;font-weight:450;line-heig
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:1px solid #b9c9d6;border-radius:99px;font-size:14px;font-weight:550;color:var(--ink);background:#f7fafc;transition:background .2s,border-color .2s}
 .chip:hover{border-color:#6f8aa0;background:#eaf2f8}.chip[aria-current=true]{background:var(--night);border-color:var(--night);color:#fff}
+/* P6 T6.6: tonight's puzzle tiles and the ayah of the night */
+.tonight h2{font-size:26px;margin-bottom:14px}
+.tonight-tiles{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.tile{display:grid;grid-template-columns:auto auto 1fr;align-items:center;column-gap:12px;row-gap:2px;min-height:64px;padding:11px 16px;border:1px solid #c4d4e1;border-radius:12px;background:#fff;transition:border-color .2s,background .2s}
+.tile:hover{border-color:#6f8aa0;background:#f7fafc}
+.tile-kind{grid-column:1/3;font-size:11px;font-weight:650;letter-spacing:1.2px;text-transform:uppercase;color:#52677a}
+.tile-name{grid-column:1;grid-row:2;white-space:nowrap;font-size:16px;font-weight:650;line-height:1.3}
+.tile-n{grid-column:2;grid-row:2;justify-self:start;margin-left:5px;font-size:16px;font-weight:650;font-variant-numeric:tabular-nums;color:#4a6a86}
+.tile-go{grid-column:3;grid-row:1/3;justify-self:end;font-size:14px;font-weight:650;color:var(--night);white-space:nowrap}
+.tonight p.tonight-when{font-size:13px;line-height:1.5;margin:12px 0 0}
+.ayah-night{border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:16px;background:#fff;padding:18px 24px 20px;min-width:0}
+.ayah-night summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;cursor:pointer}
+.ayah-night summary::-webkit-details-marker{display:none}
+.ayah-night summary .eyebrow{margin:0}
+.ayah-summary-ref{font-size:13px;font-weight:600;color:#52677a;font-variant-numeric:tabular-nums}
+.ayah-ar{font-family:'Amiri Ayat',Amiri,'Noto Naskh Arabic',serif;font-size:25px;line-height:2.05;margin:6px 0 6px;white-space:pre-line}
+.ayah-en{font-family:Newsreader,Georgia,serif;font-size:17px;line-height:1.55;margin:0 0 12px;white-space:pre-line}
+.ayah-source{font-size:13px;line-height:1.5;color:#52677a;margin:0}.ayah-source a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .show-all{font-size:13px;color:#355974;text-decoration:underline;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
 
 /* Library */
@@ -83,7 +103,7 @@ h2{font-family:Newsreader,Georgia,serif;font-size:34px;font-weight:450;line-heig
 .footer-note{width:100%;border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:#566a7c}
 
 @media(min-width:1051px){.hero-inner{grid-template-columns:1fr 230px;grid-template-areas:"title mark" "copy mark" "actions mark"}.hero-mark{width:230px}}
-@media(max-width:1050px){.wrap{width:calc(100% - 64px)}.start-row{grid-template-columns:1fr}.app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about{gap:65px}.about h2{font-size:38px}}
+@media(max-width:1050px){.wrap{width:calc(100% - 64px)}.start-row{grid-template-columns:1fr 1.3fr}.picker{grid-column:1/-1}.app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about{gap:65px}.about h2{font-size:38px}}
 @media(max-width:700px){
   .wrap{width:calc(100% - 32px)}
   .site-header{height:56px;gap:8px}.brand{font-size:21px;gap:7px}.brand img{width:26px;height:26px}.site-header nav{font-size:13px;gap:0}.site-header nav a{padding-inline:8px}
@@ -97,6 +117,16 @@ h2{font-family:Newsreader,Georgia,serif;font-size:34px;font-weight:450;line-heig
   .tonight p:not(.eyebrow){display:none}.tonight h2{font-size:21px;margin-bottom:12px}.tonight{padding:14px 16px}
   .picker h2{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.library-heading .eyebrow{display:none}.library-heading h2{font-size:26px}
   .picker{padding:12px 14px;border-radius:13px}.chips{gap:6px}.chip{font-size:13px;padding:6px 13px}
+  .start-row{grid-template-columns:1fr}
+  .tonight h2{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .tonight-tiles{grid-template-columns:1fr 1fr;gap:8px}
+  .tile{grid-template-columns:1fr auto;min-height:60px;padding:9px 12px;border-radius:11px}.tile-go{display:none}.tile-kind{grid-column:1;font-size:10px;letter-spacing:1px}
+  .tile-name{grid-column:1/3;font-size:15px;white-space:nowrap}.tile-n{grid-column:2;grid-row:1;justify-self:end;margin:0;font-size:12px}
+  .ayah-night{padding:2px 16px;border-radius:13px;border-top-width:1px;border-left:3px solid var(--gold)}
+  .ayah-night summary::after{content:'';width:8px;height:8px;border-right:2px solid #52677a;border-bottom:2px solid #52677a;transform:rotate(45deg);margin:-4px 4px 0 0;flex:none}
+  .ayah-night details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+  .ayah-summary-ref{margin-left:auto}
+  .ayah-body{padding-bottom:14px}.ayah-ar{font-size:23px}.ayah-en{font-size:16px}
   h2{font-size:29px}
   .library{padding-block:16px 40px}
   .library-heading{display:block;margin-bottom:6px}.library-heading h2{font-size:30px}.library-heading>p{display:none}

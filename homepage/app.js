@@ -1,3 +1,4 @@
+import {DAILY_EPOCH, dayNumber, ayahIndex, longDate} from './daily.js';
 // Directory quick picker. Without JavaScript the chips are plain links (/?pick=<id>#library) and the
 // library lists every app. With JavaScript the same chips filter the cards in place.
 const cards = [...document.querySelectorAll('#library .app-card')];
@@ -44,3 +45,34 @@ showAll.addEventListener('click', event => {
   apply('', { writeUrl: true });
 });
 apply(new URLSearchParams(location.search).get('pick') || '', { writeUrl: false });
+
+// P6 T6.6: "Tonight on Moongazer". Same day number as the apps (daily.js mirrors their daily.ts; parity is tested).
+// Before launch the tiles name the first day instead of a number. The ayah follows the same local day count.
+
+const now = new Date();
+const n = dayNumber(now);
+for (const el of document.querySelectorAll('[data-daily-n]')) el.textContent = n ? `#${n}` : '';
+const when = document.querySelector('[data-tonight-when]');
+if (when) when.textContent = n
+  ? `Puzzle #${n} for ${now.toLocaleDateString('en-GB', {weekday: 'long', day: 'numeric', month: 'long'})}. A new one at midnight, your local time.`
+  : `Daily puzzles begin on ${longDate(DAILY_EPOCH)}. Practise any time until then.`;
+
+const details = document.querySelector('[data-ayah-details]');
+// Open on wider screens, where the ayah has its own column; phones keep the one-line summary until tapped.
+if (details && matchMedia('(min-width: 701px)').matches) details.open = true;
+
+async function showTonightsAyah() {
+  if (!details || ayahIndex(now, Number(details.dataset.count)) === Number(details.dataset.index)) return;
+  try {
+    const ayat = await (await fetch('/ayat-of-the-night.json')).json();
+    const ayah = ayat[ayahIndex(now, ayat.length)];
+    if (!ayah) return;
+    for (const el of document.querySelectorAll('[data-ayah-ref]')) el.textContent = ayah.ref;
+    document.querySelector('[data-ayah-ar]').textContent = ayah.arabic;
+    document.querySelector('[data-ayah-en]').textContent = ayah.translation;
+    document.querySelector('[data-ayah-link]').href = `https://is-it-in-the-quran.moongazer.tech/#q=${encodeURIComponent(ayah.ref)}`;
+  } catch {
+    // Offline or blocked: the build-date ayah stays, which is still exact text with its reference.
+  }
+}
+showTonightsAyah();

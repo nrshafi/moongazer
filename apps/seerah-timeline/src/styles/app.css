@@ -17,3 +17,26 @@
 }
 @media(max-width:760px) and (prefers-reduced-motion:reduce){#selected-event{transition:none}}
 @media print{.motif,.inspector-close{display:none!important}#selected-event{position:static!important;transform:none!important;visibility:visible!important;max-height:none!important;overflow:visible!important;box-shadow:none;border:0;padding:0}}
+/* Daily "Which came first?" (P6 T6.5, T6.7). Family tokens only. */
+.daily{margin:0 0 18px;overflow:hidden}
+.daily-tabs{display:flex;border-bottom:1px solid var(--line)}
+.daily-tabs [role=tab]{flex:1;min-height:44px;border:0;border-bottom:3px solid transparent;background:var(--surface);color:var(--muted);font-size:.9rem;font-weight:700}
+.daily-tabs [role=tab][aria-selected=true]{color:var(--accent-ink);border-bottom-color:var(--accent);background:var(--tint)}
+.daily .panel-body{padding:20px}
+.pair-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin-bottom:8px}.pair-head h2{font-size:1.25rem;margin:0}.pair-meta{font-size:.78rem;color:var(--muted);font-weight:650}
+.pair-prompt{margin:0 0 12px;color:var(--muted)}
+.pair-choices{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pair-choice{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-height:64px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);text-align:left;font-size:.95rem;font-weight:650;line-height:1.35}
+.pair-choice:hover{border-color:var(--accent);background:var(--tint)}.pair-choice[disabled]{opacity:.55;cursor:not-allowed}
+.pair-choice-place{font-size:.72rem;color:var(--muted);font-weight:450}
+.pair-result{padding:12px 14px;border:1px solid var(--line);border-radius:12px;margin:4px 0 14px}
+.pair-result p{margin:0}.pair-result.is-right{border-color:var(--success);background:var(--tint)}.pair-result.is-wrong{border-color:var(--danger);background:var(--danger-bg)}
+.pair-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pair-card{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--surface)}
+.pair-card h3{margin:0 0 4px;font-size:1rem}.pair-card .eyebrow{margin-bottom:8px}.pair-card p{margin:0 0 6px}
+.pair-year{font-size:.82rem;font-weight:650;color:var(--accent-ink)}.pair-sources{font-size:.8rem;line-height:1.6}
+.pair-why{margin:14px 0 4px;color:var(--muted);font-size:.9rem}
+.daily-extras{margin-top:14px;display:grid;gap:8px}.reminder{display:flex;align-items:end;gap:12px;flex-wrap:wrap}.reminder .field{width:140px}
+.daily-extras .check{min-height:44px;align-items:center}
+@media(max-width:580px){.pair-choices,.pair-cards{grid-template-columns:1fr}.daily .panel-body{padding:16px}}
+@media(prefers-reduced-motion:no-preference){.pair-result{animation:pair-in .2s ease-out}@keyframes pair-in{from{opacity:0}to{opacity:1}}}

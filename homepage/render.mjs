@@ -76,3 +76,19 @@ export function documentPage(meta,body,collections,apps){
   <main class="wrap reading-page" id="main" tabindex="-1"><nav class="reading-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Moongazer</a></li><li><span aria-current="page">${e(meta.name)}</span></li></ol></nav><header class="reading-hero"><p class="eyebrow">${meta.eyebrow?e(meta.eyebrow):meta.type==='AboutPage'?'Sources, purpose & corrections':'Choose a learning path'}</p><h1>${e(meta.heading)}</h1><p>${e(meta.intro)}</p></header>${body}</main>
   <footer class="site-footer wrap"><a class="brand" href="/">moongazer<span class="brand-dot">.</span></a> <p>Follow your curiosity.</p> <a href="https://moongazer.tech/#library">All Moongazer apps</a> <nav class="footer-guides" aria-label="Subject guides">${collectionLinks(collections)} <a href="/about/">About & source corrections</a> <a href="/corrections/">Corrections log</a> <a href="/feedback/">Report an error</a></nav> <div class="footer-note"><span>Free to use. No account needed.</span> <span>Read the sources. Keep the context.</span></div></footer></body></html>`;
 }
+
+// P6 T6.6: "Tonight on Moongazer". The static HTML names no puzzle number (a built page would go stale);
+// app.js fills "#N" and swaps in tonight's ayah. The ayah in the HTML is the one for the build date.
+export const tonightPuzzles=[
+  {slug:'guess-the-surah',kind:"Today's surah",name:'Guess the Surah'},
+  {slug:'word-groups',kind:"Today's board",name:'Word Groups'}
+];
+export function tonightTiles(apps){
+  return tonightPuzzles.map(tile=>{
+    if(!apps.some(app=>app.slug===tile.slug))throw new Error('Unknown tonight app: '+tile.slug);
+    return `<li><a class="tile" href="https://${tile.slug}.moongazer.tech/"><span class="tile-kind">${escapeHtml(tile.kind)}</span> <span class="tile-name">${escapeHtml(tile.name)}</span><span class="tile-n" data-daily-n></span> <span class="tile-go">Play <span aria-hidden="true">→</span></span></a></li>`;
+  }).join(' ');
+}
+export function ayahBlock(ayah){
+  return `<p class="ayah-ar" lang="ar" dir="rtl" data-ayah-ar>${escapeHtml(ayah.arabic)}</p> <p class="ayah-en" data-ayah-en>${escapeHtml(ayah.translation)}</p> <p class="ayah-source">Pickthall’s translation · <a data-ayah-link href="https://is-it-in-the-quran.moongazer.tech/#q=${encodeURIComponent(ayah.ref)}">Read Quran <span data-ayah-ref>${escapeHtml(ayah.ref)}</span> in Is It in the Quran?</a></p>`;
+}

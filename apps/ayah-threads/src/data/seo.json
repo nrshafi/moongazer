@@ -1,8 +1,8 @@
 {
-  "title": "Ayah Threads — Three ayat, one thread: a Quran puzzle | Moongazer",
+  "title": "Ayah Threads — a daily Quran puzzle: find the theme | Moongazer",
   "shortName": "Ayah Threads",
-  "description": "Play a Quran connections game: read three passages, find the theme that links them, then open the references to read each in context.",
-  "keyword": "Quran connections game",
+  "description": "Play a daily Quran puzzle: read three passages, find the theme that links them, then open the references to read each in context.",
+  "keyword": "daily Quran puzzle",
   "collection": "themes",
   "prefix": "themes",
   "nameField": "title",

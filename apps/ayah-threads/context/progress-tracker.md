@@ -1,5 +1,9 @@
 # Progress tracker: Ayah Threads
 
+## P6 daily puzzle and C2 content, 12 November 2026
+
+2026-11-12T17:40:00+06:00 Asia/Dhaka (shell BST): C2 reworked the bank (14 puzzles got new passages, all 30 got bank-theme distractors; research in `_implementation/research/depth/ayah-threads/batch-01..03.json`; second pass pending). T6.3: Daily and Practice tabs, `dailyItem(n)` with seed 30, saved result on reload, opt-in streak, picker titles and ticks, theme-library link after solving, descriptor "Find the theme that links three passages: a daily Quran puzzle". T6.7: "Remind me daily" .ics. First control 266 px at 390 and 375, light and dark; hero 136 px. Checks: astro check 0 errors, 52 tests pass, build passes; headless browser at 390, 375 and 1440, light and dark: no scroll, no script errors; Daily played to the end, reload shows the result, share text and wa.me href have no answer, .ics downloads, blocked storage still plays. Not done: DAILY_EPOCH is still the placeholder (release step); privacy page and directory (shared) not updated.
+
 ## P5 app wave, 12 November 2026
 
 2026-11-12T14:01:00+06:00 Asia/Dhaka: Hero, drawer (steps, editorial note, theme-library link moved out of the page top and sidebar), end of session, threads motif, compact picker with solved ticks (the sidebar "Explore another puzzle" card is gone). Removed duplicates: the intro sentence now lives in the drawer only; "Copy puzzle link" and "Copy result" are replaced by the shared share block. Fix found while wiring: the puzzle id equals the theme, so share links and the address bar now use the puzzle number; old id links still work. First control 268 px at 390 and 375, light and dark. check 0 errors, 16 tests pass, build passes; one puzzle solved in a headless browser with no script errors. Not done: New puzzle tomorrow slot (P6). No print or projector (DESIGN.md).

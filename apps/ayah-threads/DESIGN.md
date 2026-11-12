@@ -15,11 +15,12 @@ Family: **Quran (teal)**. Tokens and contrast: root `DESIGN.md` §2. No new colo
 +------------------------------------------+
 | [logo] Ayah Threads         Play   [o]   |
 | Ayah Threads                             |  H1
-| Three passages, one shared theme.        |  descriptor (11 words)
+| Find the theme that links three ...      |  descriptor (11 words)
 | [30 passage puzzles]                     |  count chip
 +------------------------------------------+  hero <= 140 px
-| Puzzle [07 v] [ok] 12 solved [Surprise]  |  picker, solved ticks
-| [ ] Show Arabic                          |
+| [ Daily ] [ Practice ]                   |  mode tabs, 44 px
+| [ ] Show Arabic [ ] Keep a streak        |  Daily; Practice shows the picker
+| Daily puzzle #6 · Tue 5 Jan 2027         |
 | +--------------------------------------+ |
 | | Passage 1  (Pickthall)               | |
 | | Passage 2                            | |
@@ -29,10 +30,11 @@ Family: **Quran (teal)**. Tokens and contrast: root `DESIGN.md` §2. No new colo
 | > How this works                         |
 +------------------------------------------+
 ```
-Measured first-control top (`#puzzle-picker`): 268 px at 390 × 844 and 375 × 812, light and dark (hero 116 px); first passage card at 509 px. 1440 × 1000: 351 px.
+Measured first-control top (`#tab-daily`, 44 px tall): 266 px at 390 × 844 and 375 × 812, light and dark (hero 136 px, descriptor wraps to two lines). 1440 × 1000: 329 px (hero 180 px). Measured 2026-11-12 with the P6 Daily · Practice tabs.
 
 ## 5. Component states specific to this app
-- **Puzzle picker:** solved puzzles show a tick and the word "Solved" (not colour alone). The 30-button grid collapses into this picker (Verify_Me #28).
+- **Mode tabs (P6):** a `role=tablist` of two 44 px tabs, Daily and Practice; selected = tint fill and accent border, text labels only. Daily shows `#N` and the local date beside its title, the streak checkbox and line, and the "Remind me daily" time control and download under the puzzle. Before the epoch, Practice is the default and Daily shows one line.
+- **Puzzle picker (Practice):** solved puzzles show their title, a tick and the word "Solved" (not colour alone). The 30-button grid collapses into this picker (Verify_Me #28).
 - **Theme option:** selected = tint fill and accent border; correct = `--success` border, one pulse, text "Matches the intended theme"; incorrect = `--danger` border, text "Not the intended theme". No shake.
 - **Show Arabic:** on = Amiri block, `lang="ar" dir="rtl"`; off = English only. Each state keeps the same card height.
 - **Reference chip:** focusable, opens the Quran reference in the source list.

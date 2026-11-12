@@ -1,0 +1,63 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 5,
+  "verifier": "claude-haiku-5-5",
+  "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
+  "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
+  "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
+  "passed": 10,
+  "total": 10,
+  "items": [
+    {
+      "id": "fruit",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 6:99 names the date-palm, grapes, the olive and the pomegranate (singular forms, as in the translation). Tier 1 plausible."
+    },
+    {
+      "id": "body",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 90:8-9 names two eyes, a tongue and two lips; 24:24 names tongues and hands. Tier 3 plausible."
+    },
+    {
+      "id": "angels",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 2:97-98 names Gabriel and Michael; 2:102 names Harut and Marut. Tier 2 plausible."
+    },
+    {
+      "id": "divine-names",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 59:23 names the Sovereign Lord, the Holy One, Peace and the Guardian. Tier 4 plausible."
+    },
+    {
+      "id": "textiles",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 16:80 names hides, wool, fur and hair. Tier 3 plausible."
+    },
+    {
+      "id": "times",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 89:1, 93:1, 92:1 and 103:1 are the openings of the named surahs and carry the time words (dawn, morning, night, declining day). Tier 3 plausible."
+    },
+    {
+      "id": "scriptures",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 3:3 names the Torah and the Gospel; 4:163 names the Psalms; 17:9 names the Qur'an. Tier 1 plausible."
+    },
+    {
+      "id": "animals",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 16:5-8 names cattle, horses, mules and asses (donkeys). Tier 2 plausible."
+    },
+    {
+      "id": "qualities",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 103:3 names believing, good works, truth and endurance. Tier 3 plausible."
+    },
+    {
+      "id": "places",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Not in the C3.01-03 MCP sample (old group); exact text checked against the snapshot only. 48:24 (Mecca), 9:101 (Al-Madinah), 12:99 (Egypt) and 28:22 (Midian). Tier 2 plausible."
+    }
+  ]
+}

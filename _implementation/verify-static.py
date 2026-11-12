@@ -32,6 +32,11 @@ def check_text(value):
             assert value['translation']=='\n'.join(p['translation'] for p in parts),value['ref']
         for item in value.values():check_text(item)
 
+# Directory data (C18 / T6.6): "Ayah of the night" records are checked against the same snapshot.
+ayat_of_the_night=json.loads((ROOT/'homepage/ayat-of-the-night.json').read_text(encoding='utf-8'))
+assert len(ayat_of_the_night)>=60 and all(set(r)=={'ref','arabic','translation','theme'} for r in ayat_of_the_night)
+check_text(ayat_of_the_night)
+
 results=[]
 for app in sorted((ROOT/'apps').iterdir()):
     if not (app/'package.json').exists():continue
@@ -64,7 +69,7 @@ for app in sorted((ROOT/'apps').iterdir()):
             if url.scheme or url.netloc:
                 assert link in parsed.links,f'External runtime asset: {link}'
                 assert url.scheme=='https',link
-                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
+                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','api.quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
                 continue
             if not url.path:continue
             target=dist/unquote(url.path.lstrip('/')) if url.path.startswith('/') else path.parent/unquote(url.path)
