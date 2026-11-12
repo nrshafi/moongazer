@@ -138,3 +138,10 @@ Four apps were folded into receiving sections and then **deleted outright** (D2c
 - The shared shell has no moved banner or canonical override. `src/lib/import.ts`, `tests/import.test.ts` and the receivers' `merge-import.ts` files are deleted, and `sync-shared.ts` no longer lists them.
 - `deployment/merge-redirects.json`, `_implementation/build-redirect-map.ts` and its test are deleted. `verify-seo.py` expects each page's canonical to be its own URL.
 - The old subdomains and Pages projects are removed in the host-move step, not redirected. Saved browser data from the old apps is not carried over.
+
+## P5 shared shell files (12 November 2026)
+
+`_implementation/sync-shared.ts` SHARED now also lists `src/components/HowItWorks.astro`, `src/lib/session-end.ts` and `tests/session-end.test.ts`. `Shell.astro`, `refinement.css`, `LearningGuide.astro` and `utils.ts` carry the P5 changes described in `context/ui-context.md` ("P5 shared shell implementation"). `shell.ts` stays in two variants (the print-time details opener) and `global.css` in several; both are edited in place across all apps rather than copied.
+- Family tokens: `config.accent` (`teal`, `gold`, `blue`, `violet`) maps through `data-accent` on `<html>`; the token values and contrast table are in the root `DESIGN.md` and `_implementation/contrast.py`.
+- JetBrains Mono (v2.304, OFL) is subset to WOFF2 and shipped as `public/fonts/jetbrains-mono.woff2` plus licence text in guess-the-surah, ayah-threads, word-groups, is-it-in-the-quran, places-in-the-quran, seerah-timeline, seerah-detective and civilization-timeline. Source URL, hashes and the subset command are in `_implementation/research/fonts/jetbrains-mono-RECORD.md`.
+- Storage: the projector toggle uses the namespaced key `projector` (via `read`/`write`/`forget`) only when the app's existing `remember` key is true.
