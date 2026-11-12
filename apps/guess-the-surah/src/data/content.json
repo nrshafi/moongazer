@@ -337,7 +337,9 @@
       "revelation_place": "makkah",
       "revelation_order": 57,
       "verses_count": 34,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Luqman",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 32,
@@ -346,7 +348,9 @@
       "revelation_place": "makkah",
       "revelation_order": 75,
       "verses_count": 30,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Prostration",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 33,
@@ -355,7 +359,9 @@
       "revelation_place": "madinah",
       "revelation_order": 90,
       "verses_count": 73,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Combined Forces",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 34,
@@ -364,7 +370,9 @@
       "revelation_place": "makkah",
       "revelation_order": 58,
       "verses_count": 54,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Sheba",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 35,
@@ -373,7 +381,9 @@
       "revelation_place": "makkah",
       "revelation_order": 43,
       "verses_count": 45,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Originator",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 36,
@@ -382,7 +392,9 @@
       "revelation_place": "makkah",
       "revelation_order": 41,
       "verses_count": 83,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Ya Sin",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 37,
@@ -391,7 +403,9 @@
       "revelation_place": "makkah",
       "revelation_order": 56,
       "verses_count": 182,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Those who set the Ranks",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 38,
@@ -400,7 +414,9 @@
       "revelation_place": "makkah",
       "revelation_order": 38,
       "verses_count": 88,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Letter \"Saad\"",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 39,
@@ -409,7 +425,9 @@
       "revelation_place": "makkah",
       "revelation_order": 59,
       "verses_count": 75,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Troops",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 40,
@@ -418,7 +436,9 @@
       "revelation_place": "makkah",
       "revelation_order": 60,
       "verses_count": 85,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Forgiver",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 41,
