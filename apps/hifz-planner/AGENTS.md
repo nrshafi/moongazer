@@ -9,9 +9,10 @@ At the start of work in this scope, read these files in order. Reuse them within
 1. `context/project-overview.md`
 2. `context/architecture.md`
 3. `context/ui-context.md`
-4. `context/code-standards.md`
-5. `context/ai-workflow-rules.md`
-6. `context/progress-tracker.md`
+4. `DESIGN.md`
+5. `context/code-standards.md`
+6. `context/ai-workflow-rules.md`
+7. `context/progress-tracker.md`
 
 If a requested change alters scope, architecture, storage or standards, update the affected context before implementing the dependent change. A documentation update is not authorization to add product features.
 
