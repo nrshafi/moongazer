@@ -2,7 +2,7 @@
 
 Independent Astro 7.4.2 static application, developed and built with Bun 1.4.4.
 
-This version introduces the app only. The calculator is not yet available: the zakat method, its sources and the nisab options are still being verified, and nothing is calculated on the home page.
+The calculator works out zakat on the assets you enter, with the choices you make where scholars differ, and shows the method and sources. It is not a fatwa.
 
 ## Run
 

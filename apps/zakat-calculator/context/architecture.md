@@ -8,8 +8,8 @@
 | Runtime/tooling | Bun 1.4.4 | Install, dev, check, tests, build and preview |
 | Language/checking | TypeScript 6.0.3; @astrojs/check 0.9.12 | Strict source and Astro template checking |
 | UI | Astro, native HTML, CSS and inline SVG | App-owned accessible interface; no component framework |
-| Content | Local JSON | Method record (pending), sources (none yet), provenance |
-| Storage | Optional localStorage | Theme preference only, today |
+| Content | Local JSON | Verified method record copied into content.json, sources, provenance (sha256) |
+| Storage | Optional localStorage | Theme preference; the form under key `inputs` only if the visitor opts in (30 days) |
 | Auth/database | None | Anonymous public use |
 | Hosting | Cloudflare Pages static output (planned) | Independent `dist/` deployment at its domain root |
 
@@ -17,7 +17,7 @@ Lockfile: `bun.lock` copied from `apps/the-seerah-detective` with the same resol
 
 ## System boundaries
 
-- `src/pages/`: `index.astro` (introduction and notice), `sources.astro` (method pending), `404.astro`, `privacy.astro`, `sitemap.xml.ts` (shared).
+- `src/pages/`: `index.astro` (calculator), `method/index.astro`, `zakat-al-fitr/index.astro`, `sources.astro`, `404.astro`, `privacy.astro`, `sitemap.xml.ts` (shared).
 - `src/layouts/Shell.astro`, `src/lib/shell.ts` and `src/styles/` provide the shell, theme control and styles. Shell is shared; `shell.ts` and `global.css` are copied unchanged from `the-seerah-detective`.
 - `src/lib/utils.ts` (shared) owns storage: `read`, `write`, `forget`, `namespace`.
 - `src/lib/seo.ts` (shared) derives page metadata from `config.json` and `seo.json`. Every route needs an entry there. The app has no collections yet, so only `/`, `/sources/`, `/privacy/` and `/404.html` exist in the metadata table.
@@ -64,3 +64,10 @@ The shell listens for pointerdown and Tab keydown and sets a transient `data-inp
 ## Documentation verification
 
 Astro 7.4.2 and the other pins are the versions already used by the shared apps. No new API pattern has been introduced. The checks run for this scaffold were `bun run check`, `bun test` and `bun run build` in this app folder.
+
+## Calculator (P7 T7.6)
+
+- `src/lib/zakat.ts` is pure: `calculate(inputs, choices)` returns `ok`, `needs-choice` (names the unanswered differences) or `invalid`. Differences and their options are declared in `DIFFERENCES`, each option pointing at positions (by index) of a method-record entry; nisab weights come only from the record's `nisab-conversions` positions. Zakat due = total / 40 when total >= chosen nisab.
+- `src/lib/app.ts` reads the form, renders the result with text nodes, calls `renderSessionEnd`, and tracks `activity_started` (first input change) and `activity_completed` (calculate) with item `calculator`. Saving uses `read`/`write` key `inputs` only when the visitor ticks the opt-in.
+- `src/components/MethodEntry.astro` renders a record entry; `src/lib/editorial.ts` adds the honorific to our own wording.
+- `scripts/sync-method.ts` regenerates content.json, sources.json and the provenance hashes from `_implementation/research/zakat/method.json`.

@@ -1,6 +1,6 @@
 # Progress tracker: Zakat Calculator
 
-Last updated: 2026-11-11T18:25:00+06:00 Asia/Dhaka
+Last updated: 2026-11-12T18:30:00+06:00 Asia/Dhaka
 
 ## Scaffold, P7 T7.5
 
@@ -10,13 +10,20 @@ Shared files were copied from `apps/guess-the-surah` with `bun _implementation/s
 
 Validation in this app folder: `bun install --frozen-lockfile` passed; `bun run check` reported 0 errors, 0 warnings and 0 hints across 13 files; `bun test` passed 19 of 19 tests in 4 files; `bun run build` built 4 pages (home, sources, privacy, 404) plus the sitemap. The sitemap lists the home and sources pages.
 
+## Calculator and method pages, P7 T7.6
+
+2026-11-12T18:30:00+06:00 Asia/Dhaka: Built on branch `phase-7-zakat-ui` (from `phase-7-season`): pure engine `src/lib/zakat.ts`, calculator UI, `/method/`, `/zakat-al-fitr/`, motif, drawer, optional storage under `inputs`, counter events. Validation: `bun run check` 0 errors; `bun run test` 44 pass (19 in `tests/zakat.test.ts`: all five record examples, properties, needs-choice, no digits in share text, data mapping); `bun run build` ok; `sync-shared --check` identical; `audit-text-joins` 0; browser check at 390, 375 and 1440 in light and dark (no horizontal scroll, no script errors); worked example 1 run in the UI gives 250.00; print emulation checked. `verify-static.py` could not run in the worktree because other apps have no `dist`.
+- Differences offered and the record positions behind them: jewellery (count: MY-38 Hanafi; exclude: MY-38 and JO-525 and Egypt), debts (deduct: EG-6754, IW-426541, UK-BHAM; do not deduct: JO-3712, a merchant case), receivables (count now: EG-7746 and JO-3712; count only when received: the doubtful-debt positions), nisab metal (gold only; lower of the two). The "combine gold and silver" positions are not offered as an engine option; no silver-only option because no source opened states one. Nisab conversions offered: 85 g, 85 g of 21-carat, 87.47 g, 96 g gold; 595 g, 612.35 g silver.
+- Choice made: the conversion choices are required like the differences (no default weight). Silver conversion is required only with the "lower of the two" choice.
+- The "receivables: count only once received" option does not model the one-year or all-years rule, only the timing; the method page shows the split.
+
 ## Remaining work
 
 - No social card image (`public/social-card.png`); `og:image` points at a missing file.
-- The method record (T7.4: `_implementation/research/zakat/method.json`, `verification.json`) does not exist yet. Method content is pending.
+- No scholarly review has taken place; the method record is source-checked only.
+- Visitors with the browser tab open across Ramadan years: saved inputs expire after 30 days by the shared rule.
 - Not registered in `deployment/targets.json`, `_implementation/verify.ts` or the directory (T7.7). Not deployed (T7.8).
 - The shared privacy page's wording was written for other apps. It is shared copy and has not been changed for this app.
-- Visual check at 390px width and in both themes was not performed in this step; only the build and the static output were checked.
 
 ## Decisions
 

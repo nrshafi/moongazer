@@ -2,7 +2,7 @@
 
 ## Archetype
 
-Mindful Sanctuary (layout only, from `plan/DESIGN_RECOMMENDATIONS.md` archetype 4): quiet focus, one task at a time, clean numbered steps. The planned calculator will use a step sequence, labelled choice groups and a printable summary.
+Mindful Sanctuary (layout only, from `plan/DESIGN_RECOMMENDATIONS.md` archetype 4): quiet focus, one task at a time, clean numbered steps. The calculator uses a step sequence, labelled choice groups and a printable summary.
 
 ## Colour
 
@@ -22,3 +22,15 @@ DM Sans for interface text, Newsreader for headings and Amiri for Arabic, all se
 - No money amounts, nisab numbers or ruling-like wording in visual elements. Labels describe choices, not verdicts.
 - Every choice where schools differ is shown with equal visual weight and none is pre-selected.
 - Print styles keep the choices made and their sources on the printed summary.
+
+## First screen (P7 T7.6, measured with `_implementation/browser-check.mjs`)
+
+| Viewport | Theme | Hero height | First input top |
+| --- | --- | --- | --- |
+| 390 x 844 | light | 105 px | 299 px |
+| 390 x 844 | dark | 105 px | 299 px |
+| 375 x 812 | light | 105 px | 299 px |
+| 375 x 812 | dark | 105 px | 299 px |
+| 1440 x 1000 | light and dark | 179 px | 394 px |
+
+The first input is the currency label, then cash. The motif (`public/motif.svg`, balance scale, 0.6 KB, `currentColor`) shows from 580 px up and is hidden below. Print hides the form and shows the result, breakdown, choices made and limit sentence.

@@ -205,7 +205,7 @@ export function describeChoices(choices: Choices): ChoiceView[] {
     const option = optionOf(d.id, choices);
     if (!option) return [];
     const record = entryById(d.entry)!;
-    return [{ id: d.id, question: d.question, answer: option.label, attributions: option.positions.map(i => record.positions[i].attribution.who), link: `/method/#${d.entry}` }];
+    return [{ id: d.id, question: d.question, answer: option.label, attributions: [...new Set(option.positions.map(i => record.positions[i].attribution.who))], link: `/method/#${d.entry}` }];
   });
 }
 

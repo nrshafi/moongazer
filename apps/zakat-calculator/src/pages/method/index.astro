@@ -13,19 +13,19 @@ const method = content.method;
       <span class="eyebrow">Method first</span>
       <h1>Zakat method and sources</h1>
       <p>Every figure and position in the calculator comes from the entries below. Quran text is copied exactly (Arabic and the Pickthall translation). Hadith are paraphrased: the collection, number and grading are shown as sunnah.com shows them, with a link to the page. Where scholars differ, each position names who states it and links to the page that states it.</p>
-      <p>When a hadith speaks of the Prophet<Honorific />, this page repeats the honorific in our own wording only, never inside the quoted Quran text.</p>
+      <p>When a hadith speaks of the Prophet <Honorific />, this page repeats the honorific in our own wording only, never inside the quoted Quran text.</p>
       <p class="notice warning">{method.disclaimer} {LIMIT_SENTENCE}</p>
       <ul class="method-toc" aria-label="Entries on this page">
-        {entries.map(e => <li><a href={`#${e.id}`}>{e.title}</a></li>)}
+        {entries.map(e => <><li><a href={`#${e.id}`}>{e.title}</a></li>{' '}</>)}
         <li><a href="#not-accessible">What we could not open</a></li>
       </ul>
-    </header>
-    {entries.map(entry => <MethodEntry entry={entry} />)}
+    </header>{' '}
+    {entries.map(entry => <><MethodEntry entry={entry} />{' '}</>)}
     <section class="not-accessible" id="not-accessible" aria-labelledby="na-title">
       <h2 id="na-title">What we could not open, and so did not use</h2>
       <p>These sources were looked for but could not be read in full, so no position from them appears anywhere in the calculator.</p>
       <ul>{method.notAccessible.map(item => <li><strong>{item.item}.</strong> {item.reason}</li>)}</ul>
-    </section>
+    </section>{' '}
     <p class="actions top-gap"><a class="button" href="/">Return to the calculator <span aria-hidden="true">→</span></a> <a class="button secondary" href="/zakat-al-fitr/">Zakat al-fitr</a></p>
   </article>
 </Shell>

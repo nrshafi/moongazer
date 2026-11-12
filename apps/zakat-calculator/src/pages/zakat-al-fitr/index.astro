@@ -16,10 +16,10 @@ const skip = /^(No amounts are recorded|The calculator does not compute)/;
       <p>This page explains the facts and the documented difference about food or cash. It does not give an amount and the calculator does not work it out.</p>
       <p class="fitr-ask">{FITR_SENTENCE}</p>
       <p class="notice warning">{LIMIT_SENTENCE}</p>
-    </header>
-    <MethodEntry entry={facts} skipNotes={skip} />
-    <MethodEntry entry={food} skipNotes={skip} />
-    <p class="fitr-ask">{FITR_SENTENCE}</p>
+    </header>{' '}
+    <MethodEntry entry={facts} skipNotes={skip} />{' '}
+    <MethodEntry entry={food} skipNotes={skip} />{' '}
+    <p class="fitr-ask">{FITR_SENTENCE}</p>{' '}
     <p class="actions top-gap"><a class="button" href="/">Return to the calculator <span aria-hidden="true">→</span></a> <a class="button secondary" href="/method/">Full method page</a></p>
   </article>
 </Shell>
