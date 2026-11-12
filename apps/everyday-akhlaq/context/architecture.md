@@ -79,11 +79,11 @@ The homepage build renders subject and About routes from authoritative local con
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
 
-## Business track (P3 T3.5, 11 Nov 2026; import removed under D2c)
+## Business track (P3 T3.5, 11 Nov 2026)
 
 - `content.json` has two arrays: `scenarios` (20; each has `track` `home` or `study`) and `business` (12; `track` `business`). The 12 business scenarios use the scenario shape (`scene`, `options`, `options2`, `followup`, `prompt`, `prompt2`, `takeaway`, `passage`, `commentaryUrl`) plus `facts`, `sources` (hadith, collection and number with sunnah.com link) and optional `secondCommentaryUrl`. They stay in a separate array so the existing `seo.json` collection (`scenarios`, prefix `scenario`) keeps registering exactly the `/scenario/<id>/` pages; business routes are `/business/` and `/business/<id>/` (12 business ids). `scenario.ts` picks its list from `data-base` on the page (`scenario` or `business`).
 - Storage keys added: `business-<id>` (same `{stage, choices, seed?}` shape and validation as `scenario-<id>`, bounded by the scenario's real option counts) and `business-bookmarks` (list of business ids; validated by `validBookmarks` in `src/lib/business.ts`). `remember` is shared.
-- There is no saved-item import and no moved release: the four merged apps were deleted outright with no redirects (D2c, `plan/implementation/00-INDEX.md`). `src/lib/import.ts` and `src/lib/merge-import.ts` are gone.
+- The business cases were merged in, and the old app was removed under D2c (`plan/implementation/00-INDEX.md`). No saved data is imported; the old import helpers are gone.
 - Home page filters scenario cards by track with a pressed-state button group (All, Home & family, Study & work, Business).
 - SEO gap: `src/lib/seo.ts` supports one collection. `/business/` and the 12 `/business/<id>/` paths need a second registration there (see progress tracker); until then Shell throws "Add metadata for the new page" for them.
 

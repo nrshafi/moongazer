@@ -44,7 +44,7 @@ Stored records use the body app slug `ayah-threads` and a colon, with `at` and `
 
 - `theme`: the explicit light/dark preference, independent of activity recovery.
 - `remember` stores the recovery preference; `puzzle` stores validated puzzle state (validator shared in `src/lib/state.ts`; the Theme library reads `completed` plus the current solved/revealed puzzle from it, so it knows solved threads only when the visitor ticked "Remember my place").
-- `theme-bookmarks`: string list (at most 100 ids matching `/^[a-z-]{1,60}$/`) of saved themes. Written only by the Theme library (`src/lib/themes.ts`). There is no saved-item import and no moved release (D2c, `plan/implementation/00-INDEX.md`).
+- `theme-bookmarks`: string list (at most 100 ids matching `/^[a-z-]{1,60}$/`) of saved themes. Written only by the Theme library (`src/lib/themes.ts`). No saved data is imported from other apps (D2c, `plan/implementation/00-INDEX.md`).
 - Core activity state otherwise lives in memory. Clear-data removes this app's namespace and reloads; other apps are unaffected.
 
 ## Auth and access

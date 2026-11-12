@@ -80,3 +80,7 @@ Family Islamic Learning Challenges -> Family Halaqa. Title shortened to "Family 
 ## 2026-11-11 (Asia/Dhaka) — P4.7 counter events and error-report link
 
 Wired the three anonymous counter events in the pack session: activity started on the first answer, first step button or facilitator-answer reveal; activity completed once when all three steps are done; share on "Copy pack link", all keyed by the pack id. Compact "Report an error" link added after the reading-question status. Hook points recorded in `context/architecture.md`. Not verified: a browser run that confirms each beacon fires once. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 23 pass / 0 fail (includes new `tests/events.test.ts`, source-level); `bun run build` 16 pages built.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.

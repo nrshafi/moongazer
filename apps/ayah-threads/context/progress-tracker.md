@@ -107,3 +107,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 
 ## P4.7 counter hook points (11 Nov 2026, Asia/Dhaka 23:30)
 - Wired `track()` in the activity code and documented the hook points in `context/architecture.md`; no unit test (wiring only, helper already tested). Checks: `bun run check` 0 errors, 0 warnings; `bun run test` 20 pass, 0 fail; `bun run build` 35 pages. Not run: e2e preview and a live beacon. Deployment not performed.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Changed: AGENTS.md title now "Ayah Threads" (was "Quran Connections"); architecture.md no longer describes a moved release or import (D2c).

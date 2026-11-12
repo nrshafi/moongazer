@@ -119,3 +119,7 @@ Everyday Akhlaq (name unchanged; descriptor, title and wording updated). Title s
 ## 2026-11-11 (Asia/Dhaka) — P4.7 counter events and error-report link
 
 Wired the three anonymous counter events in the shared scenario engine: activity started on the first choice, activity completed once when the reflection is reached, share on "Copy scenario link", all keyed by the scenario or business case id. Compact "Report an error" link added to the reflection. Hook points recorded in `context/architecture.md`. Not verified: a browser run that confirms each beacon fires once. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 36 pass / 0 fail (includes new `tests/events.test.ts`, source-level); `bun run build` 37 pages built.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Changed: architecture.md business-track heading and notes now say the cases were merged in and the old app was removed under D2c; references to the removed import helpers dropped.
