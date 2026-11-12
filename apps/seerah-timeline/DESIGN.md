@@ -39,7 +39,7 @@ Why: it is the timeline itself. One filled node marks the event being read.
   tapped entry on phones (see §5).
 ```
 
-Measured first-control top (search field, `#timeline-search`): 354 px at 390 × 844 and 354 px at 375 × 812, light and dark (T5.14, Chrome headless over `bun run preview`). Desktop 1440 × 1000: 414 px.
+Measured first-control top (P6, the Daily tab `#tab-daily`): 252 px at 390 × 844 and 375 × 812, light and dark; hero 136 px. 1440 × 1000: 303 px. The search field now starts at 727 px on phones (Daily panel above it).
 
 Fixed in T5.14: the `grid-row:1` rule is gone. On phones the event list comes first; the inspector (`#selected-event`) is a fixed bottom drawer that opens when an entry is tapped and closes with its Close button or Escape, returning focus to the tapped entry. On desktop the inspector is sticky beside the list under the "How this works" drawer. Print shows the inspector inline.
 
