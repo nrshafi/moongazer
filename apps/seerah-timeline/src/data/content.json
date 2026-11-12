@@ -907,5 +907,193 @@
         "the-expedition-to-tabuk"
       ]
     }
+  ],
+  "dailyPairs": [
+    {
+      "id": "pair-01",
+      "first": "a-conversation-with-waraqa",
+      "second": "calling-the-clans-at-safa",
+      "why": "The Waraqa conversation belongs to the report of the beginning of revelation, and the public call at Safa came in the mission that followed."
+    },
+    {
+      "id": "pair-02",
+      "first": "khadija-offers-reassurance",
+      "second": "the-pledges-at-aqabah",
+      "why": "Khadija's reassurance is part of the report of the beginning of revelation, and the Aqabah pledges came shortly before the Hijrah."
+    },
+    {
+      "id": "pair-03",
+      "first": "calling-the-clans-at-safa",
+      "second": "the-cave-during-the-migration",
+      "why": "The call at Safa belongs to the early Makkan mission, and the cave belongs to the Hijrah that ended the Makkan period."
+    },
+    {
+      "id": "pair-04",
+      "first": "khabbab-asks-for-help",
+      "second": "arrival-among-banu-amr-ibn-awf",
+      "why": "Khabbab's request is a Makkan-period exchange, and the arrival among Banu Amr ibn Awf happened after the migration to Madinah."
+    },
+    {
+      "id": "pair-05",
+      "first": "abu-bakr-and-protection",
+      "second": "supplication-at-badr",
+      "why": "The report on Abu Bakr and protection describes a time before the Hijrah, and Badr was fought near Madinah in 2 AH."
+    },
+    {
+      "id": "pair-06",
+      "first": "the-pledges-at-aqabah",
+      "second": "the-change-of-qiblah",
+      "why": "The Aqabah pledges came before the Hijrah, and the qiblah was changed in Madinah in 2 AH."
+    },
+    {
+      "id": "pair-07",
+      "first": "the-cave-during-the-migration",
+      "second": "the-change-of-qiblah",
+      "why": "The cave was part of the Hijrah, and the report on the qiblah counts months of prayer toward Jerusalem after the Prophet ﷺ came to Madinah."
+    },
+    {
+      "id": "pair-08",
+      "first": "suraqa-on-the-route",
+      "second": "supplication-at-badr",
+      "why": "Suraqa met them on the road of the Hijrah in 1 AH, and Badr took place in 2 AH."
+    },
+    {
+      "id": "pair-09",
+      "first": "arrival-among-banu-amr-ibn-awf",
+      "second": "building-the-mosque",
+      "why": "In Bukhari 428 the Prophet ﷺ stays among Banu Amr ibn Awf, then sends for Banu al-Najjar and has the mosque built."
+    },
+    {
+      "id": "pair-10",
+      "first": "brotherhood-and-a-market",
+      "second": "the-archers-at-uhud",
+      "why": "The brotherhood of the emigrants and helpers belongs to the first Madinan period, and Uhud was fought in 3 AH."
+    },
+    {
+      "id": "pair-11",
+      "first": "the-change-of-qiblah",
+      "second": "digging-the-trench",
+      "why": "The qiblah changed in 2 AH, and the trench was dug in 5 AH."
+    },
+    {
+      "id": "pair-12",
+      "first": "building-the-mosque",
+      "second": "steadfastness-at-hunayn",
+      "why": "The mosque in Madinah was built soon after the Hijrah, and Hunayn followed the conquest of Makkah in 8 AH."
+    },
+    {
+      "id": "pair-13",
+      "first": "supplication-at-badr",
+      "second": "the-journey-to-hudaybiyah",
+      "why": "Badr was fought in 2 AH, and the journey to Hudaybiyah was in 6 AH."
+    },
+    {
+      "id": "pair-14",
+      "first": "the-archers-at-uhud",
+      "second": "the-pledge-beneath-the-tree",
+      "why": "Uhud was fought in 3 AH, and the pledge beneath the tree was given at Hudaybiyah in 6 AH."
+    },
+    {
+      "id": "pair-15",
+      "first": "digging-the-trench",
+      "second": "the-banner-at-khaybar",
+      "why": "The trench was dug in 5 AH, and the banner was given at Khaybar in 7 AH."
+    },
+    {
+      "id": "pair-16",
+      "first": "the-journey-to-hudaybiyah",
+      "second": "the-approach-to-makkah",
+      "why": "The journey to Hudaybiyah was in 6 AH, and the approach to Makkah was in 8 AH."
+    },
+    {
+      "id": "pair-17",
+      "first": "the-pledge-beneath-the-tree",
+      "second": "the-kaaba-at-the-conquest",
+      "why": "The pledge beneath the tree was given at Hudaybiyah in 6 AH, and the Kaaba scene belongs to the conquest of Makkah in 8 AH."
+    },
+    {
+      "id": "pair-18",
+      "first": "negotiating-the-written-agreement",
+      "second": "steadfastness-at-hunayn",
+      "why": "The written agreement was negotiated at Hudaybiyah in 6 AH, and Hunayn followed the conquest of Makkah in 8 AH."
+    },
+    {
+      "id": "pair-19",
+      "first": "the-banner-at-khaybar",
+      "second": "the-expedition-to-tabuk",
+      "why": "The banner was given at Khaybar in 7 AH, and the expedition to Tabuk was in 9 AH."
+    },
+    {
+      "id": "pair-20",
+      "first": "the-return-for-umrah",
+      "second": "announcements-during-abu-bakr-s-hajj",
+      "why": "The return for Umrah was in 7 AH, and Abu Bakr's Hajj, with its announcements, was in 9 AH."
+    },
+    {
+      "id": "pair-21",
+      "first": "a-letter-and-questions-from-heraclius",
+      "second": "conveying-the-message",
+      "why": "Bukhari 7 places the exchange with Heraclius during the truce after Hudaybiyah, and the address at Mina was in the tenth year."
+    },
+    {
+      "id": "pair-22",
+      "first": "the-approach-to-makkah",
+      "second": "conveying-the-message",
+      "why": "The approach to Makkah was in 8 AH, and the address at Mina was in 10 AH."
+    },
+    {
+      "id": "pair-23",
+      "first": "the-kaaba-at-the-conquest",
+      "second": "announcements-during-abu-bakr-s-hajj",
+      "why": "The Kaaba scene belongs to the conquest in 8 AH, and Abu Bakr's Hajj was in 9 AH."
+    },
+    {
+      "id": "pair-24",
+      "first": "steadfastness-at-hunayn",
+      "second": "conveying-the-message",
+      "why": "Hunayn followed the conquest in 8 AH, and the address at Mina was in 10 AH."
+    },
+    {
+      "id": "pair-25",
+      "first": "a-conversation-with-waraqa",
+      "second": "abu-bakr-and-protection",
+      "why": "The Waraqa conversation belongs to the report of the beginning of revelation, and the protection episode came later, still before the Hijrah."
+    },
+    {
+      "id": "pair-26",
+      "first": "calling-the-clans-at-safa",
+      "second": "building-the-mosque",
+      "why": "The call at Safa came in the early Makkan mission, and the mosque in Madinah was built after the Hijrah."
+    },
+    {
+      "id": "pair-27",
+      "first": "a-difficult-encounter-and-a-merciful-response",
+      "second": "suraqa-on-the-route",
+      "why": "The difficult encounter is placed late in the Makkan period, and Suraqa met them on the road of the Hijrah."
+    },
+    {
+      "id": "pair-28",
+      "first": "khabbab-asks-for-help",
+      "second": "negotiating-the-written-agreement",
+      "why": "Khabbab's request belongs to the Makkan period, and the written agreement was negotiated at Hudaybiyah in 6 AH."
+    },
+    {
+      "id": "pair-29",
+      "first": "the-pledges-at-aqabah",
+      "second": "a-report-on-the-retreat",
+      "why": "The Aqabah pledges came before the Hijrah, and the report on the retreat concerns Uhud in 3 AH."
+    },
+    {
+      "id": "pair-30",
+      "first": "the-cave-during-the-migration",
+      "second": "the-return-for-umrah",
+      "why": "The cave was part of the Hijrah in 1 AH, and the return for Umrah was in 7 AH."
+    },
+    {
+      "id": "pair-31",
+      "first": "arrival-among-banu-amr-ibn-awf",
+      "second": "the-expedition-to-tabuk",
+      "why": "The arrival among Banu Amr ibn Awf was in 1 AH, and the expedition to Tabuk was in 9 AH."
+    }
   ]
 }

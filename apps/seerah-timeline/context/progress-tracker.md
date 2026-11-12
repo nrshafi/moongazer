@@ -123,3 +123,10 @@ Changed: compact hero and motif (T5.6/T5.11); `How this works` drawer holds the 
 Removed duplicates: the home header pill "610-632 CE approximate" (the descriptor and per-event date notes carry it); the separate noscript box (merged into the drawer sentence). No limit deleted.
 Measured first control (search field) 354 px at 390 and 375, light and dark.
 Validation: `bun run check` 0 errors; `bun run test` 20 pass; `bun run build` ok; headless-Chrome checks at 390, 375 and 1440 in light and dark with no script errors or horizontal scroll; drawer open/Escape and the challenge reveal end block checked.
+
+## 2026-11-12 17:14 (Asia/Dhaka) - C10 daily pairs
+
+Changed: added `dailyPairs` (31 "Which came first?" pairs, ids `pair-01` to `pair-31`, `first` is the earlier event) to `src/data/content.json`; per-pair reasoning in `_implementation/research/daily/seerah-pairs.json`; `appContentSha256` updated (LF-normalised); new `tests/daily-pairs.test.ts`. No UI code changed; T6.5 consumes the data. No new sources: every pair uses events and sunnah.com links already in the data.
+Excluded: Night Journey and the slander account (disputed dating); the first revelation, the pause, the Farewell Hajj and the death (titles reveal order); same-year pairs whose reports do not fix the order (qiblah/Badr, Khaybar/Umrah, Tabuk/Abu Bakr Hajj). One same-year pair kept: arrival/mosque, fixed by Bukhari 428.
+Validation: `bun run check` 0 errors, 0 warnings, 0 hints; `bun run test` 24 pass, 0 fail; `bun run build` ok (41 pages).
+Remaining: C-track second-pass verification and owner spot-check; T6.5 UI use. Limitation: reports were not re-opened on sunnah.com in this task; order rests on the existing event data and cited report summaries.
