@@ -3119,6 +3119,12 @@
       "hasMore": false
     }
   ],
+  "juzStarts": {
+    "file": "src/data/juz-starts.json",
+    "derivedFrom": "_implementation/research/page-boundaries.json",
+    "tool": "mcp__quran__fetch_quran_metadata (juz=1..30), 604-page mushaf layout, fetched 2026-11-11T23:35:59+06:00",
+    "rule": "A surah belongs to a juz when its first ayah (n:1) falls between that juz's startVerseKey and the next juz's startVerseKey. Juz 2 and 5 have no surah starting in them. Copied programmatically, not hand-typed."
+  },
   "app": "guess-the-surah",
   "appContentSha256": "05186e5370fc32508c585046d67450657610a195c8185c858ab9b16352646e53"
 }

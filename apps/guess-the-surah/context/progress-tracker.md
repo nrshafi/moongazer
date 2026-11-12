@@ -120,3 +120,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## P6 T6.2 and T6.7, 12 November 2026
+
+2026-11-12T17:30:00+06:00 Asia/Dhaka: Daily, Practice and Juz tabs; clue ladder with name meaning (no chapter number) and Arabic-first toggle; 114 collection grid; Daily share text, streak opt-in, saved result, "Remind me daily" .ics; descriptor and hero chip updated; juz starts derived from verified Quran MCP metadata. Measured first control (tab) top: 240 px at 390 and 375, light and dark (hero 116 px); 321 px at 1440. check 0 errors, 52 tests pass, build passes, audit-text-joins 0, sync-shared checks identical, verify-static passes for this app (other apps had no dist). Browser: Daily played to the end with the clock set past the epoch, reload shows the result, WhatsApp href encoded, .ics downloads, blocked-storage runs work, no script errors. Remaining: owner sets the real epoch at release.
