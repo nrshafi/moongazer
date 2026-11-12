@@ -1,4 +1,4 @@
-import {readFile,writeFile,mkdir,cp,readdir} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,cp,readdir,rm} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {origin,escapeHtml as e,metadata,appCards,appLinks,logo,pickChips,collectionLinks,questions,documentPage} from './render.mjs';
@@ -26,6 +26,8 @@ const commonQuestions=[
 let template=await readFile(join(source,'index.html'),'utf8');
 for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS','PICKER_CHIPS','APP_LINKS'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
 template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- APP_LINKS -->',appLinks(apps)).replace('<!-- PICKER_CHIPS -->',pickChips(apps)).replace('<!-- APP_CATALOG -->',appCards(apps,shots)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
+// Start clean so a removed or renamed file can never survive in dist.
+await rm(out,{recursive:true,force:true});
 await mkdir(out,{recursive:true});
 await writeFile(join(out,'index.html'),template);
 for(const collection of collections){
@@ -72,4 +74,17 @@ await cp(join(source,'logos'),join(out,'logos'),{recursive:true});
 if(shots.size)await cp(join(source,'shots'),join(out,'shots'),{recursive:true});
 await mkdir(join(out,'fonts'),{recursive:true});
 for(const file of ['dm-sans.woff2','dm-sans-OFL.txt','newsreader.woff2','newsreader-OFL.txt'])await cp(join(root,'apps/guess-the-surah/public/fonts',file),join(out,'fonts',file));
+// Every local file a built page references must exist (a renamed logo once shipped as a 404).
+const {existsSync}=await import('node:fs');
+async function htmlFiles(dir){const found=[];for(const entry of await readdir(dir,{withFileTypes:true})){const path=join(dir,entry.name);if(entry.isDirectory())found.push(...await htmlFiles(path));else if(entry.name.endsWith('.html'))found.push(path);}return found;}
+const missing=[];
+for(const file of await htmlFiles(out)){
+  const html=await readFile(file,'utf8');
+  for(const [,ref] of html.matchAll(/(?:src|href)="(\/[^"#?]*)"/g)){
+    if(ref.startsWith('//'))continue;
+    const target=join(out,decodeURI(ref));
+    if(!existsSync(target)&&!existsSync(join(target,'index.html')))missing.push(`${ref} in ${file.slice(out.length)}`);
+  }
+}
+if(missing.length)throw new Error(`Missing local files:\n${[...new Set(missing)].join('\n')}`);
 console.log(`Built ${allPages.length} indexable directory pages and ${apps.length} app links into ${out}`);
