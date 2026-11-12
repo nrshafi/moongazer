@@ -67,7 +67,7 @@ def inspect(html, url, homepage=False, missing=False):
     if missing:
         assert not p.canonicals and not p.schemas, ('404 indexing', url)
         return p
-    canonical = expected_canonical(url)
+    canonical = url
     assert p.canonicals == [canonical], ('canonical', url, p.canonicals)
     assert p.meta.get('description','').strip(), ('description', url)
     assert p.meta.get('og:title') == p.title, ('social title', url)

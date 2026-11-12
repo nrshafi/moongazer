@@ -265,4 +265,4 @@ Branch `phase-3b-retire` (from `phase-3b-hosts`). The four merged apps are delet
 - Deleted `merge-redirects.json`, `build-redirect-map.ts` and `redirect-map.test.ts`. `verify.ts` and `preview.ts` lose the batch slices; e2e flows for the deleted apps are gone.
 - Corrections log: removed the three entries that pointed at deleted apps.
 - Left as history: `_build/`, `_implementation/batch*`, `populate-context.py`, `_implementation/research/`, and the `deployment/` release and status records (`status.json`, `automation-result.json`, `seo-*release.json`, `search-console.json`), which describe what was deployed.
-- Validation: see the final report of this task for command results. No push and no Cloudflare action.
+- Validation: verify.ts check 16/16 (0 errors, 0 warnings), test 16/16 (251 pass, 0 fail), build 16/16; sync-shared identical; `bun test _implementation/seo.test.ts homepage/tests` 60 pass; homepage build 8 pages and 16 app links; verify-static 313 pages; verify-seo passed (17 sites, 323 pages); text-join audit 0 unexplained joins. No push and no Cloudflare action.
