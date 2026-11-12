@@ -50,4 +50,12 @@ Branch `phase-3b-hosts`, verified 2026-11-12 ~06:20 (Asia/Dhaka). The owner aske
 
 ## Production
 
-_Filled in after the push._
+Merged to `main` and pushed 2026-11-12 ~06:25 (Asia/Dhaka).
+- CI run 43125884011 deployed every app to its new project and passed the live-site check. Live SEO failed on two checks only: it derived `moongazer-<slug>.pages.dev` and missed the two `-app` projects.
+- The fix (`5e6f94d`) went out in run 43126611986: deploy, live sites 650/650 and live SEO passed (17 sites, 323 pages, 289 indexable).
+
+Cleanup, about 06:45:
+- The 19 old Pages projects were deleted, custom domains first: 15 old-slug apps plus the 4 merged apps.
+- Their 19 DNS records were deleted.
+- The 19 old hosts no longer resolve. All 16 new hosts return 200, and the directory links to all 16.
+- The temporary API token was deleted in the dashboard. The CI token is unchanged.

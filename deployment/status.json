@@ -347,5 +347,96 @@
       "beacon": "activity_started + activity_completed for surah-82 stored, then the two test rows deleted",
       "at": "2026-11-12T00:05+06:00"
     }
+  },
+  "hosts": {
+    "decision": "D2c",
+    "updatedAt": "2026-11-12T06:45:00+06:00",
+    "redirectsFromOldHosts": false,
+    "apps": [
+      {
+        "slug": "guess-the-surah",
+        "host": "guess-the-surah.moongazer.tech",
+        "project": "moongazer-guess-the-surah"
+      },
+      {
+        "slug": "ayah-threads",
+        "host": "ayah-threads.moongazer.tech",
+        "project": "moongazer-ayah-threads-app"
+      },
+      {
+        "slug": "seerah-detective",
+        "host": "seerah-detective.moongazer.tech",
+        "project": "moongazer-seerah-detective"
+      },
+      {
+        "slug": "everyday-akhlaq",
+        "host": "everyday-akhlaq.moongazer.tech",
+        "project": "moongazer-everyday-akhlaq"
+      },
+      {
+        "slug": "seerah-timeline",
+        "host": "seerah-timeline.moongazer.tech",
+        "project": "moongazer-seerah-timeline"
+      },
+      {
+        "slug": "hifz-planner",
+        "host": "hifz-planner.moongazer.tech",
+        "project": "moongazer-hifz-planner"
+      },
+      {
+        "slug": "is-it-in-the-quran",
+        "host": "is-it-in-the-quran.moongazer.tech",
+        "project": "moongazer-is-it-in-the-quran"
+      },
+      {
+        "slug": "quran-escape-room",
+        "host": "quran-escape-room.moongazer.tech",
+        "project": "moongazer-quran-escape-room-app"
+      },
+      {
+        "slug": "stories-of-the-prophets",
+        "host": "stories-of-the-prophets.moongazer.tech",
+        "project": "moongazer-stories-of-the-prophets"
+      },
+      {
+        "slug": "places-in-the-quran",
+        "host": "places-in-the-quran.moongazer.tech",
+        "project": "moongazer-places-in-the-quran"
+      },
+      {
+        "slug": "word-groups",
+        "host": "word-groups.moongazer.tech",
+        "project": "moongazer-word-groups"
+      },
+      {
+        "slug": "understand-your-salah",
+        "host": "understand-your-salah.moongazer.tech",
+        "project": "moongazer-understand-your-salah"
+      },
+      {
+        "slug": "parables-of-the-quran",
+        "host": "parables-of-the-quran.moongazer.tech",
+        "project": "moongazer-parables-of-the-quran"
+      },
+      {
+        "slug": "civilization-timeline",
+        "host": "civilization-timeline.moongazer.tech",
+        "project": "moongazer-civilization-timeline"
+      },
+      {
+        "slug": "why-it-was-revealed",
+        "host": "why-it-was-revealed.moongazer.tech",
+        "project": "moongazer-why-it-was-revealed"
+      },
+      {
+        "slug": "family-halaqa",
+        "host": "family-halaqa.moongazer.tech",
+        "project": "moongazer-family-halaqa"
+      }
+    ],
+    "deletedProjects": 19,
+    "deletedDnsRecords": 19,
+    "ciRun": 43126611986,
+    "note": "The deployments list above predates D2c and names the old projects."
   }
 }
