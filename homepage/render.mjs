@@ -47,9 +47,15 @@ export function metadata(meta,apps){
   <script type="application/ld+json">${serialize(structuredData(meta,apps))}</script>`;
 }
 
-export function appCards(apps){
+// `shots` is the set of slugs that have a local homepage/shots/<slug>.webp; the others get a styled placeholder.
+export function appCards(apps,shots=new Set()){
   const e=escapeHtml;
-  return apps.map(app=>`<article class="app-card" data-slug="${e(app.slug)}" data-time="${app.time}" data-audience="${e(app.audience)}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><div class="card-top"><span class="app-icon"><img src="/logos/${e(app.slug)}.svg" alt="" width="48" height="48" loading="lazy"></span> <span class="app-kind">${e(app.kind)}</span> <span class="card-arrow" aria-hidden="true">↗</span></div> <h3>${e(app.name)}</h3> <p>${e(app.description)}</p> <span class="card-bottom">${e(app.category)}<span aria-hidden="true">Open app →</span></span></a></article>`).join('\n');
+  return apps.map(app=>{
+    const slot=shots.has(app.slug)
+      ?`<img src="/shots/${e(app.slug)}.webp" alt="${e(`Screenshot of ${app.name}: ${app.description}`)}" width="640" height="360" loading="lazy" decoding="async">`
+      :`<span class="shot-ph" aria-hidden="true"><img src="/logos/${e(app.slug)}.svg" alt="" width="56" height="56" loading="lazy"><span>${e(app.format)}</span></span>`;
+    return `<article class="app-card" data-slug="${e(app.slug)}" data-time="${app.time}" data-audience="${e(app.audience)}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><span class="shot">${slot}</span><span class="card-body"><span class="card-meta"><span class="badge">${e(app.format)}</span><span>${app.time} min</span><span>${audienceLabels[app.audience]}</span></span> <h3>${e(app.name)}</h3> <p>${e(app.description)}</p></span></a></article>`;
+  }).join('\n');
 }
 
 export function collectionLinks(collections){
