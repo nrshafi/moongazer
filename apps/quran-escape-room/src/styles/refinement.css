@@ -151,6 +151,46 @@ body[data-app] .intro p{font-size:.88rem;line-height:1.5}
 @media(prefers-reduced-motion:reduce){.activity-card::after{transition:none}}
 @media print{body::before{display:none}body[data-app] .intro{background:none;color:#000;box-shadow:none;padding:0 0 10px;min-height:0;border-radius:0}body[data-app] .intro::before,body[data-app] .intro::after,body[data-app] .intro .motif,.workspace>.panel:first-child::after,.activity-card::after{display:none}body[data-app] main .intro h1{color:#000;text-shadow:none}body[data-app] .intro p{color:#333}}
 /* redesign:end */
+/* mastery:start — P8 mastery loop (mastery-ui.ts markup) in the night-library style */
+.mastery{position:relative;display:grid;gap:18px;padding:28px;border:1px solid var(--mg-rule);border-radius:20px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 6%,var(--surface)),var(--surface) 60%);box-shadow:inset 0 0 0 5px var(--surface),inset 0 0 0 6px color-mix(in srgb,var(--mg-gold-3) 20%,transparent),0 24px 50px -34px #0a142466}
+.mastery>*{margin:0}
+.mastery__step{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:750;color:var(--accent-ink)}
+.mastery__title{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(1.4rem,3vw,1.75rem);letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+.mastery__subtitle,.mastery__count,.mastery__status{color:var(--muted);font-size:.86rem}
+.mastery__dots{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:2px 0;margin:0}
+.mastery__dot{width:11px;height:11px;border:1.5px solid color-mix(in srgb,var(--mg-gold-3) 70%,var(--line));border-radius:2px;transform:rotate(45deg);background:transparent;transition:background .2s,box-shadow .2s}
+.mastery__dot--done{background:var(--mg-gold-3);border-color:var(--mg-gold-3)}
+.mastery__dot--current{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.mastery__question{display:grid;gap:14px;border:0;padding:0;margin:0}
+.mastery__prompt{font-family:Newsreader,Georgia,serif;font-size:1.3rem;line-height:1.4;color:var(--ink);font-weight:500;padding:0}
+.mastery__options{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.mastery__option{display:flex;gap:12px;align-items:flex-start;min-height:48px;padding:13px 16px;margin:0;border:1px solid var(--mg-rule);border-radius:13px;background:var(--surface);cursor:pointer;line-height:1.5;transition:border-color .18s,background .18s,transform .18s}
+.mastery__option:hover{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));transform:translateX(2px)}
+.mastery__option:has(input:checked){background:var(--tint);border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+.mastery__option input{margin-top:4px;accent-color:var(--accent);width:17px;height:17px;flex-shrink:0}
+.mastery__option-text{color:var(--ink)}
+.mastery__submit:not(.button){display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 20px;border:0;border-radius:10px;font-weight:700;color:var(--on-accent);background:linear-gradient(180deg,var(--accent),var(--accent-hover));box-shadow:inset 0 1px 0 #ffffff33,0 8px 18px -8px color-mix(in srgb,var(--accent) 70%,transparent);cursor:pointer;justify-self:start}
+.mastery__submit:disabled{opacity:.55;cursor:not-allowed}
+.mastery__nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.mastery__card{position:relative;isolation:isolate;overflow:hidden;display:grid;gap:12px;padding:24px 24px 22px;border-radius:18px;color:#e4ebf2;background:radial-gradient(80% 100% at 100% 0,color-mix(in srgb,var(--mg-hue) 22%,transparent),transparent 70%),linear-gradient(160deg,#15294a,#0b1526 70%);box-shadow:inset 0 0 0 1px #e9c99238,0 20px 40px -28px #050b16}
+.mastery__card::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--mg-pattern);opacity:.07}
+.mastery__card::after{content:'';position:absolute;inset:7px;border:1px solid #e9c99222;border-radius:13px;pointer-events:none}
+.mastery__card>*{margin:0}
+.mastery__card-title{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:1.3rem;color:#fbf4e4}
+.mastery__arabic{font-family:'Amiri Ayat',Amiri,'Traditional Arabic',serif;font-size:clamp(1.6rem,4vw,2rem);line-height:2.15;color:var(--mg-gold-2);text-align:right;direction:rtl;font-style:normal;letter-spacing:0;white-space:pre-line}
+.mastery__translation,.mastery__meaning,.mastery__body,.mastery__text{color:#dbe3eb;line-height:1.7;font-size:.95rem}
+.mastery__ref,.mastery__source{font-size:.8rem;color:#aab7c6}.mastery__card a{color:var(--mg-gold)}.mastery__card a:hover{color:#fff}
+.mastery__toggle{justify-self:start;min-height:40px;padding:8px 14px;border-radius:99px;border:1px solid #e9c99266;background:#ffffff0d;color:var(--mg-gold-2);font-weight:650;font-size:.82rem;cursor:pointer}
+.mastery__toggle:hover{background:#ffffff1a}
+.mastery__meaning[hidden]{display:none}
+.mastery__outcome{position:relative;display:grid;gap:10px;justify-items:center;text-align:center;padding:30px 20px 24px;border-radius:16px;background:var(--panel-wash,var(--surface-2))}
+.mastery__outcome::before{content:'';width:96px;height:14px;background:var(--mg-divider) no-repeat center}
+.mastery__outcome>*{margin:0}
+.mastery__advanced,.mastery__links{display:grid;gap:6px;padding-left:1.2em;margin:0}.mastery__links a,.mastery__advanced a{color:var(--accent-ink);font-weight:600}
+@media(max-width:580px){.mastery{padding:20px 16px}.mastery__card{padding:20px 18px}.mastery__prompt{font-size:1.15rem}}
+@media(prefers-reduced-motion:reduce){.mastery__option,.mastery__dot{transition:none}.mastery__option:hover{transform:none}}
+@media print{.mastery{box-shadow:none;border:1px solid #999;background:#fff}.mastery__card{background:#fff;color:#000;box-shadow:none;border:1px solid #999}.mastery__card::before,.mastery__card::after{display:none}.mastery__arabic,.mastery__card-title,.mastery__translation,.mastery__meaning,.mastery__body{color:#000}}
+/* mastery:end */
 /* art:start — generated by _implementation/art/build-art.mjs; edit the generator, not this block */
 [data-accent=teal]{--mg-pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23e9c992' stroke-width='1'%3E%3Cpath d='M0 -32L5.07 -12.24L22.63 -22.63L12.24 -5.07L32 0L12.24 5.07L22.63 22.63L5.07 12.24L0 32L-5.07 12.24L-22.63 22.63L-12.24 5.07L-32 0L-12.24 -5.07L-22.63 -22.63L-5.07 -12.24Z'/%3E%3Cpath d='M64 -32L69.07 -12.24L86.63 -22.63L76.24 -5.07L96 0L76.24 5.07L86.63 22.63L69.07 12.24L64 32L58.93 12.24L41.37 22.63L51.76 5.07L32 0L51.76 -5.07L41.37 -22.63L58.93 -12.24Z'/%3E%3Cpath d='M0 32L5.07 51.76L22.63 41.37L12.24 58.93L32 64L12.24 69.07L22.63 86.63L5.07 76.24L0 96L-5.07 76.24L-22.63 86.63L-12.24 69.07L-32 64L-12.24 58.93L-22.63 41.37L-5.07 51.76Z'/%3E%3Cpath d='M64 32L69.07 51.76L86.63 41.37L76.24 58.93L96 64L76.24 69.07L86.63 86.63L69.07 76.24L64 96L58.93 76.24L41.37 86.63L51.76 69.07L32 64L51.76 58.93L41.37 41.37L58.93 51.76Z'/%3E%3Cpath d='M32 0L37.07 19.76L54.63 9.37L44.24 26.93L64 32L44.24 37.07L54.63 54.63L37.07 44.24L32 64L26.93 44.24L9.37 54.63L19.76 37.07L0 32L19.76 26.93L9.37 9.37L26.93 19.76Z'/%3E%3Cpath d='M32 20L40.49 40.49L20 32L40.49 23.51L32 44L23.51 23.51L44 32L23.51 40.49Z'/%3E%3C/g%3E%3C/svg%3E")}
 [data-accent=gold]{--mg-pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23e9c992' stroke-width='1'%3E%3Cpath d='M0 -19L19 0L0 19L-19 0ZM13.44 -13.44L13.44 13.44L-13.44 13.44L-13.44 -13.44Z'/%3E%3Ccircle cx='0' cy='0' r='7'/%3E%3Cpath d='M60 -19L79 0L60 19L41 0ZM73.44 -13.44L73.44 13.44L46.56 13.44L46.56 -13.44Z'/%3E%3Ccircle cx='60' cy='0' r='7'/%3E%3Cpath d='M0 41L19 60L0 79L-19 60ZM13.44 46.56L13.44 73.44L-13.44 73.44L-13.44 46.56Z'/%3E%3Ccircle cx='0' cy='60' r='7'/%3E%3Cpath d='M60 41L79 60L60 79L41 60ZM73.44 46.56L73.44 73.44L46.56 73.44L46.56 46.56Z'/%3E%3Ccircle cx='60' cy='60' r='7'/%3E%3Cpath d='M30 11L49 30L30 49L11 30ZM43.44 16.56L43.44 43.44L16.56 43.44L16.56 16.56Z'/%3E%3Ccircle cx='30' cy='30' r='7'/%3E%3Cpath d='M30 0V11M30 49V60M0 30H11M49 30H60'/%3E%3C/g%3E%3C/svg%3E")}

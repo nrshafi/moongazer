@@ -389,7 +389,7 @@ Branch `content-zakat` (from `phase-6-daily`). Research only; no app code. File:
   - Removing the retired hosts' sitemaps from Search Console. The new hosts and the zakat sitemap were submitted on 2026-11-12.
   - P8–P10.
 
-## 2026-11-13T01:20:00+06:00 — Redesign: "a window into the night" (R7D)
+## 2026-11-13T01:10:08+06:00 — Redesign: "a window into the night" (R7D)
 
 The owner said the UI looked basic. The agent replaced the visual layer across the 17 apps, the directory and the social cards with a generated art system (`_implementation/art/`) and a new shared CSS layer. `DESIGN.md` §0 records the direction.
 - **Validation:** first screen 102/102, the counter check, `verify-static` (349 pages), text joins 0, `seo.test` 9, `homepage/tests` 55 and `verify-seo` (18 sites) all passed. The details are in `plan/implementation/releases/R7D-design.md`.
