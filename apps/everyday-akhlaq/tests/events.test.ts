@@ -17,5 +17,8 @@ test('the copy-link button sends share_clicked for the scenario id',()=>{
 });
 
 test('the reflection carries the compact feedback link',()=>{
-  expect(scenario).toContain('<a class="feedback-link" href="#site-feedback" data-open-feedback>Report an error <span aria-hidden="true">→</span></a>');
+  expect(scenario).toContain("renderSessionEnd(byId('session-end')");
+  const share=scenario.match(/shareText:'([^']*)'/)![1]!;
+  expect(share).toContain('https://everyday-akhlaq.moongazer.tech/');
+  expect(share).not.toMatch(/\$\{|choice|consequence/i);
 });

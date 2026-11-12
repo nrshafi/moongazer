@@ -1,13 +1,16 @@
 ---
 import Shell from '../../layouts/Shell.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import '../../styles/app.css';
 import data from '../../data/content.json';
 ---
 <Shell title="Business scenarios">
   <a class="back-link" href="/">← All scenarios</a>
-  <section class="intro"><div class="intro-top"><span class="eyebrow">Business track</span> <span class="pill"><span class="dot"></span>{data.business.length} scenarios</span></div> <h1>Business scenarios</h1> <p>Disclosure, promises, debts and fair dealing in ordinary business situations. Choose a response, see what could follow, then read the sources.</p></section>
+  <section class="intro"><div class="intro-text"><h1>Business scenarios</h1> <p>Disclosure, promises, debts and fair dealing in ordinary business situations.</p> <span class="pill neutral count-chip">{data.business.length} scenarios</span></div><img class="motif" src="/motif.svg" alt="" width="220" height="140" aria-hidden="true"/></section>
+  <div class="workspace"><div class="library">
   <div class="actions bottom-gap"><label class="check"><input type="checkbox" id="saved-only"/>Show saved scenarios only</label> <span class="count-label" id="business-count" role="status">{data.business.length} of {data.business.length} scenarios shown</span></div>
   <div class="card-grid">{data.business.map(item=><><article class="panel activity-card" data-business-card={item.id}><span class="pill neutral">{item.topic}</span> <h2>{item.title}</h2> <p>{item.scene}</p> <span class="micro">Two decisions · about 3 minutes</span> <a class="button secondary wide" href={`/business/${item.id}/`}>Open this scenario <span aria-hidden="true">→</span></a> <button type="button" class="button ghost small" data-save={item.id} aria-pressed="false">Save</button></article>{' '}</>)}</div>{' '}
   <div class="empty panel top-gap" id="business-empty" hidden><h2>No saved scenarios yet.</h2> <p>Use Save on a scenario to keep it in this list.</p></div>
-  <div class="notice top-gap"><strong>Educational applied reasoning.</strong> These fictional scenarios do not certify real transactions, issue personal rulings or replace legal or financial advice.</div>
+  </div><aside class="sidebar"><HowItWorks><p>Choose a response, see what could follow, then read the sources.</p><p><strong>Educational applied reasoning.</strong> These fictional scenarios do not certify real transactions, issue personal rulings or replace legal or financial advice.</p></HowItWorks></aside></div>
 </Shell>
 <script>import '../../lib/business-save';</script>
