@@ -293,3 +293,20 @@ Branch `phase-5-directory` (from `phase-5-shell`). Directory only; no `apps/*` c
 Shared-lane tasks T5.4-T5.10, T5.12 (shared part) and T5.13 on branch `phase-5-shared`: family tokens and `config.accent` in all 16 apps; Shell `theme-color` map; compact hero and header with an "All apps" link; `HowItWorks.astro`; `session-end.ts` with tests; learning guide as `<details>`; Arabic typography; print CSS and projector toggle in both `shell.ts` variants; `.is-correct` pulse and `pulseCorrect`; JetBrains Mono v2.304 in eight apps (record in `_implementation/research/fonts/`).
 - Validation: verify.ts check 16/16 (0 errors), test 16/16 (315 pass, 0 fail), build 16/16; sync-shared identical; `bun test _implementation/seo.test.ts homepage/tests` 60 pass; verify-static 313 pages; verify-seo passed (17 sites, 323 pages); text-join audit 0; `contrast.py` 0 pairs below 4.5:1. Headless Chrome via `e2e-preview.ts`: all 16 apps at 390 px (no horizontal scroll, logo and name visible, 0 script errors, hero 120-136 px, H1 2.1 rem, `--accent` matches the family) and four family apps at 390 x 844 and 1440 x 1000 in light and dark (desktop H1 3.2 rem); projector toggle checked with and without the `remember` opt-in.
 - Open: no app page uses `data-projector`, the drawer, `renderSessionEnd` or `pulseCorrect` yet (per-app lane). The two-line descriptor clamp on phones is a guard until per-app descriptors are shortened. word-groups `.term-tile[aria-pressed=true]` still sets `color:var(--bg)` on an accent fill (per-app CSS; should become `--on-accent`). No push, no deployment.
+
+## 2026-11-12T14:26:59+06:00 — P5 complete (R5)
+
+Orchestrator: the design system (root and directory `DESIGN.md`, contrast script), context rules, the logo and social-card hotfix, the directory honorific font and missing-file check, the Salah reorder, the first-screen sweep, and screenshots.
+
+Subagents:
+- One Sonnet agent: the shared lane.
+- One Sonnet agent: the directory.
+- Two Haiku agents: the per-app `DESIGN.md` files.
+- Four Sonnet agents: the per-app wave.
+
+Validation:
+- 16/16 check, test and build (343 tests).
+- Sync identical; 60 repo tests; verify-static 313; verify-seo passed; text joins 0.
+- First-screen sweep 96/96; host smoke 16/16; counter check passed.
+
+Details are in `plan/implementation/releases/R5.md`.
