@@ -425,25 +425,25 @@
       "number": 11,
       "theme": "Humility",
       "refs": [
-        "25:63",
+        "26:215",
         "31:18",
         "17:37"
       ],
       "hint": "Notice posture and the way someone moves among others.",
-      "explanation": "The passages speak about modest conduct and avoiding arrogant behavior. This is an editorial grouping of related passages.",
+      "explanation": "The passages speak about lowering oneself toward others and avoiding arrogant bearing: no scorn, no boasting, no exultant stride. This is an editorial grouping of related passages.",
       "distractors": [
-        "Giving",
-        "Learning",
-        "Consultation"
+        "Human relationships",
+        "Fasting",
+        "Parents"
       ],
-      "anchor": "25:63",
+      "anchor": "26:215",
       "passages": [
         {
-          "ref": "25:63",
-          "arabic": "وَعِبَادُ ٱلرَّحْمَـٰنِ ٱلَّذِينَ يَمْشُونَ عَلَى ٱلْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ ٱلْجَـٰهِلُونَ قَالُوا۟ سَلَـٰمًا",
-          "translation": "The (faithful) slaves of the Beneficent are they who walk upon the earth modestly, and when the foolish ones address them answer: Peace;",
-          "url": "https://quran.com/25:63",
-          "translationUrl": "https://quran.com/25:63?translations=19"
+          "ref": "26:215",
+          "arabic": "وَٱخْفِضْ جَنَاحَكَ لِمَنِ ٱتَّبَعَكَ مِنَ ٱلْمُؤْمِنِينَ",
+          "translation": "And lower thy wing (in kindness) unto those believers who follow thee.",
+          "url": "https://quran.com/26:215",
+          "translationUrl": "https://quran.com/26:215?translations=19"
         },
         {
           "ref": "31:18",
@@ -460,7 +460,7 @@
           "translationUrl": "https://quran.com/17:37?translations=19"
         }
       ],
-      "commentaryUrl": "https://quran.com/25:63/tafsirs/16"
+      "commentaryUrl": "https://quran.com/26:215/tafsirs/16"
     },
     {
       "id": "careful-speech",
@@ -474,9 +474,9 @@
       "hint": "Consider what is said and how it affects other people.",
       "explanation": "Upright words, avoiding ridicule, and speaking well connect this set.",
       "distractors": [
-        "Creation",
-        "Fasting",
-        "Time"
+        "Time and effort",
+        "Mercy",
+        "Justice"
       ],
       "anchor": "33:70",
       "passages": [
@@ -516,9 +516,9 @@
       "hint": "What should remain dependable after an agreement?",
       "explanation": "Covenants and commitments are explicit in these passages. Read each in its own setting.",
       "distractors": [
-        "Mercy",
-        "Hospitality",
-        "Privacy"
+        "Kindness",
+        "Prayer",
+        "Consultation"
       ],
       "anchor": "17:34",
       "passages": [
@@ -558,9 +558,9 @@
       "hint": "Think about boundaries and permission.",
       "explanation": "Avoiding intrusion and respecting permission connect the passages. The theme covers both personal information and entry into homes.",
       "distractors": [
-        "Giving",
-        "Fasting",
-        "Learning"
+        "Night and day",
+        "Orphans",
+        "Hope"
       ],
       "anchor": "49:12",
       "passages": [
@@ -594,15 +594,15 @@
       "theme": "Human relationships",
       "refs": [
         "3:103",
-        "49:10",
-        "49:13"
+        "49:13",
+        "4:1"
       ],
-      "hint": "Look for belonging, reconciliation, and knowing one another.",
-      "explanation": "The passages address bonds among people in distinct ways. The intended theme is relationships, not identical wording or a single shared occasion.",
+      "hint": "Look for belonging and what ties people together.",
+      "explanation": "The passages address bonds among people in distinct ways: brotherhood by Allah's grace, knowing one another across nations and tribes, and one family from a single soul. The intended theme is relationships, not identical wording or a single shared occasion.",
       "distractors": [
-        "Time",
         "Moderation",
-        "Hospitality"
+        "Forgiveness",
+        "Giving"
       ],
       "anchor": "3:103",
       "passages": [
@@ -614,18 +614,18 @@
           "translationUrl": "https://quran.com/3:103?translations=19"
         },
         {
-          "ref": "49:10",
-          "arabic": "إِنَّمَا ٱلْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا۟ بَيْنَ أَخَوَيْكُمْ ۚ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُرْحَمُونَ",
-          "translation": "The believers are naught else than brothers. Therefore make peace between your brethren and observe your duty to Allah that haply ye may obtain mercy.",
-          "url": "https://quran.com/49:10",
-          "translationUrl": "https://quran.com/49:10?translations=19"
-        },
-        {
           "ref": "49:13",
           "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
           "translation": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware.",
           "url": "https://quran.com/49:13",
           "translationUrl": "https://quran.com/49:13?translations=19"
+        },
+        {
+          "ref": "4:1",
+          "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُم مِّن نَّفْسٍ وَٰحِدَةٍ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًا كَثِيرًا وَنِسَآءً ۚ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِى تَسَآءَلُونَ بِهِۦ وَٱلْأَرْحَامَ ۚ إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
+          "translation": "O mankind! Be careful of your duty to your Lord Who created you from a single soul and from it created its mate and from them twain hath spread abroad a multitude of men and women. Be careful of your duty toward Allah in Whom ye claim (your rights) of one another, and toward the wombs (that bore you). Lo! Allah hath been a watcher over you.",
+          "url": "https://quran.com/4:1",
+          "translationUrl": "https://quran.com/4:1?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/3:103/tafsirs/16"
@@ -642,9 +642,9 @@
       "hint": "What lies between waste and withholding?",
       "explanation": "The passages discuss avoiding excess or balancing expenditure. They do not all address the same type of spending.",
       "distractors": [
-        "Privacy",
         "Learning",
-        "Reconciliation"
+        "Careful speech",
+        "Human relationships"
       ],
       "anchor": "7:31",
       "passages": [
@@ -684,9 +684,9 @@
       "hint": "Notice what speaks to someone facing despair or hardship.",
       "explanation": "Hope connects the warning against despair with reassurance during difficulty. This thematic link is editorial reflection.",
       "distractors": [
-        "Privacy",
-        "Promises",
-        "Hospitality"
+        "Keeping commitments",
+        "Gratitude",
+        "Accountability"
       ],
       "anchor": "39:53",
       "passages": [
@@ -726,9 +726,9 @@
       "hint": "Look for how a person uses an opportunity to act.",
       "explanation": "These selections connect time, effort, and returning to activity. This is an editorial comparison across distinct contexts.",
       "distractors": [
-        "Hospitality",
-        "Parents",
-        "Privacy"
+        "Kindness",
+        "Gratitude",
+        "Humility"
       ],
       "anchor": "103:1",
       "passages": [
@@ -768,9 +768,9 @@
       "hint": "Look beyond human activity to the world around us.",
       "explanation": "The heavens, earth, human diversity, and water are presented as signs or acts of creation in these passages.",
       "distractors": [
-        "Promises",
-        "Privacy",
-        "Forgiveness"
+        "Fasting",
+        "Time and effort",
+        "Justice"
       ],
       "anchor": "30:22",
       "passages": [
@@ -810,9 +810,9 @@
       "hint": "Which recurring rhythms are mentioned?",
       "explanation": "The passages explicitly mention night and day, with different observations about their alternation and use.",
       "distractors": [
-        "Giving",
-        "Reconciliation",
-        "Parents"
+        "Gentle responses",
+        "Truth and falsehood",
+        "Reconciliation"
       ],
       "anchor": "10:6",
       "passages": [
@@ -1666,23 +1666,23 @@
       "id": "humility",
       "number": 11,
       "theme": "Humility",
-      "title": "Thread 11: Quran 25:63, 31:18 and 17:37",
-      "description": "Read Quran 25:63, 31:18 and 17:37 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
+      "title": "Thread 11: Quran 26:215, 31:18 and 17:37",
+      "description": "Read Quran 26:215, 31:18 and 17:37 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
       "refs": [
-        "25:63",
+        "26:215",
         "31:18",
         "17:37"
       ],
       "hint": "Notice posture and the way someone moves among others.",
-      "explanation": "The passages speak about modest conduct and avoiding arrogant behavior. This is an editorial grouping of related passages.",
-      "anchor": "25:63",
+      "explanation": "The passages speak about lowering oneself toward others and avoiding arrogant bearing: no scorn, no boasting, no exultant stride. This is an editorial grouping of related passages.",
+      "anchor": "26:215",
       "passages": [
         {
-          "ref": "25:63",
-          "arabic": "وَعِبَادُ ٱلرَّحْمَـٰنِ ٱلَّذِينَ يَمْشُونَ عَلَى ٱلْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ ٱلْجَـٰهِلُونَ قَالُوا۟ سَلَـٰمًا",
-          "translation": "The (faithful) slaves of the Beneficent are they who walk upon the earth modestly, and when the foolish ones address them answer: Peace;",
-          "url": "https://quran.com/25:63",
-          "translationUrl": "https://quran.com/25:63?translations=19"
+          "ref": "26:215",
+          "arabic": "وَٱخْفِضْ جَنَاحَكَ لِمَنِ ٱتَّبَعَكَ مِنَ ٱلْمُؤْمِنِينَ",
+          "translation": "And lower thy wing (in kindness) unto those believers who follow thee.",
+          "url": "https://quran.com/26:215",
+          "translationUrl": "https://quran.com/26:215?translations=19"
         },
         {
           "ref": "31:18",
@@ -1699,7 +1699,7 @@
           "translationUrl": "https://quran.com/17:37?translations=19"
         }
       ],
-      "commentaryUrl": "https://quran.com/25:63/tafsirs/16",
+      "commentaryUrl": "https://quran.com/26:215/tafsirs/16",
       "category": "Character"
     },
     {
@@ -1826,15 +1826,15 @@
       "id": "human-relationships",
       "number": 15,
       "theme": "Human relationships",
-      "title": "Thread 15: Quran 3:103, 49:10 and 49:13",
-      "description": "Read Quran 3:103, 49:10 and 49:13 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
+      "title": "Thread 15: Quran 3:103, 49:13 and 4:1",
+      "description": "Read Quran 3:103, 49:13 and 4:1 in Arabic and Pickthall's translation, then solve the Ayah Threads puzzle to find what links them.",
       "refs": [
         "3:103",
-        "49:10",
-        "49:13"
+        "49:13",
+        "4:1"
       ],
-      "hint": "Look for belonging, reconciliation, and knowing one another.",
-      "explanation": "The passages address bonds among people in distinct ways. The intended theme is relationships, not identical wording or a single shared occasion.",
+      "hint": "Look for belonging and what ties people together.",
+      "explanation": "The passages address bonds among people in distinct ways: brotherhood by Allah's grace, knowing one another across nations and tribes, and one family from a single soul. The intended theme is relationships, not identical wording or a single shared occasion.",
       "anchor": "3:103",
       "passages": [
         {
@@ -1845,18 +1845,18 @@
           "translationUrl": "https://quran.com/3:103?translations=19"
         },
         {
-          "ref": "49:10",
-          "arabic": "إِنَّمَا ٱلْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا۟ بَيْنَ أَخَوَيْكُمْ ۚ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُرْحَمُونَ",
-          "translation": "The believers are naught else than brothers. Therefore make peace between your brethren and observe your duty to Allah that haply ye may obtain mercy.",
-          "url": "https://quran.com/49:10",
-          "translationUrl": "https://quran.com/49:10?translations=19"
-        },
-        {
           "ref": "49:13",
           "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
           "translation": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware.",
           "url": "https://quran.com/49:13",
           "translationUrl": "https://quran.com/49:13?translations=19"
+        },
+        {
+          "ref": "4:1",
+          "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُم مِّن نَّفْسٍ وَٰحِدَةٍ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًا كَثِيرًا وَنِسَآءً ۚ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِى تَسَآءَلُونَ بِهِۦ وَٱلْأَرْحَامَ ۚ إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
+          "translation": "O mankind! Be careful of your duty to your Lord Who created you from a single soul and from it created its mate and from them twain hath spread abroad a multitude of men and women. Be careful of your duty toward Allah in Whom ye claim (your rights) of one another, and toward the wombs (that bore you). Lo! Allah hath been a watcher over you.",
+          "url": "https://quran.com/4:1",
+          "translationUrl": "https://quran.com/4:1?translations=19"
         }
       ],
       "commentaryUrl": "https://quran.com/3:103/tafsirs/16",
