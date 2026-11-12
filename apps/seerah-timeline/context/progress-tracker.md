@@ -112,3 +112,7 @@ Pack moves send activity_started and a single activity_completed per page on a c
 Checks: `bun install --frozen-lockfile`, `bun run check` (0 errors, 0 warnings, 0 hints), `bun run test` and `bun run build` in this app.
 
 Limitations: no browser or DOM run with a stubbed `navigator.sendBeacon`; once-per-event behaviour was checked by reading the code.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Changed: architecture.md now says the challenge was merged in and the standalone app removed under D2c; moved-release and redirect wording dropped.

@@ -106,7 +106,7 @@ Pack titles were rewritten to describe the four events without revealing their o
 
 Behaviour: seeded shuffle per play (a fresh random seed on each new play or restart; `?pack=` and `?seed=` reproduce a shared game), up/down buttons with `aria-label="Move <title> up/down"`, "Open source clue" per card (`aria-expanded`, hidden until requested), "Check order" with feedback in `role="status"`, and on completion or reveal the correct order with approximate dates, the date/source note and a link to each event page. Pointer drag is not implemented. Grading counts correct positions and inversions; a completed state is accepted from storage only when its order is correct.
 
-There is no saved-progress import and no moved release; the standalone challenge app was deleted with no redirects (D2c, `plan/implementation/00-INDEX.md`). `challenge-progress` is written only by `/challenge/` itself.
+The challenge was merged into this app and the standalone app was removed under D2c (`plan/implementation/00-INDEX.md`). No saved progress is imported. `challenge-progress` is written only by `/challenge/` itself.
 
 SEO: `seo.ts` registers only one `seo.json` collection and throws "Add metadata for the new page: /challenge/" for other routes. The page metadata is kept in `seo.json` under `extraPages` and must be registered by a one-line `seo.ts` change (see progress tracker); until then the production build fails.
 

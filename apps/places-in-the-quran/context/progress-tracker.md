@@ -101,3 +101,7 @@ Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 11 pass, 0 fai
 Wired Copy my list (`src/lib/library.ts`) with the share event. The place pages have no reveal, check, copy or result panel, so no activity or Report an error hooks were added. Hook points are in `context/architecture.md`.
 
 Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 19 pass, 0 fail; `bun run build` 19 pages. The DOM run on a preview host was not done; events are suppressed off moongazer.tech.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
