@@ -71,3 +71,10 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (12 November 2026)
+
+- Hero: H1 "Is It in the Quran?", descriptor "Search Arabic and Pickthall wording for any ayah or reference.", chip "6,236 ayat" (mono), search-sheet motif from 580 px. The accent is teal; any blue token table above predates the family palette.
+- The search form is first. "How this works" sits directly after it (intro, normalization note, empty-search limit, common-claims link). The no-match line in the result keeps a short limit sentence. The Common claims link also sits in the empty state.
+- Each wording hit has a collapsed muted "Context: ±2 ayat" block (Pickthall text of up to two neighbours in the same chapter; not shown for reference lookups).
+- After results the shared end-of-session block shows the counts, what you learned, a share of the search only (never a verdict), the next app and Report an error.

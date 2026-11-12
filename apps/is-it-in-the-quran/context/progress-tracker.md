@@ -1,5 +1,9 @@
 # Progress tracker: Is It in the Quran?
 
+## P5 app wave, 12 November 2026
+
+2026-11-12T14:06:00+06:00 Asia/Dhaka: Hero, drawer (common-claims banner, normalization note and empty-search notice moved from above and below the form), end of session, search-sheet motif, ±2 ayat muted context (Verify_Me #15). Removed duplicates: the intro sentence is now in the drawer only; "Copy search link" and the inline Report link are replaced by the end block; the no-match note now carries the short limit and the long notice lives in the drawer. First control (search field) 299 px at 390 and 375, light and dark. check 0 errors, 26 tests pass, build passes; a search run in a headless browser with no script errors. No print or projector (DESIGN.md).
+
 ## Google Search Console setup, 30 October 2026
 
 2026-10-30T00:57:44+06:00 Asia/Dhaka: The verified moongazer.tech Domain property covers this app. Its sitemap was submitted and shows Success in Google Search Console. All 21 collection sitemaps succeeded with 286 discovered URLs. Discovery is distinct from indexing. Keep the apex DNS verification record. See repository deployment/search-console.json. Earlier pending setup statements below describe the previous release.

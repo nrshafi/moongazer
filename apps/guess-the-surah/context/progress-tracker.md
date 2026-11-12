@@ -1,5 +1,9 @@
 # Progress tracker: Guess the Surah
 
+## P5 app wave, 12 November 2026
+
+2026-11-12T13:57:21+06:00 Asia/Dhaka: T5.6 hero, T5.7 "How this works" drawer (steps, challenge note and points note moved in; the sidebar steps and note no longer duplicate the intro sentence, which was cut to the descriptor), T5.8 end of session (replaces Copy result and the setup-card challenge button), T5.11 book motif, T5.12 Print on the result page and Projector (via body attribute), T5.14 round settings above the clue card. Removed duplicates: the intro sentence "Every answer links back to its source" (kept on the round result) and the sidebar "Copy this challenge link" (now in the share text). Measured first control 268 px at 390 and 375, light and dark. check 0 errors, 21 tests pass, build passes; round played to the end in a headless browser with no script errors. Not done: a "New puzzle tomorrow" slot (P6), the Arabic-first option (P6).
+
 ## Google Search Console setup, 30 October 2026
 
 2026-10-30T00:57:44+06:00 Asia/Dhaka: The verified moongazer.tech Domain property covers this app. Its sitemap was submitted and shows Success in Google Search Console. All 21 collection sitemaps succeeded with 286 discovered URLs. Discovery is distinct from indexing. Keep the apex DNS verification record. See repository deployment/search-console.json. Earlier pending setup statements below describe the previous release.
