@@ -6,7 +6,7 @@
   "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
   "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
   "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
-  "passed": 7,
+  "passed": 8,
   "total": 8,
   "items": [
     {
@@ -31,8 +31,8 @@
     },
     {
       "id": "lost-peoples",
-      "result": "fail",
-      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Fit/title (editorial): the title \"Peoples and rulers\" does not fit Iram. 89:7 gives \"many-columned Iram\" as a place, not a people or a ruler. Retitle (for example \"Peoples and a ruler\") or drop Iram. Tier 2 plausible.",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Fit/title (editorial): the title \"Peoples and rulers\" does not fit Iram. 89:7 gives \"many-columned Iram\" as a place, not a people or a ruler. Retitle (for example \"Peoples and a ruler\") or drop Iram. Tier 2 plausible. Re-checked Thu Nov 12 17:57:03 BST 2026 by a fresh run: Passage text equals _implementation/research/quran-full.json at 89:6-10 (script, 0 mismatches over all 104 passages). The title \"Named in 89:6–10\" is accurate: A’ad (89:6), Iram (89:7), Thamud (89:9) and Pharaoh (89:10) are all named there, and the note’s two tribes, a place and a ruler matches the text. No other group on board-14 shares a term or passage with these four.",
       "followUp": {
         "commit": "C3.09",
         "note": "Title was \"Peoples and rulers in 89:6–10\", which did not fit Iram (89:7 names a many-columned place). Retitled \"Named in 89:6–10\" and the note now says two tribes, a place and a ruler. Terms and passages unchanged.",

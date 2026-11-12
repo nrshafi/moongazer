@@ -6,7 +6,7 @@
   "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
   "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
   "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
-  "passed": 9,
+  "passed": 10,
   "total": 10,
   "items": [
     {
@@ -31,8 +31,8 @@
     },
     {
       "id": "board-05",
-      "result": "fail",
-      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: \"Clay bird\" (3:49) is a bird and could be read as an animal, which fits the \"animals\" group also on this board (16:5-8). The pair is not in incompatible and no alternate is recorded. Fix: record an alternate or move one group.",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: \"Clay bird\" (3:49) is a bird and could be read as an animal, which fits the \"animals\" group also on this board (16:5-8). The pair is not in incompatible and no alternate is recorded. Fix: record an alternate or move one group. Re-checked Thu Nov 12 17:57:03 BST 2026 by a fresh run: 4 groups, 16 distinct terms, tier sum 8 = Starter. The title \"Threshold\" reveals no term or group. Clay bird (3:49) no longer shares the board with an animal group, and no term fits another group here: Witness, Bringer of good tidings, Warner and Lamp (33:45–46); Blind, Leper and Dead (3:49); the four qul surahs; As-Safa, Al-Marwah, Arafat and Sacred monument. No incompatible pair is on the board.",
       "followUp": {
         "commit": "C3.09",
         "note": "Groups were animals, isa-signs, qul, hajj-places. \"Clay bird\" (3:49) can read as an animal, so animals was swapped for muhammad-titles (same tier 2, so the level and title stay). isa-signs with animals and with animal-titles is now in incompatible.",
