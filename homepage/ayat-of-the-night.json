@@ -1,0 +1,62 @@
+[
+  {
+    "ref": "4:28",
+    "arabic": "يُرِيدُ ٱللَّهُ أَن يُخَفِّفَ عَنكُمْ ۚ وَخُلِقَ ٱلْإِنسَـٰنُ ضَعِيفًا",
+    "translation": "Allah would make the burden light for you, for man was created weak.",
+    "theme": "mercy"
+  },
+  {
+    "ref": "1:2",
+    "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+    "translation": "Praise be to Allah, Lord of the Worlds,",
+    "theme": "gratitude"
+  },
+  {
+    "ref": "2:153",
+    "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِينَ",
+    "translation": "O ye who believe! Seek help in steadfastness and prayer. Lo! Allah is with the steadfast.",
+    "theme": "patience"
+  },
+  {
+    "ref": "1:5-6",
+    "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ\nٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+    "translation": "Thee (alone) we worship; Thee (alone) we ask for help.\nShow us the straight path,",
+    "theme": "prayer"
+  },
+  {
+    "ref": "17:24",
+    "arabic": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
+    "translation": "And lower unto them the wing of submission through mercy, and say: My Lord! Have mercy on them both as they did care for me when I was little.",
+    "theme": "parents"
+  },
+  {
+    "ref": "4:86",
+    "arabic": "وَإِذَا حُيِّيتُم بِتَحِيَّةٍ فَحَيُّوا۟ بِأَحْسَنَ مِنْهَآ أَوْ رُدُّوهَآ ۗ إِنَّ ٱللَّهَ كَانَ عَلَىٰ كُلِّ شَىْءٍ حَسِيبًا",
+    "translation": "When ye are greeted with a greeting, greet ye with a better than it or return it. Lo! Allah taketh count of all things.",
+    "theme": "kindness"
+  },
+  {
+    "ref": "9:51",
+    "arabic": "قُل لَّن يُصِيبَنَآ إِلَّا مَا كَتَبَ ٱللَّهُ لَنَا هُوَ مَوْلَىٰنَا ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
+    "translation": "Say: Naught befalleth us save that which Allah hath decreed for us. He is our Protecting Friend. In Allah let believers put their trust!",
+    "theme": "trust"
+  },
+  {
+    "ref": "13:28",
+    "arabic": "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+    "translation": "Who have believed and whose hearts have rest in the remembrance of Allah. Verily in the remembrance of Allah do hearts find rest!",
+    "theme": "remembrance"
+  },
+  {
+    "ref": "30:22",
+    "arabic": "وَمِنْ ءَايَـٰتِهِۦ خَلْقُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَـٰفُ أَلْسِنَتِكُمْ وَأَلْوَٰنِكُمْ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍ لِّلْعَـٰلِمِينَ",
+    "translation": "And of His signs is the creation of the heavens and the earth, and the difference of your languages and colours. Lo! herein indeed are portents for men of knowledge.",
+    "theme": "creation"
+  },
+  {
+    "ref": "9:119",
+    "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَكُونُوا۟ مَعَ ٱلصَّـٰدِقِينَ",
+    "translation": "O ye who believe! Be careful of your duty to Allah, and be with the truthful.",
+    "theme": "honesty"
+  }
+]
