@@ -93,3 +93,7 @@ Hook points in `src/lib/app.ts`:
 - Feedback: the completion panel carries a `.feedback-link` with `data-open-feedback`.
 
 Room ids are fixed slugs from `content.json`. Typed answers, selected options, the seed and saved progress never enter an id. No unit test was added: the hook points are wiring only.
+
+## P5 session end (Asia/Dhaka, 2026-11-12)
+
+`app.ts` renders the shared end-of-session block into `#session-end` when the fourth lock opens. Result: "Room complete: four locks open, N with a hint or solution." What you learned: mushaf order, and the room's Quran references. Share text is the fixed line "I finished a room in Quran Escape Room. https://quran-escape-room.moongazer.tech/" (no room name, no theme, no answer). Next app is `learning.json` `related[0]`. The limit "a reading activity, not a measure of faith or religious merit" sits beside the completion result. `renderLocks()` updates the lock tracker on each render. No shared file was edited.

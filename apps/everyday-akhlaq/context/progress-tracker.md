@@ -123,3 +123,11 @@ Wired the three anonymous counter events in the shared scenario engine: activity
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Changed: architecture.md business-track heading and notes now say the cases were merged in and the old app was removed under D2c; references to the removed import helpers dropped.
+
+## 2026-11-12 (Asia/Dhaka, 14:07) — P5 wave D: Everyday Akhlaq Hearth first screen, drawer, session end, motif
+
+Done: compact hero and workspace layout on the home page, the business index and both scenario pages; `HowItWorks` drawer; end-of-session block; `public/motif.svg`; Verify_Me #44 completion state on cards. No print or projector control (DESIGN.md section 8); base print styles only.
+
+Removed duplicates: the "New: a business track" notice (the Business tab replaces it; the drawer keeps a link); the intro sentence moved into the drawer; the bottom "Practice, with room to reflect" notice moved into the drawer; the micro line "Fictional scenario · possible consequences · editorial application" became "Fictional scenario. Consequences are possibilities, not predictions." beside the choices; the scenario page's "The source alongside the story" panel moved into the drawer and the pre-title "A scenario to consider" eyebrow was removed. No limit was deleted.
+
+First control (the track tabs) top: 255 px at 390 × 844 and 375 × 812, light and dark. `bun run check` 0 errors; `bun run test` 28 pass (events test updated: report link and share now come from the shared block); `bun run build` ok. Browser: no horizontal scroll or script errors at 390, 375 and 1440, light and dark; the Business tab shows all 12 business cards, `/business/` and a business scenario load and play to the end; the session-end block appeared and its share text names no choice. Not verified: counter events (production hosts only).

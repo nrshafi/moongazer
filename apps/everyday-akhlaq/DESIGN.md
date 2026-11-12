@@ -32,7 +32,7 @@ Mismatch: `config.json` `accent` is `violet` today. Root §2 says blue. T5.5 cha
 | > How this works (after the list)        |
 +------------------------------------------+
 ```
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top: first control (the track tabs, `[data-track-tab]`), top at 255 px at 390 × 844 and 255 px at 375 × 812, light and dark (306 px at 1440 × 1000). Measured with `_implementation/browser-check.mjs` against `bun run preview`.
 
 ## 5. Component states specific to this app
 - **Track tab:** selected = tint fill, accent border and `aria-pressed="true"`. Business is a tab, so the separate business notice goes.

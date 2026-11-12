@@ -159,3 +159,11 @@ Wiring: `activity_started` (item `plan`) on the first answered wizard step; `act
 Checks: `bun run check` 0 errors, 0 warnings, 0 hints. `bun run test` 49 pass, 0 fail (1999 expect() calls, 8 files; the 4 new tests in `tests/events.test.ts` are source-level wiring checks). `bun run build` 4 pages built. The built `dist/index.html` contains the feedback link with `href="#site-feedback"`.
 
 Not verified: events in a browser. `track()` returns early outside moongazer.tech hosts, so it cannot fire on preview or localhost. The wiring is checked from source only; the counter's own behaviour is in `counter.test.ts`.
+
+## 2026-11-12 (Asia/Dhaka, 13:58) — P5 wave D: Sanctuary first screen, drawer, session end, motif
+
+Done: compact hero and Sanctuary wizard layout (step indicator, live summary), `HowItWorks` drawer, end-of-session block, `public/motif.svg` (calendar grid, under 8 KB). Print: existing weekly sheet kept; no new print or projector control (DESIGN.md section 8).
+
+Removed duplicates: the intro sentence "Plan new memorization and revision around your week..." and the step 1 line "Pages use the 604-page Hafs layout..." (kept once inside the choose-by-juz drawer and in the How this works drawer). No limit was deleted.
+
+First control (`#memorized`) top: 416 px at 390 × 844 and 375 × 812, light and dark (was 665). `bun run check` 0 errors; `bun run test` 53 pass; `bun run build` ok. Browser: no horizontal scroll and no script errors at 390, 375 and 1440, light and dark; played to the end, the session-end block appeared and its share text has no personal numbers. Not verified: counter events (only fire on production hosts).

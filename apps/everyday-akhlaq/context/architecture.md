@@ -96,3 +96,7 @@ The shared `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with 
 - The reflection carries `<a class="feedback-link">` to the footer `#site-feedback` form. The link is rendered by the script, not by Astro.
 - Business save toggles and the business index send no counts. Print buttons are plain print and are not counted.
 - `tests/events.test.ts` checks the call sites in source. Browser-level firing is not run by the tests.
+
+## P5 session end (Asia/Dhaka, 2026-11-12)
+
+`scenario.ts` renders the shared end-of-session block into `#session-end` at the reflection stage (both tracks): the result names the two choices (display only), "What you learned" has two fixed lines plus the source reference, share text is the fixed line "I worked through a fictional Everyday Akhlaq scenario: https://everyday-akhlaq.moongazer.tech/" (no choices), the next app is `learning.json` `related[0]`, and the shared block holds the "Report an error" link. `catalog.ts` reads `<base>-<id>` with a loose validator so in-progress states are not cleared. No shared file was edited.

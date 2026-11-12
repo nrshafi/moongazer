@@ -13,9 +13,13 @@ test('the first answer, the first step or the facilitator reveal starts the pack
   expect(session).toContain(".print-answer')?.addEventListener('toggle'");
 });
 
-test('the copy-link button sends share_clicked for the pack id',()=>{
-  expect(count(session,"track('share_clicked',pack.id)")).toBe(1);
-  expect(session).toContain("'Pack link copied'");
+test('share_clicked is sent by the shared session-end block, whose share text names no answer',()=>{
+  expect(session).toContain("renderSessionEnd(byId('session-end')");
+  expect(session).toContain("itemId:pack.id");
+  const share=session.match(/shareText:'([^']*)'/)![1]!;
+  expect(share).toContain('https://family-halaqa.moongazer.tech/');
+  expect(share).not.toMatch(/answer|explanation/i);
+  expect(share).not.toContain('${');
 });
 
 test('the reading-question panel carries the compact feedback link',()=>{

@@ -2,6 +2,8 @@ import {calendar} from './engine';
 import {byId, read, write, forget, esc, announce} from './utils';
 import {countSelectedPages, type Selection} from './pages';
 import {track} from './counter';
+import {renderSessionEnd} from './session-end';
+import learning from '../data/learning.json';
 import {
   buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isVocab, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
   sessionViews, thisWeek, weeks, VOCAB, withDailyReminder, type BuildResult, type Kind, type SessionView, type Vocab, type WizardInput,
@@ -107,6 +109,7 @@ function onTick() {
   pickCount.textContent = count >= TOTAL_PAGES
     ? `Selected: ${count} pages. The whole layout is selected, so nothing is left to add.`
     : count === 0 ? '' : `Selected: ${count} pages.`;
+  updateLiveSummary();
 }
 
 /** Moves to a step and moves focus to its legend so keyboard and screen-reader users land at the new step. */
@@ -117,10 +120,43 @@ function showStep(n: number, focus = true) {
   });
   const titles = ['What have you memorized?', 'Your week', 'Your plan'];
   stepLabel.textContent = `Step ${n} of 3`;
+  document.querySelectorAll<HTMLElement>('[data-step-tab]').forEach(tab => {
+    const index = Number(tab.dataset.stepTab);
+    if (index === n) tab.setAttribute('aria-current', 'step'); else tab.removeAttribute('aria-current');
+    tab.dataset.state = index < n ? 'done' : index === n ? 'current' : 'todo';
+    tab.querySelector('.step-done')?.remove();
+    if (index < n) { const done = document.createElement('span'); done.className = 'step-done'; done.textContent = ' Done'; tab.append(done); }
+  });
   stepBar.style.width = `${(n / 3 * 100).toFixed(1)}%`;
   progress.setAttribute('aria-valuenow', String(n));
   progress.setAttribute('aria-valuetext', `Step ${n} of 3: ${titles[n - 1]}`);
   if (focus) form.querySelector<HTMLLegendElement>(`[data-step="${n}"] legend`)?.focus();
+}
+
+/** One-line summary under the step 1 fields. Says "Enter your numbers" until step 1 is valid. */
+function updateLiveSummary() {
+  const el = byId('live-summary');
+  if (validateStepOne()) { el.textContent = 'Enter your numbers'; return; }
+  const memorized = number('memorized');
+  const goal = number('goal');
+  el.textContent = `${memorized} pages memorized, ${goal} new pages to add: ${memorized + goal} of ${TOTAL_PAGES} pages.`;
+}
+
+function renderEnd() {
+  if (!built || !current || built.status === 'capacity') { byId('session-end').replaceChildren(); return; }
+  const next = learning.related[0];
+  const days = current.daysPerWeek;
+  renderSessionEnd(byId('session-end'), {
+    result: `${fmt(current.goal, 0)} new pages in ${built.rows.length} study sessions, ${days} study ${days === 1 ? 'day' : 'days'} a week.`,
+    learned: [
+      'The model reserves review time first. New study uses the time that remains.',
+      'Speeds are your assumptions. The planner does not measure retention or recitation.',
+    ],
+    shareText: 'I estimated a weekly Hifz plan with Hifz Planner: https://hifz-planner.moongazer.tech/',
+    itemId: 'plan',
+    next: {name: next.name, url: next.url},
+    heading: 'Plan complete',
+  });
 }
 
 function makePlan(): boolean {
@@ -144,6 +180,7 @@ function makePlan(): boolean {
   }
   track('activity_completed','plan');
   renderPlan();
+  renderEnd();
   return true;
 }
 
@@ -320,6 +357,8 @@ function startOver() {
   fillInputs({memorized: 0, goal: 20, start: todayIso(), daysPerWeek: 5, minutes: 45, assumptions: defaultAssumptions()});
   remember.checked = false;
   results.innerHTML = '';
+  byId('session-end').replaceChildren();
+  updateLiveSummary();
   showStep(1);
 }
 
@@ -345,6 +384,9 @@ if (savedChecks) {
 }
 describeChecks(true);
 showStep(1, false);
+updateLiveSummary();
+byId('memorized').addEventListener('input', updateLiveSummary);
+byId('goal').addEventListener('input', updateLiveSummary);
 
 results.addEventListener('change', event => {
   const target = event.target;
