@@ -7,7 +7,7 @@ import { hash } from 'blake3-wasm';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const targets = JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'));
-const sites = [{name:'moongazer',domain:'moongazer.tech',directory:'homepage/dist'}, ...targets.map(app=>({name:`moongazer-${app.slug}`,domain:`${app.slug}.moongazer.tech`,directory:`apps/${app.slug}/dist`}))];
+const sites = [{name:'moongazer',domain:'moongazer.tech',directory:'homepage/dist'}, ...targets.map(app=>({name:app.project||`moongazer-${app.slug}`,domain:`${app.slug}.moongazer.tech`,directory:`apps/${app.slug}/dist`}))];
 const mime = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.ttf':'font/ttf','.woff2':'font/woff2','.woff':'font/woff','.mp3':'audio/mpeg','.ogg':'audio/ogg','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.ico':'image/x-icon','.xml':'application/xml','.txt':'text/plain; charset=utf-8'};
 const assets = new Map();
 const manifests = [];
