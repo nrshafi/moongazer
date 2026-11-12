@@ -32,7 +32,8 @@ The user authorized Cloudflare Pages hosting at https://stories-of-the-prophets.
 - `src/pages/sources.astro`
 
 - `src/layouts/Shell.astro` owns metadata, theme initialization, navigation, footer and storage dialog. `src/lib/shell.ts` implements shell behavior.
-- `src/lib/` currently contains: `library.ts`, `quiz.ts`, `shell.ts`, `utils.ts`.
+- `src/lib/` currently contains: `library.ts`, `quiz.ts`, `shell.ts`, `utils.ts`, `counter.ts`, `seo.ts`, `session-end.ts` (shared).
+- P5: `src/styles/app.css` holds the hero motif (CSS mask of `public/motif.svg`) and library layout. Pages set `data-projector` on `<body>` with a small inline script because `Shell.astro` is shared; the shared `shell.ts` then renders the Projector toggle. `data-print` buttons call `window.print()` through the shared shell handler.
 - `library.ts` handles discovery and bookmarks; `quiz.ts` provides reading feedback. Profile pages are built statically from `people` records.
 - `src/data/config.json` owns slug, display text, accent and port. `content.json`, `sources.json` and `provenance.json` keep content, citations and checksums distinct.
 - `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `activity.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts`.
@@ -85,7 +86,8 @@ The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}
 | Hook | Where | Event and id |
 | --- | --- | --- |
 | Reading check submitted (prophet page) | `src/lib/quiz.ts`, form submit (`form[data-item-id]`) | `activity_started` and `activity_completed` with the prophet id |
-| Report an error (check result) | `src/lib/quiz.ts`, `#site-feedback` | none; `a.feedback-link` opens the footer form |
+| Report an error (check result) | `renderSessionEnd` in `src/lib/quiz.ts`, `#site-feedback` | none; `a.feedback-link` opens the footer form |
+| Share (end of session) | `renderSessionEnd` Copy and WhatsApp | `share_clicked` with the prophet id |
 | Copy my list (index) | `src/lib/library.ts`, `#export` | `share_clicked` `home` |
 
 The index cards and filters send no events. The prophet page has no other reveal or copy control.

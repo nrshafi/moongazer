@@ -36,7 +36,7 @@ Why: the report sits beside the passage. The bracket marks the part of context t
 +--------------------------------------+
 ```
 
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (the search field, 2026-11-12): 272 px at 390 × 844 and 272 px at 375 × 812, identical in light and dark; 345 px at 1440 × 1000. Target ≤ 600 px met.
 
 ## 5. Component states (this app)
 
@@ -44,14 +44,14 @@ Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 a
 - **Category.** Text chip: "A reported occasion", "General context", or "What happened after". Never colour alone.
 - **Source panel (`.dossier`).** Report beside what it establishes and what stays uncertain. Native `<details>` for the evidence card; open in print.
 - **Relationship choice.** Default, selected, correct, incorrect (text "Check the report category.").
-- **Copy my list.** Hidden until the first save (Verify_Me #36).
+- **Copy my list.** Hidden until the first save (Verify_Me #36); done in P5 (`hidden` attribute toggled in `library.ts` `updateSaved`).
 
 ## 6. "How this works" drawer
 
 Currently above the filters in `index.astro`:
 - Intro "Read ten Quran passages beside the reports about them. See whether each report names an occasion…" Move to the drawer.
 - Evidence band "A reported occasion · General context · What happened after". It is a legend. Move to the drawer; the card chip carries the category.
-- Note: `Filters.astro` was not read for this file. Check its text when T5.7 runs.
+- `Filters.astro` carries no explanatory text above the controls (checked in P5).
 
 ## 7. End of session
 
@@ -62,7 +62,7 @@ Currently above the filters in `index.astro`:
 
 ## 8. Print and projector
 
-Neither (not in the T5.12 list). The overview mentions print controls and a dossier print today; keep them and flag in T5.12 if needed.
+Print: the reading page keeps its existing "Print this reading" button (`data-print`) and dossier print layout. The earlier "Neither" note was a draft and is superseded; no print feature was removed. No Projector on this app.
 
 ## 9. Depth Gate target
 

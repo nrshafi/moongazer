@@ -75,3 +75,10 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 changes (2026-11-12)
+
+- Hero: H1 is the app name, one descriptor line, a decorative report-sheet motif (`public/motif.svg`) beside the H1 on desktop and a small corner mark below 580 px. The eyebrow "Asbab al-nuzul" is removed.
+- The intro explanation and the three-category legend moved into the "How this works" drawer. The reading page has its own drawer above the commentary panel; its descriptor is the passage reference and topic.
+- "Copy my list" is hidden until a reading is saved.
+- The relationship check ends with the shared end-of-session block. The existing "Print this reading" button is kept.

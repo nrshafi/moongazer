@@ -105,3 +105,11 @@ Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 14:00 (Asia/Dhaka) - P5 per-app wave (T5.7, T5.8, T5.11, T5.12, T5.14)
+
+Compact hero with the app name and a one-line descriptor, book-and-star motif, How this works drawer, end-of-session block on the reading check, Print readings button, Projector. Removed duplicate: the alphabetical-order limit appeared in the notice and in the intro; it now appears once in the drawer plus the one-line reminder under the filters (kept as the DESIGN.md decision). The "Open Read context" hint and learning-guide steps were added to the drawer.
+
+First control top (search field): 244 px at 390 x 844, 281 px at 375 x 812, identical in light and dark; 323 px at 1440 x 1000. No horizontal scroll, no script errors. Played the reading check on /prophet/musa/: the end block appeared and the share text is "I read about a prophet in Stories of the Prophets. https://stories-of-the-prophets.moongazer.tech/" with no answer.
+
+Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun run test` 16 pass; `bun run build` 29 pages.

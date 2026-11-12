@@ -67,3 +67,9 @@ Counter events go through `src/lib/counter.ts` (`track`). Item ids are the readi
 - `src/lib/reading.ts`: `activity_started` on the first relationship-check answer (form `change`, id from `data-id` on `#relationship`). `activity_completed` on the first submitted check per page load.
 - `src/lib/library.ts`: `share_clicked` with id `home` on the copy-saved list button.
 - `src/pages/reading/[id].astro`: adds `data-id` on the relationship form and the "Report an error" link under the check result (`data-open-feedback`, opens the footer form).
+
+## P5 (2026-11-12)
+
+- `src/styles/app.css` holds the hero motif (CSS mask of `public/motif.svg`), the library/sidebar layout, `.dossier-side` (drawer plus commentary panel on the reading page) and the `#copy-saved[hidden]` rule.
+- `library.ts` `updateSaved` sets `#copy-saved.hidden` from the saved list, so Copy my list shows only after something is saved.
+- `reading.ts` ends the relationship check with `renderSessionEnd` (shared `session-end.ts`) and `pulseCorrect`; share text is the plain site line with no category.
