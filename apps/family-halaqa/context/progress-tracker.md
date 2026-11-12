@@ -84,3 +84,11 @@ Wired the three anonymous counter events in the pack session: activity started o
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 (Asia/Dhaka, 14:02) — P5 wave D: Family Halaqa Hearth first screen, drawer, session end, print, motif
+
+Done: compact hero and library layout, `HowItWorks` drawer on the library and pack pages, end-of-session block, `public/motif.svg`, Projector on both pages, "Print saved packs" on the library page (one print view of all saved packs), "Print this pack" kept. Verify_Me #55: cards show reference and "Read, talk, try".
+
+Removed duplicates: the evidence band ("About 10-15 minutes", "Everyone may pass", "Print or use one shared screen") and the age-band note moved into the drawer; the pack hero line about minutes, shared screen and pass is now in the drawer; the completion paragraph's limit ("not a judgment of anyone's learning or character") now sits in the session-end result. No limit was deleted. Design note: "Reading check: [n] of 3" was not implemented because the pack records one reading question, not a count; the result says "Reading check answered".
+
+First control (`#filter`) top: 300 px at 390 × 844 and 375 × 812, light and dark. `bun run check` 0 errors; `bun run test` 21 pass (events test updated: share now comes from the shared block); `bun run build` ok. Browser: no horizontal scroll or script errors at 390, 375 and 1440, light and dark; saved two packs and the print view held both (window.print stubbed); finished a pack and the session-end block appeared, share text has no answer. Not verified: counter events (production hosts only), real paper print preview.

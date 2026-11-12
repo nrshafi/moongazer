@@ -33,7 +33,7 @@ Family: **Family & group (violet)**. Tokens and contrast: root `DESIGN.md` §2. 
 | | next pack card                       | |
 +------------------------------------------+
 ```
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top: search field `#filter`, top at 300 px at 390 × 844 and 300 px at 375 × 812, light and dark (360 px at 1440 × 1000). Measured with `_implementation/browser-check.mjs` against `bun run preview`.
 
 ## 5. Component states specific to this app
 - **Age chip:** selected = tint fill, accent border, `aria-pressed="true"`. Text shows the band (5–7, 8–11, 12+).

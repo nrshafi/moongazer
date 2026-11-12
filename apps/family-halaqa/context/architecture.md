@@ -69,3 +69,7 @@ The shared `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with 
 - Print this pack is plain print and is not counted.
 - Feedback: `<Feedback compact />` sits after the reading-question status (`#reading-feedback`).
 - `tests/events.test.ts` checks the call sites in source. Browser-level firing is not run by the tests.
+
+## P5 print and session end (Asia/Dhaka, 2026-11-12)
+
+`library.ts` builds the saved-packs print view on demand: "Print saved packs" renders every pack saved under `bookmarks` (title, Arabic and translation from `content.json`, question, facilitator answer, discussion, activity) into `#saved-print`, adds `html.printing-saved`, calls `window.print()` and clears the container after printing. Nothing is stored or sent. With no saved pack it only announces "Save a pack before printing your saved packs." On the pack page `session.ts` calls `renderSessionEnd` into `#session-end` when all three steps are done; the old "Copy pack link" button was replaced by the shared Copy and WhatsApp buttons. Share text names no answer.
