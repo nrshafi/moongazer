@@ -1,7 +1,7 @@
 {
   "app": "seerah-timeline",
   "task": "C10",
-  "pairCount": 30,
+  "pairCount": 31,
   "method": "Pairs use only events in apps/seerah-timeline/src/data/content.json. No new sources were added; every source is an existing sunnah.com link already attached to the events. Years are the conventional chart years in the data, not exact dates.",
   "eligibility": "Both events dated in the data (CE year, AH year or a stated period) and no disputed/debated note. Gap preference: at least one conventional year; same-year pairs only when the cited report fixes the order.",
   "excluded": [
@@ -1170,6 +1170,43 @@
         ]
       },
       "orderSecurity": "1 AH versus 7 AH."
+    },
+    {
+      "id": "pair-31",
+      "first": "arrival-among-banu-amr-ibn-awf",
+      "second": "the-expedition-to-tabuk",
+      "why": "The arrival among Banu Amr ibn Awf was in 1 AH, and the expedition to Tabuk was in 9 AH.",
+      "firstEvent": {
+        "id": "arrival-among-banu-amr-ibn-awf",
+        "title": "Arrival among Banu Amr ibn Awf",
+        "year": 622.2,
+        "date": "1 AH · c. 622 CE",
+        "era": "Hijrah",
+        "place": "Madinah",
+        "dateNote": "Relative sequence is clearer than an exact Gregorian day.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-expedition-to-tabuk",
+        "title": "The expedition to Tabuk",
+        "year": 630.6,
+        "date": "9 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Tabuk",
+        "dateNote": "Shown in the conventional 9 AH band. Read the complete report for its longer sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4418",
+            "url": "https://sunnah.com/bukhari:4418"
+          }
+        ]
+      },
+      "orderSecurity": "1 AH versus 9 AH."
     }
   ]
 }
