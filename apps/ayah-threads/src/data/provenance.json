@@ -3121,5 +3121,5 @@
   ],
   "app": "ayah-threads",
   "themesNote": "The themes array (30 theme-library entries: passages, theme names, explanations and Al-Muyassar links) was added on 2026-11-11. The passage records are byte-identical to the puzzles here. The retrievedAt date and the editions above describe the original Quran MCP snapshot and still apply; these entries did not re-fetch any text. The title and description fields of each theme are neutral editorial text added in this app.",
-  "appContentSha256": "42a69ee63d366ccc67b994c0545e0f2ec6a75138f4795f5d44efce7f4fcc4b1f"
+  "appContentSha256": "7486f41ce0ba061e0cea61745e34ccf64fcc12f6a1015869a22966f957b87f4e"
 }
