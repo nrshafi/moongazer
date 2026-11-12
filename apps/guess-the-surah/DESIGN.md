@@ -31,7 +31,7 @@ Family: **Quran (teal)**. Tokens and contrast: root `DESIGN.md` §2. No new colo
 | > How this works                         |
 +------------------------------------------+
 ```
-Measured first-control top (`#pool`, round settings row, which now sits above the clue card): 268 px at 390 × 844 and 375 × 812, light and dark (hero 116 px). 1440 × 1000: 351 px. Decision: round settings are a compact always-visible row above the clue card (owner instruction, supersedes the collapsed "Practice settings" below the clue card in section 6).
+Measured first-control top (the Daily tab, P6): 240 px at 390 × 844 and 375 × 812, light and dark (hero 116 px). 1440 × 1000: 321 px. Round settings sit below the tabs and options row in Practice and Juz.
 
 ## 5. Component states specific to this app
 - **Clue button:** revealed clues are text; the next clue reads "Reveal clue 2 of 4". Disabled after clue 4 (`cursor:not-allowed`, opacity .55).

@@ -87,3 +87,12 @@ Hook points in `src/lib/game.ts`:
 - Feedback: the per-answer feedback block and the round finish panel carry a `.feedback-link` with `data-open-feedback`.
 
 No visitor answers, seeds or round text are placed in an item id. No unit test was added: the hook points are wiring only, and the helper's id and gating rules are covered by the shared counter tests.
+
+## P6 daily, Juz and collection (12 November 2026)
+
+- `src/lib/daily-bank.ts` exports `DAILY_SEED = 114`, `BANK_VERSION = 1`, `dailyItem(n)` (all 114 chapters in `content.json` order via `dailyIndex`), `todayNumber`, `beforeEpochLine`. Before `DAILY_EPOCH` `dayNumber` is 0: Practice is the default and Daily shows one line.
+- `src/lib/juz.ts` derives juz membership from `src/data/juz-starts.json`, copied programmatically from `_implementation/research/page-boundaries.json` (Quran MCP `fetch_quran_metadata`); recorded in `provenance.json` key `juzStarts`. A surah is in the juz where its first ayah falls (Juz 30 = 78 to 114, Juz 1 = 1 and 2; Juz 2 and 5 have none).
+- `engine.ts` `clueLadder`: translation, Arabic, structure, name meaning (never first, no chapter number); "Arabic first" swaps the first two. `nameMeaning` and `nameMeaningSource` come from C1; the source is shown in the answer reveal and the drawer.
+- Storage keys (prefix `guess-the-surah:`, via `read`/`write`): `daily` `{n, result:{selected,hints}}`, `streakOn`, `streak` (`isStreak`), `found` (surah numbers for the 114 collection), `arabicFirst`, plus the existing `round` and `remember`.
+- Counter item ids: `daily-<N>` in Daily, `surah-<n>` in Practice and Juz; share_clicked uses `daily-<N>` or `round`.
+- Share: `Guess the Surah #N · solved on clue K of 4` then `guess-the-surah.moongazer.tech`; no name, number or meaning. T6.7: "Remind me daily" under the Daily result downloads `guess-the-surah-daily.ics` from `dailyReminderIcs` (Blob, no requests).
