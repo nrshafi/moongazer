@@ -7,7 +7,9 @@
       "revelation_place": "makkah",
       "revelation_order": 5,
       "verses_count": 7,
-      "bismillah_pre": false
+      "bismillah_pre": false,
+      "nameMeaning": "The Opener",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 2,
@@ -16,7 +18,9 @@
       "revelation_place": "madinah",
       "revelation_order": 87,
       "verses_count": 286,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Cow",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 3,
@@ -25,7 +29,9 @@
       "revelation_place": "madinah",
       "revelation_order": 89,
       "verses_count": 200,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Family of Imran",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 4,
@@ -34,7 +40,9 @@
       "revelation_place": "madinah",
       "revelation_order": 92,
       "verses_count": 176,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Women",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 5,
@@ -43,7 +51,9 @@
       "revelation_place": "madinah",
       "revelation_order": 112,
       "verses_count": 120,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Table Spread",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 6,
@@ -52,7 +62,9 @@
       "revelation_place": "makkah",
       "revelation_order": 55,
       "verses_count": 165,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Cattle",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 7,
@@ -61,7 +73,9 @@
       "revelation_place": "makkah",
       "revelation_order": 39,
       "verses_count": 206,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Heights",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 8,
@@ -70,7 +84,9 @@
       "revelation_place": "madinah",
       "revelation_order": 88,
       "verses_count": 75,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Spoils of War",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 9,
@@ -79,7 +95,9 @@
       "revelation_place": "madinah",
       "revelation_order": 113,
       "verses_count": 129,
-      "bismillah_pre": false
+      "bismillah_pre": false,
+      "nameMeaning": "The Repentance",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 10,
@@ -88,7 +106,9 @@
       "revelation_place": "makkah",
       "revelation_order": 51,
       "verses_count": 109,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Jonah",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 11,
