@@ -777,7 +777,9 @@
       "revelation_place": "makkah",
       "revelation_order": 71,
       "verses_count": 28,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Noah",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 72,
@@ -786,7 +788,9 @@
       "revelation_place": "makkah",
       "revelation_order": 40,
       "verses_count": 28,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Jinn",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 73,
@@ -795,7 +799,9 @@
       "revelation_place": "makkah",
       "revelation_order": 3,
       "verses_count": 20,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Enshrouded One",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 74,
@@ -804,7 +810,9 @@
       "revelation_place": "makkah",
       "revelation_order": 4,
       "verses_count": 56,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Cloaked One",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 75,
@@ -813,7 +821,9 @@
       "revelation_place": "makkah",
       "revelation_order": 31,
       "verses_count": 40,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Resurrection",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 76,
@@ -822,7 +832,9 @@
       "revelation_place": "madinah",
       "revelation_order": 98,
       "verses_count": 31,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Man",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 77,
@@ -831,7 +843,9 @@
       "revelation_place": "makkah",
       "revelation_order": 33,
       "verses_count": 50,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Emissaries",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 78,
@@ -840,7 +854,9 @@
       "revelation_place": "makkah",
       "revelation_order": 80,
       "verses_count": 40,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Tidings",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 79,
@@ -849,7 +865,9 @@
       "revelation_place": "makkah",
       "revelation_order": 81,
       "verses_count": 46,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Those who drag forth",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 80,
@@ -858,7 +876,9 @@
       "revelation_place": "makkah",
       "revelation_order": 24,
       "verses_count": 42,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "He Frowned",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 81,
