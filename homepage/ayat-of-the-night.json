@@ -358,5 +358,65 @@
     "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ",
     "translation": "Our Lord! Cause not our hearts to stray after Thou hast guided us, and bestow upon us mercy from Thy Presence. Lo! Thou, only Thou, art the Bestower.",
     "theme": "mercy"
+  },
+  {
+    "ref": "39:10",
+    "arabic": "قُلْ يَـٰعِبَادِ ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ رَبَّكُمْ ۚ لِلَّذِينَ أَحْسَنُوا۟ فِى هَـٰذِهِ ٱلدُّنْيَا حَسَنَةٌ ۗ وَأَرْضُ ٱللَّهِ وَٰسِعَةٌ ۗ إِنَّمَا يُوَفَّى ٱلصَّـٰبِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ",
+    "translation": "Say: O My bondmen who believe! Observe your duty to your Lord. For those who do good in this world there is good, and Allah's earth is spacious. Verily the steadfast will be paid their wages without stint.",
+    "theme": "patience"
+  },
+  {
+    "ref": "28:24",
+    "arabic": "فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ فَقَالَ رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍ فَقِيرٌ",
+    "translation": "So he watered (their flock) for them. Then he turned aside into the shade, and said: My Lord! I am needy of whatever good Thou sendest down for me.",
+    "theme": "prayer"
+  },
+  {
+    "ref": "2:263",
+    "arabic": "۞ قَوْلٌ مَّعْرُوفٌ وَمَغْفِرَةٌ خَيْرٌ مِّن صَدَقَةٍ يَتْبَعُهَآ أَذًى ۗ وَٱللَّهُ غَنِىٌّ حَلِيمٌ",
+    "translation": "A kind word with forgiveness is better than almsgiving followed by injury. Allah is Absolute, Clement.",
+    "theme": "kindness"
+  },
+  {
+    "ref": "6:102",
+    "arabic": "ذَٰلِكُمُ ٱللَّهُ رَبُّكُمْ ۖ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ خَـٰلِقُ كُلِّ شَىْءٍ فَٱعْبُدُوهُ ۚ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ وَكِيلٌ",
+    "translation": "Such is Allah, your Lord. There is no Allah save Him, the Creator of all things, so worship Him. And He taketh care of all things.",
+    "theme": "creation"
+  },
+  {
+    "ref": "18:46",
+    "arabic": "ٱلْمَالُ وَٱلْبَنُونَ زِينَةُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۖ وَٱلْبَـٰقِيَـٰتُ ٱلصَّـٰلِحَـٰتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًا وَخَيْرٌ أَمَلًا",
+    "translation": "Wealth and children are an ornament of the life of the world. But the good deeds which endure are better in thy Lord's sight for reward, and better in respect of hope.",
+    "theme": "hope"
+  },
+  {
+    "ref": "94:5-6",
+    "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا\nإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+    "translation": "But lo! with hardship goeth ease,\nLo! with hardship goeth ease;",
+    "theme": "patience"
+  },
+  {
+    "ref": "76:9",
+    "arabic": "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ ٱللَّهِ لَا نُرِيدُ مِنكُمْ جَزَآءً وَلَا شُكُورًا",
+    "translation": "(Saying): We feed you, for the sake of Allah only. We wish for no reward nor thanks from you;",
+    "theme": "kindness"
+  },
+  {
+    "ref": "50:16",
+    "arabic": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِۦ نَفْسُهُۥ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ ٱلْوَرِيدِ",
+    "translation": "We verily created man and We know what his soul whispereth to him, and We are nearer to him than his jugular vein.",
+    "theme": "hope"
+  },
+  {
+    "ref": "99:7",
+    "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+    "translation": "And whoso doeth good an atom's weight will see it then,",
+    "theme": "kindness"
+  },
+  {
+    "ref": "16:128",
+    "arabic": "إِنَّ ٱللَّهَ مَعَ ٱلَّذِينَ ٱتَّقَوا۟ وَّٱلَّذِينَ هُم مُّحْسِنُونَ",
+    "translation": "Lo! Allah is with those who keep their duty unto Him and those who are doers of good.",
+    "theme": "kindness"
   }
 ]
