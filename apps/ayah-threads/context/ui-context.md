@@ -74,6 +74,7 @@ Retain the current typography, colors, logos and activity layouts. Make home hea
 
 ## P5 first screen (12 November 2026)
 
-- Hero: H1 "Ayah Threads", descriptor "Three passages, one shared theme.", chip "30 passage puzzles", decorative threads motif from 580 px.
-- Compact picker row above the passages: puzzle select (solved puzzles read "Puzzle 07 ✓ Solved"), "N of 30 solved", Surprise me, Show Arabic, Remember. The sidebar holds only the "How this works" drawer (steps, editorial-prompt note, theme-library link).
+- Hero: H1 "Ayah Threads", descriptor "Find the theme that links three passages: a daily Quran puzzle" (from config.json), chip "30 passage puzzles", decorative threads motif from 580 px.
+- P6: a Daily · Practice tablist (44 px tabs) above the passages. Practice: puzzle select (solved puzzles read "Puzzle 07 · Patience ✓ Solved"), "N of 30 solved", Surprise me, Show Arabic, Remember. Daily: `#N` and local date beside the title, "Keep a streak on this device" with "Streak: 3 days (best 5)", and under the puzzle a "Remind me daily" time input (20:00) with a .ics download. Before the epoch the default is Practice and Daily shows "The first daily puzzle opens on <date>." The sidebar holds only the "How this works" drawer (steps, editorial-prompt note, theme-library link).
+- After a solve the explanation links to the thread's theme-library page and to the library. Daily has no "Next puzzle"; it offers "Practice more puzzles".
 - Solving or revealing renders the shared end-of-session block under the explanation. Share text and URLs carry the puzzle number, never the theme-named puzzle id.
