@@ -147,3 +147,15 @@ Open: the planner counts pages, not their positions, so a juz or surah choice gi
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 (Asia/Dhaka, 06:18) — P4.7 counter hooks and compact feedback
+
+Time note: the shell printed BST (06:18 BST = 00:18 UTC), so Dhaka time is 06:18 with no offset added. The coordinator estimate was 06:20.
+
+The app folder is now `apps/hifz-planner` (merged main, commit 8804a8a).
+
+Wiring: `activity_started` (item `plan`) on the first answered wizard step; `activity_completed` (item `plan`) when a plan is generated; `share_clicked` (item `plan`) on the CSV and `.ics` exports. Print does not count. `counter.ts` and shared files were not edited. `<Feedback compact />` sits after the step 3 results and links to `#site-feedback`.
+
+Checks: `bun run check` 0 errors, 0 warnings, 0 hints. `bun run test` 49 pass, 0 fail (1999 expect() calls, 8 files; the 4 new tests in `tests/events.test.ts` are source-level wiring checks). `bun run build` 4 pages built. The built `dist/index.html` contains the feedback link with `href="#site-feedback"`.
+
+Not verified: events in a browser. `track()` returns early outside moongazer.tech hosts, so it cannot fire on preview or localhost. The wiring is checked from source only; the counter's own behaviour is in `counter.test.ts`.
