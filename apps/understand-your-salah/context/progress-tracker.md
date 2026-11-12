@@ -112,3 +112,7 @@ Changed: compact hero and motif (T5.6/T5.11); `How this works` drawer with the i
 Removed duplicates: the home intro sentence (the descriptor replaces it); the separate notice box. No limit deleted; "Roman guides are approximate" remains beside the Roman guide on lesson pages as well as in the drawer.
 Measured first control (audio player) 342 px at 390 and 375; lesson search field 610 px at 390.
 Validation: `bun run check` 0 errors; `bun run test` 20 pass; `bun run build` ok; headless Chrome at 390, 375, 1440 light and dark with no script errors or horizontal scroll; one reading check run and its share text checked.
+
+## 2026-11-12T14:23:20+06:00 — P5.17: lessons before audio on the home page
+
+The orchestrator's first-screen sweep measured the lesson search at 610 px on phones (over the 600 px rule) because the audio card and drawer came first. Moved the audio + drawer block below the lesson grid in `src/pages/index.astro` (DOM order, so keyboard order matches). Now 276 px at 390 and 375, both themes. Check 0 errors, 20 tests pass, build 19 pages.
