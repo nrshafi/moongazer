@@ -1,6 +1,6 @@
 import { test, expect, describe } from 'bun:test';
 import { groups, puzzles } from '../src/data/content.json';
-import { DAILY_EPOCH, dayNumber, dailyIndex, assertNoAnswer, whatsappUrl } from '../src/lib/daily';
+import { DAILY_EPOCH, dayNumber, dailyIndex, assertNoAnswer, dailyReminderIcs, whatsappUrl } from '../src/lib/daily';
 import { DAILY_SEED, BANK_VERSION, DAILY_HOST, DAILY_NAME, bank, dailyItem, dailyShare } from '../src/lib/daily-bank';
 import { MAX_MISSES, match, matchAlternate, resultLine, mistakesText, tierLabel, tierClass, dailyValidator, solvedValidator, isArabicTerm, type Alternate } from '../src/lib/engine';
 
@@ -126,5 +126,16 @@ describe('accepted alternates', () => {
       expect(matchAlternate([...a.terms].reverse(), bag)).toBe(a);
       expect(match(a.terms, remaining).group).toBeNull();
     }
+  });
+});
+
+describe('reminder (T6.7)', () => {
+  test('the Word Groups reminder is a daily event at the chosen time', () => {
+    const ics = dailyReminderIcs({ name: DAILY_NAME, host: DAILY_HOST, time: '20:00', now: new Date(2026, 10, 12, 9, 0) })!;
+    expect(ics).toContain('RRULE:FREQ=DAILY');
+    expect(ics).toContain('DTSTART:20261112T200000');
+    expect(ics).toContain("SUMMARY:Word Groups: today's puzzle");
+    expect(ics).toContain('https://word-groups.moongazer.tech/');
+    expect(ics).toMatch(/UID:daily-word-groups-/);
   });
 });

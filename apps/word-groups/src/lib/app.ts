@@ -3,8 +3,8 @@ import { match, valid, matchAlternate, MAX_MISSES, tierLabel, tierClass, mistake
 import { byId, read, write, forget, shuffle, hash, esc, cleanSeed, copy, announce, withHonorifics, pulseCorrect } from './utils';
 import { track } from './counter';
 import { renderSessionEnd } from './session-end';
-import { DAILY_EPOCH, dayNumber, localDateKey, updateStreak, isStreak } from './daily';
-import { dailyItem, dailyShare, type Board } from './daily-bank';
+import { DAILY_EPOCH, dayNumber, localDateKey, updateStreak, isStreak, dailyReminderIcs } from './daily';
+import { dailyItem, dailyShare, DAILY_NAME, DAILY_HOST, type Board } from './daily-bank';
 import learning from '../data/learning.json';
 import '../styles/game.css';
 
@@ -195,6 +195,7 @@ function setMode(next: Mode) {
   tabpanel.setAttribute('aria-labelledby', `tab-${next}`);
   byId('practice-controls').hidden = daily;
   byId('daily-extras').hidden = !daily || today < 1;
+  byId('reminder').hidden = !daily || today < 1;
   const waiting = daily && today < 1;
   byId('daily-wait').hidden = !waiting;
   byId('daily-wait').textContent = `The first daily puzzle opens on ${epochDate}.`;
@@ -211,6 +212,18 @@ function setMode(next: Mode) {
 
 byId<HTMLInputElement>('streak-opt').checked = read<{ on: boolean }>('streak-opt', (v): v is { on: boolean } => !!v && (v as { on?: unknown }).on === true) !== null;
 byId<HTMLInputElement>('streak-opt').onchange = () => { const on = byId<HTMLInputElement>('streak-opt').checked; if (on) { write('streak-opt', { on: true }); if (games.daily?.done) write('streak', updateStreak(read('streak', isStreak), todayKey)); } else { forget('streak-opt'); forget('streak'); } streakLine(); };
+
+byId('remind-btn').onclick = () => {
+  const time = byId<HTMLInputElement>('remind-time').value || '20:00';
+  const ics = dailyReminderIcs({ name: DAILY_NAME, host: DAILY_HOST, time, now: new Date() });
+  if (!ics) { announce('Choose a valid time first.'); return; }
+  const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+  const a = document.createElement('a');
+  a.href = url; a.download = 'word-groups-daily.ics';
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  announce('Reminder file downloaded.');
+};
 
 const tabs = ['daily', 'practice'] as const;
 tabs.forEach((m, i) => {
