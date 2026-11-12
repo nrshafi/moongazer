@@ -29,6 +29,8 @@ function filter() {
 }
 
 function updateSaved() {
+  const copyButton = document.getElementById('copy-saved');
+  if (copyButton) copyButton.hidden = saved.length === 0;
   document.querySelectorAll<HTMLButtonElement>('[data-save]').forEach(button => {
     const active = saved.includes(button.dataset.save!);
     button.textContent = active ? 'Saved ✓' : 'Save';
