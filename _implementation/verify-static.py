@@ -64,7 +64,7 @@ for app in sorted((ROOT/'apps').iterdir()):
             if url.scheme or url.netloc:
                 assert link in parsed.links,f'External runtime asset: {link}'
                 assert url.scheme=='https',link
-                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
+                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','api.quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
                 continue
             if not url.path:continue
             target=dist/unquote(url.path.lstrip('/')) if url.path.startswith('/') else path.parent/unquote(url.path)
