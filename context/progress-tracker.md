@@ -325,3 +325,17 @@ Branch `content-c18` (from `phase-6-daily`). Content and verifier only; not wire
 Branch `phase-6-shared`: `src/lib/daily.ts` with `tests/daily.test.ts` and `tests/daily-release.test.ts` in guess-the-surah, ayah-threads, word-groups and seerah-timeline; a `daily` set in `_implementation/sync-shared.ts`; `homepage/daily.js` with `homepage/tests/daily-parity.test.ts`. No app page or behaviour changed. Details in `context/architecture.md`.
 - Validation: `bun test` in the four apps passes (one skipped: the release test); `RELEASE=1` makes the release test fail while the epoch is the placeholder; `sync-shared --check` and `--check --set daily` identical; `bun test homepage/tests` 53 pass; `bun run check` 0 errors, 0 warnings in all four apps.
 - Remaining: owner picks the real epoch and the release step flips `DAILY_EPOCH_IS_PLACEHOLDER` in all four copies and `homepage/daily.js`; T6.2-T6.6 consume the module. No push.
+
+## 2026-11-12T17:29:25+06:00 — P6 T6.6 Tonight on Moongazer
+
+Branch `phase-6-daily`. The directory's "Tonight" card now holds:
+- two puzzle tiles (Guess the Surah #N, Word Groups #N);
+- a separate "Ayah of the night" card with exact Arabic, Pickthall's translation and a link to the reference in Is It in the Quran?;
+- before launch, a line naming the first day.
+Files: `homepage/index.html`, `render.mjs`, `build.mjs`, `app.js` (module), `daily.js`, `styles.css`, `amiri-ayat.woff2`, `_implementation/subset-ayah-font.py`, `homepage/tests/daily-parity.test.ts`, `homepage/preview.mjs` (CSP connect-src 'self', matching production).
+- Validation:
+  - `node homepage/build.mjs` passes, including the missing-file check.
+  - `bun test homepage/tests`: 55 pass.
+  - `verify-static.py`: 313 pages.
+  - Headless Chrome at 390 × 844, 820, 1060 and 1440, with a page clock before and after the epoch: no overflow and no script errors. Tonight's ayah is fetched and swapped when it differs from the build date. The first library card is at 743 px on phones (limit 844).
+- Remaining: T6.8 (Booktube JSON) once the app daily banks are merged; R6 epoch setting.
