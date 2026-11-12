@@ -18,3 +18,19 @@
 .corrections-list{list-style:none;padding:0;display:grid;gap:18px}
 .correction{padding:16px 0;border-bottom:1px solid var(--line,#d5dde5)}
 .correction-meta{font-size:.85rem;opacity:.8;margin:0 0 6px}
+
+/* P7 T7.10: Ramadan hub */
+.ramadan-dates .date-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 14px}.date-list div{border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:12px;background:#fff;padding:14px 16px}.date-list dt{font-size:12px;font-weight:650;letter-spacing:1.2px;text-transform:uppercase;color:#52677a;margin-bottom:6px}.date-list dd{margin:0;font-size:16px;font-weight:600;line-height:1.45}
+.date-note{font-size:14px;line-height:1.6;color:var(--muted);max-width:760px}.date-note a{text-decoration:underline;text-underline-offset:3px}
+.night-grid{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.night-card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:16px 18px;display:flex;flex-direction:column;gap:8px;min-width:0}.night-card.last-ten{border-color:#d9c39c;background:#fffaf1}
+.night-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin:0;font-size:13px;color:#52677a}.night-n{font-weight:700;color:var(--ink);font-size:15px}.night-note{font-size:12px;font-style:italic}
+.night-ar{font-family:'Amiri Ayat',Amiri,'Noto Naskh Arabic',serif;font-size:22px;line-height:2;margin:2px 0 0;white-space:pre-line}
+.night-en{font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.5;margin:0;white-space:pre-line}.night-ref{font-family:'DM Sans',sans-serif;font-size:12px;color:#52677a;white-space:nowrap}
+.night-links{list-style:none;margin:auto 0 0;padding:8px 0 0;border-top:1px solid var(--line);display:grid;gap:6px;font-size:14px}.night-links a{text-decoration:underline;text-underline-offset:3px;display:inline-block;min-height:24px}.night-age{color:#52677a;font-size:12px;white-space:nowrap}
+p.night-links{border:0;display:flex;flex-wrap:wrap;align-items:center;gap:12px}p.night-links .button{text-decoration:none}
+.qadr{max-width:760px;border:1px solid #d9c39c;border-radius:14px;background:#fffaf1;padding:16px 20px;display:grid;gap:4px}
+.hadith-list{max-width:760px;padding-left:20px;display:grid;gap:10px;font-size:15px;line-height:1.65}.hadith-list a{white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:1050px){.night-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.night-grid,.ramadan-dates .date-list{grid-template-columns:1fr}.night-ar{font-size:21px}}
+@media print{.ramadan-dates .print-button{display:none}.night-grid{grid-template-columns:repeat(3,1fr);gap:6px}.night-card{break-inside:avoid;padding:8px 10px;gap:4px}.night-ar{font-size:15px;line-height:1.7}.night-en{font-size:11px}.night-links{display:none}.reading-hero{padding-block:8px}.last-ten-section{break-before:page}}
