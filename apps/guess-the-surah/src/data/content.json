@@ -997,7 +997,9 @@
       "revelation_place": "makkah",
       "revelation_order": 26,
       "verses_count": 15,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Sun",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 92,
@@ -1006,7 +1008,9 @@
       "revelation_place": "makkah",
       "revelation_order": 9,
       "verses_count": 21,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Night",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 93,
@@ -1015,7 +1019,9 @@
       "revelation_place": "makkah",
       "revelation_order": 11,
       "verses_count": 11,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Morning Hours",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 94,
@@ -1024,7 +1030,9 @@
       "revelation_place": "makkah",
       "revelation_order": 12,
       "verses_count": 8,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Relief",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 95,
@@ -1033,7 +1041,9 @@
       "revelation_place": "makkah",
       "revelation_order": 28,
       "verses_count": 8,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Fig",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 96,
@@ -1042,7 +1052,9 @@
       "revelation_place": "makkah",
       "revelation_order": 1,
       "verses_count": 19,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Clot",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 97,
@@ -1051,7 +1063,9 @@
       "revelation_place": "makkah",
       "revelation_order": 25,
       "verses_count": 5,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Power",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 98,
@@ -1060,7 +1074,9 @@
       "revelation_place": "madinah",
       "revelation_order": 100,
       "verses_count": 8,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Clear Proof",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 99,
@@ -1069,7 +1085,9 @@
       "revelation_place": "madinah",
       "revelation_order": 93,
       "verses_count": 8,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Earthquake",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 100,
@@ -1078,7 +1096,9 @@
       "revelation_place": "makkah",
       "revelation_order": 14,
       "verses_count": 11,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Courser",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 101,
