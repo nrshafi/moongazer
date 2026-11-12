@@ -2,7 +2,7 @@
 
 ## 1. Family and tokens
 Family: **Quran (teal)**. Tokens and contrast: root `DESIGN.md` §2. No new colours or fonts.
-Mismatch: `config.json` `accent` is `blue` today. Root §2 says teal. T5.5 changes it to `teal`.
+`config.json` `accent` is `teal` (checked in P5).
 
 ## 2. Archetype
 **Dossier** (root `DESIGN.md` §6): evidence cards, mono metadata chips, a search-first workspace.
@@ -35,7 +35,7 @@ Mismatch: `config.json` `accent` is `blue` today. Root §2 says teal. T5.5 chang
 | Common claims: check twelve things  ->   |
 +------------------------------------------+
 ```
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (`#query`): 299 px at 390 × 844 and 375 × 812, light and dark (hero 139 px). 1440 × 1000: 367 px.
 
 ## 5. Component states specific to this app
 - **Exact match:** label "Exact wording match" with the reference chip. Not colour alone.

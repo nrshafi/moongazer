@@ -98,3 +98,7 @@ The shared helper `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}
 | Report an error (results and claim status) | `src/lib/app.ts`, `src/lib/claims-page.ts` | none; `a.feedback-link` opens the footer form |
 
 No events on the home notice, the claims index, sources or privacy pages.
+
+## P5 changes
+
+- `app.ts` records `counts` (exact, related, reference) per search, renders `renderSessionEnd` into `#session-end` after the pagination row (Copy and WhatsApp call `track('share_clicked', 'search')`) and builds the muted context block from `corpus` neighbours. The old `#share` button and the inline Report an error link above the results were removed. Per-passage `data-copy` buttons are unchanged.
