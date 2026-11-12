@@ -1,0 +1,77 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 1,
+  "nights": [1, 10],
+  "checkedAt": "2026-11-12T18:31:01+06:00",
+  "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
+  "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
+  "checks": {
+    "exactText": "Arabic and Pickthall equal _implementation/research/quran-full.json byte for byte with spans joined by LF (script, 30/30 in batch set).",
+    "quranMcp": "fetch_grounding_rules, then fetch_translation en-pickthall for each passage. English compared by reading, not by script.",
+    "tafsirRefetched": "ar-muyassar re-fetched for nights 1, 4, 6, 8, 10; en-ibn-kathir and ar-muyassar for night 28. Other nights rely on the batch record.",
+    "hadith": "sunnah.com opened via ego-browser for every linked hadith in this batch."
+  },
+  "packs": [
+    {
+      "id": "ramadan-night-01",
+      "night": 1,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (2:183). Muyassar teaching and explanation faithful. Bukhari 1903 matches the paraphrase. Teaching does not state the answer. One right option. Activity uses objects only."
+    },
+    {
+      "id": "ramadan-night-02",
+      "night": 2,
+      "result": "fail",
+      "reason": "Title 'Near and listening' restates the correct answer (Allah answers the one who calls) and is shown with the question. Retitle without the answer's key idea."
+    },
+    {
+      "id": "ramadan-night-03",
+      "night": 3,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (96:1-5). Question answerable from 'teacheth by the pen'. Teaching does not state the answer. Activity uses objects only, no drawings, animals or music."
+    },
+    {
+      "id": "ramadan-night-04",
+      "night": 4,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, says 'not to scold the one who asks', which restates the correct option 'The one who asks for help'. Spoiler under section 2. Exact text and Muyassar 93:9-11 are otherwise faithful."
+    },
+    {
+      "id": "ramadan-night-05",
+      "night": 5,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (14:7). Teaching names Musa's reminder without stating the answer ('give them more'). Question answerable from the passage."
+    },
+    {
+      "id": "ramadan-night-06",
+      "night": 6,
+      "result": "fail",
+      "reason": "Teaching above the question says 'relief comes with hardship', which states the correct answer (ease). Title 'Hard and easy' also names it. Muyassar 94:5-6 is otherwise faithful."
+    },
+    {
+      "id": "ramadan-night-07",
+      "night": 7,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (2:155-156). Answer is literal in the passage. Teaching does not state it. Distractors are not near-synonyms."
+    },
+    {
+      "id": "ramadan-night-08",
+      "night": 8,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, says the picture is 'a seed planted in good soil', which gives away the correct option (a grain). Title 'Seeds and sharing' also names it. Muyassar 2:261 is faithful."
+    },
+    {
+      "id": "ramadan-night-09",
+      "night": 9,
+      "result": "fail",
+      "reason": "Discussion for the 5-7 band asks 'Who cares for you?', inviting private family disclosure. The page's own note says no answers about family life are requested. Rewrite the prompt. Bukhari 5971 and the rest are faithful."
+    },
+    {
+      "id": "ramadan-night-10",
+      "night": 10,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (4:36). Muyassar 4:36 faithful for near and distant neighbour and for servants. Bukhari 6014 faithful. Teaching names the topic without giving the answer."
+    }
+  ]
+}

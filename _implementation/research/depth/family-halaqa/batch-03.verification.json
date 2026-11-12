@@ -1,0 +1,77 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 3,
+  "nights": [21, 30],
+  "checkedAt": "2026-11-12T18:31:01+06:00",
+  "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
+  "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
+  "checks": {
+    "exactText": "Arabic and Pickthall equal _implementation/research/quran-full.json byte for byte with spans joined by LF (script, 30/30 in batch set).",
+    "quranMcp": "fetch_grounding_rules, then fetch_translation en-pickthall for each passage. English compared by reading, not by script.",
+    "tafsirRefetched": "ar-muyassar and en-ibn-kathir re-fetched for night 28; ar-muyassar re-fetched for night 22; other nights rely on the batch record.",
+    "hadith": "sunnah.com opened via ego-browser for every linked hadith in this batch."
+  },
+  "packs": [
+    {
+      "id": "ramadan-night-21",
+      "night": 21,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (44:3-4). 'It was revealed' is literal in the passage. Teaching does not state it. Bukhari 2024 faithful. Title echoes the question, not the answer."
+    },
+    {
+      "id": "ramadan-night-22",
+      "night": 22,
+      "result": "fail",
+      "reason": "Title 'Our Lord, forgive us' restates the correct answer (forgiveness and mercy). Text, Muyassar 7:23 (re-fetched, faithful) and Tirmidhi 3513 (Sahih, Darussalam) are otherwise correct."
+    },
+    {
+      "id": "ramadan-night-23",
+      "night": 23,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (51:17-18). Answer literal in the passage. Teaching does not state it. Bukhari 2014 is faithful, though it concerns Night of Qadr prayer and fits this passage only loosely; the pack makes no claim from it."
+    },
+    {
+      "id": "ramadan-night-24",
+      "night": 24,
+      "result": "fail",
+      "reason": "Title 'Quick to forgive' and teaching above the question ('describes those who give, hold back anger and pardon') both state the correct option. Exact text and Muyassar 3:133-134 are faithful."
+    },
+    {
+      "id": "ramadan-night-25",
+      "night": 25,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (76:8-9). Answer literal in the passage. Teaching names the groups without the answer. Bukhari 1902 faithful. No drawings, animals or music."
+    },
+    {
+      "id": "ramadan-night-26",
+      "night": 26,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, says 'describing Allah's oneness', which gives away the correct option ('He is Allah, the One'). Exact text is correct."
+    },
+    {
+      "id": "ramadan-night-27",
+      "night": 27,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (97:1-5). Answer literal in the passage. Teaching names no answer. Bukhari 2017 faithful. The pack declines to name the night, which is correct."
+    },
+    {
+      "id": "ramadan-night-28",
+      "night": 28,
+      "result": "fail",
+      "reason": "Title 'Before the prayer' restates the correct answer ('prays'). Commentary is faithful: Muyassar 87:14-15 and abridged Ibn Kathir (Umar bin Abdul-Aziz reciting the verse for sadaqat al-fitr) both re-fetched and match; Bukhari 1503 faithful."
+    },
+    {
+      "id": "ramadan-night-29",
+      "night": 29,
+      "result": "fail",
+      "reason": "Title 'Morning and evening' restates the correct answer ('early and late'). Exact text is correct."
+    },
+    {
+      "id": "ramadan-night-30",
+      "night": 30,
+      "result": "fail",
+      "reason": "Title 'Ease and thanks' restates the correct answer ('Ease, not hardship'). Exact text is correct."
+    }
+  ]
+}

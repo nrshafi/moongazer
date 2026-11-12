@@ -1,0 +1,77 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 2,
+  "nights": [11, 20],
+  "checkedAt": "2026-11-12T18:31:01+06:00",
+  "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
+  "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
+  "checks": {
+    "exactText": "Arabic and Pickthall equal _implementation/research/quran-full.json byte for byte with spans joined by LF (script, 30/30 in batch set).",
+    "quranMcp": "fetch_grounding_rules, then fetch_translation en-pickthall for each passage. English compared by reading, not by script.",
+    "tafsirRefetched": "ar-muyassar re-fetched for nights 12, 18, 20; other nights rely on the batch record.",
+    "hadith": "sunnah.com opened via ego-browser for every linked hadith in this batch."
+  },
+  "packs": [
+    {
+      "id": "ramadan-night-11",
+      "night": 11,
+      "result": "fail",
+      "reason": "Title 'True to your word' names the correct answer (truthful). Question asks whom to be with. Bukhari 6094 and Muyassar 9:119 are faithful."
+    },
+    {
+      "id": "ramadan-night-12",
+      "night": 12,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (28:24). Muyassar re-fetched and faithful (water for two women, shade, hunger). Teaching does not reveal the words of the answer. Answer literal in the passage."
+    },
+    {
+      "id": "ramadan-night-13",
+      "night": 13,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (50:18). Bukhari 6018 faithful (say what is good or stay quiet). Teaching names no answer. One right option."
+    },
+    {
+      "id": "ramadan-night-14",
+      "night": 14,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, describes the verse as 'an instruction about our thoughts and about how we speak of others', which gives away the correct option (suspicion, spying, backbiting). Exact text is correct."
+    },
+    {
+      "id": "ramadan-night-15",
+      "night": 15,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (12:92). Teaching names Yusuf without stating the answer. Question answerable from 'May Allah forgive you'."
+    },
+    {
+      "id": "ramadan-night-16",
+      "night": 16,
+      "result": "fail",
+      "reason": "Title 'A better reply' restates the correct option ('with one that is better'). Teaching and distractors are otherwise sound. Exact text is correct."
+    },
+    {
+      "id": "ramadan-night-17",
+      "night": 17,
+      "result": "fail",
+      "reason": "Title 'Building and asking' names the answer (raising the foundations of the House). Exact text is correct."
+    },
+    {
+      "id": "ramadan-night-18",
+      "night": 18,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (21:87-88). Muyassar re-fetched and faithful. Teaching says he called on Allah from the dark, not the words of the answer. One right option."
+    },
+    {
+      "id": "ramadan-night-19",
+      "night": 19,
+      "result": "fail",
+      "reason": "Explanation names 'his brother Harun' without the honorific (peace be upon him), contrary to the editorial honorific rule (section 1.8). Otherwise sound; Muyassar 20:25 was not re-fetched this pass."
+    },
+    {
+      "id": "ramadan-night-20",
+      "night": 20,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (21:83-84). Muyassar re-fetched: household and wealth restored, doubled. Teaching names the loss without stating the answer. Honorific for Ayyub present."
+    }
+  ]
+}
