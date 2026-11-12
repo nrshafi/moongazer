@@ -1,8 +1,114 @@
 ---
 import learning from '../data/learning.json';
 import Shell from '../layouts/Shell.astro';
+import Feedback from '../components/Feedback.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import { DIFFERENCES, DEFAULT_CURRENCY, entryById } from '../lib/zakat';
+import '../styles/zakat.css';
+
+const money: { id: string; label: string; hint?: string }[] = [
+  { id: 'cash', label: 'Cash and bank balances' },
+  { id: 'stock', label: 'Business stock at current market value' },
+  { id: 'receivables', label: 'Money owed to you that you expect to receive' },
+  { id: 'debts', label: 'Short-term debts due now' },
+];
+const metals: { id: string; label: string }[] = [
+  { id: 'goldGrams', label: 'Gold you hold, in grams (not worn jewellery)' },
+  { id: 'silverGrams', label: 'Silver you hold, in grams (not worn jewellery)' },
+  { id: 'wornGoldGrams', label: 'Worn gold jewellery, in grams' },
+  { id: 'wornSilverGrams', label: 'Worn silver jewellery, in grams' },
+  { id: 'metalValue', label: 'Gold or silver you know only by value (an amount)' },
+];
+const differences = DIFFERENCES.filter(d => d.id === 'jewellery' || d.id === 'debts' || d.id === 'receivables' || d.id === 'nisabMetal');
+const conversions = DIFFERENCES.filter(d => d.id === 'goldConversion' || d.id === 'silverConversion');
 ---
 <Shell title="Zakat Calculator">
-  <section class="intro"><div class="intro-top"><span class="eyebrow">Method first</span> <span class="pill"><span class="dot"></span>In preparation</span></div> <h1>{learning.heading}</h1> <p>Work out your zakat step by step, with the method shown. Each choice where scholars differ will be labelled, with its source, and no option will be selected for you.</p></section>
-  <div class="notice top-gap" role="status"><strong>The calculator is being prepared; its method and sources will be shown in full.</strong> Nothing is calculated on this page yet. See <a href="/sources/">sources and methodology</a> for the current state.</div>
+  <section class="intro"><div class="intro-text"><h1>{learning.heading}</h1> <p>Work out your zakat step by step, with the method shown.</p></div><img class="motif" src="/motif.svg" alt="" width="190" height="130" aria-hidden="true"/></section>
+  <div class="workspace">
+    <section class="panel" aria-label="Zakat calculator">
+      <div class="panel-body">
+        <form id="calc" class="calc-form" novalidate autocomplete="off">
+          <fieldset class="calc-step" aria-labelledby="s1">
+            <legend id="s1"><span class="step-num" aria-hidden="true">1</span> Your assets</legend>
+            <div class="calc-fields">
+              <label class="field">Currency label (a label only; nothing is converted)<input id="currency" name="currency" type="text" value={DEFAULT_CURRENCY} maxlength="12" autocomplete="off"/></label>
+              {money.map(f => <label class="field">{f.label}<input id={f.id} name={f.id} type="number" min="0" step="any" inputmode="decimal" placeholder="0"/></label>)}
+              {metals.map(f => <label class="field">{f.label}<input id={f.id} name={f.id} type="number" min="0" step="any" inputmode="decimal" placeholder="0"/></label>)}
+            </div>
+          </fieldset>
+
+          <fieldset class="calc-step" aria-labelledby="s2">
+            <legend id="s2"><span class="step-num" aria-hidden="true">2</span> Today’s prices and the nisab</legend>
+            <p class="micro">There are no live prices. Enter today’s price per gram yourself, in the same currency label.</p>
+            <div class="calc-fields">
+              <label class="field">Gold price per gram<input id="goldPricePerGram" name="goldPricePerGram" type="number" min="0" step="any" inputmode="decimal" placeholder="0"/></label>
+              <label class="field">Silver price per gram<input id="silverPricePerGram" name="silverPricePerGram" type="number" min="0" step="any" inputmode="decimal" placeholder="0"/></label>
+            </div>
+            <p class="micro">The nisab is a weight of gold or silver. Published conversions differ, so you choose which one to follow.</p>
+            {conversions.map(d => {
+              const record = entryById(d.entry)!;
+              return (
+                <fieldset class="choice" data-diff={d.id} hidden={d.id === 'silverConversion'}>
+                  <legend tabindex="-1">{d.question}</legend>
+                  {d.hint && <p class="micro">{d.hint}</p>}
+                  {d.options.map(o => (
+                    <div class="option">
+                      <label class="check option-label"><input type="radio" name={d.id} value={o.id}/> <span><strong>{o.label}</strong>{o.hint && <span class="attrib-hint"> {o.hint}</span>}
+                        <span class="attrib">{o.positions.map(i => <span class="who">{record.positions[i].attribution.who}</span>)}</span></span></label>
+                      <a class="learn" href={`/method/#${d.entry}`}>Learn more<span class="sr-only"> about {o.label}</span></a>
+                    </div>
+                  ))}
+                </fieldset>
+              );
+            })}
+          </fieldset>
+
+          <fieldset class="calc-step" aria-labelledby="s3">
+            <legend id="s3"><span class="step-num" aria-hidden="true">3</span> Where scholars differ</legend>
+            <p class="micro">Each choice shows who states it. None is selected for you, and none is a recommendation.</p>
+            {differences.map(d => {
+              const record = entryById(d.entry)!;
+              return (
+                <fieldset class="choice" data-diff={d.id}>
+                  <legend tabindex="-1">{d.question}</legend>
+                  {d.hint && <p class="micro">{d.hint}</p>}
+                  {d.options.map(o => (
+                    <div class="option">
+                      <label class="check option-label"><input type="radio" name={d.id} value={o.id}/> <span><strong>{o.label}</strong>
+                        <span class="attrib">{o.positions.map(i => <span class="who">{record.positions[i].attribution.who}</span>)}</span></span></label>
+                      <a class="learn" href={`/method/#${d.entry}`}>Learn more<span class="sr-only"> about {o.label}</span></a>
+                    </div>
+                  ))}
+                </fieldset>
+              );
+            })}
+          </fieldset>
+
+          <p id="form-status" class="form-status" role="alert" tabindex="-1"></p>
+          <div class="actions calc-actions">
+            <button class="button" type="submit" id="calculate">Calculate</button>
+            <label class="check-label"><input id="remember" type="checkbox"/> Remember these answers on this device for 30 days</label>
+          </div>
+        </form>
+        <div id="results" class="results" tabindex="-1" aria-live="polite"></div>
+        <div id="session-end"></div>
+        <p class="micro top-gap no-print">Something wrong in the method or a source? <Feedback compact /></p>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <HowItWorks>
+        <h3>What it does</h3>
+        <p>It adds up the assets you enter, applies the choices you make where scholars differ, compares the total with the nisab you chose, and shows 1/40 of the total when it is at or above that nisab.</p>
+        <h3>What it does not do</h3>
+        <p>It is not a fatwa and does not tell you which view to follow. It does not value your assets, convert currencies, fetch live prices, work out zakat on livestock or farm produce, or work out zakat al-fitr. It does not check the lunar-year condition for you.</p>
+        <h3>Prices</h3>
+        <p>You enter today’s gold and silver price per gram yourself. Nothing is fetched.</p>
+        <h3>Where the method comes from</h3>
+        <p>Every ruling, figure, Quran text and hadith reference comes from a method record whose citations were checked twice. That is a source check; no scholar has reviewed it. Read each entry on the <a href="/method/">method page</a>. For zakat al-fitr, see the <a href="/zakat-al-fitr/">zakat al-fitr page</a>.</p>
+        <h3>Storage</h3>
+        <p>Nothing is stored unless you tick “Remember these answers”. Then your entries and choices stay in this browser for 30 days. Use the footer link to clear them. The calculator works with storage blocked.</p>
+      </HowItWorks>
+    </aside>
+  </div>
+  <script>import '../lib/app';</script>
 </Shell>
