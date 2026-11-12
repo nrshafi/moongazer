@@ -107,3 +107,11 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Changed: AGENTS.md title now "Word Groups" (was "Islamic Concept Connections"); project-overview.md and architecture.md now name Ayah Threads for the passage quiz.
+
+
+## 2026-11-12 17:45 (BST, Asia/Dhaka) — P6 T6.4 and T6.7, content C3
+
+Changed: C3 content (batches 01 to 08, research in `_implementation/research/depth/word-groups/`): 45 groups (was 20) with `kind` and `tier`, 30 boards (was 16) with distinct titles, `incompatible` pairs and two boards with accepted alternates; `appContentSha256` updated. Code: Daily and Practice modes, `dailyItem(n)` (seed 40), four-mistake limit, tier labels, result card, accepted alternates, 30-pill picker with solved ticks, share text without answers, streak opt-in, Remind me daily (.ics).
+Validation: `bun run check` 0 errors; `bun run test` 68 pass; `bun run build`; sync-shared (all and `--set daily`) identical; `audit-text-joins` 0; static verifier run for this app only (other apps' dist missing in the worktree) passes. Browser run on a preview at port 5414 with the clock set past the epoch: first control top 246 px at 390 and 375 (light and dark); Daily played to the end (1 mistake), reload shows the result, WhatsApp link decoded to the share text, .ics downloaded as text/calendar; loss path after 4 mistakes; alternate acknowledged with 0 misses; storage blocked: game works, no errors; before the epoch: Practice default, Daily shows the epoch line.
+Remaining: a separate model run must verify batches 01 to 08; `_implementation/e2e-flows.mjs` still selects `#board-select` (removed here; the picker is now `#pills`); `DAILY_EPOCH` is still the placeholder.
+Limits: the "Qualities of four prophets" group mixes four ayat and the Arabic root groups rely on Quran MCP morphology; neither has had an independent scholarly review.

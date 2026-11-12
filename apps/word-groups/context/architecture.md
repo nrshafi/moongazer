@@ -32,7 +32,8 @@ The user authorized Cloudflare Pages hosting at https://word-groups.moongazer.te
 
 - `src/layouts/Shell.astro` owns metadata, theme initialization, navigation, footer and storage dialog. `src/lib/shell.ts` implements shell behavior.
 - `src/lib/` currently contains: `app.ts`, `engine.ts`, `shell.ts`, `utils.ts`.
-- `engine.ts` validates progress and matches exact groups/one-away selections. `app.ts` manages selected terms, shuffling, hints and shared seeds.
+- `engine.ts` validates progress and matches exact groups/one-away selections; it also holds `MAX_MISSES` (4), `matchAlternate`, tier labels, result lines and the validators for the `daily` and `solved` keys. `daily-bank.ts` exports `DAILY_SEED` (40), `BANK_VERSION` (1), `dailyItem(n)` and `dailyShare`. `app.ts` manages the Daily/Practice modes, selected terms, shuffling, hints, shared seeds, the board picker, streak and the reminder download.
+- `daily.ts` is the shared daily module (do not edit here).
 - `src/data/config.json` owns slug, display text, accent and port. `content.json`, `sources.json` and `provenance.json` keep content, citations and checksums distinct.
 - `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `activity.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts`.
 - Repository `_implementation/` owns research/preparation/collection checks, not runtime services or imports. `dist/`, `.astro/` and `node_modules/` are generated.
@@ -42,7 +43,22 @@ The user authorized Cloudflare Pages hosting at https://word-groups.moongazer.te
 Stored records use the body app slug `word-groups` and a colon, with `at` and `value` fields. The read helper validates shape/time, rejects timestamps more than 60 seconds ahead and records at least 30 days old, and tolerates unavailable storage. Initial theme setup validates a finite numeric timestamp, the 30-day age, the 60-second future tolerance and the light/dark value in Shell.astro; subsequent reads use the storage helper. Thirty days is an access-time expiry policy, not automatic deletion while the site is closed.
 
 - `theme`: the explicit light/dark preference, independent of activity recovery.
-- `progress` stores the board ID, solved groups, hints, misses, seed and reveal status only if recovery is enabled.
+- `progress` stores the board ID, solved groups, hints, misses, seed and reveal status only if recovery is enabled (Practice).
+- `daily` stores `{n, result:{board, solved (group ids in the order found), misses, lost}}` when today's board ends, so a reload shows the result. `solved` stores the finished board ids for the picker ticks. `streak` (`{last, count, best}`) and `streak-opt` (`{on:true}`) exist only after the visitor ticks "Keep a streak on this device". All keys are namespaced `word-groups:` and expire 30 days after the last write.
+
+## Daily board (P6 T6.4, T6.7)
+
+- Selection: `dailyItem(n)` = `puzzles[dailyIndex(n, 30, 40)]` (bank = data order). Before `DAILY_EPOCH` the day number is 0: Practice is the default and Daily shows "The first daily puzzle opens on <date>." Same-day reload shows the stored result. A daily board ends after 4 mistakes (all groups are then revealed) or on "Give up and reveal".
+- Tiers: each group has `tier` 1 to 4, shown as text ("Tier 1 · most direct" to "Tier 4 · least direct") with chip and row styling from the family tokens (a thicker left border per tier), so colour is never the only signal.
+- Accepted alternates: a board may list `alternates` (four terms plus a note). Selecting exactly those terms shows the note and counts no miss; the set is never solved. Two boards that keep the prophets named in 6:84 with the prophet surah names use this for Yusuf.
+- Share: `Word Groups #N · 4 groups, 1 mistake` then `word-groups.moongazer.tech`; never a group name, term or board id. Copy and WhatsApp come from `renderSessionEnd`.
+- Remind me daily: a time input (default 20:00) and a button that downloads `word-groups-daily.ics` from `dailyReminderIcs` (Blob and object URL). No request, no permission.
+- Counter ids: `daily-<N>` in Daily, the board id in Practice. The hook points above stay as they were.
+- Content checks live in `tests/boards.test.ts` (counts, tiers, distinct titles, duplicate terms, surah-name overlaps, text overlaps, incompatible pairs, snapshot equality); `tests/daily-board.test.ts` covers selection, share and alternates.
+
+## Content method (C3)
+
+Batches 01 to 08 are recorded in `_implementation/research/depth/word-groups/`. Each new group was fetched through Quran MCP, copied by script from `quran-full.json`, and every term checked (Arabic roots with `fetch_word_morphology`). Board level: Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more.
 - Core activity state otherwise lives in memory. Clear-data removes this app's namespace and reloads; other apps are unaffected.
 
 ## Auth and access
