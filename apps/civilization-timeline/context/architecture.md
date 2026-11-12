@@ -66,3 +66,7 @@ Counter events go through `src/lib/counter.ts` (`track`). The civilization timel
 
 - `src/lib/library.ts`: `activity_started` (`timeline`) on the first filter input, filter change or region chip. `share_clicked` (`timeline`) on copy-saved.
 - `src/lib/timeline.ts`: `activity_started` (`timeline`) on the first user "Compare" click. `activity_completed` (`timeline`) once per page load when a comparison is shown. `share_clicked` (`timeline`) on "Copy comparison link". The "Report an error" link sits under the comparison result.
+
+## P5 notes
+
+`src/lib/timeline.ts` renders the comparison and calls `renderSessionEnd` into `#comparison-end` (next app from `learning.json` related[0]). The share text is `I compared two periods on Civilization Timeline: <compare link>` with no conclusion. The old "Copy comparison link" button is replaced by the session-end Copy and WhatsApp buttons.

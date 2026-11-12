@@ -31,7 +31,7 @@ Mismatch: `config.json` `accent` is `blue` today. Root §2 says gold. T5.5 chang
 +------------------------------------------+
 Map and "At the same time..." move below the list (see section 5).
 ```
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (search field, `#filter`): 282 px at 390 × 844 and 282 px at 375 × 812, light and dark (T5.14, Chrome headless over `bun run preview`). Desktop 1440 × 1000: 356 px. The first event card top is 757 px at 390 × 844 (585 px at 1440 × 1000): the map and compare panel now follow the list, which brought the first control from far below 600 px to 282 px, but the filter panel (search, topic, region, two year fields, saved only, reset) still pushes the first card past 600 px. Only the first-control target is met.
 
 ## 5. Component states specific to this app
 - **Region chip:** selected = tint fill, accent border and `aria-pressed="true"`. The map legend shows the same region as text.
