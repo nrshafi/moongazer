@@ -3,6 +3,8 @@
     {
       "id": "animal-titles",
       "title": "Animals in these surah titles",
+      "kind": "surah",
+      "tier": 1,
       "terms": [
         "The Cow",
         "The Bee",
@@ -44,6 +46,8 @@
     {
       "id": "metals",
       "title": "Metals in the selected readings",
+      "kind": "ayat",
+      "tier": 2,
       "terms": [
         "Iron",
         "Copper",
@@ -71,6 +75,8 @@
     {
       "id": "day-night",
       "title": "Images in 91:1–4",
+      "kind": "ayat",
+      "tier": 1,
       "terms": [
         "Sun",
         "Moon",
@@ -91,6 +97,8 @@
     {
       "id": "requested-crops",
       "title": "Requested foods in 2:61",
+      "kind": "ayat",
+      "tier": 3,
       "terms": [
         "Cucumbers",
         "Corn",
@@ -111,6 +119,8 @@
     {
       "id": "prophets",
       "title": "Named together in 6:84",
+      "kind": "ayat",
+      "tier": 2,
       "terms": [
         "Dawud",
         "Sulayman",
@@ -131,6 +141,8 @@
     {
       "id": "storm",
       "title": "Images in 2:19",
+      "kind": "ayat",
+      "tier": 1,
       "terms": [
         "Rain",
         "Darkness",
@@ -151,6 +163,8 @@
     {
       "id": "colors",
       "title": "Colors in the selected readings",
+      "kind": "ayat",
+      "tier": 1,
       "terms": [
         "White",
         "Red",
@@ -178,6 +192,8 @@
     {
       "id": "neighbors",
       "title": "People named in 4:36",
+      "kind": "ayat",
+      "tier": 3,
       "terms": [
         "Parents",
         "Kinsfolk",
@@ -198,6 +214,8 @@
     {
       "id": "qul",
       "title": "Selected surahs opening with Qul",
+      "kind": "surah",
+      "tier": 1,
       "terms": [
         "Al-Kafirun",
         "Al-Ikhlas",
@@ -239,6 +257,8 @@
     {
       "id": "worship",
       "title": "Acts in the selected worship readings",
+      "kind": "ayat",
+      "tier": 1,
       "terms": [
         "Salah",
         "Zakat",

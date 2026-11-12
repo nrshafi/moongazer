@@ -1,0 +1,186 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 4,
+  "recordedAt": "2026-11-12",
+  "method": "Editorial tier (1 most direct, 4 least direct) and kind added to existing groups. No Quran text was added or changed in this batch, so no Quran MCP call was needed; the passages are the ones already verified in the earlier batches of this app.",
+  "tierScale": {
+    "1": "most direct: the terms are plainly named in one reading",
+    "2": "direct, but across several ayat or in less familiar wording",
+    "3": "needs a careful read of the passage or familiarity with Arabic names",
+    "4": "least direct: wording, Arabic roots or cross-passage knowledge needed"
+  },
+  "calls": [],
+  "items": [
+    {
+      "id": "animal-titles",
+      "title": "Animals in these surah titles",
+      "kind": "surah",
+      "tier": 1,
+      "tierReason": "English labels that match well-known surah names; direct.",
+      "terms": [
+        "The Cow",
+        "The Bee",
+        "The Ant",
+        "The Spider"
+      ],
+      "passageRefs": [
+        "2:67",
+        "16:68",
+        "27:18",
+        "29:41"
+      ]
+    },
+    {
+      "id": "metals",
+      "title": "Metals in the selected readings",
+      "kind": "ayat",
+      "tier": 2,
+      "tierReason": "Four named metals, two ayat; direct.",
+      "terms": [
+        "Iron",
+        "Copper",
+        "Gold",
+        "Silver"
+      ],
+      "passageRefs": [
+        "18:96",
+        "9:34"
+      ]
+    },
+    {
+      "id": "day-night",
+      "title": "Images in 91:1–4",
+      "kind": "ayat",
+      "tier": 1,
+      "tierReason": "Four images named in the opening oaths of Surah 91; direct.",
+      "terms": [
+        "Sun",
+        "Moon",
+        "Day",
+        "Night"
+      ],
+      "passageRefs": [
+        "91:1-4"
+      ]
+    },
+    {
+      "id": "requested-crops",
+      "title": "Requested foods in 2:61",
+      "kind": "ayat",
+      "tier": 3,
+      "tierReason": "Four foods from one ayah; the English labels need a careful read of 2:61.",
+      "terms": [
+        "Cucumbers",
+        "Corn",
+        "Lentils",
+        "Onions"
+      ],
+      "passageRefs": [
+        "2:61"
+      ]
+    },
+    {
+      "id": "prophets",
+      "title": "Named together in 6:84",
+      "kind": "ayat",
+      "tier": 2,
+      "tierReason": "Names from one ayah, in Arabic forms that differ from Pickthall.",
+      "terms": [
+        "Dawud",
+        "Sulayman",
+        "Ayyub",
+        "Yusuf"
+      ],
+      "passageRefs": [
+        "6:84"
+      ]
+    },
+    {
+      "id": "storm",
+      "title": "Images in 2:19",
+      "kind": "ayat",
+      "tier": 1,
+      "tierReason": "Four images in one rainstorm comparison; direct.",
+      "terms": [
+        "Rain",
+        "Darkness",
+        "Thunder",
+        "Lightning"
+      ],
+      "passageRefs": [
+        "2:19"
+      ]
+    },
+    {
+      "id": "colors",
+      "title": "Colors in the selected readings",
+      "kind": "ayat",
+      "tier": 1,
+      "tierReason": "Four colours across two ayat; direct.",
+      "terms": [
+        "White",
+        "Red",
+        "Black",
+        "Green"
+      ],
+      "passageRefs": [
+        "35:27",
+        "18:31"
+      ]
+    },
+    {
+      "id": "neighbors",
+      "title": "People named in 4:36",
+      "kind": "ayat",
+      "tier": 3,
+      "tierReason": "Part of a longer list in 4:36, so other items also fit.",
+      "terms": [
+        "Parents",
+        "Kinsfolk",
+        "Orphans",
+        "The needy"
+      ],
+      "passageRefs": [
+        "4:36"
+      ]
+    },
+    {
+      "id": "qul",
+      "title": "Selected surahs opening with Qul",
+      "kind": "surah",
+      "tier": 1,
+      "tierReason": "Four short surahs that all begin with Qul; well known.",
+      "terms": [
+        "Al-Kafirun",
+        "Al-Ikhlas",
+        "Al-Falaq",
+        "An-Nas"
+      ],
+      "passageRefs": [
+        "109:1",
+        "112:1",
+        "113:1",
+        "114:1"
+      ]
+    },
+    {
+      "id": "worship",
+      "title": "Acts in the selected worship readings",
+      "kind": "ayat",
+      "tier": 1,
+      "tierReason": "Four familiar acts of worship.",
+      "terms": [
+        "Salah",
+        "Zakat",
+        "Fasting",
+        "Hajj"
+      ],
+      "passageRefs": [
+        "2:43",
+        "2:183",
+        "2:196"
+      ]
+    }
+  ]
+}
