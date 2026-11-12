@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,shutil
 ROOT=Path(__file__).resolve().parent.parent
-APPS=[('quranic-places-atlas','Quranic Places Atlas','Read the passages, explore the geography, and see what remains uncertain.','teal'),('islamic-concept-connections','Islamic Concept Connections','Find four groups of related Islamic terms in a sixteen-tile puzzle.','blue'),('islamic-history-timeline-challenge','Islamic History Timeline Challenge','Arrange sourced events and explore the sequence behind them.','violet'),('understand-salah-lab','Understand Salah Lab','Explore the words of prayer, one recitation at a time.','teal'),('quranic-parables-studio','Quranic Parables Studio','Explore Quranic comparisons through passages and interactive reading diagrams.','blue')]
+APPS=[('places-in-the-quran','Quranic Places Atlas','Read the passages, explore the geography, and see what remains uncertain.','teal'),('word-groups','Islamic Concept Connections','Find four groups of related Islamic terms in a sixteen-tile puzzle.','blue'),('islamic-history-timeline-challenge','Islamic History Timeline Challenge','Arrange sourced events and explore the sequence behind them.','violet'),('understand-your-salah','Understand Salah Lab','Explore the words of prayer, one recitation at a time.','teal'),('parables-of-the-quran','Quranic Parables Studio','Explore Quranic comparisons through passages and interactive reading diagrams.','blue')]
 seed=ROOT/'apps/quran-concept-atlas'
 for i,(slug,name,description,accent) in enumerate(APPS):
  app=ROOT/'apps'/slug

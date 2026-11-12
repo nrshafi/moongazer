@@ -72,7 +72,16 @@ for app in sorted((ROOT/'apps').iterdir()):
     assets=[file for file in dist.rglob('*') if file.is_file()]
     assert len(assets)<=20000 and max(file.stat().st_size for file in assets)<=25*1024*1024
     for path in (dist/'_astro').glob('*.js'):
-        assert not re.search(r'\bfetch\s*\(',path.read_text(encoding='utf-8')),f'Unexpected runtime fetch: {path}'
+        script=path.read_text(encoding='utf-8')
+        assert not re.search(r'\bfetch\s*\(',script),f'Unexpected runtime fetch: {path}'
+        # P4: the only network call allowed in app code is the anonymous counter beacon to the apex.
+        if 'sendBeacon' in script:
+            assert 'https://moongazer.tech/api/event' in script,f'Unexpected beacon target: {path}'
+            for literal in re.findall(r'sendBeacon\s*\(\s*["\'`]([^"\'`]*)["\'`]',script):
+                assert literal=='https://moongazer.tech/api/event',f'Unexpected beacon target {literal}: {path}'
+    for path in pages:
+        for action in re.findall(r'<form[^>]*\saction="([^"]*)"',path.read_text(encoding='utf-8')):
+            if urlsplit(action).netloc: assert action=='https://moongazer.tech/api/feedback',f'Unexpected form action {action} on {path}'
     results.append(dict(app=app.name,pages=len(pages),files=len(assets),bytes=sum(p.stat().st_size for p in assets),canonicalTextVerified=True,localLinksVerified=True,externalRuntimeAssets=False))
 output=ROOT/'_implementation/qa/static-results.json';output.parent.mkdir(exist_ok=True)
 output.write_text(json.dumps(results,indent=2),encoding='utf-8')

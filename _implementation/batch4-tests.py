@@ -1,6 +1,6 @@
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
-SLUGS=['islamic-civilization-timeline','halal-business-decisions','revelation-context-explorer','family-islamic-learning-challenges','islamic-misinformation-casebook']
+SLUGS=['civilization-timeline','halal-business-decisions','why-it-was-revealed','family-halaqa','islamic-misinformation-casebook']
 COMMON='''import {test,expect} from 'bun:test';
 import {matchesFilters,normalize,type Filters} from '../src/lib/catalog';
 const blank:Filters={query:'',topic:'',region:'',age:'',from:'',to:''};
@@ -19,7 +19,7 @@ test('year filtering keeps overlapping bands instead of testing only their start
 });
 '''
 EXTRA={
- 'islamic-civilization-timeline':'''import {events,landPaths} from '../src/data/content.json';
+ 'civilization-timeline':'''import {events,landPaths} from '../src/data/content.json';
 import {compareBands} from '../src/lib/engine';
 test('twenty-four records preserve independent source precision and all nine regions',()=>{
  expect(events).toHaveLength(24);expect(new Set(events.map(item=>item.id)).size).toBe(24);
@@ -60,7 +60,7 @@ test('case content has specific consequences and a distinct second decision for 
  for(const item of cases){expect(item.choices).toHaveLength(3);expect(item.repairs).toHaveLength(2);expect(new Set(item.choices.map(choice=>choice.consequence)).size).toBe(3);expect(item.facts.length).toBeGreaterThan(1);expect(item.passage.arabic.length).toBeGreaterThan(20);expect(item.commentaryUrl).toContain('/tafsirs/');}
 });
 ''',
- 'revelation-context-explorer':'''import {readings} from '../src/data/content.json';
+ 'why-it-was-revealed':'''import {readings} from '../src/data/content.json';
 import {checkRelationship,relationships} from '../src/lib/assessment';
 test('relationship grading accepts only the three known labels and the intended reading',()=>{
  for(const correct of relationships)for(const answer of [...relationships,'occasion',null,2,{}])expect(checkRelationship(answer,correct)).toBe(answer===correct);
@@ -75,7 +75,7 @@ test('later responses are not silently relabeled as causes of revelation',()=>{
  expect(readings.find(item=>item.id==='safa-marwa')!.sources).toHaveLength(2);
 });
 ''',
- 'family-islamic-learning-challenges':'''import {packs} from '../src/data/content.json';
+ 'family-halaqa':'''import {packs} from '../src/data/content.json';
 import {newSession,validSession,answerQuestion,finishStep} from '../src/lib/engine';
 test('each pack can be completed in order, after retrying a wrong reading answer',()=>{
  for(const pack of packs){

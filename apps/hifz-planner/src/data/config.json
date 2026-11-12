@@ -1,0 +1,8 @@
+{
+  "slug": "hifz-planner",
+  "name": "Hifz Planner",
+  "description": "Plan new memorization and revision around your week",
+  "accent": "teal",
+  "nav": "Plan",
+  "port": 4326
+}

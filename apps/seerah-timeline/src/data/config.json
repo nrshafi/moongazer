@@ -1,0 +1,8 @@
+{
+  "slug": "seerah-timeline",
+  "name": "Seerah Timeline",
+  "description": "The Prophet's life ﷺ from 610 to 632, with a “Which came first?” game",
+  "accent": "teal",
+  "nav": "Read",
+  "port": 4325
+}

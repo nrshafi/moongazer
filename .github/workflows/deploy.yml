@@ -49,13 +49,22 @@ jobs:
       - name: Validate SEO before publication
         run: |
           bun test _implementation/seo.test.ts
+          bun test homepage/tests
           python3 deployment/verify-seo.py
-      - name: Upload and deploy
+      - name: Upload and deploy apps
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           DEPLOY_COMMIT: ${{ github.sha }}
         run: node deployment/deploy-ci.mjs
+      # The apex has Pages Functions (/api/*) and a D1 binding from homepage/wrangler.toml,
+      # so it is deployed with Wrangler instead of the Direct Upload script.
+      - name: Deploy directory and API
+        working-directory: homepage
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node ../deployment/node_modules/wrangler/bin/wrangler.js pages deploy dist --project-name moongazer --branch main --commit-hash "$GITHUB_SHA" --commit-dirty=false
       - name: Verify live sites
         run: node deployment/verify-live.mjs
       - name: Verify live SEO

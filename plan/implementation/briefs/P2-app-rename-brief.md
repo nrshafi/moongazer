@@ -20,21 +20,21 @@ Name table (authoritative; "nav" is already done by the orchestrator):
 | Folder | Name | Descriptor |
 | --- | --- | --- |
 | guess-the-surah | Guess the Surah | Find the surah from its clues |
-| quran-connections | Ayah Threads | Three ayat, one hidden thread: a Quran puzzle |
-| islamic-concept-connections | Word Groups | Sixteen Quran words, four hidden groups |
-| islamic-knowledge-escape-room | Quran Escape Room | Rooms of Quran puzzles to solve together |
-| is-this-actually-in-the-quran | Is It in the Quran? | Search every ayah in Arabic and English |
-| stories-of-the-prophets-explorer | Stories of the Prophets | The prophets in the Quran: read, reflect and check |
-| quranic-parables-studio | Parables of the Quran | The Quran's parables, explained |
-| quranic-places-atlas | Places in the Quran | A map of the places the Quran names, and where certainty ends |
-| revelation-context-explorer | Why It Was Revealed | Asbab al-nuzul: the reports behind selected ayat |
-| interactive-seerah-timeline | Seerah Timeline | The Prophet's life ﷺ from 610 to 632 |
-| the-seerah-detective | Seerah Detective | Solve cases from the Prophet's life ﷺ using the reports |
-| islamic-civilization-timeline | Civilization Timeline | Islamic civilization across regions |
-| understand-salah-lab | Understand Your Salah | The meaning of the words you say in prayer |
-| quran-memorization-workload-calculator | Hifz Planner | Estimate new memorization and revision time for your week |
-| everyday-akhlaq-simulator | Everyday Akhlaq | Everyday character dilemmas: choose, then read the sources |
-| family-islamic-learning-challenges | Family Halaqa | Ten-minute Islamic activities to do together |
+| ayah-threads | Ayah Threads | Three ayat, one hidden thread: a Quran puzzle |
+| word-groups | Word Groups | Sixteen Quran words, four hidden groups |
+| quran-escape-room | Quran Escape Room | Rooms of Quran puzzles to solve together |
+| is-it-in-the-quran | Is It in the Quran? | Search every ayah in Arabic and English |
+| stories-of-the-prophets | Stories of the Prophets | The prophets in the Quran: read, reflect and check |
+| parables-of-the-quran | Parables of the Quran | The Quran's parables, explained |
+| places-in-the-quran | Places in the Quran | A map of the places the Quran names, and where certainty ends |
+| why-it-was-revealed | Why It Was Revealed | Asbab al-nuzul: the reports behind selected ayat |
+| seerah-timeline | Seerah Timeline | The Prophet's life ﷺ from 610 to 632 |
+| seerah-detective | Seerah Detective | Solve cases from the Prophet's life ﷺ using the reports |
+| civilization-timeline | Civilization Timeline | Islamic civilization across regions |
+| understand-your-salah | Understand Your Salah | The meaning of the words you say in prayer |
+| hifz-planner | Hifz Planner | Estimate new memorization and revision time for your week |
+| everyday-akhlaq | Everyday Akhlaq | Everyday character dilemmas: choose, then read the sources |
+| family-halaqa | Family Halaqa | Ten-minute Islamic activities to do together |
 | quran-concept-atlas | (merge-bound, keep "Quran Concept Atlas") | |
 | islamic-history-timeline-challenge | (merge-bound, keep "Islamic History Timeline Challenge") | |
 | halal-business-decisions | (merge-bound, keep "Halal Business Decisions") | |

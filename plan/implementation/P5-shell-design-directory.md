@@ -16,10 +16,10 @@
 
 | Family | Apps (folders) | Light `--accent` / `--accent-hover` / `--tint` | Dark `--accent` / `--accent-hover` / `--tint` |
 | --- | --- | --- | --- |
-| Quran (teal) | guess-the-surah, quran-connections, islamic-concept-connections, is-this-actually-in-the-quran, stories-of-the-prophets-explorer, quranic-parables-studio, quranic-places-atlas, revelation-context-explorer | `#087f75` / `#06665f` / `#e5f3ef` (existing) | `#78d4c2` / `#9ce7d7` / `#203d3c` (existing) |
-| Seerah & history (gold) | interactive-seerah-timeline, the-seerah-detective, islamic-civilization-timeline | `#b8860b` / `#996f08` / `#fef8eb` | `#e5b94e` / `#f0cc75` / `#332b1f` |
-| Worship & daily life (blue) | understand-salah-lab, quran-memorization-workload-calculator, everyday-akhlaq-simulator, (zakat-calculator) | `#2563eb` / `#1d4ed8` / `#eff4fe` | `#60a5fa` / `#93c5fd` / `#1c283f` |
-| Family & group (violet) | family-islamic-learning-challenges, islamic-knowledge-escape-room | `#7c3aed` / `#6d28d9` / `#f3effc` | `#a78bfa` / `#c4b5fd` / `#2c1e42` |
+| Quran (teal) | guess-the-surah, ayah-threads, word-groups, is-it-in-the-quran, stories-of-the-prophets, parables-of-the-quran, places-in-the-quran, why-it-was-revealed | `#087f75` / `#06665f` / `#e5f3ef` (existing) | `#78d4c2` / `#9ce7d7` / `#203d3c` (existing) |
+| Seerah & history (gold) | seerah-timeline, seerah-detective, civilization-timeline | `#b8860b` / `#996f08` / `#fef8eb` | `#e5b94e` / `#f0cc75` / `#332b1f` |
+| Worship & daily life (blue) | understand-your-salah, hifz-planner, everyday-akhlaq, (zakat-calculator) | `#2563eb` / `#1d4ed8` / `#eff4fe` | `#60a5fa` / `#93c5fd` / `#1c283f` |
+| Family & group (violet) | family-halaqa, quran-escape-room | `#7c3aed` / `#6d28d9` / `#f3effc` | `#a78bfa` / `#c4b5fd` / `#2c1e42` |
 
 Full light/dark sets (`--bg`, `--surface`, `--ink`, `--muted`) are in `DESIGN_RECOMMENDATIONS.md` §4. **Every text/background pair must reach 4.5:1** (3:1 for ≥24 px or bold ≥18.66 px). Gold `#b8860b` on white is below 4.5:1 for body text: add `--accent-ink` per family for text use (for gold light, a darker value such as `#7a5a00`; compute and record the ratio), and use `--accent` only for fills, borders and large text. Record every computed ratio in `DESIGN.md`.
 
@@ -117,8 +117,8 @@ Steps (top to bottom, phone first):
 6. The four subject guides follow the library as compact wide cards with member logos.
 7. Seasonal slot container (P7 fills).
 8. Trust row: "Exact Quran text with named translation · Sources on every page · Corrections log →" (no reviewer claim).
-9. Short links in `homepage/_redirects`, 302 to each app root: `/surah`, `/threads`, `/groups`, `/escape`, `/check`, `/prophets`, `/parables`, `/places`, `/revealed`, `/seerah`, `/detective`, `/civilization`, `/salah`, `/hifz`, `/akhlaq`, `/family`, `/feedback` (internal). Confirm absolute destinations are supported in Pages `_redirects` (official docs) and record the URL in `context/architecture.md`. Add them to the footer.
-Acceptance: first app card visible on screen one at 390 × 844; JS off still lists all apps; short links resolve locally (`bunx wrangler pages dev dist` from `homepage/`).
+9. ~~Short links~~ — dropped under D2c (no redirects). Each app's own host is already short (for example `guess-the-surah.moongazer.tech`); the footer links to the hosts directly.
+Acceptance: first app card visible on screen one at 390 × 844; JS off still lists all apps.
 Verify: V4, V6, V7.
 
 ### T5.16 Social cards

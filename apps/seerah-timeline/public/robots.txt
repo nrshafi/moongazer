@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seerah-timeline.moongazer.tech/sitemap.xml

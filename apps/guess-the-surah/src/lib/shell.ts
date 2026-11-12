@@ -1,5 +1,4 @@
 import { namespace, read, write } from './utils';
-import { encodePayload } from './import';
 
 // Focus outlines are reserved for keyboard navigation, including new controls.
 document.addEventListener('pointerdown', () => {
@@ -18,17 +17,14 @@ document.getElementById('storage-open')?.addEventListener('click',()=>dialog.sho
 document.getElementById('storage-clear')?.addEventListener('click',()=>{try {const prefix=namespace()+':';for(let i=localStorage.length-1;i>=0;i--){const key=localStorage.key(i);if(key?.startsWith(prefix))localStorage.removeItem(key);}}catch{}location.reload();});
 document.addEventListener('click',event=>{const target=event.target as HTMLElement;if(target.closest('[data-print]'))window.print();});
 
-// Moved apps (P3 step A): the shell renders a banner with #moved-link when config.json has "moved".
-// On click, carry this app's saved items (except the theme) to the receiving app in the URL fragment.
-const movedLink = document.getElementById('moved-link') as HTMLAnchorElement | null;
-movedLink?.addEventListener('click', () => {
-  const items: Record<string, unknown> = {};
-  try {
-    const prefix = namespace() + ':';
-    const keys: string[] = [];
-    for (let i = 0; i < localStorage.length; i++) { const key = localStorage.key(i); if (key?.startsWith(prefix)) keys.push(key.slice(prefix.length)); }
-    for (const key of keys) { if (key === 'theme') continue; const value = read(key, (_v): _v is unknown => true); if (value !== null) items[key] = value; }
-  } catch { /* storage blocked: open the new page without saved items */ }
-  const payload = encodePayload(namespace(), items);
-  movedLink.href = movedLink.href.split('#')[0] + (payload ? '#import=' + payload : '');
+// Feedback (P4): at submit, record how long the page has been open (performance.now(), not the device
+// clock) for the server's minimum time-to-submit check, and open the footer form from compact links.
+document.addEventListener('submit', event => {
+  const input = (event.target as HTMLElement).querySelector<HTMLInputElement>('[data-feedback-time]');
+  if (input) input.value = String(Math.round(performance.now()));
+});
+document.addEventListener('click', event => {
+  if (!(event.target as HTMLElement).closest('[data-open-feedback]')) return;
+  const details = document.getElementById('site-feedback') as HTMLDetailsElement | null;
+  if (details) details.open = true;
 });

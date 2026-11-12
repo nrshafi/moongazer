@@ -211,3 +211,69 @@ Implemented T2.1–T2.8 on `phase-2-names` (per-app work delegated to five subag
 ## 2026-11-11T12:10:36+06:00 — P3 step A verified; R3 held for spot-check
 
 T3.1–T3.8 done on `phase-3-merges` (receiving sections by four subagents; import protocol, shell banner, redirect map, directory and validator by the orchestrator; claims verified by a separate subagent). Full checks in `plan/implementation/releases/R3.md`. Not released: the 12 rebuilt claims need the owner's spot-check before merge to `main`.
+
+## 2026-11-11T18:27:45+06:00 — P4.1–P4.4 and P4.8 built and tested locally (branch phase-4-services)
+
+Tasks done: T4.1 context, T4.2 wrangler pin and apex config, T4.3 validator and tests, T4.4 Functions, T4.8 owner scripts. T4.5–T4.7 (UI, shared components, app wiring) were not in this scope and are not done. T4.9–T4.10 are not started. Nothing was pushed, merged or deployed, and no `--remote` D1 command was run. The branch is based on `phase-3-merges` (P3 step A, not yet merged to `main`).
+
+Commits on the branch, oldest first: 2fbc7c3 wrangler pin; 7f90128 P4.1 context; c5c5503 `.wrangler/` ignore; 58a3c84 wrangler.toml and `_routes.json`; 18d3d04 migration 0001; 33d5684 allowlist script and `apps.json`; 87eaaee validator and tests; 41ab183 feedback Function; ffa627a event Function; 37f05eb owner scripts and README; this entry, the DNA status line and the P4 row in `00-INDEX.md` are in the commit after 37f05eb.
+
+Decisions and documentation:
+- Wrangler `4.160.0` is pinned exactly in `deployment/package.json`. `bunx --bun wrangler` failed on Windows (clone error for `wrangler-dist/cli.js`), so wrangler runs as `node deployment/node_modules/wrangler/bin/wrangler.js` from `homepage/`.
+- Docs checked (URLs in `context/architecture.md`, "Dependencies and documentation checked"). `_routes.json` sits in the build directory, so `homepage/_routes.json` is copied into `dist/` by `build.mjs`. The Pages get-started page says `/functions` belongs at the project root and not in the static output folder. The docs do not say the functions directory is found from the working directory, so `wrangler pages dev dist` run from `homepage/` was checked locally instead.
+- Invalid form fields return a fixed 400 reason; honeypot and timing failures return 303 and store nothing (as specified). Non-POST methods return 405 through a catch-all `onRequest`. The beacon returns 204 for every bad input.
+- The local D1 write response does not report `meta.changes`, so `review-feedback.mjs set` checks for the row with a SELECT first.
+
+Checks run and results:
+- `bun test homepage/tests`: 51 pass, 0 fail (validator table tests).
+- `node homepage/build.mjs`: built 6 directory pages and 16 app links; `dist/_routes.json` present.
+- `wrangler d1 migrations apply moongazer --local` (run from `homepage/`): `0001_init.sql` applied, 4 commands successful.
+- `wrangler pages dev dist --port 8788 --ip 127.0.0.1` (from `homepage/`): compiled, `env.DB` bound to local D1. Server stopped afterwards. Its log showed no errors.
+  - Valid form POST (t 5 s old) → 303, `Location: https://moongazer.tech/feedback/thanks/?from=guess-the-surah`, `Cache-Control: no-store`. Local feedback table: one row, status `pending`, `no_js` 0.
+  - Honeypot POST (`website` filled) → 303; too-fast POST (t = now) → 303. Both added no rows.
+  - GET and PUT on `/api/feedback` → 405. GET on `/api/event` → 405.
+  - Two valid beacons `{"a":"guess-the-surah","i":"home","e":"activity_started"}` → 204 each. Local `event_counts`: one row, count 2.
+  - Malformed beacon and unknown-app beacon → 204, no rows added.
+- Owner scripts, `--local` only: `list` (pending row shown, contact hidden), `set` success path and missing-id error, `set` with an invalid status error, `publish` (appended one entry to `homepage/corrections.json`, row marked verified; the test file was deleted and not committed), `counter-report` CSV (completion rate 0.000 for 2 started / 0 completed), and an invalid date range error.
+
+Not verified or still open:
+- No TypeScript typecheck of `homepage/functions/`. The homepage has no tsconfig, and `bun test` does not typecheck. The Functions use minimal local D1 types and the global `crypto`, `Request` and `Response`.
+- Not run: remote D1 migrations, `wrangler pages deploy`, the zone rate-limit rule, and any live request. All are owner steps in T4.10.
+- Privacy wording (T4.9 and T4.6 step 5) is not drafted in this scope.
+- Local test rows and `homepage/.wrangler/` remain on this machine only (ignored by Git).
+
+## 2026-11-12T00:10:00+06:00 — P4 complete; R4 released by the agent (D2b)
+
+T4.5–T4.7 and T4.9–T4.10 done on `phase-4-services`. The owner gave full delegation on 2026-11-11, so production setup and the privacy wording were agent-approved (`plan/implementation/releases/R4.md`).
+- Production setup: D1 `moongazer` was migrated with `migrations apply --remote`. The CI token holds D1 Edit and Pages Edit. Rate-limit rule `017d4ac601c8412a9377b3f144a681cf` covers `/api/*` (10 requests per 10 s per IP, block for 10 s).
+- CI: the apex deploys with `wrangler pages deploy` and the apps with Direct Upload `--apps-only`.
+- Counter events are wired in 16 apps by four Haiku subagents. Hifz Planner waits for `phase-7-hifz`.
+- Found and fixed during verification:
+  - The shared footer form's `id="feedback"` clashed with many apps' own status lines; it is now `#site-feedback`.
+  - Astro dropped the word gaps inside the form; they are now explicit.
+- Validation: 20/20 check, 441 tests and 20/20 build. sync-shared identical; 62 repo tests; verify-static 383 pages; verify-seo passed (393 pages); text-join audit 0. `_implementation/counter-check.mjs` passed 14/14. A local `wrangler pages dev` curl run gave the expected 303/400/405/204 and stored the expected rows.
+- Limits:
+  - `homepage/functions/` is still not type-checked; esbuild compiles it through `wrangler pages functions build`.
+  - The beacon check samples 4 of 16 apps in a browser; the other 12 are covered by source-level tests and the build.
+  - Live results are recorded in R4 after CI.
+
+## 2026-11-12T05:50:00+06:00 — P3B: retire the four merged apps (D2c)
+
+Branch `phase-3b-retire` (from `phase-3b-hosts`). The four merged apps are deleted with no redirects, no moved release and no import path; the receiving sections stay.
+- Deleted `quran-concept-atlas`, `islamic-history-timeline-challenge`, `halal-business-decisions` and `islamic-misinformation-casebook`. Removed them from targets, seo-catalog, learning-guides, per-app learning guides, the app allowlist (regenerated), logos script, README, DEPLOYMENT and SEARCH_CONSOLE_SETUP. Dropped the `retired` field and the homepage and verify-seo filters.
+- Removed the moved banner, `encodePayload` click handler and banner CSS from the shared shell; deleted `import.ts` and its test from all 16 apps and `merge-import.ts` with tests from the four receivers (plus `claimIdMap`, the old-app import rules, and old-app comparisons in tests). `appContentSha256` refreshed for `is-this-actually-in-the-quran`.
+- Deleted `merge-redirects.json`, `build-redirect-map.ts` and `redirect-map.test.ts`. `verify.ts` and `preview.ts` lose the batch slices; e2e flows for the deleted apps are gone.
+- Corrections log: removed the three entries that pointed at deleted apps.
+- Left as history: `_build/`, `_implementation/batch*`, `populate-context.py`, `_implementation/research/`, and the `deployment/` release and status records (`status.json`, `automation-result.json`, `seo-*release.json`, `search-console.json`), which describe what was deployed.
+- Validation: verify.ts check 16/16 (0 errors, 0 warnings), test 16/16 (251 pass, 0 fail), build 16/16; sync-shared identical; `bun test _implementation/seo.test.ts homepage/tests` 60 pass; homepage build 8 pages and 16 app links; verify-static 313 pages; verify-seo passed (17 sites, 323 pages); text-join audit 0 unexplained joins. No push and no Cloudflare action.
+
+## 2026-11-12T06:20:00+06:00 — D2c: merged apps deleted, 16 apps on new hosts (R3B)
+
+The owner asked to keep only the new things, with no redirects (decision D2c in `plan/implementation/00-INDEX.md`). Work was split across subagents:
+- A Sonnet subagent deleted the four merged apps and the moved, import and redirect machinery.
+- The orchestrator renamed the 16 apps to slugs and hosts that match their names, and set up Cloudflare.
+- A Haiku subagent refreshed the per-app docs.
+
+Validation: 16/16 check, test and build (251 tests); sync identical; 60 repo tests; verify-static 313 pages; verify-seo passed; text joins 0; `host-smoke.mjs` 16/16; counter check passed.
+
+Two Pages projects carry an `-app` suffix because Cloudflare refused the plain names. Old projects and DNS records are deleted after the live check. Details are in `plan/implementation/releases/R3B.md`.

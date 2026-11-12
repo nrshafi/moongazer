@@ -13,6 +13,8 @@ These are final. Do not ask the owner again. A conflict between this table and a
 | D1 | Plan format | This folder: index, protocol, one file per phase, numbered self-contained tasks. |
 | D2 | Authorization | The confirmed plan authorizes all **local** code, content and documentation work in it. Anything that reaches production needs the owner's explicit request each time: push or merge to `main`, Cloudflare DNS, redirect rules, rate-limit rules, D1 creation, new Pages projects, Search Console changes. |
 | D2a | Authorization update (11 Nov 2026) | The owner later authorized the implementing agent to push to GitHub (which deploys) and to use the Cloudflare account, phase by phase, pausing only where a phase needs the owner's own input. |
+| D2b | Full delegation (11 Nov 2026) | The owner gave the implementing agent full permission to make the owner-input decisions (spot-checks, privacy wording, production setup) without asking. Each such decision is recorded in the release note as agent-made. |
+| D2c | New hosts, no redirects (12 Nov 2026) | The owner asked to keep only the new things: the four merged apps (quran-concept-atlas, islamic-history-timeline-challenge, halal-business-decisions, islamic-misinformation-casebook) are deleted with their Pages projects and subdomains, and the 16 kept apps move to subdomains matching their new names, with **no redirects** from any old host. This supersedes P3 step B (301s), REPORT §A4 rule 9 (hosts stay) and the P5 apex short links. Slug map: quran-connections→ayah-threads, the-seerah-detective→seerah-detective, everyday-akhlaq-simulator→everyday-akhlaq, interactive-seerah-timeline→seerah-timeline, quran-memorization-workload-calculator→hifz-planner, is-this-actually-in-the-quran→is-it-in-the-quran, islamic-knowledge-escape-room→quran-escape-room, stories-of-the-prophets-explorer→stories-of-the-prophets, quranic-places-atlas→places-in-the-quran, islamic-concept-connections→word-groups, understand-salah-lab→understand-your-salah, quranic-parables-studio→parables-of-the-quran, islamic-civilization-timeline→civilization-timeline, revelation-context-explorer→why-it-was-revealed, family-islamic-learning-challenges→family-halaqa; guess-the-surah unchanged. Saved browser data does not carry over (new origins). |
 | D3 | Git | One branch per phase (`phase-N-short-name`), one commit per task, never push. Content work uses `content/<app-slug>` branches. The owner reviews, merges and pushes. |
 | D4 | Releases | Publish after each phase passes verification (the owner pushes `main`; GitHub Actions deploys). |
 | D5 | Pre-freeze scope | Defects, names/honorifics, merges, first-party services, activity-first shell and directory, daily games and sharing, Hifz Planner, Zakat Calculator, Ramadan hub, Diagnostic Mastery Loop in four apps, **and the Depth Gate for all 16 apps**, all before the code freeze. |
@@ -34,7 +36,7 @@ These are final. Do not ask the owner again. A conflict between this table and a
 | D21 | Verify_Me | Triaged: accessibility, spoiler and copy bugs go into phase 1; app UX items go into the app's phase or content tasks; a modern English translation is a licence research task only. See `appendix-verify-me-triage.md`. |
 | D22 | Daily numbering | Daily puzzle `#1` is the day daily mode is first published. The epoch is one constant, identical in every daily app and the directory, set when the owner schedules release R6. |
 | D23 | Zakat | At every point where schools differ (personal-use jewellery, debt deduction, nisab metal), the learner chooses a labelled option with a source note. Both nisab bases are shown. No default ruling. The printed summary lists the choices made. |
-| D24 | Booktube | Out of scope except interfaces: short links and a small static daily JSON export (phase 6) that Booktube can read. Video production has its own plan in the Booktube repository. |
+| D24 | Booktube | Out of scope except interfaces: app hosts (no apex short links, D2c) and a small static daily JSON export (phase 6) that Booktube can read. Video production has its own plan in the Booktube repository. |
 | D25 | After Ramadan | New apps (Quran Words, Names of Allah, Alif Ba), then the Bangla edition of five apps, then platform work (install/offline, zero-account backup code, cross-app streak, teachers page). Accounts only on demonstrated demand. |
 
 Standing rules that also still apply: no music, instruments, bells or chimes; no images of people or animals in any medium; exact canonical Quran text and named translation; honorifics; no accounts, ads or third-party scripts; anonymous-first; namespaced 30-day optional storage. See `context/project-dna.md`.
@@ -129,9 +131,9 @@ Update this table when a task or phase starts or finishes (see protocol §6).
 | P0 | Done | main (uncommitted) | 2026-11-11 | Plan written; superseded banners added; DNA and services plan updated. |
 | P1 | Done (R1 pushed) | phase-1-trust-fixes → main | 2026-11-11 | 19 tasks + tooling; see `releases/R1.md`. Tasks delegated to Sonnet/Haiku subagents were reviewed and committed by the orchestrator. |
 | P2 | Done (R2 pushed) | phase-2-names → main | 2026-11-11 | Names, nav verbs, interface words, honorifics, directory, social cards; see `releases/R2.md`. |
-| P3 step A | Verified; release held for owner spot-check of 12 claims | phase-3-merges (pushed, not merged) | 2026-11-11 | See `releases/R3.md`. |
-| P3 step B | Not started | | | |
-| P4 | Not started | | | |
+| P3 step A | Done (R3 pushed 2026-11-11) | phase-3-merges → main | 2026-11-11 | Step B (301s) on or after 2026-11-11 + 14 days. See `releases/R3.md`. |
+| P3 step B | Replaced by D2c (R3B) | phase-3b-hosts → main | 2026-11-12 | Merged apps deleted; 16 apps on new hosts; no redirects. See `releases/R3B.md`. |
+| P4 | Done (R4 pushed 2026-11-12) | phase-4-services → main | 2026-11-12 | Feedback form, corrections log, anonymous counter (16 apps; Hifz with P7). Production setup agent-run under D2b; see `releases/R4.md`. |
 | P5 | Not started | | | |
 | P6 | Not started | | | |
 | P7 | Not started | | | |

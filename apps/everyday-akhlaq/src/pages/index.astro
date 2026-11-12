@@ -1,0 +1,19 @@
+---
+import learning from '../data/learning.json';
+import Shell from '../layouts/Shell.astro';
+import data from '../data/content.json';
+const entries=[...data.scenarios.map(item=>({...item,base:'scenario'})),...data.business.map(item=>({...item,base:'business'}))];
+const topics=[...new Set(entries.map(s=>s.topic))].sort();
+const tracks=[{id:'all',label:'All scenarios'},{id:'home',label:'Home & family'},{id:'study',label:'Study & work'},{id:'business',label:'Business'}];
+---
+<Shell title="Everyday Akhlaq">
+  <section class="intro"><div class="intro-top"><span class="eyebrow">Character in the everyday</span> <span class="pill"><span class="dot"></span>{entries.length} scenarios</span></div> <h1>{learning.heading}</h1> <p>A message, a promise, a difficult conversation, a fair price. Choose how to respond, see what could follow, then read the sources.</p></section>
+  <div class="notice bottom-gap"><strong>New: a business track.</strong> Twelve scenarios about disclosure, promises and fair dealing. <a href="/business/">Business scenarios <span aria-hidden="true">→</span></a></div>
+  <div class="track-tabs bottom-gap" role="group" aria-label="Scenario track">{tracks.map((track,index)=><><button type="button" class="button secondary small" data-track-tab={track.id} aria-pressed={index===0?'true':'false'}>{track.label}</button>{' '}</>)}</div>
+  <div class="filters bottom-gap"><label class="field search-field">Search scenarios<input type="search" id="scenario-search" placeholder="Search friendship, family, online…"/></label> <label class="field">Setting<select id="scenario-topic"><option value="all">All settings</option>{topics.map(topic=><option value={topic}>{topic}</option>)}</select></label> <span class="count-label" id="scenario-count" role="status">{entries.length} scenarios</span></div>{' '}
+  <div class="card-grid">{entries.map(item=><article class="panel activity-card" data-search={`${item.title} ${item.scene} ${item.topic}`.toLowerCase()} data-topic={item.topic} data-track={item.track}><span class="pill neutral">{item.topic}</span> <h2>{item.title}</h2> <p>{item.scene}</p> <span class="micro">Two decisions · about 3 minutes</span> <a class="button secondary wide" href={`/${item.base}/${item.id}/`}>Open this scenario <span aria-hidden="true">→</span></a></article>)}</div>{' '}
+  <div class="empty panel" id="scenario-empty" hidden><h2>No scenarios match yet.</h2> <p>Try a broader search or another setting.</p><button class="button secondary" id="scenario-reset">Clear filters</button></div>{' '}
+  <div class="notice top-gap"><strong>Practice, with room to reflect.</strong> These are fictional scenarios. Consequences are possibilities, not predictions. Applied reasoning is labeled and kept separate from the cited source text.</div>
+</Shell>
+<script>import '../lib/catalog';</script>
+<style>.track-tabs{display:flex;flex-wrap:wrap;gap:8px}.track-tabs button[aria-pressed=true]{border-color:var(--accent);background:var(--tint);color:var(--accent-ink)}</style>

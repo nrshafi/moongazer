@@ -83,7 +83,7 @@ Brief 06 is formally authorized as the immediate next work unit. It encompasses 
   {
     "id": "uuid-v4",
     "timestamp": "ISO-8601",
-    "app_slug": "understand-salah-lab",
+    "app_slug": "understand-your-salah",
     "page_url": "/lesson/al-fatiha-1/",
     "category": "source_or_text_correction",
     "message": "Typo in ayah 4 translation...",
@@ -111,10 +111,10 @@ Brief 06 is formally authorized as the immediate next work unit. It encompasses 
 ### 4-App Merge (Brief 10):
 | Old App (To be 301-Redirected) | Receiving Host App | New Integrated Feature |
 | :--- | :--- | :--- |
-| `quran-concept-atlas` | `quran-connections` (Ayah Threads) | Integrated Theme Library unlocked upon solving |
-| `islamic-history-timeline-challenge` | `interactive-seerah-timeline` | "Which came first?" daily challenge mode |
-| `halal-business-decisions` | `everyday-akhlaq-simulator` | Dedicated Business & Workplace ethical track |
-| `islamic-misinformation-casebook` | `is-this-actually-in-the-quran` | "Common Claims" search & verification tab |
+| `quran-concept-atlas` | `ayah-threads` (Ayah Threads) | Integrated Theme Library unlocked upon solving |
+| `islamic-history-timeline-challenge` | `seerah-timeline` | "Which came first?" daily challenge mode |
+| `halal-business-decisions` | `everyday-akhlaq` | Dedicated Business & Workplace ethical track |
+| `islamic-misinformation-casebook` | `is-it-in-the-quran` | "Common Claims" search & verification tab |
 
 ### The 4-Part Depth Gate Criteria:
 Every single app must satisfy all four gates before Ramadan launch:

@@ -2,5 +2,8 @@
   "name": "moongazer-deployment-tools",
   "private": true,
   "type": "module",
-  "devDependencies": { "blake3-wasm": "2.1.5" }
+  "devDependencies": {
+    "blake3-wasm": "2.1.5",
+    "wrangler": "4.160.0"
+  }
 }

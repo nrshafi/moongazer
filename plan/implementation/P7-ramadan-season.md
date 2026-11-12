@@ -6,7 +6,7 @@
 
 App-lane work here must not edit shared files (`00-INDEX.md` §3). After each shared phase merges, run `bun _implementation/sync-shared.ts --from guess-the-surah <shared files>` so the new app receives the latest shell, then rebuild.
 
-## Part 1 — Hifz Planner (`quran-memorization-workload-calculator`)
+## Part 1 — Hifz Planner (`hifz-planner`)
 
 Keep the engine and its tests; build on top.
 

@@ -105,3 +105,10 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 - Interface words: "Makkan/Madinan classification" pool options -> "Revealed in Makkah/Madinah"; "Listen with your eyes" -> "The Arabic"; structure clue now "lists it as revealed in Makkah/Madinah".
 - Honorifics: no editorial mention of the Prophet or other prophets in this app (only the surah name Muhammad). No content.json change (hash unchanged 60f44c4d...).
 - Checks: `bun run check` 0 errors/0 warnings; `bun test` 15 pass, 0 fail; `bun run build` 4 pages; dist grep for retired phrases: none.
+
+## P4.7 counter hook points (11 Nov 2026, Asia/Dhaka 23:30)
+- Wired `track()` in the activity code and documented the hook points in `context/architecture.md`; no unit test (wiring only, helper already tested). Checks: `bun run check` 0 errors, 0 warnings; `bun run test` 23 pass, 0 fail; `bun run build` 4 pages. Not run: e2e preview and a live beacon. Deployment not performed.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.

@@ -1,0 +1,18 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import {categories} from '../../lib/claims';
+import {esc,withHonorifics} from '../../lib/utils';
+import {claims} from '../../data/content.json';
+export function getStaticPaths(){return claims.map(claim=>({params:{id:claim.id},props:{claim}}));}
+const {claim:c}=Astro.props;
+const html=(text:string)=>withHonorifics(esc(text));
+---
+<Shell title={c.question}>
+ <a class="back-link" href="/claims/">← All claims</a><section class="intro"><span class="eyebrow">A claim to check</span> <h1>{c.question}</h1> <p>Read what people say and the evidence, then choose what you think.</p></section>
+ <section class="panel panel-body bottom-gap"><span class="eyebrow">The claim</span> <h2 set:html={html(c.claim)}/></section>
+ <section class="bottom-gap" aria-labelledby="evidence-heading"><h2 id="evidence-heading">The evidence</h2>{c.evidence.quran.map(v=><article class="panel bottom-gap"><div class="panel-head"><h3>Quran {v.ref}</h3> <a href={`https://quran.com/${v.ref}?translations=19`} target="_blank" rel="noopener noreferrer">Read context ↗</a></div><div class="panel-body"><p class="arabic" lang="ar" dir="rtl">{v.arabic}</p><blockquote class="source-quote">{v.translation}</blockquote><p class="micro">Marmaduke Pickthall · historical English wording · Uthmani Hafs Arabic</p></div></article>)}{c.evidence.hadith.length>0&&<section class="panel panel-body"><h3>Reports</h3><ul class="source-list">{c.evidence.hadith.map(r=><><li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.collection} {r.number} ↗</a><small set:html={html(r.summary)}/></li>{' '}</>)}</ul><p class="micro">Reports are summarized in our own words. This app does not republish modern English hadith translations.</p></section>}</section>
+ <section class="panel panel-body bottom-gap"><h2>What do you think?</h2><form id="claim-form" data-category={c.category} data-claim-id={c.id} hidden><fieldset><legend>Which fits this claim best?</legend>{categories.map(name=><><label class="check-label"><input type="radio" name="answer" value={name} required/> {name}</label>{' '}</>)}</fieldset><button class="button top-gap">Check</button></form><p id="claim-status" class="micro top-gap" role="status"></p>
+ <details id="answer" class="top-gap"><summary>Show the answer</summary><div><h2 tabindex="-1">{c.category}</h2><p set:html={html(c.verdict)}/><p class="micro" set:html={html('Keep this limit: '+c.limit)}/><h3>How to check it yourself</h3><ol>{c.howToCheck.map(step=><li>{step}</li>)}</ol><p><a href="/">Open the search <span aria-hidden="true">→</span></a></p></div></details></section>
+ <div class="actions"><button type="button" class="button secondary" data-save={c.id} aria-pressed="false">Save</button> <a class="button secondary" href="/claims/">All claims <span aria-hidden="true">→</span></a></div>
+ <script>import '../../lib/claims-page';</script>
+</Shell>

@@ -1,0 +1,31 @@
+{
+  "heading": "Everyday Akhlaq",
+  "summary": "Everyday Akhlaq is a collection of fictional character scenarios about ordinary decisions. Work through a conversation or choice, read the imagined consequence and return to the source reading. The scenarios offer space to reflect on conduct without asking you to disclose a private incident or treat a fictional outcome as a prediction.",
+  "steps": [
+    "Choose a scenario that interests you or filter by setting.",
+    "Read the scenario and make a choice before inspecting the fictional consequence.",
+    "Compare the source reading and reflection prompts with the choices in the exercise."
+  ],
+  "questions": [
+    {
+      "question": "Are the consequences predictions about real people?",
+      "answer": "No. Scenarios and consequences are fictional editorial exercises. They illustrate questions for reflection; they cannot predict how a real person will respond."
+    },
+    {
+      "question": "Do I need to enter my own experience?",
+      "answer": "No. You can use the supplied scenarios without sharing names or personal stories. Keep a group discussion focused on fictional examples if a topic feels private."
+    }
+  ],
+  "related": [
+    {
+      "name": "Family Halaqa",
+      "description": "Choose an age-appropriate pack and learn together, without profiles.",
+      "kind": "Family activities",
+      "url": "https://family-halaqa.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Prayer & everyday practice",
+    "url": "https://moongazer.tech/prayer-everyday-practice/"
+  }
+}

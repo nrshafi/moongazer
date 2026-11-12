@@ -23,7 +23,7 @@ bun run preview
 
 Development/preview ports are listed in project-overview.md and DEPLOYMENT.md.
 
-From the repository root, `bun _implementation/verify.ts check`, `test`, or `build` processes all twenty apps. `--batch2` selects apps 6 through 10; `--batch3` selects apps 11 through 15; `--batch4` selects apps 16 through 20. `bun _implementation/preview.ts` serves built output on ports 4321 through 4340 and is development tooling only.
+From the repository root, `bun _implementation/verify.ts check`, `test`, or `build` processes all sixteen apps (the old `--batch` slices are gone). `bun _implementation/preview.ts` serves built output on ports 4321 and up and is development tooling only.
 
 Run `python _implementation/verify-static.py` after affected builds, then `python _implementation/package-release.py` when refreshing upload artifacts. The global static verifier expects all twenty dist directories and the local research snapshot. A copied app still builds/checks/tests independently; root research tooling is optional for its normal build.
 

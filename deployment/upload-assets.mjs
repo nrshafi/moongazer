@@ -7,7 +7,7 @@ import { hash } from 'blake3-wasm';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const targets = JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'));
-const sites = [{name:'moongazer',domain:'moongazer.tech',directory:'homepage/dist'}, ...targets.map(app=>({name:`moongazer-${app.slug}`,domain:`${app.slug}.moongazer.tech`,directory:`apps/${app.slug}/dist`}))];
+const sites = [{name:'moongazer',domain:'moongazer.tech',directory:'homepage/dist'}, ...targets.map(app=>({name:app.project||`moongazer-${app.slug}`,domain:`${app.slug}.moongazer.tech`,directory:`apps/${app.slug}/dist`}))];
 const mime = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.ttf':'font/ttf','.woff2':'font/woff2','.woff':'font/woff','.mp3':'audio/mpeg','.ogg':'audio/ogg','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.ico':'image/x-icon','.xml':'application/xml','.txt':'text/plain; charset=utf-8'};
 const assets = new Map();
 const manifests = [];
@@ -15,6 +15,8 @@ const selectedSite = process.argv.find(argument=>argument.startsWith('--site='))
 for (const site of sites) {
   if(selectedSite && site.name!==selectedSite)continue;
   if (process.argv.includes('--homepage-only') && site.name !== 'moongazer') continue;
+  // P4: the apex ships through `wrangler pages deploy` so its Functions and D1 binding deploy with it.
+  if (process.argv.includes('--apps-only') && site.name === 'moongazer') continue;
   const directory = join(root,site.directory);
   const manifest = {};
   let bytes = 0;
@@ -113,6 +115,10 @@ let recorded = manifests;
 if (process.argv.includes('--homepage-only')) {
   const previous = JSON.parse(await readFile(join(root,'deployment/manifests/uploaded.json'),'utf8').catch(()=>'[]'));
   recorded = [...manifests,...previous.filter(site=>site.name!=='moongazer')];
+}
+if (process.argv.includes('--apps-only')) {
+  const previous = JSON.parse(await readFile(join(root,'deployment/manifests/uploaded.json'),'utf8').catch(()=>'[]'));
+  recorded = [...previous.filter(site=>site.name==='moongazer'),...manifests];
 }
 await writeFile(join(root,'deployment/manifests/uploaded.json'),JSON.stringify(recorded,null,2));
 const evidenceFile = process.argv.includes('--homepage-only') ? 'upload-homepage.json' : 'upload-projects.json';

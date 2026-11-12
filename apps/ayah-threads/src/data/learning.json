@@ -1,0 +1,31 @@
+{
+  "heading": "Ayah Threads",
+  "summary": "Ayah Threads is a passage-reading puzzle. Read three selected Quran passages, choose their intended shared theme, and compare the explanation with the cited ayahs. The theme is an editorial prompt for noticing connections. It does not limit the meaning of a passage to one answer or replace tafsir.",
+  "steps": [
+    "Read all three selections before choosing a theme.",
+    "Select the connection that best fits this puzzle's intended grouping.",
+    "Read the explanation and open the references to compare the surrounding passages."
+  ],
+  "questions": [
+    {
+      "question": "Can a passage fit more than one theme?",
+      "answer": "Yes. The puzzle has an intended answer, but a passage can have other connections. Use the explanation as a reading prompt and inspect the context rather than treating the options as a complete interpretation."
+    },
+    {
+      "question": "Which English translation appears in the puzzles?",
+      "answer": "The quoted English passages use Marmaduke Pickthall's translation. References accompany the readings, and the Sources page explains the edition and the limits of the editorial themes."
+    }
+  ],
+  "related": [
+    {
+      "name": "Guess the Surah",
+      "description": "Follow the clues. Find the chapter. Get to know the Quran one discovery at a time.",
+      "kind": "Quiz",
+      "url": "https://guess-the-surah.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Quran learning",
+    "url": "https://moongazer.tech/quran-learning/"
+  }
+}

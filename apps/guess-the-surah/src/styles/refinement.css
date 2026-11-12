@@ -21,8 +21,18 @@ main{max-width:1200px;padding-top:0}.intro{position:relative;isolation:isolate;m
 .honorific{font-family:Amiri,'Traditional Arabic',serif;font-size:1.05em;line-height:1;font-weight:400}
 /* Nav verb (P2): the tagline under the app name hides on narrow screens so the name and logo stay visible. */
 @media(max-width:720px){.brand small{display:none}}
-/* Moved banner (P3 step A): shown on every page of an app that has merged into another. */
-.moved-banner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;margin:0 0 24px;padding:16px 20px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);background:var(--tint)}
-.moved-banner p{margin:0;max-width:62ch;line-height:1.6}
-.moved-banner .button{flex-shrink:0}
-@media print{.moved-banner{display:none}}
+/* Feedback (P4): a closed footer details with a native form; full width above the footer links. */
+.feedback-wrap{max-width:1200px;margin:48px auto 0;padding:0 32px}
+.feedback{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.feedback>summary{cursor:pointer;padding:16px 20px;font-weight:600;color:var(--accent-ink)}
+.feedback[open]>summary{border-bottom:1px solid var(--line)}
+.feedback-form{display:grid;gap:16px;padding:20px;max-width:640px}
+.feedback-form fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+.feedback-form legend{font-weight:600;margin-bottom:6px}
+.feedback-choice{display:flex;gap:10px;align-items:center}
+.feedback-form textarea,.feedback-form input[type=email]{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.feedback-form .button{justify-self:start}
+.feedback-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.feedback-link{color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.feedback-wrap{padding:0 18px;margin-top:36px}}
+@media print{.feedback-wrap{display:none}}

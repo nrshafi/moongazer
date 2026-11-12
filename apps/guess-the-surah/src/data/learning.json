@@ -21,13 +21,13 @@
       "name": "Ayah Threads",
       "description": "Read three Quran passages and choose the theme that connects them.",
       "kind": "Passage puzzle",
-      "url": "https://quran-connections.moongazer.tech/"
+      "url": "https://ayah-threads.moongazer.tech/"
     },
     {
       "name": "Quran Escape Room",
       "description": "Work through a sequence of knowledge puzzles to unlock the next room.",
       "kind": "Puzzle adventure",
-      "url": "https://islamic-knowledge-escape-room.moongazer.tech/"
+      "url": "https://quran-escape-room.moongazer.tech/"
     }
   ],
   "collection": {

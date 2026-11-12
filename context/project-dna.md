@@ -18,7 +18,7 @@ Every learning activity stays free, ad-free, and free of third-party tracking sc
 
 Booktube is a motion-graphics video tool, not a revenue source for Moongazer. Under Booktube's Islamic guidelines, which forbid music, bells, and images of living beings, Booktube acts as Moongazer's short-form visual funnel on YouTube Shorts, Instagram Reels, TikTok, and WhatsApp channels.
 
-Booktube turns verified Moongazer JSON content into three recurring video formats that end on a Moongazer short link such as `moongazer.tech/surah`:
+Booktube turns verified Moongazer JSON content into three recurring video formats that end on the app's own host, such as `guess-the-surah.moongazer.tech`:
 
 1. **Play-along hooks.** 30-second "Guess the Surah in 3 clues" or "Which event came first?" clips that pause before the final reveal and invite viewers to play today's board on Moongazer.
 2. **Source-check explainers.** 45-second typographic and map animations built from the Misinformation Casebook, Stories of the Prophets, or Salah phrase meanings.
@@ -87,7 +87,7 @@ To measure whether activities actually help learners finish and share without tr
 - `activity_completed`
 - `share_clicked`
 
-`page_view` tracking is excluded. The architecture was settled on 11 November 2026 (Pages Functions on the apex with one D1 database, no Turnstile, no stored IP addresses, a static corrections log). Implementation: `plan/implementation/P4-first-party-services.md`. It is not yet implemented in runtime code.
+`page_view` tracking is excluded. The architecture was settled on 11 November 2026 (Pages Functions on the apex with one D1 database, no Turnstile, no stored IP addresses, a static corrections log). Implementation: `plan/implementation/P4-first-party-services.md`. Status (11 November 2026): the Functions, D1 schema, allowlist and owner scripts are built and tested locally (P4.1–P4.4, P4.8); the app and directory wiring (P4.5–P4.7) and production setup (P4.10) are pending.
 
 ### Organic community pull
 
@@ -95,6 +95,6 @@ Track Google Search Console query discovery, direct WhatsApp sharing, and qualit
 
 ## 6. Embracing learning, setbacks, and corrections
 
-1. **Prune and merge weak work.** When an app duplicates another or falls short, merge or rebuild it rather than defending sunk cost. Fold `quran-concept-atlas`, `islamic-history-timeline-challenge`, `halal-business-decisions`, and `islamic-misinformation-casebook` into the four host apps specified in Brief 10 with 301 redirects.
+1. **Prune and merge weak work.** When an app duplicates another or falls short, merge or rebuild it rather than defending sunk cost. Fold `quran-concept-atlas`, `islamic-history-timeline-challenge`, `halal-business-decisions`, and `islamic-misinformation-casebook` into the four host apps specified in Brief 10. Under D2c (12 November 2026) the old apps were deleted outright with no redirects.
 2. **Fix defects before adding features.** Trust-damaging defects in Brief 06 take priority over visual redesigns or new apps.
 3. **Community-driven corrections in place of an in-house scholar reviewer.** Because recruiting a dedicated Islamic studies reviewer is not currently possible, pair strict primary-source attribution with a built-in first-party **"Report an error or suggest feedback"** form in every app footer and result panel, backed by a public Corrections Log on the directory.

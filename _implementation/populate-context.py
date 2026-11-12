@@ -9,7 +9,7 @@ import hashlib, json, os, re, sys
 
 ROOT = Path(__file__).resolve().parent.parent
 FILES = ['project-overview.md', 'architecture.md', 'ui-context.md', 'code-standards.md', 'ai-workflow-rules.md', 'progress-tracker.md']
-ORDER = ['guess-the-surah','quran-connections','the-seerah-detective','everyday-akhlaq-simulator','interactive-seerah-timeline','quran-memorization-workload-calculator','is-this-actually-in-the-quran','quran-concept-atlas','islamic-knowledge-escape-room','stories-of-the-prophets-explorer','quranic-places-atlas','islamic-concept-connections','islamic-history-timeline-challenge','understand-salah-lab','quranic-parables-studio']
+ORDER = ['guess-the-surah','ayah-threads','seerah-detective','everyday-akhlaq','seerah-timeline','hifz-planner','is-it-in-the-quran','quran-concept-atlas','quran-escape-room','stories-of-the-prophets','places-in-the-quran','word-groups','islamic-history-timeline-challenge','understand-your-salah','parables-of-the-quran']
 STAMP = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=6))).strftime('%Y-%m-%d %H:%M:%S +06:00 (Asia/Dhaka)')
 
 # These are app-specific descriptions of implemented behavior, not future plans.
@@ -23,7 +23,7 @@ DETAILS = {
  storage='`remember` stores the recovery preference; `round` stores validated round state. A supplied challenge seed starts its own reproducible round.',
  boundary='Do not describe editorial clues or client-side scores as scholarly assessment. Keep Arabic opening text and fetched chapter metadata intact.',
  regression='Verify all 114 chapters, unique answer choices, filtered answer pools, deterministic seeds, wrong answers, clue scoring, results and reload recovery.'),
-'quran-connections': dict(
+'ayah-threads': dict(
  audience='Readers who want to notice a shared theme across Quran passages and inspect the evidence.',
  scope='30 three-passage puzzles, intended themes, distractors, hints, retries, optional Arabic display, explanations and shareable puzzle links.',
  flow=['Choose a puzzle or open a puzzle link.','Compare the three readings, optionally show Arabic or use a hint, and choose a theme.','Read the explanation and cited commentary; retry or move to another puzzle.'],
@@ -32,7 +32,7 @@ DETAILS = {
  storage='`remember` stores the recovery preference; `puzzle` stores validated puzzle state.',
  boundary='A matching answer is the intended editorial connection, not the only possible observation about a passage. This app differs from the sixteen-tile grouping game.',
  regression='Check all 30 puzzles, all three canonical passages per puzzle, theme choices, Arabic display, retry, hints, sharing and optional recovery.'),
-'the-seerah-detective': dict(
+'seerah-detective': dict(
  audience='Learners who want to practice reading historical reports before selecting a supported conclusion.',
  scope='12 investigations, three source-backed evidence cards per case, competing conclusions, hints, graded feedback, source readings and optional case recovery.',
  flow=['Browse the case catalog and open an investigation.','Examine the evidence cards, follow the named reports, and select a conclusion.','Read why the conclusion is or is not supported; retry, restart, share or open another case.'],
@@ -41,7 +41,7 @@ DETAILS = {
  storage='`remember` stores the recovery preference. `case-<case-id>` stores validated state for the selected investigation.',
  boundary='Distinguish report text, original paraphrase and inference. A case conclusion must not claim more than the identified report establishes.',
  regression='Check all 12 case routes, evidence reveal, competing conclusions, incorrect/correct feedback, hints, source references and per-case recovery.'),
-'everyday-akhlaq-simulator': dict(
+'everyday-akhlaq': dict(
  audience='Visitors who want to consider everyday choices through short fictional situations and sourced reading notes.',
  scope='20 fictional scenarios, two decisions per scenario, response-specific consequences, reflection, source notes, sharing and optional recovery.',
  flow=['Select a situation from the catalog.','Make the first choice, read its consequence, and choose a response at the second decision.','Read the final reflection and source passage; restart or explore another situation.'],
@@ -50,7 +50,7 @@ DETAILS = {
  storage='`remember` stores the recovery preference. `scenario-<scenario-id>` stores validated decisions for that scenario.',
  boundary='Situations and consequences are fictional editorial applications. Do not turn them into personalized religious rulings or claims that the source predicts an outcome.',
  regression='Check all 20 scenario routes, both decision stages, different response paths, final source notes, restart and scenario-specific recovery.'),
-'interactive-seerah-timeline': dict(
+'seerah-timeline': dict(
  audience='Readers who want to browse a sourced chronology of the prophetic mission and open individual event notes.',
  scope='36 event records, era/topic filters, text search, date and source limitations, bookmarks, print support and individual static event pages.',
  flow=['Browse or filter the chronological event list.','Select an event to read its summary, date band, uncertainty note and sources.','Open its detail page, bookmark it, or print a reading view.'],
@@ -59,7 +59,7 @@ DETAILS = {
  storage='`bookmarks` stores selected event IDs when the visitor explicitly saves them.',
  boundary='Date bands are approximate navigation aids. A report supporting an event does not necessarily establish its displayed CE year. Do not erase disputed placement notes.',
  regression='Check all 36 event routes, search, combined filters, empty results, selection, bookmarks, uncertainty notes and print behavior.'),
-'quran-memorization-workload-calculator': dict(
+'hifz-planner': dict(
  audience='Learners estimating how new memorization and an expanding revision workload fit their own study time.',
  scope='A 604-page-layout model with existing/new pages, user-supplied time estimates, pace limits, study weekdays, start date, revision cycle, schedule pagination, CSV and calendar export.',
  flow=['Enter existing pages, a new-page goal, study time and learning/review estimates.','Choose study weekdays, start date and revision cycle, then calculate.','Inspect feasibility, the revision curve and schedule; adjust assumptions or export the CSV/calendar.'],
@@ -68,7 +68,7 @@ DETAILS = {
  storage='`plan` stores assumptions only if the remember checkbox is enabled. Calculated schedules and exports are otherwise in memory.',
  boundary='604 pages is the selected Hafs layout, not a universal pagination. Speeds are user assumptions, not validated learning predictions. Distinguish capacity failure from a viable plan beyond the 3,650-session horizon; ICS exports at most 90 sessions.',
  regression='Check invalid totals/dates/weekdays, leap days, growing review time, per-session budgets, structural ceilings, the finite horizon, final-goal completion, CSV and all-day ICS limits.'),
-'is-this-actually-in-the-quran': dict(
+'is-it-in-the-quran': dict(
  audience='Readers checking the wording or reference of a claimed Quran quotation before sharing it.',
  scope='All 6,236 ayahs in Uthmani Arabic and Pickthall English, lazy local corpus loading, normalized phrase search, lexical suggestions, chapter filters, direct reference ranges, pagination and fragment-based sharing.',
  flow=['Enter a phrase or valid chapter:ayah reference, then select a language and optional chapter filter.','Search the local corpus and distinguish exact normalized wording matches from related-word suggestions.','Read the full ayahs and context links; explicitly copy a passage or a search link if needed.'],
@@ -86,7 +86,7 @@ DETAILS = {
  storage='`bookmarks` stores explicitly saved topic IDs. No private note or learning profile is collected.',
  boundary='Themes and edges are editorial learning paths, not an exclusive canonical taxonomy or AI interpretation service.',
  regression='Check all 30 topic routes, three readings per topic, related links, filters/empty states, exact commentary anchors, saved-only views and reading-list copy.'),
-'islamic-knowledge-escape-room': dict(
+'quran-escape-room': dict(
  audience='Solo learners or a group sharing one device who want a source-reading puzzle activity.',
  scope='Eight rooms with four locks each: theme choice, reference matching, mushaf ordering and excerpt recognition. Includes a source shelf, hints, solutions, completion sharing, optional timer and recovery.',
  flow=['Choose a room and read the source shelf.','Solve each of the four locks, using hints or solutions if useful.','Read the completion explanation, copy the informal result, or enter another room.'],
@@ -95,7 +95,7 @@ DETAILS = {
  storage='`room-<room-id>` stores validated room progress, assisted locks and elapsed seconds only when recovery is enabled. The timer is optional and pauses when the document is hidden.',
  boundary='Order references in mushaf chapter/ayah order, not revelation or historical order. This is same-device play, not synchronized multiplayer; completion does not measure religious merit.',
  regression='Check every lock mechanism, wrong answers, hints/solutions, source shelf, ordering buttons, timer pause, room-specific reload recovery and assisted completion.'),
-'stories-of-the-prophets-explorer': dict(
+'stories-of-the-prophets': dict(
  audience='Readers exploring selected Quranic accounts through named profiles and short comprehension checks.',
  scope='25 profiles, two readings each for 50 selected passages, 25 passage-specific questions, alphabetical discovery, area/search filters, bookmarks and reading-list copy.',
  flow=['Find a profile by name or reading area.','Read its two complete passages and their source links.','Answer the reading check, revisit the cited detail, then save or open another profile.'],
@@ -104,7 +104,7 @@ DETAILS = {
  storage='`bookmarks` stores explicitly saved profile IDs. Quiz answers are kept in memory and are not a personal learning record.',
  boundary='The library is selected Quran passages, not exhaustive biographies or an asserted chronology. Brief mentions stay brief; do not add disputed identities, invented dialogue, dates or portraits.',
  regression='Check all 25 profiles and 50 readings, unique question answers, briefly mentioned figures, alphabetical filters, wrong/correct feedback and bookmark recovery.'),
-'quranic-places-atlas': dict(
+'places-in-the-quran': dict(
  audience='Readers connecting Quran place references to geographical context without confusing evidence with speculation.',
  scope='15 entries, five sourced city/heritage-context markers, 44 bundled Natural Earth land paths, evidence filters, uncertainty notes, bookmarks and static entry pages.',
  flow=['Explore the regional map and numbered text legend or filter the place list.','Open an entry and read its Quran passage, commentary and location evidence.','Inspect a mapped context or the reason no pin is assigned; optionally save or print the reading.'],
@@ -113,7 +113,7 @@ DETAILS = {
  storage='`bookmarks` stores explicitly saved place-entry IDs. The map has no geolocation requests, external tiles or live tracking.',
  boundary='Only five modern contexts have pins, using UNGEGN/UNESCO coordinates. Ten entries stay unpinned. Iram is a tribe in the cited commentary, not a claimed excavated city. Do not turn heritage coordinates into exact Quranic event sites.',
  regression='Check 15 entry routes, the five marker/legend links, coordinate attribution, unpinned entries, evidence filters, empty results and bookmarks.'),
-'islamic-concept-connections': dict(
+'word-groups': dict(
  audience='Learners grouping Islamic terms into intended source-backed categories in a short word game.',
  scope='16 boards, 20 term groups, four groups of four terms per board, one-away feedback, hints, shuffle, reveal, source readings, seeded links and optional recovery.',
  flow=['Choose a board and select four tiles.','Check a group, revise a near match, or use a hint; continue until four groups are found.','Read each group’s source passages, share the board link, or choose another board.'],
@@ -131,7 +131,7 @@ DETAILS = {
  storage='`progress` stores the pack, event order, check count, hint/reveal/completion flags and seed only if recovery is enabled.',
  boundary='Score broad conventional chronology, not exact calendar reconstruction. A report may support the event without establishing its CE date. The current edition covers the prophetic mission, not all Islamic history.',
  regression='Check all 12 packs, four distinct events per pack, correct/incorrect ordering, button limits and focus, earliest-event hints, source/date notes and completed-state recovery.'),
-'understand-salah-lab': dict(
+'understand-your-salah': dict(
  audience='Learners connecting selected prayer recitations with their meaning and original sources.',
  scope='15 lessons: seven Al-Fatiha ayahs and eight hadith-based recitations, hide/reveal meaning practice, reading checks, bookmarks, print and licensed local full-surah Al-Fatiha audio.',
  flow=['Choose a lesson by part of prayer or search.','Read the Arabic, recall the meaning, then reveal it; for Al-Fatiha, optionally play the whole-surah recording.','Answer a comprehension check, follow its source, and save or open the next lesson.'],
@@ -140,7 +140,7 @@ DETAILS = {
  storage='`bookmarks` stores saved lesson IDs, including numeric IDs such as `fatiha-5`. Meaning visibility, answers and playback settings remain in memory.',
  boundary='This is a meaning lab, not a complete legal prayer manual. Roman guides are approximate and some cover only an opening phrase. Audio is Al-Fatiha in full, not per-ayah clips or audio for all recitations. Preserve Adeel Shaikh’s CC BY-SA 4.0 attribution and audio checksum.',
  regression='Check all 15 lessons, seven exact Quran ayahs, eight cited prayer recitations, meaning hide/reveal, answer feedback, numeric-ID bookmark recovery, audio decoding/play/pause/speed/repeat and attribution.'),
-'quranic-parables-studio': dict(
+'parables-of-the-quran': dict(
  audience='Readers slowing down with Quranic comparisons through complete passages, commentary and guided reflection.',
  scope='14 readings, three selectable diagram parts each, source-attributed commentary, a second commentary for 24:35, comprehension checks, bookmarks and explicit private-note copy/download.',
  flow=['Find a comparison and read its complete Quran passage.','Select diagram parts, read the attributed commentary, and answer a detail question.','Write an optional reflection in memory, explicitly copy/download it, or save the reading.'],
@@ -455,7 +455,7 @@ All readings and interactions are public and anonymous. There is no ownership mo
 
 Port {cfg['port']}. Build `bun install --frozen-lockfile && bun run build`; output `dist`; environment `BUN_VERSION=1.4.4`. No SSR adapter, Functions, bindings or secrets. Collection upload archive: `release/{slug}-pages.zip`. The current recorded output has {rows[slug]['pages']} HTML pages and {rows[slug]['files']} files.
 
-{('The checker loads a roughly 3 MB compiled local corpus on first search. Its expected Vite large-chunk warning is documented; keep full coverage and lazy loading when optimizing.' if slug=='is-this-actually-in-the-quran' else 'App-specific content and media constraints are listed in project-overview.md and the source methodology page.')}
+{('The checker loads a roughly 3 MB compiled local corpus on first search. Its expected Vite large-chunk warning is documented; keep full coverage and lazy loading when optimizing.' if slug=='is-it-in-the-quran' else 'App-specific content and media constraints are listed in project-overview.md and the source methodology page.')}
 '''
         progress=f'''# Progress tracker: {cfg['name']}
 

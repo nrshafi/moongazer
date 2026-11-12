@@ -6,10 +6,10 @@
 
 | From (host) | Into (host → route) | Moves |
 | --- | --- | --- |
-| `quran-concept-atlas` (`/topic/<id>/`) | `quran-connections` → `/themes/<id>/` (Ayah Threads "Theme library") | 30 theme pages |
-| `islamic-history-timeline-challenge` (`/`) | `interactive-seerah-timeline` → `/challenge/` ("Which came first?") | 12 four-card packs and engine; events referenced by id |
-| `halal-business-decisions` (`/case/<id>/`) | `everyday-akhlaq-simulator` → `/business/<id>/` (Business track) | 12 cases, unified with the scenario engine |
-| `islamic-misinformation-casebook` (`/case/<id>/`) | `is-this-actually-in-the-quran` → `/claims/<id>/` ("Common claims") | 12 cases rebuilt as neutral claims |
+| `quran-concept-atlas` (`/topic/<id>/`) | `ayah-threads` → `/themes/<id>/` (Ayah Threads "Theme library") | 30 theme pages |
+| `islamic-history-timeline-challenge` (`/`) | `seerah-timeline` → `/challenge/` ("Which came first?") | 12 four-card packs and engine; events referenced by id |
+| `halal-business-decisions` (`/case/<id>/`) | `everyday-akhlaq` → `/business/<id>/` (Business track) | 12 cases, unified with the scenario engine |
+| `islamic-misinformation-casebook` (`/case/<id>/`) | `is-it-in-the-quran` → `/claims/<id>/` ("Common claims") | 12 cases rebuilt as neutral claims |
 
 Saved-data inventory (11 Nov): Concept Atlas `bookmarks`; Timeline Challenge `progress`; Halal Business `bookmarks`, `remember`, `case-<id>`; Casebook `bookmarks`. All use `<slug>:<key>` with `{at,value}`. `theme` (light/dark) is not migrated.
 
@@ -28,7 +28,7 @@ Protocol:
 
 | From key | Receiver key |
 | --- | --- |
-| atlas `bookmarks` (theme ids) | quran-connections `theme-bookmarks` |
+| atlas `bookmarks` (theme ids) | ayah-threads `theme-bookmarks` |
 | challenge `progress` | seerah-timeline `challenge-progress` |
 | halal `bookmarks` (case ids) | akhlaq `business-bookmarks` |
 | halal `remember`, `case-<id>` | akhlaq `remember`, `business-<id>` (validate against the unified engine's trail shape) |
@@ -38,7 +38,7 @@ Acceptance: tests cover valid payload, wrong version, unknown key, oversize payl
 Verify: V1.
 
 ### T3.3 Ayah Threads: Theme library
-Lane: app:`quran-connections` · Depends on: T3.2 · Files: `src/data/themes.json` (new, copied with provenance from `quran-concept-atlas/src/data/content.json`), `src/pages/themes/index.astro`, `src/pages/themes/[id].astro`, `src/lib/*`, `src/data/seo.json`, sitemap, tests
+Lane: app:`ayah-threads` · Depends on: T3.2 · Files: `src/data/themes.json` (new, copied with provenance from `quran-concept-atlas/src/data/content.json`), `src/pages/themes/index.astro`, `src/pages/themes/[id].astro`, `src/lib/*`, `src/data/seo.json`, sitemap, tests
 Steps:
 1. Copy the 30 themes with their passages exactly (canonical records keep `{ref, arabic, translation}`) into a `themes` array inside `src/data/content.json`, so the existing verifier checks their text and hash; record provenance in `provenance.json` and update `appContentSha256`. (The static verifier only checks `content.json` and `corpus.json`; do not create a separate data file for canonical text.)
 2. A theme page shows passages and "Solve this thread →" until the visitor solves or reveals the matching puzzle (local state); then it shows the explanation and the tafsir link. Without JS, show the explanation inside a closed `<details>` labelled as a spoiler (crawlable, not visible by default).
@@ -49,7 +49,7 @@ Acceptance: 30 theme routes build; no answer visible before solving (JS on) or w
 Verify: V1, V5, V6, V7.
 
 ### T3.4 Seerah Timeline: "Which came first?"
-Lane: app:`interactive-seerah-timeline` · Depends on: T3.2 · Files: `src/pages/challenge/index.astro`, `src/lib/challenge.ts` (port the engine from `islamic-history-timeline-challenge/src/lib/engine.ts` and `app.ts`), `src/data/content.json` (add `packs` referencing event ids), tests
+Lane: app:`seerah-timeline` · Depends on: T3.2 · Files: `src/pages/challenge/index.astro`, `src/lib/challenge.ts` (port the engine from `islamic-history-timeline-challenge/src/lib/engine.ts` and `app.ts`), `src/data/content.json` (add `packs` referencing event ids), tests
 Steps:
 1. Map the challenge's 14 events to the timeline's existing event ids; do not duplicate events. If an event has no match, stop and report.
 2. Port the 12 packs; fix pack titles that don't match their contents. Hide source clues behind "Open source clue" until requested (Verify_Me).
@@ -59,7 +59,7 @@ Acceptance: all 12 packs playable, graded correctly (port the old tests), progre
 Verify: V1, V5, V6, V7.
 
 ### T3.5 Everyday Akhlaq: Business track
-Lane: app:`everyday-akhlaq-simulator` · Depends on: T3.2, P1 T1.7/T1.12 · Files: `src/data/content.json` (add `track` to scenarios; add 12 business cases converted to the scenario shape), `src/pages/business/index.astro`, `src/pages/business/[id].astro`, `src/lib/scenario.ts`, tests
+Lane: app:`everyday-akhlaq` · Depends on: T3.2, P1 T1.7/T1.12 · Files: `src/data/content.json` (add `track` to scenarios; add 12 business cases converted to the scenario shape), `src/pages/business/index.astro`, `src/pages/business/[id].astro`, `src/lib/scenario.ts`, tests
 Steps:
 1. Convert the 12 Halal Business cases into the scenario data shape (setup → scene, choices → options with `constructive`, repairs → options2). Keep all sources and quotations exact.
 2. Replace the duplicate "friendly loan with no record" business case with a commercial case (supplier credit or partnership) only in C15; for now keep it and note the duplication in the tracker.
@@ -69,7 +69,7 @@ Acceptance: `/business/<id>/` for 12 cases; options shuffled; constructive feedb
 Verify: V1, V5, V6, V7.
 
 ### T3.6 Is It in the Quran?: Common claims
-Lane: app:`is-this-actually-in-the-quran` + content · Depends on: T3.2 · Files: a `claims` array in `src/data/content.json` (so the static verifier checks its canonical text), `src/pages/claims/index.astro`, `src/pages/claims/[id].astro`, `src/lib/claims.ts`, tests, `_implementation/research/merges/casebook-claims.json`
+Lane: app:`is-it-in-the-quran` + content · Depends on: T3.2 · Files: a `claims` array in `src/data/content.json` (so the static verifier checks its canonical text), `src/pages/claims/index.astro`, `src/pages/claims/[id].astro`, `src/lib/claims.ts`, tests, `_implementation/research/merges/casebook-claims.json`
 Steps:
 1. Rebuild the 12 casebook cases as claims people actually make, with a neutral question title (no verdict in title, URL or meta description), the evidence (exact Quran text from the corpus; hadith by collection and number with sunnah.com link), a one-line verdict revealed only after the reader chooses, and "How to check it yourself".
 2. Verdict categories: "In the Quran (exact ayah)", "A hadith, not the Quran", "A paraphrase of an ayah", "Not found in the Quran". Never claim absence beyond "not found by search in the Pickthall/Arabic corpus".
@@ -108,9 +108,10 @@ Lane: deploy (owner). As T1.21. Record the go-live date in `releases/R3.md` and 
 
 ## Step B — permanent redirects (no sooner than R3 + 14 days)
 
+> **Superseded by D2c (12 November 2026):** T3.9–T3.11 are not done. The four apps were deleted with no moved release and no redirects.
 ### T3.11 Prepare redirect-only builds
 Lane: shared · Depends on: R3 live ≥ 14 days
-Preferred method: keep each old Pages project and redeploy it with a redirect-only output: a `_redirects` file with path rules and absolute destinations (for example `/case/* https://everyday-akhlaq-simulator.moongazer.tech/business/:splat 301`), plus `/* https://<receiver>/ 301` last. Before using it, verify in Cloudflare's current Pages `_redirects` documentation that absolute destination URLs and splats are supported and record the URL in `context/architecture.md`. Fallback if not supported or limits are exceeded: zone Single Redirect rules (check the plan's rule limit first; the existing www→apex rule lives there).
+Preferred method: keep each old Pages project and redeploy it with a redirect-only output: a `_redirects` file with path rules and absolute destinations (for example `/case/* https://everyday-akhlaq.moongazer.tech/business/:splat 301`), plus `/* https://<receiver>/ 301` last. Before using it, verify in Cloudflare's current Pages `_redirects` documentation that absolute destination URLs and splats are supported and record the URL in `context/architecture.md`. Fallback if not supported or limits are exceeded: zone Single Redirect rules (check the plan's rule limit first; the existing www→apex rule lives there).
 Steps: add a `redirectOnly` build mode in deployment tooling for retired apps (output `_redirects`, `_headers`, a minimal `404.html` with a link to the receiver). Extend `test-redirect-map.ts` to check the generated `_redirects` covers the whole map.
 Verify: local test with `bunx wrangler pages dev` on the redirect-only folder if available; otherwise rule-by-rule review.
 

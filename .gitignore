@@ -3,6 +3,9 @@ node_modules/
 .astro/
 dist/
 
+# Wrangler local state (local D1, dev server cache)
+.wrangler/
+
 # Local environment files
 .env
 .env.*
@@ -36,3 +39,6 @@ Thumbs.db
 !/deployment/evidence/**/
 !/deployment/evidence/**/*.md
 !/deployment/evidence/seo/font-conversion.json
+
+# Agent worktrees
+.claude/worktrees/

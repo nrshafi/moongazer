@@ -17,7 +17,7 @@
             "reason": "Use opening-ayah clues to recognize a surah, then inspect the reference behind the answer."
           },
           {
-            "slug": "quran-connections",
+            "slug": "ayah-threads",
             "reason": "Move from chapter recognition into comparing the shared theme of three selected passages."
           }
         ]
@@ -26,11 +26,11 @@
         "title": "Find wording, then explore a theme",
         "items": [
           {
-            "slug": "is-this-actually-in-the-quran",
+            "slug": "is-it-in-the-quran",
             "reason": "Search Arabic text or Pickthall's English translation when you have wording or an ayah reference."
           },
           {
-            "slug": "quran-connections",
+            "slug": "ayah-threads",
             "path": "/themes/",
             "label": "Ayah Threads theme library",
             "reason": "Read a theme's three ayat when your starting point is a subject; solve its puzzle first to keep the surprise."
@@ -41,11 +41,11 @@
         "title": "Read a selected account in context",
         "items": [
           {
-            "slug": "stories-of-the-prophets-explorer",
+            "slug": "stories-of-the-prophets",
             "reason": "Open a prophet's profile for selected Quran passages and a short reading check."
           },
           {
-            "slug": "revelation-context-explorer",
+            "slug": "why-it-was-revealed",
             "reason": "Compare named reports while keeping transmitted occasions, general context and later responses distinct."
           }
         ]
@@ -76,11 +76,11 @@
         "title": "Follow an event into its reports",
         "items": [
           {
-            "slug": "interactive-seerah-timeline",
+            "slug": "seerah-timeline",
             "reason": "Browse a sourced chronology, then open an event to read the reports and date notes."
           },
           {
-            "slug": "the-seerah-detective",
+            "slug": "seerah-detective",
             "reason": "Practice deciding which conclusion a selected evidence set actually supports."
           }
         ]
@@ -89,11 +89,11 @@
         "title": "Compare places and periods",
         "items": [
           {
-            "slug": "islamic-civilization-timeline",
+            "slug": "civilization-timeline",
             "reason": "Read selected records across regions and inspect two date bands together."
           },
           {
-            "slug": "quranic-places-atlas",
+            "slug": "places-in-the-quran",
             "reason": "Explore a related geographical reading while distinguishing a modern map context from an exact ancient location."
           }
         ]
@@ -102,11 +102,11 @@
         "title": "Turn reading into an ordering exercise",
         "items": [
           {
-            "slug": "interactive-seerah-timeline",
+            "slug": "seerah-timeline",
             "reason": "Use the timeline as a reading reference before trying a short chronology task."
           },
           {
-            "slug": "interactive-seerah-timeline",
+            "slug": "seerah-timeline",
             "path": "/challenge/",
             "label": "Which came first? (Seerah Timeline)",
             "reason": "Arrange four events from the prophetic mission, then compare their sources and approximate dates."
@@ -139,11 +139,11 @@
         "title": "Make space for a reading session",
         "items": [
           {
-            "slug": "understand-salah-lab",
+            "slug": "understand-your-salah",
             "reason": "Choose one of fifteen recitation-meaning lessons and compare its Arabic, meaning and source notes."
           },
           {
-            "slug": "quran-memorization-workload-calculator",
+            "slug": "hifz-planner",
             "reason": "Estimate how new Quran study and revision fit around the session time you provide."
           }
         ]
@@ -152,11 +152,11 @@
         "title": "Think through a fictional choice",
         "items": [
           {
-            "slug": "everyday-akhlaq-simulator",
+            "slug": "everyday-akhlaq",
             "reason": "Read a character scenario, consider a choice and inspect its imagined consequence."
           },
           {
-            "slug": "everyday-akhlaq-simulator",
+            "slug": "everyday-akhlaq",
             "path": "/business/",
             "label": "Everyday Akhlaq business scenarios",
             "reason": "Apply the same careful reading to fictional business cases without treating them as transaction certification."
@@ -167,13 +167,13 @@
         "title": "Check the evidence before a conclusion",
         "items": [
           {
-            "slug": "is-this-actually-in-the-quran",
+            "slug": "is-it-in-the-quran",
             "path": "/claims/",
             "label": "Common claims (Is It in the Quran?)",
             "reason": "Check a claim people often make against the exact text before you share it."
           },
           {
-            "slug": "revelation-context-explorer",
+            "slug": "why-it-was-revealed",
             "reason": "Compare a report and its stated limits when studying the context around a passage."
           }
         ]
@@ -204,11 +204,11 @@
         "title": "Discuss a puzzle on one screen",
         "items": [
           {
-            "slug": "islamic-knowledge-escape-room",
+            "slug": "quran-escape-room",
             "reason": "Work through reading and recognition puzzles together, using the source shelf and hints when useful."
           },
           {
-            "slug": "islamic-concept-connections",
+            "slug": "word-groups",
             "reason": "Compare possible connections between terms, then inspect the board's intended groups and readings."
           }
         ]
@@ -217,11 +217,11 @@
         "title": "Choose a family reading activity",
         "items": [
           {
-            "slug": "family-islamic-learning-challenges",
+            "slug": "family-halaqa",
             "reason": "Pick a suggested age band, topic and time, then work through the pack's three-part session."
           },
           {
-            "slug": "everyday-akhlaq-simulator",
+            "slug": "everyday-akhlaq",
             "reason": "Continue a conversation with a fictional character scenario rather than asking for personal experiences."
           }
         ]
@@ -230,13 +230,13 @@
         "title": "Try a short chronology challenge",
         "items": [
           {
-            "slug": "interactive-seerah-timeline",
+            "slug": "seerah-timeline",
             "path": "/challenge/",
             "label": "Which came first? (Seerah Timeline)",
             "reason": "Arrange four events using buttons and compare the answer with the cited reports."
           },
           {
-            "slug": "interactive-seerah-timeline",
+            "slug": "seerah-timeline",
             "reason": "Return to a broader chronology when you want to read an event in more detail."
           }
         ]

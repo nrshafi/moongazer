@@ -97,3 +97,7 @@ Retain the current typography, colors, logos and activity layouts. Make home hea
 - **Nav verb.** The shell's primary nav item uses the app's verb from `config.json` `nav` (Play, Read, Search, Plan or Learn) instead of "Explore".
 - **One word per thing.** Inside an app, one noun per kind of item (case, scenario, parable, event, pack, reading); everyday words instead of internal labels (REPORT §A4 "Words to retire").
 - **Honorifics.** ﷺ after the Prophet Muhammad in editorial text, rendered with `src/components/Honorific.astro` in Astro and the `SAW` string from `src/lib/utils.ts` in client scripts (span `.honorific`, Amiri glyph, accessible label "peace and blessings be upon him"). "(peace be upon him)" after other prophets at first mention per page. Never inside canonical quotations or quoted report text.
+
+## Shell after the merges (D2c, 12 November 2026)
+
+The shared shell shows no "moved" banner and no alternate canonical; every page canonicalises to itself. The merged sections keep their own pages (Ayah Threads `/themes/`, Seerah Timeline `/challenge/`, Everyday Akhlaq `/business/`, Is It in the Quran? `/claims/`) with no banner, import button or link to a retired app.

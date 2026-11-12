@@ -15,13 +15,13 @@ Read the root `AGENTS.md` and six context files, then each affected app's `AGENT
    - Today ten apps share two boilerplate `src/pages/sources.astro` files that describe other apps (hadith and timeline text on Guess the Surah; prophets and calculator text on the Escape Room; Salah text on four apps).
    - Rewrite each app's sources page from its own `src/data/` sources and `context/project-overview.md`: what this app quotes, which editions and translations, what is editorial, and its limits.
    - Do not change any source record or canonical quotation.
-2. **Escape Room** (`apps/islamic-knowledge-escape-room/src/lib/app.ts`):
+2. **Escape Room** (`apps/quran-escape-room/src/lib/app.ts`):
    - Lock 1: stop checking against `room.name` (L27). Use the data's intended answer.
    - Card descriptions must not equal the hint. Write distinct one-line descriptions; do not reveal the theme.
    - Lock 4 distractors must not always come from one room (L13-14).
    - Replace the fixed shuffle seeds with a per-play seed, keeping a seed in saved state so a resumed room is stable.
 3. **Concept Atlas spoiler** (`apps/quran-concept-atlas`). Until brief 10 merges it, stop it from printing the theme answer to every Quran Connections puzzle in a way that spoils play. Minimum fix: add a note on each theme card linking to the puzzle ("Solve this theme's puzzle first"). Do not remove content; brief 10 restructures it.
-4. **Revelation Context quiz** (`apps/revelation-context-explorer`). The answer category is printed in the card eyebrow, the Topic filter and the page eyebrow (`reading/[id].astro:11`, `index.astro:9`):
+4. **Revelation Context quiz** (`apps/why-it-was-revealed`). The answer category is printed in the card eyebrow, the Topic filter and the page eyebrow (`reading/[id].astro:11`, `index.astro:9`):
    - Remove it from the eyebrows.
    - Change the Topic filter to real topics, not the answer categories.
    - Reveal the category only after the reader answers.

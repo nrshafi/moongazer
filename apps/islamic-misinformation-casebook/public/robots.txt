@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://islamic-misinformation-casebook.moongazer.tech/sitemap.xml

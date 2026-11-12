@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://the-seerah-detective.moongazer.tech/sitemap.xml

@@ -13,21 +13,21 @@ Hosts, slugs, ports and Pages project names **do not change**. The four apps tha
 | Folder | Name | Descriptor now | Descriptor later | Nav verb |
 | --- | --- | --- | --- | --- |
 | guess-the-surah | Guess the Surah | Find the surah from its clues | A daily Quran quiz: find the surah from its clues [P6] | Play |
-| quran-connections | Ayah Threads | Three ayat, one hidden thread: a Quran puzzle | …: a daily Quran puzzle [P6] | Play |
-| islamic-concept-connections | Word Groups | Sixteen Quran words, four hidden groups | …: a daily puzzle [P6] | Play |
-| islamic-knowledge-escape-room | Quran Escape Room | Rooms of Quran puzzles to solve together | — | Play |
-| is-this-actually-in-the-quran | Is It in the Quran? | Search every ayah in Arabic and English | …, and check popular claims [P3] | Search |
-| stories-of-the-prophets-explorer | Stories of the Prophets | The prophets in the Quran: read, reflect and check | — | Read |
-| quranic-parables-studio | Parables of the Quran | The Quran's parables, explained | The Quran's parables, drawn and explained [only if diagrams ship] | Read |
-| quranic-places-atlas | Places in the Quran | A map of the places the Quran names, and where certainty ends | — | Read |
-| revelation-context-explorer | Why It Was Revealed | Asbab al-nuzul: the reports behind selected ayat | — | Read |
-| interactive-seerah-timeline | Seerah Timeline | The Prophet's life ﷺ from 610 to 632 | …, with a "Which came first?" game [P3] | Read |
-| the-seerah-detective | Seerah Detective | Solve cases from the Prophet's life ﷺ using the reports | — | Play |
-| islamic-civilization-timeline | Civilization Timeline | Islamic civilization across regions | …, from 632 onward [C12 when Rashidun records exist] | Read |
-| understand-salah-lab | Understand Your Salah | The meaning of the words you say in prayer | The meaning of every phrase you say in prayer [C13 when complete] | Learn |
-| quran-memorization-workload-calculator | Hifz Planner | Estimate new memorization and revision time for your week | Plan new memorization and revision around your week [P7] | Plan |
-| everyday-akhlaq-simulator | Everyday Akhlaq | Everyday character dilemmas: choose, then read the sources | Character and halal business dilemmas: choose, then read the sources [P3] | Play |
-| family-islamic-learning-challenges | Family Halaqa | Ten-minute Islamic activities to do together | — | Read |
+| ayah-threads | Ayah Threads | Three ayat, one hidden thread: a Quran puzzle | …: a daily Quran puzzle [P6] | Play |
+| word-groups | Word Groups | Sixteen Quran words, four hidden groups | …: a daily puzzle [P6] | Play |
+| quran-escape-room | Quran Escape Room | Rooms of Quran puzzles to solve together | — | Play |
+| is-it-in-the-quran | Is It in the Quran? | Search every ayah in Arabic and English | …, and check popular claims [P3] | Search |
+| stories-of-the-prophets | Stories of the Prophets | The prophets in the Quran: read, reflect and check | — | Read |
+| parables-of-the-quran | Parables of the Quran | The Quran's parables, explained | The Quran's parables, drawn and explained [only if diagrams ship] | Read |
+| places-in-the-quran | Places in the Quran | A map of the places the Quran names, and where certainty ends | — | Read |
+| why-it-was-revealed | Why It Was Revealed | Asbab al-nuzul: the reports behind selected ayat | — | Read |
+| seerah-timeline | Seerah Timeline | The Prophet's life ﷺ from 610 to 632 | …, with a "Which came first?" game [P3] | Read |
+| seerah-detective | Seerah Detective | Solve cases from the Prophet's life ﷺ using the reports | — | Play |
+| civilization-timeline | Civilization Timeline | Islamic civilization across regions | …, from 632 onward [C12 when Rashidun records exist] | Read |
+| understand-your-salah | Understand Your Salah | The meaning of the words you say in prayer | The meaning of every phrase you say in prayer [C13 when complete] | Learn |
+| hifz-planner | Hifz Planner | Estimate new memorization and revision time for your week | Plan new memorization and revision around your week [P7] | Plan |
+| everyday-akhlaq | Everyday Akhlaq | Everyday character dilemmas: choose, then read the sources | Character and halal business dilemmas: choose, then read the sources [P3] | Play |
+| family-halaqa | Family Halaqa | Ten-minute Islamic activities to do together | — | Read |
 
 Title tag pattern: `Name — descriptor | Moongazer` on app homes; `Item title | Name` on detail pages (keep the existing helper behaviour, just with the new name).
 

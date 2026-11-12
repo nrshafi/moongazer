@@ -2,11 +2,42 @@
 
 ## GitHub Actions deployment
 
-Pushes to main check, test and build all twenty apps and the directory, then deploy all existing Direct Upload projects using project-scoped asset hashes. Account and token credentials stay in GitHub Actions secrets. The first production run passed 646/646 live checks; deployment/automation-result.json records it.
+Pushes to main check, test and build all sixteen apps and the directory, then deploy all existing Direct Upload projects using project-scoped asset hashes. Account and token credentials stay in GitHub Actions secrets. The first production run passed 646/646 live checks; deployment/automation-result.json records it.
 
 ## Stack and project model
 
-Twenty independent Astro 7.4.2 applications use Bun 1.4.4, TypeScript 6.0.3 and @astrojs/check 0.9.12. Every app has its own package.json, bun.lock, strict tsconfig, static Astro configuration, copied layout/styles/helpers, bundled content and public assets. The repository root is not a package workspace. There is no runtime backend, authentication service or database.
+Sixteen independent Astro 7.4.2 applications use Bun 1.4.4, TypeScript 6.0.3 and @astrojs/check 0.9.12. Every app has its own package.json, bun.lock, strict tsconfig, static Astro configuration, copied layout/styles/helpers, bundled content and public assets. The repository root is not a package workspace. There is no authentication service or account system. The only runtime server code is the first-party service boundary below (P4), which serves the apex origin only.
+
+## First-party services (P4)
+
+```
+apps (*.moongazer.tech) ──native <form method=post>──▶ moongazer.tech/api/feedback ─▶ D1 table feedback (status=pending)
+                         ──navigator.sendBeacon────────▶ moongazer.tech/api/event    ─▶ D1 table event_counts (upsert +1)
+owner laptop ── scripts/review-feedback.mjs (wrangler d1) ──▶ approve ─▶ homepage/corrections.json ─▶ /corrections/ (static)
+```
+
+- **Runtime:** Cloudflare Pages Functions in the apex Pages project `moongazer`, source `homepage/functions/` (`api/feedback.ts`, `api/event.ts`, `_lib/validate.ts`, `_lib/apps.json`). `homepage/_routes.json` includes only `/api/*`, so static pages never invoke Functions. The twenty apps keep the Direct Upload path and have no Functions.
+- **Deployment split:** the apex deploys with `wrangler pages deploy dist` run from `homepage/`, with the functions directory at `homepage/functions/` (project root, not inside `dist/`). Wrangler is pinned to `4.160.0` as a devDependency of `deployment/`. The twenty apps keep the existing Direct Upload helper. Production apex deployment is an owner action (T4.10).
+- **Storage:** one D1 database `moongazer`, binding `DB`, id recorded in `homepage/wrangler.toml`. Schema is `homepage/migrations/0001_init.sql`.
+- **Stored shapes.** Feedback: `{id, created_at, app_slug, page_url, category, message, contact?, status, no_js, reviewed_at?, review_note?}`; `status` is `pending` on insert. Counter: `{date (UTC, computed by the server), app_slug, item_id, event_type, count}`, where `event_type` is `activity_started`, `activity_completed` or `share_clicked`.
+- **No IP, no logs.** Nothing stores an IP address, user agent, headers, cookies or fingerprints. Functions must not `console.log` request data. Workers Logs / observability stay off for this project.
+- **Client rules.** App bundles may call `navigator.sendBeacon` only to `https://moongazer.tech/api/event` and may post forms only to `https://moongazer.tech/api/feedback`. No `fetch(` in app bundles (`_implementation/verify-static.py` enforces this). Feedback is a native form POST (works without JS, no CORS). The counter sends `text/plain` JSON so no preflight is needed.
+- **CSP changes.** Apps: `connect-src 'self' https://moongazer.tech` and `form-action 'self' https://moongazer.tech` (T4.6). Directory: `form-action 'self'` and `connect-src 'self'`. The current `connect-src 'none'` and `form-action 'none'` in `homepage/_headers` and app `public/_headers` change at those tasks.
+- **Abuse controls.** Honeypot, minimum 3 s time-to-submit (the page sends how long it was open, measured with `performance.now()`, so device clock skew cannot drop real feedback), server-side allowlists and length limits, one Cloudflare rate-limiting rule on `/api/*` (owner, T4.10), and all submissions stored as `pending`. No Turnstile (third-party script).
+- **Moderation.** The owner reviews pending rows with `deployment/scripts/review-feedback.mjs`. Approved corrections go into `homepage/corrections.json` in Git. `/corrections/` is static and never reads D1 at runtime.
+
+### Dependencies and documentation checked (11 Nov 2026, Asia/Dhaka)
+
+- Pages Functions routing: https://developers.cloudflare.com/pages/functions/routing/ (file routes; `_routes.json` schema: `version`, `include`, `exclude`; exclude wins; at least one include; max 100 rules of 100 characters).
+- Pages Functions configuration: https://developers.cloudflare.com/pages/functions/wrangler-configuration/ (`name`, `pages_build_output_dir`, `compatibility_date`, `d1_databases` with `binding`, `database_name`, `database_id`).
+- Pages Functions get-started: https://developers.cloudflare.com/pages/functions/get-started/ (`/functions` at the project root, not in the static output folder).
+- Pages Functions bindings: https://developers.cloudflare.com/pages/functions/bindings/ (`context.env.<BINDING>`; `wrangler pages dev --d1 BINDING=ID`).
+- Wrangler Pages commands: https://developers.cloudflare.com/workers/wrangler/commands/pages/ (`wrangler pages deploy [DIRECTORY]`, `wrangler pages dev [DIRECTORY] [COMMAND]`, `--d1 D1_BINDING`).
+- Wrangler configuration: https://developers.cloudflare.com/workers/wrangler/configuration/ (`d1_databases` fields `binding`, `database_name`, `database_id`, optional `migrations_dir`, `migrations_pattern`).
+- D1 migrations: https://developers.cloudflare.com/d1/reference/migrations/ (`migrations/` directory, `NNNN_name.sql`, `d1_migrations` tracking table, `wrangler d1 migrations apply`).
+- D1 prepared statements: https://developers.cloudflare.com/d1/worker-api/prepared-statements/ (`prepare(sql).bind(...).run()` returns `{success, meta, results}`, `meta.changes`).
+- Wrangler version on this machine: `node deployment/node_modules/wrangler/bin/wrangler.js --version` = `4.160.0`. `bunx --bun wrangler` failed on Windows (git clone of `wrangler-dist/cli.js`), so the node entry point is used.
+- Limitation: the Pages docs pages did not state the `wrangler pages deploy` functions-directory rule in words beyond "not in the static root"; the local `wrangler pages dev` run (T4.2 acceptance) is the check that the functions directory from `homepage/` is picked up.
 
 ## System boundaries
 
@@ -17,7 +48,7 @@ Twenty independent Astro 7.4.2 applications use Bun 1.4.4, TypeScript 6.0.3 and 
 | `_implementation/research/` | Canonical snapshots, MCP/tool records, fetched commentary and media attribution |
 | `_implementation/qa/` | Recorded test/build/static/browser evidence and context audit |
 | `release/` | Generated static upload ZIPs and checksum manifest |
-| `_build/`, `_reference/`, root HTML demos | Earlier prototype tooling, readable atlas reference and demonstrations |
+| `islamic_product_atlas.html` | Earlier research reference (prototype tooling removed under D2c) |
 | `6_File+Context+Methodology/` | Supplied generic seven-file reference template, preserved |
 | `context/`, root `AGENTS.md` | Repo-wide product/architecture/UI/standards/workflow/progress contract |
 | `DEPLOYMENT.md`, shortlist and QA reports | Deployment inventory, selected scope and implementation evidence |
@@ -57,7 +88,7 @@ Each independent app will own its production Astro site URL, a local SEO profile
 Breadcrumbs and app-directory links are visible, and their JSON-LD mirrors actual navigation. Structured data describes WebSite, WebPage/CollectionPage, educational resources and breadcrumbs without invented reviews, authors, credentials, dates or rich-result promises. Locally generated PNG social cards and WOFF2 derivatives retain local fonts and licenses. There are no dependency upgrades, new server services or visitor tracking. SEO changes will be rebuilt, checked and republished to the existing 21 projects with current live verification.
 
 1. Preserve independent app builds, static output and user-requested Cloudflare Pages compatibility.
-2. Do not add accounts, database storage, live AI inference, API keys or external runtime assets by default.
+2. No accounts, no identity, no third-party scripts; first-party aggregate counter and moderated feedback only (apex Pages Functions plus one D1 database, see "First-party services (P4)"). Do not add live AI inference, API keys, external runtime assets, IP or user-agent storage, or request logging by default.
 3. Preserve source attribution and literal canonical quotations. No invented Quran text, scholarly certification or precise historical/geographical claims beyond evidence.
 4. Keep optional browser state isolated and resilient to expiry/corruption/blocked storage.
 5. Edit authoritative source; regenerate release output. Do not hand-edit vendor files, generated dist or ZIP contents.
@@ -65,7 +96,7 @@ Breadcrumbs and app-directory links are visible, and their JSON-LD mirrors actua
 
 ## Final implementation batch
 
-Ports 4336 through 4340 are reserved for `islamic-civilization-timeline`, `halal-business-decisions`, `revelation-context-explorer`, `family-islamic-learning-challenges` and `islamic-misinformation-casebook`. Research and QA for this batch live in `_implementation/research/batch4/` and `_implementation/qa/batch4/`. Historical records use institutional sources. Revelation reports distinguish transmitted occasions from general context and responses after revelation. Business cases remain fictional educational exercises. Family activities collect no child profiles or names. The misinformation reader evaluates a fixed cited case bank, not arbitrary visitor claims.
+Ports 4336 through 4340 are reserved for `civilization-timeline`, `halal-business-decisions`, `why-it-was-revealed`, `family-halaqa` and `islamic-misinformation-casebook`. Research and QA for this batch live in `_implementation/research/batch4/` and `_implementation/qa/batch4/`. Historical records use institutional sources. Revelation reports distinguish transmitted occasions from general context and responses after revelation. Business cases remain fictional educational exercises. Family activities collect no child profiles or names. The misinformation reader evaluates a fixed cited case bank, not arbitrary visitor claims.
 
 Batch four adds 24 institutional-source history records, 12 fictional business cases, 10 report-context readings, 12 family packs and 12 fixed evidence-reading claims. Canonical text stays local and exact; source notes retain uncertainty. All twenty app builds remain independent.
 
@@ -79,7 +110,7 @@ The shell listens for pointerdown and Tab keydown and sets a transient `data-inp
 
 ## Git repository layout
 
-The portfolio is prepared as one Git repository with all twenty independent apps, shared research, and verification records. Each app retains its own manifest, lockfile, build and deploy settings; this is not a Bun workspace. App-local ignore rules also apply when an app is copied out.
+The portfolio is prepared as one Git repository with all sixteen independent apps, shared research, and verification records. Each app retains its own manifest, lockfile, build and deploy settings; this is not a Bun workspace. App-local ignore rules also apply when an app is copied out.
 
 ## SEO release, 30 October 2026
 
@@ -93,18 +124,17 @@ Search Console is an external administrative Domain property for moongazer.tech.
 
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
-## Merges (P3, from 11 November 2026)
+## Merges (P3, finished under D2c, 12 November 2026)
 
-Four apps fold into hosts in two steps (D19 in `plan/implementation/00-INDEX.md`):
+Four apps were folded into receiving sections and then **deleted outright** (D2c in `plan/implementation/00-INDEX.md`): there is no "moved" release, no redirect, no saved-item import and no `retired` flag. The 16 remaining apps are the only entries in `deployment/targets.json`, `seo-catalog.json`, `learning-guides.json` and the app allowlist.
 
-| Old app | Receiving app and route |
+| Receiving app | Section (kept) |
 | --- | --- |
-| `quran-concept-atlas` `/topic/<id>/` | `quran-connections` (Ayah Threads) `/themes/<id>/` |
-| `islamic-history-timeline-challenge` `/` | `interactive-seerah-timeline` `/challenge/` |
-| `halal-business-decisions` `/case/<id>/` | `everyday-akhlaq-simulator` `/business/<id>/` |
-| `islamic-misinformation-casebook` `/case/<id>/` | `is-this-actually-in-the-quran` `/claims/<id>/` |
+| `ayah-threads` (Ayah Threads) | `/themes/`, `/themes/<id>/` (30 themes) |
+| `seerah-timeline` (Seerah Timeline) | `/challenge/` |
+| `everyday-akhlaq` (Everyday Akhlaq) | `/business/`, `/business/<id>/` |
+| `is-it-in-the-quran` (Is It in the Quran?) | `/claims/`, `/claims/<id>/` (12 claims) |
 
-- **Step A (R3):** the receiving sections ship; every page of each old app shows a "moved" banner whose button opens the mapped new URL with `#import=<payload>`; old pages carry a cross-host canonical to the new URL. Old apps still deploy.
-- **Import protocol:** `src/lib/import.ts` (identical in the eight sending and receiving apps; checked by `bun _implementation/sync-shared.ts --check --set merge`). Payload = base64url UTF-8 JSON `{v:1, from, items}`, at most 1,800 characters, in the URL fragment so it never reaches a server. The receiver validates each item with the old app's validator, maps keys (`theme-bookmarks`, `challenge-progress`, `business-bookmarks`, `business-<id>`, `claim-bookmarks`), merges (union for lists, keep existing progress), writes with `write()`, clears the fragment and announces the count. Blocked storage never throws.
-- **Retired flag:** `deployment/targets.json` marks the four old apps `"retired": "<receiver-slug>"`; the directory lists 16 apps. `deployment/merge-redirects.json` maps every old built path to an absolute new URL and is checked by `_implementation/test-redirect-map.ts`.
-- **Step B (no sooner than R3 + 14 days):** old Pages projects are redeployed as redirect-only outputs (301), method recorded here once verified against Cloudflare's `_redirects` documentation.
+- The shared shell has no moved banner or canonical override. `src/lib/import.ts`, `tests/import.test.ts` and the receivers' `merge-import.ts` files are deleted, and `sync-shared.ts` no longer lists them.
+- `deployment/merge-redirects.json`, `_implementation/build-redirect-map.ts` and its test are deleted. `verify-seo.py` expects each page's canonical to be its own URL.
+- The old subdomains and Pages projects are removed in the host-move step, not redirected. Saved browser data from the old apps is not carried over.

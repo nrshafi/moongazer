@@ -1,0 +1,31 @@
+{
+  "heading": "Is It in the Quran?",
+  "summary": "This Quran wording search looks for text in the complete local Arabic corpus and Pickthall's English translation. Enter a phrase or an ayah reference to inspect matching passages. It searches wording rather than judging whether an idea is Islamic, whether a paraphrase is accurate or how a verse should be interpreted.",
+  "steps": [
+    "Enter an Arabic phrase, English wording or a verse reference.",
+    "Run the search to load the local text and inspect the matching ayahs.",
+    "Read the surrounding passage and source notes before drawing a conclusion about the wording."
+  ],
+  "questions": [
+    {
+      "question": "Does no match mean an idea is absent from the Quran?",
+      "answer": "No. A wording search cannot establish that conclusion. Another translation, a paraphrase or a related expression may use different words. Search shorter phrases and read the relevant context."
+    },
+    {
+      "question": "How does Arabic text matching work?",
+      "answer": "The search normalizes diacritics, tatweel and common alif variants. Punctuation and English case are ignored. It does not perform stemming or semantic interpretation; the displayed Quran text keeps its original form."
+    }
+  ],
+  "related": [
+    {
+      "name": "Why It Was Revealed",
+      "description": "Read reports about revelation while distinguishing context, evidence and uncertainty.",
+      "kind": "Source reader",
+      "url": "https://why-it-was-revealed.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Quran learning",
+    "url": "https://moongazer.tech/quran-learning/"
+  }
+}
