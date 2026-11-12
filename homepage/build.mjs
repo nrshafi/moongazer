@@ -73,7 +73,8 @@ for(const file of ['styles.css','reading.css','app.js','feedback.js','moon.svg',
 await cp(join(source,'logos'),join(out,'logos'),{recursive:true});
 if(shots.size)await cp(join(source,'shots'),join(out,'shots'),{recursive:true});
 await mkdir(join(out,'fonts'),{recursive:true});
-for(const file of ['dm-sans.woff2','dm-sans-OFL.txt','newsreader.woff2','newsreader-OFL.txt'])await cp(join(root,'apps/guess-the-surah/public/fonts',file),join(out,'fonts',file));
+for(const file of ['dm-sans.woff2','dm-sans-OFL.txt','newsreader.woff2','newsreader-OFL.txt','amiri-OFL.txt'])await cp(join(root,'apps/guess-the-surah/public/fonts',file),join(out,'fonts',file));
+await cp(join(source,'amiri-honorific.woff2'),join(out,'fonts','amiri-honorific.woff2'));
 // Every local file a built page references must exist (a renamed logo once shipped as a 404).
 const {existsSync}=await import('node:fs');
 async function htmlFiles(dir){const found=[];for(const entry of await readdir(dir,{withFileTypes:true})){const path=join(dir,entry.name);if(entry.isDirectory())found.push(...await htmlFiles(path));else if(entry.name.endsWith('.html'))found.push(path);}return found;}

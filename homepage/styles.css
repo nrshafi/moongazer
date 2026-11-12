@@ -1,5 +1,8 @@
 @font-face{font-family:DM Sans;src:url('/fonts/dm-sans.woff2') format('woff2');font-weight:100 1000;font-display:swap}
 @font-face{font-family:Newsreader;src:url('/fonts/newsreader.woff2') format('woff2');font-weight:200 800;font-display:swap}
+/* Honorific: U+FDFA (ﷺ) renders in Amiri inside DM Sans and Newsreader runs (a 1.6 KB subset; OFL, see fonts/amiri-OFL.txt). */
+@font-face{font-family:DM Sans;src:url('/fonts/amiri-honorific.woff2') format('woff2');font-weight:100 1000;unicode-range:U+FDFA;font-display:swap}
+@font-face{font-family:Newsreader;src:url('/fonts/amiri-honorific.woff2') format('woff2');font-weight:200 800;unicode-range:U+FDFA;font-display:swap}
 :root{--ink:#18354c;--muted:#566a7c;--night:#12263d;--paper:#f7fafc;--line:#dbe4eb;--gold:#e9c992;--blue:#dae9f5;--white:#fff;--radius:18px;color-scheme:light;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);scroll-behavior:smooth;scroll-padding-top:16px}
 *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input{font:inherit}button,a,input{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img,svg{display:block;max-width:100%}[hidden]{display:none!important}:focus-visible{outline:2px solid #778a9d;outline-offset:3px}::selection{background:#d7b77d;color:#12263d}
 .wrap{width:min(1240px,calc(100% - 96px));margin-inline:auto}
