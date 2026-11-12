@@ -887,7 +887,9 @@
       "revelation_place": "makkah",
       "revelation_order": 7,
       "verses_count": 29,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Overthrowing",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 82,
@@ -896,7 +898,9 @@
       "revelation_place": "makkah",
       "revelation_order": 82,
       "verses_count": 19,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Cleaving",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 83,
@@ -905,7 +909,9 @@
       "revelation_place": "makkah",
       "revelation_order": 86,
       "verses_count": 36,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Defrauding",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 84,
@@ -914,7 +920,9 @@
       "revelation_place": "makkah",
       "revelation_order": 83,
       "verses_count": 25,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Sundering",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 85,
@@ -923,7 +931,9 @@
       "revelation_place": "makkah",
       "revelation_order": 27,
       "verses_count": 22,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Mansions of the Stars",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 86,
@@ -932,7 +942,9 @@
       "revelation_place": "makkah",
       "revelation_order": 36,
       "verses_count": 17,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Nightcommer",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 87,
@@ -941,7 +953,9 @@
       "revelation_place": "makkah",
       "revelation_order": 8,
       "verses_count": 19,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Most High",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 88,
@@ -950,7 +964,9 @@
       "revelation_place": "makkah",
       "revelation_order": 68,
       "verses_count": 26,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Overwhelming",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 89,
@@ -959,7 +975,9 @@
       "revelation_place": "makkah",
       "revelation_order": 10,
       "verses_count": 30,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Dawn",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 90,
@@ -968,7 +986,9 @@
       "revelation_place": "makkah",
       "revelation_order": 35,
       "verses_count": 20,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The City",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 91,
