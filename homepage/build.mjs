@@ -11,8 +11,8 @@ const apps=JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'
 const collections=JSON.parse(await readFile(join(source,'collections.json'),'utf8'));
 const shots=new Set((await readdir(join(source,'shots')).catch(()=>[])).filter(f=>f.endsWith('.webp')).map(f=>f.slice(0,-5)));
 const bySlug=new Map(apps.map(app=>[app.slug,app]));
-if(apps.some(app=>![2,10,20].includes(app.time)||!['me','kids','class'].includes(app.audience)||app.format!==app.kind)||apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
-const home={path:'/',title:'Free Islamic Learning Apps & Quran Games | Moongazer',heading:'Free Islamic learning apps',description:'Explore sixteen free Islamic learning apps for Quran, Seerah, history and daily practice. Choose a reading tool or game and begin without an account.'};
+if(apps.some(app=>![2,10,20].includes(app.time)||!['me','kids','class'].includes(app.audience)||app.format!==app.kind)||apps.length!==17||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
+const home={path:'/',title:'Free Islamic Learning Apps & Quran Games | Moongazer',heading:'Free Islamic learning apps',description:'Explore seventeen free Islamic learning apps for Quran, Seerah, history and daily practice. Choose a reading tool or game and begin without an account.'};
 const allPages=[home];
 const paths=collections.map(collection=>{
   const selected=apps.filter(app=>app.category===collection.category);
@@ -20,7 +20,7 @@ const paths=collections.map(collection=>{
   return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span> <h3>${e(collection.name)}</h3> <p>${e(collection.description)}</p> <span class="member-logos" aria-hidden="true">${selected.map(app=>`<img src="${logo(app.slug)}" alt="" width="32" height="32" loading="lazy">`).join("")}</span> <span class="subject-action">Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
 }).join('\n');
 const commonQuestions=[
-  {question:'What is Moongazer?',answer:'Moongazer is a collection of sixteen free browser apps for Quran, Seerah, history and everyday Islamic learning. Choose a tool for a specific task, such as recognizing a surah, finding wording, reading a report or exploring prayer recitation meanings.'},
+  {question:'What is Moongazer?',answer:'Moongazer is a collection of seventeen free browser apps for Quran, Seerah, history and everyday Islamic learning. Choose a tool for a specific task, such as recognizing a surah, finding wording, reading a report or exploring prayer recitation meanings.'},
   {question:'Do I need an account or an installation?',answer:'No. Open an app in your browser and begin. There are no accounts or subscriptions. Apps that offer saved progress keep it in that browser and provide their own storage controls.'},
   {question:'Where can I check an explanation or report a correction?',answer:'Each app links its sources and methodology. The About page explains the collection\'s source practices and provides the public contact for quotation, attribution and wording corrections.'}
 ];
@@ -48,7 +48,7 @@ for(const collection of collections){
   await writeFile(join(folder,'index.html'),documentPage(meta,body,collections,selected));
   allPages.push(meta);
 }
-const about={path:'/about/',name:'About Moongazer',title:'About Moongazer | Sources, Privacy & Corrections',heading:'Small learning tools. Sources you can inspect.',intro:'Moongazer is a free collection of Quran, Seerah, history and everyday learning apps. This page explains what the activities are for, how to inspect their sources and where to report a correction.',description:'Read how Moongazer handles source editions, educational limits, browser storage and corrections across its sixteen free Islamic learning apps.',type:'AboutPage'};
+const about={path:'/about/',name:'About Moongazer',title:'About Moongazer | Sources, Privacy & Corrections',heading:'Small learning tools. Sources you can inspect.',intro:'Moongazer is a free collection of Quran, Seerah, history and everyday learning apps. This page explains what the activities are for, how to inspect their sources and where to report a correction.',description:'Read how Moongazer handles source editions, educational limits, browser storage and corrections across its seventeen free Islamic learning apps.',type:'AboutPage'};
 const sourceLinks=apps.map(app=>`<li><a href="https://${app.slug}.moongazer.tech/sources/">${e(app.name)} sources</a></li>`).join('');
 const aboutBody=(await readFile(join(source,'about-content.html'),'utf8')).replace('<!-- SOURCE_DIRECTORY -->',sourceLinks).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
 await mkdir(join(out,'about'),{recursive:true});
@@ -91,7 +91,7 @@ allPages.push(ramadanMeta);
 const sitemapTemplate=await readFile(join(source,'sitemap.xml'),'utf8');
 if(!sitemapTemplate.includes('<!-- SITEMAP_URLS -->'))throw new Error('Missing sitemap template marker');
 await writeFile(join(out,'sitemap.xml'),sitemapTemplate.replace('<!-- SITEMAP_URLS -->',allPages.map(page=>`<url><loc>${e(new URL(page.path,origin).href)}</loc></url>`).join('\n')));
-const llms=`# Moongazer\n\n> Sixteen free Islamic learning apps for Quran, Seerah, history and everyday practice. No account or installation is required.\n\nThis index links to the same public activities and guidance available on the website. Source quotations, attributed commentary and editorial exercises are distinguished in each app. It does not represent independent scholarly certification.\n\n## Learning guides\n${collections.map(c=>`- [${c.name}](${origin}${c.slug}/): ${c.description}`).join('\n')}\n\n## Apps\n${apps.map(a=>`- [${a.name}](https://${a.slug}.moongazer.tech/): ${a.description} Source notes: https://${a.slug}.moongazer.tech/sources/`).join('\n')}\n\n## About and corrections\n- [About Moongazer](${origin}about/): Sources, educational limits, browser storage and the public source-correction contact.\n`;
+const llms=`# Moongazer\n\n> Seventeen free Islamic learning apps for Quran, Seerah, history and everyday practice. No account or installation is required.\n\nThis index links to the same public activities and guidance available on the website. Source quotations, attributed commentary and editorial exercises are distinguished in each app. It does not represent independent scholarly certification.\n\n## Learning guides\n${collections.map(c=>`- [${c.name}](${origin}${c.slug}/): ${c.description}`).join('\n')}\n\n## Apps\n${apps.map(a=>`- [${a.name}](https://${a.slug}.moongazer.tech/): ${a.description} Source notes: https://${a.slug}.moongazer.tech/sources/`).join('\n')}\n\n## About and corrections\n- [About Moongazer](${origin}about/): Sources, educational limits, browser storage and the public source-correction contact.\n`;
 await writeFile(join(out,'llms.txt'),llms);
 for(const file of ['styles.css','reading.css','app.js','daily.js','ramadan.js','feedback.js','moon.svg','favicon.svg','social-card.png','_headers','_redirects','_routes.json','robots.txt','404.html'])await cp(join(source,file),join(out,file));
 await cp(join(source,'logos'),join(out,'logos'),{recursive:true});
