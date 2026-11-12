@@ -56,6 +56,12 @@
         "at": "Thu Nov 12 23:19:07 BST 2026",
         "result": "fail",
         "reason": "The title 'Keeping your word' still names the key idea of the correct option, being truthful in promises. The teaching's 'keep a certain kind of company in promises and oaths' also hints at it. Retitle neutrally, for example 'Good company', and reword the teaching to avoid promises and oaths."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'Good company' still restates the key idea of the correct option, being with the truthful, so it gives the answer away. The teaching is faithful to Al-Muyassar on 9:119 and can stay; retitle to a neutral label such as 'Allah's instruction'."
       }
     },
     {
@@ -104,6 +110,12 @@
         "at": "Thu Nov 12 23:19:07 BST 2026",
         "result": "fail",
         "reason": "The title 'Before you assume' echoes the correct option 'much suspicion' and was not changed by C16.04, so the first pass missed it. The new teaching is faithful to Al-Muyassar on 49:12. Retitle, for example to 'Respecting others'."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'Respecting others' still states the key idea of the correct option, avoiding suspicion, spying and backbiting, so it gives the answer away. Retitle to a neutral label such as 'A verse for families'; the teaching is fine."
       }
     },
     {
@@ -146,6 +158,12 @@
         "at": "Thu Nov 12 23:19:07 BST 2026",
         "result": "fail",
         "reason": "The title 'Calm replies' restates the key idea of the correct option, answering harm with something better, so it gives the answer away. Retitle, for example to 'Responding to harm'. The new teaching is faithful to Al-Muyassar on 41:34."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'Responding to harm' still names the key idea of the correct option, answering harm with something better, so it gives the answer away. Retitle to a neutral label such as 'A hard moment'; the teaching is fine."
       }
     },
     {
@@ -188,6 +206,12 @@
         "at": "Thu Nov 12 23:19:07 BST 2026",
         "result": "fail",
         "reason": "The title 'Two builders' names the building that the correct option describes, which gives away 'raising the foundations'. The teaching's 'as they worked' also hints at the answer. Retitle, for example to 'A shared prayer', and change 'as they worked' to 'as they prayed', which matches Al-Muyassar on 2:127."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'A shared prayer' and the teaching are fine, and the teaching is faithful to Al-Muyassar on 2:127-128, but the explanation names 'Abraham and Ishmael' without '(peace be upon him)'. Add the honorific after each name in the explanation."
       }
     },
     {

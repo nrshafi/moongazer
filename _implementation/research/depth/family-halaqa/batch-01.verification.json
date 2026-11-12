@@ -120,6 +120,12 @@
         "at": "Thu Nov 12 23:19:07 BST 2026",
         "result": "fail",
         "reason": "The title 'Heavy and light' pairs hardship with ease, which gives away the answer 'Ease'. The new teaching is faithful to Al-Muyassar on 94:5-6, so only the title needs changing, for example to 'Two short verses'."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "pass",
+        "reason": "Title 'Two short verses' does not echo 'Ease.' and the teaching does not state it. One correct option, passage unchanged, no bad characters, and the Prophet Muhammad ﷺ carries the honorific symbol."
       }
     },
     {

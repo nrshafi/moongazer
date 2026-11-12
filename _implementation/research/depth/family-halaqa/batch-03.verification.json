@@ -56,6 +56,12 @@
         "at": "Thu Nov 12 23:19:07 BST 2026",
         "result": "fail",
         "reason": "The title 'After a mistake' is fine, but the teaching names Adam without '(peace be upon him)', which breaks the honorific rule. Change it to 'Adam (peace be upon him) and Hawwa'; the Al-Muyassar wording on 7:23 is faithful."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "pass",
+        "reason": "Title 'After a mistake' does not echo 'Forgiveness and mercy.', and the teaching gives Adam (peace be upon him) with the honorific; Hawwa is not a prophet, so no honorific is needed. Passage unchanged, one correct option, no bad characters."
       }
     },
     {
