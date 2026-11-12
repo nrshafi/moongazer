@@ -557,7 +557,9 @@
       "revelation_place": "makkah",
       "revelation_order": 67,
       "verses_count": 60,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Winnowing Winds",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 52,
@@ -566,7 +568,9 @@
       "revelation_place": "makkah",
       "revelation_order": 76,
       "verses_count": 49,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Mount",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 53,
@@ -575,7 +579,9 @@
       "revelation_place": "makkah",
       "revelation_order": 23,
       "verses_count": 62,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Star",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 54,
@@ -584,7 +590,9 @@
       "revelation_place": "makkah",
       "revelation_order": 37,
       "verses_count": 55,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Moon",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 55,
@@ -593,7 +601,9 @@
       "revelation_place": "madinah",
       "revelation_order": 97,
       "verses_count": 78,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Beneficent",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 56,
@@ -602,7 +612,9 @@
       "revelation_place": "makkah",
       "revelation_order": 46,
       "verses_count": 96,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Inevitable",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 57,
@@ -611,7 +623,9 @@
       "revelation_place": "madinah",
       "revelation_order": 94,
       "verses_count": 29,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Iron",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 58,
@@ -620,7 +634,9 @@
       "revelation_place": "madinah",
       "revelation_order": 105,
       "verses_count": 22,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Pleading Woman",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 59,
@@ -629,7 +645,9 @@
       "revelation_place": "madinah",
       "revelation_order": 101,
       "verses_count": 24,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Exile",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 60,
@@ -638,7 +656,9 @@
       "revelation_place": "madinah",
       "revelation_order": 91,
       "verses_count": 13,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "She that is to be examined",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 61,

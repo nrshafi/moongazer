@@ -1,0 +1,137 @@
+{
+  "task": "C1",
+  "batch": 6,
+  "chapters": [
+    51,
+    60
+  ],
+  "source": {
+    "id": "quran-com-api-v4-chapters",
+    "name": "Quran.com API v4 chapters endpoint, field translated_name.name (language en)",
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "retrievedAt": "2026-11-12T08:33:08Z",
+    "method": "Single curl GET returning all 114 chapters; values copied exactly, not paraphrased."
+  },
+  "items": [
+    {
+      "chapter": 51,
+      "name_simple": "Adh-Dhariyat",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=51].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Winnowing Winds"
+    },
+    {
+      "chapter": 52,
+      "name_simple": "At-Tur",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=52].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Mount"
+    },
+    {
+      "chapter": 53,
+      "name_simple": "An-Najm",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=53].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Star"
+    },
+    {
+      "chapter": 54,
+      "name_simple": "Al-Qamar",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=54].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Moon"
+    },
+    {
+      "chapter": 55,
+      "name_simple": "Ar-Rahman",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=55].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Beneficent"
+    },
+    {
+      "chapter": 56,
+      "name_simple": "Al-Waqi'ah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=56].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Inevitable"
+    },
+    {
+      "chapter": 57,
+      "name_simple": "Al-Hadid",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=57].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Iron"
+    },
+    {
+      "chapter": 58,
+      "name_simple": "Al-Mujadila",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=58].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Pleading Woman"
+    },
+    {
+      "chapter": 59,
+      "name_simple": "Al-Hashr",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=59].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "The Exile"
+    },
+    {
+      "chapter": 60,
+      "name_simple": "Al-Mumtahanah",
+      "tool": "curl (HTTP GET)",
+      "url": "https://api.quran.com/api/v4/chapters?language=en",
+      "arguments": {
+        "language": "en",
+        "field": "chapters[id=60].translated_name.name"
+      },
+      "retrievedAt": "2026-11-12T08:33:08Z",
+      "exactValue": "She that is to be examined"
+    }
+  ]
+}
