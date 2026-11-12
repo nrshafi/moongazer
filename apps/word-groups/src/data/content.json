@@ -1528,73 +1528,197 @@
     {
       "id": "board-11",
       "number": 11,
-      "title": "Words and readings",
+      "title": "Crossroads",
       "level": "Mixed",
       "groups": [
-        "requested-crops",
-        "body",
-        "times",
-        "qualities"
+        "letter-surahs",
+        "hajj-places",
+        "yahya-qualities",
+        "paradise-rivers"
       ]
     },
     {
       "id": "board-12",
       "number": 12,
-      "title": "Across the passages",
+      "title": "Waymark",
       "level": "Mixed",
       "groups": [
-        "metals",
         "prophets",
-        "qul",
-        "textiles"
+        "prophet-surahs",
+        "day-night",
+        "prophet-qualities-mixed"
+      ],
+      "alternates": [
+        {
+          "terms": [
+            "Hud",
+            "Nuh",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        },
+        {
+          "terms": [
+            "Yunus",
+            "Nuh",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        },
+        {
+          "terms": [
+            "Yunus",
+            "Hud",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        },
+        {
+          "terms": [
+            "Yunus",
+            "Hud",
+            "Nuh",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        }
       ]
     },
     {
       "id": "board-13",
       "number": 13,
-      "title": "First connections",
+      "title": "Courtyard",
       "level": "Mixed",
       "groups": [
-        "storm",
-        "worship",
-        "divine-names",
-        "places"
+        "prophets",
+        "prophet-surahs",
+        "fruit",
+        "prophet-qualities-mixed"
+      ],
+      "alternates": [
+        {
+          "terms": [
+            "Hud",
+            "Nuh",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        },
+        {
+          "terms": [
+            "Yunus",
+            "Nuh",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        },
+        {
+          "terms": [
+            "Yunus",
+            "Hud",
+            "Ibrahim",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        },
+        {
+          "terms": [
+            "Yunus",
+            "Hud",
+            "Nuh",
+            "Yusuf"
+          ],
+          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
+        }
       ]
     },
     {
       "id": "board-14",
       "number": 14,
-      "title": "A closer look",
+      "title": "Sundial",
       "level": "Mixed",
       "groups": [
-        "animal-titles",
-        "colors",
-        "angels",
-        "scriptures"
+        "qualities",
+        "ayat-kursi",
+        "last-day-surahs",
+        "lost-peoples"
       ]
     },
     {
       "id": "board-15",
       "number": 15,
-      "title": "Words and readings",
+      "title": "Ledger",
       "level": "Mixed",
       "groups": [
-        "day-night",
-        "fruit",
-        "textiles",
-        "places"
+        "qualities",
+        "paradise-rivers",
+        "root-kitab",
+        "sulayman-hosts"
       ]
     },
     {
       "id": "board-16",
       "number": 16,
-      "title": "Across the passages",
+      "title": "Bookmark",
       "level": "Mixed",
       "groups": [
-        "neighbors",
+        "worldly-joys",
+        "day-night",
+        "place-surahs",
+        "ibrahim-qualities"
+      ]
+    },
+    {
+      "id": "board-17",
+      "number": 17,
+      "title": "Quill",
+      "level": "Mixed",
+      "groups": [
+        "ayat-kursi",
+        "divine-names",
         "body",
-        "scriptures",
-        "qualities"
+        "letter-surahs"
+      ]
+    },
+    {
+      "id": "board-18",
+      "number": 18,
+      "title": "Kindling",
+      "level": "Mixed",
+      "groups": [
+        "letter-surahs",
+        "colors",
+        "root-hamd",
+        "requested-crops"
+      ]
+    },
+    {
+      "id": "board-19",
+      "number": 19,
+      "title": "Harvest",
+      "level": "Mixed",
+      "groups": [
+        "qul",
+        "ibrahim-qualities",
+        "lost-peoples",
+        "root-ilm"
+      ]
+    },
+    {
+      "id": "board-20",
+      "number": 20,
+      "title": "Embers",
+      "level": "Challenging",
+      "groups": [
+        "body",
+        "colors",
+        "root-rahma",
+        "prophet-qualities-mixed"
       ]
     }
   ],
