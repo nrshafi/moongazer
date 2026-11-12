@@ -237,7 +237,7 @@
         }
       ],
       "reason": "Fails on one cross-reference: fatwa 7746 does not use the '21 carat' wording. Everything else matches. Editorial check only. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened IW-81355, MY-1811, JO-854, EG-7705, EG-6759, EG-6754, EG-7746, JO-3712 and UK-BHAM (ego-browser). Figures and quotations match the record. The 21-carat wording is inside the Answer of 7705, 6759 and 6754 and is absent from 7746 (which says only '85 grams of gold'), so the cross-reference fix holds. Fail on the note about AAOIFI SS 35: it says the official page at cis.aaoifi.com/standards/ss-35-zakah/ states that the full text is for AAOIFI members and licensed subscribers. The page as opened (English standard summary, PDF link, no access wording) does not say this, and the PDF was not opened. Remove the claim or cite what the page actually shows.",
-      "followUp": "C17.03: the 21-carat gloss is now attributed only to Egypt 7705, 6759 and 6754 (each re-opened in ego-browser); 7746 is listed separately as '85 grams of gold', no carat. Entry sources now include EG-6754 and EG-6759."
+      "followUp": "C17.03: the 21-carat gloss is now attributed only to Egypt 7705, 6759 and 6754 (each re-opened in ego-browser); 7746 is listed separately as '85 grams of gold', no carat. Entry sources now include EG-6754 and EG-6759. || C17.04: AAOIFI note rewritten after re-opening the page on 2026-11-12: it showed only an overview; the full text was not available to open from it; no AAOIFI position is used. The members-only claim is dropped."
     },
     {
       "id": "diff-jewellery",
@@ -406,7 +406,7 @@
         }
       ],
       "reason": "Fails on two attributions: the MY-1811 'lower value' position does not address metal choice, and the '21-carat' gloss is not on EG-7746. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened IW-138743, IW-81355, IW-120628, IW-81848, MY-1811, EG-7746 and JO-3712. Positions and quotations match. The MY-1811 'lower value' point is now a note, and the 21-carat gloss is no longer attached to 7746. Fail on the same AAOIFI SS 35 note as nisab-conversions: the membership-only statement is not on the page as opened.",
-      "followUp": "C17.03: MY-1811 'use the lower value' removed from positions and moved to notes with what it actually says (current gold price versus the institution's fixed nisab). The Egypt gloss now reads per page: 7746 '85 grams of gold'; 21-carat only where it appears."
+      "followUp": "C17.03: MY-1811 'use the lower value' removed from positions and moved to notes with what it actually says (current gold price versus the institution's fixed nisab). The Egypt gloss now reads per page: 7746 '85 grams of gold'; 21-carat only where it appears. || C17.04: AAOIFI note rewritten as above; the silver-only wording now says 'for cash' (IW-120628 gives a silver nisab for silver held as silver)."
     },
     {
       "id": "fitr-facts",
@@ -454,7 +454,7 @@
         }
       ],
       "reason": "Pass, with the advisory on the 'approx 3 kg' note. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened sunnah.com bukhari:1503, 1511, 1510 and abudawud:1609, plus JO-5786 and EG-7732. Gradings, wording and the 1511 'a day or two before Eid' match, and the record has no amounts (the 'approx 3 kg' note is gone; JO-5786's sa' weight is omitted). Fail on neutrality: the statement 'Zakat al-fitr is a small payment of food' presents the food form as settled, while the next item records that the form is disputed. JO-5786 also defines Zakat al-Fitr as 'a specific amount of money' in one place. Reword, for example 'a small obligatory payment, which the hadith specifies as a sa' of food'. Judgement call on the editorial standard; the other facts check out.",
-      "followUp": "C17.03 (advisory): removed the 'approx 3 kg' quotation from the notes; no amounts anywhere."
+      "followUp": "C17.03 (advisory): removed the 'approx 3 kg' quotation from the notes; no amounts anywhere. || C17.04: statement reworded to 'a small obligatory payment ... the hadith specify it as a sa' of food', with a note that food versus value is the difference in fitr-food-vs-cash."
     },
     {
       "id": "fitr-food-vs-cash",
@@ -487,7 +487,7 @@
         }
       ],
       "reason": "Fails on neutrality: the Jordan wording makes food the 'default' and 'correct ruling'. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened EG-6417, EG-7732 and JO-4209. The positions quote 6417 and 7732 accurately and no longer carry the Jordan 'default ruling' or 'all schools' wording. Two failures: (1) the note 'Left out: Maliki and Hanbali positions on cash fitr (no accessible source opened)' is contradicted by EG-6417, which is cited by this item and reports Hanbali views (Ibn Taymiyya: permissible in cases of need; a report from Imam Ahmad). The note must be corrected or the Hanbali view added with attribution. (2) The same AAOIFI SS 35 note as nisab-conversions, not confirmed on the page.",
-      "followUp": "C17.03: positions restated neutrally and attributed ('Egypt's Dar al-Ifta states ...', 'Jordan's General Iftaa' Department states ...'); 'default ruling', 'correct ruling according to all schools' and 'exception' removed from positions; a note says the Jordan phrasing is not repeated as fact. Re-check needed."
+      "followUp": "C17.03: positions restated neutrally and attributed ('Egypt's Dar al-Ifta states ...', 'Jordan's General Iftaa' Department states ...'); 'default ruling', 'correct ruling according to all schools' and 'exception' removed from positions; a note says the Jordan phrasing is not repeated as fact. Re-check needed. || C17.04: AAOIFI note rewritten as above. The Hanbali note is corrected: EG-6417 reports Ibn Taymiyya and a report from Imam Ahmad, now an attributed position; the left-out note now concerns Maliki only."
     }
   ],
   "examples": [
@@ -539,7 +539,7 @@
         }
       ],
       "reason": "Fails on the unsupported ifSilver row. The other two rows are correct and supported. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: pass. Recomputed by script: gold nisab 85 x 100 = 8500, and 1000 < 8500, so zakat 0; silver nisab 595 x 1 = 595, lower-of-two 595, and 1000 >= 595, so 1000 / 40 = 25. Both rows match expected. Row sources: IW-138743 prefers the gold nisab for bank notes; IW-120628 says the majority value banknotes to the least nisab of gold or silver. Not a failure, but the author should narrow the ifSilver-related note: it says 'no opened source applies a silver-only nisab', while IW-120628 states a silver nisab for silver held as silver. The example concerns cash, so the note should say 'for cash'.",
-      "followUp": "C17.03: removed the ifSilver row (no opened source applies a silver-only nisab); gold-only and lower-of-two rows kept."
+      "followUp": "C17.03: removed the ifSilver row (no opened source applies a silver-only nisab); gold-only and lower-of-two rows kept. || C17.04: note now says no silver-only row 'for cash'; IW-120628's silver nisab for silver held as silver is acknowledged."
     },
     {
       "id": "ex-3-debts",

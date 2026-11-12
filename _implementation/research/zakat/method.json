@@ -101,7 +101,7 @@
   "notAccessible": [
     {
       "item": "AAOIFI Shari'ah Standard 35 (Zakah)",
-      "reason": "Official page says the full text is exclusive to AAOIFI members and licensed subscribers; no position is attributed to it."
+      "reason": "On 2026-11-12 the official English page showed only an overview of the standard (scope and aims); its full text was not available to open from that page. No AAOIFI position is used because its text was not opened."
     },
     {
       "item": "Diyanet (Turkey) nisab figures 80.18 g gold / 561.2 g silver",
@@ -564,7 +564,7 @@
       "notes": [
         "The calculator should show the visitor the published options and let them (or their scholar) choose; this record picks none.",
         "Egypt's 21-carat figure (fatwas 7705, 6759, 6754) is a weight of 21-carat gold, which is not the same quantity of pure gold as 85 g of 24-karat; the sources do not say how Egypt converts. Fatwa 7746 says only '85 grams of gold'. Treat these as different published conventions, not rounding.",
-        "Left out: the Turkish Diyanet figures (80.18 g gold, 561.2 g silver) appeared in search snippets only; the Diyanet PDF could not be opened, so they are not recorded. AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it.",
+        "Left out: the Turkish Diyanet figures (80.18 g gold, 561.2 g silver) appeared in search snippets only; the Diyanet PDF could not be opened, so they are not recorded. AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used.",
         "Examples in this file use 85 g and 595 g only as test inputs; that is not an endorsement."
       ]
     },
@@ -700,7 +700,7 @@
       "notes": [
         "Options for the engine: (a) count worn jewellery at its gold or silver value; (b) exclude permitted worn jewellery. Unworn or saved jewellery is counted in both options per JO-525 and MY-38.",
         "The three hadith are recorded as texts discussed on this question; no source opened here ties them to a particular school, so none is attributed. Grades are as shown on sunnah.com. JO-525 cites Malik's Muwatta' for the opposite Companion reports; that page was not opened.",
-        "Left out: any madhhab position on the 'customary amount' limit beyond JO-3712's one phrase (no accessible source stating the limit). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it."
+        "Left out: any madhhab position on the 'customary amount' limit beyond JO-3712's one phrase (no accessible source stating the limit). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
       ]
     },
     {
@@ -780,7 +780,7 @@
       "notes": [
         "Options for the engine: (a) deduct debts that are due now; (b) deduct nothing. The sources differ on whether not-yet-due instalments count (Egypt 6754 deducts them all; Islamweb 426541 allows deducting under a surplus-assets condition). Narrow the engine's 'due now' option to the sources if needed.",
         "JO-3712 is written for a merchant; the Department's general ruling for non-merchants was not opened, so it is not stated here.",
-        "Left out: Hanafi, Maliki, Shafi'i and Hanbali positions on debts as attributed on teaching or Q&A sites I did not open or that are not institutional fatwa bodies (for example SeekersGuidance, islamqa.org mirrors). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it."
+        "Left out: Hanafi, Maliki, Shafi'i and Hanbali positions on debts as attributed on teaching or Q&A sites I did not open or that are not institutional fatwa bodies (for example SeekersGuidance, islamqa.org mirrors). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
       ]
     },
     {
@@ -853,7 +853,7 @@
       "notes": [
         "Options for the engine: (a) count money you expect to receive; (b) count it only once received. Only (a)'s wording covers a debtor who is able to pay; doubtful debts are where the sources split.",
         "Egypt's fatwa does not name the Maliki school; it is attributed only via Jordan's fatwa and Islamweb's guidance.",
-        "Left out: Hanbali position on receivables (no accessible source opened). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it."
+        "Left out: Hanbali position on receivables (no accessible source opened). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
       ]
     },
     {
@@ -961,8 +961,8 @@
         }
       ],
       "notes": [
-        "Options for the engine: gold nisab only; lower of the two. A silver-only option is not offered because no accessible source stating a silver-only rule was opened. The calculator asks the visitor to choose.",
-        "Left out: a silver-only position (no accessible source opened); a Hanafi attribution for silver (Darul Ifta Birmingham lists both silver and gold amounts but states no choice). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it.",
+        "Options for the engine: gold nisab only; lower of the two. A silver-only option for cash is not offered because no opened source states a silver-only rule for cash (IW-120628 gives a silver nisab for silver held as silver, and says the majority measure banknotes against the lower of the two). The calculator asks the visitor to choose.",
+        "Left out: a silver-only position for cash (no opened source states one); a Hanafi attribution for silver (Darul Ifta Birmingham lists both silver and gold amounts but states no choice). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used.",
         "IW-81355 and IW-138743 say they are guidance from the same centre; two pages from one body are not counted as independent.",
         "Moved from positions: the Mufti of the Federal Territory (MY-1811) says that, between the current gold price and the zakat institution's fixed gold-based nisab for the year, it is better to choose the lower, so more people can give. That is about gold price versus the institution's set nisab; it says nothing about gold versus silver or combining, so it is not a position on this difference. The page also says the nisab for savings and income follows the gold and silver nisabs (85 g / 595 g)."
       ]
@@ -970,7 +970,7 @@
     {
       "id": "fitr-facts",
       "title": "Zakat al-fitr: who pays, for whom, when",
-      "statement": "Zakat al-fitr is a small payment of food at the end of Ramadan, due on each Muslim, and paid before the Eid prayer. Ask your local masjid or zakat committee for this year's amount.",
+      "statement": "Zakat al-fitr is a small obligatory payment at the end of Ramadan, due on each Muslim and paid before the Eid prayer; the hadith specify it as a sa' of food. Ask your local masjid or zakat committee for this year's amount.",
       "basis": [
         {
           "type": "hadith",
@@ -1043,7 +1043,8 @@
         "No amounts are recorded anywhere in this record. Use the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
         "Conditions stated by the fatwa bodies, not by a hadith opened here: Egypt's Dar al-Ifta (7732) says it is for every person or head of a family who has food in excess of what he needs on the last day of Ramadan; Jordan's article (5786) lists being Muslim, the sunset ending Ramadan, and surplus beyond basic needs, and says whoever supports another also pays for them. These are those bodies' statements.",
         "Timing detail: sunnah.com 1511 reports the Companions' practice of giving a day or two early; the Jordan article gives the due time as the arrival of the night of Eid. The engine need not decide this; the explainer can show the range.",
-        "The hadith text uses units (sa') and foods; this record gives no weight conversion, because a gram figure would be a choice and no amounts are recorded."
+        "The hadith text uses units (sa') and foods; this record gives no weight conversion, because a gram figure would be a choice and no amounts are recorded.",
+        "Whether it is paid as food or as its value is a documented difference, covered in the entry fitr-food-vs-cash; this entry does not settle it."
       ]
     },
     {
@@ -1069,6 +1070,15 @@
             "locator": "Answer; JO-4209 The Answer"
           },
           "summary": "Egypt's Dar al-Ifta states that 'It is permissible in our school to pay the equivalent value of wheat', quoting Al-Sarakhsi's Al-Mabsut (vol. 3, pp. 107-8). Jordan's General Iftaa' Department states that Hanafi scholars have permitted giving it as monetary value, considering it more beneficial for the poor and easier for the giver."
+        },
+        {
+          "label": "Cash value where there is need or public benefit",
+          "attribution": {
+            "who": "Hanbali scholar Ibn Taymiyya, and a report from Imam Ahmad, as reported by Egypt's Dar al-Ifta",
+            "sourceId": "EG-6417",
+            "locator": "Answer, paragraphs 4-5"
+          },
+          "summary": "Egypt's Dar al-Ifta reports that the Hanbali scholar Taqi al-Din Ibn Taymiyya (Majmu' al-Fatawa 25/25-83) maintained that paying the value is permissible in cases of need or public benefit, and that a report from Imam Ahmad (cited by Al-Mawardi, Al-Insaf 3/182) holds that giving the value in cash fulfils the obligation."
         },
         {
           "label": "Depends on the food available where the payer lives",
@@ -1107,8 +1117,8 @@
       "notes": [
         "The calculator does not compute zakat al-fitr. The explainer shows these positions and the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
         "JO-4209 also gives an amount for Jordan; it is deliberately not recorded.",
-        "Left out: Maliki and Hanbali positions on cash fitr (no accessible source opened). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it.",
-        "Jordan's page (JO-4209) also ranks the options in its own words and makes a statement about all schools; that framing is the Department's and is deliberately not reproduced in this record, which sets the positions out without ranking them."
+        "Jordan's page (JO-4209) also ranks the options in its own words and makes a statement about all schools; that framing is the Department's and is deliberately not reproduced in this record, which sets the positions out without ranking them.",
+        "Left out: a Maliki position on cash fitr (no source opened states one). Hanbali: Egypt's Dar al-Ifta (EG-6417) reports Ibn Taymiyya and a report from Imam Ahmad; recorded as an attributed position above, not as the school's settled view. AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
       ]
     }
   ],
@@ -1170,7 +1180,7 @@
           "note": "Lower of the gold and silver nisab values (IW-120628)."
         }
       },
-      "note": "Same cash gives different results by choice: gold-only (IW-138743) gives 0; the lower of the two (IW-120628) gives 25. Shows why the app must make the visitor choose. No silver-only row: no opened source applies a silver-only nisab."
+      "note": "Same cash gives different results by choice: gold-only (IW-138743) gives 0; the lower of the two (IW-120628) gives 25. Shows why the app must make the visitor choose. No silver-only row for cash: no opened source applies a silver-only nisab to cash (IW-120628 states a silver nisab only for silver held as silver)."
     },
     {
       "id": "ex-3-debts",
