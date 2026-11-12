@@ -539,6 +539,210 @@
         }
       ],
       "note": "These are places named in the selected texts. They are not all cities and the group does not assign ancient coordinates."
+    },
+    {
+      "id": "paradise-rivers",
+      "title": "Rivers named in 47:15",
+      "kind": "ayat",
+      "tier": 1,
+      "terms": [
+        "Water",
+        "Milk",
+        "Wine",
+        "Honey"
+      ],
+      "passages": [
+        {
+          "ref": "47:15",
+          "arabic": "مَّثَلُ ٱلْجَنَّةِ ٱلَّتِى وُعِدَ ٱلْمُتَّقُونَ ۖ فِيهَآ أَنْهَـٰرٌ مِّن مَّآءٍ غَيْرِ ءَاسِنٍ وَأَنْهَـٰرٌ مِّن لَّبَنٍ لَّمْ يَتَغَيَّرْ طَعْمُهُۥ وَأَنْهَـٰرٌ مِّنْ خَمْرٍ لَّذَّةٍ لِّلشَّـٰرِبِينَ وَأَنْهَـٰرٌ مِّنْ عَسَلٍ مُّصَفًّى ۖ وَلَهُمْ فِيهَا مِن كُلِّ ٱلثَّمَرَٰتِ وَمَغْفِرَةٌ مِّن رَّبِّهِمْ ۖ كَمَنْ هُوَ خَـٰلِدٌ فِى ٱلنَّارِ وَسُقُوا۟ مَآءً حَمِيمًا فَقَطَّعَ أَمْعَآءَهُمْ",
+          "translation": "A similitude of the Garden which those who keep their duty (to Allah) are promised: Therein are rivers of water unpolluted, and rivers of milk whereof the flavour changeth not, and rivers of wine delicious to the drinkers, and rivers of clear-run honey; therein for them is every kind of fruit, with pardon from their Lord. (Are those who enjoy all this) like those who are immortal in the Fire and are given boiling water to drink so that it teareth their bowels?",
+          "url": "https://quran.com/47:15",
+          "translationUrl": "https://quran.com/47:15?translations=19"
+        }
+      ],
+      "note": "The Garden is described with rivers of water, milk, wine and honey. The ayah calls the picture a similitude, and the labels follow Pickthall’s wording."
+    },
+    {
+      "id": "worldly-joys",
+      "title": "Joys listed in 3:14",
+      "kind": "ayat",
+      "tier": 2,
+      "terms": [
+        "Women",
+        "Offspring",
+        "Cattle",
+        "Land"
+      ],
+      "passages": [
+        {
+          "ref": "3:14",
+          "arabic": "زُيِّنَ لِلنَّاسِ حُبُّ ٱلشَّهَوَٰتِ مِنَ ٱلنِّسَآءِ وَٱلْبَنِينَ وَٱلْقَنَـٰطِيرِ ٱلْمُقَنطَرَةِ مِنَ ٱلذَّهَبِ وَٱلْفِضَّةِ وَٱلْخَيْلِ ٱلْمُسَوَّمَةِ وَٱلْأَنْعَـٰمِ وَٱلْحَرْثِ ۗ ذَٰلِكَ مَتَـٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۖ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلْمَـَٔابِ",
+          "translation": "Beautified for mankind is love of the joys (that come) from women and offspring; and stored-up heaps of gold and silver, and horses branded (with their mark), and cattle and land. That is comfort of the life of the world. Allah! With Him is a more excellent abode.",
+          "url": "https://quran.com/3:14",
+          "translationUrl": "https://quran.com/3:14?translations=19"
+        }
+      ],
+      "note": "The ayah lists the joys that are made attractive to people. The same list also names gold, silver and horses; this group uses four of the seven items."
+    },
+    {
+      "id": "creation-stages",
+      "title": "Stages of creation in 23:12–14",
+      "kind": "ayat",
+      "tier": 3,
+      "terms": [
+        "Wet earth",
+        "Drop",
+        "Clot",
+        "Little lump"
+      ],
+      "passages": [
+        {
+          "ref": "23:12-14",
+          "arabic": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ مِن سُلَـٰلَةٍ مِّن طِينٍ\nثُمَّ جَعَلْنَـٰهُ نُطْفَةً فِى قَرَارٍ مَّكِينٍ\nثُمَّ خَلَقْنَا ٱلنُّطْفَةَ عَلَقَةً فَخَلَقْنَا ٱلْعَلَقَةَ مُضْغَةً فَخَلَقْنَا ٱلْمُضْغَةَ عِظَـٰمًا فَكَسَوْنَا ٱلْعِظَـٰمَ لَحْمًا ثُمَّ أَنشَأْنَـٰهُ خَلْقًا ءَاخَرَ ۚ فَتَبَارَكَ ٱللَّهُ أَحْسَنُ ٱلْخَـٰلِقِينَ",
+          "translation": "Verily We created man from a product of wet earth;\nThen placed him as a drop (of seed) in a safe lodging;\nThen fashioned We the drop a clot, then fashioned We the clot a little lump, then fashioned We the little lump bones, then clothed the bones with flesh, and then produced it as another creation. So blessed be Allah, the Best of creators!",
+          "url": "https://quran.com/23:12-14",
+          "translationUrl": "https://quran.com/23:12-14?translations=19"
+        }
+      ],
+      "note": "The ayat name wet earth, then a drop, a clot and a little lump, using Pickthall’s English. The sequence continues with bones and flesh, which are not used as tiles here."
+    },
+    {
+      "id": "paradise-delights",
+      "title": "Delights in Surah 76",
+      "kind": "ayat",
+      "tier": 4,
+      "terms": [
+        "Kafur",
+        "Zanjabil",
+        "Silk",
+        "Pearls"
+      ],
+      "passages": [
+        {
+          "ref": "76:5",
+          "arabic": "إِنَّ ٱلْأَبْرَارَ يَشْرَبُونَ مِن كَأْسٍ كَانَ مِزَاجُهَا كَافُورًا",
+          "translation": "Lo! the righteous shall drink of a cup whereof the mixture is of Kafur,",
+          "url": "https://quran.com/76:5",
+          "translationUrl": "https://quran.com/76:5?translations=19"
+        },
+        {
+          "ref": "76:17",
+          "arabic": "وَيُسْقَوْنَ فِيهَا كَأْسًا كَانَ مِزَاجُهَا زَنجَبِيلًا",
+          "translation": "There are they watered with a cup whereof the mixture is of Zanjabil,",
+          "url": "https://quran.com/76:17",
+          "translationUrl": "https://quran.com/76:17?translations=19"
+        },
+        {
+          "ref": "76:12",
+          "arabic": "وَجَزَىٰهُم بِمَا صَبَرُوا۟ جَنَّةً وَحَرِيرًا",
+          "translation": "And hath awarded them for all that they endured, a Garden and silk attire;",
+          "url": "https://quran.com/76:12",
+          "translationUrl": "https://quran.com/76:12?translations=19"
+        },
+        {
+          "ref": "76:19",
+          "arabic": "۞ وَيَطُوفُ عَلَيْهِمْ وِلْدَٰنٌ مُّخَلَّدُونَ إِذَا رَأَيْتَهُمْ حَسِبْتَهُمْ لُؤْلُؤًا مَّنثُورًا",
+          "translation": "There wait on them immortal youths, whom, when thou seest, thou wouldst take for scattered pearls.",
+          "url": "https://quran.com/76:19",
+          "translationUrl": "https://quran.com/76:19?translations=19"
+        }
+      ],
+      "note": "Surah 76 mentions a cup mixed with Kafur and with Zanjabil, silk attire, and youths like scattered pearls. Pickthall keeps the Arabic names Kafur and Zanjabil."
+    },
+    {
+      "id": "lost-peoples",
+      "title": "Peoples and rulers in 89:6–10",
+      "kind": "ayat",
+      "tier": 2,
+      "terms": [
+        "A’ad",
+        "Iram",
+        "Thamud",
+        "Pharaoh"
+      ],
+      "passages": [
+        {
+          "ref": "89:6-10",
+          "arabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ\nإِرَمَ ذَاتِ ٱلْعِمَادِ\nٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَـٰدِ\nوَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ\nوَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ",
+          "translation": "Dost thou not consider how thy Lord dealt with (the tribe of) A'ad,\nWith many-columned Iram,\nThe like of which was not created in the lands;\nAnd with (the tribe of) Thamud, who clove the rocks in the valley;\nAnd with Pharaoh, firm of might,",
+          "url": "https://quran.com/89:6-10",
+          "translationUrl": "https://quran.com/89:6-10?translations=19"
+        }
+      ],
+      "note": "The passage asks how the Lord dealt with A’ad, many-columned Iram, Thamud and Pharaoh. The spellings follow Pickthall."
+    },
+    {
+      "id": "plagues",
+      "title": "Signs against Pharaoh’s people in 7:133",
+      "kind": "ayat",
+      "tier": 2,
+      "terms": [
+        "Locusts",
+        "Vermin",
+        "Frogs",
+        "Blood"
+      ],
+      "passages": [
+        {
+          "ref": "7:133",
+          "arabic": "فَأَرْسَلْنَا عَلَيْهِمُ ٱلطُّوفَانَ وَٱلْجَرَادَ وَٱلْقُمَّلَ وَٱلضَّفَادِعَ وَٱلدَّمَ ءَايَـٰتٍ مُّفَصَّلَـٰتٍ فَٱسْتَكْبَرُوا۟ وَكَانُوا۟ قَوْمًا مُّجْرِمِينَ",
+          "translation": "So We sent against them the flood and the locusts and the vermin and the frogs and the blood - a succession of clear signs. But they were arrogant and became a guilty folk.",
+          "url": "https://quran.com/7:133",
+          "translationUrl": "https://quran.com/7:133?translations=19"
+        }
+      ],
+      "note": "7:133 lists the flood, the locusts, the vermin, the frogs and the blood as a succession of clear signs. This group uses four of the five."
+    },
+    {
+      "id": "sulayman-hosts",
+      "title": "Under Solomon’s command",
+      "kind": "ayat",
+      "tier": 2,
+      "terms": [
+        "Jinn",
+        "Humankind",
+        "Birds",
+        "Wind"
+      ],
+      "passages": [
+        {
+          "ref": "27:17",
+          "arabic": "وَحُشِرَ لِسُلَيْمَـٰنَ جُنُودُهُۥ مِنَ ٱلْجِنِّ وَٱلْإِنسِ وَٱلطَّيْرِ فَهُمْ يُوزَعُونَ",
+          "translation": "And there were gathered together unto Solomon his armies of the jinn and humankind, and of the birds, and they were set in battle order;",
+          "url": "https://quran.com/27:17",
+          "translationUrl": "https://quran.com/27:17?translations=19"
+        },
+        {
+          "ref": "21:81",
+          "arabic": "وَلِسُلَيْمَـٰنَ ٱلرِّيحَ عَاصِفَةً تَجْرِى بِأَمْرِهِۦٓ إِلَى ٱلْأَرْضِ ٱلَّتِى بَـٰرَكْنَا فِيهَا ۚ وَكُنَّا بِكُلِّ شَىْءٍ عَـٰلِمِينَ",
+          "translation": "And unto Solomon (We subdued) the wind in its raging. It set by his command toward the land which We had blessed. And of everything We are Aware.",
+          "url": "https://quran.com/21:81",
+          "translationUrl": "https://quran.com/21:81?translations=19"
+        }
+      ],
+      "note": "27:17 gathers the armies of Solomon (peace be upon him), made up of the jinn, humankind and the birds; 21:81 says the wind was subdued for Solomon (peace be upon him). Pickthall writes Solomon."
+    },
+    {
+      "id": "ayat-kursi",
+      "title": "Words in Ayat al-Kursi (2:255)",
+      "kind": "ayat",
+      "tier": 1,
+      "terms": [
+        "Slumber",
+        "Sleep",
+        "Throne",
+        "Heavens"
+      ],
+      "passages": [
+        {
+          "ref": "2:255",
+          "arabic": "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+          "translation": "Allah! There is no deity save Him, the Alive, the Eternal. Neither slumber nor sleep overtaketh Him. Unto Him belongeth whatsoever is in the heavens and whatsoever is in the earth. Who is he that intercedeth with Him save by His leave? He knoweth that which is in front of them and that which is behind them, while they encompass nothing of His knowledge save what He will. His throne includeth the heavens and the earth, and He is never weary of preserving them. He is the Sublime, the Tremendous.",
+          "url": "https://quran.com/2:255",
+          "translationUrl": "https://quran.com/2:255?translations=19"
+        }
+      ],
+      "note": "Ayat al-Kursi says neither slumber nor sleep overtakes Him, and that His throne includes the heavens and the earth."
     }
   ],
   "puzzles": [
