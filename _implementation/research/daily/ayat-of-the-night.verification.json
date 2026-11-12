@@ -476,5 +476,23 @@
       "suitability": "pass",
       "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
     }
-  ]
+  ],
+  "followUp": {
+    "at": "Thu Nov 12 17:19:44 BST 2026",
+    "by": "orchestrating run",
+    "removed": [
+      "12:87",
+      "19:47",
+      "20:46",
+      "28:24",
+      "3:139"
+    ],
+    "rethemed": {
+      "29:69": "guidance",
+      "112:1-2": "oneness",
+      "50:16": "nearness"
+    },
+    "count": 66,
+    "note": "The five ayat that need their surrounding passage were removed; the three with a poor theme label were relabelled. All 66 remaining records pass."
+  }
 }

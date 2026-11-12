@@ -60,12 +60,6 @@
     "theme": "honesty"
   },
   {
-    "ref": "3:139",
-    "arabic": "وَلَا تَهِنُوا۟ وَلَا تَحْزَنُوا۟ وَأَنتُمُ ٱلْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
-    "translation": "Faint not nor grieve, for ye will overcome them if ye are (indeed) believers.",
-    "theme": "hope"
-  },
-  {
     "ref": "30:21",
     "arabic": "وَمِنْ ءَايَـٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ",
     "translation": "And of His signs is this: He created for you helpmeets from yourselves that ye might find rest in them, and He ordained between you love and mercy. Lo! herein indeed are portents for folk who reflect.",
@@ -108,12 +102,6 @@
     "theme": "kindness"
   },
   {
-    "ref": "20:46",
-    "arabic": "قَالَ لَا تَخَافَآ ۖ إِنَّنِى مَعَكُمَآ أَسْمَعُ وَأَرَىٰ",
-    "translation": "He said: Fear not. Lo! I am with you twain, Hearing and Seeing.",
-    "theme": "trust"
-  },
-  {
     "ref": "33:41",
     "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱذْكُرُوا۟ ٱللَّهَ ذِكْرًا كَثِيرًا",
     "translation": "O ye who believe! Remember Allah with much remembrance.",
@@ -130,12 +118,6 @@
     "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَقُولُوا۟ قَوْلًا سَدِيدًا",
     "translation": "O ye who believe! Guard your duty to Allah, and speak words straight to the point;",
     "theme": "honesty"
-  },
-  {
-    "ref": "12:87",
-    "arabic": "يَـٰبَنِىَّ ٱذْهَبُوا۟ فَتَحَسَّسُوا۟ مِن يُوسُفَ وَأَخِيهِ وَلَا تَا۟يْـَٔسُوا۟ مِن رَّوْحِ ٱللَّهِ ۖ إِنَّهُۥ لَا يَا۟يْـَٔسُ مِن رَّوْحِ ٱللَّهِ إِلَّا ٱلْقَوْمُ ٱلْكَـٰفِرُونَ",
-    "translation": "Go, O my sons, and ascertain concerning Joseph and his brother, and despair not of the Spirit of Allah. Lo! none despaireth of the Spirit of Allah save disbelieving folk.",
-    "theme": "hope"
   },
   {
     "ref": "25:74",
@@ -228,12 +210,6 @@
     "theme": "prayer"
   },
   {
-    "ref": "19:47",
-    "arabic": "قَالَ سَلَـٰمٌ عَلَيْكَ ۖ سَأَسْتَغْفِرُ لَكَ رَبِّىٓ ۖ إِنَّهُۥ كَانَ بِى حَفِيًّا",
-    "translation": "He said: Peace be unto thee! I shall ask forgiveness of my Lord for thee. Lo! He was ever gracious unto me.",
-    "theme": "parents"
-  },
-  {
     "ref": "41:34",
     "arabic": "وَلَا تَسْتَوِى ٱلْحَسَنَةُ وَلَا ٱلسَّيِّئَةُ ۚ ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ فَإِذَا ٱلَّذِى بَيْنَكَ وَبَيْنَهُۥ عَدَٰوَةٌ كَأَنَّهُۥ وَلِىٌّ حَمِيمٌ",
     "translation": "The good deed and the evil deed are not alike. Repel the evil deed with one which is better, then lo! he, between whom and thee there was enmity (will become) as though he was a bosom friend.",
@@ -243,13 +219,13 @@
     "ref": "29:69",
     "arabic": "وَٱلَّذِينَ جَـٰهَدُوا۟ فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلْمُحْسِنِينَ",
     "translation": "As for those who strive in Us, We surely guide them to Our paths, and lo! Allah is with the good.",
-    "theme": "trust"
+    "theme": "guidance"
   },
   {
     "ref": "112:1-2",
     "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ\nٱللَّهُ ٱلصَّمَدُ",
     "translation": "Say: He is Allah, the One!\nAllah, the eternally Besought of all!",
-    "theme": "remembrance"
+    "theme": "oneness"
   },
   {
     "ref": "67:3",
@@ -366,12 +342,6 @@
     "theme": "patience"
   },
   {
-    "ref": "28:24",
-    "arabic": "فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ فَقَالَ رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍ فَقِيرٌ",
-    "translation": "So he watered (their flock) for them. Then he turned aside into the shade, and said: My Lord! I am needy of whatever good Thou sendest down for me.",
-    "theme": "prayer"
-  },
-  {
     "ref": "2:263",
     "arabic": "۞ قَوْلٌ مَّعْرُوفٌ وَمَغْفِرَةٌ خَيْرٌ مِّن صَدَقَةٍ يَتْبَعُهَآ أَذًى ۗ وَٱللَّهُ غَنِىٌّ حَلِيمٌ",
     "translation": "A kind word with forgiveness is better than almsgiving followed by injury. Allah is Absolute, Clement.",
@@ -405,7 +375,7 @@
     "ref": "50:16",
     "arabic": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِۦ نَفْسُهُۥ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ ٱلْوَرِيدِ",
     "translation": "We verily created man and We know what his soul whispereth to him, and We are nearer to him than his jugular vein.",
-    "theme": "hope"
+    "theme": "nearness"
   },
   {
     "ref": "99:7",
