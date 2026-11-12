@@ -365,3 +365,26 @@ Branch `content-zakat` (from `phase-6-daily`). Research only; no app code. File:
   The details are in `plan/implementation/releases/R6.md`.
 - **Not run:** the e2e Playwright flows; the harness is not available here.
 - **Remaining:** the production result is recorded in R6 after CI. P7 continues with the zakat method fixes, the Ramadan dates check, then T7.6 and the hub.
+
+## 2026-11-12T23:33:00+06:00 — R7 Ramadan season
+
+`phase-7-season` is complete (T7.4–T7.12; Hifz T7.1–T7.3 shipped in R5). It was merged to `main` and pushed; CI deploys.
+- **New app:** Zakat Calculator, the 17th app, at `zakat-calculator.moongazer.tech`. The Pages project, custom domain and proxied CNAME were set up by the agent under D2b. The certificate validates after the first deployment.
+- **Hub:** `moongazer.tech/ramadan/` has expected dates from the Umm al-Qura calendar, 30 night cards, the last ten nights, zakat links and a print layout. The directory's seasonal card shows from 2027-01-25 to 2027-03-13.
+- **Content:** C16 (30 Family Halaqa Ramadan packs) and C17 (zakat method) were each verified by separate model runs, with fixes and fresh re-checks, and spot-checked by the agent. There was no scholarly review.
+- **Validation:** all 17 apps pass check, test and build. The other checks passed:
+  - `sync-shared` (all three sets);
+  - `verify-static` (349 pages);
+  - text joins (0);
+  - `seo.test` (9);
+  - `homepage/tests` (55);
+  - `verify-seo` (18 sites, 360 pages);
+  - first screen (102 of 102);
+  - the counter check.
+  The hub was checked in the browser at phone and desktop widths. The details are in `plan/implementation/releases/R7.md`.
+- **Decision:** the plan's `/zakat` short link was left out, because D2c rules out redirects.
+- **Remaining:**
+  - Escape Room Ramadan rooms (C4).
+  - A Family Halaqa series filter and `?night=N`.
+  - Submitting the zakat sitemap in Search Console after deployment.
+  - P8–P10.
