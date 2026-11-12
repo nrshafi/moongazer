@@ -71,3 +71,10 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 changes (2026-11-12)
+
+- Hero: H1 is the app name, one descriptor line, a decorative book-and-star motif (`public/motif.svg`, shown beside the H1 on desktop and as a small corner mark below 580 px).
+- The notice about selection limits and alphabetical order moved into a "How this works" drawer (first item of the sidebar). One line, "Listed A–Z. No historical order is implied.", stays under the filter row.
+- Prophet page: a Print readings button, the brief-mention notice moved into the drawer, and the reading check ends with the shared end-of-session block (result, What you learned, share, next app Places in the Quran, Report an error).
+- Projector toggle available on the index and prophet pages (set by an inline script because `Shell.astro` is shared).
