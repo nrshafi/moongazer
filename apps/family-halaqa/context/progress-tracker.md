@@ -109,3 +109,7 @@ Second pass failed 16 Ramadan packs (14/30 passed): spoiler titles, teaching tha
 ## 2026-11-12 (Asia/Dhaka) — C16.05: re-check fixes
 
 Re-check (a73dc37) failed six packs. Retitled nights 6 (Two short verses), 11 (Good company), 14 (Respecting others), 16 (Responding to harm), 17 (A shared prayer); reworded teaching for nights 11 and 17 (checked against Al-Muyassar 9:119 and 2:127) and added the honorific after Adam on night 22. The title test now stems words and uses small related-word groups, and includes cases that fail for the old titles. `followUp` in the six verification records is now a list (C16.04 then C16.05); `recheck` untouched. Hash updated.
+
+## 2026-11-12 (Asia/Dhaka) — C16.06: second re-check fixes
+
+Second re-check (effc2f2) failed four packs. Night 11 retitled "Allah’s instruction", night 14 "A verse for families", night 16 "A hard moment"; night 17 explanation now has the honorific after Abraham and Ishmael. Tests: rejected-titles list (Good company, Respecting others, Responding to harm and earlier rejects) kept explicit because word groups cannot catch them by meaning; new test that every prophet name in explanation, teaching and discussion has an honorific (Muhammad needs the glyph; angels and Hawwa out of scope); checked to fail when an honorific is removed. Hash updated; followUp C16.06 entries added.

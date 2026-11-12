@@ -42,6 +42,30 @@ test('the title check catches the echoes found in review, and passes neutral tit
  expect(echoes('Good company', 'The truthful.')).toEqual([]);
 });
 
+// Titles rejected in review. The word groups above cannot catch these honestly: "Good company" points at "the truthful"
+// only by meaning, "Respecting others" at "much suspicion, spying and backbiting", and "Responding to harm" at "with one
+// that is better". They are kept in an explicit list so they cannot come back.
+const REJECTED_TITLES = ['Good company', 'Respecting others', 'Responding to harm', 'Heavy and light', 'Keeping your word', 'Before you assume', 'Calm replies', 'Two builders'];
+test('titles rejected in review are not used', () => {
+ for (const pack of ramadan) expect(REJECTED_TITLES).not.toContain(pack.title);
+});
+
+// Prophets named in editorial text carry an honorific on each mention: (peace be upon him) or (peace be upon them),
+// or the glyph for Muhammad. Angels are out of scope. Hawwa is not listed (not named as a prophet in the app's text).
+const PROPHETS = /\b(Abraham|Ibrahim|Ishmael|Ismail|Moses|Musa|Aaron|Harun|Joseph|Yusuf|Jonah|Yunus|Job|Ayyub|Adam|Noah|Nuh|Solomon|Sulayman|David|Dawud|Jesus|Isa)\b/g;
+test('every prophet name in explanation, teaching or discussion has an honorific', () => {
+ for (const pack of ramadan) {
+  for (const field of ['explanation', 'teaching', 'discussion'] as const) {
+   const text = pack[field];
+   for (const match of text.matchAll(PROPHETS)) {
+    const after = text.slice(match.index! + match[0].length);
+    expect(/^ \(peace be upon (him|them)\)/.test(after), `${pack.id} ${field}: ${match[0]}`).toBe(true);
+   }
+   for (const match of text.matchAll(/\bMuhammad\b/g)) expect(text.slice(match.index! + 8).startsWith(' ﷺ'), `${pack.id} ${field}: Muhammad`).toBe(true);
+  }
+ }
+});
+
 test('each Ramadan pack has the full set of fields, three distinct options and a passage', () => {
  for (const pack of ramadan) {
   expect(pack.options).toHaveLength(3);

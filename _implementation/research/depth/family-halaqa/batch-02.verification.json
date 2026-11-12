@@ -49,6 +49,17 @@
               "note": "Teaching reworded after the re-check; checked against the Al-Muyassar text already fetched."
             }
           ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Good company",
+              "after": "Allah’s instruction",
+              "note": "Retitled after the second re-check: the previous title still pointed at the correct option."
+            }
+          ]
         }
       ],
       "recheck": {
@@ -103,6 +114,17 @@
               "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
             }
           ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Respecting others",
+              "after": "A verse for families",
+              "note": "Retitled after the second re-check: the previous title still pointed at the correct option."
+            }
+          ]
         }
       ],
       "recheck": {
@@ -151,6 +173,17 @@
               "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
             }
           ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Responding to harm",
+              "after": "A hard moment",
+              "note": "Retitled after the second re-check: the previous title still pointed at the correct option."
+            }
+          ]
         }
       ],
       "recheck": {
@@ -197,6 +230,17 @@
               "before": "Al-Muyassar explains this as a prayer by Ibrahim (peace be upon him) and Ismail (peace be upon him) as they worked, calling on Allah humbly.",
               "after": "Al-Muyassar explains this as a prayer by Ibrahim (peace be upon him) and Ismail (peace be upon him), who called on Allah humbly as they prayed.",
               "note": "Teaching reworded after the re-check; checked against the Al-Muyassar text already fetched."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "explanation",
+              "before": "The passage says Abraham and Ishmael were raising the foundations of the House. Al-Muyassar explains this as the Kaaba, and says they prayed humbly that Allah accept their work.",
+              "after": "The passage says Abraham (peace be upon him) and Ishmael (peace be upon him) were raising the foundations of the House. Al-Muyassar explains this as the Kaaba, and says they prayed humbly that Allah accept their work.",
+              "note": "Honorifics added after both prophets named in the passage summary."
             }
           ]
         }
