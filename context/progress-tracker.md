@@ -310,3 +310,9 @@ Validation:
 - First-screen sweep 96/96; host smoke 16/16; counter check passed.
 
 Details are in `plan/implementation/releases/R5.md`.
+
+## 2026-11-12T17:14:02+06:00 — P6 T6.1 shared daily module
+
+Branch `phase-6-shared`: `src/lib/daily.ts` with `tests/daily.test.ts` and `tests/daily-release.test.ts` in guess-the-surah, ayah-threads, word-groups and seerah-timeline; a `daily` set in `_implementation/sync-shared.ts`; `homepage/daily.js` with `homepage/tests/daily-parity.test.ts`. No app page or behaviour changed. Details in `context/architecture.md`.
+- Validation: `bun test` in the four apps passes (one skipped: the release test); `RELEASE=1` makes the release test fail while the epoch is the placeholder; `sync-shared --check` and `--check --set daily` identical; `bun test homepage/tests` 53 pass; `bun run check` 0 errors, 0 warnings in all four apps.
+- Remaining: owner picks the real epoch and the release step flips `DAILY_EPOCH_IS_PLACEHOLDER` in all four copies and `homepage/daily.js`; T6.2-T6.6 consume the module. No push.
