@@ -84,6 +84,10 @@ await cp(join(source,'amiri-honorific.woff2'),join(out,'fonts','amiri-honorific.
 await cp(join(source,'amiri-ayat.woff2'),join(out,'fonts','amiri-ayat.woff2'));
 // The full list, fetched by app.js when tonight's ayah differs from the build-date default.
 await writeFile(join(out,'ayat-of-the-night.json'),JSON.stringify(ayat.map(({ref,arabic,translation})=>({ref,arabic,translation}))));
+// P6 T6.8: Booktube production feed (answers included; noindex in _headers, never linked). Bun imports the apps' TS modules.
+const {spawnSync}=await import('node:child_process');
+const feed=spawnSync('bun',[join(source,'booktube.ts'),join(out,'daily','booktube.json')],{stdio:'inherit'});
+if(feed.status!==0)throw new Error('Booktube feed failed');
 // Every local file a built page references must exist (a renamed logo once shipped as a 404).
 const {existsSync}=await import('node:fs');
 async function htmlFiles(dir){const found=[];for(const entry of await readdir(dir,{withFileTypes:true})){const path=join(dir,entry.name);if(entry.isDirectory())found.push(...await htmlFiles(path));else if(entry.name.endsWith('.html'))found.push(path);}return found;}
