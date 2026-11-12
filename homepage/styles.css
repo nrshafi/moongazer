@@ -88,6 +88,10 @@ h2{font-family:Newsreader,Georgia,serif;font-size:34px;font-weight:450;line-heig
 
 /* Seasonal slot (empty until P7) and trust row */
 .season:empty{display:none}
+/* P7 T7.11: seasonal card (hidden unless today is inside its dates) */
+.season{padding-block:8px 28px}.season-card{display:grid;gap:6px;border:1px solid #cddce8;border-left:4px solid var(--gold);border-radius:16px;background:var(--night);color:#f4f7fb;padding:22px 26px;max-width:760px}
+.season-card .eyebrow{color:var(--gold);margin:0}.season-title{font-family:Newsreader,Georgia,serif;font-size:28px;line-height:1.15}.season-text{font-size:15px;line-height:1.6;color:#c9d6e2}.season-action{font-size:14px;font-weight:650;color:var(--gold);margin-top:4px}
+.season-card:hover .season-action{text-decoration:underline;text-underline-offset:3px}
 .trust{padding-block:22px;border-top:1px solid var(--line);text-align:center}
 .trust p{margin:0;font-size:14px;line-height:1.8;color:#46607a}
 .trust a{color:#244c6d;text-decoration:underline;text-underline-offset:4px}

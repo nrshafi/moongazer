@@ -76,3 +76,10 @@ async function showTonightsAyah() {
   }
 }
 showTonightsAyah();
+
+// P7 T7.11: seasonal slot. The card is hidden in the static HTML and shown only between its dates (local calendar).
+const season = document.querySelector('[data-season-from]');
+if (season) {
+  const key = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0')].join('-');
+  season.hidden = !(key >= season.dataset.seasonFrom && key <= season.dataset.seasonTo);
+}
