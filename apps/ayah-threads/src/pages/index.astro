@@ -1,15 +1,20 @@
 ---
 import learning from '../data/learning.json';
+import HowItWorks from '../components/HowItWorks.astro';
 import Shell from '../layouts/Shell.astro';
 import data from '../data/content.json';
 ---
 <Shell title="Ayah Threads">
-  <section class="intro"><div class="intro-top"><span class="eyebrow">Quran puzzle</span> <span class="pill"><span class="dot"></span>{data.puzzles.length} passage puzzles</span></div> <h1>{learning.heading}</h1> <p>Read three ayat, find the thread that connects them, and open the references behind your answer.</p></section>
-  <div class="notice bottom-gap"><a href="/themes/"><strong>Theme library</strong> — read all 30 threads after you solve them <span aria-hidden="true">→</span></a></div>
+  <section class="intro"><div class="intro-top"><span class="pill"><span class="dot"></span>{data.puzzles.length} passage puzzles</span></div> <h1>{learning.heading}</h1> <p>Three passages, one shared theme.</p><img class="motif" src="/motif.svg" alt="" aria-hidden="true" width="220" height="120" /></section>
   <noscript><div class="noscript">The puzzle interactions need JavaScript. The source catalog remains available at <a href="/sources/">Sources</a>.</div></noscript>
-  <div class="workspace"><section class="panel"><div class="panel-head"><div><span class="label" id="puzzle-label">Your next puzzle</span><p>One intended theme. Many things to notice.</p></div> <label class="check"><input type="checkbox" id="show-arabic"/>Show Arabic</label></div> <div class="panel-body" id="puzzle-stage" aria-live="polite"><p class="muted">Preparing your passages…</p></div></section>
-    <aside class="sidebar sticky"><section class="panel panel-body"><h2>Explore another puzzle</h2><label class="field bottom-gap">Choose a puzzle<select id="puzzle-picker">{data.puzzles.map(p=><option value={p.id}>Puzzle {String(p.number).padStart(2,'0')}</option>)}</select></label> <button class="button wide" id="random-puzzle">Surprise me</button><div class="divider"></div> <label class="check"><input type="checkbox" id="remember"/>Remember my place for up to 30 days</label><p class="micro top-gap" id="progress-note"></p></section>{' '}
-    <section class="panel panel-body"><h2>Follow the words</h2><ol><li>Read all three selections in Pickthall's translation.</li> <li>Choose the theme that best connects the set.</li> <li>Open the references and compare the passages in context.</li></ol><div class="divider"></div><button class="text-button" type="button" id="share-puzzle">Copy puzzle link</button></section> <section class="notice"><strong>A starting point for reading</strong><p class="micro">Themes are editorial learning prompts. They do not replace tafsir or claim that each passage has only one meaning.</p></section></aside>
+  <div class="workspace"><section class="panel" aria-label="Ayah Threads puzzle">
+    <div class="picker-row"><label class="field">Puzzle<select id="puzzle-picker">{data.puzzles.map(p=><option value={p.id}>Puzzle {String(p.number).padStart(2,'0')}</option>)}</select></label> <span class="micro picker-progress" id="progress-note"></span> <button class="button ghost small" id="random-puzzle" type="button">Surprise me</button> <label class="check"><input type="checkbox" id="show-arabic"/>Show Arabic</label> <label class="check"><input type="checkbox" id="remember"/>Remember my place for up to 30 days</label></div>
+    <div class="panel-head"><div><span class="label" id="puzzle-label">Your next puzzle</span></div></div> <div class="panel-body" id="puzzle-stage" aria-live="polite"><p class="muted">Preparing your passages…</p></div></section>
+    <aside class="sidebar sticky"><HowItWorks><ol><li>Read all three selections in Pickthall's translation.</li> <li>Choose the theme that best connects the set.</li> <li>Open the references and compare the passages in context.</li></ol><p>Read three ayat, find the thread that connects them, and open the references behind your answer. One intended theme, many things to notice.</p><p><strong>A starting point for reading.</strong> Themes are editorial learning prompts. They do not replace tafsir or claim that each passage has only one meaning.</p><p><a href="/themes/">Theme library: read all 30 threads after you solve them <span aria-hidden="true">→</span></a></p></HowItWorks></aside>
   </div>
 </Shell>
 <script>import '../lib/puzzle';</script>
+<style>
+  .intro{position:relative}.intro .motif{position:absolute;right:0;top:50%;transform:translateY(-50%);color:var(--accent);opacity:.55;pointer-events:none}@media(max-width:580px){.intro .motif{display:none}}
+  .picker-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:end;padding:14px 22px;border-bottom:1px solid var(--line)}.picker-row .field{margin:0;font-size:.72rem;min-width:170px}.picker-row .check{margin:0;min-height:44px}.picker-progress{align-self:center}.picker-row .button{min-height:44px}@media(max-width:580px){.picker-row{padding:12px 16px}}
+</style>

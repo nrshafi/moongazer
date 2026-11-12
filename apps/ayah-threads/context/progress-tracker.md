@@ -1,5 +1,9 @@
 # Progress tracker: Ayah Threads
 
+## P5 app wave, 12 November 2026
+
+2026-11-12T14:01:00+06:00 Asia/Dhaka: Hero, drawer (steps, editorial note, theme-library link moved out of the page top and sidebar), end of session, threads motif, compact picker with solved ticks (the sidebar "Explore another puzzle" card is gone). Removed duplicates: the intro sentence now lives in the drawer only; "Copy puzzle link" and "Copy result" are replaced by the shared share block. Fix found while wiring: the puzzle id equals the theme, so share links and the address bar now use the puzzle number; old id links still work. First control 268 px at 390 and 375, light and dark. check 0 errors, 16 tests pass, build passes; one puzzle solved in a headless browser with no script errors. Not done: New puzzle tomorrow slot (P6). No print or projector (DESIGN.md).
+
 ## Google Search Console setup, 30 October 2026
 
 2026-10-30T00:57:44+06:00 Asia/Dhaka: The verified moongazer.tech Domain property covers this app. Its sitemap was submitted and shows Success in Google Search Console. All 21 collection sitemaps succeeded with 286 discovered URLs. Discovery is distinct from indexing. Keep the apex DNS verification record. See repository deployment/search-console.json. Earlier pending setup statements below describe the previous release.

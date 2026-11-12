@@ -29,7 +29,7 @@ Family: **Quran (teal)**. Tokens and contrast: root `DESIGN.md` §2. No new colo
 | > How this works                         |
 +------------------------------------------+
 ```
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (`#puzzle-picker`): 268 px at 390 × 844 and 375 × 812, light and dark (hero 116 px); first passage card at 509 px. 1440 × 1000: 351 px.
 
 ## 5. Component states specific to this app
 - **Puzzle picker:** solved puzzles show a tick and the word "Solved" (not colour alone). The 30-button grid collapses into this picker (Verify_Me #28).

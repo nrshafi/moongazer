@@ -71,3 +71,9 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (12 November 2026)
+
+- Hero: H1 "Ayah Threads", descriptor "Three passages, one shared theme.", chip "30 passage puzzles", decorative threads motif from 580 px.
+- Compact picker row above the passages: puzzle select (solved puzzles read "Puzzle 07 ✓ Solved"), "N of 30 solved", Surprise me, Show Arabic, Remember. The sidebar holds only the "How this works" drawer (steps, editorial-prompt note, theme-library link).
+- Solving or revealing renders the shared end-of-session block under the explanation. Share text and URLs carry the puzzle number, never the theme-named puzzle id.
