@@ -32,7 +32,7 @@ Mismatch: `config.json` `accent` is `blue` today. Root §2 says teal. T5.5 chang
 | > How this works                         |
 +------------------------------------------+
 ```
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (the search field, 2026-11-12): 265 px at 390 × 844 and 265 px at 375 × 812, identical in light and dark; 323 px at 1440 × 1000. Target ≤ 600 px met.
 
 ## 5. Component states specific to this app
 - **Diagram node (on the parable page):** selected = tint fill, accent border, text label "Selected: [node]". Three nodes, selectable.
@@ -58,7 +58,7 @@ No other caveat sits above the activity in `index.astro`. The rule that diagrams
 - **New puzzle tomorrow:** not applicable.
 
 ## 8. Print and projector
-None per T5.12. Base print styles only.
+Print: the parable page keeps its existing "Print reading worksheet" button (`data-print`). The earlier "None per T5.12" note was a draft and is superseded; no print feature was removed. No Projector on this app.
 
 ## 9. Depth Gate target (`00-INDEX.md` §4)
 30 parables (amthal) with verified references. Today: 14.
