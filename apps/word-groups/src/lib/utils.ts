@@ -32,3 +32,11 @@ export function focusHeading(root: HTMLElement) { const heading=root.querySelect
 export const SAW = '<span class="honorific"><span aria-hidden="true" lang="ar">ﷺ</span><span class="sr-only">peace and blessings be upon him</span></span>';
 /** Wraps each plain ﷺ in already-escaped HTML with the accessible honorific markup. */
 export function withHonorifics(escapedHtml: string) { return escapedHtml.split('ﷺ').join(SAW); }
+/** One short pulse (CSS class .is-correct, 240 ms, scale/opacity) on a correct answer. Does nothing under prefers-reduced-motion: reduce. No sound. */
+export function pulseCorrect(el: HTMLElement) {
+  try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch { return; }
+  el.classList.remove('is-correct');
+  void el.offsetWidth;
+  el.classList.add('is-correct');
+  el.addEventListener('animationend', () => el.classList.remove('is-correct'), { once: true });
+}

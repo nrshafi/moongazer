@@ -2,7 +2,7 @@
   "slug": "word-groups",
   "name": "Word Groups",
   "description": "Sixteen Quran words, four hidden groups",
-  "accent": "blue",
+  "accent": "teal",
   "nav": "Play",
   "port": 4332
 }

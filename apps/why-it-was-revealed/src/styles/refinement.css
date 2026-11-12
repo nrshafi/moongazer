@@ -4,15 +4,16 @@
 body{background:linear-gradient(180deg,var(--hero-wash) 0,var(--bg) 31rem)}
 .site-header{background:color-mix(in srgb,var(--surface) 94%,transparent);border-top:3px solid var(--accent);box-shadow:0 4px 25px #102b3608;backdrop-filter:blur(16px)}
 .header-inner{min-height:76px;max-width:1240px}.brand{gap:13px;font-weight:730;letter-spacing:-.02em}.brand small{letter-spacing:.07em;text-transform:uppercase;font-size:.58rem}.brand-mark{width:42px;height:42px;padding:0;color:var(--accent)}.brand-mark img{width:100%;height:100%;border-radius:11px}nav{gap:22px}nav>a{font-weight:680}nav>a[aria-current=page]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:12px}.icon-button{border-radius:9px}
-main{max-width:1200px;padding-top:0}.intro{position:relative;isolation:isolate;max-width:none;min-height:300px;padding:66px 0 51px;margin-bottom:32px;border-bottom:1px solid var(--line);overflow:hidden}.intro>*{position:relative;z-index:1}.intro:before,.intro:after{content:'';position:absolute;pointer-events:none;z-index:0}.intro:before{width:316px;height:316px;right:8%;top:6px;border:1px solid var(--ornament);border-radius:50%;box-shadow:0 0 0 35px color-mix(in srgb,var(--accent) 3%,transparent),0 0 0 70px color-mix(in srgb,var(--accent) 2%,transparent)}.intro:after{width:218px;height:218px;right:calc(8% + 49px);top:55px;background:var(--ornament);clip-path:polygon(50% 0,60% 32%,84% 16%,68% 40%,100% 50%,68% 60%,84% 84%,60% 68%,50% 100%,40% 68%,16% 84%,32% 60%,0 50%,32% 40%,16% 16%,40% 32%)}
-.intro .eyebrow{display:inline-flex;align-items:center;gap:12px;margin-bottom:17px}.intro .eyebrow:before{content:'';width:20px;height:2px;background:var(--accent)}.intro-top .eyebrow{margin-bottom:0}.intro h1{max-width:820px;margin-bottom:21px;font-family:Newsreader,Georgia,serif;font-size:clamp(3.2rem,6vw,5.35rem);font-weight:470;line-height:.99;letter-spacing:-.048em;text-wrap:balance}.intro h1 .editorial{color:var(--accent-ink)}.intro p{max-width:620px;font-size:1.05rem;line-height:1.7;color:var(--muted)}
+main{max-width:1200px;padding-top:0}.intro{max-width:none;padding:26px 0 22px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+main h1,main h1.editorial{font-size:clamp(2.1rem,4vw,3.2rem)}.intro .eyebrow{margin-bottom:0}main .intro h1,main .intro h1.editorial{max-width:820px;margin-bottom:8px;font-family:Newsreader,Georgia,serif;font-size:clamp(2.1rem,4.2vw,3.2rem);font-weight:470;line-height:1.08;letter-spacing:-.04em;text-wrap:balance}.intro h1 .editorial{color:var(--accent-ink)}.intro p{max-width:620px;font-size:1rem;line-height:1.55;color:var(--muted)}
+.seo-breadcrumb{margin:10px 0 0;font-size:.74rem}
 .workspace{grid-template-columns:minmax(0,1fr) 290px;gap:22px}.panel{border-radius:16px;box-shadow:var(--shadow)}.workspace>.panel:first-child{border-top:3px solid var(--accent)}.panel-head{background:var(--panel-wash);border-radius:16px 16px 0 0;padding:21px 29px}.panel-body{padding:30px}.panel-head h2,.sidebar h2,.activity-card h2,.collection-tools h2,.section-title h2{font-family:Newsreader,Georgia,serif;font-weight:550;letter-spacing:-.025em}.panel-head h2{font-size:1.55rem}.sidebar h2{font-size:1.35rem}.sidebar .panel-body{padding:24px}.sidebar .panel{border-top:2px solid color-mix(in srgb,var(--accent) 43%,var(--line))}.sidebar li{padding-left:5px}.sidebar li::marker{color:var(--accent-ink);font-weight:700}
-.button{border-radius:9px;min-height:46px;padding-inline:19px;box-shadow:0 3px 10px #082a2914;transition:background .18s ease,transform .18s ease,box-shadow .18s ease}.button:hover{transform:translateY(-2px);box-shadow:0 7px 16px #082a2920}.button:active{transform:translateY(0)}.button.secondary,.button.ghost,.button.danger,.button.secondary:hover,.button.ghost:hover,.button.danger:hover{box-shadow:none}.field input,.field select,.field textarea,.search-input{border-radius:9px;background:var(--panel-wash);transition:border-color .18s ease,background .18s ease}.field input:hover,.field select:hover,.field textarea:hover,.search-input:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}.field input:focus,.field select:focus,.field textarea:focus,.search-input:focus{background:var(--surface)}.notice{border-left:3px solid var(--accent);border-radius:4px 11px 11px 4px}.source-quote{border-left-color:var(--accent)}.arabic{line-height:2.35}
+.button{border-radius:9px;min-height:46px;padding-inline:19px;box-shadow:0 3px 10px #082a2914;transition:background .18s ease,transform .18s ease,box-shadow .18s ease}.button:hover{transform:translateY(-2px);box-shadow:0 7px 16px #082a2920}.button:active{transform:translateY(0)}.button.secondary,.button.ghost,.button.danger,.button.secondary:hover,.button.ghost:hover,.button.danger:hover{box-shadow:none}.field input,.field select,.field textarea,.search-input{border-radius:9px;background:var(--panel-wash);transition:border-color .18s ease,background .18s ease}.field input:hover,.field select:hover,.field textarea:hover,.search-input:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}.field input:focus,.field select:focus,.field textarea:focus,.search-input:focus{background:var(--surface)}.notice{border-left:3px solid var(--accent);border-radius:4px 11px 11px 4px}.source-quote{border-left-color:var(--accent)}
 .card-grid{gap:18px}.activity-card{position:relative;min-height:232px;padding:27px;gap:14px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.activity-card:hover,.activity-card:focus-within{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 42%,var(--line));box-shadow:0 22px 50px #16374316}.activity-card h2{font-size:1.48rem;line-height:1.2}.activity-card h2 a{color:var(--ink);text-decoration:none}.activity-card h2 a:hover{color:var(--accent-ink);text-decoration:underline}.activity-card p{line-height:1.65}.activity-card .actions{width:100%}.activity-card .button{margin-top:0}.section-title{margin-top:40px}.section-title h2,.collection-tools h2{font-size:1.65rem}.site-footer{max-width:1200px;margin-top:30px;padding-top:29px}.footer-name{font-family:Newsreader,Georgia,serif;font-size:1.2rem}
-@media(max-width:860px){.workspace{grid-template-columns:1fr}.intro:before{right:-16%}.intro:after{right:calc(-16% + 49px)}}
-@media(max-width:580px){.header-inner{min-height:70px;padding:10px 18px}.brand{gap:8px}.brand-mark{width:34px;height:34px}nav{gap:12px}nav>a[aria-current=page]{text-underline-offset:8px}main{padding:0 18px 46px}.intro{min-height:0;padding:43px 0 37px;margin-bottom:23px}.intro:before,.intro:after{display:none}.intro h1{font-size:clamp(2.7rem,12vw,3.8rem);margin-bottom:15px}.intro p{font-size:.94rem}.panel,.panel-head{border-radius:13px}.panel-body{padding:22px}.panel-head{padding:18px 22px}.activity-card{min-height:0;padding:23px}.section-title h2,.collection-tools h2{font-size:1.5rem}.site-footer{margin-top:5px}}
+@media(max-width:860px){.workspace{grid-template-columns:1fr}}
+@media(max-width:580px){.header-inner{min-height:70px;padding:10px 18px}.brand{gap:8px}.brand-mark{width:34px;height:34px}nav{gap:12px}nav>a[aria-current=page]{text-underline-offset:8px}main{padding:0 18px 46px}main h1,main h1.editorial,main .intro h1,main .intro h1.editorial{font-size:2.1rem}.intro{padding:10px 0;margin-bottom:16px}.intro-top{gap:8px;margin-bottom:6px}main .intro h1,main .intro h1.editorial{margin-bottom:6px;line-height:1.1}.intro p{font-size:.88rem;line-height:1.45;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.seo-breadcrumb{margin-top:6px;font-size:.72rem}.panel,.panel-head{border-radius:13px}.panel-body{padding:22px}.panel-head{padding:18px 22px}.activity-card{min-height:0;padding:23px}.section-title h2,.collection-tools h2{font-size:1.5rem}.site-footer{margin-top:5px}}
 @media(prefers-reduced-motion:reduce){.button,.activity-card{transition:none}.button:hover,.activity-card:hover,.activity-card:focus-within{transform:none}}
-@media print{body{background:white}.intro{min-height:0;padding:0 0 18px}.intro:before,.intro:after{display:none}.panel,.activity-card:hover{box-shadow:none;transform:none}}
+@media print{body{background:white}.intro{padding:0 0 18px}.panel,.activity-card:hover{box-shadow:none;transform:none}}
 
 /* Honorifics (P2): the U+FDFA glyph always renders in Amiri, even as plain text inside DM Sans or Newsreader runs.
    Faces declared later with a narrower unicode-range win for that character. */
@@ -36,3 +37,54 @@ main{max-width:1200px;padding-top:0}.intro{position:relative;isolation:isolate;m
 .feedback-link{color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:700px){.feedback-wrap{padding:0 18px;margin-top:36px}}
 @media print{.feedback-wrap{display:none}}
+/* Compact header (P5): logo and short name at every width; tagline hidden below 720 px (above); an All apps link to the directory. */
+.brand{min-width:0}.brand-mark{flex-shrink:0}.brand>span:last-child{min-width:0;overflow-wrap:anywhere}nav>a.all-apps{white-space:nowrap}
+@media(max-width:520px){nav>a.nav-sources{display:none}}
+/* "How this works" drawer (P5): a native details panel. First child of .sidebar: top of the sidebar on desktop, directly after the activity on phones (the sidebar stacks below it). */
+.how-it-works{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);border-top:2px solid color-mix(in srgb,var(--accent) 43%,var(--line))}
+.sidebar>.how-it-works{order:-1}
+.how-it-works>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:10px 20px;font-weight:650;font-size:.95rem;color:var(--accent-ink);list-style:none}
+.how-it-works>summary::-webkit-details-marker{display:none}
+.how-it-works>summary::after{content:'+';margin-left:auto;font-size:1.2rem;line-height:1;color:var(--muted)}
+.how-it-works[open]>summary::after{content:'\2212'}
+.how-it-works[open]>summary{border-bottom:1px solid var(--line)}
+.how-it-works-body{padding:16px 20px 20px;font-size:.84rem;line-height:1.7;color:var(--muted)}
+.how-it-works-body>:first-child{margin-top:0}.how-it-works-body>:last-child{margin-bottom:0}
+.how-it-works-body h3{font-size:.95rem;color:var(--ink);margin:16px 0 6px}
+.how-it-works-body ol,.how-it-works-body ul{padding-left:20px;margin:0 0 10px}
+@media(max-width:860px){.sidebar>.how-it-works{grid-column:1/-1}}
+@media(max-width:580px){.how-it-works{border-radius:13px}}
+@media print{.how-it-works{display:none}}
+/* End of session (P5): result, what you learned, share, next app, tomorrow slot, report an error (src/lib/session-end.ts). */
+.session-end{display:grid;gap:14px;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--panel-wash);margin-top:20px}
+.session-end>*{margin:0}
+.session-result{font-family:Newsreader,Georgia,serif;font-size:1.4rem;line-height:1.3;font-weight:550;color:var(--ink)}
+.session-learned h3{font-size:.95rem;margin:0 0 6px}.session-learned ul{margin:0;padding-left:20px;color:var(--muted);font-size:.9rem;line-height:1.65}
+.session-share{gap:8px}.session-share .button{min-height:44px}
+.session-next{font-size:.9rem}.session-next a{font-weight:650}
+.session-tomorrow{font-size:.85rem}.session-report{font-size:.8rem}
+@media print{.session-end{display:none}}
+/* Arabic (P5, DESIGN.md section 1): Amiri 1.6-1.8 rem, line-height at least 1.9, the same in light and dark. .honorific is unchanged above. */
+.arabic{font-family:Amiri,'Traditional Arabic',serif;font-size:1.7rem;line-height:2.1;font-style:normal;letter-spacing:0;font-weight:400}
+:root[data-theme=dark] .arabic,:root[data-theme=light] .arabic{line-height:2.1}
+@media(max-width:580px){.arabic{font-size:1.6rem}}
+[lang=ar]{font-style:normal;letter-spacing:0}
+/* Print (P5): activity only, black on white. Chrome, drawer, guide, feedback and the session-end block are hidden. */
+@media print{
+:root:root,:root:root[data-theme][data-accent]{--bg:#fff;--surface:#fff;--surface-2:#fff;--ink:#000;--muted:#222;--line:#999;--accent:#000;--accent-hover:#000;--accent-ink:#000;--tint:#fff;--on-accent:#fff;--panel-wash:#fff;--hero-wash:#fff;color-scheme:light}
+body{background:#fff;color:#000}
+.site-header,.site-footer,.seo-breadcrumb,.feedback-wrap,.learning-guide,.how-it-works,.sidebar,.session-end,.skip-link,.toast,.projector-toggle,.no-print,dialog{display:none!important}
+main{padding:0;max-width:none}.workspace{display:block}.panel{box-shadow:none;border:1px solid #999;background:#fff}.panel-head{background:#fff}.intro{border-bottom:1px solid #999;margin-bottom:12px}
+}
+/* Projector (P5): the header toggle is added by shell.ts only when <main> or <body> has data-projector. Text x1.35, simpler chrome, higher contrast; saved only when the app's remember opt-in is on. */
+:root[data-projector=on]{font-size:135%;--ink:#000;--muted:#1f1f1f;--line:#5a5a5a}
+:root[data-projector=on][data-theme=dark]{--ink:#fff;--muted:#ececec;--line:#a8a8a8}
+:root[data-projector=on] :is(.seo-breadcrumb,.site-footer,.feedback-wrap,.learning-guide,.brand small,.all-apps,.nav-sources){display:none}
+:root[data-projector=on] .site-header{box-shadow:none;backdrop-filter:none}
+:root[data-projector=on] .panel,:root[data-projector=on] .how-it-works{box-shadow:none;border-color:var(--ink)}
+.projector-toggle{white-space:nowrap;min-height:38px}
+@media(max-width:520px){.projector-toggle{padding:6px 9px;font-size:.7rem;min-height:36px}}
+/* Correct-answer pulse (P5): one short scale/opacity pulse, 240 ms, no sound. Applied by pulseCorrect(el) in utils.ts. */
+@keyframes mg-correct-pulse{0%{transform:scale(1);opacity:.78}55%{transform:scale(1.035);opacity:1}100%{transform:scale(1);opacity:1}}
+.is-correct{animation:mg-correct-pulse .24s ease-out 1}
+@media(prefers-reduced-motion:reduce){.is-correct{animation:none}}

@@ -113,3 +113,15 @@ The design source of truth is the root `DESIGN.md` (families, tokens with comput
 - **Islamic UI rules:** no images of people or animals; no music, bells or sound effects.
 - **Print and projector:** print shows the activity only; projector mode (×1.35 text, simpler chrome) is opt-in and saved only when the visitor opts into saving.
 - **No apex short links** (D2c): each app's own host is linked directly.
+
+### P5 shared shell implementation (12 November 2026)
+
+Shared-lane files now in every app (byte-identical; listed in `_implementation/sync-shared.ts`):
+- `src/layouts/Shell.astro`: `theme-color` per family (light = family accent, dark = family dark bg); header with logo, short name, tagline (hidden below 720 px), nav verb, Sources (hidden below 520 px), "All apps" link to `https://moongazer.tech/#library`, theme toggle.
+- `src/styles/refinement.css`: compact hero (no star watermark, dash-eyebrow or min-height; phone H1 2.1 rem, desktop 3.2 rem; descriptor clamped to two lines on phones; measured phone hero 120-136 px), `.how-it-works` drawer, `.session-end` block, Arabic 1.7 rem (1.6 rem phones) with line-height 2.1, print rules (activity only, black on white), projector rules (`:root[data-projector=on]`), `.is-correct` pulse (240 ms; none under reduced motion).
+- `src/components/HowItWorks.astro`: native `<details class="how-it-works"><summary>How this works</summary>`; place it first inside `.sidebar` (top of the sidebar on desktop, directly after the activity on phones).
+- `src/lib/session-end.ts` (+ `tests/session-end.test.ts`): `renderSessionEnd(container, options)`, `whatsappUrl`, `buildShareText`, `learnedLines`. The caller supplies the share text and must never put the answer in it.
+- `src/components/LearningGuide.astro`: the guide renders after the activity with one server-rendered `<details>` per question (text unchanged).
+- `src/lib/utils.ts`: `pulseCorrect(el)` (no-op under `prefers-reduced-motion: reduce`).
+- `src/lib/shell.ts` (two variants: with and without the print-time details opener): a Projector button is added to the header only when `<main>` or `<body>` has `data-projector`; it lasts the session and is saved under the namespaced key `projector` only while the app's `remember` opt-in is on.
+- Per-app `global.css` (several variants): family tokens for `teal`, `gold`, `blue`, `violet` in light and dark; buttons on accent fills use `--on-accent`. JetBrains Mono (`.mono-chip`, local WOFF2) is added only to the eight Playboard and Dossier apps.

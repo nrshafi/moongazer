@@ -2,7 +2,7 @@
   "slug": "stories-of-the-prophets",
   "name": "Stories of the Prophets",
   "description": "The prophets in the Quran: read, reflect and check",
-  "accent": "blue",
+  "accent": "teal",
   "nav": "Read",
   "port": 4330
 }
