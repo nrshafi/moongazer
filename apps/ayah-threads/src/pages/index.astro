@@ -1,20 +1,47 @@
 ---
 import learning from '../data/learning.json';
+import config from '../data/config.json';
 import HowItWorks from '../components/HowItWorks.astro';
 import Shell from '../layouts/Shell.astro';
 import data from '../data/content.json';
 ---
 <Shell title="Ayah Threads">
-  <section class="intro"><div class="intro-top"><span class="pill"><span class="dot"></span>{data.puzzles.length} passage puzzles</span></div> <h1>{learning.heading}</h1> <p>Three passages, one shared theme.</p><img class="motif" src="/motif.svg" alt="" aria-hidden="true" width="220" height="120" /></section>
+  <section class="intro"><div class="intro-top"><span class="pill"><span class="dot"></span>{data.puzzles.length} passage puzzles</span></div> <h1>{learning.heading}</h1> <p>{config.description}</p><img class="motif" src="/motif.svg" alt="" aria-hidden="true" width="220" height="120" /></section>
   <noscript><div class="noscript">The puzzle interactions need JavaScript. The source catalog remains available at <a href="/sources/">Sources</a>.</div></noscript>
   <div class="workspace"><section class="panel" aria-label="Ayah Threads puzzle">
-    <div class="picker-row"><label class="field">Puzzle<select id="puzzle-picker">{data.puzzles.map(p=><option value={p.id}>Puzzle {String(p.number).padStart(2,'0')}</option>)}</select></label> <span class="micro picker-progress" id="progress-note"></span> <button class="button ghost small" id="random-puzzle" type="button">Surprise me</button> <label class="check"><input type="checkbox" id="show-arabic"/>Show Arabic</label> <label class="check"><input type="checkbox" id="remember"/>Remember my place for up to 30 days</label></div>
-    <div class="panel-head"><div><span class="label" id="puzzle-label">Your next puzzle</span></div></div> <div class="panel-body" id="puzzle-stage" aria-live="polite"><p class="muted">Preparing your passages…</p></div></section>
-    <aside class="sidebar sticky"><HowItWorks><ol><li>Read all three selections in Pickthall's translation.</li> <li>Choose the theme that best connects the set.</li> <li>Open the references and compare the passages in context.</li></ol><p>Read three ayat, find the thread that connects them, and open the references behind your answer. One intended theme, many things to notice.</p><p><strong>A starting point for reading.</strong> Themes are editorial learning prompts. They do not replace tafsir or claim that each passage has only one meaning.</p><p><a href="/themes/">Theme library: read all 30 threads after you solve them <span aria-hidden="true">→</span></a></p></HowItWorks></aside>
+    <div class="mode-row" role="tablist" aria-label="Puzzle mode">
+      <button type="button" class="mode-tab" role="tab" id="tab-daily" data-mode="daily" aria-selected="false" aria-controls="puzzle-panel" tabindex="-1">Daily</button>{' '}
+      <button type="button" class="mode-tab" role="tab" id="tab-practice" data-mode="practice" aria-selected="true" aria-controls="puzzle-panel">Practice</button>
+    </div>
+    <div id="puzzle-panel" role="tabpanel" aria-labelledby="tab-practice">
+      <div class="picker-row">
+        <label class="field" data-for="practice">Puzzle<select id="puzzle-picker">{data.puzzles.map(p=><option value={p.id}>Puzzle {String(p.number).padStart(2,'0')}</option>)}</select></label> <span class="micro picker-progress" id="progress-note" data-for="practice"></span> <button class="button ghost small" id="random-puzzle" type="button" data-for="practice">Surprise me</button>{' '}
+        <label class="check"><input type="checkbox" id="show-arabic"/>Show Arabic</label>{' '}
+        <label class="check" data-for="practice"><input type="checkbox" id="remember"/>Remember my place for up to 30 days</label>{' '}
+        <label class="check" data-for="daily" hidden><input type="checkbox" id="streak-on"/>Keep a streak on this device</label> <span class="micro picker-progress" id="streak-line" data-for="daily" hidden role="status"></span>
+      </div>
+      <div class="panel-head"><div class="head-line"><span class="label" id="puzzle-label">Your next puzzle</span> <span class="micro" id="puzzle-date" hidden></span></div></div>
+      <div class="panel-body" id="puzzle-stage" aria-live="polite"><p class="muted">Preparing your passages…</p></div>
+      <div class="reminder" id="reminder" hidden>
+        <label class="field reminder-time" for="reminder-time">Remind me daily<input type="time" id="reminder-time" value="20:00" /></label>
+        <button class="button secondary small" id="reminder-download" type="button">Download reminder (.ics)</button>
+        <p class="micro reminder-note">A calendar file made in your browser. Nothing is sent anywhere.</p>
+      </div>
+    </div></section>
+    <aside class="sidebar sticky"><HowItWorks><ol><li>Read all three selections in Pickthall's translation.</li> <li>Choose the theme that best connects the set.</li> <li>Open the references and compare the passages in context.</li></ol><p>Read three ayat, find the thread that connects them, and open the references behind your answer. One intended theme, many things to notice.</p>
+      <p><strong>Daily.</strong> One puzzle a day, the same for everyone who sees the same number. The number <strong>#N</strong> changes at midnight in your own time zone, so two people in different time zones can be on different numbers on the same moment. Finish it and a reload shows your result, not a fresh puzzle.</p>
+      <p><strong>Practice</strong> is always available: choose any of the {data.puzzles.length} puzzles, in any order.</p>
+      <p><strong>What is saved, on this device only.</strong> Each record expires 30 days after it was written, and nothing is sent anywhere.</p>
+      <ul><li><code>ayah-threads:daily</code>: today's puzzle number and your result, so a reload shows it.</li> <li><code>ayah-threads:streak-on</code> and <code>ayah-threads:streak</code>: only if you tick "Keep a streak on this device". Unticking deletes both.</li> <li><code>ayah-threads:remember</code> and <code>ayah-threads:puzzle</code>: only if you tick "Remember my place".</li> <li><code>ayah-threads:theme-bookmarks</code>: threads you save in the theme library.</li></ul>
+      <p>"Remind me daily" downloads a calendar file made in your browser; it asks for no permission.</p>
+      <p><strong>A starting point for reading.</strong> Themes are editorial learning prompts. They do not replace tafsir or claim that each passage has only one meaning.</p><p><a href="/themes/">Theme library: read all 30 threads after you solve them <span aria-hidden="true">→</span></a></p></HowItWorks></aside>
   </div>
 </Shell>
 <script>import '../lib/puzzle';</script>
 <style>
   .intro{position:relative}.intro .motif{position:absolute;right:0;top:50%;transform:translateY(-50%);color:var(--accent);opacity:.55;pointer-events:none}@media(max-width:580px){.intro .motif{display:none}}
-  .picker-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:end;padding:14px 22px;border-bottom:1px solid var(--line)}.picker-row .field{margin:0;font-size:.72rem;min-width:170px}.picker-row .check{margin:0;min-height:44px}.picker-progress{align-self:center}.picker-row .button{min-height:44px}@media(max-width:580px){.picker-row{padding:12px 16px}}
+  .mode-row{display:flex;gap:8px;padding:14px 22px 0}.mode-tab{min-height:44px;min-width:104px;padding:0 20px;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);font:inherit;font-size:.84rem;font-weight:600;cursor:pointer}.mode-tab:hover{border-color:var(--accent);background:var(--tint)}.mode-tab[aria-selected=true]{background:var(--tint);border-color:var(--accent);color:var(--accent-ink)}@media(max-width:580px){.mode-row{padding:12px 16px 0}.mode-tab{flex:1}}
+  .picker-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:end;padding:14px 22px;border-bottom:1px solid var(--line)}.picker-row [hidden]{display:none}.picker-row .field{margin:0;font-size:.72rem;min-width:170px}.picker-row .check{margin:0;min-height:44px}.picker-progress{align-self:center}.picker-row .button{min-height:44px}@media(max-width:580px){.picker-row{padding:12px 16px}}
+  .head-line{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+  .reminder{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:end;padding:14px 22px 18px;border-top:1px solid var(--line)}.reminder[hidden]{display:none}.reminder .field{margin:0;min-width:0;flex:0 0 auto}.reminder input[type=time]{min-height:44px}.reminder .button{min-height:44px}.reminder-note{flex:1 1 100%;margin:0}@media(max-width:580px){.reminder{padding:12px 16px 16px}}
 </style>

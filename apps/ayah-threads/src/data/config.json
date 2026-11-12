@@ -1,7 +1,7 @@
 {
   "slug": "ayah-threads",
   "name": "Ayah Threads",
-  "description": "Three ayat, one hidden thread: a Quran puzzle",
+  "description": "Find the theme that links three passages: a daily Quran puzzle",
   "accent": "teal",
   "nav": "Play",
   "port": 4322
