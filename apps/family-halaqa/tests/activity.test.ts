@@ -31,7 +31,7 @@ test('a saved session cannot skip steps or invent a correct answer',()=>{
  expect(()=>finishStep(newSession(),1,pack)).toThrow();expect(()=>answerQuestion(newSession(),-1,pack)).toThrow();
 });
 test('family packs have a finite sitting and an unambiguous reading check',()=>{
- expect(packs).toHaveLength(12);expect(new Set(packs.map(pack=>pack.id)).size).toBe(12);
+ expect(packs.filter(pack=>!('series' in pack))).toHaveLength(12);expect(new Set(packs.map(pack=>pack.id)).size).toBe(packs.length);
  expect(new Set(packs.map(pack=>pack.age)).size).toBe(3);
  for(const pack of packs){expect(pack.minutes).toBeLessThanOrEqual(15);expect(pack.minutes).toBeGreaterThanOrEqual(10);expect(new Set(pack.options).size).toBe(pack.options.length);expect(pack.answer).toBeLessThan(pack.options.length);expect(pack.discussion.length).toBeGreaterThan(30);expect(pack.activity.length).toBeGreaterThan(40);}
 });

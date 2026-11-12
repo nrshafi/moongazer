@@ -331,6 +331,327 @@
         "translationUrl": "https://quran.com/49:13?translations=19"
       },
       "commentaryUrl": "https://quran.com/49:13/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-01",
+      "title": "A month begins",
+      "age": "8–11",
+      "topic": "Fasting",
+      "series": "ramadan",
+      "night": 1,
+      "minutes": 12,
+      "question": "What reason does the reading give for fasting being prescribed?",
+      "options": [
+        "So that you may travel more easily.",
+        "So that you may ward off evil.",
+        "So that you may rest from every task."
+      ],
+      "answer": 1,
+      "explanation": "The passage ends with the reason: that you may ward off (evil). Al-Muyassar explains this as placing a protection between yourself and disobedience by obeying Allah.",
+      "discussion": "Doing without something for a day can help a person notice what they usually take for granted. What could that change in the way we treat other people? Use made-up examples.",
+      "activity": "Put an empty cup and a full cup side by side on the table. Each person names one good habit that fasting could help to build and moves a button from one cup to the other. Anyone may pass.",
+      "close": "Say one word you hope this month will build in you.",
+      "teaching": "Al-Muyassar says this verse speaks to believers and that fasting was prescribed for earlier communities too. Notice what the verse says about its purpose.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903",
+          "kind": "Primary hadith report",
+          "note": "A report from Abu Hurairah: the Prophet Muhammad ﷺ says Allah has no need of someone giving up food and drink if that person does not also give up false speech and wrong actions. Paraphrased."
+        }
+      ],
+      "passage": {
+        "ref": "2:183",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ كَمَا كُتِبَ عَلَى ٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+        "translation": "O ye who believe! Fasting is prescribed for you, even as it was prescribed for those before you, that ye may ward off (evil);",
+        "url": "https://quran.com/2:183",
+        "translationUrl": "https://quran.com/2:183?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:183/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-02",
+      "title": "Near and listening",
+      "age": "5–7",
+      "topic": "Dua",
+      "series": "ramadan",
+      "night": 2,
+      "minutes": 10,
+      "question": "What does the reading say Allah does when someone calls on Him?",
+      "options": [
+        "He waits until a special day.",
+        "He is too far away to hear.",
+        "He answers the prayer of the one who calls."
+      ],
+      "answer": 2,
+      "explanation": "The passage says Allah is near and answers the prayer of the one who calls. Al-Muyassar adds that this nearness is the kind that suits Allah’s majesty.",
+      "discussion": "When might a person want to ask Allah for help? Think of made-up examples, and say how it feels to know He is near.",
+      "activity": "Pass a small cup from hand to hand. Whoever holds it may say a short dua aloud or silently, then pass it on. Anyone may pass.",
+      "close": "Say “Ameen” together.",
+      "teaching": "Al-Muyassar explains that this verse answers people who ask about Allah, and invites them to obey and believe so that they find the right way.",
+      "sources": [],
+      "passage": {
+        "ref": "2:186",
+        "arabic": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ ۖ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ",
+        "translation": "And when My servants question thee concerning Me, then surely I am nigh. I answer the prayer of the suppliant when he crieth unto Me. So let them hear My call and let them trust in Me, in order that they may be led aright.",
+        "url": "https://quran.com/2:186",
+        "translationUrl": "https://quran.com/2:186?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:186/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-03",
+      "title": "A message begins",
+      "age": "8–11",
+      "topic": "The Quran",
+      "series": "ramadan",
+      "night": 3,
+      "minutes": 12,
+      "question": "By what means does the reading say Allah teaches?",
+      "options": [
+        "The pen.",
+        "The lantern.",
+        "The map."
+      ],
+      "answer": 0,
+      "explanation": "The passage says Allah teaches by the pen and teaches people what they did not know. Al-Muyassar says He taught people to write with the pen and brought them from the darkness of not knowing to the light of knowledge. Surah 2, verse 185 names Ramadan as the month in which the Quran was revealed.",
+      "discussion": "The passage speaks of reading and of knowing what we did not know. What is something you have learned from a book or from someone who taught you? Use general examples if you prefer.",
+      "activity": "Put a pen, a sheet of paper and a closed book on the table. Each person chooses one object and says how it helps people learn. Then agree on one thing the family would like to learn together this month.",
+      "close": "Say one thing you would like to learn.",
+      "teaching": "Al-Muyassar explains this as an instruction to read what was sent down, beginning with the name of the Lord who creates, and describes Him as most generous.",
+      "sources": [],
+      "passage": {
+        "ref": "96:1-5",
+        "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+        "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not.",
+        "url": "https://quran.com/96:1-5",
+        "translationUrl": "https://quran.com/96:1-5?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/96:1/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-04",
+      "title": "Open hands",
+      "age": "5–7",
+      "topic": "Kindness",
+      "series": "ramadan",
+      "night": 4,
+      "minutes": 10,
+      "question": "Who does the reading say should not be driven away?",
+      "options": [
+        "The one who is late.",
+        "The one who asks for help.",
+        "The one who laughs."
+      ],
+      "answer": 1,
+      "explanation": "The passage says the beggar should not be driven away. Al-Muyassar says to feed the one who asks, meet the need, and speak about the favours Allah has given you.",
+      "discussion": "Why is it kind to answer gently when someone asks for help? Think of made-up examples.",
+      "activity": "Pass a small bowl around. Each person pretends to put one kind thing in it by naming it, such as a smile, a hello or a seat. No real food or money is needed.",
+      "close": "Say thank you for one favour you have received. A thank-you is enough.",
+      "teaching": "Al-Muyassar explains these verses as telling us not to treat an orphan harshly, not to scold the one who asks, and to speak of the favour of our Lord.",
+      "sources": [],
+      "passage": {
+        "ref": "93:9-11",
+        "arabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ\nوَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ\nوَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+        "translation": "Therefor the orphan oppress not,\nTherefor the beggar drive not away,\nTherefor of the bounty of thy Lord be thy discourse.",
+        "url": "https://quran.com/93:9-11",
+        "translationUrl": "https://quran.com/93:9-11?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/93:9/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-05",
+      "title": "Counting thanks",
+      "age": "8–11",
+      "topic": "Gratitude",
+      "series": "ramadan",
+      "night": 5,
+      "minutes": 12,
+      "question": "What does the reading say Allah will do if people give thanks?",
+      "options": [
+        "Keep everything the same.",
+        "Take away what they have.",
+        "Give them more."
+      ],
+      "answer": 2,
+      "explanation": "The passage says: If ye give thanks, I will give you more. Al-Muyassar says gratitude brings more of Allah’s favour. The verse also warns about being thankless, and an adult may explain that part gently.",
+      "discussion": "Besides words, what are some ways a person can show thanks? Which is hardest to remember?",
+      "activity": "Put five small objects in a row, such as a cup, a pen, a button, a spoon and a stone. Each person chooses one and says one thing it helps them do that they are thankful for.",
+      "close": "Say “Alhamdulillah” together.",
+      "teaching": "Al-Muyassar explains that Musa (peace be upon him) is reminding his people of what their Lord announced about thanks and thanklessness.",
+      "sources": [],
+      "passage": {
+        "ref": "14:7",
+        "arabic": "وَإِذْ تَأَذَّنَ رَبُّكُمْ لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِى لَشَدِيدٌ",
+        "translation": "And when your Lord proclaimed: If ye give thanks, I will give you more; but if ye are thankless, lo! My punishment is dire.",
+        "url": "https://quran.com/14:7",
+        "translationUrl": "https://quran.com/14:7?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/14:7/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-06",
+      "title": "Hard and easy",
+      "age": "5–7",
+      "topic": "Patience",
+      "series": "ramadan",
+      "night": 6,
+      "minutes": 10,
+      "question": "What does the reading say goes together with hardship?",
+      "options": [
+        "Ease.",
+        "Silence.",
+        "Sleep."
+      ],
+      "answer": 0,
+      "explanation": "The passage says that with hardship goes ease, and it says so twice. Al-Muyassar says harm from enemies should not hold the Prophet Muhammad ﷺ back from his message, because with a narrow time comes relief.",
+      "discussion": "Think of a made-up time when something was hard and then got easier. What helped?",
+      "activity": "Hold a stone in one hand and a feather or a tissue in the other. Say what feels heavy and what feels light, then swap hands and name one thing that makes a hard job easier.",
+      "close": "Say one thing that helps when something is hard.",
+      "teaching": "Al-Muyassar explains the repeated promise as a comfort: relief comes with hardship.",
+      "sources": [],
+      "passage": {
+        "ref": "94:5-6",
+        "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا\nإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+        "translation": "But lo! with hardship goeth ease,\nLo! with hardship goeth ease;",
+        "url": "https://quran.com/94:5-6",
+        "translationUrl": "https://quran.com/94:5-6?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/94:5/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-07",
+      "title": "Steady hearts",
+      "age": "12+",
+      "topic": "Patience",
+      "series": "ramadan",
+      "night": 7,
+      "minutes": 15,
+      "question": "What do the steadfast say when misfortune strikes them?",
+      "options": [
+        "We deserve better than this.",
+        "We are Allah’s and to Him we are returning.",
+        "Nothing will ever change."
+      ],
+      "answer": 1,
+      "explanation": "The passage says they say: Lo! we are Allah’s and lo! unto Him we are returning. Al-Muyassar explains that these words acknowledge that we belong to Allah and will return to Him, and that the steadfast are given glad tidings.",
+      "discussion": "Fasting brings a little hunger. How might patience with a small difficulty differ from patience with a large loss? Keep to made-up examples.",
+      "activity": "Set out three small objects: a cup for thirst, a plate for hunger and a stone for a hard moment. Take turns choosing one and say one steady response, either an action or a short phrase. Anyone may pass.",
+      "close": "Say one steady phrase you could remember.",
+      "teaching": "Al-Muyassar says Allah tests people with a little fear, hunger and loss, and gives good news to those who are patient.",
+      "sources": [],
+      "passage": {
+        "ref": "2:155-156",
+        "arabic": "وَلَنَبْلُوَنَّكُم بِشَىْءٍ مِّنَ ٱلْخَوْفِ وَٱلْجُوعِ وَنَقْصٍ مِّنَ ٱلْأَمْوَٰلِ وَٱلْأَنفُسِ وَٱلثَّمَرَٰتِ ۗ وَبَشِّرِ ٱلصَّـٰبِرِينَ\nٱلَّذِينَ إِذَآ أَصَـٰبَتْهُم مُّصِيبَةٌ قَالُوٓا۟ إِنَّا لِلَّهِ وَإِنَّآ إِلَيْهِ رَٰجِعُونَ",
+        "translation": "And surely We shall try you with something of fear and hunger, and loss of wealth and lives and crops; but give glad tidings to the steadfast,\nWho say, when a misfortune striketh them: Lo! we are Allah's and lo! unto Him we are returning.",
+        "url": "https://quran.com/2:155-156",
+        "translationUrl": "https://quran.com/2:155-156?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:155/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-08",
+      "title": "Seeds and sharing",
+      "age": "8–11",
+      "topic": "Charity",
+      "series": "ramadan",
+      "night": 8,
+      "minutes": 12,
+      "question": "What is spending in Allah’s way compared with in the reading?",
+      "options": [
+        "A river that dries up.",
+        "A tree that gives shade once.",
+        "A grain that grows seven ears."
+      ],
+      "answer": 2,
+      "explanation": "The passage compares it to a grain that grows seven ears, with a hundred grains in each ear. Al-Muyassar says Allah multiplies the reward for whom He wills, according to the sincerity of the giver.",
+      "discussion": "How can a small gift grow into more good than the giver expected? Use made-up examples.",
+      "activity": "Use dry beans or other small objects. Each person puts one in a bowl and names one way a small gift can grow into more good. Count them together, then choose one real act of giving to talk over with an adult. No amounts need to be shared.",
+      "close": "Say one small gift you could give this week.",
+      "teaching": "Al-Muyassar describes spending in Allah’s way as among the most beneficial acts and explains the picture as a seed planted in good soil. Using seeds in the activity is an editorial aid.",
+      "sources": [],
+      "passage": {
+        "ref": "2:261",
+        "arabic": "مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍ مِّا۟ئَةُ حَبَّةٍ ۗ وَٱللَّهُ يُضَـٰعِفُ لِمَن يَشَآءُ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ",
+        "translation": "The likeness of those who spend their wealth in Allah's way is as the likeness of a grain which groweth seven ears, in every ear a hundred grains. Allah giveth increase manifold to whom He will. Allah is All-Embracing, All-Knowing.",
+        "url": "https://quran.com/2:261",
+        "translationUrl": "https://quran.com/2:261?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:261/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-09",
+      "title": "Words for parents",
+      "age": "5–7",
+      "topic": "Parents",
+      "series": "ramadan",
+      "night": 9,
+      "minutes": 10,
+      "question": "What does the reading say to ask Allah for?",
+      "options": [
+        "Mercy for both parents.",
+        "A faster journey.",
+        "A new toy."
+      ],
+      "answer": 0,
+      "explanation": "The passage is a dua: My Lord! Have mercy on them both as they did care for me when I was little. Al-Muyassar adds that we should be humble and gentle with our parents and ask Allah to have mercy on them.",
+      "discussion": "Some children are cared for by parents, and others by grandparents or other family. Who cares for you? Say one thing a caring grown-up does, or use a made-up example.",
+      "activity": "Stack small cups into a tower. Each person finishes the sentence “A caring thing a grown-up does is…” and adds one cup. Say the dua together when the tower is done.",
+      "close": "Say the dua together, or say thank you in your own words.",
+      "teaching": "Al-Muyassar explains this verse as a call to gentle humility toward parents.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 5971",
+          "url": "https://sunnah.com/bukhari:5971",
+          "kind": "Primary hadith report",
+          "note": "A man asks the Prophet Muhammad ﷺ who most deserves his best company. The Prophet ﷺ answers “your mother” three times, then “your father”. Paraphrased."
+        }
+      ],
+      "passage": {
+        "ref": "17:24",
+        "arabic": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
+        "translation": "And lower unto them the wing of submission through mercy, and say: My Lord! Have mercy on them both as they did care for me when I was little.",
+        "url": "https://quran.com/17:24",
+        "translationUrl": "https://quran.com/17:24?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/17:24/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-10",
+      "title": "Next door",
+      "age": "12+",
+      "topic": "Neighbours",
+      "series": "ramadan",
+      "night": 10,
+      "minutes": 15,
+      "question": "Which neighbours does the reading mention?",
+      "options": [
+        "Only the neighbour who is a relative.",
+        "The neighbour who is related and the one who is not.",
+        "Only neighbours of the same age."
+      ],
+      "answer": 1,
+      "explanation": "The passage names the neighbour who is of kin and the neighbour who is not of kin. Al-Muyassar explains them as the near neighbour and the distant one.",
+      "discussion": "Why might a neighbour who is not a relative need kindness as much as a relative does? Use made-up examples.",
+      "activity": "Place several small cups in a row to stand for homes. Take turns moving a coin to a neighbouring cup and name one kind action toward a neighbour, such as a greeting, lowering noise or sharing something.",
+      "close": "Say one kind thing you could do for a neighbour.",
+      "teaching": "This verse is long and lists many people who deserve kindness, beginning with parents. An adult can skip the last phrase, which Al-Muyassar explains as those owned as servants, and focus on neighbours.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6014",
+          "url": "https://sunnah.com/bukhari:6014",
+          "kind": "Primary hadith report",
+          "note": "Aisha reports the Prophet Muhammad ﷺ saying that Jibril kept advising him about the neighbour until he thought the neighbour might be made an heir. Paraphrased."
+        }
+      ],
+      "passage": {
+        "ref": "4:36",
+        "arabic": "۞ وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًٔا ۖ وَبِٱلْوَٰلِدَيْنِ إِحْسَـٰنًا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَـٰمَىٰ وَٱلْمَسَـٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَـٰنُكُمْ ۗ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًا فَخُورًا",
+        "translation": "And serve Allah. Ascribe no thing as partner unto Him. (Show) kindness unto parents, and unto near kindred, and orphans, and the needy, and unto the neighbour who is of kin (unto you) and the neighbour who is not of kin, and the fellow-traveller and the wayfarer and (the slaves) whom your right hands possess. Lo! Allah loveth not such as are proud and boastful,",
+        "url": "https://quran.com/4:36",
+        "translationUrl": "https://quran.com/4:36?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/4:36/tafsirs/16"
     }
   ],
   "methodology": "Twelve single-sitting family packs combine a source reading question, an open discussion and a shared activity. Age bands are editorial suggestions and Pickthall’s historical English may need an adult’s explanation. Open prompts have no single graded answer. Activities are original applications beyond the fetched canonical text, not scholarly rulings from quran.ai, quran.com or quran.foundation. No child names, private stories, profiles or ongoing behavior records are collected. Every participant may pass."

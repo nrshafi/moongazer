@@ -1,0 +1,519 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 1,
+  "series": "ramadan",
+  "nights": [
+    1,
+    10
+  ],
+  "quranEdition": "ar-uthmani-hafs",
+  "translationEdition": "en-pickthall",
+  "groundingNonce": "gnd-cea239f199a26901",
+  "rateLimitNote": "The Quran MCP allows one request per second; calls were made one at a time.",
+  "calls": [
+    {
+      "tool": "fetch_grounding_rules",
+      "arguments": {},
+      "edition": null,
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Returned gnd-cea239f199a26901; passed as grounding_nonce on later calls."
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "2:183",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        1
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "2:186",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        2
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "2:185",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Fetched during batch 1 and used in night 30 (batch 3).",
+      "nights": [
+        30
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "93:9-11",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        4
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "14:7",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        5
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "94:5-6",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        6
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "2:155-156",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        7
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "2:261",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        8
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "17:24",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        9
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "4:36",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        10
+      ]
+    },
+    {
+      "tool": "fetch_translation",
+      "arguments": {
+        "ayahs": "2:183, 2:186, 2:185, 93:9-11, 14:7, 94:5-6, 2:155-156, 2:261, 17:24, 4:36",
+        "editions": "en-pickthall",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "en-pickthall",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Compared by eye with the snapshot; the pack text itself is copied by script from quran-full.json. Night 3 (96:1-5) was covered by the batch 2 translation call."
+    },
+    {
+      "tool": "fetch_quran",
+      "arguments": {
+        "ayahs": "2:183, 2:186, 2:185, 93:9-11, 14:7, 94:5-6, 2:155-156, 2:261, 17:24, 4:36",
+        "editions": "ar-uthmani-hafs",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-uthmani-hafs",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Arabic is copied by script from quran-full.json; this call is a cross-check that was read, not byte-compared by script. verify-static.py compares every passage with the snapshot."
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "96:1-5",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Called after the 2026-11-12T12:21:09Z clock reading was taken.",
+      "nights": [
+        3
+      ]
+    }
+  ],
+  "items": [
+    {
+      "night": 1,
+      "id": "ramadan-night-01",
+      "title": "A month begins",
+      "age": "8–11",
+      "topic": "Fasting",
+      "ref": "2:183",
+      "passageSha256": {
+        "arabic": "0e8c71a4e9c6430cb122301f52c2367e3889725bbe546d843387856275918c6d",
+        "translation": "c71261ddc53060f7f285b67869e1f86c3a42521fa3363ff949a7ec89bbf1977f"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/2:183/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "فرض الله عليكم الصيام كما فرضه على الأمم قبلكم; لعلكم تتقون ربكم، فتجعلون بينكم وبين المعاصي وقاية"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "A report from Abu Hurairah: the Prophet Muhammad ﷺ says Allah has no need of someone giving up food and drink if that person does not also give up false speech and wrong actions. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 2,
+      "id": "ramadan-night-02",
+      "title": "Near and listening",
+      "age": "5–7",
+      "topic": "Dua",
+      "ref": "2:186",
+      "passageSha256": {
+        "arabic": "08f48bf5d734289af7929d5541ad745e7c2e457b306f26557a53ed5fdff8d3fb",
+        "translation": "37cc097d8ef5494ce209beaf62115640561b3821a0764095d28a74f080d94ac6"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/2:186/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "إني قريب منهم، أُجيب دعوة الداعي إذا دعاني"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 3,
+      "id": "ramadan-night-03",
+      "title": "A message begins",
+      "age": "8–11",
+      "topic": "The Quran",
+      "ref": "96:1-5",
+      "passageSha256": {
+        "arabic": "1f23e6bc1aa44b5aa0d9d43fddaa909e3091b6cd634bfe4f218d14aa49e30359",
+        "translation": "05006b1dd6d84f1bf8bdb77a67af08b5c5fe1bd5a3d85768f928d9340bcb07d3"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/96:1/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "الذي علَّم خلقه الكتابة بالقلم، علَّم الإنسان ما لم يكن يعلم، ونقله من ظلمة الجهل إلى نور العلم"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 4,
+      "id": "ramadan-night-04",
+      "title": "Open hands",
+      "age": "5–7",
+      "topic": "Kindness",
+      "ref": "93:9-11",
+      "passageSha256": {
+        "arabic": "29cf45bae4bd2e899d8f03b0845a847b6cacd681d481bd6149d47ca50208d74a",
+        "translation": "80f74bb703a834b461d687a3a96dd5d56c94bde808272cbfa07eaa856ce0f85a"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/93:9/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "وأما السائل فلا تزجره، بل أطعمه، واقض حاجته"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 5,
+      "id": "ramadan-night-05",
+      "title": "Counting thanks",
+      "age": "8–11",
+      "topic": "Gratitude",
+      "ref": "14:7",
+      "passageSha256": {
+        "arabic": "41ba2c241a180982166f38520d30717d7fcc92efaa0b2052ad2798d992703abe",
+        "translation": "6b7c0a2db7071fa9ba1a35f1337f574c582cf7812feabb5105023cd185a83a4d"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/14:7/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "وقال لهم موسى: واذكروا حين أعلم ربكم إعلامًا مؤكَّدًا: لئن شكرتموه على نعمه ليزيدنكم من فضله"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 6,
+      "id": "ramadan-night-06",
+      "title": "Hard and easy",
+      "age": "5–7",
+      "topic": "Patience",
+      "ref": "94:5-6",
+      "passageSha256": {
+        "arabic": "ecc54aeda707758570b0fdb2e443ccfbe75e2366a1ae4f5dc1f5fdb89523884a",
+        "translation": "94fc100c729c6630e103ff4d8483ca1d6f1957530d181aee42aaf4077721ef14"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/94:5/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "فإن مع الضيق فرجًا، إن مع الضيق فرجًا"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 7,
+      "id": "ramadan-night-07",
+      "title": "Steady hearts",
+      "age": "12+",
+      "topic": "Patience",
+      "ref": "2:155-156",
+      "passageSha256": {
+        "arabic": "f0f6831709c79500836783054fdf2b125c0e910ef5846d38b8fa76fbed722297",
+        "translation": "8e62714f3ab29fa3ceb03cca475734088c63d7bc137fe3e09a3d6f2955cadd1a"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/2:155/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "إنَّا عبيد مملوكون لله ... وإنا إليه راجعون"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 8,
+      "id": "ramadan-night-08",
+      "title": "Seeds and sharing",
+      "age": "8–11",
+      "topic": "Charity",
+      "ref": "2:261",
+      "passageSha256": {
+        "arabic": "8c0e58d2812764ad4c69f3f178ca74150a3a04d48c49db84945a824bd3bb10c1",
+        "translation": "3fadfbc8b985210ba822efad23601b7afb327347a98762b44e2d10ea7f048eee"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/2:261/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "والله يضاعف الأجر لمن يشاء، بحسب ما يقوم بقلب المنفق من الإيمان والإخلاص التام"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 9,
+      "id": "ramadan-night-09",
+      "title": "Words for parents",
+      "age": "5–7",
+      "topic": "Parents",
+      "ref": "17:24",
+      "passageSha256": {
+        "arabic": "9982e021e645e65c077f10a4d34693663d1437fed1855e15aa0b9a0c9f5f0a93",
+        "translation": "30a013f75257526070b0cd74ef2db15225b5781f610bcd21b7186e4415949380"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/17:24/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "وكُنْ لأمك وأبيك ذليلا متواضعًا رحمة بهما، واطلب من ربك أن يرحمهما"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 5971",
+          "url": "https://sunnah.com/bukhari:5971",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "A man asks the Prophet Muhammad ﷺ who most deserves his best company. The Prophet ﷺ answers “your mother” three times, then “your father”. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 10,
+      "id": "ramadan-night-10",
+      "title": "Next door",
+      "age": "12+",
+      "topic": "Neighbours",
+      "ref": "4:36",
+      "passageSha256": {
+        "arabic": "a24db46caca953424801fab8970be10482eab5b6130e687b718cd72699362a98",
+        "translation": "a1b1494d40c3457fc7c7b046229557111235e5a2f4fee0719aab9c462615c85f"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/4:36/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "والجار القريب منكم والبعيد ... والمماليك من فتيانكم وفتياتكم"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 6014",
+          "url": "https://sunnah.com/bukhari:6014",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Aisha reports the Prophet Muhammad ﷺ saying that Jibril kept advising him about the neighbour until he thought the neighbour might be made an heir. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    }
+  ],
+  "hadithOpenedNotUsed": [
+    "https://sunnah.com/bukhari:1894 (fasting is a shield; opened, not used)"
+  ]
+}
