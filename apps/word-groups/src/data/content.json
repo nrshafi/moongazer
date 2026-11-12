@@ -1408,121 +1408,121 @@
     {
       "id": "board-01",
       "number": 1,
-      "title": "First connections",
+      "title": "Opening",
       "level": "Starter",
       "groups": [
-        "animal-titles",
-        "metals",
-        "day-night",
-        "requested-crops"
+        "angels",
+        "paradise-rivers",
+        "scriptures",
+        "textiles"
       ]
     },
     {
       "id": "board-02",
       "number": 2,
-      "title": "A closer look",
+      "title": "Doorway",
       "level": "Starter",
       "groups": [
-        "prophets",
-        "storm",
-        "colors",
-        "neighbors"
+        "ayat-kursi",
+        "root-kitab",
+        "animals",
+        "fruit"
       ]
     },
     {
       "id": "board-03",
       "number": 3,
-      "title": "Words and readings",
+      "title": "Lantern",
       "level": "Starter",
       "groups": [
-        "qul",
+        "scriptures",
         "worship",
-        "fruit",
-        "body"
+        "root-rahma",
+        "angels"
       ]
     },
     {
       "id": "board-04",
       "number": 4,
-      "title": "Across the passages",
+      "title": "Milestone",
       "level": "Starter",
       "groups": [
-        "angels",
-        "divine-names",
-        "textiles",
-        "times"
+        "storm",
+        "root-kitab",
+        "animal-titles",
+        "metals"
       ]
     },
     {
       "id": "board-05",
       "number": 5,
-      "title": "First connections",
-      "level": "Mixed",
+      "title": "Threshold",
+      "level": "Starter",
       "groups": [
-        "times",
-        "scriptures",
         "animals",
-        "qualities"
+        "isa-signs",
+        "qul",
+        "hajj-places"
       ]
     },
     {
       "id": "board-06",
       "number": 6,
-      "title": "A closer look",
-      "level": "Mixed",
+      "title": "Caravan",
+      "level": "Starter",
       "groups": [
-        "places",
+        "isa-signs",
+        "storm",
         "metals",
-        "requested-crops",
-        "worship"
+        "hajj-places"
       ]
     },
     {
       "id": "board-07",
       "number": 7,
-      "title": "Words and readings",
-      "level": "Mixed",
+      "title": "Horizon",
+      "level": "Starter",
       "groups": [
-        "prophets",
-        "fruit",
-        "divine-names",
-        "times"
+        "muhammad-titles",
+        "animal-titles",
+        "lost-peoples",
+        "root-sajda"
       ]
     },
     {
       "id": "board-08",
       "number": 8,
-      "title": "Across the passages",
-      "level": "Mixed",
+      "title": "Compass",
+      "level": "Starter",
       "groups": [
-        "animal-titles",
+        "plagues",
+        "places",
         "storm",
-        "textiles",
-        "qualities"
+        "times"
       ]
     },
     {
       "id": "board-09",
       "number": 9,
-      "title": "First connections",
-      "level": "Mixed",
+      "title": "Anchor",
+      "level": "Starter",
       "groups": [
+        "worldly-joys",
+        "muhammad-titles",
         "colors",
-        "qul",
-        "scriptures",
-        "places"
+        "root-rahma"
       ]
     },
     {
       "id": "board-10",
       "number": 10,
-      "title": "A closer look",
+      "title": "Footprints",
       "level": "Mixed",
       "groups": [
-        "day-night",
-        "neighbors",
-        "angels",
-        "animals"
+        "creation-stages",
+        "fruit",
+        "requested-crops",
+        "sulayman-hosts"
       ]
     },
     {
