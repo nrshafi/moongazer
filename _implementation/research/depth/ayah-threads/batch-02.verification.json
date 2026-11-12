@@ -1,0 +1,28 @@
+{
+  "task": "C2-verify",
+  "app": "ayah-threads",
+  "batch": 2,
+  "puzzles": [11, 20],
+  "checkedAt": "2026-11-12 17:47:39 BST (plain date in Git Bash; Asia/Dhaka, +06:00, no hours added)",
+  "verifier": "second-pass verifier run (separate from the batch author's session)",
+  "checks": {
+    "exactText": "Each passage arabic and translation compared by script with _implementation/research/quran-full.json; range refs joined with newline per ayah, as the data joins them. Result: 30/30 puzzles match; all passage urls match quran.com pattern.",
+    "mcpSpotCheck": "fetch_grounding_rules read first (nonce gnd-44dfb6c9fcd0061b). fetch_translation en-pickthall called sequentially for the first passage of each puzzle, then compared with the data. Result: 30/30 match exactly.",
+    "surahs": "Each puzzle has passages from at least two surahs (checked by script).",
+    "distractors": "Each puzzle has 3 distinct distractors, each a real theme in the bank, none equal to the answer (checked by script). Near-synonym and plausibility checks are editorial.",
+    "hashes": "provenance.json appContentSha256 equals SHA-256 of content.json after CRLF to LF normalisation (7486f41ce0ba061e0cea61745e34ccf64fcc12f6a1015869a22966f957b87f4e)."
+  },
+  "editorialJudgement": "Theme fit, distractor plausibility and hint spoiler checks are the verifier's own editorial judgement, not scholarly review. Hint standard applied: fail if the hint uses the theme name, its root, or a direct synonym, or gives the theme's bare definition.",
+  "items": [
+    {"id": "humility", "number": 11, "result": "pass", "reason": "Exact text, MCP match, surahs 17/26/31. Lowering the wing, no scorn or boasting, no exultant walk are explicit (26:215, 31:18, 17:37). Distractors Human relationships, Fasting, Parents are not the subject of these passages. Hint points at posture without naming the label."},
+    {"id": "careful-speech", "number": 12, "result": "pass", "reason": "Exact text, MCP match, surahs 17/33/49. Upright speech, kindlier words, and no mockery or insulting nicknames are explicit (33:70, 49:11, 17:53). Distractors Time and effort, Mercy, Justice are not the subject. Hint points at what is said without naming the label."},
+    {"id": "keeping-commitments", "number": 13, "result": "pass", "reason": "Exact text, MCP match, surahs 5/16/17. Keeping the covenant and fulfilling oaths are explicit (17:34, 5:1, 16:91). Distractors Kindness, Prayer, Consultation are not in these passages. Hint is a question close to the theme but names no label (borderline)."},
+    {"id": "privacy", "number": 14, "result": "pass", "reason": "Exact text, MCP match, surahs 24/49. Seeking permission before entering homes is explicit (24:27, 24:28); 49:12 'spy not' is a privacy-adjacent instruction, so the fit is somewhat looser for that passage. Distractors Night and day, Orphans, Hope are not in these passages. Hint points at boundaries and permission."},
+    {"id": "human-relationships", "number": 15, "result": "pass", "reason": "Exact text, MCP match, surahs 3/4/49. Bonds among believers, knowing one another across nations and tribes, and one family from a single soul are explicit (3:103, 49:13, 4:1). Distractors Moderation, Forgiveness, Giving are not in these passages. Hint points at belonging without naming the label."},
+    {"id": "moderation", "number": 16, "result": "pass", "reason": "Exact text, MCP match, surahs 7/17/25. Avoiding excess and niggardliness, with a firm middle, are explicit (7:31, 17:29, 25:67). Distractors Learning, Careful speech, Human relationships are not in these passages. Hint is a riddle that describes the middle position without naming the label (borderline)."},
+    {"id": "hope", "number": 17, "result": "pass", "reason": "Exact text, MCP match, surahs 12/39/94. Not despairing of Allah's mercy and ease after hardship are explicit (39:53, 12:87, 94:5-6). Distractors Keeping commitments, Gratitude, Accountability are not in these passages. Hint points at despair and hardship without naming the label."},
+    {"id": "time-and-effort", "number": 18, "result": "pass", "reason": "Exact text, MCP match, surahs 62/94/103. 103:1-3 (time, loss, and exhorting one another) is a clear fit; 94:7 (still toil) is explicit. 62:10 (dispersing to seek Allah's bounty) is the weakest fit of the three and is an editorial reading of effort. Distractors Kindness, Gratitude, Humility are not in these passages. Hint points at an opportunity to act without naming the label."},
+    {"id": "signs-in-creation", "number": 19, "result": "pass", "reason": "Exact text, MCP match, surahs 16/21/30. The creation of heavens and earth, water, and the diversity of languages and colours are explicit (30:22, 21:30, 16:10). Distractors Fasting, Time and effort, Justice are not in these passages. Hint points beyond human activity without naming the label."},
+    {"id": "night-and-day", "number": 20, "result": "pass", "reason": "Exact text, MCP match, surahs 10/25/30. Night and day, their alternation and sleep and seeking bounty by night and day are explicit (10:6, 25:62, 30:23). Distractors Gentle responses, Truth and falsehood, Reconciliation are not in these passages. Hint asks which rhythms are mentioned; it leads to the answer but names no label (borderline)."}
+  ]
+}
