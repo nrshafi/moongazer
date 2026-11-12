@@ -1217,7 +1217,9 @@
       "revelation_place": "makkah",
       "revelation_order": 6,
       "verses_count": 5,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Palm Fiber",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 112,
@@ -1226,7 +1228,9 @@
       "revelation_place": "makkah",
       "revelation_order": 22,
       "verses_count": 4,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Sincerity",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 113,
@@ -1235,7 +1239,9 @@
       "revelation_place": "makkah",
       "revelation_order": 20,
       "verses_count": 5,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Daybreak",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 114,
@@ -1244,7 +1250,9 @@
       "revelation_place": "makkah",
       "revelation_order": 21,
       "verses_count": 6,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Mankind",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     }
   ],
   "verses": {
