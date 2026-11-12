@@ -447,7 +447,9 @@
       "revelation_place": "makkah",
       "revelation_order": 61,
       "verses_count": 54,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Explained in Detail",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 42,
@@ -456,7 +458,9 @@
       "revelation_place": "makkah",
       "revelation_order": 62,
       "verses_count": 53,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Consultation",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 43,
@@ -465,7 +469,9 @@
       "revelation_place": "makkah",
       "revelation_order": 63,
       "verses_count": 89,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Ornaments of Gold",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 44,
@@ -474,7 +480,9 @@
       "revelation_place": "makkah",
       "revelation_order": 64,
       "verses_count": 59,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Smoke",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 45,
@@ -483,7 +491,9 @@
       "revelation_place": "makkah",
       "revelation_order": 65,
       "verses_count": 37,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Crouching",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 46,
@@ -492,7 +502,9 @@
       "revelation_place": "makkah",
       "revelation_order": 66,
       "verses_count": 35,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Wind-Curved Sandhills",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 47,
@@ -501,7 +513,9 @@
       "revelation_place": "madinah",
       "revelation_order": 95,
       "verses_count": 38,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Muhammad",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 48,
@@ -510,7 +524,9 @@
       "revelation_place": "madinah",
       "revelation_order": 111,
       "verses_count": 29,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Victory",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 49,
@@ -519,7 +535,9 @@
       "revelation_place": "madinah",
       "revelation_order": 106,
       "verses_count": 18,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Rooms",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 50,
@@ -528,7 +546,9 @@
       "revelation_place": "makkah",
       "revelation_order": 34,
       "verses_count": 45,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Letter \"Qaf\"",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 51,
