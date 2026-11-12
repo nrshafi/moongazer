@@ -221,5 +221,29 @@
     "observedAt": "2026-10-29T19:32:41.016Z",
     "state": "Processing data",
     "rankingBaselineAvailable": false
+  },
+  "d2cHostSitemaps": {
+    "submittedOnAsiaDhaka": "2026-11-12",
+    "note": "Submitted by the agent under D2b in the Search Console UI after R7. The sitemaps listed above are the pre-D2c hosts, which no longer exist (no redirects); Google will report them as unreachable until they are removed from the property.",
+    "sitemaps": [
+      "https://guess-the-surah.moongazer.tech/sitemap.xml",
+      "https://ayah-threads.moongazer.tech/sitemap.xml",
+      "https://seerah-detective.moongazer.tech/sitemap.xml",
+      "https://everyday-akhlaq.moongazer.tech/sitemap.xml",
+      "https://seerah-timeline.moongazer.tech/sitemap.xml",
+      "https://hifz-planner.moongazer.tech/sitemap.xml",
+      "https://is-it-in-the-quran.moongazer.tech/sitemap.xml",
+      "https://quran-escape-room.moongazer.tech/sitemap.xml",
+      "https://stories-of-the-prophets.moongazer.tech/sitemap.xml",
+      "https://places-in-the-quran.moongazer.tech/sitemap.xml",
+      "https://word-groups.moongazer.tech/sitemap.xml",
+      "https://understand-your-salah.moongazer.tech/sitemap.xml",
+      "https://parables-of-the-quran.moongazer.tech/sitemap.xml",
+      "https://civilization-timeline.moongazer.tech/sitemap.xml",
+      "https://why-it-was-revealed.moongazer.tech/sitemap.xml",
+      "https://family-halaqa.moongazer.tech/sitemap.xml",
+      "https://zakat-calculator.moongazer.tech/sitemap.xml"
+    ],
+    "statusAtSubmission": "zakat-calculator showed Success within minutes; the others were listed and pending the first read."
   }
 }

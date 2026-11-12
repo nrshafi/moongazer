@@ -386,5 +386,5 @@ Branch `content-zakat` (from `phase-6-daily`). Research only; no app code. File:
 - **Remaining:**
   - Escape Room Ramadan rooms (C4).
   - A Family Halaqa series filter and `?night=N`.
-  - Submitting the zakat sitemap in Search Console after deployment.
+  - Removing the retired hosts' sitemaps from Search Console. The new hosts and the zakat sitemap were submitted on 2026-11-12.
   - P8–P10.
