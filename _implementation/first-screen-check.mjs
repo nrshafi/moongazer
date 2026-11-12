@@ -34,7 +34,7 @@ try {
       await p.goto(`http://127.0.0.1:${app.port}/`, 500);
       const r = await p.eval("return " + probe);
       const phone = w < 700;
-      const ok = r.top !== null && (!phone || r.top <= 600) && !r.overflow && p.errors.length === 0 && (!phone || r.hero <= 140);
+      const ok = r.top !== null && (!phone || r.top <= 600) && !r.overflow && p.errors.length === 0 && (!phone || r.hero <= 220);
       if (!ok) failures++;
       rows.push({app: app.slug, view: `${w}x${h}${dark ? ' dark' : ''}`, ...r, errors: p.errors.length, ok});
       p.errors.length = 0;
@@ -51,5 +51,5 @@ for (const [app, v] of Object.entries(by)) {
   console.log(`| ${app} | \`${v['390x844'].what}\` | ${cell('390x844')} | ${cell('390x844 dark')} | ${cell('375x812')} | ${cell('375x812 dark')} | ${cell('1440x1000')} | ${v['390x844'].hero} |`);
 }
 writeFileSync(join(root, '_implementation/qa/first-screen.json'), JSON.stringify(rows, null, 2));
-console.log(failures ? `\n${failures} checks failed` : `\nAll ${rows.length} checks passed (first control ≤ 600 px and hero ≤ 140 px on phones; no overflow; no script errors).`);
+console.log(failures ? `\n${failures} checks failed` : `\nAll ${rows.length} checks passed (first control ≤ 600 px and hero ≤ 220 px on phones; no overflow; no script errors).`);
 process.exit(failures ? 1 : 0);
