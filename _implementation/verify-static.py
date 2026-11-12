@@ -37,6 +37,14 @@ ayat_of_the_night=json.loads((ROOT/'homepage/ayat-of-the-night.json').read_text(
 assert len(ayat_of_the_night)>=60 and all(set(r)=={'ref','arabic','translation','theme'} for r in ayat_of_the_night)
 check_text(ayat_of_the_night)
 
+# Ramadan hub (P7 T7.10): every night's ayah must come from the verified list above; Surah al-Qadr is read from the snapshot at build.
+ramadan=json.loads((ROOT/'homepage/ramadan-content.json').read_text(encoding='utf-8'))
+verified_refs={r['ref'] for r in ayat_of_the_night}
+assert len(ramadan['nightAyat'])==30 and len(set(ramadan['nightAyat']))==30 and set(ramadan['nightAyat'])<=verified_refs,'Ramadan night ayat'
+ramadan_dates=json.loads((ROOT/'_implementation/research/ramadan/dates.json').read_text(encoding='utf-8'))
+assert ramadan['dates']['start']==ramadan_dates['expectedStart']['date'] and ramadan['dates']['lastTenDay']==ramadan_dates['lastTenNightsStart']['date'],'Ramadan dates must match the research record'
+assert ramadan['dates']['eidFrom']==ramadan_dates['expectedEidAlFitr']['range']['from'] and ramadan['dates']['eidTo']==ramadan_dates['expectedEidAlFitr']['range']['to'],'Eid range must match the research record'
+
 results=[]
 for app in sorted((ROOT/'apps').iterdir()):
     if not (app/'package.json').exists():continue
