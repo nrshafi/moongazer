@@ -82,3 +82,16 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Counter hook points (P4.7)
+
+Anonymous aggregate events go through the shared `track(event, itemId)` in `src/lib/counter.ts`. The item id is `plan` for every event in this app. The helper is a silent no-op outside moongazer.tech hosts, under Global Privacy Control, or without sendBeacon. Nothing is stored and no visitor text is sent.
+
+| Event | Hook (`src/lib/app.ts`) | When it fires |
+| --- | --- | --- |
+| `activity_started` | step-one success path of the wizard, before `showStep(2)` | the first time step 1 is answered (the helper also dedupes per page load) |
+| `activity_completed` | `makePlan()`, after a valid plan is built | each plan generated from step 2; not on the missed-day re-plan or on a restore from storage |
+| `share_clicked` | CSV export handler | when the CSV download starts |
+| `share_clicked` | `.ics` export handler | when the calendar file download starts, with or without the daily reminder |
+
+Print (`print-week`) and the on-screen checklist do not count as sharing. The compact feedback link (`<Feedback compact />`) sits in step 3 after the results and links to `#site-feedback` in the footer form. The source-level wiring check is `tests/events.test.ts`.
