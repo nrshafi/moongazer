@@ -667,7 +667,9 @@
       "revelation_place": "madinah",
       "revelation_order": 109,
       "verses_count": 14,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Ranks",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 62,
@@ -676,7 +678,9 @@
       "revelation_place": "madinah",
       "revelation_order": 110,
       "verses_count": 11,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Congregation, Friday",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 63,
@@ -685,7 +689,9 @@
       "revelation_place": "madinah",
       "revelation_order": 104,
       "verses_count": 11,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Hypocrites",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 64,
@@ -694,7 +700,9 @@
       "revelation_place": "madinah",
       "revelation_order": 108,
       "verses_count": 18,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Mutual Disillusion",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 65,
@@ -703,7 +711,9 @@
       "revelation_place": "madinah",
       "revelation_order": 99,
       "verses_count": 12,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Divorce",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 66,
@@ -712,7 +722,9 @@
       "revelation_place": "madinah",
       "revelation_order": 107,
       "verses_count": 12,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Prohibition",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 67,
@@ -721,7 +733,9 @@
       "revelation_place": "makkah",
       "revelation_order": 77,
       "verses_count": 30,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Sovereignty",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 68,
@@ -730,7 +744,9 @@
       "revelation_place": "makkah",
       "revelation_order": 2,
       "verses_count": 52,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Pen",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 69,
@@ -739,7 +755,9 @@
       "revelation_place": "makkah",
       "revelation_order": 78,
       "verses_count": 52,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Reality",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 70,
@@ -748,7 +766,9 @@
       "revelation_place": "makkah",
       "revelation_order": 79,
       "verses_count": 44,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Ascending Stairways",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 71,
