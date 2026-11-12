@@ -1,0 +1,605 @@
+{
+  "schema": "zakat-verification/1",
+  "task": "P7 T7.4 / C17 second pass (D9)",
+  "checkedAt": "Thu Nov 12 17:56:14 BST 2026",
+  "checkedAtNote": "Taken from plain `date` in Git Bash (Dhaka time, labelled BST).",
+  "verifier": "second-pass verifier run (separate from the author)",
+  "disclaimer": "Editorial verification only: citations re-opened and compared with the record. It is not a scholarly review, and nothing here should be shown as 'reviewed'.",
+  "summary": {
+    "entriesPass": 9,
+    "entriesTotal": 12,
+    "examplesPass": 4,
+    "examplesTotal": 5,
+    "pass": 13,
+    "total": 17
+  },
+  "quran9_103": {
+    "finding": "Artefact of relaying, not a real difference.",
+    "detail": "Re-fetched 9:103 (ar-uthmani-hafs). The word for 'your prayer' compares as waw U+0648, dagger alef U+0670, ta U+062A, fatha, kaf, fatha in the MCP text and in quran-full.json alike; both strings have 147 code points and 25 fatha characters (script). The only byte differences are combining-mark order (for example shadda/kasra), and the strings are NFC-equal. No extra fatha appears. The text was compared from the tool output as it reached this session, so a relay effect on this side cannot be excluded; the same limit applied to the author.",
+    "recordTextUsed": "quran-full.json snapshot, which the record equals byte-for-byte."
+  },
+  "quranFetches": [
+    "fetch_grounding_rules (first call)",
+    "fetch_quran ar-uthmani-hafs: 9:103, 2:43, 2:267, 9:60 (sequential; one rate_limited retry)",
+    "fetch_translation en-pickthall: 2:43, 9:60, 9:103, 2:267 (sequential; one rate_limited retry)",
+    "9:34 is fetched by the author but not used in the record, so not re-checked"
+  ],
+  "entries": [
+    {
+      "id": "obligation",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "quran 2:43",
+          "result": "pass",
+          "note": "fetch_quran ar-uthmani-hafs: NFC-equal to the record (byte differences are combining-mark order only, a relay effect; checked by script). Record equals quran-full.json byte-for-byte (script). fetch_translation en-pickthall: byte-identical to the record and the snapshot (script). Edition labels and quran.com URLs match the snapshot."
+        },
+        {
+          "cite": "quran 9:103",
+          "result": "pass",
+          "note": "fetch_quran ar-uthmani-hafs: NFC-equal to the record (byte differences are combining-mark order only, a relay effect; checked by script). Record equals quran-full.json byte-for-byte (script). fetch_translation en-pickthall: byte-identical to the record and the snapshot (script). Edition labels and quran.com URLs match the snapshot."
+        },
+        {
+          "cite": "quran 2:267",
+          "result": "pass",
+          "note": "fetch_quran ar-uthmani-hafs: NFC-equal to the record (byte differences are combining-mark order only, a relay effect; checked by script). Record equals quran-full.json byte-for-byte (script). fetch_translation en-pickthall: byte-identical to the record and the snapshot (script). Edition labels and quran.com URLs match the snapshot."
+        },
+        {
+          "cite": "bukhari:1395",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: none shown on sunnah.com (as recorded). Chapter 'The obligation of Zakat'; Prophet sends Mu'adh to Yemen; zakat obligatory on their property, taken from their wealthy and given to their poor. Paraphrase faithful."
+        },
+        {
+          "cite": "MY-1811 (Mufti of the Federal Territory)",
+          "result": "pass",
+          "note": "Page opened. States 'Paying zakat is part of the pillars of Islam', and that reaching nisab is a main condition; quotes Abu Dawud 1573 for the year. Supports the 'pillars' and 'nisab' wording."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Statement is short and descriptive; no option is presented as a ruling; no review claim."
+        }
+      ],
+      "reason": "All citations confirmed. Editorial check only; not a scholarly review."
+    },
+    {
+      "id": "recipients",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "quran 9:60",
+          "result": "pass",
+          "note": "fetch_quran ar-uthmani-hafs: NFC-equal to the record (byte differences are combining-mark order only, a relay effect; checked by script). Record equals quran-full.json byte-for-byte (script). fetch_translation en-pickthall: byte-identical to the record and the snapshot (script). Edition labels and quran.com URLs match the snapshot."
+        },
+        {
+          "cite": "bukhari:1395",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: none shown. Paraphrase ('taken from the wealthy of a community and returned to its poor') is faithful; it supports only the poor category, which the record does not over-claim."
+        },
+        {
+          "cite": "count of eight categories",
+          "result": "pass",
+          "note": "Pickthall 9:60 lists the poor, the needy, collectors, those whose hearts are reconciled, captives, debtors, the cause of Allah, the wayfarer. Jordan article 5786 (opened) also speaks of the eight categories in the verse."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "No tafsir claim is made; the note says category interpretation is out of scope."
+        }
+      ],
+      "reason": "Pass."
+    },
+    {
+      "id": "rate",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "bukhari:1454",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: none shown. Abu Bakr's letter; 'For silver the Zakat is one-fortieth of the lot (i.e. 2.5%)' and nothing under 200 dirhams. The '2.5%' is the sunnah.com English gloss, as the record says."
+        },
+        {
+          "cite": "abudawud:1573",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Sahih (Al-Albani). 200 dirhams -> five dirhams; 20 dinars -> half a dinar after a year; excess reckoned proportionally. Paraphrase faithful."
+        },
+        {
+          "cite": "ibnmajah:1791",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Hasan (Darussalam). From every twenty dinars or more, half a dinar. Faithful (the report also mentions one dinar per forty; the record does not contradict it)."
+        },
+        {
+          "cite": "extension to cash and trade goods",
+          "result": "pass",
+          "note": "Not cited as a basis; recorded as the fatwa bodies' statement. Confirmed on JO-3712 ('2.5% of the total'), IW-81355 (2.5% on gold, silver; cash at the gold nisab) and UK-BHAM (2.5%)."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "No position choice involved."
+        }
+      ],
+      "reason": "Pass. The hadith speak of silver and gold; the record's note says so."
+    },
+    {
+      "id": "hawl",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "abudawud:1573",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Sahih (Al-Albani). Year passing on 200 dirhams / 20 dinars confirmed. The page says the narrator does not remember whether 'that will be reckoned properly' was Ali's or the Prophet's, and a note says Ibn Wahb added the 'no zakat until a year passes' sentence from the Prophet. The record's wording of both is accurate."
+        },
+        {
+          "cite": "ibnmajah:1792",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Hasan (Darussalam). A'ishah: no zakat on wealth until the hawl (one year) has passed. Faithful."
+        },
+        {
+          "cite": "IW-138743 (Islamweb)",
+          "result": "pass",
+          "note": "Page opened. States zakat annually after a whole lunar year from owning the nisab, and 'pay Zakat on the entire amount whether it increased ... or decreased'. The record's note reproduces this accurately."
+        },
+        {
+          "cite": "advisory (not a failure)",
+          "result": "pass",
+          "note": "The note says 'no second source was opened' on balance fluctuation. IW-426541, from the same body and also opened by the author, gives different guidance (point one: zakat is due on the amount held a full lunar year; later additions are not liable until a year passes unless they are profit; paying early is allowed). The author may want to reconcile the note before the app uses it. This is the same body, so the note's 'one body's guidance' framing still stands."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Statement is descriptive; no ruling is chosen."
+        }
+      ],
+      "reason": "Pass, with the advisory above."
+    },
+    {
+      "id": "nisab-textual",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "abudawud:1573",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Sahih (Al-Albani). 200 dirhams and 20 dinars, with a year. Faithful."
+        },
+        {
+          "cite": "bukhari:1447",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: none shown. No zakat below five awaq of silver; the sunnah.com note equates this to 200 dirhams (and 20 dinars for gold). Faithful."
+        },
+        {
+          "cite": "abudawud:1558",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Sahih (Al-Albani). No zakat below five camels, five ounces (awqiyah) of silver, five wasqs. Faithful."
+        },
+        {
+          "cite": "JO-854 (General Iftaa' Department, Jordan)",
+          "result": "pass",
+          "note": "Page opened (slow to load). Cites Ibn Majah and Abu Dawud for the gold nisab, says Muslim scholars agreed, quoting Ibn al-Mundhir and An-Nawawi (Al-Majmu' 5/503). The record states it as the body's own statement."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Textual figures only; grams deferred to nisab-conversions."
+        }
+      ],
+      "reason": "Pass."
+    },
+    {
+      "id": "nisab-conversions",
+      "result": "fail",
+      "checks": [
+        {
+          "cite": "IW-81355 (Islamweb)",
+          "result": "pass",
+          "note": "85 g pure gold (1 mithqal = 4.25 g), 595 g pure silver. As recorded."
+        },
+        {
+          "cite": "MY-1811 (Mufti of the Federal Territory)",
+          "result": "pass",
+          "note": "'20 mithqal of gold (85 grams) or 200 dirhams of silver (595 grams)'. As recorded."
+        },
+        {
+          "cite": "JO-854 (Jordan) 85 g",
+          "result": "pass",
+          "note": "85 g from a 4.25 g dinar; 'view of most modern scholars and adopted by the General Iftaa' Department'; no silver weight. As recorded."
+        },
+        {
+          "cite": "JO-854 (Jordan) 96 g",
+          "result": "pass",
+          "note": "Those estimating the dinar at 4.8 g reach 96 g, 'the Nisaab adopted in the Shafie book Al-Fiqh al-Manhaji'; the Department adopts 85 g. As recorded."
+        },
+        {
+          "cite": "JO-3712 (Jordan)",
+          "result": "pass",
+          "note": "'The equivalent of 85 grams of 24-karat gold' in the conclusion. As recorded."
+        },
+        {
+          "cite": "UK-BHAM (Darul Ifta Birmingham)",
+          "result": "pass",
+          "note": "'612.35 grams of silver or 87.47 grams of gold or currency, wealth equivalent to that amount' (Raddul Muhtar Vol 2, P5). As recorded."
+        },
+        {
+          "cite": "EG-7705 (Dar al-Ifta Egypt)",
+          "result": "pass",
+          "note": "'Nisab equals 85 grams of 21 carat gold according to market price'. Also on 6754 and 6759 (opened)."
+        },
+        {
+          "cite": "EG-7746 (Dar al-Ifta Egypt)",
+          "result": "fail",
+          "note": "The record says the same wording (85 g of 21-carat gold) appears in fatwas 6754, 6759 and 7746. On 7746 the page says only '85 grams of gold' (twice) and never says 21 carat. Correct the cross-reference."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Lists all published conversions and chooses none; 85 g and 595 g are flagged as test inputs."
+        }
+      ],
+      "reason": "Fails on one cross-reference: fatwa 7746 does not use the '21 carat' wording. Everything else matches. Editorial check only."
+    },
+    {
+      "id": "diff-jewellery",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "abudawud:1563",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Hasan (Al-Albani). Woman and daughter with two heavy gold bangles; 'Do you pay zakat on them?'; warning of bangles of fire; she took them off and gave them to Allah and His Apostle. Faithful."
+        },
+        {
+          "cite": "tirmidhi:637",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Hasan (Darussalam). Two women with gold bracelets asked if they had paid zakat; told to pay it. Faithful."
+        },
+        {
+          "cite": "abudawud:1565",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Sahih (Al-Albani). A'ishah with two silver rings she made; 'Do you pay zakat on them?'; 'sufficient to take you to the Hell fire'. Faithful."
+        },
+        {
+          "cite": "MY-38 Hanafi position",
+          "result": "pass",
+          "note": "Page opened. 'Madhhab Abu Hanifah states that zakah is obligatory when the nisab is sufficient, whether the nisab is on its own or if other property is combined with it.' The label 'whether worn or not' is the record's reading of this sentence set against the next one; the quoted sentence itself speaks of nisab on its own or combined. Acceptable, but the app should show the quotation."
+        },
+        {
+          "cite": "MY-38 Maliki/Shafi'i/Hanbali and office inclination",
+          "result": "pass",
+          "note": "'for permissible adornments that are used and worn, then zakat is not obligatory on them. This is the opinion we are inclined to.' Paragraph 4 of the answer, as recorded. Page also treats unworn, kept jewellery as zakatable."
+        },
+        {
+          "cite": "JO-525 (Jordan)",
+          "result": "pass",
+          "note": "Page opened (slow to load). Not obligatory on permissible jewellery used as ornament, 'stronger opinion of our Madhab (Shafie)', also Maliki and Hanbali; cites Mughni al-Muhtaj, Hashiyat al-Dasuqi, Kashshaf al-Qina' with the volume pages recorded; reports Malik's Muwatta' on A'ishah and Ibn 'Umar; hoarded jewellery liable at nisab and hawl, An-Nawawi Al-Majmu' 5/519 for the majority."
+        },
+        {
+          "cite": "EG-7705 and EG-6759 (Dar al-Ifta Egypt)",
+          "result": "pass",
+          "note": "7705: 'A woman's jewelry is not zakatable.' 6759: 'There is no zakat on women's jewelry.' As recorded. Advisory: Egypt states this without the worn/unworn condition, so the statement line 'treated as zakatable [when not worn] in the sources opened' holds for MY-38, JO-525 and JO-3712 but not for Egypt."
+        },
+        {
+          "cite": "JO-3712 (Jordan)",
+          "result": "pass",
+          "note": "'gold used for adornment ... not subject to zakat unless it exceeds the customary amount. However, gold kept for saving or investment is zakatable if it reaches the nisab.' As recorded."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Neither option is presented as the default. Advisory: the three hadith all concern bangles and rings and read towards obligation; the opposing Companion reports in JO-525 (from Muwatta') are not listed as a basis because that page was not followed. The note says the hadith are not tied to a school, which keeps this neutral; the app should say so on the page."
+        }
+      ],
+      "reason": "Pass, with the advisories above. Editorial check only."
+    },
+    {
+      "id": "diff-debts-due",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "EG-6754 (Dar al-Ifta Egypt)",
+          "result": "pass",
+          "note": "'If the outstanding installments are in your name, deduct all remaining installments and then pay zakat on the remaining sum if it reaches the nisab and is surplus to your basic needs ...'; if in the son's name, full sum. As recorded, including the note about instalments not yet due."
+        },
+        {
+          "cite": "IW-426541 (Islamweb)",
+          "result": "pass",
+          "note": "Third point: permissible to deduct the mortgage if no surplus assets that could pay it; if surplus covers part, deduct the rest; Ibn Qudamah quoted as recorded."
+        },
+        {
+          "cite": "UK-BHAM (Darul Ifta Birmingham)",
+          "result": "pass",
+          "note": "'free from debts' and 'after deduction of liabilities, exceeds the quantum of nisab' then zakat is due. As recorded."
+        },
+        {
+          "cite": "JO-3712 (Jordan)",
+          "result": "pass",
+          "note": "'Debts owed by the merchant do not affect zakat liability' with the zakat-tied-to-wealth reasoning; unpaid taxes at year end not deducted; bank loans do not exempt. As recorded, and the record notes the fatwa is a merchant's case."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Four labelled options, none made default; the Jordan merchant limitation is stated."
+        }
+      ],
+      "reason": "Pass."
+    },
+    {
+      "id": "diff-receivables",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "EG-7746 able debtor",
+          "result": "pass",
+          "note": "'The first is one that is due on a well-off person who is capable of paying it off any time he wills. The zakat on this kind of loan becomes due at the end of every hawl even if the creditor does not collect it.' Also counts with the creditor's other money towards the nisab. As recorded."
+        },
+        {
+          "cite": "EG-7746 doubtful debt (Shafi'i / Hanafi)",
+          "result": "pass",
+          "note": "Shafi'i: pay for the whole time out of hand, 'the stricter opinion'; Hanafi: due for a hawl on regaining possession, 'more facilitating'. Quotations match."
+        },
+        {
+          "cite": "JO-3712 (Jordan)",
+          "result": "pass",
+          "note": "Solvent debtor taxed at year end; doubtful: Shafi'i all past years 'more cautious'; Maliki one year on collection 'more lenient', Mawahib al-Jalil 2/321 quoted. The page's own footnote 2 and the quoted text could be read as 'once, covering the previous years', but the main text states 'only one year', which the record follows."
+        },
+        {
+          "cite": "IW-426541 (Islamweb)",
+          "result": "pass",
+          "note": "'not obligatory to pay Zakaah on the loan ... before you receive it ... for one year only. If you pay for all the previous years, it would be safer and more prudent.' As recorded."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Options labelled and attributed; the note that Egypt does not name the Maliki school is accurate."
+        }
+      ],
+      "reason": "Pass."
+    },
+    {
+      "id": "diff-nisab-metal",
+      "result": "fail",
+      "checks": [
+        {
+          "cite": "IW-138743 (Islamweb)",
+          "result": "pass",
+          "note": "Nisab for bank notes 85 g gold or 595 g silver; basing it on gold 'preferred' because scholars agreed the weight of the mithqal but differed on the dirham. As recorded."
+        },
+        {
+          "cite": "IW-81355 (Islamweb)",
+          "result": "pass",
+          "note": "Cash reaching the value of 85 g of gold then zakat is due (third paragraph). As recorded."
+        },
+        {
+          "cite": "EG-7746 (Egypt) cash vs gold",
+          "result": "fail",
+          "note": "7746 measures merchandise against '85 grams of gold or more'. The record's gloss '85 g of 21-carat gold' for 7746 is not on that page (it is on 7705, 6754, 6759)."
+        },
+        {
+          "cite": "JO-3712 (Jordan)",
+          "result": "pass",
+          "note": "Threshold 'the equivalent of 85 grams of 24-karat gold'. As recorded."
+        },
+        {
+          "cite": "IW-120628 (Islamweb)",
+          "result": "pass",
+          "note": "'few scholars valued the banknotes to gold in all cases, but the majority of the scholars valued it to the least Nisaab from both'. As recorded."
+        },
+        {
+          "cite": "MY-1811 (Malaysia) 'use the lower value'",
+          "result": "fail",
+          "note": "The page's 'lower' choice is between the current gold price and the zakat institution's fixed gold-based nisab, not between the gold and silver nisabs. It says nothing about metal choice or combining. Listing it as a position on this difference attributes a view the page does not state; the parenthetical caveat does not fix the label."
+        },
+        {
+          "cite": "IW-81848 combine (majority)",
+          "result": "pass",
+          "note": "'according to the Majority of Muslims scholars, if the gold possessed is not equal to ... 85 grams, or the silver ... 595 grams, but the value of both combined is equal to ... either the Nisab ... then Zakah becomes obligatory.' As recorded."
+        },
+        {
+          "cite": "IW-81848 do not combine (Shafi'i and others)",
+          "result": "pass",
+          "note": "'Imam al-Shafi'e and others believe that combining should not be done as long as we have two different kinds and none has reached a Nisab.' As recorded."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "No option is made default. Silver-only is correctly left out."
+        }
+      ],
+      "reason": "Fails on two attributions: the MY-1811 'lower value' position does not address metal choice, and the '21-carat' gloss is not on EG-7746."
+    },
+    {
+      "id": "fitr-facts",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "bukhari:1503",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: none shown. Ibn 'Umar: a sa' of dates or barley on every Muslim, slave or free, male or female, young or old; ordered paid before people go out to the Eid prayer. The sunnah.com gloss '(One Sa' = 3 Kilograms approx.)' is on the page. Faithful."
+        },
+        {
+          "cite": "bukhari:1511",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: none shown. Ibn 'Umar gave for children and people gave a day or two before Eid. Faithful. (The page also says people substituted half a sa' of wheat; the record does not use it.)"
+        },
+        {
+          "cite": "abudawud:1609",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: Hasan (Al-Albani). Purification of the fasting person from idle and obscene talk and food for the poor; before the prayer accepted as zakat, after it an ordinary sadaqah. Faithful."
+        },
+        {
+          "cite": "bukhari:1510",
+          "result": "pass",
+          "note": "Opened on sunnah.com (ego-browser). Collection and number as cited. Grading: none shown. Abu Sa'id: a sa' of food in the Prophet's time; barley, raisins, cottage cheese, dates. Faithful."
+        },
+        {
+          "cite": "JO-5786 (Jordan article)",
+          "result": "pass",
+          "note": "Opened (long page). Three conditions: Muslim; sunset ending Ramadan; surplus beyond basic and dependents' needs. Whoever supports another pays for them. Due time from the night of Eid. As recorded. The page also gives a sa' weight, which the record rightly omits."
+        },
+        {
+          "cite": "EG-7732 (Dar al-Ifta Egypt)",
+          "result": "pass",
+          "note": "'obligation for every person or head of a family who has food in excess of what he needs ... on the last day of Ramadan.' As recorded."
+        },
+        {
+          "cite": "no amounts",
+          "result": "pass",
+          "note": "No amount appears in the statement or positions; the closing sentence 'Ask your local masjid or zakat committee for this year's amount' is present. Advisory: a note quotes the sunnah.com gloss 'approx 3 kg' to explain why no gram figure is given, which contradicts 'no amounts are recorded anywhere'. Keep that note out of the app's data."
+        },
+        {
+          "cite": "neutrality",
+          "result": "pass",
+          "note": "Descriptive. 'a small payment of food' follows the hadith wording; the food-versus-cash question is a separate entry. No review claim."
+        }
+      ],
+      "reason": "Pass, with the advisory on the 'approx 3 kg' note."
+    },
+    {
+      "id": "fitr-food-vs-cash",
+      "result": "fail",
+      "checks": [
+        {
+          "cite": "EG-6417 Hanafi cash permitted",
+          "result": "pass",
+          "note": "Page opened. Hanafi: 'permissible to pay the equivalent value'; Al-Sarakhsi, Al-Mabsut vol. 3 pp. 107-8 quoted as recorded. The page also states the fatwa body's own chosen opinion (cash permitted); the record does not mention that, which is fine as an omission."
+        },
+        {
+          "cite": "EG-6417 Shafi'i food",
+          "result": "pass",
+          "note": "'Imam Al-Shafi'i ... contends otherwise' because zakat was originally prescribed in kind. As recorded."
+        },
+        {
+          "cite": "JO-4209 (Jordan)",
+          "result": "fail",
+          "note": "Page opened. It does say 'The default ruling is that Zakat al-Fitr should be given as the staple food of the land' and 'the correct ruling according to all Islamic schools of thought', with Hanafi permitting cash. But the record repeats this in the position text and attribution ('the default ruling according to Jordan's General Iftaa' Department'; 'the correct ruling ... with Hanafi as the exception'). That presents one option as the default ruling, which the neutrality rule forbids. The page's own text is also internally inconsistent (all schools versus Hanafi exception). Rephrase neutrally or leave the wording out of the data."
+        },
+        {
+          "cite": "EG-7732 (Dar al-Ifta Egypt)",
+          "result": "pass",
+          "note": "Third paragraph: contemporary scholars; cash may be better where staple food is abundant; in kind where scarce; 'The criterion ... is the availability of food, especially staple foodstuff, in abundance.' As recorded."
+        },
+        {
+          "cite": "no amounts",
+          "result": "pass",
+          "note": "No amount is recorded; JO-4209's Jordan amount is deliberately omitted (confirmed on the page)."
+        }
+      ],
+      "reason": "Fails on neutrality: the Jordan wording makes food the 'default' and 'correct ruling'."
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex-1-basic",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "recompute",
+          "result": "pass",
+          "note": "Script: nisab 85 x 100 = 8500; total 10000 >= 8500; 10000/40 = 250. Matches."
+        },
+        {
+          "cite": "IW-81355",
+          "result": "pass",
+          "note": "Cash measured against the value of 85 g of gold: supported (third paragraph)."
+        },
+        {
+          "cite": "bukhari:1454",
+          "result": "pass",
+          "note": "Supports 1/40 for silver only; the cash application rests on IW-81355 / JO-3712 / UK-BHAM (2.5%), not on this hadith. Advisory: add IW-81355 as the rate source."
+        }
+      ],
+      "reason": "Pass."
+    },
+    {
+      "id": "ex-2-metal-choice",
+      "result": "fail",
+      "checks": [
+        {
+          "cite": "recompute",
+          "result": "pass",
+          "note": "Script: gold nisab 8500 > 1000 -> 0; silver nisab 595 <= 1000 -> 1000/40 = 25; lower-of-two 595 -> 25. Arithmetic matches all three rows."
+        },
+        {
+          "cite": "IW-138743 (gold-only row)",
+          "result": "pass",
+          "note": "Supports measuring bank notes against the gold nisab."
+        },
+        {
+          "cite": "IW-120628 (lower-of-two row)",
+          "result": "pass",
+          "note": "Supports 'the least Nisaab from both' as the majority valuation."
+        },
+        {
+          "cite": "ifSilver row",
+          "result": "fail",
+          "note": "No cited source supports a silver-only treatment, and the record states it deliberately does not offer silver-only because no source was opened. The row would put an unsupported option into the engine's tests. Remove it, or add a source."
+        }
+      ],
+      "reason": "Fails on the unsupported ifSilver row. The other two rows are correct and supported."
+    },
+    {
+      "id": "ex-3-debts",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "recompute",
+          "result": "pass",
+          "note": "Script: nisab 8500; deduct: 20000 - 5000 = 15000 >= 8500 -> 375; do not deduct: 20000 -> 500. Matches."
+        },
+        {
+          "cite": "EG-6754 (deduct)",
+          "result": "pass",
+          "note": "Supports deducting remaining instalments in your own name, when the result reaches nisab and is surplus to needs."
+        },
+        {
+          "cite": "JO-3712 (do not deduct)",
+          "result": "pass",
+          "note": "Supports 'debts owed by the merchant do not affect zakat liability'. The fatwa is a merchant's case; the record says so. Both bases reach the nisab."
+        }
+      ],
+      "reason": "Pass."
+    },
+    {
+      "id": "ex-4-receivables",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "recompute",
+          "result": "pass",
+          "note": "Script: nisab 8500; count: 10000 + 4000 = 14000 -> 350; only on receipt: 10000 -> 250. Matches."
+        },
+        {
+          "cite": "EG-7746 (count row)",
+          "result": "pass",
+          "note": "Supports counting a loan owed by a debtor able to pay, each hawl, together with the creditor's other money."
+        },
+        {
+          "cite": "only-when-received row",
+          "result": "pass",
+          "note": "Supported by IW-426541 (zakat on receipt for one year; not before receipt), which the note names. Advisory: IW-426541 is not in `citing`; add it. The row is not Egypt's rule, as the note says."
+        }
+      ],
+      "reason": "Pass, with the advisory on `citing`."
+    },
+    {
+      "id": "ex-5-jewellery",
+      "result": "pass",
+      "checks": [
+        {
+          "cite": "recompute",
+          "result": "pass",
+          "note": "Script: 100 g x 100 = 10000 >= 8500 -> 250; excluded: 0 -> 0. Matches."
+        },
+        {
+          "cite": "MY-38 (count row)",
+          "result": "pass",
+          "note": "Hanafi statement: obligatory when the nisab is reached, alone or combined; unworn jewellery zakatable. Supports the count row."
+        },
+        {
+          "cite": "MY-38 and JO-525 (exclude row)",
+          "result": "pass",
+          "note": "Both state that permissible worn jewellery is not zakatable under the Maliki, Shafi'i and Hanbali schools. Supports the exclude row."
+        }
+      ],
+      "reason": "Pass."
+    }
+  ]
+}
