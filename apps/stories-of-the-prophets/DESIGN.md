@@ -37,7 +37,7 @@ Why: the book is the Quranic account; the star marks the reading as a sacred sou
 +--------------------------------------+
 ```
 
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (the search field, 2026-11-12): 244 px at 390 × 844 and 281 px at 375 × 812, identical in light and dark; 323 px at 1440 × 1000. Target ≤ 600 px met.
 
 The one-line limit sits under the filter row, not above it.
 
