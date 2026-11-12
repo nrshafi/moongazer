@@ -93,3 +93,40 @@ export function assertNoAnswer(text: string, forbidden: readonly string[]): void
     if (word && lower.includes(word.toLowerCase())) throw new Error(`Share text contains forbidden string "${word}"`);
   }
 }
+
+const icsText = (s: string) => s.replace(/[\\;,]/g, m => '\\' + m).replace(/\r?\n/g, '\\n');
+
+/** UTC stamp for DTSTAMP and the UID, e.g. 20261112T143000Z. */
+function icsStamp(d: Date): string {
+  return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+}
+
+export interface ReminderInput { name: string; host: string; time: string; now: Date }
+
+/**
+ * P6 T6.7: a calendar file with one daily repeating event at the visitor's chosen local time ('HH:MM', 24-hour).
+ * Floating local time (no TZID), so the reminder follows the device clock, like the puzzle's local-midnight change.
+ * Built in the browser; nothing is sent anywhere. Returns null for an invalid time.
+ */
+export function dailyReminderIcs({ name, host, time, now }: ReminderInput): string | null {
+  const m = /^([01]\d|2[0-3]):([0-5]\d)$/.exec(time);
+  if (!m) return null;
+  const stamp = icsStamp(now);
+  const day = localDateKey(now).replaceAll('-', '');
+  return [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Moongazer//Daily reminder//EN',
+    'BEGIN:VEVENT',
+    `UID:daily-${host.split('.')[0]}-${stamp}@moongazer.tech`,
+    `DTSTAMP:${stamp}`,
+    `DTSTART:${day}T${m[1]}${m[2]}00`,
+    'DURATION:PT10M',
+    'RRULE:FREQ=DAILY',
+    `SUMMARY:${icsText(`${name}: today's puzzle`)}`,
+    `DESCRIPTION:${icsText(`A new puzzle is ready. https://${host}/`)}`,
+    'END:VEVENT',
+    'END:VCALENDAR',
+    '',
+  ].join('\r\n');
+}

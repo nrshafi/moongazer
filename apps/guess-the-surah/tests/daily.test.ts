@@ -1,5 +1,5 @@
-import { test, expect } from 'bun:test';
-import { DAILY_EPOCH, dayNumber, localDateKey, dailyIndex, updateStreak, shareText, whatsappUrl, assertNoAnswer } from '../src/lib/daily';
+import { test, expect, describe } from 'bun:test';
+import { DAILY_EPOCH, dayNumber, localDateKey, dailyIndex, updateStreak, shareText, whatsappUrl, assertNoAnswer, dailyReminderIcs } from '../src/lib/daily';
 
 const [ey, em, ed] = DAILY_EPOCH.split('-').map(Number) as [number, number, number];
 const at = (offsetDays: number, h = 12, mi = 0, s = 0, ms = 0) => new Date(ey, em - 1, ed + offsetDays, h, mi, s, ms);
@@ -90,4 +90,25 @@ test('whatsappUrl encodes the text with encodeURIComponent and nothing else', ()
   expect(url).toBe('https://wa.me/?text=' + encodeURIComponent(text));
   expect(new URL(url).searchParams.get('text')).toBe(text);
   expect([...new URL(url).searchParams.keys()]).toEqual(['text']);
+});
+
+describe('dailyReminderIcs (T6.7)', () => {
+  const now = new Date(2026, 10, 12, 21, 5, 0);
+  const ics = dailyReminderIcs({ name: 'Guess the Surah', host: 'guess-the-surah.moongazer.tech', time: '20:30', now })!;
+  test('one daily event at the chosen local time, CRLF lines', () => {
+    expect(ics.startsWith('BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Moongazer//Daily reminder//EN\r\n')).toBe(true);
+    expect(ics).toContain('\r\nDTSTART:20261112T203000\r\n');
+    expect(ics).toContain('\r\nRRULE:FREQ=DAILY\r\n');
+    expect(ics.match(/BEGIN:VEVENT/g)!.length).toBe(1);
+    expect(ics.endsWith('END:VCALENDAR\r\n')).toBe(true);
+    expect(ics).toMatch(/\r\nDTSTAMP:\d{8}T\d{6}Z\r\n/);
+    expect(ics).toMatch(/\r\nUID:daily-guess-the-surah-\d{8}T\d{6}Z@moongazer\.tech\r\n/);
+  });
+  test('text values are escaped', () => {
+    const odd = dailyReminderIcs({ name: 'A, B; C', host: 'x.moongazer.tech', time: '07:00', now })!;
+    expect(odd).toContain("SUMMARY:A\\, B\\; C: today's puzzle");
+  });
+  test('rejects invalid times', () => {
+    for (const time of ['24:00', '7:00', '07:60', '', 'noon']) expect(dailyReminderIcs({ name: 'x', host: 'x', time, now })).toBeNull();
+  });
 });
