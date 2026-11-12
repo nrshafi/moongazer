@@ -32,7 +32,7 @@ try {
   if (!(await p.eval('!!document.querySelector("[data-answer]")'))) await p.eval('document.getElementById("setup-form").requestSubmit()');
   await p.click('[data-answer]');
   let got = await beacons(p);
-  expect(got.length === 2 && got[0].body.e === 'activity_started' && got[1].body.e === 'activity_completed' && /^surah-\d+$/.test(got[0].body.i), `guess-the-surah: started + completed on first answer (${JSON.stringify(got.map(x => x.body))})`);
+  expect(got.length === 2 && got[0].body.e === 'activity_started' && got[1].body.e === 'activity_completed' && /^(surah|daily)-\d+$/.test(got[0].body.i), `guess-the-surah: started + completed on first answer (${JSON.stringify(got.map(x => x.body))})`);
   expect(got.every(x => x.url === 'https://moongazer.tech/api/event' && x.body.a === 'guess-the-surah' && allow.includes(x.body.a)), 'guess-the-surah: endpoint and app slug are on the server allowlist');
   await p.click('[data-answer]');
   expect((await beacons(p)).length === 2, 'guess-the-surah: a second click on an answered question sends nothing');
