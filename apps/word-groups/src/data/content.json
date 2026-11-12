@@ -293,6 +293,8 @@
     {
       "id": "fruit",
       "title": "Fruits in 6:99",
+      "kind": "ayat",
+      "tier": 1,
       "terms": [
         "Dates",
         "Grapes",
@@ -313,6 +315,8 @@
     {
       "id": "body",
       "title": "Body parts in these readings",
+      "kind": "ayat",
+      "tier": 3,
       "terms": [
         "Eyes",
         "Tongue",
@@ -340,6 +344,8 @@
     {
       "id": "angels",
       "title": "Names in the selected angel readings",
+      "kind": "ayat",
+      "tier": 2,
       "terms": [
         "Jibril",
         "Mikail",
@@ -367,6 +373,8 @@
     {
       "id": "divine-names",
       "title": "Names in the selected 59:23 wording",
+      "kind": "ayat",
+      "tier": 4,
       "terms": [
         "The Sovereign Lord",
         "The Holy One",
@@ -387,6 +395,8 @@
     {
       "id": "textiles",
       "title": "Materials named in 16:80",
+      "kind": "ayat",
+      "tier": 3,
       "terms": [
         "Hides",
         "Wool",
@@ -407,6 +417,8 @@
     {
       "id": "times",
       "title": "Surah titles associated with time",
+      "kind": "surah",
+      "tier": 3,
       "terms": [
         "Al-Fajr",
         "Ad-Duha",
@@ -448,6 +460,8 @@
     {
       "id": "scriptures",
       "title": "Names of revealed scriptures",
+      "kind": "ayat",
+      "tier": 1,
       "terms": [
         "Tawrat",
         "Injil",
@@ -482,6 +496,8 @@
     {
       "id": "animals",
       "title": "Animals in 16:5–8",
+      "kind": "ayat",
+      "tier": 2,
       "terms": [
         "Cattle",
         "Horses",
@@ -502,6 +518,8 @@
     {
       "id": "qualities",
       "title": "Four elements in 103:3",
+      "kind": "ayat",
+      "tier": 3,
       "terms": [
         "Belief",
         "Good works",
@@ -522,6 +540,8 @@
     {
       "id": "places",
       "title": "Place names in these readings",
+      "kind": "ayat",
+      "tier": 2,
       "terms": [
         "Makkah",
         "Madinah",
