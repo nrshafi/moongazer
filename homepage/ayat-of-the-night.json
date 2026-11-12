@@ -298,5 +298,65 @@
     "arabic": "إِن يَنصُرْكُمُ ٱللَّهُ فَلَا غَالِبَ لَكُمْ ۖ وَإِن يَخْذُلْكُمْ فَمَن ذَا ٱلَّذِى يَنصُرُكُم مِّنۢ بَعْدِهِۦ ۗ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
     "translation": "If Allah is your helper none can overcome you, and if He withdraw His help from you, who is there who can help you after Him? In Allah let believers put their trust.",
     "theme": "trust"
+  },
+  {
+    "ref": "88:17-18",
+    "arabic": "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ\nوَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ",
+    "translation": "Will they not regard the camels, how they are created?\nAnd the heaven, how it is raised?",
+    "theme": "creation"
+  },
+  {
+    "ref": "71:10",
+    "arabic": "فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًا",
+    "translation": "And I have said: Seek pardon of your Lord. Lo! He was ever Forgiving.",
+    "theme": "hope"
+  },
+  {
+    "ref": "35:2",
+    "arabic": "مَّا يَفْتَحِ ٱللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا ۖ وَمَا يُمْسِكْ فَلَا مُرْسِلَ لَهُۥ مِنۢ بَعْدِهِۦ ۚ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+    "translation": "That which Allah openeth unto mankind of mercy none can withhold it; and that which He withholdeth none can release thereafter. He is the Mighty, the Wise.",
+    "theme": "mercy"
+  },
+  {
+    "ref": "42:43",
+    "arabic": "وَلَمَن صَبَرَ وَغَفَرَ إِنَّ ذَٰلِكَ لَمِنْ عَزْمِ ٱلْأُمُورِ",
+    "translation": "And verily whoso is patient and forgiveth - lo! that, verily, is (of) the steadfast heart of things.",
+    "theme": "patience"
+  },
+  {
+    "ref": "26:83",
+    "arabic": "رَبِّ هَبْ لِى حُكْمًا وَأَلْحِقْنِى بِٱلصَّـٰلِحِينَ",
+    "translation": "My Lord! Vouchsafe me wisdom and unite me to the righteous.",
+    "theme": "prayer"
+  },
+  {
+    "ref": "25:63",
+    "arabic": "وَعِبَادُ ٱلرَّحْمَـٰنِ ٱلَّذِينَ يَمْشُونَ عَلَى ٱلْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ ٱلْجَـٰهِلُونَ قَالُوا۟ سَلَـٰمًا",
+    "translation": "The (faithful) slaves of the Beneficent are they who walk upon the earth modestly, and when the foolish ones address them answer: Peace;",
+    "theme": "kindness"
+  },
+  {
+    "ref": "25:58",
+    "arabic": "وَتَوَكَّلْ عَلَى ٱلْحَىِّ ٱلَّذِى لَا يَمُوتُ وَسَبِّحْ بِحَمْدِهِۦ ۚ وَكَفَىٰ بِهِۦ بِذُنُوبِ عِبَادِهِۦ خَبِيرًا",
+    "translation": "And trust thou in the Living One Who dieth not, and hymn His praise. He sufficeth as the Knower of His bondmen's sins,",
+    "theme": "trust"
+  },
+  {
+    "ref": "95:4",
+    "arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ",
+    "translation": "Surely We created man of the best stature",
+    "theme": "creation"
+  },
+  {
+    "ref": "89:27-28",
+    "arabic": "يَـٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ\nٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+    "translation": "But ah! thou soul at peace!\nReturn unto thy Lord, content in His good pleasure!",
+    "theme": "hope"
+  },
+  {
+    "ref": "3:8",
+    "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ",
+    "translation": "Our Lord! Cause not our hearts to stray after Thou hast guided us, and bestow upon us mercy from Thy Presence. Lo! Thou, only Thou, art the Bestower.",
+    "theme": "mercy"
   }
 ]
