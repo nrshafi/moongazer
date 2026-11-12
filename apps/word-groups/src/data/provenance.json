@@ -1138,7 +1138,7 @@
     }
   ],
   "app": "word-groups",
-  "appContentSha256": "1967e64d7ca88708f1c365d475653a991eba40bbf418a09c63991fedca7ee975",
+  "appContentSha256": "9a75636a4fcc95ceefead074fb134a5e45ff6b22ce7e8e75cfc7c3eb5b82acfb",
   "batch3Commentary": {
     "endpoint": "https://mcp.quran.ai",
     "retrievedAt": "2026-10-27T17:39:30.408Z",

@@ -1,0 +1,53 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 2,
+  "verifier": "claude-haiku-5-5",
+  "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
+  "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
+  "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
+  "passed": 8,
+  "total": 8,
+  "items": [
+    {
+      "id": "hajj-places",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 2:158 names As-Safa and Al-Marwah; 2:198 names Arafat and the sacred monument. Tier 3 plausible."
+    },
+    {
+      "id": "isa-signs",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 3:49 names the clay bird, the blind, the leper and the dead. Tier 2 plausible."
+    },
+    {
+      "id": "ikhlas-lines",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 112:1-4 contains the four statements in order. Tier 3 plausible."
+    },
+    {
+      "id": "letter-surahs",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 36:1 (Ya Sin), 20:1 (Ta Ha), 38:1 (Sad) and 50:1 (Qaf) open with these letters. Tier 2 plausible."
+    },
+    {
+      "id": "last-day-surahs",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 101:1 (The Calamity), 88:1 (Overwhelming), 69:1 (The Reality) and 99:1 (earthquake) are the openings of the named surahs. Tier 3 plausible."
+    },
+    {
+      "id": "prophet-surahs",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 10:98 (folk of Jonah), 11:50 (Hud), 71:1 (Noah) and 14:35 (Abraham) match the terms. Tier 2 plausible."
+    },
+    {
+      "id": "people-surahs",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 30:2 (the Romans), 106:1 (Quraysh), 34:15 (Sheba) and 33:20 (the clans) match the terms. Tier 4 plausible."
+    },
+    {
+      "id": "place-surahs",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 15:80 (Al-Hijr), 46:21 (the wind-curved sandhills), 52:1 (the Mount) and 90:1 (this city) match the terms. Tier 3 plausible."
+    }
+  ]
+}

@@ -36,7 +36,11 @@ Why: the four tiles are the four groups; the ticks are the connections the learn
 +--------------------------------------+
 ```
 
-Measured first-control top (`#board-select`): 276 px at 390 × 844 and 375 × 812, light and dark (hero 116 px); first tile at 581 px at 390 × 844. 1440 × 1000: 366 px. The board picker is the first control. Keep tiles ≤ 72 px so the action row stays close to the board.
+Measured first-control top (`#tab-daily`, P6): 246 px at 390 × 844 and 375 × 812, light and dark (hero 116 px); first tile at 529 px. 1440 × 1000: 331 px (hero 180 px), first tile at 596 px. The Daily · Practice tabs are the first control; the board picker is a collapsed `<details>` in Practice. Keep tiles ≤ 72 px so the action row stays close to the board.
+
+### P6 tiers
+
+Tier styling uses family tokens only: chip fill from `--tint`/`--surface-2`/`--accent` and a left border on solved rows that grows from 4 px (tier 1) to 16 px (tier 4), always with the text label "Tier N · ...".
 
 ## 5. Component states (this app)
 

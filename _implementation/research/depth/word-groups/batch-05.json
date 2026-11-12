@@ -1,0 +1,186 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 5,
+  "recordedAt": "2026-11-12",
+  "method": "Editorial tier (1 most direct, 4 least direct) and kind added to existing groups. No Quran text was added or changed in this batch, so no Quran MCP call was needed; the passages are the ones already verified in the earlier batches of this app.",
+  "tierScale": {
+    "1": "most direct: the terms are plainly named in one reading",
+    "2": "direct, but across several ayat or in less familiar wording",
+    "3": "needs a careful read of the passage or familiarity with Arabic names",
+    "4": "least direct: wording, Arabic roots or cross-passage knowledge needed"
+  },
+  "calls": [],
+  "items": [
+    {
+      "id": "fruit",
+      "title": "Fruits in 6:99",
+      "kind": "ayat",
+      "tier": 1,
+      "tierReason": "Four fruits named together in 6:99; direct.",
+      "terms": [
+        "Dates",
+        "Grapes",
+        "Olives",
+        "Pomegranates"
+      ],
+      "passageRefs": [
+        "6:99"
+      ]
+    },
+    {
+      "id": "body",
+      "title": "Body parts in these readings",
+      "kind": "ayat",
+      "tier": 3,
+      "tierReason": "Body parts from two different ayat, one of them a list of limbs.",
+      "terms": [
+        "Eyes",
+        "Tongue",
+        "Lips",
+        "Hands"
+      ],
+      "passageRefs": [
+        "90:8-9",
+        "24:24"
+      ]
+    },
+    {
+      "id": "angels",
+      "title": "Names in the selected angel readings",
+      "kind": "ayat",
+      "tier": 2,
+      "tierReason": "Four names from two ayat; two are less familiar.",
+      "terms": [
+        "Jibril",
+        "Mikail",
+        "Harut",
+        "Marut"
+      ],
+      "passageRefs": [
+        "2:97-98",
+        "2:102"
+      ]
+    },
+    {
+      "id": "divine-names",
+      "title": "Names in the selected 59:23 wording",
+      "kind": "ayat",
+      "tier": 4,
+      "tierReason": "Labels follow Pickthall rendering of 59:23, not familiar Arabic names.",
+      "terms": [
+        "The Sovereign Lord",
+        "The Holy One",
+        "Peace",
+        "The Guardian"
+      ],
+      "passageRefs": [
+        "59:23"
+      ]
+    },
+    {
+      "id": "textiles",
+      "title": "Materials named in 16:80",
+      "kind": "ayat",
+      "tier": 3,
+      "tierReason": "Materials from 16:80; the wording is unfamiliar.",
+      "terms": [
+        "Hides",
+        "Wool",
+        "Fur",
+        "Hair"
+      ],
+      "passageRefs": [
+        "16:80"
+      ]
+    },
+    {
+      "id": "times",
+      "title": "Surah titles associated with time",
+      "kind": "surah",
+      "tier": 3,
+      "tierReason": "Surah names read as times of day; needs the opening ayat.",
+      "terms": [
+        "Al-Fajr",
+        "Ad-Duha",
+        "Al-Layl",
+        "Al-Asr"
+      ],
+      "passageRefs": [
+        "89:1",
+        "93:1",
+        "92:1",
+        "103:1"
+      ]
+    },
+    {
+      "id": "scriptures",
+      "title": "Names of revealed scriptures",
+      "kind": "ayat",
+      "tier": 1,
+      "tierReason": "Four familiar scripture names.",
+      "terms": [
+        "Tawrat",
+        "Injil",
+        "Zabur",
+        "Quran"
+      ],
+      "passageRefs": [
+        "3:3",
+        "4:163",
+        "17:9"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Animals in 16:5–8",
+      "kind": "ayat",
+      "tier": 2,
+      "tierReason": "Four animals in 16:5-8; two (mules, donkeys) are less obvious.",
+      "terms": [
+        "Cattle",
+        "Horses",
+        "Mules",
+        "Donkeys"
+      ],
+      "passageRefs": [
+        "16:5-8"
+      ]
+    },
+    {
+      "id": "qualities",
+      "title": "Four elements in 103:3",
+      "kind": "ayat",
+      "tier": 3,
+      "tierReason": "Four elements of 103:3; abstract terms.",
+      "terms": [
+        "Belief",
+        "Good works",
+        "Truth",
+        "Endurance"
+      ],
+      "passageRefs": [
+        "103:3"
+      ]
+    },
+    {
+      "id": "places",
+      "title": "Place names in these readings",
+      "kind": "ayat",
+      "tier": 2,
+      "tierReason": "Four places across four ayat; they are not all cities.",
+      "terms": [
+        "Makkah",
+        "Madinah",
+        "Egypt",
+        "Midian"
+      ],
+      "passageRefs": [
+        "48:24",
+        "9:101",
+        "12:99",
+        "28:22"
+      ]
+    }
+  ]
+}

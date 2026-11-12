@@ -1,0 +1,58 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 1,
+  "verifier": "claude-haiku-5-5",
+  "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
+  "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
+  "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
+  "passed": 8,
+  "total": 8,
+  "items": [
+    {
+      "id": "paradise-rivers",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 47:15 names rivers of water, milk, wine and honey. Tier 1 plausible."
+    },
+    {
+      "id": "worldly-joys",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 3:14 names women, offspring, gold and silver, horses, cattle and land; the terms Women, Offspring, Cattle and Land are all named. Tier 2 plausible."
+    },
+    {
+      "id": "creation-stages",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 23:12-14 gives wet earth, a drop, a clot and a little lump in that order. Tier 3 plausible."
+    },
+    {
+      "id": "paradise-delights",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 76:5 (Kafur), 76:17 (Zanjabil), 76:12 (silk attire) and 76:19 (pearls) each name their term. Tier 4 plausible."
+    },
+    {
+      "id": "lost-peoples",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Fit/title (editorial): the title \"Peoples and rulers\" does not fit Iram. 89:7 gives \"many-columned Iram\" as a place, not a people or a ruler. Retitle (for example \"Peoples and a ruler\") or drop Iram. Tier 2 plausible. Re-checked Thu Nov 12 17:57:03 BST 2026 by a fresh run: Passage text equals _implementation/research/quran-full.json at 89:6-10 (script, 0 mismatches over all 104 passages). The title \"Named in 89:6–10\" is accurate: A’ad (89:6), Iram (89:7), Thamud (89:9) and Pharaoh (89:10) are all named there, and the note’s two tribes, a place and a ruler matches the text. No other group on board-14 shares a term or passage with these four.",
+      "followUp": {
+        "commit": "C3.09",
+        "note": "Title was \"Peoples and rulers in 89:6–10\", which did not fit Iram (89:7 names a many-columned place). Retitled \"Named in 89:6–10\" and the note now says two tribes, a place and a ruler. Terms and passages unchanged.",
+        "status": "fixed by the author; result left as fail until a fresh verifier re-checks it"
+      }
+    },
+    {
+      "id": "plagues",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 7:133 names locusts, vermin, frogs and blood. Tier 2 plausible."
+    },
+    {
+      "id": "sulayman-hosts",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 27:17 names jinn, humankind and birds; 21:81 names the wind. Tier 2 plausible."
+    },
+    {
+      "id": "ayat-kursi",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 2:255 contains slumber, sleep, throne and heavens. Tier 1 plausible."
+    }
+  ]
+}

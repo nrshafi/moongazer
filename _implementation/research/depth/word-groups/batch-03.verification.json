@@ -1,0 +1,58 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 3,
+  "verifier": "claude-haiku-5-5",
+  "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
+  "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
+  "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
+  "passed": 9,
+  "total": 9,
+  "items": [
+    {
+      "id": "muhammad-titles",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 33:45-46 names witness, bringer of good tidings, warner and lamp. Tier 2 plausible."
+    },
+    {
+      "id": "ibrahim-qualities",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 11:75 names mild, imploring and penitent; 9:114 names soft of heart. Tier 3 plausible."
+    },
+    {
+      "id": "yahya-qualities",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. 19:13-14 names compassion, purity, devout and dutiful toward parents. Tier 3 plausible."
+    },
+    {
+      "id": "prophet-qualities-mixed",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. The four terms appear in 38:44, 19:54, 28:26 and 12:55. Editorial note: 38:44, 28:26 and 12:55 do not name the prophet; the title \"four prophets\" rests on the surrounding narrative (38:41-44, 28:23-28, 12:54-55). Accepted, tier 4 plausible."
+    },
+    {
+      "id": "root-rahma",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Root check (fetch_word_morphology): ٱلرَّحْمَـٰنِ in 1:1 and رُحَمَآءُ in 48:29 both have root رحم (r-h-m). The four Arabic terms are present in the group passages (script). Tier 3 plausible."
+    },
+    {
+      "id": "root-hamd",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Root check (fetch_word_morphology): ٱلْحَمْدُ in 1:2 and ٱلْحَمِيدِ in 14:1 both have root حمد (h-m-d). The four Arabic terms are present in the group passages (script). Tier 4 plausible."
+    },
+    {
+      "id": "root-sajda",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Root check (fetch_word_morphology): ٱسْجُدُوا۟ in 2:34 and سُجَّدًا in 2:58 both have root سجد (s-j-d). The four Arabic terms are present in the group passages (script). Tier 3 plausible."
+    },
+    {
+      "id": "root-kitab",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Root check (fetch_word_morphology): ٱلْكِتَـٰبُ in 2:2 and كَاتِبٌۢ in 2:282 both have root كتب (k-t-b). The four Arabic terms are present in the group passages (script). Tier 3 plausible."
+    },
+    {
+      "id": "root-ilm",
+      "result": "pass",
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Root check (fetch_word_morphology): ٱلْعَـٰلَمِينَ in 1:2 and عَلِيمٌ in 2:29 both have root علم (ʿ-l-m). The four Arabic terms are present in the group passages (script). Tier 4 plausible."
+    }
+  ]
+}

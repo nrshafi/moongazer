@@ -1,0 +1,68 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 8,
+  "verifier": "claude-haiku-5-5",
+  "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
+  "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
+  "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
+  "passed": 10,
+  "total": 10,
+  "items": [
+    {
+      "id": "board-21",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (metals, place-surahs, divine-names, plagues)."
+    },
+    {
+      "id": "board-22",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (neighbors, worship, paradise-delights, ikhlas-lines). Zakat is the poor-due, not a neighbour, so it is not a second fit for \"neighbors\"."
+    },
+    {
+      "id": "board-23",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (root-sajda, animal-titles, yahya-qualities, paradise-delights)."
+    },
+    {
+      "id": "board-24",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (scriptures, last-day-surahs, paradise-delights, ikhlas-lines)."
+    },
+    {
+      "id": "board-25",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (worship, textiles, root-hamd, neighbors)."
+    },
+    {
+      "id": "board-26",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: Saba (34:15, Sheba, named as a dwelling-place) reads as a place and could fit the \"places\" group on this board. The pair people-surahs / places is not in incompatible and no alternate is recorded. Re-checked Thu Nov 12 17:57:03 BST 2026 by a fresh run: 4 groups, 16 distinct terms, tier sum 12 = Challenging. The title \"First step\" reveals nothing. With people-surahs removed, Saba (34:15) is not on the board, so nothing competes with places (Makkah, Madinah, Egypt, Midian). root-hamd is the only root group here. creation-stages (23:12–14) uses Pickthall’s wet earth, which matches the 23:12 text. No incompatible pair is on the board.",
+      "followUp": {
+        "commit": "C3.09",
+        "note": "Groups were ikhlas-lines, creation-stages, people-surahs, places. Saba (34:15, Sheba) could fit places. people-surahs was swapped for root-hamd (tier 4). people-surahs with places is now in incompatible.",
+        "status": "fixed by the author; result left as fail until a fresh verifier re-checks it"
+      }
+    },
+    {
+      "id": "board-27",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (plagues, ibrahim-qualities, qualities, people-surahs)."
+    },
+    {
+      "id": "board-28",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Title \"Open window\" contains the substring \"wind\"; the title is not the term, so it is treated as coincidental. No second-group fit found on this board (root-sajda, neighbors, sulayman-hosts, divine-names)."
+    },
+    {
+      "id": "board-29",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (times, requested-crops, angels, root-ilm)."
+    },
+    {
+      "id": "board-30",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (yahya-qualities, creation-stages, root-ilm, places)."
+    }
+  ]
+}
