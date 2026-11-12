@@ -1720,7 +1720,339 @@
         "root-rahma",
         "prophet-qualities-mixed"
       ]
+    },
+    {
+      "id": "board-21",
+      "number": 21,
+      "title": "Trellis",
+      "level": "Challenging",
+      "groups": [
+        "metals",
+        "place-surahs",
+        "divine-names",
+        "plagues"
+      ]
+    },
+    {
+      "id": "board-22",
+      "number": 22,
+      "title": "Tapestry",
+      "level": "Challenging",
+      "groups": [
+        "neighbors",
+        "worship",
+        "paradise-delights",
+        "ikhlas-lines"
+      ]
+    },
+    {
+      "id": "board-23",
+      "number": 23,
+      "title": "Lamplight",
+      "level": "Challenging",
+      "groups": [
+        "root-sajda",
+        "animal-titles",
+        "yahya-qualities",
+        "paradise-delights"
+      ]
+    },
+    {
+      "id": "board-24",
+      "number": 24,
+      "title": "Cornerstone",
+      "level": "Challenging",
+      "groups": [
+        "scriptures",
+        "last-day-surahs",
+        "paradise-delights",
+        "ikhlas-lines"
+      ]
+    },
+    {
+      "id": "board-25",
+      "number": 25,
+      "title": "Stepping stones",
+      "level": "Challenging",
+      "groups": [
+        "worship",
+        "textiles",
+        "root-hamd",
+        "neighbors"
+      ]
+    },
+    {
+      "id": "board-26",
+      "number": 26,
+      "title": "First step",
+      "level": "Challenging",
+      "groups": [
+        "ikhlas-lines",
+        "creation-stages",
+        "people-surahs",
+        "places"
+      ]
+    },
+    {
+      "id": "board-27",
+      "number": 27,
+      "title": "Evening walk",
+      "level": "Challenging",
+      "groups": [
+        "plagues",
+        "ibrahim-qualities",
+        "qualities",
+        "people-surahs"
+      ]
+    },
+    {
+      "id": "board-28",
+      "number": 28,
+      "title": "Open window",
+      "level": "Challenging",
+      "groups": [
+        "root-sajda",
+        "neighbors",
+        "sulayman-hosts",
+        "divine-names"
+      ]
+    },
+    {
+      "id": "board-29",
+      "number": 29,
+      "title": "Long table",
+      "level": "Challenging",
+      "groups": [
+        "times",
+        "requested-crops",
+        "angels",
+        "root-ilm"
+      ]
+    },
+    {
+      "id": "board-30",
+      "number": 30,
+      "title": "Final lap",
+      "level": "Challenging",
+      "groups": [
+        "yahya-qualities",
+        "creation-stages",
+        "root-ilm",
+        "places"
+      ]
     }
   ],
-  "methodology": "Sixteen editorial puzzles ask for four intended groups of four terms. Group explanations cite canonical readings and distinguish familiar Arabic names from Pickthall’s historical English forms. Categories are selected learning groupings, not exclusive definitions. Unlike Quran Connections, this app groups term tiles rather than identifying one theme across passages. Scores are informal and all answers are inspectable in client code."
+  "methodology": "Thirty editorial boards ask for four intended groups of four terms. Group explanations cite canonical readings and distinguish familiar Arabic names from Pickthall’s historical English forms. Each group has a difficulty tier from 1 (most direct) to 4 and a kind: words in the ayat, surah names, qualities of prophets, or Arabic roots shown in the ayat. A board is Starter when its four tiers add up to 8 or less, Mixed for 9 or 10, and Challenging for 11 or more. Categories are selected learning groupings, not exclusive definitions. Where a term could also fit another group on the same board, the pairing is kept off boards (see incompatible) or recorded as an accepted alternate that the game acknowledges without counting a miss. Unlike Quran Connections, this app groups term tiles rather than identifying one theme across passages. Scores are informal and all answers are inspectable in client code.",
+  "incompatible": [
+    {
+      "groups": [
+        "animals",
+        "animal-titles"
+      ],
+      "reason": "The Cow is the singular of cattle."
+    },
+    {
+      "groups": [
+        "animals",
+        "plagues"
+      ],
+      "reason": "Locusts and frogs are also animals."
+    },
+    {
+      "groups": [
+        "animal-titles",
+        "plagues"
+      ],
+      "reason": "Locusts and frogs are also animals."
+    },
+    {
+      "groups": [
+        "animals",
+        "worldly-joys"
+      ],
+      "reason": "Cattle and horses appear in both."
+    },
+    {
+      "groups": [
+        "body",
+        "creation-stages"
+      ],
+      "reason": "Clot and lump are stages of the body."
+    },
+    {
+      "groups": [
+        "body",
+        "isa-signs"
+      ],
+      "reason": "Blind describes the eyes."
+    },
+    {
+      "groups": [
+        "creation-stages",
+        "isa-signs"
+      ],
+      "reason": "Clay appears in both."
+    },
+    {
+      "groups": [
+        "qualities",
+        "prophet-qualities-mixed"
+      ],
+      "reason": "Steadfast and endurance are close."
+    },
+    {
+      "groups": [
+        "places",
+        "hajj-places"
+      ],
+      "reason": "Makkah and the pilgrimage places overlap."
+    },
+    {
+      "groups": [
+        "places",
+        "place-surahs"
+      ],
+      "reason": "Al-Balad is this city, Makkah."
+    },
+    {
+      "groups": [
+        "worship",
+        "hajj-places"
+      ],
+      "reason": "Hajj and its places overlap."
+    },
+    {
+      "groups": [
+        "times",
+        "day-night"
+      ],
+      "reason": "Al-Layl is the night."
+    },
+    {
+      "groups": [
+        "lost-peoples",
+        "place-surahs"
+      ],
+      "reason": "Al-Ahqaf is where A’ad lived."
+    },
+    {
+      "groups": [
+        "lost-peoples",
+        "prophet-surahs"
+      ],
+      "reason": "Hud was sent to A’ad."
+    },
+    {
+      "groups": [
+        "textiles",
+        "paradise-delights"
+      ],
+      "reason": "Silk is a material."
+    },
+    {
+      "groups": [
+        "scriptures",
+        "root-kitab"
+      ],
+      "reason": "The Book is a scripture."
+    },
+    {
+      "groups": [
+        "neighbors",
+        "yahya-qualities"
+      ],
+      "reason": "Dutiful toward parents."
+    },
+    {
+      "groups": [
+        "qul",
+        "ikhlas-lines"
+      ],
+      "reason": "Al-Ikhlas is Surah 112."
+    },
+    {
+      "groups": [
+        "worldly-joys",
+        "metals"
+      ],
+      "reason": "Gold and silver are in 3:14."
+    },
+    {
+      "groups": [
+        "fruit",
+        "paradise-rivers"
+      ],
+      "reason": "The Garden has every kind of fruit."
+    },
+    {
+      "groups": [
+        "divine-names",
+        "ikhlas-lines"
+      ],
+      "reason": "Names and attributes of Allah overlap."
+    },
+    {
+      "groups": [
+        "muhammad-titles",
+        "prophets"
+      ],
+      "reason": "Both are about prophets."
+    },
+    {
+      "groups": [
+        "muhammad-titles",
+        "ibrahim-qualities"
+      ],
+      "reason": "Both are qualities of prophets."
+    },
+    {
+      "groups": [
+        "muhammad-titles",
+        "yahya-qualities"
+      ],
+      "reason": "Both are qualities of prophets."
+    },
+    {
+      "groups": [
+        "ibrahim-qualities",
+        "yahya-qualities"
+      ],
+      "reason": "Both are qualities of prophets."
+    },
+    {
+      "groups": [
+        "ibrahim-qualities",
+        "prophet-qualities-mixed"
+      ],
+      "reason": "Both are qualities of prophets."
+    },
+    {
+      "groups": [
+        "yahya-qualities",
+        "prophet-qualities-mixed"
+      ],
+      "reason": "Both are qualities of prophets."
+    },
+    {
+      "groups": [
+        "muhammad-titles",
+        "prophet-qualities-mixed"
+      ],
+      "reason": "Both are qualities of prophets."
+    },
+    {
+      "groups": [
+        "isa-signs",
+        "prophets"
+      ],
+      "reason": "Both are about prophets."
+    },
+    {
+      "groups": [
+        "sulayman-hosts",
+        "prophets"
+      ],
+      "reason": "Solomon appears in both."
+    }
+  ]
 }

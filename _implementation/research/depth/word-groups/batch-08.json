@@ -1,0 +1,670 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 8,
+  "recordedAt": "2026-11-12",
+  "method": "Boards assembled by script from the verified groups: four groups per board, sixteen distinct terms, at most one surah-name group and one root group, at least three different tiers, no pair listed in `incompatible`, and no term of one group occurring in another group's passage text. Boards that keep the prophets-named-in-6:84 group with the prophet surah-name group record Yusuf as an accepted alternate. Level is Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more. Titles are neutral words that do not hint at any group. No new Quran text was added, so no Quran MCP call was needed.",
+  "calls": [],
+  "items": [
+    {
+      "id": "board-21",
+      "number": 21,
+      "title": "Trellis",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "metals",
+          "kind": "ayat",
+          "tier": 2,
+          "terms": [
+            "Iron",
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "id": "place-surahs",
+          "kind": "surah",
+          "tier": 3,
+          "terms": [
+            "Al-Hijr",
+            "Al-Ahqaf",
+            "At-Tur",
+            "Al-Balad"
+          ]
+        },
+        {
+          "id": "divine-names",
+          "kind": "ayat",
+          "tier": 4,
+          "terms": [
+            "The Sovereign Lord",
+            "The Holy One",
+            "Peace",
+            "The Guardian"
+          ]
+        },
+        {
+          "id": "plagues",
+          "kind": "ayat",
+          "tier": 2,
+          "terms": [
+            "Locusts",
+            "Vermin",
+            "Frogs",
+            "Blood"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 1,
+        "rootGroups": 0,
+        "distinctTiers": [
+          2,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-22",
+      "number": 22,
+      "title": "Tapestry",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "neighbors",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Parents",
+            "Kinsfolk",
+            "Orphans",
+            "The needy"
+          ]
+        },
+        {
+          "id": "worship",
+          "kind": "ayat",
+          "tier": 1,
+          "terms": [
+            "Salah",
+            "Zakat",
+            "Fasting",
+            "Hajj"
+          ]
+        },
+        {
+          "id": "paradise-delights",
+          "kind": "ayat",
+          "tier": 4,
+          "terms": [
+            "Kafur",
+            "Zanjabil",
+            "Silk",
+            "Pearls"
+          ]
+        },
+        {
+          "id": "ikhlas-lines",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "The One",
+            "Eternally Besought",
+            "Begetteth not",
+            "None comparable"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 0,
+        "rootGroups": 0,
+        "distinctTiers": [
+          1,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-23",
+      "number": 23,
+      "title": "Lamplight",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "root-sajda",
+          "kind": "root",
+          "tier": 3,
+          "terms": [
+            "ٱسْجُدُوا۟",
+            "مَسَـٰجِدَ",
+            "سُجَّدًا",
+            "ٱلسَّـٰجِدِينَ"
+          ]
+        },
+        {
+          "id": "animal-titles",
+          "kind": "surah",
+          "tier": 1,
+          "terms": [
+            "The Cow",
+            "The Bee",
+            "The Ant",
+            "The Spider"
+          ]
+        },
+        {
+          "id": "yahya-qualities",
+          "kind": "prophet",
+          "tier": 3,
+          "terms": [
+            "Compassion",
+            "Purity",
+            "Devout",
+            "Dutiful toward his parents"
+          ]
+        },
+        {
+          "id": "paradise-delights",
+          "kind": "ayat",
+          "tier": 4,
+          "terms": [
+            "Kafur",
+            "Zanjabil",
+            "Silk",
+            "Pearls"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 1,
+        "rootGroups": 1,
+        "distinctTiers": [
+          1,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-24",
+      "number": 24,
+      "title": "Cornerstone",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "scriptures",
+          "kind": "ayat",
+          "tier": 1,
+          "terms": [
+            "Tawrat",
+            "Injil",
+            "Zabur",
+            "Quran"
+          ]
+        },
+        {
+          "id": "last-day-surahs",
+          "kind": "surah",
+          "tier": 3,
+          "terms": [
+            "Al-Qari’ah",
+            "Al-Ghashiyah",
+            "Al-Haqqah",
+            "Az-Zalzalah"
+          ]
+        },
+        {
+          "id": "paradise-delights",
+          "kind": "ayat",
+          "tier": 4,
+          "terms": [
+            "Kafur",
+            "Zanjabil",
+            "Silk",
+            "Pearls"
+          ]
+        },
+        {
+          "id": "ikhlas-lines",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "The One",
+            "Eternally Besought",
+            "Begetteth not",
+            "None comparable"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 1,
+        "rootGroups": 0,
+        "distinctTiers": [
+          1,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-25",
+      "number": 25,
+      "title": "Stepping stones",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "worship",
+          "kind": "ayat",
+          "tier": 1,
+          "terms": [
+            "Salah",
+            "Zakat",
+            "Fasting",
+            "Hajj"
+          ]
+        },
+        {
+          "id": "textiles",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Hides",
+            "Wool",
+            "Fur",
+            "Hair"
+          ]
+        },
+        {
+          "id": "root-hamd",
+          "kind": "root",
+          "tier": 4,
+          "terms": [
+            "ٱلْحَمْدُ",
+            "ٱلْحَمِيدِ",
+            "ٱلْحَـٰمِدُونَ",
+            "مَّحْمُودًا"
+          ]
+        },
+        {
+          "id": "neighbors",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Parents",
+            "Kinsfolk",
+            "Orphans",
+            "The needy"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 0,
+        "rootGroups": 1,
+        "distinctTiers": [
+          1,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-26",
+      "number": 26,
+      "title": "First step",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "ikhlas-lines",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "The One",
+            "Eternally Besought",
+            "Begetteth not",
+            "None comparable"
+          ]
+        },
+        {
+          "id": "creation-stages",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Wet earth",
+            "Drop",
+            "Clot",
+            "Little lump"
+          ]
+        },
+        {
+          "id": "people-surahs",
+          "kind": "surah",
+          "tier": 4,
+          "terms": [
+            "Ar-Rum",
+            "Quraysh",
+            "Saba",
+            "Al-Ahzab"
+          ]
+        },
+        {
+          "id": "places",
+          "kind": "ayat",
+          "tier": 2,
+          "terms": [
+            "Makkah",
+            "Madinah",
+            "Egypt",
+            "Midian"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 1,
+        "rootGroups": 0,
+        "distinctTiers": [
+          2,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-27",
+      "number": 27,
+      "title": "Evening walk",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "plagues",
+          "kind": "ayat",
+          "tier": 2,
+          "terms": [
+            "Locusts",
+            "Vermin",
+            "Frogs",
+            "Blood"
+          ]
+        },
+        {
+          "id": "ibrahim-qualities",
+          "kind": "prophet",
+          "tier": 3,
+          "terms": [
+            "Mild",
+            "Imploring",
+            "Penitent",
+            "Soft of heart"
+          ]
+        },
+        {
+          "id": "qualities",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Belief",
+            "Good works",
+            "Truth",
+            "Endurance"
+          ]
+        },
+        {
+          "id": "people-surahs",
+          "kind": "surah",
+          "tier": 4,
+          "terms": [
+            "Ar-Rum",
+            "Quraysh",
+            "Saba",
+            "Al-Ahzab"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 1,
+        "rootGroups": 0,
+        "distinctTiers": [
+          2,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-28",
+      "number": 28,
+      "title": "Open window",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "root-sajda",
+          "kind": "root",
+          "tier": 3,
+          "terms": [
+            "ٱسْجُدُوا۟",
+            "مَسَـٰجِدَ",
+            "سُجَّدًا",
+            "ٱلسَّـٰجِدِينَ"
+          ]
+        },
+        {
+          "id": "neighbors",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Parents",
+            "Kinsfolk",
+            "Orphans",
+            "The needy"
+          ]
+        },
+        {
+          "id": "sulayman-hosts",
+          "kind": "ayat",
+          "tier": 2,
+          "terms": [
+            "Jinn",
+            "Humankind",
+            "Birds",
+            "Wind"
+          ]
+        },
+        {
+          "id": "divine-names",
+          "kind": "ayat",
+          "tier": 4,
+          "terms": [
+            "The Sovereign Lord",
+            "The Holy One",
+            "Peace",
+            "The Guardian"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 0,
+        "rootGroups": 1,
+        "distinctTiers": [
+          2,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-29",
+      "number": 29,
+      "title": "Long table",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "times",
+          "kind": "surah",
+          "tier": 3,
+          "terms": [
+            "Al-Fajr",
+            "Ad-Duha",
+            "Al-Layl",
+            "Al-Asr"
+          ]
+        },
+        {
+          "id": "requested-crops",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Cucumbers",
+            "Corn",
+            "Lentils",
+            "Onions"
+          ]
+        },
+        {
+          "id": "angels",
+          "kind": "ayat",
+          "tier": 2,
+          "terms": [
+            "Jibril",
+            "Mikail",
+            "Harut",
+            "Marut"
+          ]
+        },
+        {
+          "id": "root-ilm",
+          "kind": "root",
+          "tier": 4,
+          "terms": [
+            "ٱلْعَـٰلَمِينَ",
+            "يَعْلَمُونَ",
+            "عَلِيمٌ",
+            "ٱلْعِلْمِ"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 1,
+        "rootGroups": 1,
+        "distinctTiers": [
+          2,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    },
+    {
+      "id": "board-30",
+      "number": 30,
+      "title": "Final lap",
+      "level": "Challenging",
+      "groups": [
+        {
+          "id": "yahya-qualities",
+          "kind": "prophet",
+          "tier": 3,
+          "terms": [
+            "Compassion",
+            "Purity",
+            "Devout",
+            "Dutiful toward his parents"
+          ]
+        },
+        {
+          "id": "creation-stages",
+          "kind": "ayat",
+          "tier": 3,
+          "terms": [
+            "Wet earth",
+            "Drop",
+            "Clot",
+            "Little lump"
+          ]
+        },
+        {
+          "id": "root-ilm",
+          "kind": "root",
+          "tier": 4,
+          "terms": [
+            "ٱلْعَـٰلَمِينَ",
+            "يَعْلَمُونَ",
+            "عَلِيمٌ",
+            "ٱلْعِلْمِ"
+          ]
+        },
+        {
+          "id": "places",
+          "kind": "ayat",
+          "tier": 2,
+          "terms": [
+            "Makkah",
+            "Madinah",
+            "Egypt",
+            "Midian"
+          ]
+        }
+      ],
+      "checks": {
+        "sixteenDistinctTerms": true,
+        "normalizedTermsDistinct": true,
+        "surahGroups": 0,
+        "rootGroups": 1,
+        "distinctTiers": [
+          2,
+          3,
+          4
+        ],
+        "incompatiblePairsOnBoard": [],
+        "textOverlapPairs": []
+      },
+      "alternates": []
+    }
+  ]
+}
