@@ -1,0 +1,49 @@
+---
+// One entry of the verified method record: statement, basis (Quran text copied from the record; hadith by reference and paraphrase),
+// positions with attributions and source links, and notes. Nothing here is typed by hand; it all comes from the record.
+import type { Entry } from '../lib/zakat';
+import { editorial, COLLECTIONS } from '../lib/editorial';
+interface Props { entry: Entry; skipNotes?: RegExp }
+const { entry, skipNotes } = Astro.props;
+const sourceById = new Map(entry.sources.map(s => [s.id, s]));
+const notes = entry.notes.filter(n => !(skipNotes && skipNotes.test(n)));
+const quran = entry.basis.filter(b => b.type === 'quran');
+const hadith = entry.basis.filter(b => b.type === 'hadith');
+---
+<article class="method-entry" id={entry.id} aria-labelledby={`${entry.id}-title`}>
+  <h2 id={`${entry.id}-title`}>{entry.title}</h2>{' '}
+  <p class="statement" set:html={editorial(entry.statement)} />{' '}
+  {quran.length > 0 && <><h3>Quran</h3>{' '}</>}
+  {quran.map(b => (
+    <><div class="basis-item">
+      <p class="basis-ref"><a href={b.url} target="_blank" rel="noopener noreferrer">Quran {b.ref} <span aria-hidden="true">↗</span></a></p>{' '}
+      <p class="quran-ar" lang="ar" dir="rtl">{b.arabic}</p>{' '}
+      <p class="quran-en">{b.translation}</p>{' '}
+      <p class="edition">Arabic: {b.arabicEdition}. English: {b.translationEdition} (Pickthall).</p>
+    </div>{' '}</>
+  ))}
+  {hadith.length > 0 && <><h3>Hadith (paraphrased)</h3>{' '}</>}
+  {hadith.map(b => (
+    <><div class="basis-item">
+      <p class="basis-ref"><a href={b.url} target="_blank" rel="noopener noreferrer">{COLLECTIONS[b.collection] ?? b.collection} {b.number} on sunnah.com <span aria-hidden="true">↗</span></a></p>{' '}
+      <p set:html={editorial(b.paraphrase)} />{' '}
+      <p class="edition">Grading as shown on sunnah.com: {b.gradingAsShownOnSunnahCom}. Chapter: {b.chapterHeading}. Checked {b.confirmedOnSunnahCom}.</p>
+    </div>{' '}</>
+  ))}
+  {entry.positions.length > 0 && <><h3>Positions and who states them</h3>{' '}</>}
+  {entry.positions.map(p => {
+    const source = sourceById.get(p.attribution.sourceId);
+    return (
+      <><div class="position">
+        <p class="label">{p.label}</p>{' '}
+        <p class="who">{p.attribution.who}{p.attribution.locator ? ` (${p.attribution.locator})` : ''}{source && <> · <a href={source.url} target="_blank" rel="noopener noreferrer">{source.id} <span aria-hidden="true">↗</span></a></>}</p>{' '}
+        <p class="summary">{p.summary}</p>
+      </div>{' '}</>
+    );
+  })}
+  {notes.length > 0 && <><h3>Notes</h3>{' '}<ul class="notes">{notes.map(n => <><li set:html={editorial(n)} />{' '}</>)}</ul>{' '}</>}
+  <h3>Sources opened</h3>{' '}
+  <ul class="source-links">{entry.sources.map(s => (
+    <><li><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title}</a>{s.publisher ? `, ${s.publisher}` : ''} ({s.id}){s.note ? `. ${s.note}` : ''}</li>{' '}</>
+  ))}</ul>
+</article>

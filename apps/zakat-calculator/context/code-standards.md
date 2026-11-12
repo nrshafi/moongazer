@@ -15,7 +15,7 @@
 
 ## Zakat content (D23)
 
-- No ruling, nisab figure, amount or method option is written into source until its entry is in the verified method record and its second-pass verification. Until then the app says the method is pending.
+- No ruling, nisab figure, amount or method option is written into source until its entry is in the verified method record and its second-pass verification. Every method option in source comes from that record, and a test checks each maps to an entry with a source.
 - Every school difference is a labelled choice with an attribution and a source note. No default is selected, and both nisab bases are shown.
 - Attribute a position only to a source that can be opened and cited. Leave out any position that cannot be verified, and record the omission in the progress tracker.
 - Money inputs are visitor-entered. Do not fetch prices, do not convert currencies, and do not assume a currency. The default label is a free-text field (planned default "BDT"), with no conversion.

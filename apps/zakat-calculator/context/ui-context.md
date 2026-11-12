@@ -62,3 +62,9 @@ Pointer selection shows no outer focus ring. Tab navigation shows a neutral 2px 
 
 - `social-card.png` is not yet present, so social previews have no image. The shared Shell still points at it.
 - The shared privacy page's text was written for the other apps and mentions activity answers and scores; it is shared copy and has not been changed for this app.
+
+## Calculator UI (P7 T7.6)
+
+- Sanctuary layout: compact hero (balance-scale motif `public/motif.svg`, hidden below 580 px), one panel with three numbered fieldsets, results below the form, "How this works" drawer in the sidebar.
+- Differences are radio fieldsets with equal weight, per-option "Stated by" attributions and a "Learn more" link to `/method/#<entry id>`. An unanswered one is marked with the text "(choose one)" and a red border.
+- Print: form, drawer, header and footer are hidden; the result, breakdown, choices made and limit sentence print. Print-only line gives the date and currency label.
