@@ -87,3 +87,7 @@ The shared `src/lib/counter.ts` (`track(event, itemId)`) sends `{a, i, e}` with 
 - Print buttons (`[data-print]`) are plain print and are not counted.
 - Feedback: `<Feedback compact />` sits in the quiz panel. Its status paragraph is `#quiz-feedback`; the shared footer form is `#site-feedback`.
 - `tests/events.test.ts` checks the call sites in source. Browser-level firing is not run by the tests.
+
+## P5 notes
+
+`src/lib/lesson.ts` renders the session-end block into `#session-end` after a reading-check submit (next app from `learning.json` related[0], Hifz Planner), uses `pulseCorrect` on a correct answer, and reads `data-source` and `data-ref` from the quiz form for the "What you learned" reference. The share text never includes the meaning or the answer.

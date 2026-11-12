@@ -1,0 +1,10 @@
+/* Understand Your Salah app styles (P5): hero motif and reading-check states. */
+.intro{position:relative}
+.intro>*:not(.motif){position:relative;z-index:1}
+.motif{position:absolute;right:0;top:50%;width:200px;height:134px;transform:translateY(-50%);background:var(--accent);opacity:.22;-webkit-mask:url(/motif.svg) center/contain no-repeat;mask:url(/motif.svg) center/contain no-repeat;pointer-events:none}
+@media(max-width:580px){.motif{display:none}}
+.intro-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+@media print{.motif{display:none!important}}
+#quiz-feedback[data-state]{margin-top:12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px}
+#quiz-feedback[data-state=correct]{border-color:var(--success)}
+#quiz-feedback[data-state=incorrect]{border-color:var(--danger)}
