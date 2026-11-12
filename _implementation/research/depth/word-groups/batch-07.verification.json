@@ -1,0 +1,63 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 7,
+  "verifier": "claude-haiku-5-5",
+  "checkedAt": "Thu Nov 12 17:49:05 BST 2026",
+  "checkedAtNote": "Plain date output from Git Bash, labelled BST; this is Dhaka time and was not adjusted.",
+  "method": "Items 1-7 (exact text, MCP spot-check, structure) are script and tool checks. Items 3 (group fit), 4 (tier), 6 (alternate groupings) and the titles are editorial judgement by a second-pass verifier model run, not scholarly review. Verifier: claude-haiku-5-5, Claude Code second-pass run, separate from the author session.",
+  "passed": 7,
+  "total": 10,
+  "items": [
+    {
+      "id": "board-11",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (letter-surahs, hajj-places, yahya-qualities, paradise-rivers)."
+    },
+    {
+      "id": "board-12",
+      "result": "fail",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: Noah (Nuh, 71:1) is also named in 6:84, the passage of the \"prophets\" group on this board. Dawud, Sulayman and Ayyub stay in prophets, and Yusuf is a surah name, so a second full solution exists (prophets with Nuh; surahs with Yusuf). The recorded alternates only cover Yusuf."
+    },
+    {
+      "id": "board-13",
+      "result": "fail",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: Noah (Nuh, 71:1) is also named in 6:84, the passage of the \"prophets\" group on this board, giving a second full solution with Yusuf as a surah name. The recorded alternates only cover Yusuf."
+    },
+    {
+      "id": "board-14",
+      "result": "fail",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: Al-Haqqah (\"The Reality\", 69:1) shares the root ح ق ق with \"Truth\" (103:3, qualities group on this board). A reader could place it in qualities. Record an alternate or change the board."
+    },
+    {
+      "id": "board-15",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (qualities, paradise-rivers, root-kitab, sulayman-hosts)."
+    },
+    {
+      "id": "board-16",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (worldly-joys, day-night, place-surahs, ibrahim-qualities)."
+    },
+    {
+      "id": "board-17",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (ayat-kursi, divine-names, body, letter-surahs)."
+    },
+    {
+      "id": "board-18",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (letter-surahs, colors, root-hamd, requested-crops)."
+    },
+    {
+      "id": "board-19",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (qul, ibrahim-qualities, lost-peoples, root-ilm)."
+    },
+    {
+      "id": "board-20",
+      "result": "pass",
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). No second-group fit found on this board (body, colors, root-rahma, prophet-qualities-mixed)."
+    }
+  ]
+}
