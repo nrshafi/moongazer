@@ -432,6 +432,11 @@
         "slug": "family-halaqa",
         "host": "family-halaqa.moongazer.tech",
         "project": "moongazer-family-halaqa"
+      },
+      {
+        "slug": "zakat-calculator",
+        "host": "zakat-calculator.moongazer.tech",
+        "project": "moongazer-zakat-calculator"
       }
     ],
     "deletedProjects": 19,
