@@ -1,16 +1,16 @@
 {
   "guess-the-surah": {
     "heading": "Guess the Surah",
-    "summary": "Guess the Surah is a free Quran quiz built around chapter clues. Begin with an opening ayah in Pickthall's translation, reveal more information when needed, and choose from four surahs. The result points back to the passage so a round can lead into reading, rather than end with a score.",
+    "summary": "Guess the Surah is a free daily Quran quiz built around clues. Begin with an opening ayah in Pickthall's translation, reveal more information when needed, and choose from four surahs. The result points back to the passage so a round can lead into reading, rather than end with a score.",
     "steps": [
-      "Choose a surah collection and round length, then start a round.",
-      "Read the opening ayah. Reveal another clue if you need the Arabic, ayah count or chapter position.",
+      "Open today's Daily puzzle, or choose Practice or Juz, set a round length and start a round.",
+      "Read the opening ayah. Reveal another clue if you need the Arabic, the ayah count or the meaning of the surah's name.",
       "Choose a surah, inspect the answer and its source, then continue the round."
     ],
     "questions": [
       {
         "question": "Does the quiz include all 114 surahs?",
-        "answer": "Yes. Choose All 114 surahs for the complete collection, or use the shorter-surah, Revealed in Makkah or Revealed in Madinah filters. A round samples from the collection you select."
+        "answer": "Yes. The Daily puzzle cycles through all 114 surahs, one a day. In Practice you can choose All 114 surahs or the shorter-surah, Revealed in Makkah and Revealed in Madinah filters, and Juz draws from the surahs that begin in a chosen juz."
       },
       {
         "question": "What do the points measure?",
@@ -115,9 +115,9 @@
     "heading": "Hifz Planner",
     "summary": "Hifz Planner estimates how new study and revision fit into your available sessions. Enter your own learning and review speeds, the portion already memorized, a revision cycle and study days. The calculation reserves time for review before estimating new pages, making its assumptions available for you to adjust.",
     "steps": [
-      "Enter the pages already memorized, your new-page goal and minutes available per session.",
-      "Adjust learning speed, review speed, revision cycle and study days to match your own assumptions.",
-      "Calculate your plan and compare how a different pace changes the workload and estimated dates."
+      "Step 1: enter the pages already memorized and the new pages you want to add.",
+      "Step 2: enter study days per week, minutes per session and a start date. Use the Ramadan pace suggestion or adjust the assumptions if you want.",
+      "Step 3: read this week’s checklist and the calendar, then download a CSV or calendar file."
     ],
     "questions": [
       {
