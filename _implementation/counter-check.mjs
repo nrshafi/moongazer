@@ -36,9 +36,16 @@ try {
   expect(got.every(x => x.url === 'https://moongazer.tech/api/event' && x.body.a === 'guess-the-surah' && allow.includes(x.body.a)), 'guess-the-surah: endpoint and app slug are on the server allowlist');
   await p.click('[data-answer]');
   expect((await beacons(p)).length === 2, 'guess-the-surah: a second click on an answered question sends nothing');
-  await p.click('#share-challenge');
+  // P5: sharing moved into the end-of-session block, so play the round to its end first.
+  for (let step = 0; step < 40 && !(await p.eval('!!document.querySelector(".session-end")')); step++) {
+    await p.eval('const a=document.querySelector("[data-answer]:not([disabled])"),n=document.getElementById("next-question");if(n){n.click()}else if(a){a.click()}return true');
+    await new Promise(r => setTimeout(r, 150));
+  }
+  const before = (await beacons(p)).length;
+  await p.click('.session-end button');
   got = await beacons(p);
-  expect(got.length === 3 && got[2].body.e === 'share_clicked' && got[2].body.i === 'round', 'guess-the-surah: share_clicked round on the challenge link');
+  const share = got.slice(before);
+  expect(share.length === 1 && share[0].body.e === 'share_clicked', `guess-the-surah: one share_clicked from the end-of-session Copy (${JSON.stringify(share.map(x => x.body))})`);
   await p.click('[data-open-feedback]');
   expect(await p.eval('document.getElementById("site-feedback").open'), 'guess-the-surah: "Report an error" opens the footer form');
   expect(await p.eval('document.querySelectorAll("#site-feedback").length === 1 && document.querySelectorAll("[id=feedback]").length <= 1'), 'guess-the-surah: footer form id is unique');

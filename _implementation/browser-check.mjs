@@ -64,8 +64,9 @@ export async function launch({port = 9333 + Math.floor(Math.random() * 500), arg
       eval: evaluate,
       async click(selector) { const ok = await evaluate(`const el=document.querySelector(${JSON.stringify(selector)});if(!el)return false;el.scrollIntoView({block:'center'});el.click();return true;`); if (!ok) throw new Error('No element ' + selector); await sleep(200); },
       async top(selector) { return evaluate(`const el=document.querySelector(${JSON.stringify(selector)});return el?Math.round(el.getBoundingClientRect().top+scrollY):null;`); },
-      async shot(path, full = false) {
-        const params = {format: 'png'};
+      // `format` may be 'png' (default), 'jpeg' or 'webp'; `quality` applies to jpeg and webp.
+      async shot(path, full = false, {format = 'png', quality} = {}) {
+        const params = {format, ...(quality ? {quality} : {})};
         if (full) { const h = await evaluate('document.documentElement.scrollHeight'); params.clip = {x: 0, y: 0, width, height: Math.min(h, 6000), scale: 1}; params.captureBeyondViewport = true; }
         const {data} = await s('Page.captureScreenshot', params); writeFileSync(path, Buffer.from(data, 'base64'));
       },
