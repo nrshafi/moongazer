@@ -4,4 +4,4 @@
 interface Props { open?: boolean }
 const { open = false } = Astro.props;
 ---
-<details class="how-it-works" open={open}><summary>How this works</summary><div class="how-it-works-body"><slot /></div></details>
+<details class="how-it-works" open={open}><summary>How this works</summary>{' '}<div class="how-it-works-body"><slot /></div></details>
