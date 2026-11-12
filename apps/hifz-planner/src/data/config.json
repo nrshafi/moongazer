@@ -2,7 +2,7 @@
   "slug": "hifz-planner",
   "name": "Hifz Planner",
   "description": "Estimate new memorization and revision time for your week",
-  "accent": "teal",
+  "accent": "blue",
   "nav": "Plan",
   "port": 4326
 }
