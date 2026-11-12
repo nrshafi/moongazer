@@ -652,6 +652,320 @@
         "translationUrl": "https://quran.com/4:36?translations=19"
       },
       "commentaryUrl": "https://quran.com/4:36/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-11",
+      "title": "True to your word",
+      "age": "8–11",
+      "topic": "Honesty",
+      "series": "ramadan",
+      "night": 11,
+      "minutes": 12,
+      "question": "Whom does the reading say to be with?",
+      "options": [
+        "The wealthy.",
+        "The quick.",
+        "The truthful."
+      ],
+      "answer": 2,
+      "explanation": "The passage says: be with the truthful. Al-Muyassar explains this as being with those who are truthful in their oaths, their promises and every matter.",
+      "discussion": "What is the difference between telling the truth and keeping a promise? Why do both build trust? Use made-up examples.",
+      "activity": "Put two cups on the table, one for “promised” and one for “kept”. Each person names a small made-up promise, puts a button in the first cup, then moves it to the second and says how it feels to keep a promise.",
+      "close": "Say one promise that is easy to keep this week.",
+      "teaching": "Al-Muyassar explains this verse as an instruction to obey Allah and to keep a certain kind of company in promises and oaths.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094",
+          "kind": "Primary hadith report",
+          "note": "Abdullah reports the Prophet Muhammad ﷺ saying that truthfulness leads to righteousness and righteousness leads to Paradise, while lying leads to wickedness. Paraphrased."
+        }
+      ],
+      "passage": {
+        "ref": "9:119",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَكُونُوا۟ مَعَ ٱلصَّـٰدِقِينَ",
+        "translation": "O ye who believe! Be careful of your duty to Allah, and be with the truthful.",
+        "url": "https://quran.com/9:119",
+        "translationUrl": "https://quran.com/9:119?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/9:119/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-12",
+      "title": "In the shade",
+      "age": "5–7",
+      "topic": "Prophets",
+      "series": "ramadan",
+      "night": 12,
+      "minutes": 10,
+      "question": "What did he say to his Lord?",
+      "options": [
+        "I am in need of whatever good You send down to me.",
+        "I want to go home at once.",
+        "I am the strongest of all."
+      ],
+      "answer": 0,
+      "explanation": "The passage says he asked: My Lord! I am needy of whatever good Thou sendest down for me. Al-Muyassar says this is Musa (peace be upon him), who had watered the flock for two women and was very hungry.",
+      "discussion": "He helped first and asked afterwards. Why might it be good to do a kindness before asking for something? Use made-up examples.",
+      "activity": "Put a cup of water and a small cloth on the table. The cloth stands for shade. Each person names one small way to help someone and one thing they could ask Allah for.",
+      "close": "Say one small way to help someone today.",
+      "teaching": "Al-Muyassar explains that Musa (peace be upon him) gave water to two women and rested in the shade of a tree, and notes how hungry he was.",
+      "sources": [],
+      "passage": {
+        "ref": "28:24",
+        "arabic": "فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ فَقَالَ رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍ فَقِيرٌ",
+        "translation": "So he watered (their flock) for them. Then he turned aside into the shade, and said: My Lord! I am needy of whatever good Thou sendest down for me.",
+        "url": "https://quran.com/28:24",
+        "translationUrl": "https://quran.com/28:24?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/28:24/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-13",
+      "title": "Careful words",
+      "age": "8–11",
+      "topic": "Speech",
+      "series": "ramadan",
+      "night": 13,
+      "minutes": 12,
+      "question": "What does the reading say is with a person for every word they say?",
+      "options": [
+        "A mirror.",
+        "An observer ready.",
+        "A friend who nods."
+      ],
+      "answer": 1,
+      "explanation": "The passage says there is an observer ready with every word. Al-Muyassar explains this as an angel who is present to watch and record the word.",
+      "discussion": "This verse reminds us to choose our words with care. What is one way to say something hard in a kind way? Use made-up sentences.",
+      "activity": "Hold a spoon and say a made-up sentence that could hurt someone. Then say a kinder way to say it and put the spoon down. Pass the spoon on.",
+      "close": "Say one kind sentence you could use today.",
+      "teaching": "Al-Muyassar explains this verse as a reminder to speak with care.",
+      "sources": [
+        {
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018",
+          "kind": "Primary hadith report",
+          "note": "Abu Hurairah reports the Prophet Muhammad ﷺ saying that whoever believes in Allah and the Last Day should say what is good or stay quiet. Paraphrased."
+        }
+      ],
+      "passage": {
+        "ref": "50:18",
+        "arabic": "مَّا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ",
+        "translation": "He uttereth no word but there is with him an observer ready.",
+        "url": "https://quran.com/50:18",
+        "translationUrl": "https://quran.com/50:18?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/50:18/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-14",
+      "title": "Before you assume",
+      "age": "12+",
+      "topic": "Speech",
+      "series": "ramadan",
+      "night": 14,
+      "minutes": 15,
+      "question": "Which of these does the reading say to avoid?",
+      "options": [
+        "Visiting relatives.",
+        "Eating with others.",
+        "Much suspicion, spying and backbiting."
+      ],
+      "answer": 2,
+      "explanation": "The passage says to shun much suspicion, not to spy and not to backbite. Al-Muyassar explains that this means avoiding bad thoughts about believers, not searching for their faults and not saying behind someone’s back what they would dislike. People dislike the picture the verse gives, so they should dislike backbiting.",
+      "discussion": "Why can guessing about someone without checking be unfair? How can we choose a kinder explanation first? Use made-up examples.",
+      "activity": "An adult secretly puts an ordinary object under a cup or in a closed box. Each person offers a guess, starting with the kindest guess they can think of. Then open it and talk about how guessing without knowing can be unfair.",
+      "close": "Say one kind assumption you could make today.",
+      "teaching": "Al-Muyassar explains the verse as an instruction about our thoughts and about how we speak of others, ending with a reminder to be mindful of Allah.",
+      "sources": [],
+      "passage": {
+        "ref": "49:12",
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱجْتَنِبُوا۟ كَثِيرًا مِّنَ ٱلظَّنِّ إِنَّ بَعْضَ ٱلظَّنِّ إِثْمٌ ۖ وَلَا تَجَسَّسُوا۟ وَلَا يَغْتَب بَّعْضُكُم بَعْضًا ۚ أَيُحِبُّ أَحَدُكُمْ أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًا فَكَرِهْتُمُوهُ ۚ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ تَوَّابٌ رَّحِيمٌ",
+        "translation": "O ye who believe! Shun much suspicion; for lo! some suspicion is a crime. And spy not, neither backbite one another. Would one of you love to eat the flesh of his dead brother? Ye abhor that (so abhor the other)! And keep your duty (to Allah). Lo! Allah is Relenting, Merciful.",
+        "url": "https://quran.com/49:12",
+        "translationUrl": "https://quran.com/49:12?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/49:12/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-15",
+      "title": "A gentle reply",
+      "age": "8–11",
+      "topic": "Forgiveness",
+      "series": "ramadan",
+      "night": 15,
+      "minutes": 12,
+      "question": "What does the speaker ask Allah to do?",
+      "options": [
+        "To forgive them.",
+        "To send them away.",
+        "To make them wait."
+      ],
+      "answer": 0,
+      "explanation": "The passage says: May Allah forgive you, and He is the Most Merciful of those who show mercy. Al-Muyassar says the speaker is Yusuf (peace be upon him) and that he tells his brothers there is no blame on them today.",
+      "discussion": "Why can it be hard to say “no blame today” after being hurt? What might help? Use made-up examples.",
+      "activity": "Put a small stone in a cup to stand for a hurt. Each person imagines a made-up hurt and says one forgiving sentence, then takes the stone out and puts it down beside the cup.",
+      "close": "Say one forgiving sentence you could use in a made-up case.",
+      "teaching": "Al-Muyassar explains that Yusuf (peace be upon him) is speaking to his brothers.",
+      "sources": [],
+      "passage": {
+        "ref": "12:92",
+        "arabic": "قَالَ لَا تَثْرِيبَ عَلَيْكُمُ ٱلْيَوْمَ ۖ يَغْفِرُ ٱللَّهُ لَكُمْ ۖ وَهُوَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+        "translation": "He said: Have no fear this day! May Allah forgive you, and He is the Most Merciful of those who show mercy.",
+        "url": "https://quran.com/12:92",
+        "translationUrl": "https://quran.com/12:92?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/12:92/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-16",
+      "title": "A better reply",
+      "age": "12+",
+      "topic": "Forgiveness",
+      "series": "ramadan",
+      "night": 16,
+      "minutes": 15,
+      "question": "How does the reading say to repel an evil deed?",
+      "options": [
+        "With an equal one.",
+        "With one that is better.",
+        "By ignoring everyone."
+      ],
+      "answer": 1,
+      "explanation": "The passage says: Repel the evil deed with one which is better. Al-Muyassar explains this as answering harm with forgiveness, patience and kindness, and says only those who are patient are given this quality.",
+      "discussion": "What does it take to answer a rude word with a calm one? Use made-up examples.",
+      "activity": "Put two cups on the table, one for “harsh” and one for “better”. An adult reads a made-up unkind remark. Each person offers a calm reply and moves a button to the second cup.",
+      "close": "Say one calm reply you could use.",
+      "teaching": "Al-Muyassar explains this verse as guidance on how to respond to someone who has harmed you.",
+      "sources": [],
+      "passage": {
+        "ref": "41:34",
+        "arabic": "وَلَا تَسْتَوِى ٱلْحَسَنَةُ وَلَا ٱلسَّيِّئَةُ ۚ ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ فَإِذَا ٱلَّذِى بَيْنَكَ وَبَيْنَهُۥ عَدَٰوَةٌ كَأَنَّهُۥ وَلِىٌّ حَمِيمٌ",
+        "translation": "The good deed and the evil deed are not alike. Repel the evil deed with one which is better, then lo! he, between whom and thee there was enmity (will become) as though he was a bosom friend.",
+        "url": "https://quran.com/41:34",
+        "translationUrl": "https://quran.com/41:34?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/41:34/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-17",
+      "title": "Building and asking",
+      "age": "12+",
+      "topic": "Prophets",
+      "series": "ramadan",
+      "night": 17,
+      "minutes": 15,
+      "question": "What were they doing when they prayed?",
+      "options": [
+        "Planting a garden.",
+        "Crossing a valley.",
+        "Raising the foundations of the House."
+      ],
+      "answer": 2,
+      "explanation": "The passage says Abraham and Ishmael were raising the foundations of the House. Al-Muyassar explains this as the Kaaba, and says they prayed humbly that Allah accept their work.",
+      "discussion": "They asked Allah to accept their work as they built. Why might a person ask for acceptance after doing a good deed?",
+      "activity": "Stack small blocks or cups to build together. Before each one is placed, the person says one good deed they could try, and everyone says “Our Lord, accept from us.”",
+      "close": "Say “Our Lord, accept from us” together.",
+      "teaching": "Al-Muyassar explains this as a prayer by Ibrahim (peace be upon him) and Ismail (peace be upon him) as they worked, calling on Allah humbly.",
+      "sources": [],
+      "passage": {
+        "ref": "2:127-128",
+        "arabic": "وَإِذْ يَرْفَعُ إِبْرَٰهِـۧمُ ٱلْقَوَاعِدَ مِنَ ٱلْبَيْتِ وَإِسْمَـٰعِيلُ رَبَّنَا تَقَبَّلْ مِنَّآ ۖ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ\nرَبَّنَا وَٱجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِن ذُرِّيَّتِنَآ أُمَّةً مُّسْلِمَةً لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَآ ۖ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+        "translation": "And when Abraham and Ishmael were raising the foundations of the House, (Abraham prayed): Our Lord! Accept from us (this duty). Lo! Thou, only Thou, art the Hearer, the Knower.\nOur Lord! And make us submissive unto Thee and of our seed a nation submissive unto Thee, and show us our ways of worship, and relent toward us. Lo! Thou, only Thou, art the Relenting, the Merciful.",
+        "url": "https://quran.com/2:127-128",
+        "translationUrl": "https://quran.com/2:127-128?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/2:127/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-18",
+      "title": "Out of the dark",
+      "age": "8–11",
+      "topic": "Prophets",
+      "series": "ramadan",
+      "night": 18,
+      "minutes": 12,
+      "question": "What did he say when he cried out?",
+      "options": [
+        "There is no god but You. Glory to You. I was a wrong-doer.",
+        "I do not need help.",
+        "Someone else did this."
+      ],
+      "answer": 0,
+      "explanation": "The passage says he cried out: There is no Allah save Thee. Be Thou Glorified! Lo! I have been a wrong-doer. Al-Muyassar says this was Yunus (peace be upon him), who admitted his fault, and that Allah answered him and rescued him.",
+      "discussion": "He admitted his mistake and called on Allah. Why can it be hard to say “I was wrong”? What does it make easier?",
+      "activity": "Dim the room a little if that is safe. Hold a torch under a cloth. Each person says the words from the reading or a short dua of their own. Then lift the cloth to let the light shine.",
+      "close": "Say one short dua you could use when something goes wrong.",
+      "teaching": "Al-Muyassar explains that Yunus (peace be upon him) was tested with distress and called on Allah from the dark.",
+      "sources": [],
+      "passage": {
+        "ref": "21:87-88",
+        "arabic": "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَـٰضِبًا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِى ٱلظُّلُمَـٰتِ أَن لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ\nفَٱسْتَجَبْنَا لَهُۥ وَنَجَّيْنَـٰهُ مِنَ ٱلْغَمِّ ۚ وَكَذَٰلِكَ نُـۨجِى ٱلْمُؤْمِنِينَ",
+        "translation": "And (mention) Dhu'n-Nun, when he went off in anger and deemed that We had no power over him, but he cried out in the darkness, saying: There is no Allah save Thee. Be Thou Glorified! Lo! I have been a wrong-doer.\nThen we heard his prayer and saved him from the anguish. Thus we save believers.",
+        "url": "https://quran.com/21:87-88",
+        "translationUrl": "https://quran.com/21:87-88?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/21:87/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-19",
+      "title": "A prayer before speaking",
+      "age": "5–7",
+      "topic": "Dua",
+      "series": "ramadan",
+      "night": 19,
+      "minutes": 10,
+      "question": "What did he ask for, so that people would understand him?",
+      "options": [
+        "A faster boat.",
+        "A knot loosened from his tongue.",
+        "A shorter road."
+      ],
+      "answer": 1,
+      "explanation": "The passage says he asked Allah to loose a knot from his tongue so that they may understand his words. Al-Muyassar says this is Musa (peace be upon him), who also asked for his brother Harun as a helper.",
+      "discussion": "Have you ever wanted to say something clearly and found it hard? What could help? Use made-up examples if you prefer.",
+      "activity": "Tie a loose knot in a piece of string or a scarf. Take turns gently untying it while saying: “My Lord, ease my task for me.”",
+      "close": "Say one thing you want to say clearly this week.",
+      "teaching": "Al-Muyassar explains this as the prayer of Musa (peace be upon him) before a hard task.",
+      "sources": [],
+      "passage": {
+        "ref": "20:25-28",
+        "arabic": "قَالَ رَبِّ ٱشْرَحْ لِى صَدْرِى\nوَيَسِّرْ لِىٓ أَمْرِى\nوَٱحْلُلْ عُقْدَةً مِّن لِّسَانِى\nيَفْقَهُوا۟ قَوْلِى",
+        "translation": "(Moses) said: My Lord! relieve my mind\nAnd ease my task for me;\nAnd loose a knot from my tongue,\nThat they may understand my saying.",
+        "url": "https://quran.com/20:25-28",
+        "translationUrl": "https://quran.com/20:25-28?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/20:25/tafsirs/16"
+    },
+    {
+      "id": "ramadan-night-20",
+      "title": "A call from hardship",
+      "age": "12+",
+      "topic": "Patience",
+      "series": "ramadan",
+      "night": 20,
+      "minutes": 15,
+      "question": "What does the reading say happened after his prayer?",
+      "options": [
+        "Nothing changed.",
+        "He travelled to a new land.",
+        "The adversity was removed and he was given his household and the like with them."
+      ],
+      "answer": 2,
+      "explanation": "The passage says Allah heard his prayer, removed the adversity and gave him his household and the like of it, as a mercy and a reminder. Al-Muyassar says this is Ayyub (peace be upon him), who was patient through illness and loss and called on his Lord.",
+      "discussion": "He praised Allah as the Most Merciful before asking. How might remembering Allah’s mercy change the way we ask?",
+      "activity": "Fold a cloth into a blanket. Each person says a short dua for someone who is going through illness or hardship, without naming anyone private, and lays a button on the cloth.",
+      "close": "Say one dua for someone who is going through a hard time.",
+      "teaching": "Al-Muyassar explains that Ayyub (peace be upon him) was tested with illness and with the loss of family and wealth, was patient, and called on his Lord.",
+      "sources": [],
+      "passage": {
+        "ref": "21:83-84",
+        "arabic": "۞ وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُۥٓ أَنِّى مَسَّنِىَ ٱلضُّرُّ وَأَنتَ أَرْحَمُ ٱلرَّٰحِمِينَ\nفَٱسْتَجَبْنَا لَهُۥ فَكَشَفْنَا مَا بِهِۦ مِن ضُرٍّ ۖ وَءَاتَيْنَـٰهُ أَهْلَهُۥ وَمِثْلَهُم مَّعَهُمْ رَحْمَةً مِّنْ عِندِنَا وَذِكْرَىٰ لِلْعَـٰبِدِينَ",
+        "translation": "And Job, when he cried unto his Lord, (saying): Lo! adversity afflicteth me, and Thou art Most Merciful of all who show mercy.\nThen We heard his prayer and removed that adversity from which he suffered, and We gave him his household (that he had lost) and the like thereof along with them, a mercy from Our store, and a remembrance for the worshippers;",
+        "url": "https://quran.com/21:83-84",
+        "translationUrl": "https://quran.com/21:83-84?translations=19"
+      },
+      "commentaryUrl": "https://quran.com/21:83/tafsirs/16"
     }
   ],
   "methodology": "Twelve single-sitting family packs combine a source reading question, an open discussion and a shared activity. Age bands are editorial suggestions and Pickthall’s historical English may need an adult’s explanation. Open prompts have no single graded answer. Activities are original applications beyond the fetched canonical text, not scholarly rulings from quran.ai, quran.com or quran.foundation. No child names, private stories, profiles or ongoing behavior records are collected. Every participant may pass."
