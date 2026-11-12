@@ -14,6 +14,34 @@ test('every age band meets the family at least 8 times in the month', () => {
  for (const age of ['5–7', '8–11', '12+']) expect(ramadan.filter(pack => pack.age === age).length).toBeGreaterThanOrEqual(8);
 });
 
+// A title must not echo the correct option. Words are reduced with a simple stem (so reply/replies match) and a few
+// small related-word groups catch echoes a stem cannot (suspicion/assume, build/foundations, ease/hardship).
+const STOP = new Set(['that', 'with', 'this', 'from', 'they', 'them', 'their', 'what', 'whom', 'your', 'have', 'which', 'every', 'there', 'will', 'one']);
+const GROUPS = [
+ ['suspicion', 'assum', 'guess'], ['repl', 'answer', 'better'], ['build', 'raise', 'foundation', 'rais'],
+ ['truth', 'truthful', 'promis', 'word', 'oath'], ['eas', 'hard', 'hardship', 'heavy'], ['forgiv', 'forgiven', 'merc', 'pardon'],
+ ['thank', 'grate', 'thanks'], ['morn', 'even', 'earl', 'late', 'day'],
+];
+const stem = (word: string) => word.replace(/(ies)$/, 'y').replace(/(ing|ed|es|s)$/, '');
+const stems = (text: string) => new Set((text.toLowerCase().match(/[a-z]{3,}/g) ?? []).filter(word => !STOP.has(word)).map(stem));
+const groupOf = (stemmed: string) => GROUPS.findIndex(group => group.some(member => stemmed.startsWith(member) || member.startsWith(stemmed)));
+function echoes(title: string, option: string): string[] {
+ const optionStems = stems(option);
+ const optionGroups = new Set([...optionStems].map(groupOf).filter(index => index >= 0));
+ return [...stems(title)].filter(word => word.length >= 4 && (optionStems.has(word) || (groupOf(word) >= 0 && optionGroups.has(groupOf(word)))));
+}
+
+test('the title check catches the echoes found in review, and passes neutral titles', () => {
+ expect(echoes('Heavy and light', 'Ease.')).not.toEqual([]);
+ expect(echoes('Keeping your word', 'The truthful.')).not.toEqual([]);
+ expect(echoes('Before you assume', 'Much suspicion, spying and backbiting.')).not.toEqual([]);
+ expect(echoes('Calm replies', 'With one that is better.')).not.toEqual([]);
+ expect(echoes('Two builders', 'Raising the foundations of the House.')).not.toEqual([]);
+ expect(echoes('Morning and evening', 'Early and late.')).not.toEqual([]);
+ expect(echoes('Two short verses', 'Ease.')).toEqual([]);
+ expect(echoes('Good company', 'The truthful.')).toEqual([]);
+});
+
 test('each Ramadan pack has the full set of fields, three distinct options and a passage', () => {
  for (const pack of ramadan) {
   expect(pack.options).toHaveLength(3);
@@ -26,11 +54,7 @@ test('each Ramadan pack has the full set of fields, three distinct options and a
   expect(pack.teaching).toContain('Al-Muyassar');
   // No answer in the title: the correct option text is never contained in the title.
   expect(pack.title.toLowerCase()).not.toContain(pack.options[pack.answer]!.toLowerCase());
-  // ...and no content word of 4+ letters is shared with it.
-  const words = (text: string) => new Set(text.toLowerCase().match(/[a-z]{4,}/g) ?? []);
-  const stop = new Set(['that', 'with', 'this', 'from', 'they', 'them', 'their', 'what', 'whom', 'your', 'have', 'which', 'every', 'there', 'will']);
-  const correct = words(pack.options[pack.answer]!);
-  expect([...words(pack.title)].filter(word => correct.has(word) && !stop.has(word))).toEqual([]);
+  expect(echoes(pack.title, pack.options[pack.answer]!)).toEqual([]);
  }
 });
 

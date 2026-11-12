@@ -85,23 +85,36 @@
       "night": 6,
       "result": "fail",
       "reason": "Teaching above the question says 'relief comes with hardship', which states the correct answer (ease). Title 'Hard and easy' also names it. Muyassar 94:5-6 is otherwise faithful.",
-      "followUp": {
-        "fixedIn": "C16.04",
-        "changes": [
-          {
-            "field": "title",
-            "before": "Hard and easy",
-            "after": "Heavy and light",
-            "note": "Retitled so it no longer echoes the correct option."
-          },
-          {
-            "field": "teaching",
-            "before": "Al-Muyassar explains the repeated promise as a comfort: relief comes with hardship.",
-            "after": "Al-Muyassar explains this repeated verse as a comfort for the Prophet Muhammad ﷺ when others harmed him.",
-            "note": "Teaching rewritten to give context without stating the correct option."
-          }
-        ]
-      },
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Hard and easy",
+              "after": "Heavy and light",
+              "note": "Retitled so it no longer echoes the correct option."
+            },
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains the repeated promise as a comfort: relief comes with hardship.",
+              "after": "Al-Muyassar explains this repeated verse as a comfort for the Prophet Muhammad ﷺ when others harmed him.",
+              "note": "Teaching rewritten to give context without stating the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Heavy and light",
+              "after": "Two short verses",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            }
+          ]
+        }
+      ],
       "recheck": {
         "by": "content-c16-recheck (claude-haiku-5-5)",
         "at": "Thu Nov 12 23:19:07 BST 2026",

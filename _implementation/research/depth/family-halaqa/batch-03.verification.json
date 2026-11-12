@@ -27,17 +27,30 @@
       "night": 22,
       "result": "fail",
       "reason": "Title 'Our Lord, forgive us' restates the correct answer (forgiveness and mercy). Text, Muyassar 7:23 (re-fetched, faithful) and Tirmidhi 3513 (Sahih, Darussalam) are otherwise correct.",
-      "followUp": {
-        "fixedIn": "C16.04",
-        "changes": [
-          {
-            "field": "title",
-            "before": "Our Lord, forgive us",
-            "after": "After a mistake",
-            "note": "Retitled so it no longer echoes the correct option."
-          }
-        ]
-      },
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Our Lord, forgive us",
+              "after": "After a mistake",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains this as Adam and Hawwa speaking to their Lord after their mistake.",
+              "after": "Al-Muyassar explains this as Adam (peace be upon him) and Hawwa speaking to their Lord after their mistake.",
+              "note": "Honorific added after Adam; Al-Muyassar wording unchanged."
+            }
+          ]
+        }
+      ],
       "recheck": {
         "by": "content-c16-recheck (claude-haiku-5-5)",
         "at": "Thu Nov 12 23:19:07 BST 2026",

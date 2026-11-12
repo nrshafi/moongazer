@@ -105,3 +105,7 @@ Not done: no second-pass verification (separate run) and no owner spot-check yet
 ## 2026-11-12 23:15 (Asia/Dhaka) — C16.04: verification fixes
 
 Second pass failed 16 Ramadan packs (14/30 passed): spoiler titles, teaching that stated the answer, night 9 discussion, night 19 honorific. All fixed in `content.json`; `appContentSha256` updated; `followUp` added to each fixed pack in the `batch-0N.verification.json` files (`result` untouched). New test: no title shares a 4+ letter content word with the correct option. `bun run check` 0 errors; `bun run test` 26 pass; `bun run build` 46 pages. Not yet re-verified by a second run.
+
+## 2026-11-12 (Asia/Dhaka) — C16.05: re-check fixes
+
+Re-check (a73dc37) failed six packs. Retitled nights 6 (Two short verses), 11 (Good company), 14 (Respecting others), 16 (Responding to harm), 17 (A shared prayer); reworded teaching for nights 11 and 17 (checked against Al-Muyassar 9:119 and 2:127) and added the honorific after Adam on night 22. The title test now stems words and uses small related-word groups, and includes cases that fail for the old titles. `followUp` in the six verification records is now a list (C16.04 then C16.05); `recheck` untouched. Hash updated.

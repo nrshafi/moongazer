@@ -21,17 +21,36 @@
       "night": 11,
       "result": "fail",
       "reason": "Title 'True to your word' names the correct answer (truthful). Question asks whom to be with. Bukhari 6094 and Muyassar 9:119 are faithful.",
-      "followUp": {
-        "fixedIn": "C16.04",
-        "changes": [
-          {
-            "field": "title",
-            "before": "True to your word",
-            "after": "Keeping your word",
-            "note": "Retitled so it no longer echoes the correct option."
-          }
-        ]
-      },
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "True to your word",
+              "after": "Keeping your word",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Keeping your word",
+              "after": "Good company",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            },
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains this verse as an instruction to obey Allah and to keep a certain kind of company in promises and oaths.",
+              "after": "Al-Muyassar explains this verse as addressed to believers, telling them to obey Allah and avoid what He forbids in all they do and leave undone, and to stay with a certain group of people in every matter.",
+              "note": "Teaching reworded after the re-check; checked against the Al-Muyassar text already fetched."
+            }
+          ]
+        }
+      ],
       "recheck": {
         "by": "content-c16-recheck (claude-haiku-5-5)",
         "at": "Thu Nov 12 23:19:07 BST 2026",
@@ -56,17 +75,30 @@
       "night": 14,
       "result": "fail",
       "reason": "Teaching, shown above the question, describes the verse as 'an instruction about our thoughts and about how we speak of others', which gives away the correct option (suspicion, spying, backbiting). Exact text is correct.",
-      "followUp": {
-        "fixedIn": "C16.04",
-        "changes": [
-          {
-            "field": "teaching",
-            "before": "Al-Muyassar explains the verse as an instruction about our thoughts and about how we speak of others, ending with a reminder to be mindful of Allah.",
-            "after": "Al-Muyassar explains this verse as addressed to believers, ending with a reminder to be mindful of Allah, who accepts repentance and is merciful.",
-            "note": "Teaching rewritten to give context without stating the correct option."
-          }
-        ]
-      },
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains the verse as an instruction about our thoughts and about how we speak of others, ending with a reminder to be mindful of Allah.",
+              "after": "Al-Muyassar explains this verse as addressed to believers, ending with a reminder to be mindful of Allah, who accepts repentance and is merciful.",
+              "note": "Teaching rewritten to give context without stating the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Before you assume",
+              "after": "Respecting others",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            }
+          ]
+        }
+      ],
       "recheck": {
         "by": "content-c16-recheck (claude-haiku-5-5)",
         "at": "Thu Nov 12 23:19:07 BST 2026",
@@ -85,17 +117,30 @@
       "night": 16,
       "result": "fail",
       "reason": "Title 'A better reply' restates the correct option ('with one that is better'). Teaching and distractors are otherwise sound. Exact text is correct.",
-      "followUp": {
-        "fixedIn": "C16.04",
-        "changes": [
-          {
-            "field": "title",
-            "before": "A better reply",
-            "after": "Calm replies",
-            "note": "Retitled so it no longer echoes the correct option."
-          }
-        ]
-      },
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "A better reply",
+              "after": "Calm replies",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Calm replies",
+              "after": "Responding to harm",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            }
+          ]
+        }
+      ],
       "recheck": {
         "by": "content-c16-recheck (claude-haiku-5-5)",
         "at": "Thu Nov 12 23:19:07 BST 2026",
@@ -108,17 +153,36 @@
       "night": 17,
       "result": "fail",
       "reason": "Title 'Building and asking' names the answer (raising the foundations of the House). Exact text is correct.",
-      "followUp": {
-        "fixedIn": "C16.04",
-        "changes": [
-          {
-            "field": "title",
-            "before": "Building and asking",
-            "after": "Two builders",
-            "note": "Retitled so it no longer echoes the correct option."
-          }
-        ]
-      },
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Building and asking",
+              "after": "Two builders",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Two builders",
+              "after": "A shared prayer",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            },
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains this as a prayer by Ibrahim (peace be upon him) and Ismail (peace be upon him) as they worked, calling on Allah humbly.",
+              "after": "Al-Muyassar explains this as a prayer by Ibrahim (peace be upon him) and Ismail (peace be upon him), who called on Allah humbly as they prayed.",
+              "note": "Teaching reworded after the re-check; checked against the Al-Muyassar text already fetched."
+            }
+          ]
+        }
+      ],
       "recheck": {
         "by": "content-c16-recheck (claude-haiku-5-5)",
         "at": "Thu Nov 12 23:19:07 BST 2026",
