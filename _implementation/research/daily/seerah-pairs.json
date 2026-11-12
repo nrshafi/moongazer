@@ -1,7 +1,7 @@
 {
   "app": "seerah-timeline",
   "task": "C10",
-  "pairCount": 10,
+  "pairCount": 20,
   "method": "Pairs use only events in apps/seerah-timeline/src/data/content.json. No new sources were added; every source is an existing sunnah.com link already attached to the events. Years are the conventional chart years in the data, not exact dates.",
   "eligibility": "Both events dated in the data (CE year, AH year or a stated period) and no disputed/debated note. Gap preference: at least one conventional year; same-year pairs only when the cited report fixes the order.",
   "excluded": [
@@ -430,6 +430,376 @@
         ]
       },
       "orderSecurity": "Early Madinan period (1 AH, approximate) versus 3 AH. Bukhari 3780 places the episode after the emigrants reached Madinah. Gap about 2.5 years."
+    },
+    {
+      "id": "pair-11",
+      "first": "the-change-of-qiblah",
+      "second": "digging-the-trench",
+      "why": "The qiblah changed in 2 AH, and the trench was dug in 5 AH.",
+      "firstEvent": {
+        "id": "the-change-of-qiblah",
+        "title": "The change of qiblah",
+        "year": 624,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "The narrator preserves a sixteen-or-seventeen-month uncertainty; the app keeps that uncertainty.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 399",
+            "url": "https://sunnah.com/bukhari:399"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "digging-the-trench",
+        "title": "Digging the trench",
+        "year": 627,
+        "date": "5 AH · c. 627 CE",
+        "era": "Later Madinah",
+        "place": "Madinah",
+        "dateNote": "The trench campaign is conventionally placed in 5 AH; the cited report describes the labor.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4100",
+            "url": "https://sunnah.com/bukhari:4100"
+          }
+        ]
+      },
+      "orderSecurity": "2 AH versus 5 AH; three conventional years apart."
+    },
+    {
+      "id": "pair-12",
+      "first": "building-the-mosque",
+      "second": "steadfastness-at-hunayn",
+      "why": "The mosque in Madinah was built soon after the Hijrah, and Hunayn followed the conquest of Makkah in 8 AH.",
+      "firstEvent": {
+        "id": "building-the-mosque",
+        "title": "Building the mosque",
+        "year": 622.3,
+        "date": "1 AH · c. 622 CE",
+        "era": "Early Madinah",
+        "place": "Madinah",
+        "dateNote": "Shown after arrival. The cited report is the evidence for the construction episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 428",
+            "url": "https://sunnah.com/bukhari:428"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "steadfastness-at-hunayn",
+        "title": "Steadfastness at Hunayn",
+        "year": 630.2,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Hunayn",
+        "dateNote": "The conventional placement follows the conquest; the report supports this specific observation.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4315",
+            "url": "https://sunnah.com/bukhari:4315"
+          }
+        ]
+      },
+      "orderSecurity": "1 AH versus 8 AH."
+    },
+    {
+      "id": "pair-13",
+      "first": "supplication-at-badr",
+      "second": "the-journey-to-hudaybiyah",
+      "why": "Badr was fought in 2 AH, and the journey to Hudaybiyah was in 6 AH.",
+      "firstEvent": {
+        "id": "supplication-at-badr",
+        "title": "Supplication at Badr",
+        "year": 624.2,
+        "date": "2 AH · c. 624 CE",
+        "era": "Early Madinah",
+        "place": "Badr",
+        "dateNote": "The conventional year is a chronology aid. The report is cited for the supplication, not a complete battle narrative.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3953",
+            "url": "https://sunnah.com/bukhari:3953"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-journey-to-hudaybiyah",
+        "title": "The journey to Hudaybiyah",
+        "year": 628,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Conventional 6 AH placement. The linked report contains the detailed sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731"
+          }
+        ]
+      },
+      "orderSecurity": "2 AH versus 6 AH."
+    },
+    {
+      "id": "pair-14",
+      "first": "the-archers-at-uhud",
+      "second": "the-pledge-beneath-the-tree",
+      "why": "Uhud was fought in 3 AH, and the pledge beneath the tree was given at Hudaybiyah in 6 AH.",
+      "firstEvent": {
+        "id": "the-archers-at-uhud",
+        "title": "The archers at Uhud",
+        "year": 625,
+        "date": "3 AH · c. 625 CE",
+        "era": "Early Madinah",
+        "place": "Uhud",
+        "dateNote": "The conventional year is approximate in CE terms; details follow the named report.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 3039",
+            "url": "https://sunnah.com/bukhari:3039"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-pledge-beneath-the-tree",
+        "title": "The pledge beneath the tree",
+        "year": 628.1,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Jabir gives a group count in this report. Other transmitted counts should not be silently harmonized.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4154",
+            "url": "https://sunnah.com/bukhari:4154"
+          }
+        ]
+      },
+      "orderSecurity": "3 AH versus 6 AH."
+    },
+    {
+      "id": "pair-15",
+      "first": "digging-the-trench",
+      "second": "the-banner-at-khaybar",
+      "why": "The trench was dug in 5 AH, and the banner was given at Khaybar in 7 AH.",
+      "firstEvent": {
+        "id": "digging-the-trench",
+        "title": "Digging the trench",
+        "year": 627,
+        "date": "5 AH · c. 627 CE",
+        "era": "Later Madinah",
+        "place": "Madinah",
+        "dateNote": "The trench campaign is conventionally placed in 5 AH; the cited report describes the labor.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4100",
+            "url": "https://sunnah.com/bukhari:4100"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-banner-at-khaybar",
+        "title": "The banner at Khaybar",
+        "year": 628.4,
+        "date": "7 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Khaybar",
+        "dateNote": "The conventional year is shown; the linked report supports the banner episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210"
+          }
+        ]
+      },
+      "orderSecurity": "5 AH versus 7 AH (data 627 versus 628.4); the Trench precedes Hudaybiyah and Khaybar."
+    },
+    {
+      "id": "pair-16",
+      "first": "the-journey-to-hudaybiyah",
+      "second": "the-approach-to-makkah",
+      "why": "The journey to Hudaybiyah was in 6 AH, and the approach to Makkah was in 8 AH.",
+      "firstEvent": {
+        "id": "the-journey-to-hudaybiyah",
+        "title": "The journey to Hudaybiyah",
+        "year": 628,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Conventional 6 AH placement. The linked report contains the detailed sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-approach-to-makkah",
+        "title": "The approach to Makkah",
+        "year": 630,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "The year of the conquest is explicit in the report. CE conversion is approximate.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4280",
+            "url": "https://sunnah.com/bukhari:4280"
+          }
+        ]
+      },
+      "orderSecurity": "6 AH versus 8 AH. The treaty of Hudaybiyah preceded the conquest; Bukhari 4280 gives the year of the conquest explicitly."
+    },
+    {
+      "id": "pair-17",
+      "first": "the-pledge-beneath-the-tree",
+      "second": "the-kaaba-at-the-conquest",
+      "why": "The pledge beneath the tree was given at Hudaybiyah in 6 AH, and the Kaaba scene belongs to the conquest of Makkah in 8 AH.",
+      "firstEvent": {
+        "id": "the-pledge-beneath-the-tree",
+        "title": "The pledge beneath the tree",
+        "year": 628.1,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "Jabir gives a group count in this report. Other transmitted counts should not be silently harmonized.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4154",
+            "url": "https://sunnah.com/bukhari:4154"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-kaaba-at-the-conquest",
+        "title": "The Kaaba at the conquest",
+        "year": 630.1,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "A detail of the conquest episode. No depictions of the Prophet ﷺ are used.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4287",
+            "url": "https://sunnah.com/bukhari:4287"
+          }
+        ]
+      },
+      "orderSecurity": "6 AH versus 8 AH."
+    },
+    {
+      "id": "pair-18",
+      "first": "negotiating-the-written-agreement",
+      "second": "steadfastness-at-hunayn",
+      "why": "The written agreement was negotiated at Hudaybiyah in 6 AH, and Hunayn followed the conquest of Makkah in 8 AH.",
+      "firstEvent": {
+        "id": "negotiating-the-written-agreement",
+        "title": "Negotiating the written agreement",
+        "year": 628.2,
+        "date": "6 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Hudaybiyah",
+        "dateNote": "A detail of the same treaty episode, not a separate treaty.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 2731",
+            "url": "https://sunnah.com/bukhari:2731"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "steadfastness-at-hunayn",
+        "title": "Steadfastness at Hunayn",
+        "year": 630.2,
+        "date": "8 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Hunayn",
+        "dateNote": "The conventional placement follows the conquest; the report supports this specific observation.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4315",
+            "url": "https://sunnah.com/bukhari:4315"
+          }
+        ]
+      },
+      "orderSecurity": "6 AH versus 8 AH; the app notes that Hunayn follows the conquest."
+    },
+    {
+      "id": "pair-19",
+      "first": "the-banner-at-khaybar",
+      "second": "the-expedition-to-tabuk",
+      "why": "The banner was given at Khaybar in 7 AH, and the expedition to Tabuk was in 9 AH.",
+      "firstEvent": {
+        "id": "the-banner-at-khaybar",
+        "title": "The banner at Khaybar",
+        "year": 628.4,
+        "date": "7 AH · c. 628 CE",
+        "era": "Later Madinah",
+        "place": "Khaybar",
+        "dateNote": "The conventional year is shown; the linked report supports the banner episode.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4210",
+            "url": "https://sunnah.com/bukhari:4210"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "the-expedition-to-tabuk",
+        "title": "The expedition to Tabuk",
+        "year": 630.6,
+        "date": "9 AH · c. 630 CE",
+        "era": "Later Madinah",
+        "place": "Tabuk",
+        "dateNote": "Shown in the conventional 9 AH band. Read the complete report for its longer sequence.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4418",
+            "url": "https://sunnah.com/bukhari:4418"
+          }
+        ]
+      },
+      "orderSecurity": "7 AH versus 9 AH."
+    },
+    {
+      "id": "pair-20",
+      "first": "the-return-for-umrah",
+      "second": "announcements-during-abu-bakr-s-hajj",
+      "why": "The return for Umrah was in 7 AH, and Abu Bakr's Hajj, with its announcements, was in 9 AH.",
+      "firstEvent": {
+        "id": "the-return-for-umrah",
+        "title": "The return for Umrah",
+        "year": 629,
+        "date": "7 AH · c. 629 CE",
+        "era": "Later Madinah",
+        "place": "Makkah",
+        "dateNote": "The report links the visit to the agreement; its conventional chronology is 7 AH.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4251",
+            "url": "https://sunnah.com/bukhari:4251"
+          }
+        ]
+      },
+      "secondEvent": {
+        "id": "announcements-during-abu-bakr-s-hajj",
+        "title": "Announcements during Abu Bakr's Hajj",
+        "year": 631,
+        "date": "9 AH · c. 631 CE",
+        "era": "Later Madinah",
+        "place": "Mina",
+        "dateNote": "Conventionally placed in 9 AH, before the Prophet's ﷺ Farewell Hajj.",
+        "sources": [
+          {
+            "label": "Sahih al-Bukhari 4655",
+            "url": "https://sunnah.com/bukhari:4655"
+          }
+        ]
+      },
+      "orderSecurity": "7 AH versus 9 AH (data 629 versus 631)."
     }
   ]
 }
