@@ -30,7 +30,7 @@ Mismatch: `config.json` `accent` is `teal` today. Root §2 says blue. T5.5 chang
 | > How this works                         |
 +------------------------------------------+
 ```
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top: step 1 input `#memorized`, top at 416 px at 390 × 844 and 416 px at 375 × 812, light and dark (665 px before P5; 472 px at 1440 × 1000). Measured with `_implementation/browser-check.mjs` against `bun run preview`.
 
 ## 5. Component states specific to this app
 - **Step indicator:** current step is bold with the text "Step 1 of 3". Done steps show "Done". Not colour alone.

@@ -83,3 +83,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 Sanctuary first screen (13:58 Asia/Dhaka, 2026-11-12)
+
+Hero is the H1, one descriptor line ("Estimate new pages and revision time for your study days."), a "604-page layout" chip and `public/motif.svg` (calendar grid, hidden below 580 px and in print). The wizard panel has a text step indicator (`.steps`: "1 Your pages", "2 Study days", "3 Plan"; the current step is bold, finished steps add "Done"), the `Step N of 3` label and the progress bar. Step 1 shows the live summary line (`#live-summary`, "Enter your numbers" until valid). The "What the planner assumes" notice and the methodology link are in the `HowItWorks` drawer at the top of the sidebar. Step 3 ends with the shared end-of-session block (`#session-end`). The weekly print sheet and "Print this week" button are unchanged.

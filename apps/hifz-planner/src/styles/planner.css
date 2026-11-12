@@ -67,3 +67,26 @@
 #choose-content > .micro { margin: 0 0 12px; }
 #choose-content .pick-group + .pick-group { margin-top: 12px; }
 #choose-content .actions { margin-top: 12px; }
+
+/* P5 Sanctuary first screen: compact hero with motif, step indicator, live summary. */
+.intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: none; }
+.intro-text { min-width: 0; }
+.intro .motif { width: 190px; height: auto; color: var(--accent); opacity: .55; flex-shrink: 0; }
+.count-chip { margin-top: 10px; }
+.steps { list-style: none; display: flex; gap: 8px; margin: 0 0 8px; padding: 0; flex-wrap: wrap; }
+.steps li { display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px; min-height: 32px; border: 1px solid var(--line); border-radius: 99px; font-size: .78rem; color: var(--muted); }
+.steps li[aria-current=step] { font-weight: 800; color: var(--accent-ink); background: var(--tint); border-color: var(--accent); }
+.steps .step-num { font-weight: 800; }
+.step-done { font-weight: 700; color: var(--accent-ink); }
+.step-status { margin: 0 0 8px; font-size: .75rem; font-weight: 700; color: var(--muted); }
+.wizard-form { margin-top: 16px; }
+.live-summary { margin: 0; padding: 10px 14px; border-radius: 10px; background: var(--tint); color: var(--accent-ink); font-size: .85rem; font-weight: 600; }
+.wizard .panel-body { padding: 20px 24px; }
+@media (max-width: 580px) {
+  .intro { display: block; }
+  .intro .motif { display: none; }
+  .wizard .panel-body { padding: 16px; }
+  .steps { gap: 6px; }
+  .steps li { padding: 5px 9px; font-size: .72rem; }
+}
+@media print { .intro .motif { display: none; } }

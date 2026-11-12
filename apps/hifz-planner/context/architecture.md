@@ -95,3 +95,7 @@ Anonymous aggregate events go through the shared `track(event, itemId)` in `src/
 | `share_clicked` | `.ics` export handler | when the calendar file download starts, with or without the daily reminder |
 
 Print (`print-week`) and the on-screen checklist do not count as sharing. The compact feedback link (`<Feedback compact />`) sits in step 3 after the results and links to `#site-feedback` in the footer form. The source-level wiring check is `tests/events.test.ts`.
+
+## P5 session end (Asia/Dhaka, 2026-11-12)
+
+`app.ts` calls `renderSessionEnd` into `#session-end` after a plan is built (not for the capacity-limit result). Share text is fixed ("I estimated a weekly Hifz plan with Hifz Planner: https://hifz-planner.moongazer.tech/") and carries no personal numbers. Next app comes from `learning.json` `related[0]`. `track('share_clicked','plan')` is called by the shared block. No shared file was edited.
