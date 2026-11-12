@@ -84,3 +84,7 @@ main{padding:0;max-width:none}.workspace{display:block}.panel{box-shadow:none;bo
 :root[data-projector=on] .panel,:root[data-projector=on] .how-it-works{box-shadow:none;border-color:var(--ink)}
 .projector-toggle{white-space:nowrap;min-height:38px}
 @media(max-width:520px){.projector-toggle{padding:6px 9px;font-size:.7rem;min-height:36px}}
+/* Correct-answer pulse (P5): one short scale/opacity pulse, 240 ms, no sound. Applied by pulseCorrect(el) in utils.ts. */
+@keyframes mg-correct-pulse{0%{transform:scale(1);opacity:.78}55%{transform:scale(1.035);opacity:1}100%{transform:scale(1);opacity:1}}
+.is-correct{animation:mg-correct-pulse .24s ease-out 1}
+@media(prefers-reduced-motion:reduce){.is-correct{animation:none}}
