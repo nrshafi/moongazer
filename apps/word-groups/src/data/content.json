@@ -743,6 +743,294 @@
         }
       ],
       "note": "Ayat al-Kursi says neither slumber nor sleep overtakes Him, and that His throne includes the heavens and the earth."
+    },
+    {
+      "id": "hajj-places",
+      "title": "Places named in the pilgrimage readings",
+      "kind": "ayat",
+      "tier": 3,
+      "terms": [
+        "As-Safa",
+        "Al-Marwah",
+        "Arafat",
+        "Sacred monument"
+      ],
+      "passages": [
+        {
+          "ref": "2:158",
+          "arabic": "۞ إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ",
+          "translation": "Lo! (the mountains) As-Safa and Al-Marwah are among the indications of Allah. It is therefore no sin for him who is on pilgrimage to the House (of Allah) or visiteth it, to go around them (as the pagan custom is). And he who doeth good of his own accord, (for him) lo! Allah is Responsive, Aware.",
+          "url": "https://quran.com/2:158",
+          "translationUrl": "https://quran.com/2:158?translations=19"
+        },
+        {
+          "ref": "2:198",
+          "arabic": "لَيْسَ عَلَيْكُمْ جُنَاحٌ أَن تَبْتَغُوا۟ فَضْلًا مِّن رَّبِّكُمْ ۚ فَإِذَآ أَفَضْتُم مِّنْ عَرَفَـٰتٍ فَٱذْكُرُوا۟ ٱللَّهَ عِندَ ٱلْمَشْعَرِ ٱلْحَرَامِ ۖ وَٱذْكُرُوهُ كَمَا هَدَىٰكُمْ وَإِن كُنتُم مِّن قَبْلِهِۦ لَمِنَ ٱلضَّآلِّينَ",
+          "translation": "It is no sin for you that ye seek the bounty of your Lord (by trading). But, when ye press on in the multitude from 'Arafat, remember Allah by the sacred monument. Remember Him as He hath guided you, although before ye were of those astray.",
+          "url": "https://quran.com/2:198",
+          "translationUrl": "https://quran.com/2:198?translations=19"
+        }
+      ],
+      "note": "2:158 names the mountains As-Safa and Al-Marwah; 2:198 names Arafat and the sacred monument, in Pickthall’s wording."
+    },
+    {
+      "id": "isa-signs",
+      "title": "Signs given to Jesus in 3:49",
+      "kind": "ayat",
+      "tier": 2,
+      "terms": [
+        "Clay bird",
+        "Blind",
+        "Leper",
+        "Dead"
+      ],
+      "passages": [
+        {
+          "ref": "3:49",
+          "arabic": "وَرَسُولًا إِلَىٰ بَنِىٓ إِسْرَٰٓءِيلَ أَنِّى قَدْ جِئْتُكُم بِـَٔايَةٍ مِّن رَّبِّكُمْ ۖ أَنِّىٓ أَخْلُقُ لَكُم مِّنَ ٱلطِّينِ كَهَيْـَٔةِ ٱلطَّيْرِ فَأَنفُخُ فِيهِ فَيَكُونُ طَيْرًۢا بِإِذْنِ ٱللَّهِ ۖ وَأُبْرِئُ ٱلْأَكْمَهَ وَٱلْأَبْرَصَ وَأُحْىِ ٱلْمَوْتَىٰ بِإِذْنِ ٱللَّهِ ۖ وَأُنَبِّئُكُم بِمَا تَأْكُلُونَ وَمَا تَدَّخِرُونَ فِى بُيُوتِكُمْ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَةً لَّكُمْ إِن كُنتُم مُّؤْمِنِينَ",
+          "translation": "And will make him a messenger unto the Children of Israel, (saying): Lo! I come unto you with a sign from your Lord. Lo! I fashion for you out of clay the likeness of a bird, and I breathe into it and it is a bird, by Allah's leave. I heal him who was born blind, and the leper, and I raise the dead, by Allah's leave. And I announce unto you what ye eat and what ye store up in your houses. Lo! herein verily is a portent for you, if ye are to be believers.",
+          "url": "https://quran.com/3:49",
+          "translationUrl": "https://quran.com/3:49?translations=19"
+        }
+      ],
+      "note": "In 3:49 Jesus (peace be upon him) says that by Allah’s leave he fashions a bird from clay, heals the one born blind and the leper, and raises the dead."
+    },
+    {
+      "id": "ikhlas-lines",
+      "title": "Statements in Surah 112",
+      "kind": "ayat",
+      "tier": 3,
+      "terms": [
+        "The One",
+        "Eternally Besought",
+        "Begetteth not",
+        "None comparable"
+      ],
+      "passages": [
+        {
+          "ref": "112:1-4",
+          "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ\nٱللَّهُ ٱلصَّمَدُ\nلَمْ يَلِدْ وَلَمْ يُولَدْ\nوَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+          "translation": "Say: He is Allah, the One!\nAllah, the eternally Besought of all!\nHe begetteth not nor was begotten.\nAnd there is none comparable unto Him.",
+          "url": "https://quran.com/112:1-4",
+          "translationUrl": "https://quran.com/112:1-4?translations=19"
+        }
+      ],
+      "note": "Surah 112 declares Allah the One, the eternally Besought of all, that He begetteth not nor was begotten, and that none is comparable to Him."
+    },
+    {
+      "id": "letter-surahs",
+      "title": "Surahs titled by letters",
+      "kind": "surah",
+      "tier": 2,
+      "terms": [
+        "Ya-Sin",
+        "Taha",
+        "Sad",
+        "Qaf"
+      ],
+      "passages": [
+        {
+          "ref": "36:1",
+          "arabic": "يسٓ",
+          "translation": "Ya Sin.",
+          "url": "https://quran.com/36:1",
+          "translationUrl": "https://quran.com/36:1?translations=19"
+        },
+        {
+          "ref": "20:1",
+          "arabic": "طه",
+          "translation": "Ta. Ha.",
+          "url": "https://quran.com/20:1",
+          "translationUrl": "https://quran.com/20:1?translations=19"
+        },
+        {
+          "ref": "38:1",
+          "arabic": "صٓ ۚ وَٱلْقُرْءَانِ ذِى ٱلذِّكْرِ",
+          "translation": "Sad. By the renowned Qur'an,",
+          "url": "https://quran.com/38:1",
+          "translationUrl": "https://quran.com/38:1?translations=19"
+        },
+        {
+          "ref": "50:1",
+          "arabic": "قٓ ۚ وَٱلْقُرْءَانِ ٱلْمَجِيدِ",
+          "translation": "Qaf. By the Glorious Qur'an,",
+          "url": "https://quran.com/50:1",
+          "translationUrl": "https://quran.com/50:1?translations=19"
+        }
+      ],
+      "note": "Each of these surahs is known by the letters it opens with. The names follow the Quran MCP chapter list, and the readings show how Pickthall renders each opening."
+    },
+    {
+      "id": "last-day-surahs",
+      "title": "Surahs named for the Last Day",
+      "kind": "surah",
+      "tier": 3,
+      "terms": [
+        "Al-Qari’ah",
+        "Al-Ghashiyah",
+        "Al-Haqqah",
+        "Az-Zalzalah"
+      ],
+      "passages": [
+        {
+          "ref": "101:1",
+          "arabic": "ٱلْقَارِعَةُ",
+          "translation": "The Calamity!",
+          "url": "https://quran.com/101:1",
+          "translationUrl": "https://quran.com/101:1?translations=19"
+        },
+        {
+          "ref": "88:1",
+          "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+          "translation": "Hath there come unto thee tidings of the Overwhelming?",
+          "url": "https://quran.com/88:1",
+          "translationUrl": "https://quran.com/88:1?translations=19"
+        },
+        {
+          "ref": "69:1",
+          "arabic": "ٱلْحَآقَّةُ",
+          "translation": "The Reality!",
+          "url": "https://quran.com/69:1",
+          "translationUrl": "https://quran.com/69:1?translations=19"
+        },
+        {
+          "ref": "99:1",
+          "arabic": "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+          "translation": "When Earth is shaken with her (final) earthquake",
+          "url": "https://quran.com/99:1",
+          "translationUrl": "https://quran.com/99:1?translations=19"
+        }
+      ],
+      "note": "These four surah names point to the Calamity, the Overwhelming, the Reality and the earthquake. The grouping is an editorial reading of the names, not a claim about their themes."
+    },
+    {
+      "id": "prophet-surahs",
+      "title": "Surahs named for prophets",
+      "kind": "surah",
+      "tier": 2,
+      "terms": [
+        "Yunus",
+        "Hud",
+        "Nuh",
+        "Ibrahim"
+      ],
+      "passages": [
+        {
+          "ref": "10:98",
+          "arabic": "فَلَوْلَا كَانَتْ قَرْيَةٌ ءَامَنَتْ فَنَفَعَهَآ إِيمَـٰنُهَآ إِلَّا قَوْمَ يُونُسَ لَمَّآ ءَامَنُوا۟ كَشَفْنَا عَنْهُمْ عَذَابَ ٱلْخِزْىِ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَمَتَّعْنَـٰهُمْ إِلَىٰ حِينٍ",
+          "translation": "If only there had been a community (of all those that were destroyed of old) that believed and profited by its belief as did the folk of Jonah! When they believed We drew off from them the torment of disgrace in the life of the world and gave them comfort for a while.",
+          "url": "https://quran.com/10:98",
+          "translationUrl": "https://quran.com/10:98?translations=19"
+        },
+        {
+          "ref": "11:50",
+          "arabic": "وَإِلَىٰ عَادٍ أَخَاهُمْ هُودًا ۚ قَالَ يَـٰقَوْمِ ٱعْبُدُوا۟ ٱللَّهَ مَا لَكُم مِّنْ إِلَـٰهٍ غَيْرُهُۥٓ ۖ إِنْ أَنتُمْ إِلَّا مُفْتَرُونَ",
+          "translation": "And unto (the tribe of) A'ad (We sent) their brother, Hud. He said: O my people! Serve Allah! Ye have no other Allah save Him. Lo! ye do but invent.",
+          "url": "https://quran.com/11:50",
+          "translationUrl": "https://quran.com/11:50?translations=19"
+        },
+        {
+          "ref": "71:1",
+          "arabic": "إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+          "translation": "Lo! We sent Noah unto his people (saying): Warn thy people ere the painful doom come unto them.",
+          "url": "https://quran.com/71:1",
+          "translationUrl": "https://quran.com/71:1?translations=19"
+        },
+        {
+          "ref": "14:35",
+          "arabic": "وَإِذْ قَالَ إِبْرَٰهِيمُ رَبِّ ٱجْعَلْ هَـٰذَا ٱلْبَلَدَ ءَامِنًا وَٱجْنُبْنِى وَبَنِىَّ أَن نَّعْبُدَ ٱلْأَصْنَامَ",
+          "translation": "And when Abraham said: My Lord! Make safe this territory, and preserve me and my sons from serving idols.",
+          "url": "https://quran.com/14:35",
+          "translationUrl": "https://quran.com/14:35?translations=19"
+        }
+      ],
+      "note": "Each of these surahs is named for a prophet; the cited ayat mention Jonah, Hud, Noah and Abraham (peace be upon them), spelled as in Pickthall."
+    },
+    {
+      "id": "people-surahs",
+      "title": "Surahs named for peoples",
+      "kind": "surah",
+      "tier": 4,
+      "terms": [
+        "Ar-Rum",
+        "Quraysh",
+        "Saba",
+        "Al-Ahzab"
+      ],
+      "passages": [
+        {
+          "ref": "30:2",
+          "arabic": "غُلِبَتِ ٱلرُّومُ",
+          "translation": "The Romans have been defeated",
+          "url": "https://quran.com/30:2",
+          "translationUrl": "https://quran.com/30:2?translations=19"
+        },
+        {
+          "ref": "106:1",
+          "arabic": "لِإِيلَـٰفِ قُرَيْشٍ",
+          "translation": "For the taming of Qureysh.",
+          "url": "https://quran.com/106:1",
+          "translationUrl": "https://quran.com/106:1?translations=19"
+        },
+        {
+          "ref": "34:15",
+          "arabic": "لَقَدْ كَانَ لِسَبَإٍ فِى مَسْكَنِهِمْ ءَايَةٌ ۖ جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ ۖ كُلُوا۟ مِن رِّزْقِ رَبِّكُمْ وَٱشْكُرُوا۟ لَهُۥ ۚ بَلْدَةٌ طَيِّبَةٌ وَرَبٌّ غَفُورٌ",
+          "translation": "There was indeed a sign for Sheba in their dwelling-place: Two gardens on the right hand and the left (as who should say): Eat of the provision of your Lord and render thanks to Him. A fair land and an indulgent Lord!",
+          "url": "https://quran.com/34:15",
+          "translationUrl": "https://quran.com/34:15?translations=19"
+        },
+        {
+          "ref": "33:20",
+          "arabic": "يَحْسَبُونَ ٱلْأَحْزَابَ لَمْ يَذْهَبُوا۟ ۖ وَإِن يَأْتِ ٱلْأَحْزَابُ يَوَدُّوا۟ لَوْ أَنَّهُم بَادُونَ فِى ٱلْأَعْرَابِ يَسْـَٔلُونَ عَنْ أَنۢبَآئِكُمْ ۖ وَلَوْ كَانُوا۟ فِيكُم مَّا قَـٰتَلُوٓا۟ إِلَّا قَلِيلًا",
+          "translation": "They hold that the clans have not retired (for good); and if the clans should advance (again), they would fain be in the desert with the wandering Arabs, asking for the news of you; and if they were among you, they would not give battle, save a little.",
+          "url": "https://quran.com/33:20",
+          "translationUrl": "https://quran.com/33:20?translations=19"
+        }
+      ],
+      "note": "These surahs are named for the Romans, Qureysh, the people of Sheba and the clans. Pickthall spells Qureysh and Sheba differently from the surah names."
+    },
+    {
+      "id": "place-surahs",
+      "title": "Surahs named for places",
+      "kind": "surah",
+      "tier": 3,
+      "terms": [
+        "Al-Hijr",
+        "Al-Ahqaf",
+        "At-Tur",
+        "Al-Balad"
+      ],
+      "passages": [
+        {
+          "ref": "15:80",
+          "arabic": "وَلَقَدْ كَذَّبَ أَصْحَـٰبُ ٱلْحِجْرِ ٱلْمُرْسَلِينَ",
+          "translation": "And the dwellers in Al-Hijr denied (Our) messengers.",
+          "url": "https://quran.com/15:80",
+          "translationUrl": "https://quran.com/15:80?translations=19"
+        },
+        {
+          "ref": "46:21",
+          "arabic": "۞ وَٱذْكُرْ أَخَا عَادٍ إِذْ أَنذَرَ قَوْمَهُۥ بِٱلْأَحْقَافِ وَقَدْ خَلَتِ ٱلنُّذُرُ مِنۢ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِۦٓ أَلَّا تَعْبُدُوٓا۟ إِلَّا ٱللَّهَ إِنِّىٓ أَخَافُ عَلَيْكُمْ عَذَابَ يَوْمٍ عَظِيمٍ",
+          "translation": "And make mention (O Muhammad) of the brother of A'ad when he warned his folk among the wind-curved sandhills - and verily warners came and went before and after him - saying: Serve none but Allah. Lo! I fear for you the doom of a tremendous Day.",
+          "url": "https://quran.com/46:21",
+          "translationUrl": "https://quran.com/46:21?translations=19"
+        },
+        {
+          "ref": "52:1",
+          "arabic": "وَٱلطُّورِ",
+          "translation": "By the Mount,",
+          "url": "https://quran.com/52:1",
+          "translationUrl": "https://quran.com/52:1?translations=19"
+        },
+        {
+          "ref": "90:1",
+          "arabic": "لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
+          "translation": "Nay, I swear by this city -",
+          "url": "https://quran.com/90:1",
+          "translationUrl": "https://quran.com/90:1?translations=19"
+        }
+      ],
+      "note": "The cited ayat name Al-Hijr, the wind-curved sandhills, the Mount and this city. The titles are a selection, not a full list of place names among the surahs."
     }
   ],
   "puzzles": [
