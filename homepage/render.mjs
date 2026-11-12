@@ -2,6 +2,24 @@ export const origin='https://moongazer.tech/';
 export const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 export const serialize=value=>JSON.stringify(value).replace(/</g,'\\u003c');
 
+// Quick picker: each chip is a real link (?pick=<id>#library). Rules are data attributes so app.js needs no second copy.
+export const picks=[
+  {id:'2min',label:'2 minutes',time:2},
+  {id:'10min',label:'10 minutes',time:10},
+  {id:'kids',label:'With my kids',audience:'kids'},
+  {id:'class',label:'For my class',audience:'class'},
+  {id:'prayer',label:'Understand my prayer',slug:'understand-your-salah'},
+  {id:'hifz',label:'Plan my hifz',slug:'hifz-planner'}
+];
+export function pickChips(apps){
+  return picks.map(pick=>{
+    if(pick.slug&&!apps.some(app=>app.slug===pick.slug))throw new Error('Unknown pick app: '+pick.slug);
+    const rule=pick.time?` data-max-time="${pick.time}"`:pick.audience?` data-audience="${pick.audience}"`:` data-slug="${pick.slug}"`;
+    return `<a class="chip" href="/?pick=${pick.id}#library" data-pick="${pick.id}"${rule}>${escapeHtml(pick.label)}</a>`;
+  }).join(' ');
+}
+export const audienceLabels={me:'Just me',kids:'With kids',class:'For a class'};
+
 export function structuredData(meta,apps){
   const url=new URL(meta.path,origin).href;
   const page={'@type':meta.type||'CollectionPage','@id':url+'#webpage',url,name:meta.heading,description:meta.description,inLanguage:'en',isPartOf:{'@id':origin+'#website'}};
@@ -31,7 +49,7 @@ export function metadata(meta,apps){
 
 export function appCards(apps){
   const e=escapeHtml;
-  return apps.map(app=>`<article class="app-card" data-category="${e(app.category)}" data-search="${e(`${app.name} ${app.category} ${app.kind} ${app.description}`.toLowerCase())}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><div class="card-top"><span class="app-icon"><img src="/logos/${e(app.slug)}.svg" alt="" width="48" height="48" loading="lazy"></span> <span class="app-kind">${e(app.kind)}</span> <span class="card-arrow" aria-hidden="true">↗</span></div> <h3>${e(app.name)}</h3> <p>${e(app.description)}</p> <span class="card-bottom">${e(app.category)}<span aria-hidden="true">Open app →</span></span></a></article>`).join('\n');
+  return apps.map(app=>`<article class="app-card" data-slug="${e(app.slug)}" data-time="${app.time}" data-audience="${e(app.audience)}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><div class="card-top"><span class="app-icon"><img src="/logos/${e(app.slug)}.svg" alt="" width="48" height="48" loading="lazy"></span> <span class="app-kind">${e(app.kind)}</span> <span class="card-arrow" aria-hidden="true">↗</span></div> <h3>${e(app.name)}</h3> <p>${e(app.description)}</p> <span class="card-bottom">${e(app.category)}<span aria-hidden="true">Open app →</span></span></a></article>`).join('\n');
 }
 
 export function collectionLinks(collections){

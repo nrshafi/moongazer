@@ -1,7 +1,7 @@
 import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {origin,escapeHtml as e,metadata,appCards,collectionLinks,questions,documentPage} from './render.mjs';
+import {origin,escapeHtml as e,metadata,appCards,pickChips,collectionLinks,questions,documentPage} from './render.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const source=join(root,'homepage');
@@ -9,7 +9,7 @@ const out=join(source,'dist');
 const apps=JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'));
 const collections=JSON.parse(await readFile(join(source,'collections.json'),'utf8'));
 const bySlug=new Map(apps.map(app=>[app.slug,app]));
-if(apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
+if(apps.some(app=>![2,10,20].includes(app.time)||!['me','kids','class'].includes(app.audience)||app.format!==app.kind)||apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
 const home={path:'/',title:'Free Islamic Learning Apps & Quran Games | Moongazer',heading:'Free Islamic learning apps',description:'Explore sixteen free Islamic learning apps for Quran, Seerah, history and daily practice. Choose a reading tool or game and begin without an account.'};
 const allPages=[home];
 const paths=collections.map(collection=>{
@@ -23,8 +23,8 @@ const commonQuestions=[
   {question:'Where can I check an explanation or report a correction?',answer:'Each app links its sources and methodology. The About page explains the collection\'s source practices and provides the public contact for quotation, attribution and wording corrections.'}
 ];
 let template=await readFile(join(source,'index.html'),'utf8');
-for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
-template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- APP_CATALOG -->',appCards(apps)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
+for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS','PICKER_CHIPS'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
+template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- PICKER_CHIPS -->',pickChips(apps)).replace('<!-- APP_CATALOG -->',appCards(apps)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
 await mkdir(out,{recursive:true});
 await writeFile(join(out,'index.html'),template);
 for(const collection of collections){
