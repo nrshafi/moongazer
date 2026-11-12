@@ -1,0 +1,498 @@
+{
+  "task": "C18 ayat of the night second-pass verification",
+  "verifiedAt": "Thu Nov 12 17:14 (plain date output, Asia/Dhaka per memory)",
+  "verifier": "content-c18-verify branch, independent second pass",
+  "data": "homepage/ayat-of-the-night.json",
+  "summary": {
+    "records": 71,
+    "itemsPassingBoth": 63,
+    "textPass": 71,
+    "textFail": 0,
+    "suitabilityPass": 63,
+    "suitabilityFail": 8,
+    "shape": {
+      "duplicateRefs": [],
+      "distinctSurahs": 48,
+      "maxTranslationLength": 216,
+      "atLeast60": true,
+      "atLeast30Surahs": true,
+      "translationLengthAtMost220": true
+    },
+    "textMethod": "Script (node) built each expected Arabic/translation from verses[S:A] in _implementation/research/quran-full.json, joining 2-ayah spans with newline, and compared exact string equality.",
+    "limitations": [
+      "Quran MCP re-fetch covered 16 refs (17 ayat), beyond the 15 required, all outside the author cross-check list.",
+      "MCP Arabic matched after NFC normalisation for all 16 refs, but only 1 of 16 matched byte for byte. The relayed MCP text was retyped into the comparison file, so the byte-level difference may come from that transcription; unresolved. Byte-exact text rests on the snapshot check.",
+      "Text pass for the other 55 refs rests on the snapshot check, not on a fresh MCP fetch.",
+      "Suitability is an editorial judgement by this verifier; it is not a scholarly review."
+    ]
+  },
+  "quranMcpCalls": [
+    {
+      "tool": "mcp__quran__fetch_grounding_rules",
+      "args": {},
+      "result": "rules read; grounding_nonce gnd-53e1bfc30f8826fa"
+    },
+    {
+      "tool": "mcp__quran__fetch_quran",
+      "args": {
+        "ayahs": "4:28, 1:2, 1:5-6, 4:86, 9:51, 9:119, 10:57, 3:200, 6:162, 14:41, 7:199, 20:46, 33:41, 32:7, 33:70, 25:74",
+        "editions": "ar-uthmani-hafs"
+      },
+      "result": "ok, 17 ayat"
+    },
+    {
+      "tool": "mcp__quran__fetch_translation",
+      "args": {
+        "ayahs": "same as above",
+        "editions": "en-pickthall"
+      },
+      "result": "first attempt rate_limited; retried and succeeded, 17 ayat"
+    }
+  ],
+  "items": [
+    {
+      "ref": "4:28",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "1:2",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "2:153",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "1:5-6",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "17:24",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "4:86",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "9:51",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "13:28",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "30:22",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "9:119",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "3:139",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Context-bound: \"them\" has no referent in the ayah; reads as a reply to a battle, not a standalone line."
+    },
+    {
+      "ref": "30:21",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "10:57",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "2:152",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "3:200",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "6:162",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "14:41",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "7:199",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "20:46",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Fragment: \"He said\" and \"you twain\" have no speaker or addressees in the ayah; needs the preceding ayah."
+    },
+    {
+      "ref": "33:41",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "32:7",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "33:70",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "12:87",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Needs the Joseph narrative: names Joseph and his brother with no introduction; not readable alone."
+    },
+    {
+      "ref": "25:74",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Re-fetched via Quran MCP: translation exact; Arabic identical after NFC. Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "15:49",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "16:78",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "11:115",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "7:55",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "31:14",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "17:53",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "65:3",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "62:10",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "36:82",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "39:53",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "21:107",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "16:18",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "21:83",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "18:10",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "19:47",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Fragment: speakers and the \"thee\" addressee are not identified in the ayah; needs the surrounding story."
+    },
+    {
+      "ref": "41:34",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "29:69",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Theme label does not fit: the ayah is about striving and guidance, not trust."
+    },
+    {
+      "ref": "112:1-2",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Theme label does not fit: Surah al-Ikhlas states the oneness of Allah; \"remembrance\" is not what the text says."
+    },
+    {
+      "ref": "67:3",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "93:3-4",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "23:118",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "55:13",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "31:17",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "20:114",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "49:10",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "3:160",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "88:17-18",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "71:10",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "35:2",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "42:43",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "26:83",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "25:63",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "25:58",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "95:4",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "89:27-28",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "3:8",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "39:10",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "28:24",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Fragment: \"he\", \"their flock\" and \"them\" need the preceding ayahs (Musa at Madyan); not readable alone."
+    },
+    {
+      "ref": "2:263",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "6:102",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "18:46",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "94:5-6",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "76:9",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "50:16",
+      "text": "pass",
+      "suitability": "fail",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Theme label does not fit: the ayah speaks of Allah knowing and being near to man; \"hope\" is not stated."
+    },
+    {
+      "ref": "99:7",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "16:128",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    },
+    {
+      "ref": "23:96",
+      "text": "pass",
+      "suitability": "pass",
+      "reason": "Arabic and translation match the quran-full.json snapshot byte-for-byte (script). Editorially self-contained, family-suitable, theme label fits."
+    }
+  ],
+  "followUp": {
+    "at": "Thu Nov 12 17:19:44 BST 2026",
+    "by": "orchestrating run",
+    "removed": [
+      "12:87",
+      "19:47",
+      "20:46",
+      "28:24",
+      "3:139"
+    ],
+    "rethemed": {
+      "29:69": "guidance",
+      "112:1-2": "oneness",
+      "50:16": "nearness"
+    },
+    "count": 66,
+    "note": "The five ayat that need their surrounding passage were removed; the three with a poor theme label were relabelled. All 66 remaining records pass."
+  }
+}
