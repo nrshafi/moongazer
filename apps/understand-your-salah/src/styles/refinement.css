@@ -40,3 +40,18 @@ h1{font-size:clamp(2.1rem,4vw,3.2rem)}.intro .eyebrow{margin-bottom:0}.intro h1{
 /* Compact header (P5): logo and short name at every width; tagline hidden below 720 px (above); an All apps link to the directory. */
 .brand{min-width:0}.brand-mark{flex-shrink:0}.brand>span:last-child{min-width:0;overflow-wrap:anywhere}nav>a.all-apps{white-space:nowrap}
 @media(max-width:520px){nav>a.nav-sources{display:none}}
+/* "How this works" drawer (P5): a native details panel. First child of .sidebar: top of the sidebar on desktop, directly after the activity on phones (the sidebar stacks below it). */
+.how-it-works{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);border-top:2px solid color-mix(in srgb,var(--accent) 43%,var(--line))}
+.sidebar>.how-it-works{order:-1}
+.how-it-works>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:10px 20px;font-weight:650;font-size:.95rem;color:var(--accent-ink);list-style:none}
+.how-it-works>summary::-webkit-details-marker{display:none}
+.how-it-works>summary::after{content:'+';margin-left:auto;font-size:1.2rem;line-height:1;color:var(--muted)}
+.how-it-works[open]>summary::after{content:'\2212'}
+.how-it-works[open]>summary{border-bottom:1px solid var(--line)}
+.how-it-works-body{padding:16px 20px 20px;font-size:.84rem;line-height:1.7;color:var(--muted)}
+.how-it-works-body>:first-child{margin-top:0}.how-it-works-body>:last-child{margin-bottom:0}
+.how-it-works-body h3{font-size:.95rem;color:var(--ink);margin:16px 0 6px}
+.how-it-works-body ol,.how-it-works-body ul{padding-left:20px;margin:0 0 10px}
+@media(max-width:860px){.sidebar>.how-it-works{grid-column:1/-1}}
+@media(max-width:580px){.how-it-works{border-radius:13px}}
+@media print{.how-it-works{display:none}}
