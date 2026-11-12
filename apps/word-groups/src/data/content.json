@@ -691,7 +691,7 @@
     },
     {
       "id": "lost-peoples",
-      "title": "Peoples and rulers in 89:6–10",
+      "title": "Named in 89:6–10",
       "kind": "ayat",
       "tier": 2,
       "terms": [
@@ -709,7 +709,7 @@
           "translationUrl": "https://quran.com/89:6-10?translations=19"
         }
       ],
-      "note": "The passage asks how the Lord dealt with A’ad, many-columned Iram, Thamud and Pharaoh. The spellings follow Pickthall."
+      "note": "The passage asks how the Lord dealt with A’ad, many-columned Iram, Thamud and Pharaoh: two tribes, a many-columned place and a ruler. The spellings follow Pickthall."
     },
     {
       "id": "plagues",
@@ -1459,7 +1459,7 @@
       "title": "Threshold",
       "level": "Starter",
       "groups": [
-        "animals",
+        "muhammad-titles",
         "isa-signs",
         "qul",
         "hajj-places"
@@ -1543,48 +1543,10 @@
       "title": "Waymark",
       "level": "Mixed",
       "groups": [
-        "prophets",
+        "animals",
         "prophet-surahs",
         "day-night",
         "prophet-qualities-mixed"
-      ],
-      "alternates": [
-        {
-          "terms": [
-            "Hud",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Nuh",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        }
       ]
     },
     {
@@ -1594,47 +1556,9 @@
       "level": "Mixed",
       "groups": [
         "prophets",
-        "prophet-surahs",
+        "animals",
         "fruit",
         "prophet-qualities-mixed"
-      ],
-      "alternates": [
-        {
-          "terms": [
-            "Hud",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Nuh",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        }
       ]
     },
     {
@@ -1643,7 +1567,7 @@
       "title": "Sundial",
       "level": "Mixed",
       "groups": [
-        "qualities",
+        "body",
         "ayat-kursi",
         "last-day-surahs",
         "lost-peoples"
@@ -1789,7 +1713,7 @@
       "groups": [
         "ikhlas-lines",
         "creation-stages",
-        "people-surahs",
+        "root-hamd",
         "places"
       ]
     },
@@ -2053,6 +1977,41 @@
         "prophets"
       ],
       "reason": "Solomon appears in both."
+    },
+    {
+      "groups": [
+        "prophets",
+        "prophet-surahs"
+      ],
+      "reason": "Nuh (Noah) is named in 6:84 and is also a surah name; Yusuf is a surah name too, so the board would have a second full solution."
+    },
+    {
+      "groups": [
+        "last-day-surahs",
+        "qualities"
+      ],
+      "reason": "Al-Haqqah (The Reality) shares the root ح ق ق with Truth in 103:3."
+    },
+    {
+      "groups": [
+        "people-surahs",
+        "places"
+      ],
+      "reason": "Saba (Sheba, 34:15) names a dwelling-place and could fit places."
+    },
+    {
+      "groups": [
+        "isa-signs",
+        "animals"
+      ],
+      "reason": "A clay bird can read as an animal."
+    },
+    {
+      "groups": [
+        "isa-signs",
+        "animal-titles"
+      ],
+      "reason": "A clay bird can read as an animal."
     }
   ]
 }

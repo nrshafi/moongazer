@@ -3,7 +3,7 @@
   "contentItem": "C3",
   "batch": 6,
   "recordedAt": "2026-11-12",
-  "method": "Boards assembled by script from the verified groups: four groups per board, sixteen distinct terms, at most one surah-name group and one root group, at least three different tiers, no pair listed in `incompatible`, and no term of one group occurring in another group's passage text. Boards that keep the prophets-named-in-6:84 group with the prophet surah-name group record Yusuf as an accepted alternate. Level is Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more. Titles are neutral words that do not hint at any group. No new Quran text was added, so no Quran MCP call was needed.",
+  "method": "Boards assembled by script from the verified groups: four groups per board, sixteen distinct terms, at most one surah-name group and one root group, at least three different tiers, no pair listed in `incompatible`, and no term of one group occurring in another group's passage text. Level is Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more. Titles are neutral words that do not hint at any group. No new Quran text was added, so no Quran MCP call was needed.",
   "calls": [],
   "items": [
     {
@@ -277,14 +277,14 @@
       "level": "Starter",
       "groups": [
         {
-          "id": "animals",
-          "kind": "ayat",
+          "id": "muhammad-titles",
+          "kind": "prophet",
           "tier": 2,
           "terms": [
-            "Cattle",
-            "Horses",
-            "Mules",
-            "Donkeys"
+            "Witness",
+            "Bringer of good tidings",
+            "Warner",
+            "Lamp"
           ]
         },
         {
@@ -665,6 +665,13 @@
         "textOverlapPairs": []
       },
       "alternates": []
+    }
+  ],
+  "revisions": [
+    {
+      "item": "board-05",
+      "commit": "C3.09",
+      "change": "Groups were animals, isa-signs, qul, hajj-places. \"Clay bird\" (3:49) can read as an animal, so animals was swapped for muhammad-titles (same tier 2, so the level and title stay). isa-signs with animals and with animal-titles is now in incompatible."
     }
   ]
 }

@@ -37,7 +37,12 @@
     {
       "id": "board-26",
       "result": "fail",
-      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: Saba (34:15, Sheba, named as a dwelling-place) reads as a place and could fit the \"places\" group on this board. The pair people-surahs / places is not in incompatible and no alternate is recorded."
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: Saba (34:15, Sheba, named as a dwelling-place) reads as a place and could fit the \"places\" group on this board. The pair people-surahs / places is not in incompatible and no alternate is recorded.",
+      "followUp": {
+        "commit": "C3.09",
+        "note": "Groups were ikhlas-lines, creation-stages, people-surahs, places. Saba (34:15, Sheba) could fit places. people-surahs was swapped for root-hamd (tier 4). people-surahs with places is now in incompatible.",
+        "status": "fixed by the author; result left as fail until a fresh verifier re-checks it"
+      }
     },
     {
       "id": "board-27",

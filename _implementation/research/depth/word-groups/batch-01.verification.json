@@ -32,7 +32,12 @@
     {
       "id": "lost-peoples",
       "result": "fail",
-      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Fit/title (editorial): the title \"Peoples and rulers\" does not fit Iram. 89:7 gives \"many-columned Iram\" as a place, not a people or a ruler. Retitle (for example \"Peoples and a ruler\") or drop Iram. Tier 2 plausible."
+      "reason": "Exact text: every passage equals _implementation/research/quran-full.json (script check, arabic and translation, 104/104 passages in content.json). Quran MCP: fetch_grounding_rules read; fetch_translation en-pickthall for the first passage matches the committed English exactly. Fit/title (editorial): the title \"Peoples and rulers\" does not fit Iram. 89:7 gives \"many-columned Iram\" as a place, not a people or a ruler. Retitle (for example \"Peoples and a ruler\") or drop Iram. Tier 2 plausible.",
+      "followUp": {
+        "commit": "C3.09",
+        "note": "Title was \"Peoples and rulers in 89:6–10\", which did not fit Iram (89:7 names a many-columned place). Retitled \"Named in 89:6–10\" and the note now says two tribes, a place and a ruler. Terms and passages unchanged.",
+        "status": "fixed by the author; result left as fail until a fresh verifier re-checks it"
+      }
     },
     {
       "id": "plagues",

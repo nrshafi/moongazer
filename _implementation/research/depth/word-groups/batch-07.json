@@ -3,7 +3,7 @@
   "contentItem": "C3",
   "batch": 7,
   "recordedAt": "2026-11-12",
-  "method": "Boards assembled by script from the verified groups: four groups per board, sixteen distinct terms, at most one surah-name group and one root group, at least three different tiers, no pair listed in `incompatible`, and no term of one group occurring in another group's passage text. Boards that keep the prophets-named-in-6:84 group with the prophet surah-name group record Yusuf as an accepted alternate. Level is Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more. Titles are neutral words that do not hint at any group. No new Quran text was added, so no Quran MCP call was needed.",
+  "method": "Boards assembled by script from the verified groups: four groups per board, sixteen distinct terms, at most one surah-name group and one root group, at least three different tiers, no pair listed in `incompatible`, and no term of one group occurring in another group's passage text. Level is Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more. Titles are neutral words that do not hint at any group. No new Quran text was added, so no Quran MCP call was needed.",
   "calls": [],
   "items": [
     {
@@ -79,14 +79,14 @@
       "level": "Mixed",
       "groups": [
         {
-          "id": "prophets",
+          "id": "animals",
           "kind": "ayat",
           "tier": 2,
           "terms": [
-            "Dawud",
-            "Sulayman",
-            "Ayyub",
-            "Yusuf"
+            "Cattle",
+            "Horses",
+            "Mules",
+            "Donkeys"
           ]
         },
         {
@@ -136,44 +136,7 @@
         "incompatiblePairsOnBoard": [],
         "textOverlapPairs": []
       },
-      "alternates": [
-        {
-          "terms": [
-            "Hud",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Nuh",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        }
-      ]
+      "alternates": []
     },
     {
       "id": "board-13",
@@ -193,14 +156,14 @@
           ]
         },
         {
-          "id": "prophet-surahs",
-          "kind": "surah",
+          "id": "animals",
+          "kind": "ayat",
           "tier": 2,
           "terms": [
-            "Yunus",
-            "Hud",
-            "Nuh",
-            "Ibrahim"
+            "Cattle",
+            "Horses",
+            "Mules",
+            "Donkeys"
           ]
         },
         {
@@ -229,7 +192,7 @@
       "checks": {
         "sixteenDistinctTerms": true,
         "normalizedTermsDistinct": true,
-        "surahGroups": 1,
+        "surahGroups": 0,
         "rootGroups": 0,
         "distinctTiers": [
           1,
@@ -239,44 +202,7 @@
         "incompatiblePairsOnBoard": [],
         "textOverlapPairs": []
       },
-      "alternates": [
-        {
-          "terms": [
-            "Hud",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Nuh",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Ibrahim",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        },
-        {
-          "terms": [
-            "Yunus",
-            "Hud",
-            "Nuh",
-            "Yusuf"
-          ],
-          "note": "Yusuf is also the name of a surah, so this is a real connection. On this board he belongs with the prophets named together in 6:84."
-        }
-      ]
+      "alternates": []
     },
     {
       "id": "board-14",
@@ -285,14 +211,14 @@
       "level": "Mixed",
       "groups": [
         {
-          "id": "qualities",
+          "id": "body",
           "kind": "ayat",
           "tier": 3,
           "terms": [
-            "Belief",
-            "Good works",
-            "Truth",
-            "Endurance"
+            "Eyes",
+            "Tongue",
+            "Lips",
+            "Hands"
           ]
         },
         {
@@ -742,6 +668,23 @@
         "textOverlapPairs": []
       },
       "alternates": []
+    }
+  ],
+  "revisions": [
+    {
+      "item": "board-12",
+      "commit": "C3.09",
+      "change": "Groups were prophets, prophet-surahs, day-night, prophet-qualities-mixed. Nuh is named in 6:84 and is also a surah name, so there was a second full solution. prophets was swapped for animals (tier 2). prophets with prophet-surahs is now in incompatible and the Yusuf alternates are removed."
+    },
+    {
+      "item": "board-13",
+      "commit": "C3.09",
+      "change": "Groups were prophets, prophet-surahs, fruit, prophet-qualities-mixed. Same 6:84 problem as board-12. prophet-surahs was swapped for animals (tier 2). The Yusuf alternates are removed."
+    },
+    {
+      "item": "board-14",
+      "commit": "C3.09",
+      "change": "Groups were qualities, ayat-kursi, last-day-surahs, lost-peoples. Al-Haqqah shares the root ح ق ق with Truth in 103:3. qualities was swapped for body (tier 3). last-day-surahs with qualities is now in incompatible."
     }
   ]
 }

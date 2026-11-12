@@ -32,7 +32,12 @@
     {
       "id": "board-05",
       "result": "fail",
-      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: \"Clay bird\" (3:49) is a bird and could be read as an animal, which fits the \"animals\" group also on this board (16:5-8). The pair is not in incompatible and no alternate is recorded. Fix: record an alternate or move one group."
+      "reason": "Structure: 4 groups, 16 distinct terms, level matches the tier sum. Title is distinct from the other 29 and reveals no term or group title (checked by script). Alternate not recorded: \"Clay bird\" (3:49) is a bird and could be read as an animal, which fits the \"animals\" group also on this board (16:5-8). The pair is not in incompatible and no alternate is recorded. Fix: record an alternate or move one group.",
+      "followUp": {
+        "commit": "C3.09",
+        "note": "Groups were animals, isa-signs, qul, hajj-places. \"Clay bird\" (3:49) can read as an animal, so animals was swapped for muhammad-titles (same tier 2, so the level and title stay). isa-signs with animals and with animal-titles is now in incompatible.",
+        "status": "fixed by the author; result left as fail until a fresh verifier re-checks it"
+      }
     },
     {
       "id": "board-06",

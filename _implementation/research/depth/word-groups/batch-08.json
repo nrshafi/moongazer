@@ -3,7 +3,7 @@
   "contentItem": "C3",
   "batch": 8,
   "recordedAt": "2026-11-12",
-  "method": "Boards assembled by script from the verified groups: four groups per board, sixteen distinct terms, at most one surah-name group and one root group, at least three different tiers, no pair listed in `incompatible`, and no term of one group occurring in another group's passage text. Boards that keep the prophets-named-in-6:84 group with the prophet surah-name group record Yusuf as an accepted alternate. Level is Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more. Titles are neutral words that do not hint at any group. No new Quran text was added, so no Quran MCP call was needed.",
+  "method": "Boards assembled by script from the verified groups: four groups per board, sixteen distinct terms, at most one surah-name group and one root group, at least three different tiers, no pair listed in `incompatible`, and no term of one group occurring in another group's passage text. Level is Starter when the four tiers add up to 8 or less, Mixed for 9 or 10, Challenging for 11 or more. Titles are neutral words that do not hint at any group. No new Quran text was added, so no Quran MCP call was needed.",
   "calls": [],
   "items": [
     {
@@ -365,14 +365,14 @@
           ]
         },
         {
-          "id": "people-surahs",
-          "kind": "surah",
+          "id": "root-hamd",
+          "kind": "root",
           "tier": 4,
           "terms": [
-            "Ar-Rum",
-            "Quraysh",
-            "Saba",
-            "Al-Ahzab"
+            "ٱلْحَمْدُ",
+            "ٱلْحَمِيدِ",
+            "ٱلْحَـٰمِدُونَ",
+            "مَّحْمُودًا"
           ]
         },
         {
@@ -390,8 +390,8 @@
       "checks": {
         "sixteenDistinctTerms": true,
         "normalizedTermsDistinct": true,
-        "surahGroups": 1,
-        "rootGroups": 0,
+        "surahGroups": 0,
+        "rootGroups": 1,
         "distinctTiers": [
           2,
           3,
@@ -665,6 +665,50 @@
         "textOverlapPairs": []
       },
       "alternates": []
+    }
+  ],
+  "revisions": [
+    {
+      "item": "board-26",
+      "commit": "C3.09",
+      "change": "Groups were ikhlas-lines, creation-stages, people-surahs, places. Saba (34:15, Sheba) could fit places. people-surahs was swapped for root-hamd (tier 4). people-surahs with places is now in incompatible."
+    }
+  ],
+  "incompatibleAddedInC309": [
+    {
+      "groups": [
+        "prophets",
+        "prophet-surahs"
+      ],
+      "reason": "Nuh (Noah) is named in 6:84 and is also a surah name; Yusuf is a surah name too, so the board would have a second full solution."
+    },
+    {
+      "groups": [
+        "last-day-surahs",
+        "qualities"
+      ],
+      "reason": "Al-Haqqah (The Reality) shares the root ح ق ق with Truth in 103:3."
+    },
+    {
+      "groups": [
+        "people-surahs",
+        "places"
+      ],
+      "reason": "Saba (Sheba, 34:15) names a dwelling-place and could fit places."
+    },
+    {
+      "groups": [
+        "isa-signs",
+        "animals"
+      ],
+      "reason": "A clay bird can read as an animal."
+    },
+    {
+      "groups": [
+        "isa-signs",
+        "animal-titles"
+      ],
+      "reason": "A clay bird can read as an animal."
     }
   ]
 }

@@ -119,13 +119,9 @@ describe('accepted alternates', () => {
     expect(matchAlternate(['Yunus', 'Yunus', 'Nuh', 'Yusuf'], [alt])).toBeNull();
   });
   test('an alternate is not a group, so match() never solves it and the app does not count it as a miss', () => {
-    const board = puzzles.find(p => (p as { alternates?: unknown }).alternates)!;
-    const bag = (board as { alternates: Alternate[] }).alternates;
-    const remaining = board.groups.map(gid);
-    for (const a of bag) {
-      expect(matchAlternate([...a.terms].reverse(), bag)).toBe(a);
-      expect(match(a.terms, remaining).group).toBeNull();
-    }
+    const remaining = ['prophets', 'prophet-surahs', 'day-night', 'fruit'].map(gid);
+    expect(match(alt.terms, remaining).group).toBeNull();
+    expect(matchAlternate([...alt.terms].reverse(), [alt])).toBe(alt);
   });
 });
 

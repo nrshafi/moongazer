@@ -296,14 +296,14 @@
       "id": "lost-peoples",
       "kind": "ayat",
       "tier": 2,
-      "title": "Peoples and rulers in 89:6–10",
+      "title": "Named in 89:6–10",
       "terms": [
         "A’ad",
         "Iram",
         "Thamud",
         "Pharaoh"
       ],
-      "note": "The passage asks how the Lord dealt with A’ad, many-columned Iram, Thamud and Pharaoh. The spellings follow Pickthall.",
+      "note": "The passage asks how the Lord dealt with A’ad, many-columned Iram, Thamud and Pharaoh: two tribes, a many-columned place and a ruler. The spellings follow Pickthall.",
       "passages": [
         {
           "ref": "89:6-10",
@@ -515,6 +515,13 @@
         "q1",
         "t1"
       ]
+    }
+  ],
+  "revisions": [
+    {
+      "item": "lost-peoples",
+      "commit": "C3.09",
+      "change": "Title was \"Peoples and rulers in 89:6–10\", which did not fit Iram (89:7 names a many-columned place). Retitled \"Named in 89:6–10\" and the note now says two tribes, a place and a ruler. Terms and passages unchanged."
     }
   ]
 }

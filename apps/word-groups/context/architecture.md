@@ -50,7 +50,7 @@ Stored records use the body app slug `word-groups` and a colon, with `at` and `v
 
 - Selection: `dailyItem(n)` = `puzzles[dailyIndex(n, 30, 40)]` (bank = data order). Before `DAILY_EPOCH` the day number is 0: Practice is the default and Daily shows "The first daily puzzle opens on <date>." Same-day reload shows the stored result. A daily board ends after 4 mistakes (all groups are then revealed) or on "Give up and reveal".
 - Tiers: each group has `tier` 1 to 4, shown as text ("Tier 1 · most direct" to "Tier 4 · least direct") with chip and row styling from the family tokens (a thicker left border per tier), so colour is never the only signal.
-- Accepted alternates: a board may list `alternates` (four terms plus a note). Selecting exactly those terms shows the note and counts no miss; the set is never solved. Two boards that keep the prophets named in 6:84 with the prophet surah names use this for Yusuf.
+- Accepted alternates: a board may list `alternates` (four terms plus a note). Selecting exactly those terms shows the note and counts no miss; the set is never solved. No board uses an alternate today: pairs that would create one (for example `prophets` with `prophet-surahs`, since Noah is named in 6:84 and Yusuf is a surah name) are listed in `incompatible` and kept off boards.
 - Share: `Word Groups #N · 4 groups, 1 mistake` then `word-groups.moongazer.tech`; never a group name, term or board id. Copy and WhatsApp come from `renderSessionEnd`.
 - Remind me daily: a time input (default 20:00) and a button that downloads `word-groups-daily.ics` from `dailyReminderIcs` (Blob and object URL). No request, no permission.
 - Counter ids: `daily-<N>` in Daily, the board id in Practice. The hook points above stay as they were.

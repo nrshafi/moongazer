@@ -95,9 +95,15 @@ describe('no valid alternative groupings left unhandled', () => {
         for (const id of p.groups) expect(byId(id).terms.every(t => a.terms.includes(t))).toBe(false);
       }
     }
-    expect(P.some(p => (p.alternates?.length ?? 0) > 0)).toBe(true);
   });
-  test('pairs recorded as incompatible never share a board', () => {
+  test('the pairs found by verification are recorded as incompatible', () => {
+    const has = (a: string, b: string) => incompatible.some(x => x.groups.includes(a) && x.groups.includes(b));
+    expect(has('prophets', 'prophet-surahs')).toBe(true);
+    expect(has('last-day-surahs', 'qualities')).toBe(true);
+    expect(has('people-surahs', 'places')).toBe(true);
+    expect(has('isa-signs', 'animals')).toBe(true);
+  });
+  test('every pair recorded as incompatible never shares a board', () => {
     expect(incompatible.length).toBeGreaterThan(10);
     for (const pair of incompatible) {
       expect(pair.reason.length).toBeGreaterThan(5);
