@@ -1,0 +1,7 @@
+---
+// "How this works" drawer (P5, DESIGN.md section 5). One native <details> holds instructions, caveats and evidence notes.
+// Place it as the first child of the app's `.sidebar` (top of the sidebar on desktop; the sidebar stacks directly after the activity on phones).
+interface Props { open?: boolean }
+const { open = false } = Astro.props;
+---
+<details class="how-it-works" open={open}><summary>How this works</summary>{' '}<div class="how-it-works-body"><slot /></div></details>
