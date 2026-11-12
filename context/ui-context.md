@@ -101,3 +101,15 @@ Retain the current typography, colors, logos and activity layouts. Make home hea
 ## Shell after the merges (D2c, 12 November 2026)
 
 The shared shell shows no "moved" banner and no alternate canonical; every page canonicalises to itself. The merged sections keep their own pages (Ayah Threads `/themes/`, Seerah Timeline `/challenge/`, Everyday Akhlaq `/business/`, Is It in the Quran? `/claims/`) with no banner, import button or link to a retired app.
+
+## P5 design rules (from 12 November 2026)
+
+The design source of truth is the root `DESIGN.md` (families, tokens with computed contrast, typography, archetypes, shared components) plus one `apps/<slug>/DESIGN.md` per app and `homepage/DESIGN.md` for the directory. Summary of the binding rules:
+- **Activity within 600 px:** at 390 × 844 and 375 × 812 the first control or activity card starts ≤ 600 px from the top, in both themes; each app records its measured value.
+- **Colour = subject family** (`config.accent`: `teal`, `gold`, `blue`, `violet`); small text uses `--accent-ink`, text on accent fills uses `--on-accent`. **Layout = archetype** (Playboard, Scriptoria, Dossier, Sanctuary, Hearth).
+- **Fonts:** DM Sans, Newsreader, Amiri; JetBrains Mono only for metadata chips in Playboard and Dossier apps. All local.
+- **Patterns:** compact hero (H1 = app name, ≤ 12-word descriptor); "How this works" `<details>` drawer holds instructions and caveats; end-of-session pattern (result → what you learned → share → next app → report an error); learning guide as an accordion after the activity.
+- **Motif:** one decorative `public/motif.svg` per app (≤ 8 KB, `aria-hidden`), geometry/objects/plants/sky only; the shared star watermark is removed.
+- **Islamic UI rules:** no images of people or animals; no music, bells or sound effects.
+- **Print and projector:** print shows the activity only; projector mode (×1.35 text, simpler chrome) is opt-in and saved only when the visitor opts into saving.
+- **No apex short links** (D2c): each app's own host is linked directly.
