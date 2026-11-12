@@ -2,6 +2,7 @@
 import learning from '../data/learning.json';
 import {JUZ, SURAHS} from '../lib/pages';
 import Shell from '../layouts/Shell.astro';
+import Feedback from '../components/Feedback.astro';
 import '../styles/planner.css';
 ---
 <Shell title="Hifz Planner"><section class="intro"><span class="eyebrow">Make room for revision</span> <h1>{learning.heading}</h1> <p>Plan new memorization and revision around your week. Answer three steps, see this week’s checklist, and adjust any estimate you disagree with.</p></section><div class="workspace"><section class="panel wizard" aria-labelledby="wizard-title"><div class="panel-head"><div><h2 id="wizard-title">Plan your memorization</h2><p>Your own estimates, shown in full.</p></div><span class="pill" id="step-label">Step 1 of 3</span></div><div class="panel-body"><div class="progress-track" role="progressbar" aria-label="Wizard progress" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1"><span id="step-bar" style="width:33.3%"></span></div><form id="wizard" class="top-gap" novalidate>
@@ -53,6 +54,7 @@ import '../styles/planner.css';
 <fieldset class="vocab-setting"><legend>Labels for the checklist</legend><label class="check"><input type="radio" name="vocab" value="plain" checked/> Plain words: new lesson, recent revision, old revision</label><label class="check"><input type="radio" name="vocab" value="sabaq"/> Sabaq, sabqi, manzil</label></fieldset>
 <div class="plan-tools"><div class="actions"><button class="button secondary small" type="button" id="missed">I missed a day</button></div><p class="micro" id="replan-note" role="status"></p><label class="check-label"><input id="remember-checks" type="checkbox"/> Remember my check-offs for 30 days</label><p class="micro" id="check-note" aria-live="polite"></p></div>
 <div id="results" aria-live="polite"></div>
+<p class="micro plan-feedback">Something wrong with this plan? <Feedback compact /></p>
 <div class="wizard-nav"><button class="button secondary" type="button" data-back>Back</button><button class="button secondary" type="button" id="reset">Start again</button></div>
 </fieldset>
 </form>

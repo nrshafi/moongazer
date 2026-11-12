@@ -1,6 +1,7 @@
 import {calendar} from './engine';
 import {byId, read, write, forget, esc, announce} from './utils';
 import {countSelectedPages, type Selection} from './pages';
+import {track} from './counter';
 import {
   buildPlan, checkKey, defaultAssumptions, inputError, isCheckoffList, isVocab, isWizardInput, RAMADAN_SUGGESTION, replanFrom,
   sessionViews, thisWeek, weeks, VOCAB, withDailyReminder, type BuildResult, type Kind, type SessionView, type Vocab, type WizardInput,
@@ -141,7 +142,7 @@ function makePlan(): boolean {
   } else {
     forget('plan');
   }
-  // P4.7: track('activity_completed', {itemId: 'plan'}) belongs here once the counter helper exists.
+  track('activity_completed','plan');
   renderPlan();
   return true;
 }
@@ -198,11 +199,15 @@ function renderPlan() {
     <div class="calendar-section">${calendarHtml(views)}</div>
     <label class="check top-gap"><input id="daily-reminder" type="checkbox"/> Add a daily reminder for the plan’s dates to the calendar file</label><div class="actions top-gap"><button class="button secondary" type="button" id="csv">Download CSV</button><button class="button secondary" type="button" id="ics">Calendar file (first ${Math.min(90, rows.length)} sessions)</button><button class="button secondary" type="button" id="print-week">Print this week</button></div>
     <p class="micro">Dates are estimates from your study days and assumptions. Check-offs do not change the schedule; use “I missed a day” to re-plan from today.</p>`;
-  byId('csv').onclick = () => download('quran-study-plan.csv', 'date,new_pages,review_pages,total_minutes\r\n' + rows.map(r => [r.date, r.newPages.toFixed(3), r.reviewPages.toFixed(3), r.total.toFixed(2)].join(',')).join('\r\n'), 'text/csv');
+  byId('csv').onclick = () => {
+    track('share_clicked','plan');
+    download('quran-study-plan.csv', 'date,new_pages,review_pages,total_minutes\r\n' + rows.map(r => [r.date, r.newPages.toFixed(3), r.reviewPages.toFixed(3), r.total.toFixed(2)].join(',')).join('\r\n'), 'text/csv');
+  };
   byId('ics').onclick = () => {
     const now = new Date();
     const text = calendar(rows, now);
     const withReminder = byId<HTMLInputElement>('daily-reminder').checked ? withDailyReminder(text, rows, now) : text;
+    track('share_clicked','plan');
     download('quran-study-plan.ics', withReminder, 'text/calendar');
   };
   byId('print-week').onclick = () => {
@@ -355,7 +360,7 @@ form.querySelectorAll<HTMLButtonElement>('[data-next]').forEach(button => {
       const error = validateStepOne();
       setError('error-1', error);
       if (error) return;
-      // P4.7: track('activity_started', {itemId: 'plan'}) belongs at this first step once the counter helper exists.
+      track('activity_started','plan');
       showStep(2);
     } else if (step === 2) {
       if (makePlan()) showStep(3);
