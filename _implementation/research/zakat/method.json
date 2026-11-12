@@ -308,7 +308,26 @@
           "chapterHeading": "One who acquires wealth"
         }
       ],
-      "positions": [],
+      "positions": [
+        {
+          "label": "Count the whole amount at the yearly date, including money added during the year",
+          "attribution": {
+            "who": "Fatwa Center at Islamweb",
+            "sourceId": "IW-138743",
+            "locator": "Fatwa text, second part"
+          },
+          "summary": "Pay zakat on the entire amount whether it increased or decreased during the year; what matters is that the nisab is met, even if one gets more money after the lunar year began."
+        },
+        {
+          "label": "Count only what has been held for the full lunar year",
+          "attribution": {
+            "who": "Fatwa Center at Islamweb",
+            "sourceId": "IW-426541",
+            "locator": "First point of the answer"
+          },
+          "summary": "Zakat is due on the amount in the bank account that reached the nisab and stayed a full lunar year; an amount that reached the nisab but has not been held a full year is not due before then, unless it is profit from the amount already held a year. Paying in advance on the newer amount is permitted."
+        }
+      ],
       "sources": [
         {
           "id": "SUNNAH",
@@ -324,11 +343,18 @@
           "title": "Assessing the Nisaab of bank notes (article 7543, citing Fatwa 92234, 05/01/2011)",
           "publisher": "Fatwa Center at Islamweb",
           "accessed": "2026-11-12"
+        },
+        {
+          "id": "IW-426541",
+          "url": "https://www.islamweb.net/en/fatwa/426541/deducting-the-value-of-debt-from-the-nisaab-when-paying-zakaah",
+          "title": "Deducting the Value of Debt from the Nisaab When Paying Zakaah (Fatwa 426541, 25-8-2020)",
+          "publisher": "Fatwa Center at Islamweb",
+          "accessed": "2026-11-12"
         }
       ],
       "notes": [
         "A lunar year is about 354 days; the engine takes it as a statement, not a date calculation.",
-        "How a fluctuating balance is handled over the year is a separate question. Islamweb's article (IW-138743) says to pay on the entire amount whether it increased or decreased during the year, because what matters is meeting the nisab; this is one body's guidance, not included as a difference because no second source was opened."
+        "How a fluctuating balance is handled is a separate question. Islamweb's article (IW-138743) and its fatwa 426541 give different answers (see positions). Both are from the same body, so they are listed as that body's two statements, not as two independent schools; the engine need not model this and the explainer can leave it to the visitor's scholar."
       ]
     },
     {
@@ -428,9 +454,18 @@
           "attribution": {
             "who": "Egypt's Dar al-Ifta",
             "sourceId": "EG-7705",
-            "locator": "Answer"
+            "locator": "Answer (also in fatwas 6754 and 6759)"
           },
-          "summary": "Defines the nisab as 85 grams of 21 carat gold according to market price; the same wording appears in fatwas 6754, 6759 and 7746."
+          "summary": "Defines the nisab as 85 grams of 21 carat gold according to market price. The 21-carat wording appears in fatwas 7705, 6759 and 6754 and does not appear in fatwa 7746."
+        },
+        {
+          "label": "85 g gold (no carat stated)",
+          "attribution": {
+            "who": "Egypt's Dar al-Ifta",
+            "sourceId": "EG-7746",
+            "locator": "Answer, first and last paragraphs"
+          },
+          "summary": "Gives the nisab as '85 grams of gold' (twice) without naming a carat."
         },
         {
           "label": "85 g of 24-karat gold",
@@ -490,6 +525,20 @@
           "accessed": "2026-11-12"
         },
         {
+          "id": "EG-6759",
+          "url": "https://dar-alifta.org/en/fatwa/details/6759/is-zakah-payable-on-gold-and-silver-jewelry-that-a-woman-has",
+          "title": "Is zakah payable on gold and silver jewelry that a woman has? (Fatwa 6759, 25 Nov 2013)",
+          "publisher": "Egypt's Dar al-Ifta",
+          "accessed": "2026-11-12"
+        },
+        {
+          "id": "EG-6754",
+          "url": "https://dar-alifta.org/en/fatwa/details/6754/should-i-pay-zakat-on-my-bank-account-before-deducting-the-debt-i-owe-for-purchas",
+          "title": "Should I pay zakat on my bank account before deducting the debt I owe for purchasing an apartment? (Fatwa 6754, 25 Nov 2013)",
+          "publisher": "Egypt's Dar al-Ifta",
+          "accessed": "2026-11-12"
+        },
+        {
           "id": "EG-7746",
           "url": "https://dar-alifta.org/en/fatwa/details/7746/zakah-on-collected-and-uncollected-debts",
           "title": "Zakah on collected and uncollected debts (Fatwa 7746, 23 Feb 2015)",
@@ -514,7 +563,7 @@
       ],
       "notes": [
         "The calculator should show the visitor the published options and let them (or their scholar) choose; this record picks none.",
-        "Egypt's figure is a weight of 21-carat gold, which is not the same quantity of pure gold as 85 g of 24-karat; the sources do not say how Egypt converts. Treat it as a different published convention, not a rounding.",
+        "Egypt's 21-carat figure (fatwas 7705, 6759, 6754) is a weight of 21-carat gold, which is not the same quantity of pure gold as 85 g of 24-karat; the sources do not say how Egypt converts. Fatwa 7746 says only '85 grams of gold'. Treat these as different published conventions, not rounding.",
         "Left out: the Turkish Diyanet figures (80.18 g gold, 561.2 g silver) appeared in search snippets only; the Diyanet PDF could not be opened, so they are not recorded. AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it.",
         "Examples in this file use 85 g and 595 g only as test inputs; that is not an endorsement."
       ]
@@ -827,9 +876,9 @@
           "attribution": {
             "who": "Fatwa Center at Islamweb; Egypt's Dar al-Ifta; General Iftaa' Department, Jordan",
             "sourceId": "IW-81355",
-            "locator": "Answer, third paragraph; EG-7746; JO-3712 conclusion"
+            "locator": "IW-81355 Answer, third paragraph; EG-7746 Answer; JO-3712 conclusion"
           },
-          "summary": "Cash and trade goods are measured against the gold nisab (Egypt: 85 g of 21-carat gold; Jordan: 85 g of 24-karat gold)."
+          "summary": "Cash and trade goods are measured against the gold nisab. Islamweb: cash worth 85 g of gold. Egypt (7746): merchandise equal to 85 grams of gold or more. Jordan (3712): the equivalent of 85 grams of 24-karat gold."
         },
         {
           "label": "Use the lower of the gold and silver nisab values",
@@ -839,15 +888,6 @@
             "locator": "Answer"
           },
           "summary": "'the majority of the scholars valued it to the least Nisaab from both [gold and silver]'; a few valued banknotes only to gold."
-        },
-        {
-          "label": "Use the lower value, to let more people give",
-          "attribution": {
-            "who": "Mufti of the Federal Territory (Malaysia)",
-            "sourceId": "MY-1811",
-            "locator": "Brief Answer"
-          },
-          "summary": "Where two values are possible it is better to choose the lower, so more people give and the fund reaches those in need. (This fatwa compares the current gold price with the zakat institution's set value; it applies the same reasoning to units of the mithqal.)"
         },
         {
           "label": "Combine gold and silver to reach either nisab",
@@ -921,9 +961,10 @@
         }
       ],
       "notes": [
-        "Options for the engine: gold nisab only; silver nisab only is not offered because no accessible source stating a silver-only rule was opened (it is left out, see below); lower of the two. The calculator asks the visitor to choose.",
+        "Options for the engine: gold nisab only; lower of the two. A silver-only option is not offered because no accessible source stating a silver-only rule was opened. The calculator asks the visitor to choose.",
         "Left out: a silver-only position (no accessible source opened); a Hanafi attribution for silver (Darul Ifta Birmingham lists both silver and gold amounts but states no choice). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it.",
-        "IW-81355 and IW-138743 say they are guidance from the same centre; two pages from one body are not counted as independent."
+        "IW-81355 and IW-138743 say they are guidance from the same centre; two pages from one body are not counted as independent.",
+        "Moved from positions: the Mufti of the Federal Territory (MY-1811) says that, between the current gold price and the zakat institution's fixed gold-based nisab for the year, it is better to choose the lower, so more people can give. That is about gold price versus the institution's set nisab; it says nothing about gold versus silver or combining, so it is not a position on this difference. The page also says the nisab for savings and income follows the gold and silver nisabs (85 g / 595 g)."
       ]
     },
     {
@@ -1002,41 +1043,41 @@
         "No amounts are recorded anywhere in this record. Use the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
         "Conditions stated by the fatwa bodies, not by a hadith opened here: Egypt's Dar al-Ifta (7732) says it is for every person or head of a family who has food in excess of what he needs on the last day of Ramadan; Jordan's article (5786) lists being Muslim, the sunset ending Ramadan, and surplus beyond basic needs, and says whoever supports another also pays for them. These are those bodies' statements.",
         "Timing detail: sunnah.com 1511 reports the Companions' practice of giving a day or two early; the Jordan article gives the due time as the arrival of the night of Eid. The engine need not decide this; the explainer can show the range.",
-        "The hadith text uses units (sa') and foods; this record gives no weight conversion because the sunnah.com English glosses differ (Bukhari 1503 gloss 'approx 3 kg') and a gram figure would be a choice."
+        "The hadith text uses units (sa') and foods; this record gives no weight conversion, because a gram figure would be a choice and no amounts are recorded."
       ]
     },
     {
       "id": "fitr-food-vs-cash",
       "title": "Difference: zakat al-fitr in food or in cash value",
-      "statement": "Scholars differ on whether zakat al-fitr may be paid as its cash value instead of as food.",
+      "statement": "Scholars differ on whether zakat al-fitr may be paid as its cash value instead of as food. Two positions are set out below, each attributed to its source.",
       "basis": [],
       "positions": [
         {
-          "label": "Paying cash value is permitted",
+          "label": "Food of the staple diet",
           "attribution": {
-            "who": "Hanafi school, as stated by Egypt's Dar al-Ifta and Jordan's General Iftaa' Department",
+            "who": "Imam al-Shafi'i, as stated by Egypt's Dar al-Ifta; and Jordan's General Iftaa' Department states it",
             "sourceId": "EG-6417",
-            "locator": "Answer"
+            "locator": "Answer; JO-4209 The Answer"
           },
-          "summary": "Egypt quotes Al-Sarakhsi's Al-Mabsut (vol. 3, pp. 107-8): 'It is permissible in our school to pay the equivalent value of wheat.' Jordan (4209): 'Hanafi scholars have permitted giving Zakat al-Fitr as monetary value, considering it more beneficial for the poor and easier for the giver.'"
+          "summary": "Egypt's Dar al-Ifta states that Imam al-Shafi'i 'contends otherwise' to the permissibility of paying value, because zakat had originally been prescribed in kind. Jordan's General Iftaa' Department states that zakat al-fitr should be given as the staple food of the land."
         },
         {
-          "label": "Pay it in food (not cash)",
+          "label": "Cash value",
           "attribution": {
-            "who": "Imam al-Shafi'i, as stated by Egypt's Dar al-Ifta; the default ruling according to Jordan's General Iftaa' Department",
+            "who": "Hanafi school, as stated by Egypt's Dar al-Ifta and by Jordan's General Iftaa' Department",
             "sourceId": "EG-6417",
-            "locator": "Answer; JO-4209"
+            "locator": "Answer; JO-4209 The Answer"
           },
-          "summary": "Egypt: 'Imam Al-Shafi'i ... contends otherwise' because zakat was originally prescribed in kind. Jordan: the default is the staple food of the land, 'the correct ruling according to all Islamic schools of thought', with Hanafi as the exception."
+          "summary": "Egypt's Dar al-Ifta states that 'It is permissible in our school to pay the equivalent value of wheat', quoting Al-Sarakhsi's Al-Mabsut (vol. 3, pp. 107-8). Jordan's General Iftaa' Department states that Hanafi scholars have permitted giving it as monetary value, considering it more beneficial for the poor and easier for the giver."
         },
         {
-          "label": "Cash is acceptable where staple food is abundant; in kind where food is scarce",
+          "label": "Depends on the food available where the payer lives",
           "attribution": {
             "who": "Contemporary scholars, as reported by Egypt's Dar al-Ifta",
             "sourceId": "EG-7732",
             "locator": "Answer, third paragraph"
           },
-          "summary": "'The criterion ... is the availability of food, especially staple foodstuff, in abundance'; where food is scarce it must be paid in kind."
+          "summary": "Egypt's Dar al-Ifta reports that where staple food is abundant cash may be better for the poor, and where food is scarce or hard to get it is not acceptable to pay cash; 'The criterion ... is the availability of food, especially staple foodstuff, in abundance.'"
         }
       ],
       "sources": [
@@ -1066,7 +1107,8 @@
       "notes": [
         "The calculator does not compute zakat al-fitr. The explainer shows these positions and the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
         "JO-4209 also gives an amount for Jordan; it is deliberately not recorded.",
-        "Left out: Maliki and Hanbali positions on cash fitr (no accessible source opened). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it."
+        "Left out: Maliki and Hanbali positions on cash fitr (no accessible source opened). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it.",
+        "Jordan's page (JO-4209) also ranks the options in its own words and makes a statement about all schools; that framing is the Department's and is deliberately not reproduced in this record, which sets the positions out without ranking them."
       ]
     }
   ],
@@ -1121,18 +1163,14 @@
           "atOrAboveNisab": false,
           "zakatDue": 0
         },
-        "ifSilver": {
-          "nisabValue": 595,
-          "atOrAboveNisab": true,
-          "zakatDue": 25
-        },
         "ifLowerOfTheTwo": {
           "nisabValue": 595,
           "atOrAboveNisab": true,
-          "zakatDue": 25
+          "zakatDue": 25,
+          "note": "Lower of the gold and silver nisab values (IW-120628)."
         }
       },
-      "note": "Same cash gives different results by choice: gold-only (IW-138743) gives 0; the lower of the two (IW-120628) gives 25. The 'ifSilver' row is arithmetic only; no accessible source stating a silver-only rule was opened. Shows why the app must make the visitor choose."
+      "note": "Same cash gives different results by choice: gold-only (IW-138743) gives 0; the lower of the two (IW-120628) gives 25. Shows why the app must make the visitor choose. No silver-only row: no opened source applies a silver-only nisab."
     },
     {
       "id": "ex-3-debts",

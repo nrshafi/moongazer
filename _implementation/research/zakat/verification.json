@@ -151,7 +151,8 @@
           "note": "Statement is descriptive; no ruling is chosen."
         }
       ],
-      "reason": "Pass, with the advisory above."
+      "reason": "Pass, with the advisory above.",
+      "followUp": "C17.03 (advisory): the note now says IW-426541 addresses balance fluctuation; both Islamweb statements are recorded as attributed positions."
     },
     {
       "id": "nisab-textual",
@@ -235,7 +236,8 @@
           "note": "Lists all published conversions and chooses none; 85 g and 595 g are flagged as test inputs."
         }
       ],
-      "reason": "Fails on one cross-reference: fatwa 7746 does not use the '21 carat' wording. Everything else matches. Editorial check only."
+      "reason": "Fails on one cross-reference: fatwa 7746 does not use the '21 carat' wording. Everything else matches. Editorial check only.",
+      "followUp": "C17.03: the 21-carat gloss is now attributed only to Egypt 7705, 6759 and 6754 (each re-opened in ego-browser); 7746 is listed separately as '85 grams of gold', no carat. Entry sources now include EG-6754 and EG-6759."
     },
     {
       "id": "diff-jewellery",
@@ -403,7 +405,8 @@
           "note": "No option is made default. Silver-only is correctly left out."
         }
       ],
-      "reason": "Fails on two attributions: the MY-1811 'lower value' position does not address metal choice, and the '21-carat' gloss is not on EG-7746."
+      "reason": "Fails on two attributions: the MY-1811 'lower value' position does not address metal choice, and the '21-carat' gloss is not on EG-7746.",
+      "followUp": "C17.03: MY-1811 'use the lower value' removed from positions and moved to notes with what it actually says (current gold price versus the institution's fixed nisab). The Egypt gloss now reads per page: 7746 '85 grams of gold'; 21-carat only where it appears."
     },
     {
       "id": "fitr-facts",
@@ -450,7 +453,8 @@
           "note": "Descriptive. 'a small payment of food' follows the hadith wording; the food-versus-cash question is a separate entry. No review claim."
         }
       ],
-      "reason": "Pass, with the advisory on the 'approx 3 kg' note."
+      "reason": "Pass, with the advisory on the 'approx 3 kg' note.",
+      "followUp": "C17.03 (advisory): removed the 'approx 3 kg' quotation from the notes; no amounts anywhere."
     },
     {
       "id": "fitr-food-vs-cash",
@@ -482,7 +486,8 @@
           "note": "No amount is recorded; JO-4209's Jordan amount is deliberately omitted (confirmed on the page)."
         }
       ],
-      "reason": "Fails on neutrality: the Jordan wording makes food the 'default' and 'correct ruling'."
+      "reason": "Fails on neutrality: the Jordan wording makes food the 'default' and 'correct ruling'.",
+      "followUp": "C17.03: positions restated neutrally and attributed ('Egypt's Dar al-Ifta states ...', 'Jordan's General Iftaa' Department states ...'); 'default ruling', 'correct ruling according to all schools' and 'exception' removed from positions; a note says the Jordan phrasing is not repeated as fact. Re-check needed."
     }
   ],
   "examples": [
@@ -533,7 +538,8 @@
           "note": "No cited source supports a silver-only treatment, and the record states it deliberately does not offer silver-only because no source was opened. The row would put an unsupported option into the engine's tests. Remove it, or add a source."
         }
       ],
-      "reason": "Fails on the unsupported ifSilver row. The other two rows are correct and supported."
+      "reason": "Fails on the unsupported ifSilver row. The other two rows are correct and supported.",
+      "followUp": "C17.03: removed the ifSilver row (no opened source applies a silver-only nisab); gold-only and lower-of-two rows kept."
     },
     {
       "id": "ex-3-debts",
