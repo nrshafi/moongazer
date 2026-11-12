@@ -101,3 +101,7 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## 2026-11-11 (Asia/Dhaka) — P2 rename, interface words, honorifics
 
 Quran Memorization Workload Calculator -> Hifz Planner. Title shortened to "Hifz Planner — Estimate new hifz and revision time | Moongazer" (62 chars). "Calculator" wording in learning.json and sources.astro became "planner"; related name "Is This Actually in the Quran?" -> "Is It in the Quran?". content.json unchanged (hash unchanged). No mentions of the Prophet in editorial text. Honorifics recorded in architecture.md. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 19 pass / 0 fail (88 expects); `bun run build` 4 pages built. `grep -rli` of dist for the old names and retired phrases finds nothing in the app pages.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.

@@ -105,3 +105,7 @@ Added `/claims/` and 12 `/claims/<id>/` pages rebuilt from the casebook cases (c
 Wired the three counter events in `src/lib/app.ts` and `src/lib/claims-page.ts` and added Report an error links to results and claim status. Hook points are in `context/architecture.md`.
 
 Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 31 pass, 0 fail; `bun run build` 17 pages. The built JS contains the track calls. The DOM run on a preview host was not done; events are suppressed off moongazer.tech, so a live check needs production.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Changed: architecture.md no longer describes a moved release or import (D2c).

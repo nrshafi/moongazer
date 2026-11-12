@@ -79,7 +79,7 @@ Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in
 
 ## Common claims (P3 T3.6)
 
-- Routes `/claims/` and `/claims/<id>/` (12 claims). Data: `claims` in `src/data/content.json`; Quran evidence records are byte-copies of `corpus.json`. Logic in `src/lib/claims.ts` (categories, keyword matching, bookmark validator) and `claims-page.ts` (Save toggles, Check form). There is no saved-item import and no moved release (D2c, `plan/implementation/00-INDEX.md`).
+- Routes `/claims/` and `/claims/<id>/` (12 claims). Data: `claims` in `src/data/content.json`; Quran evidence records are byte-copies of `corpus.json`. Logic in `src/lib/claims.ts` (categories, keyword matching, bookmark validator) and `claims-page.ts` (Save toggles, Check form). No saved data is imported from other apps (D2c, `plan/implementation/00-INDEX.md`).
 - Storage key added: `claim-bookmarks` (list of claim ids, 30-day expiry like every key).
 - The verdict stays in a closed `<details>` (Show the answer) without JavaScript; with JavaScript it is hidden until Check.
 - `/claims/` is registered by a temporary shim in `src/pages/claims/index.astro` because `seo.ts` has no index-page registration; remove it once seo.ts supports it.
