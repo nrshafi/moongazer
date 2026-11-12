@@ -105,3 +105,11 @@ Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 14:09 (Asia/Dhaka) - P5 per-app wave (T5.7, T5.8, T5.11, T5.14)
+
+Compact hero, map-pin motif, filters before the map, Pinned/No pin chips, Copy my list hidden until a save, How this works drawer (index and place page), end-of-session block on place pages. Existing print button kept; the DESIGN.md "Neither" print note was a draft and was corrected. Removed duplicate: the intro sentence about following the map only where evidence supports a pin now appears once, in the drawer. Not added: the Iram and ten-unpinned-entries limit (needs the owner's confirmation per DESIGN.md).
+
+First control top (search field): 244 px at 390 x 844 and 375 x 812, identical in light and dark; 323 px at 1440 x 1000. No horizontal scroll, no script errors. Opened /place/makkah/-style page: end block appears and share text is the plain site line. Confirmed Copy my list is hidden on load and appears after the first Save.
+
+Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun run test` 17 pass; `bun run build` 19 pages.
