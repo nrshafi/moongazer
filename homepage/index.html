@@ -10,42 +10,33 @@
 <body>
   <a href="#library" class="skip-link">Skip to the app library</a>
   <header class="site-header wrap">
-    <a href="/" class="brand" aria-label="Moongazer home"><img src="/favicon.svg" alt="" width="32" height="32"><span>moongazer<span class="brand-dot">.</span></span></a>{' '}
-    <nav aria-label="Main navigation"><a href="#library">The app library</a> <a href="/about/">Our approach</a></nav>
-    <a class="header-link" href="https://guess-the-surah.moongazer.tech/">Start with a little curiosity <span aria-hidden="true">↗</span></a>
+    <a href="/" class="brand" aria-label="Moongazer home"><img src="/favicon.svg" alt="" width="32" height="32"><span>moongazer<span class="brand-dot">.</span></span></a> 
+    <nav aria-label="Main navigation"><a href="#library">Apps</a> <a href="#today">Today</a> <a href="/?pick=kids#library">Families</a> <a href="/about/">About</a></nav>
   </header>
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner wrap">
-        <div class="hero-copy"><p class="eyebrow"><span class="small-star" aria-hidden="true">✧</span> Free Islamic learning apps</p>
-          <h1 id="hero-title">Free Islamic<br> learning <em>apps.</em></h1>
-          <p class="hero-description">Explore sixteen free browser apps for Quran, Seerah, history and everyday practice. Choose a reading tool, try a game, or follow a subject guide. No account needed.</p>{' '}
-          <a class="button primary" href="#library">Find your next discovery <span aria-hidden="true">↓</span></a>{' '}
-          <p class="hero-note">16 free apps <span aria-hidden="true">·</span> No account needed <span aria-hidden="true">·</span> At your own pace</p>
-        </div>{' '}
-        <div class="moon-art"><img src="/moon.svg" alt="An illustrated crescent moon surrounded by stars and orbital paths" width="580" height="510" fetchpriority="high" decoding="async"><span class="moon-caption">There is always more to discover.</span></div>
-      </div>{' '}
-      <div class="hero-bottom wrap"><span>Follow your curiosity.</span> <span>Quran <span aria-hidden="true">/</span> Seerah <span aria-hidden="true">/</span> Everyday learning</span> <span class="scroll-hint" aria-hidden="true">Explore below ↓</span></div>
-    </section>
-    <section class="featured wrap" aria-labelledby="featured-title">
-      <div class="section-intro"><p class="eyebrow">A good place to begin</p><h2 id="featured-title">A small start. <em>A new perspective.</em></h2></div>{' '}
-      <div class="featured-grid">
-        <a class="feature-card feature-surah" href="https://guess-the-surah.moongazer.tech/">
-          <div class="feature-text"><img class="feature-logo" src="/logos/guess-the-surah.svg" alt="" width="52" height="52"><span class="feature-label">For the curious</span> <h3>One clue closer<br>to the Quran.</h3> <p>How well do you know the chapters? Follow the clues in Guess the Surah.</p> <span class="feature-action">Open Guess the Surah <span aria-hidden="true">↗</span></span></div>{' '}
-          <div class="surah-art" aria-hidden="true"><span class="orbit-label">A MOMENT OF DISCOVERY</span><div class="clue-star">✧</div> <div class="clue-line"></div><span class="clue-pill">Read the clue</span> <span class="clue-pill second">Find the chapter</span></div>
-        </a>{' '}
-        <a class="feature-card feature-salah" href="https://understand-your-salah.moongazer.tech/">
-          <img class="feature-logo" src="/logos/understand-your-salah.svg" alt="" width="52" height="52"><span class="feature-label">For your everyday</span><div class="prayer-window" aria-hidden="true"><span>✧</span><i></i></div> <h3>Bring meaning<br>into your prayer.</h3> <p>Read, listen and reflect with Understand Your Salah.</p> <span class="feature-action">Open Understand Your Salah <span aria-hidden="true">↗</span></span>
-        </a>
+        <img class="hero-mark" src="/moon.svg" alt="" width="580" height="510" fetchpriority="high" decoding="async">
+        <h1 id="hero-title">Free Islamic learning games and tools</h1>
+        <p class="hero-description">Sixteen free apps for the Quran, Seerah and everyday practice. No account needed.</p>
+        <div class="hero-actions"><a class="button primary" href="https://guess-the-surah.moongazer.tech/">Play today's puzzle</a> <a class="button ghost" href="#library">Browse all apps</a></div>
       </div>
     </section>
+    <div class="start-row wrap">
+      <section class="tonight" id="today" aria-labelledby="today-title">
+        <p class="eyebrow">Tonight on Moongazer</p>
+        <h2 id="today-title">Ten quiet minutes, one clue at a time.</h2>
+        <p>Read a clue, guess the surah, then open the reference behind the answer.</p>
+        <a class="button primary" href="https://guess-the-surah.moongazer.tech/">Play Guess the Surah</a>
+      </section>
+    </div>
     <section class="subject-guides wrap" id="learning-paths" aria-labelledby="paths-title"><div class="section-intro"><p class="eyebrow">Find a useful starting point</p><h2 id="paths-title">A path into <em>your subject.</em></h2></div> <div class="subject-grid"><!-- SUBJECT_GUIDES --></div></section>
     <section class="library wrap" id="library" aria-labelledby="library-title">
-      <div class="library-heading"><div><p class="eyebrow">Choose your own path</p><h2 id="library-title">The app <em>library.</em></h2></div> <p>Something to play. Something to ponder.<br>Pick what speaks to you today.</p></div>{' '}
-      <div class="library-controls" hidden><div class="filters" role="group" aria-label="Filter apps by subject"><button type="button" data-filter="all" aria-pressed="true">All apps <span>20</span></button><button type="button" data-filter="Quran" aria-pressed="false">Quran</button><button type="button" data-filter="Seerah &amp; history" aria-pressed="false">Seerah &amp; history</button><button type="button" data-filter="Everyday practice" aria-pressed="false">Everyday practice</button><button type="button" data-filter="Games &amp; challenges" aria-pressed="false">Games &amp; challenges</button></div>
-        <label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><span class="sr-only">Search the app library</span><input type="search" placeholder="Find an app…" autocomplete="off" maxlength="160"></label></div>{' '}
-      <div class="results-line"><span id="result-count" role="status" aria-live="polite" aria-atomic="true">16 apps to explore</span> <span>Always free. Open to everyone.</span></div>{' '}
-      <div class="app-grid"><!-- APP_CATALOG --></div>{' '}
+      <div class="library-heading"><div><p class="eyebrow">Choose your own path</p><h2 id="library-title">The app <em>library.</em></h2></div> <p>Something to play. Something to ponder.<br>Pick what speaks to you today.</p></div> 
+      <div class="library-controls" hidden><div class="filters" role="group" aria-label="Filter apps by subject"><button type="button" data-filter="all" aria-pressed="true">All apps <span>16</span></button><button type="button" data-filter="Quran" aria-pressed="false">Quran</button><button type="button" data-filter="Seerah &amp; history" aria-pressed="false">Seerah &amp; history</button><button type="button" data-filter="Everyday practice" aria-pressed="false">Everyday practice</button><button type="button" data-filter="Games &amp; challenges" aria-pressed="false">Games &amp; challenges</button></div>
+        <label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><span class="sr-only">Search the app library</span><input type="search" placeholder="Find an app…" autocomplete="off" maxlength="160"></label></div> 
+      <div class="results-line"><span id="result-count" role="status" aria-live="polite" aria-atomic="true">16 apps to explore</span> <span>Always free. Open to everyone.</span></div> 
+      <div class="app-grid"><!-- APP_CATALOG --></div> 
       <div class="empty-state" hidden><h3>No apps found</h3> <p>Try another search or explore the full library.</p><button type="button" class="button reset">Show all apps</button></div>
     </section>
     <section class="common-questions wrap" aria-labelledby="questions-title"><div class="section-intro"><p class="eyebrow">Before you begin</p><h2 id="questions-title">A few useful <em>answers.</em></h2></div><!-- COMMON_QUESTIONS --><p><a href="/about/">Read about the sources and report a correction</a></p></section>
