@@ -31,6 +31,12 @@
             "note": "Retitled so it no longer echoes the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Keeping your word' still names the key idea of the correct option, being truthful in promises. The teaching's 'keep a certain kind of company in promises and oaths' also hints at it. Retitle neutrally, for example 'Good company', and reword the teaching to avoid promises and oaths."
       }
     },
     {
@@ -60,6 +66,12 @@
             "note": "Teaching rewritten to give context without stating the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Before you assume' echoes the correct option 'much suspicion' and was not changed by C16.04, so the first pass missed it. The new teaching is faithful to Al-Muyassar on 49:12. Retitle, for example to 'Respecting others'."
       }
     },
     {
@@ -83,6 +95,12 @@
             "note": "Retitled so it no longer echoes the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Calm replies' restates the key idea of the correct option, answering harm with something better, so it gives the answer away. Retitle, for example to 'Responding to harm'. The new teaching is faithful to Al-Muyassar on 41:34."
       }
     },
     {
@@ -100,6 +118,12 @@
             "note": "Retitled so it no longer echoes the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Two builders' names the building that the correct option describes, which gives away 'raising the foundations'. The teaching's 'as they worked' also hints at the answer. Retitle, for example to 'A shared prayer', and change 'as they worked' to 'as they prayed', which matches Al-Muyassar on 2:127."
       }
     },
     {
@@ -123,6 +147,12 @@
             "note": "Honorific added after Harun."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "Neither the title nor the teaching gives the knot away. The explanation's attribution matches Al-Muyassar on 20:25 (Musa asks for Harun as helper), and both honorifics are present."
       }
     },
     {

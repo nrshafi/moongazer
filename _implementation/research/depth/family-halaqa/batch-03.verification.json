@@ -37,6 +37,12 @@
             "note": "Retitled so it no longer echoes the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'After a mistake' is fine, but the teaching names Adam without '(peace be upon him)', which breaks the honorific rule. Change it to 'Adam (peace be upon him) and Hawwa'; the Al-Muyassar wording on 7:23 is faithful."
       }
     },
     {
@@ -66,6 +72,12 @@
             "note": "Teaching rewritten to give context without stating the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The new teaching matches Al-Muyassar on 3:133-134 (hurry toward forgiveness, and Allah loves the good-doers) and does not name the correct option. The title is neutral."
       }
     },
     {
@@ -89,6 +101,12 @@
             "note": "Teaching rewritten to give context without stating the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The new teaching 'a description of Allah' is faithful to Al-Muyassar on 112:1-4 and does not give away the answer 'He is Allah, the One'."
       }
     },
     {
@@ -112,6 +130,12 @@
             "note": "Retitled so it no longer echoes the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The title 'Growing well' echoes only the passage's word 'groweth', not the answer 'prays'. No other new text needed checking."
       }
     },
     {
@@ -129,6 +153,12 @@
             "note": "Retitled so it no longer echoes the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The title is neutral and the activity uses beans only. No prophet is named."
       }
     },
     {
@@ -146,6 +176,12 @@
             "note": "Retitled so it no longer echoes the correct option."
           }
         ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The title 'The month's end' does not echo the answer 'ease, not hardship', and the teaching does not give it away."
       }
     }
   ]
