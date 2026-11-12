@@ -27,21 +27,15 @@
   "related": [
     {
       "name": "Hifz Planner",
-      "description": "Estimate new memorization and revision time for your week",
+      "description": "Plan new memorization and revision around your week",
       "kind": "Planner",
-      "url": "https://quran-memorization-workload-calculator.moongazer.tech/"
+      "url": "https://hifz-planner.moongazer.tech/"
     },
     {
       "name": "Everyday Akhlaq",
       "description": "Everyday character dilemmas: choose, then read the sources",
       "kind": "Scenarios",
-      "url": "https://everyday-akhlaq-simulator.moongazer.tech/"
-    },
-    {
-      "name": "Family Halaqa",
-      "description": "Ten-minute Islamic activities to do together",
-      "kind": "Activities",
-      "url": "https://family-islamic-learning-challenges.moongazer.tech/"
+      "url": "https://everyday-akhlaq.moongazer.tech/"
     }
   ],
   "collection": {

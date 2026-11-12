@@ -18,7 +18,7 @@ Lockfile: `bun.lock` copied from `apps/the-seerah-detective` with the same resol
 ## System boundaries
 
 - `src/pages/`: `index.astro` (calculator), `method/index.astro`, `zakat-al-fitr/index.astro`, `sources.astro`, `404.astro`, `privacy.astro`, `sitemap.xml.ts` (shared).
-- `src/layouts/Shell.astro`, `src/lib/shell.ts` and `src/styles/` provide the shell, theme control and styles. Shell is shared; `shell.ts` and `global.css` are copied unchanged from `the-seerah-detective`.
+- `src/layouts/Shell.astro`, `src/lib/shell.ts` and `src/styles/` provide the shell, theme control and styles. Shell is shared (synced by `_implementation/sync-shared.ts`); `shell.ts` and `global.css` were brought up to date from `hifz-planner` (blue family) when P7 merged the scaffold.
 - `src/lib/utils.ts` (shared) owns storage: `read`, `write`, `forget`, `namespace`.
 - `src/lib/seo.ts` (shared) derives page metadata from `config.json` and `seo.json`. Every route needs an entry there. The app has no collections yet, so only `/`, `/sources/`, `/privacy/` and `/404.html` exist in the metadata table.
 - `src/lib/import.ts` (shared) is the saved-item import protocol. This app does not yet use it.
