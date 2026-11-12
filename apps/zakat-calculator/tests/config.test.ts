@@ -47,10 +47,13 @@ test('learning guide is consistent with the configured app',()=>{
   }
 });
 
-test('no ruling, figure or source is claimed while method content is pending',()=>{
-  expect(sources).toEqual([]);
-  expect(provenance.status).toBe('pending');
-  expect(JSON.stringify(learning)).not.toMatch(/\d+(\.\d+)?\s*(g|grams?|dirhams?|dinars?|mithqal)\b/i);
+test('provenance records the verified method record and no scholarly review is claimed',()=>{
+  expect(provenance.status).toBe('verified-record');
+  expect(provenance.methodRecord).toBe('_implementation/research/zakat/method.json');
+  expect(provenance.methodRecordSha256).toMatch(/^[0-9a-f]{64}$/);
+  expect(provenance.note).toContain('not a scholarly review');
+  expect(sources.length).toBeGreaterThan(0);
+  for(const source of sources) expect(source.url).toMatch(/^https:\/\//);
 });
 
 test('content checksum matches the LF-normalised content file',()=>{
