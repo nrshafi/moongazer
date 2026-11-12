@@ -4,6 +4,8 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import json,hashlib,re
 from content import ROOT
+# P7: institutional fatwa bodies cited by the Zakat Calculator, each entry verified in _implementation/research/zakat/verification.json.
+ZAKAT_SOURCES=('dar-alifta.org','www.dar-alifta.org','islamweb.net','www.islamweb.net','aliftaa.jo','www.aliftaa.jo','muftiwp.gov.my','daruliftabirmingham.co.uk')
 
 def lf_sha256(path):
     return hashlib.sha256(path.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
@@ -77,7 +79,7 @@ for app in sorted((ROOT/'apps').iterdir()):
             if url.scheme or url.netloc:
                 assert link in parsed.links,f'External runtime asset: {link}'
                 assert url.scheme=='https',link
-                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','api.quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
+                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','api.quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org')+ZAKAT_SOURCES,link
                 continue
             if not url.path:continue
             target=dist/unquote(url.path.lstrip('/')) if url.path.startswith('/') else path.parent/unquote(url.path)
