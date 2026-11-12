@@ -71,3 +71,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (Seerah Timeline)
+
+Compact hero: count chip "36 events", H1 "Seerah Timeline", one descriptor line, decorative `public/motif.svg` (drawn through a CSS mask in the accent colour, hidden below 580 px). One link line to `/challenge/`, then search and filters. The notice, noscript text and "Dates need context" limit live once in the `How this works` drawer in `.event-aside`. On phones the list comes first and the inspector is a fixed bottom drawer (`.drawer-open`); on desktop it is sticky. Each opened event ends with the shared session-end block. `data-projector` is set on `<body>` by an inline script (the shared Shell cannot set it on `<main>`), so the Projector toggle appears. App CSS: `src/styles/app.css`.

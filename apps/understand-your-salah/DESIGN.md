@@ -38,7 +38,7 @@ Why: the niche shows direction and a place of prayer. It is architecture only, w
 +--------------------------------------+
 ```
 
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (the audio player): 342 px at 390 × 844 and 342 px at 375 × 812, light and dark (T5.14, Chrome headless over `bun run preview`). Desktop 1440 × 1000: 430 px. The lesson search field is at 610 px at 390 × 844, so only the audio-first target is met.
 
 The audio attribution line stays visible under the player. It is a licence requirement, so it does not move into the drawer.
 

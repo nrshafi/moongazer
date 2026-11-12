@@ -105,3 +105,10 @@ Limitations: no browser or DOM run with a stubbed `navigator.sendBeacon`; once-p
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 14:03 (Asia/Dhaka) - P5 wave: Seerah Detective
+
+Changed: compact hero with motif and no eyebrow; intro and "Read with care" moved into a `How this works` drawer (home) and the no-JS note into a drawer on case pages (T5.7); session-end block, result wording from DESIGN.md and pulse on a correct case (T5.8); first screen measured (T5.14). No Print or Projector by design.
+Removed duplicates: the home intro sentence (the descriptor replaces it; the full sentence is kept in the drawer); the separate noscript box on case pages. No limit deleted.
+Measured first control (search) 253 px at 390 and 375, light and dark.
+Validation: `bun run check` 0 errors; `bun run test` 14 pass; `bun run build` ok; headless Chrome at 390, 375, 1440 light and dark without script errors or horizontal scroll; solved one case end to end and confirmed the share text excludes the conclusion.

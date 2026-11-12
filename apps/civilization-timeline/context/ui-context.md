@@ -75,3 +75,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (Civilization Timeline)
+
+Order on the home page: compact hero (chip "24 records", H1, descriptor "24 selected events across 9 regions.", decorative `public/motif.svg` globe, hidden below 580 px), filters, one `How this works` drawer (intro, map note, compare note), "Choose an event" with the event list, then the map with its region keys, then "At the same time…" compare. A comparison shows one line ("Overlap shows dates, not contact.") and the shared session-end block. App CSS: `src/styles/app.css`. No Print or Projector.

@@ -105,3 +105,10 @@ Wired the three anonymous counter events through the shared `track()` helper: ac
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
+
+## 2026-11-12 14:08 (Asia/Dhaka) - P5 wave: Understand Your Salah
+
+Changed: compact hero and motif (T5.6/T5.11); `How this works` drawer with the intro and "About these lessons" notice on the home page and the instruction sentence on lesson pages (T5.7); reading-check result text, pulse and session-end block (T5.8); first screen measured (T5.14). The CC BY-SA audio attribution stays beside the player. No Print or Projector added (lesson pages keep their existing Print button).
+Removed duplicates: the home intro sentence (the descriptor replaces it); the separate notice box. No limit deleted; "Roman guides are approximate" remains beside the Roman guide on lesson pages as well as in the drawer.
+Measured first control (audio player) 342 px at 390 and 375; lesson search field 610 px at 390.
+Validation: `bun run check` 0 errors; `bun run test` 20 pass; `bun run build` ok; headless Chrome at 390, 375, 1440 light and dark with no script errors or horizontal scroll; one reading check run and its share text checked.
