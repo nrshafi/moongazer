@@ -1,0 +1,19 @@
+/* Quran Escape Room P5 Hearth first screen. App-only; uses the existing tokens. */
+.intro{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:none}
+.intro-text{min-width:0}
+.intro .motif{width:190px;height:auto;color:var(--accent);opacity:.55;flex-shrink:0}
+.count-chip{margin-top:10px}
+.library{min-width:0}
+.library.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.lock-preview{color:var(--accent-ink);font-size:1.3rem;letter-spacing:3px}
+.lock-preview-text{font-size:.75rem;letter-spacing:0;font-weight:700;margin-left:8px}
+.lock-track{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0}
+.lock-track li{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;min-height:34px;border:1px solid var(--line);border-radius:99px;font-size:.78rem;color:var(--muted)}
+.lock-track li[aria-current=step]{border-color:var(--accent);background:var(--tint);color:var(--accent-ink);font-weight:700}
+.lock-track li[data-state=open],.lock-track li[data-state=hint]{color:var(--accent-ink)}
+.lock-diamond{font-size:1rem;color:var(--accent)}
+.lock-state{font-weight:700}
+@media(max-width:860px){.library.card-grid{grid-template-columns:1fr}}
+@media(max-width:580px){.intro{display:block}.intro .motif{display:none}.lock-track li{padding:5px 9px;font-size:.72rem}}
+@media print{.intro .motif{display:none}.lock-track{display:none}}
+#room .actions label{display:inline-flex;align-items:center;gap:8px;min-height:44px}

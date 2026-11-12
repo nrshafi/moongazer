@@ -103,3 +103,11 @@ Search Console accepted the expanded root sitemap and shows Success; all 21 site
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Changed: AGENTS.md title now "Quran Escape Room" (was "The Islamic Knowledge Escape Room").
+
+## 2026-11-12 (Asia/Dhaka, 14:10) — P5 wave D: Quran Escape Room Hearth first screen, drawer, session end, motif, print, projector
+
+Done: compact hero and workspace layout, `HowItWorks` drawer on the home and room pages, end-of-session block, `public/motif.svg`, "Print this room" button, Projector on both pages, lock labels (Verify_Me #50).
+
+Removed duplicates: the "Eight rooms. Four locks each." eyebrow became the descriptor; the intro sentence and the sources notice moved into the drawer (the "not a measure of faith or religious merit" limit is kept in the drawer and beside the completion result); the room page's "Read together. Think it through." eyebrow and the "How to play" notice (now the drawer) were removed. The "Copy completion" button was replaced by the shared Copy and WhatsApp buttons, and the inline report link by the shared one. No limit was deleted.
+
+First control (first "Enter room") top: 445 px at 390 × 844 and 375 × 812, light and dark. `bun run check` 0 errors; `bun run test` 20 pass; `bun run build` ok. Browser: no horizontal scroll or script errors at 390, 375 and 1440, light and dark; played a room to the end using the solution reveals, the lock tracker showed "Hint used" for each lock, and the session-end block appeared with a share text that has no theme or answer. Not verified: counter events (production hosts only), a real paper print preview.

@@ -40,7 +40,7 @@ Why: the room is a door, and the four diamonds are its four locks. Plain geometr
 +--------------------------------------+
 ```
 
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top: first control (the first "Enter room" button), top at 445 px at 390 × 844 and 445 px at 375 × 812, light and dark (497 px at 1440 × 1000). Measured with `_implementation/browser-check.mjs` against `bun run preview`.
 
 ## 5. Component states (this app)
 

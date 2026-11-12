@@ -71,3 +71,7 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 Hearth first screen (14:10 Asia/Dhaka, 2026-11-12)
+
+Hero: H1, descriptor "Eight rooms. Four locks each.", an "8 rooms" chip and `public/motif.svg` (an arched doorway with four open diamonds beneath it; hidden below 580 px). The home page is a `.workspace`: two-column room cards and the `HowItWorks` drawer in the sidebar. Room cards show "◇ — ◇ — ◇ — ◇ Locked". A room page has a hero with the room name and a "Room N of 8" chip, a "Print this room" button, a lock tracker (`#lock-track`) with text labels "Locked", "Open" or "Hint used" next to each diamond (Verify_Me #50), and the drawer in the sidebar. Both pages set `data-projector` on `<main>` through a tiny inline script (Shell has no prop for it), so `shell.ts` adds the Projector toggle. App-only CSS is in `src/styles/app.css`.
