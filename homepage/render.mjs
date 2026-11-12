@@ -18,8 +18,7 @@ export function pickChips(apps){
     return `<a class="chip" href="/?pick=${pick.id}#library" data-pick="${pick.id}"${rule}>${escapeHtml(pick.label)}</a>`;
   }).join(' ');
 }
-export const logoFiles={'ayah-threads':'quran-connections','seerah-detective':'the-seerah-detective','everyday-akhlaq':'everyday-akhlaq-simulator','seerah-timeline':'interactive-seerah-timeline','hifz-planner':'quran-memorization-workload-calculator','is-it-in-the-quran':'is-this-actually-in-the-quran','quran-escape-room':'islamic-knowledge-escape-room','stories-of-the-prophets':'stories-of-the-prophets-explorer','places-in-the-quran':'quranic-places-atlas','word-groups':'islamic-concept-connections','understand-your-salah':'understand-salah-lab','parables-of-the-quran':'quranic-parables-studio','civilization-timeline':'islamic-civilization-timeline','why-it-was-revealed':'revelation-context-explorer','family-halaqa':'family-islamic-learning-challenges'};
-export const logo=slug=>'/logos/'+(logoFiles[slug]||slug)+'.svg';
+export const logo=slug=>'/logos/'+slug+'.svg';
 export const audienceLabels={me:'Just me',kids:'With kids',class:'For a class'};
 
 export function structuredData(meta,apps){
