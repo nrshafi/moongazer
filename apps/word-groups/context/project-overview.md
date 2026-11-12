@@ -33,7 +33,7 @@ The app has 40 source-list entries, local source/privacy/404 pages and its own f
 
 In scope: the implemented activity, its source notes, optional temporary state and independent static deployment. Out of scope: accounts, personal profiles, server storage, live AI answers, synchronized multiplayer, trusted public scores and automatic publication.
 
-Categories are intended selections, not exhaustive definitions. Preserve sixteen unique terms per board. Keep this mechanic distinct from Quran Connections’ one-theme passage quiz; no trusted leaderboard is provided.
+Categories are intended selections, not exhaustive definitions. Preserve sixteen unique terms per board. Keep this mechanic distinct from Ayah Threads’ one-theme passage quiz; no trusted leaderboard is provided.
 
 ## Success criteria
 

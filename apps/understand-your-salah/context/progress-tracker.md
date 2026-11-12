@@ -101,3 +101,7 @@ Understand Salah Lab -> Understand Your Salah. Title shortened to "Understand Yo
 ## 2026-11-11 (Asia/Dhaka) — P4.7 counter events and error-report link
 
 Wired the three anonymous counter events through the shared `track()` helper: activity started on "Show meaning" or the first quiz answer, activity completed on the first quiz answer per page, share on "Copy my list" (id `home`, after a non-empty copy). Quiz status id changed to `quiz-feedback` so the footer `#feedback` is unique; compact "Report an error" link added to the quiz panel. Hook points recorded in `context/architecture.md`. Not verified: a browser run that confirms each beacon fires once. Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 22 pass / 0 fail (includes new `tests/events.test.ts`, source-level); `bun run build` 19 pages built.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.

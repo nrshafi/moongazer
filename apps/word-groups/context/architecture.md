@@ -54,7 +54,7 @@ All readings and interactions are public and anonymous. There is no ownership mo
 1. Keep independent `bun.lock`/manifest, static output and no cross-app runtime imports.
 2. Keep canonical quotations literal and attributed. Content changes must update provenance checksums and appropriate source records.
 3. Preserve optional storage, app namespace isolation and operation when storage is blocked.
-4. Preserve the app-specific boundary: Categories are intended selections, not exhaustive definitions. Preserve sixteen unique terms per board. Keep this mechanic distinct from Quran Connections’ one-theme passage quiz; no trusted leaderboard is provided.
+4. Preserve the app-specific boundary: Categories are intended selections, not exhaustive definitions. Preserve sixteen unique terms per board. Keep this mechanic distinct from Ayah Threads’ one-theme passage quiz; no trusted leaderboard is provided.
 5. Host `dist/` at the site's root unless an explicit base-path migration also changes absolute asset and route URLs.
 
 ## Deployment and known cost

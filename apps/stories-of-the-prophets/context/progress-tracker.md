@@ -101,3 +101,7 @@ Checks: `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 10 pass, 0 fai
 Wired the reading check (`src/lib/quiz.ts`) and Copy my list (`src/lib/library.ts`) with the three counter events and a Report an error link on the check result. Hook points are in `context/architecture.md`.
 
 Checks: `bun install --frozen-lockfile`; `bun run check` 0 errors, 0 warnings, 0 hints; `bun test` 18 pass, 0 fail; `bun run build` 29 pages. The DOM run on a preview host was not done; events are suppressed off moongazer.tech.
+
+## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
+
+Nothing changed: AGENTS.md and the five context docs already match the current names, hosts and D2c state.
