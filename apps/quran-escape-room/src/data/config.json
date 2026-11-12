@@ -1,0 +1,8 @@
+{
+  "slug": "quran-escape-room",
+  "name": "Quran Escape Room",
+  "description": "Rooms of Quran puzzles to solve together",
+  "accent": "violet",
+  "nav": "Play",
+  "port": 4329
+}

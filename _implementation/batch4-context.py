@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime, timezone, timedelta
 import json,re
 ROOT=Path(__file__).resolve().parent.parent
-SLUGS=['islamic-civilization-timeline','halal-business-decisions','revelation-context-explorer','family-islamic-learning-challenges','islamic-misinformation-casebook']
+SLUGS=['civilization-timeline','halal-business-decisions','why-it-was-revealed','family-halaqa','islamic-misinformation-casebook']
 stamp=datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=6))).isoformat(timespec='seconds')+' Asia/Dhaka'
 rows={row['app']:row for row in json.loads((ROOT/'_implementation/qa/static-results.json').read_text(encoding='utf-8'))}
 log=(ROOT/'_implementation/qa/batch4/tests.log').read_text(encoding='utf-8')

@@ -13,16 +13,16 @@ test('shared seeds are constrained and shuffling never loses items',()=>{expect(
 for folder in (ROOT/'apps').iterdir():
     if (folder/'src/lib/utils.ts').exists():(folder/'tests/storage.test.ts').write_text(storage,encoding='utf-8')
 tests={
-'quran-connections':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
+'ayah-threads':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
 test('30 complete puzzles have distinct choices and canonical evidence for all three passages',()=>{expect(data.puzzles.length).toBe(30);expect(new Set(data.puzzles.map(p=>p.id)).size).toBe(30);for(const p of data.puzzles){expect(p.passages.length).toBe(3);expect(new Set([p.theme,...p.distractors]).size).toBe(4);expect(p.commentaryUrl).toMatch(/^https:\\/\\/quran.com\\//);for(const passage of p.passages){expect(passage.arabic.length).toBeGreaterThan(3);expect(passage.translation.length).toBeGreaterThan(3);expect(passage.ref).toMatch(/^\\d+:\\d+(-\\d+)?$/);}}});
 ''',
-'the-seerah-detective':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
+'seerah-detective':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
 test('12 investigations have full evidence, a valid conclusion, and primary report references',()=>{expect(data.cases.length).toBe(12);expect(new Set(data.cases.map(c=>c.id)).size).toBe(12);for(const c of data.cases){expect(c.evidence.length).toBe(3);expect(new Set(c.evidence.map(e=>e.id)).size).toBe(3);expect(c.answers.length).toBe(3);expect(c.correct).toBeGreaterThanOrEqual(0);expect(c.correct).toBeLessThan(c.answers.length);expect(c.conclusion.length).toBeGreaterThan(40);for(const e of c.evidence)expect(e.source.url).toMatch(/^https:\\/\\/sunnah.com\\/(bukhari|muslim):/);}});
 ''',
-'everyday-akhlaq-simulator':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
+'everyday-akhlaq':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
 test('all 20 scenarios support every first and second response with a consequence',()=>{expect(data.scenarios.length).toBe(20);expect(new Set(data.scenarios.map(s=>s.id)).size).toBe(20);for(const s of data.scenarios){expect(s.options.length).toBe(3);expect(s.options2.length).toBe(3);for(const first of s.options)for(const second of s.options2){expect(first.consequence.length).toBeGreaterThan(20);expect(second.consequence.length).toBeGreaterThan(20);expect(s.followup.length).toBeGreaterThan(10);expect(s.takeaway.length).toBeGreaterThan(20);}expect(s.passage.ref).toBe(s.ref);expect(s.passage.arabic.length).toBeGreaterThan(5);expect(s.passage.translation.length).toBeGreaterThan(5);}});
 ''',
-'interactive-seerah-timeline':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
+'seerah-timeline':'''import {test,expect} from 'bun:test';import data from '../src/data/content.json';
 test('36 chronological events include source and uncertainty notes',()=>{expect(data.events.length).toBe(36);expect(new Set(data.events.map(e=>e.id)).size).toBe(36);let previous=0;for(const e of data.events){expect(e.year).toBeGreaterThanOrEqual(previous);previous=e.year;expect(e.sources.length).toBeGreaterThan(0);expect(e.uncertainty.length).toBeGreaterThan(30);for(const source of e.sources)expect(source.url).toMatch(/^https:\\/\\/sunnah.com\\/(bukhari|muslim):/);}expect(data.events[0]!.year).toBe(610);expect(Math.floor(data.events.at(-1)!.year)).toBe(632);});
 '''}
 for slug,text in tests.items():(ROOT/'apps'/slug/'tests/content.test.ts').write_text(text,encoding='utf-8')

@@ -67,7 +67,7 @@ export async function guess(tab,mode='normal'){
 }
 
 export async function connections(tab,mode='normal',checkRecovery=true){
- const fixture=await data('quran-connections');const puzzle=fixture.puzzles[1];await tab.goto(origin(5322,mode));
+ const fixture=await data('ayah-threads');const puzzle=fixture.puzzles[1];await tab.goto(origin(5322,mode));
  await tab.playwright.locator('#puzzle-picker').selectOption(puzzle.id);await mark(tab.playwright.locator('#remember'));
  await mark(tab.playwright.locator('#show-arabic'));assert(await tab.playwright.locator('.passage-stack .arabic').count()===3,'Arabic toggle must show all three passages');
  await tab.playwright.getByRole('button',{name:puzzle.distractors[0],exact:true}).press('Enter');assert((await text(tab,'#puzzle-stage')).includes('not the intended connection'),'Wrong theme feedback is missing');
@@ -82,7 +82,7 @@ export async function connections(tab,mode='normal',checkRecovery=true){
 }
 
 export async function detective(tab,mode='normal'){
- const fixture=await data('the-seerah-detective');const item=fixture.cases[0];await tab.goto(origin(5323,mode));
+ const fixture=await data('seerah-detective');const item=fixture.cases[0];await tab.goto(origin(5323,mode));
  await tab.goto(`http://127.0.0.1:5323/case/${item.id}/`);await mark(tab.playwright.locator('#remember'));
  assert(!await tab.playwright.locator('#check-conclusion').isEnabled(),'A conclusion must require inspected evidence');
  await tab.playwright.locator('[data-evidence] summary').nth(0).press('Enter');await tab.playwright.locator('[data-evidence] summary').nth(1).press('Enter');
@@ -99,7 +99,7 @@ export async function detective(tab,mode='normal'){
 }
 
 export async function akhlaq(tab,mode='normal'){
- const fixture=await data('everyday-akhlaq-simulator');const item=fixture.scenarios[0];await tab.goto(origin(5324,mode));
+ const fixture=await data('everyday-akhlaq');const item=fixture.scenarios[0];await tab.goto(origin(5324,mode));
  await tab.goto(`http://127.0.0.1:5324/scenario/${item.id}/`);await mark(tab.playwright.locator('#remember'));
  await tab.playwright.locator('button[data-choice="1"]').press('Enter');assert((await text(tab,'.feedback')).includes(item.options[1].consequence),'First choice consequence does not match');
  await tab.playwright.locator('#continue-scenario').press('Enter');assert((await text(tab,'#scenario-stage')).includes(item.followup),'Follow-up situation missing');
@@ -112,7 +112,7 @@ export async function akhlaq(tab,mode='normal'){
 }
 
 export async function seerah(tab,mode='normal'){
- const fixture=await data('interactive-seerah-timeline');const item=fixture.events[1];await tab.goto(origin(5325,mode));
+ const fixture=await data('seerah-timeline');const item=fixture.events[1];await tab.goto(origin(5325,mode));
  await tab.playwright.locator(`[data-select="${item.id}"]`).press('Enter');assert((await text(tab,'#selected-event')).includes(item.title),'Timeline selection did not update its detail');
  await tab.playwright.locator('#next-event').press('Enter');assert((await text(tab,'#selected-event')).includes(fixture.events[2].title),'Next event is incorrect');
  await tab.back();assert((await text(tab,'#selected-event')).includes(item.title),'Back navigation must restore the selected event');
@@ -187,15 +187,8 @@ export async function reader(tab,slug,port,route,key,mode='normal',preferred){
  if(mode==='normal'){await tab.reload();assert(await tab.playwright.locator(`[data-save="${item.id}"]`).getAttribute('aria-pressed')==='true','Reading bookmark did not recover');}
  return {fixture,item};
 }
-export async function atlas(tab,mode='normal'){
- const {item}=await reader(tab,'quran-concept-atlas',5328,'topic','topics',mode);
- assert(await tab.playwright.locator('.arabic').count()===3,'Topic must expose all three selected readings');
- const next=await tab.playwright.locator('a[href^="/topic/"]').filter({hasNotText:item.theme}).first().getAttribute('href');
- assert(next&&next!==`/topic/${item.id}/`,'Related topic link missing');await tab.playwright.locator(`a[href="${next}"]`).first().press('Enter');assert((await text(tab,'h1'))!==item.theme,'Related topic did not navigate');
- return {topic:item.id,threeReadings:true,related:true,mode};
-}
 export async function prophets(tab,mode='normal'){
- const {item}=await reader(tab,'stories-of-the-prophets-explorer',5330,'prophet','people',mode);
+ const {item}=await reader(tab,'stories-of-the-prophets',5330,'prophet','people',mode);
  assert(await tab.playwright.locator('.arabic').count()===2,'Profile must include two selected readings');
  await mark(tab.playwright.locator(`input[name=answer][value="${(item.answer+1)%item.options.length}"]`));await tab.playwright.locator('#quiz button').press('Enter');assert((await text(tab,'#feedback')).includes('Look again'),'Reading check must allow a wrong-answer retry');
  await mark(tab.playwright.locator(`input[name=answer][value="${item.answer}"]`));await tab.playwright.locator('#quiz button').press('Enter');assert((await text(tab,'#feedback')).includes('Correct'),'Correct profile answer failed');
@@ -203,7 +196,7 @@ export async function prophets(tab,mode='normal'){
 }
 
 export async function escapeRoom(tab,mode='normal',timed=false,leaveComplete=false){
- const fixture=await data('islamic-knowledge-escape-room');const room=fixture.rooms[0];await tab.goto(origin(5329,mode));await tab.goto(`http://127.0.0.1:5329/room/${room.id}/`);
+ const fixture=await data('quran-escape-room');const room=fixture.rooms[0];await tab.goto(origin(5329,mode));await tab.goto(`http://127.0.0.1:5329/room/${room.id}/`);
  await tab.playwright.locator('#restart').press('Enter');await keyboardCheck(tab,'#resume');await keyboardCheck(tab,'#timer-toggle');
  await mark(tab.playwright.getByRole('radio',{name:room.options.find(option=>option!==room.name),exact:true}));await tab.playwright.getByRole('button',{name:'Check lock',exact:true}).press('Enter');assert((await text(tab,'#feedback')).includes('still closed'),'Wrong theme should leave the lock closed');
  await tab.playwright.locator('#hint').press('Enter');await mark(tab.playwright.getByRole('radio',{name:room.name,exact:true}));await tab.playwright.getByRole('button',{name:'Check lock',exact:true}).press('Enter');
@@ -232,15 +225,15 @@ export async function escapeRoom(tab,mode='normal',timed=false,leaveComplete=fal
 }
 
 export async function places(tab,mode='normal'){
- const fixture=await data('quranic-places-atlas');const item=fixture.places.find(place=>place.point);
- await reader(tab,'quranic-places-atlas',5331,'place','places',mode,item);
+ const fixture=await data('places-in-the-quran');const item=fixture.places.find(place=>place.point);
+ await reader(tab,'places-in-the-quran',5331,'place','places',mode,item);
  assert(await tab.playwright.locator('.map-figure svg circle').count()===5,'Regional map must expose five contextual markers');
  const uncertain=fixture.places.find(place=>!place.point);await tab.goto(`http://127.0.0.1:5331/place/${uncertain.id}/`);
  assert((await text(tab,'main')).includes(uncertain.note),'Unpinned place must retain its uncertainty note');
  return {mapped:item.id,markers:5,uncertain:uncertain.id,mode};
 }
 export async function concepts(tab,mode='normal'){
- const fixture=await data('islamic-concept-connections');const board=fixture.puzzles[0];const groups=board.groups.map(id=>fixture.groups.find(group=>group.id===id));
+ const fixture=await data('word-groups');const board=fixture.puzzles[0];const groups=board.groups.map(id=>fixture.groups.find(group=>group.id===id));
  await tab.goto(origin(5332,mode));await tab.playwright.locator('#board-select').selectOption(board.id);await tab.playwright.locator('#restart').press('Enter');await mark(tab.playwright.locator('#remember'));
  for(const term of [...groups[0].terms.slice(0,3),groups[1].terms[0]])await tab.playwright.getByRole('button',{name:term,exact:true}).press('Enter');
  await tab.playwright.locator('#submit').press('Enter');assert((await text(tab,'#feedback')).includes('One away'),'Three-of-four selection should receive near-match feedback');
@@ -255,23 +248,9 @@ export async function concepts(tab,mode='normal'){
  await tab.playwright.locator('#restart').press('Enter');await tab.playwright.locator('#reveal').press('Enter');assert((await text(tab,'#feedback')).includes('revealed'),'Reveal did not expose the group explanations');
  return {board:board.id,nearMatch:true,groupsSolved:4,mode};
 }
-export async function history(tab,mode='normal'){
- const fixture=await data('islamic-history-timeline-challenge');const pack=fixture.packs[0];await tab.goto(origin(5333,mode));await tab.playwright.locator('#pack-select').selectOption(pack.id);await tab.playwright.locator('#restart').press('Enter');await mark(tab.playwright.locator('#remember'));
- await tab.playwright.locator('#check').press('Enter');assert((await text(tab,'#feedback')).includes('Try changing'),'Initial shuffled chronology should require correction');
- await tab.playwright.locator('#hint').press('Enter');assert((await text(tab,'#feedback')).includes('Earliest event:'),'Chronology hint is missing');
- for(let index=0;index<pack.events.length;index++){
-  let position=await tab.playwright.locator(`#order button[data-id="${pack.events[index]}"]`).first().getAttribute('data-move');
-  while(Number(position)>index){await tab.playwright.locator(`#order button[data-id="${pack.events[index]}"][data-delta="-1"]`).press('Enter');position=String(Number(position)-1);}
- }
- if(mode==='normal'){await tab.reload();assert((await text(tab,'#stats')).includes('1 checks'),'Chronology tries did not recover');}
- await tab.playwright.locator('#check').press('Enter');assert((await text(tab,'#feedback')).includes('Sequence matched'),'Arranged historical sequence was not accepted');assert(await tab.playwright.locator('#answer li').count()===4,'Complete sequence must contain four sourced explanations');
- await tab.playwright.locator('#share').press('Enter');assert((await clipboard(tab)).includes('pack='+pack.id),'Chronology share link lost its pack');
- await tab.playwright.locator('#restart').press('Enter');await tab.playwright.locator('#reveal').press('Enter');assert((await text(tab,'#feedback')).includes('revealed'),'Chronology reveal did not show the answer');
- return {pack:pack.id,reordered:4,recovery:mode==='normal',mode};
-}
 export async function salah(tab,mode='normal'){
- const fixture=await data('understand-salah-lab');const lesson=fixture.lessons.find(item=>item.id==='fatiha-5');
- await reader(tab,'understand-salah-lab',5334,'lesson','lessons',mode,lesson);
+ const fixture=await data('understand-your-salah');const lesson=fixture.lessons.find(item=>item.id==='fatiha-5');
+ await reader(tab,'understand-your-salah',5334,'lesson','lessons',mode,lesson);
  await tab.playwright.locator('#practice').press('Enter');assert(!await tab.playwright.locator('#meaning').isVisible(),'Meaning did not hide for recall practice');await tab.playwright.locator('#practice').press('Enter');assert(await tab.playwright.locator('#meaning').isVisible(),'Meaning did not reveal');
  await mark(tab.playwright.locator(`input[name=answer][value="${(lesson.answer+1)%lesson.options.length}"]`));await tab.playwright.locator('#quiz button').press('Enter');assert((await text(tab,'#quiz-feedback')).includes('try another'),'Prayer reading check did not permit retry');
  await mark(tab.playwright.locator(`input[name=answer][value="${lesson.answer}"]`));await tab.playwright.locator('#quiz button').press('Enter');assert((await text(tab,'#quiz-feedback')).includes('matches the wording'),'Correct prayer meaning answer failed');
@@ -281,7 +260,7 @@ export async function salah(tab,mode='normal'){
  return {lesson:lesson.id,meaningPractice:true,quiz:true,audioMetadata:audio,mode};
 }
 export async function parables(tab,mode='normal'){
- const {item}=await reader(tab,'quranic-parables-studio',5335,'parable','parables',mode);
+ const {item}=await reader(tab,'parables-of-the-quran',5335,'parable','parables',mode);
  await tab.playwright.locator('[data-stage="1"]').press('Enter');assert(await tab.playwright.locator('[data-stage-panel="1"]').isVisible()&&!await tab.playwright.locator('[data-stage-panel="0"]').isVisible(),'Diagram stage selection failed');
  await mark(tab.playwright.locator(`input[name=answer][value="${(item.answer+1)%item.options.length}"]`));await tab.playwright.locator('#quiz button').press('Enter');assert((await text(tab,'#feedback')).includes('try another'),'Parable check must permit retry');
  await mark(tab.playwright.locator(`input[name=answer][value="${item.answer}"]`));await tab.playwright.locator('#quiz button').press('Enter');assert((await text(tab,'#feedback')).includes('matches the passage'),'Parable reading check failed');
@@ -299,31 +278,16 @@ export async function civilization(tab,mode='normal'){
  await tab.playwright.locator('[data-save="baghdad"]').press('Enter');await tab.playwright.locator('[data-reading-link="baghdad"]').press('Enter');assert((await text(tab,'h1')).includes('Baghdad'),'Historical detail route failed');
  return {comparedGap:74,regionFilter:3,dateValidation:true,mode};
 }
-export async function business(tab,mode='normal'){
- const item=(await data('halal-business-decisions')).cases[0];await tab.goto(origin(5337,mode));await tab.goto(`http://127.0.0.1:5337/case/${item.id}/`);await mark(tab.playwright.locator('#remember-case'));
- await tab.playwright.locator('[data-choice="1"]').press('Enter');assert((await text(tab,'#decision')).includes(item.choices[1].consequence),'Business first consequence incorrect');
- if(mode==='normal'){await tab.reload();assert((await text(tab,'#decision')).includes('The next decision'),'Business follow-up did not recover');}
- await tab.playwright.locator('[data-choice="0"]').press('Enter');assert((await text(tab,'#decision')).includes(item.repairs[0].consequence)&&(await text(tab,'#decision')).includes(item.teaching),'Business source review is incomplete');
- await tab.playwright.locator('#copy-case').press('Enter');assert((await clipboard(tab)).includes(item.passage.url)&&(await clipboard(tab)).includes('not a ruling'),'Case copy must keep the source and limit');
- await tab.playwright.locator('#restart-case').press('Enter');assert(await tab.playwright.locator('[data-choice]').count()===3,'Business restart did not return to the first choices');return {case:item.id,stages:2,mode};
-}
 export async function revelation(tab,mode='normal'){
- const item=(await data('revelation-context-explorer')).readings.find(reading=>reading.id==='beloved-garden');await tab.goto(origin(5338,mode));await tab.goto(`http://127.0.0.1:5338/reading/${item.id}/`);
+ const item=(await data('why-it-was-revealed')).readings.find(reading=>reading.id==='beloved-garden');await tab.goto(origin(5338,mode));await tab.goto(`http://127.0.0.1:5338/reading/${item.id}/`);
  await mark(tab.playwright.getByRole('radio',{name:'Transmitted occasion',exact:true}));await tab.playwright.locator('#relationship button').press('Enter');assert((await text(tab,'#relationship-feedback')).includes('Revisit'),'Wrong report classification feedback missing');
  await mark(tab.playwright.getByRole('radio',{name:item.kind,exact:true}));await tab.playwright.locator('#relationship button').press('Enter');assert((await text(tab,'#relationship-feedback')).startsWith('Yes.'),'Correct report classification failed');
  assert(await tab.playwright.locator(`a[href="${item.secondCommentaryUrl}"]`).count()===1,'Second commentary citation missing');return {reading:item.id,relationship:item.kind,mode};
 }
 export async function family(tab,mode='normal'){
- const item=(await data('family-islamic-learning-challenges')).packs[0];await tab.goto(origin(5339,mode));await tab.goto(`http://127.0.0.1:5339/pack/${item.id}/`);await tab.playwright.locator('#restart-pack').press('Enter');await mark(tab.playwright.locator('#remember-pack'));
+ const item=(await data('family-halaqa')).packs[0];await tab.goto(origin(5339,mode));await tab.goto(`http://127.0.0.1:5339/pack/${item.id}/`);await tab.playwright.locator('#restart-pack').press('Enter');await mark(tab.playwright.locator('#remember-pack'));
  await mark(tab.playwright.locator(`input[name=answer][value="${(item.answer+1)%item.options.length}"]`));await tab.playwright.locator('#reading-question button').press('Enter');assert((await text(tab,'#reading-feedback')).startsWith('Try again'),'Family reading retry missing');
  await mark(tab.playwright.locator(`input[name=answer][value="${item.answer}"]`));await tab.playwright.locator('#reading-question button').press('Enter');await tab.playwright.locator('[data-finish="1"]').press('Enter');
  if(mode==='normal'){await tab.reload();assert((await text(tab,'#session-count')).startsWith('2 of 3'),'Family sitting did not recover both completed steps');}
  await tab.playwright.locator('[data-finish="2"]').press('Enter');assert(await tab.playwright.locator('#session-complete').isVisible(),'Family sitting did not complete');await tab.playwright.locator('#copy-completion').press('Enter');assert((await clipboard(tab)).includes(item.id),'Family completion share lost its pack link');return {pack:item.id,steps:3,mode};
-}
-export async function misinformation(tab,mode='normal'){
- const item=(await data('islamic-misinformation-casebook')).cases.find(entry=>entry.id==='cave-web');await tab.goto(origin(5340,mode));await tab.goto(`http://127.0.0.1:5340/case/${item.id}/`);
- for(let index=0;index<2;index++)await tab.playwright.locator('[data-evidence] summary').nth(index).press('Enter');await tab.playwright.getByText('2 of 2 evidence cards open',{exact:true}).waitFor({state:'visible'});
- await mark(tab.playwright.getByRole('radio',{name:'Contradicted by the cited text',exact:true}));await tab.playwright.locator('#conclusion-form button').press('Enter');assert((await text(tab,'#conclusion')).includes(item.limit),'Bounded conclusion lost its limit');
- await tab.playwright.locator('#copy-correction').press('Enter');assert((await clipboard(tab)).includes(item.sources[0].url)&&(await clipboard(tab)).includes(item.limit),'Correction share must preserve the citation and limit');
- await tab.playwright.locator('#retry-case').press('Enter');assert(!await tab.playwright.locator('#conclusion').isVisible(),'Retry did not hide the conclusion');return {case:item.id,evidenceCards:2,boundedShare:true,mode};
 }

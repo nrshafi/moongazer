@@ -28,8 +28,8 @@ puzzles=[]
 for i,selection in enumerate(sets):
  chosen=[groups[n] for n in selection];terms=[term for g in chosen for term in g['terms']];assert len(set(terms))==16
  puzzles.append(dict(id=f'board-{i+1:02}',number=i+1,title=['First connections','A closer look','Words and readings','Across the passages'][i%4],level='Starter' if i<4 else 'Mixed',groups=[g['id'] for g in chosen]))
-save('islamic-concept-connections',dict(groups=groups,puzzles=puzzles,methodology='Sixteen editorial puzzles ask for four intended groups of four terms. Group explanations cite canonical readings and distinguish familiar Arabic names from Pickthall’s historical English forms. Categories are selected learning groupings, not exclusive definitions. Unlike Quran Connections, this app groups term tiles rather than identifying one theme across passages. Scores are informal and all answers are inspectable in client code.'))
-history=json.loads((ROOT/'apps/interactive-seerah-timeline/src/data/content.json').read_text(encoding='utf-8'))['events']
+save('word-groups',dict(groups=groups,puzzles=puzzles,methodology='Sixteen editorial puzzles ask for four intended groups of four terms. Group explanations cite canonical readings and distinguish familiar Arabic names from Pickthall’s historical English forms. Categories are selected learning groupings, not exclusive definitions. Unlike Quran Connections, this app groups term tiles rather than identifying one theme across passages. Scores are informal and all answers are inspectable in client code.'))
+history=json.loads((ROOT/'apps/seerah-timeline/src/data/content.json').read_text(encoding='utf-8'))['events']
 indices=[0,4,10,16,17,19,21,24,26,27,30,32,33,35]
 events=[history[i] for i in indices]
 packs=[];combinations=list(itertools.combinations(range(len(events)),4));random.Random(1313).shuffle(combinations)

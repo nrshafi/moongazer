@@ -8,7 +8,7 @@ def passage(ref):
  c,span=ref.split(':');a,b=span.split('-') if '-' in span else (span,span)
  parts=[q['verses'][f'{c}:{i}'] for i in range(int(a),int(b)+1)]
  return dict(ref=ref,arabic='\n'.join(v['arabic'] for v in parts),translation='\n'.join(v['translation'] for v in parts),url=f'https://quran.com/{ref}',translationUrl=f'https://quran.com/{ref}?translations=19')
-topics=json.loads((ROOT/'apps/quran-connections/src/data/content.json').read_text(encoding='utf-8'))['puzzles']
+topics=json.loads((ROOT/'apps/ayah-threads/src/data/content.json').read_text(encoding='utf-8'))['puzzles']
 groups={'Worship':['prayer','fasting','trust-in-allah','gratitude','hope'],'Community':['justice','giving','parents','keeping-commitments','privacy','human-relationships','orphans','consultation','reconciliation','hospitality'],'Reflection':['learning','time-and-effort','signs-in-creation','night-and-day','accountability','truth-and-falsehood']}
 for t in topics:
  t['category']=next((g for g,ids in groups.items() if t['id'] in ids),'Character')
@@ -53,11 +53,11 @@ for i,topicid in enumerate(['patience','gratitude','justice','mercy','learning',
  t=next(t for t in topics if t['id']==topicid)
  rooms.append(dict(id=topicid,name=t['theme'],description=t['hint'],passages=t['passages'],hint=t['hint'],explanation=t['explanation'],commentaryUrl=t['commentaryUrl'],options=[t['theme']]+t['distractors'],answer=0,refs=t['refs']))
 bundles={
- 'quran-memorization-workload-calculator':dict(chapters=q['chapters'],layoutPages=604),
- 'is-this-actually-in-the-quran':dict(chapters=q['chapters'],verseCount=6236),
+ 'hifz-planner':dict(chapters=q['chapters'],layoutPages=604),
+ 'is-it-in-the-quran':dict(chapters=q['chapters'],verseCount=6236),
  'quran-concept-atlas':dict(topics=topics),
- 'islamic-knowledge-escape-room':dict(rooms=rooms),
- 'stories-of-the-prophets-explorer':dict(people=people)}
+ 'quran-escape-room':dict(rooms=rooms),
+ 'stories-of-the-prophets':dict(people=people)}
 for slug,data in bundles.items():
  app=ROOT/'apps'/slug
  text=json.dumps(data,ensure_ascii=False,indent=2)+'\n';(app/'src/data/content.json').write_text(text,encoding='utf-8')
@@ -71,7 +71,7 @@ for slug,data in bundles.items():
    for x in v.values():collect(x)
  collect(data)
  if not sources:sources['https://mcp.quran.ai']=dict(label='Quran Foundation official MCP Â· canonical text and structural metadata',url='https://mcp.quran.ai',kind='Primary data source')
- if slug=='is-this-actually-in-the-quran':
+ if slug=='is-it-in-the-quran':
   corpus=list(q['verses'].values());(app/'src/data/corpus.json').write_text(json.dumps(corpus,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
   for c in q['chapters']:sources[f'https://quran.com/{c["number"]}']=dict(label=f'{c["number"]}. {c["name_simple"]} Â· complete chapter',url=f'https://quran.com/{c["number"]}',kind='Arabic and Pickthall source')
   corpusHash=hashlib.sha256((app/'src/data/corpus.json').read_bytes()).hexdigest()

@@ -61,7 +61,6 @@ export async function clipboardDenied(tab,app){
  else if(app.port===5325)selector='#share-event';
  else if(app.port===5327){await tab.playwright.locator('#query').fill('94:5');await tab.playwright.locator('#submit').press('Enter');await tab.playwright.locator('#share').waitFor({state:'visible'});selector='#share';}
  else if(app.port===5332){await tab.playwright.locator('#reveal').press('Enter');selector='#share';}
- else if(app.port===5333)selector='#share';
  else {const first=tab.playwright.locator('[data-save]').first();if(await first.getAttribute('aria-pressed')!=='true')await first.press('Enter');selector=app.port>=5336?'#copy-saved':'#export';}
  await tab.playwright.locator(selector).press('Enter');await tab.playwright.getByRole('textbox',{name:'Text to copy',exact:true}).waitFor({state:'visible'});const value=await inputValue(tab,'dialog[open] textarea');assert(value.includes('http://127.0.0.1:'+app.port),'Manual copy dialog lost the route');await tab.playwright.locator('dialog[open] button').press('Enter');assert(!await tab.playwright.locator('dialog[open]').isVisible(),'Manual copy dialog did not close');return {manualCopy:true,routeRetained:true};
 }

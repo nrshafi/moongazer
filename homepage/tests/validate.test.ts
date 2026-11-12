@@ -103,7 +103,7 @@ describe('cleanPageUrl', () => {
 
   test.each([
     ['http scheme', 'http://guess-the-surah.moongazer.tech/', 'guess-the-surah'],
-    ['another app subdomain', 'https://quran-connections.moongazer.tech/', 'guess-the-surah'],
+    ['another app subdomain', 'https://ayah-threads.moongazer.tech/', 'guess-the-surah'],
     ['foreign host', 'https://example.com/', 'guess-the-surah'],
     ['lookalike host', 'https://moongazer.tech.evil.example/', 'guess-the-surah'],
     ['explicit port', 'https://moongazer.tech:8443/', 'guess-the-surah'],

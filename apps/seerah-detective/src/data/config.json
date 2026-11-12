@@ -1,0 +1,8 @@
+{
+  "slug": "seerah-detective",
+  "name": "Seerah Detective",
+  "description": "Solve cases from the Prophet's life ﷺ using the reports",
+  "accent": "blue",
+  "nav": "Play",
+  "port": 4323
+}

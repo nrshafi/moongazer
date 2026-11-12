@@ -1,9 +1,8 @@
 import { resolve, join, sep } from 'node:path';
-const allApps=['guess-the-surah','quran-connections','the-seerah-detective','everyday-akhlaq-simulator','interactive-seerah-timeline','quran-memorization-workload-calculator','is-this-actually-in-the-quran','quran-concept-atlas','islamic-knowledge-escape-room','stories-of-the-prophets-explorer','quranic-places-atlas','islamic-concept-connections','islamic-history-timeline-challenge','understand-salah-lab','quranic-parables-studio','islamic-civilization-timeline','halal-business-decisions','revelation-context-explorer','family-islamic-learning-challenges','islamic-misinformation-casebook'];
-const apps=process.argv.includes('--batch4')?allApps.slice(15,20):allApps;
+const apps=['guess-the-surah','ayah-threads','seerah-detective','everyday-akhlaq','seerah-timeline','hifz-planner','is-it-in-the-quran','quran-escape-room','stories-of-the-prophets','places-in-the-quran','word-groups','understand-your-salah','parables-of-the-quran','civilization-timeline','why-it-was-revealed','family-halaqa'];
 for(const [index,app] of apps.entries()) {
   const directory=resolve(import.meta.dir,'..','apps',app,'dist');
-  const server=Bun.serve({hostname:'127.0.0.1',port:4321+allApps.indexOf(app),async fetch(request){
+  const server=Bun.serve({hostname:'127.0.0.1',port:4321+index,async fetch(request){
     const url=new URL(request.url);let pathname:string;
     try { pathname=decodeURIComponent(url.pathname); } catch { return new Response('Invalid path',{status:400}); }
     const target=resolve(directory,'.'+pathname);

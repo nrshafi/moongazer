@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://understand-your-salah.moongazer.tech/sitemap.xml

@@ -2,7 +2,7 @@
 from pathlib import Path
 import json
 ROOT=Path(__file__).resolve().parent.parent
-SLUGS=['islamic-civilization-timeline','halal-business-decisions','revelation-context-explorer','family-islamic-learning-challenges','islamic-misinformation-casebook']
+SLUGS=['civilization-timeline','halal-business-decisions','why-it-was-revealed','family-halaqa','islamic-misinformation-casebook']
 
 PASSAGE='''---
 interface Props { passage?: {ref:string; arabic:string; translation:string; translationUrl:string}; }
@@ -121,10 +121,10 @@ CSS='''
 '''
 
 HERO={
- 'islamic-civilization-timeline':('Connected histories','A thousand years.<br/>More than one center.','Follow twenty-four selected records across nine regions. Compare date bands, explore learning and trade, and keep the source beside each event.'),
+ 'civilization-timeline':('Connected histories','A thousand years.<br/>More than one center.','Follow twenty-four selected records across nine regions. Compare date bands, explore learning and trade, and keep the source beside each event.'),
  'halal-business-decisions':('A business decision lab','Make the choice.<br/>Then inspect the consequences.','Twelve fictional cases put disclosure, promises and fair dealing into ordinary business situations. Read what happens, then return to the sources.'),
- 'revelation-context-explorer':('Reports with their limits','A passage has context.<br/>A report has limits.','Explore ten selected readings beside named reports. Distinguish a transmitted occasion from general context or a response after revelation.'),
- 'family-islamic-learning-challenges':('Learn together, in one sitting','One sitting.<br/>Something to share.','Choose a short pack with one reading question, an open conversation and a shared activity. No names, profiles or daily streaks.'),
+ 'why-it-was-revealed':('Reports with their limits','A passage has context.<br/>A report has limits.','Explore ten selected readings beside named reports. Distinguish a transmitted occasion from general context or a response after revelation.'),
+ 'family-halaqa':('Learn together, in one sitting','One sitting.<br/>Something to share.','Choose a short pack with one reading question, an open conversation and a shared activity. No names, profiles or daily streaks.'),
  'islamic-misinformation-casebook':('Read before repeating','Before you share it,<br/>read the evidence.','Investigate twelve source-reading claims. Open the evidence, choose a careful conclusion, and copy a correction with its references.'),
 }
 

@@ -1,0 +1,31 @@
+{
+  "heading": "Seerah Detective",
+  "summary": "Seerah Detective uses short cases to explore reports from the Prophet's life ﷺ. Open a case, compare the supplied reports and choose the conclusion they support. The activity rewards careful reading of the evidence provided, including its limits, rather than filling gaps with a more dramatic story.",
+  "steps": [
+    "Choose a case from the catalog, using its topic or search filter if useful.",
+    "Read the evidence and source notes before deciding what the reports establish.",
+    "Choose a conclusion and compare the explanation with the cited reports."
+  ],
+  "questions": [
+    {
+      "question": "Are these fictional detective stories?",
+      "answer": "The case format is an editorial learning activity around cited Seerah reports. Read the reports and notes to distinguish the source evidence from the questions used to teach it."
+    },
+    {
+      "question": "Does completing a case cover the full event?",
+      "answer": "No. A case focuses on a selected question and a small set of clues. Follow its references and the Sources page for context; a correct answer is not a complete account of the event."
+    }
+  ],
+  "related": [
+    {
+      "name": "Seerah Timeline",
+      "description": "Follow the Prophet's life ﷺ through a connected timeline with source notes.",
+      "kind": "Timeline",
+      "url": "https://seerah-timeline.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Seerah & history",
+    "url": "https://moongazer.tech/seerah-history/"
+  }
+}

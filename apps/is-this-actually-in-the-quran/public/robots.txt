@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://is-this-actually-in-the-quran.moongazer.tech/sitemap.xml

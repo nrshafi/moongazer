@@ -1,8 +1,8 @@
 from pathlib import Path
 import shutil,json
 ROOT=Path(__file__).resolve().parent.parent
-APPS=[('quran-memorization-workload-calculator','Quran Memorization Workload Calculator','Plan new memorization alongside a growing revision workload.','teal'),('is-this-actually-in-the-quran','Is This Actually in the Quran?','Check wording against the Arabic Quran and Pickthall translation.','blue'),('quran-concept-atlas','Quran Concept Atlas','Follow connected themes through carefully cited Quran passages.','teal'),('islamic-knowledge-escape-room','The Islamic Knowledge Escape Room','Read the evidence. Solve four locks. Open a new route through the Quran.','violet'),('stories-of-the-prophets-explorer','Stories of the Prophets Explorer','Explore selected Quran passages about 25 named prophets.','blue')]
-seed=ROOT/'apps/quran-connections'
+APPS=[('hifz-planner','Quran Memorization Workload Calculator','Plan new memorization alongside a growing revision workload.','teal'),('is-it-in-the-quran','Is This Actually in the Quran?','Check wording against the Arabic Quran and Pickthall translation.','blue'),('quran-concept-atlas','Quran Concept Atlas','Follow connected themes through carefully cited Quran passages.','teal'),('quran-escape-room','The Islamic Knowledge Escape Room','Read the evidence. Solve four locks. Open a new route through the Quran.','violet'),('stories-of-the-prophets','Stories of the Prophets Explorer','Explore selected Quran passages about 25 named prophets.','blue')]
+seed=ROOT/'apps/ayah-threads'
 for i,(slug,name,description,accent) in enumerate(APPS):
  app=ROOT/'apps'/slug
  for d in ['src/pages','src/layouts','src/lib','src/data','src/styles','tests','public/fonts']:(app/d).mkdir(parents=True,exist_ok=True)

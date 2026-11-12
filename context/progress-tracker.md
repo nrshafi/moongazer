@@ -256,3 +256,24 @@ T4.5–T4.7 and T4.9–T4.10 done on `phase-4-services`. The owner gave full del
   - `homepage/functions/` is still not type-checked; esbuild compiles it through `wrangler pages functions build`.
   - The beacon check samples 4 of 16 apps in a browser; the other 12 are covered by source-level tests and the build.
   - Live results are recorded in R4 after CI.
+
+## 2026-11-12T05:50:00+06:00 — P3B: retire the four merged apps (D2c)
+
+Branch `phase-3b-retire` (from `phase-3b-hosts`). The four merged apps are deleted with no redirects, no moved release and no import path; the receiving sections stay.
+- Deleted `quran-concept-atlas`, `islamic-history-timeline-challenge`, `halal-business-decisions` and `islamic-misinformation-casebook`. Removed them from targets, seo-catalog, learning-guides, per-app learning guides, the app allowlist (regenerated), logos script, README, DEPLOYMENT and SEARCH_CONSOLE_SETUP. Dropped the `retired` field and the homepage and verify-seo filters.
+- Removed the moved banner, `encodePayload` click handler and banner CSS from the shared shell; deleted `import.ts` and its test from all 16 apps and `merge-import.ts` with tests from the four receivers (plus `claimIdMap`, the old-app import rules, and old-app comparisons in tests). `appContentSha256` refreshed for `is-this-actually-in-the-quran`.
+- Deleted `merge-redirects.json`, `build-redirect-map.ts` and `redirect-map.test.ts`. `verify.ts` and `preview.ts` lose the batch slices; e2e flows for the deleted apps are gone.
+- Corrections log: removed the three entries that pointed at deleted apps.
+- Left as history: `_build/`, `_implementation/batch*`, `populate-context.py`, `_implementation/research/`, and the `deployment/` release and status records (`status.json`, `automation-result.json`, `seo-*release.json`, `search-console.json`), which describe what was deployed.
+- Validation: verify.ts check 16/16 (0 errors, 0 warnings), test 16/16 (251 pass, 0 fail), build 16/16; sync-shared identical; `bun test _implementation/seo.test.ts homepage/tests` 60 pass; homepage build 8 pages and 16 app links; verify-static 313 pages; verify-seo passed (17 sites, 323 pages); text-join audit 0 unexplained joins. No push and no Cloudflare action.
+
+## 2026-11-12T06:20:00+06:00 — D2c: merged apps deleted, 16 apps on new hosts (R3B)
+
+The owner asked to keep only the new things, with no redirects (decision D2c in `plan/implementation/00-INDEX.md`). Work was split across subagents:
+- A Sonnet subagent deleted the four merged apps and the moved, import and redirect machinery.
+- The orchestrator renamed the 16 apps to slugs and hosts that match their names, and set up Cloudflare.
+- A Haiku subagent refreshed the per-app docs.
+
+Validation: 16/16 check, test and build (251 tests); sync identical; 60 repo tests; verify-static 313 pages; verify-seo passed; text joins 0; `host-smoke.mjs` 16/16; counter check passed.
+
+Two Pages projects carry an `-app` suffix because Cloudflare refused the plain names. Old projects and DNS records are deleted after the live check. Details are in `plan/implementation/releases/R3B.md`.

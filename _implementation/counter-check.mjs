@@ -11,7 +11,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const origins = JSON.parse(readFileSync(join(root, '_implementation/qa/e2e/origins.json'), 'utf8'));
 const allow = JSON.parse(readFileSync(join(root, 'homepage/functions/_lib/apps.json'), 'utf8'));
 const port = slug => origins.find(o => o.slug === slug).port;
-const sample = ['guess-the-surah', 'everyday-akhlaq-simulator', 'the-seerah-detective', 'stories-of-the-prophets-explorer'];
+const sample = ['guess-the-surah', 'everyday-akhlaq', 'seerah-detective', 'stories-of-the-prophets'];
 const rules = sample.map(slug => `MAP ${slug}.moongazer.tech:80 127.0.0.1:${port(slug)}`).join(', ');
 const init = `window.__beacons=[];Object.defineProperty(Navigator.prototype,'sendBeacon',{configurable:true,value(url,data){data.text().then(t=>window.__beacons.push({url,body:JSON.parse(t)}));return true;}});`;
 
@@ -44,16 +44,16 @@ try {
   expect(await p.eval('document.querySelectorAll("#site-feedback").length === 1 && document.querySelectorAll("[id=feedback]").length <= 1'), 'guess-the-surah: footer form id is unique');
 
   // Everyday Akhlaq: started once on the first choice.
-  const scenario = firstDir('everyday-akhlaq-simulator', 'scenario');
-  await p.goto(`http://everyday-akhlaq-simulator.moongazer.tech/scenario/${scenario}/`, 800);
+  const scenario = firstDir('everyday-akhlaq', 'scenario');
+  await p.goto(`http://everyday-akhlaq.moongazer.tech/scenario/${scenario}/`, 800);
   expect((await beacons(p)).length === 0, 'akhlaq: no beacon on page load');
   await p.click('[data-choice]');
   got = await beacons(p);
   expect(got.length === 1 && got[0].body.e === 'activity_started' && got[0].body.i === scenario, `akhlaq: activity_started ${scenario} on first choice (${JSON.stringify(got.map(x => x.body))})`);
 
   // Seerah Detective: opening evidence then choosing a conclusion sends one started; share sends share_clicked.
-  const kase = firstDir('the-seerah-detective', 'case');
-  await p.goto(`http://the-seerah-detective.moongazer.tech/case/${kase}/`, 800);
+  const kase = firstDir('seerah-detective', 'case');
+  await p.goto(`http://seerah-detective.moongazer.tech/case/${kase}/`, 800);
   await p.eval('const d=document.querySelector("[data-evidence]");d.open=true;return true');
   await new Promise(r => setTimeout(r, 200));
   await p.click('#case-answers input');
@@ -62,8 +62,8 @@ try {
   expect(got.filter(x => x.body.e === 'activity_started').length === 1 && got.some(x => x.body.e === 'share_clicked' && x.body.i === kase), `detective: one started, one share for ${kase} (${JSON.stringify(got.map(x => x.body))})`);
 
   // Stories of the Prophets: the reading check sends started + completed.
-  const prophet = firstDir('stories-of-the-prophets-explorer', 'prophet');
-  await p.goto(`http://stories-of-the-prophets-explorer.moongazer.tech/prophet/${prophet}/`, 800);
+  const prophet = firstDir('stories-of-the-prophets', 'prophet');
+  await p.goto(`http://stories-of-the-prophets.moongazer.tech/prophet/${prophet}/`, 800);
   await p.click('#quiz input[name=answer]');
   await p.eval('document.getElementById("quiz").requestSubmit();return true');
   got = await beacons(p);

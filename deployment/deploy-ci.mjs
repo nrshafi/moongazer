@@ -11,7 +11,8 @@ if (!account || !token || !/^[a-f0-9]{40}$/i.test(commit || '')) {
 const targets = JSON.parse(await readFile(new URL('./targets.json', import.meta.url), 'utf8'));
 // App projects only. The apex (`moongazer`) has Pages Functions and a D1 binding, so CI deploys it
 // with `wrangler pages deploy` from homepage/ in a separate step (see .github/workflows/deploy.yml).
-const projects = targets.map(({slug}) => `moongazer-${slug}`);
+// `project` overrides the default name where Cloudflare refused moongazer-<slug> (D2c).
+const projects = targets.map(({slug, project}) => project || `moongazer-${slug}`);
 const base = `https://api.cloudflare.com/client/v4/accounts/${encodeURIComponent(account)}/pages/projects`;
 
 async function request(path, options = {}) {

@@ -1,0 +1,37 @@
+{
+  "heading": "Places in the Quran",
+  "summary": "Places in the Quran pairs fifteen places with selected passages and careful location notes. Use the map for modern geographical context where the evidence supports a pin, and read places without a pin without assigning them a speculative location. Each place explains its evidence and the limits of the geographical connection.",
+  "steps": [
+    "Browse a place or narrow the list with the location filter.",
+    "Open its passage, location notes and source references.",
+    "Use the map as orientation and compare the notes before treating a pin as historical evidence."
+  ],
+  "questions": [
+    {
+      "question": "Why are some places not pinned on the map?",
+      "answer": "A passage or place reference does not always establish a defensible modern location. Places without a pin keep that uncertainty visible instead of adding a guessed coordinate."
+    },
+    {
+      "question": "Does a pin identify an exact ancient event location?",
+      "answer": "Read the place's own evidence notes. A map pin may provide modern geographical or heritage-site context; it should not be taken as an exact event location unless the place's sources establish that claim."
+    }
+  ],
+  "related": [
+    {
+      "name": "Stories of the Prophets",
+      "description": "Read selected Quranic accounts and check your understanding as you go.",
+      "kind": "Story reader",
+      "url": "https://stories-of-the-prophets.moongazer.tech/"
+    },
+    {
+      "name": "Civilization Timeline",
+      "description": "Explore historical periods and compare developments across regions.",
+      "kind": "Timeline",
+      "url": "https://civilization-timeline.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Quran learning",
+    "url": "https://moongazer.tech/quran-learning/"
+  }
+}

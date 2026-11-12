@@ -28,10 +28,10 @@ event_refs={'the-first-revelation':['96:1-5'],'the-cave-during-the-migration':['
 for e in history['events']:e['passages']=[passage(ref) for ref in event_refs.get(e['id'],[])]
 bundles={
  'guess-the-surah':dict(chapters=quran['chapters'],verses={f'{n}:1':quran['verses'][f'{n}:1'] for n in range(1,115)}),
- 'quran-connections':dict(puzzles=puzzles),
- 'the-seerah-detective':dict(cases=history['cases']),
- 'everyday-akhlaq-simulator':dict(scenarios=scenarios),
- 'interactive-seerah-timeline':dict(events=history['events']),
+ 'ayah-threads':dict(puzzles=puzzles),
+ 'seerah-detective':dict(cases=history['cases']),
+ 'everyday-akhlaq':dict(scenarios=scenarios),
+ 'seerah-timeline':dict(events=history['events']),
 }
 for slug,data in bundles.items():
     app=ROOT/'apps'/slug

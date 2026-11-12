@@ -1,0 +1,1441 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "name_arabic": "الفاتحة",
+      "name_simple": "Al-Fatihah",
+      "revelation_place": "makkah",
+      "revelation_order": 5,
+      "verses_count": 7,
+      "bismillah_pre": false
+    },
+    {
+      "number": 2,
+      "name_arabic": "البقرة",
+      "name_simple": "Al-Baqarah",
+      "revelation_place": "madinah",
+      "revelation_order": 87,
+      "verses_count": 286,
+      "bismillah_pre": true
+    },
+    {
+      "number": 3,
+      "name_arabic": "آل عمران",
+      "name_simple": "Ali 'Imran",
+      "revelation_place": "madinah",
+      "revelation_order": 89,
+      "verses_count": 200,
+      "bismillah_pre": true
+    },
+    {
+      "number": 4,
+      "name_arabic": "النساء",
+      "name_simple": "An-Nisa",
+      "revelation_place": "madinah",
+      "revelation_order": 92,
+      "verses_count": 176,
+      "bismillah_pre": true
+    },
+    {
+      "number": 5,
+      "name_arabic": "المائدة",
+      "name_simple": "Al-Ma'idah",
+      "revelation_place": "madinah",
+      "revelation_order": 112,
+      "verses_count": 120,
+      "bismillah_pre": true
+    },
+    {
+      "number": 6,
+      "name_arabic": "الأنعام",
+      "name_simple": "Al-An'am",
+      "revelation_place": "makkah",
+      "revelation_order": 55,
+      "verses_count": 165,
+      "bismillah_pre": true
+    },
+    {
+      "number": 7,
+      "name_arabic": "الأعراف",
+      "name_simple": "Al-A'raf",
+      "revelation_place": "makkah",
+      "revelation_order": 39,
+      "verses_count": 206,
+      "bismillah_pre": true
+    },
+    {
+      "number": 8,
+      "name_arabic": "الأنفال",
+      "name_simple": "Al-Anfal",
+      "revelation_place": "madinah",
+      "revelation_order": 88,
+      "verses_count": 75,
+      "bismillah_pre": true
+    },
+    {
+      "number": 9,
+      "name_arabic": "التوبة",
+      "name_simple": "At-Tawbah",
+      "revelation_place": "madinah",
+      "revelation_order": 113,
+      "verses_count": 129,
+      "bismillah_pre": false
+    },
+    {
+      "number": 10,
+      "name_arabic": "يونس",
+      "name_simple": "Yunus",
+      "revelation_place": "makkah",
+      "revelation_order": 51,
+      "verses_count": 109,
+      "bismillah_pre": true
+    },
+    {
+      "number": 11,
+      "name_arabic": "هود",
+      "name_simple": "Hud",
+      "revelation_place": "makkah",
+      "revelation_order": 52,
+      "verses_count": 123,
+      "bismillah_pre": true
+    },
+    {
+      "number": 12,
+      "name_arabic": "يوسف",
+      "name_simple": "Yusuf",
+      "revelation_place": "makkah",
+      "revelation_order": 53,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 13,
+      "name_arabic": "الرعد",
+      "name_simple": "Ar-Ra'd",
+      "revelation_place": "madinah",
+      "revelation_order": 96,
+      "verses_count": 43,
+      "bismillah_pre": true
+    },
+    {
+      "number": 14,
+      "name_arabic": "ابراهيم",
+      "name_simple": "Ibrahim",
+      "revelation_place": "makkah",
+      "revelation_order": 72,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 15,
+      "name_arabic": "الحجر",
+      "name_simple": "Al-Hijr",
+      "revelation_place": "makkah",
+      "revelation_order": 54,
+      "verses_count": 99,
+      "bismillah_pre": true
+    },
+    {
+      "number": 16,
+      "name_arabic": "النحل",
+      "name_simple": "An-Nahl",
+      "revelation_place": "makkah",
+      "revelation_order": 70,
+      "verses_count": 128,
+      "bismillah_pre": true
+    },
+    {
+      "number": 17,
+      "name_arabic": "الإسراء",
+      "name_simple": "Al-Isra",
+      "revelation_place": "makkah",
+      "revelation_order": 50,
+      "verses_count": 111,
+      "bismillah_pre": true
+    },
+    {
+      "number": 18,
+      "name_arabic": "الكهف",
+      "name_simple": "Al-Kahf",
+      "revelation_place": "makkah",
+      "revelation_order": 69,
+      "verses_count": 110,
+      "bismillah_pre": true
+    },
+    {
+      "number": 19,
+      "name_arabic": "مريم",
+      "name_simple": "Maryam",
+      "revelation_place": "makkah",
+      "revelation_order": 44,
+      "verses_count": 98,
+      "bismillah_pre": true
+    },
+    {
+      "number": 20,
+      "name_arabic": "طه",
+      "name_simple": "Taha",
+      "revelation_place": "makkah",
+      "revelation_order": 45,
+      "verses_count": 135,
+      "bismillah_pre": true
+    },
+    {
+      "number": 21,
+      "name_arabic": "الأنبياء",
+      "name_simple": "Al-Anbya",
+      "revelation_place": "makkah",
+      "revelation_order": 73,
+      "verses_count": 112,
+      "bismillah_pre": true
+    },
+    {
+      "number": 22,
+      "name_arabic": "الحج",
+      "name_simple": "Al-Hajj",
+      "revelation_place": "madinah",
+      "revelation_order": 103,
+      "verses_count": 78,
+      "bismillah_pre": true
+    },
+    {
+      "number": 23,
+      "name_arabic": "المؤمنون",
+      "name_simple": "Al-Mu'minun",
+      "revelation_place": "makkah",
+      "revelation_order": 74,
+      "verses_count": 118,
+      "bismillah_pre": true
+    },
+    {
+      "number": 24,
+      "name_arabic": "النور",
+      "name_simple": "An-Nur",
+      "revelation_place": "madinah",
+      "revelation_order": 102,
+      "verses_count": 64,
+      "bismillah_pre": true
+    },
+    {
+      "number": 25,
+      "name_arabic": "الفرقان",
+      "name_simple": "Al-Furqan",
+      "revelation_place": "makkah",
+      "revelation_order": 42,
+      "verses_count": 77,
+      "bismillah_pre": true
+    },
+    {
+      "number": 26,
+      "name_arabic": "الشعراء",
+      "name_simple": "Ash-Shu'ara",
+      "revelation_place": "makkah",
+      "revelation_order": 47,
+      "verses_count": 227,
+      "bismillah_pre": true
+    },
+    {
+      "number": 27,
+      "name_arabic": "النمل",
+      "name_simple": "An-Naml",
+      "revelation_place": "makkah",
+      "revelation_order": 48,
+      "verses_count": 93,
+      "bismillah_pre": true
+    },
+    {
+      "number": 28,
+      "name_arabic": "القصص",
+      "name_simple": "Al-Qasas",
+      "revelation_place": "makkah",
+      "revelation_order": 49,
+      "verses_count": 88,
+      "bismillah_pre": true
+    },
+    {
+      "number": 29,
+      "name_arabic": "العنكبوت",
+      "name_simple": "Al-'Ankabut",
+      "revelation_place": "makkah",
+      "revelation_order": 85,
+      "verses_count": 69,
+      "bismillah_pre": true
+    },
+    {
+      "number": 30,
+      "name_arabic": "الروم",
+      "name_simple": "Ar-Rum",
+      "revelation_place": "makkah",
+      "revelation_order": 84,
+      "verses_count": 60,
+      "bismillah_pre": true
+    },
+    {
+      "number": 31,
+      "name_arabic": "لقمان",
+      "name_simple": "Luqman",
+      "revelation_place": "makkah",
+      "revelation_order": 57,
+      "verses_count": 34,
+      "bismillah_pre": true
+    },
+    {
+      "number": 32,
+      "name_arabic": "السجدة",
+      "name_simple": "As-Sajdah",
+      "revelation_place": "makkah",
+      "revelation_order": 75,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 33,
+      "name_arabic": "الأحزاب",
+      "name_simple": "Al-Ahzab",
+      "revelation_place": "madinah",
+      "revelation_order": 90,
+      "verses_count": 73,
+      "bismillah_pre": true
+    },
+    {
+      "number": 34,
+      "name_arabic": "سبإ",
+      "name_simple": "Saba",
+      "revelation_place": "makkah",
+      "revelation_order": 58,
+      "verses_count": 54,
+      "bismillah_pre": true
+    },
+    {
+      "number": 35,
+      "name_arabic": "فاطر",
+      "name_simple": "Fatir",
+      "revelation_place": "makkah",
+      "revelation_order": 43,
+      "verses_count": 45,
+      "bismillah_pre": true
+    },
+    {
+      "number": 36,
+      "name_arabic": "يس",
+      "name_simple": "Ya-Sin",
+      "revelation_place": "makkah",
+      "revelation_order": 41,
+      "verses_count": 83,
+      "bismillah_pre": true
+    },
+    {
+      "number": 37,
+      "name_arabic": "الصافات",
+      "name_simple": "As-Saffat",
+      "revelation_place": "makkah",
+      "revelation_order": 56,
+      "verses_count": 182,
+      "bismillah_pre": true
+    },
+    {
+      "number": 38,
+      "name_arabic": "ص",
+      "name_simple": "Sad",
+      "revelation_place": "makkah",
+      "revelation_order": 38,
+      "verses_count": 88,
+      "bismillah_pre": true
+    },
+    {
+      "number": 39,
+      "name_arabic": "الزمر",
+      "name_simple": "Az-Zumar",
+      "revelation_place": "makkah",
+      "revelation_order": 59,
+      "verses_count": 75,
+      "bismillah_pre": true
+    },
+    {
+      "number": 40,
+      "name_arabic": "غافر",
+      "name_simple": "Ghafir",
+      "revelation_place": "makkah",
+      "revelation_order": 60,
+      "verses_count": 85,
+      "bismillah_pre": true
+    },
+    {
+      "number": 41,
+      "name_arabic": "فصلت",
+      "name_simple": "Fussilat",
+      "revelation_place": "makkah",
+      "revelation_order": 61,
+      "verses_count": 54,
+      "bismillah_pre": true
+    },
+    {
+      "number": 42,
+      "name_arabic": "الشورى",
+      "name_simple": "Ash-Shuraa",
+      "revelation_place": "makkah",
+      "revelation_order": 62,
+      "verses_count": 53,
+      "bismillah_pre": true
+    },
+    {
+      "number": 43,
+      "name_arabic": "الزخرف",
+      "name_simple": "Az-Zukhruf",
+      "revelation_place": "makkah",
+      "revelation_order": 63,
+      "verses_count": 89,
+      "bismillah_pre": true
+    },
+    {
+      "number": 44,
+      "name_arabic": "الدخان",
+      "name_simple": "Ad-Dukhan",
+      "revelation_place": "makkah",
+      "revelation_order": 64,
+      "verses_count": 59,
+      "bismillah_pre": true
+    },
+    {
+      "number": 45,
+      "name_arabic": "الجاثية",
+      "name_simple": "Al-Jathiyah",
+      "revelation_place": "makkah",
+      "revelation_order": 65,
+      "verses_count": 37,
+      "bismillah_pre": true
+    },
+    {
+      "number": 46,
+      "name_arabic": "الأحقاف",
+      "name_simple": "Al-Ahqaf",
+      "revelation_place": "makkah",
+      "revelation_order": 66,
+      "verses_count": 35,
+      "bismillah_pre": true
+    },
+    {
+      "number": 47,
+      "name_arabic": "محمد",
+      "name_simple": "Muhammad",
+      "revelation_place": "madinah",
+      "revelation_order": 95,
+      "verses_count": 38,
+      "bismillah_pre": true
+    },
+    {
+      "number": 48,
+      "name_arabic": "الفتح",
+      "name_simple": "Al-Fath",
+      "revelation_place": "madinah",
+      "revelation_order": 111,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 49,
+      "name_arabic": "الحجرات",
+      "name_simple": "Al-Hujurat",
+      "revelation_place": "madinah",
+      "revelation_order": 106,
+      "verses_count": 18,
+      "bismillah_pre": true
+    },
+    {
+      "number": 50,
+      "name_arabic": "ق",
+      "name_simple": "Qaf",
+      "revelation_place": "makkah",
+      "revelation_order": 34,
+      "verses_count": 45,
+      "bismillah_pre": true
+    },
+    {
+      "number": 51,
+      "name_arabic": "الذاريات",
+      "name_simple": "Adh-Dhariyat",
+      "revelation_place": "makkah",
+      "revelation_order": 67,
+      "verses_count": 60,
+      "bismillah_pre": true
+    },
+    {
+      "number": 52,
+      "name_arabic": "الطور",
+      "name_simple": "At-Tur",
+      "revelation_place": "makkah",
+      "revelation_order": 76,
+      "verses_count": 49,
+      "bismillah_pre": true
+    },
+    {
+      "number": 53,
+      "name_arabic": "النجم",
+      "name_simple": "An-Najm",
+      "revelation_place": "makkah",
+      "revelation_order": 23,
+      "verses_count": 62,
+      "bismillah_pre": true
+    },
+    {
+      "number": 54,
+      "name_arabic": "القمر",
+      "name_simple": "Al-Qamar",
+      "revelation_place": "makkah",
+      "revelation_order": 37,
+      "verses_count": 55,
+      "bismillah_pre": true
+    },
+    {
+      "number": 55,
+      "name_arabic": "الرحمن",
+      "name_simple": "Ar-Rahman",
+      "revelation_place": "madinah",
+      "revelation_order": 97,
+      "verses_count": 78,
+      "bismillah_pre": true
+    },
+    {
+      "number": 56,
+      "name_arabic": "الواقعة",
+      "name_simple": "Al-Waqi'ah",
+      "revelation_place": "makkah",
+      "revelation_order": 46,
+      "verses_count": 96,
+      "bismillah_pre": true
+    },
+    {
+      "number": 57,
+      "name_arabic": "الحديد",
+      "name_simple": "Al-Hadid",
+      "revelation_place": "madinah",
+      "revelation_order": 94,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 58,
+      "name_arabic": "المجادلة",
+      "name_simple": "Al-Mujadila",
+      "revelation_place": "madinah",
+      "revelation_order": 105,
+      "verses_count": 22,
+      "bismillah_pre": true
+    },
+    {
+      "number": 59,
+      "name_arabic": "الحشر",
+      "name_simple": "Al-Hashr",
+      "revelation_place": "madinah",
+      "revelation_order": 101,
+      "verses_count": 24,
+      "bismillah_pre": true
+    },
+    {
+      "number": 60,
+      "name_arabic": "الممتحنة",
+      "name_simple": "Al-Mumtahanah",
+      "revelation_place": "madinah",
+      "revelation_order": 91,
+      "verses_count": 13,
+      "bismillah_pre": true
+    },
+    {
+      "number": 61,
+      "name_arabic": "الصف",
+      "name_simple": "As-Saf",
+      "revelation_place": "madinah",
+      "revelation_order": 109,
+      "verses_count": 14,
+      "bismillah_pre": true
+    },
+    {
+      "number": 62,
+      "name_arabic": "الجمعة",
+      "name_simple": "Al-Jumu'ah",
+      "revelation_place": "madinah",
+      "revelation_order": 110,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 63,
+      "name_arabic": "المنافقون",
+      "name_simple": "Al-Munafiqun",
+      "revelation_place": "madinah",
+      "revelation_order": 104,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 64,
+      "name_arabic": "التغابن",
+      "name_simple": "At-Taghabun",
+      "revelation_place": "madinah",
+      "revelation_order": 108,
+      "verses_count": 18,
+      "bismillah_pre": true
+    },
+    {
+      "number": 65,
+      "name_arabic": "الطلاق",
+      "name_simple": "At-Talaq",
+      "revelation_place": "madinah",
+      "revelation_order": 99,
+      "verses_count": 12,
+      "bismillah_pre": true
+    },
+    {
+      "number": 66,
+      "name_arabic": "التحريم",
+      "name_simple": "At-Tahrim",
+      "revelation_place": "madinah",
+      "revelation_order": 107,
+      "verses_count": 12,
+      "bismillah_pre": true
+    },
+    {
+      "number": 67,
+      "name_arabic": "الملك",
+      "name_simple": "Al-Mulk",
+      "revelation_place": "makkah",
+      "revelation_order": 77,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 68,
+      "name_arabic": "القلم",
+      "name_simple": "Al-Qalam",
+      "revelation_place": "makkah",
+      "revelation_order": 2,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 69,
+      "name_arabic": "الحاقة",
+      "name_simple": "Al-Haqqah",
+      "revelation_place": "makkah",
+      "revelation_order": 78,
+      "verses_count": 52,
+      "bismillah_pre": true
+    },
+    {
+      "number": 70,
+      "name_arabic": "المعارج",
+      "name_simple": "Al-Ma'arij",
+      "revelation_place": "makkah",
+      "revelation_order": 79,
+      "verses_count": 44,
+      "bismillah_pre": true
+    },
+    {
+      "number": 71,
+      "name_arabic": "نوح",
+      "name_simple": "Nuh",
+      "revelation_place": "makkah",
+      "revelation_order": 71,
+      "verses_count": 28,
+      "bismillah_pre": true
+    },
+    {
+      "number": 72,
+      "name_arabic": "الجن",
+      "name_simple": "Al-Jinn",
+      "revelation_place": "makkah",
+      "revelation_order": 40,
+      "verses_count": 28,
+      "bismillah_pre": true
+    },
+    {
+      "number": 73,
+      "name_arabic": "المزمل",
+      "name_simple": "Al-Muzzammil",
+      "revelation_place": "makkah",
+      "revelation_order": 3,
+      "verses_count": 20,
+      "bismillah_pre": true
+    },
+    {
+      "number": 74,
+      "name_arabic": "المدثر",
+      "name_simple": "Al-Muddaththir",
+      "revelation_place": "makkah",
+      "revelation_order": 4,
+      "verses_count": 56,
+      "bismillah_pre": true
+    },
+    {
+      "number": 75,
+      "name_arabic": "القيامة",
+      "name_simple": "Al-Qiyamah",
+      "revelation_place": "makkah",
+      "revelation_order": 31,
+      "verses_count": 40,
+      "bismillah_pre": true
+    },
+    {
+      "number": 76,
+      "name_arabic": "الانسان",
+      "name_simple": "Al-Insan",
+      "revelation_place": "madinah",
+      "revelation_order": 98,
+      "verses_count": 31,
+      "bismillah_pre": true
+    },
+    {
+      "number": 77,
+      "name_arabic": "المرسلات",
+      "name_simple": "Al-Mursalat",
+      "revelation_place": "makkah",
+      "revelation_order": 33,
+      "verses_count": 50,
+      "bismillah_pre": true
+    },
+    {
+      "number": 78,
+      "name_arabic": "النبإ",
+      "name_simple": "An-Naba",
+      "revelation_place": "makkah",
+      "revelation_order": 80,
+      "verses_count": 40,
+      "bismillah_pre": true
+    },
+    {
+      "number": 79,
+      "name_arabic": "النازعات",
+      "name_simple": "An-Nazi'at",
+      "revelation_place": "makkah",
+      "revelation_order": 81,
+      "verses_count": 46,
+      "bismillah_pre": true
+    },
+    {
+      "number": 80,
+      "name_arabic": "عبس",
+      "name_simple": "'Abasa",
+      "revelation_place": "makkah",
+      "revelation_order": 24,
+      "verses_count": 42,
+      "bismillah_pre": true
+    },
+    {
+      "number": 81,
+      "name_arabic": "التكوير",
+      "name_simple": "At-Takwir",
+      "revelation_place": "makkah",
+      "revelation_order": 7,
+      "verses_count": 29,
+      "bismillah_pre": true
+    },
+    {
+      "number": 82,
+      "name_arabic": "الإنفطار",
+      "name_simple": "Al-Infitar",
+      "revelation_place": "makkah",
+      "revelation_order": 82,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 83,
+      "name_arabic": "المطففين",
+      "name_simple": "Al-Mutaffifin",
+      "revelation_place": "makkah",
+      "revelation_order": 86,
+      "verses_count": 36,
+      "bismillah_pre": true
+    },
+    {
+      "number": 84,
+      "name_arabic": "الإنشقاق",
+      "name_simple": "Al-Inshiqaq",
+      "revelation_place": "makkah",
+      "revelation_order": 83,
+      "verses_count": 25,
+      "bismillah_pre": true
+    },
+    {
+      "number": 85,
+      "name_arabic": "البروج",
+      "name_simple": "Al-Buruj",
+      "revelation_place": "makkah",
+      "revelation_order": 27,
+      "verses_count": 22,
+      "bismillah_pre": true
+    },
+    {
+      "number": 86,
+      "name_arabic": "الطارق",
+      "name_simple": "At-Tariq",
+      "revelation_place": "makkah",
+      "revelation_order": 36,
+      "verses_count": 17,
+      "bismillah_pre": true
+    },
+    {
+      "number": 87,
+      "name_arabic": "الأعلى",
+      "name_simple": "Al-A'la",
+      "revelation_place": "makkah",
+      "revelation_order": 8,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 88,
+      "name_arabic": "الغاشية",
+      "name_simple": "Al-Ghashiyah",
+      "revelation_place": "makkah",
+      "revelation_order": 68,
+      "verses_count": 26,
+      "bismillah_pre": true
+    },
+    {
+      "number": 89,
+      "name_arabic": "الفجر",
+      "name_simple": "Al-Fajr",
+      "revelation_place": "makkah",
+      "revelation_order": 10,
+      "verses_count": 30,
+      "bismillah_pre": true
+    },
+    {
+      "number": 90,
+      "name_arabic": "البلد",
+      "name_simple": "Al-Balad",
+      "revelation_place": "makkah",
+      "revelation_order": 35,
+      "verses_count": 20,
+      "bismillah_pre": true
+    },
+    {
+      "number": 91,
+      "name_arabic": "الشمس",
+      "name_simple": "Ash-Shams",
+      "revelation_place": "makkah",
+      "revelation_order": 26,
+      "verses_count": 15,
+      "bismillah_pre": true
+    },
+    {
+      "number": 92,
+      "name_arabic": "الليل",
+      "name_simple": "Al-Layl",
+      "revelation_place": "makkah",
+      "revelation_order": 9,
+      "verses_count": 21,
+      "bismillah_pre": true
+    },
+    {
+      "number": 93,
+      "name_arabic": "الضحى",
+      "name_simple": "Ad-Duhaa",
+      "revelation_place": "makkah",
+      "revelation_order": 11,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 94,
+      "name_arabic": "الشرح",
+      "name_simple": "Ash-Sharh",
+      "revelation_place": "makkah",
+      "revelation_order": 12,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 95,
+      "name_arabic": "التين",
+      "name_simple": "At-Tin",
+      "revelation_place": "makkah",
+      "revelation_order": 28,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 96,
+      "name_arabic": "العلق",
+      "name_simple": "Al-'Alaq",
+      "revelation_place": "makkah",
+      "revelation_order": 1,
+      "verses_count": 19,
+      "bismillah_pre": true
+    },
+    {
+      "number": 97,
+      "name_arabic": "القدر",
+      "name_simple": "Al-Qadr",
+      "revelation_place": "makkah",
+      "revelation_order": 25,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 98,
+      "name_arabic": "البينة",
+      "name_simple": "Al-Bayyinah",
+      "revelation_place": "madinah",
+      "revelation_order": 100,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 99,
+      "name_arabic": "الزلزلة",
+      "name_simple": "Az-Zalzalah",
+      "revelation_place": "madinah",
+      "revelation_order": 93,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 100,
+      "name_arabic": "العاديات",
+      "name_simple": "Al-'Adiyat",
+      "revelation_place": "makkah",
+      "revelation_order": 14,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 101,
+      "name_arabic": "القارعة",
+      "name_simple": "Al-Qari'ah",
+      "revelation_place": "makkah",
+      "revelation_order": 30,
+      "verses_count": 11,
+      "bismillah_pre": true
+    },
+    {
+      "number": 102,
+      "name_arabic": "التكاثر",
+      "name_simple": "At-Takathur",
+      "revelation_place": "makkah",
+      "revelation_order": 16,
+      "verses_count": 8,
+      "bismillah_pre": true
+    },
+    {
+      "number": 103,
+      "name_arabic": "العصر",
+      "name_simple": "Al-'Asr",
+      "revelation_place": "makkah",
+      "revelation_order": 13,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 104,
+      "name_arabic": "الهمزة",
+      "name_simple": "Al-Humazah",
+      "revelation_place": "makkah",
+      "revelation_order": 32,
+      "verses_count": 9,
+      "bismillah_pre": true
+    },
+    {
+      "number": 105,
+      "name_arabic": "الفيل",
+      "name_simple": "Al-Fil",
+      "revelation_place": "makkah",
+      "revelation_order": 19,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 106,
+      "name_arabic": "قريش",
+      "name_simple": "Quraysh",
+      "revelation_place": "makkah",
+      "revelation_order": 29,
+      "verses_count": 4,
+      "bismillah_pre": true
+    },
+    {
+      "number": 107,
+      "name_arabic": "الماعون",
+      "name_simple": "Al-Ma'un",
+      "revelation_place": "makkah",
+      "revelation_order": 17,
+      "verses_count": 7,
+      "bismillah_pre": true
+    },
+    {
+      "number": 108,
+      "name_arabic": "الكوثر",
+      "name_simple": "Al-Kawthar",
+      "revelation_place": "makkah",
+      "revelation_order": 15,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 109,
+      "name_arabic": "الكافرون",
+      "name_simple": "Al-Kafirun",
+      "revelation_place": "makkah",
+      "revelation_order": 18,
+      "verses_count": 6,
+      "bismillah_pre": true
+    },
+    {
+      "number": 110,
+      "name_arabic": "النصر",
+      "name_simple": "An-Nasr",
+      "revelation_place": "madinah",
+      "revelation_order": 114,
+      "verses_count": 3,
+      "bismillah_pre": true
+    },
+    {
+      "number": 111,
+      "name_arabic": "المسد",
+      "name_simple": "Al-Masad",
+      "revelation_place": "makkah",
+      "revelation_order": 6,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 112,
+      "name_arabic": "الإخلاص",
+      "name_simple": "Al-Ikhlas",
+      "revelation_place": "makkah",
+      "revelation_order": 22,
+      "verses_count": 4,
+      "bismillah_pre": true
+    },
+    {
+      "number": 113,
+      "name_arabic": "الفلق",
+      "name_simple": "Al-Falaq",
+      "revelation_place": "makkah",
+      "revelation_order": 20,
+      "verses_count": 5,
+      "bismillah_pre": true
+    },
+    {
+      "number": 114,
+      "name_arabic": "الناس",
+      "name_simple": "An-Nas",
+      "revelation_place": "makkah",
+      "revelation_order": 21,
+      "verses_count": 6,
+      "bismillah_pre": true
+    }
+  ],
+  "verseCount": 6236,
+  "claims": [
+    {
+      "id": "strong-person-saying",
+      "question": "Where does the saying about the strong person and anger come from?",
+      "claim": "The Quran says the strong person is the one who controls himself in anger, not the one who defeats others.",
+      "keywords": [
+        "strong person",
+        "controls himself",
+        "anger",
+        "angry"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "6114",
+            "url": "https://sunnah.com/bukhari:6114",
+            "summary": "Abu Hurayra reports a saying that sets defeating other people against controlling oneself in anger, and names the second as the mark of the strong."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This saying is reported in Sahih al-Bukhari 6114, and a search for its wording finds no ayah in the Pickthall text.",
+      "limit": "This compares wording only; other ayahs may speak about restraining anger in different words.",
+      "howToCheck": [
+        "Search \"controls himself\" in English: no ayah matches.",
+        "Search \"wrath\" in English and read each result in context to see what the ayahs say about anger.",
+        "Open Sahih al-Bukhari 6114 on sunnah.com and read the saying and its narrator."
+      ]
+    },
+    {
+      "id": "blessing-in-a-sale",
+      "question": "Where does the teaching about honesty, hidden defects and blessing in a sale come from?",
+      "claim": "The Quran says a sale is blessed when both sides are honest, and that hiding a defect takes the blessing away.",
+      "keywords": [
+        "sale",
+        "seller",
+        "buyer",
+        "defect",
+        "selling"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "2079",
+            "url": "https://sunnah.com/bukhari:2079",
+            "summary": "Hakim ibn Hizam reports that buyer and seller are blessed in their deal when they are truthful and open, and lose its blessing when they hide something or lie."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This teaching is reported in Sahih al-Bukhari 2079, and searching for its wording finds no matching ayah in the Pickthall text.",
+      "limit": "The report is not a complete legal ruling on any real dispute.",
+      "howToCheck": [
+        "Search \"seller\" and then \"buyer\" in English: nothing matches.",
+        "Search \"conceal\" in English and read each result in context to see whether any ayah says this.",
+        "Open Sahih al-Bukhari 2079 on sunnah.com."
+      ]
+    },
+    {
+      "id": "web-at-the-cave",
+      "question": "What do the sources say about a spider’s web at the cave?",
+      "claim": "The Quran says a spider spun a web over the cave, so the pursuers could not find the Prophet ﷺ and Abu Bakr.",
+      "keywords": [
+        "spider",
+        "web",
+        "cave",
+        "thawr"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "9:40",
+            "arabic": "إِلَّا تَنصُرُوهُ فَقَدْ نَصَرَهُ ٱللَّهُ إِذْ أَخْرَجَهُ ٱلَّذِينَ كَفَرُوا۟ ثَانِىَ ٱثْنَيْنِ إِذْ هُمَا فِى ٱلْغَارِ إِذْ يَقُولُ لِصَـٰحِبِهِۦ لَا تَحْزَنْ إِنَّ ٱللَّهَ مَعَنَا ۖ فَأَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَيْهِ وَأَيَّدَهُۥ بِجُنُودٍ لَّمْ تَرَوْهَا وَجَعَلَ كَلِمَةَ ٱلَّذِينَ كَفَرُوا۟ ٱلسُّفْلَىٰ ۗ وَكَلِمَةُ ٱللَّهِ هِىَ ٱلْعُلْيَا ۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
+            "translation": "If ye help him not, still Allah helped him when those who disbelieve drove him forth, the second of two; when they two were in the cave, when he said unto his comrade: Grieve not. Lo! Allah is with us. Then Allah caused His peace of reassurance to descend upon him and supported him with hosts ye cannot see, and made the word of those who disbelieved the nethermost, while Allah's Word it was that became the uppermost. Allah is Mighty, Wise."
+          },
+          {
+            "ref": "29:41",
+            "arabic": "مَثَلُ ٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ أَوْلِيَآءَ كَمَثَلِ ٱلْعَنكَبُوتِ ٱتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ ٱلْبُيُوتِ لَبَيْتُ ٱلْعَنكَبُوتِ ۖ لَوْ كَانُوا۟ يَعْلَمُونَ",
+            "translation": "The likeness of those who choose other patrons than Allah is as the likeness of the spider when she taketh unto herself a house, and lo! the frailest of all houses is the spider's house, if they but knew."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "3653",
+            "url": "https://sunnah.com/bukhari:3653",
+            "summary": "Abu Bakr voices worry that the pursuers might see them in the cave, and he is reassured. This brief report mentions no web."
+          }
+        ]
+      },
+      "category": "Not found in the Quran",
+      "verdict": "Searching the Pickthall text for \"web\" finds nothing, \"spider\" finds only 29:41, and 9:40 mentions the cave without a spider.",
+      "limit": "This does not judge other narrations about the cave; it only shows what the Pickthall search and this one report contain.",
+      "howToCheck": [
+        "Search \"web\" in English: no ayah matches.",
+        "Search \"spider\" in English: only 29:41 appears. Read it in context.",
+        "Search \"cave\" in English and open 9:40: is a spider mentioned there?"
+      ]
+    },
+    {
+      "id": "night-journey-date",
+      "question": "What do the sources say about the date of the Night Journey?",
+      "claim": "The Quran gives the exact date of the Night Journey, such as 27 Rajab.",
+      "keywords": [
+        "night journey",
+        "isra",
+        "rajab",
+        "ascent",
+        "miraj",
+        "17:1"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "17:1",
+            "arabic": "سُبْحَـٰنَ ٱلَّذِىٓ أَسْرَىٰ بِعَبْدِهِۦ لَيْلًا مِّنَ ٱلْمَسْجِدِ ٱلْحَرَامِ إِلَى ٱلْمَسْجِدِ ٱلْأَقْصَا ٱلَّذِى بَـٰرَكْنَا حَوْلَهُۥ لِنُرِيَهُۥ مِنْ ءَايَـٰتِنَآ ۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+            "translation": "Glorified be He Who carried His servant by night from the Inviolable Place of Worship to the Far distant place of worship the neighbourhood whereof We have blessed, that We might show him of Our tokens! Lo! He, only He, is the Hearer, the Seer."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "3887",
+            "url": "https://sunnah.com/bukhari:3887",
+            "summary": "Malik ibn Sasaa reports the Night Journey and the ascent. The report gives no exact calendar date."
+          }
+        ]
+      },
+      "category": "Not found in the Quran",
+      "verdict": "17:1 speaks of a journey by night without any date, and \"Rajab\" is not found by search in the Pickthall text.",
+      "limit": "This is a finding about 17:1 and one report, not a survey of every discussion of the date.",
+      "howToCheck": [
+        "Search \"far distant\" in English to open 17:1 and read it for a date.",
+        "Search \"Rajab\" in English: nothing matches.",
+        "Open Sahih al-Bukhari 3887 on sunnah.com and look for a calendar date."
+      ]
+    },
+    {
+      "id": "safa-marwa-no-sin",
+      "question": "What does 2:158 say about going around Safa and Marwa?",
+      "claim": "“No sin” in 2:158 means that walking between Safa and Marwa is optional.",
+      "keywords": [
+        "safa",
+        "marwa",
+        "marwah",
+        "no sin",
+        "2:158"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "2:158",
+            "arabic": "۞ إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ",
+            "translation": "Lo! (the mountains) As-Safa and Al-Marwah are among the indications of Allah. It is therefore no sin for him who is on pilgrimage to the House (of Allah) or visiteth it, to go around them (as the pagan custom is). And he who doeth good of his own accord, (for him) lo! Allah is Responsive, Aware."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "1643",
+            "url": "https://sunnah.com/bukhari:1643",
+            "summary": "Urwa asks about the wording of 2:158 and infers that the walk can be skipped. Aisha rejects that and explains the earlier hesitation behind the wording."
+          }
+        ]
+      },
+      "category": "Misreads the source",
+      "verdict": "2:158 says it is no sin to go around them, and in Sahih al-Bukhari 1643 Aisha rejects the inference that this makes the walk optional and explains the hesitation behind the wording.",
+      "limit": "Legal detail and differences between schools need more than this short check.",
+      "howToCheck": [
+        "Search \"Safa\" in English to open 2:158 and read the whole ayah.",
+        "Search \"optional\" in English: nothing matches.",
+        "Open Sahih al-Bukhari 1643 on sunnah.com and read Aisha’s reply."
+      ]
+    },
+    {
+      "id": "garden-and-3-92",
+      "question": "How are 3:92 and Abu Talha’s garden connected?",
+      "claim": "3:92 was revealed because Abu Talha gave away his beloved garden.",
+      "keywords": [
+        "abu talha",
+        "beloved garden",
+        "that which ye love",
+        "3:92"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "3:92",
+            "arabic": "لَن تَنَالُوا۟ ٱلْبِرَّ حَتَّىٰ تُنفِقُوا۟ مِمَّا تُحِبُّونَ ۚ وَمَا تُنفِقُوا۟ مِن شَىْءٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ",
+            "translation": "Ye will not attain unto piety until ye spend of that which ye love. And whatsoever ye spend, Allah is Aware thereof."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "1461",
+            "url": "https://sunnah.com/bukhari:1461",
+            "summary": "Anas reports that Abu Talha, after hearing the teaching about spending what you love, offers his most beloved garden in charity."
+          }
+        ]
+      },
+      "category": "Misreads the source",
+      "verdict": "In Sahih al-Bukhari 1461 Abu Talha offers his garden in response to hearing 3:92, so in this report the offer follows the verse.",
+      "limit": "One account of a response does not list every circumstance known about a verse.",
+      "howToCheck": [
+        "Type 3:92 in the search box and read the whole ayah: does it mention a garden or a person?",
+        "Open Sahih al-Bukhari 1461 on sunnah.com.",
+        "Note whether the report puts the verse before or after the offer."
+      ]
+    },
+    {
+      "id": "spider-house-29-41",
+      "question": "What does 29:41 say about the spider’s house?",
+      "claim": "The Quran says the weakest of houses is the spider’s house.",
+      "keywords": [
+        "spider",
+        "frailest",
+        "weakest house",
+        "house of the spider",
+        "29:41"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "29:41",
+            "arabic": "مَثَلُ ٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ أَوْلِيَآءَ كَمَثَلِ ٱلْعَنكَبُوتِ ٱتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ ٱلْبُيُوتِ لَبَيْتُ ٱلْعَنكَبُوتِ ۖ لَوْ كَانُوا۟ يَعْلَمُونَ",
+            "translation": "The likeness of those who choose other patrons than Allah is as the likeness of the spider when she taketh unto herself a house, and lo! the frailest of all houses is the spider's house, if they but knew."
+          }
+        ],
+        "hadith": []
+      },
+      "category": "In the Quran (exact ayah)",
+      "verdict": "Yes: 29:41 says “the frailest of all houses is the spider’s house” (Pickthall), in a comparison about taking patrons other than Allah, not a ranking of materials.",
+      "limit": "The verse makes no claim about spider silk or any other fibre, strong or weak.",
+      "howToCheck": [
+        "Search \"spider\" in English: 29:41 appears.",
+        "Search \"frailest\" in English to see the Pickthall wording for “weakest”.",
+        "Read 29:41 in context: who is the comparison about?"
+      ]
+    },
+    {
+      "id": "honour-and-tribes",
+      "question": "What does 49:13 say about tribes and honour?",
+      "claim": "The Quran says honour in Allah’s sight does not come from tribe or ancestry, but from how a person conducts themselves.",
+      "keywords": [
+        "tribes",
+        "nations",
+        "noblest",
+        "best in conduct",
+        "ancestry",
+        "49:13"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "49:13",
+            "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
+            "translation": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware."
+          }
+        ],
+        "hadith": []
+      },
+      "category": "A paraphrase of an ayah",
+      "verdict": "This sums up 49:13, which says people were made into nations and tribes so that they may know one another, and that the noblest in Allah’s sight is the best in conduct (Pickthall).",
+      "limit": "The words “not ancestry” are a summary and do not appear in the ayah; this does not judge any person’s standing.",
+      "howToCheck": [
+        "Search \"tribes\" in English and open 49:13.",
+        "Search \"ancestry\" in English: nothing matches, so the ayah words it differently.",
+        "Search \"best in conduct\" in English and compare the wording with the claim."
+      ]
+    },
+    {
+      "id": "delaying-a-debt",
+      "question": "What do the sources say about delaying a debt you are able to pay?",
+      "claim": "The Quran says a rich person who delays paying a debt is acting unjustly.",
+      "keywords": [
+        "debt",
+        "debtor",
+        "delay",
+        "delaying",
+        "owe"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "2400",
+            "url": "https://sunnah.com/bukhari:2400",
+            "summary": "Abu Hurayra reports that when a person who is able to pay puts off paying, that delay is injustice."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This teaching is reported in Sahih al-Bukhari 2400, and a search for its wording finds no matching ayah in the Pickthall text.",
+      "limit": "It concerns a debtor who is able to pay; a debtor in real hardship is a different case with different sources.",
+      "howToCheck": [
+        "Search \"debtor\" in English: one ayah appears. Read it in context and see whether it says this.",
+        "Search \"delay\" in English and read the result.",
+        "Open Sahih al-Bukhari 2400 on sunnah.com."
+      ]
+    },
+    {
+      "id": "truthfulness-and-righteousness",
+      "question": "Where does the link between truthfulness and righteousness come from?",
+      "claim": "The Quran says truthfulness leads to righteousness and lying leads the other way.",
+      "keywords": [
+        "truthfulness",
+        "truthful",
+        "righteousness",
+        "lying",
+        "liar"
+      ],
+      "evidence": {
+        "quran": [],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "6094",
+            "url": "https://sunnah.com/bukhari:6094",
+            "summary": "The report links the habit of truthfulness with righteousness and warns about the habit of lying."
+          }
+        ]
+      },
+      "category": "A hadith, not the Quran",
+      "verdict": "This is a report in Sahih al-Bukhari 6094, and a search for its wording finds no ayah that states it in the Pickthall text.",
+      "limit": "This does not decide the moral state of any named person or settle every discussion about speech.",
+      "howToCheck": [
+        "Search \"truthfulness\" in English: one ayah appears. Read it in context.",
+        "Search \"righteousness\" and \"lying\" in English and read the results.",
+        "Open Sahih al-Bukhari 6094 on sunnah.com."
+      ]
+    },
+    {
+      "id": "voices-in-49-2",
+      "question": "What do the sources say about who the people in 49:2 were?",
+      "claim": "The Quran names the two men whose raised voices led to 49:2.",
+      "keywords": [
+        "voices",
+        "raise your voices",
+        "49:2"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "49:2",
+            "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَرْفَعُوٓا۟ أَصْوَٰتَكُمْ فَوْقَ صَوْتِ ٱلنَّبِىِّ وَلَا تَجْهَرُوا۟ لَهُۥ بِٱلْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَـٰلُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ",
+            "translation": "O ye who believe! Lift not up your voices above the voice of the Prophet, nor shout when speaking to him as ye shout one to another, lest your works be rendered vain while ye perceive not."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "4845",
+            "url": "https://sunnah.com/bukhari:4845",
+            "summary": "Ibn Abi Mulaika’s narration names Abu Bakr and Umar as the two who raised their voices over whom to recommend, and says the ayah was revealed then. A narrator adds that he does not remember the name of the man one of them recommended."
+          }
+        ]
+      },
+      "category": "Not found in the Quran",
+      "verdict": "49:2 tells believers not to raise their voices above the voice of the Prophet ﷺ and names no one; the personal names come from the report in Sahih al-Bukhari 4845, which names Abu Bakr and Umar.",
+      "limit": "This shows what the ayah and one report say; it does not settle every discussion of the occasion.",
+      "howToCheck": [
+        "Search \"voices\" in English and open 49:2.",
+        "Read the ayah for any personal name.",
+        "Open Sahih al-Bukhari 4845 on sunnah.com and see which names the report gives, and what the narrator says he does not remember."
+      ]
+    },
+    {
+      "id": "chapter-96-order",
+      "question": "How should we read Al-Alaq’s place as chapter 96?",
+      "claim": "Al-Alaq is chapter 96, so its opening ayahs were revealed near the end of the mission.",
+      "keywords": [
+        "al-alaq",
+        "alaq",
+        "96:1",
+        "first revelation",
+        "hira"
+      ],
+      "evidence": {
+        "quran": [
+          {
+            "ref": "96:1-5",
+            "arabic": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ\nخَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ\nٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ\nٱلَّذِى عَلَّمَ بِٱلْقَلَمِ\nعَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+            "translation": "Read: In the name of thy Lord Who createth,\nCreateth man from a clot.\nRead: And thy Lord is the Most Bounteous,\nWho teacheth by the pen,\nTeacheth man that which he knew not."
+          }
+        ],
+        "hadith": [
+          {
+            "collection": "Sahih al-Bukhari",
+            "number": "4953",
+            "url": "https://sunnah.com/bukhari:4953",
+            "summary": "Aisha’s report describes the beginning of revelation at Hira, opening with the instruction to read."
+          }
+        ]
+      },
+      "category": "Misreads the source",
+      "verdict": "A chapter’s number shows its place in the written Quran, not when it was revealed, and Sahih al-Bukhari 4953 describes the opening ayahs of Al-Alaq as the beginning of revelation.",
+      "limit": "This concerns the opening ayahs, not a date for every ayah of Al-Alaq.",
+      "howToCheck": [
+        "Type 96:1-5 in the search box and read the ayahs.",
+        "Open Sahih al-Bukhari 4953 on sunnah.com and read how it describes the start of revelation.",
+        "Ask whether a chapter number is a date."
+      ]
+    }
+  ]
+}

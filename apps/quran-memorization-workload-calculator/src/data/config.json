@@ -1,8 +1,0 @@
-{
-  "slug": "quran-memorization-workload-calculator",
-  "name": "Hifz Planner",
-  "description": "Estimate new memorization and revision time for your week",
-  "accent": "teal",
-  "nav": "Plan",
-  "port": 4326
-}
