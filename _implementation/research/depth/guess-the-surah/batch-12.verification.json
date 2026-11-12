@@ -1,0 +1,41 @@
+{
+  "task": "C1-verify",
+  "batch": 12,
+  "fetch": {
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "timeLocal": "2026-11-12 14:36:13 BST (plain date reading at fetch, Asia/Dhaka)",
+    "timeUtc": "2026-11-12T08:36:13Z",
+    "httpStatus": 200
+  },
+  "verifier": "second-pass, branch content-c1-verify",
+  "items": [
+    {
+      "chapter": 111,
+      "value": "The Palm Fiber",
+      "apiValue": "The Palm Fiber",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 112,
+      "value": "The Sincerity",
+      "apiValue": "The Sincerity",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 113,
+      "value": "The Daybreak",
+      "apiValue": "The Daybreak",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 114,
+      "value": "Mankind",
+      "apiValue": "Mankind",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    }
+  ]
+}

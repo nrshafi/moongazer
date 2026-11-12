@@ -1,0 +1,83 @@
+{
+  "task": "C1-verify",
+  "batch": 8,
+  "fetch": {
+    "url": "https://api.quran.com/api/v4/chapters?language=en",
+    "timeLocal": "2026-11-12 14:36:13 BST (plain date reading at fetch, Asia/Dhaka)",
+    "timeUtc": "2026-11-12T08:36:13Z",
+    "httpStatus": 200
+  },
+  "verifier": "second-pass, branch content-c1-verify",
+  "items": [
+    {
+      "chapter": 71,
+      "value": "Noah",
+      "apiValue": "Noah",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 72,
+      "value": "The Jinn",
+      "apiValue": "The Jinn",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 73,
+      "value": "The Enshrouded One",
+      "apiValue": "The Enshrouded One",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 74,
+      "value": "The Cloaked One",
+      "apiValue": "The Cloaked One",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 75,
+      "value": "The Resurrection",
+      "apiValue": "The Resurrection",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 76,
+      "value": "The Man",
+      "apiValue": "The Man",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 77,
+      "value": "The Emissaries",
+      "apiValue": "The Emissaries",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 78,
+      "value": "The Tidings",
+      "apiValue": "The Tidings",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 79,
+      "value": "Those who drag forth",
+      "apiValue": "Those who drag forth",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    },
+    {
+      "chapter": 80,
+      "value": "He Frowned",
+      "apiValue": "He Frowned",
+      "result": "pass",
+      "reason": "byte-identical to translated_name.name; source quran-com-api-v4-chapters is in sources.json; no spoiler in built titles/URLs/meta"
+    }
+  ]
+}
