@@ -36,7 +36,7 @@ These are final. Do not ask the owner again. A conflict between this table and a
 | D21 | Verify_Me | Triaged: accessibility, spoiler and copy bugs go into phase 1; app UX items go into the app's phase or content tasks; a modern English translation is a licence research task only. See `appendix-verify-me-triage.md`. |
 | D22 | Daily numbering | Daily puzzle `#1` is the day daily mode is first published. The epoch is one constant, identical in every daily app and the directory, set when the owner schedules release R6. |
 | D23 | Zakat | At every point where schools differ (personal-use jewellery, debt deduction, nisab metal), the learner chooses a labelled option with a source note. Both nisab bases are shown. No default ruling. The printed summary lists the choices made. |
-| D24 | Booktube | Out of scope except interfaces: short links and a small static daily JSON export (phase 6) that Booktube can read. Video production has its own plan in the Booktube repository. |
+| D24 | Booktube | Out of scope except interfaces: app hosts (no apex short links, D2c) and a small static daily JSON export (phase 6) that Booktube can read. Video production has its own plan in the Booktube repository. |
 | D25 | After Ramadan | New apps (Quran Words, Names of Allah, Alif Ba), then the Bangla edition of five apps, then platform work (install/offline, zero-account backup code, cross-app streak, teachers page). Accounts only on demonstrated demand. |
 
 Standing rules that also still apply: no music, instruments, bells or chimes; no images of people or animals in any medium; exact canonical Quran text and named translation; honorifics; no accounts, ads or third-party scripts; anonymous-first; namespaced 30-day optional storage. See `context/project-dna.md`.

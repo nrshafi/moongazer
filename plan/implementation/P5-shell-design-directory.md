@@ -117,8 +117,8 @@ Steps (top to bottom, phone first):
 6. The four subject guides follow the library as compact wide cards with member logos.
 7. Seasonal slot container (P7 fills).
 8. Trust row: "Exact Quran text with named translation · Sources on every page · Corrections log →" (no reviewer claim).
-9. Short links in `homepage/_redirects`, 302 to each app root: `/surah`, `/threads`, `/groups`, `/escape`, `/check`, `/prophets`, `/parables`, `/places`, `/revealed`, `/seerah`, `/detective`, `/civilization`, `/salah`, `/hifz`, `/akhlaq`, `/family`, `/feedback` (internal). Confirm absolute destinations are supported in Pages `_redirects` (official docs) and record the URL in `context/architecture.md`. Add them to the footer.
-Acceptance: first app card visible on screen one at 390 × 844; JS off still lists all apps; short links resolve locally (`bunx wrangler pages dev dist` from `homepage/`).
+9. ~~Short links~~ — dropped under D2c (no redirects). Each app's own host is already short (for example `guess-the-surah.moongazer.tech`); the footer links to the hosts directly.
+Acceptance: first app card visible on screen one at 390 × 844; JS off still lists all apps.
 Verify: V4, V6, V7.
 
 ### T5.16 Social cards

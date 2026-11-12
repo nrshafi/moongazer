@@ -18,7 +18,7 @@ Every learning activity stays free, ad-free, and free of third-party tracking sc
 
 Booktube is a motion-graphics video tool, not a revenue source for Moongazer. Under Booktube's Islamic guidelines, which forbid music, bells, and images of living beings, Booktube acts as Moongazer's short-form visual funnel on YouTube Shorts, Instagram Reels, TikTok, and WhatsApp channels.
 
-Booktube turns verified Moongazer JSON content into three recurring video formats that end on a Moongazer short link such as `moongazer.tech/surah`:
+Booktube turns verified Moongazer JSON content into three recurring video formats that end on the app's own host, such as `guess-the-surah.moongazer.tech`:
 
 1. **Play-along hooks.** 30-second "Guess the Surah in 3 clues" or "Which event came first?" clips that pause before the final reveal and invite viewers to play today's board on Moongazer.
 2. **Source-check explainers.** 45-second typographic and map animations built from the Misinformation Casebook, Stories of the Prophets, or Salah phrase meanings.

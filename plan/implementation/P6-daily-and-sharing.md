@@ -11,7 +11,7 @@
 - **Selection.** A fixed, documented permutation of the bank (seeded Fisher–Yates with a constant seed per app, using the existing `shuffle(items, seed)` in `utils.ts`) indexed by `(dayNumber − 1) mod bank.length`. Every item appears once before any repeats. When the bank grows (content track), append new items to the end of the permutation input and bump a `BANK_VERSION`; document that numbers after a growth event follow the new permutation from the next cycle.
 - **Same `#N`, same puzzle** for everyone on the same local date. Document the time-zone edge in the app's "How this works".
 - **Practice mode** always available.
-- **Share text.** Plain text, no emoji, no tracking parameters, never the answer. Copy button and `https://wa.me/?text=<encodeURIComponent(text)>`. Short link at the end (`moongazer.tech/surah` etc.).
+- **Share text.** Plain text, no emoji, no tracking parameters, never the answer. Copy button and `https://wa.me/?text=<encodeURIComponent(text)>`. The app's own host at the end (for example `guess-the-surah.moongazer.tech`; no apex short links under D2c).
 - **Streaks** (opt-in, per app). Key `<slug>:streak` holding `{last:'YYYY-MM-DD', count, best}` via `read`/`write` (30-day access rule). Same day: unchanged; next day: `count+1`; gap: `count=1`; `best=max`. Document the key.
 
 ---
