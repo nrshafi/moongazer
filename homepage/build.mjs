@@ -1,7 +1,7 @@
 import {readFile,writeFile,mkdir,cp,readdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {origin,escapeHtml as e,metadata,appCards,pickChips,collectionLinks,questions,documentPage} from './render.mjs';
+import {origin,escapeHtml as e,metadata,appCards,appLinks,logo,pickChips,collectionLinks,questions,documentPage} from './render.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const source=join(root,'homepage');
@@ -16,7 +16,7 @@ const allPages=[home];
 const paths=collections.map(collection=>{
   const selected=apps.filter(app=>app.category===collection.category);
   if(!selected.length||!/^[a-z0-9-]+$/.test(collection.slug))throw new Error('Invalid subject guide');
-  return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span> <h3>${e(collection.name)}</h3> <p>${e(collection.description)}</p> <span>Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
+  return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span> <h3>${e(collection.name)}</h3> <p>${e(collection.description)}</p> <span class="member-logos" aria-hidden="true">${selected.map(app=>`<img src="${logo(app.slug)}" alt="" width="32" height="32" loading="lazy">`).join("")}</span> <span class="subject-action">Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
 }).join('\n');
 const commonQuestions=[
   {question:'What is Moongazer?',answer:'Moongazer is a collection of sixteen free browser apps for Quran, Seerah, history and everyday Islamic learning. Choose a tool for a specific task, such as recognizing a surah, finding wording, reading a report or exploring prayer recitation meanings.'},
@@ -24,8 +24,8 @@ const commonQuestions=[
   {question:'Where can I check an explanation or report a correction?',answer:'Each app links its sources and methodology. The About page explains the collection\'s source practices and provides the public contact for quotation, attribution and wording corrections.'}
 ];
 let template=await readFile(join(source,'index.html'),'utf8');
-for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS','PICKER_CHIPS'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
-template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- PICKER_CHIPS -->',pickChips(apps)).replace('<!-- APP_CATALOG -->',appCards(apps,shots)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
+for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS','PICKER_CHIPS','APP_LINKS'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
+template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- APP_LINKS -->',appLinks(apps)).replace('<!-- PICKER_CHIPS -->',pickChips(apps)).replace('<!-- APP_CATALOG -->',appCards(apps,shots)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
 await mkdir(out,{recursive:true});
 await writeFile(join(out,'index.html'),template);
 for(const collection of collections){

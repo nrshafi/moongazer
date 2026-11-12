@@ -18,6 +18,8 @@ export function pickChips(apps){
     return `<a class="chip" href="/?pick=${pick.id}#library" data-pick="${pick.id}"${rule}>${escapeHtml(pick.label)}</a>`;
   }).join(' ');
 }
+export const logoFiles={'ayah-threads':'quran-connections','seerah-detective':'the-seerah-detective','everyday-akhlaq':'everyday-akhlaq-simulator','seerah-timeline':'interactive-seerah-timeline','hifz-planner':'quran-memorization-workload-calculator','is-it-in-the-quran':'is-this-actually-in-the-quran','quran-escape-room':'islamic-knowledge-escape-room','stories-of-the-prophets':'stories-of-the-prophets-explorer','places-in-the-quran':'quranic-places-atlas','word-groups':'islamic-concept-connections','understand-your-salah':'understand-salah-lab','parables-of-the-quran':'quranic-parables-studio','civilization-timeline':'islamic-civilization-timeline','why-it-was-revealed':'revelation-context-explorer','family-halaqa':'family-islamic-learning-challenges'};
+export const logo=slug=>'/logos/'+(logoFiles[slug]||slug)+'.svg';
 export const audienceLabels={me:'Just me',kids:'With kids',class:'For a class'};
 
 export function structuredData(meta,apps){
@@ -53,10 +55,12 @@ export function appCards(apps,shots=new Set()){
   return apps.map(app=>{
     const slot=shots.has(app.slug)
       ?`<img src="/shots/${e(app.slug)}.webp" alt="${e(`Screenshot of ${app.name}: ${app.description}`)}" width="640" height="360" loading="lazy" decoding="async">`
-      :`<span class="shot-ph" aria-hidden="true"><img src="/logos/${e(app.slug)}.svg" alt="" width="56" height="56" loading="lazy"><span>${e(app.format)}</span></span>`;
-    return `<article class="app-card" data-slug="${e(app.slug)}" data-time="${app.time}" data-audience="${e(app.audience)}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><span class="shot">${slot}</span><span class="card-body"><span class="card-meta"><span class="badge">${e(app.format)}</span><span>${app.time} min</span><span>${audienceLabels[app.audience]}</span></span> <h3>${e(app.name)}</h3> <p>${e(app.description)}</p></span></a></article>`;
+      :`<span class="shot-ph" aria-hidden="true"><img src="${logo(app.slug)}" alt="" width="56" height="56" loading="lazy"><span>${e(app.format)}</span></span>`;
+    return `<article class="app-card" data-slug="${e(app.slug)}" data-time="${app.time}" data-audience="${e(app.audience)}"><a href="https://${app.slug}.moongazer.tech/" class="app-link"><span class="shot">${slot}</span><span class="card-body"><span class="card-meta"><span class="badge">${e(app.format)}</span> <span>${app.time} min</span> <span>${audienceLabels[app.audience]}</span></span> <h3>${e(app.name)}</h3> <p>${e(app.description)}</p></span></a></article>`;
   }).join('\n');
 }
+
+export function appLinks(apps){return apps.map(app=>`<a href="https://${app.slug}.moongazer.tech/">${escapeHtml(app.name)}</a>`).join(' ');}
 
 export function collectionLinks(collections){
   return collections.map(c=>`<a href="/${c.slug}/">${escapeHtml(c.name)}</a>`).join(' ');
