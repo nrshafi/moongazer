@@ -117,3 +117,7 @@ Counter events go through `src/lib/counter.ts` (`track`). Item ids are the stabl
 - `src/lib/challenge-app.ts`: `activity_started` (pack id) on the first move. `activity_completed` (pack id) once per page load on a correct check or a reveal. `share_clicked` (pack id) on "Copy challenge link".
 - `src/lib/timeline.ts`: `share_clicked` (selected event id) on the event "Copy link" button.
 - `src/pages/challenge/index.astro`: the status paragraph is now `#challenge-feedback` (it had duplicated the footer form id `feedback`); the "Report an error" link sits under it.
+
+## P5 notes
+
+`src/lib/timeline.ts` renders the inspector into `#selected-event`, adds a Close button, opens and closes the phone drawer (`drawer-open`, Escape, focus return) and calls `renderSessionEnd` into `#session-end` with the next app from `learning.json` related[0]. `src/lib/challenge-app.ts` calls `renderSessionEnd` when a pack is matched or revealed; the share text never contains the order. `/challenge/` has its notice inside `HowItWorks`.

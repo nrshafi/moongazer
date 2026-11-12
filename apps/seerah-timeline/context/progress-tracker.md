@@ -116,3 +116,10 @@ Limitations: no browser or DOM run with a stubbed `navigator.sendBeacon`; once-p
 ## 2026-11-12 06:08 (Asia/Dhaka) — P3B docs refresh after the host move
 
 Changed: architecture.md now says the challenge was merged in and the standalone app removed under D2c; moved-release and redirect wording dropped.
+
+## 2026-11-12 13:58 (Asia/Dhaka) - P5 wave: Seerah Timeline
+
+Changed: compact hero and motif (T5.6/T5.11); `How this works` drawer holds the intro, no-JS note and the "Dates need context" limit (T5.7); session-end block after each opened event and after a `/challenge/` pack (T5.8); Projector via `data-projector` on body, Print button already in the inspector (T5.12); phone layout fixed so the list precedes a fixed bottom inspector drawer (T5.14). `/challenge/` keeps working; its intro is shortened and its notice is in the drawer.
+Removed duplicates: the home header pill "610-632 CE approximate" (the descriptor and per-event date notes carry it); the separate noscript box (merged into the drawer sentence). No limit deleted.
+Measured first control (search field) 354 px at 390 and 375, light and dark.
+Validation: `bun run check` 0 errors; `bun run test` 20 pass; `bun run build` ok; headless-Chrome checks at 390, 375 and 1440 in light and dark with no script errors or horizontal scroll; drawer open/Escape and the challenge reveal end block checked.
