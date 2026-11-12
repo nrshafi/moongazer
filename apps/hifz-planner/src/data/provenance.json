@@ -1139,5 +1139,17 @@
   ],
   "app": "hifz-planner",
   "appContentSha256": "ee0d359b6976b7f3b8a36163d5edce891beebba2b7990d972dbd84bdd7cd939d",
-  "corpusSha256": null
+  "corpusSha256": null,
+  "pageBoundaries": {
+    "provider": "Quran Foundation Quran MCP",
+    "tool": "mcp__quran__fetch_quran_metadata",
+    "server": "https://mcp.quran.ai",
+    "calls": "juz=1..30 and surah=1..114",
+    "fetchedAt": "2026-11-11T23:35:59+06:00",
+    "researchFile": "_implementation/research/page-boundaries.json",
+    "researchFileSha256LF": "fb4a06e02cc92891a70fd2e845b4a0236159be66b207472b9206c8da129e0031",
+    "appFile": "src/data/page-boundaries.json",
+    "layout": "604-page mushaf as returned by the tool",
+    "note": "Derived by keeping only page start/end, juz and surah numbers, names and juz ranges. No Arabic text is copied."
+  }
 }

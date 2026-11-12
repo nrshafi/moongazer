@@ -1,6 +1,61 @@
 ---
 import learning from '../data/learning.json';
+import {JUZ, SURAHS} from '../lib/pages';
 import Shell from '../layouts/Shell.astro';
+import Feedback from '../components/Feedback.astro';
+import '../styles/planner.css';
 ---
-<Shell title="Hifz Planner"><section class="intro"><span class="eyebrow">Make room for revision</span> <h1>{learning.heading}</h1> <p>Balance new pages with the pages you already know. Adjust your own time estimates and see what fits.</p></section><div class="workspace"><section class="panel"><div class="panel-head"><h2>Your study rhythm</h2> <span class="pill">604-page layout</span></div><form id="plan-form" class="panel-body"><div class="card-grid">
-{[['memorized','Pages already memorized',0,0,603,.25],['goal','New pages to add',20,.25,604,.25],['minutes','Minutes per study session',45,1,1440,1],['newMinutes','Minutes to learn one new page',45,1,1440,1],['reviewMinutes','Minutes to review one page',2,.1,120,.1],['pace','Maximum new pages per session',.5,.01,20,.01],['cycle','Review the whole portion every … study sessions',14,1,365,1]].map(([id,label,value,min,max,step])=><><label class="field">{label}<input id={String(id)} name={String(id)} type="number" value={value} min={min} max={max} step={step} required/></label>{' '}</>)}<label class="field">Start date<input id="start" name="start" type="date" required/></label></div><fieldset class="top-gap"><legend>Study days</legend><div class="actions">{['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map((day,i)=><><label class="pill"><input type="checkbox" name="day" value={i} checked={i>0&&i<6}/> {day}</label>{' '}</>)}</div></fieldset><label class="check-label top-gap"><input id="remember" type="checkbox"/> Remember these assumptions for 30 days</label><p id="error" role="alert"></p><div class="actions"><button class="button">Calculate plan</button> <button class="button secondary" type="button" id="reset">Reset</button></div></form></section> <aside class="sidebar"><div class="notice"><h2>What the model assumes</h2><p>Your memorized pages ÷ review cycle = pages to review each session. New study uses the remaining time.</p><p>Revision is spread evenly. The model does not assess retention, difficulty, recitation accuracy, or teacher guidance.</p><a href="/sources/">Read the methodology ↗</a></div></aside></div><section id="results" class="panel top-gap" aria-live="polite"></section><script>import '../lib/app';</script></Shell>
+<Shell title="Hifz Planner"><section class="intro"><span class="eyebrow">Make room for revision</span> <h1>{learning.heading}</h1> <p>Plan new memorization and revision around your week. Answer three steps, see this week’s checklist, and adjust any estimate you disagree with.</p></section><div class="workspace"><section class="panel wizard" aria-labelledby="wizard-title"><div class="panel-head"><div><h2 id="wizard-title">Plan your memorization</h2><p>Your own estimates, shown in full.</p></div><span class="pill" id="step-label">Step 1 of 3</span></div><div class="panel-body"><div class="progress-track" role="progressbar" aria-label="Wizard progress" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1"><span id="step-bar" style="width:33.3%"></span></div><form id="wizard" class="top-gap" novalidate>
+<fieldset class="wizard-step" data-step="1">
+<legend tabindex="-1">What have you memorized?</legend>
+<div class="wizard-fields">
+<label class="field">Pages already memorized (0 to 603)<input id="memorized" name="memorized" type="number" value="0" min="0" max="603" step="1" inputmode="numeric" required/></label>
+<label class="field">New pages you want to add<input id="goal" name="goal" type="number" value="20" min="1" max="604" step="1" inputmode="numeric" required/></label>
+</div>
+<p class="micro">Pages use the 604-page Hafs layout. Type a number, or tick the juz and surahs you have memorized and the number fills in.</p>
+<details class="drawer" id="choose-content">
+<summary>Choose by juz or by surah</summary>
+<p class="micro">Shared boundary pages count once. Typing a number clears the ticks; “Clear ticks” keeps the number.</p>
+<fieldset class="pick-group"><legend>Juz (30)</legend><div class="pick-grid">
+{JUZ.map(j => <label class="check"><input type="checkbox" name="juz" value={j.juz} id={`juz-${j.juz}`}/> <span>Juz {j.juz}, pages {j.pageStart}–{j.pageEnd}</span></label>)}
+</div></fieldset>
+<fieldset class="pick-group"><legend>Surahs (114)</legend><div class="pick-grid">
+{SURAHS.map(s => <label class="check"><input type="checkbox" name="surah" value={s.surah} id={`surah-${s.surah}`}/> <span>{s.surah}. {s.name}, pages {s.pageStart}–{s.pageEnd}</span></label>)}
+</div></fieldset>
+<div class="actions"><button class="button ghost small" type="button" id="clear-ticks">Clear ticks</button><span class="micro" id="pick-count" aria-live="polite"></span></div>
+</details>
+<p class="step-error" id="error-1" role="alert"></p>
+<div class="wizard-nav"><span></span><button class="button" type="button" data-next>Next</button></div>
+</fieldset>
+<fieldset class="wizard-step" data-step="2" hidden>
+<legend tabindex="-1">Your week</legend>
+<div class="wizard-fields">
+<label class="field">Study days per week (1 to 7)<input id="days" name="days" type="number" value="5" min="1" max="7" step="1" inputmode="numeric" required/></label>
+<label class="field">Minutes per study session<input id="minutes" name="minutes" type="number" value="45" min="1" max="1440" step="1" inputmode="numeric" required/></label>
+<label class="field">Start date<input id="start" name="start" type="date" required/></label>
+</div>
+<div class="suggestion top-gap"><p class="micro"><strong>Ramadan pace (a suggestion):</strong> fewer new pages per session and a shorter review cycle, so more of your week goes to revision. It is a starting point, not a rule. Every value stays editable below.</p><button class="button ghost small" type="button" id="ramadan">Use the Ramadan pace suggestion</button></div>
+<details class="drawer top-gap" id="assumptions">
+<summary>Adjust assumptions</summary>
+<p class="micro">These are your own estimates. The planner does not measure how well you remember anything.</p>
+<div class="wizard-fields">
+<label class="field">Minutes to learn one new page<input id="newMinutes" name="newMinutes" type="number" value="45" min="1" max="1440" step="1" inputmode="numeric" required/></label>
+<label class="field">Minutes to review one page<input id="reviewMinutes" name="reviewMinutes" type="number" value="2" min="0.1" max="120" step="0.1" inputmode="decimal" required/></label>
+<label class="field">How many new pages per session?<input id="pace" name="pace" type="number" value="0.5" min="0.01" max="20" step="0.01" inputmode="decimal" required/></label>
+<label class="field">How many study sessions until you review everything once?<input id="cycle" name="cycle" type="number" value="14" min="1" max="365" step="1" inputmode="numeric" required/></label>
+</div>
+</details>
+<label class="check-label top-gap"><input id="remember" type="checkbox"/> Remember these answers for 30 days</label>
+<p class="step-error" id="error-2" role="alert"></p>
+<div class="wizard-nav"><button class="button secondary" type="button" data-back>Back</button><button class="button" type="button" data-next>Next</button></div>
+</fieldset>
+<fieldset class="wizard-step" data-step="3" hidden>
+<legend tabindex="-1">Your plan</legend>
+<fieldset class="vocab-setting"><legend>Labels for the checklist</legend><label class="check"><input type="radio" name="vocab" value="plain" checked/> Plain words: new lesson, recent revision, old revision</label><label class="check"><input type="radio" name="vocab" value="sabaq"/> Sabaq, sabqi, manzil</label></fieldset>
+<div class="plan-tools"><div class="actions"><button class="button secondary small" type="button" id="missed">I missed a day</button></div><p class="micro" id="replan-note" role="status"></p><label class="check-label"><input id="remember-checks" type="checkbox"/> Remember my check-offs for 30 days</label><p class="micro" id="check-note" aria-live="polite"></p></div>
+<div id="results" aria-live="polite"></div>
+<p class="micro plan-feedback">Something wrong with this plan? <Feedback compact /></p>
+<div class="wizard-nav"><button class="button secondary" type="button" data-back>Back</button><button class="button secondary" type="button" id="reset">Start again</button></div>
+</fieldset>
+</form>
+</div></section> <aside class="sidebar"><div class="notice"><h2>What the planner assumes</h2><p>Your memorized pages ÷ review cycle = pages to review in each session. New study uses the remaining time.</p><p>Revision is spread evenly. The planner does not assess retention, difficulty, recitation accuracy, or teacher guidance.</p><a href="/sources/">Read the methodology ↗</a></div></aside></div><div id="print-sheet" class="print-sheet"></div><script>import '../lib/app';</script></Shell>

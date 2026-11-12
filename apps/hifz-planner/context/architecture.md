@@ -31,10 +31,14 @@ The user authorized Cloudflare Pages hosting at https://hifz-planner.moongazer.t
 - `src/pages/sources.astro`
 
 - `src/layouts/Shell.astro` owns metadata, theme initialization, navigation, footer and storage dialog. `src/lib/shell.ts` implements shell behavior.
-- `src/lib/` currently contains: `app.ts`, `engine.ts`, `shell.ts`, `utils.ts`.
-- `engine.ts` validates assumptions, simulates study sessions and builds ICS text. `app.ts` renders the results and creates local download blobs.
+- `src/lib/` currently contains: `app.ts`, `engine.ts`, `shell.ts`, `utils.ts`, `wizard.ts`.
+- `engine.ts` validates assumptions, simulates study sessions and builds ICS text. It is unchanged by the wizard and keeps its tests.
+- `pages.ts` (pure) maps juz and surah choices to a distinct page count and validates selections. It reads `src/data/page-boundaries.json`, a compact copy of the Quran MCP metadata record (see project-overview "Page boundaries").
+- `wizard.ts` also builds the .ics daily reminder (`withDailyReminder`, one all-day event repeating from the first to the last session) on top of the unchanged `calendar()` output. It is pure: wizard inputs (memorized pages, new-page goal, start date, days per week, minutes per session, assumptions) become an engine `Plan`, a this-week checklist and a calendar grouping. It also validates stored input, rebuilds a plan from today after missed sessions (`replanFrom`), and reports check-off progress. No DOM, storage or `Date.now()` inside it; the caller passes "today".
+- `app.ts` renders the wizard steps and results, creates local download blobs, and holds the storage calls. Its results region is an `aria-live` polite region.
+- `src/styles/planner.css` (app-local) holds wizard, checklist, drawer and print-sheet rules. Shared `global.css` and `refinement.css` are not edited.
 - `src/data/config.json` owns slug, display text, accent and port. `content.json`, `sources.json` and `provenance.json` keep content, citations and checksums distinct.
-- `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `activity.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts`.
+- `public/` contains local fonts, favicon, robots and `_headers`; app-specific media remains here too. `tests/` contains `activity.test.ts`, `calendar-identity.test.ts`, `storage.test.ts`, `theme-bootstrap.test.ts` and `wizard.test.ts` (wizard build, validation, checklist split, check-offs, missed-day re-plan, label setting, daily reminder).
 - Repository `_implementation/` owns research/preparation/collection checks, not runtime services or imports. `dist/`, `.astro/` and `node_modules/` are generated.
 
 ## Storage model
@@ -42,7 +46,9 @@ The user authorized Cloudflare Pages hosting at https://hifz-planner.moongazer.t
 Stored records use the body app slug `hifz-planner` and a colon, with `at` and `value` fields. The read helper validates shape/time, rejects timestamps more than 60 seconds ahead and records at least 30 days old, and tolerates unavailable storage. Initial theme setup validates a finite numeric timestamp, the 30-day age, the 60-second future tolerance and the light/dark value in Shell.astro; subsequent reads use the storage helper. Thirty days is an access-time expiry policy, not automatic deletion while the site is closed.
 
 - `theme`: the explicit light/dark preference, independent of activity recovery.
-- `plan` stores assumptions only if the remember checkbox is enabled. Calculated schedules and exports are otherwise in memory.
+- `plan`: the wizard inputs and assumptions (`{at,value}`), written only if the "Remember these assumptions for 30 days" checkbox is enabled. Validated with `isWizardInput` on read. Calculated schedules and exports are otherwise in memory.
+- `checkoffs`: an opt-in list of completed sessions, each a `YYYY-MM-DD` date plus one of `new`, `recent`, `old` (no personal content, no free text). Written only when the visitor opts in with "Remember my check-offs for 30 days". Validated with `isCheckoffList` on read, and rejected records are removed. If storage is blocked, check-offs still work in the page and the page says they will not be kept after reload.
+- `vocab`: the label setting, `sabaq` or `plain`. Stored as a display preference like `theme`; it holds no activity data and is validated on read.
 - Core activity state otherwise lives in memory. Clear-data removes this app's namespace and reloads; other apps are unaffected.
 
 ## Auth and access
@@ -76,3 +82,16 @@ Each app owns its production Astro site URL, local src/data/seo.json profile, sr
 The homepage build renders subject and About routes from authoritative local content and regenerate its sitemap. Each app owns a copied learning-guide JSON record and Astro component; normal app builds retain no cross-app runtime imports. All existing custom hosts, detail URLs, source checksums, static output and dependency pins remain. An optional llms.txt directory index describes the same visible public content. The SEO validator must cover the added routes and navigation before publication.
 
 Honorifics: plain ﷺ in JSON, `<Honorific />` in templates, `withHonorifics` in client scripts.
+
+## Counter hook points (P4.7)
+
+Anonymous aggregate events go through the shared `track(event, itemId)` in `src/lib/counter.ts`. The item id is `plan` for every event in this app. The helper is a silent no-op outside moongazer.tech hosts, under Global Privacy Control, or without sendBeacon. Nothing is stored and no visitor text is sent.
+
+| Event | Hook (`src/lib/app.ts`) | When it fires |
+| --- | --- | --- |
+| `activity_started` | step-one success path of the wizard, before `showStep(2)` | the first time step 1 is answered (the helper also dedupes per page load) |
+| `activity_completed` | `makePlan()`, after a valid plan is built | each plan generated from step 2; not on the missed-day re-plan or on a restore from storage |
+| `share_clicked` | CSV export handler | when the CSV download starts |
+| `share_clicked` | `.ics` export handler | when the calendar file download starts, with or without the daily reminder |
+
+Print (`print-week`) and the on-screen checklist do not count as sharing. The compact feedback link (`<Feedback compact />`) sits in step 3 after the results and links to `#site-feedback` in the footer form. The source-level wiring check is `tests/events.test.ts`.

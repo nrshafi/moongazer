@@ -1,0 +1,69 @@
+/* Hifz Planner wizard, checklist and print sheet. App-local; uses only the existing tokens in global.css. */
+
+.wizard .panel-body { min-width: 0; }
+.wizard-step { border: 0; padding: 0; margin: 0 0 4px; min-width: 0; display: grid; gap: 18px; }
+.wizard-step legend { font-size: 1.25rem; font-weight: 600; color: var(--ink); padding: 0; margin-bottom: 4px; letter-spacing: -.01em; }
+.wizard-step legend:focus { outline: 2px solid var(--muted); outline-offset: 3px; }
+.wizard-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.wizard-fields .field { min-width: 0; }
+.wizard-nav { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.wizard-nav .button { min-width: 120px; }
+.step-error { color: var(--danger); font-size: .82rem; font-weight: 600; margin: 0; min-height: 0; }
+.step-error:empty { display: none; }
+.suggestion { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: var(--surface-2); display: grid; gap: 10px; justify-items: start; }
+.suggestion p { margin: 0; }
+.drawer { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: var(--surface); }
+.drawer summary { cursor: pointer; font-weight: 700; color: var(--accent-ink); font-size: .9rem; }
+.drawer[open] summary { margin-bottom: 12px; }
+.drawer .wizard-fields { margin-top: 12px; }
+.plan-summary { display: grid; gap: 14px; }
+.plan-summary .card-grid > div { min-width: 0; }
+.checklist-day { border: 1px solid var(--line); border-radius: 12px; padding: 16px; background: var(--surface); min-width: 0; }
+.checklist-day h3 { margin: 0 0 10px; font-size: 1rem; }
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.checklist li { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; font-size: .9rem; color: var(--ink); line-height: 1.5; padding: 9px 11px; border-radius: 10px; background: var(--surface-2); }
+.checklist .amount { color: var(--muted); font-size: .8rem; white-space: nowrap; }
+.table-wrap { overflow-x: auto; max-width: 100%; }
+.calendar-week { border: 1px solid var(--line); border-radius: 12px; padding: 0; margin-top: 10px; background: var(--surface); }
+.calendar-week summary { cursor: pointer; padding: 12px 16px; font-weight: 700; font-size: .9rem; color: var(--ink); }
+.calendar-week .table-wrap { padding: 0 16px 14px; }
+.calendar-week table { width: 100%; text-align: left; }
+.calendar-week th, .calendar-week td { vertical-align: top; }
+.status-line { margin: 0; }
+.vocab-setting { display: grid; gap: 6px; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 18px 0 0; min-width: 0; }
+.vocab-setting legend { font-size: .8rem; color: var(--muted); padding: 0 4px; }
+.plan-tools { display: grid; gap: 6px; margin-top: 18px; }
+.plan-tools .micro { margin: 0; }
+
+@media (max-width: 580px) {
+  .wizard-fields { grid-template-columns: 1fr; }
+  .wizard-nav .button { width: 100%; }
+  .wizard-nav { flex-direction: column-reverse; align-items: stretch; }
+  .wizard-nav .button { min-width: 0; }
+  .checklist li { flex-direction: column; gap: 4px; }
+}
+
+/* Weekly sheet: hidden on screen. In print, the planner's workspace is hidden and this sheet is shown alone. */
+.print-sheet { display: none; }
+.print-box { display: inline-block; width: 13px; height: 13px; border: 1px solid var(--muted); border-radius: 2px; vertical-align: -2px; }
+@media print {
+  .workspace, .intro, .learning-guide, .skip-link, .seo-breadcrumb, .toast, .toast.visible { display: none !important; }
+  .print-sheet { display: block !important; color: #111; background: #fff; }
+  .print-sheet h1 { font-size: 20pt; margin: 0 0 8px; }
+  .print-sheet p { color: #111; font-size: 10.5pt; line-height: 1.5; margin: 0 0 8px; }
+  .print-sheet table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  .print-sheet th, .print-sheet td { border: 1px solid #777; padding: 7px 8px; font-size: 10.5pt; text-align: left; vertical-align: top; }
+  .print-sheet tr { break-inside: avoid; }
+  .print-box { border-color: #111; }
+}
+
+/* Juz and surah choosers (step 1). Native checkboxes in a grid; two columns on phones. */
+.pick-group { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 0; min-width: 0; }
+.pick-group legend { font-size: .8rem; color: var(--muted); padding: 0 4px; }
+.pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px 10px; padding: 4px 2px; }
+.pick-grid .check { align-items: flex-start; font-size: .8rem; min-width: 0; }
+.pick-grid .check span { overflow-wrap: anywhere; }
+#choose-content { margin-top: 16px; }
+#choose-content > .micro { margin: 0 0 12px; }
+#choose-content .pick-group + .pick-group { margin-top: 12px; }
+#choose-content .actions { margin-top: 12px; }
