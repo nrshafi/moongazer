@@ -22,3 +22,7 @@ h1,h2,h3,p{margin-top:0}h1,h2{letter-spacing:-.035em}h1{font-size:clamp(2.2rem,4
 .seo-breadcrumb li + li::before { content: '/'; margin-right: 10px; opacity: .65; }
 .seo-breadcrumb a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 @media print { .seo-breadcrumb { display: none; } }
+
+/* JetBrains Mono (P5): metadata chips only (dates, refs, counts), Playboard and Dossier apps. Local WOFF2, OFL. */
+@font-face{font-family:'JetBrains Mono';src:url('/fonts/jetbrains-mono.woff2') format('woff2');font-weight:100 800;font-display:swap}
+.mono-chip{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.75rem;font-weight:500;letter-spacing:0;font-variant-numeric:tabular-nums;line-height:1.5}
