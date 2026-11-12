@@ -73,6 +73,12 @@
         "at": "Thu Nov 12 23:23:49 BST 2026",
         "result": "fail",
         "reason": "Title 'Good company' still restates the key idea of the correct option, being with the truthful, so it gives the answer away. The teaching is faithful to Al-Muyassar on 9:119 and can stay; retitle to a neutral label such as 'Allah's instruction'."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The title 'Allah's instruction' names only a general command and does not point to 'the truthful', and the teaching and question do not give the answer away."
       }
     },
     {
@@ -138,6 +144,12 @@
         "at": "Thu Nov 12 23:23:49 BST 2026",
         "result": "fail",
         "reason": "Title 'Respecting others' still states the key idea of the correct option, avoiding suspicion, spying and backbiting, so it gives the answer away. Retitle to a neutral label such as 'A verse for families'; the teaching is fine."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The title 'A verse for families' is neutral, and the teaching and options do not reveal that much suspicion, spying and backbiting is the correct answer."
       }
     },
     {
@@ -197,6 +209,12 @@
         "at": "Thu Nov 12 23:23:49 BST 2026",
         "result": "fail",
         "reason": "Title 'Responding to harm' still names the key idea of the correct option, answering harm with something better, so it gives the answer away. Retitle to a neutral label such as 'A hard moment'; the teaching is fine."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The title 'A hard moment' is neutral and does not restate answering with something better, and the teaching names no answer."
       }
     },
     {
@@ -256,6 +274,12 @@
         "at": "Thu Nov 12 23:23:49 BST 2026",
         "result": "fail",
         "reason": "Title 'A shared prayer' and the teaching are fine, and the teaching is faithful to Al-Muyassar on 2:127-128, but the explanation names 'Abraham and Ishmael' without '(peace be upon him)'. Add the honorific after each name in the explanation."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The explanation now has '(peace be upon him)' after both Abraham and Ishmael, which is grammatical, and the title and teaching give nothing away."
       }
     },
     {
