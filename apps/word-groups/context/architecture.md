@@ -89,3 +89,7 @@ Hook points in `src/lib/app.ts`:
 - Feedback: the completion explanations block appends a `.feedback-link` with `data-open-feedback` once the board is done.
 
 Board ids are fixed slugs from `content.json`. Selected terms, shuffle seeds and saved progress never enter an id. No unit test was added: the hook points are wiring only.
+
+## P5 changes
+
+- `app.ts` renders `renderSessionEnd` into `#session-end` when the board is done and clears it otherwise; Copy and WhatsApp call `track('share_clicked', board.id)`. The inline Report an error link under the explanations was removed (the block carries it). `#share` (Copy board link) is unchanged. Next app is learning.json related[0].

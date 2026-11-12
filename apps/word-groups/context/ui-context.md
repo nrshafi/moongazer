@@ -71,3 +71,10 @@ Visible breadcrumbs connect Moongazer, the app and the current detail page. A fo
 ## Search content enhancement scope
 
 Retain the current typography, colors, logos and activity layouts. Make home headings identify the tool, add readable static learning guidance below the activity, and use descriptive related-app links. Four subject guides and the About page share the directory design. New guidance must wrap on phones and remain readable in both app themes; avoid hidden keyword text or ranking claims in visitor copy.
+
+## P5 first screen (12 November 2026)
+
+- The accent is teal (the blue token table above predates the family palette; root DESIGN.md section 2 is authoritative). Selected tiles use `--on-accent` on the accent fill.
+- Hero: H1 "Word Groups", descriptor "Sixteen words, four hidden groups.", chip "N boards", grid motif from 580 px.
+- Board picker first, then the board. The sidebar holds only the "How this works" drawer (intro sentence, multiple-connection note, "One away" note, source notes link). Print button beside the board actions; Projector enabled through a body attribute.
+- When a board is solved or revealed the shared end-of-session block shows under the board actions. Its share text never names a group.

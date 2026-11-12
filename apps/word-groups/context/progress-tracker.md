@@ -1,5 +1,9 @@
 # Progress tracker: Word Groups
 
+## P5 app wave, 12 November 2026
+
+2026-11-12T14:03:29+06:00 Asia/Dhaka: Hero, drawer (the intro sentence and the sidebar notice moved in; no limit removed), end of session, grid motif, Print and Projector, selected-tile colour fixed to `var(--on-accent)`. Removed duplicate: the standalone "Report an error" link under the explanations (now in the end block). First control (board picker) 276 px at 390 and 375, light and dark. check 0 errors, 17 tests pass, build passes; a board revealed in a headless browser with no script errors. Not done: New puzzle tomorrow slot (P6); board-1 overlap and cross-board solved status (P6).
+
 ## Google Search Console setup, 30 October 2026
 
 2026-10-30T00:57:44+06:00 Asia/Dhaka: The verified moongazer.tech Domain property covers this app. Its sitemap was submitted and shows Success in Google Search Console. All 21 collection sitemaps succeeded with 286 discovered URLs. Discovery is distinct from indexing. Keep the apex DNS verification record. See repository deployment/search-console.json. Earlier pending setup statements below describe the previous release.

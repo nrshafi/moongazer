@@ -36,7 +36,7 @@ Why: the four tiles are the four groups; the ticks are the connections the learn
 +--------------------------------------+
 ```
 
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812. The board picker is the first control. Keep tiles ≤ 72 px so the action row stays close to the board.
+Measured first-control top (`#board-select`): 276 px at 390 × 844 and 375 × 812, light and dark (hero 116 px); first tile at 581 px at 390 × 844. 1440 × 1000: 366 px. The board picker is the first control. Keep tiles ≤ 72 px so the action row stays close to the board.
 
 ## 5. Component states (this app)
 
