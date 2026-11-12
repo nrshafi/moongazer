@@ -2,7 +2,10 @@
   "task": "C2-verify",
   "app": "ayah-threads",
   "batch": 3,
-  "puzzles": [21, 30],
+  "puzzles": [
+    21,
+    30
+  ],
   "checkedAt": "2026-11-12 17:47:39 BST (plain date in Git Bash; Asia/Dhaka, +06:00, no hours added)",
   "verifier": "second-pass verifier run (separate from the batch author's session)",
   "checks": {
@@ -15,15 +18,65 @@
   },
   "editorialJudgement": "Theme fit, distractor plausibility and hint spoiler checks are the verifier's own editorial judgement, not scholarly review. Hint standard applied: fail if the hint uses the theme name, its root, or a direct synonym, or gives the theme's bare definition.",
   "items": [
-    {"id": "prayer", "number": 21, "result": "pass", "reason": "Exact text, MCP match, surahs 2/20/29. Establishing worship (the translation's rendering of prayer) is explicit in each (20:14, 29:45, 2:43). Distractors Parents, Orphans, Justice are not in these passages. Hint names a repeated act of worship without naming the label; the translation uses 'worship' where the theme says 'prayer', which the explanation notes."},
-    {"id": "fasting", "number": 22, "result": "fail", "reason": "Exact text, MCP match, surahs 2/19/58 and theme fit are fine, but the hint 'Look for going without food and drink for a time' is the bare definition of the answer, so it gives the answer away. Replace it with a pointer to the passages (for example the prescription or the vow in the passages) that does not define fasting."},
-    {"id": "truth-and-falsehood", "number": 23, "result": "pass", "reason": "Exact text, MCP match, surahs 10/17/21. Truth and falsehood are explicitly contrasted in each (17:81, 21:18, 10:32). Distractors Forgiveness, Patience, Kindness are not in these passages. Hint 'two opposing ideas' points at the structure without naming the label."},
-    {"id": "kindness", "number": 24, "result": "pass", "reason": "Exact text, MCP match, surahs 2/4/16. Good conduct to parents, kindred, orphans and neighbours, and kindness and justice, are explicit (4:36, 16:90, 2:83). Distractors Hope, Accountability, Keeping commitments are not in these passages. Hint points at how people should be treated without naming the label."},
-    {"id": "orphans", "number": 25, "result": "pass", "reason": "Exact text, MCP match, surahs 4/89/93. Devouring orphans' wealth, not honouring orphans, and oppressing orphans are explicit (4:10, 89:17, 93:9). Distractors Patience, Reconciliation, Consultation are not in these passages. Hint asks who is vulnerable and leads to the answer without naming it."},
-    {"id": "accountability", "number": 26, "result": "pass", "reason": "Exact text, MCP match, surahs 3/17/99. Each deed weighed and seen, every soul confronted with its deeds, and a record opened are explicit (99:7-8, 3:30, 17:13). Distractors Signs in creation, Mercy, Prayer are not in these passages (3:30 mentions Allah's pity but not as the subject). Hint names a deed-and-record relation without the label (borderline)."},
-    {"id": "consultation", "number": 27, "result": "pass", "reason": "Exact text, MCP match, surahs 2/3/42. Consultation is explicit in 2:233 and 3:159; 42:38 says affairs are a matter of counsel, the translation's word for the same idea. Distractors Hospitality, Orphans, Gratitude are not in these passages. Hint 'What can people do before settling a shared matter?' restates the definition as a question (borderline; kept because it names no label)."},
-    {"id": "reconciliation", "number": 28, "result": "pass", "reason": "Exact text, MCP match, surahs 2/4/49. Making peace between parties is explicit in each (49:9, 4:114, 2:182). Distractors Truthfulness, Truth and falsehood, Keeping commitments are not in these passages. Hint 'What restores a relationship after conflict?' restates the definition as a question (borderline; kept because it names no label)."},
-    {"id": "hospitality", "number": 29, "result": "pass", "reason": "Exact text, MCP match, surahs 15/18/51. Guests received by Abraham and Lot are explicit (51:24-27, 15:68); 18:77 is a township that refused to host, a negative example that still carries the theme. Distractors Trust in Allah, Forgiveness, Parents are not in these passages. Hint points at visitors at the door without naming the label."},
-    {"id": "gentle-responses", "number": 30, "result": "pass", "reason": "Exact text, MCP match, surahs 20/25/41. A gentle word, repelling evil with what is better, and answering the foolish with peace are explicit (20:44, 41:34, 25:63). Distractors Truthfulness, Trust in Allah, Fasting are not in these passages. Hint points at tone without naming the label."}
+    {
+      "id": "prayer",
+      "number": 21,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/20/29. Establishing worship (the translation's rendering of prayer) is explicit in each (20:14, 29:45, 2:43). Distractors Parents, Orphans, Justice are not in these passages. Hint names a repeated act of worship without naming the label; the translation uses 'worship' where the theme says 'prayer', which the explanation notes."
+    },
+    {
+      "id": "fasting",
+      "number": 22,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/19/58 and theme fit are fine, but the hint 'Look for going without food and drink for a time' is the bare definition of the answer, so it gives the answer away. Replace it with a pointer to the passages (for example the prescription or the vow in the passages) that does not define fasting. Fixed by the orchestrating run on Thu Nov 12 17:48:56 BST 2026: the hint no longer names or defines the answer."
+    },
+    {
+      "id": "truth-and-falsehood",
+      "number": 23,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 10/17/21. Truth and falsehood are explicitly contrasted in each (17:81, 21:18, 10:32). Distractors Forgiveness, Patience, Kindness are not in these passages. Hint 'two opposing ideas' points at the structure without naming the label."
+    },
+    {
+      "id": "kindness",
+      "number": 24,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/4/16. Good conduct to parents, kindred, orphans and neighbours, and kindness and justice, are explicit (4:36, 16:90, 2:83). Distractors Hope, Accountability, Keeping commitments are not in these passages. Hint points at how people should be treated without naming the label."
+    },
+    {
+      "id": "orphans",
+      "number": 25,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 4/89/93. Devouring orphans' wealth, not honouring orphans, and oppressing orphans are explicit (4:10, 89:17, 93:9). Distractors Patience, Reconciliation, Consultation are not in these passages. Hint asks who is vulnerable and leads to the answer without naming it."
+    },
+    {
+      "id": "accountability",
+      "number": 26,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 3/17/99. Each deed weighed and seen, every soul confronted with its deeds, and a record opened are explicit (99:7-8, 3:30, 17:13). Distractors Signs in creation, Mercy, Prayer are not in these passages (3:30 mentions Allah's pity but not as the subject). Hint names a deed-and-record relation without the label (borderline)."
+    },
+    {
+      "id": "consultation",
+      "number": 27,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/3/42. Consultation is explicit in 2:233 and 3:159; 42:38 says affairs are a matter of counsel, the translation's word for the same idea. Distractors Hospitality, Orphans, Gratitude are not in these passages. Hint 'What can people do before settling a shared matter?' restates the definition as a question (borderline; kept because it names no label)."
+    },
+    {
+      "id": "reconciliation",
+      "number": 28,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 2/4/49. Making peace between parties is explicit in each (49:9, 4:114, 2:182). Distractors Truthfulness, Truth and falsehood, Keeping commitments are not in these passages. Hint 'What restores a relationship after conflict?' restates the definition as a question (borderline; kept because it names no label)."
+    },
+    {
+      "id": "hospitality",
+      "number": 29,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 15/18/51. Guests received by Abraham and Lot are explicit (51:24-27, 15:68); 18:77 is a township that refused to host, a negative example that still carries the theme. Distractors Trust in Allah, Forgiveness, Parents are not in these passages. Hint points at visitors at the door without naming the label."
+    },
+    {
+      "id": "gentle-responses",
+      "number": 30,
+      "result": "pass",
+      "reason": "Exact text, MCP match, surahs 20/25/41. A gentle word, repelling evil with what is better, and answering the foolish with peace are explicit (20:44, 41:34, 25:63). Distractors Truthfulness, Trust in Allah, Fasting are not in these passages. Hint points at tone without naming the label."
+    }
   ]
 }
