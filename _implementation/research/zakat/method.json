@@ -3,7 +3,7 @@
   "task": "P7 T7.4 / C17",
   "disclaimer": "Educational summary. Not a fatwa, and not reviewed by a scholar. No scholarly review has taken place. The second-pass verification (T7.4 verification.json) is a separate task.",
   "sessionStart": "2026-11-12T17:32:44+06:00",
-  "sessionEnd": null,
+  "sessionEnd": "2026-11-12T17:44:30+06:00",
   "quranSnapshot": {
     "file": "_implementation/research/quran-full.json",
     "sha256": "3ffbc20d417f6f2246447b3c76f0be27209fa009793b1eea92ae22e324eb3b2f"
@@ -925,6 +925,298 @@
         "Left out: a silver-only position (no accessible source opened); a Hanafi attribution for silver (Darul Ifta Birmingham lists both silver and gold amounts but states no choice). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it.",
         "IW-81355 and IW-138743 say they are guidance from the same centre; two pages from one body are not counted as independent."
       ]
+    },
+    {
+      "id": "fitr-facts",
+      "title": "Zakat al-fitr: who pays, for whom, when",
+      "statement": "Zakat al-fitr is a small payment of food at the end of Ramadan, due on each Muslim, and paid before the Eid prayer. Ask your local masjid or zakat committee for this year's amount.",
+      "basis": [
+        {
+          "type": "hadith",
+          "collection": "bukhari",
+          "number": "1503",
+          "url": "https://sunnah.com/bukhari:1503",
+          "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+          "paraphrase": "The Prophet made zakat al-fitr (a sa' of dates or barley) obligatory on every Muslim, slave or free, male or female, young or old, and ordered it paid before people went out to the Eid prayer.",
+          "confirmedOnSunnahCom": "2026-11-12",
+          "chapterHeading": "Obligation of Sadaqat-ul-Fitr"
+        },
+        {
+          "type": "hadith",
+          "collection": "bukhari",
+          "number": "1511",
+          "url": "https://sunnah.com/bukhari:1511",
+          "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+          "paraphrase": "Ibn 'Umar gave on behalf of children too, and people used to give a day or two before Eid.",
+          "confirmedOnSunnahCom": "2026-11-12",
+          "chapterHeading": "Sadaqat-ul-Fitr on a slave as well as on a free Muslim"
+        },
+        {
+          "type": "hadith",
+          "collection": "abudawud",
+          "number": "1609",
+          "url": "https://sunnah.com/abudawud:1609",
+          "gradingAsShownOnSunnahCom": "Hasan (Al-Albani)",
+          "paraphrase": "It was prescribed as purification of the fasting person from idle and obscene talk and as food for the poor; if paid before the Eid prayer it is accepted as zakat, and if after it is an ordinary sadaqah.",
+          "confirmedOnSunnahCom": "2026-11-12",
+          "chapterHeading": "Zakat For The Closing Of Fast At The End Of Ramadan"
+        },
+        {
+          "type": "hadith",
+          "collection": "bukhari",
+          "number": "1510",
+          "url": "https://sunnah.com/bukhari:1510",
+          "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+          "paraphrase": "Abu Sa'id al-Khudri: a sa' of food was given in the Prophet's time; foods named were barley, raisins, cottage cheese and dates.",
+          "confirmedOnSunnahCom": "2026-11-12",
+          "chapterHeading": "Sadaqat-ul-Fitr is to be given before the 'Eid prayers"
+        }
+      ],
+      "positions": [],
+      "sources": [
+        {
+          "id": "SUNNAH",
+          "url": "https://sunnah.com/",
+          "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+          "publisher": "sunnah.com",
+          "accessed": "2026-11-12",
+          "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+        },
+        {
+          "id": "JO-5786",
+          "url": "https://aliftaa.jo/article-en/5786/DefaultEn.aspx",
+          "title": "Zakat al-Fitr: Jurisprudential Rulings and Educational Secrets (article by Dr. Hassan Abu_Arqoub, 03-04-2024)",
+          "publisher": "General Iftaa' Department, Jordan",
+          "accessed": "2026-11-12",
+          "note": "Article; read in part (the first part of the page, through the conditions and who is paid for)."
+        },
+        {
+          "id": "EG-7732",
+          "url": "https://www.dar-alifta.org/en/fatwa/details/7732/paying-zakat-ul-fitr-in-cash-or-as-food-products",
+          "title": "Paying zakat-ul-fitr in cash or as food products (Fatwa 7732, 23 Feb 2015)",
+          "publisher": "Egypt's Dar al-Ifta",
+          "accessed": "2026-11-12"
+        }
+      ],
+      "notes": [
+        "No amounts are recorded anywhere in this record. Use the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
+        "Conditions stated by the fatwa bodies, not by a hadith opened here: Egypt's Dar al-Ifta (7732) says it is for every person or head of a family who has food in excess of what he needs on the last day of Ramadan; Jordan's article (5786) lists being Muslim, the sunset ending Ramadan, and surplus beyond basic needs, and says whoever supports another also pays for them. These are those bodies' statements.",
+        "Timing detail: sunnah.com 1511 reports the Companions' practice of giving a day or two early; the Jordan article gives the due time as the arrival of the night of Eid. The engine need not decide this; the explainer can show the range.",
+        "The hadith text uses units (sa') and foods; this record gives no weight conversion because the sunnah.com English glosses differ (Bukhari 1503 gloss 'approx 3 kg') and a gram figure would be a choice."
+      ]
+    },
+    {
+      "id": "fitr-food-vs-cash",
+      "title": "Difference: zakat al-fitr in food or in cash value",
+      "statement": "Scholars differ on whether zakat al-fitr may be paid as its cash value instead of as food.",
+      "basis": [],
+      "positions": [
+        {
+          "label": "Paying cash value is permitted",
+          "attribution": {
+            "who": "Hanafi school, as stated by Egypt's Dar al-Ifta and Jordan's General Iftaa' Department",
+            "sourceId": "EG-6417",
+            "locator": "Answer"
+          },
+          "summary": "Egypt quotes Al-Sarakhsi's Al-Mabsut (vol. 3, pp. 107-8): 'It is permissible in our school to pay the equivalent value of wheat.' Jordan (4209): 'Hanafi scholars have permitted giving Zakat al-Fitr as monetary value, considering it more beneficial for the poor and easier for the giver.'"
+        },
+        {
+          "label": "Pay it in food (not cash)",
+          "attribution": {
+            "who": "Imam al-Shafi'i, as stated by Egypt's Dar al-Ifta; the default ruling according to Jordan's General Iftaa' Department",
+            "sourceId": "EG-6417",
+            "locator": "Answer; JO-4209"
+          },
+          "summary": "Egypt: 'Imam Al-Shafi'i ... contends otherwise' because zakat was originally prescribed in kind. Jordan: the default is the staple food of the land, 'the correct ruling according to all Islamic schools of thought', with Hanafi as the exception."
+        },
+        {
+          "label": "Cash is acceptable where staple food is abundant; in kind where food is scarce",
+          "attribution": {
+            "who": "Contemporary scholars, as reported by Egypt's Dar al-Ifta",
+            "sourceId": "EG-7732",
+            "locator": "Answer, third paragraph"
+          },
+          "summary": "'The criterion ... is the availability of food, especially staple foodstuff, in abundance'; where food is scarce it must be paid in kind."
+        }
+      ],
+      "sources": [
+        {
+          "id": "EG-6417",
+          "url": "https://www.dar-alifta.org/en/fatwa/details/6417/paying-zakat-ul-fitr-in-cash",
+          "title": "Paying zakat ul-fitr in cash (Fatwa 6417)",
+          "publisher": "Egypt's Dar al-Ifta",
+          "accessed": "2026-11-12"
+        },
+        {
+          "id": "EG-7732",
+          "url": "https://www.dar-alifta.org/en/fatwa/details/7732/paying-zakat-ul-fitr-in-cash-or-as-food-products",
+          "title": "Paying zakat-ul-fitr in cash or as food products (Fatwa 7732, 23 Feb 2015)",
+          "publisher": "Egypt's Dar al-Ifta",
+          "accessed": "2026-11-12"
+        },
+        {
+          "id": "JO-4209",
+          "url": "https://www.aliftaa.jo/brief-fatwa-english/4209/Islamic-Ruling-on-Giving-Zakat-al-Fitr-in-Cash",
+          "title": "Islamic Ruling on Giving Zakat al-Fitr in Cash (Fatwa 4209, 10-02-2026)",
+          "publisher": "General Iftaa' Department, Jordan",
+          "accessed": "2026-11-12",
+          "note": "The page also states an amount for Jordan; it is deliberately not recorded here."
+        }
+      ],
+      "notes": [
+        "The calculator does not compute zakat al-fitr. The explainer shows these positions and the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
+        "JO-4209 also gives an amount for Jordan; it is deliberately not recorded.",
+        "Left out: Maliki and Hanbali positions on cash fitr (no accessible source opened). AAOIFI SS 35: AAOIFI Shari'ah Standard 35 (Zakah): the official page (cis.aaoifi.com/standards/ss-35-zakah/) states that the full text is available only to AAOIFI members and licensed subscribers, so no position is attributed to it."
+      ]
     }
-  ]
+  ],
+  "examples": [
+    {
+      "id": "ex-1-basic",
+      "follows": [
+        "rate",
+        "nisab-textual",
+        "diff-nisab-metal"
+      ],
+      "citing": [
+        "IW-81355",
+        "bukhari:1454"
+      ],
+      "inputs": {
+        "cashAndBank": 10000,
+        "goldPricePerGram": 100,
+        "nisabGoldGrams": 85,
+        "nisabMetalChoice": "gold",
+        "debtsDue": 0,
+        "receivables": 0,
+        "jewelleryWorn": 0
+      },
+      "expected": {
+        "nisabValue": 8500,
+        "zakatableTotal": 10000,
+        "atOrAboveNisab": true,
+        "zakatDue": 250
+      },
+      "note": "Cash is measured against the value of 85 g of gold (IW-81355) and zakat is 1/40 (Bukhari 1454). 85 g is a test input, not an endorsement."
+    },
+    {
+      "id": "ex-2-metal-choice",
+      "follows": [
+        "diff-nisab-metal"
+      ],
+      "citing": [
+        "IW-138743",
+        "IW-120628"
+      ],
+      "inputs": {
+        "cashAndBank": 1000,
+        "goldPricePerGram": 100,
+        "silverPricePerGram": 1,
+        "nisabGoldGrams": 85,
+        "nisabSilverGrams": 595
+      },
+      "expected": {
+        "ifGold": {
+          "nisabValue": 8500,
+          "atOrAboveNisab": false,
+          "zakatDue": 0
+        },
+        "ifSilver": {
+          "nisabValue": 595,
+          "atOrAboveNisab": true,
+          "zakatDue": 25
+        },
+        "ifLowerOfTheTwo": {
+          "nisabValue": 595,
+          "atOrAboveNisab": true,
+          "zakatDue": 25
+        }
+      },
+      "note": "Same cash gives different results by choice: gold-only (IW-138743) gives 0; the lower of the two (IW-120628) gives 25. The 'ifSilver' row is arithmetic only; no accessible source stating a silver-only rule was opened. Shows why the app must make the visitor choose."
+    },
+    {
+      "id": "ex-3-debts",
+      "follows": [
+        "diff-debts-due"
+      ],
+      "citing": [
+        "EG-6754",
+        "JO-3712"
+      ],
+      "inputs": {
+        "cashAndBank": 20000,
+        "debtsDue": 5000,
+        "goldPricePerGram": 100,
+        "nisabGoldGrams": 85,
+        "nisabMetalChoice": "gold"
+      },
+      "expected": {
+        "ifDeduct": {
+          "zakatableTotal": 15000,
+          "zakatDue": 375
+        },
+        "ifNotDeduct": {
+          "zakatableTotal": 20000,
+          "zakatDue": 500
+        }
+      },
+      "note": "Deduct: EG-6754. Do not deduct: JO-3712. Both are above the 8500 nisab."
+    },
+    {
+      "id": "ex-4-receivables",
+      "follows": [
+        "diff-receivables"
+      ],
+      "citing": [
+        "EG-7746"
+      ],
+      "inputs": {
+        "cashAndBank": 10000,
+        "receivablesFromAbleDebtor": 4000,
+        "goldPricePerGram": 100,
+        "nisabGoldGrams": 85,
+        "nisabMetalChoice": "gold"
+      },
+      "expected": {
+        "ifCountReceivables": {
+          "zakatableTotal": 14000,
+          "zakatDue": 350
+        },
+        "ifCountOnlyWhenReceived": {
+          "zakatableTotal": 10000,
+          "zakatDue": 250
+        }
+      },
+      "note": "A debtor able to pay on request is counted each year (EG-7746 second paragraph); the second row models a lender who counts only on receipt, as in IW-426541. Only the first row is Egypt's rule for an able debtor."
+    },
+    {
+      "id": "ex-5-jewellery",
+      "follows": [
+        "diff-jewellery"
+      ],
+      "citing": [
+        "MY-38",
+        "JO-525"
+      ],
+      "inputs": {
+        "cashAndBank": 0,
+        "jewelleryWornGoldGrams": 100,
+        "goldPricePerGram": 100,
+        "nisabGoldGrams": 85,
+        "nisabMetalChoice": "gold"
+      },
+      "expected": {
+        "ifCountWornJewellery": {
+          "zakatableTotal": 10000,
+          "zakatDue": 250
+        },
+        "ifExcludeWornJewellery": {
+          "zakatableTotal": 0,
+          "zakatDue": 0
+        }
+      },
+      "note": "100 g of worn gold: Hanafi-style counts it (MY-38 paragraph 3); the other three schools' view as stated in MY-38 and JO-525 excludes permitted worn jewellery."
+    }
+  ],
+  "examplesNote": "Test inputs for the engine (T7.6). Numbers (85 g, 595 g, price per gram) are test parameters only; each example cites the source whose method it follows. No amounts for zakat al-fitr."
 }

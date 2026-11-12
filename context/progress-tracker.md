@@ -339,3 +339,12 @@ Files: `homepage/index.html`, `render.mjs`, `build.mjs`, `app.js` (module), `dai
   - `verify-static.py`: 313 pages.
   - Headless Chrome at 390 × 844, 820, 1060 and 1440, with a page clock before and after the epoch: no overflow and no script errors. Tonight's ayah is fetched and swapped when it differs from the build date. The first library card is at 743 px on phones (limit 844).
 - Remaining: T6.8 (Booktube JSON) once the app daily banks are merged; R6 epoch setting.
+
+## 2026-11-12T17:44:30+06:00 - C17 / P7 T7.4: zakat method record
+
+Branch `content-zakat` (from `phase-6-daily`). Research only; no app code. File: `_implementation/research/zakat/method.json`.
+- 12 entries (obligation, recipients, rate 1/40, hawl, nisab textual basis, nisab modern conversions, four differences: jewellery, debts, receivables, nisab metal for mixed assets; zakat al-fitr facts, food vs cash) and 5 worked examples for the engine tests (T7.6), each citing its source. Committed as C17.01 (entries 1-10) and C17.02 (entries 11-12, examples).
+- Quran: `fetch_grounding_rules` first, then `fetch_quran` and `fetch_translation` (ar-uthmani-hafs, en-pickthall) for 2:43, 9:60, 9:103, 2:267 and 9:34 (9:34 fetched, not used). Text in the record is copied by script from `quran-full.json`. Pickthall matched the MCP output; Arabic matched after normalisation except 9:103 (one extra fatha in the MCP output relayed to this session; unresolved, recorded in the file).
+- Hadith: each collection and number opened on sunnah.com with the ego-browser CLI; grading recorded as shown (Bukhari pages show none).
+- Positions come only from fatwa-body pages opened in this session: Egypt's Dar al-Ifta, Jordan's General Iftaa' Department, the Mufti of the Federal Territory (Malaysia), the Fatwa Center at Islamweb, Darul Ifta Birmingham. AAOIFI SS 35 is members-only, so no position is attributed to it. Left-out positions and unopened items are listed in the file (`notAccessible`, each entry's `notes`).
+- Not done: the second-pass verification (`verification.json`) is a separate run; owner spot-check pending. No scholarly review; the record is educational and neutral.
