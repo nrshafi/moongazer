@@ -2,7 +2,10 @@
   "task": "C16",
   "app": "family-halaqa",
   "batch": 2,
-  "nights": [11, 20],
+  "nights": [
+    11,
+    20
+  ],
   "checkedAt": "2026-11-12T18:31:01+06:00",
   "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
   "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
@@ -17,7 +20,18 @@
       "id": "ramadan-night-11",
       "night": 11,
       "result": "fail",
-      "reason": "Title 'True to your word' names the correct answer (truthful). Question asks whom to be with. Bukhari 6094 and Muyassar 9:119 are faithful."
+      "reason": "Title 'True to your word' names the correct answer (truthful). Question asks whom to be with. Bukhari 6094 and Muyassar 9:119 are faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "True to your word",
+            "after": "Keeping your word",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-12",
@@ -35,7 +49,18 @@
       "id": "ramadan-night-14",
       "night": 14,
       "result": "fail",
-      "reason": "Teaching, shown above the question, describes the verse as 'an instruction about our thoughts and about how we speak of others', which gives away the correct option (suspicion, spying, backbiting). Exact text is correct."
+      "reason": "Teaching, shown above the question, describes the verse as 'an instruction about our thoughts and about how we speak of others', which gives away the correct option (suspicion, spying, backbiting). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "teaching",
+            "before": "Al-Muyassar explains the verse as an instruction about our thoughts and about how we speak of others, ending with a reminder to be mindful of Allah.",
+            "after": "Al-Muyassar explains this verse as addressed to believers, ending with a reminder to be mindful of Allah, who accepts repentance and is merciful.",
+            "note": "Teaching rewritten to give context without stating the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-15",
@@ -47,13 +72,35 @@
       "id": "ramadan-night-16",
       "night": 16,
       "result": "fail",
-      "reason": "Title 'A better reply' restates the correct option ('with one that is better'). Teaching and distractors are otherwise sound. Exact text is correct."
+      "reason": "Title 'A better reply' restates the correct option ('with one that is better'). Teaching and distractors are otherwise sound. Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "A better reply",
+            "after": "Calm replies",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-17",
       "night": 17,
       "result": "fail",
-      "reason": "Title 'Building and asking' names the answer (raising the foundations of the House). Exact text is correct."
+      "reason": "Title 'Building and asking' names the answer (raising the foundations of the House). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Building and asking",
+            "after": "Two builders",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-18",
@@ -65,7 +112,18 @@
       "id": "ramadan-night-19",
       "night": 19,
       "result": "fail",
-      "reason": "Explanation names 'his brother Harun' without the honorific (peace be upon him), contrary to the editorial honorific rule (section 1.8). Otherwise sound; Muyassar 20:25 was not re-fetched this pass."
+      "reason": "Explanation names 'his brother Harun' without the honorific (peace be upon him), contrary to the editorial honorific rule (section 1.8). Otherwise sound; Muyassar 20:25 was not re-fetched this pass.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "explanation",
+            "before": "The passage says he asked Allah to loose a knot from his tongue so that they may understand his words. Al-Muyassar says this is Musa (peace be upon him), who also asked for his brother Harun as a helper.",
+            "after": "The passage says he asked Allah to loose a knot from his tongue so that they may understand his words. Al-Muyassar says this is Musa (peace be upon him), who also asked for his brother Harun (peace be upon him) as a helper.",
+            "note": "Honorific added after Harun."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-20",

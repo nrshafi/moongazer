@@ -26,6 +26,11 @@ test('each Ramadan pack has the full set of fields, three distinct options and a
   expect(pack.teaching).toContain('Al-Muyassar');
   // No answer in the title: the correct option text is never contained in the title.
   expect(pack.title.toLowerCase()).not.toContain(pack.options[pack.answer]!.toLowerCase());
+  // ...and no content word of 4+ letters is shared with it.
+  const words = (text: string) => new Set(text.toLowerCase().match(/[a-z]{4,}/g) ?? []);
+  const stop = new Set(['that', 'with', 'this', 'from', 'they', 'them', 'their', 'what', 'whom', 'your', 'have', 'which', 'every', 'there', 'will']);
+  const correct = words(pack.options[pack.answer]!);
+  expect([...words(pack.title)].filter(word => correct.has(word) && !stop.has(word))).toEqual([]);
  }
 });
 

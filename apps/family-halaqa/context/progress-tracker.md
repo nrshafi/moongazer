@@ -101,3 +101,7 @@ Validation run: `bun run check` 0 errors, 0 warnings, 0 hints; `bun run test` 26
 
 Not done: no second-pass verification (separate run) and no owner spot-check yet; no scholarly review is claimed. The library lists all 42 packs together; a Ramadan list or filter and a `?night=N` deep link are a pending code task, and the topic filter now shows many more topics.
 
+
+## 2026-11-12 23:15 (Asia/Dhaka) — C16.04: verification fixes
+
+Second pass failed 16 Ramadan packs (14/30 passed): spoiler titles, teaching that stated the answer, night 9 discussion, night 19 honorific. All fixed in `content.json`; `appContentSha256` updated; `followUp` added to each fixed pack in the `batch-0N.verification.json` files (`result` untouched). New test: no title shares a 4+ letter content word with the correct option. `bun run check` 0 errors; `bun run test` 26 pass; `bun run build` 46 pages. Not yet re-verified by a second run.

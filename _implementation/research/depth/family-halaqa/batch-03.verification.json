@@ -2,7 +2,10 @@
   "task": "C16",
   "app": "family-halaqa",
   "batch": 3,
-  "nights": [21, 30],
+  "nights": [
+    21,
+    30
+  ],
   "checkedAt": "2026-11-12T18:31:01+06:00",
   "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
   "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
@@ -23,7 +26,18 @@
       "id": "ramadan-night-22",
       "night": 22,
       "result": "fail",
-      "reason": "Title 'Our Lord, forgive us' restates the correct answer (forgiveness and mercy). Text, Muyassar 7:23 (re-fetched, faithful) and Tirmidhi 3513 (Sahih, Darussalam) are otherwise correct."
+      "reason": "Title 'Our Lord, forgive us' restates the correct answer (forgiveness and mercy). Text, Muyassar 7:23 (re-fetched, faithful) and Tirmidhi 3513 (Sahih, Darussalam) are otherwise correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Our Lord, forgive us",
+            "after": "After a mistake",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-23",
@@ -35,7 +49,24 @@
       "id": "ramadan-night-24",
       "night": 24,
       "result": "fail",
-      "reason": "Title 'Quick to forgive' and teaching above the question ('describes those who give, hold back anger and pardon') both state the correct option. Exact text and Muyassar 3:133-134 are faithful."
+      "reason": "Title 'Quick to forgive' and teaching above the question ('describes those who give, hold back anger and pardon') both state the correct option. Exact text and Muyassar 3:133-134 are faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Quick to forgive",
+            "after": "Hurrying to good",
+            "note": "Retitled so it no longer echoes the correct option."
+          },
+          {
+            "field": "teaching",
+            "before": "Al-Muyassar explains that this passage calls people to hurry toward forgiveness from their Lord and describes those who give, hold back anger and pardon.",
+            "after": "Al-Muyassar explains that this passage calls believers to hurry toward their Lord’s forgiveness, and says Allah loves those it describes.",
+            "note": "Teaching rewritten to give context without stating the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-25",
@@ -47,7 +78,18 @@
       "id": "ramadan-night-26",
       "night": 26,
       "result": "fail",
-      "reason": "Teaching, shown above the question, says 'describing Allah's oneness', which gives away the correct option ('He is Allah, the One'). Exact text is correct."
+      "reason": "Teaching, shown above the question, says 'describing Allah's oneness', which gives away the correct option ('He is Allah, the One'). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "teaching",
+            "before": "Al-Muyassar explains this short surah as describing Allah’s oneness and perfection.",
+            "after": "Al-Muyassar explains this short surah as a description of Allah.",
+            "note": "Teaching rewritten to give context without stating the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-27",
@@ -59,19 +101,52 @@
       "id": "ramadan-night-28",
       "night": 28,
       "result": "fail",
-      "reason": "Title 'Before the prayer' restates the correct answer ('prays'). Commentary is faithful: Muyassar 87:14-15 and abridged Ibn Kathir (Umar bin Abdul-Aziz reciting the verse for sadaqat al-fitr) both re-fetched and match; Bukhari 1503 faithful."
+      "reason": "Title 'Before the prayer' restates the correct answer ('prays'). Commentary is faithful: Muyassar 87:14-15 and abridged Ibn Kathir (Umar bin Abdul-Aziz reciting the verse for sadaqat al-fitr) both re-fetched and match; Bukhari 1503 faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Before the prayer",
+            "after": "Growing well",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-29",
       "night": 29,
       "result": "fail",
-      "reason": "Title 'Morning and evening' restates the correct answer ('early and late'). Exact text is correct."
+      "reason": "Title 'Morning and evening' restates the correct answer ('early and late'). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Morning and evening",
+            "after": "Throughout the day",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      }
     },
     {
       "id": "ramadan-night-30",
       "night": 30,
       "result": "fail",
-      "reason": "Title 'Ease and thanks' restates the correct answer ('Ease, not hardship'). Exact text is correct."
+      "reason": "Title 'Ease and thanks' restates the correct answer ('Ease, not hardship'). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Ease and thanks",
+            "after": "The month’s end",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      }
     }
   ]
 }
