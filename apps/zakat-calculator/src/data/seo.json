@@ -1,0 +1,22 @@
+{
+  "title": "Zakat Calculator — Work out your zakat step by step | Moongazer",
+  "shortName": "Zakat Calculator",
+  "description": "Work out your zakat step by step. Choose a labelled option where scholars differ, enter your own gold and silver prices, and see the method and sources.",
+  "keyword": "zakat calculator",
+  "extraPages": [
+    {
+      "path": "/method/",
+      "title": "Zakat method and sources | Zakat Calculator",
+      "name": "Method and sources",
+      "description": "The zakat method behind the calculator: obligation, rate, lunar year, nisab and the points where scholars differ, each with its Quran text, hadith references and attributed positions.",
+      "indexable": true
+    },
+    {
+      "path": "/zakat-al-fitr/",
+      "title": "Zakat al-fitr: who pays and when | Zakat Calculator",
+      "name": "Zakat al-fitr",
+      "description": "Who pays zakat al-fitr, for whom, when before the Eid prayer, and the documented difference between giving food and giving its cash value. Ask your local masjid for the amount.",
+      "indexable": true
+    }
+  ]
+}

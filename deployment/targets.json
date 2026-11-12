@@ -178,5 +178,16 @@
     "format": "Activities",
     "icon": "people",
     "description": "Ten-minute Islamic activities to do together"
+  },
+  {
+    "slug": "zakat-calculator",
+    "name": "Zakat Calculator",
+    "category": "Everyday practice",
+    "kind": "Planner",
+    "time": 10,
+    "audience": "me",
+    "format": "Planner",
+    "icon": "calculator",
+    "description": "Work out your zakat step by step, with the method shown"
   }
 ]

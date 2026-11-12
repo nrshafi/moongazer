@@ -1,0 +1,475 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 2,
+  "series": "ramadan",
+  "nights": [
+    11,
+    20
+  ],
+  "quranEdition": "ar-uthmani-hafs",
+  "translationEdition": "en-pickthall",
+  "groundingNonce": "gnd-cea239f199a26901",
+  "rateLimitNote": "The Quran MCP allows one request per second; calls were made one at a time.",
+  "calls": [
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "9:119",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        11
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "28:24",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        12
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "50:18",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        13
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "49:12",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        14
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "12:92",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        15
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "41:34",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        16
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "2:127-128",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        17
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "21:87-88",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        18
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "20:25-28",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        19
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "21:83-84",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        20
+      ]
+    },
+    {
+      "tool": "fetch_translation",
+      "arguments": {
+        "ayahs": "96:1-5, 9:119, 28:24, 50:18, 49:12, 12:92, 41:34, 2:127-128, 21:87-88, 20:25-28, 21:83-84",
+        "editions": "en-pickthall",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "en-pickthall",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Also covers night 3 (96:1-5). Compared by eye with the snapshot; text in the pack is copied by script."
+    }
+  ],
+  "items": [
+    {
+      "night": 11,
+      "id": "ramadan-night-11",
+      "title": "Allah’s instruction",
+      "age": "8–11",
+      "topic": "Honesty",
+      "ref": "9:119",
+      "passageSha256": {
+        "arabic": "3eadf994fd08a534492d36b04621274088e2f773afcbeedd5edae3058871a3a2",
+        "translation": "d8bb9086d78b2054af20576fa534efa45281039e92d52679b0917579684e9051"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/9:119/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "وكونوا مع الصادقين في أَيمانهم وعهودهم، وفي كل شأن من شؤونهم"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Abdullah reports the Prophet Muhammad ﷺ saying that truthfulness leads to righteousness and righteousness leads to Paradise, while lying leads to wickedness. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 12,
+      "id": "ramadan-night-12",
+      "title": "In the shade",
+      "age": "5–7",
+      "topic": "Prophets",
+      "ref": "28:24",
+      "passageSha256": {
+        "arabic": "d978eb342396464feb50e75fda3f8c5636bad71f8e3ca60dba21d3d8824697c3",
+        "translation": "c4f682272caf247f45468837662d519077c4643304a3ec23d813fb232d1a9dd5"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/28:24/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "فسقى موسى للمرأتين ماشيتهما، ثم تولى إلى ظل شجرة ... وكان قد اشتد به الجوع"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 13,
+      "id": "ramadan-night-13",
+      "title": "Careful words",
+      "age": "8–11",
+      "topic": "Speech",
+      "ref": "50:18",
+      "passageSha256": {
+        "arabic": "9cac4976deaec6f797e50e36e76dbbc92c4a1bdd330080446bf45942dcca42c4",
+        "translation": "d1a9a8b3322c3a2667cc227008ebe58db06db396299ad91f639a7cb638cd813e"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/50:18/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "إلا لديه مَلَك يرقب قوله، ويكتبه"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Abu Hurairah reports the Prophet Muhammad ﷺ saying that whoever believes in Allah and the Last Day should say what is good or stay quiet. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 14,
+      "id": "ramadan-night-14",
+      "title": "A verse for families",
+      "age": "12+",
+      "topic": "Speech",
+      "ref": "49:12",
+      "passageSha256": {
+        "arabic": "6a3472196fd9cbc525e9e7b84aca3c99ec0ad1f1ce849087980a8f0b767fe004",
+        "translation": "a8b268fc822766b19510ce9fbece9b823b3aa3069b87403db9fee382f6b2fb66"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/49:12/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "اجتنبوا كثيرًا من ظن السوء بالمؤمنين ... فاكرهوا اغتيابه"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 15,
+      "id": "ramadan-night-15",
+      "title": "A gentle reply",
+      "age": "8–11",
+      "topic": "Forgiveness",
+      "ref": "12:92",
+      "passageSha256": {
+        "arabic": "62bad5ca9cbf6fad24e515e6b1e8c0f273cd8c130676d9d97c3d0e82ac31ac77",
+        "translation": "8ba7f69312fc707b9733edd0f8c72df48f8ee528abdae54c90d42c790c1004e0"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/12:92/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "قال لهم يوسف: لا تأنيب عليكم اليوم، يغفر الله لكم"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 16,
+      "id": "ramadan-night-16",
+      "title": "A hard moment",
+      "age": "12+",
+      "topic": "Forgiveness",
+      "ref": "41:34",
+      "passageSha256": {
+        "arabic": "8fc7c65a33b2d2c223ed483635454afecaf16772a530022afca61f7ca2c03ca3",
+        "translation": "4a3d7b80fb4bdcb1d29a443e6814e4ed9b01f872c72f101649159d1dbbb57e02"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/41:34/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "ادفع ... بعفوك وحلمك وإحسانك مَن أساء إليك"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 17,
+      "id": "ramadan-night-17",
+      "title": "A shared prayer",
+      "age": "12+",
+      "topic": "Prophets",
+      "ref": "2:127-128",
+      "passageSha256": {
+        "arabic": "d2d1ba9b8e2e88d68bdb434fdf9c8e2764e8e0cd0c40049244ecf828f2baa03f",
+        "translation": "98643269678b68bf99d2bde806e5b7d9b8ab0481cf8c11e939298637f266154b"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/2:127/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "حين رفع إبراهيم وإسماعيل أسس الكعبة، وهما يدعوان الله في خشوع"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 18,
+      "id": "ramadan-night-18",
+      "title": "Out of the dark",
+      "age": "8–11",
+      "topic": "Prophets",
+      "ref": "21:87-88",
+      "passageSha256": {
+        "arabic": "b1001a11a029a363f021be90b829e6d4fd6a7c58389de016d959b0284488fb5c",
+        "translation": "d5c786c5d32698920a138ac982dcc41a931d0ede337e73cb52c4bd43f1ec10b9"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/21:87/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "وهو يونس بن مَتَّى عليه السلام ... فنادى ربه في ظلمات الليل والبحر وبطن الحوت تائبًا معترفًا بظلمه"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 19,
+      "id": "ramadan-night-19",
+      "title": "A prayer before speaking",
+      "age": "5–7",
+      "topic": "Dua",
+      "ref": "20:25-28",
+      "passageSha256": {
+        "arabic": "13c990ccb8d84b64063e981480acd41f8ea0b9b980622d85475a561f66b3409e",
+        "translation": "1bb50d6cbf5e8bae02238384f4f79b38bd4fa1e053e530624aacc9cc8cc301e0"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/20:25/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "قال موسى: رب وسِّع لي صدري، وسَهِّل لي أمري، وأطلق لساني ... هارون أخي"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 20,
+      "id": "ramadan-night-20",
+      "title": "A call from hardship",
+      "age": "12+",
+      "topic": "Patience",
+      "ref": "21:83-84",
+      "passageSha256": {
+        "arabic": "379d6291d62a416cbcc3822447ed205c21f5e39f123a8b05aae9aaed240dd445",
+        "translation": "8d810de88b611bf5b6d6ee28c3943ef89fa1a63ace638a3580a48a0b34278fc6"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/21:83/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "واذكر - أيها الرسول - عبدنا أيوب ... فصبر واحتسب، ونادى ربه"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    }
+  ]
+}

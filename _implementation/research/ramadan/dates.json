@@ -1,0 +1,121 @@
+{
+  "status": "found",
+  "hijriYear": "1448 AH",
+  "expectedStart": {
+    "label": "1 Ramadan 1448 AH",
+    "date": "2027-02-08",
+    "range": null,
+    "basis": "Official Umm al-Qura calendar (S0): 1 Ramadan 1448 = 8 February 2027; S1-S4 agree.",
+    "sources": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "lastTenNightsStart": {
+    "label": "Start of the last ten nights of Ramadan 1448 AH",
+    "date": "2027-02-28",
+    "eveningOf": "2027-02-27",
+    "basis": "Official Umm al-Qura month grid (S0): 21 Ramadan 1448 = 28 February 2027. The 21st night begins at sunset on the evening before, 27 February 2027. Read from the published grid, not computed.",
+    "anchor": {
+      "label": "27 Ramadan 1448",
+      "date": "2027-03-06",
+      "sources": [
+        "S0",
+        "S1"
+      ]
+    },
+    "sources": [
+      "S0"
+    ]
+  },
+  "expectedEidAlFitr": {
+    "label": "1 Shawwal 1448 AH (Eid al-Fitr)",
+    "date": "2027-03-09",
+    "range": {
+      "from": "2027-03-09",
+      "to": "2027-03-10"
+    },
+    "basis": "Official Umm al-Qura calendar (S0): 1 Shawwal 1448 = 9 March 2027 (S1, S2 agree). The UK moon sighting predictions (S4) give 10 March 2027, and Gulf News (S3) gives 9 or 10 March, so the page shows the range 9-10 March 2027.",
+    "sources": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S0",
+      "url": "https://www.ummulqura.org.sa/en/calendar",
+      "publisher": "Umm Al-Qura Calendar (official calendar of Saudi Arabia; government website)",
+      "shown": "1448 AH month table: RAMADAN 09, February 8, 2027 - March 8, 2027 (1 Ramadan = 8 Feb, 21 Ramadan = 28 Feb, 27 Ramadan = 6 Mar, 29 Ramadan = 8 Mar); SHAWWAL 10, March 9, 2027 - April 7, 2027.",
+      "accessed": "Thu Nov 12 18:18:11 BST 2026",
+      "method": "Opened in ego-browser by the orchestrating run; the day grid was read from the page text (Hijri day -> Gregorian day)."
+    },
+    {
+      "id": "S1",
+      "url": "https://makkahlive.net/en/tools/islamic-calendar",
+      "publisher": "Makkah Live (third-party site; states its dates are per the Umm al-Qura calendar, described as 'the official pre-computed calendar of Saudi Arabia')",
+      "figuresShown": [
+        "\"Ramadan 1448 AH is expected to begin on Monday, February 8, 2027, per the Umm al-Qura calendar\"",
+        "\"Eid al-Fitr (1 Shawwal) is expected on Tuesday, March 9, 2027\"",
+        "Key dates table: 27 Ramadan = Saturday, March 6, 2027"
+      ],
+      "accessed": "2026-11-12 17:34 (plain date, Git Bash)",
+      "pageDate": "Not stated on the page"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.jordannews.jo/Section-20/Middle-East/Date-of-the-First-Day-of-Ramadan-2027-According-to-Astronomical-Calculations-52316",
+      "publisher": "Jordan News (news outlet); article says its calculations come from the Hijri Calendar website of the Kingdom of Saudi Arabia",
+      "figuresShown": [
+        "\"the first day of Ramadan 2027 expected on Monday, February 8\"",
+        "\"the first day of the blessed Eid al-Fitr will be Tuesday, March 9, 2027\""
+      ],
+      "accessed": "2026-11-12 17:34 (plain date, Git Bash)",
+      "pageDate": "Last updated June 24, 2026"
+    },
+    {
+      "id": "S3",
+      "url": "https://gulfnews.com/uae/when-will-ramadan-2027-begin-uae-astronomers-share-latest-moon-sighting-forecasts-1.500705567",
+      "publisher": "Gulf News (news outlet); figures attributed to 'astronomical forecasts' without naming an institution for these dates",
+      "figuresShown": [
+        "\"expected to begin on Monday, February 8, according to astronomical forecasts\"",
+        "\"placing Eid Al Fitr on Tuesday, March 9, or Wednesday, March 10\""
+      ],
+      "accessed": "2026-11-12 17:34 (plain date, Git Bash)",
+      "pageDate": "Last updated October 10, 2026"
+    },
+    {
+      "id": "S4",
+      "url": "https://mail.moonsighting.org.uk/moon/sighting-reports.html",
+      "publisher": "moonsighting.org.uk (UK moon-sighting predictions, Ramadan 1448 and Shawwal 1448 reports)",
+      "figuresShown": [
+        "Ramadan 1448 AH: \"Hence, Ramadan is most likely to start on 8 February 2027\"",
+        "Shawwal 1448 AH: \"Hence, Shawwal is most likely to start on 10 March 2027\""
+      ],
+      "accessed": "2026-11-12 17:34 (plain date, Git Bash)",
+      "pageDate": "Reports last updated 07 April 2026 (page header shows Thursday 12 November 2026)"
+    }
+  ],
+  "disagreements": [
+    "Eid al-Fitr: Umm al-Qura-based sources (S1, S2) give 9 March 2027; the UK moonsighting.org.uk prediction (S4) gives 10 March 2027; Gulf News (S3) gives 9 or 10 March.",
+    "Ramadan start: no disagreement among S1-S4 (8 February 2027). Search snippets claimed 9 February for Bangladesh, but no Bangladesh official 1448 source was found, so it is not recorded here.",
+    "Low-quality outliers seen in search results and not used: teck.net (Eid 8 April 2027), Global Prayer Times (start ~18 Feb 2027), a calendar site listing 6 April 2027 as Laylat al-Qadr."
+  ],
+  "note": "Expected dates; confirm with your local moon sighting.",
+  "seasonalSlot": {
+    "start": "2027-01-25",
+    "end": "2027-03-13",
+    "derivedFrom": "Derived, not sourced: start = expectedStart (2027-02-08) minus 14 days; end = latest expectedEidAlFitr (2027-03-10) plus 3 days. Proposed for T7.11; the window is an editorial choice.",
+    "isDerived": true
+  },
+  "notes": [
+    "Official Saudi confirmation for Ramadan and Shawwal 1448 is pending; the official Umm al-Qura data source still needs to be checked directly before the page goes live.",
+    "Official confirmation added by the orchestrating run: the Umm al-Qura site (S0) loads in a full browser (the earlier fetch returned only its title). Umm al-Qura is a pre-computed calendar; local moon sighting may differ by a day, hence the note shown on the page."
+  ]
+}

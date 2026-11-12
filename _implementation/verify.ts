@@ -1,6 +1,8 @@
 import { join } from 'node:path';
+import { readdirSync, existsSync } from 'node:fs';
 const root=join(import.meta.dir,'..');
-const apps=['guess-the-surah','ayah-threads','seerah-detective','everyday-akhlaq','seerah-timeline','hifz-planner','is-it-in-the-quran','quran-escape-room','stories-of-the-prophets','places-in-the-quran','word-groups','understand-your-salah','parables-of-the-quran','civilization-timeline','why-it-was-revealed','family-halaqa'];
+// Every app under apps/ with a package.json, like the CI loop in .github/workflows/deploy.yml.
+const apps=readdirSync(join(root,'apps'),{withFileTypes:true}).filter(d=>d.isDirectory()&&existsSync(join(root,'apps',d.name,'package.json'))).map(d=>d.name).sort();
 const command=process.argv[2]||'check';
 if(!['check','test','build'].includes(command))throw new Error('Use check, test, or build');
 let failed=false;

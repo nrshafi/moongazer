@@ -1,0 +1,8 @@
+{
+  "slug": "zakat-calculator",
+  "name": "Zakat Calculator",
+  "description": "Work out your zakat step by step, with the method shown",
+  "accent": "blue",
+  "nav": "Plan",
+  "port": 4341
+}

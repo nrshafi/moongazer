@@ -1,0 +1,45 @@
+{
+  "heading": "Zakat Calculator",
+  "summary": "Zakat Calculator works out zakat step by step. You enter your assets, debts and today's gold and silver prices, choose a labelled option wherever scholars differ, and see the result with the method and sources behind each step. It does not give a ruling.",
+  "steps": [
+    "Enter your cash, gold, silver, business stock, money owed to you and debts due now, with today's gold and silver prices.",
+    "Choose the labelled option for each point where scholars differ, and the nisab weight you follow. No option is selected for you.",
+    "Read the result, the line-by-line breakdown and your list of choices, then print it or open the method page for each source."
+  ],
+  "questions": [
+    {
+      "question": "Does this calculator give a ruling?",
+      "answer": "No. It shows the calculation for the choices you make, with each choice labelled and attributed to the source that states it. It is not a fatwa. For your own situation, ask a scholar or your local zakat committee you trust."
+    },
+    {
+      "question": "Where do the figures and positions come from?",
+      "answer": "From a method record whose citations were each opened and checked a second time. That is a source check, not a scholarly review. The method page shows each entry with its Quran text, hadith references and attributed positions."
+    },
+    {
+      "question": "Does it use live gold and silver prices?",
+      "answer": "No. You enter today's price per gram yourself, in the currency you use. Nothing is converted and nothing is fetched."
+    },
+    {
+      "question": "Does it work out zakat al-fitr?",
+      "answer": "No. The zakat al-fitr page explains who pays and when, and shows the documented difference between food and cash value. Ask your local masjid or zakat committee for this year's amount."
+    }
+  ],
+  "related": [
+    {
+      "name": "Hifz Planner",
+      "description": "Plan new memorization and revision around your week",
+      "kind": "Planner",
+      "url": "https://hifz-planner.moongazer.tech/"
+    },
+    {
+      "name": "Everyday Akhlaq",
+      "description": "Everyday character dilemmas: choose, then read the sources",
+      "kind": "Scenarios",
+      "url": "https://everyday-akhlaq.moongazer.tech/"
+    }
+  ],
+  "collection": {
+    "name": "Prayer & everyday practice",
+    "url": "https://moongazer.tech/prayer-everyday-practice/"
+  }
+}

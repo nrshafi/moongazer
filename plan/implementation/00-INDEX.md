@@ -136,8 +136,8 @@ Update this table when a task or phase starts or finishes (see protocol §6).
 | P4 | Done (R4 pushed 2026-11-12) | phase-4-services → main | 2026-11-12 | Feedback form, corrections log, anonymous counter (16 apps; Hifz with P7). Production setup agent-run under D2b; see `releases/R4.md`. |
 | P5 | Done (R5 pushed 2026-11-12) | phase-5-shell → main | 2026-11-12 | Design system, family tokens, activity-first shell, drawer, session end, motifs, directory front door; Hifz wizard (P7.1–7.3) included. See `releases/R5.md`. |
 | P6 | Done (R6 pushed 2026-11-12) | phase-6-daily → main | 2026-11-12 | Daily Guess the Surah, Ayah Threads, Word Groups and Seerah pairs; reminders; directory Tonight and ayah of the night; Booktube feed; epoch 2026-11-12. Content C1, C2, C3, C10 and C18 verified. See `releases/R6.md`. |
-| P7 | In progress: Hifz Planner (T7.1–T7.3) released in R5; Zakat scaffold on phase-7-zakat; zakat method record (T7.4) in second-pass fixes on content-zakat-*; Ramadan dates record (T7.9) on content-ramadan-dates; Ramadan hub not started | phase-7-* | 2026-11-12 | |
+| P7 | Done (R7 pushed 2026-11-12) | phase-7-season → main | 2026-11-12 | Hifz (T7.1–7.3) shipped in R5; Zakat Calculator (17th app), Ramadan dates, `/ramadan/` hub, seasonal slot, Guess the Surah juz deep link. Content C16 and C17 verified. Escape Room Ramadan rooms (C4) and the zakat sitemap in Search Console follow later. See `releases/R7.md`. |
 | P8 | Not started | | | |
-| C (see `C-content-track.md` §5 for per-app rows) | Not started | | | |
+| C (see `C-content-track.md` §5 for per-app rows) | In progress: C1, C2, C3, C10, C16, C17, C18 done | content-* | 2026-11-12 | |
 | P9 | Not started | | | |
 | P10 | Not started | | | |

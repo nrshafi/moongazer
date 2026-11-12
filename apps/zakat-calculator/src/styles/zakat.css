@@ -1,0 +1,121 @@
+/* Zakat Calculator: form, choices, result, method pages and print summary. App-local; uses only the existing tokens in global.css. */
+
+.intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: none; }
+.intro-text { min-width: 0; }
+.intro .motif { width: 190px; height: auto; color: var(--accent); opacity: .55; flex-shrink: 0; }
+
+.workspace .panel-body { padding: 20px 24px; min-width: 0; }
+.calc-form { display: grid; gap: 22px; }
+.calc-step { border: 0; padding: 0; margin: 0; min-width: 0; display: grid; gap: 14px; }
+.calc-step > legend { font-size: 1.2rem; font-weight: 600; color: var(--ink); padding: 0; margin-bottom: 10px; letter-spacing: -.01em; display: flex; align-items: center; gap: 10px; }
+.step-num { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 99px; background: var(--tint); color: var(--accent-ink); font-size: .82rem; font-weight: 800; flex-shrink: 0; }
+.calc-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 16px; }
+.calc-fields .field { min-width: 0; align-content: start; }
+
+.choice { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 0; min-width: 0; display: grid; gap: 10px; background: var(--surface); }
+.choice[hidden] { display: none; }
+.choice > legend { font-size: .95rem; font-weight: 700; color: var(--ink); padding: 0 6px; }
+.choice > legend:focus { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.choice[data-missing] { border-color: var(--danger); border-width: 2px; }
+.choice[data-missing] > legend::after { content: ' (choose one)'; font-weight: 700; color: var(--danger); }
+.choice > .micro { margin: 0; }
+.option { display: grid; gap: 2px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-2); }
+.option:has(input:checked) { border-color: var(--accent); background: var(--tint); }
+.option-label { align-items: flex-start; min-height: 44px; font-size: .86rem; color: var(--ink); }
+.option-label input { width: 20px; height: 20px; margin-top: 2px; }
+.option-label:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.option-label strong { font-weight: 650; }
+.attrib { display: block; margin-top: 3px; font-size: .75rem; color: var(--muted); line-height: 1.5; }
+.attrib .who { display: block; }
+.attrib .who::before { content: 'Stated by: '; font-weight: 700; }
+.attrib-hint { color: var(--muted); font-size: .78rem; }
+.learn { display: inline-flex; align-items: center; min-height: 44px; font-size: .78rem; font-weight: 700; color: var(--accent-ink); padding-left: 29px; }
+.learn:focus-visible, .check-label:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.form-status { margin: 0; color: var(--danger); font-size: .86rem; font-weight: 600; line-height: 1.6; }
+.form-status:empty { display: none; }
+.form-status:focus { outline: none; }
+.calc-actions { align-items: center; }
+.calc-actions .check-label { display: flex; align-items: center; gap: 9px; min-height: 44px; font-size: .8rem; }
+.calc-actions .check-label input { width: 20px; height: 20px; accent-color: var(--accent); }
+
+.results { margin-top: 22px; }
+.results:focus { outline: none; }
+.result-card { border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: 14px; padding: 20px; background: var(--surface); display: grid; gap: 14px; min-width: 0; }
+.result-card > * { margin: 0; }
+.result-card h2 { font-size: 1.4rem; }
+.result-card h3 { font-size: 1rem; margin: 0 0 6px; }
+.verdict { font-weight: 650; font-size: 1rem; line-height: 1.5; padding: 10px 14px; border-radius: 10px; background: var(--tint); color: var(--accent-ink); }
+.result-card[data-state=below] .verdict { background: var(--surface-2); color: var(--ink); border: 1px solid var(--line); }
+.due { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.due-label { font-size: .9rem; color: var(--muted); font-weight: 600; }
+.due-amount { font-size: 2rem; letter-spacing: -.03em; color: var(--ink); overflow-wrap: anywhere; }
+.nisab-box ul { margin: 0; padding-left: 20px; font-size: .86rem; line-height: 1.7; color: var(--ink); }
+.table-wrap { overflow-x: auto; max-width: 100%; }
+.breakdown { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.breakdown caption { text-align: left; font-weight: 700; font-size: 1rem; padding-bottom: 6px; color: var(--ink); }
+.breakdown th, .breakdown td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-weight: 500; }
+.breakdown thead th { font-weight: 700; color: var(--muted); font-size: .78rem; }
+.breakdown .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.breakdown .total th, .breakdown .total td { font-weight: 800; border-top: 2px solid var(--ink); }
+.line-note { color: var(--muted); font-size: .78rem; font-weight: 500; }
+.choices-made dl { margin: 0; display: grid; gap: 4px; font-size: .86rem; }
+.choices-made dt { font-weight: 700; color: var(--muted); font-size: .78rem; margin-top: 8px; }
+.choices-made dd { margin: 0; color: var(--ink); line-height: 1.6; }
+.limit { font-weight: 650; font-size: .9rem; line-height: 1.6; padding: 12px 14px; border-left: 4px solid var(--accent); background: var(--surface-2); border-radius: 6px; }
+.print-only { display: none; }
+
+/* Method and fitr pages */
+.method { display: grid; gap: 28px; max-width: 860px; }
+.method-entry { scroll-margin-top: 90px; border: 1px solid var(--line); border-radius: 14px; padding: 20px; background: var(--surface); display: grid; gap: 12px; min-width: 0; }
+.method-entry > * { margin: 0; }
+.method-entry h2 { font-size: 1.35rem; }
+.method-entry h3 { font-size: .95rem; margin: 6px 0 0; color: var(--accent-ink); }
+.method-entry:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--tint); }
+.statement { font-size: 1rem; line-height: 1.65; }
+.basis-item { border-left: 3px solid var(--line); padding: 2px 0 2px 14px; display: grid; gap: 6px; }
+.basis-item > * { margin: 0; }
+.basis-ref { font-weight: 700; font-size: .88rem; }
+.basis-ref a { color: var(--accent-ink); }
+.quran-ar { font-family: Amiri, 'Traditional Arabic', serif; font-size: 1.5rem; line-height: 2.1; direction: rtl; text-align: right; overflow-wrap: anywhere; }
+.quran-en { font-size: .9rem; line-height: 1.65; }
+.edition { font-size: .72rem; color: var(--muted); }
+.position { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--surface-2); display: grid; gap: 4px; }
+.position > * { margin: 0; }
+.position .label { font-weight: 700; font-size: .9rem; }
+.position .who { font-size: .8rem; color: var(--muted); }
+.position .summary { font-size: .84rem; line-height: 1.6; }
+.method-entry ul.notes { margin: 0; padding-left: 20px; font-size: .84rem; line-height: 1.65; color: var(--muted); }
+.source-links { margin: 0; padding-left: 20px; font-size: .8rem; line-height: 1.7; }
+.source-links a { overflow-wrap: anywhere; }
+.method-toc { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .84rem; margin: 0; padding: 0; list-style: none; }
+.method-toc a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--accent-ink); }
+.not-accessible { border: 1px dashed var(--line); border-radius: 12px; padding: 16px 18px; background: var(--surface-2); }
+.not-accessible h2 { font-size: 1.2rem; }
+.not-accessible li { margin-bottom: 8px; font-size: .86rem; line-height: 1.6; }
+.fitr-ask { font-weight: 650; font-size: 1.02rem; padding: 14px 16px; border-radius: 12px; background: var(--tint); color: var(--accent-ink); margin: 0; }
+
+@media (max-width: 580px) {
+  .intro { display: block; }
+  .intro .motif { display: none; }
+  .workspace .panel-body { padding: 16px; }
+  .calc-fields { grid-template-columns: 1fr; }
+  .calc-actions .button { width: 100%; }
+  .result-card { padding: 16px; }
+  .due-amount { font-size: 1.6rem; }
+}
+
+@media print {
+  .intro, .no-print, .calc-form, .sidebar, .session-end, .site-header, .site-footer, .feedback-wrap { display: none !important; }
+  .workspace { display: block; }
+  .workspace .panel, .result-card { border: 0 !important; box-shadow: none !important; background: #fff !important; padding: 0 !important; }
+  .workspace .panel-body { padding: 0; }
+  .result-card { color: #111; border-top: 0; }
+  .print-only { display: block !important; color: #111; font-size: 10pt; }
+  .verdict, .limit { background: #fff !important; color: #111 !important; border: 1px solid #777 !important; }
+  .due-amount { font-size: 20pt; color: #111; }
+  .breakdown th, .breakdown td { border-bottom: 1px solid #777; color: #111; font-size: 10.5pt; }
+  .breakdown tr, .choices-made dd, .choices-made dt { break-inside: avoid; }
+  .attrib, .line-note, .micro { color: #333 !important; }
+  .method-entry { border: 1px solid #999; break-inside: avoid; }
+}

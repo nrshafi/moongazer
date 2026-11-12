@@ -1,7 +1,7 @@
 import {readFile,writeFile,mkdir,cp,readdir,rm} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {origin,escapeHtml as e,metadata,appCards,appLinks,logo,pickChips,collectionLinks,questions,documentPage,tonightTiles,ayahBlock} from './render.mjs';
+import {origin,escapeHtml as e,metadata,appCards,appLinks,logo,pickChips,collectionLinks,questions,documentPage,tonightTiles,ayahBlock,ramadanBody} from './render.mjs';
 import {ayahIndex} from './daily.js';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
@@ -11,8 +11,8 @@ const apps=JSON.parse(await readFile(join(root,'deployment/targets.json'),'utf8'
 const collections=JSON.parse(await readFile(join(source,'collections.json'),'utf8'));
 const shots=new Set((await readdir(join(source,'shots')).catch(()=>[])).filter(f=>f.endsWith('.webp')).map(f=>f.slice(0,-5)));
 const bySlug=new Map(apps.map(app=>[app.slug,app]));
-if(apps.some(app=>![2,10,20].includes(app.time)||!['me','kids','class'].includes(app.audience)||app.format!==app.kind)||apps.length!==16||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
-const home={path:'/',title:'Free Islamic Learning Apps & Quran Games | Moongazer',heading:'Free Islamic learning apps',description:'Explore sixteen free Islamic learning apps for Quran, Seerah, history and daily practice. Choose a reading tool or game and begin without an account.'};
+if(apps.some(app=>![2,10,20].includes(app.time)||!['me','kids','class'].includes(app.audience)||app.format!==app.kind)||apps.length!==17||collections.length!==4||new Set(collections.map(c=>c.slug)).size!==4)throw new Error('Unexpected directory coverage');
+const home={path:'/',title:'Free Islamic Learning Apps & Quran Games | Moongazer',heading:'Free Islamic learning apps',description:'Explore seventeen free Islamic learning apps for Quran, Seerah, history and daily practice. Choose a reading tool or game and begin without an account.'};
 const allPages=[home];
 const paths=collections.map(collection=>{
   const selected=apps.filter(app=>app.category===collection.category);
@@ -20,7 +20,7 @@ const paths=collections.map(collection=>{
   return `<a class="subject-card" href="/${collection.slug}/"><span class="eyebrow">${selected.length} apps</span> <h3>${e(collection.name)}</h3> <p>${e(collection.description)}</p> <span class="member-logos" aria-hidden="true">${selected.map(app=>`<img src="${logo(app.slug)}" alt="" width="32" height="32" loading="lazy">`).join("")}</span> <span class="subject-action">Explore this learning path <span aria-hidden="true">↗</span></span></a>`;
 }).join('\n');
 const commonQuestions=[
-  {question:'What is Moongazer?',answer:'Moongazer is a collection of sixteen free browser apps for Quran, Seerah, history and everyday Islamic learning. Choose a tool for a specific task, such as recognizing a surah, finding wording, reading a report or exploring prayer recitation meanings.'},
+  {question:'What is Moongazer?',answer:'Moongazer is a collection of seventeen free browser apps for Quran, Seerah, history and everyday Islamic learning. Choose a tool for a specific task, such as recognizing a surah, finding wording, reading a report or exploring prayer recitation meanings.'},
   {question:'Do I need an account or an installation?',answer:'No. Open an app in your browser and begin. There are no accounts or subscriptions. Apps that offer saved progress keep it in that browser and provide their own storage controls.'},
   {question:'Where can I check an explanation or report a correction?',answer:'Each app links its sources and methodology. The About page explains the collection\'s source practices and provides the public contact for quotation, attribution and wording corrections.'}
 ];
@@ -29,9 +29,12 @@ const ayat=JSON.parse(await readFile(join(source,'ayat-of-the-night.json'),'utf8
 if(ayat.length<60||ayat.some(a=>!/^\d{1,3}:\d{1,3}(-\d{1,3})?$/.test(a.ref)||!a.arabic||!a.translation||!a.theme)||new Set(ayat.map(a=>a.ref)).size!==ayat.length)throw new Error('Invalid ayat-of-the-night.json');
 const buildIndex=ayahIndex(new Date(),ayat.length);
 const buildAyah=ayat[buildIndex];
+const seasonal=JSON.parse(await readFile(join(source,'seasonal.json'),'utf8'));
+if(!/^\d{4}-\d{2}-\d{2}$/.test(seasonal.start)||!/^\d{4}-\d{2}-\d{2}$/.test(seasonal.end)||seasonal.start>seasonal.end||!seasonal.href.startsWith('/'))throw new Error('Invalid seasonal.json');
+const seasonCard=`<a class="season-card" href="${e(seasonal.href)}" data-season-from="${seasonal.start}" data-season-to="${seasonal.end}" hidden><span class="eyebrow">${e(seasonal.eyebrow)}</span> <span class="season-title">${e(seasonal.title)}</span> <span class="season-text">${e(seasonal.text)}</span> <span class="season-action">${e(seasonal.action)} <span aria-hidden="true">→</span></span></a>`;
 let template=await readFile(join(source,'index.html'),'utf8');
 for(const marker of ['PAGE_METADATA','APP_CATALOG','SUBJECT_GUIDES','COMMON_QUESTIONS','SUBJECT_LINKS','PICKER_CHIPS','APP_LINKS','TONIGHT_TILES','AYAH_REF','AYAH_BODY'])if(!template.includes(`<!-- ${marker} -->`))throw new Error(`Missing directory template marker: ${marker}`);
-template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- APP_LINKS -->',appLinks(apps)).replace('<!-- PICKER_CHIPS -->',pickChips(apps)).replace('<!-- APP_CATALOG -->',appCards(apps,shots)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections)).replace('<!-- TONIGHT_TILES -->',tonightTiles(apps)).replace('<details data-ayah-details>',`<details data-ayah-details data-count="${ayat.length}" data-index="${buildIndex}">`).replace('<!-- AYAH_REF -->',e(buildAyah.ref)).replace('<!-- AYAH_BODY -->',ayahBlock(buildAyah));
+template=template.replace('<!-- PAGE_METADATA -->',metadata(home,apps)).replace('<!-- APP_LINKS -->',appLinks(apps)).replace('<!-- PICKER_CHIPS -->',pickChips(apps)).replace('<!-- APP_CATALOG -->',appCards(apps,shots)).replace('<!-- SUBJECT_GUIDES -->',paths).replace('<!-- COMMON_QUESTIONS -->',questions(commonQuestions)).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections)).replace('<!-- TONIGHT_TILES -->',tonightTiles(apps)).replace('<div class="season wrap" id="season"></div>',`<div class="season wrap" id="season">${seasonCard}</div>`).replace('<details data-ayah-details>',`<details data-ayah-details data-count="${ayat.length}" data-index="${buildIndex}">`).replace('<!-- AYAH_REF -->',e(buildAyah.ref)).replace('<!-- AYAH_BODY -->',ayahBlock(buildAyah));
 // Start clean so a removed or renamed file can never survive in dist.
 await rm(out,{recursive:true,force:true});
 await mkdir(out,{recursive:true});
@@ -45,7 +48,7 @@ for(const collection of collections){
   await writeFile(join(folder,'index.html'),documentPage(meta,body,collections,selected));
   allPages.push(meta);
 }
-const about={path:'/about/',name:'About Moongazer',title:'About Moongazer | Sources, Privacy & Corrections',heading:'Small learning tools. Sources you can inspect.',intro:'Moongazer is a free collection of Quran, Seerah, history and everyday learning apps. This page explains what the activities are for, how to inspect their sources and where to report a correction.',description:'Read how Moongazer handles source editions, educational limits, browser storage and corrections across its sixteen free Islamic learning apps.',type:'AboutPage'};
+const about={path:'/about/',name:'About Moongazer',title:'About Moongazer | Sources, Privacy & Corrections',heading:'Small learning tools. Sources you can inspect.',intro:'Moongazer is a free collection of Quran, Seerah, history and everyday learning apps. This page explains what the activities are for, how to inspect their sources and where to report a correction.',description:'Read how Moongazer handles source editions, educational limits, browser storage and corrections across its seventeen free Islamic learning apps.',type:'AboutPage'};
 const sourceLinks=apps.map(app=>`<li><a href="https://${app.slug}.moongazer.tech/sources/">${e(app.name)} sources</a></li>`).join('');
 const aboutBody=(await readFile(join(source,'about-content.html'),'utf8')).replace('<!-- SOURCE_DIRECTORY -->',sourceLinks).replace('<!-- SUBJECT_LINKS -->',collectionLinks(collections));
 await mkdir(join(out,'about'),{recursive:true});
@@ -70,12 +73,27 @@ const correctionsPage={path:'/corrections/',name:'Corrections log',title:'Correc
 await mkdir(join(out,'corrections'),{recursive:true});
 await writeFile(join(out,'corrections/index.html'),documentPage(correctionsPage,`<section class="reading-section"><ol class="corrections-list">${correctionRows}</ol><p>Found something else? <a href="/feedback/">Report an error</a>.</p></section>`,collections));
 allPages.push(correctionsPage);
+// P7 T7.10: Ramadan hub. Night ayat come from the verified ayat-of-the-night list; Surah al-Qadr from quran-full.json.
+const ramadan=JSON.parse(await readFile(join(source,'ramadan-content.json'),'utf8'));
+const quran=JSON.parse(await readFile(join(root,'_implementation/research/quran-full.json'),'utf8'));
+const halaqa=JSON.parse(await readFile(join(root,'apps/family-halaqa/src/data/content.json'),'utf8'));
+const ramadanPacks=new Map(halaqa.packs.filter(p=>p.series==='ramadan').map(p=>[p.night,p]));
+const juzStarts=JSON.parse(await readFile(join(root,'apps/guess-the-surah/src/data/juz-starts.json'),'utf8')).starts.map(k=>k.split(':').map(Number));
+// Same rule as apps/guess-the-surah/src/lib/juz.ts: a surah belongs to the juz in which its first ayah falls.
+const before=(a,b)=>a[0]<b[0]||(a[0]===b[0]&&a[1]<b[1]);
+const juzHasSurah=juz=>{const lo=juzStarts[juz-1],hi=juzStarts[juz];for(let s=1;s<=114;s++){const f=[s,1];if(!before(f,lo)&&(!hi||before(f,hi)))return true;}return false;};
+const [qc,qspan]=ramadan.lastTen.surah.split(':');const [qa,qb]=qspan.split('-').map(Number);
+const surahQadr=Array.from({length:qb-qa+1},(_,i)=>{const v=quran.verses[`${qc}:${qa+i}`];return {ref:`Quran ${qc}:${qa+i}`,arabic:v.arabic,translation:v.translation};});
+const ramadanMeta={path:'/ramadan/',name:'Ramadan 1448',title:'Ramadan 1448 with Moongazer: 30 Nights of Quran and Family Learning',heading:'Ramadan with Moongazer',eyebrow:'Ramadan 1448 · expected February to March 2027',intro:'Thirty nights of short ayat, family halaqa packs and juz-by-juz Quran rounds, with the expected dates and a section for the last ten nights.',description:'A free Ramadan 1448 companion: a short ayah for each night, Family Halaqa packs, Guess the Surah juz rounds, the last ten nights and zakat. Expected dates, to confirm locally.',type:'WebPage',script:'/ramadan.js'};
+await mkdir(join(out,'ramadan'),{recursive:true});
+await writeFile(join(out,'ramadan/index.html'),documentPage(ramadanMeta,ramadanBody({content:ramadan,ayat:new Map(ayat.map(a=>[a.ref,a])),packs:ramadanPacks,juzHasSurah,surahQadr}),collections));
+allPages.push(ramadanMeta);
 const sitemapTemplate=await readFile(join(source,'sitemap.xml'),'utf8');
 if(!sitemapTemplate.includes('<!-- SITEMAP_URLS -->'))throw new Error('Missing sitemap template marker');
 await writeFile(join(out,'sitemap.xml'),sitemapTemplate.replace('<!-- SITEMAP_URLS -->',allPages.map(page=>`<url><loc>${e(new URL(page.path,origin).href)}</loc></url>`).join('\n')));
-const llms=`# Moongazer\n\n> Sixteen free Islamic learning apps for Quran, Seerah, history and everyday practice. No account or installation is required.\n\nThis index links to the same public activities and guidance available on the website. Source quotations, attributed commentary and editorial exercises are distinguished in each app. It does not represent independent scholarly certification.\n\n## Learning guides\n${collections.map(c=>`- [${c.name}](${origin}${c.slug}/): ${c.description}`).join('\n')}\n\n## Apps\n${apps.map(a=>`- [${a.name}](https://${a.slug}.moongazer.tech/): ${a.description} Source notes: https://${a.slug}.moongazer.tech/sources/`).join('\n')}\n\n## About and corrections\n- [About Moongazer](${origin}about/): Sources, educational limits, browser storage and the public source-correction contact.\n`;
+const llms=`# Moongazer\n\n> Seventeen free Islamic learning apps for Quran, Seerah, history and everyday practice. No account or installation is required.\n\nThis index links to the same public activities and guidance available on the website. Source quotations, attributed commentary and editorial exercises are distinguished in each app. It does not represent independent scholarly certification.\n\n## Learning guides\n${collections.map(c=>`- [${c.name}](${origin}${c.slug}/): ${c.description}`).join('\n')}\n\n## Apps\n${apps.map(a=>`- [${a.name}](https://${a.slug}.moongazer.tech/): ${a.description} Source notes: https://${a.slug}.moongazer.tech/sources/`).join('\n')}\n\n## About and corrections\n- [About Moongazer](${origin}about/): Sources, educational limits, browser storage and the public source-correction contact.\n`;
 await writeFile(join(out,'llms.txt'),llms);
-for(const file of ['styles.css','reading.css','app.js','daily.js','feedback.js','moon.svg','favicon.svg','social-card.png','_headers','_redirects','_routes.json','robots.txt','404.html'])await cp(join(source,file),join(out,file));
+for(const file of ['styles.css','reading.css','app.js','daily.js','ramadan.js','feedback.js','moon.svg','favicon.svg','social-card.png','_headers','_redirects','_routes.json','robots.txt','404.html'])await cp(join(source,file),join(out,file));
 await cp(join(source,'logos'),join(out,'logos'),{recursive:true});
 if(shots.size)await cp(join(source,'shots'),join(out,'shots'),{recursive:true});
 await mkdir(join(out,'fonts'),{recursive:true});

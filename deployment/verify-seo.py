@@ -111,7 +111,7 @@ def inspect(html, url, homepage=False, missing=False):
                 assert {item['url'] for item in listing['itemListElement']} == expected
                 assert listing['numberOfItems'] == len(expected)
             else:
-                if origin.path in ('/feedback/', '/corrections/', '/feedback/thanks/'):
+                if origin.path in ('/feedback/', '/corrections/', '/feedback/thanks/', '/ramadan/'):
                     assert webpage['@type']=='WebPage', ('directory service page', url)
                 else:
                     assert origin.path == '/about/' and webpage['@type']=='AboutPage'

@@ -1,0 +1,1272 @@
+{
+  "method": {
+    "schema": "zakat-method/1",
+    "task": "P7 T7.4 / C17",
+    "disclaimer": "Educational summary. Not a fatwa, and not reviewed by a scholar. No scholarly review has taken place. The second-pass verification (T7.4 verification.json) is a separate task.",
+    "sessionStart": "2026-11-12T17:32:44+06:00",
+    "sessionEnd": "2026-11-12T17:44:30+06:00",
+    "quranSnapshot": {
+      "file": "_implementation/research/quran-full.json",
+      "sha256": "3ffbc20d417f6f2246447b3c76f0be27209fa009793b1eea92ae22e324eb3b2f"
+    },
+    "quranMcpCalls": [
+      {
+        "tool": "fetch_grounding_rules",
+        "arguments": {},
+        "retrievedAt": "2026-11-12 (session, Asia/Dhaka)",
+        "result": "grounding_nonce gnd-6025e54b441e30bb"
+      },
+      {
+        "tool": "fetch_quran",
+        "arguments": {
+          "ayahs": [
+            "2:43",
+            "9:60",
+            "9:103",
+            "2:267",
+            "9:34"
+          ],
+          "editions": "ar-uthmani-hafs",
+          "grounding_nonce": "gnd-6025e54b441e30bb"
+        },
+        "retrievedAt": "2026-11-12 (session, Asia/Dhaka)",
+        "note": "9:34 was fetched but is not used (see notes)."
+      },
+      {
+        "tool": "fetch_translation",
+        "arguments": {
+          "ayahs": [
+            "2:43",
+            "9:60",
+            "9:103",
+            "2:267",
+            "9:34"
+          ],
+          "editions": "en-pickthall",
+          "grounding_nonce": "gnd-6025e54b441e30bb"
+        },
+        "retrievedAt": "2026-11-12 (session, Asia/Dhaka)",
+        "note": "First attempt was rate_limited; the retry succeeded."
+      }
+    ],
+    "quranMcpCrossCheck": {
+      "2:43": {
+        "arabicByteEqual": false,
+        "arabicNfcEqual": true,
+        "translationByteEqual": true
+      },
+      "9:103": {
+        "arabicByteEqual": false,
+        "arabicNfcEqual": false,
+        "translationByteEqual": true,
+        "arabicDiffersAtCodepoints": [
+          [
+            99,
+            "0x670",
+            "0x64e"
+          ],
+          [
+            100,
+            "0x62a",
+            "0x670"
+          ],
+          [
+            101,
+            "0x64e",
+            "0x62a"
+          ],
+          [
+            102,
+            "0x643",
+            "0x64e"
+          ],
+          [
+            103,
+            "0x64e",
+            "0x643"
+          ]
+        ]
+      },
+      "2:267": {
+        "arabicByteEqual": false,
+        "arabicNfcEqual": true,
+        "translationByteEqual": true
+      },
+      "9:60": {
+        "arabicByteEqual": false,
+        "arabicNfcEqual": true,
+        "translationByteEqual": true
+      }
+    },
+    "quranMcpCrossCheckNote": "Pickthall strings byte-identical for all four refs. Arabic: 2:43, 2:267 and 9:60 equal after NFC normalisation (combining-mark order differs at byte level, as seen in C18). 9:103 differs at one word: the MCP output as relayed to this session has an extra fatha in the word for 'your prayer' (snapshot: waw + dagger alef; MCP: waw + fatha + dagger alef; one code point longer). Unresolved: could be the MCP edition or relay. The record uses the snapshot text (the required source). The second-pass verifier should re-fetch 9:103 and decide.",
+    "notAccessible": [
+      {
+        "item": "AAOIFI Shari'ah Standard 35 (Zakah)",
+        "reason": "On 2026-11-12 the official English page showed only an overview of the standard (scope and aims); its full text was not available to open from that page. No AAOIFI position is used because its text was not opened."
+      },
+      {
+        "item": "Diyanet (Turkey) nisab figures 80.18 g gold / 561.2 g silver",
+        "reason": "Appeared only in search snippets; the Diyanet PDF opened blank, so the figures are not recorded."
+      },
+      {
+        "item": "aliftaa.jo page for non-merchant debt ruling",
+        "reason": "Not opened; only the merchant fatwa (3712) was read."
+      }
+    ],
+    "sourceRules": "Hadith checked on sunnah.com with the ego-browser CLI; positions only from institutional fatwa bodies' published pages that were opened; no personal blogs, no Wikipedia.",
+    "entries": [
+      {
+        "id": "obligation",
+        "title": "Zakat is an obligation",
+        "statement": "Zakat is the obligatory yearly payment from wealth that reaches a minimum amount (nisab) and has been held for a lunar year. It is one of the five pillars of Islam.",
+        "basis": [
+          {
+            "type": "quran",
+            "ref": "2:43",
+            "url": "https://quran.com/2:43",
+            "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ",
+            "arabicEdition": "ar-uthmani-hafs",
+            "translation": "Establish worship, pay the poor-due, and bow your heads with those who bow (in worship).",
+            "translationEdition": "en-pickthall",
+            "translationUrl": "https://quran.com/2:43?translations=19",
+            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+          },
+          {
+            "type": "quran",
+            "ref": "9:103",
+            "url": "https://quran.com/9:103",
+            "arabic": "خُذْ مِنْ أَمْوَٰلِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا وَصَلِّ عَلَيْهِمْ ۖ إِنَّ صَلَوٰتَكَ سَكَنٌ لَّهُمْ ۗ وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+            "arabicEdition": "ar-uthmani-hafs",
+            "translation": "Take alms of their wealth, wherewith thou mayst purify them and mayst make them grow, and pray for them. Lo! thy prayer is an assuagement for them. Allah is Hearer, Knower.",
+            "translationEdition": "en-pickthall",
+            "translationUrl": "https://quran.com/9:103?translations=19",
+            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+          },
+          {
+            "type": "quran",
+            "ref": "2:267",
+            "url": "https://quran.com/2:267",
+            "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَنفِقُوا۟ مِن طَيِّبَـٰتِ مَا كَسَبْتُمْ وَمِمَّآ أَخْرَجْنَا لَكُم مِّنَ ٱلْأَرْضِ ۖ وَلَا تَيَمَّمُوا۟ ٱلْخَبِيثَ مِنْهُ تُنفِقُونَ وَلَسْتُم بِـَٔاخِذِيهِ إِلَّآ أَن تُغْمِضُوا۟ فِيهِ ۚ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ غَنِىٌّ حَمِيدٌ",
+            "arabicEdition": "ar-uthmani-hafs",
+            "translation": "O ye who believe! Spend of the good things which ye have earned, and of that which We bring forth from the earth for you, and seek not the bad (with intent) to spend thereof (in charity) when ye would not take it for yourselves save with disdain; and know that Allah is Absolute, Owner of Praise.",
+            "translationEdition": "en-pickthall",
+            "translationUrl": "https://quran.com/2:267?translations=19",
+            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+          },
+          {
+            "type": "hadith",
+            "collection": "bukhari",
+            "number": "1395",
+            "url": "https://sunnah.com/bukhari:1395",
+            "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+            "paraphrase": "The Prophet, sending Mu'adh to Yemen, told him to teach that Allah made zakat obligatory on their property, taken from the wealthy among them and given to the poor among them.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Obligatory Charity Tax (Zakat): The obligation of Zakat"
+          }
+        ],
+        "positions": [],
+        "sources": [
+          {
+            "id": "SUNNAH",
+            "url": "https://sunnah.com/",
+            "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+            "publisher": "sunnah.com",
+            "accessed": "2026-11-12",
+            "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+          },
+          {
+            "id": "MY-1811",
+            "url": "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/4850-al-kafi-1811-nisab-for-zakat-on-gold-in-accordance-with-the-zakat-institution-or-current-value",
+            "title": "Al-Kafi #1811: Nisab for Zakat on Gold; in accordance with the zakat institution or current value? (30 June 2021)",
+            "publisher": "Mufti of Federal Territory's Department (Jabatan Mufti Wilayah Persekutuan), Malaysia",
+            "accessed": "2026-11-12"
+          }
+        ],
+        "notes": [
+          "Quran lines are restated as the Pickthall translation words only; no tafsir was fetched, so no interpretive claim is made about them.",
+          "2:267 speaks of spending from what you earned and from what the earth yields; it is recorded as a general basis for spending from wealth, not as a source of a specific rule.",
+          "The 'pillars of Islam' wording is supported by the Mufti of the Federal Territory (MY-1811): 'Paying zakat is part of the pillars of Islam'."
+        ]
+      },
+      {
+        "id": "recipients",
+        "title": "Who may receive zakat",
+        "statement": "The Quran names eight categories who may receive zakat: the poor, the needy, those who collect it, those whose hearts are to be reconciled, freeing captives, debtors, the cause of Allah, and the wayfarer.",
+        "basis": [
+          {
+            "type": "quran",
+            "ref": "9:60",
+            "url": "https://quran.com/9:60",
+            "arabic": "۞ إِنَّمَا ٱلصَّدَقَـٰتُ لِلْفُقَرَآءِ وَٱلْمَسَـٰكِينِ وَٱلْعَـٰمِلِينَ عَلَيْهَا وَٱلْمُؤَلَّفَةِ قُلُوبُهُمْ وَفِى ٱلرِّقَابِ وَٱلْغَـٰرِمِينَ وَفِى سَبِيلِ ٱللَّهِ وَٱبْنِ ٱلسَّبِيلِ ۖ فَرِيضَةً مِّنَ ٱللَّهِ ۗ وَٱللَّهُ عَلِيمٌ حَكِيمٌ",
+            "arabicEdition": "ar-uthmani-hafs",
+            "translation": "The alms are only for the poor and the needy, and those who collect them, and those whose hearts are to be reconciled, and to free the captives and the debtors, and for the cause of Allah, and (for) the wayfarer; a duty imposed by Allah. Allah is Knower, Wise.",
+            "translationEdition": "en-pickthall",
+            "translationUrl": "https://quran.com/9:60?translations=19",
+            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+          },
+          {
+            "type": "hadith",
+            "collection": "bukhari",
+            "number": "1395",
+            "url": "https://sunnah.com/bukhari:1395",
+            "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+            "paraphrase": "Zakat is taken from the wealthy of a community and returned to its poor.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Obligatory Charity Tax (Zakat): The obligation of Zakat"
+          }
+        ],
+        "positions": [],
+        "sources": [
+          {
+            "id": "SUNNAH",
+            "url": "https://sunnah.com/",
+            "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+            "publisher": "sunnah.com",
+            "accessed": "2026-11-12",
+            "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+          }
+        ],
+        "notes": [
+          "The list is the translation's wording (Pickthall: 'the debtors', 'the cause of Allah'). How each category is understood today is a matter of scholarly interpretation that this record does not cover; no tafsir was fetched.",
+          "The calculator only works out the amount; it does not decide who receives it."
+        ]
+      },
+      {
+        "id": "rate",
+        "title": "The rate is 1/40 (2.5%)",
+        "statement": "On zakatable money and precious metals above the nisab, zakat is one fortieth, which is 2.5%.",
+        "basis": [
+          {
+            "type": "hadith",
+            "collection": "bukhari",
+            "number": "1454",
+            "url": "https://sunnah.com/bukhari:1454",
+            "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+            "paraphrase": "In Abu Bakr's written instructions on zakat, silver is zakatable at one fortieth (the sunnah.com English text adds '2.5%'), and nothing is due if it is under 200 dirhams.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "The Zakat of sheep"
+          },
+          {
+            "type": "hadith",
+            "collection": "abudawud",
+            "number": "1573",
+            "url": "https://sunnah.com/abudawud:1573",
+            "gradingAsShownOnSunnahCom": "Sahih (Al-Albani)",
+            "paraphrase": "Five dirhams are due on 200 dirhams, and half a dinar on 20 dinars, after a year; more is reckoned proportionally. (Half of 20 is one fortieth.)",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Zakat On Pasturing Animals"
+          },
+          {
+            "type": "hadith",
+            "collection": "ibnmajah",
+            "number": "1791",
+            "url": "https://sunnah.com/ibnmajah:1791",
+            "gradingAsShownOnSunnahCom": "Hasan (Darussalam)",
+            "paraphrase": "Ibn 'Umar and 'A'ishah: the Prophet took half a dinar from every twenty dinars or more.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Zakat on silver and gold"
+          }
+        ],
+        "positions": [],
+        "sources": [
+          {
+            "id": "SUNNAH",
+            "url": "https://sunnah.com/",
+            "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+            "publisher": "sunnah.com",
+            "accessed": "2026-11-12",
+            "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+          }
+        ],
+        "notes": [
+          "Rate is recorded as 1/40 = 0.025 for the engine.",
+          "Every source opened here for the rate speaks of gold and silver. Applying 1/40 to cash and trade goods is how the fatwa bodies cited in this record state it (for example Jordan's General Iftaa' Department 3712 concludes that 2.5% of the total is paid on a merchant's trade goods, cash and collectible debts); it is not repeated as a separate basis."
+        ]
+      },
+      {
+        "id": "hawl",
+        "title": "One lunar year (hawl)",
+        "statement": "Zakat on money and precious metals is due after the wealth has been held for one full lunar year while at or above the nisab.",
+        "basis": [
+          {
+            "type": "hadith",
+            "collection": "abudawud",
+            "number": "1573",
+            "url": "https://sunnah.com/abudawud:1573",
+            "gradingAsShownOnSunnahCom": "Sahih (Al-Albani)",
+            "paraphrase": "Zakat is payable on 200 dirhams (or 20 dinars) once a year has passed on them. The report adds that no zakat is due on property until a year has passed; the narrator says he is unsure whether part of the wording is 'Ali's own or the Prophet's, and a later note says the sub-narrator Ibn Wahb added the 'year' sentence as from the Prophet.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Zakat On Pasturing Animals"
+          },
+          {
+            "type": "hadith",
+            "collection": "ibnmajah",
+            "number": "1792",
+            "url": "https://sunnah.com/ibnmajah:1792",
+            "gradingAsShownOnSunnahCom": "Hasan (Darussalam)",
+            "paraphrase": "'A'ishah heard the Prophet say there is no zakat on wealth until a year (hawl) has passed.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "One who acquires wealth"
+          }
+        ],
+        "positions": [
+          {
+            "label": "Count the whole amount at the yearly date, including money added during the year",
+            "attribution": {
+              "who": "Fatwa Center at Islamweb",
+              "sourceId": "IW-138743",
+              "locator": "Fatwa text, second part"
+            },
+            "summary": "Pay zakat on the entire amount whether it increased or decreased during the year; what matters is that the nisab is met, even if one gets more money after the lunar year began."
+          },
+          {
+            "label": "Count only what has been held for the full lunar year",
+            "attribution": {
+              "who": "Fatwa Center at Islamweb",
+              "sourceId": "IW-426541",
+              "locator": "First point of the answer"
+            },
+            "summary": "Zakat is due on the amount in the bank account that reached the nisab and stayed a full lunar year; an amount that reached the nisab but has not been held a full year is not due before then, unless it is profit from the amount already held a year. Paying in advance on the newer amount is permitted."
+          }
+        ],
+        "sources": [
+          {
+            "id": "SUNNAH",
+            "url": "https://sunnah.com/",
+            "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+            "publisher": "sunnah.com",
+            "accessed": "2026-11-12",
+            "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+          },
+          {
+            "id": "IW-138743",
+            "url": "https://islamweb.net/en/article/138743/assessing-the-nisaab-of-bank-notes",
+            "title": "Assessing the Nisaab of bank notes (article 7543, citing Fatwa 92234, 05/01/2011)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "IW-426541",
+            "url": "https://www.islamweb.net/en/fatwa/426541/deducting-the-value-of-debt-from-the-nisaab-when-paying-zakaah",
+            "title": "Deducting the Value of Debt from the Nisaab When Paying Zakaah (Fatwa 426541, 25-8-2020)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          }
+        ],
+        "notes": [
+          "A lunar year is about 354 days; the engine takes it as a statement, not a date calculation.",
+          "How a fluctuating balance is handled is a separate question. Islamweb's article (IW-138743) and its fatwa 426541 give different answers (see positions). Both are from the same body, so they are listed as that body's two statements, not as two independent schools; the engine need not model this and the explainer can leave it to the visitor's scholar."
+        ]
+      },
+      {
+        "id": "nisab-textual",
+        "title": "Nisab: the textual basis",
+        "statement": "The narrations set the minimum at 20 dinars (mithqal) of gold and 200 dirhams of silver; below this there is no zakat on that metal.",
+        "basis": [
+          {
+            "type": "hadith",
+            "collection": "abudawud",
+            "number": "1573",
+            "url": "https://sunnah.com/abudawud:1573",
+            "gradingAsShownOnSunnahCom": "Sahih (Al-Albani)",
+            "paraphrase": "200 dirhams of silver, and 20 dinars of gold, held for a year.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Zakat On Pasturing Animals"
+          },
+          {
+            "type": "hadith",
+            "collection": "bukhari",
+            "number": "1447",
+            "url": "https://sunnah.com/bukhari:1447",
+            "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+            "paraphrase": "No zakat is due on less than five awaq of silver (the sunnah.com English note equates this to 200 dirhams).",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "The Zakat of silver"
+          },
+          {
+            "type": "hadith",
+            "collection": "abudawud",
+            "number": "1558",
+            "url": "https://sunnah.com/abudawud:1558",
+            "gradingAsShownOnSunnahCom": "Sahih (Al-Albani)",
+            "paraphrase": "No zakat on less than five camels, five ounces (awqiyah) of silver or five wasqs of produce.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Property On Which Zakat Is Payable"
+          }
+        ],
+        "positions": [],
+        "sources": [
+          {
+            "id": "SUNNAH",
+            "url": "https://sunnah.com/",
+            "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+            "publisher": "sunnah.com",
+            "accessed": "2026-11-12",
+            "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+          },
+          {
+            "id": "JO-854",
+            "url": "https://aliftaa.jo/en-fatwas/854/rss.aspx",
+            "title": "Sharia Basis for Nissab of Gold and its Assessment in Modern Weights (Fatwa 854, 22-07-2010)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12"
+          }
+        ],
+        "notes": [
+          "Jordan's General Iftaa' Department (JO-854) also cites Ibn Majah and Abu Dawud for the same figures and says Muslim scholars agreed on the nisab of 20 mithqals of gold, quoting Ibn al-Mundhir and Al-Nawawi (Al-Majmu' 5/503). That is the body's own statement of consensus, recorded as such.",
+          "The weights in grams are not in the narrations; see nisab-conversions."
+        ]
+      },
+      {
+        "id": "nisab-conversions",
+        "title": "Nisab: modern conversions to grams",
+        "statement": "Published conversions of the textual nisab into grams differ. The record lists them with where each is published and does not choose.",
+        "basis": [],
+        "positions": [
+          {
+            "label": "85 g gold, 595 g silver",
+            "attribution": {
+              "who": "Fatwa Center at Islamweb",
+              "sourceId": "IW-81355",
+              "locator": "Answer"
+            },
+            "summary": "20 mithqal = 85 g of pure gold (1 mithqal = 4.25 g); 200 dirhams = 595 g of pure silver."
+          },
+          {
+            "label": "85 g gold, 595 g silver",
+            "attribution": {
+              "who": "Mufti of Federal Territory's Department, Malaysia",
+              "sourceId": "MY-1811",
+              "locator": "Explanation"
+            },
+            "summary": "Nisab of money 'is 20 mithqal of gold (85 grams) or 200 dirhams of silver (595 grams)'."
+          },
+          {
+            "label": "85 g gold (from a 4.25 g dinar)",
+            "attribution": {
+              "who": "General Iftaa' Department, Jordan",
+              "sourceId": "JO-854",
+              "locator": "The Answer"
+            },
+            "summary": "Says 85 g is the view of most modern scholars and the one adopted by the Department; the fatwa gives no silver weight."
+          },
+          {
+            "label": "85 g of 21-carat gold, at market price",
+            "attribution": {
+              "who": "Egypt's Dar al-Ifta",
+              "sourceId": "EG-7705",
+              "locator": "Answer (also in fatwas 6754 and 6759)"
+            },
+            "summary": "Defines the nisab as 85 grams of 21 carat gold according to market price. The 21-carat wording appears in fatwas 7705, 6759 and 6754 and does not appear in fatwa 7746."
+          },
+          {
+            "label": "85 g gold (no carat stated)",
+            "attribution": {
+              "who": "Egypt's Dar al-Ifta",
+              "sourceId": "EG-7746",
+              "locator": "Answer, first and last paragraphs"
+            },
+            "summary": "Gives the nisab as '85 grams of gold' (twice) without naming a carat."
+          },
+          {
+            "label": "85 g of 24-karat gold",
+            "attribution": {
+              "who": "General Iftaa' Department, Jordan",
+              "sourceId": "JO-3712",
+              "locator": "Conclusion"
+            },
+            "summary": "'The equivalent of 85 grams of 24-karat gold' for a merchant's zakat threshold."
+          },
+          {
+            "label": "87.47 g gold, 612.35 g silver",
+            "attribution": {
+              "who": "Darul Ifta Birmingham",
+              "sourceId": "UK-BHAM",
+              "locator": "Answer"
+            },
+            "summary": "612.35 grams of silver or 87.47 grams of gold or currency equivalent to that amount, citing Radd al-Muhtar vol. 2 p. 5."
+          },
+          {
+            "label": "96 g gold (from a 4.8 g dinar)",
+            "attribution": {
+              "who": "General Iftaa' Department, Jordan, reporting a view used in a Shafi'i textbook",
+              "sourceId": "JO-854",
+              "locator": "The Answer"
+            },
+            "summary": "Reports that those who estimate the old dinar at 4.8 g reach 96 g, 'the Nisaab adopted in the Shafie book Al-Fiqh al-Manhaji'; the Department itself adopts 85 g."
+          }
+        ],
+        "sources": [
+          {
+            "id": "IW-81355",
+            "url": "https://www.islamweb.net/en/fatwa/81355/gold-and-silver-in-calculating-nisab-for-zakah",
+            "title": "Gold and Silver in calculating Nisab for Zakah (Fatwa 81355, 21-11-2001)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "MY-1811",
+            "url": "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/4850-al-kafi-1811-nisab-for-zakat-on-gold-in-accordance-with-the-zakat-institution-or-current-value",
+            "title": "Al-Kafi #1811: Nisab for Zakat on Gold; in accordance with the zakat institution or current value? (30 June 2021)",
+            "publisher": "Mufti of Federal Territory's Department (Jabatan Mufti Wilayah Persekutuan), Malaysia",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-854",
+            "url": "https://aliftaa.jo/en-fatwas/854/rss.aspx",
+            "title": "Sharia Basis for Nissab of Gold and its Assessment in Modern Weights (Fatwa 854, 22-07-2010)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "EG-7705",
+            "url": "https://dar-alifta.org/en/fatwa/details/7705/is-zakat-payable-on-the-gold-and-silver-jewelry-that-a-woman-owns",
+            "title": "Is zakat payable on the gold and silver jewelry that a woman owns? (Fatwa 7705, 23 Feb 2015)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "EG-6759",
+            "url": "https://dar-alifta.org/en/fatwa/details/6759/is-zakah-payable-on-gold-and-silver-jewelry-that-a-woman-has",
+            "title": "Is zakah payable on gold and silver jewelry that a woman has? (Fatwa 6759, 25 Nov 2013)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "EG-6754",
+            "url": "https://dar-alifta.org/en/fatwa/details/6754/should-i-pay-zakat-on-my-bank-account-before-deducting-the-debt-i-owe-for-purchas",
+            "title": "Should I pay zakat on my bank account before deducting the debt I owe for purchasing an apartment? (Fatwa 6754, 25 Nov 2013)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "EG-7746",
+            "url": "https://dar-alifta.org/en/fatwa/details/7746/zakah-on-collected-and-uncollected-debts",
+            "title": "Zakah on collected and uncollected debts (Fatwa 7746, 23 Feb 2015)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-3712",
+            "url": "https://www.aliftaa.jo/research-fatwa-english/3712/How-to-Calculate-Zakah-on-Trading-Merchandise",
+            "title": "How to Give Zakat on Trade Goods (Fatwa 3712, 14-06-2022)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12",
+            "note": "Addresses a merchant's assets; its debt rulings are given for that setting."
+          },
+          {
+            "id": "UK-BHAM",
+            "url": "https://daruliftabirmingham.co.uk/?p=919",
+            "title": "What is the Nisab of Zakat? (21 August 2011)",
+            "publisher": "Darul Ifta Birmingham",
+            "accessed": "2026-11-12"
+          }
+        ],
+        "notes": [
+          "The calculator should show the visitor the published options and let them (or their scholar) choose; this record picks none.",
+          "Egypt's 21-carat figure (fatwas 7705, 6759, 6754) is a weight of 21-carat gold, which is not the same quantity of pure gold as 85 g of 24-karat; the sources do not say how Egypt converts. Fatwa 7746 says only '85 grams of gold'. Treat these as different published conventions, not rounding.",
+          "Left out: the Turkish Diyanet figures (80.18 g gold, 561.2 g silver) appeared in search snippets only; the Diyanet PDF could not be opened, so they are not recorded. AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used.",
+          "Examples in this file use 85 g and 595 g only as test inputs; that is not an endorsement."
+        ]
+      },
+      {
+        "id": "diff-jewellery",
+        "title": "Difference: gold and silver jewellery worn for personal use",
+        "statement": "Scholars differ on whether permitted jewellery that is worn is zakatable. Jewellery kept as savings and not worn is treated as zakatable in the sources opened.",
+        "basis": [
+          {
+            "type": "hadith",
+            "collection": "abudawud",
+            "number": "1563",
+            "url": "https://sunnah.com/abudawud:1563",
+            "gradingAsShownOnSunnahCom": "Hasan (Al-Albani)",
+            "paraphrase": "A woman came with her daughter wearing two heavy gold bangles; the Prophet asked if she paid zakat on them and warned about bangles of fire; she took them off and gave them for Allah and His Apostle.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "On The Meaning Of Kanz (Treasure) And Zakat On Jewellery"
+          },
+          {
+            "type": "hadith",
+            "collection": "tirmidhi",
+            "number": "637",
+            "url": "https://sunnah.com/tirmidhi:637",
+            "gradingAsShownOnSunnahCom": "Hasan (Darussalam)",
+            "paraphrase": "Two women with gold bracelets were asked if they had paid their zakat and told to pay it.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "What Has Been Related About Zakat On Jewelry"
+          },
+          {
+            "type": "hadith",
+            "collection": "abudawud",
+            "number": "1565",
+            "url": "https://sunnah.com/abudawud:1565",
+            "gradingAsShownOnSunnahCom": "Sahih (Al-Albani)",
+            "paraphrase": "'A'ishah was asked by the Prophet whether she paid zakat on two silver rings she had made; he said it was enough to take her to the fire.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "On The Meaning Of Kanz (Treasure) And Zakat On Jewellery"
+          }
+        ],
+        "positions": [
+          {
+            "label": "Zakatable at nisab, whether worn or not",
+            "attribution": {
+              "who": "Hanafi school, as stated by the Mufti of the Federal Territory",
+              "sourceId": "MY-38",
+              "locator": "Answer, paragraph 3"
+            },
+            "summary": "'Madhhab Abu Hanifah states that zakah is obligatory when the nisab is sufficient, whether the nisab is on its own or if other property is combined with it.'"
+          },
+          {
+            "label": "Not zakatable if worn and permitted",
+            "attribution": {
+              "who": "Maliki, Shafi'i and Hanbali schools, as stated by the Mufti of the Federal Territory",
+              "sourceId": "MY-38",
+              "locator": "Answer, paragraph 4"
+            },
+            "summary": "'for permissible adornments that are used and worn, then zakat is not obligatory on them.' The office says this is the opinion it is inclined to."
+          },
+          {
+            "label": "Not zakatable if worn and permitted",
+            "attribution": {
+              "who": "General Iftaa' Department, Jordan (Shafi'i; says Maliki and Hanbali agree)",
+              "sourceId": "JO-525",
+              "locator": "The Answer"
+            },
+            "summary": "Not obligatory on permissible jewellery used as a woman's ornament even at the nisab; 'the stronger opinion of our Madhab (Shafie)', also adopted by Maliki and Hanbali, citing Mughni al-Muhtaj 2/95, Hashiyat al-Dasuqi 1/490 and Kashshaf al-Qina' 2/234; reports Malik's Muwatta' on 'A'ishah and Ibn 'Umar."
+          },
+          {
+            "label": "No zakat on women's jewellery",
+            "attribution": {
+              "who": "Egypt's Dar al-Ifta",
+              "sourceId": "EG-7705",
+              "locator": "Answer"
+            },
+            "summary": "'A woman's jewelry is not zakatable.' (Also fatwa 6759: 'There is no zakat on women's jewelry.')"
+          },
+          {
+            "label": "Jewellery kept for saving, or not worn, is zakatable at nisab and hawl",
+            "attribution": {
+              "who": "General Iftaa' Department, Jordan; Mufti of the Federal Territory",
+              "sourceId": "JO-525",
+              "locator": "The Answer, last paragraph"
+            },
+            "summary": "If the jewellery is meant for hoarding it is liable once it reaches the nisab and a lunar year passes; An-Nawawi (Al-Majmu' 5/519) is quoted for the majority view. Fatwa JO-3712 adds that adornment gold is exempt 'unless it exceeds the customary amount'. MY-38 treats unworn, stored jewellery as zakatable."
+          }
+        ],
+        "sources": [
+          {
+            "id": "MY-38",
+            "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/1980-irsyad-fatwa-series-38-zakah-for-women-s-adornments",
+            "title": "Irsyad al-Fatwa Series 38: Zakah for Women's Adornments (07 July 2015)",
+            "publisher": "Mufti of Federal Territory's Department (Jabatan Mufti Wilayah Persekutuan), Malaysia",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-525",
+            "url": "https://aliftaa.jo/en-fatwas/525/rss.aspx",
+            "title": "Woman's Jewelry isn't Liable for Zakah unless Hoarded (Fatwa 525, 02-03-2010)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-3712",
+            "url": "https://www.aliftaa.jo/research-fatwa-english/3712/How-to-Calculate-Zakah-on-Trading-Merchandise",
+            "title": "How to Give Zakat on Trade Goods (Fatwa 3712, 14-06-2022)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12",
+            "note": "Addresses a merchant's assets; its debt rulings are given for that setting."
+          },
+          {
+            "id": "EG-7705",
+            "url": "https://dar-alifta.org/en/fatwa/details/7705/is-zakat-payable-on-the-gold-and-silver-jewelry-that-a-woman-owns",
+            "title": "Is zakat payable on the gold and silver jewelry that a woman owns? (Fatwa 7705, 23 Feb 2015)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "EG-6759",
+            "url": "https://dar-alifta.org/en/fatwa/details/6759/is-zakah-payable-on-gold-and-silver-jewelry-that-a-woman-has",
+            "title": "Is zakah payable on gold and silver jewelry that a woman has? (Fatwa 6759, 25 Nov 2013)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "SUNNAH",
+            "url": "https://sunnah.com/",
+            "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+            "publisher": "sunnah.com",
+            "accessed": "2026-11-12",
+            "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+          }
+        ],
+        "notes": [
+          "Options for the engine: (a) count worn jewellery at its gold or silver value; (b) exclude permitted worn jewellery. Unworn or saved jewellery is counted in both options per JO-525 and MY-38.",
+          "The three hadith are recorded as texts discussed on this question; no source opened here ties them to a particular school, so none is attributed. Grades are as shown on sunnah.com. JO-525 cites Malik's Muwatta' for the opposite Companion reports; that page was not opened.",
+          "Left out: any madhhab position on the 'customary amount' limit beyond JO-3712's one phrase (no accessible source stating the limit). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
+        ]
+      },
+      {
+        "id": "diff-debts-due",
+        "title": "Difference: debts you owe",
+        "statement": "Scholars differ on whether the debts you owe reduce the wealth on which zakat is calculated.",
+        "basis": [],
+        "positions": [
+          {
+            "label": "Deduct debts you owe",
+            "attribution": {
+              "who": "Egypt's Dar al-Ifta",
+              "sourceId": "EG-6754",
+              "locator": "Answer"
+            },
+            "summary": "If the outstanding instalments are in your name, deduct all remaining instalments and pay zakat on what remains if it reaches the nisab and is surplus to basic needs. (Note: this fatwa also deducts instalments not yet due.)"
+          },
+          {
+            "label": "Deduct debts you owe, unless you have surplus assets that could pay them",
+            "attribution": {
+              "who": "Fatwa Center at Islamweb, quoting Ibn Qudamah",
+              "sourceId": "IW-426541",
+              "locator": "Third point of the answer"
+            },
+            "summary": "Permissible to deduct a mortgage debt from the wealth at nisab if you have no surplus assets that could settle it; if surplus assets cover only part, deduct the rest. Quotes Ibn Qudamah: debt prevents zakat only when it consumes the nisab or leaves less than the nisab."
+          },
+          {
+            "label": "Deduct liabilities, after basic needs",
+            "attribution": {
+              "who": "Darul Ifta Birmingham (citing Radd al-Muhtar)",
+              "sourceId": "UK-BHAM",
+              "locator": "Answer"
+            },
+            "summary": "Nisab is for wealth over and above basic needs and free from debts; if after deduction of liabilities the amount exceeds the nisab, zakat is due."
+          },
+          {
+            "label": "Do not deduct debts you owe",
+            "attribution": {
+              "who": "General Iftaa' Department, Jordan (Shafi'i reasoning), in a merchant's case",
+              "sourceId": "JO-3712",
+              "locator": "Answer"
+            },
+            "summary": "'Debts owed by the merchant do not affect zakat liability'; the fatwa reasons that zakat is tied to the actual wealth while debt is a liability, and that the zakat texts are general. Tax liabilities unpaid at year end are likewise not deducted."
+          }
+        ],
+        "sources": [
+          {
+            "id": "EG-6754",
+            "url": "https://dar-alifta.org/en/fatwa/details/6754/should-i-pay-zakat-on-my-bank-account-before-deducting-the-debt-i-owe-for-purchas",
+            "title": "Should I pay zakat on my bank account before deducting the debt I owe for purchasing an apartment? (Fatwa 6754, 25 Nov 2013)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "IW-426541",
+            "url": "https://www.islamweb.net/en/fatwa/426541/deducting-the-value-of-debt-from-the-nisaab-when-paying-zakaah",
+            "title": "Deducting the Value of Debt from the Nisaab When Paying Zakaah (Fatwa 426541, 25-8-2020)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "UK-BHAM",
+            "url": "https://daruliftabirmingham.co.uk/?p=919",
+            "title": "What is the Nisab of Zakat? (21 August 2011)",
+            "publisher": "Darul Ifta Birmingham",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-3712",
+            "url": "https://www.aliftaa.jo/research-fatwa-english/3712/How-to-Calculate-Zakah-on-Trading-Merchandise",
+            "title": "How to Give Zakat on Trade Goods (Fatwa 3712, 14-06-2022)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12",
+            "note": "Addresses a merchant's assets; its debt rulings are given for that setting."
+          }
+        ],
+        "notes": [
+          "Options for the engine: (a) deduct debts that are due now; (b) deduct nothing. The sources differ on whether not-yet-due instalments count (Egypt 6754 deducts them all; Islamweb 426541 allows deducting under a surplus-assets condition). Narrow the engine's 'due now' option to the sources if needed.",
+          "JO-3712 is written for a merchant; the Department's general ruling for non-merchants was not opened, so it is not stated here.",
+          "Left out: Hanafi, Maliki, Shafi'i and Hanbali positions on debts as attributed on teaching or Q&A sites I did not open or that are not institutional fatwa bodies (for example SeekersGuidance, islamqa.org mirrors). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
+        ]
+      },
+      {
+        "id": "diff-receivables",
+        "title": "Difference: money owed to you",
+        "statement": "Money owed to you by a debtor who can and will pay is treated as your wealth. Scholars differ on money from a debtor who is unlikely to pay or who delays.",
+        "basis": [],
+        "positions": [
+          {
+            "label": "Count it each year if the debtor is able to pay on request",
+            "attribution": {
+              "who": "Egypt's Dar al-Ifta; General Iftaa' Department, Jordan",
+              "sourceId": "EG-7746",
+              "locator": "Answer, second paragraph; JO-3712 'As for debts owed to the merchant'"
+            },
+            "summary": "Zakat becomes due at the end of each hawl even if the creditor has not collected, because it is wealth held by another. Egypt adds it counts with the creditor's other money towards the nisab."
+          },
+          {
+            "label": "Doubtful or delayed debt: pay for all past years when you recover it",
+            "attribution": {
+              "who": "Shafi'i school, as stated by Egypt's Dar al-Ifta and Jordan's General Iftaa' Department",
+              "sourceId": "EG-7746",
+              "locator": "Answer, second paragraph; JO-3712"
+            },
+            "summary": "Egypt: 'the position of Shafi'i scholars and is the stricter opinion.' Jordan: 'zakat is due for all the past years when the debt is finally recovered. This is more cautious.'"
+          },
+          {
+            "label": "Doubtful or delayed debt: pay for one year when you recover it",
+            "attribution": {
+              "who": "Hanafi school, as stated by Egypt's Dar al-Ifta",
+              "sourceId": "EG-7746",
+              "locator": "Answer, second paragraph"
+            },
+            "summary": "'Hanafi scholars maintained that zakat is due on such a loan for a hawl when the creditor regains its possession and this is more facilitating.'"
+          },
+          {
+            "label": "Doubtful or delayed debt: pay for one year when you recover it (a second statement)",
+            "attribution": {
+              "who": "Maliki school, as stated by Jordan's General Iftaa' Department; the same one-year rule is given by the Fatwa Center at Islamweb without naming a school",
+              "sourceId": "JO-3712",
+              "locator": "Answer, trade debts; IW-426541 second point"
+            },
+            "summary": "Jordan quotes Mawahib al-Jalil 2/321: a non-manager pays zakat for one year only when he receives it. Islamweb tells a lender not to pay before receipt and to pay for one year on receipt, with past years being 'safer and more prudent'."
+          }
+        ],
+        "sources": [
+          {
+            "id": "EG-7746",
+            "url": "https://dar-alifta.org/en/fatwa/details/7746/zakah-on-collected-and-uncollected-debts",
+            "title": "Zakah on collected and uncollected debts (Fatwa 7746, 23 Feb 2015)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-3712",
+            "url": "https://www.aliftaa.jo/research-fatwa-english/3712/How-to-Calculate-Zakah-on-Trading-Merchandise",
+            "title": "How to Give Zakat on Trade Goods (Fatwa 3712, 14-06-2022)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12",
+            "note": "Addresses a merchant's assets; its debt rulings are given for that setting."
+          },
+          {
+            "id": "IW-426541",
+            "url": "https://www.islamweb.net/en/fatwa/426541/deducting-the-value-of-debt-from-the-nisaab-when-paying-zakaah",
+            "title": "Deducting the Value of Debt from the Nisaab When Paying Zakaah (Fatwa 426541, 25-8-2020)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          }
+        ],
+        "notes": [
+          "Options for the engine: (a) count money you expect to receive; (b) count it only once received. Only (a)'s wording covers a debtor who is able to pay; doubtful debts are where the sources split.",
+          "Egypt's fatwa does not name the Maliki school; it is attributed only via Jordan's fatwa and Islamweb's guidance.",
+          "Left out: Hanbali position on receivables (no accessible source opened). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
+        ]
+      },
+      {
+        "id": "diff-nisab-metal",
+        "title": "Difference: which nisab to use for cash and mixed assets",
+        "statement": "Gold and silver nisabs differ greatly in value today. The sources differ on whether to measure cash and mixed assets against gold, against the lower of the two, and on whether gold and silver are combined.",
+        "basis": [],
+        "positions": [
+          {
+            "label": "Use the gold nisab for cash",
+            "attribution": {
+              "who": "Fatwa Center at Islamweb",
+              "sourceId": "IW-138743",
+              "locator": "Fatwa text"
+            },
+            "summary": "Bank notes: the nisab is 85 g of gold or 595 g of silver, but determining it by gold is preferred because scholars agreed the weight of the mithqal but differed on the dirham."
+          },
+          {
+            "label": "Cash is zakatable at the value of 85 g of gold",
+            "attribution": {
+              "who": "Fatwa Center at Islamweb; Egypt's Dar al-Ifta; General Iftaa' Department, Jordan",
+              "sourceId": "IW-81355",
+              "locator": "IW-81355 Answer, third paragraph; EG-7746 Answer; JO-3712 conclusion"
+            },
+            "summary": "Cash and trade goods are measured against the gold nisab. Islamweb: cash worth 85 g of gold. Egypt (7746): merchandise equal to 85 grams of gold or more. Jordan (3712): the equivalent of 85 grams of 24-karat gold."
+          },
+          {
+            "label": "Use the lower of the gold and silver nisab values",
+            "attribution": {
+              "who": "Majority of scholars, as reported by the Fatwa Center at Islamweb",
+              "sourceId": "IW-120628",
+              "locator": "Answer"
+            },
+            "summary": "'the majority of the scholars valued it to the least Nisaab from both [gold and silver]'; a few valued banknotes only to gold."
+          },
+          {
+            "label": "Combine gold and silver to reach either nisab",
+            "attribution": {
+              "who": "Majority of scholars, as reported by the Fatwa Center at Islamweb",
+              "sourceId": "IW-81848",
+              "locator": "Answer"
+            },
+            "summary": "If neither metal alone reaches its nisab but the value of both combined reaches either nisab, zakat is due."
+          },
+          {
+            "label": "Do not combine gold and silver",
+            "attribution": {
+              "who": "Imam al-Shafi'i and others, as reported by the Fatwa Center at Islamweb",
+              "sourceId": "IW-81848",
+              "locator": "Answer"
+            },
+            "summary": "Combining should not be done while they are two different kinds and neither has reached a nisab."
+          }
+        ],
+        "sources": [
+          {
+            "id": "IW-138743",
+            "url": "https://islamweb.net/en/article/138743/assessing-the-nisaab-of-bank-notes",
+            "title": "Assessing the Nisaab of bank notes (article 7543, citing Fatwa 92234, 05/01/2011)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "IW-81355",
+            "url": "https://www.islamweb.net/en/fatwa/81355/gold-and-silver-in-calculating-nisab-for-zakah",
+            "title": "Gold and Silver in calculating Nisab for Zakah (Fatwa 81355, 21-11-2001)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "IW-120628",
+            "url": "https://www.islamweb.net/en/fatwa/120628/silver-has-its-own-nisaab",
+            "title": "Silver has its own Nisaab (Fatwa 120628, 22-4-2009)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "MY-1811",
+            "url": "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/4850-al-kafi-1811-nisab-for-zakat-on-gold-in-accordance-with-the-zakat-institution-or-current-value",
+            "title": "Al-Kafi #1811: Nisab for Zakat on Gold; in accordance with the zakat institution or current value? (30 June 2021)",
+            "publisher": "Mufti of Federal Territory's Department (Jabatan Mufti Wilayah Persekutuan), Malaysia",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "IW-81848",
+            "url": "https://www.islamweb.net/en/fatwa/81848/adding-gold-and-silver-together-for-zakah",
+            "title": "Adding gold and silver together for Zakah (Fatwa 81848, 12-3-2000)",
+            "publisher": "Fatwa Center at Islamweb",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "EG-7746",
+            "url": "https://dar-alifta.org/en/fatwa/details/7746/zakah-on-collected-and-uncollected-debts",
+            "title": "Zakah on collected and uncollected debts (Fatwa 7746, 23 Feb 2015)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-3712",
+            "url": "https://www.aliftaa.jo/research-fatwa-english/3712/How-to-Calculate-Zakah-on-Trading-Merchandise",
+            "title": "How to Give Zakat on Trade Goods (Fatwa 3712, 14-06-2022)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12",
+            "note": "Addresses a merchant's assets; its debt rulings are given for that setting."
+          }
+        ],
+        "notes": [
+          "Options for the engine: gold nisab only; lower of the two. A silver-only option for cash is not offered because no opened source states a silver-only rule for cash (IW-120628 gives a silver nisab for silver held as silver, and says the majority measure banknotes against the lower of the two). The calculator asks the visitor to choose.",
+          "Left out: a silver-only position for cash (no opened source states one); a Hanafi attribution for silver (Darul Ifta Birmingham lists both silver and gold amounts but states no choice). AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used.",
+          "IW-81355 and IW-138743 say they are guidance from the same centre; two pages from one body are not counted as independent.",
+          "Moved from positions: the Mufti of the Federal Territory (MY-1811) says that, between the current gold price and the zakat institution's fixed gold-based nisab for the year, it is better to choose the lower, so more people can give. That is about gold price versus the institution's set nisab; it says nothing about gold versus silver or combining, so it is not a position on this difference. The page also says the nisab for savings and income follows the gold and silver nisabs (85 g / 595 g)."
+        ]
+      },
+      {
+        "id": "fitr-facts",
+        "title": "Zakat al-fitr: who pays, for whom, when",
+        "statement": "Zakat al-fitr is a small obligatory payment at the end of Ramadan, due on each Muslim and paid before the Eid prayer; the hadith specify it as a sa' of food. Ask your local masjid or zakat committee for this year's amount.",
+        "basis": [
+          {
+            "type": "hadith",
+            "collection": "bukhari",
+            "number": "1503",
+            "url": "https://sunnah.com/bukhari:1503",
+            "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+            "paraphrase": "The Prophet made zakat al-fitr (a sa' of dates or barley) obligatory on every Muslim, slave or free, male or female, young or old, and ordered it paid before people went out to the Eid prayer.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Obligation of Sadaqat-ul-Fitr"
+          },
+          {
+            "type": "hadith",
+            "collection": "bukhari",
+            "number": "1511",
+            "url": "https://sunnah.com/bukhari:1511",
+            "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+            "paraphrase": "Ibn 'Umar gave on behalf of children too, and people used to give a day or two before Eid.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Sadaqat-ul-Fitr on a slave as well as on a free Muslim"
+          },
+          {
+            "type": "hadith",
+            "collection": "abudawud",
+            "number": "1609",
+            "url": "https://sunnah.com/abudawud:1609",
+            "gradingAsShownOnSunnahCom": "Hasan (Al-Albani)",
+            "paraphrase": "It was prescribed as purification of the fasting person from idle and obscene talk and as food for the poor; if paid before the Eid prayer it is accepted as zakat, and if after it is an ordinary sadaqah.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Zakat For The Closing Of Fast At The End Of Ramadan"
+          },
+          {
+            "type": "hadith",
+            "collection": "bukhari",
+            "number": "1510",
+            "url": "https://sunnah.com/bukhari:1510",
+            "gradingAsShownOnSunnahCom": "No grading shown on sunnah.com",
+            "paraphrase": "Abu Sa'id al-Khudri: a sa' of food was given in the Prophet's time; foods named were barley, raisins, cottage cheese and dates.",
+            "confirmedOnSunnahCom": "2026-11-12",
+            "chapterHeading": "Sadaqat-ul-Fitr is to be given before the 'Eid prayers"
+          }
+        ],
+        "positions": [],
+        "sources": [
+          {
+            "id": "SUNNAH",
+            "url": "https://sunnah.com/",
+            "title": "sunnah.com hadith pages (individual numbers in each hadith record)",
+            "publisher": "sunnah.com",
+            "accessed": "2026-11-12",
+            "note": "Opened with the ego-browser CLI because WebFetch is blocked (HTTP 403)."
+          },
+          {
+            "id": "JO-5786",
+            "url": "https://aliftaa.jo/article-en/5786/DefaultEn.aspx",
+            "title": "Zakat al-Fitr: Jurisprudential Rulings and Educational Secrets (article by Dr. Hassan Abu_Arqoub, 03-04-2024)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12",
+            "note": "Article; read in part (the first part of the page, through the conditions and who is paid for)."
+          },
+          {
+            "id": "EG-7732",
+            "url": "https://www.dar-alifta.org/en/fatwa/details/7732/paying-zakat-ul-fitr-in-cash-or-as-food-products",
+            "title": "Paying zakat-ul-fitr in cash or as food products (Fatwa 7732, 23 Feb 2015)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          }
+        ],
+        "notes": [
+          "No amounts are recorded anywhere in this record. Use the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
+          "Conditions stated by the fatwa bodies, not by a hadith opened here: Egypt's Dar al-Ifta (7732) says it is for every person or head of a family who has food in excess of what he needs on the last day of Ramadan; Jordan's article (5786) lists being Muslim, the sunset ending Ramadan, and surplus beyond basic needs, and says whoever supports another also pays for them. These are those bodies' statements.",
+          "Timing detail: sunnah.com 1511 reports the Companions' practice of giving a day or two early; the Jordan article gives the due time as the arrival of the night of Eid. The engine need not decide this; the explainer can show the range.",
+          "The hadith text uses units (sa') and foods; this record gives no weight conversion, because a gram figure would be a choice and no amounts are recorded.",
+          "Whether it is paid as food or as its value is a documented difference, covered in the entry fitr-food-vs-cash; this entry does not settle it."
+        ]
+      },
+      {
+        "id": "fitr-food-vs-cash",
+        "title": "Difference: zakat al-fitr in food or in cash value",
+        "statement": "Scholars differ on whether zakat al-fitr may be paid as its cash value instead of as food. The positions below are each attributed to their source.",
+        "basis": [],
+        "positions": [
+          {
+            "label": "Food of the staple diet",
+            "attribution": {
+              "who": "Imam al-Shafi'i, as stated by Egypt's Dar al-Ifta; and Jordan's General Iftaa' Department states it",
+              "sourceId": "EG-6417",
+              "locator": "Answer; JO-4209 The Answer"
+            },
+            "summary": "Egypt's Dar al-Ifta states that Imam al-Shafi'i 'contends otherwise' to the permissibility of paying value, because zakat had originally been prescribed in kind. Jordan's General Iftaa' Department states that zakat al-fitr should be given as the staple food of the land."
+          },
+          {
+            "label": "Cash value",
+            "attribution": {
+              "who": "Hanafi school, as stated by Egypt's Dar al-Ifta and by Jordan's General Iftaa' Department",
+              "sourceId": "EG-6417",
+              "locator": "Answer; JO-4209 The Answer"
+            },
+            "summary": "Egypt's Dar al-Ifta states that 'It is permissible in our school to pay the equivalent value of wheat', quoting Al-Sarakhsi's Al-Mabsut (vol. 3, pp. 107-8). Jordan's General Iftaa' Department states that Hanafi scholars have permitted giving it as monetary value, considering it more beneficial for the poor and easier for the giver."
+          },
+          {
+            "label": "Cash value where there is need or public benefit",
+            "attribution": {
+              "who": "Hanbali scholar Ibn Taymiyya, and a report from Imam Ahmad, as reported by Egypt's Dar al-Ifta",
+              "sourceId": "EG-6417",
+              "locator": "Answer, paragraphs 4-5"
+            },
+            "summary": "Egypt's Dar al-Ifta reports that the Hanbali scholar Taqi al-Din Ibn Taymiyya (Majmu' al-Fatawa 25/25-83) maintained that paying the value is permissible in cases of need or public benefit, and that a report from Imam Ahmad (cited by Al-Mawardi, Al-Insaf 3/182) holds that giving the value in cash fulfils the obligation."
+          },
+          {
+            "label": "Depends on the food available where the payer lives",
+            "attribution": {
+              "who": "Contemporary scholars, as reported by Egypt's Dar al-Ifta",
+              "sourceId": "EG-7732",
+              "locator": "Answer, third paragraph"
+            },
+            "summary": "Egypt's Dar al-Ifta reports that where staple food is abundant cash may be better for the poor, and where food is scarce or hard to get it is not acceptable to pay cash; 'The criterion ... is the availability of food, especially staple foodstuff, in abundance.'"
+          }
+        ],
+        "sources": [
+          {
+            "id": "EG-6417",
+            "url": "https://www.dar-alifta.org/en/fatwa/details/6417/paying-zakat-ul-fitr-in-cash",
+            "title": "Paying zakat ul-fitr in cash (Fatwa 6417)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "EG-7732",
+            "url": "https://www.dar-alifta.org/en/fatwa/details/7732/paying-zakat-ul-fitr-in-cash-or-as-food-products",
+            "title": "Paying zakat-ul-fitr in cash or as food products (Fatwa 7732, 23 Feb 2015)",
+            "publisher": "Egypt's Dar al-Ifta",
+            "accessed": "2026-11-12"
+          },
+          {
+            "id": "JO-4209",
+            "url": "https://www.aliftaa.jo/brief-fatwa-english/4209/Islamic-Ruling-on-Giving-Zakat-al-Fitr-in-Cash",
+            "title": "Islamic Ruling on Giving Zakat al-Fitr in Cash (Fatwa 4209, 10-02-2026)",
+            "publisher": "General Iftaa' Department, Jordan",
+            "accessed": "2026-11-12",
+            "note": "The page also states an amount for Jordan; it is deliberately not recorded here."
+          }
+        ],
+        "notes": [
+          "The calculator does not compute zakat al-fitr. The explainer shows these positions and the sentence: \"Ask your local masjid or zakat committee for this year's amount.\"",
+          "JO-4209 also gives an amount for Jordan; it is deliberately not recorded.",
+          "Jordan's page (JO-4209) also ranks the options in its own words and makes a statement about all schools; that framing is the Department's and is deliberately not reproduced in this record, which sets the positions out without ranking them.",
+          "Left out: a Maliki position on cash fitr (no source opened states one). Hanbali: Egypt's Dar al-Ifta (EG-6417) reports Ibn Taymiyya and a report from Imam Ahmad; recorded as an attributed position above, not as the school's settled view. AAOIFI SS 35: on 2026-11-12 the official English page (cis.aaoifi.com/standards/ss-35-zakah/) showed only an overview of the standard; its full text was not available to open from that page, so no AAOIFI position is used."
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "id": "ex-1-basic",
+        "follows": [
+          "rate",
+          "nisab-textual",
+          "diff-nisab-metal"
+        ],
+        "citing": [
+          "IW-81355",
+          "bukhari:1454"
+        ],
+        "inputs": {
+          "cashAndBank": 10000,
+          "goldPricePerGram": 100,
+          "nisabGoldGrams": 85,
+          "nisabMetalChoice": "gold",
+          "debtsDue": 0,
+          "receivables": 0,
+          "jewelleryWorn": 0
+        },
+        "expected": {
+          "nisabValue": 8500,
+          "zakatableTotal": 10000,
+          "atOrAboveNisab": true,
+          "zakatDue": 250
+        },
+        "note": "Cash is measured against the value of 85 g of gold (IW-81355) and zakat is 1/40 (Bukhari 1454). 85 g is a test input, not an endorsement."
+      },
+      {
+        "id": "ex-2-metal-choice",
+        "follows": [
+          "diff-nisab-metal"
+        ],
+        "citing": [
+          "IW-138743",
+          "IW-120628"
+        ],
+        "inputs": {
+          "cashAndBank": 1000,
+          "goldPricePerGram": 100,
+          "silverPricePerGram": 1,
+          "nisabGoldGrams": 85,
+          "nisabSilverGrams": 595
+        },
+        "expected": {
+          "ifGold": {
+            "nisabValue": 8500,
+            "atOrAboveNisab": false,
+            "zakatDue": 0
+          },
+          "ifLowerOfTheTwo": {
+            "nisabValue": 595,
+            "atOrAboveNisab": true,
+            "zakatDue": 25,
+            "note": "Lower of the gold and silver nisab values (IW-120628)."
+          }
+        },
+        "note": "Same cash gives different results by choice: gold-only (IW-138743) gives 0; the lower of the two (IW-120628) gives 25. Shows why the app must make the visitor choose. No silver-only row for cash: no opened source applies a silver-only nisab to cash (IW-120628 states a silver nisab only for silver held as silver)."
+      },
+      {
+        "id": "ex-3-debts",
+        "follows": [
+          "diff-debts-due"
+        ],
+        "citing": [
+          "EG-6754",
+          "JO-3712"
+        ],
+        "inputs": {
+          "cashAndBank": 20000,
+          "debtsDue": 5000,
+          "goldPricePerGram": 100,
+          "nisabGoldGrams": 85,
+          "nisabMetalChoice": "gold"
+        },
+        "expected": {
+          "ifDeduct": {
+            "zakatableTotal": 15000,
+            "zakatDue": 375
+          },
+          "ifNotDeduct": {
+            "zakatableTotal": 20000,
+            "zakatDue": 500
+          }
+        },
+        "note": "Deduct: EG-6754. Do not deduct: JO-3712. Both are above the 8500 nisab."
+      },
+      {
+        "id": "ex-4-receivables",
+        "follows": [
+          "diff-receivables"
+        ],
+        "citing": [
+          "EG-7746"
+        ],
+        "inputs": {
+          "cashAndBank": 10000,
+          "receivablesFromAbleDebtor": 4000,
+          "goldPricePerGram": 100,
+          "nisabGoldGrams": 85,
+          "nisabMetalChoice": "gold"
+        },
+        "expected": {
+          "ifCountReceivables": {
+            "zakatableTotal": 14000,
+            "zakatDue": 350
+          },
+          "ifCountOnlyWhenReceived": {
+            "zakatableTotal": 10000,
+            "zakatDue": 250
+          }
+        },
+        "note": "A debtor able to pay on request is counted each year (EG-7746 second paragraph); the second row models a lender who counts only on receipt, as in IW-426541. Only the first row is Egypt's rule for an able debtor."
+      },
+      {
+        "id": "ex-5-jewellery",
+        "follows": [
+          "diff-jewellery"
+        ],
+        "citing": [
+          "MY-38",
+          "JO-525"
+        ],
+        "inputs": {
+          "cashAndBank": 0,
+          "jewelleryWornGoldGrams": 100,
+          "goldPricePerGram": 100,
+          "nisabGoldGrams": 85,
+          "nisabMetalChoice": "gold"
+        },
+        "expected": {
+          "ifCountWornJewellery": {
+            "zakatableTotal": 10000,
+            "zakatDue": 250
+          },
+          "ifExcludeWornJewellery": {
+            "zakatableTotal": 0,
+            "zakatDue": 0
+          }
+        },
+        "note": "100 g of worn gold: Hanafi-style counts it (MY-38 paragraph 3); the other three schools' view as stated in MY-38 and JO-525 excludes permitted worn jewellery."
+      }
+    ],
+    "examplesNote": "Test inputs for the engine (T7.6). Numbers (85 g, 595 g, price per gram) are test parameters only; each example cites the source whose method it follows. No amounts for zakat al-fitr."
+  }
+}

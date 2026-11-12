@@ -340,6 +340,14 @@ Files: `homepage/index.html`, `render.mjs`, `build.mjs`, `app.js` (module), `dai
   - Headless Chrome at 390 × 844, 820, 1060 and 1440, with a page clock before and after the epoch: no overflow and no script errors. Tonight's ayah is fetched and swapped when it differs from the build date. The first library card is at 743 px on phones (limit 844).
 - Remaining: T6.8 (Booktube JSON) once the app daily banks are merged; R6 epoch setting.
 
+## 2026-11-12T17:44:30+06:00 - C17 / P7 T7.4: zakat method record
+
+Branch `content-zakat` (from `phase-6-daily`). Research only; no app code. File: `_implementation/research/zakat/method.json`.
+- 12 entries (obligation, recipients, rate 1/40, hawl, nisab textual basis, nisab modern conversions, four differences: jewellery, debts, receivables, nisab metal for mixed assets; zakat al-fitr facts, food vs cash) and 5 worked examples for the engine tests (T7.6), each citing its source. Committed as C17.01 (entries 1-10) and C17.02 (entries 11-12, examples).
+- Quran: `fetch_grounding_rules` first, then `fetch_quran` and `fetch_translation` (ar-uthmani-hafs, en-pickthall) for 2:43, 9:60, 9:103, 2:267 and 9:34 (9:34 fetched, not used). Text in the record is copied by script from `quran-full.json`. Pickthall matched the MCP output; Arabic matched after normalisation except 9:103 (one extra fatha in the MCP output relayed to this session; unresolved, recorded in the file).
+- Hadith: each collection and number opened on sunnah.com with the ego-browser CLI; grading recorded as shown (Bukhari pages show none).
+- Positions come only from fatwa-body pages opened in this session: Egypt's Dar al-Ifta, Jordan's General Iftaa' Department, the Mufti of the Federal Territory (Malaysia), the Fatwa Center at Islamweb, Darul Ifta Birmingham. AAOIFI SS 35 is members-only, so no position is attributed to it. Left-out positions and unopened items are listed in the file (`notAccessible`, each entry's `notes`).
+- Not done: the second-pass verification (`verification.json`) is a separate run; owner spot-check pending. No scholarly review; the record is educational and neutral.
 ## 2026-11-12T18:07:51+06:00 — R6 daily games and sharing
 
 `phase-6-daily` is complete (T6.1–T6.10). It was merged to `main` and pushed; CI deploys.
@@ -357,3 +365,26 @@ Files: `homepage/index.html`, `render.mjs`, `build.mjs`, `app.js` (module), `dai
   The details are in `plan/implementation/releases/R6.md`.
 - **Not run:** the e2e Playwright flows; the harness is not available here.
 - **Remaining:** the production result is recorded in R6 after CI. P7 continues with the zakat method fixes, the Ramadan dates check, then T7.6 and the hub.
+
+## 2026-11-12T23:33:00+06:00 — R7 Ramadan season
+
+`phase-7-season` is complete (T7.4–T7.12; Hifz T7.1–T7.3 shipped in R5). It was merged to `main` and pushed; CI deploys.
+- **New app:** Zakat Calculator, the 17th app, at `zakat-calculator.moongazer.tech`. The Pages project, custom domain and proxied CNAME were set up by the agent under D2b. The certificate validates after the first deployment.
+- **Hub:** `moongazer.tech/ramadan/` has expected dates from the Umm al-Qura calendar, 30 night cards, the last ten nights, zakat links and a print layout. The directory's seasonal card shows from 2027-01-25 to 2027-03-13.
+- **Content:** C16 (30 Family Halaqa Ramadan packs) and C17 (zakat method) were each verified by separate model runs, with fixes and fresh re-checks, and spot-checked by the agent. There was no scholarly review.
+- **Validation:** all 17 apps pass check, test and build. The other checks passed:
+  - `sync-shared` (all three sets);
+  - `verify-static` (349 pages);
+  - text joins (0);
+  - `seo.test` (9);
+  - `homepage/tests` (55);
+  - `verify-seo` (18 sites, 360 pages);
+  - first screen (102 of 102);
+  - the counter check.
+  The hub was checked in the browser at phone and desktop widths. The details are in `plan/implementation/releases/R7.md`.
+- **Decision:** the plan's `/zakat` short link was left out, because D2c rules out redirects.
+- **Remaining:**
+  - Escape Room Ramadan rooms (C4).
+  - A Family Halaqa series filter and `?night=N`.
+  - Submitting the zakat sitemap in Search Console after deployment.
+  - P8–P10.

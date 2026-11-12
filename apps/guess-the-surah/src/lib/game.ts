@@ -54,7 +54,10 @@ if (suppliedSeed) {
     length: [5, 10, 20].includes(Number(params.get('rounds'))) ? Number(params.get('rounds')) : 10,
   });
 }
-let tab: Mode = suppliedSeed ? challengeMode : dailyN >= 1 ? 'daily' : 'practice';
+// P7 T7.10: the Ramadan hub links ?mode=juz&juz=N (no seed) to open a fresh round for that juz.
+const juzLink = !suppliedSeed && params.get('mode') === 'juz' && inRange(suppliedJuz, 1, 30);
+if (juzLink) rounds.juz = newRound('juz', { pool: 'all', juz: suppliedJuz });
+let tab: Mode = suppliedSeed ? challengeMode : juzLink ? 'juz' : dailyN >= 1 ? 'daily' : 'practice';
 
 // Round sequences and answer choices per mode. Juz rounds draw from the surahs whose first ayah falls in that juz.
 const juzChapters = (juz: number) => { const set = new Set(surahsInJuz(juz)); return chapters.filter(c => set.has(c.number)); };
@@ -174,7 +177,7 @@ function renderDaily() {
 function renderRound() {
   const state = rounds[tab as RoundMode]; const sequence = ids(state); const complete = state.index >= sequence.length;
   const juzNote = state.mode === 'juz' ? ` in Juz ${state.juz}` : '';
-  byId('round-label').textContent = complete ? 'Round complete' : sequence.length ? `Surah ${state.index + 1} of ${sequence.length}${juzNote}` : 'No surahs here';
+  byId('round-label').textContent = !sequence.length ? 'No surahs here' : complete ? 'Round complete' : `Surah ${state.index + 1} of ${sequence.length}${juzNote}`;
   byId('score-label').textContent = `${total(state)} points`;
   byId('round-bar').style.width = `${sequence.length ? Math.min(state.index, sequence.length) / sequence.length * 100 : 0}%`;
   byId('round-progress').setAttribute('aria-valuemax', String(sequence.length)); byId('round-progress').setAttribute('aria-valuenow', String(Math.min(state.index, sequence.length)));

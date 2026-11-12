@@ -4,6 +4,8 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import json,hashlib,re
 from content import ROOT
+# P7: institutional fatwa bodies cited by the Zakat Calculator, each entry verified in _implementation/research/zakat/verification.json.
+ZAKAT_SOURCES=('dar-alifta.org','www.dar-alifta.org','islamweb.net','www.islamweb.net','aliftaa.jo','www.aliftaa.jo','muftiwp.gov.my','daruliftabirmingham.co.uk')
 
 def lf_sha256(path):
     return hashlib.sha256(path.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
@@ -37,6 +39,14 @@ ayat_of_the_night=json.loads((ROOT/'homepage/ayat-of-the-night.json').read_text(
 assert len(ayat_of_the_night)>=60 and all(set(r)=={'ref','arabic','translation','theme'} for r in ayat_of_the_night)
 check_text(ayat_of_the_night)
 
+# Ramadan hub (P7 T7.10): every night's ayah must come from the verified list above; Surah al-Qadr is read from the snapshot at build.
+ramadan=json.loads((ROOT/'homepage/ramadan-content.json').read_text(encoding='utf-8'))
+verified_refs={r['ref'] for r in ayat_of_the_night}
+assert len(ramadan['nightAyat'])==30 and len(set(ramadan['nightAyat']))==30 and set(ramadan['nightAyat'])<=verified_refs,'Ramadan night ayat'
+ramadan_dates=json.loads((ROOT/'_implementation/research/ramadan/dates.json').read_text(encoding='utf-8'))
+assert ramadan['dates']['start']==ramadan_dates['expectedStart']['date'] and ramadan['dates']['lastTenDay']==ramadan_dates['lastTenNightsStart']['date'],'Ramadan dates must match the research record'
+assert ramadan['dates']['eidFrom']==ramadan_dates['expectedEidAlFitr']['range']['from'] and ramadan['dates']['eidTo']==ramadan_dates['expectedEidAlFitr']['range']['to'],'Eid range must match the research record'
+
 results=[]
 for app in sorted((ROOT/'apps').iterdir()):
     if not (app/'package.json').exists():continue
@@ -69,7 +79,7 @@ for app in sorted((ROOT/'apps').iterdir()):
             if url.scheme or url.netloc:
                 assert link in parsed.links,f'External runtime asset: {link}'
                 assert url.scheme=='https',link
-                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','api.quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org'),link
+                assert url.netloc=='moongazer.tech' or url.netloc.endswith('.moongazer.tech') or url.netloc in ('quran.com','api.quran.com','sunnah.com','mcp.quran.ai','whc.unesco.org','ungegn.un.org','www.naturalearthdata.com','commons.wikimedia.org','creativecommons.org','sunna.alifta.gov.sa','www.metmuseum.org')+ZAKAT_SOURCES,link
                 continue
             if not url.path:continue
             target=dist/unquote(url.path.lstrip('/')) if url.path.startswith('/') else path.parent/unquote(url.path)
