@@ -6,11 +6,11 @@
   "verifier": "second-pass verifier run (separate from the author)",
   "disclaimer": "Editorial verification only: citations re-opened and compared with the record. It is not a scholarly review, and nothing here should be shown as 'reviewed'.",
   "summary": {
-    "entriesPass": 8,
+    "entriesPass": 12,
     "entriesTotal": 12,
     "examplesPass": 5,
     "examplesTotal": 5,
-    "pass": 13,
+    "pass": 17,
     "total": 17
   },
   "quran9_103": {
@@ -188,7 +188,7 @@
     },
     {
       "id": "nisab-conversions",
-      "result": "fail",
+      "result": "pass",
       "checks": [
         {
           "cite": "IW-81355 (Islamweb)",
@@ -236,7 +236,7 @@
           "note": "Lists all published conversions and chooses none; 85 g and 595 g are flagged as test inputs."
         }
       ],
-      "reason": "Fails on one cross-reference: fatwa 7746 does not use the '21 carat' wording. Everything else matches. Editorial check only. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened IW-81355, MY-1811, JO-854, EG-7705, EG-6759, EG-6754, EG-7746, JO-3712 and UK-BHAM (ego-browser). Figures and quotations match the record. The 21-carat wording is inside the Answer of 7705, 6759 and 6754 and is absent from 7746 (which says only '85 grams of gold'), so the cross-reference fix holds. Fail on the note about AAOIFI SS 35: it says the official page at cis.aaoifi.com/standards/ss-35-zakah/ states that the full text is for AAOIFI members and licensed subscribers. The page as opened (English standard summary, PDF link, no access wording) does not say this, and the PDF was not opened. Remove the claim or cite what the page actually shows.",
+      "reason": "Fails on one cross-reference: fatwa 7746 does not use the '21 carat' wording. Everything else matches. Editorial check only. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened IW-81355, MY-1811, JO-854, EG-7705, EG-6759, EG-6754, EG-7746, JO-3712 and UK-BHAM (ego-browser). Figures and quotations match the record. The 21-carat wording is inside the Answer of 7705, 6759 and 6754 and is absent from 7746 (which says only '85 grams of gold'), so the cross-reference fix holds. Fail on the note about AAOIFI SS 35: it says the official page at cis.aaoifi.com/standards/ss-35-zakah/ states that the full text is for AAOIFI members and licensed subscribers. The page as opened (English standard summary, PDF link, no access wording) does not say this, and the PDF was not opened. Remove the claim or cite what the page actually shows. Re-checked Thu Nov 12 18:12:59 BST 2026 by a fresh run: pass. Opened IW-81355 (85 g gold, 595 g silver, 1 mithqal = 4.25 g), JO-3712 ('85 grams of 24-karat gold'), EG-7705, EG-6759 and EG-6754 (each states 85 grams of 21 carat gold), and EG-7746 (says only '85 grams of gold', no carat). The 21-carat wording is attributed only to 7705, 6759 and 6754. The AAOIFI SS 35 page shows only an overview (About this standard, scope) and no document link, so the note that full text is not available from that page holds. Not re-opened this pass: MY-1811, JO-854, UK-BHAM.",
       "followUp": "C17.03: the 21-carat gloss is now attributed only to Egypt 7705, 6759 and 6754 (each re-opened in ego-browser); 7746 is listed separately as '85 grams of gold', no carat. Entry sources now include EG-6754 and EG-6759. || C17.04: AAOIFI note rewritten after re-opening the page on 2026-11-12: it showed only an overview; the full text was not available to open from it; no AAOIFI position is used. The members-only claim is dropped."
     },
     {
@@ -357,7 +357,7 @@
     },
     {
       "id": "diff-nisab-metal",
-      "result": "fail",
+      "result": "pass",
       "checks": [
         {
           "cite": "IW-138743 (Islamweb)",
@@ -405,12 +405,12 @@
           "note": "No option is made default. Silver-only is correctly left out."
         }
       ],
-      "reason": "Fails on two attributions: the MY-1811 'lower value' position does not address metal choice, and the '21-carat' gloss is not on EG-7746. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened IW-138743, IW-81355, IW-120628, IW-81848, MY-1811, EG-7746 and JO-3712. Positions and quotations match. The MY-1811 'lower value' point is now a note, and the 21-carat gloss is no longer attached to 7746. Fail on the same AAOIFI SS 35 note as nisab-conversions: the membership-only statement is not on the page as opened.",
+      "reason": "Fails on two attributions: the MY-1811 'lower value' position does not address metal choice, and the '21-carat' gloss is not on EG-7746. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened IW-138743, IW-81355, IW-120628, IW-81848, MY-1811, EG-7746 and JO-3712. Positions and quotations match. The MY-1811 'lower value' point is now a note, and the 21-carat gloss is no longer attached to 7746. Fail on the same AAOIFI SS 35 note as nisab-conversions: the membership-only statement is not on the page as opened. Re-checked Thu Nov 12 18:12:59 BST 2026 by a fresh run: pass. Opened EG-7746 ('85 grams of gold or more'; no 21-carat wording), IW-81355 (cash worth 85 g of gold), and JO-3712 ('85 grams of 24-karat gold'). The MY-1811 'lower value' point sits in notes only, not in positions. The AAOIFI note matches the page as opened. Not re-opened this pass: IW-138743, IW-120628, IW-81848, MY-1811.",
       "followUp": "C17.03: MY-1811 'use the lower value' removed from positions and moved to notes with what it actually says (current gold price versus the institution's fixed nisab). The Egypt gloss now reads per page: 7746 '85 grams of gold'; 21-carat only where it appears. || C17.04: AAOIFI note rewritten as above; the silver-only wording now says 'for cash' (IW-120628 gives a silver nisab for silver held as silver)."
     },
     {
       "id": "fitr-facts",
-      "result": "fail",
+      "result": "pass",
       "checks": [
         {
           "cite": "bukhari:1503",
@@ -453,12 +453,12 @@
           "note": "Descriptive. 'a small payment of food' follows the hadith wording; the food-versus-cash question is a separate entry. No review claim."
         }
       ],
-      "reason": "Pass, with the advisory on the 'approx 3 kg' note. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened sunnah.com bukhari:1503, 1511, 1510 and abudawud:1609, plus JO-5786 and EG-7732. Gradings, wording and the 1511 'a day or two before Eid' match, and the record has no amounts (the 'approx 3 kg' note is gone; JO-5786's sa' weight is omitted). Fail on neutrality: the statement 'Zakat al-fitr is a small payment of food' presents the food form as settled, while the next item records that the form is disputed. JO-5786 also defines Zakat al-Fitr as 'a specific amount of money' in one place. Reword, for example 'a small obligatory payment, which the hadith specifies as a sa' of food'. Judgement call on the editorial standard; the other facts check out.",
+      "reason": "Pass, with the advisory on the 'approx 3 kg' note. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened sunnah.com bukhari:1503, 1511, 1510 and abudawud:1609, plus JO-5786 and EG-7732. Gradings, wording and the 1511 'a day or two before Eid' match, and the record has no amounts (the 'approx 3 kg' note is gone; JO-5786's sa' weight is omitted). Fail on neutrality: the statement 'Zakat al-fitr is a small payment of food' presents the food form as settled, while the next item records that the form is disputed. JO-5786 also defines Zakat al-Fitr as 'a specific amount of money' in one place. Reword, for example 'a small obligatory payment, which the hadith specifies as a sa' of food'. Judgement call on the editorial standard; the other facts check out. Re-checked Thu Nov 12 18:12:59 BST 2026 by a fresh run: pass. Opened sunnah.com bukhari:1503 (one sa' of dates or barley, before the Eid prayer; the page's '3 Kilograms approx.' gloss is not recorded), bukhari:1511 (given a day or two before Eid), and abudawud:1609 (grading Hasan (Al-Albani)). Citations hold. The entry contains no amounts; the only gram mention is a note explaining their absence. The statement reports the hadith wording and leaves food versus value to fitr-food-vs-cash. Not re-opened this pass: bukhari:1510, JO-5786. EG-7732 was opened and matches the record's conditions wording.",
       "followUp": "C17.03 (advisory): removed the 'approx 3 kg' quotation from the notes; no amounts anywhere. || C17.04: statement reworded to 'a small obligatory payment ... the hadith specify it as a sa' of food', with a note that food versus value is the difference in fitr-food-vs-cash."
     },
     {
       "id": "fitr-food-vs-cash",
-      "result": "fail",
+      "result": "pass",
       "checks": [
         {
           "cite": "EG-6417 Hanafi cash permitted",
@@ -486,7 +486,7 @@
           "note": "No amount is recorded; JO-4209's Jordan amount is deliberately omitted (confirmed on the page)."
         }
       ],
-      "reason": "Fails on neutrality: the Jordan wording makes food the 'default' and 'correct ruling'. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened EG-6417, EG-7732 and JO-4209. The positions quote 6417 and 7732 accurately and no longer carry the Jordan 'default ruling' or 'all schools' wording. Two failures: (1) the note 'Left out: Maliki and Hanbali positions on cash fitr (no accessible source opened)' is contradicted by EG-6417, which is cited by this item and reports Hanbali views (Ibn Taymiyya: permissible in cases of need; a report from Imam Ahmad). The note must be corrected or the Hanbali view added with attribution. (2) The same AAOIFI SS 35 note as nisab-conversions, not confirmed on the page.",
+      "reason": "Fails on neutrality: the Jordan wording makes food the 'default' and 'correct ruling'. Re-checked Thu Nov 12 18:06:16 BST 2026 by a fresh run: fail. Opened EG-6417, EG-7732 and JO-4209. The positions quote 6417 and 7732 accurately and no longer carry the Jordan 'default ruling' or 'all schools' wording. Two failures: (1) the note 'Left out: Maliki and Hanbali positions on cash fitr (no accessible source opened)' is contradicted by EG-6417, which is cited by this item and reports Hanbali views (Ibn Taymiyya: permissible in cases of need; a report from Imam Ahmad). The note must be corrected or the Hanbali view added with attribution. (2) The same AAOIFI SS 35 note as nisab-conversions, not confirmed on the page. Re-checked Thu Nov 12 18:12:59 BST 2026 by a fresh run: pass. Opened EG-6417, EG-7732 and JO-4209. The Hanbali attribution matches 6417: Ibn Taymiyya, Majmu' al-Fatawa 25/25-83, permissible 'in cases of need and overriding public welfare'; a report from Imam Ahmed cited by Al-Mawardi in Al-Insaf 3/182. The Hanafi (Al-Mabsut vol. 3, pp. 107-8) and Shafi'i quotations match 6417; the 'availability of food ... in abundance' criterion matches 7732. JO-4209 calls food the 'default ruling' and 'correct ... according to all Islamic schools'; the record does not repeat either, no position is marked default, and the note says so. No amounts. The AAOIFI note holds as above.",
       "followUp": "C17.03: positions restated neutrally and attributed ('Egypt's Dar al-Ifta states ...', 'Jordan's General Iftaa' Department states ...'); 'default ruling', 'correct ruling according to all schools' and 'exception' removed from positions; a note says the Jordan phrasing is not repeated as fact. Re-check needed. || C17.04: AAOIFI note rewritten as above. The Hanbali note is corrected: EG-6417 reports Ibn Taymiyya and a report from Imam Ahmad, now an attributed position; the left-out note now concerns Maliki only."
     }
   ],
