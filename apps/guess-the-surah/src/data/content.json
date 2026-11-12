@@ -227,7 +227,9 @@
       "revelation_place": "makkah",
       "revelation_order": 73,
       "verses_count": 112,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Prophets",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 22,
@@ -236,7 +238,9 @@
       "revelation_place": "madinah",
       "revelation_order": 103,
       "verses_count": 78,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Pilgrimage",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 23,
@@ -245,7 +249,9 @@
       "revelation_place": "makkah",
       "revelation_order": 74,
       "verses_count": 118,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Believers",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 24,
@@ -254,7 +260,9 @@
       "revelation_place": "madinah",
       "revelation_order": 102,
       "verses_count": 64,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Light",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 25,
@@ -263,7 +271,9 @@
       "revelation_place": "makkah",
       "revelation_order": 42,
       "verses_count": 77,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Criterion",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 26,
@@ -272,7 +282,9 @@
       "revelation_place": "makkah",
       "revelation_order": 47,
       "verses_count": 227,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Poets",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 27,
@@ -281,7 +293,9 @@
       "revelation_place": "makkah",
       "revelation_order": 48,
       "verses_count": 93,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Ant",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 28,
@@ -290,7 +304,9 @@
       "revelation_place": "makkah",
       "revelation_order": 49,
       "verses_count": 88,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Stories",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 29,
@@ -299,7 +315,9 @@
       "revelation_place": "makkah",
       "revelation_order": 85,
       "verses_count": 69,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Spider",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 30,
@@ -308,7 +326,9 @@
       "revelation_place": "makkah",
       "revelation_order": 84,
       "verses_count": 60,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Romans",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 31,
