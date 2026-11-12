@@ -55,3 +55,12 @@ h1{font-size:clamp(2.1rem,4vw,3.2rem)}.intro .eyebrow{margin-bottom:0}.intro h1{
 @media(max-width:860px){.sidebar>.how-it-works{grid-column:1/-1}}
 @media(max-width:580px){.how-it-works{border-radius:13px}}
 @media print{.how-it-works{display:none}}
+/* End of session (P5): result, what you learned, share, next app, tomorrow slot, report an error (src/lib/session-end.ts). */
+.session-end{display:grid;gap:14px;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--panel-wash);margin-top:20px}
+.session-end>*{margin:0}
+.session-result{font-family:Newsreader,Georgia,serif;font-size:1.4rem;line-height:1.3;font-weight:550;color:var(--ink)}
+.session-learned h3{font-size:.95rem;margin:0 0 6px}.session-learned ul{margin:0;padding-left:20px;color:var(--muted);font-size:.9rem;line-height:1.65}
+.session-share{gap:8px}.session-share .button{min-height:44px}
+.session-next{font-size:.9rem}.session-next a{font-weight:650}
+.session-tomorrow{font-size:.85rem}.session-report{font-size:.8rem}
+@media print{.session-end{display:none}}

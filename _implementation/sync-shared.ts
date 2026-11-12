@@ -15,6 +15,8 @@ export const SHARED = [
   'src/styles/refinement.css',
   'src/components/LearningGuide.astro',
   'src/components/HowItWorks.astro',
+  'src/lib/session-end.ts',
+  'tests/session-end.test.ts',
   'src/lib/utils.ts',
   'src/lib/seo.ts',
   'src/components/Honorific.astro',
