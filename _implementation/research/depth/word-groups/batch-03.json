@@ -1,0 +1,953 @@
+{
+  "app": "word-groups",
+  "contentItem": "C3",
+  "batch": 3,
+  "recordedAt": "2026-11-12",
+  "source": "Quran MCP (https://mcp.quran.ai), editions ar-uthmani-hafs and en-pickthall",
+  "method": "Candidate groups were chosen editorially, then every ayah was fetched through Quran MCP (fetch_quran / fetch_translation), the committed passages were copied by script from _implementation/research/quran-full.json and compared with the MCP result, and every term was checked against the ayah text (English terms by phrase, Arabic root terms by fetch_word_morphology).",
+  "calls": [
+    {
+      "tool": "search_quran",
+      "arguments": {
+        "query": "Abraham was mild, imploring, penitent; description of a prophet's character",
+        "translations": "en-pickthall",
+        "intent": "explore-topic",
+        "grounding_nonce": "gnd-435577175ff0b461"
+      },
+      "result": "Rank 1 11:75 (Lo! Abraham was mild, imploring, penitent.), rank 2 9:114 (soft of heart, long-suffering), also 16:120, 19:41, 9:112. Used to confirm 11:75 and 9:114 and to find 9:112 (praise).",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_quran",
+      "arguments": {
+        "ayahs": "33:45-46, 11:75, 9:114, 19:13-14, 38:44, 19:54, 12:55, 28:26, 1:1, 21:107, 12:64, 48:29, 1:2, 14:1, 3:144, 61:6, 2:34, 2:114, 2:58, 7:11, 2:2, 2:183, 2:79, 2:282, 2:77, 2:29, 3:18",
+        "editions": "ar-uthmani-hafs",
+        "grounding_nonce": "gnd-435577175ff0b461"
+      },
+      "result": "29 ayat returned; Arabic compared with the committed text.",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_translation",
+      "arguments": {
+        "ayahs": "33:45-46, 11:75, 9:114, 19:13-14, 38:44, 19:54, 12:55, 28:26, 1:1, 21:107, 12:64, 48:29, 1:2, 14:1, 3:144, 61:6, 2:34, 2:114, 2:58, 7:11, 2:2, 2:183, 2:79, 2:282, 2:77, 2:29, 3:18",
+        "editions": "en-pickthall",
+        "grounding_nonce": "gnd-435577175ff0b461"
+      },
+      "result": "29 ayat returned; English compared with the committed text.",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_translation",
+      "arguments": {
+        "ayahs": "9:112, 17:79",
+        "editions": "en-pickthall",
+        "grounding_nonce": "gnd-435577175ff0b461"
+      },
+      "result": "2 ayat returned; English compared with the committed text. The Arabic of 9:112 came back in the search_quran call \"search-abraham\"; the Arabic of 17:79 is the word returned by the morphology call (text_uthmani مَّحْمُودًۭا) and the ayah text is the committed snapshot copy.",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=1:1, word_position=3)",
+      "result": "root رحم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=21:107, word_position=4)",
+      "result": "root رحم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=12:64, word_text=ٱلرَّٰحِمِينَ)",
+      "result": "root رحم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=48:29, word_text=رُحَمَآءُ)",
+      "result": "root رحم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=1:2) all words",
+      "result": "root حمد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=14:1, word_text=ٱلْحَمِيدِ)",
+      "result": "root حمد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=9:112, word_text=ٱلْحَـٰمِدُونَ)",
+      "result": "root حمد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=17:79, word_text=مَّحْمُودًا)",
+      "result": "root حمد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:34, word_text=ٱسْجُدُوا۟)",
+      "result": "root سجد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:114, word_text=مَسَـٰجِدَ)",
+      "result": "root سجد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:58, word_text=سُجَّدًا)",
+      "result": "root سجد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=7:11, word_text=ٱلسَّـٰجِدِينَ)",
+      "result": "root سجد",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:2, word_text=ٱلْكِتَـٰبُ)",
+      "result": "root كتب",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:183, word_text=كُتِبَ)",
+      "result": "root كتب",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:79, word_text=يَكْتُبُونَ)",
+      "result": "root كتب",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:282, word_text=كَاتِبٌۢ)",
+      "result": "root كتب",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=1:2) all words",
+      "result": "root علم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:77, word_text=يَعْلَمُونَ)",
+      "result": "root علم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=2:29, word_text=عَلِيمٌ)",
+      "result": "root علم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": "fetch_word_morphology(ayah_key=3:18, word_text=ٱلْعِلْمِ)",
+      "result": "root علم",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": {
+        "ayah_key": "1:1"
+      },
+      "result": "[rate_limited] one request per second; retried successfully.",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": {
+        "ayah_key": "12:64",
+        "word_position": 19
+      },
+      "result": "[invalid_request] No word at position 19: the tool counts words without pause marks; the word was looked up by word_text instead (position 17).",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": {
+        "ayah_key": "3:144",
+        "word_text": "مُحَمَّدٌ"
+      },
+      "result": "Word-level root null (proper noun; root only on the segment). Word dropped from the root group so that every tile is an ordinary derived word.",
+      "retrievedAt": "2026-11-12"
+    },
+    {
+      "tool": "fetch_word_morphology",
+      "arguments": {
+        "ayah_key": "61:6",
+        "word_text": "أَحْمَدُ"
+      },
+      "result": "Word-level root null (proper noun). Word dropped for the same reason.",
+      "retrievedAt": "2026-11-12"
+    }
+  ],
+  "items": [
+    {
+      "id": "muhammad-titles",
+      "kind": "prophet",
+      "tier": 2,
+      "title": "How 33:45–46 describes the Prophet ﷺ",
+      "terms": [
+        "Witness",
+        "Bringer of good tidings",
+        "Warner",
+        "Lamp"
+      ],
+      "note": "The two ayat call the Prophet ﷺ a witness, a bringer of good tidings, a warner, a summoner unto Allah and a lamp that giveth light. This group uses four of the five.",
+      "passages": [
+        {
+          "ref": "33:45-46",
+          "arabic": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ إِنَّآ أَرْسَلْنَـٰكَ شَـٰهِدًا وَمُبَشِّرًا وَنَذِيرًا\nوَدَاعِيًا إِلَى ٱللَّهِ بِإِذْنِهِۦ وَسِرَاجًا مُّنِيرًا",
+          "translation": "O Prophet! Lo! We have sent thee as a witness and a bringer of good tidings and a warner.\nAnd as a summoner unto Allah by His permission, and as a lamp that giveth light.",
+          "arabicSha256": "b460fbab3c345923a9c4151015cfb646c392d147f9b99a1a80066b9d51c67668",
+          "translationSha256": "5809500c7206b41954297a735130c2dc9c9a2249e783fcaea5bf106097f078dc",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Witness",
+          "ref": "33:45-46",
+          "snippet": "t! Lo! We have sent thee as a witness and a bringer of good tidings"
+        },
+        {
+          "term": "Bringer of good tidings",
+          "ref": "33:45-46",
+          "snippet": " sent thee as a witness and a bringer of good tidings and a warner. And as a summon"
+        },
+        {
+          "term": "Warner",
+          "ref": "33:45-46",
+          "snippet": "bringer of good tidings and a warner. And as a summoner unto Allah"
+        },
+        {
+          "term": "Lamp",
+          "ref": "33:45-46",
+          "snippet": "h by His permission, and as a lamp that giveth light."
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "ibrahim-qualities",
+      "kind": "prophet",
+      "tier": 3,
+      "title": "Abraham’s qualities in 11:75 and 9:114",
+      "terms": [
+        "Mild",
+        "Imploring",
+        "Penitent",
+        "Soft of heart"
+      ],
+      "note": "Pickthall renders the descriptions of Abraham (peace be upon him) in these ayat as mild, imploring, penitent, soft of heart and long-suffering. The labels follow that wording.",
+      "passages": [
+        {
+          "ref": "11:75",
+          "arabic": "إِنَّ إِبْرَٰهِيمَ لَحَلِيمٌ أَوَّٰهٌ مُّنِيبٌ",
+          "translation": "Lo! Abraham was mild, imploring, penitent.",
+          "arabicSha256": "405ce0da0c19387bbeaedf541bdcd77e0f30e86ce4eb99272dd1645ca2ea1a2e",
+          "translationSha256": "f61f033fcb33a4a4d8324b013a40380c3586d0528356f365601e89b38ccd1abb",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "9:114",
+          "arabic": "وَمَا كَانَ ٱسْتِغْفَارُ إِبْرَٰهِيمَ لِأَبِيهِ إِلَّا عَن مَّوْعِدَةٍ وَعَدَهَآ إِيَّاهُ فَلَمَّا تَبَيَّنَ لَهُۥٓ أَنَّهُۥ عَدُوٌّ لِّلَّهِ تَبَرَّأَ مِنْهُ ۚ إِنَّ إِبْرَٰهِيمَ لَأَوَّٰهٌ حَلِيمٌ",
+          "translation": "The prayer of Abraham for the forgiveness of his father was only because of a promise he had promised him, but when it had become clear unto him that he (his father) was an enemy to Allah he (Abraham) disowned him. Lo! Abraham was soft of heart, long-suffering.",
+          "arabicSha256": "f7afd1a8e50c8ee78b317399e3ff9035031606b135034cefba79e25d8c8fa106",
+          "translationSha256": "c30e2d8d183d9c612610cd946ba18a1e78015b4679e8371639744b6374f18d70",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Mild",
+          "ref": "11:75",
+          "snippet": "Lo! Abraham was mild, imploring, penitent."
+        },
+        {
+          "term": "Imploring",
+          "ref": "11:75",
+          "snippet": "Lo! Abraham was mild, imploring, penitent."
+        },
+        {
+          "term": "Penitent",
+          "ref": "11:75",
+          "snippet": " Abraham was mild, imploring, penitent."
+        },
+        {
+          "term": "Soft of heart",
+          "ref": "9:114",
+          "snippet": "disowned him. Lo! Abraham was soft of heart, long-suffering."
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "yahya-qualities",
+      "kind": "prophet",
+      "tier": 3,
+      "title": "John’s qualities in 19:13–14",
+      "terms": [
+        "Compassion",
+        "Purity",
+        "Devout",
+        "Dutiful toward his parents"
+      ],
+      "note": "These ayat say John (peace be upon him) was given compassion from Allah’s presence and purity, and that he was devout and dutiful toward his parents.",
+      "passages": [
+        {
+          "ref": "19:13-14",
+          "arabic": "وَحَنَانًا مِّن لَّدُنَّا وَزَكَوٰةً ۖ وَكَانَ تَقِيًّا\nوَبَرًّۢا بِوَٰلِدَيْهِ وَلَمْ يَكُن جَبَّارًا عَصِيًّا",
+          "translation": "And compassion from Our presence, and purity; and he was devout,\nAnd dutiful toward his parents. And he was not arrogant, rebellious.",
+          "arabicSha256": "a167782075a00ccf303117d8c8882d87a3e30e0640dc32ddde20d54c2a7c143f",
+          "translationSha256": "5d8d7386f35f1dff0d4504e9cafaeaa7d5f8c79e30ad4c6b4b6072dd0b5ed8f6",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Compassion",
+          "ref": "19:13-14",
+          "snippet": "And compassion from Our presence, and purity"
+        },
+        {
+          "term": "Purity",
+          "ref": "19:13-14",
+          "snippet": "assion from Our presence, and purity; and he was devout, And dutif"
+        },
+        {
+          "term": "Devout",
+          "ref": "19:13-14",
+          "snippet": "sence, and purity; and he was devout, And dutiful toward his paren"
+        },
+        {
+          "term": "Dutiful toward his parents",
+          "ref": "19:13-14",
+          "snippet": "urity; and he was devout, And dutiful toward his parents. And he was not arrogant, reb"
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "prophet-qualities-mixed",
+      "kind": "prophet",
+      "tier": 4,
+      "title": "Qualities the Quran gives to four prophets",
+      "terms": [
+        "Steadfast",
+        "Keeper of his promise",
+        "Trustworthy",
+        "Skilled custodian"
+      ],
+      "note": "Four ayat, four qualities: Job found steadfast (38:44), Ishmael a keeper of his promise (19:54), Moses called the trustworthy by one of the two women (28:26), and Joseph a skilled custodian (12:55), peace be upon them. Pickthall’s wording.",
+      "passages": [
+        {
+          "ref": "38:44",
+          "arabic": "وَخُذْ بِيَدِكَ ضِغْثًا فَٱضْرِب بِّهِۦ وَلَا تَحْنَثْ ۗ إِنَّا وَجَدْنَـٰهُ صَابِرًا ۚ نِّعْمَ ٱلْعَبْدُ ۖ إِنَّهُۥٓ أَوَّابٌ",
+          "translation": "And (it was said unto him): Take in thine hand a branch and smite therewith, and break not thine oath. Lo! We found him steadfast, how excellent a slave! Lo! he was ever turning in repentance (to his Lord).",
+          "arabicSha256": "6bb59a5b2d042c1b79b178dfe88d7bc5b382d02f73fa450180e96c22c74d9cbd",
+          "translationSha256": "f0c5b7cef1bfecb87cb17fd733db87834e95e60d7415ceceed4113a0b7cff4c7",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "19:54",
+          "arabic": "وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِسْمَـٰعِيلَ ۚ إِنَّهُۥ كَانَ صَادِقَ ٱلْوَعْدِ وَكَانَ رَسُولًا نَّبِيًّا",
+          "translation": "And make mention in the Scripture of Ishmael. Lo! he was a keeper of his promise, and he was a messenger (of Allah), a prophet.",
+          "arabicSha256": "c9770cb021a98675ed80c6eb6055b525596d13b00e9c68cd886300d198802e95",
+          "translationSha256": "f86647b86610b080142cb682d95335e7c47d60537d57a98e1950b6f3e2c21e0b",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "28:26",
+          "arabic": "قَالَتْ إِحْدَىٰهُمَا يَـٰٓأَبَتِ ٱسْتَـْٔجِرْهُ ۖ إِنَّ خَيْرَ مَنِ ٱسْتَـْٔجَرْتَ ٱلْقَوِىُّ ٱلْأَمِينُ",
+          "translation": "One of the two women said: O my father! Hire him! For the best (man) that thou canst hire in the strong, the trustworthy.",
+          "arabicSha256": "1fd49e5a892a74be0390c35abbec1f18700f6703b6ccbee4076e5d46b422249e",
+          "translationSha256": "f345a97f497594e7d92d997e27dbb733d87a21543e7841960684f1a5a6b51a08",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "12:55",
+          "arabic": "قَالَ ٱجْعَلْنِى عَلَىٰ خَزَآئِنِ ٱلْأَرْضِ ۖ إِنِّى حَفِيظٌ عَلِيمٌ",
+          "translation": "He said: Set me over the storehouses of the land. Lo! I am a skilled custodian.",
+          "arabicSha256": "0c4836cf4ada63e647a471b19d5981c60b4de21d136cc5af4194b7e9b102c572",
+          "translationSha256": "af7ff3484182b820afffe63ea0a1e5374f97a11d0e6e5033e066be96145103d9",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "Steadfast",
+          "ref": "38:44",
+          "snippet": " thine oath. Lo! We found him steadfast, how excellent a slave! Lo! h"
+        },
+        {
+          "term": "Keeper of his promise",
+          "ref": "19:54",
+          "snippet": "ture of Ishmael. Lo! he was a keeper of his promise, and he was a messenger (of A"
+        },
+        {
+          "term": "Trustworthy",
+          "ref": "28:26",
+          "snippet": "canst hire in the strong, the trustworthy."
+        },
+        {
+          "term": "Skilled custodian",
+          "ref": "12:55",
+          "snippet": "ouses of the land. Lo! I am a skilled custodian."
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "root-rahma",
+      "kind": "root",
+      "tier": 3,
+      "title": "Words from the root ر ح م",
+      "terms": [
+        "ٱلرَّحْمَـٰنِ",
+        "رَحْمَةً",
+        "ٱلرَّٰحِمِينَ",
+        "رُحَمَآءُ"
+      ],
+      "note": "All four words come from the root ر ح م (mercy), according to the Quran MCP morphology. Each appears in the cited ayah.",
+      "passages": [
+        {
+          "ref": "1:1",
+          "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+          "translation": "In the name of Allah, the Beneficent, the Merciful.",
+          "arabicSha256": "1ad501ee473ec3953c6d669513e2ae2550ad333577aef0f156926b52f6972b61",
+          "translationSha256": "3378da21fe4d9f255e0336c517936ef15453fb07d4cf1d5842eaff0eaa30da0e",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "21:107",
+          "arabic": "وَمَآ أَرْسَلْنَـٰكَ إِلَّا رَحْمَةً لِّلْعَـٰلَمِينَ",
+          "translation": "We sent thee not save as a mercy for the peoples.",
+          "arabicSha256": "5adef9ffc42a4f32f6294f9ecf5a4f451553606461922cd74add8bf2224a1c39",
+          "translationSha256": "be2631813d3e0828d1b626d9de80931e7045efa1268c91ad3ce2ab35946efacd",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "12:64",
+          "arabic": "قَالَ هَلْ ءَامَنُكُمْ عَلَيْهِ إِلَّا كَمَآ أَمِنتُكُمْ عَلَىٰٓ أَخِيهِ مِن قَبْلُ ۖ فَٱللَّهُ خَيْرٌ حَـٰفِظًا ۖ وَهُوَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+          "translation": "He said: Can I entrust him to you save as I entrusted his brother to you aforetime? Allah is better at guarding, and He is the Most Merciful of those who show mercy.",
+          "arabicSha256": "8400840f3db405496f9d6e637aa203536c182a73952f9b23ab1dd372f9caf942",
+          "translationSha256": "1f10ec9fca66824a594735fc4ac15bae58e5be2f896de85dc61879a09c9ac957",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "48:29",
+          "arabic": "مُّحَمَّدٌ رَّسُولُ ٱللَّهِ ۚ وَٱلَّذِينَ مَعَهُۥٓ أَشِدَّآءُ عَلَى ٱلْكُفَّارِ رُحَمَآءُ بَيْنَهُمْ ۖ تَرَىٰهُمْ رُكَّعًا سُجَّدًا يَبْتَغُونَ فَضْلًا مِّنَ ٱللَّهِ وَرِضْوَٰنًا ۖ سِيمَاهُمْ فِى وُجُوهِهِم مِّنْ أَثَرِ ٱلسُّجُودِ ۚ ذَٰلِكَ مَثَلُهُمْ فِى ٱلتَّوْرَىٰةِ ۚ وَمَثَلُهُمْ فِى ٱلْإِنجِيلِ كَزَرْعٍ أَخْرَجَ شَطْـَٔهُۥ فَـَٔازَرَهُۥ فَٱسْتَغْلَظَ فَٱسْتَوَىٰ عَلَىٰ سُوقِهِۦ يُعْجِبُ ٱلزُّرَّاعَ لِيَغِيظَ بِهِمُ ٱلْكُفَّارَ ۗ وَعَدَ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ مِنْهُم مَّغْفِرَةً وَأَجْرًا عَظِيمًۢا",
+          "translation": "Muhammad is the messenger of Allah. And those with him are hard against the disbelievers and merciful among themselves. Thou (O Muhammad) seest them bowing and falling prostrate (in worship), seeking bounty from Allah and (His) acceptance. The mark of them is on their foreheads from the traces of prostration. Such is their likeness in the Torah and their likeness in the Gospel - like as sown corn that sendeth forth its shoot and strengtheneth it and riseth firm upon its stalk, delighting the sowers - that He may enrage the disbelievers with (the sight of) them. Allah hath promised, unto such of them as believe and do good works, forgiveness and immense reward.",
+          "arabicSha256": "1e38a68421bcf9cf14006cd156aa5c31f205642a471655815cbc047f792a6217",
+          "translationSha256": "6715fff3fe483ea28e50ebc33ed917928c853123e940a177e2da8282b81a7fb2",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "ٱلرَّحْمَـٰنِ",
+          "ref": "1:1",
+          "wordInAyah": true,
+          "root": "رحم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=1:1, word_position=3)"
+        },
+        {
+          "term": "رَحْمَةً",
+          "ref": "21:107",
+          "wordInAyah": true,
+          "root": "رحم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=21:107, word_position=4)"
+        },
+        {
+          "term": "ٱلرَّٰحِمِينَ",
+          "ref": "12:64",
+          "wordInAyah": true,
+          "root": "رحم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=12:64, word_text=ٱلرَّٰحِمِينَ)"
+        },
+        {
+          "term": "رُحَمَآءُ",
+          "ref": "48:29",
+          "wordInAyah": true,
+          "root": "رحم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=48:29, word_text=رُحَمَآءُ)"
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "root-hamd",
+      "kind": "root",
+      "tier": 4,
+      "title": "Words from the root ح م د",
+      "terms": [
+        "ٱلْحَمْدُ",
+        "ٱلْحَمِيدِ",
+        "ٱلْحَـٰمِدُونَ",
+        "مَّحْمُودًا"
+      ],
+      "note": "All four words come from the root ح م د (praise), according to the Quran MCP morphology. Each appears in the cited ayah.",
+      "passages": [
+        {
+          "ref": "1:2",
+          "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+          "translation": "Praise be to Allah, Lord of the Worlds,",
+          "arabicSha256": "463f13295bc7d90e0ea221942d7b39359a137da8686420b58f63d0774eebda09",
+          "translationSha256": "0d43492e239252086037d8a834cdd344639f5fe9565b2ebc654da5300cdbbf7c",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "14:1",
+          "arabic": "الٓر ۚ كِتَـٰبٌ أَنزَلْنَـٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+          "translation": "Alif. Lam. Ra. (This is) a Scripture which We have revealed unto thee (Muhammad) that thereby thou mayst bring forth mankind from darkness unto light, by the permission of their Lord, unto the path of the Mighty, the Owner of Praise,",
+          "arabicSha256": "51871988c922509177a4ed3ea019f2e131f253ccac6bc61697e678d42b99f41c",
+          "translationSha256": "b2185c2fd2dbeb5c782104a54cd7ded2335b91d9ddbe77ccffe8195aee1a5045",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "9:112",
+          "arabic": "ٱلتَّـٰٓئِبُونَ ٱلْعَـٰبِدُونَ ٱلْحَـٰمِدُونَ ٱلسَّـٰٓئِحُونَ ٱلرَّٰكِعُونَ ٱلسَّـٰجِدُونَ ٱلْـَٔامِرُونَ بِٱلْمَعْرُوفِ وَٱلنَّاهُونَ عَنِ ٱلْمُنكَرِ وَٱلْحَـٰفِظُونَ لِحُدُودِ ٱللَّهِ ۗ وَبَشِّرِ ٱلْمُؤْمِنِينَ",
+          "translation": "(Triumphant) are those who turn repentant (to Allah), those who serve (Him), those who praise (Him), those who fast, those who bow down, those who fall prostrate (in worship), those who enjoin the right and who forbid the wrong and those who keep the limits (ordained) of Allah - And give glad tidings to believers!",
+          "arabicSha256": "a586e649e1525fac98ffc0d73c80e9de5cfb16f1ebcbf7c22dd4ab2d94a1e577",
+          "translationSha256": "af4f13651abf3dba761622ab75dd320b121bc353b37ad5229fd234d5b21cfcff",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "17:79",
+          "arabic": "وَمِنَ ٱلَّيْلِ فَتَهَجَّدْ بِهِۦ نَافِلَةً لَّكَ عَسَىٰٓ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا",
+          "translation": "And some part of the night awake for it, a largess for thee. It may be that thy Lord will raise thee to a praised estate.",
+          "arabicSha256": "0fa8722cd721722e90c39ead83dc4055261fd44508c14d0eb719053773d1df55",
+          "translationSha256": "e284a83d7aa87e394a3a9ff92e787fbdd701322bd5e42966b08464974e55c19d",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "ٱلْحَمْدُ",
+          "ref": "1:2",
+          "wordInAyah": true,
+          "root": "حمد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=1:2) all words"
+        },
+        {
+          "term": "ٱلْحَمِيدِ",
+          "ref": "14:1",
+          "wordInAyah": true,
+          "root": "حمد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=14:1, word_text=ٱلْحَمِيدِ)"
+        },
+        {
+          "term": "ٱلْحَـٰمِدُونَ",
+          "ref": "9:112",
+          "wordInAyah": true,
+          "root": "حمد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=9:112, word_text=ٱلْحَـٰمِدُونَ)"
+        },
+        {
+          "term": "مَّحْمُودًا",
+          "ref": "17:79",
+          "wordInAyah": true,
+          "root": "حمد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=17:79, word_text=مَّحْمُودًا)"
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "root-sajda",
+      "kind": "root",
+      "tier": 3,
+      "title": "Words from the root س ج د",
+      "terms": [
+        "ٱسْجُدُوا۟",
+        "مَسَـٰجِدَ",
+        "سُجَّدًا",
+        "ٱلسَّـٰجِدِينَ"
+      ],
+      "note": "All four words come from the root س ج د (prostration), according to the Quran MCP morphology. Each appears in the cited ayah.",
+      "passages": [
+        {
+          "ref": "2:34",
+          "arabic": "وَإِذْ قُلْنَا لِلْمَلَـٰٓئِكَةِ ٱسْجُدُوا۟ لِـَٔادَمَ فَسَجَدُوٓا۟ إِلَّآ إِبْلِيسَ أَبَىٰ وَٱسْتَكْبَرَ وَكَانَ مِنَ ٱلْكَـٰفِرِينَ",
+          "translation": "And when We said unto the angels: Prostrate yourselves before Adam, they fell prostrate, all save Iblis. He demurred through pride, and so became a disbeliever.",
+          "arabicSha256": "3bdc429ec1e52d6c11d4ade1755ef1abf968cb6aca475809527ba4a937de4aae",
+          "translationSha256": "f38ad87e2a71606c372921ef7fac6251006e92437f455797c5e802386f386999",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:114",
+          "arabic": "وَمَنْ أَظْلَمُ مِمَّن مَّنَعَ مَسَـٰجِدَ ٱللَّهِ أَن يُذْكَرَ فِيهَا ٱسْمُهُۥ وَسَعَىٰ فِى خَرَابِهَآ ۚ أُو۟لَـٰٓئِكَ مَا كَانَ لَهُمْ أَن يَدْخُلُوهَآ إِلَّا خَآئِفِينَ ۚ لَهُمْ فِى ٱلدُّنْيَا خِزْىٌ وَلَهُمْ فِى ٱلْـَٔاخِرَةِ عَذَابٌ عَظِيمٌ",
+          "translation": "And who doth greater wrong than he who forbiddeth the approach to the sanctuaries of Allah lest His name should be mentioned therein, and striveth for their ruin. As for such, it was never meant that they should enter them except in fear. Theirs in the world is ignominy and theirs in the Hereafter is an awful doom.",
+          "arabicSha256": "b3fc7dda680eb1c08359e3a57fd16cf5ad0a776a08c80460278429a832d5ca28",
+          "translationSha256": "b7d532abe7a02e5861fa4ebf4e70ef66b85c7db24ea02d7c37b557d16a0f487e",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:58",
+          "arabic": "وَإِذْ قُلْنَا ٱدْخُلُوا۟ هَـٰذِهِ ٱلْقَرْيَةَ فَكُلُوا۟ مِنْهَا حَيْثُ شِئْتُمْ رَغَدًا وَٱدْخُلُوا۟ ٱلْبَابَ سُجَّدًا وَقُولُوا۟ حِطَّةٌ نَّغْفِرْ لَكُمْ خَطَـٰيَـٰكُمْ ۚ وَسَنَزِيدُ ٱلْمُحْسِنِينَ",
+          "translation": "And when We said: Go into this township and eat freely of that which is therein, and enter the gate prostrate, and say: \"Repentance.\" We will forgive you your sins and will increase (reward) for the right-doers.",
+          "arabicSha256": "4247f3c99dcc922777e9e9d596193d7d01e5d32c67ca378b734438fe3e960508",
+          "translationSha256": "9cc753740ed269140ea8fd3771832df745df591204ec7385478ea15f6feb1d49",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "7:11",
+          "arabic": "وَلَقَدْ خَلَقْنَـٰكُمْ ثُمَّ صَوَّرْنَـٰكُمْ ثُمَّ قُلْنَا لِلْمَلَـٰٓئِكَةِ ٱسْجُدُوا۟ لِـَٔادَمَ فَسَجَدُوٓا۟ إِلَّآ إِبْلِيسَ لَمْ يَكُن مِّنَ ٱلسَّـٰجِدِينَ",
+          "translation": "And We created you, then fashioned you, then told the angels: Fall ye prostrate before Adam! And they fell prostrate, all save Iblis, who was not of those who make prostration.",
+          "arabicSha256": "50f62dd81f019ff5c31e7261fb17618439c49e19534076c4596cbefe6775f249",
+          "translationSha256": "1ea20e558a06bfb8f2dc2e803c12bc82fb2b3105eb6b42fb640ba9c6496888ef",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "ٱسْجُدُوا۟",
+          "ref": "2:34",
+          "wordInAyah": true,
+          "root": "سجد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:34, word_text=ٱسْجُدُوا۟)"
+        },
+        {
+          "term": "مَسَـٰجِدَ",
+          "ref": "2:114",
+          "wordInAyah": true,
+          "root": "سجد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:114, word_text=مَسَـٰجِدَ)"
+        },
+        {
+          "term": "سُجَّدًا",
+          "ref": "2:58",
+          "wordInAyah": true,
+          "root": "سجد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:58, word_text=سُجَّدًا)"
+        },
+        {
+          "term": "ٱلسَّـٰجِدِينَ",
+          "ref": "7:11",
+          "wordInAyah": true,
+          "root": "سجد",
+          "morphologyCall": "fetch_word_morphology(ayah_key=7:11, word_text=ٱلسَّـٰجِدِينَ)"
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "root-kitab",
+      "kind": "root",
+      "tier": 3,
+      "title": "Words from the root ك ت ب",
+      "terms": [
+        "ٱلْكِتَـٰبُ",
+        "كُتِبَ",
+        "يَكْتُبُونَ",
+        "كَاتِبٌۢ"
+      ],
+      "note": "All four words come from the root ك ت ب (writing), according to the Quran MCP morphology. Each appears in the cited ayah.",
+      "passages": [
+        {
+          "ref": "2:2",
+          "arabic": "ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ",
+          "translation": "This is the Scripture whereof there is no doubt, a guidance unto those who ward off (evil).",
+          "arabicSha256": "5d9fdbf423d4759bfb1781fd1043209b994972c8c986d0dd124029581b18a6ce",
+          "translationSha256": "58fd17e596b8aa540fdaf6030c91126c8c3dfb79c6258f4643396e31036c7555",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:183",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ كَمَا كُتِبَ عَلَى ٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+          "translation": "O ye who believe! Fasting is prescribed for you, even as it was prescribed for those before you, that ye may ward off (evil);",
+          "arabicSha256": "0e8c71a4e9c6430cb122301f52c2367e3889725bbe546d843387856275918c6d",
+          "translationSha256": "c71261ddc53060f7f285b67869e1f86c3a42521fa3363ff949a7ec89bbf1977f",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:79",
+          "arabic": "فَوَيْلٌ لِّلَّذِينَ يَكْتُبُونَ ٱلْكِتَـٰبَ بِأَيْدِيهِمْ ثُمَّ يَقُولُونَ هَـٰذَا مِنْ عِندِ ٱللَّهِ لِيَشْتَرُوا۟ بِهِۦ ثَمَنًا قَلِيلًا ۖ فَوَيْلٌ لَّهُم مِّمَّا كَتَبَتْ أَيْدِيهِمْ وَوَيْلٌ لَّهُم مِّمَّا يَكْسِبُونَ",
+          "translation": "Therefore woe be unto those who write the Scripture with their hands and then say, \"This is from Allah,\" that they may purchase a small gain therewith. Woe unto them for that their hands have written, and woe unto them for that they earn thereby.",
+          "arabicSha256": "f2476916a35e2e0fb2e8ee28b529ef614eb82d6fce310e7ea0950be2ad4b6d9c",
+          "translationSha256": "6fdf33e49481dd659a88d36922c1dc18a4d1cc780c23880a3f3b56e38e7d7b2a",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:282",
+          "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰٓ أَجَلٍ مُّسَمًّى فَٱكْتُبُوهُ ۚ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۢ بِٱلْعَدْلِ ۚ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ ۚ فَلْيَكْتُبْ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًٔا ۚ فَإِن كَانَ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ سَفِيهًا أَوْ ضَعِيفًا أَوْ لَا يَسْتَطِيعُ أَن يُمِلَّ هُوَ فَلْيُمْلِلْ وَلِيُّهُۥ بِٱلْعَدْلِ ۚ وَٱسْتَشْهِدُوا۟ شَهِيدَيْنِ مِن رِّجَالِكُمْ ۖ فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌ وَٱمْرَأَتَانِ مِمَّن تَرْضَوْنَ مِنَ ٱلشُّهَدَآءِ أَن تَضِلَّ إِحْدَىٰهُمَا فَتُذَكِّرَ إِحْدَىٰهُمَا ٱلْأُخْرَىٰ ۚ وَلَا يَأْبَ ٱلشُّهَدَآءُ إِذَا مَا دُعُوا۟ ۚ وَلَا تَسْـَٔمُوٓا۟ أَن تَكْتُبُوهُ صَغِيرًا أَوْ كَبِيرًا إِلَىٰٓ أَجَلِهِۦ ۚ ذَٰلِكُمْ أَقْسَطُ عِندَ ٱللَّهِ وَأَقْوَمُ لِلشَّهَـٰدَةِ وَأَدْنَىٰٓ أَلَّا تَرْتَابُوٓا۟ ۖ إِلَّآ أَن تَكُونَ تِجَـٰرَةً حَاضِرَةً تُدِيرُونَهَا بَيْنَكُمْ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَلَّا تَكْتُبُوهَا ۗ وَأَشْهِدُوٓا۟ إِذَا تَبَايَعْتُمْ ۚ وَلَا يُضَآرَّ كَاتِبٌ وَلَا شَهِيدٌ ۚ وَإِن تَفْعَلُوا۟ فَإِنَّهُۥ فُسُوقٌۢ بِكُمْ ۗ وَٱتَّقُوا۟ ٱللَّهَ ۖ وَيُعَلِّمُكُمُ ٱللَّهُ ۗ وَٱللَّهُ بِكُلِّ شَىْءٍ عَلِيمٌ",
+          "translation": "O ye who believe! When ye contract a debt for a fixed term, record it in writing. Let a scribe record it in writing between you in (terms of) equity. No scribe should refuse to write as Allah hath taught him, so let him write, and let him who incurreth the debt dictate, and let him observe his duty to Allah his Lord, and diminish naught thereof. But if he who oweth the debt is of low understanding, or weak, or unable himself to dictate, then let the guardian of his interests dictate in (terms of) equity. And call to witness, from among your men, two witnesses. And if two men be not (at hand) then a man and two women, of such as ye approve as witnesses, so that if the one erreth (through forgetfulness) the other will remember. And the witnesses must not refuse when they are summoned. Be not averse to writing down (the contract) whether it be small or great, with (record of) the term thereof. That is more equitable in the sight of Allah and more sure for testimony, and the best way of avoiding doubt between you; save only in the case when it is actual merchandise which ye transfer among yourselves from hand to hand. In that case it is no sin for you if ye write it not. And have witnesses when ye sell one to another, and let no harm be done to scribe or witness. If ye do (harm to them) lo! it is a sin in you. Observe your duty to Allah. Allah is teaching you. And Allah is knower of all things.",
+          "arabicSha256": "4be616c8efe4a5dd79034487b171637907bcf03b3772ac15e07c5d1e33842b89",
+          "translationSha256": "34b001286bd460866db239c402d0ad220e0b7b1db4c7b39a42cbaf41b1b96c27",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "ٱلْكِتَـٰبُ",
+          "ref": "2:2",
+          "wordInAyah": true,
+          "root": "كتب",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:2, word_text=ٱلْكِتَـٰبُ)"
+        },
+        {
+          "term": "كُتِبَ",
+          "ref": "2:183",
+          "wordInAyah": true,
+          "root": "كتب",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:183, word_text=كُتِبَ)"
+        },
+        {
+          "term": "يَكْتُبُونَ",
+          "ref": "2:79",
+          "wordInAyah": true,
+          "root": "كتب",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:79, word_text=يَكْتُبُونَ)"
+        },
+        {
+          "term": "كَاتِبٌۢ",
+          "ref": "2:282",
+          "wordInAyah": true,
+          "root": "كتب",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:282, word_text=كَاتِبٌۢ)"
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    },
+    {
+      "id": "root-ilm",
+      "kind": "root",
+      "tier": 4,
+      "title": "Words from the root ع ل م",
+      "terms": [
+        "ٱلْعَـٰلَمِينَ",
+        "يَعْلَمُونَ",
+        "عَلِيمٌ",
+        "ٱلْعِلْمِ"
+      ],
+      "note": "All four words come from the root ع ل م (knowing), according to the Quran MCP morphology. Each appears in the cited ayah.",
+      "passages": [
+        {
+          "ref": "1:2",
+          "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+          "translation": "Praise be to Allah, Lord of the Worlds,",
+          "arabicSha256": "463f13295bc7d90e0ea221942d7b39359a137da8686420b58f63d0774eebda09",
+          "translationSha256": "0d43492e239252086037d8a834cdd344639f5fe9565b2ebc654da5300cdbbf7c",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:77",
+          "arabic": "أَوَلَا يَعْلَمُونَ أَنَّ ٱللَّهَ يَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ",
+          "translation": "Are they then unaware that Allah knoweth that which they keep hidden and that which they proclaim?",
+          "arabicSha256": "a5d36aa5c5b096a31dc42b0208b33a8e1451b9d3e8fcb84c00a40c340c61e657",
+          "translationSha256": "81df304bf0b0eda681d46beaeaa70e4c47edbc11de07614641d6c21c4d4da87e",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "2:29",
+          "arabic": "هُوَ ٱلَّذِى خَلَقَ لَكُم مَّا فِى ٱلْأَرْضِ جَمِيعًا ثُمَّ ٱسْتَوَىٰٓ إِلَى ٱلسَّمَآءِ فَسَوَّىٰهُنَّ سَبْعَ سَمَـٰوَٰتٍ ۚ وَهُوَ بِكُلِّ شَىْءٍ عَلِيمٌ",
+          "translation": "He it is Who created for you all that is in the earth. Then turned He to the heaven, and fashioned it as seven heavens. And He is knower of all things.",
+          "arabicSha256": "44e3a9ee22511eae25de40dc1c3eafaaf29289352e3046759d08b748c795f5e2",
+          "translationSha256": "a95b16a576426654d2a7648c7de4a38d8ef5e246c89d4f471564f52b32ad845a",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        },
+        {
+          "ref": "3:18",
+          "arabic": "شَهِدَ ٱللَّهُ أَنَّهُۥ لَآ إِلَـٰهَ إِلَّا هُوَ وَٱلْمَلَـٰٓئِكَةُ وَأُو۟لُوا۟ ٱلْعِلْمِ قَآئِمًۢا بِٱلْقِسْطِ ۚ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+          "translation": "Allah (Himself) is Witness that there is no Allah save Him. And the angels and the men of learning (too are witness). Maintaining His creation in justice, there is no Allah save Him the Almighty, the Wise.",
+          "arabicSha256": "1033dcc23d86509c0db3f10ed3cd5f3d2e9ba7b03e569b33fdf018c05b0e40cc",
+          "translationSha256": "81334e22fac7cee4dbf3acdb852e413709a58edee87846db567cd40da792443c",
+          "editions": {
+            "arabic": "ar-uthmani-hafs",
+            "translation": "en-pickthall"
+          },
+          "copiedFrom": "_implementation/research/quran-full.json (script)"
+        }
+      ],
+      "termEvidence": [
+        {
+          "term": "ٱلْعَـٰلَمِينَ",
+          "ref": "1:2",
+          "wordInAyah": true,
+          "root": "علم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=1:2) all words"
+        },
+        {
+          "term": "يَعْلَمُونَ",
+          "ref": "2:77",
+          "wordInAyah": true,
+          "root": "علم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:77, word_text=يَعْلَمُونَ)"
+        },
+        {
+          "term": "عَلِيمٌ",
+          "ref": "2:29",
+          "wordInAyah": true,
+          "root": "علم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=2:29, word_text=عَلِيمٌ)"
+        },
+        {
+          "term": "ٱلْعِلْمِ",
+          "ref": "3:18",
+          "wordInAyah": true,
+          "root": "علم",
+          "morphologyCall": "fetch_word_morphology(ayah_key=3:18, word_text=ٱلْعِلْمِ)"
+        }
+      ],
+      "callsUsed": [
+        "q3",
+        "t3"
+      ]
+    }
+  ]
+}
