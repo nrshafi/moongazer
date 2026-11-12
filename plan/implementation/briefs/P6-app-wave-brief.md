@@ -15,8 +15,8 @@ You own the one app folder named in your prompt, plus the research and plan file
 - **Hosts (D2c).** The share text ends with the app's own host, for example `guess-the-surah.moongazer.tech`. Never use an apex short link such as `moongazer.tech/surah`; the P6 doc's examples predate D2c.
 - **Selection.** `dailyIndex(n, bank.length, DAILY_SEED)` from `daily.ts`. Export `DAILY_SEED` (the constant in your prompt) and `BANK_VERSION = 1` from a small app module (for example `src/lib/daily-bank.ts`), together with a `dailyItem(n)` function that returns the item for puzzle `n`. Bank order is the data order in `content.json`. The directory (T6.6) imports these numbers, so keep the names exact.
 - **Before the epoch.** `dayNumber()` returns 0 before `DAILY_EPOCH`. Show Practice by default, and in Daily show a single line: "The first daily puzzle opens on <epoch date>." Do not hide the Daily tab.
-- **Same day, same puzzle.** After the visitor finishes today's puzzle, a reload shows the result, not a fresh puzzle. Store `{n, result}` under `<slug>:daily` with the existing `read`/`write` storage helpers in `utils.ts`. Storage may be blocked: the game must still work, with no streak and no saved result.
-- **Streak.** Opt in with a checkbox, "Keep a streak on this device". Key `<slug>:streak` via `updateStreak`. Show it in a line such as "Streak: 3 days (best 5)". Document the key in the drawer.
+- **Same day, same puzzle.** After the visitor finishes today's puzzle, a reload shows the result, not a fresh puzzle. Store `{n, result}` with the existing `read('daily', validator)` / `write('daily', value)` helpers in `utils.ts`; they already prefix the app namespace, so pass the bare key. Storage may be blocked: the game must still work, with no streak and no saved result.
+- **Streak.** Opt in with a checkbox, "Keep a streak on this device". Key `streak` (namespaced by `read`/`write`, validated with `isStreak`) via `updateStreak`. Show it in a line such as "Streak: 3 days (best 5)". Document the key in the drawer.
 - **Share.** `shareText()` plus a Copy button and a WhatsApp link (`whatsappUrl`). Put them in the end-of-session block (`renderSessionEnd`). Each share test must call `assertNoAnswer` with the answer strings.
 - **T6.7 reminder.** In the end-of-session block (or under the daily puzzle), add a "Remind me daily" control: an `<input type="time">` defaulting to 20:00 and a button that downloads `dailyReminderIcs({name, host, time, now: new Date()})` as `<slug>-daily.ics` (Blob + object URL, `text/calendar`). No permissions and no requests.
 - **Counter.** Daily: item id `daily-<N>`. Practice: the existing item id.
@@ -46,7 +46,7 @@ From the repo root:
 - `PYTHONIOENCODING=utf-8 python _implementation/audit-text-joins.py`: 0.
 
 Browser:
-- Start only your own app's preview server, on the port in your prompt: `bun run preview -- --port <port>` in the app folder. Other agents run in parallel, so do not run `_implementation/e2e-preview.ts`.
+- Start only your own app's preview server, on the port in your prompt: `bun --bun astro preview --host 127.0.0.1 --port <port>` in the app folder (the package script pins 4321). Other agents run in parallel, so do not run `_implementation/e2e-preview.ts`.
 - Use `_implementation/browser-check.mjs` (read its exports first).
 - Check 390 × 844, 375 × 812 and 1440 × 1000, light and dark: no horizontal scroll, no script errors, first control ≤ 600 px.
 - To test the Daily path before the epoch, set the clock in the page with an `init` script that overrides `Date`, so it runs past `DAILY_EPOCH` (it is a placeholder: 2026-12-31).
