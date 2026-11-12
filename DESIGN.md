@@ -1,8 +1,40 @@
 # Moongazer design system
 
-The root design contract for all 16 apps and the directory. Each app adds a one-page `apps/<slug>/DESIGN.md` that may narrow these rules but never adds a colour or font. Decision record: D20 in `plan/implementation/00-INDEX.md`; background in `plan/DESIGN_RECOMMENDATIONS.md` (archetypes only — its per-app palettes are not used).
+The root design contract for all 17 apps and the directory. Each app adds a one-page `apps/<slug>/DESIGN.md` that may narrow these rules but never adds a colour or font. Decision record: D20 in `plan/implementation/00-INDEX.md`; background in `plan/DESIGN_RECOMMENDATIONS.md` (archetypes only — its per-app palettes are not used).
 
 **How to use it:** read this file, then the app's `DESIGN.md`, before any UI change. If a change needs something not covered here, update this file first (shared lane), then build.
+
+## 0. Art direction: "a window into the night" (2026-11-13)
+
+The collection is one illuminated night library. Every surface draws on three sources: Islamic geometry, manuscript illumination (gold rules, border bands and medallions) and the night sky that gives Moongazer its name. This section overrides older rules in this file wherever they conflict. Be bold within it: these rules describe a direction, not a ceiling.
+
+- **Generated, not hand-placed.** All art comes from `_implementation/art/build-art.mjs`, which is pure geometry in code, deterministic and dependency-free. Change the generator and rerun it. Never edit its outputs by hand:
+  - `apps/<slug>/public/favicon.svg` (the emblem);
+  - `apps/<slug>/public/motif.svg` (the hero scene);
+  - `homepage/logos/`, `homepage/art/` and `homepage/favicon.svg`;
+  - the `art:start…art:end` token block in `refinement.css`.
+  Social cards come from `_implementation/art/social-cards.mjs`, rendered in headless Chrome.
+- **Emblems.** Each emblem is a night tile with a gold star-polygon frame in the family's fold, a family-hue glow and the app's gold glyph:
+  - Quran: {8/3};
+  - Seerah and history: {8/2}, the Rub el Hizb;
+  - Worship and daily life: {12/5};
+  - Family: {10/3}.
+  Never use a six-pointed hexagram.
+- **Scenes.** Each app's hero scene is a pointed-arch window, 480 × 300. Inside it are a starlit sky with a faint {8/3} lattice, a crescent, a family-hue horizon glow and the app's own object drawn in gold, for example a mushaf on a rahle, the lamp in its niche or an astrolabe. Use objects, plants, architecture and sky only (§1).
+- **App hero (`.intro`).** A dark illuminated panel in both themes:
+  - a night gradient tinted by the family hue;
+  - the family lattice texture;
+  - an inner hairline rule;
+  - a gold border band under the text;
+  - the scene on the right.
+  Text on the panel is #fbf4e4 for headings and #c6d0dc for body. On phones the hero is at most 220 px, and the scene shrinks into the corner.
+- **Surfaces.** The activity panel carries a manuscript double rule with gilded corner ornaments. Cards get a gold-and-accent top rule and a star that turns on hover. Section headings sit under an ornamental divider. The footer is a full-width night band. The body has a 5 % lattice wash.
+- **Directory.** It has:
+  - a night header flowing into a starfield hero;
+  - a 16-fold shamsa that turns slowly (300 s per turn, stopped under reduced motion) around a still crescent;
+  - illuminated start panels, with the ayah of the night on a night panel;
+  - app cards that show the app's scene and emblem. Screenshots are no longer used.
+- **Gold tokens.** `--mg-gold #e9c992`, `--mg-gold-2 #f7e6c0`, `--mg-gold-3 #b8894a`, `--mg-hue` per family (teal #4fd1bf, gold #f2c25b, blue #7fb2ff, violet #b9a2ff), and `--mg-pattern`, `--mg-band`, `--mg-divider`, `--mg-star` and `--mg-corner-*`. On light surfaces use `--mg-gold-3` for ornament only, never for text.
 
 ## 1. Islamic visual rules
 
@@ -69,12 +101,12 @@ Deviations from `DESIGN_RECOMMENDATIONS.md` §4, made to pass contrast: gold lig
 ## 5. Layout rules (all apps)
 
 - **Activity within 600 px.** At 390 × 844 and 375 × 812, the top of the first interactive control or activity card is ≤ 600 px from the page top, in both themes. Each app records its measured number in its `DESIGN.md`.
-- **Compact hero.** H1 = the app name; one descriptor line (≤ 12 words); optional count chip. Phone hero ≤ 140 px. No dash-eyebrow, no star watermark.
+- **Hero.** H1 = the app name; one descriptor line (≤ 12 words); optional count chip; the illuminated panel of §0. Phone hero ≤ 220 px (checked by `_implementation/first-screen-check.mjs`).
 - **Header.** Logo + short name at every width; tagline hidden below 720 px; nav verbs from `config.nav`; an "All apps" link to `https://moongazer.tech/#library`; theme toggle.
 - **"How this works" drawer.** Instructions, caveats and evidence notes live in one native `<details class="how-it-works">`: top of the sidebar on desktop, directly after the activity on phones. Nothing explanatory sits above the first control.
 - **End of session.** Result → "What you learned" (1–3 lines with references) → share (copy + WhatsApp, plain text, never the answer, no tracking parameters) → one recommended next app → "New puzzle tomorrow" slot (daily games) → compact "Report an error" link.
 - **About this app.** The learning guide renders after the activity as server-rendered `<details>` per question.
-- **Motif.** Each app has one decorative `public/motif.svg` (≤ 8 KB, `aria-hidden="true"`), derived from its logo: geometry, objects, plants, sky only. Hidden or shrunk to a corner mark below 580 px.
+- **Scene.** Each app's `public/motif.svg` is its generated arch scene (§0, ≤ 18 KB, `aria-hidden="true"`), shown in the hero at every width.
 - **Print and projector.** Print hides chrome and shows the activity in black on white. Projector mode (Family Halaqa, Escape Room, Seerah Timeline, Stories, Word Groups, Guess the Surah) scales text ×1.35, simplifies chrome and raises contrast; saved only if the visitor opts in (`projector` key).
 
 ## 6. Archetypes (layout, components, motif — never colour)
