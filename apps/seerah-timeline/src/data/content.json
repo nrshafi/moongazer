@@ -907,5 +907,67 @@
         "the-expedition-to-tabuk"
       ]
     }
+  ],
+  "dailyPairs": [
+    {
+      "id": "pair-01",
+      "first": "a-conversation-with-waraqa",
+      "second": "calling-the-clans-at-safa",
+      "why": "The Waraqa conversation belongs to the report of the beginning of revelation, and the public call at Safa came in the mission that followed."
+    },
+    {
+      "id": "pair-02",
+      "first": "khadija-offers-reassurance",
+      "second": "the-pledges-at-aqabah",
+      "why": "Khadija's reassurance is part of the report of the beginning of revelation, and the Aqabah pledges came shortly before the Hijrah."
+    },
+    {
+      "id": "pair-03",
+      "first": "calling-the-clans-at-safa",
+      "second": "the-cave-during-the-migration",
+      "why": "The call at Safa belongs to the early Makkan mission, and the cave belongs to the Hijrah that ended the Makkan period."
+    },
+    {
+      "id": "pair-04",
+      "first": "khabbab-asks-for-help",
+      "second": "arrival-among-banu-amr-ibn-awf",
+      "why": "Khabbab's request is a Makkan-period exchange, and the arrival among Banu Amr ibn Awf happened after the migration to Madinah."
+    },
+    {
+      "id": "pair-05",
+      "first": "abu-bakr-and-protection",
+      "second": "supplication-at-badr",
+      "why": "The report on Abu Bakr and protection describes a time before the Hijrah, and Badr was fought in Madinah in 2 AH."
+    },
+    {
+      "id": "pair-06",
+      "first": "the-pledges-at-aqabah",
+      "second": "the-change-of-qiblah",
+      "why": "The Aqabah pledges came before the Hijrah, and the qiblah was changed in Madinah in 2 AH."
+    },
+    {
+      "id": "pair-07",
+      "first": "the-cave-during-the-migration",
+      "second": "the-change-of-qiblah",
+      "why": "The cave was part of the Hijrah, and the report on the qiblah counts months of prayer toward Jerusalem after the Prophet ﷺ came to Madinah."
+    },
+    {
+      "id": "pair-08",
+      "first": "suraqa-on-the-route",
+      "second": "supplication-at-badr",
+      "why": "Suraqa met them on the road of the Hijrah in 1 AH, and Badr took place in 2 AH."
+    },
+    {
+      "id": "pair-09",
+      "first": "arrival-among-banu-amr-ibn-awf",
+      "second": "building-the-mosque",
+      "why": "In Bukhari 428 the Prophet ﷺ stays among Banu Amr ibn Awf, then sends for Banu al-Najjar and has the mosque built."
+    },
+    {
+      "id": "pair-10",
+      "first": "brotherhood-and-a-market",
+      "second": "the-archers-at-uhud",
+      "why": "The brotherhood of the emigrants and helpers belongs to the first Madinan period, and Uhud was fought in 3 AH."
+    }
   ]
 }
