@@ -117,7 +117,9 @@
       "revelation_place": "makkah",
       "revelation_order": 52,
       "verses_count": 123,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Hud",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 12,
@@ -126,7 +128,9 @@
       "revelation_place": "makkah",
       "revelation_order": 53,
       "verses_count": 111,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Joseph",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 13,
@@ -135,7 +139,9 @@
       "revelation_place": "madinah",
       "revelation_order": 96,
       "verses_count": 43,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Thunder",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 14,
@@ -144,7 +150,9 @@
       "revelation_place": "makkah",
       "revelation_order": 72,
       "verses_count": 52,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Abraham",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 15,
@@ -153,7 +161,9 @@
       "revelation_place": "makkah",
       "revelation_order": 54,
       "verses_count": 99,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Rocky Tract",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 16,
@@ -162,7 +172,9 @@
       "revelation_place": "makkah",
       "revelation_order": 70,
       "verses_count": 128,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Bee",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 17,
@@ -171,7 +183,9 @@
       "revelation_place": "makkah",
       "revelation_order": 50,
       "verses_count": 111,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Night Journey",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 18,
@@ -180,7 +194,9 @@
       "revelation_place": "makkah",
       "revelation_order": 69,
       "verses_count": 110,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "The Cave",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 19,
@@ -189,7 +205,9 @@
       "revelation_place": "makkah",
       "revelation_order": 44,
       "verses_count": 98,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Mary",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 20,
@@ -198,7 +216,9 @@
       "revelation_place": "makkah",
       "revelation_order": 45,
       "verses_count": 135,
-      "bismillah_pre": true
+      "bismillah_pre": true,
+      "nameMeaning": "Ta-Ha",
+      "nameMeaningSource": "quran-com-api-v4-chapters"
     },
     {
       "number": 21,
