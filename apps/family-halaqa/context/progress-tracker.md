@@ -92,3 +92,24 @@ Done: compact hero and library layout, `HowItWorks` drawer on the library and pa
 Removed duplicates: the evidence band ("About 10-15 minutes", "Everyone may pass", "Print or use one shared screen") and the age-band note moved into the drawer; the pack hero line about minutes, shared screen and pass is now in the drawer; the completion paragraph's limit ("not a judgment of anyone's learning or character") now sits in the session-end result. No limit was deleted. Design note: "Reading check: [n] of 3" was not implemented because the pack records one reading question, not a count; the result says "Reading check answered".
 
 First control (`#filter`) top: 300 px at 390 × 844 and 375 × 812, light and dark. `bun run check` 0 errors; `bun run test` 21 pass (events test updated: share now comes from the shared block); `bun run build` ok. Browser: no horizontal scroll or script errors at 390, 375 and 1440, light and dark; saved two packs and the print view held both (window.print stubbed); finished a pack and the session-end block appeared, share text has no answer. Not verified: counter events (production hosts only), real paper print preview.
+
+## 2026-11-12 18:28 (Asia/Dhaka) — C16: 30-night Ramadan series (data only)
+
+Added 30 packs to `src/data/content.json` in three batches (C16.01 nights 1-10, C16.02 nights 11-20, C16.03 nights 21-30). Each has `series: "ramadan"` and `night` 1-30 beside the existing fields; ages are 10 each of 5-7, 8-11 and 12+. Passages (Arabic and Pickthall) are copied by script from `_implementation/research/quran-full.json`. Teaching and explanation attribute Al-Muyassar (`ar-muyassar`), plus the abridged English Ibn Kathir for night 28; hadith go in `sources` as collection and number, paraphrased, opened on sunnah.com. `appContentSha256` updated (LF-normalised). Research records: `_implementation/research/depth/family-halaqa/batch-01.json` to `batch-03.json`.
+
+Validation run: `bun run check` 0 errors, 0 warnings, 0 hints; `bun run test` 26 pass (new `tests/ramadan-series.test.ts`: nights 1-30 once each, every age band at least 8 times, passages equal the snapshot; the general-pack count test now counts packs without a series); `bun run build` 46 pages; `audit-text-joins.py` 0 unexplained joins. `verify-static.py` was not run (it needs a dist for every app); the same passage comparison runs in the new test.
+
+Not done: no second-pass verification (separate run) and no owner spot-check yet; no scholarly review is claimed. The library lists all 42 packs together; a Ramadan list or filter and a `?night=N` deep link are a pending code task, and the topic filter now shows many more topics.
+
+
+## 2026-11-12 23:15 (Asia/Dhaka) — C16.04: verification fixes
+
+Second pass failed 16 Ramadan packs (14/30 passed): spoiler titles, teaching that stated the answer, night 9 discussion, night 19 honorific. All fixed in `content.json`; `appContentSha256` updated; `followUp` added to each fixed pack in the `batch-0N.verification.json` files (`result` untouched). New test: no title shares a 4+ letter content word with the correct option. `bun run check` 0 errors; `bun run test` 26 pass; `bun run build` 46 pages. Not yet re-verified by a second run.
+
+## 2026-11-12 (Asia/Dhaka) — C16.05: re-check fixes
+
+Re-check (a73dc37) failed six packs. Retitled nights 6 (Two short verses), 11 (Good company), 14 (Respecting others), 16 (Responding to harm), 17 (A shared prayer); reworded teaching for nights 11 and 17 (checked against Al-Muyassar 9:119 and 2:127) and added the honorific after Adam on night 22. The title test now stems words and uses small related-word groups, and includes cases that fail for the old titles. `followUp` in the six verification records is now a list (C16.04 then C16.05); `recheck` untouched. Hash updated.
+
+## 2026-11-12 (Asia/Dhaka) — C16.06: second re-check fixes
+
+Second re-check (effc2f2) failed four packs. Night 11 retitled "Allah’s instruction", night 14 "A verse for families", night 16 "A hard moment"; night 17 explanation now has the honorific after Abraham and Ishmael. Tests: rejected-titles list (Good company, Respecting others, Responding to harm and earlier rejects) kept explicit because word groups cannot catch them by meaning; new test that every prophet name in explanation, teaching and discussion has an honorific (Muhammad needs the glyph; angels and Hawwa out of scope); checked to fail when an honorific is removed. Hash updated; followUp C16.06 entries added.

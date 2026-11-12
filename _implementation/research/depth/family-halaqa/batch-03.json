@@ -1,0 +1,539 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 3,
+  "series": "ramadan",
+  "nights": [
+    21,
+    30
+  ],
+  "quranEdition": "ar-uthmani-hafs",
+  "translationEdition": "en-pickthall",
+  "groundingNonce": "gnd-cea239f199a26901",
+  "rateLimitNote": "The Quran MCP allows one request per second; calls were made one at a time.",
+  "calls": [
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "44:3-4",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        21
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "7:23",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        22
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "51:17-18",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        23
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "3:133-134",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        24
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "76:8-9",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        25
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "112:1-4",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        26
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "97:1-5",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        27
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "87:14-15",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        28
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "87:14-15",
+        "editions": "en-ibn-kathir",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "en-ibn-kathir",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Abridged English Ibn Kathir; used for the sadaqat al-fitr mention (Umar bin Abdul-Aziz, Qatadah). Link: https://quran.com/87:14/tafsirs/169",
+      "nights": [
+        28
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "33:41-42",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "nights": [
+        29
+      ]
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "1:1-7",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Retrieved and not used: the Al-Fatiha pack was replaced by 112:1-4 because the 1:7 commentary names groups of people, which is unsuitable for a pack for ages 5-7."
+    },
+    {
+      "tool": "fetch_tafsir",
+      "arguments": {
+        "ayahs": "9:103",
+        "editions": "ar-muyassar",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "ar-muyassar",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Retrieved and not used: the pack plan changed so that night 28 uses 87:14-15."
+    },
+    {
+      "tool": "fetch_translation",
+      "arguments": {
+        "ayahs": "44:3-4, 7:23, 51:17-18, 3:133-134, 76:8-9, 112:1-4, 97:1-5, 87:14-15, 33:41-42",
+        "editions": "en-pickthall",
+        "grounding_nonce": "gnd-cea239f199a26901"
+      },
+      "edition": "en-pickthall",
+      "retrievedAt": "2026-11-12, between about 12:00Z and 12:30Z (the Quran MCP tools return no timestamp; the shell clock read 2026-11-12T12:21:09Z at the 96:1-5 tafsir call)",
+      "note": "Compared by eye with the snapshot; text in the pack is copied by script."
+    },
+    {
+      "note": "Night 30 (2:185): tafsir (ar-muyassar) and translation (en-pickthall) were fetched in the batch 1 calls above."
+    }
+  ],
+  "items": [
+    {
+      "night": 21,
+      "id": "ramadan-night-21",
+      "title": "A blessed night",
+      "age": "12+",
+      "topic": "Last ten nights",
+      "ref": "44:3-4",
+      "passageSha256": {
+        "arabic": "6d113fde0601743e52941cde9d0072478c74e27862b08dfb619e251f2a69239c",
+        "translation": "d7425848f48a50bda4d4b6644f5f86cdc5d638019145df627777c8fe7dccb760"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/44:3/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "إنا أنزلناه في ليلة القدر المباركة كثيرة الخيرات، وهي في رمضان"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 2024",
+          "url": "https://sunnah.com/bukhari:2024",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Aisha reports that when the last ten days of Ramadan began, the Prophet Muhammad ﷺ would work hard, spend the night in prayer and wake his family. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 22,
+      "id": "ramadan-night-22",
+      "title": "After a mistake",
+      "age": "5–7",
+      "topic": "Last ten nights",
+      "ref": "7:23",
+      "passageSha256": {
+        "arabic": "87106c2a6bf56f5f3d816ea85fa7c1fdc21971327af61d4c910b037a4208f639",
+        "translation": "5f4d9d1354597c6007342d7c7a50fa7c47e3f6a534487ed2f939e98b9dd1850f"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/7:23/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "قال آدم وحواء: ربنا ظلمنا أنفسنا ... (وهذه الكلمات هي التي تلقاها آدم من ربه، فدعا بها فتاب الله عليه)"
+      },
+      "hadith": [
+        {
+          "label": "Jami` at-Tirmidhi 3513",
+          "url": "https://sunnah.com/tirmidhi:3513",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "Sahih (Darussalam)",
+          "useInPack": "Aisha asks the Prophet Muhammad ﷺ what to say if she knows the Night of Qadr. He teaches a short dua asking Allah, who loves pardon, to pardon her. Graded Sahih (Darussalam) on sunnah.com. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 23,
+      "id": "ramadan-night-23",
+      "title": "Quiet hours",
+      "age": "8–11",
+      "topic": "Last ten nights",
+      "ref": "51:17-18",
+      "passageSha256": {
+        "arabic": "2f8fca8dd8b5101368611fd658dab21cb0d78a40c43329e38b609227bbc8b813",
+        "translation": "0644fabe0b7382ebca5475c0989f6aef64a4b4bded2aaac56dc750d6b2bbae65"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/51:17/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "كان هؤلاء المحسنون قليلا من الليل ما ينامون ... وفي أواخر الليل قبيل الفجر يستغفرون الله"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 2014",
+          "url": "https://sunnah.com/bukhari:2014",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Abu Hurairah reports the Prophet Muhammad ﷺ saying that whoever stands in prayer on the Night of Qadr out of faith and hoping for Allah’s reward will have past sins forgiven. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 24,
+      "id": "ramadan-night-24",
+      "title": "Hurrying to good",
+      "age": "12+",
+      "topic": "Last ten nights",
+      "ref": "3:133-134",
+      "passageSha256": {
+        "arabic": "ea9eee0b92e860bf516cb1f37cd9ef29f468aaab134796b1893abd8b8eb96475",
+        "translation": "d47f2a1f8c597faa4ff36ddc6a9c617f3fd1c4b61abcdae31cc422d916287132"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/3:133/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "والذين يمسكون ما في أنفسهم من الغيظ بالصبر، وإذا قَدَروا عَفَوا عمَّن ظلمهم"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 25,
+      "id": "ramadan-night-25",
+      "title": "A shared meal",
+      "age": "8–11",
+      "topic": "Charity",
+      "ref": "76:8-9",
+      "passageSha256": {
+        "arabic": "661400cabec7bd5caacbcdf80591979f7300dd8395d5238620a8438f6bb85630",
+        "translation": "8a1af2639c4d093dea161c055d9634a49d90e5b9001679c96c24bb246cd65af8"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/76:8/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "ويُطْعِمون الطعام مع حبهم له ... فقيرًا ... وطفلا مات أبوه ... وأسيرًا"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 1902",
+          "url": "https://sunnah.com/bukhari:1902",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Ibn Abbas reports that the Prophet Muhammad ﷺ was the most generous of people, and most generous in Ramadan, when Jibril met him each night and the Prophet ﷺ recited the Quran to him. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 26,
+      "id": "ramadan-night-26",
+      "title": "Four short lines",
+      "age": "5–7",
+      "topic": "Last ten nights",
+      "ref": "112:1-4",
+      "passageSha256": {
+        "arabic": "d7e6b7a6e7e349b372b2d24b5f240a2af4e8eb0e7f67bfb103db0cde5d77c94b",
+        "translation": "904e9d47c97ac870e1b855b30f4e3ddf9eb2cb83e9c3fe8555dccb13b560ba46"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/112:1/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "هو الله المتفرد بالألوهية والربوبية ... لا يشاركه أحد فيها"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 27,
+      "id": "ramadan-night-27",
+      "title": "The Night of Power",
+      "age": "5–7",
+      "topic": "Last ten nights",
+      "ref": "97:1-5",
+      "passageSha256": {
+        "arabic": "f048157212e3e14748712539137cb6759cfc20ab7370e5d502bb22febcac3d2c",
+        "translation": "4b90fcaa875b862c35b76d67c1bf1c992162d4cc120e2ac3dc7c39abbffc2725"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/97:1/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "ليلة القدر ليلة مباركة، العمل الصالح فيها خير من عمل ألف شهر ... هي أمن كلها، لا شرَّ فيها إلى مطلع الفجر"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 2017",
+          "url": "https://sunnah.com/bukhari:2017",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Aisha reports the Prophet Muhammad ﷺ saying to search for the Night of Qadr in the odd nights of the last ten days of Ramadan. Paraphrased."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 28,
+      "id": "ramadan-night-28",
+      "title": "Growing well",
+      "age": "12+",
+      "topic": "Charity",
+      "ref": "87:14-15",
+      "passageSha256": {
+        "arabic": "808d93848fceb201b8a97136b5b49d7b9e3dafca9f14c60034ccd5d5122fe699",
+        "translation": "449b380e31900018484b24bf6cea89f1f1066546b17e0d586754fe569529fa9c"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/87:14/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "قد فاز مَن طهر نفسه من الأخلاق السيئة، وذكر الله ... وأقام الصلاة في أوقاتها"
+      },
+      "hadith": [
+        {
+          "label": "Sahih al-Bukhari 1503",
+          "url": "https://sunnah.com/bukhari:1503",
+          "openedWith": "ego-browser (sunnah.com blocks WebFetch)",
+          "gradingShown": "No grade shown on sunnah.com for this Bukhari entry; listed in Sahih al-Bukhari.",
+          "useInPack": "Ibn Umar reports the Prophet Muhammad ﷺ made zakat al-fitr obligatory: a measure of dates or barley on every Muslim, young or old, to be paid before people go out to the Eid prayer. Paraphrased."
+        },
+        {
+          "label": "Tafsir Ibn Kathir (abridged, English) on 87:14-15",
+          "url": "https://quran.com/87:14/tafsirs/169",
+          "kind": "Commentary",
+          "useInPack": "Mentions Umar bin Abdul-Aziz reciting this verse when commanding sadaqat al-fitr."
+        }
+      ],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 29,
+      "id": "ramadan-night-29",
+      "title": "Throughout the day",
+      "age": "5–7",
+      "topic": "Last ten nights",
+      "ref": "33:41-42",
+      "passageSha256": {
+        "arabic": "e6a094353beafa46fb55a9123c8c68ee557fad117b54fd20f1a381f06e0dfd19",
+        "translation": "e4fff61042470312beab295bce0f7f7543734b5c27ddb8ed27ed6a179084af2e"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/33:41/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "اذكروا الله بقلوبكم وألسنتكم وجوارحكم ذِكْرًا كثيرًا، واشغلوا أوقاتكم بذكر الله تعالى عند الصباح والمساء، وأدبار الصلوات المفروضات"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    },
+    {
+      "night": 30,
+      "id": "ramadan-night-30",
+      "title": "The month’s end",
+      "age": "12+",
+      "topic": "Eid",
+      "ref": "2:185",
+      "passageSha256": {
+        "arabic": "2a98097f3209b8f5f9e7afe56c0a707784ee0a7f22bba9b828dc440b0e73fcb5",
+        "translation": "61860caf32cae5c2992e215b45de7cf1174b5e772a4ee0ba72a0e403c0599fe3"
+      },
+      "passageSource": "Copied by script from _implementation/research/quran-full.json (ar-uthmani-hafs, en-pickthall); checked by verify-static.py.",
+      "commentary": {
+        "edition": "ar-muyassar",
+        "url": "https://quran.com/2:185/tafsirs/16",
+        "usedFor": "teaching and explanation (paraphrase, attributed)",
+        "keyPhraseRelied": "ولتختموا الصيام بتكبير الله في عيد الفطر"
+      },
+      "hadith": [],
+      "editorialFields": [
+        "title",
+        "question",
+        "options",
+        "explanation",
+        "discussion",
+        "activity",
+        "close",
+        "teaching"
+      ]
+    }
+  ]
+}

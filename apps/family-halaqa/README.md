@@ -15,7 +15,7 @@ bun run preview
 
 Port 4339. Cloudflare Pages project root `apps/family-halaqa`, output `dist`, build `bun install --frozen-lockfile && bun run build`, environment `BUN_VERSION=1.4.4`. Host at the domain root. No adapter, secrets, backend or live content API.
 
-12 single-sitting packs, each with a reading question, discussion and shared activity. Age/topic/type filters, print, optional recovery and completion sharing.
+12 general single-sitting packs and a 30-night Ramadan series, each with a reading question, discussion and shared activity. Age/topic/type filters, print, optional recovery and completion sharing.
 
 Suggested age bands are editorial reading guidance, not developmental assessments. Collect no names, child profiles, private disclosures or ongoing progress history.
 

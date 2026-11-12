@@ -1,0 +1,202 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 1,
+  "nights": [
+    1,
+    10
+  ],
+  "checkedAt": "2026-11-12T18:31:01+06:00",
+  "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
+  "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
+  "checks": {
+    "exactText": "Arabic and Pickthall equal _implementation/research/quran-full.json byte for byte with spans joined by LF (script, 30/30 in batch set).",
+    "quranMcp": "fetch_grounding_rules, then fetch_translation en-pickthall for each passage. English compared by reading, not by script.",
+    "tafsirRefetched": "ar-muyassar re-fetched for nights 1, 4, 6, 8, 10; en-ibn-kathir and ar-muyassar for night 28. Other nights rely on the batch record.",
+    "hadith": "sunnah.com opened via ego-browser for every linked hadith in this batch."
+  },
+  "packs": [
+    {
+      "id": "ramadan-night-01",
+      "night": 1,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (2:183). Muyassar teaching and explanation faithful. Bukhari 1903 matches the paraphrase. Teaching does not state the answer. One right option. Activity uses objects only."
+    },
+    {
+      "id": "ramadan-night-02",
+      "night": 2,
+      "result": "fail",
+      "reason": "Title 'Near and listening' restates the correct answer (Allah answers the one who calls) and is shown with the question. Retitle without the answer's key idea.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Near and listening",
+            "after": "A quiet moment",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "Title 'A quiet moment' no longer echoes the answer, and the teaching gives nothing away. The one correct option stands and the passage is unchanged."
+      }
+    },
+    {
+      "id": "ramadan-night-03",
+      "night": 3,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (96:1-5). Question answerable from 'teacheth by the pen'. Teaching does not state the answer. Activity uses objects only, no drawings, animals or music."
+    },
+    {
+      "id": "ramadan-night-04",
+      "night": 4,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, says 'not to scold the one who asks', which restates the correct option 'The one who asks for help'. Spoiler under section 2. Exact text and Muyassar 93:9-11 are otherwise faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "teaching",
+            "before": "Al-Muyassar explains these verses as telling us not to treat an orphan harshly, not to scold the one who asks, and to speak of the favour of our Lord.",
+            "after": "Al-Muyassar explains these verses as three instructions about how to treat people and how to speak of Allah’s favours.",
+            "note": "Teaching rewritten to give context without stating the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The new teaching matches Al-Muyassar on 93:9-11 (do not mistreat the orphan, do not rebuke the asker, speak of the favour) and does not name the correct option. The title is neutral."
+      }
+    },
+    {
+      "id": "ramadan-night-05",
+      "night": 5,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (14:7). Teaching names Musa's reminder without stating the answer ('give them more'). Question answerable from the passage."
+    },
+    {
+      "id": "ramadan-night-06",
+      "night": 6,
+      "result": "fail",
+      "reason": "Teaching above the question says 'relief comes with hardship', which states the correct answer (ease). Title 'Hard and easy' also names it. Muyassar 94:5-6 is otherwise faithful.",
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Hard and easy",
+              "after": "Heavy and light",
+              "note": "Retitled so it no longer echoes the correct option."
+            },
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains the repeated promise as a comfort: relief comes with hardship.",
+              "after": "Al-Muyassar explains this repeated verse as a comfort for the Prophet Muhammad ﷺ when others harmed him.",
+              "note": "Teaching rewritten to give context without stating the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Heavy and light",
+              "after": "Two short verses",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            }
+          ]
+        }
+      ],
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Heavy and light' pairs hardship with ease, which gives away the answer 'Ease'. The new teaching is faithful to Al-Muyassar on 94:5-6, so only the title needs changing, for example to 'Two short verses'."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "pass",
+        "reason": "Title 'Two short verses' does not echo 'Ease.' and the teaching does not state it. One correct option, passage unchanged, no bad characters, and the Prophet Muhammad ﷺ carries the honorific symbol."
+      }
+    },
+    {
+      "id": "ramadan-night-07",
+      "night": 7,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (2:155-156). Answer is literal in the passage. Teaching does not state it. Distractors are not near-synonyms."
+    },
+    {
+      "id": "ramadan-night-08",
+      "night": 8,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, says the picture is 'a seed planted in good soil', which gives away the correct option (a grain). Title 'Seeds and sharing' also names it. Muyassar 2:261 is faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Seeds and sharing",
+            "after": "Small gifts",
+            "note": "Retitled so it no longer echoes the correct option."
+          },
+          {
+            "field": "teaching",
+            "before": "Al-Muyassar describes spending in Allah’s way as among the most beneficial acts and explains the picture as a seed planted in good soil. Using seeds in the activity is an editorial aid.",
+            "after": "Al-Muyassar describes spending in Allah’s way as among the most beneficial acts for believers. Using beans in the activity is an editorial aid.",
+            "note": "Teaching rewritten to give context without stating the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The title is neutral. The new teaching matches Al-Muyassar on 2:261 (spending is among the greatest benefits for believers), and the editorial note about beans is labelled as such."
+      }
+    },
+    {
+      "id": "ramadan-night-09",
+      "night": 9,
+      "result": "fail",
+      "reason": "Discussion for the 5-7 band asks 'Who cares for you?', inviting private family disclosure. The page's own note says no answers about family life are requested. Rewrite the prompt. Bukhari 5971 and the rest are faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Words for parents",
+            "after": "Gentle words",
+            "note": "Retitled so it no longer echoes the correct option."
+          },
+          {
+            "field": "discussion",
+            "before": "Some children are cared for by parents, and others by grandparents or other family. Who cares for you? Say one thing a caring grown-up does, or use a made-up example.",
+            "after": "Imagine a made-up family where a grown-up helps a child get ready for the day. What is one caring thing the grown-up could do, and what could the child say to thank them?",
+            "note": "Discussion rewritten with a made-up family; no question about real people at home."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The new discussion is a gentle made-up family scenario. The new teaching matches Al-Muyassar on 17:24 (humility and gentleness toward parents) and does not reveal the answer."
+      }
+    },
+    {
+      "id": "ramadan-night-10",
+      "night": 10,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (4:36). Muyassar 4:36 faithful for near and distant neighbour and for servants. Bukhari 6014 faithful. Teaching names the topic without giving the answer."
+    }
+  ]
+}

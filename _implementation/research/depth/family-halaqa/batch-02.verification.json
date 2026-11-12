@@ -1,0 +1,321 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 2,
+  "nights": [
+    11,
+    20
+  ],
+  "checkedAt": "2026-11-12T18:31:01+06:00",
+  "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
+  "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
+  "checks": {
+    "exactText": "Arabic and Pickthall equal _implementation/research/quran-full.json byte for byte with spans joined by LF (script, 30/30 in batch set).",
+    "quranMcp": "fetch_grounding_rules, then fetch_translation en-pickthall for each passage. English compared by reading, not by script.",
+    "tafsirRefetched": "ar-muyassar re-fetched for nights 12, 18, 20; other nights rely on the batch record.",
+    "hadith": "sunnah.com opened via ego-browser for every linked hadith in this batch."
+  },
+  "packs": [
+    {
+      "id": "ramadan-night-11",
+      "night": 11,
+      "result": "fail",
+      "reason": "Title 'True to your word' names the correct answer (truthful). Question asks whom to be with. Bukhari 6094 and Muyassar 9:119 are faithful.",
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "True to your word",
+              "after": "Keeping your word",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Keeping your word",
+              "after": "Good company",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            },
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains this verse as an instruction to obey Allah and to keep a certain kind of company in promises and oaths.",
+              "after": "Al-Muyassar explains this verse as addressed to believers, telling them to obey Allah and avoid what He forbids in all they do and leave undone, and to stay with a certain group of people in every matter.",
+              "note": "Teaching reworded after the re-check; checked against the Al-Muyassar text already fetched."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Good company",
+              "after": "Allah’s instruction",
+              "note": "Retitled after the second re-check: the previous title still pointed at the correct option."
+            }
+          ]
+        }
+      ],
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Keeping your word' still names the key idea of the correct option, being truthful in promises. The teaching's 'keep a certain kind of company in promises and oaths' also hints at it. Retitle neutrally, for example 'Good company', and reword the teaching to avoid promises and oaths."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'Good company' still restates the key idea of the correct option, being with the truthful, so it gives the answer away. The teaching is faithful to Al-Muyassar on 9:119 and can stay; retitle to a neutral label such as 'Allah's instruction'."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The title 'Allah's instruction' names only a general command and does not point to 'the truthful', and the teaching and question do not give the answer away."
+      }
+    },
+    {
+      "id": "ramadan-night-12",
+      "night": 12,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (28:24). Muyassar re-fetched and faithful (water for two women, shade, hunger). Teaching does not reveal the words of the answer. Answer literal in the passage."
+    },
+    {
+      "id": "ramadan-night-13",
+      "night": 13,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (50:18). Bukhari 6018 faithful (say what is good or stay quiet). Teaching names no answer. One right option."
+    },
+    {
+      "id": "ramadan-night-14",
+      "night": 14,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, describes the verse as 'an instruction about our thoughts and about how we speak of others', which gives away the correct option (suspicion, spying, backbiting). Exact text is correct.",
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains the verse as an instruction about our thoughts and about how we speak of others, ending with a reminder to be mindful of Allah.",
+              "after": "Al-Muyassar explains this verse as addressed to believers, ending with a reminder to be mindful of Allah, who accepts repentance and is merciful.",
+              "note": "Teaching rewritten to give context without stating the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Before you assume",
+              "after": "Respecting others",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Respecting others",
+              "after": "A verse for families",
+              "note": "Retitled after the second re-check: the previous title still pointed at the correct option."
+            }
+          ]
+        }
+      ],
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Before you assume' echoes the correct option 'much suspicion' and was not changed by C16.04, so the first pass missed it. The new teaching is faithful to Al-Muyassar on 49:12. Retitle, for example to 'Respecting others'."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'Respecting others' still states the key idea of the correct option, avoiding suspicion, spying and backbiting, so it gives the answer away. Retitle to a neutral label such as 'A verse for families'; the teaching is fine."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The title 'A verse for families' is neutral, and the teaching and options do not reveal that much suspicion, spying and backbiting is the correct answer."
+      }
+    },
+    {
+      "id": "ramadan-night-15",
+      "night": 15,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (12:92). Teaching names Yusuf without stating the answer. Question answerable from 'May Allah forgive you'."
+    },
+    {
+      "id": "ramadan-night-16",
+      "night": 16,
+      "result": "fail",
+      "reason": "Title 'A better reply' restates the correct option ('with one that is better'). Teaching and distractors are otherwise sound. Exact text is correct.",
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "A better reply",
+              "after": "Calm replies",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Calm replies",
+              "after": "Responding to harm",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Responding to harm",
+              "after": "A hard moment",
+              "note": "Retitled after the second re-check: the previous title still pointed at the correct option."
+            }
+          ]
+        }
+      ],
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Calm replies' restates the key idea of the correct option, answering harm with something better, so it gives the answer away. Retitle, for example to 'Responding to harm'. The new teaching is faithful to Al-Muyassar on 41:34."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'Responding to harm' still names the key idea of the correct option, answering harm with something better, so it gives the answer away. Retitle to a neutral label such as 'A hard moment'; the teaching is fine."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The title 'A hard moment' is neutral and does not restate answering with something better, and the teaching names no answer."
+      }
+    },
+    {
+      "id": "ramadan-night-17",
+      "night": 17,
+      "result": "fail",
+      "reason": "Title 'Building and asking' names the answer (raising the foundations of the House). Exact text is correct.",
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Building and asking",
+              "after": "Two builders",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Two builders",
+              "after": "A shared prayer",
+              "note": "Retitled again after the re-check: the earlier title still echoed the correct option."
+            },
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains this as a prayer by Ibrahim (peace be upon him) and Ismail (peace be upon him) as they worked, calling on Allah humbly.",
+              "after": "Al-Muyassar explains this as a prayer by Ibrahim (peace be upon him) and Ismail (peace be upon him), who called on Allah humbly as they prayed.",
+              "note": "Teaching reworded after the re-check; checked against the Al-Muyassar text already fetched."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.06",
+          "changes": [
+            {
+              "field": "explanation",
+              "before": "The passage says Abraham and Ishmael were raising the foundations of the House. Al-Muyassar explains this as the Kaaba, and says they prayed humbly that Allah accept their work.",
+              "after": "The passage says Abraham (peace be upon him) and Ishmael (peace be upon him) were raising the foundations of the House. Al-Muyassar explains this as the Kaaba, and says they prayed humbly that Allah accept their work.",
+              "note": "Honorifics added after both prophets named in the passage summary."
+            }
+          ]
+        }
+      ],
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'Two builders' names the building that the correct option describes, which gives away 'raising the foundations'. The teaching's 'as they worked' also hints at the answer. Retitle, for example to 'A shared prayer', and change 'as they worked' to 'as they prayed', which matches Al-Muyassar on 2:127."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "fail",
+        "reason": "Title 'A shared prayer' and the teaching are fine, and the teaching is faithful to Al-Muyassar on 2:127-128, but the explanation names 'Abraham and Ishmael' without '(peace be upon him)'. Add the honorific after each name in the explanation."
+      },
+      "recheck3": {
+        "by": "content-c16-recheck3 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:26:03 BST 2026",
+        "result": "pass",
+        "reason": "The explanation now has '(peace be upon him)' after both Abraham and Ishmael, which is grammatical, and the title and teaching give nothing away."
+      }
+    },
+    {
+      "id": "ramadan-night-18",
+      "night": 18,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (21:87-88). Muyassar re-fetched and faithful. Teaching says he called on Allah from the dark, not the words of the answer. One right option."
+    },
+    {
+      "id": "ramadan-night-19",
+      "night": 19,
+      "result": "fail",
+      "reason": "Explanation names 'his brother Harun' without the honorific (peace be upon him), contrary to the editorial honorific rule (section 1.8). Otherwise sound; Muyassar 20:25 was not re-fetched this pass.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "explanation",
+            "before": "The passage says he asked Allah to loose a knot from his tongue so that they may understand his words. Al-Muyassar says this is Musa (peace be upon him), who also asked for his brother Harun as a helper.",
+            "after": "The passage says he asked Allah to loose a knot from his tongue so that they may understand his words. Al-Muyassar says this is Musa (peace be upon him), who also asked for his brother Harun (peace be upon him) as a helper.",
+            "note": "Honorific added after Harun."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "Neither the title nor the teaching gives the knot away. The explanation's attribution matches Al-Muyassar on 20:25 (Musa asks for Harun as helper), and both honorifics are present."
+      }
+    },
+    {
+      "id": "ramadan-night-20",
+      "night": 20,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (21:83-84). Muyassar re-fetched: household and wealth restored, doubled. Teaching names the loss without stating the answer. Honorific for Ayyub present."
+    }
+  ]
+}

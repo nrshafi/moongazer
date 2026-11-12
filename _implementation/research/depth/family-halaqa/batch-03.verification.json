@@ -1,0 +1,207 @@
+{
+  "task": "C16",
+  "app": "family-halaqa",
+  "batch": 3,
+  "nights": [
+    21,
+    30
+  ],
+  "checkedAt": "2026-11-12T18:31:01+06:00",
+  "checkedAtNote": "Taken from plain date in Git Bash (printed as 'Thu Nov 12 18:31:01 BST 2026'); Dhaka wall-clock, not adjusted.",
+  "verifier": "content-c16-verify second pass (claude-haiku-5-5)",
+  "checks": {
+    "exactText": "Arabic and Pickthall equal _implementation/research/quran-full.json byte for byte with spans joined by LF (script, 30/30 in batch set).",
+    "quranMcp": "fetch_grounding_rules, then fetch_translation en-pickthall for each passage. English compared by reading, not by script.",
+    "tafsirRefetched": "ar-muyassar and en-ibn-kathir re-fetched for night 28; ar-muyassar re-fetched for night 22; other nights rely on the batch record.",
+    "hadith": "sunnah.com opened via ego-browser for every linked hadith in this batch."
+  },
+  "packs": [
+    {
+      "id": "ramadan-night-21",
+      "night": 21,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (44:3-4). 'It was revealed' is literal in the passage. Teaching does not state it. Bukhari 2024 faithful. Title echoes the question, not the answer."
+    },
+    {
+      "id": "ramadan-night-22",
+      "night": 22,
+      "result": "fail",
+      "reason": "Title 'Our Lord, forgive us' restates the correct answer (forgiveness and mercy). Text, Muyassar 7:23 (re-fetched, faithful) and Tirmidhi 3513 (Sahih, Darussalam) are otherwise correct.",
+      "followUp": [
+        {
+          "fixedIn": "C16.04",
+          "changes": [
+            {
+              "field": "title",
+              "before": "Our Lord, forgive us",
+              "after": "After a mistake",
+              "note": "Retitled so it no longer echoes the correct option."
+            }
+          ]
+        },
+        {
+          "fixedIn": "C16.05",
+          "changes": [
+            {
+              "field": "teaching",
+              "before": "Al-Muyassar explains this as Adam and Hawwa speaking to their Lord after their mistake.",
+              "after": "Al-Muyassar explains this as Adam (peace be upon him) and Hawwa speaking to their Lord after their mistake.",
+              "note": "Honorific added after Adam; Al-Muyassar wording unchanged."
+            }
+          ]
+        }
+      ],
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "fail",
+        "reason": "The title 'After a mistake' is fine, but the teaching names Adam without '(peace be upon him)', which breaks the honorific rule. Change it to 'Adam (peace be upon him) and Hawwa'; the Al-Muyassar wording on 7:23 is faithful."
+      },
+      "recheck2": {
+        "by": "content-c16-recheck2 (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:23:49 BST 2026",
+        "result": "pass",
+        "reason": "Title 'After a mistake' does not echo 'Forgiveness and mercy.', and the teaching gives Adam (peace be upon him) with the honorific; Hawwa is not a prophet, so no honorific is needed. Passage unchanged, one correct option, no bad characters."
+      }
+    },
+    {
+      "id": "ramadan-night-23",
+      "night": 23,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (51:17-18). Answer literal in the passage. Teaching does not state it. Bukhari 2014 is faithful, though it concerns Night of Qadr prayer and fits this passage only loosely; the pack makes no claim from it."
+    },
+    {
+      "id": "ramadan-night-24",
+      "night": 24,
+      "result": "fail",
+      "reason": "Title 'Quick to forgive' and teaching above the question ('describes those who give, hold back anger and pardon') both state the correct option. Exact text and Muyassar 3:133-134 are faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Quick to forgive",
+            "after": "Hurrying to good",
+            "note": "Retitled so it no longer echoes the correct option."
+          },
+          {
+            "field": "teaching",
+            "before": "Al-Muyassar explains that this passage calls people to hurry toward forgiveness from their Lord and describes those who give, hold back anger and pardon.",
+            "after": "Al-Muyassar explains that this passage calls believers to hurry toward their Lord’s forgiveness, and says Allah loves those it describes.",
+            "note": "Teaching rewritten to give context without stating the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The new teaching matches Al-Muyassar on 3:133-134 (hurry toward forgiveness, and Allah loves the good-doers) and does not name the correct option. The title is neutral."
+      }
+    },
+    {
+      "id": "ramadan-night-25",
+      "night": 25,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (76:8-9). Answer literal in the passage. Teaching names the groups without the answer. Bukhari 1902 faithful. No drawings, animals or music."
+    },
+    {
+      "id": "ramadan-night-26",
+      "night": 26,
+      "result": "fail",
+      "reason": "Teaching, shown above the question, says 'describing Allah's oneness', which gives away the correct option ('He is Allah, the One'). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "teaching",
+            "before": "Al-Muyassar explains this short surah as describing Allah’s oneness and perfection.",
+            "after": "Al-Muyassar explains this short surah as a description of Allah.",
+            "note": "Teaching rewritten to give context without stating the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The new teaching 'a description of Allah' is faithful to Al-Muyassar on 112:1-4 and does not give away the answer 'He is Allah, the One'."
+      }
+    },
+    {
+      "id": "ramadan-night-27",
+      "night": 27,
+      "result": "pass",
+      "reason": "Exact text and Pickthall match (97:1-5). Answer literal in the passage. Teaching names no answer. Bukhari 2017 faithful. The pack declines to name the night, which is correct."
+    },
+    {
+      "id": "ramadan-night-28",
+      "night": 28,
+      "result": "fail",
+      "reason": "Title 'Before the prayer' restates the correct answer ('prays'). Commentary is faithful: Muyassar 87:14-15 and abridged Ibn Kathir (Umar bin Abdul-Aziz reciting the verse for sadaqat al-fitr) both re-fetched and match; Bukhari 1503 faithful.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Before the prayer",
+            "after": "Growing well",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The title 'Growing well' echoes only the passage's word 'groweth', not the answer 'prays'. No other new text needed checking."
+      }
+    },
+    {
+      "id": "ramadan-night-29",
+      "night": 29,
+      "result": "fail",
+      "reason": "Title 'Morning and evening' restates the correct answer ('early and late'). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Morning and evening",
+            "after": "Throughout the day",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The title is neutral and the activity uses beans only. No prophet is named."
+      }
+    },
+    {
+      "id": "ramadan-night-30",
+      "night": 30,
+      "result": "fail",
+      "reason": "Title 'Ease and thanks' restates the correct answer ('Ease, not hardship'). Exact text is correct.",
+      "followUp": {
+        "fixedIn": "C16.04",
+        "changes": [
+          {
+            "field": "title",
+            "before": "Ease and thanks",
+            "after": "The month’s end",
+            "note": "Retitled so it no longer echoes the correct option."
+          }
+        ]
+      },
+      "recheck": {
+        "by": "content-c16-recheck (claude-haiku-5-5)",
+        "at": "Thu Nov 12 23:19:07 BST 2026",
+        "result": "pass",
+        "reason": "The title 'The month's end' does not echo the answer 'ease, not hardship', and the teaching does not give it away."
+      }
+    }
+  ]
+}
