@@ -277,3 +277,13 @@ The owner asked to keep only the new things, with no redirects (decision D2c in 
 Validation: 16/16 check, test and build (251 tests); sync identical; 60 repo tests; verify-static 313 pages; verify-seo passed; text joins 0; `host-smoke.mjs` 16/16; counter check passed.
 
 Two Pages projects carry an `-app` suffix because Cloudflare refused the plain names. Old projects and DNS records are deleted after the live check. Details are in `plan/implementation/releases/R3B.md`.
+
+## 2026-11-12T06:40:00+06:00 — P5.15: directory front door
+
+Branch `phase-5-directory` (from `phase-5-shell`). Directory only; no `apps/*` changes.
+- Header nav Apps, Today, Families, About; compact hero (H1 "Free Islamic learning games and tools", two buttons, small crescent mark on phones); static "Tonight on Moongazer" card at `#today`; quick picker chips (`?pick=<id>#library` links, filtered in place by `app.js`); library cards with a 16:9 screenshot slot (`homepage/shots/<slug>.webp` when present, else a styled placeholder), format badge, time, audience; subject guide cards with member logos after the library; empty `#season`; trust row; footer links every app host directly (no short links, D2c).
+- `deployment/targets.json` gains `time`, `audience`, `format` (= `kind`) per app; `build.mjs` validates them.
+- Fixed a pre-existing break: logo files still had pre-rename names, so 15 card logos 404ed; `render.mjs` now maps slug to logo file. Removed stray literal `{' '}` text from `index.html`. Removed the category filter buttons and search box (superseded by the chips; 16 apps).
+- Measured (headless Chrome, 390 x 844): first library card top 703 px, library heading 626 px, no horizontal scroll. Desktop 1440 x 1000: library heading top 722 px (above the fold). JS blocked (CSP `script-src 'none'`): chips are six links and all 16 cards are listed. No script errors, both colour schemes. Chips checked in the browser: kids gives 3 apps, 2 minutes gives 3, prayer and hifz one each.
+- Validation: `bun test _implementation/seo.test.ts homepage/tests` 60 pass; text joins 0; `deployment/verify-seo.py` could not run in full here (app `dist/` folders are not built in this worktree). A homepage-only copy passed every per-page SEO, JSON-LD and sitemap assertion on the directory and stopped only at the cross-host link check, which needs the app builds.
+- Remaining: screenshots (`homepage/shots/*.webp`) are captured later from the redesigned apps; P6 fills the Tonight card; P7 fills `#season`; run the full `verify-seo.py` after app builds.
