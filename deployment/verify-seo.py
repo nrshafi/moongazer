@@ -15,7 +15,7 @@ targets = json.loads((ROOT/'deployment/targets.json').read_text(encoding='utf-8'
 collections = json.loads((ROOT/'homepage/collections.json').read_text(encoding='utf-8'))
 learning_guides = json.loads((ROOT/'deployment/learning-guides.json').read_text(encoding='utf-8'))
 sites = [('moongazer', 'https://moongazer.tech/', ROOT/'homepage/dist')]
-sites += [('moongazer-'+app['slug'], 'https://'+app['slug']+'.moongazer.tech/', ROOT/'apps'/app['slug']/'dist') for app in targets]
+sites += [(app.get('project') or 'moongazer-'+app['slug'], 'https://'+app['slug']+'.moongazer.tech/', ROOT/'apps'/app['slug']/'dist') for app in targets]
 
 class Page(HTMLParser):
     def __init__(self, html):
