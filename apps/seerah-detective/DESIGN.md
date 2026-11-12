@@ -38,7 +38,7 @@ Why: the lens is the detective's tool; the ruled page is the report. Together th
 +--------------------------------------+
 ```
 
-Measured first-control top: _pending (T5.14)_; target ≤ 600 px at 390 × 844 and 375 × 812.
+Measured first-control top (search field, `#case-search`): 253 px at 390 × 844 and 253 px at 375 × 812, light and dark (T5.14, Chrome headless over `bun run preview`). Desktop 1440 × 1000: 325 px. Case page: first clue summary at 362 px (390 × 844).
 
 ## 5. Component states (this app)
 
