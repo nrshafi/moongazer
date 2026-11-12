@@ -266,3 +266,14 @@ Branch `phase-3b-retire` (from `phase-3b-hosts`). The four merged apps are delet
 - Corrections log: removed the three entries that pointed at deleted apps.
 - Left as history: `_build/`, `_implementation/batch*`, `populate-context.py`, `_implementation/research/`, and the `deployment/` release and status records (`status.json`, `automation-result.json`, `seo-*release.json`, `search-console.json`), which describe what was deployed.
 - Validation: verify.ts check 16/16 (0 errors, 0 warnings), test 16/16 (251 pass, 0 fail), build 16/16; sync-shared identical; `bun test _implementation/seo.test.ts homepage/tests` 60 pass; homepage build 8 pages and 16 app links; verify-static 313 pages; verify-seo passed (17 sites, 323 pages); text-join audit 0 unexplained joins. No push and no Cloudflare action.
+
+## 2026-11-12T06:20:00+06:00 — D2c: merged apps deleted, 16 apps on new hosts (R3B)
+
+The owner asked to keep only the new things, with no redirects (decision D2c in `plan/implementation/00-INDEX.md`). Work was split across subagents:
+- A Sonnet subagent deleted the four merged apps and the moved, import and redirect machinery.
+- The orchestrator renamed the 16 apps to slugs and hosts that match their names, and set up Cloudflare.
+- A Haiku subagent refreshed the per-app docs.
+
+Validation: 16/16 check, test and build (251 tests); sync identical; 60 repo tests; verify-static 313 pages; verify-seo passed; text joins 0; `host-smoke.mjs` 16/16; counter check passed.
+
+Two Pages projects carry an `-app` suffix because Cloudflare refused the plain names. Old projects and DNS records are deleted after the live check. Details are in `plan/implementation/releases/R3B.md`.
