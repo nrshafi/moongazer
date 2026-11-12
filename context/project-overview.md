@@ -2,7 +2,7 @@
 
 ## Overview
 
-A portfolio of Islamic learning tools that visitors can use immediately without accounts or personal data histories. Sixteen independent Astro/Bun static apps remain from the ranked twenty-app shortlist; four were merged into other apps and deleted under D2c. Each is deployable at the root of a separate Cloudflare Pages project. Earlier standalone HTML demonstrations remain reference prototypes.
+A portfolio of Islamic learning tools that visitors can use immediately without accounts or personal data histories. Seventeen independent Astro/Bun static apps: sixteen remain from the ranked twenty-app shortlist (four were merged into other apps and deleted under D2c), and the Zakat Calculator was added in P7. Each is deployable at the root of a separate Cloudflare Pages project. Earlier standalone HTML demonstrations remain reference prototypes.
 
 ## Goals
 
@@ -41,6 +41,7 @@ A portfolio of Islamic learning tools that visitors can use immediately without 
 | 18 | Revelation Context Explorer · `apps/why-it-was-revealed` | Why It Was Revealed | 4338 | 14 | 12 |
 | 19 | Family Islamic Learning Challenges · `apps/family-halaqa` | Family Halaqa | 4339 | 16 | 12 |
 | - | Removed under D2c (was Islamic Misinformation Casebook) | - | 4340 | - | - |
+| P7 | Zakat Calculator · `apps/zakat-calculator` (new in R7) | Zakat Calculator | 4341 | 6 | 44 |
 
 ## Features and scope
 
