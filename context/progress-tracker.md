@@ -339,3 +339,21 @@ Files: `homepage/index.html`, `render.mjs`, `build.mjs`, `app.js` (module), `dai
   - `verify-static.py`: 313 pages.
   - Headless Chrome at 390 × 844, 820, 1060 and 1440, with a page clock before and after the epoch: no overflow and no script errors. Tonight's ayah is fetched and swapped when it differs from the build date. The first library card is at 743 px on phones (limit 844).
 - Remaining: T6.8 (Booktube JSON) once the app daily banks are merged; R6 epoch setting.
+
+## 2026-11-12T18:07:51+06:00 — R6 daily games and sharing
+
+`phase-6-daily` is complete (T6.1–T6.10). It was merged to `main` and pushed; CI deploys.
+- **Content:** C1, C2, C3, C10 and C18 were each verified by a separate model run, with fixes, and spot-checked by the agent under D2b.
+- **Epoch:** `DAILY_EPOCH` is `2026-11-12`.
+- **Validation:** all 16 apps pass check, test and build. The other checks passed:
+  - `sync-shared` (both sets);
+  - `verify-static` (313 pages);
+  - text joins (0);
+  - `seo.test` (9);
+  - `homepage/tests` (55);
+  - `verify-seo` (17 sites);
+  - first screen (96 of 96);
+  - the counter check.
+  The details are in `plan/implementation/releases/R6.md`.
+- **Not run:** the e2e Playwright flows; the harness is not available here.
+- **Remaining:** the production result is recorded in R6 after CI. P7 continues with the zakat method fixes, the Ramadan dates check, then T7.6 and the hub.
