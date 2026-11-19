@@ -42,3 +42,4 @@ Thumbs.db
 
 # Agent worktrees
 .claude/worktrees/
+_implementation/screens/
