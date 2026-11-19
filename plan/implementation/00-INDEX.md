@@ -2,6 +2,8 @@
 
 Written 11 November 2026 (Asia/Dhaka) from a founder decision interview held the same day. This folder is the **authoritative execution plan** for Moongazer up to Ramadan 1448 and the work after it. It replaces these as instructions: `plan/agents/06–15`, `plan/MOONGAZER_STRATEGIC_DECISIONS.md` and the open questions in `plan/FIRST_PARTY_SERVICES_PLAN.md`. Those files remain as background only. `plan/REPORT.md`, `plan/DESIGN_RECOMMENDATIONS.md` and `plan/Verify_Me.md` remain as reference material where a task cites them.
 
+**Resuming after the 20 Nov 2026 pause:** start with `NEXT-STEPS.md`.
+
 **If you are a model given one task:** read `01-HANDOVER-PROTOCOL.md` first, then your phase file, then only the task you were given. Do not start other tasks.
 
 ## 1. Settled decisions (11 November 2026)

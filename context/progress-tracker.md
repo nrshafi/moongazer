@@ -76,6 +76,14 @@ The authorized Moongazer publication is complete. The directory and twenty apps 
 - Release ZIPs are CRC-checked and have SHA-256 records in `release/manifest.json`. Each contains static site files at the archive root.
 - Current context verification: `_implementation/qa/context-docs-audit.json`. Initial methodology-only baseline/audit remains historical evidence, not a prohibition on authorized future code changes.
 
+## Paused: P8 and track D (20 Nov 2026)
+
+2026-11-20 02:17 Asia/Dhaka: the owner paused work to save tokens. All delegated workers were cancelled. State and the resume plan are in `plan/implementation/NEXT-STEPS.md`.
+- **Release branch `r8` (43c47a7):** P8 mastery loop in four apps, the C9 and C15 banks, and the D1 shared design system.
+- **Still open:** the C13 and C6 banks (re-check loop), and D1b, D2, D3a, D3b, D4 and D5.
+- **Not done:** R8 release and the T8.8 browser verification.
+- **Production:** unchanged at 8239f75.
+
 ## In progress and next up
 
 No implementation or hosting work remains from this request. Maintain sources, provenance and deployment records with later changes.
