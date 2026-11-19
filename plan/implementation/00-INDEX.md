@@ -61,6 +61,7 @@ Dates are targets in Asia/Dhaka. "R" is a production release the owner publishes
 | P8 Diagnostic Mastery Loop | `P8-mastery-loop.md` | app lane | 7 Dec–8 Jan | with R7 |
 | C Depth Gate content | `C-content-track.md` | content | 16 Nov–8 Jan, rolling | merged into each release |
 | D Frontend audit and redesign | `D-frontend-audit.md` | shared, then app | from 20 Nov | with R8 |
+| E Content copy audit and rewrite | `E-content-copy-audit.md` (source: `E-content-audit-source.txt`) | content | after R8 | R9 (E1 may ride R8) |
 | P9 Depth Gate audit, freeze release, burn-in | `P9-gate-audit-freeze.md` | shared | 9–15 Jan; burn-in to ~7 Feb | R8 = freeze |
 | P10 After Ramadan | `P10-after-ramadan.md` | all | from ~mid-March 2027 | per item |
 

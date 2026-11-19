@@ -111,12 +111,34 @@ D1b should land first, or at least before D3b, D4 and the mastery pages are revi
      - claim no scholarly review.
    - **Tables:** update `C-content-track.md` rows C6, C9, C13 and C15 and the `00-INDEX.md` phase table.
    - **Tracker:** add a `context/progress-tracker.md` entry, timestamped with plain `date` in Git Bash.
-5. **Ship.**
+5. **Optional:** E1 from §5 (production leaks and stale counts), only after C13 and C6 are merged.
+6. **Ship.**
    - Fast-forward or merge `r8` into `main` and push. A push deploys through GitHub Actions; watch the run.
    - Smoke-test live: the apex, a few app hosts, the four mastery routes and `/art/*.svg`.
-   - Push includes the two local plan commits.
+   - The push also carries the local plan commits on `main` (D.01–D.04).
 
-## 5. After R8 (backlog, unchanged)
+## 5. Track E: content copy rewrite (after R8)
+
+The owner's content audit (20 Nov) is in `E-content-copy-audit.md`, with the verbatim source in `E-content-audit-source.txt`.
+
+**Packages:** six, E1–E6:
+- E1: production leaks and stale counts;
+- E2: homepage collections;
+- E3: SEO titles and descriptions;
+- E4: learning-guide summaries;
+- E5: Escape Room rooms and Salah lesson notes;
+- E6: tone pass across seven apps.
+
+**Timing:** they run after R8, as R9, because they rewrite the same `content.json`, `learning.json` and `seo.json` files that the C13 and C6 banks and D3b/D4 touch. E1 is small and may ride in R8 once C13 and C6 are merged.
+
+**Rules (read §2 of that file first):**
+- Any new factual or religious sentence goes through the Grok second pass. Several proposed notes add unsourced claims, for example "to the angels" in the closing-salam note.
+- Counts are read from the data, not taken from the prompt.
+- Copy must describe what is on `r8` (the mastery loop, `/check/`, `/course/`, no Stories reading check).
+- Keep the "not a fatwa / not a ruling" lines, in calmer words.
+- Honorifics, SEO title length and the protected-field diff script are required.
+
+## 6. After R8 (backlog, unchanged)
 
 **Content:**
 - C4 Escape Room Ramadan rooms;
@@ -132,7 +154,7 @@ D1b should land first, or at least before D3b, D4 and the mastery pages are revi
 
 **Clean-up:** remove merged worktrees and branches (`design-night`, `phase-8-*`, `worktree-agent-*`, `content-*-verify` after merge) with `git worktree remove`, then delete the branches.
 
-## 6. Standing rules (unchanged)
+## 7. Standing rules (unchanged)
 
 - **Content:** Quran text is exact and canonical, copied by script from `_implementation/research/quran-full.json` and never typed. Hadith are paraphrased with collection and number. Honorifics follow the house style: "(peace be upon him)" after prophets and ﷺ for the Prophet Muhammad.
 - **Media and privacy:** no images of people or animals. No music or sound. No third-party scripts. Never claim scholarly review. Keep the owner's email private and never print secrets or tokens.

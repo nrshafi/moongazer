@@ -1,0 +1,363 @@
+Moongazer Content Audit & Coding-Agent Rewrite PackThis pack reviews all 77 user-facing JSON content files across Moongazer's homepage, deployment metadata, and 17 apps. Part 1 summarizes the real problems found in the archive. Part 2 gives you 6 self-contained, copy-paste prompts you can feed straight to your coding agent—one at a time or in sequence—with exact file paths, JSON keys, and human-written replacement copy.Part 1: Content Audit SummaryThe biggest problem across Moongazer's copy is not just generic AI buzzwords—it is defensive, compliance-lawyer prose mixed with unfinished internal scaffolding. Almost every intro, SEO description, and methodology block spends half its word count nervously explaining what the app is not ("does not replace tafsir", "not an assessment", "fictional editorial exercises", "no child profiles", "without player accounts"). Instead of feeling like a warm, thoughtful Islamic learning site, it reads like a legal audit memo.Six Concrete Issues FoundPriorityIssueAffected FilesExamples FoundP0Internal build/research logs shipped in production JSONapps/zakat-calculator/src/data/content.json, homepage/seasonal.json, homepage/ramadan-content.jsonzakat-calculator ships task: "P7 T7.4 / C17", quranMcpCalls, grounding_nonce, "First attempt was rate_limited", and "The second-pass verification (T7.4 verification.json) is a separate task." seasonal.json and ramadan-content.json leak _implementation/research/ramadan/dates.json.P0Stale counts & outdated app namesapps/family-halaqa/src/data/content.json, apps/word-groups/src/data/content.jsonfamily-halaqa methodology says "Twelve single-sitting family packs" when there are 42 packs. word-groups methodology says "Unlike Quran Connections..." (an old name for Ayah Threads) and "all answers are inspectable in client code".P1Robotic "disclaimer fatigue" on homepage, collections & learning guideshomepage/collections.json, deployment/learning-guides.json, all 17 apps/*/src/data/learning.jsonOveruse of "editorial prompt", "source-reading", "reading check", "fictional", "rather than" (36×), and repeated disclaimers inside every single card instead of one calm note on the Sources page.P1Keyword-stuffed, monotonous SEO metadatadeployment/seo-catalog.json, all 17 apps/*/src/data/seo.jsonAll 17 titles use the exact same Name — Subtitle | Moongazer em-dash formula. Descriptions mechanically wedge in the keyword string (e.g., "Solve short Seerah cases in this Seerah learning game").P1Weak, empty, or absurd app-level copyquran-escape-room, understand-your-salah, family-halaqaAll 8 rooms in quran-escape-room have zero atmosphere ("Three passages to read: Quran 2:153, 16:127 and 103:3."). understand-your-salah pastes "Verse numbering follows the fetched Hafs edition" 7 times, leaves 5 note fields blank, and uses absurd quiz distractors ("A safe harvest only", "The one entering a market"). family-halaqa ends warm family activities with cold HR-style warnings ("Do not record names or personal stories. No craft materials, private story or sending a message is required.").P2Database-style summaries in study appscivilization-timeline, ayah-threads, places-in-the-quran, parables-of-the-quran, why-it-was-revealed, everyday-akhlaqSummaries open with "The Met dates...", "UNESCO dates...", or "Al-Tafsir al-Muyassar compares..." instead of leading with the actual history or verse meaning. ayah-threads explanations include empty tautologies like "Each passage mentions thankfulness, with different settings and audiences."Hard Guardrails for Your Coding AgentInclude these rules in every session (they are already built into the prompts below):Never alter canonical scripture or citations: Do not modify any arabic, ar, translation (Pickthall), ref, url, translationUrl, hadith collection/number, or sources.json files.Preserve all JSON schemas, IDs, slugs, and answer indices: Only edit the specified text fields.Keep honorifics consistent: Retain ﷺ wherever Prophet Muhammad ﷺ is mentioned in editorial text.Validate every edited JSON file after changes (python3 -m json.tool or your repo's build/test command).Part 2: Ready-to-Paste Prompts for Your Coding AgentRun these prompts in order. Prompts 1–5 give your agent exact, ready-to-drop replacement copy. Prompt 6 gives your agent concrete examples and strict rules to clean up the remaining high-volume content files.Prompt 1 — Fix Production Bugs, Stale Counts & Internal Dev LeaksYou are cleaning up production content bugs and leaked internal build metadata in the Moongazer repository.
+
+HARD RULES:
+- Do NOT touch any Arabic Quran text, Pickthall translations, ayah references, hadith numbers, or URLs.
+- Before removing any top-level metadata keys in `apps/zakat-calculator/src/data/content.json`, grep the codebase (especially `apps/zakat-calculator/src/`) to confirm whether any component or build script reads `task`, `sessionStart`, `sessionEnd`, `quranSnapshot`, `quranMcpCalls`, `quranMcpCrossCheck`, `quranMcpCrossCheckNote`, `notAccessible`, or `copiedFrom`. Only remove keys that are unused in code; if a key is read by UI/scripts, leave the key and clean only its user-facing text.
+
+MAKE THESE EXACT UPDATES:
+
+1. `apps/zakat-calculator/src/data/content.json`
+   - Update `method.disclaimer` to:
+     "This calculator walks through common zakat rules using cited Quranic verses and classical scholarly positions. It is an educational tool, not a formal fatwa—consult a qualified scholar for complex estates, business structures, or personal rulings."
+   - Remove internal build-log keys (`task`, `sessionStart`, `sessionEnd`, `quranSnapshot`, `quranMcpCalls`, `quranMcpCrossCheck`, `quranMcpCrossCheckNote`, `notAccessible`) and per-entry `copiedFrom` fields IF grep confirms nothing in the codebase references them.
+
+2. `apps/family-halaqa/src/data/content.json`
+   - Fix the stale count ("Twelve" -> 42 packs) and remove defensive domain-name legalese. Replace `methodology` with:
+     "Forty-two short family packs pair a Quran passage with a quick question, a conversation prompt, and a simple activity you can do in about ten minutes. Age bands are only a rough guide, and adults may want to rephrase older English wording from Pickthall's translation for younger children. Everything stays on your device—no accounts, no profiles, and no tracking."
+
+3. `apps/word-groups/src/data/content.json`
+   - Fix the outdated app name ("Quran Connections" -> "Ayah Threads") and remove developer jargon ("inspectable in client code"). Replace `methodology` with:
+     "Thirty boards challenge you to sort sixteen terms into four connected groups of four. Each group draws on cited Quranic passages—spanning words in the ayat, surah names, prophetic qualities, and shared Arabic roots—and is rated from tier 1 (most direct) to tier 4. Boards are labelled Starter (tier sum 8 or less), Mixed (9–10), or Challenging (11+). Unlike Ayah Threads, which links three passages under one theme, Word Groups asks you to spot connections across individual terms. Where a word could reasonably fit two groups on the same board, that pairing is either kept apart or accepted without counting as a miss."
+
+4. `homepage/seasonal.json`
+   - Remove the internal `note` field referencing `P7 T7.11` and `_implementation/research/ramadan/dates.json` (if no script reads `note`).
+   - Update `title`, `text`, and `action` to:
+     "title": "Thirty Nights of Ramadan",
+     "text": "One ayah for each night, ten-minute family halaqa packs, juz quizzes, and a guide for the last ten nights. Ramadan 1448 is expected to begin around 8 February 2027.",
+     "action": "Open the Ramadan guide"
+
+5. `homepage/ramadan-content.json`
+   - Clean `dates.source` so it does not expose internal repo paths:
+     "source": "Umm Al-Qura Calendar (ummulqura.org.sa), checked November 2026; UK moon-sighting estimates place Eid on 10 March 2027."
+   - Remove `lastTen.checked` if unused by UI/scripts.
+
+After editing, run JSON validation across all modified files and run the repo's build/test check to confirm nothing broke.
+Prompt 2 — Rewrite Homepage Collections (homepage/collections.json)Rewrite the editorial copy in `homepage/collections.json` so it sounds warm, clear, and genuinely helpful rather than like a legal compliance document.
+
+HARD RULES:
+- Keep every `slug`, `category`, `name`, `paths` structure, `items[].slug`, `items[].path`, `items[].label`, and `questions` array intact.
+- Only update `title`, `heading`, `description`, `intro`, `guidance`, and `paths[].items[].reason` / `questions[].answer` as specified below.
+
+Apply these exact replacements by matching each collection's `slug`:
+
+1. slug: "quran-learning"
+   - "title": "Free Quran Quizzes, Search & Study Tools | Moongazer"
+   - "heading": "Eight ways to spend time with the Quran"
+   - "description": "Test your surah recognition, search Arabic or English wording, trace themes across passages, and read parables and revelation context with sources right beside the text."
+   - "intro": "Whether you have five minutes for a daily surah puzzle or an hour to sit with a parable, these eight tools meet you where you are. Pick a quiz when you want a quick check, wording search when a phrase is on the tip of your tongue, or a guided reading when you want to slow down with commentary."
+   - "guidance": "Start with the verses themselves before opening any note or diagram. Quranic text, translations, and classical commentary are always kept clearly separate from our questions and visual aids, so you can see where the scripture ends and the study tool begins."
+   - Update `questions[0].answer`:
+     "Open Is It in the Quran? to search Arabic text, Pickthall's English translation, or a specific verse reference. Keep in mind that a blank result only means those exact words did not match—the same idea may appear under different wording."
+   - Update `questions[1].answer`:
+     "Parables of the Quran pairs each passage with a simple visual map of its imagery, while Places in the Quran links verses to geography and leaves uncertain sites unpinned on the map."
+
+2. slug: "seerah-history"
+   - "title": "Seerah & Islamic History Explorers | Moongazer"
+   - "heading": "Read Seerah and Islamic history with the sources open"
+   - "description": "Trace the Prophet's life ﷺ year by year, weigh primary reports in short cases, and follow Islamic civilization across nine regions from 661 to 1648 CE."
+   - "intro": "Good history starts by looking closely at what the sources actually say. Follow the major turns of the Prophet's life ﷺ on a timeline, step into a short Seerah case to test what a report establishes, or zoom out across ten centuries of cities, trade, and scholarship."
+   - "guidance": "Not every historical date carries the same certainty. Where a year is conventional or approximate, the notes say so plainly—and when two events sit near each other on a timeline, we keep their context separate unless the sources link them directly."
+
+3. slug: "prayer-everyday-practice"
+   - "title": "Salah Meanings, Hifz Planning & Everyday Akhlaq | Moongazer"
+   - "heading": "Bring what you read into prayer and daily life"
+   - "description": "Learn the words you recite in salah, plan a realistic hifz and revision routine, calculate zakat step by step, and think through everyday character dilemmas."
+   - "intro": "Knowledge settles when it meets daily habit. Walk through the meanings of your prayer from opening takbir to salam, map out a hifz schedule that protects your revision first, work through a real-world akhlaq dilemma, or calculate your zakat with every scholarly option clearly labelled."
+   - "guidance": "Use these tools as practical companions, not verdicts. The hifz planner estimates time based on your own pace, the akhlaq scenarios are conversation starters rather than rulings, and the zakat calculator shows its working so you can verify complex questions with a scholar."
+
+4. slug: "islamic-games"
+   - "title": "Islamic Word Games, Escape Rooms & Family Halaqa | Moongazer"
+   - "heading": "Play together, then open the passage"
+   - "description": "Solve Quran escape rooms, sort sixteen Quranic words into four hidden groups, race a Seerah chronology, or sit down for a ten-minute family halaqa."
+   - "intro": "Learning sticks better when people are talking and thinking together. Gather around one screen for a Quran escape room, test your eye for patterns in Word Groups, or pick a ten-minute Family Halaqa pack with a verse, a question, and a shared activity."
+   - "guidance": "Every game here runs straight in the browser with no sign-ups, leaderboards, or profiles. Read the clues aloud, adapt the wording for younger kids, and treat the score as a light prompt to open the verses afterward."
+
+Validate `homepage/collections.json` after saving.
+Prompt 3 — Rewrite All 17 SEO Titles & Descriptions (deployment/seo-catalog.json + Per-App seo.json)Rewrite the `title` and `description` fields across `deployment/seo-catalog.json` and sync ONLY `title` and `description` into each corresponding `apps/<slug>/src/data/seo.json`.
+
+HARD RULES:
+- Do NOT overwrite or remove any other keys (`keyword`, `collection`, `prefix`, `nameField`, `summaryField`, `detailLead`, `detailMode`, `extraCollections`, `extraPages`, etc.) in either `deployment/seo-catalog.json` or `apps/<slug>/src/data/seo.json`.
+- Keep all slugs exact.
+
+Apply these exact `title` and `description` values for each of the 17 slugs:
+
+- `guess-the-surah`
+  - title: "Guess the Surah: Daily Quran Clue Quiz | Moongazer"
+  - description: "Can you name the surah from its opening ayah? Reveal clues one by one, pick from four chapters, and read the full passage with sources."
+
+- `ayah-threads`
+  - title: "Ayah Threads: Daily Quran Theme Puzzle | Moongazer"
+  - description: "Read three Quran passages and spot the thread that connects them. A calm daily puzzle that links straight back to the verses in context."
+
+- `seerah-detective`
+  - title: "Seerah Detective: Primary-Source Cases from the Prophet's Life ﷺ | Moongazer"
+  - description: "Weigh short hadith reports from the Prophet's life ﷺ, decide what the evidence supports, and inspect the cited narrations behind each case."
+
+- `everyday-akhlaq`
+  - title: "Everyday Akhlaq: Real-Life Character Scenarios | Moongazer"
+  - description: "Work through realistic everyday and workplace dilemmas, see how each choice plays out, and read the Quran and hadith passages behind them."
+
+- `seerah-timeline`
+  - title: "Seerah Timeline: The Prophet's Life ﷺ (610–632 CE) | Moongazer"
+  - description: "Follow thirty-six moments from the Prophet's life ﷺ in chronological order, paired with primary reports and clear notes on approximate dates."
+
+- `hifz-planner`
+  - title: "Hifz Planner: Quran Memorization & Revision Calculator | Moongazer"
+  - description: "Plan your weekly hifz without letting revision slip. Enter your pace, memorized portion, and study days to see a realistic page-by-page schedule."
+
+- `is-it-in-the-quran`
+  - title: "Is It in the Quran? Search Every Ayah & Common Claims | Moongazer"
+  - description: "Search the full Quran in Arabic or English, look up any verse reference, and check well-known sayings to see whether they come from Quran or hadith."
+
+- `quran-escape-room`
+  - title: "Quran Escape Room: Passage-Based Puzzle Rooms | Moongazer"
+  - description: "Unlock eight themed rooms by reading three Quran passages closely and solving four puzzles—solo or around one screen with friends and family."
+
+- `stories-of-the-prophets`
+  - title: "Stories of the Prophets in the Quran | Moongazer"
+  - description: "Read fifty selected Quran passages across twenty-five prophets, from Adam to Isa, with direct verse references and a short reading check for each."
+
+- `places-in-the-quran`
+  - title: "Places in the Quran: Interactive Map & Verse Guide | Moongazer"
+  - description: "Explore fifteen places named in the Quran alongside their verses and geographical notes—with pins only where the location is established."
+
+- `word-groups`
+  - title: "Word Groups: Quranic Connections Puzzle | Moongazer"
+  - description: "Sort sixteen Quranic words into four hidden groups across thirty boards, then read the verses and Arabic roots that tie each group together."
+
+- `understand-your-salah`
+  - title: "Understand Your Salah: Prayer Words & Meanings | Moongazer"
+  - description: "Learn what you say in prayer from the opening takbir to the closing salam, across fifteen short lessons with Al-Fatiha audio and cited sources."
+
+- `parables-of-the-quran`
+  - title: "Parables of the Quran: Passages, Diagrams & Reflections | Moongazer"
+  - description: "Sit with fourteen Quranic parables—each paired with the full passage, a visual breakdown of its imagery, classical commentary notes, and a reflection prompt."
+
+- `civilization-timeline`
+  - title: "Civilization Timeline: Islamic History Across Nine Regions | Moongazer"
+  - description: "Trace twenty-four milestones of Islamic cities, scholarship, trade, and architecture from 661 to 1648 CE, with institutional sources and regional maps."
+
+- `why-it-was-revealed`
+  - title: "Why It Was Revealed: Asbab al-Nuzul Readings | Moongazer"
+  - description: "Read ten Quran passages beside their Sahih al-Bukhari reports, distinguishing direct occasions of revelation from broader historical context."
+
+- `family-halaqa`
+  - title: "Family Halaqa: Ten-Minute Islamic Learning Packs | Moongazer"
+  - description: "Forty-two ready-to-use family sittings with a Quran passage, a quick question, a conversation starter, and a simple activity for ages 5 and up."
+
+- `zakat-calculator`
+  - title: "Zakat Calculator: Step-by-Step with Cited Sources | Moongazer"
+  - description: "Calculate your annual zakat with your own gold or silver nisab prices, clear choices where scholars differ, and cited sources for every step."
+
+Validate `deployment/seo-catalog.json` and all 17 `apps/*/src/data/seo.json` files after updating.
+Prompt 4 — Rewrite All 17 Learning Guide Summaries (deployment/learning-guides.json + Per-App learning.json)Rewrite the `summary` field for all 17 apps in `deployment/learning-guides.json` and sync ONLY the `summary` field into each corresponding `apps/<slug>/src/data/learning.json`.
+
+HARD RULES:
+- Do NOT alter `heading`, `steps`, `questions`, `related`, or `collection` unless fixing obvious compliance-jargon phrasing in `questions` (keep every answer factually accurate).
+- Write in clear, natural English—warm, concise, and free of defensive boilerplate.
+
+Apply these exact `summary` replacements:
+
+- `guess-the-surah`:
+  "Guess the Surah gives you a daily clue-by-clue Quran quiz. You start with an opening ayah in English, reveal extra hints like the Arabic text or verse count if you need them, and pick from four surahs—then open the passage itself so every round leads back to reading."
+
+- `ayah-threads`:
+  "Ayah Threads pairs three Quran passages that share a common theme. Read all three, pick the thread that links them, and check the explanation alongside the full verses. A passage can carry many layers of meaning, so treat the theme as a starting point for closer reading."
+
+- `seerah-detective`:
+  "Seerah Detective turns short primary reports from the Prophet's life ﷺ into twelve focused cases. Read the clues, weigh what the narrations actually establish, and choose the conclusion that fits the evidence—without stretching past what the sources say."
+
+- `everyday-akhlaq`:
+  "Everyday Akhlaq walks you through realistic choices at school, home, and work. Pick how you would respond, see how the situation unfolds, and read the Quran and hadith passages connected to that character trait. Every scenario is fictional, so you can reflect or discuss in a group without putting anyone on the spot."
+
+- `seerah-timeline`:
+  "Seerah Timeline lays out thirty-six moments from the Prophet's life ﷺ alongside their source reports and historical notes. Browse the full arc or filter by era, with clear markers showing which dates are established and which are approximate."
+
+- `hifz-planner`:
+  "Hifz Planner helps you build a memorization schedule that actually holds up week to week. Enter your current portion, study days, and reading speed—the planner protects your revision time first, then shows how many new pages fit comfortably into what remains."
+
+- `is-it-in-the-quran`:
+  "Is It in the Quran? searches the complete Arabic Quran and Pickthall's English translation, plus twelve commonly misattributed sayings. Type a phrase or verse reference to inspect matching passages directly. Because it matches exact wording, an empty result only means that phrasing didn't appear—not that the concept is absent."
+
+- `quran-escape-room`:
+  "Quran Escape Room builds eight themed puzzle rooms around three Quran passages each. Read closely to unlock four sequential challenges, using hints whenever you want. Play solo or gather around one screen and talk through the verses together."
+
+- `stories-of-the-prophets`:
+  "Stories of the Prophets gathers fifty Quran passages across twenty-five named prophets. Open any profile to read what the Quran itself says about that prophet and try a short comprehension check. Prophets mentioned briefly in the Quran stay brief here, with no unsourced filler added."
+
+- `places-in-the-quran`:
+  "Places in the Quran connects fifteen named locations to their Quranic passages and geographical notes. Established cities and heritage sites appear on the map for context, while locations whose exact modern site is uncertain are left unpinned."
+
+- `word-groups`:
+  "Word Groups gives you sixteen Quranic terms to sort into four hidden connections—from surah names and prophetic qualities to shared Arabic roots. Solve a board, then read the cited verses that explain why each group belongs together."
+
+- `understand-your-salah`:
+  "Understand Your Salah walks through the words of prayer from the opening takbir to the closing salam in fifteen short lessons. Read the Arabic, reveal the meaning when you're ready, and check your grasp of a key phrase—with full Al-Fatiha audio included."
+
+- `parables-of-the-quran`:
+  "Parables of the Quran brings together fourteen Quranic parables with their full verses, a three-part visual breakdown of the imagery, classical commentary notes, and a reflection question. Read the passage first, use the diagram to trace the comparison, and return to the text with fresh eyes."
+
+- `civilization-timeline`:
+  "Civilization Timeline traces twenty-four milestones across nine regions of the Islamic world from 661 to 1648 CE—covering cities, learning, trade, and architecture. Every entry links to its museum or heritage source and notes how precise its dating is."
+
+- `why-it-was-revealed`:
+  "Why It Was Revealed pairs ten Quran passages with named reports from Sahih al-Bukhari and links to classical tafsir. Each reading separates a direct occasion of revelation from broader historical context, so you can see what a narration explains and where its limits lie."
+
+- `family-halaqa`:
+  "Family Halaqa offers forty-two ten-minute packs for sitting and learning together. Each pack includes a Quran passage, a quick question, an open conversation prompt, and a simple shared activity—grouped by age range so you can pick one and start right away."
+
+- `zakat-calculator`:
+  "Zakat Calculator walks you through your annual zakat step by step. Enter your assets, debts, and local gold or silver prices, choose a clearly labelled option wherever scholars differ, and review the exact method and sources behind your total."
+
+Validate `deployment/learning-guides.json` and all 17 `apps/*/src/data/learning.json` files after saving.
+Prompt 5 — Rewrite quran-escape-room Descriptions & understand-your-salah Quizzes + NotesUpgrade the user-facing copy in two apps that currently feel robotic or unfinished: `apps/quran-escape-room/src/data/content.json` and `apps/understand-your-salah/src/data/content.json`.
+
+HARD RULES:
+- Do NOT touch any `arabic`, `translation`, `passage`, `passages`, `ref`, `refs`, `url`, `translationUrl`, `sources`, `audio`, or `answer` index.
+- Every rewritten `options` array in `understand-your-salah` MUST keep the exact correct answer at the exact existing `answer` index (verified below).
+
+---
+### FILE 1: `apps/quran-escape-room/src/data/content.json`
+Replace ONLY the `description` field on each of the 8 rooms (matched by `id`) so each room actually feels like a themed puzzle room while still pointing to its three passages:
+
+1. id: "patience" (The Lantern Room)
+   "description": "A quiet room lit by a single brass lantern. Read Quran 2:153, 16:127, and 103:3 closely to see what holds a person steady when everything pushes back."
+2. id: "gratitude" (The Locked Library)
+   "description": "Tall shelves of manuscripts stand behind four brass clasps. Open Quran 14:7, 31:12, and 2:152 to trace how thankfulness shapes both heart and blessing."
+3. id: "justice" (The Stone Archway)
+   "description": "Carved scales rest above a heavy stone arch. Read Quran 4:135, 5:8, and 42:15 to unlock what standing firm in fairness demands—even when it costs you."
+4. id: "mercy" (The Garden Courtyard)
+   "description": "Rainwater gathers in a shaded courtyard basin. Look through Quran 7:156, 39:53, and 21:107 to follow a thread of mercy wide enough to leave no one outside hope."
+5. id: "learning" (The Copper Door)
+   "description": "An inkwell and a reed pen sit beside a bolted copper door. Read Quran 96:1-5, 20:114, and 39:9 to see how seeking knowledge begins and why it stays humble."
+6. id: "keeping-commitments" (The Blue Chamber)
+   "description": "Sealed scrolls line a cobalt-tiled table. Examine Quran 17:34, 5:1, and 16:91 to trace the weight the Quran places on every promise and covenant."
+7. id: "hospitality" (The Cedar Hall)
+   "description": "A warm table has been prepared for unexpected guests. Follow Quran 51:24, 51:26, and 51:27 to notice the quiet generosity of Ibrahim's welcome."
+8. id: "careful-speech" (The Map Room)
+   "description": "Every word echoes twice under this vaulted ceiling. Read Quran 33:70, 49:11, and 17:53 to unlock the locks built around honest, measured speech."
+
+---
+### FILE 2: `apps/understand-your-salah/src/data/content.json`
+Replace ONLY the `options` and `note` fields on each of the 15 lessons (matched by `id`). Keep `answer` unchanged—each correct option sits at the exact index noted in brackets:
+
+1. id: "opening-takbir" [answer: 3]
+   - options: ["A request for forgiveness", "A declaration of faith", "A greeting to the congregation", "Allah’s greatness"]
+   - note: "Raising the hands and saying Allahu Akbar marks the transition from ordinary concerns into prayer. Reported in Sahih al-Bukhari 757 and Sahih Muslim 601."
+
+2. id: "fatiha-1" [answer: 1]
+   - options: ["A prophet", "Allah", "The angels", "The congregation"]
+   - note: "Beginning with Bismillah places the entire recitation under Allah's name and mercy. Note: the audio player above recites the full Surah Al-Fatiha."
+
+3. id: "fatiha-2" [answer: 3]
+   - options: ["The righteous alone", "The heavens and earth", "The messengers", "Allah, Lord of the Worlds"]
+   - note: "Al-hamdu lillah combines gratitude with praise—recognizing Allah as Rabb, the Sustainer and Caretaker of all creation."
+
+4. id: "fatiha-3" [answer: 1]
+   - options: ["The Mighty, the Wise", "The Beneficent, the Merciful", "The First, the Last", "The Hearing, the Seeing"]
+   - note: "Ar-Rahman and Ar-Rahim both come from the root for mercy (rahmah), echoing the opening ayah and framing Allah's lordship in compassion."
+
+5. id: "fatiha-4" [answer: 1]
+   - options: ["The Day of Arafah", "The Day of Judgment", "The Day of Gathering on Friday", "The Day of Migration"]
+   - note: "Yawm ad-Din is the Day of Recompense, when every deed is weighed with complete justice and no authority remains except Allah's."
+
+6. id: "fatiha-5" [answer: 0]
+   - options: ["Allah alone", "Allah and the prophets", "The righteous community", "The angels who record deeds"]
+   - note: "Putting 'Thee alone' (Iyyaka) first in Arabic makes both worship and seeking help exclusive to Allah—a turning point where the surah shifts into direct address."
+
+7. id: "fatiha-6" [answer: 3]
+   - options: ["Provision and wealth", "Victory over enemies", "Long life and health", "Guidance to the straight path"]
+   - note: "After praise and devotion comes the core request of every rak'ah: steady guidance on the clear, upright path (as-sirat al-mustaqim)."
+
+8. id: "fatiha-7" [answer: 2]
+   - options: ["Those who rely on their own strength", "Those who go astray", "Those whom Allah has favoured", "Those who earn anger"]
+   - note: "The closing ayah defines the straight path by the people who walked it—those blessed with guidance—while asking to be kept from both willful rejection and heedless wandering."
+
+9. id: "bowing" [answer: 1]
+   - options: ["The Forgiving", "The Magnificent", "The Most High", "The Sustainer"]
+   - note: "In ruku', bowing your back physically mirrors the words: declaring Allah free of all imperfection and affirming His greatness (Al-Azim)."
+
+10. id: "rising" [answer: 3]
+    - options: ["The one who fasts in secret", "The one who gives charity", "The one who recites aloud", "The one who praises Allah"]
+    - note: "Said while rising from bowing, 'Sami'a Allahu liman hamidah' is both a statement and an assurance: Allah hears and responds to anyone who praises Him."
+
+11. id: "standing-praise" [answer: 2]
+    - options: ["A request for mercy", "A testimony of faith", "Praise", "A greeting of peace"]
+    - note: "Once standing upright again, you answer the previous phrase directly—offering praise to your Lord before moving into prostration."
+
+12. id: "prostration" [answer: 1]
+    - options: ["The Magnificent", "The Most High", "The Wise", "The Eternal"]
+    - note: "At the lowest physical point of prayer, with forehead on the ground, you call upon Allah as Al-A'la—the Most High."
+
+13. id: "tashahhud" [answer: 3]
+    - options: ["The ruler of Madinah", "The keeper of the keys", "The author of the Quran", "Allah’s servant and messenger"]
+    - note: "Follows the tashahhud narrated by Ibn Mas'ud in Sahih al-Bukhari. Calling Muhammad ﷺ both servant ('abd) and messenger (rasul) honors his mission while keeping worship for Allah alone. Other authentic wordings exist, such as Sahih Muslim 403a."
+
+14. id: "blessings" [answer: 2]
+    - options: ["Dawud", "Yunus", "Ibrahim", "Musa"]
+    - note: "Known as as-salat al-Ibrahimiyyah, this supplication asks Allah to bless Muhammad ﷺ and his family just as He blessed Ibrahim and his family. Other authentic wordings are also narrated."
+
+15. id: "closing-salam" [answer: 1]
+    - options: ["Forgiveness and provision", "Peace and Allah’s mercy", "Guidance and patience", "Strength and victory"]
+    - note: "Turning right and left with salam closes the prayer by extending peace and Allah's mercy to the angels and everyone praying beside you."
+
+Also update `methodology` in `apps/understand-your-salah/src/data/content.json` to:
+"Fifteen lessons walk through Surah Al-Fatiha and the core recitations of prayer from opening takbir to closing salam. Quranic passages use Uthmani Arabic with Pickthall's translation; hadith recitations use concise English renderings alongside cited reports. Use this as a guide to the meanings of prayer rather than a complete fiqh manual. The built-in audio recording plays the full Surah Al-Fatiha."
+
+Validate both JSON files and run tests/build after editing.
+Prompt 6 — Batch Tone-Cleanup Pass Across Remaining High-Volume AppsDo a targeted editorial rewrite pass across the remaining high-volume content files to remove stiff, repetitive, compliance-style prose while keeping every canonical verse, citation, and JSON schema untouched.
+
+HARD RULES:
+- NEVER modify `arabic`, `translation`, `ref`, `url`, `translationUrl`, `sources`, `id`, `slug`, `answer`, `date`, `year`, `point`, or `landPaths`.
+- BANNED AI/LEGALESE PHRASES (do not introduce or leave these in rewritten fields):
+  "editorial prompt", "editorial application", "fictional editorial exercise", "source-reading", "reading check", "not a claim that", "does not replace tafsir", "original concise", "fetched", "rather than" (avoid overusing), "not just X—it's Y", "delve", "tapestry", "quietly", "serves as", "underscore", "embark", "beacon", "resonance".
+- Write like a knowledgeable, grounded human editor: vary sentence length, lead with the actual subject (history, verse meaning, or human situation) instead of the database source name, and keep tone warm without being preachy.
+
+TARGET FILES & EXACT PATTERNS TO REWRITE:
+
+1. `apps/family-halaqa/src/data/content.json` (all 42 packs)
+   - Rewrite `discussion`, `activity`, `close`, and `teaching` to strip out cold privacy-waiver boilerplate repeated across packs:
+     - BEFORE: `close: "Choose one greeting to try together. Do not record names or personal stories."`
+     - AFTER:  `close: "Pick one greeting to practice together this week."`
+     - BEFORE: `activity: "Make a spoken thank-you message for a caregiver. No craft materials, private story or sending a message is required."`
+     - AFTER:  `activity: "Take turns saying a short, specific thank-you out loud for someone who helps your home run."`
+     - BEFORE: `discussion: "How could a nickname feel funny to one person and hurtful to another? Use made-up examples, without naming someone who was hurt."`
+     - AFTER:  `discussion: "How can a nickname feel like a joke to one person and sting for another? Try using made-up characters so no one feels put on the spot."`
+     - BEFORE: `teaching: "Al-Muyassar explains the warnings about ridicule, fault-finding and disliked names. The greeting exercise is an editorial application."`
+     - AFTER:  `teaching: "Al-Tafsir al-Muyassar notes that this verse forbids mocking others, hunting for faults, and calling people by hurtful nicknames."`
+   - Apply this same warmth and natural phrasing across all 42 packs. Keep privacy-friendly phrasing gentle ("using made-up examples" instead of "Do not record names or personal stories").
+
+2. `apps/civilization-timeline/src/data/content.json` (all 24 events + `methodology`)
+   - Rewrite `summary` so it leads with the actual historical event instead of `"The Met dates..."` or `"UNESCO dates..."` (the institution is already cited in `sources`).
+     - BEFORE: `"The Met dates the beginning of Umayyad rule to 661, with power centered in Syria."`
+     - AFTER:  `"In 661 CE, the Umayyad dynasty established its seat of rule in Damascus, shifting the political center of the caliphate to Syria."`
+     - BEFORE: `"UNESCO dates Kairouan’s foundation to 670 and describes its later Aghlabid flourishing."`
+     - AFTER:  `"Founded in 670 CE, Kairouan grew into North Africa's earliest major Islamic city and later flourished as a center of architecture and scholarship under the Aghlabids."`
+   - Rewrite `note` to add genuine historical nuance instead of defensive disclaimers (`"A political transition, not a claim that..."`).
+   - Tighten `methodology` to remove `"editorial numeric bounds"` and `"No Quran passage is used to prove a later historical date."`
+
+3. `apps/ayah-threads/src/data/content.json` (all 30 puzzles)
+   - Rewrite weak, tautological `explanation` strings so each one actually illuminates how the three specific verses connect.
+     - BEFORE: `"Each passage mentions thankfulness, with different settings and audiences."`
+     - AFTER:  `"Together, these three verses trace gratitude from promise to habit: Surah Ibrahim links thankfulness to increase, Luqman frames it as wisdom, and Al-Baqarah ties it directly to remembering Allah."`
+   - Keep `hint` crisp and natural.
+
+4. `apps/places-in-the-quran/src/data/content.json` (all 15 places + `methodology`)
+   - Rewrite `summary` and `note` so they read naturally rather than like GIS metadata.
+     - BEFORE: `summary: "The passage names Makkah while describing the restraint of opposing hands."` / `note: "The marker is the UN gazetteer city coordinate, not a reconstruction of the encounter."`
+     - AFTER:  `summary: "Surah Al-Fath mentions Makkah by name while recalling how Allah held back both sides from fighting in the valley."` / `note: "Pinned to modern Makkah for regional orientation; the exact valley location of the encounter is not reconstructed."`
+
+5. `apps/parables-of-the-quran/src/data/content.json` (all 14 parables + `methodology`)
+   - Rewrite `summary`, `nodes[].detail`, and `reflection` so they feel alive and readable instead of mechanical restatements (`"The opening image provides light around the person."` -> `"A fire is lit in the dark, briefly illuminating everything around the traveler."`).
+   - Keep every reflection grounded in the passage.
+
+6. `apps/why-it-was-revealed/src/data/content.json` (all 10 readings + `methodology`)
+   - Smooth out `reportSummary`, `establishes`, `limits`, `teaching`, and `reliability` so they stay scholarly and careful without repeating identical boilerplate (`"This app identifies the collection and narrator; it does not independently regrade chains..."`) verbatim on every card.
+
+7. `apps/everyday-akhlaq/src/data/content.json` (20 scenarios + 12 business scenarios)
+   - Keep the scenarios themselves (they are already concrete and relatable), but tighten any robotic `consequence` or `reflection` lines that overuse `"rather than"` or `"invites you to"`.
+
+VERIFICATION:
+After finishing all edits, run:
+1. A Python check confirming valid JSON across all modified files and verifying that zero `arabic`, `translation`, `ref`, `url`, `sources`, or `answer` values changed compared to `git diff`.
+2. The project's build/test suite to confirm zero regressions.
