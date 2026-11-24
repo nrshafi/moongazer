@@ -1,6 +1,3 @@
-// POST /api/event: anonymous aggregate counter beacon (P4.4).
-// Receives navigator.sendBeacon bodies (text/plain JSON). Stores one daily count per
-// {date, app, item, event}. No IP, cookie, user agent or request data is kept. Logs nothing.
 import {validateEvent} from '../_lib/validate';
 
 interface D1PreparedStatement {
@@ -20,14 +17,15 @@ interface FunctionContext {
 
 const NO_STORE = {'Cache-Control': 'no-store'};
 const MAX_BODY_BYTES = 512;
+const utf8Length = (s: string) => new TextEncoder().encode(s).byteLength;
 
 export async function onRequestPost({request, env}: FunctionContext): Promise<Response> {
-  // Malformed, oversized or unknown input is dropped silently with 204.
   const declared = Number(request.headers.get('Content-Length') ?? '0');
-  if (declared > MAX_BODY_BYTES) return new Response(null, {status: 204, headers: NO_STORE});
+  if (Number.isFinite(declared) && declared > MAX_BODY_BYTES) return new Response(null, {status: 204, headers: NO_STORE});
 
   try {
     const body = await request.text();
+    if (utf8Length(body) > MAX_BODY_BYTES) return new Response(null, {status: 204, headers: NO_STORE});
     const decision = validateEvent(body, Date.now());
     if (decision.kind === 'store') {
       await env.DB.prepare(
@@ -38,7 +36,7 @@ export async function onRequestPost({request, env}: FunctionContext): Promise<Re
         .run();
     }
   } catch {
-    // Fail silent: the beacon cannot act on an error and the visitor must not notice.
+    // Beacon responses must stay silent so analytics outages never disrupt visitors.
   }
   return new Response(null, {status: 204, headers: NO_STORE});
 }

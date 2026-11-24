@@ -112,3 +112,9 @@ describe('dailyReminderIcs (T6.7)', () => {
     for (const time of ['24:00', '7:00', '07:60', '', 'noon']) expect(dailyReminderIcs({ name: 'x', host: 'x', time, now })).toBeNull();
   });
 });
+
+test('updateStreak preserves valid streak on invalid todayKey and never emits invalid state', () => {
+  const prev = { last: '2027-01-10', count: 4, best: 9 };
+  expect(updateStreak(prev, 'not-a-date')).toEqual(prev);
+  expect(updateStreak(null, 'not-a-date')).toEqual({ last: DAILY_EPOCH, count: 1, best: 1 });
+});

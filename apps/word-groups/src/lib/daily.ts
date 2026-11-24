@@ -71,7 +71,7 @@ export function isStreak(value: unknown): value is Streak {
  */
 export function updateStreak(prev: unknown, todayKey: string): Streak {
   const today = keyToUtc(todayKey);
-  if (today === null) return { last: todayKey, count: 1, best: 1 };
+  if (today === null) return isStreak(prev) ? { ...prev } : { last: DAILY_EPOCH, count: 1, best: 1 };
   if (!isStreak(prev)) return { last: todayKey, count: 1, best: 1 };
   const diff = Math.round((today - keyToUtc(prev.last)!) / DAY_MS);
   if (diff <= 0) return { ...prev };
