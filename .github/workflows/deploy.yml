@@ -46,6 +46,14 @@ jobs:
           node homepage/build.mjs
           bun install --cwd deployment --frozen-lockfile
           mkdir -p deployment/evidence
+      - name: Run structural checks and formal verification
+        run: |
+          bun _implementation/sync-shared.ts --check
+          bun _implementation/sync-shared.ts --check --set daily
+          bun _implementation/sync-shared.ts --check --set mastery
+          python3 _implementation/check-content-hygiene.py
+          python3 _implementation/formal/verify-state-machines.py
+          python3 _implementation/audit-text-joins.py
       - name: Validate SEO before publication
         run: |
           bun test _implementation/seo.test.ts
