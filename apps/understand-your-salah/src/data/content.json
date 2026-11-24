@@ -21,13 +21,13 @@
       ],
       "question": "What does this phrase proclaim?",
       "options": [
-        "A mention of a journey",
-        "A request for rain",
-        "A greeting to people",
+        "A request for forgiveness",
+        "A declaration of faith",
+        "A greeting to the congregation",
         "Allah’s greatness"
       ],
       "answer": 3,
-      "note": "Bukhari 757 describes beginning with takbir. Muslim 601 includes these Arabic words within a longer opening expression. The displayed English is our concise rendering.",
+      "note": "Raising the hands and saying Allahu Akbar marks the transition from ordinary concerns into prayer. Reported in Sahih al-Bukhari 757 and Sahih Muslim 601.",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -44,11 +44,11 @@
       "options": [
         "A prophet",
         "Allah",
-        "The reciter",
-        "The angels"
+        "The angels",
+        "The congregation"
       ],
       "answer": 1,
-      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "note": "Beginning with Bismillah places the entire recitation under Allah's name and mercy. Note: the audio player above recites the full Surah Al-Fatiha.",
       "passage": {
         "ref": "1:1",
         "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
@@ -69,13 +69,13 @@
       "sources": [],
       "question": "Who receives praise in this ayah?",
       "options": [
-        "The reciter alone",
-        "A ruler",
-        "The stars",
+        "The righteous alone",
+        "The heavens and earth",
+        "The messengers",
         "Allah, Lord of the Worlds"
       ],
       "answer": 3,
-      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "note": "Al-hamdu lillah combines gratitude with praise—recognizing Allah as Rabb, the Sustainer and Caretaker of all creation.",
       "passage": {
         "ref": "1:2",
         "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
@@ -96,13 +96,13 @@
       "sources": [],
       "question": "Which descriptions appear in this ayah?",
       "options": [
-        "The mountains and valleys",
+        "The Mighty, the Wise",
         "The Beneficent, the Merciful",
-        "The garden and river",
-        "The sun and moon"
+        "The First, the Last",
+        "The Hearing, the Seeing"
       ],
       "answer": 1,
-      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "note": "Ar-Rahman and Ar-Rahim both come from the root for mercy (rahmah), echoing the opening ayah and framing Allah's lordship in compassion.",
       "passage": {
         "ref": "1:3",
         "arabic": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
@@ -123,13 +123,13 @@
       "sources": [],
       "question": "Which day is named?",
       "options": [
-        "The day of migration",
+        "The Day of Arafah",
         "The Day of Judgment",
-        "The day of harvest",
-        "A market day"
+        "The Day of Gathering on Friday",
+        "The Day of Migration"
       ],
       "answer": 1,
-      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "note": "Yawm ad-Din is the Day of Recompense, when every deed is weighed with complete justice and no authority remains except Allah's.",
       "passage": {
         "ref": "1:4",
         "arabic": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
@@ -151,12 +151,12 @@
       "question": "To whom are worship and the request for help directed?",
       "options": [
         "Allah alone",
-        "A worldly ruler",
-        "The reciter",
-        "The mountains"
+        "Allah and the prophets",
+        "The righteous community",
+        "The angels who record deeds"
       ],
       "answer": 0,
-      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "note": "Putting 'Thee alone' (Iyyaka) first in Arabic makes both worship and seeking help exclusive to Allah—a turning point where the surah shifts into direct address.",
       "passage": {
         "ref": "1:5",
         "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
@@ -177,13 +177,13 @@
       "sources": [],
       "question": "What is requested?",
       "options": [
-        "A journey",
-        "A garden",
-        "More possessions",
+        "Provision and wealth",
+        "Victory over enemies",
+        "Long life and health",
         "Guidance to the straight path"
       ],
       "answer": 3,
-      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "note": "After praise and devotion comes the core request of every rak'ah: steady guidance on the clear, upright path (as-sirat al-mustaqim).",
       "passage": {
         "ref": "1:6",
         "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
@@ -204,13 +204,13 @@
       "sources": [],
       "question": "Whose path is requested?",
       "options": [
-        "A path defined by wealth",
+        "Those who rely on their own strength",
         "Those who go astray",
         "Those whom Allah has favoured",
         "Those who earn anger"
       ],
       "answer": 2,
-      "note": "Quran text and Pickthall translation. Verse numbering follows the fetched Hafs edition. The audio plays the whole surah, not just this ayah.",
+      "note": "The closing ayah defines the straight path by the people who walked it—those blessed with guidance—while asking to be kept from both willful rejection and heedless wandering.",
       "passage": {
         "ref": "1:7",
         "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
@@ -237,13 +237,13 @@
       ],
       "question": "How is the Lord described in this phrase?",
       "options": [
-        "The witness to a trade",
+        "The Forgiving",
         "The Magnificent",
-        "The traveller",
-        "The gardener"
+        "The Most High",
+        "The Sustainer"
       ],
       "answer": 1,
-      "note": "",
+      "note": "In ruku', bowing your back physically mirrors the words: declaring Allah free of all imperfection and affirming His greatness (Al-Azim).",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -264,13 +264,13 @@
       ],
       "question": "Whose praise is mentioned?",
       "options": [
-        "The one planting a tree",
-        "The one counting possessions",
-        "The one entering a market",
+        "The one who fasts in secret",
+        "The one who gives charity",
+        "The one who recites aloud",
         "The one who praises Allah"
       ],
       "answer": 3,
-      "note": "",
+      "note": "Said while rising from bowing, 'Sami'a Allahu liman hamidah' is both a statement and an assurance: Allah hears and responds to anyone who praises Him.",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -291,13 +291,13 @@
       ],
       "question": "What is directed to the Lord?",
       "options": [
-        "A travel instruction",
-        "A greeting to a neighbour",
+        "A request for mercy",
+        "A testimony of faith",
         "Praise",
-        "A trade offer"
+        "A greeting of peace"
       ],
       "answer": 2,
-      "note": "",
+      "note": "Once standing upright again, you answer the previous phrase directly—offering praise to your Lord before moving into prostration.",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -318,13 +318,13 @@
       ],
       "question": "Which description appears here?",
       "options": [
-        "The garden",
+        "The Magnificent",
         "The Most High",
-        "The morning",
-        "The river"
+        "The Wise",
+        "The Eternal"
       ],
       "answer": 1,
-      "note": "",
+      "note": "At the lowest physical point of prayer, with forehead on the ground, you call upon Allah as Al-A'la—the Most High.",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -345,13 +345,13 @@
       ],
       "question": "How is Muhammad ﷺ described at the end of this wording?",
       "options": [
-        "A heavenly body",
-        "The owner of every kingdom",
+        "The ruler of Madinah",
+        "The keeper of the keys",
         "The author of the Quran",
         "Allah’s servant and messenger"
       ],
       "answer": 3,
-      "note": "This lesson follows the wording in the cited Ibn Masud report. The short Roman guide covers the opening only. Other authentic tashahhud wordings are also narrated, including Muslim 403a.",
+      "note": "Follows the tashahhud narrated by Ibn Mas'ud in Sahih al-Bukhari. Calling Muhammad ﷺ both servant ('abd) and messenger (rasul) honors his mission while keeping worship for Allah alone. Other authentic wordings exist, such as Sahih Muslim 403a.",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -378,7 +378,7 @@
         "Musa"
       ],
       "answer": 2,
-      "note": "The Roman guide covers the opening only. Read the full Arabic wording and its source; other narrated forms also exist.",
+      "note": "Known as as-salat al-Ibrahimiyyah, this supplication asks Allah to bless Muhammad ﷺ and his family just as He blessed Ibrahim and his family. Other authentic wordings are also narrated.",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -400,13 +400,13 @@
       ],
       "question": "What does this greeting wish for its recipients?",
       "options": [
-        "A safe harvest only",
+        "Forgiveness and provision",
         "Peace and Allah’s mercy",
-        "A journey to a mountain",
-        "Wealth and status"
+        "Guidance and patience",
+        "Strength and victory"
       ],
       "answer": 1,
-      "note": "",
+      "note": "Turning right and left with salam closes the prayer by extending peace and Allah's mercy to the angels and everyone praying beside you.",
       "passage": null,
       "audio": false,
       "commentaryUrl": ""
@@ -421,5 +421,5 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "note": "Wikimedia MP3 transcode of the creator’s own recording. Audio content unchanged; bundled locally. No endorsement or tajwid certification is implied."
   },
-  "methodology": "Fifteen lessons cover seven Al-Fatiha ayahs and selected hadith-based recitations from opening to closing. Quran wording is canonical Arabic with Pickthall English. Non-Quran meanings are original concise renderings of the cited ancient Arabic, with approximate Roman reading aids where provided. This is a guide to meanings, not a complete legal prayer manual. The licensed local Al-Fatiha recording plays the full surah; audio for the other recitations is not included."
+  "methodology": "Fifteen lessons walk through Surah Al-Fatiha and the core recitations of prayer from opening takbir to closing salam. Quranic passages use Uthmani Arabic with Pickthall's translation; hadith recitations use concise English renderings alongside cited reports. Use this as a guide to the meanings of prayer rather than a complete fiqh manual. The built-in audio recording plays the full Surah Al-Fatiha."
 }

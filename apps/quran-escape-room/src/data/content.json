@@ -4,7 +4,7 @@
       "id": "patience",
       "name": "The Lantern Room",
       "theme": "Patience",
-      "description": "Three passages to read: Quran 2:153, 16:127 and 103:3.",
+      "description": "A quiet room lit by a single brass lantern. Read Quran 2:153, 16:127, and 103:3 closely to see what holds a person steady when everything pushes back.",
       "passages": [
         {
           "ref": "2:153",
@@ -48,7 +48,7 @@
       "id": "gratitude",
       "name": "The Locked Library",
       "theme": "Gratitude",
-      "description": "Three passages to read: Quran 14:7, 31:12 and 2:152.",
+      "description": "Tall shelves of manuscripts stand behind four brass clasps. Open Quran 14:7, 31:12, and 2:152 to trace how thankfulness shapes both heart and blessing.",
       "passages": [
         {
           "ref": "14:7",
@@ -92,7 +92,7 @@
       "id": "justice",
       "name": "The Stone Archway",
       "theme": "Justice",
-      "description": "Three passages to read: Quran 4:135, 5:8 and 42:15.",
+      "description": "Carved scales rest above a heavy stone arch. Read Quran 4:135, 5:8, and 42:15 to unlock what standing firm in fairness demands—even when it costs you.",
       "passages": [
         {
           "ref": "4:135",
@@ -136,7 +136,7 @@
       "id": "mercy",
       "name": "The Garden Courtyard",
       "theme": "Mercy",
-      "description": "Three passages to read: Quran 7:156, 39:53 and 21:107.",
+      "description": "Rainwater gathers in a shaded courtyard basin. Look through Quran 7:156, 39:53, and 21:107 to follow a thread of mercy wide enough to leave no one outside hope.",
       "passages": [
         {
           "ref": "7:156",
@@ -180,7 +180,7 @@
       "id": "learning",
       "name": "The Copper Door",
       "theme": "Learning",
-      "description": "Three passages to read: Quran 96:1-5, 20:114 and 39:9.",
+      "description": "An inkwell and a reed pen sit beside a bolted copper door. Read Quran 96:1-5, 20:114, and 39:9 to see how seeking knowledge begins and why it stays humble.",
       "passages": [
         {
           "ref": "96:1-5",
@@ -224,7 +224,7 @@
       "id": "keeping-commitments",
       "name": "The Blue Chamber",
       "theme": "Keeping commitments",
-      "description": "Three passages to read: Quran 17:34, 5:1 and 16:91.",
+      "description": "Sealed scrolls line a cobalt-tiled table. Examine Quran 17:34, 5:1, and 16:91 to trace the weight the Quran places on every promise and covenant.",
       "passages": [
         {
           "ref": "17:34",
@@ -268,7 +268,7 @@
       "id": "hospitality",
       "name": "The Cedar Hall",
       "theme": "Hospitality",
-      "description": "Three passages to read: Quran 51:24, 51:26 and 51:27.",
+      "description": "A warm table has been prepared for unexpected guests. Follow Quran 51:24, 51:26, and 51:27 to notice the quiet generosity of Ibrahim's welcome.",
       "passages": [
         {
           "ref": "51:24",
@@ -312,7 +312,7 @@
       "id": "careful-speech",
       "name": "The Map Room",
       "theme": "Careful speech",
-      "description": "Three passages to read: Quran 33:70, 49:11 and 17:53.",
+      "description": "Every word echoes twice under this vaulted ceiling. Read Quran 33:70, 49:11, and 17:53 to unlock the locks built around honest, measured speech.",
       "passages": [
         {
           "ref": "33:70",
