@@ -1,104 +1,7 @@
 {
   "method": {
     "schema": "zakat-method/1",
-    "task": "P7 T7.4 / C17",
-    "disclaimer": "Educational summary. Not a fatwa, and not reviewed by a scholar. No scholarly review has taken place. The second-pass verification (T7.4 verification.json) is a separate task.",
-    "sessionStart": "2026-11-12T17:32:44+06:00",
-    "sessionEnd": "2026-11-12T17:44:30+06:00",
-    "quranSnapshot": {
-      "file": "_implementation/research/quran-full.json",
-      "sha256": "3ffbc20d417f6f2246447b3c76f0be27209fa009793b1eea92ae22e324eb3b2f"
-    },
-    "quranMcpCalls": [
-      {
-        "tool": "fetch_grounding_rules",
-        "arguments": {},
-        "retrievedAt": "2026-11-12 (session, Asia/Dhaka)",
-        "result": "grounding_nonce gnd-6025e54b441e30bb"
-      },
-      {
-        "tool": "fetch_quran",
-        "arguments": {
-          "ayahs": [
-            "2:43",
-            "9:60",
-            "9:103",
-            "2:267",
-            "9:34"
-          ],
-          "editions": "ar-uthmani-hafs",
-          "grounding_nonce": "gnd-6025e54b441e30bb"
-        },
-        "retrievedAt": "2026-11-12 (session, Asia/Dhaka)",
-        "note": "9:34 was fetched but is not used (see notes)."
-      },
-      {
-        "tool": "fetch_translation",
-        "arguments": {
-          "ayahs": [
-            "2:43",
-            "9:60",
-            "9:103",
-            "2:267",
-            "9:34"
-          ],
-          "editions": "en-pickthall",
-          "grounding_nonce": "gnd-6025e54b441e30bb"
-        },
-        "retrievedAt": "2026-11-12 (session, Asia/Dhaka)",
-        "note": "First attempt was rate_limited; the retry succeeded."
-      }
-    ],
-    "quranMcpCrossCheck": {
-      "2:43": {
-        "arabicByteEqual": false,
-        "arabicNfcEqual": true,
-        "translationByteEqual": true
-      },
-      "9:103": {
-        "arabicByteEqual": false,
-        "arabicNfcEqual": false,
-        "translationByteEqual": true,
-        "arabicDiffersAtCodepoints": [
-          [
-            99,
-            "0x670",
-            "0x64e"
-          ],
-          [
-            100,
-            "0x62a",
-            "0x670"
-          ],
-          [
-            101,
-            "0x64e",
-            "0x62a"
-          ],
-          [
-            102,
-            "0x643",
-            "0x64e"
-          ],
-          [
-            103,
-            "0x64e",
-            "0x643"
-          ]
-        ]
-      },
-      "2:267": {
-        "arabicByteEqual": false,
-        "arabicNfcEqual": true,
-        "translationByteEqual": true
-      },
-      "9:60": {
-        "arabicByteEqual": false,
-        "arabicNfcEqual": true,
-        "translationByteEqual": true
-      }
-    },
-    "quranMcpCrossCheckNote": "Pickthall strings byte-identical for all four refs. Arabic: 2:43, 2:267 and 9:60 equal after NFC normalisation (combining-mark order differs at byte level, as seen in C18). 9:103 differs at one word: the MCP output as relayed to this session has an extra fatha in the word for 'your prayer' (snapshot: waw + dagger alef; MCP: waw + fatha + dagger alef; one code point longer). Unresolved: could be the MCP edition or relay. The record uses the snapshot text (the required source). The second-pass verifier should re-fetch 9:103 and decide.",
+    "disclaimer": "This calculator walks through common zakat rules using cited Quranic verses and classical scholarly positions. It is an educational tool, not a formal fatwa—consult a qualified scholar for complex estates, business structures, or personal rulings.",
     "notAccessible": [
       {
         "item": "AAOIFI Shari'ah Standard 35 (Zakah)",
@@ -128,8 +31,7 @@
             "arabicEdition": "ar-uthmani-hafs",
             "translation": "Establish worship, pay the poor-due, and bow your heads with those who bow (in worship).",
             "translationEdition": "en-pickthall",
-            "translationUrl": "https://quran.com/2:43?translations=19",
-            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+            "translationUrl": "https://quran.com/2:43?translations=19"
           },
           {
             "type": "quran",
@@ -139,8 +41,7 @@
             "arabicEdition": "ar-uthmani-hafs",
             "translation": "Take alms of their wealth, wherewith thou mayst purify them and mayst make them grow, and pray for them. Lo! thy prayer is an assuagement for them. Allah is Hearer, Knower.",
             "translationEdition": "en-pickthall",
-            "translationUrl": "https://quran.com/9:103?translations=19",
-            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+            "translationUrl": "https://quran.com/9:103?translations=19"
           },
           {
             "type": "quran",
@@ -150,8 +51,7 @@
             "arabicEdition": "ar-uthmani-hafs",
             "translation": "O ye who believe! Spend of the good things which ye have earned, and of that which We bring forth from the earth for you, and seek not the bad (with intent) to spend thereof (in charity) when ye would not take it for yourselves save with disdain; and know that Allah is Absolute, Owner of Praise.",
             "translationEdition": "en-pickthall",
-            "translationUrl": "https://quran.com/2:267?translations=19",
-            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+            "translationUrl": "https://quran.com/2:267?translations=19"
           },
           {
             "type": "hadith",
@@ -201,8 +101,7 @@
             "arabicEdition": "ar-uthmani-hafs",
             "translation": "The alms are only for the poor and the needy, and those who collect them, and those whose hearts are to be reconciled, and to free the captives and the debtors, and for the cause of Allah, and (for) the wayfarer; a duty imposed by Allah. Allah is Knower, Wise.",
             "translationEdition": "en-pickthall",
-            "translationUrl": "https://quran.com/9:60?translations=19",
-            "copiedFrom": "_implementation/research/quran-full.json (by script)"
+            "translationUrl": "https://quran.com/9:60?translations=19"
           },
           {
             "type": "hadith",

@@ -7,18 +7,63 @@
     "officialMonthEnd": "2027-03-08",
     "eidFrom": "2027-03-09",
     "eidTo": "2027-03-10",
-    "source": "Umm Al-Qura Calendar (ummulqura.org.sa), the official calendar of Saudi Arabia, read on 12 November 2026; UK moon-sighting predictions give 10 March for Eid. Research record: _implementation/research/ramadan/dates.json.",
+    "source": "Umm Al-Qura Calendar (ummulqura.org.sa), checked November 2026; UK moon-sighting estimates place Eid on 10 March 2027.",
     "sourceUrl": "https://www.ummulqura.org.sa/en/calendar",
     "note": "Expected dates; confirm with your local moon sighting."
   },
-  "nightAyat": ["1:2", "2:153", "13:28", "2:152", "7:55", "4:28", "33:41", "76:9", "2:263", "17:24", "33:70", "20:114", "3:200", "49:10", "16:18", "41:34", "39:53", "25:63", "65:3", "94:5-6", "3:8", "71:10", "23:118", "15:49", "50:16", "39:10", "89:27-28", "26:83", "99:7", "55:13"],
+  "nightAyat": [
+    "1:2",
+    "2:153",
+    "13:28",
+    "2:152",
+    "7:55",
+    "4:28",
+    "33:41",
+    "76:9",
+    "2:263",
+    "17:24",
+    "33:70",
+    "20:114",
+    "3:200",
+    "49:10",
+    "16:18",
+    "41:34",
+    "39:53",
+    "25:63",
+    "65:3",
+    "94:5-6",
+    "3:8",
+    "71:10",
+    "23:118",
+    "15:49",
+    "50:16",
+    "39:10",
+    "89:27-28",
+    "26:83",
+    "99:7",
+    "55:13"
+  ],
   "lastTen": {
     "surah": "97:1-5",
     "hadith": [
-      {"collection": "Sahih al-Bukhari", "number": "2017", "url": "https://sunnah.com/bukhari:2017", "paraphrase": "Aisha reports that the Prophet ﷺ told people to search for the Night of Qadr in the odd nights of the last ten nights of Ramadan."},
-      {"collection": "Sahih al-Bukhari", "number": "2024", "url": "https://sunnah.com/bukhari:2024", "paraphrase": "Aisha reports that when the last ten nights began, the Prophet ﷺ would strive harder in worship, pray through the night and wake his family for prayer."},
-      {"collection": "Sahih al-Bukhari", "number": "2014", "url": "https://sunnah.com/bukhari:2014", "paraphrase": "Abu Hurairah reports that the Prophet ﷺ said that whoever fasts Ramadan, or stands in prayer on the Night of Qadr, out of faith and hoping for Allah's reward, is forgiven their past sins."}
-    ],
-    "checked": "All three opened on sunnah.com on 12 November 2026."
+      {
+        "collection": "Sahih al-Bukhari",
+        "number": "2017",
+        "url": "https://sunnah.com/bukhari:2017",
+        "paraphrase": "Aisha reports that the Prophet ﷺ told people to search for the Night of Qadr in the odd nights of the last ten nights of Ramadan."
+      },
+      {
+        "collection": "Sahih al-Bukhari",
+        "number": "2024",
+        "url": "https://sunnah.com/bukhari:2024",
+        "paraphrase": "Aisha reports that when the last ten nights began, the Prophet ﷺ would strive harder in worship, pray through the night and wake his family for prayer."
+      },
+      {
+        "collection": "Sahih al-Bukhari",
+        "number": "2014",
+        "url": "https://sunnah.com/bukhari:2014",
+        "paraphrase": "Abu Hurairah reports that the Prophet ﷺ said that whoever fasts Ramadan, or stands in prayer on the Night of Qadr, out of faith and hoping for Allah's reward, is forgiven their past sins."
+      }
+    ]
   }
 }
