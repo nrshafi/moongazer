@@ -8,7 +8,7 @@ export const picks=[
   {id:'10min',label:'10 minutes',time:10},
   {id:'kids',label:'With my kids',audience:'kids'},
   {id:'class',label:'For my class',audience:'class'},
-  {id:'prayer',label:'Understand my prayer',slug:'understand-your-salah'},
+  {id:'zakat',label:'Calculate zakat',slug:'zakat-calculator'},
   {id:'hifz',label:'Plan my hifz',slug:'hifz-planner'}
 ];
 export function pickChips(apps){
@@ -75,17 +75,17 @@ export function documentPage(meta,body,collections,apps){
 // P6 T6.6: "Tonight on Moongazer". The static HTML names no puzzle number (a built page would go stale);
 // app.js fills "#N" and swaps in tonight's ayah. The ayah in the HTML is the one for the build date.
 export const tonightPuzzles=[
-  {slug:'guess-the-surah',kind:"Today's surah",name:'Guess the Surah'},
-  {slug:'word-groups',kind:"Today's board",name:'Word Groups'}
+  {slug:'ayah-threads',kind:"Today's puzzle",name:'Ayah Threads',path:'/'},
+  {slug:'seerah-timeline',kind:"Today's order",name:'Seerah Timeline',path:'/challenge/'}
 ];
 export function tonightTiles(apps){
   return tonightPuzzles.map(tile=>{
     if(!apps.some(app=>app.slug===tile.slug))throw new Error('Unknown tonight app: '+tile.slug);
-    return `<li><a class="tile" href="https://${tile.slug}.moongazer.tech/"><span class="tile-kind">${escapeHtml(tile.kind)}</span> <span class="tile-name">${escapeHtml(tile.name)}</span><span class="tile-n" data-daily-n></span> <span class="tile-go">Play <span aria-hidden="true">→</span></span></a></li>`;
+    return `<li><a class="tile" href="https://${tile.slug}.moongazer.tech${tile.path||'/'}"><span class="tile-kind">${escapeHtml(tile.kind)}</span> <span class="tile-name">${escapeHtml(tile.name)}</span><span class="tile-n" data-daily-n></span> <span class="tile-go">Play <span aria-hidden="true">→</span></span></a></li>`;
   }).join(' ');
 }
 export function ayahBlock(ayah){
-  return `<p class="ayah-ar" lang="ar" dir="rtl" data-ayah-ar>${escapeHtml(ayah.arabic)}</p> <p class="ayah-en" data-ayah-en>${escapeHtml(ayah.translation)}</p> <p class="ayah-source">Pickthall’s translation · <a data-ayah-link href="https://is-it-in-the-quran.moongazer.tech/#q=${encodeURIComponent(ayah.ref)}">Read Quran <span data-ayah-ref>${escapeHtml(ayah.ref)}</span> in Is It in the Quran?</a></p>`;
+  return `<p class="ayah-en" data-ayah-en>${escapeHtml(ayah.translation)}</p> <p class="ayah-source">Pickthall’s translation · Quran <span data-ayah-ref>${escapeHtml(ayah.ref)}</span></p>`;
 }
 
 // P7 T7.10: Ramadan hub (/ramadan/). Static HTML; no countdown; printable. Ayat come from the verified
@@ -94,23 +94,22 @@ const longDay=key=>{const [y,m,d]=key.split('-').map(Number);return new Date(Dat
 const shortDay=key=>{const [y,m,d]=key.split('-').map(Number);return new Date(Date.UTC(y,m-1,d)).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short',timeZone:'UTC'});};
 const addDays=(key,n)=>{const [y,m,d]=key.split('-').map(Number);return new Date(Date.UTC(y,m-1,d+n)).toISOString().slice(0,10);};
 const withHonorific=text=>escapeHtml(text).split('ﷺ').join('<span class="honorific">ﷺ</span>');
-export function ramadanBody({content,ayat,packs,juzHasSurah,surahQadr}){
+export function ramadanBody({content,ayat,packs,surahQadr}){
   const e=escapeHtml,dt=content.dates;
   const nights=content.nightAyat.map((ref,i)=>{
     const night=i+1,date=addDays(dt.start,i),ayah=ayat.get(ref),pack=packs.get(night);
     if(!ayah)throw new Error('Ramadan ayah not in the verified list: '+ref);
     if(!pack)throw new Error('Missing Family Halaqa Ramadan pack for night '+night);
-    const surahLink=juzHasSurah(night)?`<a href="https://guess-the-surah.moongazer.tech/?mode=juz&amp;juz=${night}">Guess the Surah: Juz ${night}</a>`:`<a href="https://guess-the-surah.moongazer.tech/">Guess the Surah: today's puzzle</a>`;
     const thirty=night===30?` <span class="night-note">if Ramadan has 30 days</span>`:'';
     const anchor=night===1||night===11||night===21?` id="night-${night}"`:'';
-    return `<li${anchor} class="night-card${night>=21?' last-ten':''}"><p class="night-head"><span class="night-n">Ramadan ${night}</span> <time datetime="${date}">${e(shortDay(date))}</time>${thirty}</p><p class="night-ar" lang="ar" dir="rtl">${e(ayah.arabic)}</p><p class="night-en">${e(ayah.translation)} <span class="night-ref">(Quran ${e(ref)})</span></p><ul class="night-links"><li><a href="https://family-halaqa.moongazer.tech/pack/${e(pack.id)}/">Family Halaqa: ${e(pack.title)} <span class="night-age">ages ${e(pack.age)}</span></a></li><li>${surahLink}</li></ul></li>`;
+    return `<li${anchor} class="night-card${night>=21?' last-ten':''}"><p class="night-head"><span class="night-n">Ramadan ${night}</span> <time datetime="${date}">${e(shortDay(date))}</time>${thirty}</p><p class="night-en">${e(ayah.translation)} <span class="night-ref">(Quran ${e(ref)})</span></p><ul class="night-links"><li><a href="https://family-halaqa.moongazer.tech/pack/${e(pack.id)}/">Family Halaqa: ${e(pack.title)} <span class="night-age">ages ${e(pack.age)}</span></a></li></ul></li>`;
   }).join('');
-  const qadr=surahQadr.map(v=>`<p class="night-ar" lang="ar" dir="rtl">${e(v.arabic)}</p><p class="night-en">${e(v.translation)} <span class="night-ref">(${e(v.ref)})</span></p>`).join('');
+  const qadr=surahQadr.map(v=>`<p class="night-en">${e(v.translation)} <span class="night-ref">(${e(v.ref)})</span></p>`).join('');
   const hadith=content.lastTen.hadith.map(h=>`<li>${withHonorific(h.paraphrase)} <a href="${e(h.url)}">${e(h.collection)} ${e(h.number)}</a></li>`).join('');
   // A line break after each closing block tag, so the text of neighbouring blocks never runs together
   // in reader modes and copied text (checked by _implementation/audit-text-joins.py).
   return blockBreaks(`<section class="reading-section ramadan-dates" aria-labelledby="dates-title"><h2 id="dates-title">Expected dates</h2><dl class="date-list"><div><dt>Ramadan begins</dt><dd><time datetime="${dt.start}">${e(longDay(dt.start))}</time></dd></div><div><dt>The last ten nights begin</dt><dd>At sunset on <time datetime="${dt.lastTenEvening}">${e(longDay(dt.lastTenEvening))}</time></dd></div><div><dt>Eid al-Fitr</dt><dd><time datetime="${dt.eidFrom}">${e(longDay(dt.eidFrom))}</time> or <time datetime="${dt.eidTo}">${e(longDay(dt.eidTo))}</time></dd></div></dl><p class="date-note"><strong>${e(dt.note)}</strong> Source: <a href="${e(dt.sourceUrl)}">Umm Al-Qura Calendar</a>, the official calendar of Saudi Arabia. Moon-sighting predictions place Eid on 10 March.</p><p><button class="button print-button" type="button" data-print hidden>Print this calendar</button></p></section>
-<section class="reading-section" aria-labelledby="nights-title"><h2 id="nights-title">Thirty nights</h2><p>One short ayah for each night, a Family Halaqa pack to share at home, and a Guess the Surah round from that night's juz. Dates are expected.</p><nav class="ramadan-jump" aria-label="Jump to Ramadan nights"><a href="#night-1">Nights 1–10</a> <a href="#night-11">Nights 11–20</a> <a href="#night-21">Nights 21–30</a> <a href="#last-ten-title">Last ten nights</a> <a href="#zakat-title">Zakat</a></nav><ol class="night-grid">${nights}</ol></section>
+<section class="reading-section" aria-labelledby="nights-title"><h2 id="nights-title">Thirty nights</h2><p>One short ayah in Pickthall's translation for each night and a Family Halaqa pack to share at home. Dates are expected.</p><nav class="ramadan-jump" aria-label="Jump to Ramadan nights"><a href="#night-1">Nights 1–10</a> <a href="#night-11">Nights 11–20</a> <a href="#night-21">Nights 21–30</a> <a href="#last-ten-title">Last ten nights</a> <a href="#zakat-title">Zakat</a></nav><ol class="night-grid">${nights}</ol></section>
 <section class="reading-section last-ten-section" aria-labelledby="last-ten-title"><h2 id="last-ten-title">The last ten nights</h2><p>Surah al-Qadr, in full, with Pickthall's translation:</p><div class="qadr">${qadr}</div><ul class="hadith-list">${hadith}</ul><p class="date-note">Hadith are paraphrased; open each link to read the report and its grading on sunnah.com.</p></section>
 <section class="reading-section" aria-labelledby="zakat-title"><h2 id="zakat-title">Zakat and zakat al-fitr</h2><p>Work through your zakat step by step, with every choice explained and sourced, or read how zakat al-fitr works before the Eid prayer.</p><p class="night-links"><a class="button" href="https://zakat-calculator.moongazer.tech/">Open the Zakat Calculator</a> <a href="https://zakat-calculator.moongazer.tech/zakat-al-fitr/">About zakat al-fitr</a></p></section>`);
 }

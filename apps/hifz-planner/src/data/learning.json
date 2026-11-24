@@ -18,16 +18,16 @@
   ],
   "related": [
     {
-      "name": "Guess the Surah",
-      "description": "Follow the clues. Find the chapter. Get to know the Quran one discovery at a time.",
-      "kind": "Quiz",
-      "url": "https://guess-the-surah.moongazer.tech/"
+      "name": "Ayah Threads",
+      "description": "Read three Quran passages and choose the theme that connects them.",
+      "kind": "Passage puzzle",
+      "url": "https://ayah-threads.moongazer.tech/"
     },
     {
-      "name": "Is It in the Quran?",
-      "description": "Look for wording in a local Quran translation and inspect the matching passages.",
-      "kind": "Text search",
-      "url": "https://is-it-in-the-quran.moongazer.tech/"
+      "name": "Stories of the Prophets",
+      "description": "Read selected Quranic accounts and check your understanding as you go.",
+      "kind": "Story reader",
+      "url": "https://stories-of-the-prophets.moongazer.tech/"
     }
   ],
   "collection": {

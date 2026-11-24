@@ -122,7 +122,7 @@ def check_streak_model(transition_fn) -> list[str]:
 # ---------------------------------------------------------------------------
 def check_counter_model() -> list[str]:
     failures = []
-    hosts = ["moongazer.tech", "guess-the-surah.moongazer.tech", "localhost", "preview.pages.dev"]
+    hosts = ["moongazer.tech", "ayah-threads.moongazer.tech", "localhost", "preview.pages.dev"]
     events = ["activity_started", "activity_completed", "share_clicked"]
     for host, gpc in itertools.product(hosts, [False, True]):
         started = set()
@@ -148,7 +148,7 @@ def check_counter_model() -> list[str]:
 # ---------------------------------------------------------------------------
 def check_source_matches_models() -> list[str]:
     failures = []
-    for app in ("ayah-threads", "guess-the-surah", "seerah-timeline", "word-groups"):
+    for app in ("ayah-threads", "seerah-timeline"):
         p = ROOT / f"apps/{app}/src/lib/daily.ts"
         txt = p.read_text(encoding="utf-8")
         if "if (today === null) return { last: todayKey" in txt:

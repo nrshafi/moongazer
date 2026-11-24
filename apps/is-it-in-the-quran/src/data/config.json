@@ -1,8 +1,0 @@
-{
-  "slug": "is-it-in-the-quran",
-  "name": "Is It in the Quran?",
-  "description": "Search every ayah in Arabic and English, and check popular claims",
-  "accent": "teal",
-  "nav": "Search",
-  "port": 4327
-}

@@ -85,12 +85,9 @@ function printSection(pack: PrintPack): HTMLElement {
   };
   const section = make('section', undefined, 'saved-pack');
   section.append(make('h2', pack.title), make('p', `${pack.topic} · suggested ages ${pack.age} · about ${pack.minutes} minutes`, 'micro'));
-  const passage = (pack as { passage?: { ref: string; arabic: string; translation: string } }).passage;
+  const passage = (pack as { passage?: { ref: string; translation: string } }).passage;
   if (passage) {
-    const arabic = make('p', passage.arabic, 'arabic');
-    arabic.lang = 'ar';
-    arabic.dir = 'rtl';
-    section.append(arabic, make('p', `${passage.translation} (Quran ${passage.ref}, Marmaduke Pickthall)`));
+    section.append(make('p', `${passage.translation} (Quran ${passage.ref}, Marmaduke Pickthall)`));
   }
   section.append(make('h3', '1. Read and notice'), make('p', pack.teaching), make('p', pack.question));
   const options = make('ol');

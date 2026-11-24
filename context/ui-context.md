@@ -36,7 +36,7 @@ The actual token definitions live in the app's `src/styles/global.css`. Use thes
 | --- | --- | --- |
 | Interface and body | DM Sans | Root `font-family`; variable font, system sans fallback |
 | Intro, card and panel headings | Newsreader | `.editorial` and the app-local visual refinement; Georgia fallback |
-| Quran and other Arabic | Amiri | `.arabic`, Arabic serif fallback, RTL and `lang="ar"` |
+| Prophet honorific (`ﷺ`) | Amiri | `U+FDFA` unicode-range mapping via `Honorific.astro` / `withHonorifics()`; Arabic passages are no longer rendered in UI as of 2026-11-25 |
 
 Fonts are in `public/fonts/` with their SIL Open Font License files. There are no `--font-sans`/`--font-mono` tokens or external font service in the current implementation.
 
@@ -50,7 +50,7 @@ Fonts are in `public/fonts/` with their SIL Open Font License files. There are n
 | Icon buttons | 9px radius, 38px square |
 | Dialogs | 20px radius with backdrop |
 
-There is no installed component or icon library. Reuse the shell's inline SVG mark/theme icons and existing `.panel`, `.panel-body`, `.panel-head`, `.button`, `.field`, `.filters`, `.notice`, `.actions`, `.arabic`, `.source-quote`, `.empty` and `.micro` patterns.
+There is no installed component or icon library. Reuse the shell's inline SVG mark/theme icons and existing `.panel`, `.panel-body`, `.panel-head`, `.button`, `.field`, `.filters`, `.notice`, `.actions`, `.source-quote`, `.empty` and `.micro` patterns (`.arabic` passage rendering is retired as of 2026-11-25).
 
 ## Layout and interaction
 
@@ -107,7 +107,7 @@ The shared shell shows no "moved" banner and no alternate canonical; every page 
 The design source of truth is the root `DESIGN.md` (families, tokens with computed contrast, typography, archetypes, shared components) plus one `apps/<slug>/DESIGN.md` per app and `homepage/DESIGN.md` for the directory. Summary of the binding rules:
 - **Activity within 600 px:** at 390 × 844 and 375 × 812 the first control or activity card starts ≤ 600 px from the top, in both themes; each app records its measured value.
 - **Colour = subject family** (`config.accent`: `teal`, `gold`, `blue`, `violet`); small text uses `--accent-ink`, text on accent fills uses `--on-accent`. **Layout = archetype** (Playboard, Scriptoria, Dossier, Sanctuary, Hearth).
-- **Fonts:** DM Sans, Newsreader, Amiri; JetBrains Mono only for metadata chips in Playboard and Dossier apps. All local.
+- **Fonts:** DM Sans, Newsreader, Amiri (reserved for the `ﷺ` honorific as of 2026-11-25); JetBrains Mono only for metadata chips in Playboard and Dossier apps. All local.
 - **Patterns:** compact hero (H1 = app name, ≤ 12-word descriptor); "How this works" `<details>` drawer holds instructions and caveats; end-of-session pattern (result → what you learned → share → next app → report an error); learning guide as an accordion after the activity.
 - **Motif:** one decorative `public/motif.svg` per app (≤ 8 KB, `aria-hidden`), geometry/objects/plants/sky only; the shared star watermark is removed.
 - **Islamic UI rules:** no images of people or animals; no music, bells or sound effects.
@@ -124,4 +124,10 @@ Shared-lane files now in every app (byte-identical; listed in `_implementation/s
 - `src/components/LearningGuide.astro`: the guide renders after the activity with one server-rendered `<details>` per question (text unchanged).
 - `src/lib/utils.ts`: `pulseCorrect(el)` (no-op under `prefers-reduced-motion: reduce`).
 - `src/lib/shell.ts` (two variants: with and without the print-time details opener): a Projector button is added to the header only when `<main>` or `<body>` has `data-projector`; it lasts the session and is saved under the namespaced key `projector` only while the app's `remember` opt-in is on.
-- Per-app `global.css` (several variants): family tokens for `teal`, `gold`, `blue`, `violet` in light and dark; buttons on accent fills use `--on-accent`. JetBrains Mono (`.mono-chip`, local WOFF2) is added only to the eight Playboard and Dossier apps.
+- Per-app `global.css` (several variants): family tokens for `teal`, `gold`, `blue`, `violet` in light and dark; buttons on accent fills use `--on-accent`. JetBrains Mono (`.mono-chip`, local WOFF2) is added only to the Playboard and Dossier apps.
+
+## English-only UI and 13-app update (25 November 2026)
+
+- **13 active apps:** Four core-Arabic apps (`understand-your-salah`, `word-groups`, `guess-the-surah`, and `is-it-in-the-quran`) are deleted outright, leaving 13 active apps (`ayah-threads`, `civilization-timeline`, `everyday-akhlaq`, `family-halaqa`, `hifz-planner`, `parables-of-the-quran`, `places-in-the-quran`, `quran-escape-room`, `seerah-detective`, `seerah-timeline`, `stories-of-the-prophets`, `why-it-was-revealed`, `zakat-calculator`).
+- **English-only UI:** All 13 remaining app UIs and `homepage/` remove Arabic script passage rendering (no `.arabic`, `.ayah-ar`, `.night-ar`, `lang="ar" dir="rtl"` Quranic blocks, or `Amiri Ayat` passage font in the UI) and display attributed Pickthall English translations instead.
+- **Canonical data & honorifics preserved:** Canonical Arabic text remains in JSON data (`src/data/content.json`, `homepage/ayat-of-the-night.json`, `_implementation/research/quran-full.json`) for static verification. `ﷺ` honorifics (`U+FDFA`) remain preserved in editorial UI copy via `Honorific.astro` / `SAW` / `withHonorifics()` (Amiri `unicode-range: U+FDFA`).

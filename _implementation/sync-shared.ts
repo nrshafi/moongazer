@@ -33,7 +33,7 @@ export const SHARED = [
 export const SETS: Record<string, string[]> = {
   shared: SHARED,
   mastery: ['src/lib/mastery.ts', 'src/lib/mastery-ui.ts'],
-  daily: ['src/lib/daily.ts', 'tests/daily.test.ts', 'tests/daily-release.test.ts'], // the four daily apps only: guess-the-surah, ayah-threads, word-groups, seerah-timeline
+  daily: ['src/lib/daily.ts', 'tests/daily.test.ts', 'tests/daily-release.test.ts'], // the two daily apps only: ayah-threads, seerah-timeline
 };
 
 export function listApps(): string[] {

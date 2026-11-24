@@ -16,12 +16,12 @@
 ## Styling and accessibility
 
 - Use the existing CSS tokens and component classes in `context/ui-context.md`. Keep dynamic-JS markup styles global or in an imported CSS file; Astro-scoped styles do not automatically cover inserted markup.
-- Use native links, buttons, forms, fieldsets and details. Label inputs, preserve visible focus, provide status feedback, respect reduced motion and keep Arabic `lang="ar"` with RTL presentation.
+- Use native links, buttons, forms, fieldsets and details. Label inputs, preserve visible focus, provide status feedback and respect reduced motion. Under the 2026-11-25 English-only UI decision, do not render Arabic passages in app or directory UIs (display Pickthall translations; preserve `ﷺ` honorifics via `Honorific.astro` / `withHonorifics()`).
 - Escape variable text before `innerHTML`; prefer `textContent` and form-control values for user text. Never insert a visitor's query or note into unescaped HTML.
 
 ## Data and storage
 
-- Preserve fetched Quran Arabic/translation literally. Search normalization belongs in the search index, not in displayed canonical text. Interpretive claims need retrieved commentary and attribution.
+- Preserve fetched Quran Arabic and Pickthall translations literally in local JSON data (`src/data/content.json`, `homepage/ayat-of-the-night.json`, `_implementation/research/quran-full.json`) for static/canonical verification. App and directory UIs render only the English Pickthall translation (no Arabic script passages rendered in UI as of 2026-11-25). Search normalization belongs in the search index, not in canonical JSON data. Interpretive claims need retrieved commentary and attribution.
 - Treat themes, fictional consequences, questions, diagrams, approximate dates and informal scores as editorial aids with the app's documented limits.
 - Optional localStorage must be app-namespaced, validated, timestamped, ignored after 30 days and resilient to blocked storage. Theme preference is independent of activity opt-in. Do not add identity collection, analytics or hidden synchronization.
 - All runtime fonts/media/data must be local. External source links are optional reading. Retain media/font licenses and provenance; update content checksums after a content change.
@@ -33,7 +33,7 @@ Keep generated verification output under `_implementation/qa/` and `deployment/e
 
 SEO metadata must come from inspected local names and editorial summaries, never invented source quotations. Escape serialized JSON-LD against closing-script markup. XML sitemaps contain only same-host, canonical, indexable URLs, with no fabricated modification dates. Validate generated metadata, route coverage, structured-data identifiers and the exclusion of privacy/404 routes. Preserve app independence and source checksums.
 
-The directory homepage may use dependency-free HTML, CSS and JavaScript as explicitly requested. Keep authoritative source in `homepage/`, render the catalog from `deployment/targets.json`, and regenerate `homepage/dist/` with `node homepage/build.mjs`. Hosting helpers must fail on unsuccessful API responses, preserve existing unrelated DNS, and never log or persist credentials. Verify the generated catalog matches all twenty app roots and deployed hostnames.
+The directory homepage may use dependency-free HTML, CSS and JavaScript as explicitly requested. Keep authoritative source in `homepage/`, render the catalog from `deployment/targets.json`, and regenerate `homepage/dist/` with `node homepage/build.mjs`. Hosting helpers must fail on unsuccessful API responses, preserve existing unrelated DNS, and never log or persist credentials. Verify the generated catalog matches all 13 active app roots and deployed hostnames.
 
 - `src/pages/`: static routes and page composition. `src/layouts/`: the shared shell copy. `src/lib/`: behavior, pure logic and helpers. `src/data/`: bundled data and provenance. `src/styles/`: CSS. `public/`: local assets and hosting headers. `tests/`: meaningful Bun checks.
 - Do not hand-edit generated output or third-party internals. Generators under `_implementation` are preparation tools, several of which overwrite files; inspect their scope before use.

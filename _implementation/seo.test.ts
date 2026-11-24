@@ -1,5 +1,5 @@
 import { test, expect } from 'bun:test';
-import { canonicalPath, getPageMeta, seoPages, encodeJsonLd, descriptionSnippet } from '../apps/guess-the-surah/src/lib/seo';
+import { canonicalPath, getPageMeta, seoPages, encodeJsonLd, descriptionSnippet } from '../apps/ayah-threads/src/lib/seo';
 import { metadata } from '../homepage/render.mjs';
 
 test('canonicals discard activity parameters and normalize static paths', () => {
@@ -8,8 +8,13 @@ test('canonicals discard activity parameters and normalize static paths', () => 
   expect(canonicalPath('/404/')).toBe('/404.html');
 });
 test('utility pages stay out of the indexable route list', () => {
-  expect(seoPages.filter(page => page.indexable).map(page => page.path)).toEqual(['/', '/sources/']);
+  const indexable = seoPages.filter(page => page.indexable).map(page => page.path);
+  expect(indexable).toContain('/');
+  expect(indexable).toContain('/sources/');
+  expect(indexable).not.toContain('/privacy/');
+  expect(indexable).not.toContain('/404.html');
   expect(getPageMeta('/privacy/').indexable).toBe(false);
+  expect(getPageMeta('/404.html').indexable).toBe(false);
 });
 test('new routes need explicit metadata', () => {
   expect(() => getPageMeta('/unknown/')).toThrow('Add metadata');
@@ -36,7 +41,7 @@ test('directory metadata keeps authored content escaped in HTML and JSON-LD', ()
   expect(schema['@graph'].find(node=>node['@type']==='ItemList').itemListElement[0].name).toBe(name);
 });
 
-import { sentence } from '../apps/guess-the-surah/src/lib/seo';
+import { sentence } from '../apps/ayah-threads/src/lib/seo';
 import { readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 test('labels ending in punctuation are not given a second full stop', () => {

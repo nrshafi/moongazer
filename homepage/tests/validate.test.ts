@@ -3,10 +3,10 @@ import {cleanPageUrl, validateEvent, validateFeedback} from '../functions/_lib/v
 
 const NOW = Date.UTC(2026, 10, 11, 12, 0, 0);
 const valid = (overrides: Record<string, unknown> = {}): Record<string, unknown> => ({
-  app_slug: 'guess-the-surah',
-  page_url: 'https://guess-the-surah.moongazer.tech/quiz/?x=1#top',
+  app_slug: 'ayah-threads',
+  page_url: 'https://ayah-threads.moongazer.tech/themes/?x=1#top',
   category: 'bug_report',
-  message: 'The clue for Al-Fatiha is wrong.',
+  message: 'The theme note for puzzle #1 is wrong.',
   website: '',
   t: '5000',
   contact: '',
@@ -17,10 +17,10 @@ describe('validateFeedback: storage', () => {
   test('a valid form with a timestamp stores a cleaned row', () => {
     expect(validateFeedback(valid())).toEqual({
       kind: 'store',
-      app_slug: 'guess-the-surah',
-      page_url: 'https://guess-the-surah.moongazer.tech/quiz/',
+      app_slug: 'ayah-threads',
+      page_url: 'https://ayah-threads.moongazer.tech/themes/',
       category: 'bug_report',
-      message: 'The clue for Al-Fatiha is wrong.',
+      message: 'The theme note for puzzle #1 is wrong.',
       contact: null,
       no_js: false,
     });
@@ -87,30 +87,30 @@ describe('validateFeedback: field rules reject', () => {
   });
 
   test('a message counts characters, not UTF-16 units', () => {
-    // 10 Arabic-script characters outside the BMP would count as 20 units; here 10 code points.
+    // 10 code points outside the BMP would count as 20 UTF-16 units; here 10 code points.
     expect(validateFeedback(valid({message: '\u{1F54C}'.repeat(10)})).kind).toBe('store');
   });
 });
 
 describe('cleanPageUrl', () => {
   test.each([
-    ['apex host', 'https://moongazer.tech/about/?q=1', 'guess-the-surah', 'https://moongazer.tech/about/'],
-    ['own app subdomain', 'https://guess-the-surah.moongazer.tech/a/#frag', 'guess-the-surah', 'https://guess-the-surah.moongazer.tech/a/'],
-    ['uppercase host is normalised', 'https://GUESS-THE-SURAH.MOONGAZER.TECH/', 'guess-the-surah', 'https://guess-the-surah.moongazer.tech/'],
+    ['apex host', 'https://moongazer.tech/about/?q=1', 'ayah-threads', 'https://moongazer.tech/about/'],
+    ['own app subdomain', 'https://ayah-threads.moongazer.tech/a/#frag', 'ayah-threads', 'https://ayah-threads.moongazer.tech/a/'],
+    ['uppercase host is normalised', 'https://AYAH-THREADS.MOONGAZER.TECH/', 'ayah-threads', 'https://ayah-threads.moongazer.tech/'],
   ])('accepts %s', (_name, raw, slug, expected) => {
     expect(cleanPageUrl(raw, slug)).toBe(expected);
   });
 
   test.each([
-    ['http scheme', 'http://guess-the-surah.moongazer.tech/', 'guess-the-surah'],
-    ['another app subdomain', 'https://ayah-threads.moongazer.tech/', 'guess-the-surah'],
-    ['foreign host', 'https://example.com/', 'guess-the-surah'],
-    ['lookalike host', 'https://moongazer.tech.evil.example/', 'guess-the-surah'],
-    ['explicit port', 'https://moongazer.tech:8443/', 'guess-the-surah'],
-    ['credentials in URL', 'https://user:pw@moongazer.tech/', 'guess-the-surah'],
-    ['not a URL', 'moongazer.tech/about', 'guess-the-surah'],
-    ['empty', '', 'guess-the-surah'],
-    ['over 300 characters after cleaning', `https://moongazer.tech/${'a'.repeat(300)}`, 'guess-the-surah'],
+    ['http scheme', 'http://ayah-threads.moongazer.tech/', 'ayah-threads'],
+    ['another app subdomain', 'https://seerah-timeline.moongazer.tech/', 'ayah-threads'],
+    ['foreign host', 'https://example.com/', 'ayah-threads'],
+    ['lookalike host', 'https://moongazer.tech.evil.example/', 'ayah-threads'],
+    ['explicit port', 'https://moongazer.tech:8443/', 'ayah-threads'],
+    ['credentials in URL', 'https://user:pw@moongazer.tech/', 'ayah-threads'],
+    ['not a URL', 'moongazer.tech/about', 'ayah-threads'],
+    ['empty', '', 'ayah-threads'],
+    ['over 300 characters after cleaning', `https://moongazer.tech/${'a'.repeat(300)}`, 'ayah-threads'],
   ])('rejects %s', (_name, raw, slug) => {
     expect(cleanPageUrl(raw, slug)).toBeNull();
   });
@@ -119,10 +119,10 @@ describe('cleanPageUrl', () => {
 describe('validateEvent', () => {
   test('a valid beacon stores the UTC date from the server clock', () => {
     const late = Date.UTC(2026, 10, 11, 23, 59, 59, 999);
-    expect(validateEvent('{"a":"guess-the-surah","i":"home","e":"activity_started"}', late)).toEqual({
+    expect(validateEvent('{"a":"ayah-threads","i":"home","e":"activity_started"}', late)).toEqual({
       kind: 'store',
       date: '2026-11-11',
-      app_slug: 'guess-the-surah',
+      app_slug: 'ayah-threads',
       item_id: 'home',
       event_type: 'activity_started',
     });
@@ -135,19 +135,19 @@ describe('validateEvent', () => {
   });
 
   test.each([
-    ['item id with uppercase', '{"a":"guess-the-surah","i":"Al-Fatiha","e":"activity_started"}'],
-    ['item id with a space', '{"a":"guess-the-surah","i":"a b","e":"activity_started"}'],
-    ['item id of 65 characters', `{"a":"guess-the-surah","i":"${'a'.repeat(65)}","e":"activity_started"}`],
-    ['empty item id', '{"a":"guess-the-surah","i":"","e":"activity_started"}'],
+    ['item id with uppercase', '{"a":"ayah-threads","i":"Al-Fatiha","e":"activity_started"}'],
+    ['item id with a space', '{"a":"ayah-threads","i":"a b","e":"activity_started"}'],
+    ['item id of 65 characters', `{"a":"ayah-threads","i":"${'a'.repeat(65)}","e":"activity_started"}`],
+    ['empty item id', '{"a":"ayah-threads","i":"","e":"activity_started"}'],
     ['unknown app', '{"a":"not-an-app","i":"home","e":"activity_started"}'],
-    ['unknown event', '{"a":"guess-the-surah","i":"home","e":"page_view"}'],
-    ['extra key', '{"a":"guess-the-surah","i":"home","e":"activity_started","u":"x"}'],
-    ['missing key', '{"a":"guess-the-surah","e":"activity_started"}'],
+    ['unknown event', '{"a":"ayah-threads","i":"home","e":"page_view"}'],
+    ['extra key', '{"a":"ayah-threads","i":"home","e":"activity_started","u":"x"}'],
+    ['missing key', '{"a":"ayah-threads","e":"activity_started"}'],
     ['numeric app slug', '{"a":1,"i":"home","e":"activity_started"}'],
-    ['array body', '["guess-the-surah","home","activity_started"]'],
+    ['array body', '["ayah-threads","home","activity_started"]'],
     ['invalid JSON', '{"a":'],
     ['empty body', ''],
-    ['body over 512 bytes', `{"a":"guess-the-surah","i":"${'a'.repeat(520)}","e":"activity_started"}`],
+    ['body over 512 bytes', `{"a":"ayah-threads","i":"${'a'.repeat(520)}","e":"activity_started"}`],
   ])('ignores %s', (_name, body) => {
     expect(validateEvent(body, NOW)).toEqual({kind: 'ignore'});
   });

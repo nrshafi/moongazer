@@ -1,6 +1,6 @@
 # Moongazer design system
 
-The root design contract for all 17 apps and the directory. Each app adds a one-page `apps/<slug>/DESIGN.md` that may narrow these rules but never adds a colour or font. Decision record: D20 in `plan/implementation/00-INDEX.md`; background in `plan/DESIGN_RECOMMENDATIONS.md` (archetypes only — its per-app palettes are not used).
+The root design contract for all 13 active apps and the directory (updated 2026-11-25 from the earlier 17-app / 20-app portfolio). Each app adds a one-page `apps/<slug>/DESIGN.md` that may narrow these rules but never adds a colour or font. Decision record: D20 in `plan/implementation/00-INDEX.md`; background in `plan/DESIGN_RECOMMENDATIONS.md` (archetypes only — its per-app palettes are not used).
 
 **How to use it:** read this file, then the app's `DESIGN.md`, before any UI change. If a change needs something not covered here, update this file first (shared lane), then build.
 
@@ -40,19 +40,19 @@ The collection is one illuminated night library. Every surface draws on three so
 
 - **Aniconism.** No people or animals in any image, icon, motif or illustration. Use geometry, objects, plants, architecture, sky and maps.
 - **No sound.** No music, bells or sound effects. Recitation audio exists only where an app already links a named reciter, and it is always opt-in.
-- **Quran text.** Exact canonical text from the verified snapshot, never altered or re-typed. Arabic in Amiri, `lang="ar" dir="rtl"`, 1.6–1.8 rem, line-height ≥ 1.9 in both themes. Translation attributed by name.
-- **Honorifics.** ﷺ after the Prophet's name through `Honorific.astro` / `withHonorifics()`; the glyph is mapped to Amiri by `unicode-range: U+FDFA`.
+- **Quran text.** Exact canonical Arabic and Pickthall translations remain preserved in local JSON data (`src/data/content.json`, `homepage/ayat-of-the-night.json`, `_implementation/research/quran-full.json`) and verified against the snapshot, never altered or re-typed. Under the 2026-11-25 English-only UI decision, app and directory UIs do not render Arabic script passages; they display the attributed Pickthall English translation in DM Sans / Newsreader.
+- **Honorifics.** Preserved: ﷺ after the Prophet's name through `Honorific.astro` / `withHonorifics()`; the glyph (`U+FDFA`) is mapped to Amiri by `unicode-range: U+FDFA`.
 - **Claims.** Never imply scholarly review. Limits are stated plainly, once, where they matter.
 
 ## 2. Families and tokens
 
-Colour follows the subject family. Every app sets `config.accent` to one of `teal`, `gold`, `blue`, `violet`; `global.css` maps it through `data-accent` on `<html>`.
+Colour follows the subject family. Every app sets `config.accent` to one of `teal`, `gold`, `blue`, `violet`; `global.css` maps it through `data-accent` on `<html>`. (Updated 2026-11-25 for the 13 active apps; `guess-the-surah`, `word-groups`, `is-it-in-the-quran`, and `understand-your-salah` were deleted.)
 
 | Family (`accent`) | Apps |
 | --- | --- |
-| Quran (`teal`, default) | guess-the-surah, ayah-threads, word-groups, is-it-in-the-quran, stories-of-the-prophets, parables-of-the-quran, places-in-the-quran, why-it-was-revealed |
+| Quran (`teal`, default) | ayah-threads, stories-of-the-prophets, parables-of-the-quran, places-in-the-quran, why-it-was-revealed |
 | Seerah & history (`gold`) | seerah-timeline, seerah-detective, civilization-timeline |
-| Worship & daily life (`blue`) | understand-your-salah, hifz-planner, everyday-akhlaq (zakat-calculator when it ships) |
+| Worship & daily life (`blue`) | hifz-planner, everyday-akhlaq, zakat-calculator |
 | Family & group (`violet`) | family-halaqa, quran-escape-room |
 
 Token sets. `--accent` is for fills, borders, progress and large text; small text uses `--accent-ink`; text on an accent fill uses `--on-accent`.
@@ -87,9 +87,9 @@ Deviations from `DESIGN_RECOMMENDATIONS.md` §4, made to pass contrast: gold lig
 
 ## 3. Typography
 
-- **Fonts (local WOFF2, OFL):** DM Sans (interface), Newsreader (editorial headings and reading text), Amiri (Arabic and ﷺ). JetBrains Mono only for small metadata chips (dates, refs, counts) in Playboard and Dossier apps. No other fonts, no remote font requests.
+- **Fonts (local WOFF2, OFL):** DM Sans (interface), Newsreader (editorial headings and reading text), Amiri (mapped via `unicode-range: U+FDFA` for the ﷺ honorific; Arabic script passages are not rendered in the UI as of 2026-11-25). JetBrains Mono only for small metadata chips (dates, refs, counts) in Playboard and Dossier apps. No other fonts, no remote font requests.
 - **Scale:** H1 ≤ 2.1 rem on phones, ≤ 3.2 rem on desktop; H2 1.4–1.7 rem; body 1 rem / 1.6–1.75; small text ≥ 0.72 rem and never below 12 px.
-- **Arabic:** see §1. Never italic, never letter-spaced.
+- **English-only UI (2026-11-25):** Quranic quotations in app and directory UIs render Pickthall translations in DM Sans / Newsreader without Arabic script blocks. Canonical Arabic remains in local JSON data only.
 
 ## 4. Spacing, radius, motion
 
@@ -107,16 +107,16 @@ Deviations from `DESIGN_RECOMMENDATIONS.md` §4, made to pass contrast: gold lig
 - **End of session.** Result → "What you learned" (1–3 lines with references) → share (copy + WhatsApp, plain text, never the answer, no tracking parameters) → one recommended next app → "New puzzle tomorrow" slot (daily games) → compact "Report an error" link.
 - **About this app.** The learning guide renders after the activity as server-rendered `<details>` per question.
 - **Scene.** Each app's `public/motif.svg` is its generated arch scene (§0, ≤ 18 KB, `aria-hidden="true"`), shown in the hero at every width.
-- **Print and projector.** Print hides chrome and shows the activity in black on white. Projector mode (Family Halaqa, Escape Room, Seerah Timeline, Stories, Word Groups, Guess the Surah) scales text ×1.35, simplifies chrome and raises contrast; saved only if the visitor opts in (`projector` key).
+- **Print and projector.** Print hides chrome and shows the activity in black on white. Projector mode (Family Halaqa, Quran Escape Room, Seerah Timeline, Stories of the Prophets) scales text ×1.35, simplifies chrome and raises contrast; saved only if the visitor opts in (`projector` key).
 
 ## 6. Archetypes (layout, components, motif — never colour)
 
 | Archetype | Apps | Feel |
 | --- | --- | --- |
-| Playboard | Guess the Surah, Ayah Threads, Word Groups | Crisp, tactile game board; instant feedback; numbered runs |
-| Scriptoria | Stories of the Prophets, Parables, Why It Was Revealed | Calm reading column (≤ 680 px), Newsreader, generous leading |
-| Dossier | Is It in the Quran?, Places, Seerah Timeline, Seerah Detective, Civilization Timeline | Evidence cards, index tabs, mono metadata chips, era ribbons |
-| Sanctuary | Understand Your Salah, Hifz Planner (Zakat Calculator) | Quiet step wizard, live summary, printable result |
+| Playboard | Ayah Threads | Crisp, tactile game board; instant feedback; numbered runs |
+| Scriptoria | Stories of the Prophets, Parables of the Quran, Why It Was Revealed | Calm reading column (≤ 680 px), Newsreader, generous leading |
+| Dossier | Places in the Quran, Seerah Timeline, Seerah Detective, Civilization Timeline | Evidence cards, index tabs, mono metadata chips, era ribbons |
+| Sanctuary | Hifz Planner, Zakat Calculator | Quiet step wizard, live summary, printable result |
 | Hearth | Quran Escape Room, Everyday Akhlaq, Family Halaqa | Large friendly cards, readable from across a room, tap-to-reveal answers |
 
 Screen 1 on a phone (390 × 844), per archetype:
@@ -130,7 +130,7 @@ Playboard                      Scriptoria                     Dossier
 +----------------------------+ +----------------------------+ +----------------------------+
 | round settings (one row)   | | [Choose a story ▾]         | | [search / era ribbon]      |
 | ┌──────────────────────┐   | | ┌──────────────────────┐   | | ┌──────────────────────┐   |
-| │ clue / board tiles   │   | | │ passage card (Amiri) │   | | │ evidence card 1      │   |
+| │ clue / board tiles   │   | | │ passage (Pickthall)  │   | | │ evidence card 1      │   |
 | │ [A] [B] [C] [D]      │   | | │ reflection prompt    │   | | │ [Corroborated] chip  │   |
 | └──────────────────────┘   | | └──────────────────────┘   | | └──────────────────────┘   |
 | ▸ How this works           | | ▸ How this works           | | ▸ How this works           |

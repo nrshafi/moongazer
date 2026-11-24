@@ -17,9 +17,8 @@ const hadith = entry.basis.filter(b => b.type === 'hadith');
   {quran.map(b => (
     <><div class="basis-item">
       <p class="basis-ref"><a href={b.url} target="_blank" rel="noopener noreferrer">Quran {b.ref} <span aria-hidden="true">↗</span></a></p>{' '}
-      <p class="quran-ar" lang="ar" dir="rtl">{b.arabic}</p>{' '}
       <p class="quran-en">{b.translation}</p>{' '}
-      <p class="edition">Arabic: {b.arabicEdition}. English: {b.translationEdition} (Pickthall).</p>
+      <p class="edition">English: {b.translationEdition} (Pickthall).</p>
     </div>{' '}</>
   ))}
   {hadith.length > 0 && <><h3>Hadith (paraphrased)</h3>{' '}</>}

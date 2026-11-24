@@ -2,11 +2,11 @@
 
 ## GitHub Actions deployment
 
-Pushes to main check, test and build all sixteen apps and the directory, then deploy all existing Direct Upload projects using project-scoped asset hashes. Account and token credentials stay in GitHub Actions secrets. The first production run passed 646/646 live checks; deployment/automation-result.json records it.
+Pushes to main check, test and build all active apps and the directory, then deploy all existing Direct Upload projects using project-scoped asset hashes. Account and token credentials stay in GitHub Actions secrets. The first production run (when the portfolio had 20 apps) passed 646/646 live checks; deployment/automation-result.json records it.
 
 ## Stack and project model
 
-Sixteen independent Astro 7.4.2 applications use Bun 1.4.4, TypeScript 6.0.3 and @astrojs/check 0.9.12. Every app has its own package.json, bun.lock, strict tsconfig, static Astro configuration, copied layout/styles/helpers, bundled content and public assets. The repository root is not a package workspace. There is no authentication service or account system. The only runtime server code is the first-party service boundary below (P4), which serves the apex origin only.
+Thirteen active independent Astro 7.4.2 applications (updated 2026-11-25 from the earlier 20-, 16-, and 17-app portfolios) use Bun 1.4.4, TypeScript 6.0.3 and @astrojs/check 0.9.12. Every app has its own package.json, bun.lock, strict tsconfig, static Astro configuration, copied layout/styles/helpers, bundled content and public assets. The repository root is not a package workspace. There is no authentication service or account system. The only runtime server code is the first-party service boundary below (P4), which serves the apex origin only.
 
 ## First-party services (P4)
 
@@ -58,7 +58,7 @@ Within each app, pages and getStaticPaths generate static routes; the shell owns
 
 - The full canonical Quran snapshot is `_implementation/research/quran-full.json`, with all 6,236 Arabic/Pickthall ayahs. Earlier `quran-snapshot.json` contains the first 225-ayah subset and 43 commentary records; it is not full corpus coverage.
 - Batch-three research adds commentary anchors, full parable context and a second commentary for 24:35. Canonical text and fetched commentary are distinct from authored questions, groupings, fictional consequences and reflections.
-- App content/provenance is in each `src/data/`. The checker additionally lazy-loads its local full corpus. Static verification compares canonical quotations and checks hashes.
+- App content/provenance is in each `src/data/`. Static verification compares canonical quotations (both Arabic and Pickthall in JSON data) against `_implementation/research/quran-full.json` and checks hashes. Under the 2026-11-25 English-only UI decision, app and directory UIs render only the English Pickthall translation (canonical Arabic remains preserved in JSON data, not rendered in the UI; `ﷺ` honorifics remain preserved).
 - In-memory state is primary. Optional localStorage records use `<app-slug>:<key>` with `{at,value}` and access-time 30-day expiry. Theme is separate from activity opt-in; explicit bookmarks count as a save action. Stored bytes do not disappear automatically while a site is closed.
 - Exports are visitor-triggered browser downloads/clipboard actions. Parables reflection notes remain in memory until explicitly copied/downloaded. No server history or user identity is stored.
 
@@ -91,7 +91,7 @@ Breadcrumbs and app-directory links are visible, and their JSON-LD mirrors actua
 3. Preserve source attribution and literal canonical quotations. No invented Quran text, scholarly certification or precise historical/geographical claims beyond evidence.
 4. Keep optional browser state isolated and resilient to expiry/corruption/blocked storage.
 5. Edit authoritative source; regenerate release output. Do not hand-edit vendor files, generated dist or ZIP contents.
-6. Preserve all twenty apps as independent static projects. Use the existing pinned stack, local assets and source preparation model.
+6. Preserve all 13 active apps as independent static projects (updated 2026-11-25 from the earlier 20-, 16-, and 17-app portfolios). Use the existing pinned stack, local assets and source preparation model.
 
 ## Final implementation batch
 
@@ -109,7 +109,7 @@ The shell listens for pointerdown and Tab keydown and sets a transient `data-inp
 
 ## Git repository layout
 
-The portfolio is prepared as one Git repository with all sixteen independent apps, shared research, and verification records. Each app retains its own manifest, lockfile, build and deploy settings; this is not a Bun workspace. App-local ignore rules also apply when an app is copied out.
+The portfolio is prepared as one Git repository with all 13 active independent apps, shared research, and verification records. Each app retains its own manifest, lockfile, build and deploy settings; this is not a Bun workspace. App-local ignore rules also apply when an app is copied out.
 
 ## SEO release, 30 October 2026
 
@@ -142,24 +142,31 @@ Four apps were folded into receiving sections and then **deleted outright** (D2c
 
 `_implementation/sync-shared.ts` SHARED now also lists `src/components/HowItWorks.astro`, `src/lib/session-end.ts` and `tests/session-end.test.ts`. `Shell.astro`, `refinement.css`, `LearningGuide.astro` and `utils.ts` carry the P5 changes described in `context/ui-context.md` ("P5 shared shell implementation"). `shell.ts` stays in two variants (the print-time details opener) and `global.css` in several; both are edited in place across all apps rather than copied.
 - Family tokens: `config.accent` (`teal`, `gold`, `blue`, `violet`) maps through `data-accent` on `<html>`; the token values and contrast table are in the root `DESIGN.md` and `_implementation/contrast.py`.
-- JetBrains Mono (v2.304, OFL) is subset to WOFF2 and shipped as `public/fonts/jetbrains-mono.woff2` plus licence text in guess-the-surah, ayah-threads, word-groups, is-it-in-the-quran, places-in-the-quran, seerah-timeline, seerah-detective and civilization-timeline. Source URL, hashes and the subset command are in `_implementation/research/fonts/jetbrains-mono-RECORD.md`.
+- JetBrains Mono (v2.304, OFL) is subset to WOFF2 and shipped as `public/fonts/jetbrains-mono.woff2` plus licence text in the Playboard and Dossier apps (5 active apps after the 2026-11-25 pruning: `ayah-threads`, `places-in-the-quran`, `seerah-timeline`, `seerah-detective`, `civilization-timeline`). Source URL, hashes and the subset command are in `_implementation/research/fonts/jetbrains-mono-RECORD.md`.
 - Storage: the projector toggle uses the namespaced key `projector` (via `read`/`write`/`forget`) only when the app's existing `remember` key is true.
 
-## P6 shared daily module (12 November 2026)
+## P6 shared daily module (12 November 2026; updated 25 November 2026)
 
-`src/lib/daily.ts` is an identical shared file in four apps only: guess-the-surah, ayah-threads, word-groups and seerah-timeline. It is checked by `bun _implementation/sync-shared.ts --check --set daily` (covers `src/lib/daily.ts`, `tests/daily.test.ts`, `tests/daily-release.test.ts`); the default `--check` is unaffected.
+`src/lib/daily.ts` was introduced across four daily apps and, after the 2026-11-25 deletion of `guess-the-surah` and `word-groups`, remains an identical shared file in the two remaining daily apps: `ayah-threads` and `seerah-timeline`. It is checked by `bun _implementation/sync-shared.ts --check --set daily` (covers `src/lib/daily.ts`, `tests/daily.test.ts`, `tests/daily-release.test.ts`); the default `--check` is unaffected.
 - Exports: `DAILY_EPOCH`, `DAILY_EPOCH_IS_PLACEHOLDER`, `localDateKey`, `dayNumber`, `dailyIndex`, `isStreak`, `updateStreak`, `shareText`, `assertNoAnswer` (test helper) and `whatsappUrl` (re-exported from `session-end.ts`, the single implementation).
 - `dayNumber(date)` uses the visitor's local calendar date; the epoch day is 1; dates before the epoch return 0 (practice mode only). `dailyIndex(n, bankLength, seed)` reads a seeded Fisher-Yates permutation (`shuffle` in `utils.ts`) at `(n - 1) mod bankLength`; -1 for an empty bank.
-- Epoch: `DAILY_EPOCH = '2026-12-31'` is a placeholder (`DAILY_EPOCH_IS_PLACEHOLDER = true`). `tests/daily-release.test.ts` is skipped unless `RELEASE=1` and then fails while the flag is true; the release step sets the real date and flips the flag in all four copies (use `--from` with `--set daily`).
-- Streak storage key: `<slug>:streak` (for example `guess-the-surah:streak`), value `{last:'YYYY-MM-DD', count, best}`, via `read`/`write` with the 30-day access rule and `isStreak` as the validator. Same day unchanged, next day +1, gap resets to 1, `best` is the maximum; invalid stored data counts as none; a stored `last` after today leaves it unchanged.
+- Epoch: `DAILY_EPOCH = '2026-11-12'` (originally prototyped as `'2026-12-31'`, set to `'2026-11-12'` at R6). `tests/daily-release.test.ts` is skipped unless `RELEASE=1`.
+- Streak storage key: `<slug>:streak` (for example `ayah-threads:streak`), value `{last:'YYYY-MM-DD', count, best}`, via `read`/`write` with the 30-day access rule and `isStreak` as the validator. Same day unchanged, next day +1, gap resets to 1, `best` is the maximum; invalid stored data counts as none; a stored `last` after today leaves it unchanged.
 - Share text: `shareText({name, n, resultLine, host})` gives `<name> #<n> · <result line>` and a new line with the app host, plain text, no emoji, no URL parameters.
 - Directory copy: `homepage/daily.js` is a plain ES module. It exports `DAILY_EPOCH`, `dayNumber`, `dailyIndex`, `shuffle`, plus `AYAH_SEED = 60`, `ayahIndex` and `longDate`. `homepage/app.js` (now `type="module"`) imports it for "Tonight on Moongazer" (T6.6). `homepage/tests/daily-parity.test.ts` asserts:
   - identical output to the app module over 400 days, for bank sizes 30 and 114;
   - that the ayah index equals `dailyIndex(dayNumber, 66, AYAH_SEED)` from launch day onwards, with every ayah shown once before any repeats.
   Change both copies together.
 - Tonight data flow:
-  - `homepage/ayat-of-the-night.json` is the C18 list, 66 verified ayat checked against `quran-full.json` by `verify-static.py`.
-  - At build, `build.mjs` validates the list and renders the build-date ayah into the HTML. It also writes `dist/ayat-of-the-night.json` with `{ref, arabic, translation}`.
+  - `homepage/ayat-of-the-night.json` is the C18 list, 66 verified ayat checked against `quran-full.json` by `verify-static.py`. Both `arabic` and `translation` remain preserved in `homepage/ayat-of-the-night.json`.
+  - At build, `build.mjs` validates the list and renders the build-date ayah into the HTML. Under the 2026-11-25 English-only UI decision, the directory UI and `dist/ayat-of-the-night.json` display Pickthall translations without rendering Arabic passages (no `amiri-ayat.woff2` Arabic passage font in UI).
   - At runtime, `app.js` fetches that file (same origin; the directory CSP allows `connect-src 'self'`) only when tonight's index differs from the built one. Offline, the built ayah stays.
-  - The Arabic uses `fonts/amiri-ayat.woff2`, an Amiri subset regenerated by `_implementation/subset-ayah-font.py` whenever the list changes.
-- Booktube feed (T6.8, D24): `homepage/booktube.ts` runs under Bun from `build.mjs` and writes `dist/daily/booktube.json` (`format: "moongazer-booktube-1"`). It covers 60 days from today, or from launch day before the epoch, with entries `{date, n, guessTheSurah: {surah, name, clues[{kind, label, text, ref?}]}, wordGroups: {board}, ayahThreads: {puzzle}, seerahTimeline: {pair, first, second}, ayahOfTheNight: {ref}}`. It imports each app's own `daily-bank` module, so it always matches the apps. It contains answers on purpose: it is not linked and not in the sitemap, and `_headers` serves `/daily/*` with `X-Robots-Tag: noindex`.
+- Booktube feed (T6.8, D24): `homepage/booktube.ts` runs under Bun from `build.mjs` and writes `dist/daily/booktube.json` (`format: "moongazer-booktube-1"`). It covers 60 days from today, or from launch day before the epoch, importing the active daily apps' `daily-bank` modules (`ayah-threads` and `seerah-timeline` after 2026-11-25) plus `ayahOfTheNight`. It contains answers on purpose: it is not linked and not in the sitemap, and `_headers` serves `/daily/*` with `X-Robots-Tag: noindex`.
+
+## English-only UI and 13-app portfolio scope (25 November 2026)
+
+Confirmed owner decisions:
+- **13 active apps:** `understand-your-salah`, `word-groups`, `guess-the-surah`, and `is-it-in-the-quran` are deleted outright (no redirects), leaving `ayah-threads`, `civilization-timeline`, `everyday-akhlaq`, `family-halaqa`, `hifz-planner`, `parables-of-the-quran`, `places-in-the-quran`, `quran-escape-room`, `seerah-detective`, `seerah-timeline`, `stories-of-the-prophets`, `why-it-was-revealed`, and `zakat-calculator`.
+- **Canonical data vs UI separation:** Canonical Arabic text remains preserved in JSON data (`src/data/content.json`, `homepage/ayat-of-the-night.json`, `_implementation/research/quran-full.json`) and continues to be checked by `_implementation/verify-static.py`. App UIs (the 13 Astro apps) and `homepage/` render English-only copy and Pickthall translations, with no Arabic passage rendering in the UI.
+- **Preserved honorifics:** `ﷺ` honorifics (`U+FDFA`) remain preserved in editorial copy via `Honorific.astro` and `withHonorifics()`.
+- **Inventory and checkers:** `deployment/targets.json`, `homepage/functions/_lib/apps.json` (allowlist), `seo-catalog.json`, `learning-guides.json`, `homepage/`, `_implementation/`, and affected app/directory tests align to the 13-app English-only-UI portfolio.

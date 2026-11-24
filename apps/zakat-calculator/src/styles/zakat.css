@@ -77,7 +77,6 @@
 .basis-item > * { margin: 0; }
 .basis-ref { font-weight: 700; font-size: .88rem; }
 .basis-ref a { color: var(--accent-ink); }
-.quran-ar { font-family: Amiri, 'Traditional Arabic', serif; font-size: 1.5rem; line-height: 2.1; direction: rtl; text-align: right; overflow-wrap: anywhere; }
 .quran-en { font-size: .9rem; line-height: 1.65; }
 .edition { font-size: .72rem; color: var(--muted); }
 .position { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--surface-2); display: grid; gap: 4px; }

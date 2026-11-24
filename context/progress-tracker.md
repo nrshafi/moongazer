@@ -1,5 +1,31 @@
 # Repository progress tracker
 
+## 2026-11-25T03:24:10+06:00 Asia/Dhaka — 13-app pruning and English-only UI transition (working tree on `main` at `96ddf9c`)
+
+- **Scope implemented (uncommitted working tree on `main` at `96ddf9c`):**
+  - Deleted the 4 core-Arabic apps outright (`understand-your-salah`, `word-groups`, `guess-the-surah`, `is-it-in-the-quran`), leaving 13 active apps (`ayah-threads`, `civilization-timeline`, `everyday-akhlaq`, `family-halaqa`, `hifz-planner`, `parables-of-the-quran`, `places-in-the-quran`, `quran-escape-room`, `seerah-detective`, `seerah-timeline`, `stories-of-the-prophets`, `why-it-was-revealed`, `zakat-calculator`).
+  - Updated `homepage/`, `deployment/`, `_implementation/`, `context/*.md`, `DESIGN.md`, and `README.md` for the 13-app English-only-UI scope.
+  - Removed all Arabic script rendering from the UI across all 13 remaining apps and `homepage/` (displaying Pickthall translations), while preserving canonical Arabic in local JSON snapshots/data (`src/data/content.json`, `homepage/ayat-of-the-night.json`, `_implementation/research/quran-full.json`) and preserving `ﷺ` honorifics (`Honorific.astro` / `withHonorifics()`).
+- **Observed validation (from full verification suite):**
+  - `bun _implementation/verify.ts check`: 13/13 apps passed (0 errors, 0 warnings, 0 hints).
+  - `bun _implementation/verify.ts test`: 13/13 apps passed (382 pass, 0 fail, 11784 expect() calls).
+  - `bun _implementation/verify.ts build`: 13/13 app builds passed.
+  - `node homepage/build.mjs`: built 9 indexable directory pages, 13 app links, and the 60-day Booktube feed.
+  - `bun test _implementation/seo.test.ts homepage/tests`: 64 pass, 0 fail (2956 expect() calls across 3 files).
+  - `python _implementation/check-content-hygiene.py`: PASSED (62 production JSON files checked, 0 issues).
+  - `python _implementation/formal/verify-state-machines.py`: PASSED (replayed 2 historical bugs: 2 theme + 14 streak counterexamples caught; 3 fixed state machines and live source verified, 0 violations).
+  - `bun _implementation/sync-shared.ts --check`: PASSED (16 shared files identical across 13 apps; `--set daily` identical across 2 apps; `--set mastery` identical).
+  - `python _implementation/audit-text-joins.py` and `--bdi`: `unique=0 occurrences=0 pages=316`.
+  - `python _implementation/verify-static.py`: verified 305 static pages across 13 apps (`canonicalTextVerified: true`, `localLinksVerified: true`, `externalRuntimeAssets: false`).
+  - `python deployment/verify-seo.py`: `{"sites": 14, "pages": 316, "indexable": 288, "passed": true}`.
+  - Built artifact scans: 0 Arabic script characters (excluding `ﷺ`) and 0 deleted-app links across 316 built HTML files, 61 app JS bundles, and 13 directory assets.
+  - Headless Chrome smoke checks (`1280x900` and `390x844`): passed on `homepage/dist/` (`/`, `/ramadan/`, `/quran-learning/`) and representative kept apps (`ayah-threads`, `family-halaqa`, `seerah-timeline`, `zakat-calculator`) with 0 console/runtime/404 errors, 0 horizontal overflow, 0 rendered Arabic passages, and verified Pickthall translations + `ﷺ` honorifics.
+- **Material limits & remaining work:**
+  - Changes remain uncommitted in the local working tree (no `git commit`, push, live Cloudflare deployment, or old subdomain deletion was run).
+  - `_implementation/verify-context.py` was not updated or run and retains its older 20-app assertion.
+  - `moongazer-audit-and-patches/` remains untracked.
+  - App-local `context/` and `DESIGN.md` files inside the 13 kept apps were not individually rewritten.
+
 ## Grill-me skill merge
 
 2026-11-11T01:09:58+06:00 Asia/Dhaka: Merged the `grilling` skill into `.agents/skills/grill-me/SKILL.md` and removed `.agents/skills/grilling/`. Grill-me now asks every question through the host's structured question tool (`AskUserQuestion` in Claude Code), with the recommended option listed first and the tool's built-in free-text choice for disagreement. It no longer lists questions in chat, and it uses chat formatting only when no such tool exists. It keeps the design-tree/frontier method, asks up to 4 questions per call, and finishes with a summary and a confirmation question. It no longer requires a sub-agent for fact lookups. The model can now invoke it from "grill" phrases, since `disable-model-invocation` was dropped. Validation: the frontmatter parses as YAML with only `name` and `description`, and `git diff --check` passes. No live grilling session or model evaluation was run.

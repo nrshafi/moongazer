@@ -11,7 +11,7 @@ const method = content.method;
     <header>
       <span class="eyebrow">Method first</span>
       <h1>Zakat method and sources</h1>
-      <p>Every figure and position in the calculator comes from the entries below. Quran text is copied exactly (Arabic and the Pickthall translation). Hadith are paraphrased: the collection, number and grading are shown as sunnah.com shows them, with a link to the page. Where scholars differ, each position names who states it and links to the page that states it.</p>
+      <p>Every figure and position in the calculator comes from the entries below. Quran text is copied in the Pickthall translation. Hadith are paraphrased: the collection, number and grading are shown as sunnah.com shows them, with a link to the page. Where scholars differ, each position names who states it and links to the page that states it.</p>
       <p class="notice warning">This is an educational summary, not a fatwa. Each citation was checked against the page it cites, but no scholar has reviewed this page. {LIMIT_SENTENCE}</p>
       <ul class="method-toc" aria-label="Entries on this page">
         {entries.map(e => <><li><a href={`#${e.id}`}>{e.title}</a></li>{' '}</>)}

@@ -16,7 +16,6 @@ import data from '../data/content.json';
     <div id="puzzle-panel" role="tabpanel" aria-labelledby="tab-practice">
       <div class="picker-row">
         <label class="field" data-for="practice">Puzzle<select id="puzzle-picker">{data.puzzles.map(p=><option value={p.id}>Puzzle {String(p.number).padStart(2,'0')}</option>)}</select></label> <span class="micro picker-progress" id="progress-note" data-for="practice"></span> <button class="button ghost small" id="random-puzzle" type="button" data-for="practice">Surprise me</button>{' '}
-        <label class="check"><input type="checkbox" id="show-arabic"/>Show Arabic</label>{' '}
         <label class="check" data-for="practice"><input type="checkbox" id="remember"/>Remember my place for up to 30 days</label>{' '}
         <label class="check" data-for="daily" hidden><input type="checkbox" id="streak-on"/>Keep a streak on this device</label> <span class="micro picker-progress" id="streak-line" data-for="daily" hidden role="status"></span>
       </div>

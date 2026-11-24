@@ -18,10 +18,10 @@
   ],
   "related": [
     {
-      "name": "Guess the Surah",
-      "description": "Follow the clues. Find the chapter. Get to know the Quran one discovery at a time.",
-      "kind": "Quiz",
-      "url": "https://guess-the-surah.moongazer.tech/"
+      "name": "Quran Escape Room",
+      "description": "Work through a sequence of knowledge puzzles to unlock the next room.",
+      "kind": "Puzzle adventure",
+      "url": "https://quran-escape-room.moongazer.tech/"
     }
   ],
   "collection": {

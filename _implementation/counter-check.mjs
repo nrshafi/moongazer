@@ -11,7 +11,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const origins = JSON.parse(readFileSync(join(root, '_implementation/qa/e2e/origins.json'), 'utf8'));
 const allow = JSON.parse(readFileSync(join(root, 'homepage/functions/_lib/apps.json'), 'utf8'));
 const port = slug => origins.find(o => o.slug === slug).port;
-const sample = ['guess-the-surah', 'everyday-akhlaq', 'seerah-detective', 'stories-of-the-prophets'];
+const sample = ['ayah-threads', 'everyday-akhlaq', 'seerah-detective', 'stories-of-the-prophets'];
 const rules = sample.map(slug => `MAP ${slug}.moongazer.tech:80 127.0.0.1:${port(slug)}`).join(', ');
 const init = `window.__beacons=[];Object.defineProperty(Navigator.prototype,'sendBeacon',{configurable:true,value(url,data){data.text().then(t=>window.__beacons.push({url,body:JSON.parse(t)}));return true;}});`;
 
@@ -25,30 +25,31 @@ const b = await launch({args: [`--host-resolver-rules=${rules}`, '--disable-feat
 try {
   const p = await b.page({width: 390, height: 844, init});
 
-  // Guess the Surah: nothing on load; started + completed on the first answer; share on the challenge link.
-  await p.goto('http://guess-the-surah.moongazer.tech/', 800);
-  expect((await p.eval('location.hostname')) === 'guess-the-surah.moongazer.tech', 'guess-the-surah served under its production host name');
-  expect((await beacons(p)).length === 0, 'guess-the-surah: no beacon on page load');
-  if (!(await p.eval('!!document.querySelector("[data-answer]")'))) await p.eval('document.getElementById("setup-form").requestSubmit()');
-  await p.click('[data-answer]');
+  // Ayah Threads: nothing on load; started on first choice, completed on solve/reveal; share on the session-end Copy button.
+  await p.goto('http://ayah-threads.moongazer.tech/', 800);
+  expect((await p.eval('location.hostname')) === 'ayah-threads.moongazer.tech', 'ayah-threads served under its production host name');
+  expect((await beacons(p)).length === 0, 'ayah-threads: no beacon on page load');
+  if (!(await p.eval('!!document.querySelector("[data-theme]")'))) await p.click('#tab-practice');
+  await p.click('[data-theme]');
   let got = await beacons(p);
-  expect(got.length === 2 && got[0].body.e === 'activity_started' && got[1].body.e === 'activity_completed' && /^(surah|daily)-\d+$/.test(got[0].body.i), `guess-the-surah: started + completed on first answer (${JSON.stringify(got.map(x => x.body))})`);
-  expect(got.every(x => x.url === 'https://moongazer.tech/api/event' && x.body.a === 'guess-the-surah' && allow.includes(x.body.a)), 'guess-the-surah: endpoint and app slug are on the server allowlist');
-  await p.click('[data-answer]');
-  expect((await beacons(p)).length === 2, 'guess-the-surah: a second click on an answered question sends nothing');
-  // P5: sharing moved into the end-of-session block, so play the round to its end first.
-  for (let step = 0; step < 40 && !(await p.eval('!!document.querySelector(".session-end")')); step++) {
-    await p.eval('const a=document.querySelector("[data-answer]:not([disabled])"),n=document.getElementById("next-question");if(n){n.click()}else if(a){a.click()}return true');
-    await new Promise(r => setTimeout(r, 150));
+  expect(got.length >= 1 && got[0].body.e === 'activity_started' && /^[a-z0-9-]+$/.test(got[0].body.i), `ayah-threads: started on first choice (${JSON.stringify(got.map(x => x.body))})`);
+  expect(got.every(x => x.url === 'https://moongazer.tech/api/event' && x.body.a === 'ayah-threads' && allow.includes(x.body.a)), 'ayah-threads: endpoint and app slug are on the server allowlist');
+  const afterFirst = got.length;
+  await p.click('[data-theme]');
+  expect((await beacons(p)).length === afterFirst, 'ayah-threads: a second click on a chosen theme sends nothing');
+  if (!(await p.eval('!!document.querySelector(".session-end")'))) {
+    await p.click('#reveal-theme');
   }
-  const before = (await beacons(p)).length;
+  got = await beacons(p);
+  expect(got.length === 2 && got[0].body.e === 'activity_started' && got[1].body.e === 'activity_completed', `ayah-threads: completed on solve/reveal (${JSON.stringify(got.map(x => x.body))})`);
+  const before = got.length;
   await p.click('.session-end button');
   got = await beacons(p);
   const share = got.slice(before);
-  expect(share.length === 1 && share[0].body.e === 'share_clicked', `guess-the-surah: one share_clicked from the end-of-session Copy (${JSON.stringify(share.map(x => x.body))})`);
+  expect(share.length === 1 && share[0].body.e === 'share_clicked', `ayah-threads: one share_clicked from the end-of-session Copy (${JSON.stringify(share.map(x => x.body))})`);
   await p.click('[data-open-feedback]');
-  expect(await p.eval('document.getElementById("site-feedback").open'), 'guess-the-surah: "Report an error" opens the footer form');
-  expect(await p.eval('document.querySelectorAll("#site-feedback").length === 1 && document.querySelectorAll("[id=feedback]").length <= 1'), 'guess-the-surah: footer form id is unique');
+  expect(await p.eval('document.getElementById("site-feedback").open'), 'ayah-threads: "Report an error" opens the footer form');
+  expect(await p.eval('document.querySelectorAll("#site-feedback").length === 1 && document.querySelectorAll("[id=feedback]").length <= 1'), 'ayah-threads: footer form id is unique');
 
   // Everyday Akhlaq: started once on the first choice.
   const scenario = firstDir('everyday-akhlaq', 'scenario');
@@ -77,9 +78,9 @@ try {
   expect(got.length === 2 && got.every(x => x.body.i === prophet), `stories: started + completed for ${prophet} (${JSON.stringify(got.map(x => x.body))})`);
 
   // Preview host: the same answer click sends nothing.
-  await p.goto(`http://127.0.0.1:${port('guess-the-surah')}/`, 800);
-  if (!(await p.eval('!!document.querySelector("[data-answer]")'))) await p.eval('document.getElementById("setup-form").requestSubmit()');
-  await p.click('[data-answer]');
+  await p.goto(`http://127.0.0.1:${port('ayah-threads')}/`, 800);
+  if (!(await p.eval('!!document.querySelector("[data-theme]")'))) await p.click('#tab-practice');
+  await p.click('[data-theme]');
   expect((await beacons(p)).length === 0, 'preview host 127.0.0.1: no beacon');
   expect(p.errors.length === 0, `no script errors (${p.errors.join(' | ')})`);
 } finally {

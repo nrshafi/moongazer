@@ -1,5 +1,5 @@
 import { test, expect } from 'bun:test';
-import * as app from '../../apps/guess-the-surah/src/lib/daily';
+import * as app from '../../apps/ayah-threads/src/lib/daily';
 // @ts-ignore plain-JS module without types
 import * as dir from '../daily.js';
 

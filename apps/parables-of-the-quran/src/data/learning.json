@@ -18,10 +18,10 @@
   ],
   "related": [
     {
-      "name": "Is It in the Quran?",
-      "description": "Look for wording in a local Quran translation and inspect the matching passages.",
-      "kind": "Text search",
-      "url": "https://is-it-in-the-quran.moongazer.tech/"
+      "name": "Why It Was Revealed",
+      "description": "Read reports about revelation while distinguishing context, evidence and uncertainty.",
+      "kind": "Source reader",
+      "url": "https://why-it-was-revealed.moongazer.tech/"
     }
   ],
   "collection": {

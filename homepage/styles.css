@@ -3,8 +3,6 @@
 /* Honorific: U+FDFA (ﷺ) renders in Amiri inside DM Sans and Newsreader runs (a 1.6 KB subset; OFL, see fonts/amiri-OFL.txt). */
 @font-face{font-family:DM Sans;src:url('/fonts/amiri-honorific.woff2') format('woff2');font-weight:100 1000;unicode-range:U+FDFA;font-display:swap}
 @font-face{font-family:Newsreader;src:url('/fonts/amiri-honorific.woff2') format('woff2');font-weight:200 800;unicode-range:U+FDFA;font-display:swap}
-/* Ayah of the night: Amiri subset to the list's characters (41 KB, OFL; _implementation/subset-ayah-font.py). Loads only when the ayah is shown. */
-@font-face{font-family:'Amiri Ayat';src:url('/fonts/amiri-ayat.woff2') format('woff2');font-display:swap}
 :root{--ink:#18354c;--muted:#566a7c;--night:#12263d;--paper:#f7fafc;--line:#dbe4eb;--gold:#e9c992;--blue:#dae9f5;--white:#fff;--radius:18px;color-scheme:light;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);scroll-behavior:smooth;scroll-padding-top:16px}
 *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input{font:inherit}button,a,input{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img,svg{display:block;max-width:100%}[hidden]{display:none!important}:focus-visible{outline:2px solid #778a9d;outline-offset:3px}::selection{background:#d7b77d;color:#12263d}
 .wrap{width:min(1240px,calc(100% - 96px));margin-inline:auto}
@@ -60,8 +58,7 @@ h2{font-family:Newsreader,Georgia,serif;font-size:34px;font-weight:450;line-heig
 .ayah-night summary::-webkit-details-marker{display:none}
 .ayah-night summary .eyebrow{margin:0}
 .ayah-summary-ref{font-size:13px;font-weight:600;color:#52677a;font-variant-numeric:tabular-nums}
-.ayah-ar{font-family:'Amiri Ayat',Amiri,'Noto Naskh Arabic',serif;font-size:25px;line-height:2.05;margin:6px 0 6px;white-space:pre-line}
-.ayah-en{font-family:Newsreader,Georgia,serif;font-size:17px;line-height:1.55;margin:0 0 12px;white-space:pre-line}
+.ayah-en{font-family:Newsreader,Georgia,serif;font-size:17px;line-height:1.55;margin:8px 0 12px;white-space:pre-line}
 .ayah-source{font-size:13px;line-height:1.5;color:#52677a;margin:0}.ayah-source a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .show-all{font-size:13px;color:#355974;text-decoration:underline;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
 
@@ -130,7 +127,7 @@ h2{font-family:Newsreader,Georgia,serif;font-size:34px;font-weight:450;line-heig
   .ayah-night summary::after{content:'';width:8px;height:8px;border-right:2px solid #52677a;border-bottom:2px solid #52677a;transform:rotate(45deg);margin:-4px 4px 0 0;flex:none}
   .ayah-night details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
   .ayah-summary-ref{margin-left:auto}
-  .ayah-body{padding-bottom:14px}.ayah-ar{font-size:23px}.ayah-en{font-size:16px}
+  .ayah-body{padding-bottom:14px}.ayah-en{font-size:16px}
   h2{font-size:29px}
   .library{padding-block:16px 40px}
   .library-heading{display:block;margin-bottom:6px}.library-heading h2{font-size:30px}.library-heading>p{display:none}
@@ -178,7 +175,7 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:url(/art/pa
 .ayah-night::before{content:'';position:absolute;inset:0;z-index:-1;background:url(/art/pattern.svg);opacity:.08}
 .ayah-night::after{content:'';position:absolute;inset:8px;border:1px solid #e9c99224;border-radius:16px;pointer-events:none}
 .ayah-night .eyebrow{color:var(--gold)}.ayah-night .ayah-summary-ref,.ayah-night summary{color:#c9d3de}
-.ayah-night .ayah-ar{color:var(--gold-2)}.ayah-night .ayah-en{color:#dfe6ee}.ayah-night .ayah-source{color:#aab7c6}.ayah-night .ayah-source a{color:var(--gold)}
+.ayah-night .ayah-en{color:#dfe6ee}.ayah-night .ayah-source{color:#aab7c6}.ayah-night .ayah-source a{color:var(--gold)}
 .chip{border-color:var(--rule);background:#fff}.chip:hover{border-color:var(--gold-3)}.chip[aria-pressed=true],.chip.active{background:#0b1526;color:var(--gold-2);border-color:#0b1526}
 /* Library */
 .library-heading .eyebrow::before,.section-intro .eyebrow::before,.about-heading .eyebrow::before{content:'';display:block;width:96px;height:14px;margin-bottom:12px;background:url(/art/divider.svg) no-repeat left center}

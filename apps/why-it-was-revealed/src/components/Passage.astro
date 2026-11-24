@@ -1,5 +1,5 @@
 ---
-interface Props { passage?: {ref:string; arabic:string; translation:string; translationUrl:string}; }
+interface Props { passage?: {ref:string; translation:string; translationUrl:string}; }
 const {passage:p}=Astro.props;
 ---
-{p&&<section class="panel bottom-gap"><div class="panel-head"><h2>The source reading</h2> <a href={p.translationUrl} target="_blank" rel="noopener noreferrer">Quran {p.ref} ↗</a></div> <div class="panel-body"><p class="arabic" lang="ar" dir="rtl">{p.arabic}</p><blockquote class="source-quote">{p.translation}</blockquote><p class="micro">Marmaduke Pickthall · Uthmani Hafs Arabic · complete selected ayahs</p></div></section>}
+{p&&<section class="panel bottom-gap"><div class="panel-head"><h2>The source reading</h2> <a href={p.translationUrl} target="_blank" rel="noopener noreferrer">Quran {p.ref} ↗</a></div> <div class="panel-body"><blockquote class="source-quote">{p.translation}</blockquote><p class="micro">Marmaduke Pickthall · complete selected ayahs</p></div></section>}

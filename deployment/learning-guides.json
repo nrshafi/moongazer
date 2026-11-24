@@ -1,27 +1,4 @@
 {
-  "guess-the-surah": {
-    "heading": "Guess the Surah",
-    "summary": "Guess the Surah gives you a daily clue-by-clue Quran quiz. You start with an opening ayah in English, reveal extra hints like the Arabic text or verse count if you need them, and pick from four surahs—then open the passage itself so every round leads back to reading.",
-    "steps": [
-      "Open today's Daily puzzle, or choose Practice or Juz, set a round length and start a round.",
-      "Read the opening ayah. Reveal another clue if you need the Arabic, the ayah count or the meaning of the surah's name.",
-      "Choose a surah, inspect the answer and its source, then continue the round."
-    ],
-    "questions": [
-      {
-        "question": "Does the quiz include all 114 surahs?",
-        "answer": "Yes. The Daily puzzle cycles through all 114 surahs, one a day. In Practice you can choose All 114 surahs or the shorter-surah, Revealed in Makkah and Revealed in Madinah filters, and Juz draws from the surahs that begin in a chosen juz."
-      },
-      {
-        "question": "What do the points measure?",
-        "answer": "Points reflect how early you answer within this game's clue sequence. They are an informal game score, not an assessment of memorization, recitation accuracy or religious knowledge."
-      }
-    ],
-    "related": [
-      "ayah-threads",
-      "quran-escape-room"
-    ]
-  },
   "ayah-threads": {
     "heading": "Ayah Threads",
     "summary": "Ayah Threads pairs three Quran passages that share a common theme. Read all three, pick the thread that links them, and check the explanation alongside the full verses. A passage can carry many layers of meaning, so treat the theme as a starting point for closer reading.",
@@ -41,7 +18,7 @@
       }
     ],
     "related": [
-      "guess-the-surah"
+      "quran-escape-room"
     ]
   },
   "seerah-detective": {
@@ -130,30 +107,8 @@
       }
     ],
     "related": [
-      "guess-the-surah",
-      "is-it-in-the-quran"
-    ]
-  },
-  "is-it-in-the-quran": {
-    "heading": "Is It in the Quran?",
-    "summary": "Is It in the Quran? searches the complete Arabic Quran and Pickthall's English translation, plus twelve commonly misattributed sayings. Type a phrase or verse reference to inspect matching passages directly. Because it matches exact wording, an empty result only means that phrasing didn't appear—not that the concept is absent.",
-    "steps": [
-      "Enter an Arabic phrase, English wording or a verse reference.",
-      "Run the search to load the local text and inspect the matching ayahs.",
-      "Read the surrounding passage and source notes before drawing a conclusion about the wording."
-    ],
-    "questions": [
-      {
-        "question": "Does no match mean an idea is absent from the Quran?",
-        "answer": "No. A wording search cannot establish that conclusion. Another translation, a paraphrase or a related expression may use different words. Search shorter phrases and read the relevant context."
-      },
-      {
-        "question": "How does Arabic text matching work?",
-        "answer": "The search normalizes diacritics, tatweel and common alif variants. Punctuation and English case are ignored. It does not perform stemming or semantic interpretation; the displayed Quran text keeps its original form."
-      }
-    ],
-    "related": [
-      "why-it-was-revealed"
+      "ayah-threads",
+      "stories-of-the-prophets"
     ]
   },
   "quran-escape-room": {
@@ -175,8 +130,8 @@
       }
     ],
     "related": [
-      "guess-the-surah",
-      "word-groups"
+      "ayah-threads",
+      "family-halaqa"
     ]
   },
   "stories-of-the-prophets": {
@@ -225,51 +180,6 @@
       "civilization-timeline"
     ]
   },
-  "word-groups": {
-    "heading": "Word Groups",
-    "summary": "Word Groups gives you sixteen Quranic terms to sort into four hidden connections—from surah names and prophetic qualities to shared Arabic roots. Solve a board, then read the cited verses that explain why each group belongs together.",
-    "steps": [
-      "Read the board and select four terms you think belong together.",
-      "Check the group and use the feedback to revise your selection.",
-      "After a group is revealed, read its explanation and cited source reading."
-    ],
-    "questions": [
-      {
-        "question": "What does One away mean?",
-        "answer": "Three selected terms belong to one of the board's intended groups. You can change the selection and retry as often as you like."
-      },
-      {
-        "question": "Is my different connection necessarily wrong?",
-        "answer": "A word may have several connections. The game checks this board's intended groups. Read the explanation to understand that choice rather than treating the board as a complete classification of Islamic concepts."
-      }
-    ],
-    "related": [
-      "ayah-threads",
-      "quran-escape-room"
-    ]
-  },
-  "understand-your-salah": {
-    "heading": "Understand Your Salah",
-    "summary": "Understand Your Salah walks through the words of prayer from the opening takbir to the closing salam in fifteen short lessons. Read the Arabic, reveal the meaning when you're ready, and check your grasp of a key phrase—with full Al-Fatiha audio included.",
-    "steps": [
-      "Choose a lesson from the list or filter by part of the prayer.",
-      "Read the Arabic and compare it with the meaning, using the local Al-Fatiha audio where available.",
-      "Try the reading check and inspect the source notes for the selected wording."
-    ],
-    "questions": [
-      {
-        "question": "Does every lesson include audio?",
-        "answer": "No. Local audio is included for Al-Fatiha; the other lessons are text-based. The Al-Fatiha recording plays the full surah rather than only the ayah on a lesson page."
-      },
-      {
-        "question": "Is this a complete guide to the legal details of prayer?",
-        "answer": "No. It is a guide to meanings and reading, using selected narrated wordings. Roman guides are approximate. Read the source notes and seek qualified instruction for questions about practice or legal differences."
-      }
-    ],
-    "related": [
-      "hifz-planner"
-    ]
-  },
   "parables-of-the-quran": {
     "heading": "Parables of the Quran",
     "summary": "Parables of the Quran brings together fourteen Quranic parables with their full verses, a three-part visual breakdown of the imagery, classical commentary notes, and a reflection question. Read the passage first, use the diagram to trace the comparison, and return to the text with fresh eyes.",
@@ -289,7 +199,7 @@
       }
     ],
     "related": [
-      "is-it-in-the-quran"
+      "why-it-was-revealed"
     ]
   },
   "civilization-timeline": {
@@ -334,7 +244,7 @@
       }
     ],
     "related": [
-      "is-it-in-the-quran"
+      "stories-of-the-prophets"
     ]
   },
   "family-halaqa": {

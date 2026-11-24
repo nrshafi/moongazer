@@ -1,10 +1,4 @@
 {
-  "guess-the-surah": {
-    "title": "Guess the Surah: Daily Quran Clue Quiz | Moongazer",
-    "shortName": "Guess the Surah",
-    "description": "Can you name the surah from its opening ayah? Reveal clues one by one, pick from four chapters, and read the full passage with sources.",
-    "keyword": "guess the surah quiz"
-  },
   "ayah-threads": {
     "title": "Ayah Threads: Daily Quran Theme Puzzle | Moongazer",
     "shortName": "Ayah Threads",
@@ -48,12 +42,6 @@
     "description": "Plan your weekly hifz without letting revision slip. Enter your pace, memorized portion, and study days to see a realistic page-by-page schedule.",
     "keyword": "Quran memorization calculator"
   },
-  "is-it-in-the-quran": {
-    "title": "Is It in the Quran? Search Every Ayah & Common Claims | Moongazer",
-    "shortName": "Is It in the Quran?",
-    "description": "Search the full Quran in Arabic or English, look up any verse reference, and check well-known sayings to see whether they come from Quran or hadith.",
-    "keyword": "search Quran wording"
-  },
   "quran-escape-room": {
     "title": "Quran Escape Room: Passage-Based Puzzle Rooms | Moongazer",
     "shortName": "Quran Escape Room",
@@ -84,23 +72,6 @@
     "prefix": "place",
     "nameField": "name",
     "summaryField": "summary"
-  },
-  "word-groups": {
-    "title": "Word Groups: Quranic Connections Puzzle | Moongazer",
-    "shortName": "Word Groups",
-    "description": "Sort sixteen Quranic words into four hidden groups across thirty boards, then read the verses and Arabic roots that tie each group together.",
-    "keyword": "Islamic word connections game"
-  },
-  "understand-your-salah": {
-    "title": "Understand Your Salah: Prayer Words & Meanings | Moongazer",
-    "shortName": "Understand Your Salah",
-    "description": "Learn what you say in prayer from the opening takbir to the closing salam, across fifteen short lessons with Al-Fatiha audio and cited sources.",
-    "keyword": "understand Salah meanings",
-    "collection": "lessons",
-    "prefix": "lesson",
-    "nameField": "title",
-    "summaryField": "note",
-    "detailMode": "salah"
   },
   "parables-of-the-quran": {
     "title": "Parables of the Quran: Passages, Diagrams & Reflections | Moongazer",

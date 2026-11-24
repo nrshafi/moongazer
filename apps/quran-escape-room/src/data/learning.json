@@ -18,16 +18,16 @@
   ],
   "related": [
     {
-      "name": "Guess the Surah",
-      "description": "Follow the clues. Find the chapter. Get to know the Quran one discovery at a time.",
-      "kind": "Quiz",
-      "url": "https://guess-the-surah.moongazer.tech/"
+      "name": "Ayah Threads",
+      "description": "Read three Quran passages and choose the theme that connects them.",
+      "kind": "Passage puzzle",
+      "url": "https://ayah-threads.moongazer.tech/"
     },
     {
-      "name": "Word Groups",
-      "description": "Group related concepts and discover the reasoning behind each connection.",
-      "kind": "Word game",
-      "url": "https://word-groups.moongazer.tech/"
+      "name": "Family Halaqa",
+      "description": "Choose an age-appropriate pack and learn together, without profiles.",
+      "kind": "Family activities",
+      "url": "https://family-halaqa.moongazer.tech/"
     }
   ],
   "collection": {

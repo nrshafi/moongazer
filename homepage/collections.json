@@ -3,37 +3,37 @@
     "slug": "quran-learning",
     "category": "Quran",
     "name": "Quran learning",
-    "title": "Free Quran Quizzes, Search & Study Tools | Moongazer",
-    "heading": "Eight ways to spend time with the Quran",
-    "description": "Test your surah recognition, search Arabic or English wording, trace themes across passages, and read parables and revelation context with sources right beside the text.",
-    "intro": "Whether you have five minutes for a daily surah puzzle or an hour to sit with a parable, these eight tools meet you where you are. Pick a quiz when you want a quick check, wording search when a phrase is on the tip of your tongue, or a guided reading when you want to slow down with commentary.",
-    "guidance": "Start with the verses themselves before opening any note or diagram. Quranic text, translations, and classical commentary are always kept clearly separate from our questions and visual aids, so you can see where the scripture ends and the study tool begins.",
+    "title": "Free Quran Puzzles, Maps & Study Tools | Moongazer",
+    "heading": "Five ways to spend time with the Quran",
+    "description": "Trace themes across passages, explore parables and places, and read prophet accounts and revelation context with Pickthall translations and sources right beside the text.",
+    "intro": "Whether you have ten minutes for a daily theme puzzle or longer to sit with a parable, these five tools meet you where you are. Pick a puzzle when you want a quick challenge, a map when you want to place a name, or a guided reading when you want to slow down with commentary.",
+    "guidance": "Start with the verses themselves before opening any note or diagram. Pickthall translations and classical commentary are always kept clearly separate from our questions and visual aids, so you can see where the scripture ends and the study tool begins.",
     "paths": [
       {
-        "title": "Get familiar with chapters",
+        "title": "Trace themes across passages",
         "items": [
-          {
-            "slug": "guess-the-surah",
-            "reason": "Use opening-ayah clues to recognize a surah, then inspect the reference behind the answer."
-          },
           {
             "slug": "ayah-threads",
-            "reason": "Move from chapter recognition into comparing the shared theme of three selected passages."
-          }
-        ]
-      },
-      {
-        "title": "Find wording, then explore a theme",
-        "items": [
-          {
-            "slug": "is-it-in-the-quran",
-            "reason": "Search Arabic text or Pickthall's English translation when you have wording or an ayah reference."
+            "reason": "Find the shared theme that links three selected passages in Pickthall's translation."
           },
           {
             "slug": "ayah-threads",
             "path": "/themes/",
             "label": "Ayah Threads theme library",
             "reason": "Read a theme's three ayat when your starting point is a subject; solve its puzzle first to keep the surprise."
+          }
+        ]
+      },
+      {
+        "title": "Explore imagery and geography",
+        "items": [
+          {
+            "slug": "parables-of-the-quran",
+            "reason": "Read each Quranic parable alongside a visual map of its imagery and source notes."
+          },
+          {
+            "slug": "places-in-the-quran",
+            "reason": "Link verses to historical geography while seeing where certainty ends on the map."
           }
         ]
       },
@@ -53,8 +53,8 @@
     ],
     "questions": [
       {
-        "question": "Which tool should I use for an exact Quran phrase?",
-        "answer": "Open Is It in the Quran? to search Arabic text, Pickthall's English translation, or a specific verse reference. Keep in mind that a blank result only means those exact words did not match—the same idea may appear under different wording."
+        "question": "Which translation do these tools use?",
+        "answer": "Quoted English Quran passages use Marmaduke Pickthall's translation, with verse references and source notes linked on each page."
       },
       {
         "question": "Where can I explore diagrams or places?",
@@ -129,22 +129,22 @@
     "slug": "prayer-everyday-practice",
     "category": "Everyday practice",
     "name": "Prayer & everyday practice",
-    "title": "Salah Meanings, Hifz Planning & Everyday Akhlaq | Moongazer",
-    "heading": "Bring what you read into prayer and daily life",
-    "description": "Learn the words you recite in salah, plan a realistic hifz and revision routine, calculate zakat step by step, and think through everyday character dilemmas.",
-    "intro": "Knowledge settles when it meets daily habit. Walk through the meanings of your prayer from opening takbir to salam, map out a hifz schedule that protects your revision first, work through a real-world akhlaq dilemma, or calculate your zakat with every scholarly option clearly labelled.",
+    "title": "Hifz Planning, Zakat & Everyday Akhlaq | Moongazer",
+    "heading": "Bring what you learn into study and daily life",
+    "description": "Plan a realistic hifz and revision routine, calculate zakat step by step, and think through everyday character dilemmas.",
+    "intro": "Knowledge settles when it meets daily habit. Map out a hifz schedule that protects your revision first, work through a real-world akhlaq dilemma, or calculate your zakat with every scholarly option clearly labelled.",
     "guidance": "Use these tools as practical companions, not verdicts. The hifz planner estimates time based on your own pace, the akhlaq scenarios are conversation starters rather than rulings, and the zakat calculator shows its working so you can verify complex questions with a scholar.",
     "paths": [
       {
-        "title": "Make space for a reading session",
+        "title": "Plan study time and obligations",
         "items": [
-          {
-            "slug": "understand-your-salah",
-            "reason": "Choose one of fifteen recitation-meaning lessons and compare its Arabic, meaning and source notes."
-          },
           {
             "slug": "hifz-planner",
             "reason": "Estimate how new Quran study and revision fit around the session time you provide."
+          },
+          {
+            "slug": "zakat-calculator",
+            "reason": "Work through your zakat step by step, with every choice explained and sourced."
           }
         ]
       },
@@ -167,10 +167,8 @@
         "title": "Check the evidence before a conclusion",
         "items": [
           {
-            "slug": "is-it-in-the-quran",
-            "path": "/claims/",
-            "label": "Common claims (Is It in the Quran?)",
-            "reason": "Check a claim people often make against the exact text before you share it."
+            "slug": "seerah-detective",
+            "reason": "Weigh what selected historical reports actually establish before drawing a conclusion."
           },
           {
             "slug": "why-it-was-revealed",
@@ -181,8 +179,8 @@
     ],
     "questions": [
       {
-        "question": "Does Understand Your Salah teach every legal detail of prayer?",
-        "answer": "It focuses on selected recitation meanings and narrated wordings. It includes local Al-Fatiha audio, while the other lessons are text-based. Use its source notes and qualified instruction for practice questions or legal differences."
+        "question": "Does the Zakat Calculator issue a religious ruling?",
+        "answer": "No. It shows the working for common scholarly options with source notes so you can verify complex or unusual holdings with a qualified scholar."
       },
       {
         "question": "Can I use the business cases as a ruling on my transaction?",
@@ -194,10 +192,10 @@
     "slug": "islamic-games",
     "category": "Games & challenges",
     "name": "Games & family activities",
-    "title": "Islamic Word Games, Escape Rooms & Family Halaqa | Moongazer",
+    "title": "Quran Escape Rooms, Seerah Challenges & Family Halaqa | Moongazer",
     "heading": "Play together, then open the passage",
-    "description": "Solve Quran escape rooms, sort sixteen Quranic words into four hidden groups, race a Seerah chronology, or sit down for a ten-minute family halaqa.",
-    "intro": "Learning sticks better when people are talking and thinking together. Gather around one screen for a Quran escape room, test your eye for patterns in Word Groups, or pick a ten-minute Family Halaqa pack with a verse, a question, and a shared activity.",
+    "description": "Solve Quran escape rooms, race a Seerah chronology, or sit down for a ten-minute family halaqa.",
+    "intro": "Learning sticks better when people are talking and thinking together. Gather around one screen for a Quran escape room, test your sense of chronology in Seerah Timeline, or pick a ten-minute Family Halaqa pack with a verse, a question, and a shared activity.",
     "guidance": "Every game here runs straight in the browser with no sign-ups, leaderboards, or profiles. Read the clues aloud, adapt the wording for younger kids, and treat the score as a light prompt to open the verses afterward.",
     "paths": [
       {
@@ -208,8 +206,8 @@
             "reason": "Work through reading and recognition puzzles together, using the source shelf and hints when useful."
           },
           {
-            "slug": "word-groups",
-            "reason": "Compare possible connections between terms, then inspect the board's intended groups and readings."
+            "slug": "ayah-threads",
+            "reason": "Compare three passages to uncover their shared theme, then read the source notes."
           }
         ]
       },

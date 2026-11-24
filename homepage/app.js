@@ -68,9 +68,7 @@ async function showTonightsAyah() {
     const ayah = ayat[ayahIndex(now, ayat.length)];
     if (!ayah) return;
     for (const el of document.querySelectorAll('[data-ayah-ref]')) el.textContent = ayah.ref;
-    document.querySelector('[data-ayah-ar]').textContent = ayah.arabic;
     document.querySelector('[data-ayah-en]').textContent = ayah.translation;
-    document.querySelector('[data-ayah-link]').href = `https://is-it-in-the-quran.moongazer.tech/#q=${encodeURIComponent(ayah.ref)}`;
   } catch {
     // Offline or blocked: the build-date ayah stays, which is still exact text with its reference.
   }

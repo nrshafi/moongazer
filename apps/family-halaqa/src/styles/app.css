@@ -16,6 +16,5 @@ html.printing-saved .saved-print{display:block!important;color:#111;background:#
 .saved-pack{break-after:page;padding:0 0 12px}
 .saved-pack:last-child{break-after:auto}
 .saved-pack h2{font-size:18pt;margin:0 0 4px}.saved-pack h3{font-size:12pt;margin:14px 0 4px}.saved-pack p,.saved-pack li{font-size:10.5pt;line-height:1.5;color:#111}
-.saved-pack .arabic{font-size:20pt;line-height:2}
 .saved-pack .print-line{border-bottom:1px solid #777;height:26px}
 }
