@@ -52,7 +52,6 @@ bun run preview
 - [homepage/](homepage/) contains the raw HTML, CSS and JavaScript directory. Build it with `node homepage/build.mjs`; preview with `node homepage/preview.mjs` on localhost port 4350.
 - [AGENTS.md](AGENTS.md) and [context/](context/) contain repository-wide instructions and project context. Each app also has its own instructions and context.
 - [_implementation/](_implementation/) contains content preparation, research snapshots and verification scripts. Some scripts expect missing QA artifacts or generated builds; inspect their requirements before running them.
-- [islamic_product_atlas.html](islamic_product_atlas.html) is an earlier research reference.
 - [STATIC_APPS_SHORTLIST.md](STATIC_APPS_SHORTLIST.md) and [PROJECT_RANKING.md](PROJECT_RANKING.md) record the project selection.
 
 Build output and dependencies are ignored by Git. The `release/` archives and several QA reports mentioned in historical context are absent. Fresh static verification recreates `_implementation/qa/static-results.json`; release-specific logs and HTTP checks are in `deployment/evidence/`.

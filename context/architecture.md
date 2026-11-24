@@ -48,7 +48,6 @@ owner laptop ── scripts/review-feedback.mjs (wrangler d1) ──▶ approve 
 | `_implementation/research/` | Canonical snapshots, MCP/tool records, fetched commentary and media attribution |
 | `_implementation/qa/` | Recorded test/build/static/browser evidence and context audit |
 | `release/` | Generated static upload ZIPs and checksum manifest |
-| `islamic_product_atlas.html` | Earlier research reference (prototype tooling removed under D2c) |
 | `6_File+Context+Methodology/` | Supplied generic seven-file reference template, preserved |
 | `context/`, root `AGENTS.md` | Repo-wide product/architecture/UI/standards/workflow/progress contract |
 | `DEPLOYMENT.md`, shortlist and QA reports | Deployment inventory, selected scope and implementation evidence |
