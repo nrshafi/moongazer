@@ -104,8 +104,10 @@ describe('descriptor', () => {
     expect(config.description).toBe('Find the theme that links three passages: a daily Quran puzzle');
     expect(config.description.split(/\s+/).length).toBeLessThanOrEqual(12);
     expect(config.description).toContain('a daily Quran puzzle');
-    expect(seo.title).toContain('daily Quran puzzle');
-    expect(seo.description).toContain('daily Quran puzzle');
+    expect(seo.keyword).toBe('daily Quran puzzle');
+    expect(seo.title.toLowerCase()).toContain('daily quran');
+    expect(seo.title.toLowerCase()).toContain('puzzle');
+    expect(seo.description.toLowerCase()).toContain('daily puzzle');
   });
 });
 

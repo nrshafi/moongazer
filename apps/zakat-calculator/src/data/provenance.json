@@ -3,7 +3,7 @@
   "note": "Method content is copied by script from the second-pass verified method record. It is a source-checked summary, not a scholarly review and not a fatwa.",
   "methodRecord": "_implementation/research/zakat/method.json",
   "verificationRecord": "_implementation/research/zakat/verification.json",
-  "appContentSha256": "100e8af5fb82a0f7c18c650444a8b8b0a42f1e6c53c78c7eca0d483fe5162bdf",
+  "appContentSha256": "718eeb32614f436b9486c8d987bf32bdca2626aa0b787c1a4516e33df37648b3",
   "contentFile": "src/data/content.json",
   "methodRecordSha256": "dcb4174eb83c6319fddd4525d94327d3e905de7853a46fbf7044089d663d4ec3",
   "verificationRecordSha256": "5f6bca2af8ebe6fcf196dbdfce9d6ad57b7d5b98978173cb6cf4b6db4a06d588"

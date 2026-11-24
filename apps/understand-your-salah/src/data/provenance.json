@@ -1138,7 +1138,7 @@
     }
   ],
   "app": "understand-your-salah",
-  "appContentSha256": "8e749e1252b49b8e9cf61b1ae385fe7c38e6c678a5d667f29dd6672017c13a0e",
+  "appContentSha256": "07a33b766bde261fd2eb779a7b771784323ee4ff4973ede89345e95fcf545d35",
   "batch3Commentary": {
     "endpoint": "https://mcp.quran.ai",
     "retrievedAt": "2026-10-27T17:39:30.408Z",

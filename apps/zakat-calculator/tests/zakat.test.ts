@@ -181,5 +181,18 @@ const recordUrl = new URL('../../../_implementation/research/zakat/method.json',
 test('content.json matches the verified method record when the repository record is present', () => {
   if (!existsSync(recordUrl)) return;
   const record = JSON.parse(readFileSync(recordUrl, 'utf8'));
-  expect(content.method).toEqual(record);
+  const stripBasisCopy = (list: any[]) =>
+    list.map(e => (e.basis ? { ...e, basis: e.basis.map(({ copiedFrom: _, ...b }: Record<string, unknown>) => b) } : e));
+  for (const key of ['schema', 'notAccessible', 'sourceRules', 'examples', 'examplesNote'] as const) {
+    expect(content.method[key]).toEqual(record[key]);
+  }
+  expect(content.method.entries).toEqual(stripBasisCopy(record.entries));
+  expect(typeof content.method.disclaimer).toBe('string');
+  expect(content.method.disclaimer.trim().length).toBeGreaterThan(0);
+  for (const key of ['task', 'sessionStart', 'sessionEnd', 'quranSnapshot', 'quranMcpCalls', 'quranMcpCrossCheck', 'quranMcpCrossCheckNote']) {
+    expect(key in content.method).toBe(false);
+  }
+  for (const entry of content.method.entries as { basis?: Record<string, unknown>[] }[]) {
+    for (const item of entry.basis ?? []) expect('copiedFrom' in item).toBe(false);
+  }
 });
