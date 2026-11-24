@@ -1,6 +1,6 @@
 {
   "heading": "Is It in the Quran?",
-  "summary": "This Quran wording search looks for text in the complete local Arabic corpus and Pickthall's English translation. Enter a phrase or an ayah reference to inspect matching passages. It searches wording rather than judging whether an idea is Islamic, whether a paraphrase is accurate or how a verse should be interpreted.",
+  "summary": "Is It in the Quran? searches the complete Arabic Quran and Pickthall's English translation, plus twelve commonly misattributed sayings. Type a phrase or verse reference to inspect matching passages directly. Because it matches exact wording, an empty result only means that phrasing didn't appear—not that the concept is absent.",
   "steps": [
     "Enter an Arabic phrase, English wording or a verse reference.",
     "Run the search to load the local text and inspect the matching ayahs.",

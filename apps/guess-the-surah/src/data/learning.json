@@ -1,6 +1,6 @@
 {
   "heading": "Guess the Surah",
-  "summary": "Guess the Surah is a free daily Quran quiz built around clues. Begin with an opening ayah in Pickthall's translation, reveal more information when needed, and choose from four surahs. The result points back to the passage so a round can lead into reading, rather than end with a score.",
+  "summary": "Guess the Surah gives you a daily clue-by-clue Quran quiz. You start with an opening ayah in English, reveal extra hints like the Arabic text or verse count if you need them, and pick from four surahs—then open the passage itself so every round leads back to reading.",
   "steps": [
     "Open today's Daily puzzle, or choose Practice or Juz, set a round length and start a round.",
     "Read the opening ayah. Reveal another clue if you need the Arabic, the ayah count or the meaning of the surah's name.",

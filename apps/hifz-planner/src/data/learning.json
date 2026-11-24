@@ -1,6 +1,6 @@
 {
   "heading": "Hifz Planner",
-  "summary": "Hifz Planner estimates how new study and revision fit into your available sessions. Enter your own learning and review speeds, the portion already memorized, a revision cycle and study days. The calculation reserves time for review before estimating new pages, making its assumptions available for you to adjust.",
+  "summary": "Hifz Planner helps you build a memorization schedule that actually holds up week to week. Enter your current portion, study days, and reading speed—the planner protects your revision time first, then shows how many new pages fit comfortably into what remains.",
   "steps": [
     "Step 1: enter the pages already memorized and the new pages you want to add.",
     "Step 2: enter study days per week, minutes per session and a start date. Use the Ramadan pace suggestion or adjust the assumptions if you want.",

@@ -3,11 +3,11 @@
     "slug": "quran-learning",
     "category": "Quran",
     "name": "Quran learning",
-    "title": "Free Quran Learning Tools & Reading Games | Moongazer",
-    "heading": "Quran learning tools for a closer reading",
-    "description": "Choose free Quran quizzes, wording search, theme explorers and source readers. Compare eight browser tools and find a useful starting point for your study.",
-    "intro": "These eight Quran learning apps support different tasks: recognizing chapters, finding wording, comparing themes and reading selected passages with their references. Choose the task you want to do first. A quiz, a text search and a commentary-led reading answer different kinds of questions.",
-    "guidance": "Start with the passage whenever a tool offers an explanation. Quoted Quran text, named translations and attributed commentary are separate from the editorial questions, diagrams and learning paths. The tools help you organize a reading session; they do not replace the full context or qualified instruction.",
+    "title": "Free Quran Quizzes, Search & Study Tools | Moongazer",
+    "heading": "Eight ways to spend time with the Quran",
+    "description": "Test your surah recognition, search Arabic or English wording, trace themes across passages, and read parables and revelation context with sources right beside the text.",
+    "intro": "Whether you have five minutes for a daily surah puzzle or an hour to sit with a parable, these eight tools meet you where you are. Pick a quiz when you want a quick check, wording search when a phrase is on the tip of your tongue, or a guided reading when you want to slow down with commentary.",
+    "guidance": "Start with the verses themselves before opening any note or diagram. Quranic text, translations, and classical commentary are always kept clearly separate from our questions and visual aids, so you can see where the scripture ends and the study tool begins.",
     "paths": [
       {
         "title": "Get familiar with chapters",
@@ -54,11 +54,11 @@
     "questions": [
       {
         "question": "Which tool should I use for an exact Quran phrase?",
-        "answer": "Use Is It in the Quran? for Arabic wording, Pickthall's English text or a verse reference. An empty search result does not mean an idea is absent from the Quran: translations and paraphrases can use different wording."
+        "answer": "Open Is It in the Quran? to search Arabic text, Pickthall's English translation, or a specific verse reference. Keep in mind that a blank result only means those exact words did not match—the same idea may appear under different wording."
       },
       {
         "question": "Where can I explore diagrams or places?",
-        "answer": "Parables of the Quran uses editorial diagrams alongside selected readings. Places in the Quran pairs passages with geographical notes and keeps uncertain locations unpinned. Both keep their source references available for inspection."
+        "answer": "Parables of the Quran pairs each passage with a simple visual map of its imagery, while Places in the Quran links verses to geography and leaves uncertain sites unpinned on the map."
       }
     ]
   },
@@ -66,11 +66,11 @@
     "slug": "seerah-history",
     "category": "Seerah & history",
     "name": "Seerah & history",
-    "title": "Seerah & Islamic History Learning Tools | Moongazer",
-    "heading": "Explore Seerah and Islamic history with sources in view",
-    "description": "Read Seerah reports, investigate evidence and compare historical periods with three free browser tools. Keep source notes and date uncertainty beside the story.",
-    "intro": "These three history tools offer different ways into a source reading. Follow selected moments from the Prophet's life ﷺ, work through an evidence-reading case, or compare records from Islamic civilization across regions. Choose chronology for orientation and a case when you want to examine what a particular report supports.",
-    "guidance": "A displayed date and a source report do not always have the same precision. Conventional years, broad periods and historical uncertainty are identified in the notes. A timeline connection or an overlap between date bands should not be treated as evidence of contact or causation by itself.",
+    "title": "Seerah & Islamic History Explorers | Moongazer",
+    "heading": "Read Seerah and Islamic history with the sources open",
+    "description": "Trace the Prophet's life ﷺ year by year, weigh primary reports in short cases, and follow Islamic civilization across nine regions from 661 to 1648 CE.",
+    "intro": "Good history starts by looking closely at what the sources actually say. Follow the major turns of the Prophet's life ﷺ on a timeline, step into a short Seerah case to test what a report establishes, or zoom out across ten centuries of cities, trade, and scholarship.",
+    "guidance": "Not every historical date carries the same certainty. Where a year is conventional or approximate, the notes say so plainly—and when two events sit near each other on a timeline, we keep their context separate unless the sources link them directly.",
     "paths": [
       {
         "title": "Follow an event into its reports",
@@ -129,11 +129,11 @@
     "slug": "prayer-everyday-practice",
     "category": "Everyday practice",
     "name": "Prayer & everyday practice",
-    "title": "Salah Meanings & Everyday Islamic Learning | Moongazer",
-    "heading": "Prayer meanings and everyday learning activities",
-    "description": "Explore Salah recitation meanings, plan Quran study time and work through character, business and evidence-reading exercises. Five free tools with clear limits.",
-    "intro": "These five apps connect reading with a practical task. Study the meaning of a prayer recitation, estimate time for memorization and revision, or consider a fictional decision with its source notes. Each tool has a defined purpose, so choose the activity that matches your question before interpreting its result.",
-    "guidance": "A workload estimate is not a retention assessment. A fictional choice is not a prediction or a ruling on a real transaction. A source-reading conclusion is limited to the cited evidence. These distinctions are part of the activities and remain visible alongside the result.",
+    "title": "Salah Meanings, Hifz Planning & Everyday Akhlaq | Moongazer",
+    "heading": "Bring what you read into prayer and daily life",
+    "description": "Learn the words you recite in salah, plan a realistic hifz and revision routine, calculate zakat step by step, and think through everyday character dilemmas.",
+    "intro": "Knowledge settles when it meets daily habit. Walk through the meanings of your prayer from opening takbir to salam, map out a hifz schedule that protects your revision first, work through a real-world akhlaq dilemma, or calculate your zakat with every scholarly option clearly labelled.",
+    "guidance": "Use these tools as practical companions, not verdicts. The hifz planner estimates time based on your own pace, the akhlaq scenarios are conversation starters rather than rulings, and the zakat calculator shows its working so you can verify complex questions with a scholar.",
     "paths": [
       {
         "title": "Make space for a reading session",
@@ -194,11 +194,11 @@
     "slug": "islamic-games",
     "category": "Games & challenges",
     "name": "Games & family activities",
-    "title": "Free Islamic Games & Family Learning Activities | Moongazer",
-    "heading": "Islamic games and family activities with something to read",
-    "description": "Choose source-reading escape rooms, word connections, chronology challenges and family activity packs. Four free browser activities without player accounts.",
-    "intro": "These four activities use a game or shared task to make room for reading. Solve a passage-based room, group related words, arrange a short chronology or choose a family pack with a question, conversation and activity. The format helps you begin; the source reading and explanation give you something to return to.",
-    "guidance": "Choose a format that suits your group. A room can be discussed together on one device, and a family pack can be read aloud or adapted by an adult. Nobody needs a personal profile or a private story to participate. Scores and intended groupings describe the activity, not a person's faith or religious merit.",
+    "title": "Islamic Word Games, Escape Rooms & Family Halaqa | Moongazer",
+    "heading": "Play together, then open the passage",
+    "description": "Solve Quran escape rooms, sort sixteen Quranic words into four hidden groups, race a Seerah chronology, or sit down for a ten-minute family halaqa.",
+    "intro": "Learning sticks better when people are talking and thinking together. Gather around one screen for a Quran escape room, test your eye for patterns in Word Groups, or pick a ten-minute Family Halaqa pack with a verse, a question, and a shared activity.",
+    "guidance": "Every game here runs straight in the browser with no sign-ups, leaderboards, or profiles. Read the clues aloud, adapt the wording for younger kids, and treat the score as a light prompt to open the verses afterward.",
     "paths": [
       {
         "title": "Discuss a puzzle on one screen",

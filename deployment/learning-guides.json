@@ -1,7 +1,7 @@
 {
   "guess-the-surah": {
     "heading": "Guess the Surah",
-    "summary": "Guess the Surah is a free daily Quran quiz built around clues. Begin with an opening ayah in Pickthall's translation, reveal more information when needed, and choose from four surahs. The result points back to the passage so a round can lead into reading, rather than end with a score.",
+    "summary": "Guess the Surah gives you a daily clue-by-clue Quran quiz. You start with an opening ayah in English, reveal extra hints like the Arabic text or verse count if you need them, and pick from four surahs—then open the passage itself so every round leads back to reading.",
     "steps": [
       "Open today's Daily puzzle, or choose Practice or Juz, set a round length and start a round.",
       "Read the opening ayah. Reveal another clue if you need the Arabic, the ayah count or the meaning of the surah's name.",
@@ -24,7 +24,7 @@
   },
   "ayah-threads": {
     "heading": "Ayah Threads",
-    "summary": "Ayah Threads is a passage-reading puzzle. Read three selected Quran passages, choose their intended shared theme, and compare the explanation with the cited ayahs. The theme is an editorial prompt for noticing connections. It does not limit the meaning of a passage to one answer or replace tafsir.",
+    "summary": "Ayah Threads pairs three Quran passages that share a common theme. Read all three, pick the thread that links them, and check the explanation alongside the full verses. A passage can carry many layers of meaning, so treat the theme as a starting point for closer reading.",
     "steps": [
       "Read all three selections before choosing a theme.",
       "Select the connection that best fits this puzzle's intended grouping.",
@@ -46,7 +46,7 @@
   },
   "seerah-detective": {
     "heading": "Seerah Detective",
-    "summary": "Seerah Detective uses short cases to explore reports from the Prophet's life ﷺ. Open a case, compare the supplied reports and choose the conclusion they support. The activity rewards careful reading of the evidence provided, including its limits, rather than filling gaps with a more dramatic story.",
+    "summary": "Seerah Detective turns short primary reports from the Prophet's life ﷺ into twelve focused cases. Read the clues, weigh what the narrations actually establish, and choose the conclusion that fits the evidence—without stretching past what the sources say.",
     "steps": [
       "Choose a case from the catalog, using its topic or search filter if useful.",
       "Read the evidence and source notes before deciding what the reports establish.",
@@ -68,7 +68,7 @@
   },
   "everyday-akhlaq": {
     "heading": "Everyday Akhlaq",
-    "summary": "Everyday Akhlaq is a collection of fictional character scenarios about ordinary decisions. Work through a conversation or choice, read the imagined consequence and return to the source reading. The scenarios offer space to reflect on conduct without asking you to disclose a private incident or treat a fictional outcome as a prediction.",
+    "summary": "Everyday Akhlaq walks you through realistic choices at school, home, and work. Pick how you would respond, see how the situation unfolds, and read the Quran and hadith passages connected to that character trait. Every scenario is fictional, so you can reflect or discuss in a group without putting anyone on the spot.",
     "steps": [
       "Choose a scenario that interests you or filter by setting.",
       "Read the scenario and make a choice before inspecting the fictional consequence.",
@@ -90,7 +90,7 @@
   },
   "seerah-timeline": {
     "heading": "Seerah Timeline",
-    "summary": "Seerah Timeline pairs selected events from the Prophet's life ﷺ with source reports and historical notes. Browse the chronology, open an event and examine what supports its description. Dates and sequence are reading aids: the notes distinguish conventional dating and uncertainty from what an individual report actually establishes.",
+    "summary": "Seerah Timeline lays out thirty-six moments from the Prophet's life ﷺ alongside their source reports and historical notes. Browse the full arc or filter by era, with clear markers showing which dates are established and which are approximate.",
     "steps": [
       "Browse the chronology or narrow the event list with the available filters.",
       "Open an event to read its report, context and source references.",
@@ -113,7 +113,7 @@
   },
   "hifz-planner": {
     "heading": "Hifz Planner",
-    "summary": "Hifz Planner estimates how new study and revision fit into your available sessions. Enter your own learning and review speeds, the portion already memorized, a revision cycle and study days. The calculation reserves time for review before estimating new pages, making its assumptions available for you to adjust.",
+    "summary": "Hifz Planner helps you build a memorization schedule that actually holds up week to week. Enter your current portion, study days, and reading speed—the planner protects your revision time first, then shows how many new pages fit comfortably into what remains.",
     "steps": [
       "Step 1: enter the pages already memorized and the new pages you want to add.",
       "Step 2: enter study days per week, minutes per session and a start date. Use the Ramadan pace suggestion or adjust the assumptions if you want.",
@@ -136,7 +136,7 @@
   },
   "is-it-in-the-quran": {
     "heading": "Is It in the Quran?",
-    "summary": "This Quran wording search looks for text in the complete local Arabic corpus and Pickthall's English translation. Enter a phrase or an ayah reference to inspect matching passages. It searches wording rather than judging whether an idea is Islamic, whether a paraphrase is accurate or how a verse should be interpreted.",
+    "summary": "Is It in the Quran? searches the complete Arabic Quran and Pickthall's English translation, plus twelve commonly misattributed sayings. Type a phrase or verse reference to inspect matching passages directly. Because it matches exact wording, an empty result only means that phrasing didn't appear—not that the concept is absent.",
     "steps": [
       "Enter an Arabic phrase, English wording or a verse reference.",
       "Run the search to load the local text and inspect the matching ayahs.",
@@ -158,7 +158,7 @@
   },
   "quran-escape-room": {
     "heading": "Quran Escape Room",
-    "summary": "Quran Escape Room turns selected source readings into a sequence of puzzles. Choose a room and work through its reading, connection, ordering and recognition tasks. You can play alone or discuss the same screen with others, opening the sources, hints and solutions when they help you learn.",
+    "summary": "Quran Escape Room builds eight themed puzzle rooms around three Quran passages each. Read closely to unlock four sequential challenges, using hints whenever you want. Play solo or gather around one screen and talk through the verses together.",
     "steps": [
       "Choose a room and read the instructions for its current puzzle.",
       "Use the passages and sources to work toward the next step.",
@@ -181,7 +181,7 @@
   },
   "stories-of-the-prophets": {
     "heading": "Stories of the Prophets",
-    "summary": "Stories of the Prophets gathers fifty selected Quran readings across twenty-five named prophets. Open a prophet to read its passages and answer a short reading check. The library keeps brief mentions brief, identifies its selection limits and avoids adding an unsourced biography where the cited passages do not provide one.",
+    "summary": "Stories of the Prophets gathers fifty Quran passages across twenty-five named prophets. Open any profile to read what the Quran itself says about that prophet and try a short comprehension check. Prophets mentioned briefly in the Quran stay brief here, with no unsourced filler added.",
     "steps": [
       "Find a prophet by name or use the reading-area filter.",
       "Open the prophet and read the selected passages with their source references.",
@@ -204,7 +204,7 @@
   },
   "places-in-the-quran": {
     "heading": "Places in the Quran",
-    "summary": "Places in the Quran pairs fifteen places with selected passages and careful location notes. Use the map for modern geographical context where the evidence supports a pin, and read places without a pin without assigning them a speculative location. Each place explains its evidence and the limits of the geographical connection.",
+    "summary": "Places in the Quran connects fifteen named locations to their Quranic passages and geographical notes. Established cities and heritage sites appear on the map for context, while locations whose exact modern site is uncertain are left unpinned.",
     "steps": [
       "Browse a place or narrow the list with the location filter.",
       "Open its passage, location notes and source references.",
@@ -227,7 +227,7 @@
   },
   "word-groups": {
     "heading": "Word Groups",
-    "summary": "Word Groups is a word-grouping game with four intended groups of four terms. Select related words, check the group and read the explanation behind a revealed connection. The boards use cited readings to explain their editorial groupings, while acknowledging that a word can belong to more than one meaningful connection.",
+    "summary": "Word Groups gives you sixteen Quranic terms to sort into four hidden connections—from surah names and prophetic qualities to shared Arabic roots. Solve a board, then read the cited verses that explain why each group belongs together.",
     "steps": [
       "Read the board and select four terms you think belong together.",
       "Check the group and use the feedback to revise your selection.",
@@ -250,7 +250,7 @@
   },
   "understand-your-salah": {
     "heading": "Understand Your Salah",
-    "summary": "Understand Your Salah explains the meanings of selected prayer recitations in fifteen lessons. Read the Arabic, reveal the meaning and check a detail from the wording. Lessons run from the opening takbir to the closing greeting. A local Al-Fatiha recording supports listening alongside the text, with its attribution available on the page.",
+    "summary": "Understand Your Salah walks through the words of prayer from the opening takbir to the closing salam in fifteen short lessons. Read the Arabic, reveal the meaning when you're ready, and check your grasp of a key phrase—with full Al-Fatiha audio included.",
     "steps": [
       "Choose a lesson from the list or filter by part of the prayer.",
       "Read the Arabic and compare it with the meaning, using the local Al-Fatiha audio where available.",
@@ -272,7 +272,7 @@
   },
   "parables-of-the-quran": {
     "heading": "Parables of the Quran",
-    "summary": "Parables of the Quran brings together fourteen selected readings with diagrams, attributed explanations and reflection prompts. Read the passage first, use the diagram to follow an editorial comparison, and return to the text when considering the prompt. The visual aids organize the reading; they are not part of the quoted Quran or a substitute for its context.",
+    "summary": "Parables of the Quran brings together fourteen Quranic parables with their full verses, a three-part visual breakdown of the imagery, classical commentary notes, and a reflection question. Read the passage first, use the diagram to trace the comparison, and return to the text with fresh eyes.",
     "steps": [
       "Choose a parable or use the filters to find one.",
       "Read the full selected passage and its attributed explanation before exploring the diagram.",
@@ -294,7 +294,7 @@
   },
   "civilization-timeline": {
     "heading": "Civilization Timeline",
-    "summary": "Civilization Timeline connects twenty-four selected events across nine regions. Read about learning, trade and other developments beside institutional source references, or compare two periods. Regional map outlines offer orientation without plotting historical state borders, and overlapping periods remain distinct from evidence of contact or causation.",
+    "summary": "Civilization Timeline traces twenty-four milestones across nine regions of the Islamic world from 661 to 1648 CE—covering cities, learning, trade, and architecture. Every entry links to its museum or heritage source and notes how precise its dating is.",
     "steps": [
       "Choose an event or narrow the list by region, topic or date.",
       "Open the event and read its source and dating notes.",
@@ -317,7 +317,7 @@
   },
   "why-it-was-revealed": {
     "heading": "Why It Was Revealed",
-    "summary": "Why It Was Revealed places ten selected readings beside named reports and careful notes. Compare a reported occasion with general context or with what happened after, and examine the limits of each report. The app helps you keep those categories distinct instead of treating every contextual report as the exclusive explanation of a passage.",
+    "summary": "Why It Was Revealed pairs ten Quran passages with named reports from Sahih al-Bukhari and links to classical tafsir. Each reading separates a direct occasion of revelation from broader historical context, so you can see what a narration explains and where its limits lie.",
     "steps": [
       "Choose a reading from the report-context catalog.",
       "Read the passage, named report and notes about what the evidence supports.",
@@ -339,7 +339,7 @@
   },
   "family-halaqa": {
     "heading": "Family Halaqa",
-    "summary": "Family Halaqa offers short packs for learning together. Each pack combines a source reading question, an open conversation and a shared activity. Choose an age suggestion that fits your group, adapt the vocabulary and keep examples fictional. There are no child profiles, required names or daily streaks to maintain.",
+    "summary": "Family Halaqa offers forty-two ten-minute packs for sitting and learning together. Each pack includes a Quran passage, a quick question, an open conversation prompt, and a simple shared activity—grouped by age range so you can pick one and start right away.",
     "steps": [
       "Choose a pack by its topic, suggested age band or available time.",
       "Read the selected passage together and try the reading question.",
@@ -362,7 +362,7 @@
   },
   "zakat-calculator": {
     "heading": "Zakat Calculator",
-    "summary": "Zakat Calculator works out zakat step by step. You enter your assets, debts and today's gold and silver prices, choose a labelled option wherever scholars differ, and see the result with the method and sources behind each step. It does not give a ruling.",
+    "summary": "Zakat Calculator walks you through your annual zakat step by step. Enter your assets, debts, and local gold or silver prices, choose a clearly labelled option wherever scholars differ, and review the exact method and sources behind your total.",
     "steps": [
       "Enter your cash, gold, silver, business stock, money owed to you and debts due now, with today's gold and silver prices.",
       "Choose the labelled option for each point where scholars differ, and the nisab weight you follow. No option is selected for you.",
