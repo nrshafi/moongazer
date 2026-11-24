@@ -402,3 +402,22 @@ Branch `content-zakat` (from `phase-6-daily`). Research only; no app code. File:
 The owner said the UI looked basic. The agent replaced the visual layer across the 17 apps, the directory and the social cards with a generated art system (`_implementation/art/`) and a new shared CSS layer. `DESIGN.md` §0 records the direction.
 - **Validation:** first screen 102/102, the counter check, `verify-static` (349 pages), text joins 0, `seo.test` 9, `homepage/tests` 55 and `verify-seo` (18 sites) all passed. The details are in `plan/implementation/releases/R7D-design.md`.
 - **Next:** finish P8, then style the mastery UI in the new language.
+
+## 2026-11-25T02:49:30+06:00 — Audit patch application and verification (`audit-fixes-2026-11`)
+
+- **Branch & commits:** Created `audit-fixes-2026-11` from `main` (`3c3524d`), applied all 8 patches from `moongazer-audit-and-patches/patches/` (`448bdc5..2da6cea`), and committed reconciliation fixes in `f0e4aea` (`apps/quran-escape-room/src/data/content.json` room 4 `"thread of mercy"` -> `"thread of compassion"`, updated `appContentSha256` in `provenance.json` for `family-halaqa`, `quran-escape-room`, `understand-your-salah`, `word-groups`, and `zakat-calculator`, and reconciled 4 test assertions in `apps/zakat-calculator/tests/zakat.test.ts`, `apps/understand-your-salah/tests/activity.test.ts`, `apps/ayah-threads/tests/daily-bank.test.ts`, and `apps/guess-the-surah/tests/engine.test.ts`).
+- **Validation:**
+  - All 17 Astro apps pass `check` (0 errors), `test`, and `build` (`ayah-threads` 54 tests / 35 pages, `family-halaqa` 29 tests / 46 pages, `guess-the-surah` 54 tests / 4 pages, `quran-escape-room` 20 tests / 12 pages, `understand-your-salah` 20 tests / 19 pages, `word-groups` 70 tests / 4 pages, and `zakat-calculator` 44 tests / 6 pages re-verified after `f0e4aea`; the other 10 apps passed in parallel worker runs after `2da6cea`).
+  - `bun _implementation/sync-shared.ts --check` passes for default (16 files x 17 apps), `--set daily` (3 files x 4 apps), and `--set mastery`.
+  - `python _implementation/check-content-hygiene.py` passes (78 production JSON files, 0 issues).
+  - `python _implementation/formal/verify-state-machines.py` passes (2 theme + 14 streak counterexamples caught on historical bugs; 0 invariant violations on live code).
+  - `node homepage/build.mjs` builds 9 indexable directory pages, 17 app links, and the 60-day Booktube feed from 2026-11-25 (#14) into `homepage/dist`.
+  - `bun test _implementation/seo.test.ts homepage/tests` passes (64 pass, 0 fail, 3036 expects across 3 files).
+  - `python _implementation/audit-text-joins.py` and `--bdi` both pass (`unique=0 occurrences=0 pages=360`).
+  - `python _implementation/verify-static.py` passes (349 static pages across 17 apps; all `canonicalTextVerified: true`, `localLinksVerified: true`, `externalRuntimeAssets: false`).
+  - `python deployment/verify-seo.py` passes (`{"sites": 18, "pages": 360, "indexable": 324, "passed": true}`).
+  - Headless Chrome smoke-checks (`_implementation/browser-check.mjs`, 1280x900 & 390x844) pass on `homepage/dist/` (`/` and `/ramadan/`) and `understand-your-salah`, `quran-escape-room`, and `zakat-calculator` with 0 overflow and 0 console/runtime errors.
+- **Material limits & remaining work:**
+  - `python _implementation/verify-context.py` fails on pre-existing `assert len(apps)==20` (repo currently has 17 apps).
+  - `moongazer-audit-and-patches/` remains untracked; deferred suggestions in `moongazer-audit-and-patches/REVIEW.md` were not implemented.
+  - No push to remote or live Cloudflare deployment was run.
